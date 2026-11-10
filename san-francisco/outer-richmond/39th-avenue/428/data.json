@@ -1,0 +1,110 @@
+{
+  "address": "428 39th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/39th-avenue/428/",
+  "apn": "1470050",
+  "block": "1470",
+  "lot": "050",
+  "eas_baseid": "305127",
+  "coordinates": {
+    "lat": 37.780792,
+    "lng": -122.499502
+  },
+  "parcel": {
+    "year_built": 1981,
+    "units": 1,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 3999.6,
+    "building_area_sqft": 3506,
+    "basement_area_sqft": 729,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0428 39TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 215310,
+    "assessed_improvement_value": 534777
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1981",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807235252",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-23",
+      "status_date": "2018-07-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "change exterior siding, not visible to the street. change windows as needed(approx 5-6 windows). side only no front work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400089S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-01-05",
+      "status_date": "1995-10-03",
+      "estimated_cost": 75000,
+      "description": "vertical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=39TH&street_type=AVE&address_number=428",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1470050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1470&lot=050",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1470050",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1995-03-01",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 1 March 1995",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1995sanf/page/n30/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-03-01",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' issuance of a permit to alter a building with a 1,300 square foot vertical addition at 428-39th Avenue, granting the permit.",
+      "source": "sf-board-of-permit-appeals-minutes-1995-03-01"
+    }
+  ]
+}

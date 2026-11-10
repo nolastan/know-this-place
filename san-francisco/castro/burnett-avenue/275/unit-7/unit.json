@@ -1,0 +1,47 @@
+{
+  "address": "275 Burnett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/castro/burnett-avenue/275/unit-7/",
+  "unit": "7",
+  "apn": "2719B042",
+  "block": "2719B",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 1024,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 369423,
+    "assessed_improvement_value": 369423,
+    "last_sale_date": "2013-05-01"
+  },
+  "permits": [
+    {
+      "number": "201106137949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-13",
+      "status_date": "2011-09-22",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "one unit: demo 20% of (e) deck at front as much as needed to remove dry rot. replace in kind with (n) framing. replace with (n) patch part with roof. on one unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719B042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719B&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

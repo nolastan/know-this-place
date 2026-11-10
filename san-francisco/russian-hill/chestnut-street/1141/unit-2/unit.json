@@ -1,0 +1,45 @@
+{
+  "address": "1141 Chestnut Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/chestnut-street/1141/unit-2/",
+  "unit": "2",
+  "apn": "0500039",
+  "block": "0500",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 1580,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 196809,
+    "assessed_improvement_value": 389504
+  },
+  "permits": [
+    {
+      "number": "201301309062",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-01-30",
+      "status_date": "2013-02-11",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "repair to foundation of building facia damaged by car.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0500039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0500&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "address": "3801 Irving Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/irving-street/3801/",
+  "apn": "1794001",
+  "block": "1794",
+  "lot": "001",
+  "eas_baseid": "317882",
+  "coordinates": {
+    "lat": 37.762426,
+    "lng": -122.498828
+  },
+  "parcel": {
+    "year_built": 1974,
+    "units": 6,
+    "stories": 2,
+    "rooms": 26,
+    "bathrooms": 10,
+    "lot_area_sqft": 4750,
+    "building_area_sqft": 6300,
+    "lot_depth_ft": 50,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 3801 IRVING              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 517375,
+    "assessed_improvement_value": 847766
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1974",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202301099892",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-09",
+      "status_date": "2023-04-21",
+      "estimated_cost": 60000,
+      "revised_cost": 154706,
+      "description": "three units: (3) kitchen remodels, in kind, layout & (1) complete bathroom remodel, in kind. one unit kitchen and bath, two units kitchen only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904198525",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2019-04-19",
+      "status_date": "2021-11-01",
+      "estimated_cost": 100000,
+      "revised_cost": 80000,
+      "description": "legalize existing unauthorized dwelling unit per unit legalization ord #43-14.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708235685",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-08-23",
+      "status_date": "2021-12-01",
+      "estimated_cost": 50000,
+      "revised_cost": 150000,
+      "description": "wood frame soft story seismic retrofit per ab-094",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607287885",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-28",
+      "status_date": "2006-07-28",
+      "estimated_cost": 11250,
+      "revised_cost": 11250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107337",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-29",
+      "status_date": "1991-05-13",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705399",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-23",
+      "status_date": "1988-03-22",
+      "estimated_cost": 20000,
+      "description": "comply w/abatement #144055, minor demolition of partitions",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700294",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-01-09",
+      "status_date": "1987-07-31",
+      "estimated_cost": 30000,
+      "description": "add 2 car garage at basement level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603645",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-03-31",
+      "status_date": "1986-10-13",
+      "estimated_cost": 1600,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501130",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-02-13",
+      "status_date": "1986-01-10",
+      "estimated_cost": 20500,
+      "description": "to bring build into compliance with municipal code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=IRVING&street_type=ST&address_number=3801",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1794001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1794&lot=001",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1794001",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1974-12-30",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 30 December 1974",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1974sanf/page/n268/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-12-30",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the denial of a permit to alter the building at 3801 Irving Street, on conditions concerning a fluorescent emergency-exit sign on the fire doors and a chain if approved by the Bureau of Fire Prevention.",
+      "source": "sf-board-of-permit-appeals-minutes-1974-12-30"
+    }
+  ]
+}

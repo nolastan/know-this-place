@@ -1,0 +1,130 @@
+{
+  "address": "2144 Beach Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/beach-street/2144/",
+  "apn": "0914002B",
+  "block": "0914",
+  "lot": "002B",
+  "eas_baseid": "290244",
+  "coordinates": {
+    "lat": 37.803888,
+    "lng": -122.444425
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 3575,
+    "building_area_sqft": 3113,
+    "basement_area_sqft": 559,
+    "lot_depth_ft": 37.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2144 BEACH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 503901,
+    "assessed_improvement_value": 609720,
+    "last_sale_date": "1995-06-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9512107",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-02",
+      "status_date": "1996-02-02",
+      "estimated_cost": 17500,
+      "description": "new area lighting/cabs in livingrm/paint/finishes/minor repa",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-28",
+      "status_date": "1991-04-05",
+      "estimated_cost": 700,
+      "description": "ewo",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813128",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-02",
+      "status_date": "1989-03-02",
+      "estimated_cost": 1000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811144",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-08-04",
+      "status_date": "1989-01-20",
+      "estimated_cost": 2000,
+      "description": "replace all existing kitchen cabinets, lights, fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEACH&street_type=ST&address_number=2144",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0914002B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0914&lot=002B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0914002B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-06-04",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 4 June 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1980sanf/page/n102/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-06-04",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 2144 Beach Street to stand.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-06-04"
+    }
+  ]
+}

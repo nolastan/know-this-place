@@ -1,0 +1,63 @@
+{
+  "address": "38 Belcher Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/belcher-street/38/unit-2/",
+  "unit": "2",
+  "apn": "3537126",
+  "block": "3537",
+  "lot": "126",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 651086,
+    "assessed_improvement_value": 651086,
+    "last_sale_date": "2015-11-20"
+  },
+  "permits": [
+    {
+      "number": "201509036140",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-03",
+      "status_date": "2015-10-14",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "revision to 2015 0804 3299. there is an (e) opening in a wall separation between kitchen and hallway, with (e) pocket door. revision\" leave (e) opening as is to be passage and remove pocket door, creating smaller window like opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508043299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-04",
+      "status_date": "2015-10-14",
+      "estimated_cost": 3000,
+      "revised_cost": 32000,
+      "description": "install new kitchen cabinets,new sink, garbage disp,dish washer new counter tops, bathroom wall tile, floor tile new ceiling lights, install new flooring,no walls moved, removed, added or infilled.all (e) layouts to remian unchanged.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409237068",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-23",
+      "status_date": "2014-11-24",
+      "estimated_cost": 7500,
+      "revised_cost": 8500,
+      "description": "replace (10) aluminum windows in back two units with new milgard style line vinyl windows. no change in opening size.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3537126&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3537&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

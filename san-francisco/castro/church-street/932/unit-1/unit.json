@@ -1,0 +1,160 @@
+{
+  "address": "932 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/932/unit-1/",
+  "unit": "1",
+  "apn": "3620084",
+  "block": "3620",
+  "lot": "084",
+  "parcel": {
+    "building_area_sqft": 812,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 471000,
+    "assessed_improvement_value": 314000,
+    "last_sale_date": "2024-12-31"
+  },
+  "permits": [
+    {
+      "number": "202106303544",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-06-30",
+      "status_date": "2026-01-23",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "interior alterarion: remodel 1 kitchen & 1 bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111108701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-10",
+      "status_date": "2011-12-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200805222726 all work is completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111108702",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-10",
+      "status_date": "2011-12-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200807116528 all work is completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805222726",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-05-22",
+      "status_date": "2011-12-09",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "lightwell siding: vubtk added iver existing wood siding on 3 sides 1 existing window replaced (not seen from street) in lightwell. no change in door or existing (no bedroom windows).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9909739",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-05-18",
+      "status_date": "2001-05-04",
+      "estimated_cost": 15000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915639",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-08-28",
+      "status_date": "1990-01-11",
+      "estimated_cost": 10,
+      "description": "new building under const. issued 8801191",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908827",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-05-24",
+      "status_date": "1990-01-11",
+      "estimated_cost": 1,
+      "description": "installation of auto, fire sprinkler system & dry stanpipe",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908123",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-05-12",
+      "status_date": "1989-11-21",
+      "estimated_cost": 900,
+      "description": "parapet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902390",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-02-14",
+      "status_date": "1989-11-21",
+      "estimated_cost": 1500,
+      "description": "re #8801191, relocate fireplaces, extend floor decking",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900612",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-18",
+      "status_date": "1990-01-11",
+      "estimated_cost": 21600,
+      "description": "install fire sprklr system & staddpipe",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814718",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-29",
+      "status_date": "1989-11-21",
+      "estimated_cost": 1500,
+      "description": "increase height of rear yard retaining walls, re #8801191",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801191",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1988-02-01",
+      "status_date": "1990-01-12",
+      "estimated_cost": 400000,
+      "description": "3 dwelling units w/3 stories",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3620084&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3620&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

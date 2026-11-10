@@ -1,0 +1,35 @@
+{
+  "address": "3294 Clay Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/clay-street/3294/unit-4/",
+  "unit": "4",
+  "apn": "0998024",
+  "block": "0998",
+  "lot": "024",
+  "parcel": {
+    "building_area_sqft": 1246,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 714060,
+    "assessed_improvement_value": 714060,
+    "last_sale_date": "2014-06-13"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0998024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0998&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

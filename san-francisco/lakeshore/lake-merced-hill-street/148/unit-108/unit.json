@@ -1,0 +1,66 @@
+{
+  "address": "108 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-108/",
+  "apn": "7381005",
+  "block": "7381",
+  "lot": "005",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 753372,
+    "assessed_improvement_value": 502246,
+    "last_sale_date": "2020-11-12"
+  },
+  "permits": [
+    {
+      "number": "202304216179",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-21",
+      "status_date": "2023-11-15",
+      "estimated_cost": 27764,
+      "revised_cost": 27764,
+      "description": "replace (e) alum (10) windows and patio door w/ (n) vinyl. all are not visible from street. u factor <= 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005273322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-27",
+      "status_date": "2010-06-16",
+      "estimated_cost": 2386,
+      "revised_cost": 2386,
+      "description": "replace 1 door size for size, not visible from the street with aluminum milgard door. replace in kind. door to deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9706861",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-04-16",
+      "status_date": "1998-01-23",
+      "estimated_cost": 1200,
+      "description": "sola tube skylites to be install between rafferl & ceiling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=108",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

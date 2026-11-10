@@ -1,0 +1,58 @@
+{
+  "address": "855 La Playa, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/la-playa/855/unit-162/",
+  "unit": "162",
+  "apn": "1692058",
+  "block": "1692",
+  "lot": "058",
+  "parcel": {
+    "building_area_sqft": 805,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 342113,
+    "assessed_improvement_value": 342113,
+    "last_sale_date": "2016-01-21"
+  },
+  "permits": [
+    {
+      "number": "202507211230",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-07-21",
+      "status_date": "2025-07-21",
+      "estimated_cost": 50000,
+      "revised_cost": 0,
+      "description": "upgrade fire panel, install low frequency in sleeping area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003238737",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-23",
+      "status_date": "2010-09-14",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "remodel 2 bathroom & change the countertop in the kitchen. bathroom: replace plumbing fixtures & floor tiles, replace kitchen no cabinets & countertop, no structural work, provide high efficacy lighting per cec 151k",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1692058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1692&unit=162",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

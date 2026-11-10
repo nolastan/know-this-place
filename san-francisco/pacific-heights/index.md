@@ -30,6 +30,7 @@ An affluent district on the ridge north of Japantown, known for large houses and
 - [Raycliff Terrace](raycliff-terrace/) — 2 buildings, built 1950–1951; 2 in the Raycliff Terrace Historic District.
 - [Sacramento Street](sacramento-street/) — 4 buildings, built 1873–1900.
 - [Scott Street](scott-street/) — 1 building, built 1900.
+- [Service Street](service-street/) — 1 building, built 1940.
 - [Steiner Street](steiner-street/) — The house known as the exterior of the film Mrs. Doubtfire.
 - [Sutter Street](sutter-street/) — 3 buildings, built 1900.
 - [Vallejo Street](vallejo-street/) — 4 buildings, built 1905–1950; 2 in the Pacific Heights Historic District.

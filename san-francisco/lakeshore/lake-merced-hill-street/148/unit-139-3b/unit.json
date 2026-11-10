@@ -1,0 +1,46 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-3b/",
+  "unit": "3B",
+  "apn": "7381126",
+  "block": "7381",
+  "lot": "126",
+  "parcel": {
+    "building_area_sqft": 1474,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 306563,
+    "assessed_improvement_value": 306563,
+    "last_sale_date": "2010-02-19"
+  },
+  "permits": [
+    {
+      "number": "201011014097",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-01",
+      "status_date": "2011-04-04",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel kitchen & two bathrooms. remove & replace, finishes, cabinets, fixtures & appliances.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381126&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=3B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

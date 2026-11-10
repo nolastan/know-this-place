@@ -1,0 +1,44 @@
+{
+  "address": "123 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-123/",
+  "apn": "7381050",
+  "block": "7381",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169252,
+    "assessed_improvement_value": 228997
+  },
+  "permits": [
+    {
+      "number": "202008071345",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-08-07",
+      "status_date": "2020-08-21",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace 11 windows and 1 patio door. all windows are vinyl and not visible from the main street all windows with the same size and style",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=123",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

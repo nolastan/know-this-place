@@ -1,0 +1,133 @@
+{
+  "address": "615 27th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/mission/27th-street/615/",
+  "apn": "6589003D",
+  "block": "6589",
+  "lot": "003D",
+  "eas_baseid": "403069",
+  "coordinates": {
+    "lat": 37.746351,
+    "lng": -122.434064
+  },
+  "parcel": {
+    "year_built": 1948,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 2012,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0615 27TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 32317,
+    "assessed_improvement_value": 125647
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200112054586",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-12-05",
+      "status_date": "2002-06-05",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace rotted siding to north, east, and west side",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-30",
+      "status_date": "1996-11-12",
+      "estimated_cost": 12809,
+      "description": "replace 21 windows w/new vinyl one in front, same size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609385",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-29",
+      "status_date": "1996-06-04",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8108876",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-10-13",
+      "status_date": "1983-03-04",
+      "estimated_cost": 25000,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1981–2010",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=ST&address_number=615",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6589003D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6589&lot=003D",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6589003D",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-10-20",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 20 October 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n198/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-10-20",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 615 27th Street to stand.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-10-20"
+    }
+  ]
+}

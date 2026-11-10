@@ -1,0 +1,125 @@
+{
+  "address": "1295 29th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/29th-avenue/1295/",
+  "apn": "1721016",
+  "block": "1721",
+  "lot": "016",
+  "eas_baseid": "315045",
+  "coordinates": {
+    "lat": 37.76324,
+    "lng": -122.487991
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3325,
+    "building_area_sqft": 2426,
+    "basement_area_sqft": 895,
+    "lot_depth_ft": 95,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1295 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 871942,
+    "assessed_improvement_value": 373684,
+    "last_sale_date": "2010-05-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Parkway Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1915–1926",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201806071215",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2018-06-07",
+      "status_date": "2018-06-07",
+      "description": "at upper lever, barrier removal and add new ada tub in existing bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501133170",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-13",
+      "status_date": "2005-07-20",
+      "estimated_cost": 29000,
+      "revised_cost": 29000,
+      "description": "two bedrm, two bathrm, storage rm game rm & play rm to be added at ground flr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=1295",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1721016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1721&lot=016",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1721016",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48799136798894%2037.76324017007223)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-12-15",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 15 December 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n264/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-12-15",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' denial of a permit to erect a structure at 1295 - 29th Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-12-15"
+    }
+  ]
+}

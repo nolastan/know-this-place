@@ -1,0 +1,69 @@
+{
+  "address": "4150 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4150/unit-18/",
+  "unit": "18",
+  "apn": "2623185",
+  "block": "2623",
+  "lot": "185",
+  "parcel": {
+    "building_area_sqft": 680,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 634181,
+    "assessed_improvement_value": 634181,
+    "last_sale_date": "2013-02-27"
+  },
+  "permits": [
+    {
+      "number": "202509054673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-05",
+      "status_date": "2025-09-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa # 201405054886. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405054886",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2014-05-05",
+      "status_date": "2025-09-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace kitchen counters & cabinets. replace shower valve in (2 baths, replace (1) tub. tile shower & bath tub surround & floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805021185",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-02",
+      "status_date": "2008-09-24",
+      "estimated_cost": 10600,
+      "revised_cost": 10600,
+      "description": "one unit - comply w/complaint #200710450: legalize bldg upgrade (interior finishes) within a (e) storage area. refer to pa# 8702683/66 dated 12-13-91. construction date 8/05 (e) new installation without permit; 1 vanity, 1 shower, 1 toilet, 4 light fixtures, 1 bath light/fan, 7 receptacles.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623185&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=18",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

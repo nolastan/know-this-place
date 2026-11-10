@@ -1,0 +1,87 @@
+{
+  "address": "234 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-234/",
+  "apn": "7381097",
+  "block": "7381",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 375578,
+    "assessed_improvement_value": 371884,
+    "last_sale_date": "2013-05-13"
+  },
+  "permits": [
+    {
+      "number": "201306109094",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-10",
+      "status_date": "2013-06-25",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "revision to pa 201305288004; replace bathtub and shower wall tiles in kind in 2nd bath under the 1st permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305288004",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-28",
+      "status_date": "2013-08-30",
+      "estimated_cost": 10000,
+      "revised_cost": 21700,
+      "description": "remodel master bathroom in kind, repl cabinets, sinks and faucets in 2 bathrooms, replace 8 interior doors in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-04",
+      "status_date": "1996-05-14",
+      "estimated_cost": 1,
+      "description": "footing detail revision pa#9511559",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-26",
+      "status_date": "1996-05-14",
+      "estimated_cost": 20500,
+      "description": "remove/replace kitch cab/counters/applianc-no chg in layout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511559",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-07-25",
+      "status_date": "1996-09-05",
+      "estimated_cost": 50000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=234",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

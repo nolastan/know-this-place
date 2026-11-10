@@ -7,6 +7,7 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 - [Anza Street](anza-street/) — 1 building, built 1906.
 - [Baker Street](baker-street/) — 1 building, built 1904; 1 in the NOPA Historic District.
 - [Balboa Street](balboa-street/) — 1 building, built 1984.
+- [Barcelona Avenue](barcelona-avenue/) — 1 building, built 1948.
 - [Beaumont Avenue](beaumont-avenue/) — 1 building, built 1936.
 - [Blake Street](blake-street/) — 1 building, built 2000.
 - [Collins Street](collins-street/) — 1 building, built 1976.
@@ -17,9 +18,11 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 - [Grove Street](grove-street/) — 1 building, built 1906; 1 in the Panhandle Historic District.
 - [Hayes Street](hayes-street/) — 1 building, built 1908; 1 in the Southern Pacific Company Hospital Historic District.
 - [Loraine Court](loraine-court/) — 1 building, built 1900.
+- [Loyola Terrace](loyola-terrace/) — 1 building, built 1922.
 - [Lupine Avenue](lupine-avenue/) — 1 building, built 1950.
 - [Masonic Avenue](masonic-avenue/) — 1 building, built 1900.
 - [Mcallister Street](mcallister-street/) — 1 building, built 1900.
+- [Nido Avenue](nido-avenue/) — 1 building, built 1947.
 - [Shrader Street](shrader-street/) — 1 building, built 1908.
 - [Stanyan Street](stanyan-street/) — 1 building.
 - [Turk Boulevard](turk-boulevard/) — 1 building.

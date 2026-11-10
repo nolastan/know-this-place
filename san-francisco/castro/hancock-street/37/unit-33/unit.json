@@ -1,0 +1,46 @@
+{
+  "address": "33 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/37/unit-33/",
+  "apn": "3585129",
+  "block": "3585",
+  "lot": "129",
+  "parcel": {
+    "building_area_sqft": 1211,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 781200,
+    "assessed_improvement_value": 520800,
+    "last_sale_date": "2019-10-25"
+  },
+  "permits": [
+    {
+      "number": "200608250576",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-25",
+      "status_date": "2006-11-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "demolish shower and tile floor & replace provide new plumbing fixtures for old, new vanity. replace in same area, replace old electrical fixtures with new ones. all work done in master bath in main hallway on 2/f. (only 1 bathroom)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585129&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&street_number=33",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -9,9 +9,14 @@ The city's Lakeshore analysis neighborhood, in the south-western corner of San F
 - [Armory Drive](armory-drive/) — 1 building.
 - [Brotherhood Way](brotherhood-way/) — 2 buildings, built 1963–1983; 2 in the Brotherhood Way Historic District.
 - [Buckingham Way](buckingham-way/) — 1 building, built 1988.
+- [Cardenas Avenue](cardenas-avenue/) — 1 building, built 1942; 1 in the Parkmerced Historic District.
+- [Denslowe Drive](denslowe-drive/) — 1 building, built 1942.
+- [Font Boulevard](font-boulevard/) — 1 building, built 1942; 1 in the Parkmerced Historic District.
 - [Harding Road](harding-road/) — 1 building; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Holloway Avenue](holloway-avenue/) — 1 building.
+- [Lake Merced Hill Street](lake-merced-hill-street/) — 1 building, built 1975.
 - [Ocean Avenue](ocean-avenue/) — 1 building, built 1941.
+- [Rossmoor Drive](rossmoor-drive/) — 1 building, built 1939.
 - [Skyline Boulevard](skyline-boulevard/) — 1 building, built 1920.
 - [Thomas More Way](thomas-more-way/) — 1 building, built 1954; 1 in the Brotherhood Way Historic District.
 - [Varela Avenue](varela-avenue/) — 1 building, built 2020; 1 in the Parkmerced Historic District.

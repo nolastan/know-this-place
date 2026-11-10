@@ -1,0 +1,66 @@
+{
+  "address": "863 Wisconsin Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/wisconsin-street/865/unit-863/",
+  "apn": "4162102",
+  "block": "4162",
+  "lot": "102",
+  "parcel": {
+    "building_area_sqft": 1560,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 280061,
+    "assessed_improvement_value": 409430
+  },
+  "permits": [
+    {
+      "number": "202510298476",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-10-29",
+      "status_date": "2025-10-29",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "stucco work on left, right, rear of bldg. street visible. replacement 2 sliding doors at back of bldg (replace in kind).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807194993",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-19",
+      "status_date": "2018-07-19",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "termite damage repair to shed siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207164974",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-16",
+      "status_date": "2012-07-17",
+      "estimated_cost": 1000,
+      "revised_cost": 1500,
+      "description": "cut & remove existing conc. slab-on-grade at inside of storage shed located at rear yard of the lot, replace with new 4\" conc. slab-on-grade reinforced with #4@12\"o.c. each way, approx. area 8'x16', no work to existing shed. existing storage shed has been shown under previous permit app. #9016979.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4162102&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4162&street_number=863",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

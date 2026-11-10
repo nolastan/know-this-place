@@ -1,0 +1,35 @@
+{
+  "address": "855 La Playa, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/la-playa/855/unit-161/",
+  "unit": "161",
+  "apn": "1692155",
+  "block": "1692",
+  "lot": "155",
+  "parcel": {
+    "building_area_sqft": 1028,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 395276,
+    "assessed_improvement_value": 262894,
+    "last_sale_date": "2013-05-21"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1692155&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1692&unit=161",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

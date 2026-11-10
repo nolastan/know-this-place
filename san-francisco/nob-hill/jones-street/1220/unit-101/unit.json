@@ -1,0 +1,130 @@
+{
+  "address": "1220 Jones Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/jones-street/1220/unit-101/",
+  "unit": "101",
+  "apn": "0221132",
+  "block": "0221",
+  "lot": "132",
+  "parcel": {
+    "building_area_sqft": 1175,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 559141,
+    "assessed_improvement_value": 486995,
+    "last_sale_date": "1990-10-22"
+  },
+  "permits": [
+    {
+      "number": "201003248886",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-03-24",
+      "status_date": "2010-03-25",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "change existing sprinklers to quick response sidewall, concealed & recessedtype. 15 total",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001285507",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-28",
+      "status_date": "2010-07-09",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel existing kitchen, remove e partition wall to be replaced by a pony wall. new electrical layout on kitchen, hallway, living room, dining room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309023637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-02",
+      "status_date": "2004-02-06",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "bathroom remodel in one unit. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206270189",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-27",
+      "status_date": "2002-11-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "master bath remodel new tub shower sink no change in walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907876",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-05-09",
+      "status_date": "1989-05-16",
+      "estimated_cost": 1,
+      "description": "for clarification purposes only for occupancy for floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905284",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-03",
+      "status_date": "1989-05-16",
+      "estimated_cost": 6000,
+      "description": "kitchen remodel 5th & 6th fls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901587",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-01-31",
+      "status_date": "1989-05-08",
+      "estimated_cost": 5000,
+      "description": "awning",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802120",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-02-22",
+      "status_date": "1989-02-28",
+      "estimated_cost": 250000,
+      "description": "complete work under #8304760-s4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713366",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-17",
+      "status_date": "1988-01-11",
+      "estimated_cost": 10000,
+      "description": "install dry stand pipe to comply w/sf fire dept. #8304760s4",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221132&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=101",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

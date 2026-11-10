@@ -1,0 +1,68 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-1f/",
+  "unit": "1F",
+  "apn": "7381118",
+  "block": "7381",
+  "lot": "118",
+  "parcel": {
+    "building_area_sqft": 1384,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 111008,
+    "assessed_improvement_value": 287207,
+    "last_sale_date": "1997-11-13"
+  },
+  "permits": [
+    {
+      "number": "201706139197",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-06-13",
+      "status_date": "2017-06-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit - revision to pa 2017-0310-1199 demolish walls between kitchen and living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703101199",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-10",
+      "status_date": "2017-03-24",
+      "estimated_cost": 26000,
+      "revised_cost": 50000,
+      "description": "#1f - interior finish work- new kitchen, cabinets & appliances. new recessed lighting, new tile in bathroom, new cabinets in media room, new cabinets in den/bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209035464",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-09-03",
+      "status_date": "2002-09-20",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "change cabinets counters and floor kitchen remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381118&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=1F",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

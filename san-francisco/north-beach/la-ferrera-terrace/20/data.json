@@ -1,0 +1,180 @@
+{
+  "address": "20 La Ferrera Terrace, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/la-ferrera-terrace/20/",
+  "apn": "0061002B",
+  "block": "0061",
+  "lot": "002B",
+  "eas_baseid": "276338",
+  "coordinates": {
+    "lat": 37.803968,
+    "lng": -122.407035
+  },
+  "parcel": {
+    "year_built": 1992,
+    "units": 1,
+    "stories": 3,
+    "rooms": 5,
+    "bathrooms": 4,
+    "bedrooms": 2,
+    "lot_area_sqft": 2038,
+    "building_area_sqft": 3035,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0020 LA FERRERA          TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2746833,
+    "assessed_improvement_value": 1831217,
+    "last_sale_date": "2005-11-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1992",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202001131708",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-13",
+      "status_date": "2020-07-17",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel master bathroom in same location on the 3/f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707055982",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-07-05",
+      "status_date": "2007-07-05",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605040719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-04",
+      "status_date": "2006-11-17",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "interior remodel including kitchen to bath #2 add window at opening at street elevation enlarge (2) windows at rear elevation windows to meet u-factor (0.67 or better",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815704",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-11",
+      "status_date": "1999-02-11",
+      "estimated_cost": 15000,
+      "description": "upgrade fixtures-plumbing,electrical & patch sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9212834",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-08-04",
+      "status_date": "1992-12-05",
+      "estimated_cost": 1,
+      "description": "as-built record of existing deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211105",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1992-07-07",
+      "status_date": "1992-07-30",
+      "estimated_cost": 1,
+      "description": "conc. planter. remove deck p.a. #9012431s stairs comply as++",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121632",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-13",
+      "status_date": "1992-08-07",
+      "estimated_cost": 1,
+      "description": "revision to 9012431s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9108348",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1991-05-14",
+      "status_date": "1991-10-28",
+      "description": "demolish single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012431S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1990-06-25",
+      "status_date": "1992-08-07",
+      "estimated_cost": 225000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LA%20FERRERA&street_type=TER&address_number=20",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0061002B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0061&lot=002B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0061002B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-07-31",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 31 July 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n202/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-07-31",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and the permit to demolish the building at 20 La Ferrera Terrace, on the conditions that the developer implement the five conditions in the letter dated July 9, 1991 and the permits be suspended if three incidents of alleyway blockage are reported during construction.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-07-31"
+    }
+  ]
+}

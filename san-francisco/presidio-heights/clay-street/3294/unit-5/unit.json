@@ -1,0 +1,47 @@
+{
+  "address": "3294 Clay Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/clay-street/3294/unit-5/",
+  "unit": "5",
+  "apn": "0998025",
+  "block": "0998",
+  "lot": "025",
+  "parcel": {
+    "building_area_sqft": 1487,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1104080,
+    "assessed_improvement_value": 736053,
+    "last_sale_date": "2021-04-13"
+  },
+  "permits": [
+    {
+      "number": "202107265119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-26",
+      "status_date": "2022-03-16",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit: remodel (e) kitchen and 2 bathroom (3/f & 4/f). remove non-load bear wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0998025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0998&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

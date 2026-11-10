@@ -1,0 +1,172 @@
+{
+  "address": "1391–1399 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/haight-street/1391/",
+  "apn": "1243029",
+  "block": "1243",
+  "lot": "029",
+  "eas_baseid": "298243",
+  "coordinates": {
+    "lat": 37.770144,
+    "lng": -122.445003
+  },
+  "address_range": "1391–1399",
+  "street_numbers_on_parcel": [
+    "1391",
+    "1393",
+    "1395",
+    "1397",
+    "1399"
+  ],
+  "also_addressed": [
+    "1200 MASONIC AVE"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 5,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2187.5,
+    "building_area_sqft": 4924,
+    "lot_depth_ft": 87.5,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "NA",
+    "zoning": "HAIGHT",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "1399 1391 HAIGHT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2791580,
+    "assessed_improvement_value": 1196388,
+    "last_sale_date": "2019-02-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Haight Ashbury Counterculture Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1966–1975",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202601284738",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-28",
+      "status_date": "2026-04-28",
+      "estimated_cost": 70000,
+      "revised_cost": 202193,
+      "description": "yogurt shop: counter, sink, bathroom remodel. the project includes a change of occupancy from the existing occupancy to b",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301130195",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-13",
+      "status_date": "2024-08-19",
+      "estimated_cost": 2500,
+      "revised_cost": 3500,
+      "description": "accessible business entrance program per ordinance 51-16 to convert main door (swing door) to powericed operated door for ada compliant per mandatory disability access improvent program (mda) abe# 202001301486",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810144116",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-14",
+      "status_date": "2008-10-14",
+      "estimated_cost": 20900,
+      "revised_cost": 20900,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8302566",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-03-28",
+      "status_date": "1984-03-02",
+      "estimated_cost": 45000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8302210",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-03-17",
+      "status_date": "1984-10-05",
+      "estimated_cost": 60000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1983–2026",
+    "shown_on_page": 5,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAIGHT&street_type=ST&address_number=1391",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1243029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1243&lot=029",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1243029",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44500289200224%2037.770144264087094)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-12-14",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 14 December 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf/page/n320/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-12-14",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Health's denial of a permit for a food preparation and service establishment at 1399 Haight Street in further hearing, after the appellant presented the letter requested by the Board at the last meeting.",
+      "source": "sf-board-of-permit-appeals-minutes-1977-12-14"
+    }
+  ]
+}

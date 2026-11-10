@@ -1,0 +1,47 @@
+{
+  "address": "1940 Stockton Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/stockton-street/1940/unit-303/",
+  "unit": "303",
+  "apn": "0062058",
+  "block": "0062",
+  "lot": "058",
+  "parcel": {
+    "building_area_sqft": 1308,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 508355,
+    "assessed_improvement_value": 508355,
+    "last_sale_date": "2025-01-16"
+  },
+  "permits": [
+    {
+      "number": "200211191803",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-11-19",
+      "status_date": "2002-11-26",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "tile tub surround, tile sloor. replace sink and toilet and shower valves. install 2 wall light fixtu",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0062058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0062&unit=303",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

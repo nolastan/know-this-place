@@ -1,0 +1,141 @@
+{
+  "address": "1233 Holloway Avenue, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/holloway-avenue/1233/",
+  "apn": "6995047",
+  "block": "6995",
+  "lot": "047",
+  "eas_baseid": "411168",
+  "coordinates": {
+    "lat": 37.721412,
+    "lng": -122.468609
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 5749,
+    "building_area_sqft": 1905,
+    "basement_area_sqft": 300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 1233 HOLLOWAY            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 268722,
+    "assessed_improvement_value": 209932,
+    "last_sale_date": "1994-09-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201208228002",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-08-22",
+      "status_date": "2013-09-16",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "back fill existing swimming pool with compacted soil. remove all existing swimming equipment",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201001255297",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-25",
+      "status_date": "2010-02-25",
+      "estimated_cost": 15600,
+      "revised_cost": 15600,
+      "description": "concrete deck repair @ front. wood window sill & frame repair @ side. wood porch repair & rear. per western exterminator co. report#704644756.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009291992",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-29",
+      "status_date": "2001-01-29",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "revision to 9612833 as per inspector's note and plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003315997",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-31",
+      "status_date": "2000-09-30",
+      "revised_cost": 20000,
+      "description": "renewal of application 9612833",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612833",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-07-16",
+      "status_date": "1998-05-29",
+      "estimated_cost": 20000,
+      "description": "remvoe non conforming condition enlarge (e)windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOLLOWAY&street_type=AVE&address_number=1233",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6995047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6995&lot=047",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6995047",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1978-10-18",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 18 October 1978",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1978sanf/page/n254/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-10-18",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the granting of the permit to alter the building at 1233 Holloway Street, the protest having failed with one member voting to overrule.",
+      "source": "sf-board-of-permit-appeals-minutes-1978-10-18"
+    }
+  ]
+}

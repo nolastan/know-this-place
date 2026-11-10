@@ -1,0 +1,123 @@
+{
+  "address": "1434 29th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/29th-avenue/1434/",
+  "apn": "1825031",
+  "block": "1825",
+  "lot": "031",
+  "eas_baseid": "319371",
+  "coordinates": {
+    "lat": 37.760551,
+    "lng": -122.487333
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2571,
+    "basement_area_sqft": 926,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1434 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 926747,
+    "assessed_improvement_value": 488390,
+    "last_sale_date": "2014-05-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201407231935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-23",
+      "status_date": "2014-07-29",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404284368",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-28",
+      "status_date": "2014-10-08",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "add 2 bedrooms, 1 family room, 2 full baths, and laundry on existing gr fl per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103011172",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-03-01",
+      "status_date": "2011-03-01",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel (e) kitchen and bathroom on 2nd flr: lighting to comply with 150(k) no change to wall and window, doors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=1434",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1825031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1825&lot=031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1825031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-04-01",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 1 April 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n76/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-04-01",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the permit to alter the building at 1434 - 29th Avenue, concurring in the granting of the permit.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-04-01"
+    }
+  ]
+}

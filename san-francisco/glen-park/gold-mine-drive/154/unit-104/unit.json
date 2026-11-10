@@ -1,0 +1,88 @@
+{
+  "address": "104 Gold Mine Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/gold-mine-drive/154/unit-104/",
+  "apn": "7522029",
+  "block": "7522",
+  "lot": "029",
+  "parcel": {
+    "building_area_sqft": 1387,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 802167,
+    "assessed_improvement_value": 534777,
+    "last_sale_date": "2017-12-20"
+  },
+  "permits": [
+    {
+      "number": "202609118000",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-09-11",
+      "status_date": "2026-09-18",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install 4 new skylights between rafters, no structural work will be done. the skylights will sit on a curb and wil be placed 3' away from property line to prevent the need for barrier.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202509054720",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-05",
+      "status_date": "2026-07-28",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "in kind repair is less than 50% of non historic property to repair dry rot to sister joist and replace deck boards and guardrails in front, as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602240366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-24",
+      "status_date": "2016-06-02",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace window and patio door with wood clad visable form the street and 4 windows and patio doors wth fiberglass, not visable form the street; replace in-kind, same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509193199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-19",
+      "status_date": "2005-11-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8817791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-09",
+      "status_date": "1989-03-17",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7522029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7522&street_number=104",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

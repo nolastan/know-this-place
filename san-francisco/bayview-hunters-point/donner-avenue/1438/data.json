@@ -1,0 +1,117 @@
+{
+  "address": "1438 Donner Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/donner-avenue/1438/",
+  "apn": "4882024",
+  "block": "4882",
+  "lot": "024",
+  "eas_baseid": "372998",
+  "coordinates": {
+    "lat": 37.722937,
+    "lng": -122.390901
+  },
+  "parcel": {
+    "year_built": 1962,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "lot_area_sqft": 7500,
+    "building_area_sqft": 7500,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "M1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1438 DONNER              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 239464,
+    "assessed_improvement_value": 343251,
+    "last_sale_date": "1997-07-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1962",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200308252899",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-25",
+      "status_date": "2004-01-28",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DONNER&street_type=AVE&address_number=1438",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4882024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4882&lot=024",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4882024",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1992-09-02",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 2 September 1992",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1992sanf/page/n184/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1993-11-10",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 10 November 1993",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n147/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1992-09-02",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the San Francisco Police Department and denied the Junk Dealer permit at 1438 Donner Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1992-09-02"
+    },
+    {
+      "date": "1993-11-10",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the S.F. Police Department and granted the Junk Dealer permit for Metal Recycling, Inc. at 1438 Donner Avenue, with conditions on purchases, record-keeping, management, and reporting.",
+      "source": "sf-board-of-permit-appeals-minutes-1993-11-10"
+    },
+    {
+      "date": "1993-11-10",
+      "kind": "occupancy",
+      "description": "Metal Recycling, Inc. was at 1438 Donner Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1993-11-10"
+    }
+  ]
+}

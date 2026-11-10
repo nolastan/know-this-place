@@ -1,0 +1,138 @@
+{
+  "address": "187 Dublin Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/dublin-street/187/",
+  "apn": "6096011",
+  "block": "6096",
+  "lot": "011",
+  "eas_baseid": "391641",
+  "coordinates": {
+    "lat": 37.71711,
+    "lng": -122.427163
+  },
+  "parcel": {
+    "year_built": 1951,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1945.5,
+    "building_area_sqft": 1175,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0187 DUBLIN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 215950,
+    "assessed_improvement_value": 136210,
+    "last_sale_date": "1995-10-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9505530",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-04-17",
+      "status_date": "1995-09-26",
+      "estimated_cost": 2700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512656",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-11-06",
+      "status_date": "1986-08-04",
+      "estimated_cost": 1000,
+      "revised_cost": 3000,
+      "description": "horizontal extension - compliance with bldg. inspector's",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400515",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-01-13",
+      "status_date": "1990-08-10",
+      "estimated_cost": 1000,
+      "description": "work being done under 8512656",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312799",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-12-15",
+      "status_date": "1984-02-27",
+      "estimated_cost": 916,
+      "description": "install 2 aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8210476",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-12-23",
+      "status_date": "1992-04-02",
+      "estimated_cost": 15414,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DUBLIN&street_type=ST&address_number=187",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6096011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6096&lot=011",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6096011",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1983-11-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 November 1983",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1983sanf/page/n262/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1983-11-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator and denied the rear yard variance for property at 187 Dublin Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1983-11-16"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "address": "2445 Polk Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/polk-street/2445/unit-1/",
+  "unit": "1",
+  "apn": "0526041",
+  "block": "0526",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 1165,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "basement_area_sqft": 420
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 942352,
+    "assessed_improvement_value": 628234,
+    "last_sale_date": "2021-10-18"
+  },
+  "permits": [
+    {
+      "number": "202505126222",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-05-12",
+      "status_date": "2025-05-12",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "re-roofing no torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703080955",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-08",
+      "status_date": "2017-03-08",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "voluntary foundation upgrade per plans. n/a for maher.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0526041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0526&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

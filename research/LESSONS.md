@@ -3145,3 +3145,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   nowhere on that map lot. *Read that list before `apply` or `manifest`; a
   parcel whose own range is the recorded address decides it.* (2026-11-09,
   #557)
+
+- **An external reader told "no names" still writes them, and a
+  capitalised-word filter can't find them.** Meta Muse's permit-appeals run
+  kept private names out of its descriptions but put them in reader notes
+  and quotations ("recorded as X dba Y", "Letter from X for the …").
+  Flagging every capitalised pair caught O'Farrell, Sansome and Bureau of
+  Building Inspection and was useless. What worked: harvest the people the
+  source itself prints — after Mr./Mrs./Esq., in the appellant lines, after
+  "represented by" — drop any token the source also uses in lower case or in
+  a business name, and scrub only those full names (or a harvested first name
+  before a harvested surname). Then drop any note sentence that lost a name.
+  *Run it over every field that is committed, not only the description.*
+  (2026-11-10, sf-board-of-permit-appeals-minutes)

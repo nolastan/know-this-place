@@ -1,0 +1,141 @@
+{
+  "address": "161 Prentiss Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/prentiss-street/161/",
+  "apn": "5654031",
+  "block": "5654",
+  "lot": "031",
+  "eas_baseid": "381678",
+  "coordinates": {
+    "lat": 37.740626,
+    "lng": -122.411841
+  },
+  "parcel": {
+    "year_built": 1954,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 1750,
+    "building_area_sqft": 911,
+    "lot_depth_ft": 70,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0161 PRENTISS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1194718,
+    "assessed_improvement_value": 1192020,
+    "last_sale_date": "2018-04-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Assessment",
+    "yearbuilt": "1954",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208190941",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-08-19",
+      "status_date": "2025-11-05",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "first floor single story addition at rear with roof deck. 1st and 2nd floor renovation. window & exterior door replacement. front facade stucco replacement. new rear deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801108317",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-10",
+      "status_date": "2018-02-26",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace (e) 6ft sliding glass door in-kind in back of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121460",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-11-12",
+      "status_date": "1991-12-09",
+      "estimated_cost": 2688,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003934",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-03-01",
+      "status_date": "1990-04-11",
+      "estimated_cost": 500,
+      "description": "build bathroom bar, legal entry legalize 2 built rooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713534",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-21",
+      "status_date": "1989-02-28",
+      "estimated_cost": 4500,
+      "description": "build bathrm, bar, legal entry, legalize rooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PRENTISS&street_type=ST&address_number=161",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5654031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5654&lot=031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5654031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1988-01-27",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 27 January 1988",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19871988s/page/n104/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1988-01-27",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and granted the permit to alter the building at 161 Prentiss Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1988-01-27"
+    }
+  ]
+}

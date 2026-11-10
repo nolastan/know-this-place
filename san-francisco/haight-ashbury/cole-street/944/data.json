@@ -1,0 +1,159 @@
+{
+  "address": "944 Cole Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/cole-street/944/",
+  "apn": "1271024A",
+  "block": "1271",
+  "lot": "024A",
+  "eas_baseid": "299432",
+  "coordinates": {
+    "lat": 37.765184,
+    "lng": -122.449537
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 3,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 4,
+    "lot_area_sqft": 6499,
+    "building_area_sqft": 4665,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0956 0944 COLE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 386008,
+    "assessed_improvement_value": 315043
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cole Valley Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201708033776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-03",
+      "status_date": "2017-12-19",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "reroofing: install new built-up roof, centainteed \"sa-3-c-s\". 1 nailbase/1 midply/1 white mineral cap sheet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306260575",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-26",
+      "status_date": "2013-10-01",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair/replace in kind, windows at storefront, broken/cracked glass, rotten trim",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808058441",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "2008-08-05",
+      "status_date": "2008-12-23",
+      "revised_cost": 4000,
+      "description": "erect a electric wall single faced direct sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023198",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-11-08",
+      "status_date": "1991-06-14",
+      "estimated_cost": 14485,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409077",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-08-21",
+      "status_date": "1985-07-11",
+      "estimated_cost": 12000,
+      "description": "2 concrete block retaining walls approxi. 42\" hg & 65' long",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1984–2017",
+    "shown_on_page": 5,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLE&street_type=ST&address_number=944",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1271024A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1271&lot=024A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1271024A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44953704794369%2037.765183893511455)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-02-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 February 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf/page/n46/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-02-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the City Planning Department's disapproval of an application for a second hand dealer permit at 944 Cole Street, with a stipulation that the only used items to be sold be reading material.",
+      "source": "sf-board-of-permit-appeals-minutes-1977-02-16"
+    }
+  ]
+}

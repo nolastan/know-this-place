@@ -1,0 +1,112 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-1c/",
+  "unit": "1C",
+  "apn": "7381115",
+  "block": "7381",
+  "lot": "115",
+  "parcel": {
+    "building_area_sqft": 1384,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 564137,
+    "assessed_improvement_value": 376091,
+    "last_sale_date": "2021-11-16"
+  },
+  "permits": [
+    {
+      "number": "202608176721",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-08-17",
+      "status_date": "2026-11-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "in-kind remodeling of 1 bathroom(s) in 1st fl with 0 shower pan(s).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901089785",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-08",
+      "status_date": "2019-09-13",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace 2 windows not visible from street. alum to alum. no strcutural changes. max u-factor 0.32 or better.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705197150",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-19",
+      "status_date": "2017-09-22",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "one unit: replace 2 patio doors. w/brown vinyl. non-street facing. max u.factor 0.32, same size, same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704194364",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-19",
+      "status_date": "2017-08-24",
+      "revised_cost": 14000,
+      "description": "(4) windows and (4) sliding doors replacement, like for like , aluminumto vinyl, double glass, bronze exterior color. not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408113469",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-11",
+      "status_date": "2014-08-25",
+      "estimated_cost": 9950,
+      "revised_cost": 9950,
+      "description": "common area- 60 sq.ft. of roof decking.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906301663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-30",
+      "status_date": "2009-08-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200712039452. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712039452",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-12-03",
+      "status_date": "2009-08-05",
+      "estimated_cost": 9650,
+      "revised_cost": 9650,
+      "description": "replace 5/8\" drywall in bedroom, closet and bathroom of apartment approx: 2' high x 120' long. replace toilet, tub + sink, texture replaced drywall + paint (water damage from inside leak).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381115&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=1C",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

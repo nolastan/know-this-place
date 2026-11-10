@@ -1,0 +1,46 @@
+{
+  "address": "1259 Oak Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/oak-street/1259/unit-3/",
+  "unit": "3",
+  "apn": "1219056",
+  "block": "1219",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 1673,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 157142,
+    "assessed_improvement_value": 327424
+  },
+  "permits": [
+    {
+      "number": "201904198464",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-19",
+      "status_date": "2019-08-21",
+      "estimated_cost": 17436,
+      "revised_cost": 17436,
+      "description": "remodel bath. install new shower unit tiles, cabinet, banicyt sq footage approx 70",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1219056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1219&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

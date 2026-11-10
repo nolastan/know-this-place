@@ -1,0 +1,106 @@
+{
+  "address": "1865 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/vallejo-street/1865/",
+  "apn": "0568019",
+  "block": "0568",
+  "lot": "019",
+  "eas_baseid": "285454",
+  "coordinates": {
+    "lat": 37.795871,
+    "lng": -122.42794
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "lot_area_sqft": 3062,
+    "building_area_sqft": 2480,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 1865 VALLEJO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 222042,
+    "assessed_improvement_value": 299768
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9719403",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-01",
+      "status_date": "1998-03-23",
+      "estimated_cost": 3200,
+      "description": "repair front entry stairs & landing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511685",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-26",
+      "status_date": "1996-11-13",
+      "estimated_cost": 300,
+      "description": "add trellis to (e) fence along prop line in rear garden.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=1865",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0568019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0568&lot=019",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0568019",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1995-09-27",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 27 September 1995",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1995sanf/page/n19/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-09-27",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Building Inspection's issuance of a permit to alter a building by adding a trellis to the existing property line fence in the rear garden, not to exceed 10 feet in height, at 1865 Vallejo Street, granting the permit.",
+      "source": "sf-board-of-permit-appeals-minutes-1995-09-27"
+    }
+  ]
+}

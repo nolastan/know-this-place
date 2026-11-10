@@ -12,6 +12,7 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Blackstone Court](blackstone-court/) — 1 building, built 1850; 1 in the Blackstone Court Historic District.
 - [Broderick Street](broderick-street/) — 1 building, built 1925; 1 in the Cow Hollow First Bay Tradition Historic District.
 - [Buchanan Street](buchanan-street/) — 1 building, built 1893.
+- [Capra Way](capra-way/) — 1 building, built 1935; 1 in the Marina Corporation Residential Historic District.
 - [Casa Way](casa-way/) — 1 building, built 1930; 1 in the Marina Corporation Residential Historic District.
 - [Cervantes Boulevard](cervantes-boulevard/) — 1 building, built 1925; 1 in the Marina Corporation Residential Historic District.
 - [Charlton Court](charlton-court/) — 1 building, built 1900.
@@ -30,6 +31,7 @@ A low-lying district on filled ground along the northern waterfront, largely bui
 - [Magnolia Street](magnolia-street/) — 1 building, built 2000.
 - [Mallorca Way](mallorca-way/) — 1 building, built 1950; 1 in the Marina Corporation Residential Historic District.
 - [Marina Boulevard](marina-boulevard/) — 1 building, built 1938.
+- [Miley Street](miley-street/) — 1 building, built 1972.
 - [Moraga Avenue](moraga-avenue/) — 1 building; 1 in the Presidio of San Francisco Historic District.
 - [North Point Street](north-point-street/) — 3 buildings, built 1926–1928.
 - [Octavia Street](octavia-street/) — 2 buildings, built 1924–1926.

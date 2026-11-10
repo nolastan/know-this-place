@@ -1,0 +1,129 @@
+{
+  "address": "751 32nd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/32nd-avenue/751/",
+  "apn": "1612007",
+  "block": "1612",
+  "lot": "007",
+  "eas_baseid": "310486",
+  "coordinates": {
+    "lat": 37.774977,
+    "lng": -122.492219
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2141,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0753 0751 32ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 899552,
+    "assessed_improvement_value": 475982,
+    "last_sale_date": "2019-06-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201912199999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-19",
+      "status_date": "2020-06-09",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "replace 4 front windows in-kind with wood. repair windows at kitchen and bathroom. (total 6 windows, same size/location). comply w/ his nov #201990671",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910094079",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-09",
+      "status_date": "2020-10-06",
+      "estimated_cost": 46000,
+      "revised_cost": 60000,
+      "description": "interior remodel of 2nd floor. remodeling (e) bathrooms add bath tub & relocate (e) kitchen. repair/replace drywall as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8204029",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-05-21",
+      "status_date": "1983-03-04",
+      "estimated_cost": 18000,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200196",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-01-11",
+      "status_date": "1983-03-04",
+      "estimated_cost": 18000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=32ND&street_type=AVE&address_number=751",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1612007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1612&lot=007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1612007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-03-24",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 24 March 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n54/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-03-24",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and denied the permit to alter the building at 751 32nd Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-03-24"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "address": "103 Liberty Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/liberty-street/105/unit-103/",
+  "apn": "3607080",
+  "block": "3607",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 1677,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 913500,
+    "assessed_improvement_value": 913500,
+    "last_sale_date": "2016-05-10"
+  },
+  "permits": [
+    {
+      "number": "202501148327",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-01-14",
+      "status_date": "2025-01-14",
+      "estimated_cost": 50000,
+      "revised_cost": 0,
+      "description": "replace (e) vinyl siding and fire rated windows at property line.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202106293383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-29",
+      "status_date": "2021-10-13",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607142416",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-14",
+      "status_date": "2016-07-15",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "re-tile master bath, guest bath and powder room. relocate outlets in mirors. relocate electric panel to area outside of closet. relocate rough plumbing in said bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604285999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-28",
+      "status_date": "2016-05-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for work approved under pa#201311252752. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311252752",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-11-25",
+      "status_date": "2013-11-25",
+      "estimated_cost": 18000,
+      "revised_cost": 26800,
+      "description": "remodel kitchen, remove existing kitchen cabinets & counter tops. install new cabinets & counter. approx 150 sq ft. install new lighting. remove existing tub in bathroom & replace with shower stall only (5x12). no structural walls removed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2013–2025",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&street_number=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

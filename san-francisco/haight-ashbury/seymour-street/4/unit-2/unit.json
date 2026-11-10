@@ -1,0 +1,64 @@
+{
+  "address": "2 Seymour Street, San Francisco, CA 94115",
+  "path": "/san-francisco/haight-ashbury/seymour-street/4/unit-2/",
+  "unit": "2",
+  "apn": "1154050",
+  "block": "1154",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1739,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 526125,
+    "assessed_improvement_value": 526125,
+    "last_sale_date": "2006-02-28"
+  },
+  "permits": [
+    {
+      "number": "202510227891",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-22",
+      "status_date": "2025-12-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing: tear-off (e) roof. install (1) layer of underlayment papaer. install 1 layer of composition shingles. no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202510227890",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-22",
+      "status_date": "2026-01-23",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "facade siding replacement: remove the (e) siding and replace for a new one in-kind. street facing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2015–2025",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1154050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1154&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

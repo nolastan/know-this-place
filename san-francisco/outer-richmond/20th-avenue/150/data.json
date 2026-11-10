@@ -1,0 +1,149 @@
+{
+  "address": "150 20th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/20th-avenue/150/",
+  "apn": "1379027",
+  "block": "1379",
+  "lot": "027",
+  "eas_baseid": "301832",
+  "coordinates": {
+    "lat": 37.785042,
+    "lng": -122.479387
+  },
+  "parcel": {
+    "year_built": 1986,
+    "units": 3,
+    "stories": 3,
+    "rooms": 15,
+    "bathrooms": 6,
+    "bedrooms": 7,
+    "lot_area_sqft": 3120,
+    "building_area_sqft": 4338,
+    "basement_area_sqft": 400,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0152 0150 20TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 57951,
+    "assessed_improvement_value": 683331
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1986",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002204944",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-20",
+      "status_date": "2021-10-15",
+      "estimated_cost": 210000,
+      "revised_cost": 210000,
+      "description": "replace all windows with fiberlass windows. replace all exterior covering with siding. horizontal siding or shingle.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801313630",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-31",
+      "status_date": "2008-02-19",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613330",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-10-23",
+      "status_date": "1987-02-25",
+      "estimated_cost": 2000,
+      "description": "revision to appl #8505620 per bpa decision",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609330",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-08-01",
+      "status_date": "1987-03-06",
+      "estimated_cost": 8000,
+      "description": "revision to approved p.a. #8505620",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603749",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1986-04-03",
+      "status_date": "1986-06-13",
+      "description": "demolish residential",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505620",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1985-05-30",
+      "status_date": "1987-03-05",
+      "estimated_cost": 230000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=AVE&address_number=150",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1379027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1379&lot=027",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1379027",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-06-11",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 11 June 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n112/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1986-06-11",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to erect a structure at 150-20th Avenue to stand, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-06-11"
+    }
+  ]
+}

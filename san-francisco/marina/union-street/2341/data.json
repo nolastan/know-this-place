@@ -1,0 +1,119 @@
+{
+  "address": "2341 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2341/",
+  "apn": "0538020B",
+  "block": "0538",
+  "lot": "020B",
+  "eas_baseid": "284658",
+  "coordinates": {
+    "lat": 37.796508,
+    "lng": -122.437804
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 3545,
+    "building_area_sqft": 3980,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2341 UNION               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 537933,
+    "assessed_improvement_value": 637840,
+    "last_sale_date": "2000-03-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807104081",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-10",
+      "status_date": "2018-07-17",
+      "estimated_cost": 40555,
+      "revised_cost": 40500,
+      "description": "replace all street-facing windows (wood) with aluminum-clad (eagle-series). top floor arched casements to be replaced by casement-half-circle combo mulled. all grills as like-for -like pattern full divided lights, 3/4\" width, 1/2\" depth",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410017824",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-01",
+      "status_date": "2014-10-17",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-26",
+      "status_date": "1990-11-15",
+      "estimated_cost": 4500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=2341",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0538020B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0538&lot=020B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0538020B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-11-03",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 3 November 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n246/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-11-03",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of plumbing and electrical permits for legalisation of the building at 2341 Union Street, its denial of a building permit application, and the effect of its denial of a permit of occupancy for four units plus one sleeping room.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-11-03"
+    }
+  ]
+}

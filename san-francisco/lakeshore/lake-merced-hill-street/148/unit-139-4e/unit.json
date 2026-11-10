@@ -1,0 +1,100 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-4e/",
+  "unit": "4E",
+  "apn": "7381135",
+  "block": "7381",
+  "lot": "135",
+  "parcel": {
+    "building_area_sqft": 1474,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 636724,
+    "assessed_improvement_value": 636724,
+    "last_sale_date": "2022-06-06"
+  },
+  "permits": [
+    {
+      "number": "202501238934",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-23",
+      "status_date": "2025-01-23",
+      "estimated_cost": 25000,
+      "revised_cost": 48000,
+      "description": "one unit: in kind kitchen remodel (no changes to floor plan ) kitchen floors, cabinet, sink counters, 3 lighting update replacement windows (same 3 locations) retrofit 6 windows 2 sliding doors; u=0.3max. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009305502",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-30",
+      "status_date": "2021-03-08",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "replace seven windows and 2 patio doors. all visible on private street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202007130080",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2020-07-13",
+      "status_date": "2020-12-03",
+      "estimated_cost": 5000,
+      "revised_cost": 12000,
+      "description": "bath remodel. shower to shower conversion. new acrylic solid surface shower base/solid surface acrylic shower walls, new 5/8 denssheild substrate behind shower walls. new fan/light in e location, replace vanity, like for like same footprint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110046119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-04",
+      "status_date": "2011-12-16",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "bathroom remodel, in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803318383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-31",
+      "status_date": "2008-07-18",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "work @ one unit only. replace 6 windows & 2 patio door. size for size. not visable from street with milgard windows. u value less than 0.67.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713059",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-15",
+      "status_date": "1998-01-23",
+      "estimated_cost": 2000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381135&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=4E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

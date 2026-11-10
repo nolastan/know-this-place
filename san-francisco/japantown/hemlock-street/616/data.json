@@ -1,0 +1,99 @@
+{
+  "address": "616 Hemlock Street, San Francisco, CA 94115",
+  "path": "/san-francisco/japantown/hemlock-street/616/",
+  "apn": "0686031",
+  "block": "0686",
+  "lot": "031",
+  "eas_baseid": "287695",
+  "coordinates": {
+    "lat": 37.786117,
+    "lng": -122.428904
+  },
+  "parcel": {
+    "lot_area_sqft": 750,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Comm and Ind",
+    "construction_type_code": "NA",
+    "zoning": "NC-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Japantown",
+    "property_location_raw": "0000 0616 HEMLOCK             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3715,
+    "last_sale_date": "1992-01-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9303717",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1993-03-08",
+      "status_date": "1993-03-08",
+      "estimated_cost": 15000,
+      "description": "revision permit appl 9102646/add concr pad for compact/fence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102646",
+      "type": "new construction",
+      "status": "issued",
+      "filed": "1991-02-20",
+      "status_date": "1991-10-03",
+      "estimated_cost": 300000,
+      "description": "erect a one story parking structure",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HEMLOCK&street_type=ST&address_number=616",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0686031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0686&lot=031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0686031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-11-20",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 20 November 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n296/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-11-20",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and granted the permit to construct a parking lot at 616 Hemlock Street, the 2-3 vote on the motion to uphold leaving the department's issuance unoverruled.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-11-20"
+    }
+  ]
+}

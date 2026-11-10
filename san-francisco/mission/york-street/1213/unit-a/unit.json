@@ -1,0 +1,28 @@
+{
+  "address": "1213 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/1213/unit-a/",
+  "unit": "A",
+  "apn": "4266052",
+  "block": "4266",
+  "lot": "052",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 78374,
+    "assessed_improvement_value": 52241
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4266052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4266&unit=A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

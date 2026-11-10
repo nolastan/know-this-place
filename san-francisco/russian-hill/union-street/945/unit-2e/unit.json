@@ -1,0 +1,58 @@
+{
+  "address": "44 Macondray Lane, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/union-street/945/unit-2e/",
+  "unit": "2E",
+  "apn": "0120034",
+  "block": "0120",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 980,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 766505,
+    "assessed_improvement_value": 766505,
+    "last_sale_date": "2015-11-30"
+  },
+  "permits": [
+    {
+      "number": "202112224890",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-22",
+      "status_date": "2022-07-08",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "remodel e kitchen, master bedroom, guest bath. new elec outlets, 2 switches, update e elec subpanel, new fough valve of shower,toilet,faucet \"no structural work - no wall/framing modifications\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108182726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-18",
+      "status_date": "2011-11-29",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace 16 windows and siding, same size, replace in kind, u factor below 0.40",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0120034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0120&unit=2E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

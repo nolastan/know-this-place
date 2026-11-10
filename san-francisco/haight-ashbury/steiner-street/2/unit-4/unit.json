@@ -1,0 +1,49 @@
+{
+  "address": "4 Steiner Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/steiner-street/2/unit-4/",
+  "apn": "0875025",
+  "block": "0875",
+  "lot": "025",
+  "parcel": {
+    "building_area_sqft": 285,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 176823,
+    "assessed_improvement_value": 114926,
+    "last_sale_date": "1991-08-30"
+  },
+  "permits": [
+    {
+      "number": "8513702",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1985-12-04",
+      "status_date": "1988-03-15",
+      "estimated_cost": 35811,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1985–2015",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0875025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0875&street_number=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

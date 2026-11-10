@@ -1,0 +1,58 @@
+{
+  "address": "343 Frederick Street, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/frederick-street/343/unit-3/",
+  "unit": "3",
+  "apn": "1268068",
+  "block": "1268",
+  "lot": "068",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 555851,
+    "assessed_improvement_value": 555851,
+    "last_sale_date": "2015-06-19"
+  },
+  "permits": [
+    {
+      "number": "201501054908",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-05",
+      "status_date": "2015-03-18",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace 10 windows with vinyl double hung, all windows, in back of bldg (back hall). like for like replacement. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412093402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-09",
+      "status_date": "2015-03-19",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "one unit: remodel kitchen and bathroom, change lighting, update electrical, replace water lines, replace water heater. replace entry door, replace bathroom window - no walls moved, removed or added. all fixtures layout to remain unchanged.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2014–2015",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1268068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1268&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -9,7 +9,9 @@ A residential district south of the Mission proper, built up in the first decade
 - [Cayuga Avenue](cayuga-avenue/) — 1 building, built 1880.
 - [Delano Avenue](delano-avenue/) — 1 building, built 1913.
 - [Harrington Street](harrington-street/) — A 1908 house recorded as Jerry Garcia's home with his grandparents after 1947.
+- [Lawrence Avenue](lawrence-avenue/) — 1 building, built 1900.
 - [Mission Street](mission-street/) — 1 building, built 1963.
+- [Norton Street](norton-street/) — 1 building, built 1906.
 - [Oneida Avenue](oneida-avenue/) — 1 building.
 - [Onondaga Avenue](onondaga-avenue/) — 1 building, built 1979.
 - [Otsego Avenue](otsego-avenue/) — 1 building, built 1912.

@@ -1,0 +1,69 @@
+{
+  "address": "130 Landers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/345/unit-h/",
+  "unit": "H",
+  "apn": "3557093",
+  "block": "3557",
+  "lot": "093",
+  "parcel": {
+    "building_area_sqft": 1151,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 798000,
+    "assessed_improvement_value": 532000,
+    "last_sale_date": "2024-10-28"
+  },
+  "permits": [
+    {
+      "number": "201610120102",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2016-10-12",
+      "status_date": "2016-10-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa#201608054322, no electrical work will be done.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608054322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-05",
+      "status_date": "2016-11-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "ful master bath (1st floor) & powder room ( 2nd room ) renovation to include (n) fixtures, shower &tile, plumbing and electrical update in one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605107059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-10",
+      "status_date": "2016-08-05",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: kitchen demo and remodel including new cabinets, drywall repairs, and new appliances. plumbing and electrical update.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3557093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3557&unit=H",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

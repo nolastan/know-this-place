@@ -1,0 +1,151 @@
+{
+  "address": "2090 45th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/45th-avenue/2090/",
+  "apn": "2164016D",
+  "block": "2164",
+  "lot": "016D",
+  "eas_baseid": "331260",
+  "coordinates": {
+    "lat": 37.747632,
+    "lng": -122.503811
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 1750,
+    "building_area_sqft": 2928,
+    "lot_depth_ft": 70,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2090 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 87054,
+    "assessed_improvement_value": 490359
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809091166",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-09",
+      "status_date": "2008-09-09",
+      "estimated_cost": 25001,
+      "revised_cost": 25001,
+      "description": "to complete work started under pa#200208143983.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501274119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-27",
+      "status_date": "2005-02-02",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "patch leak in existing roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208143983",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2002-08-14",
+      "status_date": "2005-03-10",
+      "estimated_cost": 75000,
+      "revised_cost": 150000,
+      "description": "3rd story addition to an existing 2 story single family residence, 3 bedroom,2 bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808095",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-06-17",
+      "status_date": "1989-05-10",
+      "estimated_cost": 5949,
+      "description": "add 2nd bathrm @ garage, non-bearing partition for room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8311475",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-11-10",
+      "status_date": "1986-03-14",
+      "estimated_cost": 10000,
+      "description": "add 8 ft. to the back rms of existing 38 ft. long by 25'wide",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209444",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-11-15",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3000,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=2090",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2164016D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2164&lot=016D",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2164016D",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1984-10-03",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 3 October 1984",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1984sanf/page/n228/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1984-10-03",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator and granted the rear yard variance for property at 2090 45th Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1984-10-03"
+    }
+  ]
+}

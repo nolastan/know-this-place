@@ -1,0 +1,110 @@
+{
+  "address": "1834–1836 Grove Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/grove-street/1834/",
+  "apn": "1187003F",
+  "block": "1187",
+  "lot": "003F",
+  "eas_baseid": "468718",
+  "coordinates": {
+    "lat": 37.775011,
+    "lng": -122.447026
+  },
+  "address_range": "1834–1836",
+  "street_numbers_on_parcel": [
+    "1834",
+    "1836"
+  ],
+  "parcel": {
+    "year_built": 1917,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2838,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "1836 1834 GROVE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142161,
+    "assessed_improvement_value": 209198
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9720902",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-17",
+      "status_date": "1999-01-11",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209411",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-11-15",
+      "status_date": "1983-09-12",
+      "estimated_cost": 500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GROVE&street_type=ST&address_number=1834",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1187003F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1187&lot=003F",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1187003F",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1974-06-03",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 3 June 1974",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1974sanf/page/n98/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-06-03",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the denial of a license for a Residential Care Home for Adults at 1836 Grove Street, on condition that fire extinguishers be provided, a smoke detector installed, and the ceiling and walls of the alleyway covered with 5/8-inch sheet rock.",
+      "source": "sf-board-of-permit-appeals-minutes-1974-06-03"
+    }
+  ]
+}

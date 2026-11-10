@@ -1,0 +1,79 @@
+{
+  "address": "1635 Bush Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/bush-street/1635/unit-10/",
+  "unit": "10",
+  "apn": "0672028",
+  "block": "0672",
+  "lot": "028",
+  "parcel": {
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 702270,
+    "assessed_improvement_value": 468180,
+    "last_sale_date": "2022-07-18"
+  },
+  "permits": [
+    {
+      "number": "202101132568",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-13",
+      "status_date": "2021-02-23",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "install washer and dryer in same location. elec plumb sep permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904157942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-15",
+      "status_date": "2019-09-09",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "restore floor plan back to original layout as per permitted drawings dates 1976-1977, revision to (e) permits 201810264288 & 201812128068",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812128068",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-12",
+      "status_date": "2019-09-09",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "rev to pa# 201810264288; expand bathroom with double vanity, move bathroom door & bedroom door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810264288",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-26",
+      "status_date": "2019-09-09",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit: turn hallway into laundry, move electrical panel, outside closet with min clearance, refinish kitchen cabinets, new kitchen counter tops, non bearing wall, change bedroom door to sliding, new flooring throughout, repaint walls, bathroom shower niche install in master bath, non rated wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0672028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0672&unit=10",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

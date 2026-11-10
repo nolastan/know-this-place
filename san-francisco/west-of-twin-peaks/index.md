@@ -4,6 +4,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 
 ## Streets documented so far
 
+- [12th Avenue](12th-avenue/) — 3 buildings, built 1990.
 - [15th Avenue](15th-avenue/) — 1 building, built 1945.
 - [16th Avenue](16th-avenue/) — 1 building, built 1947.
 - [17th Avenue](17th-avenue/) — 2 buildings, built 1950–2020.
@@ -12,31 +13,44 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [9th Avenue](9th-avenue/) — 1 building, built 1954; 1 in the Forest Hill Historic District.
 - [Agua Way](agua-way/) — 1 building, built 1928.
 - [Allston Way](allston-way/) — 1 building, built 1916.
+- [Bella Vista Way](bella-vista-way/) — 2 buildings, built 1941–1959.
+- [Brentwood Avenue](brentwood-avenue/) — 1 building, built 1938.
+- [Burlwood Drive](burlwood-drive/) — 1 building, built 1979.
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
+- [Cecilia Avenue](cecilia-avenue/) — 1 building, built 1927.
 - [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
+- [Cresta Vista Drive](cresta-vista-drive/) — 7 buildings, built 1989–1990.
+- [Dalewood Way](dalewood-way/) — 1 building, built 1967.
 - [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.
 - [Del Vale Avenue](del-vale-avenue/) — 1 building, built 1946.
+- [Dorantes Avenue](dorantes-avenue/) — 2 buildings, built 1927–1987; 2 in the Forest Hill Historic District.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [El Verano Way](el-verano-way/) — 1 building, built 1926.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1918.
+- [Fernwood Drive](fernwood-drive/) — 1 building, built 1932.
 - [Flood Avenue](flood-avenue/) — 1 building, built 1920.
 - [Foerster Street](foerster-street/) — 1 building, built 1900.
 - [Frida Kahlo Way](frida-kahlo-way/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
 - [Gennessee Street](gennessee-street/) — 1 building, built 1915.
 - [Granville Way](granville-way/) — 1 building, built 1923.
+- [Hearst Avenue](hearst-avenue/) — 1 building, built 1908.
 - [Idora Avenue](idora-avenue/) — 1 building, built 1947.
 - [Juanita Way](juanita-way/) — 1 building, built 1927.
 - [Junipero Serra Boulevard](junipero-serra-boulevard/) — 1 building, built 1920; 1 in the St. Francis Wood Historic District.
 - [Kensington Way](kensington-way/) — 3 buildings, built 1997–2000.
+- [Kenwood Way](kenwood-way/) — 1 building, built 1929.
 - [Laguna Honda Boulevard](laguna-honda-boulevard/) — 1 building, built 1937; 1 in the Laguna Honda Historic District.
+- [Lakewood Avenue](lakewood-avenue/) — 1 building, built 1927.
 - [Lansdale Avenue](lansdale-avenue/) — 2 buildings, built 1935–1936.
 - [Lenox Way](lenox-way/) — 1 building, built 1926.
 - [Lopez Avenue](lopez-avenue/) — 1 building, built 1928; 1 in the Forest Hill Historic District.
 - [Los Palmos Drive](los-palmos-drive/) — 1 building, built 1948.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
+- [Marietta Drive](marietta-drive/) — 2 buildings, built 1943–1959.
 - [Maywood Drive](maywood-drive/) — 1 building, built 1927.
+- [Melrose Avenue](melrose-avenue/) — 2 buildings, built 1948–1990.
 - [Mendosa Avenue](mendosa-avenue/) — 1 building, built 1956; 1 in the Forest Hill Historic District.
 - [Merced Avenue](merced-avenue/) — 1 building, built 1922; 1 in the Forest Hill Historic District.
 - [Miraloma Drive](miraloma-drive/) — 1 building, built 1957.
@@ -48,13 +62,17 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Pacheco Street](pacheco-street/) — 1 building, built 1917; 1 in the Forest Hill Historic District.
 - [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1918.
 - [Portola Drive](portola-drive/) — 1 building, built 1955.
+- [Robinhood Drive](robinhood-drive/) — 1 building, built 1955.
 - [Rockaway Avenue](rockaway-avenue/) — 1 building, built 1941.
 - [Rockdale Drive](rockdale-drive/) — 1 building, built 1930.
+- [Rockwood Court](rockwood-court/) — 1 building, built 1940.
 - [Rosewood Drive](rosewood-drive/) — 1 building, built 1937.
+- [Saint Elmo Way](saint-elmo-way/) — 1 building, built 1926.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
 - [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
 - [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.
 - [San Benito Way](san-benito-way/) — 1 building, built 2001; 1 in the St. Francis Wood Historic District.
+- [San Felipe Avenue](san-felipe-avenue/) — 1 building, built 1949.
 - [San Fernando Way](san-fernando-way/) — 1 building, built 1923; 1 in the Balboa Terrace Historic District.
 - [San Leandro Way](san-leandro-way/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
 - [San Marcos Avenue](san-marcos-avenue/) — 6 buildings, built 1933–1965; 6 in the Forest Hill Historic District.
@@ -64,7 +82,10 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Santa Clara Avenue](santa-clara-avenue/) — 1 building, built 1938; 1 in the St. Francis Wood Historic District.
 - [Santa Monica Way](santa-monica-way/) — 1 building, built 1918; 1 in the St. Francis Wood Historic District.
 - [Santa Paula Avenue](santa-paula-avenue/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
+- [Santa Rita Avenue](santa-rita-avenue/) — 1 building, built 1935; 1 in the Forest Hill Historic District.
+- [Sequoia Way](sequoia-way/) — 1 building, built 1931.
 - [Sotelo Avenue](sotelo-avenue/) — 1 building, built 1914; 1 in the Forest Hill Historic District.
+- [Stanford Heights Avenue](stanford-heights-avenue/) — 1 building, built 1960.
 - [Stonecrest Drive](stonecrest-drive/) — 2 buildings, built 1939–1941.
 - [Taraval Street](taraval-street/) — 3 buildings, built 1950.
 - [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.

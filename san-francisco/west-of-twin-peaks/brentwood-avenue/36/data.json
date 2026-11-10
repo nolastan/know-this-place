@@ -1,0 +1,134 @@
+{
+  "address": "36 Brentwood Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/brentwood-avenue/36/",
+  "apn": "3054009",
+  "block": "3054",
+  "lot": "009",
+  "eas_baseid": "352879",
+  "coordinates": {
+    "lat": 37.733525,
+    "lng": -122.454294
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 6316,
+    "building_area_sqft": 1959,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Westwood Highlands",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0036 BRENTWOOD           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 186447,
+    "assessed_improvement_value": 207170
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201010132881",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-13",
+      "status_date": "2011-02-02",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace 13 windows w/wood windows, no change in rough openings. same size. u-factor 0.40 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008048131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-04",
+      "status_date": "2011-02-02",
+      "estimated_cost": 500,
+      "revised_cost": 3000,
+      "description": "remove wood shingles to check original siding for leaks and damage only (exploratory work). front & side approx. 750 sq.ft. restore to weather protection and comply with bldg code. any new or replacement siding will be under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313260",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-08-05",
+      "status_date": "1994-01-24",
+      "estimated_cost": 10000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-06-03",
+      "status_date": "1993-06-22",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1993–2010",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRENTWOOD&street_type=AVE&address_number=36",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3054009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3054&lot=009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3054009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-09-05",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 5 September 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n228/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-09-05",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the permit to alter the building at 36 Brentwood Avenue, with a stipulation that the plans be adjusted according to a drawing approved by the Department of Public Works.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-09-05"
+    }
+  ]
+}

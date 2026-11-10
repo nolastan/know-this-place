@@ -1,0 +1,117 @@
+{
+  "address": "519 12th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/12th-avenue/519/",
+  "apn": "1555005",
+  "block": "1555",
+  "lot": "005",
+  "eas_baseid": "308063",
+  "coordinates": {
+    "lat": 37.778374,
+    "lng": -122.470865
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2770,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0519 12TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45245,
+    "assessed_improvement_value": 67431
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202604280261",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2026-07-27",
+      "status_date": "2026-07-27",
+      "estimated_cost": 320000,
+      "revised_cost": 320000,
+      "description": "1/f: add family room with wet bar, bedroom, 1 full bath and office. 2/f: remodel (e) kitchen, dining and living room. add powder and breakfast nook. 3/f: remodel (e) bedrooms and bathroom. add 1 full bath, office and laundry. new deck at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721218",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-22",
+      "status_date": "1999-02-09",
+      "estimated_cost": 6200,
+      "description": "vinyl siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118045",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-26",
+      "status_date": "1991-11-05",
+      "estimated_cost": 2700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=12TH&street_type=AVE&address_number=519",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1555005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1555&lot=005",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1555005",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1978-10-18",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 18 October 1978",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1978sanf/page/n248/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-10-18",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the denial of a permit to alter the building at 519 12th Avenue, requiring compliance with the Department of Public Works letter, removal of combustible materials from the sanctuary area, and ground floor church use not to exceed one year.",
+      "source": "sf-board-of-permit-appeals-minutes-1978-10-18"
+    }
+  ]
+}

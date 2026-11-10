@@ -1,0 +1,130 @@
+{
+  "address": "88 Rossmoor Drive, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/rossmoor-drive/88/",
+  "apn": "7229002",
+  "block": "7229",
+  "lot": "002",
+  "eas_baseid": "418464",
+  "coordinates": {
+    "lat": 37.7307,
+    "lng": -122.474312
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 4647,
+    "building_area_sqft": 2481,
+    "basement_area_sqft": 194,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Lakeside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0088 ROSSMOOR            DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 660276,
+    "assessed_improvement_value": 440181,
+    "last_sale_date": "1999-09-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200708240878",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-24",
+      "status_date": "2007-08-30",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216907",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-09-30",
+      "status_date": "1992-12-03",
+      "estimated_cost": 680,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613057",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-10-17",
+      "status_date": "1987-04-10",
+      "estimated_cost": 3000,
+      "description": "horizontal extension, add fire escape",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8504115",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-04-23",
+      "status_date": "1986-06-02",
+      "estimated_cost": 52000,
+      "description": "addition of one story to rear portion of building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ROSSMOOR&street_type=DR&address_number=88",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7229002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7229&lot=002",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7229002",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1985-06-12",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 12 June 1985",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1985sanf/page/n132/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1985-06-12",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 88 Rossmoor Drive to stand.",
+      "source": "sf-board-of-permit-appeals-minutes-1985-06-12"
+    }
+  ]
+}

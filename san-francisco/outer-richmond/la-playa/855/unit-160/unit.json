@@ -1,0 +1,58 @@
+{
+  "address": "855 La Playa, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/la-playa/855/unit-160/",
+  "unit": "160",
+  "apn": "1692160",
+  "block": "1692",
+  "lot": "160",
+  "parcel": {
+    "building_area_sqft": 1178,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 521666,
+    "assessed_improvement_value": 347777,
+    "last_sale_date": "2019-12-23"
+  },
+  "permits": [
+    {
+      "number": "202505025739",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2025-05-02",
+      "status_date": "2025-08-20",
+      "estimated_cost": 25000,
+      "revised_cost": 40000,
+      "description": "one unit: remodel 2 bathrooms, replace shower pan, bath tub, exhaust venting fan, faucets.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102023793",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-02",
+      "status_date": "2021-08-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "kitchen remodel - remodel kitchen with new cabinets, update plumbing as needed, update electrical as needed. no change to wall & opening layout; maintain 1 hr fire separation between units at area of work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1692160&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1692&unit=160",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "address": "190 Denslowe Drive, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/denslowe-drive/190/",
+  "apn": "7238A016",
+  "block": "7238A",
+  "lot": "016",
+  "eas_baseid": "418666",
+  "coordinates": {
+    "lat": 37.721397,
+    "lng": -122.474784
+  },
+  "parcel": {
+    "year_built": 1942,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 8498,
+    "building_area_sqft": 2186,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Lakeside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0190 DENSLOWE            DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 77135,
+    "assessed_improvement_value": 138589
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201612235790",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-23",
+      "status_date": "2017-03-15",
+      "estimated_cost": 4196,
+      "revised_cost": 4196,
+      "description": "replace 2 wooden windows in kind visible from the street - no structural cahnges max u factor .32 wood to wood in regards to material.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410045863",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-10-04",
+      "status_date": "2006-01-26",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011880",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-06-18",
+      "status_date": "1994-09-15",
+      "estimated_cost": 3000,
+      "description": "replace light fixtures, floor coverings, windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DENSLOWE&street_type=DR&address_number=190",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7238A016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7238A&lot=016",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7238A016",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1993-07-21",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 21 July 1993",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n111/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1993-08-25",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 25 August 1993",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n112/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1993-07-21",
+      "kind": "occupancy",
+      "description": "Ecumenical House was at 190 Denslowe Drive.",
+      "source": "sf-board-of-permit-appeals-minutes-1993-07-21"
+    },
+    {
+      "date": "1993-08-25",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator's requirement that the Ecumenical House at 190 Denslowe Drive obtain Conditional Use Authorization to establish legal use as a church with an accessory restaurant, with recommendations for conditions to be attached to the building permit.",
+      "source": "sf-board-of-permit-appeals-minutes-1993-08-25"
+    }
+  ]
+}

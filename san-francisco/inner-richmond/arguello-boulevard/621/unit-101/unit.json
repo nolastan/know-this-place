@@ -1,0 +1,89 @@
+{
+  "address": "621 Arguello Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/arguello-boulevard/621/unit-101/",
+  "unit": "101",
+  "apn": "1544055",
+  "block": "1544",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 874,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 423203,
+    "assessed_improvement_value": 423203,
+    "last_sale_date": "2016-03-25"
+  },
+  "permits": [
+    {
+      "number": "202506058056",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-05",
+      "status_date": "2025-06-18",
+      "estimated_cost": 36487,
+      "revised_cost": 36487,
+      "description": "re-roofing with torch down.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110146772",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-14",
+      "status_date": "2011-10-14",
+      "estimated_cost": 13110,
+      "revised_cost": 13110,
+      "description": "install 20 vinyl windows in kind into existing frames. no change in size or location. windows do face street. if applicable, bedroom windows will comply with section cbc1026 for rescue. all windows will be double pane and have a u-factor of .30 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301306340",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-30",
+      "status_date": "2003-04-18",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace toilet tub and sink and tile (cosmetic work only)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9919808",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-22",
+      "status_date": "2000-03-22",
+      "estimated_cost": 5250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909170",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-05-31",
+      "status_date": "1989-12-08",
+      "estimated_cost": 1,
+      "description": "revision to beam size. refer #8905411.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1544055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1544&unit=101",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

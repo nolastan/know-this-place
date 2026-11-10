@@ -1,0 +1,128 @@
+{
+  "address": "734 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/734/",
+  "block": "3537",
+  "eas_baseid": "358571",
+  "coordinates": {
+    "lat": 37.767911,
+    "lng": -122.429698
+  },
+  "parcel": {
+    "year_built": 1990,
+    "units": 7,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "UPMKT",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "condominium": {
+    "lots": [
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107"
+    ],
+    "method": "Proposed from the 2025 roll for block 3537: every condominium parcel the roll files under 734 14TH ST, and the unbroken run of lots beside parcel 3537101 on the same street with the same year built (1990). 7 lots, 101–107."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1990",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "ca 1870–ca 1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202107094094",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-09",
+      "status_date": "2021-11-17",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "bath and kitchen remodel. replace finishes, all fixtures to remain in existing locations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505263500",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-05-26",
+      "status_date": "2005-05-26",
+      "estimated_cost": 8760,
+      "revised_cost": 8760,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2005–2021",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=14TH&street_type=ST&address_number=734",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 3537)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=3537&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3537",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3537101",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42969764809935%2037.76791109668028)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1989-07-12",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 12 July 1989",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1989sanf/page/n142/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1989-07-12",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and granted the permit to alter the building at 734 - 14th Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1989-07-12"
+    }
+  ]
+}

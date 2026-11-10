@@ -1,0 +1,78 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-4d/",
+  "unit": "4D",
+  "apn": "7381134",
+  "block": "7381",
+  "lot": "134",
+  "parcel": {
+    "building_area_sqft": 1384,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 398581,
+    "assessed_improvement_value": 398581,
+    "last_sale_date": "2006-10-31"
+  },
+  "permits": [
+    {
+      "number": "202410293949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-29",
+      "status_date": "2025-03-25",
+      "estimated_cost": 6600,
+      "revised_cost": 6600,
+      "description": "one unit: replace 3 windows and 1 patio door in kind. not visible from the street. ufactor 0.29. same size, same locations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410173166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-17",
+      "status_date": "2024-11-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel bathroom in kind- remove and replace w/ new vanity cabinet tub shower controls and fixtures. install new bath vent, install new switches and outlets, install new insulation where applicable.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504022714",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-02",
+      "status_date": "2015-06-23",
+      "estimated_cost": 3944,
+      "revised_cost": 4000,
+      "description": "one unit: replace 2 sliding doors and 7 windows with aluminium double pane windows in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713060",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-15",
+      "status_date": "1998-01-23",
+      "estimated_cost": 2000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381134&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=4D",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

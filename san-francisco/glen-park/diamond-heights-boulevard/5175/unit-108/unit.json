@@ -1,0 +1,47 @@
+{
+  "address": "5175 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5175/unit-108/",
+  "unit": "108",
+  "apn": "7518043",
+  "block": "7518",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1175,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 619780,
+    "assessed_improvement_value": 413186,
+    "last_sale_date": "2018-07-23"
+  },
+  "permits": [
+    {
+      "number": "201506300309",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-30",
+      "status_date": "2015-09-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "2 bathroom remodel like for like (haal & master) in master instead of shower replace to tub in same location. replace toilet, vanity, tub, add 2 gfci in master bath. no walls moved, removed or added. all layout unchanged remeain intavt.. all fire-rated",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7518043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7518&unit=108",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

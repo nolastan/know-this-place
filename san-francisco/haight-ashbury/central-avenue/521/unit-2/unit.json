@@ -1,0 +1,91 @@
+{
+  "address": "521 Central Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/central-avenue/521/unit-2/",
+  "unit": "2",
+  "apn": "1197079",
+  "block": "1197",
+  "lot": "079",
+  "parcel": {
+    "building_area_sqft": 1381,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 498722,
+    "assessed_improvement_value": 498722,
+    "last_sale_date": "2013-03-29"
+  },
+  "permits": [
+    {
+      "number": "201505156421",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-15",
+      "status_date": "2015-08-20",
+      "estimated_cost": 1000,
+      "revised_cost": 2500,
+      "description": "one unit: relocate bathroom door to open at hallway, add partition wall for living room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306149532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-14",
+      "status_date": "2013-07-03",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "one unit-revision to pa# 2013-0411-4330-replace (e) sliding door to garden with new french glass door 34\"w x 80\"h. fire inspector to field verify that bedroom \"o1\" has emergency egress compliance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305237718",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-23",
+      "status_date": "2013-07-03",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "one unit:replace extg sliding door to garden to new 60\"x80\" sliding door. revise to extg bldg permit app#201304114330.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305217534",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2013-05-21",
+      "status_date": "2013-08-20",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace extg sliding door to garden to new 50\"x80\" sliding door to extg bldg app#201304114330(revision)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304114330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-11",
+      "status_date": "2013-07-03",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "divide open family room into 2 bedrooms. legalize (e) habitable space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1197079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1197&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

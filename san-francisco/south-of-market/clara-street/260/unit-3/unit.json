@@ -1,0 +1,44 @@
+{
+  "address": "260 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/260/unit-3/",
+  "unit": "3",
+  "apn": "3753169",
+  "block": "3753",
+  "lot": "169",
+  "parcel": {
+    "building_area_sqft": 1036
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 411251,
+    "assessed_improvement_value": 274165,
+    "last_sale_date": "2010-09-23"
+  },
+  "permits": [
+    {
+      "number": "201705227218",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-22",
+      "status_date": "2018-07-12",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "voluntary exterior repair & replacement of dru rotted deck in kind, repair in kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753169&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "address": "828 Chenery Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/chenery-street/828/",
+  "apn": "6732009",
+  "block": "6732",
+  "lot": "009",
+  "eas_baseid": "406226",
+  "coordinates": {
+    "lat": 37.735077,
+    "lng": -122.43602
+  },
+  "parcel": {
+    "year_built": 1981,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3208,
+    "basement_area_sqft": 525,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0828 CHENERY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 101543,
+    "assessed_improvement_value": 237079
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1981",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200305164814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-16",
+      "status_date": "2003-06-04",
+      "estimated_cost": 6975,
+      "revised_cost": 6975,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203252230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-25",
+      "status_date": "2002-05-30",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repl rear side ret.wall of single fam (rev.200111082684)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111082684",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-11-08",
+      "status_date": "2002-05-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace rear side retaining wall of single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8701763",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-02-11",
+      "status_date": "1987-05-05",
+      "estimated_cost": 100,
+      "description": "vertical extension,revision to application #8612042",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612042",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-29",
+      "status_date": "1987-05-05",
+      "estimated_cost": 15000,
+      "description": "horizontal extension, new deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHENERY&street_type=ST&address_number=828",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6732009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6732&lot=009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6732009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-12-05",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 5 December 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n326/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-12-05",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the revocation of the permit to erect a structure at 828 Chenery Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-12-05"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "address": "3241 Gough Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/gough-street/3241/unit-1/",
+  "unit": "1",
+  "apn": "0472047",
+  "block": "0472",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 750,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 357321,
+    "assessed_improvement_value": 357321,
+    "last_sale_date": "2000-06-15"
+  },
+  "permits": [
+    {
+      "number": "200007316545",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-31",
+      "status_date": "2000-12-22",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "remove & replace kitichen cabinets in one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614184",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-02",
+      "status_date": "1997-02-02",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-11-04",
+      "status_date": "1994-11-14",
+      "estimated_cost": 2635,
+      "description": "repair dry rot base tradsman entr rear siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0472047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0472&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

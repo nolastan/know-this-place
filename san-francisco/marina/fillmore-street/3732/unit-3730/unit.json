@@ -1,0 +1,56 @@
+{
+  "address": "3730 Fillmore Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/fillmore-street/3732/unit-3730/",
+  "apn": "0436D042",
+  "block": "0436D",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 1722,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1066638,
+    "assessed_improvement_value": 1066638,
+    "last_sale_date": "2014-08-13"
+  },
+  "permits": [
+    {
+      "number": "201406239167",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-23",
+      "status_date": "2014-06-23",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "install new overhead lights (2) and new outlets in storage room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306149531",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2013-06-14",
+      "status_date": "2014-07-10",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "interior remodel of an extg storage rm at ground flr of a 2 units residential condo bldg. the space will be converted t0 home office & full bath. including new finishes, electrical, lighting & plmbg. 1 exterior door will be replaced with a nw window of same width & a new door opening be in extr wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0436D042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0436D&street_number=3730",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

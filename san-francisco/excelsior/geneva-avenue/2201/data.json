@@ -1,0 +1,163 @@
+{
+  "address": "2201 Geneva Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/excelsior/geneva-avenue/2201/",
+  "apn": "6322008K",
+  "block": "6322",
+  "lot": "008K",
+  "eas_baseid": "275771",
+  "coordinates": {
+    "lat": 37.708505,
+    "lng": -122.419661
+  },
+  "parcel": {
+    "year_built": 1978,
+    "units": 18,
+    "rooms": 52,
+    "bathrooms": 20,
+    "lot_area_sqft": 12288,
+    "building_area_sqft": 12817,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Visitacion Valley",
+    "property_location_raw": "0000 2201 GENEVA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1397768,
+    "assessed_improvement_value": 1186486,
+    "last_sale_date": "1991-12-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505307593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-30",
+      "status_date": "2026-01-07",
+      "estimated_cost": 32000,
+      "revised_cost": 51932,
+      "description": "upgrade existing fire alarm system in non sprinklered building. to comply with sffc sec. 1103.7.6.1 & current cbc/cfc 2025 & nfpa 72 2022 code requirements. install new facu with radio to monitor system. horn/strobes, detectors and pull stations in common areas & exits. install low frequency",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202407156487",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-15",
+      "status_date": "2024-07-17",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202311211238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-21",
+      "status_date": "2023-12-28",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit: deck repair less than 50% in-kind. no structural changes. replace 40 sqft of flowboards. sister 4 deck floor joists. reinstall stucco under deck that is weathered (around 40 sqft).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304266506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-26",
+      "status_date": "2023-06-14",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "unit's 4 and 6: deck repair (leaks) remove existing waterproofing torch dow: replace sub floor plywood and dry rot if app. install new torch down deck 12x5 each deck. repair in kind less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508214971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-21",
+      "status_date": "2016-04-25",
+      "estimated_cost": 2000,
+      "revised_cost": 1000,
+      "description": "emergency fire alarm panel replacement. like for like replacement, conventional panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012106456",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-10",
+      "status_date": "2011-02-09",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "#15 - to make drain slope per complaint #201075406 dated 11/2/2010 comply with his nov 201075406. min slope 1/4\" per foot.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901089822",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-08",
+      "status_date": "2009-02-09",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "comply with nov# 200882875. repair sheetrock in garage and repair fire doors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GENEVA&street_type=AVE&address_number=2201",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6322008K&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6322&lot=008K",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6322008K",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-05-12",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 12 May 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n88/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-05-12",
+      "kind": "occupancy",
+      "description": "Niles Grocery, a grocery store with mechanical amusement devices, was at 2201 Geneva Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-05-12"
+    }
+  ]
+}

@@ -49,6 +49,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [La Playa](la-playa/) — 1 building, built 1984.
 - [Lake Street](lake-street/) — 1 building, built 1922.
 - [Point Lobos Avenue](point-lobos-avenue/) — 1 building, built 1900.
+- [Seal Rock Drive](seal-rock-drive/) — 3 buildings, built 1941.
 - [Shore View Avenue](shore-view-avenue/) — 1 building, built 1916.
 
 ## Parks and public spaces

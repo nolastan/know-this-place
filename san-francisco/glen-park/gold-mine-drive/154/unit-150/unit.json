@@ -1,0 +1,77 @@
+{
+  "address": "150 Gold Mine Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/gold-mine-drive/154/unit-150/",
+  "apn": "7522043",
+  "block": "7522",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1387,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 23761,
+    "assessed_improvement_value": 80368
+  },
+  "permits": [
+    {
+      "number": "202002285776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-28",
+      "status_date": "2020-06-02",
+      "estimated_cost": 3000,
+      "revised_cost": 8000,
+      "description": "replace deck flooring and railing on two decks in the back. less than 50% repair / replace in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608024030",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-08-02",
+      "status_date": "2016-08-02",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace plmbing fixtures in 2 bathrooms. install new wall & floor tiles. replace exh fans in bathroom & light fixtures. no change on walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405165961",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-16",
+      "status_date": "2014-06-03",
+      "estimated_cost": 10050,
+      "revised_cost": 10050,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405095301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-09",
+      "status_date": "2014-11-26",
+      "estimated_cost": 1100,
+      "revised_cost": 1100,
+      "description": "replace garage door and opener. no structural changes. sectional roll up door to sectional roll up door. visible from the street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7522043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7522&street_number=150",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

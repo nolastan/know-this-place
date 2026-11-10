@@ -1,0 +1,127 @@
+{
+  "address": "295 Brookdale Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/excelsior/brookdale-avenue/295/",
+  "apn": "6327025A",
+  "block": "6327",
+  "lot": "025A",
+  "eas_baseid": "396281",
+  "coordinates": {
+    "lat": 37.710153,
+    "lng": -122.42416
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 1665,
+    "building_area_sqft": 1678,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Visitacion Valley",
+    "property_location_raw": "0000 0295 BROOKDALE           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 20064,
+    "assessed_improvement_value": 143699
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202008051116",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-08-05",
+      "status_date": "2021-01-13",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "comply with nov# 201981541. replace 4 vertical 2x4x8 at right side of garage door. replace 32 sq ft siding, detach & reset exterior main panel detached, reset solar panel transformer.car damage to building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009301919",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-09-30",
+      "status_date": "2010-10-01",
+      "estimated_cost": 5990,
+      "revised_cost": 5990,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8402595",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-03-12",
+      "status_date": "1984-04-10",
+      "estimated_cost": 1500,
+      "description": "remove anmd replace roof deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8101825",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-02-26",
+      "status_date": "1983-03-04",
+      "estimated_cost": 40000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROOKDALE&street_type=AVE&address_number=295",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6327025A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6327&lot=025A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6327025A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1981-10-07",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 7 October 1981",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1981sanf/page/n138/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1981-10-07",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's denial of a variance for an addition at 295 Brookdale Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1981-10-07"
+    }
+  ]
+}

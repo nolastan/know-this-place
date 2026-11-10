@@ -11,6 +11,7 @@ Court.
 - [Arch Street](arch-street/) — 1 building, built 1946.
 - [Borica Street](borica-street/) — 1 building, built 1923; 1 in the Ingleside Terrace Historic District.
 - [Broadmoor Drive](broadmoor-drive/) — 2 buildings, built 1941–1942.
+- [Byxbee Street](byxbee-street/) — 1 building, built 1959.
 - [Cedro Avenue](cedro-avenue/) — 1 building, built 1912; 1 in the Ingleside Terrace Historic District.
 - [Cerritos Avenue](cerritos-avenue/) — 1 building, built 1912; 1 in the Ingleside Terrace Historic District.
 - [De Soto Street](de-soto-street/) — 8 buildings, built 1912–1914; 8 in the Ingleside Terrace Historic District.
@@ -23,7 +24,9 @@ Court.
 - [Ocean Avenue](ocean-avenue/) — 4 buildings, built 1917–1933; 1 in the Ingleside Terrace Historic District.
 - [Paloma Avenue](paloma-avenue/) — 4 buildings, built 1912–1914; 4 in the Ingleside Terrace Historic District.
 - [Ralston Street](ralston-street/) — 1 building, built 1928.
+- [Ramsell Street](ramsell-street/) — 1 building, built 1916.
 - [Shields Street](shields-street/) — 3 buildings, built 1951.
+- [Stratford Drive](stratford-drive/) — 2 buildings, built 1941.
 - [Urbano Drive](urbano-drive/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.
 - [Vernon Street](vernon-street/) — 1 building, built 1916.
 - [Victoria Street](victoria-street/) — 5 buildings, built 1912–1927; 5 in the Ingleside Terrace Historic District.

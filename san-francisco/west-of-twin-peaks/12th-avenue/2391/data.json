@@ -1,0 +1,142 @@
+{
+  "address": "2391 12th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/12th-avenue/2391/",
+  "apn": "2341042",
+  "block": "2341",
+  "lot": "042",
+  "eas_baseid": "334880",
+  "coordinates": {
+    "lat": 37.743652,
+    "lng": -122.468386
+  },
+  "parcel": {
+    "year_built": 1990,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 2250,
+    "building_area_sqft": 3000,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2391 12TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 606779,
+    "assessed_improvement_value": 520092,
+    "last_sale_date": "1993-04-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1990",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503202669",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-03-20",
+      "status_date": "2025-03-20",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "reroof no torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111041857",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-04",
+      "status_date": "2023-04-14",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replacing street facing windows for the new aluminum windows. same openings, same operations, colors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706295498",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-29",
+      "status_date": "2007-07-16",
+      "estimated_cost": 12970,
+      "revised_cost": 12970,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007698",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-23",
+      "status_date": "1990-09-13",
+      "estimated_cost": 1,
+      "description": "fire sprinkler plans only 5 head for fire records",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818578",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1988-11-23",
+      "status_date": "1990-09-11",
+      "estimated_cost": 450000,
+      "description": "to erect residential/commercial",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=12TH&street_type=AVE&address_number=2391",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2341042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2341&lot=042",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2341042",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1990-01-24",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 24 January 1990",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1990sanf/page/n40/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1990-01-24",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the departments and granted the permit to erect a structure at 2391 - 12th Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1990-01-24"
+    }
+  ]
+}

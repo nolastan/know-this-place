@@ -1,0 +1,140 @@
+{
+  "address": "67 Bernard Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/bernard-street/67/",
+  "apn": "0157027",
+  "block": "0157",
+  "lot": "027",
+  "eas_baseid": "278958",
+  "coordinates": {
+    "lat": 37.796267,
+    "lng": -122.414436
+  },
+  "parcel": {
+    "year_built": 1978,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 1376,
+    "building_area_sqft": 2007,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 0067 BERNARD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48000,
+    "assessed_improvement_value": 190208
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809091066",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-09",
+      "status_date": "2008-09-22",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repair staircase stringers less than 50% of stairs to be repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304293361",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-04-29",
+      "status_date": "2003-04-29",
+      "estimated_cost": 1900,
+      "revised_cost": 1900,
+      "description": "install 2 vinyl windows in kind, no change in size or location, no structural changes, do not face",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009120281",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-12",
+      "status_date": "2000-10-18",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to pa 200006223356 replace plywood sheatihing 200 sq ft. of roof deck deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006223356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-22",
+      "status_date": "2000-10-18",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair in kind rear stairs, same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9206135",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-04-15",
+      "status_date": "1992-07-16",
+      "estimated_cost": 2900,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BERNARD&street_type=ST&address_number=67",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0157027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0157&lot=027",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0157027",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1978-01-04",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 4 January 1978",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1978sanf/page/n10/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-01-04",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator's denial of a variance for the property at 67 Bernard Street, permitting a third dwelling unit only if off-street parking for three full-size cars is provided.",
+      "source": "sf-board-of-permit-appeals-minutes-1978-01-04"
+    }
+  ]
+}

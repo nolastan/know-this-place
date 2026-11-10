@@ -1,0 +1,117 @@
+{
+  "address": "259 Edinburgh Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/edinburgh-street/259/",
+  "apn": "6008029",
+  "block": "6008",
+  "lot": "029",
+  "eas_baseid": "389246",
+  "coordinates": {
+    "lat": 37.724853,
+    "lng": -122.428922
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 820,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0259 EDINBURGH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 28377,
+    "assessed_improvement_value": 35315
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202006168834",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-06-16",
+      "status_date": "2020-07-10",
+      "estimated_cost": 11000,
+      "revised_cost": 12000,
+      "description": "bathroom remodel in-kind: replacing tub, toilet and single sink vanity",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023569",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-11-15",
+      "status_date": "1991-07-18",
+      "estimated_cost": 4000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9006014",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-02",
+      "status_date": "1991-06-11",
+      "estimated_cost": 6000,
+      "description": "remove kitchen from basement, integrate stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EDINBURGH&street_type=ST&address_number=259",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6008029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6008&lot=029",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6008029",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1990-09-12",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 12 September 1990",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1990sanf/page/n256/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1990-09-12",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the department and granted the permit to alter a building at 259 Edinburgh Street, on condition the exterior stairway be eliminated and an interior stairway be erected to integrate the lower space into the one-family house.",
+      "source": "sf-board-of-permit-appeals-minutes-1990-09-12"
+    }
+  ]
+}

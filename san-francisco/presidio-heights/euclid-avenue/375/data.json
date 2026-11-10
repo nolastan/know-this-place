@@ -1,0 +1,123 @@
+{
+  "address": "375 Euclid Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/euclid-avenue/375/",
+  "apn": "1067047",
+  "block": "1067",
+  "lot": "047",
+  "eas_baseid": "294286",
+  "coordinates": {
+    "lat": 37.78382,
+    "lng": -122.452137
+  },
+  "parcel": {
+    "year_built": 1976,
+    "units": 17,
+    "stories": 3,
+    "rooms": 56,
+    "bathrooms": 18,
+    "lot_area_sqft": 7825.96,
+    "building_area_sqft": 15436,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0375 EUCLID              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 878414,
+    "assessed_improvement_value": 1798446
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1976",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201407100962",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-10",
+      "status_date": "2014-07-10",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "replace 20 vinyl windows in existing frame. all windows in back of bldg all windows to be replace in kind. field verity if any any windows or egress windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406097870",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-09",
+      "status_date": "2014-06-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209501",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-11-16",
+      "status_date": "1983-03-04",
+      "estimated_cost": 5000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUCLID&street_type=AVE&address_number=375",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1067047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1067&lot=047",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1067047",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1981-08-26",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 26 August 1981",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1981sanf/page/n120/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1981-08-26",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals voted 2-2 to concur with the Zoning Administrator on the disapproval of a building permit application for work at 375 Euclid Avenue; the department was upheld.",
+      "source": "sf-board-of-permit-appeals-minutes-1981-08-26"
+    },
+    {
+      "date": "1981-08-26",
+      "kind": "occupancy",
+      "description": "The building at 375 Euclid Avenue had 17 units.",
+      "source": "sf-board-of-permit-appeals-minutes-1981-08-26"
+    }
+  ]
+}

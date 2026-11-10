@@ -1,0 +1,91 @@
+{
+  "address": "2190 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/2190/unit-4w/",
+  "unit": "4W",
+  "apn": "0565033",
+  "block": "0565",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 3200,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2854413,
+    "assessed_improvement_value": 1902941,
+    "last_sale_date": "2019-11-08"
+  },
+  "permits": [
+    {
+      "number": "200212173633",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-12-17",
+      "status_date": "2002-12-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200202078720 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202078720",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-07",
+      "status_date": "2002-12-19",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove bottom of (e)concrete header/beam & add structural beam support (2002-01-28-7831)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201287837",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-28",
+      "status_date": "2002-12-12",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "renew appl#200009180750 for remaining work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201287831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-28",
+      "status_date": "2002-12-12",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "#4w- demo (e)interior walls, new plumbing/elec,kitchen/bathroom, non struct.,non bearing partition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009180750",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-18",
+      "status_date": "2002-12-13",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remodel existing kitchen & 3 baths,demo,tile,cabinets,new bath fixtures,new lighting,countertops",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0565033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0565&unit=4W",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

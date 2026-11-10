@@ -1,0 +1,66 @@
+{
+  "address": "1951 Pine Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pine-street/1947/unit-1951/",
+  "apn": "0663048",
+  "block": "0663",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 2112,
+    "rooms": 8,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 901375,
+    "assessed_improvement_value": 901375,
+    "last_sale_date": "2014-12-12"
+  },
+  "permits": [
+    {
+      "number": "202512292857",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-29",
+      "status_date": "2026-01-08",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "replace 4 retrofit windows like for like in size, operation and location. no street facing window. replace one closet door nail fin new flashing and trim. not street face. max u-factor=0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312084",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-07-19",
+      "status_date": "1993-08-04",
+      "estimated_cost": 1000,
+      "description": "comply to condominium conversion report #3r-1970",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9306359",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-19",
+      "status_date": "1993-07-23",
+      "estimated_cost": 20000,
+      "description": "remodel kitchen & bath,upgrade plumbing, electrical,dryrot",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0663048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0663&street_number=1951",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "address": "262 Frederick Street, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/frederick-street/262/unit-1/",
+  "unit": "1",
+  "apn": "1254077",
+  "block": "1254",
+  "lot": "077",
+  "parcel": {
+    "building_area_sqft": 868,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 544800,
+    "assessed_improvement_value": 363200,
+    "last_sale_date": "2022-02-11"
+  },
+  "permits": [
+    {
+      "number": "202109077882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-07",
+      "status_date": "2021-12-20",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "#1: remodel kitchen. no change to windows, walls, doors. lights per cec 150.0(k).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708175197",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-17",
+      "status_date": "2018-10-22",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "comply w ith sf wood frame seismic retrofit program soft story sfbc chapter 4d per 2016 iebc appendix a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411212280",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-21",
+      "status_date": "2015-04-01",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "#1: to comply with nov# 201402436. create a hole in the wall to inspect interior and then repair bathroom and remodel tub, shower, toilet and sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9914272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-14",
+      "status_date": "1999-09-23",
+      "estimated_cost": 2620,
+      "description": "repair dry-rot wood with new pressure treated material",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-13",
+      "status_date": "1989-10-31",
+      "estimated_cost": 2650,
+      "description": "remove linoleum & all damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8511822",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-10-17",
+      "status_date": "1985-12-12",
+      "estimated_cost": 575,
+      "description": "repair damage in bath floor of one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8408823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-08-14",
+      "status_date": "1985-12-31",
+      "estimated_cost": 900,
+      "description": "comply with security ordinance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1254077&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1254&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

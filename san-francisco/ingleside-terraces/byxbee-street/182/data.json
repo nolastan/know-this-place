@@ -1,0 +1,99 @@
+{
+  "address": "182 Byxbee Street, San Francisco, CA 94132",
+  "path": "/san-francisco/ingleside-terraces/byxbee-street/182/",
+  "apn": "7077049",
+  "block": "7077",
+  "lot": "049",
+  "eas_baseid": "414792",
+  "coordinates": {
+    "lat": 37.717582,
+    "lng": -122.469601
+  },
+  "parcel": {
+    "year_built": 1959,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 1525,
+    "basement_area_sqft": 475,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0182 BYXBEE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 166113,
+    "assessed_improvement_value": 152819,
+    "last_sale_date": "1996-02-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9007499",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-19",
+      "status_date": "1995-10-10",
+      "estimated_cost": 4000,
+      "revised_cost": 10000,
+      "description": "remove store, room for parking & add smoke detector",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BYXBEE&street_type=ST&address_number=182",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7077049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7077&lot=049",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7077049",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-10-30",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 30 October 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n272/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-10-30",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and approved the building permit application to establish the legal use of a second dwelling unit at 182 Byxbee Street, on conditions concerning removal of the basement-lobby door and basement kitchen and recordation of a Notice of Special Restrictions.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-10-30"
+    }
+  ]
+}

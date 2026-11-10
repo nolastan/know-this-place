@@ -1,0 +1,188 @@
+{
+  "address": "2560 Washington Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/washington-street/2560/",
+  "apn": "0606013",
+  "block": "0606",
+  "lot": "013",
+  "eas_baseid": "286220",
+  "coordinates": {
+    "lat": 37.791734,
+    "lng": -122.435416
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 5745,
+    "building_area_sqft": 3900,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2560 WASHINGTON          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 155204,
+    "assessed_improvement_value": 53320
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504164553",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-16",
+      "status_date": "2025-09-26",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "leak repairs: replace in kind copper sheet metal coping over bay windows, including ledge around perimeter of main roof. replace cedar shingles in kind around side wall of mansard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112145300",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-12-14",
+      "status_date": "2002-06-14",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reinforce beams and replace posts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9724071",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-01",
+      "status_date": "1998-03-31",
+      "estimated_cost": 1000,
+      "description": "renewal permit application #9714596 to complete work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714596",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-04",
+      "status_date": "1997-12-04",
+      "estimated_cost": 4900,
+      "description": "remodel bthrms, new tiling,add washer/dryer,nw shwr pan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9612675",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-15",
+      "status_date": "1996-09-19",
+      "estimated_cost": 2000,
+      "description": "remodel bathrm/new tiling/add sink/no chg on walls/openings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9302719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-02-18",
+      "status_date": "1993-03-23",
+      "estimated_cost": 800,
+      "description": "renew expired permit application #9210288",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9216416",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-09-22",
+      "status_date": "1992-10-01",
+      "estimated_cost": 1500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210288",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-06-23",
+      "status_date": "1992-12-22",
+      "estimated_cost": 800,
+      "description": "repair side porch, replace rotted planks.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210289",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-06-23",
+      "status_date": "1992-12-22",
+      "estimated_cost": 22500,
+      "description": "put new cabinets and kitchen, sheetrock and taping.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9210290",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-06-23",
+      "status_date": "1992-08-19",
+      "estimated_cost": 3700,
+      "description": "add composition shingles to roof 14 square patch gutters.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WASHINGTON&street_type=ST&address_number=2560",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0606013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0606&lot=013",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0606013",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1974-03-04",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 4 March 1974",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1974sanf/page/n40/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-03-04",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the granting of the permit to alter the building at 2556-2560 Washington Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1974-03-04"
+    }
+  ]
+}

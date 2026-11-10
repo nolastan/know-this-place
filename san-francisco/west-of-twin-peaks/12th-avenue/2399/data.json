@@ -1,0 +1,128 @@
+{
+  "address": "2399 12th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/12th-avenue/2399/",
+  "apn": "2341040",
+  "block": "2341",
+  "lot": "040",
+  "eas_baseid": "334878",
+  "coordinates": {
+    "lat": 37.743515,
+    "lng": -122.468377
+  },
+  "parcel": {
+    "year_built": 1990,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 5,
+    "bedrooms": 6,
+    "lot_area_sqft": 2250,
+    "building_area_sqft": 3500,
+    "lot_depth_ft": 90,
+    "use": "Commercial Misc",
+    "property_class": "Apartment  & Commercial Store",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2399 12TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 907162,
+    "assessed_improvement_value": 595923,
+    "last_sale_date": "1992-02-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1990",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9307880",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-05-11",
+      "status_date": "1995-06-29",
+      "estimated_cost": 800,
+      "description": "set up awning on bldg window 23x3x3/lettering not included",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9307881",
+      "type": "wall or painted sign",
+      "status": "issued",
+      "filed": "1993-05-11",
+      "status_date": "1993-06-02",
+      "description": "non-electric sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008389",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-02",
+      "status_date": "1990-11-15",
+      "estimated_cost": 4000,
+      "description": "fire sprinkler plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908885",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1989-05-23",
+      "status_date": "1990-11-16",
+      "estimated_cost": 400000,
+      "description": "erect a three story three unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=12TH&street_type=AVE&address_number=2399",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2341040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2341&lot=040",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2341040",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1990-01-24",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 24 January 1990",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1990sanf/page/n40/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1990-01-24",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the departments and granted the permit to erect a structure at 2399 - 12th Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1990-01-24"
+    }
+  ]
+}

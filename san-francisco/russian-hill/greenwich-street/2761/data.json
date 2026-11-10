@@ -1,0 +1,75 @@
+{
+  "address": "2761 Greenwich Street, San Francisco, CA 94123",
+  "path": "/san-francisco/russian-hill/greenwich-street/2761/",
+  "block": "0942",
+  "eas_baseid": "291004",
+  "coordinates": {
+    "lat": 37.797665,
+    "lng": -122.445121
+  },
+  "parcel": {
+    "year_built": 1972,
+    "units": 2,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina"
+  },
+  "condominium": {
+    "lots": [
+      "033",
+      "034"
+    ],
+    "method": "Proposed from the 2025 roll for block 0942: every condominium parcel the roll files under 2761 GREENWICH ST, and the unbroken run of lots beside parcel 0942034 on the same street with the same year built (1972) — street numbers 2757, 2761. 2 lots, 033–034."
+  },
+  "permits": [
+    {
+      "number": "9012852S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-06-29",
+      "status_date": "1991-04-24",
+      "estimated_cost": 50000,
+      "description": "add 3ard story to bldg conversion of 2/f to bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=2761",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0942)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0942&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0942",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-01-20",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 20 January 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n16/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-01-20",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 2761 Greenwich Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-01-20"
+    }
+  ]
+}

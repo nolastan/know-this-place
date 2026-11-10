@@ -1,0 +1,35 @@
+{
+  "address": "5173 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5175/unit-118/",
+  "unit": "118",
+  "apn": "7518053",
+  "block": "7518",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 338635,
+    "assessed_improvement_value": 264751,
+    "last_sale_date": "2013-02-15"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7518053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7518&unit=118",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

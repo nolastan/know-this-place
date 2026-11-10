@@ -1,0 +1,140 @@
+{
+  "address": "1517 20th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/20th-avenue/1517/",
+  "apn": "1866003",
+  "block": "1866",
+  "lot": "003",
+  "eas_baseid": "321167",
+  "coordinates": {
+    "lat": 37.759377,
+    "lng": -122.478237
+  },
+  "parcel": {
+    "year_built": 1988,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 3600,
+    "building_area_sqft": 3120,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1517 20TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 390462,
+    "assessed_improvement_value": 624762,
+    "last_sale_date": "1987-05-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1988",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010096226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-09",
+      "status_date": "2020-12-17",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "repair exterior sidings on the right side wall 20% of siding of siding to be replaced",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011154939",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2010-11-15",
+      "status_date": "2013-06-03",
+      "estimated_cost": 11100,
+      "revised_cost": 14000,
+      "description": "remodel kitchen and bathroom, no wall relocation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315567",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-09-13",
+      "status_date": "1994-10-14",
+      "estimated_cost": 495,
+      "revised_cost": 1500,
+      "description": "remove counter,wet sink & cabinets in rooms on basemnt floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8602622",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1986-03-07",
+      "status_date": "1987-12-04",
+      "estimated_cost": 285000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600742",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1986-01-22",
+      "status_date": "1986-10-06",
+      "description": "demolish house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=AVE&address_number=1517",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1866003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1866&lot=003",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1866003",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-03-05",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 5 March 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n48/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1986-03-05",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to demolish the building at 1517-20th Avenue to stand, with a condition.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-03-05"
+    }
+  ]
+}

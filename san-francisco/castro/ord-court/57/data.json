@@ -1,0 +1,120 @@
+{
+  "address": "57 Ord Court, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/ord-court/57/",
+  "apn": "2619021",
+  "block": "2619",
+  "lot": "021",
+  "eas_baseid": "485124",
+  "coordinates": {
+    "lat": 37.764075,
+    "lng": -122.44156
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2726,
+    "building_area_sqft": 1666,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0000 0057 ORD                 CT0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470304,
+    "assessed_improvement_value": 377370,
+    "last_sale_date": "1999-04-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201505045309",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-05-04",
+      "status_date": "2015-05-20",
+      "estimated_cost": 2000,
+      "revised_cost": 8000,
+      "description": "revision to (e) pa # 2015 0227 9541. voluntary seismic upgrade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502279541",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-27",
+      "status_date": "2015-03-09",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "replace all sheetrock. all new elect. new vents. open wall between living room & salon. remodel kitchen, both bathrooms & upstairs kitchenette. some new windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309187104",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-18",
+      "status_date": "2013-09-27",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "repair to water damaged foundation. remove and replace damaged slab approx 750 sq ft new pad footings per foundation plan",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ORD&street_type=CT&address_number=57",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2619021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2619&lot=021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2619021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1984-01-11",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 11 January 1984",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1984sanf/page/n10/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1984-01-11",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and denied the permit to alter the building at 57 Ord Court.",
+      "source": "sf-board-of-permit-appeals-minutes-1984-01-11"
+    }
+  ]
+}

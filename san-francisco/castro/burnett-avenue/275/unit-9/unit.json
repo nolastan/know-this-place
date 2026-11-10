@@ -1,0 +1,90 @@
+{
+  "address": "275 Burnett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/castro/burnett-avenue/275/unit-9/",
+  "unit": "9",
+  "apn": "2719B043",
+  "block": "2719B",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1756,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 507948,
+    "assessed_improvement_value": 952592,
+    "last_sale_date": "2012-08-31"
+  },
+  "permits": [
+    {
+      "number": "202512232514",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-12-23",
+      "status_date": "2025-12-23",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "roof deck expansion. install new ceramic tile on (e) roof, on standard pedestal and clip system. install new glass rail to match(e) glass rail, height at 64\". install new skylight at (e) skylight. install new window to match (e) windows, in (e) stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310068195",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-06",
+      "status_date": "2024-04-05",
+      "estimated_cost": 1,
+      "revised_cost": 2000,
+      "description": "revision to pa# 201701318343, change steel/metal guardrails to glass railings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204222784",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2022-04-22",
+      "status_date": "2022-04-22",
+      "estimated_cost": 75000,
+      "description": "install (n) fireproofing under roof. (n) solarium on roof. (n) additional decking on roof. (n) additional guardrails at roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810123019",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-12",
+      "status_date": "2019-08-16",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "change out 34 existing residential fire sprinklers.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701318343",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2017-01-31",
+      "status_date": "2024-04-05",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "remodel e 4th fl penthouse, ne windows, extend wind barrier at roof, relocate e water h eater flue, flash windows/exterior doors at penthouse, new harding siding and trim, piping for hottub, elec conduit for hottub, remove elc heaters and replace w gas units, new guard rails at roof.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2719B043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2719B&unit=9",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

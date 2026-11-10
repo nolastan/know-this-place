@@ -1,0 +1,78 @@
+{
+  "address": "1360 9th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/9th-avenue/1360/unit-7/",
+  "unit": "7",
+  "apn": "1763051",
+  "block": "1763",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 908,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 527080,
+    "assessed_improvement_value": 527080
+  },
+  "permits": [
+    {
+      "number": "202610280004",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-10-28",
+      "status_date": "2026-10-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit: revision to bpa: 202609087811 - update washer/ dryer to ventless and install 220v plug.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202609087811",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-09-08",
+      "status_date": "2026-09-25",
+      "estimated_cost": 37000,
+      "revised_cost": 37000,
+      "description": "one unit: update bathroom with shower. move an electrical panel from closet and update washer/dryer to closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307172355",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-17",
+      "status_date": "2023-10-27",
+      "estimated_cost": 8000,
+      "revised_cost": 28192,
+      "description": "remodel bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006285401",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-06-28",
+      "status_date": "2010-06-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "unit number change from 12 to work to be done in one unit only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1763051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1763&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

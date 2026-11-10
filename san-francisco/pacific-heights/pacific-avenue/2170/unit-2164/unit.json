@@ -1,0 +1,116 @@
+{
+  "address": "2164 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2170/unit-2164/",
+  "apn": "0579040",
+  "block": "0579",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 987,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 754613,
+    "assessed_improvement_value": 584392,
+    "last_sale_date": "2019-09-25"
+  },
+  "permits": [
+    {
+      "number": "202002255379",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-25",
+      "status_date": "2024-02-02",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel 2 baths, kitchen, 2 bedrooms, living room, install hydronic heating.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505313745",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-05-31",
+      "status_date": "2006-02-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final 9918403",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-11-01",
+      "status_date": "2000-01-14",
+      "estimated_cost": 1,
+      "description": "renew expired appl #9904206",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9918403",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-01",
+      "status_date": "2002-02-22",
+      "estimated_cost": 3000,
+      "description": "add fire sprinkler system at ground floor only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9916565",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-11",
+      "status_date": "1999-12-09",
+      "estimated_cost": 7500,
+      "description": "add steel frame at garage door for seismic improvement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9908501",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-04-30",
+      "status_date": "2000-01-14",
+      "estimated_cost": 13100,
+      "description": "structural drawing for rmdlg per app #842884",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904206",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-04",
+      "status_date": "2000-01-14",
+      "estimated_cost": 20000,
+      "description": "remodel 2 bathrooms & kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8302507",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-03-25",
+      "status_date": "1984-11-16",
+      "estimated_cost": 4900,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0579040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0579&street_number=2164",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "address": "1999 Broadway, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/broadway/1999/unit-72/",
+  "unit": "72",
+  "apn": "0578029",
+  "block": "0578",
+  "lot": "029",
+  "parcel": {
+    "building_area_sqft": 2200,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 341489,
+    "assessed_improvement_value": 971165,
+    "last_sale_date": "2010-06-17"
+  },
+  "permits": [
+    {
+      "number": "202508072485",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-08-07",
+      "status_date": "2025-08-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "concrete repairs on the north broadway and west elevated laguna as shown on the photos ab110. work at the norht and west facade. repair concrte spalling inkind. no str work. common area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601278104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-27",
+      "status_date": "2017-12-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "#72- revision to appl #201404072626: revise fire rated floor detail per ab-005.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404072626",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-04-07",
+      "status_date": "2017-12-15",
+      "estimated_cost": 40000,
+      "revised_cost": 87500,
+      "description": "renovate and expand sunroom that is part of one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312113884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-11",
+      "status_date": "2014-01-30",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "stained glass window opening on stairway wall adjacent to interior hallway at 7th fl. stairwell is non rated and is not an exist stairway. all work is on interior of building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0578029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0578&unit=72",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "address": "675 Rhode Island Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/rhode-island-street/669/unit-675/",
+  "apn": "4031038",
+  "block": "4031",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 1471,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 870437,
+    "assessed_improvement_value": 870437,
+    "last_sale_date": "2016-10-26"
+  },
+  "permits": [
+    {
+      "number": "9204463S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1992-03-23",
+      "status_date": "1994-06-27",
+      "estimated_cost": 175000,
+      "revised_cost": 346200,
+      "description": "erect a three story two unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4031038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4031&street_number=675",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

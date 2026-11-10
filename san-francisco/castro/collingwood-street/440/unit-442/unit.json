@@ -1,0 +1,56 @@
+{
+  "address": "442 Collingwood Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/collingwood-street/440/unit-442/",
+  "apn": "2769063",
+  "block": "2769",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 665,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 401928,
+    "assessed_improvement_value": 267948
+  },
+  "permits": [
+    {
+      "number": "202201246478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-24",
+      "status_date": "2023-11-20",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "revision to permit 202107295412. the prev permit involved the demo of a temporary structure and building a new room and expanding the footprint of the building. this permit is a revision to modify roof and lower the roofline by 1 foot.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107295412",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-29",
+      "status_date": "2023-11-20",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "enlare (e) living room using (e) foyer and closet, conver (e) bedroom, clset & parlor into a new master bedoom and bedroom #2, relocate furnace and water heater",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2769063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2769&street_number=442",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

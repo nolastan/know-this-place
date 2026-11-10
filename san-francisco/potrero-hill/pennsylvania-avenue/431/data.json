@@ -1,0 +1,133 @@
+{
+  "address": "431 Pennsylvania Avenue, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/pennsylvania-avenue/431/",
+  "apn": "4063019",
+  "block": "4063",
+  "lot": "019",
+  "eas_baseid": "367741",
+  "coordinates": {
+    "lat": 37.761042,
+    "lng": -122.393117
+  },
+  "parcel": {
+    "year_built": 1977,
+    "units": 4,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 3300,
+    "building_area_sqft": 3284,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0431 PENNSYLVANIA        AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 332239,
+    "assessed_improvement_value": 480095,
+    "last_sale_date": "1995-10-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1977",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202611030280",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-11-03",
+      "status_date": "2026-11-03",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove existing asphalt shingles, replace damage sheathing and replace with same material, install new edge flashing, new base and install new shingles, no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202611030281",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-11-03",
+      "status_date": "2026-11-03",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "install waterproofing membrane, install new stucco wire, apply three stucco coatings (scratch, brown, finish) - for rear facade - at front hardi plank siding horizontal. approximately 900sf stucco, 500sf siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607186822",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-07-18",
+      "status_date": "2009-08-24",
+      "estimated_cost": 9580,
+      "revised_cost": 9580,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PENNSYLVANIA&street_type=AVE&address_number=431",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4063019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4063&lot=019",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4063019",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-01-12",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 12 January 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf/page/n84/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-02-02",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 2 February 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf/page/n120/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-01-12",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' issuance of a permit to erect a structure at 431 Pennsylvania Avenue, after a site inspection on January 6, 1977.",
+      "source": "sf-board-of-permit-appeals-minutes-1977-01-12"
+    },
+    {
+      "date": "1977-02-02",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' issuance of a permit to erect a structure at 431 Pennsylvania Avenue on rehearing.",
+      "source": "sf-board-of-permit-appeals-minutes-1977-02-02"
+    }
+  ]
+}

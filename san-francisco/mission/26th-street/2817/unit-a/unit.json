@@ -1,0 +1,125 @@
+{
+  "address": "2825 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/2817/unit-a/",
+  "unit": "A",
+  "apn": "4334022",
+  "block": "4334",
+  "lot": "022",
+  "parcel": {
+    "building_area_sqft": 960,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 131319,
+    "assessed_improvement_value": 222330,
+    "last_sale_date": "1989-05-16"
+  },
+  "permits": [
+    {
+      "number": "201106097794",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-09",
+      "status_date": "2011-07-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508059562",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-05",
+      "status_date": "2005-10-07",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "to add a 6\" stud wall separateing the (e) living room to create an appox. 6ft w x15 ft room (extra)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814810",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-29",
+      "status_date": "1989-03-14",
+      "estimated_cost": 20000,
+      "description": "details for prefabricated conc. fence, re #8707435",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814837",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-29",
+      "status_date": "1989-03-14",
+      "estimated_cost": 12000,
+      "description": "revise to spread footing/grade beam, sumbit detail for decks",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810733",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-07-29",
+      "status_date": "1989-03-20",
+      "estimated_cost": 14000,
+      "description": "install fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805814",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-06",
+      "status_date": "1989-03-14",
+      "estimated_cost": 7000,
+      "description": "change 1st floor joists",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707435",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1987-05-29",
+      "status_date": "1989-03-21",
+      "estimated_cost": 525000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8706416",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1987-05-15",
+      "status_date": "1988-04-18",
+      "description": "demolish warehouse building # 1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8706417",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1987-05-15",
+      "status_date": "1988-04-18",
+      "description": "demolish office building # 2",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&unit=A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

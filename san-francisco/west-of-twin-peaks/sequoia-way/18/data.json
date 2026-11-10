@@ -1,0 +1,118 @@
+{
+  "address": "18 Sequoia Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/sequoia-way/18/",
+  "apn": "2955A010",
+  "block": "2955A",
+  "lot": "010",
+  "eas_baseid": "349789",
+  "coordinates": {
+    "lat": 37.739842,
+    "lng": -122.449004
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3314,
+    "building_area_sqft": 1890,
+    "basement_area_sqft": 366,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Miraloma Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0018 SEQUOIA             WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73215,
+    "assessed_improvement_value": 303779
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9316224",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-20",
+      "status_date": "1993-12-15",
+      "estimated_cost": 7500,
+      "description": "remodel kitchen, cabinets, 1 window, & new pait.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9219141",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-03",
+      "status_date": "1992-12-08",
+      "estimated_cost": 500,
+      "description": "change room name on original appln #9109197",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9109197",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-05-28",
+      "status_date": "1992-12-10",
+      "estimated_cost": 100000,
+      "description": "horizontal additon.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SEQUOIA&street_type=WAY&address_number=18",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2955A010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2955A&lot=010",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2955A010",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1992-07-08",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 8 July 1992",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1992sanf/page/n142/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1992-07-08",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and granted the permit to alter the building at 18 Sequoia Way, with the condition that the revised plans are used.",
+      "source": "sf-board-of-permit-appeals-minutes-1992-07-08"
+    }
+  ]
+}

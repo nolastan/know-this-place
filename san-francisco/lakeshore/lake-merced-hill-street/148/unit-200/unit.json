@@ -1,0 +1,54 @@
+{
+  "address": "200 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-200/",
+  "apn": "7381112",
+  "block": "7381",
+  "lot": "112",
+  "parcel": {
+    "building_area_sqft": 1470,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 121136,
+    "assessed_improvement_value": 282681,
+    "last_sale_date": "1993-07-27"
+  },
+  "permits": [
+    {
+      "number": "9310852",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-06-28",
+      "status_date": "1993-07-08",
+      "estimated_cost": 900,
+      "description": "maintenance of patio deck per termite report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305149",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-31",
+      "status_date": "1993-06-01",
+      "estimated_cost": 10000,
+      "description": "beam connec/repair fin wal & underwy #9300019 & 9300581-584",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381112&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=200",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

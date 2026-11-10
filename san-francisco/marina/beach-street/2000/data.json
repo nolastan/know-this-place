@@ -1,0 +1,172 @@
+{
+  "address": "2000 Beach Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/beach-street/2000/",
+  "apn": "0913009",
+  "block": "0913",
+  "lot": "009",
+  "eas_baseid": "290212",
+  "coordinates": {
+    "lat": 37.804043,
+    "lng": -122.442246
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 18,
+    "stories": 3,
+    "rooms": 42,
+    "bathrooms": 18,
+    "bedrooms": 18,
+    "lot_area_sqft": 4687.5,
+    "building_area_sqft": 11205,
+    "lot_depth_ft": 93.75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2000 BEACH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1040187,
+    "assessed_improvement_value": 1386929
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201903286496",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-28",
+      "status_date": "2019-10-25",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "install fire alarm system per nfpa 72 to comply with ord 233-17 including new fie panel, new smoke det, new horn strobes (low freq), new manual alam\\rms, new wire and wir mold where needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110251703",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-10-25",
+      "status_date": "2002-04-25",
+      "estimated_cost": 5718,
+      "revised_cost": 5718,
+      "description": "install 19 vinyl windows in kind into existing frames,no change in size or location.no sstructural c",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105149060",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-14",
+      "status_date": "2001-11-14",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008046999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-04",
+      "status_date": "2001-01-18",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "remove & install new concrete, travertine floor,new alum frame door at entry,replace 10x20 slab",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9008435",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-02",
+      "status_date": "1991-12-06",
+      "estimated_cost": 100000,
+      "description": "sheer walls, frame int. slab repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920060",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-23",
+      "status_date": "1991-08-21",
+      "estimated_cost": 5000,
+      "description": "e.w.o.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609955",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-08-14",
+      "status_date": "1986-11-07",
+      "estimated_cost": 20000,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505606",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-05-30",
+      "status_date": "1986-04-10",
+      "estimated_cost": 17650,
+      "description": "install 109 aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEACH&street_type=ST&address_number=2000",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0913009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0913&lot=009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0913009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1985-08-14",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 14 August 1985",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1985sanf/page/n186/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1985-08-14",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and granted the permit to alter the building at 2000 Beach Street, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1985-08-14"
+    }
+  ]
+}

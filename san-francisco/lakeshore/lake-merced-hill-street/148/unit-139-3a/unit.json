@@ -1,0 +1,99 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-3a/",
+  "unit": "3A",
+  "apn": "7381125",
+  "block": "7381",
+  "lot": "125",
+  "parcel": {
+    "building_area_sqft": 1242,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 551386,
+    "assessed_improvement_value": 367590,
+    "last_sale_date": "2021-06-28"
+  },
+  "permits": [
+    {
+      "number": "202302031369",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-03",
+      "status_date": "2023-05-08",
+      "estimated_cost": 6000,
+      "revised_cost": 24000,
+      "description": "changing cabinets: kitchen remodel im kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012211422",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-12-21",
+      "status_date": "2020-12-21",
+      "estimated_cost": 27090,
+      "revised_cost": 27090,
+      "description": "two units: replace 6 windows, 1 patio door, retrofit vinyl. none visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910174817",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-17",
+      "status_date": "2020-10-14",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "on private street. replaceemnt of 6 windows and 2 doors. all visible from private street; hoa approved. existing aluminum to vinyl. ref 201708296277",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807035970",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2008-07-03",
+      "status_date": "2026-01-27",
+      "description": "replace existing aluminum windows with vinyl double glazed. brown outside. total of 6 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807035989",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-03",
+      "status_date": "2008-07-25",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit - replace exist alum window with vinyl double galssed, brown outside windows. total 6 windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805202425",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-20",
+      "status_date": "2008-10-06",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "update kitchen cabinets & appliances (replace) add 8 low voltage 4\" can in living room, replace 2 fan/light in bathrooms and add new circuit for jacuzzi in master bathroom. no interior partitions or wall will be moved.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381125&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=3A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "address": "626 Rhode Island Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/rhode-island-street/626/",
+  "block": "4030",
+  "eas_baseid": "367510",
+  "coordinates": {
+    "lat": 37.761824,
+    "lng": -122.402626
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill"
+  },
+  "condominium": {
+    "lots": [
+      "033",
+      "034",
+      "035"
+    ],
+    "method": "Proposed from the 2025 roll for block 4030: every condominium parcel the roll files under 626 RHODE ISLAND ST, and the unbroken run of lots beside parcel 4030034 on the same street with the same year built (1907) — street numbers 624, 626, 628. 3 lots, 033–035."
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RHODE%20ISLAND&street_type=ST&address_number=626",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 4030)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=4030&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4030",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-07-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 July 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n140/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1986-07-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator and modified the condition imposed in granting the rear yard variance for property at 626A Rhode Island Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-07-16"
+    }
+  ]
+}

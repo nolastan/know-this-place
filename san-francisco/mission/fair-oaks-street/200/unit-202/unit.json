@@ -1,0 +1,66 @@
+{
+  "address": "202 Fair Oaks Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/fair-oaks-street/200/unit-202/",
+  "apn": "3648051",
+  "block": "3648",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 1500,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 114204,
+    "assessed_improvement_value": 268742
+  },
+  "permits": [
+    {
+      "number": "202601294857",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-29",
+      "status_date": "2026-02-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 202208120467. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304286728",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-28",
+      "status_date": "2023-06-28",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace plaster ceilings in laundry area & garage purr-out (2) partial walls at laundry room (non-structural)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208120467",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2022-08-12",
+      "status_date": "2026-02-05",
+      "estimated_cost": 40000,
+      "revised_cost": 35000,
+      "description": "interior work at 202: add full bathroom at 3rd fl. add new skylight, replace pickets at rear stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3648051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3648&street_number=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

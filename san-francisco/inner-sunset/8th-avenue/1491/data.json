@@ -1,0 +1,119 @@
+{
+  "address": "1491 8th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/8th-avenue/1491/",
+  "apn": "1845018",
+  "block": "1845",
+  "lot": "018",
+  "eas_baseid": "320347",
+  "coordinates": {
+    "lat": 37.760597,
+    "lng": -122.465174
+  },
+  "parcel": {
+    "year_built": 1972,
+    "units": 5,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 3250,
+    "building_area_sqft": 4748,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1491 08TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1110762,
+    "assessed_improvement_value": 740499,
+    "last_sale_date": "2010-07-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1972",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002073820",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-07",
+      "status_date": "2020-02-14",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111108698",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-11-10",
+      "status_date": "2011-11-10",
+      "estimated_cost": 8000,
+      "revised_cost": 18000,
+      "description": "#1 - to comply with complaint #201167269 for bathroom remodel and kitchen remodel. no wall relocation. kitchen & bathroom remodel to comply with california electrical code cec 150(k)8 & 150(k)10 respectively.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-24",
+      "status_date": "1998-03-05",
+      "estimated_cost": 7190,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=08TH&street_type=AVE&address_number=1491",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1845018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1845&lot=018",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1845018",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-02-10",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 10 February 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n34/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-02-10",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 1491 - 8th Avenue, with stipulations on a kitchen window, a stair handrail and smoke detectors.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-02-10"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "address": "140 South Van Ness Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/south-van-ness-avenue/140/unit-315/",
+  "unit": "315",
+  "apn": "3514056",
+  "block": "3514",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 830
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 197686,
+    "assessed_improvement_value": 197686,
+    "last_sale_date": "2003-03-27"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3514056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3514&unit=315",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

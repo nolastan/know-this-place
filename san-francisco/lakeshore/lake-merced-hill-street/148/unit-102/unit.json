@@ -1,0 +1,44 @@
+{
+  "address": "102 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-102/",
+  "apn": "7381002",
+  "block": "7381",
+  "lot": "002",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 255444,
+    "assessed_improvement_value": 319330,
+    "last_sale_date": "1997-07-22"
+  },
+  "permits": [
+    {
+      "number": "9707179",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-04-22",
+      "status_date": "1998-01-23",
+      "estimated_cost": 2000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

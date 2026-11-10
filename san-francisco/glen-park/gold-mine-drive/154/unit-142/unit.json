@@ -1,0 +1,44 @@
+{
+  "address": "142 Gold Mine Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/gold-mine-drive/154/unit-142/",
+  "apn": "7522040",
+  "block": "7522",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1387,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 187640,
+    "assessed_improvement_value": 309625,
+    "last_sale_date": "1988-07-29"
+  },
+  "permits": [
+    {
+      "number": "9122752",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-12-02",
+      "status_date": "1991-12-09",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7522040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7522&street_number=142",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
