@@ -1,0 +1,47 @@
+{
+  "address": "1250 Jones Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/jones-street/1250/unit-1301/",
+  "unit": "1301",
+  "apn": "0221076",
+  "block": "0221",
+  "lot": "076",
+  "parcel": {
+    "building_area_sqft": 1642,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1499400,
+    "assessed_improvement_value": 999600,
+    "last_sale_date": "2024-03-22"
+  },
+  "permits": [
+    {
+      "number": "201910184898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-18",
+      "status_date": "2021-01-19",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "one unit: kitchen remodel new cabinets, appliances and fixtures. remodel master bath: remove tub, vanities and fixtures. new shower vanity and fixtures. remodel bath, remove tub, vanity and fixtures. new shower, vanity & fixtures. new carpet and paint through out, tile floors in bath. (1xk+2xb).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=1301",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

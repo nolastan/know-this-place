@@ -1,0 +1,44 @@
+{
+  "address": "2442 24th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/24th-street/2440/unit-2442/",
+  "apn": "4214033",
+  "block": "4214",
+  "lot": "033",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 272276,
+    "assessed_improvement_value": 183156
+  },
+  "permits": [
+    {
+      "number": "202407307512",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-30",
+      "status_date": "2024-08-12",
+      "estimated_cost": 20100,
+      "revised_cost": 20100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4214033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4214&street_number=2442",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
