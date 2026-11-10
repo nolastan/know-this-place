@@ -6109,12 +6109,17 @@ extracted and must not be. Nothing else on the form is a private individual.
   2267 Francisco, whose lot proposal runs on into the neighbour; 374
   Chestnut; 1601 Mariposa and 685 Natoma, whose lots are not on the 2025
   roll), and 2 whose existing page does not hold the parcel (300 Spear, 810
-  Van Ness). **Not taken in this pass, all still unresolved:** 216 findings
-  that publish as a `historic_survey` block and not as a timeline entry
-  (umb-survey-ratings 73, soma-survey 50, market-octavia-district-records 16,
-  modern-postmodern-styles 16, umb-survey 12, showplace-square-survey 10 and
-  smaller sets) — each batch built that block its own way and a survey row
-  alone has not earned a seeded page before; 66 that were never
+  Van Ness). **The 216 that publish as a `historic_survey` block** were taken
+  second, on Stan's rule that a survey row alone does not seed a page: 198
+  move to resolved, **38 published on 31 existing condominium building
+  pages** (umb-survey-ratings 10, modern-postmodern-styles 8, soma-survey 5,
+  showplace-square-survey 5, umb-survey 3, transit-center-district-survey 3,
+  modernistic-styles 2, soma-district-records 1, market-octavia-survey-forms
+  1) and 160 declined — 139 because the building has no page, 15 unreinforced
+  masonry rows on a parcel the roll dates after the 1990 survey, and 6 that
+  repeat the page or describe a building that is gone. 18 stay unresolved
+  because their page is one parcel of a multi-parcel map lot. **Still
+  unresolved and not taken:** 66 that were never
   condominium-blocked; 31 where the resolver's answer may be the lot next
   door; 10 on parcels with no roll row. **Lots:** every target page was
   compared with the sf-parcels `mapblklot` of the finding's own parcel; 17
