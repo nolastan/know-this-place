@@ -1,0 +1,54 @@
+{
+  "address": "1800 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/1800/unit-204/",
+  "unit": "204",
+  "apn": "3970029",
+  "block": "3970",
+  "lot": "029",
+  "parcel": {
+    "building_area_sqft": 1122
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43719,
+    "assessed_improvement_value": 237901
+  },
+  "permits": [
+    {
+      "number": "202512101462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-10",
+      "status_date": "2026-03-26",
+      "estimated_cost": 15000,
+      "revised_cost": 28192,
+      "description": "replace bathtub at mezzanine level with shower.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202511260505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-26",
+      "status_date": "2026-03-26",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit: replace kitchen cabinets & countertop. replace (2) bathroom vanities in bathrooms only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3970029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3970&unit=204",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

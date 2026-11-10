@@ -1,0 +1,35 @@
+{
+  "address": "1839 15th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/360/unit-151/",
+  "unit": "151",
+  "apn": "3556074",
+  "block": "3556",
+  "lot": "074",
+  "parcel": {
+    "building_area_sqft": 1545,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 696348,
+    "assessed_improvement_value": 696348,
+    "last_sale_date": "2016-09-21"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&unit=151",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

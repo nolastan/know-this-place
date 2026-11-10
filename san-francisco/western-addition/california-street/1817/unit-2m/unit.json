@@ -1,0 +1,67 @@
+{
+  "address": "1817 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/california-street/1817/unit-2m/",
+  "unit": "2M",
+  "apn": "0648055",
+  "block": "0648",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 539,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 255914,
+    "assessed_improvement_value": 255914,
+    "last_sale_date": "2003-09-05"
+  },
+  "permits": [
+    {
+      "number": "202408279564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-27",
+      "status_date": "2026-03-04",
+      "estimated_cost": 380000,
+      "revised_cost": 380000,
+      "description": "to comply w/ nov# 202200515, items #4 & #3, replacement of an (e) common egress stair, located in an open-air lobby/ courtyard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312093684",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2013-12-09",
+      "status_date": "2024-11-06",
+      "estimated_cost": 1,
+      "description": "administrative legalization of dwelling unit merger. no construction under this permit appl construction was completed under appl #2009-02-11-1902 and 2010-04-19-0493.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902111902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-11",
+      "status_date": "2009-07-14",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "#2m- remodel of kitchen including cabinet replacement, counter replacement & flooring replacement, new lighting fixtures in kitchen and adjacent wall. non structural work. provide min 50% of kitchen light watts in fluorsecent.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0648055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0648&unit=2M",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

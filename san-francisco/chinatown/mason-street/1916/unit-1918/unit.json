@@ -1,0 +1,88 @@
+{
+  "address": "1918 Mason Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/mason-street/1916/unit-1918/",
+  "apn": "0090042",
+  "block": "0090",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 1099,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 875457,
+    "assessed_improvement_value": 583636,
+    "last_sale_date": "2018-07-30"
+  },
+  "permits": [
+    {
+      "number": "202009023248",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-02",
+      "status_date": "2021-05-21",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remodel (e) kitchen cabinets & kitchen floor. install new kitchen cabinets & vinyl floor. add 2 recessed can lights, kitchen hood. all plumbing into the (e) location. remove pantry door & isntall new pocket door, paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909121526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-12",
+      "status_date": "2019-12-24",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel bath, new tile, replace e plumbing fixtures, paint, add 2 recessed lights, replace exhaust fan, change bath, sink faucet, toilet)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309237452",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-23",
+      "status_date": "2013-09-23",
+      "estimated_cost": 3800,
+      "revised_cost": 3800,
+      "description": "install (6) six marvin integrity clad traditional double hung wood windows at front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207121406",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-12",
+      "status_date": "2002-10-03",
+      "estimated_cost": 6300,
+      "revised_cost": 6300,
+      "description": "bathroom remodel trade out fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112236",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-07-11",
+      "status_date": "1992-03-24",
+      "estimated_cost": 10000,
+      "description": "remodel kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0090042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0090&street_number=1918",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

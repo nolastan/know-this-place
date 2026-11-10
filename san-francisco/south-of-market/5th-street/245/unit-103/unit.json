@@ -1,0 +1,56 @@
+{
+  "address": "245 5th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/5th-street/245/unit-103/",
+  "unit": "103",
+  "apn": "3733126",
+  "block": "3733",
+  "lot": "126",
+  "parcel": {
+    "building_area_sqft": 1566,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 638320,
+    "assessed_improvement_value": 638320,
+    "last_sale_date": "2017-03-06"
+  },
+  "permits": [
+    {
+      "number": "200607267628",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-26",
+      "status_date": "2006-07-26",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "work @ one unit only. retiling of bathroom walls, reflooring, change fixtures of guest bathroom. sinks, shower, faucets, mirror, replace door. check flourescent lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108166192",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-16",
+      "status_date": "2001-09-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#9722401 & 9717401 for final inspection",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3733126&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3733&unit=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "3045 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/3045/unit-501/",
+  "unit": "501",
+  "apn": "0982055",
+  "block": "0982",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1089,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 746400,
+    "assessed_improvement_value": 497600,
+    "last_sale_date": "2021-05-17"
+  },
+  "permits": [
+    {
+      "number": "202404150004",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-15",
+      "status_date": "2024-07-11",
+      "estimated_cost": 49615,
+      "revised_cost": 49615,
+      "description": "kitchen remodel: remove and replace cabinets, countertops, old appliances, flooring material. remove pony wall & enlarge opening in large wall. new outlets & switches. new downlights and under counter lights. new paint, ceiling & window frame. new microhood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701127028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-01-12",
+      "status_date": "2017-06-07",
+      "estimated_cost": 4000,
+      "revised_cost": 10000,
+      "description": "bathroom remodel, new shower, replace tub with vanity, install stackable washer/dryer in laundry, replace light with chandelier in hallway. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0982055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0982&unit=501",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

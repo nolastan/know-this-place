@@ -1,0 +1,47 @@
+{
+  "address": "3620 19th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/19th-street/3620/unit-32/",
+  "unit": "32",
+  "apn": "3587133",
+  "block": "3587",
+  "lot": "133",
+  "parcel": {
+    "building_area_sqft": 1305,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 587204,
+    "assessed_improvement_value": 391460,
+    "last_sale_date": "2009-05-08"
+  },
+  "permits": [
+    {
+      "number": "201009080406",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-08",
+      "status_date": "2010-12-02",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove non bearing wall btw kitchen and hallway. replace hardwood fl, drywall, moving wall switch. install 2 ceilinh lights. install 3 electrical recepticals",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3587133&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3587&unit=32",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

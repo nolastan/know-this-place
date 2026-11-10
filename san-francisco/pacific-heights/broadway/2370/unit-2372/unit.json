@@ -1,0 +1,68 @@
+{
+  "address": "2372 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/2370/unit-2372/",
+  "apn": "0563028",
+  "block": "0563",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 2375,
+    "rooms": 8,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "basement_area_sqft": 375
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 651475,
+    "assessed_improvement_value": 700334,
+    "last_sale_date": "1997-05-15"
+  },
+  "permits": [
+    {
+      "number": "201902193281",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-19",
+      "status_date": "2019-05-15",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "repair inkind 2 rear existing decks due to severe dry rot damage. portion of railing to be repaired/replaced to comply with current building codes. less than 50% repair/replace.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610120107",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-12",
+      "status_date": "2016-12-07",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "upgrade bathroom in existing ground floor. replaceing wall and floor tile, plumbing fixtures in kind. comply with title - 24 for electrical including fan with humidity sensor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712250",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-02",
+      "status_date": "1998-01-02",
+      "estimated_cost": 10000,
+      "description": "install kitchen cabinets & new counter tops, sink",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0563028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0563&street_number=2372",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

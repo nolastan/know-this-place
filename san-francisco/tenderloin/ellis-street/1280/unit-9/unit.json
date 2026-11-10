@@ -1,0 +1,46 @@
+{
+  "address": "1280 Ellis Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/ellis-street/1280/unit-9/",
+  "unit": "9",
+  "apn": "0711A009",
+  "block": "0711A",
+  "lot": "009",
+  "parcel": {
+    "building_area_sqft": 1268,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 526500,
+    "assessed_improvement_value": 526500,
+    "last_sale_date": "2016-04-29"
+  },
+  "permits": [
+    {
+      "number": "201608175305",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-17",
+      "status_date": "2016-10-14",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "one unit: demo stucco around existing window, re-flash existing window, replace stucco to match, like-for-like.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0711A009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0711A&unit=9",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

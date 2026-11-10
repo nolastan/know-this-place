@@ -1,0 +1,44 @@
+{
+  "address": "220 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/220/unit-714/",
+  "unit": "714",
+  "apn": "0060081",
+  "block": "0060",
+  "lot": "081",
+  "parcel": {
+    "building_area_sqft": 1541
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 986494,
+    "assessed_improvement_value": 986494,
+    "last_sale_date": "2016-07-08"
+  },
+  "permits": [
+    {
+      "number": "201309247642",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-24",
+      "status_date": "2014-03-03",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit, remodel kitchen & 2 bathrooms, move 1 partition wall, adjust fire sprinkler coverage, and replace 4 lights in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0060081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0060&unit=714",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

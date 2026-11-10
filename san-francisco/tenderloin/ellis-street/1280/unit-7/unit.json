@@ -1,0 +1,57 @@
+{
+  "address": "1280 Ellis Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/ellis-street/1280/unit-7/",
+  "unit": "7",
+  "apn": "0711A007",
+  "block": "0711A",
+  "lot": "007",
+  "parcel": {
+    "building_area_sqft": 1270,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 527500,
+    "assessed_improvement_value": 527500,
+    "last_sale_date": "2017-03-28"
+  },
+  "permits": [
+    {
+      "number": "202204111962",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-11",
+      "status_date": "2022-07-06",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel bathroom like for like, use some circuits for electrical replace valve and deverter for plumbing. no structural work. no wall/ framing modification.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010183238",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-10-18",
+      "status_date": "2010-10-18",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "kitcen remodeling, change cabinets, sink, reinstall dishwasher, cooktop. min 50% of kitchen lighting to be h.e. light.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0711A007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0711A&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

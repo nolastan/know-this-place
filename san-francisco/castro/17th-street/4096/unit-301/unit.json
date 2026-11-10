@@ -1,0 +1,80 @@
+{
+  "address": "4096 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4096/unit-301/",
+  "unit": "301",
+  "apn": "2623142",
+  "block": "2623",
+  "lot": "142",
+  "parcel": {
+    "building_area_sqft": 564,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 511773,
+    "assessed_improvement_value": 341181,
+    "last_sale_date": "2021-06-02"
+  },
+  "permits": [
+    {
+      "number": "202002144590",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-14",
+      "status_date": "2020-07-29",
+      "estimated_cost": 15275,
+      "revised_cost": 15275,
+      "description": "convert bathtub tow showr 8x6",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807104163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-10",
+      "status_date": "2019-01-02",
+      "estimated_cost": 1400,
+      "revised_cost": 1400,
+      "description": "replace 2 windows with the same size windows not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806192212",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-19",
+      "status_date": "2019-01-02",
+      "estimated_cost": 17800,
+      "revised_cost": 17800,
+      "description": "one unit - kitchen remodel frame in pass thru window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806051073",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-06-05",
+      "status_date": "2026-01-09",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "add in opening between the kitchen and dining room of one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623142&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=301",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

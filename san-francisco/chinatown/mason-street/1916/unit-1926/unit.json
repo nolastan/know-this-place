@@ -1,0 +1,92 @@
+{
+  "address": "1926 Mason Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/mason-street/1916/unit-1926/",
+  "apn": "0090039",
+  "block": "0090",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 1003,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 146835,
+    "assessed_improvement_value": 220260
+  },
+  "permits": [
+    {
+      "number": "201709269611",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2017-09-26",
+      "status_date": "2018-12-13",
+      "estimated_cost": 84000,
+      "revised_cost": 100000,
+      "description": "soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4. n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701308195",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2017-01-30",
+      "status_date": "2017-09-26",
+      "estimated_cost": 60000,
+      "revised_cost": 0,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria: asce 41-13. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603156744",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-15",
+      "status_date": "2006-03-15",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace 2 (e) wood windows, double hung, in kind, 2nd floor, front northside.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104389",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-18",
+      "status_date": "1991-05-23",
+      "estimated_cost": 100,
+      "description": "nail siding to framed in,insulated wall of kithcen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012430",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-06-22",
+      "status_date": "1991-02-20",
+      "estimated_cost": 500,
+      "description": "old cabinets removed, wall lathe & plaster removed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1990–2017",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0090039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0090&street_number=1926",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

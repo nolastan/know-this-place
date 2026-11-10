@@ -1,0 +1,58 @@
+{
+  "address": "2250 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/2250/unit-7/",
+  "unit": "7",
+  "apn": "0539060",
+  "block": "0539",
+  "lot": "060",
+  "parcel": {
+    "building_area_sqft": 1576,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1171800,
+    "assessed_improvement_value": 1542173,
+    "last_sale_date": "2014-12-05"
+  },
+  "permits": [
+    {
+      "number": "201505277294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-27",
+      "status_date": "2016-04-15",
+      "estimated_cost": 2000,
+      "revised_cost": 20000,
+      "description": "#7 - addition work to pa#201504032803 to include move one door, move (e) window & replace with double glazed wood window, replace another (e) window with double glazing, all work in lightwell. kitchen to be relocated, enlarge two bathrooms. n/a ordinance #155-16",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504032803",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-03",
+      "status_date": "2016-04-15",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "one unit: no exterior or structural work. interior kitchen & bathrooms remodeled, including fixtures & finishes. 2 bathrooms. hardwood floors refinished & painting throughout. 50% of lights in kitchen are high efficency & at least 1 light in bathroom are vacancy sensors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0539060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0539&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "address": "1255 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/california-street/1255/unit-301/",
+  "unit": "301",
+  "apn": "0252035",
+  "block": "0252",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 620,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143538,
+    "assessed_improvement_value": 95689,
+    "last_sale_date": "1987-12-04"
+  },
+  "permits": [
+    {
+      "number": "202304276593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-27",
+      "status_date": "2024-05-02",
+      "estimated_cost": 20000,
+      "revised_cost": 36000,
+      "description": "remodel (1) (e) kitchen. plumbing and electrical under separate permits. non structural",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0252035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0252&unit=301",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

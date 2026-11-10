@@ -1,0 +1,67 @@
+{
+  "address": "77 Grand View Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/grand-view-avenue/73/unit-501/",
+  "unit": "501",
+  "apn": "2748038",
+  "block": "2748",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 1128,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 57730,
+    "assessed_improvement_value": 155926
+  },
+  "permits": [
+    {
+      "number": "201602189911",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-18",
+      "status_date": "2016-04-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201507131337 for soft story asce 41-13. change the 1 1/2 plywood from inside to outside of studs wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602189925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-18",
+      "status_date": "2016-04-14",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace the old garage door to new one in kind and to replace wood siding with stucco siding in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104013298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-01",
+      "status_date": "2011-05-11",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "dryrot repair less than 50% of deck. no structural involved and 3 windows replacements. no structural, not visible from street & no structural, no egress. u factor is less than 0.47. same size windows.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2748038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2748&unit=501",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

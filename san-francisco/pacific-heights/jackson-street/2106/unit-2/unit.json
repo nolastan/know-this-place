@@ -1,0 +1,68 @@
+{
+  "address": "2106 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/2106/unit-2/",
+  "unit": "2",
+  "apn": "0590017",
+  "block": "0590",
+  "lot": "017",
+  "parcel": {
+    "building_area_sqft": 3375,
+    "rooms": 7,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 322753,
+    "assessed_improvement_value": 1297327,
+    "last_sale_date": "2014-08-19"
+  },
+  "permits": [
+    {
+      "number": "201811307163",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-11-30",
+      "status_date": "2025-03-05",
+      "estimated_cost": 3000,
+      "revised_cost": 6000,
+      "description": "remove shower floor tiles and install new waterproof membrane and new tile floors. repair leak. set a new drain.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504012476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-01",
+      "status_date": "2016-02-22",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "one unit: revision to pa 2014 0909 5887: remodel to master bath,closet & bedroom with (n) partitions. remodel to kitchen & remaining bathrooms to include (n) plumbing fixtures & elect outlets. radiators to be replaced & (n) finishes throughout. glazing to be replace in 1 lightwell. maher - not req'd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409095887",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-09",
+      "status_date": "2016-02-22",
+      "estimated_cost": 36000,
+      "revised_cost": 36000,
+      "description": "(e) kitchen & 3 bathrooms @ one unit. remodel of kitchen lighting & control per cec 150 k.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0590017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0590&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

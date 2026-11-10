@@ -1,0 +1,58 @@
+{
+  "address": "1760 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/1760/unit-2/",
+  "unit": "2",
+  "apn": "0575055",
+  "block": "0575",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1722,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1177940,
+    "assessed_improvement_value": 785293,
+    "last_sale_date": "2021-07-09"
+  },
+  "permits": [
+    {
+      "number": "202103116322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-11",
+      "status_date": "2021-05-24",
+      "estimated_cost": 58000,
+      "revised_cost": 58000,
+      "description": "#2: replace in kind kitchen cabinets and countrtops in existing layout. replace master bathroom shower pan & tile & replace existing bathtub with new, same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101089351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-08",
+      "status_date": "2001-05-14",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace tile. shower pan. and fauset in the master bathroom. all work in one unit. no structural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0575055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0575&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

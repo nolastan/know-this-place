@@ -1,0 +1,46 @@
+{
+  "address": "222 Parnassus Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/parnassus-avenue/222/unit-d/",
+  "unit": "D",
+  "apn": "1274041",
+  "block": "1274",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 726,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 98131,
+    "assessed_improvement_value": 100971
+  },
+  "permits": [
+    {
+      "number": "201504093216",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-09",
+      "status_date": "2015-05-20",
+      "estimated_cost": 11921,
+      "revised_cost": 11921,
+      "description": "replace 6 windows not visible",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1274041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1274&unit=D",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

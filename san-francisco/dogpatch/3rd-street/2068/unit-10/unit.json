@@ -1,0 +1,47 @@
+{
+  "address": "2068 3rd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/3rd-street/2068/unit-10/",
+  "unit": "10",
+  "apn": "3995098",
+  "block": "3995",
+  "lot": "098",
+  "parcel": {
+    "building_area_sqft": 1301,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 358234,
+    "assessed_improvement_value": 358234,
+    "last_sale_date": "2002-05-23"
+  },
+  "permits": [
+    {
+      "number": "201603172299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-17",
+      "status_date": "2016-05-03",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "changing counter tops in kitchen and two bathrooms, replacing one bathroom vanity. bath tub/shower remodel.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3995098&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3995&unit=10",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

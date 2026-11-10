@@ -1,0 +1,55 @@
+{
+  "address": "300 Gough Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/gough-street/300/unit-1/",
+  "unit": "1",
+  "apn": "0816033",
+  "block": "0816",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 15727,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1578906,
+    "assessed_improvement_value": 3338159
+  },
+  "permits": [
+    {
+      "number": "202606294122",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-06-29",
+      "status_date": "2026-06-29",
+      "estimated_cost": 1750,
+      "revised_cost": 3500,
+      "description": "remodel e bathrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310249350",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-24",
+      "status_date": "2024-07-11",
+      "estimated_cost": 115000,
+      "revised_cost": 115000,
+      "description": "t-mobile remove (2)(e) omini anthena and (3)(e) cabinet; install (6) (n) anthennas behind (3) (n) frp screen walls; install 2 new cabinets in basement. install (n) batteries with (n) cabinet in basement; install (n) minisplit hvac; install (n) 200a e-mon d-mon",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0816033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0816&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

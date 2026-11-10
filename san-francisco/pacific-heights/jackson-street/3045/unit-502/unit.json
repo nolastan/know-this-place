@@ -1,0 +1,53 @@
+{
+  "address": "3045 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/3045/unit-502/",
+  "unit": "502",
+  "apn": "0982056",
+  "block": "0982",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 1361,
+    "rooms": 5,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 875496,
+    "assessed_improvement_value": 583664,
+    "last_sale_date": "2022-03-11"
+  },
+  "permits": [
+    {
+      "number": "201304245312",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-24",
+      "status_date": "2013-06-25",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remodel hallway bathrm, repl toilet & vanity, remove shower pan & cap wrist & water lines. repl wall & floor tiles. install laundry hook-ups in (e) closet. add new bathrm w/closet at (e) walk-in closet. install shower pan, toilet, vanity. install wall & floor tiles",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2013",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0982056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0982&unit=502",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

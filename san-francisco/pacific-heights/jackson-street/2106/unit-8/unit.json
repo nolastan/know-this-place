@@ -1,0 +1,96 @@
+{
+  "address": "2106 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/2106/unit-8/",
+  "unit": "8",
+  "apn": "0590023",
+  "block": "0590",
+  "lot": "023",
+  "parcel": {
+    "building_area_sqft": 3375,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3970362,
+    "assessed_improvement_value": 4269791,
+    "last_sale_date": "2016-08-19"
+  },
+  "permits": [
+    {
+      "number": "201107119893",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-11",
+      "status_date": "2011-07-20",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101057877",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-01-05",
+      "status_date": "2011-10-27",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "new roof deck with perimeter wind screen & stair enclosure serving one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011044334",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-04",
+      "status_date": "2011-09-20",
+      "estimated_cost": 130000,
+      "revised_cost": 130000,
+      "description": "8th floor:renovation to extg residential unit kitchen and master bath including. remodel of extg kitchen and master bath. replacement of extg fixutres, finishes, lights and electric. installation of new skylight",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304172552",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-04-17",
+      "status_date": "2007-02-06",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reurbish (e) wine storage rm, new racks, new lighting, new cooling sytem, no strc. changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304021310",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2003-04-02",
+      "status_date": "2005-06-09",
+      "estimated_cost": 38985,
+      "description": "raiser roof deck over (e)class a roofing,hot tub gas, fired fireplace,",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2003–2011",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0590023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0590&unit=8",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

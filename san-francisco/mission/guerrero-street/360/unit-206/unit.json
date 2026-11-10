@@ -1,0 +1,47 @@
+{
+  "address": "360 Guerrero Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/360/unit-206/",
+  "unit": "206",
+  "apn": "3556161",
+  "block": "3556",
+  "lot": "161",
+  "parcel": {
+    "building_area_sqft": 775,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 413352,
+    "assessed_improvement_value": 275558,
+    "last_sale_date": "2008-09-25"
+  },
+  "permits": [
+    {
+      "number": "201512094556",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-09",
+      "status_date": "2016-03-18",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit: replace bathtub, tile, vanity, counter top (bathroom). kitchen cabinets - removing non-structural wall. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556161&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&unit=206",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "address": "1263 Oak Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/oak-street/1263/unit-2/",
+  "unit": "2",
+  "apn": "1219046",
+  "block": "1219",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 794,
+    "bedrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 110950,
+    "assessed_improvement_value": 79924
+  },
+  "permits": [
+    {
+      "number": "202101202951",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-20",
+      "status_date": "2021-04-02",
+      "estimated_cost": 8000,
+      "revised_cost": 14490,
+      "description": "one unit: bathroom remodeling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101082313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-08",
+      "status_date": "2021-04-02",
+      "estimated_cost": 8000,
+      "revised_cost": 10000,
+      "description": "#2: kitchen remodeling. no change in wall & opening, layout. maintain 1-hr separation between units at area of work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1219046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1219&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

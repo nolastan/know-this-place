@@ -1,0 +1,91 @@
+{
+  "address": "236 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/236/unit-3/",
+  "unit": "3",
+  "apn": "3753221",
+  "block": "3753",
+  "lot": "221",
+  "parcel": {
+    "building_area_sqft": 949,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 524948,
+    "assessed_improvement_value": 524948,
+    "last_sale_date": "2020-02-12"
+  },
+  "permits": [
+    {
+      "number": "201904158005",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-15",
+      "status_date": "2019-07-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 2016-0928-9090. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808298689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-29",
+      "status_date": "2019-08-01",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: bath remodel - install of new plumbing, electrical, tile, drywall, paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609289090",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2016-09-28",
+      "status_date": "2019-07-23",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "revision to permit #2016-06-28-1120. added 13 recessed lights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608245933",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-24",
+      "status_date": "2016-09-12",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "relocate 7 fire sprinklers to new ceiling elevation. change all 17 fire sprinklers to quick response. ref app#201606281120. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606281120",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-28",
+      "status_date": "2019-07-23",
+      "estimated_cost": 3000,
+      "revised_cost": 32000,
+      "description": "partial interior remodel. no structural, no exterior, no electrical. replacement drywall shall be min 5/8\" type \"x\". 1 for 1 replacement of: plumbing, cabinets, counter tops, insulation, drywall and tile. fire separation between units shall be maintained. no wall moved, removed, added or infilled.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753221&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

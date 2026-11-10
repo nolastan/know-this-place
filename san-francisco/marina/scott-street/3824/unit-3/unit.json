@@ -1,0 +1,33 @@
+{
+  "address": "3824 Scott Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/scott-street/3824/unit-3/",
+  "unit": "3",
+  "apn": "0417B022",
+  "block": "0417B",
+  "lot": "022",
+  "parcel": {
+    "building_area_sqft": 965,
+    "rooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 853369,
+    "assessed_improvement_value": 568913,
+    "last_sale_date": "2018-03-14"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0417B022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0417B&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

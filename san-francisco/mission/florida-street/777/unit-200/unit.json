@@ -1,0 +1,43 @@
+{
+  "address": "777 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/777/unit-200/",
+  "unit": "200",
+  "apn": "4081035",
+  "block": "4081",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 590
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 14977,
+    "assessed_improvement_value": 14977
+  },
+  "permits": [
+    {
+      "number": "201801027654",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-02",
+      "status_date": "2018-09-17",
+      "estimated_cost": 200000,
+      "revised_cost": 564707,
+      "description": "tenant improvement with new accessible restrooms, 1 new 1 hr rated common corridor, mech, elec, plumbing, sprinkler work under sep permit. combine suites 200, 202, 204, 206 and 208. maher na",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4081035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4081&unit=200",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

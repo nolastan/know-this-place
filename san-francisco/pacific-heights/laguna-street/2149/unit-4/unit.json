@@ -1,0 +1,63 @@
+{
+  "address": "2151 Laguna Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/laguna-street/2149/unit-4/",
+  "unit": "4",
+  "apn": "0627018",
+  "block": "0627",
+  "lot": "018",
+  "parcel": {
+    "building_area_sqft": 2624,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2649355,
+    "assessed_improvement_value": 3235855,
+    "last_sale_date": "2018-09-24"
+  },
+  "permits": [
+    {
+      "number": "202408299705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-29",
+      "status_date": "2025-04-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "#4 -remodel kitchen, 3 bathrooms, laundry room, and closets. new lighting, floor, hydronic heat and fixtures. no structural or window work. all work has been carried under #201910154451, but that permit is to be cancelled because of incorrect lot #17 & one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105166078",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-16",
+      "status_date": "2011-08-31",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "replace in kind sashes in 11 window frames. replace in kind 1 double french door to back balcony. paint interior of new sash. no other work in aparment.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2011–2024",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

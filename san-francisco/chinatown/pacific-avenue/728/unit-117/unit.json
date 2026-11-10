@@ -1,0 +1,55 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-117/",
+  "unit": "117",
+  "apn": "0161048",
+  "block": "0161",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1500
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442957,
+    "assessed_improvement_value": 295304,
+    "last_sale_date": "2019-12-27"
+  },
+  "permits": [
+    {
+      "number": "202304105408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-10",
+      "status_date": "2023-05-09",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "relocate horn/strobe duct smoke, fire smoke dumpel relocate kitchen ansul and add hornn/strobe fsd at three units",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201273093",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-01-27",
+      "status_date": "2012-01-30",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "this was an upgrade of an existing fire suppression system to a range guard ul 300 system.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=117",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

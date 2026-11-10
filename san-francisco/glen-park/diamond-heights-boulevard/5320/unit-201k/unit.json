@@ -1,0 +1,56 @@
+{
+  "address": "5320 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5320/unit-201k/",
+  "unit": "201K",
+  "apn": "7534052",
+  "block": "7534",
+  "lot": "052",
+  "parcel": {
+    "building_area_sqft": 682,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 244800,
+    "assessed_improvement_value": 244800,
+    "last_sale_date": "2023-10-06"
+  },
+  "permits": [
+    {
+      "number": "202310198970",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-19",
+      "status_date": "2026-03-03",
+      "estimated_cost": 6000,
+      "revised_cost": 20000,
+      "description": "one unit: remodel in kind 90 sqft of kitchen. new cabinets, counters & flooring. non structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M21847",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-03",
+      "status_date": "2002-10-03",
+      "revised_cost": 50000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7534052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7534&unit=201K",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

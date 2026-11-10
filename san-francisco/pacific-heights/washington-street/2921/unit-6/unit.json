@@ -1,0 +1,62 @@
+{
+  "address": "2921 Washington Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/washington-street/2921/unit-6/",
+  "unit": "6",
+  "apn": "1001039",
+  "block": "1001",
+  "lot": "039",
+  "parcel": {
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 839101,
+    "assessed_improvement_value": 559399,
+    "last_sale_date": "2016-08-02"
+  },
+  "permits": [
+    {
+      "number": "201010293983",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-29",
+      "status_date": "2010-11-09",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace 7 vinyl windows with new at back of building; replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110050041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-05",
+      "status_date": "2001-11-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit-remodel bathroom, replace tile/vanity sink, toilet, new sheetrock, new medicine cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2001–2012",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1001039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1001&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "2068 3rd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/3rd-street/2068/unit-16/",
+  "unit": "16",
+  "apn": "3995103",
+  "block": "3995",
+  "lot": "103",
+  "parcel": {
+    "building_area_sqft": 1476,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 860533,
+    "assessed_improvement_value": 573688,
+    "last_sale_date": "2021-06-02"
+  },
+  "permits": [
+    {
+      "number": "202210285382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-28",
+      "status_date": "2023-01-10",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "one 63 sq ft master bath remodel on 3rd floor. no structural no changes to walls or openings. replace existing with (n) curbless shower, toilet, and vanity. all (n) fixtures and finishes.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3995103&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3995&unit=16",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "address": "313 2nd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/2nd-avenue/313/unit-5/",
+  "unit": "5",
+  "apn": "1434051",
+  "block": "1434",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 922
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 303618,
+    "assessed_improvement_value": 303618,
+    "last_sale_date": "2000-08-01"
+  },
+  "permits": [
+    {
+      "number": "200502095204",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-09",
+      "status_date": "2005-09-27",
+      "estimated_cost": 15000,
+      "revised_cost": 18000,
+      "description": "kitchen remodel0 replace cabinetry, knock non load bearying wall, replace appliances & fixxtures,",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1434051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1434&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "address": "301 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/301/",
+  "block": "3562",
+  "eas_baseid": "359771",
+  "coordinates": {
+    "lat": 37.763972,
+    "lng": -122.43512
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Duboce Triangle",
+    "analysis_neighborhood": "Castro/Upper Market"
+  },
+  "condominium": {
+    "lots": [
+      "038",
+      "039"
+    ],
+    "method": "Every active parcel of sf-parcels map lot 3562038 with a row on the 2025 roll: 2 lots, 038–039."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Duboce Triangle Historic District Extension",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201502239040",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-23",
+      "status_date": "2015-02-23",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009130770",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-13",
+      "status_date": "2010-09-21",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair (1) existing exterior staircase. work on the bottom portion.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004268239",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-04-26",
+      "status_date": "2000-06-28",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "comply with physical inspection report",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220348",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-11-23",
+      "status_date": "1993-09-03",
+      "estimated_cost": 6000,
+      "revised_cost": 2000,
+      "description": "repair decks bring up to code, engineer header 2/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218618",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-26",
+      "status_date": "1993-09-03",
+      "estimated_cost": 25000,
+      "description": "remodl kitch,bath-1st lev-cabs,flrs,cntrs, etc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218445",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-10-22",
+      "status_date": "1993-09-03",
+      "estimated_cost": 10000,
+      "description": "enlarge doorway (interior). demo closet rebuild",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505032",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-05-14",
+      "status_date": "1985-12-04",
+      "estimated_cost": 9500,
+      "description": "repair fire damage to roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CASTRO&street_type=ST&address_number=301",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 3562)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=3562&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3562",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3562038",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43512030018516%2037.76397238219328)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1972-03-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 March 1972",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/20minutesofsanfran1972sa/page/n386/mode/1up",
+      "retrieved": "2026-10-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1880",
+      "kind": "site history",
+      "description": "The Victorian building on the site was built in 1880.",
+      "source": "sf-planning-commission-minutes-1972-03-02"
+    },
+    {
+      "date": "1972-03-02",
+      "kind": "occupancy",
+      "description": "The 4,375-square-foot corner lot held a two-family dwelling that was being rehabilitated.",
+      "source": "sf-planning-commission-minutes-1972-03-02"
+    },
+    {
+      "date": "1972-03-02",
+      "kind": "planning decision",
+      "description": "The City Planning Commission disapproved converting the lower flat to medical offices.",
+      "source": "sf-planning-commission-minutes-1972-03-02"
+    }
+  ]
+}

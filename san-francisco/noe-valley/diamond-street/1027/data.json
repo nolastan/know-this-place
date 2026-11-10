@@ -1,0 +1,129 @@
+{
+  "address": "1027 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/diamond-street/1027/",
+  "block": "6546",
+  "eas_baseid": "463040",
+  "coordinates": {
+    "lat": 37.749213,
+    "lng": -122.435777
+  },
+  "parcel": {
+    "year_built": 1997,
+    "units": 2,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley"
+  },
+  "condominium": {
+    "lots": [
+      "047",
+      "048"
+    ],
+    "method": "Proposed from the 2025 roll for block 6546: every condominium parcel the roll files under 1027 DIAMOND ST, and the unbroken run of lots beside parcel 6546048 on the same street with the same year built (1997) — street numbers 1025, 1027. 2 lots, 047–048."
+  },
+  "historic_district": {
+    "name": "Diamond & Elizabeth Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1878–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9712828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-07-11",
+      "status_date": "1997-09-24",
+      "estimated_cost": 1,
+      "description": "revisions to permit 9702557 & 9506307",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9706432",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-04-09",
+      "status_date": "1997-09-24",
+      "estimated_cost": 1800,
+      "description": "installation of fire sprinklers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702557",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-02-12",
+      "status_date": "1997-09-24",
+      "estimated_cost": 1,
+      "description": "fndtn revision to appn.9506307,work under construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506307",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1995-05-01",
+      "status_date": "1997-10-01",
+      "estimated_cost": 180000,
+      "revised_cost": 294000,
+      "description": "erect a four story two unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506308",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1995-05-01",
+      "status_date": "1997-02-03",
+      "description": "demolish a three story two unit residence",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=1027",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 6546)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=6546&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6546",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43577693686977%2037.74921282934014)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-02-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 February 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n57/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-02-15",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 6-0, demolishing the existing structure and building a four-storey, two-unit building.",
+      "source": "sf-planning-commission-minutes-1996-02-15"
+    }
+  ]
+}

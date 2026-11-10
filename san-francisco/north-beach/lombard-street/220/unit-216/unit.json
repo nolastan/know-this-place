@@ -1,0 +1,32 @@
+{
+  "address": "220 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/220/unit-216/",
+  "unit": "216",
+  "apn": "0060035",
+  "block": "0060",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 1519
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 839716,
+    "assessed_improvement_value": 559809,
+    "last_sale_date": "2017-11-30"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0060035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0060&unit=216",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

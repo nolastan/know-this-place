@@ -1,0 +1,47 @@
+{
+  "address": "12 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/mission-street/4377/unit-6/",
+  "unit": "6",
+  "apn": "6013038",
+  "block": "6013",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 1190,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 350951,
+    "assessed_improvement_value": 350951,
+    "last_sale_date": "2013-05-24"
+  },
+  "permits": [
+    {
+      "number": "201409095788",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-09",
+      "status_date": "2014-09-09",
+      "estimated_cost": 6626,
+      "revised_cost": 6626,
+      "description": "replace 3 windows on front facade with fiberglass windows with same glazing pattern; replace 3 windows on rear facade with vinyl windows with same glazing pattern. no bedroom windows.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6013038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6013&unit=6",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

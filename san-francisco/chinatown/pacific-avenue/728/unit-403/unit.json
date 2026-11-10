@@ -1,0 +1,66 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-403/",
+  "unit": "403",
+  "apn": "0161060",
+  "block": "0161",
+  "lot": "060",
+  "parcel": {
+    "building_area_sqft": 734
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 418317,
+    "assessed_improvement_value": 278876,
+    "last_sale_date": "2019-01-31"
+  },
+  "permits": [
+    {
+      "number": "202603187816",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-18",
+      "status_date": "2026-06-03",
+      "estimated_cost": 600000,
+      "revised_cost": 600000,
+      "description": "4/fl- ti to convert (e) clicnic space into (n) accpunture clinic and restroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204051606",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-04-05",
+      "status_date": "2026-01-23",
+      "estimated_cost": 200000,
+      "revised_cost": 0,
+      "description": "suite 403: tenant improvement for (e) medical office.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905160846",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2019-05-16",
+      "status_date": "2022-04-05",
+      "estimated_cost": 116000,
+      "revised_cost": 116000,
+      "description": "suite #403 - ti for (e) medical office. (accessible parking improvement required are under separate barrier removal permit pa 201908239660).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=403",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

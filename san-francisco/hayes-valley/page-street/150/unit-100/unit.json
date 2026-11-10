@@ -1,0 +1,102 @@
+{
+  "address": "150 Page Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/page-street/150/unit-100/",
+  "unit": "100",
+  "apn": "0838037",
+  "block": "0838",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 571,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 107967,
+    "assessed_improvement_value": 76399,
+    "last_sale_date": "1995-10-31"
+  },
+  "permits": [
+    {
+      "number": "200005311366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-31",
+      "status_date": "2000-08-18",
+      "estimated_cost": 2600,
+      "revised_cost": 2600,
+      "description": "remodel bathroom & kitchen, new cabinets, new tile, new fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9624616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-12-24",
+      "status_date": "1997-01-16",
+      "estimated_cost": 4200,
+      "description": "interior remodel one unit,new bookshelves,closet doors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211396",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-07-10",
+      "status_date": "1992-12-01",
+      "estimated_cost": 465,
+      "description": "bathroom-window repair-replace as sash as needed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9108073",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-05-10",
+      "status_date": "1991-08-30",
+      "estimated_cost": 6500,
+      "description": "remove closet add walls to become new closet with bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106801",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-22",
+      "status_date": "1991-12-03",
+      "estimated_cost": 3400,
+      "description": "replace kitchen cabinets in the kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020486",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-10-05",
+      "status_date": "1991-06-25",
+      "estimated_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "1990–2020",
+    "shown_on_page": 6,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0838037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0838&unit=100",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

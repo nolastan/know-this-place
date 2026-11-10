@@ -1,0 +1,43 @@
+{
+  "address": "777 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/777/unit-205/",
+  "unit": "205",
+  "apn": "4081040",
+  "block": "4081",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1339
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 34051,
+    "assessed_improvement_value": 34051
+  },
+  "permits": [
+    {
+      "number": "201902011843",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-02-01",
+      "status_date": "2019-02-01",
+      "estimated_cost": 1056,
+      "revised_cost": 1056,
+      "description": "fire alarm: adding 2 strobes in suite 205 in f/a alarm system. maher n/a.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4081040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4081&unit=205",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

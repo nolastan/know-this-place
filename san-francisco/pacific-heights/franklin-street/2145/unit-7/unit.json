@@ -1,0 +1,46 @@
+{
+  "address": "2145 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/2145/unit-7/",
+  "unit": "7",
+  "apn": "0593050",
+  "block": "0593",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1810,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1184305,
+    "assessed_improvement_value": 789535,
+    "last_sale_date": "2022-03-16"
+  },
+  "permits": [
+    {
+      "number": "201305177277",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-17",
+      "status_date": "2013-08-16",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "remove existing bathtub, tile surround and toilet, install new 38\" neo-angle shower, relocate toilet to adjacent wall per plans.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0593050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0593&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

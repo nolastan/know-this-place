@@ -1,0 +1,77 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-115/",
+  "unit": "115",
+  "apn": "0161046",
+  "block": "0161",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 1210
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 357317,
+    "assessed_improvement_value": 238211,
+    "last_sale_date": "2019-12-27"
+  },
+  "permits": [
+    {
+      "number": "202201286887",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-28",
+      "status_date": "2022-06-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "suite 115: revision to permit 202108045808. update layout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111233011",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-23",
+      "status_date": "2022-01-27",
+      "estimated_cost": 2400,
+      "revised_cost": 2600,
+      "description": "modify of sprinklers system to accomodate new partitioning at ste 115 according to pa# 202108045808. total: relocate (1), add (2) sprinkler heads and adjust (6) head drop.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108045808",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-04",
+      "status_date": "2022-06-17",
+      "estimated_cost": 280000,
+      "revised_cost": 280000,
+      "description": "#115-1/f: t.i. mall of midrise building. new partitions, casework, toilet room, interior mall windows/doors, security gates, hvac, lighting, plumbing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812249191",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-12-24",
+      "status_date": "2009-03-11",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "change of use from book store to a beauty salon. flooring and repainting. no mechanical work. all new interior partition 5'7\" max ht work exempt from permit. life safety under separate permits.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=115",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

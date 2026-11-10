@@ -1,0 +1,30 @@
+{
+  "address": "3932 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/24th-street/3932/unit-lot-042/",
+  "apn": "3654042",
+  "block": "3654",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 1216
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 137170,
+    "assessed_improvement_value": 172008
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3654042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3654&street_number=3932",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

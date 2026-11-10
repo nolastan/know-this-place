@@ -1,0 +1,45 @@
+{
+  "address": "1155 Pine Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/pine-street/1155/unit-3/",
+  "unit": "3",
+  "apn": "0276096",
+  "block": "0276",
+  "lot": "096",
+  "parcel": {
+    "building_area_sqft": 370,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 49763,
+    "assessed_improvement_value": 73651
+  },
+  "permits": [
+    {
+      "number": "200908034033",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-08-03",
+      "status_date": "2009-08-03",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "to complete work and obtain final inspection for work approved under pa 200702093852",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0276096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0276&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

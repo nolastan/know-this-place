@@ -1,0 +1,57 @@
+{
+  "address": "1817 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/california-street/1817/unit-1e/",
+  "unit": "1E",
+  "apn": "0648028",
+  "block": "0648",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 779,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 583136,
+    "assessed_improvement_value": 583136,
+    "last_sale_date": "2017-10-27"
+  },
+  "permits": [
+    {
+      "number": "201909101210",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-10",
+      "status_date": "2020-02-27",
+      "estimated_cost": 14981,
+      "revised_cost": 14981,
+      "description": "one unit - added scope to pa 2019-0513-0498 - remodel second bathroom in condo like for like; bathroom remodel approx 95 sf. no structural work. no changes to wall layout",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905130498",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-13",
+      "status_date": "2020-02-27",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "convert half bathroom to full bathroom. installation of shower pan. moving toilte to be within code, currently within 30\". new flooring/tile after construction. lights per 2016 cenc 150.0(k). installation of vent and new lighting. provide exhaust fan.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0648028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0648&unit=1E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

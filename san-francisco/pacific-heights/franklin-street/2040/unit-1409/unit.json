@@ -1,0 +1,53 @@
+{
+  "address": "2040 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/2040/unit-1409/",
+  "unit": "1409",
+  "apn": "0599108",
+  "block": "0599",
+  "lot": "108",
+  "parcel": {
+    "building_area_sqft": 1177,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 955773,
+    "assessed_improvement_value": 775644,
+    "last_sale_date": "2018-05-01"
+  },
+  "permits": [
+    {
+      "number": "201805240131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-24",
+      "status_date": "2018-10-04",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "#1409: remodel kitchen & bathrooms, remodel non-bearing partitions, add new dropped cieling & led lights. moving exhaust fans.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2018",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0599108&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0599&unit=1409",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

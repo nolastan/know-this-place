@@ -1,0 +1,127 @@
+{
+  "address": "2806 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2806/",
+  "block": "0948",
+  "eas_baseid": "423721",
+  "coordinates": {
+    "lat": 37.796036,
+    "lng": -122.445718
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 7,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina"
+  },
+  "condominium": {
+    "lots": [
+      "032",
+      "033",
+      "034",
+      "035",
+      "036",
+      "037",
+      "038"
+    ],
+    "method": "Proposed from the 2025 roll for block 0948: every condominium parcel the roll files under 2806 UNION ST, and the unbroken run of lots beside parcel 0948032 on the same street with the same year built (1915). 7 lots, 032–038."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cow Hollow First Bay Tradition Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200809181985",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-18",
+      "status_date": "2009-01-23",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "work @ one unit only. complete kitchen & bathroom remodel. replace cabinets & countertops & tile floor. redo bathroom, install new tub shower, vanity & toilet. tile floors & walls around tub. 50% kitchen light wattage in flourescent. flourescent or o.s. in bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309075",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-06-01",
+      "status_date": "1993-11-19",
+      "estimated_cost": 5000,
+      "description": "repair dry rotted wood siding, no sturctural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1993–2016",
+    "shown_on_page": 2,
+    "note": "5 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=2806",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0948)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0948&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0948",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0948032",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44571825782711%2037.79603600815635)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-02-08",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 8 February 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n55/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-02-08",
+      "kind": "planning decision",
+      "description": "The City Planning Commission voted 5-2 to refuse the tentative map to convert the six-unit building to condominiums, against the staff's recommendation (Resolution 8174).",
+      "source": "sf-planning-commission-minutes-1979-02-08"
+    }
+  ]
+}

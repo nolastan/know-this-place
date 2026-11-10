@@ -1,0 +1,32 @@
+{
+  "address": "1700 Jones Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/jones-street/1700/unit-2/",
+  "unit": "2",
+  "apn": "0150048",
+  "block": "0150",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1284
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 293152,
+    "assessed_improvement_value": 257323,
+    "last_sale_date": "1996-11-01"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0150048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0150&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

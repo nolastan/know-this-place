@@ -1,0 +1,44 @@
+{
+  "address": "4096 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4096/unit-107/",
+  "unit": "107",
+  "apn": "2623122",
+  "block": "2623",
+  "lot": "122",
+  "parcel": {
+    "building_area_sqft": 487
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 367754,
+    "assessed_improvement_value": 278876,
+    "last_sale_date": "2014-05-20"
+  },
+  "permits": [
+    {
+      "number": "200309114506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-09-11",
+      "status_date": "2003-12-23",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel bathroom: replace tub w/shower, tile floor, replace fixtures, patch sheetrock. replace kitch",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623122&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=107",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

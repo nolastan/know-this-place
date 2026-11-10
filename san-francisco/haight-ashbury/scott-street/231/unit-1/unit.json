@@ -1,0 +1,47 @@
+{
+  "address": "231 Scott Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/scott-street/231/unit-1/",
+  "unit": "1",
+  "apn": "1238040",
+  "block": "1238",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1429,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1061208,
+    "assessed_improvement_value": 1061208,
+    "last_sale_date": "2021-07-12"
+  },
+  "permits": [
+    {
+      "number": "202303214088",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-03-21",
+      "status_date": "2023-03-21",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "kitchen remodel like for like relocating sink. no structural changes. no moving walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1238040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1238&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

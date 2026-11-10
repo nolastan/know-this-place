@@ -1,0 +1,56 @@
+{
+  "address": "740 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fell-street/736/unit-740/",
+  "apn": "0821047",
+  "block": "0821",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 1700,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 720000,
+    "assessed_improvement_value": 480000,
+    "last_sale_date": "2024-10-22"
+  },
+  "permits": [
+    {
+      "number": "9818732",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-17",
+      "status_date": "2006-05-11",
+      "estimated_cost": 2000,
+      "description": "cap partial brick foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204793",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-26",
+      "status_date": "1992-06-16",
+      "estimated_cost": 8000,
+      "revised_cost": 0,
+      "description": "rekplace cabinets, counter, sliding glass door & aluminum.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0821047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0821&street_number=740",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "address": "407 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/407/unit-3080/",
+  "unit": "3080",
+  "apn": "3580097",
+  "block": "3580",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 760,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 7040,
+    "assessed_improvement_value": 58288
+  },
+  "permits": [
+    {
+      "number": "202410163015",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-16",
+      "status_date": "2025-01-24",
+      "estimated_cost": 33000,
+      "revised_cost": 35000,
+      "description": "one unit-response to nov 202426529- repair of dry rot damamged balcony (2 total) replace deck sheating girder bm guardwall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104274892",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-27",
+      "status_date": "2011-05-04",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace deck joist dry - rotten. replace in kind less than 50%",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&unit=3080",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

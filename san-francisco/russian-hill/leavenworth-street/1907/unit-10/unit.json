@@ -1,0 +1,47 @@
+{
+  "address": "1907 Leavenworth Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/leavenworth-street/1907/unit-10/",
+  "unit": "10",
+  "apn": "0122061",
+  "block": "0122",
+  "lot": "061",
+  "parcel": {
+    "building_area_sqft": 992,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 560294,
+    "assessed_improvement_value": 560294,
+    "last_sale_date": "2013-02-22"
+  },
+  "permits": [
+    {
+      "number": "202211015685",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-11-01",
+      "status_date": "2022-11-01",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "renovation of bathroom replacement of tub walls, toilet, vanity, sink, and tile flooring. relocation of recepticles and switches, lights. kitchen cabinet update relocation of light, switches, and receptales cabinet lighting. upate non complaint panael to compliant location. if needed. pull new lead.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0122061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0122&unit=10",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

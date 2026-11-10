@@ -1,0 +1,68 @@
+{
+  "address": "850 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/850/unit-603/",
+  "unit": "603",
+  "apn": "0243087",
+  "block": "0243",
+  "lot": "087",
+  "parcel": {
+    "building_area_sqft": 1442,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 533818,
+    "assessed_improvement_value": 533818,
+    "last_sale_date": "2012-05-08"
+  },
+  "permits": [
+    {
+      "number": "202203150024",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-03-15",
+      "status_date": "2022-03-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one 100 sqft master bathroom remodel on 6th floor- replace existing with (n) toilet, vanity, all (n) fixtures and finishes curbed shower and soaking tub no structural. no changes to walls or openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203049246",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-03-04",
+      "status_date": "2022-03-08",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "one unit. one 28 sqft bathroom remodel in-kind. no structural, no changes to walls or openings. replace existing with (n) toilet & vanity. all (n) fixtures & finishes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810245096",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-10-24",
+      "status_date": "2009-12-29",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "work @ one unit only. replace 4 windows. size for size. not visable from street. u value 0.39.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243087&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=603",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

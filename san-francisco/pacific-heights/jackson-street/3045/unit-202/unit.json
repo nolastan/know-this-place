@@ -1,0 +1,57 @@
+{
+  "address": "3045 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/3045/unit-202/",
+  "unit": "202",
+  "apn": "0982044",
+  "block": "0982",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 1089,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 732233,
+    "assessed_improvement_value": 488155,
+    "last_sale_date": "2021-11-24"
+  },
+  "permits": [
+    {
+      "number": "202103055994",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-05",
+      "status_date": "2021-09-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "repair master bath and hallway due to water damage. no exterior work. no walls changed. repair floor finish.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306250382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-25",
+      "status_date": "2013-11-14",
+      "estimated_cost": 30000,
+      "revised_cost": 20000,
+      "description": "one unit: bathroom renovation in existing space. no structural or wall changes. new lighting and plumbing fixtures, installation of exhaust fan. installation of built in cabinetry in adjacent closet. all lighting to be high efficiency led.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0982044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0982&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

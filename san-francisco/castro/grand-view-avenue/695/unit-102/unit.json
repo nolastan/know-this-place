@@ -1,0 +1,68 @@
+{
+  "address": "695 Grand View Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/grand-view-avenue/695/unit-102/",
+  "unit": "102",
+  "apn": "6501053",
+  "block": "6501",
+  "lot": "053",
+  "parcel": {
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 357838,
+    "assessed_improvement_value": 238558,
+    "last_sale_date": "2022-02-01"
+  },
+  "permits": [
+    {
+      "number": "202505136379",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-13",
+      "status_date": "2025-05-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#: 202202107709; all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202202107709",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-02-10",
+      "status_date": "2022-02-10",
+      "estimated_cost": 1500,
+      "revised_cost": 20000,
+      "description": "#102: replace floors with vinyl. replace kitchen cabinets. new kitchen appliances. new counter tops. replace shower door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901129941",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-01-12",
+      "status_date": "2009-01-12",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace 4 windows into existing openings. no structrual changes, not visable from the street, u factor, .67 max.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6501053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6501&unit=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "address": "1807 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/2040/unit-601/",
+  "unit": "601",
+  "apn": "0599037",
+  "block": "0599",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1189,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 557683,
+    "assessed_improvement_value": 371784,
+    "last_sale_date": "2004-09-30"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2017–2018",
+    "shown_on_page": 0,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0599037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0599&unit=601",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

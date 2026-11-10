@@ -1,0 +1,47 @@
+{
+  "address": "1099 Mississippi Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/mississippi-street/1099/unit-3/",
+  "unit": "3",
+  "apn": "4224053",
+  "block": "4224",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1478,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 819904,
+    "assessed_improvement_value": 583783,
+    "last_sale_date": "2018-11-01"
+  },
+  "permits": [
+    {
+      "number": "201907055228",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-05",
+      "status_date": "2019-11-12",
+      "estimated_cost": 12000,
+      "revised_cost": 16602,
+      "description": "install new bathroom at ground fl. sprinkler under sep permit if req'd.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4224053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4224&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "address": "178 Corwin Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/corwin-street/170/unit-178/",
+  "apn": "2714037",
+  "block": "2714",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 780
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93212,
+    "assessed_improvement_value": 41409
+  },
+  "permits": [
+    {
+      "number": "202306281005",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-28",
+      "status_date": "2024-09-27",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "exterior stair repair, less than 50%, replace with new wood in kind. visible from the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811307179",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-30",
+      "status_date": "2019-04-03",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove/replace all damaged members with like members of the deck to comply with nov 201802621",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107261117",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-26",
+      "status_date": "2011-11-02",
+      "estimated_cost": 8000,
+      "revised_cost": 15000,
+      "description": "new steel frame at garage header. work to be at common area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819587",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-28",
+      "status_date": "1998-12-30",
+      "estimated_cost": 12250,
+      "description": "replace (e) stair runs and landings to match existing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2714037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2714&street_number=178",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

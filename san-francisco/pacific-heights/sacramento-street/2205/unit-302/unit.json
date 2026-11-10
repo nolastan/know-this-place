@@ -1,0 +1,66 @@
+{
+  "address": "2205 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2205/unit-302/",
+  "unit": "302",
+  "apn": "0638050",
+  "block": "0638",
+  "lot": "050",
+  "parcel": {
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 166523,
+    "assessed_improvement_value": 177626
+  },
+  "permits": [
+    {
+      "number": "202610280050",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-10-28",
+      "status_date": "2026-10-29",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: structural changes. revision to pa #202608257112: expand and moving wall opening in existing walls of unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202608257112",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-08-25",
+      "status_date": "2026-08-25",
+      "estimated_cost": 180000,
+      "revised_cost": 180000,
+      "description": "remodel (e) kitchen in kind. remodel (e) master bath in kind. remodel (e) 1/2 bath in kind. no change to floor layout. no change to wall layout. no structural work. maintain all (e) fire rating.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202606304223",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-30",
+      "status_date": "2026-06-30",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "opening up wall and sheetrock. blocking wood for new gas line for stove.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0638050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0638&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

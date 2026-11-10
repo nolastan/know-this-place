@@ -1,0 +1,74 @@
+{
+  "address": "2145 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/2145/unit-5/",
+  "unit": "5",
+  "apn": "0593048",
+  "block": "0593",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1810,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 944475,
+    "assessed_improvement_value": 944475,
+    "last_sale_date": "2022-06-02"
+  },
+  "permits": [
+    {
+      "number": "202207077934",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-07",
+      "status_date": "2023-12-12",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit: remodel extg bathroom in kind, install can lights, replace kitchen counters and plumbing fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207252287",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-25",
+      "status_date": "2002-07-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 2001/06/14/1626.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106141626",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-06-14",
+      "status_date": "2002-06-14",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel 2 bthrms and kchn",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2001–2022",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0593048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0593&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "address": "3916 Sacramento Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/sacramento-street/3916/unit-lot-074/",
+  "apn": "1014074",
+  "block": "1014",
+  "lot": "074",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1006544,
+    "assessed_improvement_value": 1303464,
+    "last_sale_date": "2015-03-03"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1014074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1014&street_number=3916",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

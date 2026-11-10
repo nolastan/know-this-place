@@ -1,0 +1,86 @@
+{
+  "address": "850 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/850/unit-703/",
+  "unit": "703",
+  "apn": "0243091",
+  "block": "0243",
+  "lot": "091",
+  "parcel": {
+    "building_area_sqft": 2822,
+    "rooms": 8,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1231423,
+    "assessed_improvement_value": 1580734,
+    "last_sale_date": "2012-10-24"
+  },
+  "permits": [
+    {
+      "number": "201509298301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-29",
+      "status_date": "2017-10-13",
+      "estimated_cost": 350000,
+      "revised_cost": 350000,
+      "description": "one unit: reconfigure non structural interior partition walls. remodel kitchen, bath, bedrooms, living room, dining room, entry hall, & laundry room. no change to windows or exterior openings. this is an apt on 7th floor of an 11 story bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407020353",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-02",
+      "status_date": "2014-07-02",
+      "estimated_cost": 25000,
+      "revised_cost": 45000,
+      "description": "one unit: remove & replace 1 kitchen and 4 bathrooms in-kind, remove & replace sheet rock, trim in-kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209200294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-20",
+      "status_date": "2012-09-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa # 8913334. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209200296",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-20",
+      "status_date": "2012-09-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa # 8912833. all work is complete.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2012–2017",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243091&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=703",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "address": "795 8th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/8th-avenue/795/unit-404/",
+  "unit": "404",
+  "apn": "1651063",
+  "block": "1651",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 881,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 484800,
+    "assessed_improvement_value": 323200,
+    "last_sale_date": "2021-02-12"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1651063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1651&unit=404",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

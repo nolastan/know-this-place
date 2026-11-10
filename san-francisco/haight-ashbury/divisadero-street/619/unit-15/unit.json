@@ -1,0 +1,47 @@
+{
+  "address": "625 Divisadero Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/divisadero-street/619/unit-15/",
+  "unit": "15",
+  "apn": "1201053",
+  "block": "1201",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 306,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 250321,
+    "assessed_improvement_value": 261919,
+    "last_sale_date": "2018-01-31"
+  },
+  "permits": [
+    {
+      "number": "201811075296",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-07",
+      "status_date": "2018-12-21",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "kitchen remodel - removal of old cabinets, counter top, sink & faucet. install new cabinets, counter top, sink & faucet. change all angle stops to new 1/4 turn shut-off valves. painting & patching. new lighting fixtures to existing ceiling box.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1201053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1201&unit=15",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

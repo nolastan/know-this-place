@@ -1,0 +1,66 @@
+{
+  "address": "1922 Mason Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/mason-street/1916/unit-1922/",
+  "apn": "0090043",
+  "block": "0090",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1174,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 869925,
+    "assessed_improvement_value": 869925,
+    "last_sale_date": "2014-12-03"
+  },
+  "permits": [
+    {
+      "number": "201511243447",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-11-24",
+      "status_date": "2015-11-24",
+      "estimated_cost": 22280,
+      "revised_cost": 22280,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209196925",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-09-19",
+      "status_date": "2007-10-24",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replace tile around bath tub, install 2 wall sconces & 2 can lights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816222",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-18",
+      "status_date": "2000-11-28",
+      "estimated_cost": 1500,
+      "description": "replace 1 windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0090043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0090&street_number=1922",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

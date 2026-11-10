@@ -1,0 +1,46 @@
+{
+  "address": "455 25th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/25th-avenue/455/unit-2/",
+  "unit": "2",
+  "apn": "1457048",
+  "block": "1457",
+  "lot": "048",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 787792,
+    "assessed_improvement_value": 525194,
+    "last_sale_date": "2021-01-11"
+  },
+  "permits": [
+    {
+      "number": "202501228832",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-22",
+      "status_date": "2025-03-06",
+      "estimated_cost": 15000,
+      "revised_cost": 20000,
+      "description": "refurbish existing kitchen, remove counter tops & install new counter top, change sink. add electric oven. install breakfast bar. add backsplash.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1457048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1457&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

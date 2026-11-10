@@ -1,0 +1,77 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-601/",
+  "unit": "601",
+  "apn": "0161070",
+  "block": "0161",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 810
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 344892,
+    "assessed_improvement_value": 344892,
+    "last_sale_date": "2021-09-13"
+  },
+  "permits": [
+    {
+      "number": "200405244695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-24",
+      "status_date": "2004-05-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #200202209599/200110150865",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307219899",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-21",
+      "status_date": "2003-07-25",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "on 6th flr remove one door next to hallway and replacing w/2x4 stud wall .revision to #200303240529",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303240529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-24",
+      "status_date": "2003-07-25",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "install 1 glass wall (full height) with 2 doors at ends and replacing all wall and celing gyp boards",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202209599",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-20",
+      "status_date": "2003-02-11",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "permit renewal-200110150865",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=601",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

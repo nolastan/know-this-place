@@ -1,0 +1,68 @@
+{
+  "address": "2205 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2205/unit-104/",
+  "unit": "104",
+  "apn": "0638044",
+  "block": "0638",
+  "lot": "044",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 918000,
+    "assessed_improvement_value": 612000,
+    "last_sale_date": "2024-04-19"
+  },
+  "permits": [
+    {
+      "number": "202406214991",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-21",
+      "status_date": "2024-12-04",
+      "estimated_cost": 1,
+      "revised_cost": 3000,
+      "description": "rev 202405162270- replace existing subpanel. reduce foyer size to create larger closet. increase opening at primary bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405162270",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-16",
+      "status_date": "2024-12-04",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "one unit, kitchen and bath remodel. adding shower stall for primary bathroom. adding lighting to hallway, living, and dining room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811066041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-06",
+      "status_date": "2008-11-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "work @ one unit only. install in the (e) utility room. new stackable washer & dryer. no structural work. within dwelling. no change in doors, walls or windows.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0638044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0638&unit=104",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

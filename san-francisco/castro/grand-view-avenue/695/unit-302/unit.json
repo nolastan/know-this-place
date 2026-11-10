@@ -1,0 +1,45 @@
+{
+  "address": "695 Grand View Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/grand-view-avenue/695/unit-302/",
+  "unit": "302",
+  "apn": "6501059",
+  "block": "6501",
+  "lot": "059",
+  "parcel": {
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 270058,
+    "assessed_improvement_value": 270058,
+    "last_sale_date": "2004-11-05"
+  },
+  "permits": [
+    {
+      "number": "201502097766",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-02-09",
+      "status_date": "2015-02-09",
+      "estimated_cost": 3475,
+      "revised_cost": 3475,
+      "description": "replace 4 windows in kind, not visable from street, no structural changes, max u factor 0.32",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6501059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6501&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

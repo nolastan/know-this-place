@@ -1,0 +1,46 @@
+{
+  "address": "1255 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/california-street/1255/unit-103/",
+  "unit": "103",
+  "apn": "0252028",
+  "block": "0252",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 620,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 269211,
+    "assessed_improvement_value": 269211,
+    "last_sale_date": "2015-03-30"
+  },
+  "permits": [
+    {
+      "number": "201603020971",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-03-02",
+      "status_date": "2016-03-03",
+      "estimated_cost": 4500,
+      "revised_cost": 35000,
+      "description": "replace bathroom....",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0252028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0252&unit=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
