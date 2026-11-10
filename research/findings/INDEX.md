@@ -119,15 +119,15 @@ sit in — the three it touched most, and how many in all.
 | `loc-newspapers/sn85066387-1908-building-contracts.json` | 2,204 | 4.5 MB | 1908 | 496 | 365 | `mission`, `financial-district`, `nob-hill` +23 |
 | `loc-newspapers/sn85066387-1909-building-contracts.json` | 1,244 | 2.5 MB | 1909 | 277 | 223 | `nob-hill`, `mission`, `south-of-market` +22 |
 | `loc-newspapers/sn85066387-1910-building-contracts.json` | 1,315 | 2.9 MB | 1910 | 210 | 163 | `nob-hill`, `mission`, `tenderloin` +23 |
-| `loc-newspapers/sn85066387-1910-h2-real-estate.json` | 450 | 807 KB | 1910 | 131 | 128 | `nob-hill`, `inner-richmond`, `financial-district` +20 |
+| `loc-newspapers/sn85066387-1910-h2-real-estate.json` | 450 | 755 KB | 1910 | 132 | 128 | `nob-hill`, `inner-richmond`, `financial-district` +20 |
 | `loc-newspapers/sn85066387-1910-offsets.json` | 120 | 183 KB | 1910 | 19 | 15 | `nob-hill`, `financial-district`, `castro` +6 |
 | `loc-newspapers/sn85066387-1910-permits.json` | 178 | 343 KB | 1910 | 48 | 45 | `nob-hill`, `inner-richmond`, `financial-district` +16 |
 | `loc-newspapers/sn85066387-1910-real-estate.json` | 172 | 305 KB | 1909–1910 | 76 | 73 | `nob-hill`, `mission`, `financial-district` +16 |
-| `loc-newspapers/sn85066387-1911-building-contracts.json` | 1,341 | 2.6 MB | 1911 | 175 | 152 | `tenderloin`, `nob-hill`, `mission` +22 |
+| `loc-newspapers/sn85066387-1911-building-contracts.json` | 1,341 | 2.6 MB | 1911 | 176 | 153 | `tenderloin`, `nob-hill`, `mission` +22 |
 | `loc-newspapers/sn85066387-1911-real-estate.json` | 135 | 220 KB | 1911 | 63 | 54 | `east-cut`, `south-of-market`, `pacific-heights` +20 |
 | `loc-newspapers/sn85066387-1912-building-contracts.json` | 1,302 | 2.6 MB | 1912 | 209 | 166 | `mission`, `nob-hill`, `tenderloin` +23 |
 | `loc-newspapers/sn85066387-1912-real-estate.json` | 126 | 201 KB | 1906–1912 | 71 | 58 | `south-of-market`, `nob-hill`, `financial-district` +19 |
-| `loc-newspapers/sn85066387-1913-building-contracts.json` | 369 | 724 KB | 1913 | 88 | 69 | `nob-hill`, `tenderloin`, `outer-richmond` +18 |
+| `loc-newspapers/sn85066387-1913-building-contracts.json` | 369 | 724 KB | 1913 | 89 | 69 | `nob-hill`, `tenderloin`, `outer-richmond` +18 |
 | `loc-newspapers/sn85066387-1913-jan-jul-building-contracts.json` | 731 | 1.4 MB | 1912–1913 | 120 | 91 | `tenderloin`, `mission`, `pacific-heights` +20 |
 | `loc-newspapers/sn85066387-1913-real-estate.json` | 59 | 99 KB | 1913 | 25 | 21 | `east-cut`, `tenderloin`, `inner-richmond` +11 |
 | `noehill/districts.json` | 465 | 807 KB | 1851–1941 | 421 | 265 | `nob-hill`, `tenderloin`, `mission` +9 |
@@ -453,7 +453,7 @@ are listed so their size is visible before anyone opens one.
 | `sn85066387-1910-offsets.json` | 6 | 2 KB | `inner-richmond`, `nob-hill`, `western-addition` +1 |
 | `sn85066387-1910-permits.json` | 29 | 10 KB | `nob-hill`, `inner-richmond`, `pacific-heights` +11 |
 | `sn85066387-1910-real-estate.json` | 28 | 10 KB | `nob-hill`, `haight-ashbury`, `hayes-valley` +10 |
-| `sn85066387-1911-building-contracts.json` | 94 | 34 KB | `nob-hill`, `russian-hill`, `marina` +22 |
+| `sn85066387-1911-building-contracts.json` | 1 | 1 KB | `potrero-hill` |
 | `sn85066387-1911-corners.json` | 2 | 1 KB | `russian-hill`, `haight-ashbury` |
 | `sn85066387-1911-real-estate.json` | 18 | 7 KB | `bernal-heights`, `east-cut`, `chinatown` +13 |
 | `sn85066387-1912-building-contracts.json` | 107 | 39 KB | `outer-richmond`, `russian-hill`, `inner-richmond` +20 |
