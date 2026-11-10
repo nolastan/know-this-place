@@ -1,0 +1,88 @@
+{
+  "address": "1325 Divisadero Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/divisadero-street/1327/unit-1325/",
+  "apn": "1101033",
+  "block": "1101",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 491,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117270,
+    "assessed_improvement_value": 112577,
+    "last_sale_date": "1989-04-10"
+  },
+  "permits": [
+    {
+      "number": "202405202466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-20",
+      "status_date": "2024-08-29",
+      "estimated_cost": 18483,
+      "revised_cost": 54367,
+      "description": "install brand new fire charm system including radio, pael, smoke, heat, pull station, lfh, horn strobes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910033460",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-10-03",
+      "status_date": "2026-01-09",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "install new fire alarm system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506017608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-01",
+      "status_date": "2015-07-09",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "reroofing (hoa) n/a maher ordinance # 155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803066515",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-03-06",
+      "status_date": "2008-03-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "perform repairs per termite report #50853 item 5a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503026597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-03-02",
+      "status_date": "2005-04-19",
+      "estimated_cost": 25900,
+      "revised_cost": 25900,
+      "description": "south side wall & lightwell - install vinyl siding, all work not visible from street, approximately",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1101033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1101&street_number=1325",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

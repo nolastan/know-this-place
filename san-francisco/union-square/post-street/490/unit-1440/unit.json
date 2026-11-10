@@ -1,0 +1,44 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-1440/",
+  "unit": "1440",
+  "apn": "0296114",
+  "block": "0296",
+  "lot": "114",
+  "parcel": {
+    "building_area_sqft": 1378
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 596485,
+    "assessed_improvement_value": 397653,
+    "last_sale_date": "2009-02-24"
+  },
+  "permits": [
+    {
+      "number": "202305308807",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-05-30",
+      "status_date": "2026-01-23",
+      "estimated_cost": 903000,
+      "revised_cost": 0,
+      "description": "ste 1440: t.i. for ophthamology office: interior bearing partitions for offices, exam rms, treatment rms, casework, new finishes. relocate electrical, plumbing & mech work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296114&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=1440",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

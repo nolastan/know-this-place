@@ -1,0 +1,80 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-38d/",
+  "unit": "38D",
+  "apn": "3722356",
+  "block": "3722",
+  "lot": "356",
+  "parcel": {
+    "building_area_sqft": 1792,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1952622,
+    "assessed_improvement_value": 1952622,
+    "last_sale_date": "2021-12-22"
+  },
+  "permits": [
+    {
+      "number": "200609182604",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-18",
+      "status_date": "2006-12-05",
+      "estimated_cost": 370000,
+      "revised_cost": 370000,
+      "description": "increase job valuation by an additional $370,000.00 for a total of $445,000 per inspector's request, ref. pa#2005/10/13/5512",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609182610",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-18",
+      "status_date": "2006-12-05",
+      "estimated_cost": 72000,
+      "revised_cost": 72000,
+      "description": "renew expxired permit #2006/03/03/5942 to complete work, and increase job valaue to 72,000 per inspector's request. to complete work and obtain final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603166808",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-16",
+      "status_date": "2006-12-01",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "modification of extg sprinkler system to accomodate tenant wall relocation wall revision not part of permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603035942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-03",
+      "status_date": "2006-12-05",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to approved ti permit no 200510135512-minor revs including different bathrm tub & fixtures, relocation of mill work, utility rm (laundry) change in closet doors, no construction work, fire protection under separate permit - no exterior work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722356&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=38D",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

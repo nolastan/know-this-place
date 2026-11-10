@@ -1,0 +1,94 @@
+{
+  "address": "1630 Broderick Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/broderick-street/1626/unit-1630/",
+  "apn": "1052041",
+  "block": "1052",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 1580,
+    "rooms": 6,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93877,
+    "assessed_improvement_value": 99605
+  },
+  "permits": [
+    {
+      "number": "201012036102",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-03",
+      "status_date": "2011-12-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#200912032561 all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003319330",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-03-31",
+      "status_date": "2026-01-09",
+      "estimated_cost": 3000,
+      "revised_cost": 0,
+      "description": "revision to pa# 2009.06.08.9937. remove post and upgrade post and footing in basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912032561",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-12-03",
+      "status_date": "2011-01-25",
+      "estimated_cost": 59600,
+      "revised_cost": 59600,
+      "description": "remodel of flat with new electrical & plumbing, new bathroom & kitchen and window replacement, revision to application #2009/0608/9937.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906089937",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-06-08",
+      "status_date": "2011-01-25",
+      "estimated_cost": 2000,
+      "revised_cost": 3000,
+      "description": "create a larger living room on the first floor by removing (e) bearing and non bearing wall and instaliing new structural beam and posts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712190898",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-12-19",
+      "status_date": "2011-01-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "new sheetrock on hallway. no structural changes 40% or less wall covering (due to crack on wall) add r-13 insulation.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "2007–2011",
+    "shown_on_page": 5,
+    "note": "5 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1052041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1052&street_number=1630",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

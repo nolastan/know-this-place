@@ -1,0 +1,47 @@
+{
+  "address": "542 Natoma Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/natoma-street/544/unit-2/",
+  "unit": "2",
+  "apn": "3726171",
+  "block": "3726",
+  "lot": "171",
+  "parcel": {
+    "building_area_sqft": 2425,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1155000,
+    "assessed_improvement_value": 770000,
+    "last_sale_date": "2018-10-17"
+  },
+  "permits": [
+    {
+      "number": "202206236981",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-06-23",
+      "status_date": "2026-01-23",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "address correction from building permit 202001212375",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3726171&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3726&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

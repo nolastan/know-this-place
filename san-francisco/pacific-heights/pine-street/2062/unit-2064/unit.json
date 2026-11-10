@@ -1,0 +1,38 @@
+{
+  "address": "2064 Pine Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pine-street/2062/unit-2064/",
+  "apn": "0651066",
+  "block": "0651",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 1093,
+    "rooms": 10
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 457924,
+    "assessed_improvement_value": 580434,
+    "last_sale_date": "2012-07-06"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2009–2018",
+    "shown_on_page": 0,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0651066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0651&street_number=2064",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-1124/",
+  "unit": "1124",
+  "apn": "0296094",
+  "block": "0296",
+  "lot": "094",
+  "parcel": {
+    "building_area_sqft": 1282
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 800802,
+    "assessed_improvement_value": 533866,
+    "last_sale_date": "2016-09-16"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296094&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=1124",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

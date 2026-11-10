@@ -1,0 +1,68 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-1105/",
+  "unit": "1105",
+  "apn": "0627A085",
+  "block": "0627A",
+  "lot": "085",
+  "parcel": {
+    "building_area_sqft": 828,
+    "rooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 649119,
+    "assessed_improvement_value": 649119,
+    "last_sale_date": "2005-11-30"
+  },
+  "permits": [
+    {
+      "number": "201410310423",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-10-31",
+      "status_date": "2014-11-05",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "one unit: interior remodel of kitchen, bathroom & bedroom, no alteration to (e) load-bearing walls or chases. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310228247",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-22",
+      "status_date": "2004-02-12",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "#1105- enclose balcony in addition to appl#200308263086",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308263086",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-26",
+      "status_date": "2004-02-12",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "kitchen remodel replace extng cabinets,appliance & fixts.bathroom remodel. replace extng cabinets &",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=1105",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

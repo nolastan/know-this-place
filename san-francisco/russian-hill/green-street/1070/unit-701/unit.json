@@ -1,0 +1,69 @@
+{
+  "address": "1070 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1070/unit-701/",
+  "unit": "701",
+  "apn": "0121A019",
+  "block": "0121A",
+  "lot": "019",
+  "parcel": {
+    "building_area_sqft": 1616,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2231036,
+    "assessed_improvement_value": 1338620,
+    "last_sale_date": "2018-12-11"
+  },
+  "permits": [
+    {
+      "number": "202006128651",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-12",
+      "status_date": "2022-01-10",
+      "estimated_cost": 49000,
+      "revised_cost": 49000,
+      "description": "replace finishes in-kind at 2 bathrooms and 1 kitchen. new wood flooring throughout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208026373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-02",
+      "status_date": "2018-11-14",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "enclose the existing balcony to be interior space. to remodel kitchen, bathrooms, laundry area per plan. demolish non bearing partition wall, cabinets, finishings. replace existing windows per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408030496",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-03",
+      "status_date": "2004-12-21",
+      "estimated_cost": 4200,
+      "revised_cost": 4200,
+      "description": "add tub to existing shower location (no structural)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121A019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121A&unit=701",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

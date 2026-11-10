@@ -1,0 +1,47 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-701/",
+  "unit": "701",
+  "apn": "0451178",
+  "block": "0451",
+  "lot": "178",
+  "parcel": {
+    "building_area_sqft": 1166,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 684832,
+    "assessed_improvement_value": 456540,
+    "last_sale_date": "2007-12-04"
+  },
+  "permits": [
+    {
+      "number": "200704168887",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-16",
+      "status_date": "2007-05-29",
+      "estimated_cost": 15240,
+      "revised_cost": 15240,
+      "description": "paint one kchn cbnts, install new granite countertops, replace stove/ oven. install new laminate flooring. paint cbnts in 1 bath (hall) install nw marble flooring. replace light. paint cbnts in 1 bath(master) install new marble flooring , replace light",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451178&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=701",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

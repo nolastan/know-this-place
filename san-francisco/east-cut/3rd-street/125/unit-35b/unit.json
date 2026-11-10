@@ -1,0 +1,47 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-35b/",
+  "unit": "35B",
+  "apn": "3722338",
+  "block": "3722",
+  "lot": "338",
+  "parcel": {
+    "building_area_sqft": 1675,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1163613,
+    "assessed_improvement_value": 1163613,
+    "last_sale_date": "2021-03-03"
+  },
+  "permits": [
+    {
+      "number": "202108206831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-20",
+      "status_date": "2023-01-13",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "#35b. remodel bathroom - new counter tops, cabinets in kitchen. non-structural",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722338&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=35B",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

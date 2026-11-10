@@ -958,10 +958,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 670 08TH ST but it does not join to one parcel. 670 08TH ST's coordinates fall in 14 active parcels (3782022, 3782021, 3782013, 3782019…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building. The record writes the street 8TH; EAS holds the numbered streets zero-padded to four characters, so this is 08TH.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3782 still places it on that city block."
+    "status": "resolved",
+    "apn": "3782011",
+    "path": "/san-francisco/south-of-market/8th-street/670/",
+    "eas_address": "670 08TH ST",
+    "method": "EAS exact match on 670 08TH ST → parcel 3782011; sf-parcels has blklot 3782011 active, 670–670 08TH; the 2025 roll records it as single family residential, built 2002. Parcel 3782011 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 670 08TH ST's coordinates fall in 14 active parcels, one condominium map's units on the 2025 roll; 3782011 stands for the building. The record's assessor block 3782 matches the parcel's block. The record writes the street 8TH; EAS holds the numbered streets zero-padded to four characters, so this is 08TH.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -2042,12 +2049,18 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 76 14TH ST → parcel 3529019; sf-parcels has blklot 3529019 active, 74–76 14TH; the 2025 roll records it as single family residential, built 1919. The record's assessor block 3529 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3529019",
+    "path": "/san-francisco/mission/14th-street/74/",
+    "eas_address": "74 14TH ST",
+    "method": "EAS exact match on 76 14TH ST → parcel 3529019; sf-parcels has blklot 3529019 active, 74–76 14TH; the 2025 roll records it as single family residential, built 1919. EAS puts 74, 76 14TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 74. The record's assessor block 3529 matches the parcel's block.",
+    "checked_on": "2026-11-10"
    },
-   "conflict": "The survey's data table dates the building to 1919; the context statement's appendix dates it to 1914."
+   "conflict": "The survey's data table dates the building to 1919; the context statement's appendix dates it to 1914.",
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
+   }
   },
   {
    "id": "showplace-square-survey-0048",
@@ -2630,10 +2643,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 266 14TH ST → parcel 3531020; sf-parcels has blklot 3531020 active, 266–270 14TH; the 2025 roll records it as single family residential, built 1924. The record's assessor block 3531 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3531020",
+    "path": "/san-francisco/mission/14th-street/266/",
+    "eas_address": "266 14TH ST",
+    "method": "EAS exact match on 266 14TH ST → parcel 3531020; sf-parcels has blklot 3531020 active, 266–270 14TH; the 2025 roll records it as single family residential, built 1924. EAS puts 266, 270 14TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 266. The record's assessor block 3531 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -3243,10 +3262,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 999 16TH ST but it does not join to one parcel. 999 16TH ST's coordinates fall in 20 active parcels (3950032, 3950021, 3950034, 3950037…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3950 still places it on that city block."
+    "status": "resolved",
+    "apn": "3950019",
+    "path": "/san-francisco/mission-bay/16th-street/999/",
+    "eas_address": "999 16TH ST",
+    "method": "EAS exact match on 999 16TH ST → parcel 3950019; sf-parcels has blklot 3950019 active, 999–999 16TH; the 2025 roll records it as single family residential, built 1998. Parcel 3950019 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 999 16TH ST's coordinates fall in 20 active parcels, one condominium map's units on the 2025 roll; 3950019 stands for the building. The record's assessor block 3950 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -4546,10 +4572,21 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2765 16TH ST but it does not join to one parcel. 2765 16TH ST's coordinates fall in 2 active parcels (3572036, 3572037), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3572 still places it on that city block."
+    "status": "resolved",
+    "apn": "3572036",
+    "path": "/san-francisco/mission/16th-street/2765/",
+    "eas_address": "2765 16TH ST",
+    "method": "EAS exact match on 2765 16TH ST → parcel 3572036; sf-parcels has blklot 3572036 active; the 2025 roll records it as industrial. Parcel 3572036 is one of 2 airspace parcels of one building (3572036, 3572037); the fact is the building's, and goes on the building's page at this path, which lists its parcels. 2765 16TH ST's coordinates fall in 2 active parcels that sf-parcels files under one map lot, 3572036: one building divided into airspace parcels; 3572036 stands for the building. The record's assessor block 3572 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "building_lots": [
+     "036",
+     "037"
+    ],
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "No page, and a survey row on its own does not earn one."
    }
   },
   {
@@ -5594,10 +5631,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 1001 17TH ST but it does not join to one parcel. 1001 17TH ST's coordinates fall in 20 active parcels (3987059, 3987074, 3987052, 3987072…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3987 still places it on that city block."
+    "status": "resolved",
+    "apn": "3987051",
+    "path": "/san-francisco/potrero-hill/17th-street/1001/",
+    "eas_address": "1001 17TH ST",
+    "method": "EAS exact match on 1001 17TH ST → parcel 3987051; sf-parcels has blklot 3987051 active, 1001–1001 17TH; the 2025 roll records it as commercial retail, built 2016. Parcel 3987051 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium and gives its location as unit 0100 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1001 17TH ST's coordinates fall in 27 active parcels, one condominium map's units on the 2025 roll; 3987051 stands for the building. The record's assessor block 3987 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on this parcel to 2016, so this is about what stood there before it, and a page is not seeded for a predecessor alone."
    }
   },
   {
@@ -5628,10 +5672,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 1025 17TH ST but it does not join to one parcel. 1025 17TH ST's coordinates fall in 10 active parcels (3987030, 3987031, 3987026, 3987028…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3987 still places it on that city block."
+    "status": "resolved",
+    "apn": "3987025",
+    "path": "/san-francisco/potrero-hill/17th-street/1025/",
+    "eas_address": "1025 17TH ST",
+    "method": "EAS exact match on 1025 17TH ST → parcel 3987025; sf-parcels has blklot 3987025 active, 1025–1025 17TH; the 2025 roll records it as single family residential, built 1999. Parcel 3987025 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1025 17TH ST's coordinates fall in 10 active parcels, one condominium map's units on the 2025 roll; 3987025 stands for the building. The record's assessor block 3987 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -5705,10 +5755,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 1050 17TH ST but it does not join to one parcel. 1050 17TH ST's coordinates fall in 19 active parcels (3948012, 3948007, 3948005, 3948010…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3948 still places it on that city block."
+    "status": "resolved",
+    "apn": "3948004",
+    "path": "/san-francisco/potrero-hill/17th-street/1050/",
+    "eas_address": "1050 17TH ST",
+    "method": "EAS exact match on 1050 17TH ST → parcel 3948004; sf-parcels has blklot 3948004 active, 1050–1050 17TH; the 2025 roll records it as single family residential, built 2002. Parcel 3948004 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0202 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1050 17TH ST's coordinates fall in 19 active parcels, one condominium map's units on the 2025 roll; 3948004 stands for the building. The record's assessor block 3948 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -7298,10 +7355,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 1950 17TH ST → parcel 3957003; sf-parcels has blklot 3957003 active, 1950–1950 17TH; the 2025 roll records it as commercial office, built 2002. The record's assessor block 3957 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3957003",
+    "path": "/san-francisco/mission/17th-street/1950/",
+    "eas_address": "1950 17TH ST",
+    "method": "EAS exact match on 1950 17TH ST → parcel 3957003; sf-parcels has blklot 3957003 active, 1950–1950 17TH; the 2025 roll records it as commercial office, built 2002. The assessor files the parcel as 350 RHODE ISLAND STNORTH. Parcel 3957003 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium and gives its location as unit NORTH of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 3957 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -9430,10 +9494,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 3118 18TH ST but it does not join to one parcel. 3118 18TH ST's coordinates fall in 9 active parcels (3573042, 3573044, 3573039, 3573045…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3573 still places it on that city block."
+    "status": "resolved",
+    "apn": "3573037",
+    "path": "/san-francisco/mission/18th-street/3118/",
+    "eas_address": "3118 18TH ST",
+    "method": "EAS exact match on 3118 18TH ST → parcel 3573037; sf-parcels has blklot 3573037 active, 3118–3118 18TH; the 2025 roll records it as single family residential, built 1998. Parcel 3573037 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 3118 18TH ST's coordinates fall in 9 active parcels, one condominium map's units on the 2025 roll; 3573037 stands for the building. The record's assessor block 3573 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -9745,12 +9816,19 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 3004 18TH ST → parcel 4019016; sf-parcels has blklot 4019016 active, 3004–3004 18TH; the 2025 roll records it as single family residential, built 1908. EAS files the address under parcel 4019006A, which sf-parcels reports retired; the active parcel its coordinates fall in is 4019016. The record's assessor block 4019 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "4019016",
+    "path": "/san-francisco/mission/18th-street/3004/",
+    "eas_address": "3004 18TH ST",
+    "method": "EAS exact match on 3004 18TH ST → parcel 4019016; sf-parcels has blklot 4019016 active, 3004–3004 18TH; the 2025 roll records it as single family residential, built 1908. EAS puts 3004, 3006 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3004. EAS files the address under parcel 4019006A, which sf-parcels reports retired; the active parcel its coordinates fall in is 4019016. The record's assessor block 4019 matches the parcel's block. The record prints assessor block 4019 lot 016, which is this parcel, so the pre-1910 date is the building's and not the address's — the renumbering guard does not apply.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
    },
-   "conflict": "The survey's data table dates the building to 1885; its own note says it was built before 1897."
+   "conflict": "The survey's data table dates the building to 1885; its own note says it was built before 1897.",
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
+   }
   },
   {
    "id": "showplace-square-survey-0229",
@@ -9787,10 +9865,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 3004 18TH ST → parcel 4019016; sf-parcels has blklot 4019016 active, 3004–3004 18TH; the 2025 roll records it as single family residential, built 1908. EAS files the address under parcel 4019006A, which sf-parcels reports retired; the active parcel its coordinates fall in is 4019016. The record's assessor block 4019 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "4019016",
+    "path": "/san-francisco/mission/18th-street/3004/",
+    "eas_address": "3004 18TH ST",
+    "method": "EAS exact match on 3004 18TH ST → parcel 4019016; sf-parcels has blklot 4019016 active, 3004–3004 18TH; the 2025 roll records it as single family residential, built 1908. EAS puts 3004, 3006 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3004. EAS files the address under parcel 4019006A, which sf-parcels reports retired; the active parcel its coordinates fall in is 4019016. The record's assessor block 4019 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -10467,12 +10551,18 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 2810 19TH ST → parcel 4022019; sf-parcels has blklot 4022019 active, 2810–2810 19TH; the 2025 roll records it as single family residential, built 1900. EAS files the address under parcel 4022014, which sf-parcels reports retired; the active parcel its coordinates fall in is 4022019. The record's assessor block 4022 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "4022019",
+    "path": "/san-francisco/mission/19th-street/2810/",
+    "eas_address": "2810 19TH ST",
+    "method": "EAS exact match on 2810 19TH ST → parcel 4022019; sf-parcels has blklot 4022019 active, 2810–2810 19TH; the 2025 roll records it as single family residential, built 1900. EAS puts 2810, 2812 19TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2810. Parcel 4022019 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS files the address under parcel 4022014, which sf-parcels reports retired; the active parcel its coordinates fall in is 4022019. The record's assessor block 4022 matches the parcel's block. The record prints assessor block 4022 lot 019, which is this parcel, so the pre-1910 date is the building's and not the address's — the renumbering guard does not apply.",
+    "checked_on": "2026-11-10"
    },
-   "conflict": "The survey's data table dates the building to 1885; its own note says it was built before 1889."
+   "conflict": "The survey's data table dates the building to 1885; its own note says it was built before 1889.",
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
+   }
   },
   {
    "id": "showplace-square-survey-0246",
@@ -11443,10 +11533,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 350 ALABAMA ST but it does not join to one parcel. 350 ALABAMA ST's coordinates fall in 20 active parcels (3967031, 3967045, 3967033, 3967029…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3967 still places it on that city block."
+    "status": "resolved",
+    "apn": "3967029",
+    "path": "/san-francisco/mission/alabama-street/350/",
+    "eas_address": "350 ALABAMA ST",
+    "method": "EAS exact match on 350 ALABAMA ST → parcel 3967029; sf-parcels has blklot 3967029 active, 350–350 ALABAMA; the 2025 roll records it as single family residential, built 2003. Parcel 3967029 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 350 ALABAMA ST's coordinates fall in 21 active parcels, one condominium map's units on the 2025 roll; 3967029 stands for the building. The record's assessor block 3967 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -11569,10 +11666,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 380 ALABAMA ST but it does not join to one parcel. 380 ALABAMA ST's coordinates fall in 20 active parcels (3967068, 3967056, 3967064, 3967070…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3967 still places it on that city block."
+    "status": "resolved",
+    "apn": "3967049",
+    "path": "/san-francisco/mission/alabama-street/380/",
+    "eas_address": "380 ALABAMA ST",
+    "method": "EAS exact match on 380 ALABAMA ST → parcel 3967049; sf-parcels has blklot 3967049 active, 380–380 ALABAMA; the 2025 roll records it as commercial retail, built 2005. Parcel 3967049 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 380 ALABAMA ST's coordinates fall in 23 active parcels, one condominium map's units on the 2025 roll; 3967049 stands for the building. The record's assessor block 3967 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -12452,10 +12556,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 580 ALABAMA ST → parcel 4019008; sf-parcels has blklot 4019008 active, 580–580 ALABAMA; the 2025 roll records it as single family residential, built 1999. The record's assessor block 4019 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "4019008",
+    "path": "/san-francisco/mission/alabama-street/580/",
+    "eas_address": "580 ALABAMA ST",
+    "method": "EAS exact match on 580 ALABAMA ST → parcel 4019008; sf-parcels has blklot 4019008 active, 580–580 ALABAMA; the 2025 roll records it as single family residential, built 1999. Parcel 4019008 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 4019 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -12672,10 +12783,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 728 ALABAMA ST but it does not join to one parcel. 728 ALABAMA ST's coordinates fall in 16 active parcels (4083034, 4083031, 4083037, 4083023…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4083 still places it on that city block."
+    "status": "resolved",
+    "apn": "4083022",
+    "path": "/san-francisco/mission/alabama-street/728/",
+    "eas_address": "728 ALABAMA ST",
+    "method": "EAS exact match on 728 ALABAMA ST → parcel 4083022; sf-parcels has blklot 4083022 active, 728–728 ALABAMA; the 2025 roll records it as single family residential, built 1995. Parcel 4083022 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 728 ALABAMA ST's coordinates fall in 16 active parcels, one condominium map's units on the 2025 roll; 4083022 stands for the building. The record's assessor block 4083 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -17104,10 +17222,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 1800 BRYANT ST → parcel 3970044; sf-parcels has blklot 3970044 active, 1800–1800 BRYANT; the 2025 roll records it as single family residential, built 2000. The record's assessor block 3970 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3970044",
+    "path": "/san-francisco/mission/bryant-street/1800/",
+    "eas_address": "1800 BRYANT ST",
+    "method": "EAS exact match on 1800 BRYANT ST → parcel 3970044; sf-parcels has blklot 3970044 active, 1800–1800 BRYANT; the 2025 roll records it as single family residential, built 2000. Parcel 3970044 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0303 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 3970 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -18267,10 +18391,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2028 BRYANT ST but it does not join to one parcel. 2028 BRYANT ST's coordinates fall in 20 active parcels (4022138, 4022068, 4022178, 4022040…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4022 still places it on that city block."
+    "status": "resolved",
+    "apn": "4022027",
+    "path": "/san-francisco/mission/florida-street/605/",
+    "eas_address": "2028 BRYANT ST",
+    "method": "EAS exact match on 2028 BRYANT ST → parcel 4022027; sf-parcels has blklot 4022027 active, 2823–2875 18TH; the 2025 roll records it as multi-family residential, built 2020. 2028 BRYANT ST's coordinates fall in 211 active parcels; 4022027 is the one with a page. The record's assessor block 4022 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "About a building that no longer stands: the roll dates the building on this parcel to 2020."
    }
   },
   {
@@ -18737,10 +18867,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2101 BRYANT ST but it does not join to one parcel. 2101 BRYANT ST's coordinates fall in 20 active parcels (4080087, 4080140, 4080077, 4080098…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4080 still places it on that city block."
+    "status": "resolved",
+    "apn": "4080120",
+    "path": "/san-francisco/mission/bryant-street/2101/",
+    "eas_address": "2101 BRYANT ST",
+    "method": "EAS exact match on 2101 BRYANT ST → parcel 4080120; sf-parcels has blklot 4080120 active, 2101–2101 BRYANT; the 2025 roll records it as single family residential, built 1919. Parcel 4080120 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2101 BRYANT ST's coordinates fall in 76 active parcels, one condominium map's units on the 2025 roll; 4080120 stands for the building. The record's assessor block 4080 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -18777,10 +18913,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2101 BRYANT ST but it does not join to one parcel. 2101 BRYANT ST's coordinates fall in 20 active parcels (4080087, 4080140, 4080077, 4080098…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4080 still places it on that city block."
+    "status": "resolved",
+    "apn": "4080120",
+    "path": "/san-francisco/mission/bryant-street/2101/",
+    "eas_address": "2101 BRYANT ST",
+    "method": "EAS exact match on 2101 BRYANT ST → parcel 4080120; sf-parcels has blklot 4080120 active, 2101–2101 BRYANT; the 2025 roll records it as single family residential, built 1919. Parcel 4080120 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2101 BRYANT ST's coordinates fall in 76 active parcels, one condominium map's units on the 2025 roll; 4080120 stands for the building. The record's assessor block 4080 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -18810,10 +18952,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2101 BRYANT ST but it does not join to one parcel. 2101 BRYANT ST's coordinates fall in 20 active parcels (4080087, 4080140, 4080077, 4080098…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4080 still places it on that city block."
+    "status": "resolved",
+    "apn": "4080120",
+    "path": "/san-francisco/mission/bryant-street/2101/",
+    "eas_address": "2101 BRYANT ST",
+    "method": "EAS exact match on 2101 BRYANT ST → parcel 4080120; sf-parcels has blklot 4080120 active, 2101–2101 BRYANT; the 2025 roll records it as single family residential, built 1919. Parcel 4080120 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2101 BRYANT ST's coordinates fall in 76 active parcels, one condominium map's units on the 2025 roll; 4080120 stands for the building. The record's assessor block 4080 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -18843,10 +18991,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2125 BRYANT ST but it does not join to one parcel. 2125 BRYANT ST's coordinates fall in 20 active parcels (4080087, 4080140, 4080077, 4080098…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4080 still places it on that city block."
+    "status": "resolved",
+    "apn": "4080067",
+    "path": "/san-francisco/mission/bryant-street/2125/",
+    "eas_address": "2125 BRYANT ST",
+    "method": "EAS exact match on 2125 BRYANT ST → parcel 4080067; sf-parcels has blklot 4080067 active, 2125–2125 BRYANT; the 2025 roll records it as single family residential, built 2009. Parcel 4080067 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2125 BRYANT ST's coordinates fall in 76 active parcels, one condominium map's units on the 2025 roll; 4080067 stands for the building. The record's assessor block 4080 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on this parcel to 2009, so this is about what stood there before it, and a page is not seeded for a predecessor alone."
    }
   },
   {
@@ -19010,10 +19165,23 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 485 CAROLINA ST but it does not join to one parcel. 485 CAROLINA ST's coordinates fall in 3 active parcels (4005A004, 4005A003, 4005A002), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4006 still places it on that city block."
+    "status": "resolved",
+    "apn": "4005A002",
+    "path": "/san-francisco/potrero-hill/carolina-street/455/",
+    "eas_address": "455 CAROLINA ST",
+    "method": "EAS exact match on 485 CAROLINA ST → parcel 4005A002; sf-parcels has blklot 4005A002 active, 1600–1610 18TH; the 2025 roll records it as multi-family residential, built 2020. The assessor files the parcel as 1601 MARIPOSA ST. EAS puts 455, 465, 475, 485 CAROLINA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 455. Parcel 4005A002 is one of 3 airspace parcels of one building (4005A002, 4005A003, 4005A004); the fact is the building's, and goes on the building's page at this path, which lists its parcels. 485 CAROLINA ST's coordinates fall in 3 active parcels that sf-parcels files under one map lot, 4005A002: one building divided into airspace parcels; 4005A002 stands for the building. The record's assessor block 4006 is not the parcel's block (4005A).",
+    "checked_on": "2026-11-10",
+    "building_lots": [
+     "A002",
+     "A003",
+     "A004"
+    ],
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit. The record's assessor block contradicts the parcel; both claims are kept."
+   },
+   "conflict": "The record is filed under assessor block 4006, but the address it states resolves in sf-eas-addresses to parcel 4005A002, on another block. Recorded, not reconciled.",
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on this parcel to 2020, so this is about what stood there before it, and a page is not seeded for a predecessor alone."
    }
   },
   {
@@ -19422,10 +19590,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 370 DE HARO ST but it does not join to one parcel. 370 DE HARO ST's coordinates fall in 20 active parcels (3956023, 3956034, 3956026, 3956024…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3956 still places it on that city block."
+    "status": "resolved",
+    "apn": "3956011",
+    "path": "/san-francisco/mission-bay/de-haro-street/370/",
+    "eas_address": "370 DE HARO ST",
+    "method": "EAS exact match on 370 DE HARO ST → parcel 3956011; sf-parcels has blklot 3956011 active, 370–370 DE HARO; the 2025 roll records it as single family residential, built 2001. Parcel 3956011 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0A-1 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 370 DE HARO ST's coordinates fall in 28 active parcels, one condominium map's units on the 2025 roll; 3956011 stands for the building. The record's assessor block 3956 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -19843,10 +20017,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 540 DE HARO ST but it does not join to one parcel. 540 DE HARO ST's coordinates fall in 16 active parcels (4008030, 4008036, 4008040, 4008026…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4008 still places it on that city block."
+    "status": "resolved",
+    "apn": "4008025",
+    "path": "/san-francisco/potrero-hill/de-haro-street/540/",
+    "eas_address": "540 DE HARO ST",
+    "method": "EAS exact match on 540 DE HARO ST → parcel 4008025; sf-parcels has blklot 4008025 active, 540–540 DE HARO; the 2025 roll records it as single family residential, built 2020. Parcel 4008025 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0201 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 540 DE HARO ST's coordinates fall in 16 active parcels, one condominium map's units on the 2025 roll; 4008025 stands for the building. The record's assessor block 4008 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on this parcel to 2020, so this is about what stood there before it, and a page is not seeded for a predecessor alone."
    }
   },
   {
@@ -20639,12 +20820,18 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
+    "status": "resolved",
+    "apn": "3572018",
+    "path": "/san-francisco/mission/enterprise-street/1/",
+    "eas_address": "1 ENTERPRISE ST",
     "method": "EAS exact match on 1 ENTERPRISE ST → parcel 3572018; sf-parcels has blklot 3572018 active, 1–1 ENTERPRISE; the 2025 roll records it as single family residential, built 1900. The record's assessor block 3572 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "checked_on": "2026-11-10"
    },
-   "conflict": "The survey's data table dates the building to 1915; the context statement's appendix dates it to 1900."
+   "conflict": "The survey's data table dates the building to 1915; the context statement's appendix dates it to 1900.",
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
+   }
   },
   {
    "id": "showplace-square-survey-0486",
@@ -21017,10 +21204,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 689 FLORIDA ST → parcel 4022017; sf-parcels has blklot 4022017 active, 689–689 FLORIDA; the 2025 roll records it as single family residential, built 2000. The record's assessor block 4022 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "4022017",
+    "path": "/san-francisco/mission/florida-street/689/",
+    "eas_address": "689 FLORIDA ST",
+    "method": "EAS exact match on 689 FLORIDA ST → parcel 4022017; sf-parcels has blklot 4022017 active, 689–689 FLORIDA; the 2025 roll records it as single family residential, built 2000. Parcel 4022017 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 4022 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -21095,10 +21289,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 730 FLORIDA ST but it does not join to one parcel. 730 FLORIDA ST's coordinates fall in 20 active parcels (4082039, 4082017, 4082032, 4082020…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4082 still places it on that city block."
+    "status": "resolved",
+    "apn": "4082016",
+    "path": "/san-francisco/mission/florida-street/730/",
+    "eas_address": "730 FLORIDA ST",
+    "method": "EAS exact match on 730 FLORIDA ST → parcel 4082016; sf-parcels has blklot 4082016 active, 730–730 FLORIDA; the 2025 roll records it as single family residential, built 2001. Parcel 4082016 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 730 FLORIDA ST's coordinates fall in 24 active parcels, one condominium map's units on the 2025 roll; 4082016 stands for the building. The record's assessor block 4082 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -22239,10 +22440,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 1990 FOLSOM ST but it does not join to one parcel. 1990 FOLSOM ST's coordinates fall in 4 active parcels (3552050, 3552048, 3552049, 3552051), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3552 still places it on that city block."
+    "status": "resolved",
+    "apn": "3552048",
+    "path": "/san-francisco/mission/16th-street/2828/",
+    "eas_address": "1990 FOLSOM ST",
+    "method": "EAS exact match on 1990 FOLSOM ST → parcel 3552048; sf-parcels has blklot 3552048 active, 2828–2828 16TH; the 2025 roll records it as multi-family residential, built 2021. The assessor files the parcel as 2828 16TH ST. 1990 FOLSOM ST's coordinates fall in 4 active parcels; 3552048 is the one with a page. The record's assessor block 3552 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "About a building that no longer stands: the roll dates the building on this parcel to 2021."
    }
   },
   {
@@ -23628,10 +23835,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2374 FOLSOM ST but it does not join to one parcel. 2374 FOLSOM ST's coordinates fall in 4 active parcels (3594133, 3594134, 3594131, 3594132), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3594 still places it on that city block."
+    "status": "resolved",
+    "apn": "3594131",
+    "path": "/san-francisco/mission/folsom-street/2374/",
+    "eas_address": "2374 FOLSOM ST",
+    "method": "EAS exact match on 2374 FOLSOM ST → parcel 3594131; sf-parcels has blklot 3594131 active, 2374–2374 FOLSOM; the 2025 roll records it as single family residential, built 1916. EAS puts 2374, 2376 FOLSOM ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2374. Parcel 3594131 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS files the address under parcel 3594009, which sf-parcels reports retired; the active parcel its coordinates fall in is 3594131. The record's assessor block 3594 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -23930,10 +24144,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 141 HAMPSHIRE ST but it does not join to one parcel. 141 HAMPSHIRE ST's coordinates fall in 2 active parcels (3920011, 3920010), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3920 still places it on that city block."
+    "status": "resolved",
+    "apn": "3920010",
+    "path": "/san-francisco/mission/hampshire-street/141/",
+    "eas_address": "141 HAMPSHIRE ST",
+    "method": "EAS exact match on 141 HAMPSHIRE ST → parcel 3920010; sf-parcels has blklot 3920010 active, 141–141 HAMPSHIRE; the 2025 roll records it as single family residential, built 2001. Parcel 3920010 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0000A of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 141 HAMPSHIRE ST's coordinates fall in 2 active parcels, one condominium map's units on the 2025 roll; 3920010 stands for the building. The record's assessor block 3920 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -23964,10 +24185,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 145 HAMPSHIRE ST but it does not join to one parcel. 145 HAMPSHIRE ST's coordinates fall in 2 active parcels (3920013, 3920012), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3920 still places it on that city block."
+    "status": "resolved",
+    "apn": "3920012",
+    "path": "/san-francisco/mission/hampshire-street/145/",
+    "eas_address": "145 HAMPSHIRE ST",
+    "method": "EAS exact match on 145 HAMPSHIRE ST → parcel 3920012; sf-parcels has blklot 3920012 active, 145–145 HAMPSHIRE; the 2025 roll records it as single family residential, built 2001. Parcel 3920012 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0000A of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 145 HAMPSHIRE ST's coordinates fall in 2 active parcels, one condominium map's units on the 2025 roll; 3920012 stands for the building. The record's assessor block 3920 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -25551,10 +25779,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2301 HARRISON ST but it does not join to one parcel. 2301 HARRISON ST's coordinates fall in 14 active parcels (4083012, 4083015, 4083016, 4083014…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4083 still places it on that city block."
+    "status": "resolved",
+    "apn": "4083008",
+    "path": "/san-francisco/mission/harrison-street/2301/",
+    "eas_address": "2301 HARRISON ST",
+    "method": "EAS exact match on 2301 HARRISON ST → parcel 4083008; sf-parcels has blklot 4083008 active, 2301–2301 HARRISON; the 2025 roll records it as single family residential, built 1993. Parcel 4083008 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2301 HARRISON ST's coordinates fall in 14 active parcels, one condominium map's units on the 2025 roll; 4083008 stands for the building. The record's assessor block 4083 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -25590,10 +25825,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2301 HARRISON ST but it does not join to one parcel. 2301 HARRISON ST's coordinates fall in 14 active parcels (4083012, 4083015, 4083016, 4083014…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4083 still places it on that city block."
+    "status": "resolved",
+    "apn": "4083008",
+    "path": "/san-francisco/mission/harrison-street/2301/",
+    "eas_address": "2301 HARRISON ST",
+    "method": "EAS exact match on 2301 HARRISON ST → parcel 4083008; sf-parcels has blklot 4083008 active, 2301–2301 HARRISON; the 2025 roll records it as single family residential, built 1993. Parcel 4083008 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2301 HARRISON ST's coordinates fall in 14 active parcels, one condominium map's units on the 2025 roll; 4083008 stands for the building. The record's assessor block 4083 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -25715,10 +25956,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 2170 HARRISON ST but it does not join to one parcel. 2170 HARRISON ST's coordinates fall in 8 active parcels (3573032, 3573035, 3573030, 3573031…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3573 still places it on that city block."
+    "status": "resolved",
+    "apn": "3573029",
+    "path": "/san-francisco/mission/harrison-street/2170/",
+    "eas_address": "2170 HARRISON ST",
+    "method": "EAS exact match on 2170 HARRISON ST → parcel 3573029; sf-parcels has blklot 3573029 active, 2170–2170 HARRISON; the 2025 roll records it as single family residential, built 1997. Parcel 3573029 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2170 HARRISON ST's coordinates fall in 8 active parcels, one condominium map's units on the 2025 roll; 3573029 stands for the building. The record's assessor block 3573 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -26998,10 +27246,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 301 LANGTON ST but it does not join to one parcel. 301 LANGTON ST's coordinates fall in 6 active parcels (3780089, 3780090, 3780093, 3780092…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3780 still places it on that city block."
+    "status": "resolved",
+    "apn": "3780088",
+    "path": "/san-francisco/south-of-market/langton-street/301/",
+    "eas_address": "301 LANGTON ST",
+    "method": "EAS exact match on 301 LANGTON ST → parcel 3780088; sf-parcels has blklot 3780088 active, 301–301 LANGTON; the 2025 roll records it as single family residential, built 1997. Parcel 3780088 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 301 LANGTON ST's coordinates fall in 6 active parcels, one condominium map's units on the 2025 roll; 3780088 stands for the building. The record's assessor block 3780 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -27032,10 +27287,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 321 LANGTON ST → parcel 3780096; sf-parcels has blklot 3780096 active, 321–321 LANGTON; the 2025 roll records it as single family residential, built 1999. The record's assessor block 3780 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3780096",
+    "path": "/san-francisco/south-of-market/langton-street/321/",
+    "eas_address": "321 LANGTON ST",
+    "method": "EAS exact match on 321 LANGTON ST → parcel 3780096; sf-parcels has blklot 3780096 active, 321–321 LANGTON; the 2025 roll records it as single family residential, built 1999. Parcel 3780096 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0003 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 3780 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -27234,10 +27495,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 1001 MARIPOSA ST but it does not join to one parcel. 1001 MARIPOSA ST's coordinates fall in 20 active parcels (4000045, 4000032, 4000050, 4000037…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4000 still places it on that city block."
+    "status": "resolved",
+    "apn": "4000028",
+    "path": "/san-francisco/potrero-hill/mariposa-street/1001/",
+    "eas_address": "1001 MARIPOSA ST",
+    "method": "EAS exact match on 1001 MARIPOSA ST → parcel 4000028; sf-parcels has blklot 4000028 active, 1001–1001 MARIPOSA; the 2025 roll records it as single family residential, built 2000. Parcel 4000028 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1001 MARIPOSA ST's coordinates fall in 23 active parcels, one condominium map's units on the 2025 roll; 4000028 stands for the building. The record's assessor block 4000 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -27268,10 +27536,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 1020 MARIPOSA ST but it does not join to one parcel. 1020 MARIPOSA ST's coordinates fall in 6 active parcels (3987019, 3987021, 3987022, 3987017…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3987 still places it on that city block."
+    "status": "resolved",
+    "apn": "3987017",
+    "path": "/san-francisco/potrero-hill/mariposa-street/1020/",
+    "eas_address": "1020 MARIPOSA ST",
+    "method": "EAS exact match on 1020 MARIPOSA ST → parcel 3987017; sf-parcels has blklot 3987017 active, 1020–1020 MARIPOSA; the 2025 roll records it as single family residential, built 1999. Parcel 3987017 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1020 MARIPOSA ST's coordinates fall in 6 active parcels, one condominium map's units on the 2025 roll; 3987017 stands for the building. The record's assessor block 3987 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -27345,10 +27620,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 1130 MARIPOSA ST but it does not join to one parcel. 1130 MARIPOSA ST's coordinates fall in 20 active parcels (3986028, 3986025, 3986034, 3986031…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3986 still places it on that city block."
+    "status": "resolved",
+    "apn": "3986021",
+    "path": "/san-francisco/potrero-hill/mariposa-street/1130/",
+    "eas_address": "1130 MARIPOSA ST",
+    "method": "EAS exact match on 1130 MARIPOSA ST → parcel 3986021; sf-parcels has blklot 3986021 active, 1130–1130 MARIPOSA; the 2025 roll records it as single family residential, built 1999. Parcel 3986021 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0169 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1130 MARIPOSA ST's coordinates fall in 23 active parcels, one condominium map's units on the 2025 roll; 3986021 stands for the building. The record's assessor block 3986 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -28831,10 +29113,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 49 MISSOURI ST but it does not join to one parcel. 49 MISSOURI ST's coordinates fall in 12 active parcels (3950007, 3950017, 3950014, 3950010…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3950 still places it on that city block."
+    "status": "resolved",
+    "apn": "3950007",
+    "path": "/san-francisco/mission-bay/missouri-street/49/",
+    "eas_address": "49 MISSOURI ST",
+    "method": "EAS exact match on 49 MISSOURI ST → parcel 3950007; sf-parcels has blklot 3950007 active, 49–49 MISSOURI; the 2025 roll records it as single family residential, built 1997. Parcel 3950007 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 49 MISSOURI ST's coordinates fall in 12 active parcels, one condominium map's units on the 2025 roll; 3950007 stands for the building. The record's assessor block 3950 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -28956,10 +29245,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 131 MISSOURI ST but it does not join to one parcel. 131 MISSOURI ST's coordinates fall in 9 active parcels (3985046, 3985049, 3985043, 3985044…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3985 still places it on that city block."
+    "status": "resolved",
+    "apn": "3985041",
+    "path": "/san-francisco/mission/missouri-street/131/",
+    "eas_address": "131 MISSOURI ST",
+    "method": "EAS exact match on 131 MISSOURI ST → parcel 3985041; sf-parcels has blklot 3985041 active, 131–131 MISSOURI; the 2025 roll records it as single family residential, built 2017. Parcel 3985041 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0201 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 131 MISSOURI ST's coordinates fall in 9 active parcels, one condominium map's units on the 2025 roll; 3985041 stands for the building. The record's assessor block 3985 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "About a building that no longer stands: the roll dates the building on this parcel to 2017."
    }
   },
   {
@@ -29030,10 +29325,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 208 PENNSYLVANIA AVE but it does not join to one parcel. 208 PENNSYLVANIA AVE's coordinates fall in 20 active parcels (4000065, 4000073, 4000066, 4000074…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4000 still places it on that city block."
+    "status": "resolved",
+    "apn": "4000053",
+    "path": "/san-francisco/potrero-hill/pennsylvania-avenue/208/",
+    "eas_address": "208 PENNSYLVANIA AVE",
+    "method": "EAS exact match on 208 PENNSYLVANIA AVE → parcel 4000053; sf-parcels has blklot 4000053 active, 208–208 PENNSYLVANIA; the 2025 roll records it as single family residential, built 2000. Parcel 4000053 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 208 PENNSYLVANIA AVE's coordinates fall in 22 active parcels, one condominium map's units on the 2025 roll; 4000053 stands for the building. The record's assessor block 4000 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Adds nothing the page already states: the year matches the assessor's year built and the building type is the roll's."
    }
   },
   {
@@ -32004,10 +32306,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 485 POTRERO AVE but it does not join to one parcel. 485 POTRERO AVE's coordinates fall in 3 active parcels (3974041, 3974042, 3974043), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3974 still places it on that city block."
+    "status": "resolved",
+    "apn": "3974041",
+    "path": "/san-francisco/mission/potrero-avenue/485/",
+    "eas_address": "485 POTRERO AVE",
+    "method": "EAS exact match on 485 POTRERO AVE → parcel 3974041; sf-parcels has blklot 3974041 active, 485–485 POTRERO; the 2025 roll records it as single family residential, built 1890. Parcel 3974041 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 485 POTRERO AVE's coordinates fall in 3 active parcels, one condominium map's units on the 2025 roll; 3974041 stands for the building. The record's assessor block 3974 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "No page, and a survey row on its own does not earn one."
    }
   },
   {
@@ -36185,10 +36494,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 366 UTAH ST → parcel 3961023; sf-parcels has blklot 3961023 active, 366–366 UTAH; the 2025 roll records it as single family residential, built 1900. EAS files the address under parcel 3961007, which sf-parcels reports retired; the active parcel its coordinates fall in is 3961023. The record's assessor block 3961 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3961023",
+    "path": "/san-francisco/mission/utah-street/366/",
+    "eas_address": "366 UTAH ST",
+    "method": "EAS exact match on 366 UTAH ST → parcel 3961023; sf-parcels has blklot 3961023 active, 366–366 UTAH; the 2025 roll records it as single family residential, built 1900. EAS puts 366, 368, 370 UTAH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 366. Parcel 3961023 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS files the address under parcel 3961007, which sf-parcels reports retired; the active parcel its coordinates fall in is 3961023. The record's assessor block 3961 matches the parcel's block. The record prints assessor block 3961 lot 023, which is this parcel, so the pre-1910 date is the building's and not the address's — the renumbering guard does not apply.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -36223,10 +36539,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 366 UTAH ST → parcel 3961023; sf-parcels has blklot 3961023 active, 366–366 UTAH; the 2025 roll records it as single family residential, built 1900. EAS files the address under parcel 3961007, which sf-parcels reports retired; the active parcel its coordinates fall in is 3961023. The record's assessor block 3961 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3961023",
+    "path": "/san-francisco/mission/utah-street/366/",
+    "eas_address": "366 UTAH ST",
+    "method": "EAS exact match on 366 UTAH ST → parcel 3961023; sf-parcels has blklot 3961023 active, 366–366 UTAH; the 2025 roll records it as single family residential, built 1900. EAS puts 366, 368, 370 UTAH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 366. Parcel 3961023 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS files the address under parcel 3961007, which sf-parcels reports retired; the active parcel its coordinates fall in is 3961023. The record's assessor block 3961 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -37138,12 +37460,19 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 720 YORK ST but it does not join to one parcel. 720 YORK ST's coordinates fall in 20 active parcels (4080040, 4080044, 4080026, 4080017…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4080 still places it on that city block."
+    "status": "resolved",
+    "apn": "4080015",
+    "path": "/san-francisco/mission/york-street/720/",
+    "eas_address": "720 YORK ST",
+    "method": "EAS exact match on 720 YORK ST → parcel 4080015; sf-parcels has blklot 4080015 active, 720–720 YORK; the 2025 roll records it as single family residential, built 1999. Parcel 4080015 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 720 YORK ST's coordinates fall in 45 active parcels, one condominium map's units on the 2025 roll; 4080015 stands for the building. The record's assessor block 4080 matches the parcel's block. The record prints assessor block 4080 lot 015, which is this parcel, so the pre-1910 date is the building's and not the address's — the renumbering guard does not apply.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
    },
-   "conflict": "The survey's data table dates the building to 1878; the context statement's appendix dates it to Ca. 1895."
+   "conflict": "The survey's data table dates the building to 1878; the context statement's appendix dates it to Ca. 1895.",
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
+   }
   },
   {
    "id": "showplace-square-survey-0875",
@@ -37182,10 +37511,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 720 YORK ST but it does not join to one parcel. 720 YORK ST's coordinates fall in 20 active parcels (4080040, 4080044, 4080026, 4080017…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4080 still places it on that city block."
+    "status": "resolved",
+    "apn": "4080015",
+    "path": "/san-francisco/mission/york-street/720/",
+    "eas_address": "720 YORK ST",
+    "method": "EAS exact match on 720 YORK ST → parcel 4080015; sf-parcels has blklot 4080015 active, 720–720 YORK; the 2025 roll records it as single family residential, built 1999. Parcel 4080015 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 720 YORK ST's coordinates fall in 45 active parcels, one condominium map's units on the 2025 roll; 4080015 stands for the building. The record's assessor block 4080 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -37886,10 +38221,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 720 YORK ST but it does not join to one parcel. 720 YORK ST's coordinates fall in 20 active parcels (4080040, 4080044, 4080026, 4080017…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4080 still places it on that city block."
+    "status": "resolved",
+    "apn": "4080015",
+    "path": "/san-francisco/mission/york-street/720/",
+    "eas_address": "720 YORK ST",
+    "method": "EAS exact match on 720 YORK ST → parcel 4080015; sf-parcels has blklot 4080015 active, 720–720 YORK; the 2025 roll records it as single family residential, built 1999. Parcel 4080015 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 720 YORK ST's coordinates fall in 45 active parcels, one condominium map's units on the 2025 roll; 4080015 stands for the building. The record's assessor block 4080 matches the parcel's block. The record prints assessor block 4080 lot 015, which is this parcel, so the pre-1910 date is the building's and not the address's — the renumbering guard does not apply.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -37988,10 +38330,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 1 ENTERPRISE ST → parcel 3572018; sf-parcels has blklot 3572018 active, 1–1 ENTERPRISE; the 2025 roll records it as single family residential, built 1900. The record's assessor block 3572 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3572018",
+    "path": "/san-francisco/mission/enterprise-street/1/",
+    "eas_address": "1 ENTERPRISE ST",
+    "method": "EAS exact match on 1 ENTERPRISE ST → parcel 3572018; sf-parcels has blklot 3572018 active, 1–1 ENTERPRISE; the 2025 roll records it as single family residential, built 1900. The record's assessor block 3572 matches the parcel's block. The record prints assessor block 3572 lot 018, which is this parcel, so the pre-1910 date is the building's and not the address's — the renumbering guard does not apply.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {
@@ -39327,10 +39675,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "sf-eas-addresses has 131 MISSOURI ST but it does not join to one parcel. 131 MISSOURI ST's coordinates fall in 9 active parcels (3985046, 3985049, 3985043, 3985044…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 3985 still places it on that city block."
+    "status": "resolved",
+    "apn": "3985041",
+    "path": "/san-francisco/mission/missouri-street/131/",
+    "eas_address": "131 MISSOURI ST",
+    "method": "EAS exact match on 131 MISSOURI ST → parcel 3985041; sf-parcels has blklot 3985041 active, 131–131 MISSOURI; the 2025 roll records it as single family residential, built 2017. Parcel 3985041 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0201 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 131 MISSOURI ST's coordinates fall in 9 active parcels, one condominium map's units on the 2025 roll; 3985041 stands for the building. The record's assessor block 3985 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "About a building that no longer stands: the roll dates the building on this parcel to 2017."
    }
   },
   {
@@ -39427,10 +39781,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-25",
-    "method": "EAS exact match on 1800 BRYANT ST → parcel 3970044; sf-parcels has blklot 3970044 active, 1800–1800 BRYANT; the 2025 roll records it as single family residential, built 2000. The record's assessor block 3970 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3970044",
+    "path": "/san-francisco/mission/bryant-street/1800/",
+    "eas_address": "1800 BRYANT ST",
+    "method": "EAS exact match on 1800 BRYANT ST → parcel 3970044; sf-parcels has blklot 3970044 active, 1800–1800 BRYANT; the 2025 roll records it as single family residential, built 2000. Parcel 3970044 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0303 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 3970 matches the parcel's block.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
    }
   },
   {

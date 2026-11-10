@@ -1,0 +1,64 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-1401/",
+  "unit": "1401",
+  "apn": "0451018",
+  "block": "0451",
+  "lot": "018",
+  "parcel": {
+    "building_area_sqft": 1200,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1251610,
+    "assessed_improvement_value": 1088336,
+    "last_sale_date": "2018-06-01"
+  },
+  "permits": [
+    {
+      "number": "201902253768",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-25",
+      "status_date": "2020-03-09",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "revision to pa 2018-0703-3612 removed non load bearing walls. layout changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807033612",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-03",
+      "status_date": "2020-03-09",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "remodel to one unit: replace extg doors and windows, remove and reconfigure extg interior partitions, upgrade finishes, upgrade electrical and plmg, upgrade radiant baseboard heating. no change to common areas.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2018–2019",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1401",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

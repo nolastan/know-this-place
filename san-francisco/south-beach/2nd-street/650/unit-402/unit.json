@@ -1,0 +1,123 @@
+{
+  "address": "650 2nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/2nd-street/650/unit-402/",
+  "unit": "402",
+  "apn": "3788060",
+  "block": "3788",
+  "lot": "060",
+  "parcel": {
+    "building_area_sqft": 1378,
+    "rooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 876768,
+    "assessed_improvement_value": 584512,
+    "last_sale_date": "2021-05-03"
+  },
+  "permits": [
+    {
+      "number": "202204142249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-14",
+      "status_date": "2022-04-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "as-built. remodel of extg sprinker system. remove 2 heads at removed soffit. ref 202201125836 and 202202117823.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202202117823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-11",
+      "status_date": "2022-06-22",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remodel of (e) sprinkler system added 2 sprinkler in soffit per inspector's request. ref pa 2022-0112-5836",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104269311",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-26",
+      "status_date": "2022-06-21",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "one unit: interior remodel. demolition of (e) non-structural partition wall. no added sqft. no strucrtural work. no exterior work. sprinkler under sep permit, if applic.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201701257852",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-01-25",
+      "status_date": "2017-05-08",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: remodel and surface upgrade. removal of non load bearing wall. install new doors. elec, painting, carpet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101148412",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-01-14",
+      "status_date": "2012-11-09",
+      "estimated_cost": 10000,
+      "revised_cost": 1,
+      "description": "work @ one unit. this application is in response to nov# 201074406. it is also to merge one unit & one unit into one unit. for documentation only. no construction under this permit. all work approved under p/a#201002226890.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007156719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-15",
+      "status_date": "2013-01-29",
+      "estimated_cost": 1100,
+      "revised_cost": 1100,
+      "description": "add 3 mini horns to existing fire alarm system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005112199",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-11",
+      "status_date": "2010-05-11",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "add and relocate sprinkler heads in line work space. no new meter. total 12 heads",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002226890",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-22",
+      "status_date": "2012-06-14",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "demloition of existing non-structural partition walls, replacing hardwood flr with new hardwood flr, painting, modification of (e) hvac, revising power/data locations, updating & renovation of lighting in kind, relocation of exisiing kitchen. residential olny,no exterior",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3788060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3788&unit=402",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

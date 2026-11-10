@@ -1,0 +1,47 @@
+{
+  "address": "1070 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1070/unit-602/",
+  "unit": "602",
+  "apn": "0121A017",
+  "block": "0121A",
+  "lot": "017",
+  "parcel": {
+    "building_area_sqft": 1660,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 167955,
+    "assessed_improvement_value": 579489,
+    "last_sale_date": "1994-08-19"
+  },
+  "permits": [
+    {
+      "number": "200705101012",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-10",
+      "status_date": "2007-05-10",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit- refacing & replacing kitchen cabinets, countertops, minor kitchen remodel. new dishwasher, cooktop, oven and hood, add 2 receptacles, new sink with disposal. no lighting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121A017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121A&unit=602",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

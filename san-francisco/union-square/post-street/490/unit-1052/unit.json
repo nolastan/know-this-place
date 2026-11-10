@@ -1,0 +1,42 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-1052/",
+  "unit": "1052",
+  "apn": "0296091",
+  "block": "0296",
+  "lot": "091",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 293440,
+    "assessed_improvement_value": 195627,
+    "assessed_fixtures_value": 385205,
+    "last_sale_date": "2011-12-21"
+  },
+  "permits": [
+    {
+      "number": "201207265868",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-26",
+      "status_date": "2013-07-16",
+      "estimated_cost": 102000,
+      "revised_cost": 112000,
+      "description": "remodel existing dental office, non structural walls, doors, ceiling, cabinets. related electrical and lighting. accessible lav, new finishes",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296091&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=1052",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

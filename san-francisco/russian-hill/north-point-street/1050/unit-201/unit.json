@@ -1,0 +1,75 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-201/",
+  "unit": "201",
+  "apn": "0451133",
+  "block": "0451",
+  "lot": "133",
+  "parcel": {
+    "building_area_sqft": 1166,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 383579,
+    "assessed_improvement_value": 255714,
+    "last_sale_date": "2011-05-09"
+  },
+  "permits": [
+    {
+      "number": "202606243835",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-24",
+      "status_date": "2026-06-24",
+      "estimated_cost": 35000,
+      "revised_cost": 44000,
+      "description": "common area, ground floor manager's office: bathroom remodel, replace vanity, toilet , shower valve and shower pan new tile in kind with upgrade sub panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408219115",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2024-08-30",
+      "status_date": "2024-11-19",
+      "estimated_cost": 53784,
+      "revised_cost": 205770,
+      "description": "adding 285 low frequency sounders to (e) notifier nfs2-3030 fire alarmsystem to comply with sffc 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411070998",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-11-07",
+      "status_date": "2015-04-01",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "voluntary replacement of (e) fire alarm system. there is no associated bldg permit for this work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2010–2026",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451133&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=201",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

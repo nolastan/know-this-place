@@ -2742,10 +2742,16 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-08-27",
-        "method": "sf-eas-addresses has 60 RAUSCH ST but it does not join to one parcel. 60 RAUSCH ST's coordinates fall in 20 active parcels (3730201, 3730213, 3730216, 3730200…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "status": "resolved",
+        "apn": "3730199",
+        "path": "/san-francisco/south-of-market/rausch-street/60/",
+        "eas_address": "60 RAUSCH ST",
+        "method": "EAS exact match on 60 RAUSCH ST → parcel 3730199; sf-parcels has blklot 3730199 active, 60–60 RAUSCH; the 2025 roll records it as single family residential, built 2002. Parcel 3730199 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 60 RAUSCH ST's coordinates fall in 37 active parcels, one condominium map's units on the 2025 roll; 3730199 stands for the building.",
+        "checked_on": "2026-11-10"
+      },
+      "publish": {
+        "status": "published",
+        "pr": "https://github.com/nolastan/know-this-place/pull/606"
       }
     },
     {
@@ -3178,10 +3184,17 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-08-27",
-        "method": "sf-eas-addresses has 2621 JUDAH ST but it does not join to one parcel. 2621 JUDAH ST's coordinates fall in 3 active parcels (1822040, 1822041, 1822039), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "status": "resolved",
+        "apn": "1822039",
+        "path": "/san-francisco/sunset-parkside/judah-street/2621/",
+        "eas_address": "2621 JUDAH ST",
+        "method": "EAS exact match on 2621 JUDAH ST → parcel 1822039; sf-parcels has blklot 1822039 active, 2621–2621 JUDAH; the 2025 roll records it as single family residential, built 2000. Parcel 1822039 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2621 JUDAH ST's coordinates fall in 3 active parcels, one condominium map's units on the 2025 roll; 1822039 stands for the building.",
+        "checked_on": "2026-11-10",
+        "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+      },
+      "publish": {
+        "status": "declined",
+        "note": "No page, and a survey row on its own does not earn one."
       }
     },
     {

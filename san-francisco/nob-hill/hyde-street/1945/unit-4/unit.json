@@ -1,0 +1,35 @@
+{
+  "address": "1945 Hyde Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/hyde-street/1945/unit-4/",
+  "unit": "4",
+  "apn": "0123097",
+  "block": "0123",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 2742,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2460302,
+    "assessed_improvement_value": 1640200,
+    "last_sale_date": "2013-12-11"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0123097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0123&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

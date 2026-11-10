@@ -1,0 +1,69 @@
+{
+  "address": "3333 Clay Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/clay-street/3333/unit-3/",
+  "unit": "3",
+  "apn": "1008034",
+  "block": "1008",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 1024,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 590000,
+    "assessed_improvement_value": 590000,
+    "last_sale_date": "2014-10-29"
+  },
+  "permits": [
+    {
+      "number": "202112063762",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-06",
+      "status_date": "2022-09-26",
+      "estimated_cost": 37916,
+      "revised_cost": 37916,
+      "description": "replacing (8) windows, (6) street facing/visible (2) others are in rear of home. top floor, same size and location. proposed: alum. clad wood (andersen e-series). max. u-factor = 0.30: operation configuration with full divided lites. same size and same opening max u-factor 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102170463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-17",
+      "status_date": "2011-05-04",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "revision to 201102089801. creating 6' opening in existing non structural partition wall currently separating kitchen from living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102089801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-08",
+      "status_date": "2011-05-04",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "minor 1 kitchen remodel, no plumbing or electrical work, new counter, no change to wall, windows or doors. no new lighting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1008034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1008&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "address": "1242 Sacramento Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/sacramento-street/1242/unit-4/",
+  "unit": "4",
+  "apn": "0221122",
+  "block": "0221",
+  "lot": "122",
+  "parcel": {
+    "building_area_sqft": 1088,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 754667,
+    "assessed_improvement_value": 754667,
+    "last_sale_date": "2015-07-27"
+  },
+  "permits": [
+    {
+      "number": "201201112052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-11",
+      "status_date": "2012-03-06",
+      "estimated_cost": 1000,
+      "revised_cost": 6000,
+      "description": "comply with nov #201121741. remove illegal cover over light well and all other work related to abating complaint. restore to original condition. to comply w/his nov 201121741 dated 6/6/2011.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208083524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-08",
+      "status_date": "2003-04-10",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "new appliances and bath fixtures,liting,countertops,tile floor kitchen and bath work in one unit only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221122&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

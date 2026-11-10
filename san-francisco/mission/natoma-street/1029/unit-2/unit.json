@@ -1,0 +1,47 @@
+{
+  "address": "1029 Natoma Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/natoma-street/1029/unit-2/",
+  "unit": "2",
+  "apn": "3511162",
+  "block": "3511",
+  "lot": "162",
+  "parcel": {
+    "building_area_sqft": 950,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 692275,
+    "assessed_improvement_value": 461515,
+    "last_sale_date": "2020-05-20"
+  },
+  "permits": [
+    {
+      "number": "202006048156",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-04",
+      "status_date": "2020-07-23",
+      "estimated_cost": 4500,
+      "revised_cost": 12000,
+      "description": "one unit: remove drywall around tub to create plumbing in order to install a shower head in a tub.install tile around tub. in kind .bathroom size - 15 sf",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3511162&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3511&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

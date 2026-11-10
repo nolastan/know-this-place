@@ -1,0 +1,66 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-824/",
+  "unit": "824",
+  "apn": "0296073",
+  "block": "0296",
+  "lot": "073",
+  "parcel": {
+    "building_area_sqft": 1984
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 789146,
+    "assessed_improvement_value": 789146,
+    "last_sale_date": "2014-05-08"
+  },
+  "permits": [
+    {
+      "number": "201411171665",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-17",
+      "status_date": "2015-06-16",
+      "estimated_cost": 45000,
+      "revised_cost": 109000,
+      "description": "suite 824: interior t.i. staff area, storage room, new office, new lighting, new interior finishes, related elec & plumbing; maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409176581",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-17",
+      "status_date": "2014-09-17",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "remove t bar ceiling and open walls to expose existing conditions. demo per ab-17. t.i. on seperate permit to follow. n/a ordinance #155-13.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403100289",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-03-10",
+      "status_date": "2014-03-10",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "construct one hour fire rated wall between commercial condo units, approx 30' in length.; compliance with ord 155-13 not required",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=824",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

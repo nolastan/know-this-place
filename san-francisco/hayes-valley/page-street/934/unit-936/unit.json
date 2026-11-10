@@ -1,0 +1,76 @@
+{
+  "address": "936 Page Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/page-street/934/unit-936/",
+  "apn": "1217055",
+  "block": "1217",
+  "lot": "055",
+  "parcel": {
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 129778,
+    "assessed_improvement_value": 182032
+  },
+  "permits": [
+    {
+      "number": "201809119636",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-11",
+      "status_date": "2018-09-14",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401307427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-30",
+      "status_date": "2014-06-24",
+      "estimated_cost": 19500,
+      "revised_cost": 20000,
+      "description": "voluntary strengthening as per plan. compliance with ordinance #155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509021957",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-09-02",
+      "status_date": "2005-09-02",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove old weathered siding and replace with same new siding and tyvek vapor barrier left side of",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501072784",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-07",
+      "status_date": "2005-09-28",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "remodel kitchen, bath 1 & 2, add laundry closet.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1217055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1217&street_number=936",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

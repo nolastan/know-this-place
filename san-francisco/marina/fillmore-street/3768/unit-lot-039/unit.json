@@ -1,0 +1,33 @@
+{
+  "address": "3768 Fillmore Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/fillmore-street/3768/unit-lot-039/",
+  "apn": "0436C039",
+  "block": "0436C",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 2312,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45163,
+    "assessed_improvement_value": 185329
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0436C039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0436C&street_number=3768",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

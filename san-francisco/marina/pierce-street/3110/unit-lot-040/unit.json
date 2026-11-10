@@ -1,0 +1,33 @@
+{
+  "address": "3110 Pierce Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/pierce-street/3110/unit-lot-040/",
+  "apn": "0511040",
+  "block": "0511",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1477,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1064734,
+    "assessed_improvement_value": 709819,
+    "last_sale_date": "2008-06-30"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0511040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0511&street_number=3110",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

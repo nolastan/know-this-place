@@ -1,0 +1,46 @@
+{
+  "address": "2255 Bush Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/bush-street/2255/unit-2/",
+  "unit": "2",
+  "apn": "0678166",
+  "block": "0678",
+  "lot": "166",
+  "parcel": {
+    "building_area_sqft": 1580,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 127885,
+    "assessed_improvement_value": 408742
+  },
+  "permits": [
+    {
+      "number": "202010025783",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-02",
+      "status_date": "2022-01-28",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "one unit: interior remodel: add new bathroom, 2 bedrooms inside (e) unit. no new sf. interior work only.; add new entry door, resulting in two direct entries and adding wet bar in bedroom without the open visual in that area.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0678166&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0678&unit=2",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}
