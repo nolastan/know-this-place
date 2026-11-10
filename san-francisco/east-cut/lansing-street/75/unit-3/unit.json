@@ -1,0 +1,102 @@
+{
+  "address": "75 Lansing Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/lansing-street/75/unit-3/",
+  "unit": "3",
+  "apn": "3749186",
+  "block": "3749",
+  "lot": "186",
+  "parcel": {
+    "building_area_sqft": 3233,
+    "rooms": 8,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2449306,
+    "assessed_improvement_value": 2231129,
+    "last_sale_date": "2011-08-03"
+  },
+  "permits": [
+    {
+      "number": "201303041354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-04",
+      "status_date": "2013-12-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201301157955; move line on plans on fire sprinkler system to reduce branch size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301157955",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-15",
+      "status_date": "2014-07-07",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "fire sprinkler related to 201203156172; relocate branches on existing system for remodel, 2 pages of plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207064245",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-06",
+      "status_date": "2014-07-08",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "shoring system to temporary support roof trosses. structural work under app#201203156172",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206132521",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-13",
+      "status_date": "2014-07-08",
+      "estimated_cost": 29000,
+      "revised_cost": 29000,
+      "description": "replace existing windows at south courtyard elevation. not visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203156168",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-03-15",
+      "status_date": "2012-05-29",
+      "estimated_cost": 5000,
+      "revised_cost": 25000,
+      "description": "demo (e) kitchen, bathroom, interior finishes, stairs & roof deck. no structural work. remodel & construction will be performed under pa# 2012-0315-6172",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203156172",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-03-15",
+      "status_date": "2014-07-08",
+      "estimated_cost": 500000,
+      "revised_cost": 500000,
+      "description": "remodel kitchen, bath, finishes & stair; remodel stair to roof; remodel roofing & roof deck; remodel laundry room. sprinkler separate permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3749186&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3749&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1264,10 +1264,18 @@
     "survey_rating_as_recorded": "Heritage preliminary B; Downtown Plan Significant"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-04",
-    "method": "EAS exact match on 300 BEALE ST → parcel 3747075; sf-parcels has blklot 3747075 active, 300–300 BEALE; the 2025 roll records it as single family residential, built 1937. The record's assessor block 3747 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0605 of the building, which is a flat and not the building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3747075",
+    "path": "/san-francisco/east-cut/beale-street/300/",
+    "eas_address": "300 BEALE ST",
+    "method": "EAS exact match on 300 BEALE ST → parcel 3747075; sf-parcels has blklot 3747075 active, 300–300 BEALE; the 2025 roll records it as single family residential, built 1937. Parcel 3747075 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0605 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 3747 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING",
+    "note": "Re-expressed for the page."
    }
   },
   {
@@ -1368,10 +1376,16 @@
     "building_name_as_recorded": "Union Oil Company building"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-04",
-    "method": "sf-eas-addresses has 425 01ST ST but it does not join to one parcel. 425 01ST ST's coordinates fall in 20 active parcels (3765487, 3765054, 3765533, 3765262…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building. The record spells the street out as FIRST; EAS holds the numbered streets as zero-padded ordinals, so this is 01ST.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+    "status": "resolved",
+    "apn": "3765037",
+    "path": "/san-francisco/east-cut/1st-street/425/",
+    "eas_address": "425 01ST ST",
+    "method": "EAS exact match on 425 01ST ST → parcel 3765037; sf-parcels has blklot 3765037 active, 425–425 01ST; the 2025 roll records it as single family residential, built 2008. Parcel 3765037 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0801 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 425 01ST ST's coordinates fall in 689 active parcels, one condominium map's units on the 2025 roll; 3765037 stands for the building. The record spells the street out as FIRST; EAS holds the numbered streets as zero-padded ordinals, so this is 01ST.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Repeats what address-in-title-0032 and -0033 put on the page."
    }
   },
   {

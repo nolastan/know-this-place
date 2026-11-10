@@ -1,0 +1,58 @@
+{
+  "address": "201 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/harrison-street/201/unit-409/",
+  "unit": "409",
+  "apn": "3767115",
+  "block": "3767",
+  "lot": "115",
+  "parcel": {
+    "building_area_sqft": 797,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 573052,
+    "assessed_improvement_value": 382034,
+    "last_sale_date": "2021-08-18"
+  },
+  "permits": [
+    {
+      "number": "201201242791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-24",
+      "status_date": "2012-06-27",
+      "estimated_cost": 6900,
+      "revised_cost": 16000,
+      "description": "remodel two (e) bathrooms at one unit: replacing both vanity, cabinets, new tiles on floor and walls, lighting fixture at same location. no wall relocation. permanently installed lights shall be high efficacy unless they are controlled by manual on occupancy sensors -cec150(k)10",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201232739",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-23",
+      "status_date": "2012-06-27",
+      "estimated_cost": 17600,
+      "revised_cost": 17600,
+      "description": "removing & replacing (e) kitchen cabinets, (n) appliances, granite countertop. additional gfci outlets per code (+2) additional recess cfl lighting fixtures, minor plumbing work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3767115&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3767&unit=409",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

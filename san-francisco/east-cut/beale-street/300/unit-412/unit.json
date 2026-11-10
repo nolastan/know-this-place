@@ -1,0 +1,44 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-412/",
+  "unit": "412",
+  "apn": "3747060",
+  "block": "3747",
+  "lot": "060",
+  "parcel": {
+    "building_area_sqft": 943
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 577969,
+    "assessed_improvement_value": 385312,
+    "last_sale_date": "2016-10-07"
+  },
+  "permits": [
+    {
+      "number": "201702068716",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-06",
+      "status_date": "2019-09-04",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit: kitchen remodel-remove e cabs, appliances. install new cabs , appliance, plumbing, electrical, sink, faucet. same floor plan.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=412",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

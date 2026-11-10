@@ -1,0 +1,47 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-611/",
+  "unit": "611",
+  "apn": "3747081",
+  "block": "3747",
+  "lot": "081",
+  "parcel": {
+    "building_area_sqft": 1820,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1110000,
+    "assessed_improvement_value": 740000,
+    "last_sale_date": "2019-12-03"
+  },
+  "permits": [
+    {
+      "number": "202212208780",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-20",
+      "status_date": "2024-06-20",
+      "estimated_cost": 39050,
+      "revised_cost": 189312,
+      "description": "#611: interior remodel per plans that includes kitchen and powder room remodeling, plus adding 20 led lights. reconfigure kitchen layout by removing (e) non bearing walls and building partition walls (n).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=611",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
