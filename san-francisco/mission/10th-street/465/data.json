@@ -1,9 +1,7 @@
 {
   "address": "465 10th Street, San Francisco, CA 94103",
   "path": "/san-francisco/mission/10th-street/465/",
-  "apn": "3525093",
   "block": "3525",
-  "lot": "093",
   "eas_baseid": "463276",
   "coordinates": {
     "lat": 37.770952,
@@ -11,22 +9,38 @@
   },
   "parcel": {
     "year_built": 1924,
-    "units": 1,
-    "building_area_sqft": 2025,
+    "units": 19,
     "use": "Single Family Residential",
     "property_class": "Live/Work Condominium",
     "construction_type_code": "C",
     "zoning": "SLR",
     "supervisor_district": 6,
     "assessor_neighborhood": "South of Market",
-    "analysis_neighborhood": "South of Market",
-    "property_location_raw": "0000 0465 10TH                ST0101"
+    "analysis_neighborhood": "South of Market"
   },
-  "assessment": {
-    "roll_year": 2025,
-    "assessed_land_value": 585437,
-    "assessed_improvement_value": 585437,
-    "last_sale_date": "2005-06-09"
+  "condominium": {
+    "lots": [
+      "093",
+      "094",
+      "095",
+      "096",
+      "097",
+      "098",
+      "099",
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "105",
+      "106",
+      "107",
+      "108",
+      "109",
+      "110",
+      "111"
+    ],
+    "method": "Proposed from the 2025 roll for block 3525: every condominium parcel the roll files under 465 10TH ST, and the unbroken run of lots beside parcel 3525093 on the same street with the same year built (1924). 19 lots, 093–111."
   },
   "historic_status": {
     "ceqa_status_code": "A",
@@ -69,28 +83,6 @@
       "estimated_cost": 81900,
       "revised_cost": 81900,
       "description": "re-roofing- class a fire rating",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "201807235285",
-      "type": "otc alterations permit",
-      "status": "complete",
-      "filed": "2018-07-23",
-      "status_date": "2019-01-28",
-      "estimated_cost": 14000,
-      "revised_cost": 80000,
-      "description": "residential remodel-interior work including minor bath remodel, lighting, flooring, hvac replacement, minor kitchen remodel. no change in # of units. all work subject to interior improvement only",
-      "source": "sf-building-permits"
-    },
-    {
-      "number": "201806121651",
-      "type": "otc alterations permit",
-      "status": "issued",
-      "filed": "2018-06-12",
-      "status_date": "2018-06-12",
-      "estimated_cost": 1,
-      "revised_cost": 1,
-      "description": "as builts to 201708255921 install new waterflow alarm bell in the open garage area and tie in to (e) control panel maher na",
       "source": "sf-building-permits"
     },
     {
@@ -252,6 +244,16 @@
       "source": "sf-building-permits"
     },
     {
+      "number": "9107367",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-29",
+      "status_date": "1991-05-09",
+      "estimated_cost": 1,
+      "description": "reinstatment of e.w.o.#9001678 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
       "number": "9001678",
       "type": "otc alterations permit",
       "status": "expired",
@@ -292,6 +294,15 @@
       "source": "sf-building-permits"
     },
     {
+      "number": "8601177",
+      "type": "wall or painted sign",
+      "status": "complete",
+      "filed": "1986-01-31",
+      "status_date": "1986-04-02",
+      "description": "non structural sign",
+      "source": "sf-building-permits"
+    },
+    {
       "number": "8311317",
       "type": "wall or painted sign",
       "status": "expired",
@@ -301,10 +312,10 @@
     }
   ],
   "permit_summary": {
-    "count_on_file": 29,
+    "count_on_file": 27,
     "range": "1983–2026",
     "shown_on_page": 25,
-    "note": "DBI holds 29 permits for this parcel, most of them tenant improvements on individual floors. The timeline shows the 24 largest by stated cost, plus the earliest on file; the DBI query in the sources below returns all 29. 1 of them are nominal $1 street-space or sidewalk permits."
+    "note": "DBI holds 27 permits for this parcel, most of them tenant improvements on individual floors. The timeline shows the 24 largest by stated cost, plus the earliest on file; the DBI query in the sources below returns all 27. 1 of them are nominal $1 street-space or sidewalk permits."
   },
   "sources": [
     {
@@ -315,15 +326,15 @@
     },
     {
       "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3525093&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-09-03"
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 3525)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=3525&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
     },
     {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3525&lot=093",
-      "retrieved": "2026-09-03"
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3525",
+      "retrieved": "2026-11-09"
     },
     {
       "id": "sf-planning",
@@ -345,9 +356,22 @@
       "query": "https://noehill.com/sf/landmarks/nat1999000581.asp",
       "label": "NoeHill in San Francisco",
       "retrieved": "2026-11-05"
+    },
+    {
+      "id": "nrhp-99000581",
+      "name": "National Register of Historic Places nomination, Building at 465 Tenth Street (reference number 99000581), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/99000581_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-17"
     }
   ],
   "historical_record": [
+    {
+      "date": "1924",
+      "kind": "construction",
+      "description": "A reinforced concrete scenery factory was built for a chain of Market Street picture palaces, designed by O'Brien Brothers and put up by the Lurie Company. One bay runs the full 100-foot depth of the lot as a tower tall enough to hang and paint a full stage drop — its height set by the proscenium of the Granada Theater on Market Street — and the four bays beside it are two storeys of carpentry shop under segmental arches. The tower front carries an arcade of eleven round arches and a bas-relief of nudes with horses.",
+      "source": "nrhp-99000581"
+    },
     {
       "date": "1927",
       "kind": "construction",
@@ -356,10 +380,47 @@
       "date_precision": "year"
     },
     {
+      "date": "1928",
+      "kind": "occupancy",
+      "description": "For four years the building was the off-site scenery shop for a chain of cinemas that ran mixed programmes of newsreels, orchestral numbers, vaudeville turns and one feature, with staged musical numbers of twenty-five to fifty performers needing elaborate sets. Talking pictures arrived in 1927, features grew longer, vaudeville faded, and the lease ended.",
+      "source": "nrhp-99000581"
+    },
+    {
+      "date": "1929",
+      "kind": "alteration",
+      "description": "The interior was remodelled for the local branch of the General Cable Company, which stayed until 1934. By 1937 the principal tenant was a building-trade daily, and printing businesses held the building until about 1995 — leaving the scenery platform and the slots for raising and lowering drops in place the whole time.",
+      "source": "nrhp-99000581"
+    },
+    {
+      "date": "1989-10-17",
+      "kind": "earthquake",
+      "description": "The four concrete diagonal braces that hold up the north wall of the tower were shaken loose in the earthquake; they have since been reattached.",
+      "source": "nrhp-99000581"
+    },
+    {
       "date": "1998",
       "kind": "alteration",
       "description": "The Herbert L. Rothschild Building was converted into the Stagehouse Lofts, eighteen units.",
       "source": "noehill-nat1999000581"
+    },
+    {
+      "date": "1998",
+      "kind": "alteration",
+      "description": "The conversion took out the painting platform and the grid that suspended the scenery canvas, though the concrete beams that carried the grid and the piers and haunches that held the platform remain; a third floor clad in vertical corrugated steel was added, set back one bay from the front; and new windows were cut in the tower's north and south walls. The works ran from 1996.",
+      "source": "nrhp-99000581"
+    },
+    {
+      "date": "1999-06-04",
+      "kind": "designation",
+      "description": "Listed on the National Register of Historic Places as the only industrial building in San Francisco identified with a tower built for painting stage scenery.",
+      "source": "nrhp-99000581"
     }
+  ],
+  "building": {
+    "architect": "O'Brien Brothers",
+    "builder": "Lurie Company"
+  },
+  "unknowns": [
+    "The National Register nomination dates the building to 1924; a South of Market context statement dates it to 1927."
   ]
 }

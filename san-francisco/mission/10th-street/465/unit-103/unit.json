@@ -1,0 +1,31 @@
+{
+  "address": "465 10th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/10th-street/465/unit-103/",
+  "unit": "103",
+  "apn": "3525095",
+  "block": "3525",
+  "lot": "095",
+  "parcel": {
+    "building_area_sqft": 888
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 397161,
+    "assessed_improvement_value": 166547
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3525095&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3525&unit=103",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}
