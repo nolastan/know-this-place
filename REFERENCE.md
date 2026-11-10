@@ -387,6 +387,17 @@ corbett-avenue/655/
   by its lot. DBI files the lobby, the roof and the street space under
   whichever unit's lot holds the address (999 Green Street's are all on
   unit 1903's), so the lot says nothing about whose a permit is.
+- **Two things DBI does to a mapped building, and what `condo` does about
+  them.** Permits issued before the map stay on the lot the map retired, so
+  `condo` also takes the permits on the block filed at the building's own
+  street numbers under a lot the roll no longer has, and puts them on the
+  building. And where DBI stamps one unit's designation on the building's
+  own permits (988 Market Street's are all "1 M1", roof and basement
+  included), `--building-permit-units 1M1` records that in
+  `condominium.building_permit_units` and those permits stay on the building.
+- **A floor area every unit shares is the building's, restated**, and is left
+  off the unit pages: the roll gives each of 988 Market Street's office lots
+  the same 39,438 sq ft.
 - **`unit.json` is a closed vocabulary** (`seed_pages.UNIT_KEYS`). Whatever is
   true of the whole building, from a notable resident to a survey, goes on
   the building. A unit page never prints the roll's class, because

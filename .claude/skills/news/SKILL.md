@@ -139,9 +139,16 @@ python3 research/tools/resolve_eas.py apply news/items/<feed>/<date>.json
 python3 scripts/seed_pages.py seed-list --manifest research/manifests/news-<date>.json
 python3 scripts/build_site.py
 python3 research/tools/check.py --index
-python3 scripts/seed_pages.py render <path to the page>
+# …put the entries on the pages and the cards on the homepage, then rebuild:
+python3 scripts/build_site.py
 python3 news/tools/check.py && python3 scripts/validate.py
 ```
+
+**Rebuild after the last edit, not before it.** A new source on a page changes
+its line in `corpus.jsonl`, and CI fails any PR whose committed corpus differs
+from what a fresh build writes. `build_site.py` re-renders the pages and the
+grid and rewrites the corpus in one go; commit `corpus.jsonl` with the page.
+`validate.py` says so if you skip it.
 
 **Commit and push each page as you finish it.** Not one commit at the end: work
 that is pushed survives a session running out of room, work that is staged does

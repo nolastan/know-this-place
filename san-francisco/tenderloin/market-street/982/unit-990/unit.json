@@ -1,0 +1,28 @@
+{
+  "address": "990 Market Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/market-street/982/unit-990/",
+  "apn": "0342021",
+  "block": "0342",
+  "lot": "021",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33368,
+    "assessed_improvement_value": 22246,
+    "last_sale_date": "2019-11-26"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0342021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0342&street_number=990",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

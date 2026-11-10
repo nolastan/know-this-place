@@ -229,7 +229,12 @@ on one of several parcels sharing a point that are *not* one condominium's
 units** — an address that joins to one active parcel while a sibling row ("19 A"
 beside "19") shares that point with a parcel of another map. Nothing declines
 these, because airspace lots of one building look the same; read each and mark
-a wrong one `unresolved` with `by_hand`. It also lists **every resolution onto a
+a wrong one `unresolved` with `by_hand`. It lists **every condominium
+resolution whose unit the roll files at another street number, where EAS puts
+the recorded number on no parcel of that unit's map lot** (#557): one map lot
+can hold several buildings, and a point that reaches the tower next door would
+seed the recorded address as a page made of the neighbour's units. Look for a
+parcel of the address's own before applying. It also lists **every resolution onto a
 parcel with no row on the secured roll** — usually a condominium's original
 lot, which EAS still carries the street number on while the building's units
 sit on `<block>C…` lots; `seed-list` skips these silently, so settle them
