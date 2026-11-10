@@ -2871,6 +2871,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `corner.py A B --along DIR` prints every outline's span from the node, so
   the block line and the lot at the printed offset can be read off directly.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **An offset has two block faces, and the finding can record the wrong one.**
+  "NW line of Madrid, 125 NE of Persia" was placed on 523 Madrid, whose own
+  `cross_street` read "PERSIA (block face to RUSSIA)" — the face SW of Persia,
+  on the opposite side: diagonally across the intersection, with a lot of the
+  right size at the right offset, because every lot there is 25 by 100.
+  *Check the block face against the record's direction before measuring
+  along it, and the number's parity against its side;* `--retest` caught it
+  only once the record's side was written down as a field. And a note that
+  calls a placement "the one corner parcel" is a claim to measure: 4117 18th
+  was three lots in. (1910 permits re-test, 2026-11-10;
+  [sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball
