@@ -18,6 +18,8 @@ Run it two ways:
 
 See mcp/AGENTS.md for wiring it into a client.
 """
+from __future__ import annotations
+
 import argparse
 import json
 import math

@@ -35,7 +35,7 @@ already holds: each page's `data.json` or `place.json`, `corpus.jsonl`, and
 
 ## Trying it
 
-Run it from a clone of this repository. It needs Python 3.10 or later.
+Run it from a clone of this repository. It needs Python 3.9 or later, so the `python3` that ships with macOS works.
 
 **Claude Code:**
 
