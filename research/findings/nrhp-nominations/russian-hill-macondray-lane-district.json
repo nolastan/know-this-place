@@ -522,10 +522,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-16",
-    "method": "sf-eas-addresses has 72 MACONDRAY LN but it does not join to one parcel. 72 MACONDRAY LN's coordinates fall in 4 active parcels (0120080, 0120079, 0120077, 0120078), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 120 still places it on that city block."
+    "status": "resolved",
+    "apn": "0120077",
+    "path": "/san-francisco/russian-hill/macondray-lane/72/",
+    "eas_address": "72 MACONDRAY LN",
+    "method": "EAS exact match on 72 MACONDRAY LN → parcel 0120077; sf-parcels has blklot 0120077 active, 72–72 MACONDRAY; the 2025 roll records it as single family residential, built 1930. Parcel 0120077 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 72 MACONDRAY LN's coordinates fall in 4 active parcels, one condominium map's units on the 2025 roll; 0120077 stands for the building. The record's assessor block 120 matches the parcel's block.",
+    "checked_on": "2026-11-09"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -811,10 +817,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-16",
-    "method": "Recorded range 900-910 GREEN ST; EAS matches 900 on this street → parcel 0120051; sf-parcels has blklot 0120051 active, 900–900 GREEN; the 2025 roll records it as single family residential, built 1989. EAS has no record for 902, 904, 906, 908, 910 on this street. The record's assessor block 120 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0100 of the building, which is a flat and not the building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "0120051",
+    "path": "/san-francisco/russian-hill/green-street/900/",
+    "eas_address": "900 GREEN ST",
+    "method": "Recorded range 900-910 GREEN ST; EAS matches 900 on this street → parcel 0120051; sf-parcels has blklot 0120051 active, 900–900 GREEN; the 2025 roll records it as single family residential, built 1989. Parcel 0120051 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0100 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS has no record for 902, 904, 906, 908, 910 on this street. The record's assessor block 120 matches the parcel's block. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1989.",
+    "checked_on": "2026-11-09",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The fact is about the 1908 apartment building demolished in 1987; the roll dates the condominium building on the parcel to 1989. A page whose only facts are the building that stood there before is not worth seeding (RUNBOOK, Route B), so none is."
    }
   },
   {
@@ -845,10 +858,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-16",
-    "method": "Recorded range 900-910 GREEN ST; EAS matches 900 on this street → parcel 0120051; sf-parcels has blklot 0120051 active, 900–900 GREEN; the 2025 roll records it as single family residential, built 1989. EAS has no record for 902, 904, 906, 908, 910 on this street. The record's assessor block 120 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0100 of the building, which is a flat and not the building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "0120051",
+    "path": "/san-francisco/russian-hill/green-street/900/",
+    "eas_address": "900 GREEN ST",
+    "method": "Recorded range 900-910 GREEN ST; EAS matches 900 on this street → parcel 0120051; sf-parcels has blklot 0120051 active, 900–900 GREEN; the 2025 roll records it as single family residential, built 1989. Parcel 0120051 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0100 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS has no record for 902, 904, 906, 908, 910 on this street. The record's assessor block 120 matches the parcel's block.",
+    "checked_on": "2026-11-09",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The demolition of the 1908 building, on a parcel whose condominium building the roll dates to 1989. Declined with russian-hill-macondray-lane-district-0020: no page is seeded for a predecessor alone."
    }
   },
   {

@@ -8,7 +8,7 @@
 **Never read one whole.** The largest,
 `loc-newspapers/sn85066387-1908-building-contracts.json`, is 4.5 MB — about
 1.2M tokens, more than a context window holds. The directory as a whole is
-around 23.0M tokens, and an agent that opens one of these files has usually
+around 23.1M tokens, and an agent that opens one of these files has usually
 spent its session to reach three entries.
 
 This file is the cheap way in. The table says what each batch covers;
@@ -132,22 +132,22 @@ sit in — the three it touched most, and how many in all.
 | `loc-newspapers/sn85066387-1913-real-estate.json` | 59 | 99 KB | 1913 | 25 | 21 | `east-cut`, `tenderloin`, `inner-richmond` +11 |
 | `noehill/districts.json` | 465 | 807 KB | 1851–1941 | 421 | 265 | `nob-hill`, `tenderloin`, `mission` +9 |
 | `noehill/landmark-pages.json` | 154 | 246 KB | 1841–2023 | 128 | 103 | `financial-district`, `chinatown`, `pacific-heights` +22 |
-| `nrhp-nominations/bush-cottage-row-district.json` | 19 | 47 KB | 1874–1882 | 18 | 18 | `pacific-heights`, `japantown` |
+| `nrhp-nominations/bush-cottage-row-district.json` | 19 | 47 KB | 1874–1882 | 19 | 19 | `pacific-heights`, `japantown` |
 | `nrhp-nominations/civic-center-district.json` | 17 | 34 KB | 1913–1966 | 17 | 10 | `tenderloin`, `nob-hill` |
 | `nrhp-nominations/liberty-street-district.json` | 33 | 73 KB | 1869–1965 | 31 | 31 | `mission` |
-| `nrhp-nominations/listed-1966-1979.json` | 56 | 96 KB | 1782–1978 | 30 | 25 | `pacific-heights`, `haight-ashbury`, `financial-district` +10 |
-| `nrhp-nominations/listed-1980-1989.json` | 63 | 117 KB | 1871–1988 | 54 | 43 | `pacific-heights`, `south-of-market`, `mission` +12 |
-| `nrhp-nominations/listed-1990-1999.json` | 135 | 275 KB | 1849–1999 | 106 | 105 | `financial-district`, `north-beach`, `mission` +6 |
+| `nrhp-nominations/listed-1966-1979.json` | 56 | 98 KB | 1782–1978 | 32 | 26 | `pacific-heights`, `haight-ashbury`, `western-addition` +10 |
+| `nrhp-nominations/listed-1980-1989.json` | 63 | 118 KB | 1871–1988 | 56 | 45 | `pacific-heights`, `south-of-market`, `mission` +12 |
+| `nrhp-nominations/listed-1990-1999.json` | 135 | 277 KB | 1849–1999 | 117 | 116 | `mission`, `financial-district`, `north-beach` +6 |
 | `nrhp-nominations/listed-2000-2009.json` | 131 | 253 KB | 1864–2014 | 104 | 103 | `financial-district`, `nob-hill`, `south-of-market` +9 |
 | `nrhp-nominations/listed-2010-2015.json` | 65 | 138 KB | 1878–2015 | 65 | 64 | `pacific-heights`, `russian-hill`, `bayview-hunters-point` +8 |
 | `nrhp-nominations/listed-2017-2019.json` | 84 | 182 KB | 1882–2019 | 80 | 71 | `hayes-valley`, `tenderloin`, `mission` +3 |
 | `nrhp-nominations/listed-2020-2023.json` | 95 | 215 KB | 1884–2023 | 90 | 84 | `east-cut`, `mission`, `pacific-heights` +7 |
 | `nrhp-nominations/mills-building-and-tower.json` | 8 | 19 KB | 1890–1988 | 7 | 7 | `financial-district` |
-| `nrhp-nominations/russian-hill-macondray-lane-district.json` | 28 | 56 KB | 1878–1987 | 17 | 17 | `russian-hill` |
-| `nrhp-nominations/russian-hill-paris-block-district.json` | 18 | 37 KB | 1859–1960 | 16 | 15 | `nob-hill`, `russian-hill` |
-| `nrhp-nominations/russian-hill-vallejo-street-crest-district.json` | 89 | 174 KB | 1853–1986 | 74 | 70 | `nob-hill`, `russian-hill` |
+| `nrhp-nominations/russian-hill-macondray-lane-district.json` | 28 | 57 KB | 1878–1987 | 20 | 18 | `russian-hill` |
+| `nrhp-nominations/russian-hill-paris-block-district.json` | 18 | 37 KB | 1859–1960 | 17 | 16 | `nob-hill`, `russian-hill` |
+| `nrhp-nominations/russian-hill-vallejo-street-crest-district.json` | 89 | 176 KB | 1853–1986 | 79 | 75 | `nob-hill`, `russian-hill` |
 | `nrhp-nominations/southern-pacific-hospital-district.json` | 22 | 53 KB | 1898–1989 | 21 | 20 | `lone-mountain` |
-| `nrhp-nominations/uptown-tenderloin-district.json` | 482 | 1.3 MB | 1902–2001 | 463 | 452 | `tenderloin`, `nob-hill`, `union-square` |
+| `nrhp-nominations/uptown-tenderloin-district.json` | 482 | 1.3 MB | 1902–2001 | 467 | 452 | `tenderloin`, `nob-hill`, `union-square` |
 | `nrhp-nominations/uptown-tenderloin-notable-residents.json` | 9 | 18 KB | 1878–1969 | 9 | 9 | `tenderloin`, `nob-hill` |
 | `nrhp-nominations/uptown-tenderloin-section8.json` | 10 | 21 KB | 1902–1925 | 8 | 7 | `tenderloin`, `south-of-market` |
 | `sf-context-statements/african-american-hcs.json` | 248 | 512 KB | 1853–2024 | 184 | 180 | `bayview-hunters-point`, `western-addition`, `pacific-heights` +26 |
