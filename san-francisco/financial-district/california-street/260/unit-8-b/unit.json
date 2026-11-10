@@ -1,0 +1,65 @@
+{
+  "address": "260 California Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/california-street/260/unit-8-b/",
+  "unit": "8-B",
+  "apn": "0237038",
+  "block": "0237",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 1255
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 275613,
+    "assessed_improvement_value": 219038
+  },
+  "permits": [
+    {
+      "number": "201803214280",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-03-21",
+      "status_date": "2018-04-05",
+      "estimated_cost": 5000,
+      "revised_cost": 11000,
+      "description": "8/f: electrical plans & title-24 calculations. ref #201712146441. ref electrical permit #ew201802161133. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803163853",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-16",
+      "status_date": "2018-04-16",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "8th fl - ti consist of providing new 7 strobes & 6 speakers as shown. demo 3 existing speaker/sttrobe & 1 strobe. ref pa 2017-1214-6441",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712146441",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-14",
+      "status_date": "2018-04-19",
+      "estimated_cost": 120000,
+      "revised_cost": 180000,
+      "description": "8th fl - remodel and expansion of existing tenant space into adjacent tenant space. work includes new partitions, doors, interior glazing, millwork, lighting, electrical and new finishes. mep,title 24 lighting, fire sprinkler and life safety work to be permitte separately",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0237038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0237&unit=8-B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

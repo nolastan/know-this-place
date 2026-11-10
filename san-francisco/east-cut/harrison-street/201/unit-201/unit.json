@@ -1,0 +1,46 @@
+{
+  "address": "201 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/harrison-street/201/unit-201/",
+  "unit": "201",
+  "apn": "3767045",
+  "block": "3767",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 432,
+    "rooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 243000,
+    "assessed_improvement_value": 162000,
+    "last_sale_date": "2024-10-01"
+  },
+  "permits": [
+    {
+      "number": "201706209817",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-20",
+      "status_date": "2018-10-12",
+      "estimated_cost": 1000,
+      "revised_cost": 2000,
+      "description": "provide & install new 1 monitor module for (e) system as shown on drawings",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3767045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3767&unit=201",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

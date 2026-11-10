@@ -1,0 +1,43 @@
+{
+  "address": "260 California Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/california-street/260/unit-6-b/",
+  "unit": "6-B",
+  "apn": "0237032",
+  "block": "0237",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 1255
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 275613,
+    "assessed_improvement_value": 219038
+  },
+  "permits": [
+    {
+      "number": "201709279709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-27",
+      "status_date": "2017-11-20",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "6th fl t.i. consist of adding (6) strobe & (30 speakers for proper coverage. remove & replace existing (7) strobes with new for syncronization. maher na",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0237032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0237&unit=6-B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

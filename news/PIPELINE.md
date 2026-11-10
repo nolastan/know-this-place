@@ -436,7 +436,10 @@ nothing else; the markup here is what to expect, not what to type:
 - **A condominium is a building page, not a refusal (#446).** The resolver
   files a fact on a condominium unit at the building's path, and `seed-list`
   writes the building with a page per unit. Facts go on the building's
-  `data.json`; a unit page carries only roll and permit data.
+  `data.json`; a unit page carries only roll and permit data. A building
+  split into airspace parcels on one map lot, classed as offices, shops or a
+  hotel, is written the same way — see
+  [REFERENCE.md → Condominium buildings](../REFERENCE.md#condominium-buildings).
 - **A parcel the seeder refuses is not a page to force.** It skips parcels
   with no row on the current roll, and a condominium whose units another page
   already documents, and prints the reason for

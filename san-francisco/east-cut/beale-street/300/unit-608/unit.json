@@ -1,0 +1,66 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-608/",
+  "unit": "608",
+  "apn": "3747078",
+  "block": "3747",
+  "lot": "078",
+  "parcel": {
+    "building_area_sqft": 2724
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1894256,
+    "assessed_improvement_value": 1894256,
+    "last_sale_date": "2020-07-02"
+  },
+  "permits": [
+    {
+      "number": "202206146305",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-06-14",
+      "status_date": "2026-01-23",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "one unit: permit for use of an intermediate length occupancy within existing legally permitted use and occupancy.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509086414",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-08",
+      "status_date": "2016-07-15",
+      "estimated_cost": 14800,
+      "revised_cost": 23390,
+      "description": "kitchen remodeling. new cabinets, counter tops, new appliances, (6) 6\" led lights, no change to layout or walls. (e) exhaust duct.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306048649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-04",
+      "status_date": "2013-10-25",
+      "estimated_cost": 25000,
+      "revised_cost": 28000,
+      "description": "half bath, new vent fan, vanity, sink, 3 lights, toilet, gfci, hall bath new vent fan, vanity, sink, 3 lights, toilet, gfci, master bath, new vent fan, vanity,2 sinks, 5 lights, toilet, 2 gfci,no windows or doors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747078&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=608",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

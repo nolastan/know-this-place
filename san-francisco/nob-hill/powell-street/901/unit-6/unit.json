@@ -1,0 +1,47 @@
+{
+  "address": "901 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/901/unit-6/",
+  "unit": "6",
+  "apn": "0223037",
+  "block": "0223",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1562,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1123632,
+    "assessed_improvement_value": 749088,
+    "last_sale_date": "2022-07-15"
+  },
+  "permits": [
+    {
+      "number": "201403180963",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-18",
+      "status_date": "2014-08-18",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "2 bathrooms: replace all tile and fixtures. upgrade electrical as necessary observe title 24. add fans as necessary. replace 1 tub with shower. 35 sf and 49 sf.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0223037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0223&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "201 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/harrison-street/201/unit-127/",
+  "unit": "127",
+  "apn": "3767040",
+  "block": "3767",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1077,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 500624,
+    "assessed_improvement_value": 500624,
+    "last_sale_date": "2020-11-02"
+  },
+  "permits": [
+    {
+      "number": "200808149200",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-14",
+      "status_date": "2008-08-14",
+      "estimated_cost": 8350,
+      "revised_cost": 8350,
+      "description": "one unit - fit ikea kitchen cabinets upper and lower. trim out to accomodate lowe & upper cabinets. remove 34\" wall furred - mount stove junction box to floor under cabinets. eliminate 1 outlet. non structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3767040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3767&unit=127",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

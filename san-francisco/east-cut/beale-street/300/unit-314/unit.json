@@ -1,0 +1,44 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-314/",
+  "unit": "314",
+  "apn": "3747043",
+  "block": "3747",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 955
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 536922,
+    "assessed_improvement_value": 393996,
+    "last_sale_date": "2013-11-13"
+  },
+  "permits": [
+    {
+      "number": "201403191096",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-19",
+      "status_date": "2014-07-25",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "one unit: 1)remodel kitchen: new cabinets, fixtures, and lighting. 2)remodel bathroom:new cabinets, fixture, and lighting. no walls to be removed, no new openings, no windows, no doors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=314",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

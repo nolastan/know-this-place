@@ -1,0 +1,35 @@
+{
+  "address": "201 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/harrison-street/201/unit-526/",
+  "unit": "526",
+  "apn": "3767159",
+  "block": "3767",
+  "lot": "159",
+  "parcel": {
+    "building_area_sqft": 795,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 415200,
+    "assessed_improvement_value": 276800,
+    "last_sale_date": "2020-01-16"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3767159&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3767&unit=526",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

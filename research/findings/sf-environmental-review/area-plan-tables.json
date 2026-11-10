@@ -10652,10 +10652,16 @@
    "id": "area-plan-tables-0253",
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-27",
-    "method": "sf-eas-addresses has 1 SOUTH PARK but it does not join to one parcel. 1 SOUTH PARK's coordinates fall in 20 active parcels (3775185, 3775191, 3775216, 3775197…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+    "status": "resolved",
+    "apn": "3775181",
+    "path": "/san-francisco/east-cut/south-park/1/",
+    "eas_address": "1 SOUTH PARK",
+    "method": "EAS exact match on 1 SOUTH PARK (neither the record nor EAS gives this street a type) → parcel 3775181; sf-parcels has blklot 3775181 active, 1–1 SOUTH PARK; the 2025 roll records it as commercial retail, built 2007. Parcel 3775181 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0103 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1 SOUTH PARK's coordinates fall in 36 active parcels, one condominium map's units on the 2025 roll; 3775181 stands for the building.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "Says only whether a survey listed the building."
    }
   },
   {
@@ -11187,10 +11193,17 @@
    "id": "area-plan-tables-0267",
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-27",
-    "method": "sf-eas-addresses has 310 TOWNSEND ST but it does not join to one parcel. 310 TOWNSEND ST's coordinates fall in 20 active parcels (3786288, 3786276, 3786263, 3786278…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+    "status": "resolved",
+    "apn": "3786263",
+    "path": "/san-francisco/south-of-market/townsend-street/310/",
+    "eas_address": "310 TOWNSEND ST",
+    "method": "EAS exact match on 310 TOWNSEND ST → parcel 3786263; sf-parcels has blklot 3786263 active, 310–310 TOWNSEND; the 2025 roll records it as single family residential, built 2006. Parcel 3786263 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 310 TOWNSEND ST's coordinates fall in 45 active parcels, one condominium map's units on the 2025 roll; 3786263 stands for the building.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on this parcel to 2006, after the date of this record, so it cannot be tied to the standing building, and nothing else would be on the page."
    }
   },
   {
@@ -11483,10 +11496,17 @@
    "id": "area-plan-tables-0275",
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-27",
-    "method": "Recorded range 601-631 04TH ST; EAS matches 601 on this street → parcel 3787136; sf-parcels has blklot 3787136 active, 601–601 04TH; the 2025 roll records it as single family residential, built 1991. EAS has no record for 603, 605, 607, 609, 611, 613 on this street. The record writes the street 4TH; EAS holds the numbered streets zero-padded to four characters, so this is 04TH.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0PH1 of the building, which is a flat and not the building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "3787136",
+    "path": "/san-francisco/south-of-market/4th-street/601/",
+    "eas_address": "601 04TH ST",
+    "method": "Recorded range 601-631 04TH ST; EAS matches 601 on this street → parcel 3787136; sf-parcels has blklot 3787136 active, 601–601 04TH; the 2025 roll records it as single family residential, built 1991. Parcel 3787136 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0PH1 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS has no record for 603, 605, 607, 609, 611, 613 on this street. The record writes the street 4TH; EAS holds the numbered streets zero-padded to four characters, so this is 04TH.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The roll dates the building on this parcel to 1991, after the date of this record, so it cannot be tied to the standing building, and nothing else would be on the page."
    }
   },
   {

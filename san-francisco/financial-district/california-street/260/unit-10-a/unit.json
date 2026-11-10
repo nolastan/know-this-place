@@ -1,0 +1,43 @@
+{
+  "address": "260 California Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/california-street/260/unit-10-a/",
+  "unit": "10-A",
+  "apn": "0237042",
+  "block": "0237",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 2618
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 575211,
+    "assessed_improvement_value": 457141
+  },
+  "permits": [
+    {
+      "number": "201912099037",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-09",
+      "status_date": "2020-04-09",
+      "estimated_cost": 4500,
+      "revised_cost": 7000,
+      "description": "10/f: fire sprinkler : pendant protection for (e) uprights for office remodel number of heads (13). ref t.i. pa201905301970. maher n/a.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0237042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0237&unit=10-A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

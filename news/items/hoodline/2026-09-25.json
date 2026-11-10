@@ -42,7 +42,7 @@
         "path": "/san-francisco/russian-hill/polk-street/2354/",
         "eas_address": "2354 POLK ST",
         "method": "EAS exact match on 2360 POLK ST → parcel 0548019; sf-parcels has blklot 0548019 active, 2354–2360 POLK; the 2025 roll records it as multi-family residential, built 1910. The assessor files the parcel as 1395 UNION ST. EAS puts 2354, 2356, 2358, 2360 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2354.",
-        "checked_on": "2026-11-05"
+        "checked_on": "2026-11-10"
       }
     },
     {
@@ -81,7 +81,7 @@
         "path": "/san-francisco/south-of-market/townsend-street/410/",
         "eas_address": "410 TOWNSEND ST",
         "method": "EAS exact match on 410 TOWNSEND ST → parcel 3785002A; sf-parcels has blklot 3785002A active, 410–410 TOWNSEND; the 2025 roll records it as commercial office, built 1912.",
-        "checked_on": "2026-11-05"
+        "checked_on": "2026-11-10"
       }
     },
     {
@@ -109,14 +109,24 @@
       },
       "confidence": "high",
       "publish": {
-        "status": "pending",
-        "note": "Blocked, re-checked 2026-11-05 after the condominium routing (#446): not a condominium after all. 232 O'Farrell Street's point holds four airspace parcels on one map lot (0315028-0315031) that the 2025 roll classes 'Hotels - Other', filed under 201 Powell Street, so the condo-building route does not take it. Ready to publish if multi-parcel buildings that share a map lot get the same building page as condominiums."
+        "status": "published",
+        "note": "Seeded /san-francisco/tenderloin/ofarrell-street/232/ from research/manifests/news-2026-11-10-airspace.json as a building of four airspace parcels on one map lot (0315028-0315031, which the roll files at 201 Powell Street), with a page per parcel. Dated 25 September 2026, the article's date, rather than the 31 December closing it forecasts, so the timeline does not carry a future date. No card on the homepage news grid: its oldest card is dated November 2026, so this entry sorts below all twelve.",
+        "pr": "https://github.com/nolastan/know-this-place/pull/604"
       },
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-11-05",
-        "method": "sf-eas-addresses has 232 OFARRELL ST but it does not join to one parcel. 232 OFARRELL ST's coordinates fall in 4 active parcels (0315028, 0315030, 0315029, 0315031) that are not one condominium's units, so none of them is the building by rule. The record spells the street O'FARRELL; EAS holds it as OFARRELL.",
-        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+        "status": "resolved",
+        "apn": "0315028",
+        "path": "/san-francisco/tenderloin/ofarrell-street/232/",
+        "eas_address": "232 OFARRELL ST",
+        "method": "EAS exact match on 232 OFARRELL ST → parcel 0315028; sf-parcels has blklot 0315028 active; the 2025 roll records it as commercial hotel. The assessor files the parcel as 201 POWELL ST. Parcel 0315028 is one of 4 airspace parcels of one building (0315028, 0315029, 0315030, 0315031); the fact is the building's, and goes on the building's page at this path, which lists its parcels. 232 OFARRELL ST's coordinates fall in 4 active parcels that sf-parcels files under one map lot, 0315028: one building divided into airspace parcels; 0315028 stands for the building. The record spells the street O'FARRELL; EAS holds it as OFARRELL.",
+        "checked_on": "2026-11-10",
+        "building_lots": [
+          "028",
+          "029",
+          "030",
+          "031"
+        ],
+        "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
       }
     }
   ]

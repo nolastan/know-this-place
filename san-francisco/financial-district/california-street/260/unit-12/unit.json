@@ -1,0 +1,65 @@
+{
+  "address": "260 California Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/california-street/260/unit-12/",
+  "unit": "12",
+  "apn": "0237045",
+  "block": "0237",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 2792
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 435065,
+    "assessed_improvement_value": 345760
+  },
+  "permits": [
+    {
+      "number": "201609278927",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-27",
+      "status_date": "2016-11-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "12th floor (penthouse) - title 24 lighting only. ref pa #201606220563.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609097225",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-09",
+      "status_date": "2016-09-09",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "12th floor/penthouse t.i. - removing and replacing 1 strobe and 2 speakers/strobe with new. t.i. 201606220563",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609016596",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-01",
+      "status_date": "2016-10-07",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "12th floor - relocate fire riser due to moving of a closet. ref pa #201606220563. n/a maher ordinance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0237045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0237&unit=12",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
