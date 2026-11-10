@@ -1,0 +1,92 @@
+{
+  "address": "1435 Bay Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/bay-street/1435/",
+  "block": "0471",
+  "eas_baseid": "282859",
+  "coordinates": {
+    "lat": 37.803209,
+    "lng": -122.430629
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 12,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina"
+  },
+  "condominium": {
+    "lots": [
+      "007",
+      "008",
+      "009",
+      "010",
+      "011",
+      "012",
+      "013",
+      "014",
+      "015",
+      "016",
+      "017",
+      "018"
+    ],
+    "method": "Proposed from the 2025 roll for block 0471: every condominium parcel the roll files under 1435 BAY ST, and the unbroken run of lots beside parcel 0471007 on the same street with the same year built (1926). 12 lots, 007–018."
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAY&street_type=ST&address_number=1435",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0471)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0471&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0471",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0471007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "article-10-lm320",
+      "name": "San Francisco Planning, Article 10 landmark designation: Landmark No. 320, Ladies' Protection and Relief Society (ordinance, Planning Commission resolution and landmark designation report)",
+      "query": "https://files.sfplanning.org/documents/preservation/LM320.pdf",
+      "label": "SF Planning, landmark designation",
+      "retrieved": "2026-09-30"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924",
+      "kind": "construction",
+      "description": "Built as a three-story, 12-unit apartment building; later converted to condominiums.",
+      "source": "article-10-lm320"
+    }
+  ],
+  "unknowns": [
+    "A landmark designation report dates the building to 1924; the assessor's roll gives 1926."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "673 Kansas Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/kansas-street/673/unit-2/",
+  "unit": "2",
+  "apn": "4030042",
+  "block": "4030",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 1725,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 501801,
+    "assessed_improvement_value": 501801,
+    "last_sale_date": "2013-01-25"
+  },
+  "permits": [
+    {
+      "number": "201403241520",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-24",
+      "status_date": "2014-11-17",
+      "estimated_cost": 34000,
+      "revised_cost": 34000,
+      "description": "remove exising non historic window trim and details to studs due to dry-rot. check all areas for dryrot; install new insulation; plywood sheathing and vapor barrier. install new siding trim and details. add paneled facia boards and decorative shingles on gable. no lateral resistance design. work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4030042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4030&unit=2",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}
