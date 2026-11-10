@@ -1,0 +1,47 @@
+{
+  "address": "640 Davis Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/davis-street/640/unit-27/",
+  "unit": "27",
+  "apn": "0168027",
+  "block": "0168",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 1836,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 439738,
+    "assessed_improvement_value": 667759,
+    "last_sale_date": "1997-02-06"
+  },
+  "permits": [
+    {
+      "number": "202204252878",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-25",
+      "status_date": "2022-10-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: residential water damge repair. repair front door jamb. replace approx 200 sqft of drywall. replace carpet and hardwood flooring. patch and paint entire unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0168027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0168&unit=27",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

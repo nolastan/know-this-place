@@ -97,21 +97,21 @@ sit in — the three it touched most, and how many in all.
 | `corbett-heights-neighbors/vol-viii-no-8.json` | 12 | 21 KB | 1864–2003 | 11 | 8 | `castro`, `mission` |
 | `corbett-heights-neighbors/vol-viii-no-9.json` | 22 | 36 KB | 1876–1982 | 9 | 8 | `castro`, `noe-valley` |
 | `digitalsf/no-citation-field.json` | 0 | 4 KB | — | 0 | 0 | — |
-| `digitalsf/sfh-3.json` | 3 | 9 KB | — | 2 | 0 | `tenderloin` |
-| `digitalsf/sfh-371.json` | 421 | 811 KB | 1873–1996 | 117 | 116 | `tenderloin`, `japantown`, `pacific-heights` +10 |
+| `digitalsf/sfh-3.json` | 3 | 9 KB | — | 3 | 0 | `tenderloin`, `pacific-heights` |
+| `digitalsf/sfh-371.json` | 421 | 812 KB | 1873–1996 | 120 | 118 | `tenderloin`, `japantown`, `pacific-heights` +11 |
 | `digitalsf/sfp-103.json` | 7 | 16 KB | 1964 | 3 | 0 | `western-addition` |
 | `digitalsf/sfp-125.json` | 36 | 79 KB | 1970–1971 | 11 | 11 | `south-of-market`, `tenderloin`, `south-beach` +1 |
 | `digitalsf/sfp-136.json` | 10 | 16 KB | 1915–1959 | 2 | 2 | `tenderloin`, `pacific-heights` |
-| `digitalsf/sfp-162.json` | 1,186 | 2.2 MB | 1865–1989 | 663 | 546 | `financial-district`, `pacific-heights`, `mission` +35 |
+| `digitalsf/sfp-162.json` | 1,186 | 2.2 MB | 1865–1989 | 679 | 554 | `financial-district`, `pacific-heights`, `mission` +36 |
 | `digitalsf/sfp-169.json` | 39 | 79 KB | 1966–1968 | 21 | 21 | `marina`, `south-of-market`, `castro` +8 |
 | `digitalsf/sfp-179.json` | 29 | 60 KB | 2014 | 25 | 25 | `tenderloin`, `nob-hill` |
 | `digitalsf/sfp-22.json` | 80 | 155 KB | 1911–1912 | 72 | 60 | `ingleside-terraces`, `presidio-heights`, `inner-richmond` |
-| `digitalsf/sfp-23.json` | 1,122 | 2.0 MB | 1945–1991 | 921 | 917 | `mission`, `sunset-parkside`, `inner-sunset` +33 |
+| `digitalsf/sfp-23.json` | 1,122 | 2.0 MB | 1945–1991 | 960 | 944 | `mission`, `sunset-parkside`, `inner-sunset` +33 |
 | `digitalsf/sfp-26.json` | 17 | 36 KB | 1935–1942 | 11 | 6 | `lone-mountain`, `dogpatch`, `glen-park` +3 |
 | `digitalsf/sfp-42.json` | 58 | 104 KB | 1953–1994 | 56 | 56 | `mission`, `pacific-heights`, `inner-richmond` +14 |
 | `digitalsf/sfp-84.json` | 13 | 26 KB | 1889–1914 | 1 | 1 | `financial-district` |
 | `digitalsf/sfp-90.json` | 14 | 29 KB | 1976–1984 | 11 | 11 | `tenderloin`, `bernal-heights`, `pacific-heights` +6 |
-| `digitalsf/tail.json` | 137 | 244 KB | 1900–2022 | 73 | 45 | `north-beach`, `castro`, `mission` +17 |
+| `digitalsf/tail.json` | 137 | 247 KB | 1900–2022 | 78 | 48 | `castro`, `north-beach`, `mission` +18 |
 | `hittell-1878/full-text.json` | 14 | 23 KB | 1837–1878 | 3 | 2 | `financial-district` |
 | `loc-newspapers/sn85066387-1906-03-25-real-estate.json` | 26 | 46 KB | 1906 | 2 | 2 | `hayes-valley`, `mission` |
 | `loc-newspapers/sn85066387-1906-building-contracts.json` | 1,259 | 2.4 MB | 1906 | 191 | 145 | `financial-district`, `mission`, `chinatown` +16 |
@@ -432,11 +432,12 @@ are listed so their size is visible before anyone opens one.
 | `russian-hill-paris-block-district.json` | 8 | 3 KB | `nob-hill`, `russian-hill` |
 | `russian-hill-vallejo-street-crest-district.json` | 22 | 8 KB | `nob-hill` |
 | `sexual-identity-subcultures.json` | 30 | 11 KB | `south-of-market`, `mission`, `chinatown` |
-| `sfh-371.json` | 50 | 20 KB | `japantown`, `tenderloin`, `pacific-heights` +6 |
+| `sfh-371.json` | 2 | 1 KB | `north-beach`, `financial-district` |
 | `sfp-125.json` | 3 | 1 KB | `south-of-market`, `south-beach` |
-| `sfp-162.json` | 253 | 107 KB | `pacific-heights`, `mission`, `financial-district` +36 |
+| `sfp-162.json` | 2 | 1 KB | `financial-district` |
 | `sfp-169.json` | 4 | 1 KB | `tenderloin`, `marina`, `south-of-market` +1 |
 | `sfp-22.json` | 50 | 18 KB | `ingleside-terraces`, `presidio-heights`, `inner-richmond` |
+| `sfp-23.json` | 24 | 9 KB | `mission`, `pacific-heights`, `marina` +7 |
 | `sfp-26.json` | 6 | 2 KB | `lone-mountain`, `glen-park`, `bernal-heights` +1 |
 | `sfp-42.json` | 22 | 8 KB | `inner-richmond`, `hayes-valley`, `mission` +6 |
 | `sfp-90.json` | 5 | 2 KB | `north-beach`, `tenderloin`, `pacific-heights` +2 |
@@ -465,7 +466,7 @@ are listed so their size is visible before anyone opens one.
 | `south-of-market-hcs.json` | 32 | 12 KB | `south-of-market`, `mission`, `union-square` +1 |
 | `southern-pacific-hospital-district.json` | 2 | 1 KB | `lone-mountain` |
 | `sunset-builders-hcs.json` | 131 | 51 KB | `sunset-parkside`, `west-of-twin-peaks`, `inner-sunset` +5 |
-| `tail.json` | 18 | 7 KB | `nob-hill`, `oceanview-merced-ingleside`, `bernal-heights` +9 |
+| `tail.json` | 3 | 1 KB | `north-beach`, `nob-hill`, `south-of-market` |
 | `theater-venues.json` | 4 | 2 KB | `tenderloin`, `mission`, `nob-hill` |
 | `transit-center-district-survey.json` | 61 | 22 KB | `east-cut`, `south-of-market`, `south-beach` +1 |
 | `umb-survey-ratings.json` | 1,020 | 380 KB | `tenderloin`, `nob-hill`, `financial-district` +28 |

@@ -1,0 +1,47 @@
+{
+  "address": "33 Vandewater Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/vandewater-street/33/unit-202/",
+  "unit": "202",
+  "apn": "0041079",
+  "block": "0041",
+  "lot": "079",
+  "parcel": {
+    "building_area_sqft": 550,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 360813,
+    "assessed_improvement_value": 240534,
+    "last_sale_date": "2009-09-15"
+  },
+  "permits": [
+    {
+      "number": "200304222866",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-04-22",
+      "status_date": "2005-12-20",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "change out existing kitchen counter tops & appliances existing unit. no structural,no exterior.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0041079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0041&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

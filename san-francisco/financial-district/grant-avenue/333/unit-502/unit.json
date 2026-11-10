@@ -1,0 +1,47 @@
+{
+  "address": "333 Grant Avenue, San Francisco, CA 94108",
+  "path": "/san-francisco/financial-district/grant-avenue/333/unit-502/",
+  "unit": "502",
+  "apn": "0286044",
+  "block": "0286",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 687,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 349200,
+    "assessed_improvement_value": 232800,
+    "last_sale_date": "2018-11-29"
+  },
+  "permits": [
+    {
+      "number": "202006088223",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-08",
+      "status_date": "2020-08-17",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "one unit: replace countertops in kitchen and 2 bathroom vanities, replace 2 vanity faucets and and 1 kitchen faucet, reface kitchen cabinets, replace 2 lights fixtures in existing location, replace bedroom carpet. all work in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0286044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0286&unit=502",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
