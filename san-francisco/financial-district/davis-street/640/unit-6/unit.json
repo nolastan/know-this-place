@@ -1,0 +1,90 @@
+{
+  "address": "640 Davis Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/davis-street/640/unit-6/",
+  "unit": "6",
+  "apn": "0168006",
+  "block": "0168",
+  "lot": "006",
+  "parcel": {
+    "building_area_sqft": 2098,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1365393,
+    "assessed_improvement_value": 910261,
+    "last_sale_date": "2017-11-30"
+  },
+  "permits": [
+    {
+      "number": "201108122339",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-12",
+      "status_date": "2012-07-10",
+      "estimated_cost": 30000,
+      "revised_cost": 65044,
+      "description": "remodel 2 1/2 bathrooms & a kitchen. no change of any plumbing fixture location. lighting must comply with cec150(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509203376",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-20",
+      "status_date": "2006-08-23",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "changing cbnts/changing sink and bth tub/changing floors/adding light paint/change paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311210888",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-21",
+      "status_date": "2004-04-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel non structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207292524",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-07-29",
+      "status_date": "2004-02-20",
+      "estimated_cost": 4250,
+      "revised_cost": 4250,
+      "description": "remove bath tub & install new shower pan and some part of tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-01-18",
+      "status_date": "1995-06-21",
+      "estimated_cost": 1,
+      "description": "revised location of new door opening-see 9420076",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0168006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0168&unit=6",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

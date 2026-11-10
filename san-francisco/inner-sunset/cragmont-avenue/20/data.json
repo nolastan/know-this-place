@@ -1,0 +1,148 @@
+{
+  "address": "20 Cragmont Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/inner-sunset/cragmont-avenue/20/",
+  "apn": "2123B001G",
+  "block": "2123B",
+  "lot": "001G",
+  "eas_baseid": "329861",
+  "coordinates": {
+    "lat": 37.751143,
+    "lng": -122.468151
+  },
+  "parcel": {
+    "year_built": 2006,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 3955,
+    "building_area_sqft": 2876,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0020 CRAGMONT            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1298238,
+    "assessed_improvement_value": 915730,
+    "last_sale_date": "2005-07-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2006",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200601263174",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2006-01-26",
+      "status_date": "2025-10-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to 200506034113 for additional structural support at 1st and foundation, see detail 13 on sheet s-5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510125340",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2005-10-12",
+      "status_date": "2005-11-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "field changes to work under construction,interior partition layout changes: fire escape assembly alteration,various window adjustments.rev.to appl#200404070748 & 200506034113 to construct new single family dwelling,add spiral stair from mezz.to 1/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508120184",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-12",
+      "status_date": "2006-01-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 200506034113 to move location of piers due to existing tree. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506034113",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-06-03",
+      "status_date": "2006-01-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "app#200404070748s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404070748",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2004-04-07",
+      "status_date": "2006-01-26",
+      "estimated_cost": 250000,
+      "revised_cost": 350000,
+      "description": "erect a new three story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2004–2018",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CRAGMONT&street_type=AVE&address_number=20",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2123B001G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2123B&lot=001G",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2123B001G",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-10-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 October 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n139/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-10-07",
+      "kind": "occupancy",
+      "description": "A vacant lot stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-10-07"
+    }
+  ]
+}

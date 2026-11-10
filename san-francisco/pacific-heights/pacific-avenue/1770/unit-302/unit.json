@@ -1,0 +1,69 @@
+{
+  "address": "1770 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/1770/unit-302/",
+  "unit": "302",
+  "apn": "0575026",
+  "block": "0575",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 1500,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1039134,
+    "assessed_improvement_value": 692756,
+    "last_sale_date": "2021-03-02"
+  },
+  "permits": [
+    {
+      "number": "202309076122",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-07",
+      "status_date": "2024-12-11",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit: in kind bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506249801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-24",
+      "status_date": "2016-06-09",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "per application, replace 8 aluminum slider windows with wood doublehung windows (consistent with original window design of building); visible from street. no open pc code enforcement cases or bbns. u-value 0.28. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208133855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-13",
+      "status_date": "2002-09-24",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "install washer and dryer electric in the bthrm and vent to exterior light wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0575026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0575&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

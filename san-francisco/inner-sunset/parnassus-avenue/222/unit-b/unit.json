@@ -1,0 +1,53 @@
+{
+  "address": "222 Parnassus Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/parnassus-avenue/222/unit-b/",
+  "unit": "B",
+  "apn": "1274039",
+  "block": "1274",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 1126,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 721949,
+    "assessed_improvement_value": 481299,
+    "last_sale_date": "2020-05-15"
+  },
+  "permits": [
+    {
+      "number": "200802296014",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-29",
+      "status_date": "2008-06-17",
+      "estimated_cost": 4300,
+      "revised_cost": 4300,
+      "description": "one unit - replace 7 windows in kind, 6 windows are to be vinyl, 1 windows is to be alum/wood clad. some windows face street. same size same location.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2003–2008",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1274039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1274&unit=B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

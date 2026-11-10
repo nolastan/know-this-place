@@ -1,0 +1,44 @@
+{
+  "address": "317 29th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/29th-street/317/unit-401/",
+  "unit": "401",
+  "apn": "6632093",
+  "block": "6632",
+  "lot": "093",
+  "parcel": {
+    "building_area_sqft": 1066
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 403447,
+    "assessed_improvement_value": 403447,
+    "last_sale_date": "1999-10-01"
+  },
+  "permits": [
+    {
+      "number": "202610219731",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-10-21",
+      "status_date": "2026-10-26",
+      "estimated_cost": 29000,
+      "revised_cost": 47967,
+      "description": "private bath remodel, connect tub to shower , update lighting, vanity, toilet. update guest bath floor vanity, tub, tile",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6632093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6632&unit=401",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

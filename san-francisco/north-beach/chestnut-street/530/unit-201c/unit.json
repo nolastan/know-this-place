@@ -1,0 +1,55 @@
+{
+  "address": "530 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/chestnut-street/530/unit-201c/",
+  "unit": "201C",
+  "apn": "0052045",
+  "block": "0052",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 1197
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 840653,
+    "assessed_improvement_value": 560434,
+    "last_sale_date": "2019-04-18"
+  },
+  "permits": [
+    {
+      "number": "202303203993",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-20",
+      "status_date": "2024-01-12",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "one unit: master bath remodel in kind. no structural changes. remove the tub, installl new shower stall shower, neew plumbing fixture. replace (e) electrical outlet with new ones. replace (e) fan with new one. guest bath: retile the shower walls, new plumbing fixtures. emergency hot and cold",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303273214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-27",
+      "status_date": "2013-04-22",
+      "estimated_cost": 3500,
+      "revised_cost": 5000,
+      "description": "combine 2 closets into one. add doors to bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0052045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0052&unit=201C",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

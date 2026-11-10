@@ -1,0 +1,47 @@
+{
+  "address": "425 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/425/unit-5002/",
+  "unit": "5002",
+  "apn": "3765362",
+  "block": "3765",
+  "lot": "362",
+  "parcel": {
+    "building_area_sqft": 1309,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1528139,
+    "assessed_improvement_value": 1018759,
+    "last_sale_date": "2021-12-20"
+  },
+  "permits": [
+    {
+      "number": "202212299425",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-29",
+      "status_date": "2023-10-19",
+      "estimated_cost": 35000,
+      "revised_cost": 55000,
+      "description": "kitchen remodel in kind. no layout change. new cabinets, countertop. (2) bath remodels in kind. no layout change. new tile. shower valve, shower base, new tub. no wall removal. no structural work. maintain all accessibility requirements/features required at the time of building construction.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3765362&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3765&unit=5002",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

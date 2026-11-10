@@ -1,0 +1,75 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-5e/",
+  "unit": "5E",
+  "apn": "0580062",
+  "block": "0580",
+  "lot": "062",
+  "parcel": {
+    "building_area_sqft": 1099,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 798834,
+    "assessed_improvement_value": 532555,
+    "last_sale_date": "2020-08-31"
+  },
+  "permits": [
+    {
+      "number": "202010227119",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-22",
+      "status_date": "2021-05-11",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "demo all existing floor coverings. reinstall hardwood flooring in living room, office, hall, powder room, and master bedroom. demo bathtub and vanity in master bath and vanity in powder room. install new tile floor and a new vanity and tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903124039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-12",
+      "status_date": "2009-04-21",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "remodel kitchen, replace cabinets + countertop, replace some appliances, change kitchen floor, add under cabinet ltc. no new walls no modification of existing non structural partitions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203070846",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-07",
+      "status_date": "2002-03-19",
+      "estimated_cost": 42000,
+      "revised_cost": 42000,
+      "description": "repaint kitchen cabinets,install new(replace extng)counter tops,sink,fcts,stove,dishwasher,disposal,",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2002–2020",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=5E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

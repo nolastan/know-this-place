@@ -1,0 +1,136 @@
+{
+  "address": "37 Powers Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/powers-avenue/37/",
+  "apn": "5518006",
+  "block": "5518",
+  "lot": "006",
+  "eas_baseid": "379278",
+  "coordinates": {
+    "lat": 37.746027,
+    "lng": -122.418582
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1322,
+    "basement_area_sqft": 322,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0037 POWERS              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 693903,
+    "assessed_improvement_value": 297384,
+    "last_sale_date": "2013-04-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200507198058",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2005-07-19",
+      "status_date": "2009-07-08",
+      "estimated_cost": 150000,
+      "description": "rear addition w/three levels. front addition over (e) one story. side addition at front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404060592",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2004-04-06",
+      "status_date": "2004-12-07",
+      "estimated_cost": 150000,
+      "description": "vertical extension to rear half of house two bedrooms 1 bath horizontal extension at rear kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000121646",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-01-21",
+      "status_date": "2001-08-27",
+      "estimated_cost": 10000,
+      "revised_cost": 13800,
+      "description": "construct foundation ,pour slab in basement/driveway, curb cut & install garage door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9912411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-22",
+      "status_date": "2001-08-27",
+      "estimated_cost": 3200,
+      "description": "termite items on termite report #5577-99",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1999–2014",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POWERS&street_type=AVE&address_number=37",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5518006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5518&lot=006",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5518006",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-11-29",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 29 November 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n233/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-11-29",
+      "kind": "occupancy",
+      "description": "A single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-11-29"
+    }
+  ]
+}

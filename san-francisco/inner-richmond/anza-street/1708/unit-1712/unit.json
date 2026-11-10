@@ -1,0 +1,34 @@
+{
+  "address": "1712 Anza Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/anza-street/1708/unit-1712/",
+  "apn": "1536057",
+  "block": "1536",
+  "lot": "057",
+  "parcel": {
+    "building_area_sqft": 1329,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 795618,
+    "assessed_improvement_value": 340120,
+    "last_sale_date": "2014-09-30"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1536057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1536&street_number=1712",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

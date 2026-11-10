@@ -1,0 +1,57 @@
+{
+  "address": "575 Sutter Street, San Francisco, CA 94102",
+  "path": "/san-francisco/nob-hill/sutter-street/575/unit-1/",
+  "unit": "1",
+  "apn": "0296151",
+  "block": "0296",
+  "lot": "151",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1316135,
+    "assessed_improvement_value": 877422,
+    "assessed_fixtures_value": 595996
+  },
+  "permits": [
+    {
+      "number": "201801199081",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-01-19",
+      "status_date": "2018-10-01",
+      "estimated_cost": 9000,
+      "revised_cost": 12000,
+      "description": "to comply with nov #20798371.revert back to the existing bldg layout, back to original commercial space.removal of temp art gallery & removal of temporary partitions.painting of exterior facade,stucco, molding & cornices. no other exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710121013",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2017-10-12",
+      "status_date": "2018-01-18",
+      "estimated_cost": 20000,
+      "description": "to comply with nov 201798371, remove partitoin wall and ball pit and revert back to vacant retail space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2017–2018",
+    "shown_on_page": 2,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296151&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

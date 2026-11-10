@@ -54,6 +54,7 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [Ortega Street](ortega-street/) — 1 building, built 1943.
 - [Quintara Street](quintara-street/) — 1 building, built 1966.
 - [Rivera Street](rivera-street/) — 1 building, built 1941.
+- [Riverton Drive](riverton-drive/) — 1 building, built 1948.
 - [Santiago Street](santiago-street/) — 2 buildings, built 1949.
 - [Sloat Boulevard](sloat-boulevard/) — 1 building, built 1947.
 - [Sylvan Drive](sylvan-drive/) — 1 building, built 1950.

@@ -1,0 +1,57 @@
+{
+  "address": "2921 Washington Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/washington-street/2921/unit-3/",
+  "unit": "3",
+  "apn": "1001036",
+  "block": "1001",
+  "lot": "036",
+  "parcel": {
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 876769,
+    "assessed_improvement_value": 584513,
+    "last_sale_date": "2021-05-27"
+  },
+  "permits": [
+    {
+      "number": "201907115705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-11",
+      "status_date": "2021-05-11",
+      "estimated_cost": 36000,
+      "revised_cost": 36000,
+      "description": "one unit. bathroom remodel in kind, includes new shower pan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504133418",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-13",
+      "status_date": "2015-10-30",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "one unit - kitchen remodel: remove all cabinets, counter & replace with new cabinets, counters anda ppliances & lighting/electrical. remove non-load bearing walls as shown on plans. new wall & floor finishes, new lighting, electrical and plumb work in remodel area only. no structural or heating wor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1001036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1001&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

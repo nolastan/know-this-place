@@ -1,0 +1,47 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-6f/",
+  "unit": "6F",
+  "apn": "0580069",
+  "block": "0580",
+  "lot": "069",
+  "parcel": {
+    "building_area_sqft": 1526,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 508281,
+    "assessed_improvement_value": 508281,
+    "last_sale_date": "2004-05-12"
+  },
+  "permits": [
+    {
+      "number": "202501319486",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2025-01-31",
+      "status_date": "2025-03-12",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "tub to shower (non structural). remove (e) tub. rmeove and replace valve. convert drain from 1.5\" to 2\". install new waterproof arcrylic shower pan and waterproof solid surface walls. includes drywall and gfci outlet change out.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=6F",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

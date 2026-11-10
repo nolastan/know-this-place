@@ -1,0 +1,47 @@
+{
+  "address": "3824 Scott Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/scott-street/3824/unit-6/",
+  "unit": "6",
+  "apn": "0417B025",
+  "block": "0417B",
+  "lot": "025",
+  "parcel": {
+    "building_area_sqft": 768,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 574771,
+    "assessed_improvement_value": 383180,
+    "last_sale_date": "2020-11-09"
+  },
+  "permits": [
+    {
+      "number": "202009184452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-18",
+      "status_date": "2021-03-23",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "6 units-lot#'s 020-025: remove (21) vinyl double hung windows. replace with wood casement sashes. casements where there originally. all visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0417B025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0417B&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

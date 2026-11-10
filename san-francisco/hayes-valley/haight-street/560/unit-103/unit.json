@@ -1,0 +1,53 @@
+{
+  "address": "560 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/haight-street/560/unit-103/",
+  "unit": "103",
+  "apn": "0848026",
+  "block": "0848",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 1155,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 882000,
+    "assessed_improvement_value": 588000,
+    "last_sale_date": "2024-12-20"
+  },
+  "permits": [
+    {
+      "number": "200711148168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-14",
+      "status_date": "2008-09-16",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "interior remodel in one unit,remove and replace mezzanine carpet,stairs, hand/guardrail, water closet vanity and lavatory. no alteration to existing layout.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2007–2008",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0848026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0848&unit=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -17,6 +17,15 @@ street between its crossings with the other two, for a record that says "south
 side of California between Hyde and Leavenworth", or gives an offset further
 along the block than the corner radius reaches.
 
+`--along DIR` measures instead of listing: every active parcel outline on the
+blocks at the corner, as feet from the DPW node along the first street in the
+record's direction, with the side of the street it fronts — for checking an
+offset ("W line, 230 S of Balboa") against the lots as they lie. The block's
+line is where its first lot starts, which is not always half a street out
+(74 ft at 7th Avenue and California); measure the offset from there.
+
+    python3 research/tools/corner.py 05TH BALBOA --along S
+
 `--retest FINDINGS` re-tests a findings file's published corner placements
 against the DPW street centrelines; see `retest()` below.
 
@@ -592,8 +601,8 @@ def network_corner(A: list, B: list, near):
     def ends(segs):
         e = {}
         for f, t, pts in segs:
-            e.setdefault(f, []).append((pts[0], pts[1]))
-            e.setdefault(t, []).append((pts[-1], pts[-2]))
+            e.setdefault(f, []).append(pts)
+            e.setdefault(t, []).append(pts[::-1])
         return e
     ea, eb = ends(A), ends(B)
     shared = [n for n in ea if n in eb and n]
@@ -603,12 +612,43 @@ def network_corner(A: list, B: list, near):
     node = min(shared, key=lambda n: math.hypot((ea[n][0][0][1] - near[1]) * k,
                                                 ea[n][0][0][0] - near[0]))
     p = ea[node][0][0]
-    def axis(pairs):
-        (a, b) = pairs[0]
+    def axis(runs):
+        # Not the first vertex past the node: DPW segments often begin with a
+        # kerb-return arc 25-60 ft long, and its first step can point anywhere
+        # (Market at 7th read 13 degrees off east, Broadway at Mason nearly
+        # north). The first vertex 100 ft out, or the segment's far end, is the
+        # street's own bearing.
+        pts = runs[0]
+        a = pts[0]
+        b = next((q for q in pts[1:] if math.hypot((q[1] - a[1]) * k, q[0] - a[0]) * 364000 >= 100),
+                 pts[-1])
         dx, dy = (b[1] - a[1]) * k, b[0] - a[0]
         n = math.hypot(dx, dy) or 1
         return dx / n, dy / n
     return p, axis(ea[node]), axis(eb[node])
+
+
+def twins(path: str, f: dict) -> list:
+    """The same record placed on the same parcel by a sibling batch of this source.
+
+    One printing is often read twice — the daily Building Contracts list and the
+    Saturday section — and the second copy is declined as "already on the page"
+    while the first stays published from another file. Retracting the copy
+    --retest flags leaves the published twin standing on the wrong lot, so name
+    it. (1910's 19th & Mission contract: declined here, published from the
+    permits batch.)"""
+    apn, date = (f.get("resolution") or {}).get("apn"), f.get("date")
+    out = []
+    folder = os.path.dirname(os.path.abspath(path))
+    for name in sorted(os.listdir(folder)):
+        other = os.path.join(folder, name)
+        if not name.endswith(".json") or os.path.samefile(other, path):
+            continue
+        for g in json.load(open(other)).get("findings", []):
+            if (g.get("resolution") or {}).get("apn") == apn and g.get("date") == date:
+                st = (g.get("publish") or {}).get("status", "-")
+                out.append(f"{name} {g['id']} [{g['resolution'].get('status')}, {st}]")
+    return out
 
 
 def retest(path: str) -> int:
@@ -653,6 +693,18 @@ def retest(path: str) -> int:
         k = math.cos(math.radians(p[0]))
         v = (pt[1] - p[1]) * k * nx + (pt[0] - p[0]) * ny
         return (v > 0) == (c > 0)
+    def along(axis, p, outline, want):
+        # The parcel outline's span along the street, in feet from the node, in
+        # the record's direction; None where the street runs across it.
+        cx, cy = COMPASS.get((want or "").upper(), (0, 0))
+        c = (cx * axis[0] + cy * axis[1]) / (math.hypot(cx, cy) or 1)
+        if abs(c) < 0.3:
+            return None
+        s = 1 if c > 0 else -1
+        k = math.cos(math.radians(p[0]))
+        d = [s * ((q[0] - p[1]) * k * axis[0] + (q[1] - p[0]) * axis[1]) * 364000
+             for q in outline]
+        return min(d), max(d)
     bad, counts = 0, {}
     for f in rows:
         x, res = f.get("extra") or {}, f["resolution"]
@@ -661,6 +713,14 @@ def retest(path: str) -> int:
         apn = res.get("apn")
         here = centroid(apn, shapes, None) if apn else None
         verdict, why = "untested", ""
+        if not (f.get("street_name") and b):
+            # Hand placements written before the structured fields existed keep
+            # the corner only in address_as_written; 1911-1913 keep only
+            # cross_street_as_printed. Nothing here can test them, and a bare
+            # "untested" read as a pass on 1910's real-estate batch (all 41).
+            # Two streets and no quadrant or side still get the reach test.
+            counts["no fields"] = counts.get("no fields", 0) + 1
+            continue
         hit = network_corner(streets.get(a) or [], streets.get(b) or [], here) if here else None
         if hit and x.get("corner_quad"):
             p, da, db = hit
@@ -679,14 +739,76 @@ def retest(path: str) -> int:
             if v is not None:
                 verdict = "ok" if v else "DISAGREES"
                 why = f"not on the {x['side']} side of {a}"
+            span = along(da, p, shapes[apn][1], x.get("direction")) \
+                if verdict == "ok" and x.get("offset_ft") is not None else None
+            if span:
+                # The record measures from the cross street's line, the node is
+                # its centreline: allow 20-65 ft for half a street's width, and
+                # the record's own frontage (25 ft when it gives none).
+                lo, hi = span
+                off = float(x["offset_ft"])
+                lot = x.get("lot_ft")  # a number, or [frontage, depth]
+                front = float((lot[0] if isinstance(lot, list) else lot) or 25)
+                if hi < off + 20 or lo > off + 65 + front:
+                    verdict = "DISAGREES"
+                    why = (f"frontage {lo:.0f}-{hi:.0f} ft from the node, "
+                           f"record's lot {off:g} ft {x['direction']} of {b}")
+        elif hit and not x.get("side") and x.get("offset_ft") is None:
+            # "at Sixteenth and Valencia": two streets and no quadrant. All
+            # that can be asked is whether the parcel is at that corner.
+            p = hit[0]
+            k = math.cos(math.radians(p[0]))
+            reach = min(math.hypot((q[0] - p[1]) * k, q[1] - p[0]) for q in shapes[apn][1]) * 364000
+            verdict = "ok" if reach <= 100 else "DISAGREES"
+            why = f"outline {reach:.0f} ft from the corner" if reach > 100 else ""
         counts[verdict] = counts.get(verdict, 0) + 1
         if verdict == "DISAGREES":
             bad += 1
             pub = (f.get("publish") or {}).get("status", "-")
             print(f"{f['id']}  {apn}  {res.get('path')}  [{pub}]  {why}\n"
                   f"    {f.get('address_as_written')}")
+            for t in twins(path, f):
+                print(f"    twin: {t}")
     print(f"{len(rows)} placements: " + ", ".join(f"{v} {k}" for k, v in sorted(counts.items())))
+    if counts.get("no fields"):
+        print(f"  {counts['no fields']} carry no street_name + extra.cross_street_name, "
+              "so were not tested: add those fields (and extra.corner_quad or extra.side) "
+              "from the record before reading this as a pass")
     return 1 if bad else 0
+
+
+def along_report(sa: str, sb: str, want: str, ix: tuple, near: dict) -> int:
+    """Each parcel on the corner's blocks as a span of feet from the DPW node
+    along street A in direction `want`, and the side of A it lies on."""
+    A, B = street_segments(sa), street_segments(sb)  # untyped: every type; the node nearest wins
+    hit = network_corner(A, B, ix)
+    if not hit:
+        print(f"{sa} and {sb} share no node in the DPW network; give the street type")
+        return 1
+    p, da, _ = hit
+    cx, cy = COMPASS.get(want.upper(), (0, 0))
+    c = cx * da[0] + cy * da[1]
+    if abs(c) < 0.3 * (math.hypot(cx, cy) or 1):
+        print(f"{sa} does not run {want}")
+        return 1
+    s = 1 if c > 0 else -1
+    k = math.cos(math.radians(p[0]))
+    nx, ny = -da[1], da[0]
+    side = {True: "", False: ""}
+    for name, (vx, vy) in COMPASS.items():
+        if len(name) == 1 and abs(vx * nx + vy * ny) > 0.7:
+            side[(vx * nx + vy * ny) > 0] = name
+    shapes = block_shapes(sorted({a[:4] if not a[4].isalpha() else a[:5] for a in near}))
+    rows = []
+    for apn, (_, pts) in shapes.items():
+        d = [s * ((q[0] - p[1]) * k * da[0] + (q[1] - p[0]) * da[1]) * 364000 for q in pts]
+        n = sum(((q[0] - p[1]) * k * nx + (q[1] - p[0]) * ny) * 364000 for q in pts) / len(pts)
+        if max(d) > 0:
+            rows.append((min(d), max(d), n, apn))
+    print(f"{sa} from its DPW node with {sb}, {want.upper()}: feet along, side, centroid ft off the line")
+    for lo, hi, n, apn in sorted(rows):
+        print(f"  {apn:9} {lo:5.0f}-{hi:5.0f}  {side[n > 0]} side  {abs(n):4.0f}")
+    return 0
 
 
 def main() -> int:
@@ -700,6 +822,8 @@ def main() -> int:
     ap.add_argument("--year", type=int, help="mark parcels built within two years of this")
     ap.add_argument("--json", action="store_true",
                     help="with --batch: print every entry's candidates as JSON, checks included")
+    ap.add_argument("--along", metavar="DIR",
+                    help="measure the corner's parcels along street_a in this direction (N/S/E/W)")
     ap.add_argument("--retest", metavar="FINDINGS",
                     help="re-test a findings file's corner.py placements against the DPW street network")
     a = ap.parse_args()
@@ -735,6 +859,8 @@ def main() -> int:
                 near.setdefault(x["parcel_number"], []).append(x["address"])
         head = (f"{a.street_a} & {a.street_b}: {len(near)} parcel(s) within ~60 m of "
                 f"{ix[0]:.5f}, {ix[1]:.5f}")
+    if a.along:
+        return along_report(a.street_a, a.street_b, a.along, ix, near)
     names, pages = planning_names(sorted(near)), pages_by_apn()
     print(head)
     for apn in sorted(near):

@@ -1,0 +1,44 @@
+{
+  "address": "855 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/855/unit-513/",
+  "unit": "513",
+  "apn": "3752278",
+  "block": "3752",
+  "lot": "278",
+  "parcel": {
+    "building_area_sqft": 1288
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 461634,
+    "assessed_improvement_value": 461634,
+    "last_sale_date": "2002-05-30"
+  },
+  "permits": [
+    {
+      "number": "201707061082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-06",
+      "status_date": "2017-08-24",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "remodel walk-in shower, replace shower head/valve & wall tile; n/a maher",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752278&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=513",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

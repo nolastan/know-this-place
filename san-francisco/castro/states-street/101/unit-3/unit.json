@@ -1,0 +1,34 @@
+{
+  "address": "101 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/101/unit-3/",
+  "unit": "3",
+  "apn": "2623094",
+  "block": "2623",
+  "lot": "094",
+  "parcel": {
+    "building_area_sqft": 1090,
+    "rooms": 6,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 617000,
+    "assessed_improvement_value": 617000,
+    "last_sale_date": "2015-05-28"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623094&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

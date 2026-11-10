@@ -1,0 +1,47 @@
+{
+  "address": "201 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/harrison-street/201/unit-303/",
+  "unit": "303",
+  "apn": "3767078",
+  "block": "3767",
+  "lot": "078",
+  "parcel": {
+    "building_area_sqft": 1105,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 574490,
+    "assessed_improvement_value": 574490,
+    "last_sale_date": "2019-05-03"
+  },
+  "permits": [
+    {
+      "number": "200903063541",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-06",
+      "status_date": "2009-04-23",
+      "estimated_cost": 500,
+      "revised_cost": 1200,
+      "description": "replacing hood in one unit - kitchen exhaust fan only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3767078&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3767&unit=303",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

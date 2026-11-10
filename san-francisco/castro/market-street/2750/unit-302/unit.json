@@ -1,0 +1,113 @@
+{
+  "address": "2750 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/2750/unit-302/",
+  "unit": "302",
+  "apn": "2650054",
+  "block": "2650",
+  "lot": "054",
+  "parcel": {
+    "building_area_sqft": 1508,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 358442,
+    "assessed_improvement_value": 358442,
+    "last_sale_date": "2002-11-20"
+  },
+  "permits": [
+    {
+      "number": "202602276660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-27",
+      "status_date": "2026-09-15",
+      "estimated_cost": 20000,
+      "revised_cost": 31700,
+      "description": "one unit: full bathroom remodel. convert tub to shower. replace toilet, sink, vanity, fan. upgrade mep to code. add washer and dryer behind shower wall in hallway closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202502120199",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-02-12",
+      "status_date": "2025-02-12",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "infill below existing one unit non bearing, cabinetry. storage shed in garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410092682",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-09",
+      "status_date": "2025-01-28",
+      "estimated_cost": 275,
+      "revised_cost": 275,
+      "description": "#302: grab bars, 3 to be installed in bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503050108",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-05",
+      "status_date": "2016-08-02",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "water damage caused by a leaking pipe. replace 60 ft of drywall new insulation at kitchen, detach and reset kitchen sink and dishwasher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411040636",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-04",
+      "status_date": "2015-09-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for work approved under pa#201207245633. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207245633",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-07-24",
+      "status_date": "2015-09-25",
+      "estimated_cost": 6625,
+      "revised_cost": 6625,
+      "description": "partial compliance with nov 200670947 repair deck at one unit only per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612220413",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-22",
+      "status_date": "2007-02-12",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "replace 10 windows and 1 patio slider, size for size, alum. to wood composite, visible from street. u-value 0.30",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2650054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2650&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

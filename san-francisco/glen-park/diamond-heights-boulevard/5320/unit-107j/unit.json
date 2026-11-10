@@ -1,0 +1,105 @@
+{
+  "address": "5330 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5320/unit-107j/",
+  "unit": "107J",
+  "apn": "7534034",
+  "block": "7534",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 682,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 40738,
+    "assessed_improvement_value": 92840
+  },
+  "permits": [
+    {
+      "number": "201704254846",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-25",
+      "status_date": "2017-06-30",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "dry rot repair: remove and replace 2x4 frame of bay window in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518919",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-08",
+      "status_date": "1997-03-14",
+      "estimated_cost": 6340,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118041",
+      "type": "otc alterations permit",
+      "status": "reinstated",
+      "filed": "1991-09-26",
+      "status_date": "2016-09-19",
+      "estimated_cost": 30000,
+      "description": "repair dry rot.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118042",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-26",
+      "status_date": "1991-11-08",
+      "estimated_cost": 9000,
+      "description": "remove siding on sf. corner bay, replace siding with new ti",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-13",
+      "status_date": "1991-11-13",
+      "estimated_cost": 10000,
+      "description": "remove existing cabinets, appliances, & frame new wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110580",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-06-17",
+      "status_date": "1991-11-08",
+      "estimated_cost": 8250,
+      "description": "dry rot repair to siding, repair existing windows, insulatio",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9024362",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-27",
+      "status_date": "1991-07-23",
+      "estimated_cost": 7500,
+      "description": "work on shingle area, install new roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7534034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7534&unit=107J",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

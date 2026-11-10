@@ -1,0 +1,63 @@
+{
+  "address": "1340 Clay Street, San Francisco, CA 94109",
+  "path": "/san-francisco/financial-district/clay-street/1340/unit-504/",
+  "unit": "504",
+  "apn": "0215040",
+  "block": "0215",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1720,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 791188,
+    "assessed_improvement_value": 791188,
+    "last_sale_date": "2013-02-08"
+  },
+  "permits": [
+    {
+      "number": "201608114795",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-08-11",
+      "status_date": "2017-01-03",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "one unit - kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M15325",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-18",
+      "status_date": "2001-07-18",
+      "revised_cost": 7000,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2001–2016",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0215040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0215&unit=504",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

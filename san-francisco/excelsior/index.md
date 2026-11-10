@@ -13,10 +13,13 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Dublin Street](dublin-street/) — 1 building, built 1953.
 - [France Avenue](france-avenue/) — 1 building, built 1906.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
+- [Gladstone Drive](gladstone-drive/) — 1 building, built 1942.
+- [Italy Avenue](italy-avenue/) — 1 building, built 1926.
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
 - [Lisbon Street](lisbon-street/) — 1 building, built 1906.
 - [London Street](london-street/) — 1 building, built 1905.
 - [Madrid Street](madrid-street/) — 1 building, built 1911.
+- [Maynard Street](maynard-street/) — 2 buildings, built 2009.
 - [Mission Street](mission-street/) — 1 building, built 1982.
 - [Moscow Street](moscow-street/) — 1 building.
 - [Munich Street](munich-street/) — 2 buildings, built 1920–1927.
@@ -33,6 +36,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Trumbull Street](trumbull-street/) — 1 building, built 1965.
 - [Vienna Street](vienna-street/) — 1 building, built 1950.
 - [Walbridge Street](walbridge-street/) — 1 building.
+- [Winding Way](winding-way/) — 1 building, built 1946.
 
 ## Parks and public spaces
 

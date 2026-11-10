@@ -1,0 +1,47 @@
+{
+  "address": "555 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/555/unit-929/",
+  "unit": "929",
+  "apn": "3776448",
+  "block": "3776",
+  "lot": "448",
+  "parcel": {
+    "building_area_sqft": 1099,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 738000,
+    "assessed_improvement_value": 492000,
+    "last_sale_date": "2019-07-18"
+  },
+  "permits": [
+    {
+      "number": "201204238909",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-23",
+      "status_date": "2012-06-01",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "water damage repairs:1 bathroom,replace 200 sq ft of 5/8 drywall detach and reset vanity. remove and replace 60 sq ft of tile. remove and replace cement board. replace 30 sq ft of subfloor. all repairs being done at bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3776448&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3776&unit=929",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "address": "1800 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/1800/unit-214/",
+  "unit": "214",
+  "apn": "3970039",
+  "block": "3970",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 862,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 428416,
+    "assessed_improvement_value": 428416,
+    "last_sale_date": "2006-06-09"
+  },
+  "permits": [
+    {
+      "number": "202606022348",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-02",
+      "status_date": "2026-07-24",
+      "estimated_cost": 15000,
+      "revised_cost": 18000,
+      "description": "one unit: bathroom remodel, new shower pan, shower to shower, new faucet, tiles, vanity, toilet, fan, lights.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3970039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3970&unit=214",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

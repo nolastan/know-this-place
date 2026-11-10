@@ -1,0 +1,76 @@
+{
+ "source_id": "sf-chronicle",
+ "batch": "2026-11-08",
+ "read_on": "2026-11-08",
+ "notes": "Chronicle: Everett and Jones opening used; coffee festival venue and downtown-wishes story declined.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 3,
+  "mentions": 2,
+  "remaining": "none"
+ },
+ "findings": [
+  {
+   "id": "2026-11-08-sc-0001",
+   "date": "2026-11-07",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "300 Jefferson St.",
+   "street_number": "300",
+   "street_name": "JEFFERSON",
+   "street_type": "ST",
+   "description": "Oakland-based Everett and Jones Barbeque has opened at 300 Jefferson St., Fisherman’s Wharf, the former home of Lou’s Restaurant and Blues.",
+   "extra": {},
+   "citation": {
+    "label": "San Francisco Chronicle, “A Bay Area barbecue favorite has finally landed at Fisherman’s Wharf in San Francisco,” 7 November 2026",
+    "url": "https://www.sfchronicle.com/food/restaurants/article/everett-jones-fishermans-wharf-22517465.php"
+   },
+   "raw": {
+    "text": "now serving smoked brisket, ribs, chicken and links at 300 Jefferson St., the former home of Lou’s Restaurant and Blues"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-08",
+    "method": "sf-eas-addresses has 300 JEFFERSON ST but it does not join to one parcel. 300 JEFFERSON ST's coordinates fall in 2 active parcels (9900047, 0006001) that are not one condominium's units, so none of them is the building by rule.",
+    "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+   },
+   "publish": {
+    "status": "pending",
+    "note": "Blocked: resolver cannot join 300 Jefferson St to one parcel (coordinates fall in two active parcels, 9900047 and 0006001). Revisit when EAS parcels the address."
+   }
+  },
+  {
+   "id": "2026-11-08-sc-0002",
+   "date": "2026-11-07",
+   "date_precision": "day",
+   "kind": "other",
+   "address_as_written": "2 Marina Blvd.",
+   "street_number": "2",
+   "street_name": "MARINA",
+   "street_type": "BLVD",
+   "description": "Coffee festival at Fort Mason Center.",
+   "extra": {},
+   "citation": {
+    "label": "(declined; see note)",
+    "url": "https://www.sfchronicle.com/"
+   },
+   "raw": {
+    "text": "(not published)"
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "Event venue only (Fort Mason); fails the ten-year test."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "0409002",
+    "path": "/san-francisco/marina/marina-boulevard/2/",
+    "eas_address": "2 MARINA BLVD",
+    "method": "EAS exact match on 2 MARINA BLVD → parcel 0409002; sf-parcels has blklot 0409002 active, 2–239 FRANKLIN; the 2025 roll records it as industrial, built 1900. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0409002.",
+    "checked_on": "2026-11-08"
+   }
+  }
+ ]
+}

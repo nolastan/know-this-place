@@ -323,9 +323,14 @@ def check_photo(src: Path, data: dict) -> None:
     if unknown:
         err(src, f'unrecognised "photo" key(s): {", ".join(unknown)} — see '
                  f"seed_pages.PHOTO_KEYS")
-    # A contributed photo was taken for this site: there is no page to link.
-    required = ("file", "license", "retrieved") if photo.get("contributed") else (
-        "file", "license", "source_url", "retrieved")
+    # The site's own photo owes nobody a credit; a contributed photo was taken
+    # for this site, so there is no page to link.
+    if photo.get("own"):
+        required = ("file", "retrieved")
+    elif photo.get("contributed"):
+        required = ("file", "license", "retrieved")
+    else:
+        required = ("file", "license", "source_url", "retrieved")
     for key in required:
         if not photo.get(key):
             err(src, f'photo missing "{key}" — a photo is shown only with its credit')
@@ -1093,6 +1098,15 @@ def main() -> int:
             if gone:
                 err(corpus, f"{len(gone)} indexed page(s) no longer exist, "
                             f"starting {sorted(gone)[0]} — run scripts/build_corpus_index.py")
+            else:
+                # Then the lines themselves. A page's sources, year or hook can
+                # change without its path changing, and CI fails on the diff a
+                # rebuild leaves; catch it here, so a run that skipped the
+                # rebuild hears about it before it pushes.
+                import build_corpus_index
+                if build_corpus_index.corpus_body()[0] != corpus.read_text(encoding="utf-8"):
+                    err(corpus, "out of date with the pages' data.json — "
+                                "run scripts/build_corpus_index.py (or build_site.py) and commit it")
 
     # Entries in the backlog that no longer belong there. Reported as one
     # error, not one per page: the file is 1,010 lines long today and the sweep

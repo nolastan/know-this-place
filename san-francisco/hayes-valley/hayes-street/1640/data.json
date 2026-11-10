@@ -1,0 +1,136 @@
+{
+  "address": "1640 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/hayes-street/1640/",
+  "block": "1198",
+  "eas_baseid": "475126",
+  "coordinates": {
+    "lat": 37.774546,
+    "lng": -122.443576
+  },
+  "parcel": {
+    "year_built": 2008,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "units": 4
+  },
+  "condominium": {
+    "lots": [
+      "047",
+      "048",
+      "049",
+      "050"
+    ],
+    "method": "Proposed from the 2025 roll for block 1198: every condominium parcel the roll files under 1640 HAYES ST, and the unbroken run of lots beside parcel 1198047 on the same street with the same year built (2008). 4 lots, 047–050."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "2008",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "NOPA Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAYES&street_type=ST&address_number=1640",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1198)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1198&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1198",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1198047",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44357561264567%2037.774546349271134)%27)",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-05-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 May 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n293/mode/1up",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1974-06-27",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 27 June 1974",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/28minutesofsanfran1974sa/page/n764/mode/1up",
+      "retrieved": "2026-10-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-06-15",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 15 June 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n139/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "unknowns": [
+    "The roll gives this building's units more than one year built: 1 of them 1880, 3 of them 2008."
+  ],
+  "historical_record": [
+    {
+      "date": "1974-06-27",
+      "kind": "occupancy",
+      "description": "The building at 1640 Hayes Street was an existing residential care facility with 28 residents, in operation for seven years.",
+      "source": "sf-planning-commission-minutes-1974-06-27"
+    },
+    {
+      "date": "1974-06-27",
+      "kind": "planning decision",
+      "description": "The City Planning Commission unanimously approved, with seven conditions, a residential care facility for 30 persons at 1640 Hayes Street in an R-3 district.",
+      "source": "sf-planning-commission-minutes-1974-06-27"
+    },
+    {
+      "date": "1995-06-15",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 4-0, re-establishing the 30-bed residential care facility first authorised by Resolution 7205 (Motion 13892).",
+      "source": "sf-planning-commission-minutes-1995-06-15"
+    },
+    {
+      "date": "2005-05-12",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved the conditional use authorization to allow more than three dwelling units on the lot at 1640 Hayes Street.",
+      "source": "sf-planning-commission-minutes-2005-05-12"
+    },
+    {
+      "date": "2005-05-12",
+      "kind": "occupancy",
+      "description": "An existing single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-05-12"
+    }
+  ]
+}

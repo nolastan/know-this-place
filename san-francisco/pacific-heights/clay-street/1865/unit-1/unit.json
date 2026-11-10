@@ -1,0 +1,52 @@
+{
+  "address": "1865 Clay Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/clay-street/1865/unit-1/",
+  "unit": "1",
+  "apn": "0623021",
+  "block": "0623",
+  "lot": "021",
+  "parcel": {
+    "building_area_sqft": 1670,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 856118,
+    "assessed_improvement_value": 570742
+  },
+  "permits": [
+    {
+      "number": "201708306362",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-30",
+      "status_date": "2019-06-28",
+      "estimated_cost": 30000,
+      "revised_cost": 49000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2017–2019",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0623021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0623&unit=1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

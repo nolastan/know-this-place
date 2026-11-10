@@ -1,0 +1,128 @@
+{
+  "address": "206 Steiner Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/steiner-street/206/",
+  "block": "0860",
+  "eas_baseid": "289739",
+  "coordinates": {
+    "lat": 37.771172,
+    "lng": -122.431808
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 9,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley"
+  },
+  "condominium": {
+    "lots": [
+      "048",
+      "049",
+      "050",
+      "051",
+      "052",
+      "053",
+      "054",
+      "055",
+      "056"
+    ],
+    "method": "Set by hand from sf-parcels: map lot 0860048 holds exactly these active parcels. The seeder's proposal left out lots 054 and 056 (498 Waller), which the roll files at another street number on the same map lot."
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201608013826",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-01",
+      "status_date": "2017-09-07",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "mandatory seismic retrofit per sf ord 66-13 sf bld code chapet 34b sf admin bulletins 106 & 107 analysis iebc a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710105008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-10",
+      "status_date": "2008-05-23",
+      "estimated_cost": 36000,
+      "revised_cost": 36000,
+      "description": "replace 53 windows on steiner and waller.metal clad. new windows will be wood to match existing profile",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2005–2016",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STEINER&street_type=ST&address_number=206",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0860)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0860&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0860",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0860048",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "digitalsf-55088",
+      "name": "206 Steiner Street, 1953. San Francisco Office of Assessor-Recorder Photographs (SFP 23), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/55088",
+      "label": "Assessor-Recorder Photographs (SFP 23), San Francisco Public Library",
+      "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-09-11",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 11 September 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n349/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1953-09-04",
+      "kind": "photograph",
+      "description": "The Office of the Assessor-Recorder photographed the property for tax assessment.",
+      "source": "digitalsf-55088"
+    },
+    {
+      "date": "1980-09-11",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 4-3, converting the nine-unit building to condominiums (Resolution 8721).",
+      "source": "sf-planning-commission-minutes-1980-09-11"
+    }
+  ]
+}

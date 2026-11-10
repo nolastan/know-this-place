@@ -1,0 +1,102 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1717/",
+  "unit": "1717",
+  "apn": "0253A012",
+  "block": "0253A",
+  "lot": "012",
+  "parcel": {
+    "building_area_sqft": 2221,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 995469,
+    "assessed_improvement_value": 1229229,
+    "last_sale_date": "2010-07-14"
+  },
+  "permits": [
+    {
+      "number": "201311222663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-22",
+      "status_date": "2014-08-12",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "partial removal of spray on fire proofing on structural beams and replaced with 1ntumescent fire resistive material. this scope of work for the beam fireproofing is a revision to (e) permit 201212196572",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310280415",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-28",
+      "status_date": "2014-08-19",
+      "estimated_cost": 1600,
+      "revised_cost": 2000,
+      "description": "suite 1717:remove 11 speakers and install 4 speakers. ref app#201212196572",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304124411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-12",
+      "status_date": "2014-08-06",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "renovation of an (e) permitted roof deck including replacing (e) surface finishes, new code complaint handrails, new led ground lighting. repair (e) waterproofing membranes & flashing & new drain connection to (e) drain line & splash block",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212196572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-12-19",
+      "status_date": "2014-08-06",
+      "estimated_cost": 650000,
+      "revised_cost": 700000,
+      "description": "one unit, 17th fl - renovation of condo.(n)floor, (n) wall & ceiling finishes, (n) fixts, (n) plumbing fixts, (n) kitchen appliances, (n) fireplace & (n) casework. exterior wor limited to patio including replacement of patio tile w/ stone. new guardrail will be a deferred submittal.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012066148",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-12-06",
+      "status_date": "2010-12-07",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "exploratory work: remove approx 200sq ft of drywall from 1 side only of 10 walls/chases to determine locations of concealed building system vs wall just furred randomly. fire ratings will be maintained at all shafts/walls/ceilings/flrs adjacent to other units & shared public spaces",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002025789",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-02-02",
+      "status_date": "2011-03-04",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "replace (e) bathroom floor with tile, aprox 28 sq ft. no new lighting. restall all existing plumbing fixtures. no structural changes.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1717",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

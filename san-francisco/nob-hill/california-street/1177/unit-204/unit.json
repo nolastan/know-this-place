@@ -1,0 +1,57 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-204/",
+  "unit": "204",
+  "apn": "0253A243",
+  "block": "0253A",
+  "lot": "243",
+  "parcel": {
+    "building_area_sqft": 645,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 509379,
+    "assessed_improvement_value": 339586,
+    "last_sale_date": "2022-03-04"
+  },
+  "permits": [
+    {
+      "number": "201506290238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-29",
+      "status_date": "2016-02-05",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "one unit - replace balth vanity, install isolation valves on water supply lines. convert tub bath to shower. new fixtures anf finishes. no structural work. to comply with cec150.0(k)5",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408042967",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-04",
+      "status_date": "2015-03-11",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "#204- replace kitchen cabinets, appliances, countertops, sink & faucet, update electrical to code, new compliant led lighting 7 fixtures. no structural work - use existing layout for new cabinets. to comply with cec 150.0(k) 3",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A243&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=204",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

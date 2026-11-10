@@ -1,0 +1,46 @@
+{
+  "address": "83 Mcallister Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/mcallister-street/83/unit-202/",
+  "unit": "202",
+  "apn": "0351063",
+  "block": "0351",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 256,
+    "rooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 285761,
+    "assessed_improvement_value": 190507,
+    "last_sale_date": "2020-09-04"
+  },
+  "permits": [
+    {
+      "number": "201409307702",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-30",
+      "status_date": "2015-01-05",
+      "estimated_cost": 4000,
+      "revised_cost": 10000,
+      "description": "shower pan replacement, bathroom tile replacement, new toilet, shower valves & vanity to be installed, no walls to be replaced; maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0351063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0351&unit=202",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

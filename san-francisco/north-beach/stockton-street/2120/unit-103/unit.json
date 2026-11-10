@@ -1,0 +1,80 @@
+{
+  "address": "2120 Stockton Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/stockton-street/2120/unit-103/",
+  "unit": "103",
+  "apn": "0039047",
+  "block": "0039",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 1356,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 876769,
+    "assessed_improvement_value": 584513,
+    "last_sale_date": "2021-02-24"
+  },
+  "permits": [
+    {
+      "number": "201906244288",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-24",
+      "status_date": "2019-09-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "bathroom remodeling in kind. new shower pan. new tile 5x9. no walls to be moved.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204248999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-24",
+      "status_date": "2012-05-25",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "add washer & dryer, painting next to master bathroom doorway. dryer exhaust on side, no unit penetration, exhaust termination 3' min. from property line and openings, provide booster fan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806235089",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-23",
+      "status_date": "2008-12-22",
+      "estimated_cost": 6400,
+      "revised_cost": 6400,
+      "description": "work @ one unit only. replace bathroom wall tile, floor tile, change toilet & lavatory.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308121846",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-08-12",
+      "status_date": "2007-12-18",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "change kchn cabinets only in #103",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0039047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0039&unit=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "address": "2401 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/2401/unit-7/",
+  "unit": "7",
+  "apn": "0606037",
+  "block": "0606",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1500,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 899452,
+    "assessed_improvement_value": 920260,
+    "last_sale_date": "2016-09-14"
+  },
+  "permits": [
+    {
+      "number": "202211307379",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-30",
+      "status_date": "2023-05-22",
+      "estimated_cost": 37000,
+      "revised_cost": 37000,
+      "description": "top flr in (5) bays: replace (25) windows to wood double hungs, cottage split and continuous ogee lugs in existing openings. sdl grids top sash to match (e). u factor 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206307480",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-30",
+      "status_date": "2022-09-30",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit: remove and replace bathroom remodel. all new fixtures and finishes. new shower pan where old was removed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203301169",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-30",
+      "status_date": "2022-07-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit: powder room to full bath conversion extending space within (e) unit foyer. new tub / shower combo, new replace (e) finishes + fixtures; toilet + vanity sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202003137044",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-03-13",
+      "status_date": "2022-02-04",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "one unit: remodel 2 existing bathroooms in kind. replace backsplash in kitchen (no new appliances). refinish hardwood floors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0606037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0606&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

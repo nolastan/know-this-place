@@ -1,0 +1,112 @@
+{
+  "address": "890 Vienna Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/vienna-street/890/",
+  "apn": "6353003",
+  "block": "6353",
+  "lot": "003",
+  "eas_baseid": "396953",
+  "coordinates": {
+    "lat": 37.715274,
+    "lng": -122.434494
+  },
+  "parcel": {
+    "year_built": 1951,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 18552,
+    "building_area_sqft": 14611,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "B",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0601 AMAZON              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 52641,
+    "assessed_improvement_value": 2071769
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1951",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200503288493",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2005-03-28",
+      "status_date": "2007-10-25",
+      "estimated_cost": 50000,
+      "revised_cost": 100000,
+      "description": "convert lower level of church into pre-school, exterior doors to be modified and new accessible ramp to be installed at the entry, interior work consists of new toilet and storage rooms. all work to make facility accessible per code. this work is for 601 amazon ave only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M31786",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-28",
+      "status_date": "2005-03-28",
+      "revised_cost": 0,
+      "description": "additional house number permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VIENNA&street_type=ST&address_number=890",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6353003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6353&lot=003",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6353003",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-05-05",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 5 May 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n277/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-05-05",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved the conditional use authorization to establish a day care facility for up to 49 children at 890 Vienna Street.",
+      "source": "sf-planning-commission-minutes-2005-05-05"
+    },
+    {
+      "date": "2005-05-05",
+      "kind": "occupancy",
+      "description": "O'Keefe Hall, a building used by the parish of the Church of the Epiphany, stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-05-05"
+    }
+  ]
+}

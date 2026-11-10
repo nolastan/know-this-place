@@ -1,0 +1,47 @@
+{
+  "address": "2040 Laguna Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/laguna-street/2040/unit-103/",
+  "unit": "103",
+  "apn": "0639032",
+  "block": "0639",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 646,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 91736,
+    "assessed_improvement_value": 214743,
+    "last_sale_date": "1987-02-20"
+  },
+  "permits": [
+    {
+      "number": "200101190214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-19",
+      "status_date": "2001-06-20",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "remv exist clost & vanity install connection for wshr/dry place clst space in adjacnt area add litng",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0639032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0639&unit=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

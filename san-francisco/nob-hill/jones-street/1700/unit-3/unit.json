@@ -1,0 +1,66 @@
+{
+  "address": "1700 Jones Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/jones-street/1700/unit-3/",
+  "unit": "3",
+  "apn": "0150049",
+  "block": "0150",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 2162
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 529316,
+    "assessed_improvement_value": 366444,
+    "last_sale_date": "1998-02-12"
+  },
+  "permits": [
+    {
+      "number": "202303203966",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-03-20",
+      "status_date": "2023-03-20",
+      "estimated_cost": 1,
+      "revised_cost": 1000,
+      "description": "one unit: revision to permit 202211096131. relocate hvac mini-split system from wall mounting to ceiling mounting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211096131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-09",
+      "status_date": "2024-02-02",
+      "estimated_cost": 319000,
+      "revised_cost": 319000,
+      "description": "one unit: remodel (3) bathrooms, add (1/2) bath, expand guest bedroom #3 into kitchen, remodel kitchen, replace windows @ kitchen area nonstreet facing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204132087",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-13",
+      "status_date": "2023-03-01",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "discovery demo for architect. opening walls in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0150049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0150&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

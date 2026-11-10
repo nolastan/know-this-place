@@ -1,0 +1,63 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-808/",
+  "unit": "808",
+  "apn": "0253A124",
+  "block": "0253A",
+  "lot": "124",
+  "parcel": {
+    "building_area_sqft": 794,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 212979,
+    "assessed_improvement_value": 212979,
+    "last_sale_date": "2010-05-19"
+  },
+  "permits": [
+    {
+      "number": "201006245231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-24",
+      "status_date": "2011-08-29",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "one unit: kitchen: change kitchen cabinets, appliances, new countertop, new sink, vent hood. bath: replace bathroom sink and vanity. remove extra sink change floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405204437",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-20",
+      "status_date": "2004-05-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit only.kitchen remodel-new appliances, cabinets, electrical. .no struc work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2010",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A124&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=808",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

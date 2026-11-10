@@ -1,0 +1,47 @@
+{
+  "address": "690 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/chestnut-street/690/unit-409c/",
+  "unit": "409C",
+  "apn": "0051153",
+  "block": "0051",
+  "lot": "153",
+  "parcel": {
+    "building_area_sqft": 1408,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 649119,
+    "assessed_improvement_value": 649119,
+    "last_sale_date": "2005-12-07"
+  },
+  "permits": [
+    {
+      "number": "202606173461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-17",
+      "status_date": "2026-09-16",
+      "estimated_cost": 80000,
+      "revised_cost": 90000,
+      "description": "one unit: remodel 2 bathrooms & 1 kitchen in kind, new cabinets, plumbing fixtures, new electrical, replace closet cabinets, door etc. new led recessed lights thru out, no exterior work, no wall stud demolition or construction, no change in plumbing fixture count, no change in room layout or use.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0051153&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0051&unit=409C",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

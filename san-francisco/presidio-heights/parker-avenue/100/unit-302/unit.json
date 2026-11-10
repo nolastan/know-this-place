@@ -1,0 +1,75 @@
+{
+  "address": "100 Parker Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/parker-avenue/100/unit-302/",
+  "unit": "302",
+  "apn": "1065065",
+  "block": "1065",
+  "lot": "065",
+  "parcel": {
+    "building_area_sqft": 976,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 480057,
+    "assessed_improvement_value": 480057,
+    "last_sale_date": "2020-09-16"
+  },
+  "permits": [
+    {
+      "number": "201711204439",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-20",
+      "status_date": "2018-04-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to (e) soft story seismic retrofit permit - revision to steel moment frame connection and shear transfer only. this is a permit revision to original permit 201607142420 ri and 201711093612",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203266863",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-26",
+      "status_date": "2012-05-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit:install new cabinets, new florecent light, new gfci. remove non-load bearing wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608119300",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-11",
+      "status_date": "2006-10-12",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "remove (e) tub surround. vanity, toilet & floor tile. install new vanity, toilet, tile tub surround & tile floor. install fan flourenscent & motion switch.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2005–2017",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1065065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1065&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

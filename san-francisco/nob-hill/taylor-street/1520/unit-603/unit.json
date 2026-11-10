@@ -1,0 +1,69 @@
+{
+  "address": "1520 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/taylor-street/1520/unit-603/",
+  "unit": "603",
+  "apn": "0158077",
+  "block": "0158",
+  "lot": "077",
+  "parcel": {
+    "building_area_sqft": 1750,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1378779,
+    "assessed_improvement_value": 1308859,
+    "last_sale_date": "2018-08-06"
+  },
+  "permits": [
+    {
+      "number": "201905211277",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-21",
+      "status_date": "2020-08-05",
+      "estimated_cost": 25000,
+      "revised_cost": 52000,
+      "description": "one unit: remove, new walls extend kitchen into hallway, build wall between kitchen and office, extend bath walls in bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905201132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-20",
+      "status_date": "2020-08-13",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "(2) bathroom remodel: replace tile in shower, rpelace lights, replace toilet & sink. kitchen: replace all cabinets, rpelace appliances, replace 1/2 bath toilet, sink & faucet, upgrade electrical panel. tile floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401073565",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-07",
+      "status_date": "2004-03-22",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove (e) bath tub & vanity, replace w/shower & new vanity, paint",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0158077&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0158&unit=603",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

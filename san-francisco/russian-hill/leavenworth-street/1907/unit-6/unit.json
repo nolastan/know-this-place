@@ -1,0 +1,58 @@
+{
+  "address": "1907 Leavenworth Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/leavenworth-street/1907/unit-6/",
+  "unit": "6",
+  "apn": "0122057",
+  "block": "0122",
+  "lot": "057",
+  "parcel": {
+    "building_area_sqft": 975,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 646088,
+    "assessed_improvement_value": 430725,
+    "last_sale_date": "2023-01-19"
+  },
+  "permits": [
+    {
+      "number": "202403208208",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-20",
+      "status_date": "2024-05-13",
+      "estimated_cost": 30000,
+      "revised_cost": 28192,
+      "description": "bathroom remodel replacing in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204033045",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-03",
+      "status_date": "2002-07-03",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "change cabinets/counter/sink at one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0122057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0122&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

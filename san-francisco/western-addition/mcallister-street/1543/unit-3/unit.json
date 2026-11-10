@@ -1,0 +1,31 @@
+{
+  "address": "1543 Mcallister Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/mcallister-street/1543/unit-3/",
+  "unit": "3",
+  "apn": "1180036",
+  "block": "1180",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 1016
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 84625,
+    "assessed_improvement_value": 124967
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1180036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1180&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

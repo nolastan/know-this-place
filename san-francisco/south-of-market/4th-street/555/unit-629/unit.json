@@ -1,0 +1,47 @@
+{
+  "address": "555 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/555/unit-629/",
+  "unit": "629",
+  "apn": "3776300",
+  "block": "3776",
+  "lot": "300",
+  "parcel": {
+    "building_area_sqft": 1022,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 376811,
+    "assessed_improvement_value": 376811,
+    "last_sale_date": "2011-11-30"
+  },
+  "permits": [
+    {
+      "number": "201205100238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-10",
+      "status_date": "2012-09-24",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remove & replace stone & tile finishes in master bath, install new stone & tile finishes in living room & kitchen, instal wal paper & paints throughout, install new flooring throughout, no change in existing plan. all existing lighting to remain.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3776300&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3776&unit=629",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

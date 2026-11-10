@@ -1,0 +1,45 @@
+{
+  "address": "1228 Grove Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/grove-street/1228/unit-3/",
+  "unit": "3",
+  "apn": "1181033",
+  "block": "1181",
+  "lot": "033",
+  "parcel": {
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 383318,
+    "assessed_improvement_value": 383318,
+    "last_sale_date": "2004-07-22"
+  },
+  "permits": [
+    {
+      "number": "201608013862",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-01",
+      "status_date": "2018-05-15",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remove replace cabinets - gfi electrical outlets by sink, recessed lights, p-trap and valve. no walls moved, removed added or infilled. all (e) layouts to remain unchanged.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1181033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1181&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

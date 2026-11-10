@@ -4,22 +4,24 @@
 > [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `sf-planning-commission-minutes`.
 >
-> - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
-> - **Claimed:** volumes 54–58 (July 2003 – 2005) are **claimed by Meta Muse**,
->   the external reader, since 2026-11-02. **A nightly or autonomous run does
->   not read them** and does not pick this source for a reading batch; the
->   claim lifts only when Stan says so in a PR or issue. Muse's output is
->   converted and published by a project thread, not by a nightly run.
+> - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 47 of 52 volumes read (July 1968 – December 1980, and
->   1994 – June 2003): 13,809 pages, 7,136 findings, 4,462 resolved, 4,265 published.
->   5 volumes remain — July 2003 – 2005 (54–58). July–December 1975 is in no
+> - **Coverage:** all 52 volumes read (July 1968 – December 1980, and
+>   1994 – 2005): 15,638 pages, 8,545 findings, 5,660 resolved, 5,451 published.
+>   **The source is read end to end.** Volumes 46–58 (1999 – 2005) were read
+>   by Meta Muse, an external reader, and converted here; its claim on 54–58
+>   lifted when it finished on 2026-11-09. July–December 1975 is in no
 >   volume, nor is the regular meeting of 16 March 1978; volume 37
 >   holds only 17 of June – November 1978's meetings, volume 38 only
 >   34 of 1979's, volume 39 has no record of 7 February or 14 August 1980,
 >   and volume 40 holds no meeting of 5–26 May, June, July, 10 November or
 >   December 1994, and volume 41 none of 16 February, 23 March, 26 October
->   or 2 November 1995.
+>   or 2 November 1995. **Watch list** — meetings a volume lists but whose
+>   minutes are not in the scans, worth a look if the Library ever rescans or
+>   they surface out of order: 27 September and 1 November 2001 (vol. 51),
+>   July – November 2002 (vol. 52), 17 June 2004 (vol. 55), 1 July 2004
+>   (vol. 56), 27 January 2005 (vol. 57), and 7 July, 14 July, 11 August and
+>   17 November 2005 (vol. 58).
 > - **Local corpus:** `research/corpora/sf-planning-commission-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -70,7 +72,9 @@
 | 50–51 | January – April, May – December 2001 | **read in full** 2026-11-02 by an external reader; 40 meeting days, 11 January – 20 December; 3 May cancelled; volume 51 holds no minutes of 27 September or 1 November |
 | 52 | 2002 (`volume` "2002") | **read in full** 2026-11-02 by an external reader; 26 meeting days, 10 January – 27 June and 5 – 19 December. **The volume binds no minutes of July – November 2002**: its pages run straight from 27 June to 5 December |
 | 53 | January – June 2003 | **read in full** 2026-11-02 by an external reader; 21 meeting days, 9 January – 26 June, with the joint meeting with the Recreation and Park Commission of 26 June; 17 April cancelled |
-| 54–58 | July 2003 – 2005 | unread; **claimed by Meta Muse** (external reader) since 2026-11-02 — not for a nightly run. 54 is July – December 2003 |
+| 54 | July – December 2003 | **read in full** 2026-11-04 and 2026-11-09 by an external reader; 22 meeting days, 10 July – 18 December |
+| 55–56 | January – June, July – December 2004 | **read in full** 2026-11-09 by an external reader; 39 meetings, 8 January – 16 December; 29 April cancelled; no minutes of 17 June (vol. 55) or 1 July (vol. 56) |
+| 57–58 | January – June, July – December 2005 | **read in full** 2026-11-09 by an external reader; 39 meeting days, 6 January – 15 December, with a special joint hearing on 23 June; no minutes of 27 January (vol. 57) or of 7 July, 14 July, 11 August and 17 November (vol. 58) |
 | — | 1981–1993 | in no volume |
 | — | before July 1968 | not in this collection. The Commission dates from 1942 |
 
@@ -490,8 +494,9 @@
   volume 52, the 26 meeting days of 2002 it holds, into `minutes-2002.json`;
   volume 53, the 21 meeting days of January – June 2003, into
   `minutes-2003-h1.json`.
-  **Next: volume 54 (July – December 2003), then 55–58 (2004 – 2005) — all
-  claimed by Meta Muse (see the header); a nightly run skips this source.**
+  volumes 54–58, July 2003 – 2005, into `minutes-2003-h2.json`,
+  `minutes-2004.json` and `minutes-2005.json`. **Nothing is left to read;
+  only the watch list in the header.**
   **Earlier next-step note: volumes 46–58 (1999 – 2005); 46 is 1999 and 47 is January –
   April 2000 — check each `volume` field for the span first.** Volume 45 was
   414 text pages (862,000 characters) and filled a nightly run for a single
@@ -518,7 +523,58 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
-- **Verified:** **2026-11-02** (volumes 50–53, January 2001 – June 2003:
+- **Verified:** 2026-11-10 (#556, the findings the old condominium rule held
+  back, re-resolved now that a condominium is paged as a building; nothing
+  new was read). 391 findings move from unresolved to resolved: **319
+  published on 244 pages, 219 of them seeded** as condominium buildings, and
+  72 declined. Most of what a condominium blocked here is a conversion, a
+  live/work project or a discretionary review of the building that is still
+  there, so it publishes as written. Where no page existed and the roll dates
+  the building more than five years after the record, the finding is about
+  what stood or was proposed there before it and is declined, with no page
+  seeded for a predecessor alone (70 findings); the other two are about a
+  different site on a Port parcel and a fine on a subdivider.
+  Forty-two more that would also resolve are left unresolved: 18 where the
+  resolver's answer may be the lot next door (801 Grove, 2473 Sutter, 897
+  California, 1800 Fillmore, 25 Dolores, 676 Capp, 1241 Fifth Avenue, 427
+  14th, 2460 Lombard, 203 Folsom), and 23 whose page would be, or already
+  is, a single parcel of a multi-parcel map lot and not yet a building page
+  (900 Bush, 2450 Hyde, 2060 Union, 2363 Larkin, 725 Florida, 2130 Harrison,
+  700 Kearny, 292 Ivy, 483 Greenwich, 200 Beach, 801 Market, 851 Beach, 401
+  Main, 1061 Capitol, 803 Divisadero), plus 3835 Scott, which the seeder
+  cannot page because its proposal runs on into 3825 Scott next door.
+  **Lots:** every target page was compared with the sf-parcels `mapblklot`
+  of the finding's own parcel and the 2025 roll. 37 lot lists were corrected
+  with `seed_pages.py condo --lots`: the seeder's proposal stops at a change
+  of street number, so a corner building filed under two streets (1584
+  Waller and 660 Cole, 1702 Broderick and 2694 Bush) loses half its units,
+  and it runs on into the next map when the neighbour shares a street and a
+  year (3825 and 3835 Scott, 2068 Third, 786 Minna). Two of the 37 were
+  pages that already existed and did not hold the finding's parcel (3620
+  19th Street, 8 lots of 41; 1598 Dolores, 8 of 13). 220 Lombard keeps the 62
+  units the roll files there, because map lot 0060026 also holds 240 Lombard
+  and 111 Chestnut. **Compare lots against the map lot of the finding's
+  parcel, not of the page's first lot** — the first check here used the
+  latter and passed pages whose lots belonged to the building next door.
+
+- **Verified:** **2026-11-09** (volume 54 from 4 December 2003, and
+  volumes 55–58, 2004 and 2005: 1,146 findings from 82 meeting days, read by
+  Meta Muse to the end of its run and converted, page-located, resolved and
+  published here — 650 decisions, 470 statements of what stood on or
+  occupied a property, 14 landmark actions, 12 dated past facts. 967
+  resolved, 179 unresolved (ranges over several parcels, numbers EAS no
+  longer holds, projects named without a number, and six printed block and
+  lot pairs on another block than the join, left for a human). 957
+  published on 487 pages, 313 of them seeded; 11 declined — five survey or
+  district ratings (Stan's rule: a survey is a source, not content), a
+  housing-fee appeal, and three statements about a neighbouring building.
+  Muse's v201 file was trimmed to start at 20 November 2003, so dedupe by
+  meeting date, case and kind dropped only that meeting's 15 rows. Every
+  row not matched by its quote (46) was read against the page: three were
+  re-paged by hand, one address corrected (609 to 309 Cortland, from the
+  case's block and lot), and 16 descriptions that named only the action
+  were rewritten from the request.)
+  **2026-11-02** (volumes 50–53, January 2001 – June 2003:
   1,384 OCR pages with text out of 1,674 viewer pages, read by the same
   external reader (Meta Muse) from the same written spec until its weekly
   usage limit, then converted, page-located, resolved and published here.

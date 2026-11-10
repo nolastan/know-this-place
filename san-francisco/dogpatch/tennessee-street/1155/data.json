@@ -1,0 +1,129 @@
+{
+  "address": "1155 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/1155/",
+  "block": "4172",
+  "eas_baseid": "422588",
+  "coordinates": {
+    "lat": 37.757109,
+    "lng": -122.388975
+  },
+  "parcel": {
+    "year_built": 1909,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill",
+    "units": 3
+  },
+  "condominium": {
+    "lots": [
+      "080",
+      "081",
+      "082"
+    ],
+    "method": "Proposed from the 2025 roll for block 4172: every condominium parcel the roll files under 1155 TENNESSEE ST, and the unbroken run of lots beside parcel 4172080 on the same street with the same year built (1909) — street numbers 1155, 1161, 1163. 3 lots, 080–082."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1909",
+    "survey_name": "Dogpatch Historic District",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Dogpatch Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1945",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9618118",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-24",
+      "status_date": "1996-12-27",
+      "estimated_cost": 1,
+      "description": "addendum to app #9609863 details for const of driveway",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618122",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-24",
+      "status_date": "1997-01-13",
+      "estimated_cost": 1,
+      "description": "1 hr details for garage and 1/f ceiling & wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TENNESSEE&street_type=ST&address_number=1155",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 4172)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=4172&closed_roll_year=2025",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4172",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4172080",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.38897521785394%2037.75710943559288)%27)",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-08-28",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 28 August 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n140/mode/1up",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-09-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 September 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n203/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-08-28",
+      "kind": "occupancy",
+      "description": "A three-unit, three-story-over-garage building stood at 1155 Tennessee Street.",
+      "source": "sf-planning-commission-minutes-2003-08-28"
+    },
+    {
+      "date": "2003-09-25",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved with amendments the conditional use authorization to convert a dwelling unit into office space on the second floor of a three-unit, three-story-over-garage building, closing the thread from the August 28 motion of intent.",
+      "source": "sf-planning-commission-minutes-2003-09-25"
+    }
+  ]
+}

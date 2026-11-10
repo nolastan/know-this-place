@@ -1,0 +1,33 @@
+{
+  "address": "2181 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2181/unit-lot-025/",
+  "apn": "0590025",
+  "block": "0590",
+  "lot": "025",
+  "parcel": {
+    "building_area_sqft": 2805,
+    "rooms": 8,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1075880,
+    "assessed_improvement_value": 922180,
+    "last_sale_date": "1999-10-20"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0590025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0590&street_number=2181",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

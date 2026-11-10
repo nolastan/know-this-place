@@ -1,0 +1,47 @@
+{
+  "address": "2410 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2410/unit-4/",
+  "unit": "4",
+  "apn": "0582030",
+  "block": "0582",
+  "lot": "030",
+  "parcel": {
+    "building_area_sqft": 862,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 488024,
+    "assessed_improvement_value": 488024,
+    "last_sale_date": "2016-09-02"
+  },
+  "permits": [
+    {
+      "number": "200411108943",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-11-10",
+      "status_date": "2006-12-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew permit app 200309084085",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0582030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0582&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

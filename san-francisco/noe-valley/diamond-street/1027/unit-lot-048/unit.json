@@ -1,0 +1,35 @@
+{
+  "address": "1027 Diamond Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/diamond-street/1027/unit-lot-048/",
+  "apn": "6546048",
+  "block": "6546",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 2005,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "basement_area_sqft": 55
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1020000,
+    "assessed_improvement_value": 1020000,
+    "last_sale_date": "2023-07-21"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6546048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6546&street_number=1027",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

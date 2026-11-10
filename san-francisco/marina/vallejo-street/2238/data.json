@@ -1,0 +1,82 @@
+{
+  "address": "2238 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/vallejo-street/2238/",
+  "block": "0557",
+  "eas_baseid": "285180",
+  "coordinates": {
+    "lat": 37.795636,
+    "lng": -122.434138
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 3,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Marina"
+  },
+  "condominium": {
+    "lots": [
+      "032",
+      "033",
+      "034"
+    ],
+    "method": "Proposed from the 2025 roll for block 0557: every condominium parcel the roll files under 2238 VALLEJO ST, and the unbroken run of lots beside parcel 0557034 on the same street with the same year built (1910) — street numbers 2234, 2236, 2238. 3 lots, 032–034."
+  },
+  "permits": [
+    {
+      "number": "9409228",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-06-09",
+      "status_date": "1996-11-05",
+      "estimated_cost": 8600,
+      "description": "repl kitchen cabinets,paint,tub,countertop,2 vanities",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=2238",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0557)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0557&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0557",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-06-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 June 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n171/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-06-07",
+      "kind": "occupancy",
+      "description": "In June 1979 the building was an eighteen-room rooming house on a lot of 5,500 square feet.",
+      "source": "sf-planning-commission-minutes-1979-06-07"
+    },
+    {
+      "date": "1979-06-07",
+      "kind": "planning decision",
+      "description": "The City Planning Commission voted 4-2 to authorize converting the building, an eighteen-room rooming house, into three dwelling units with two parking spaces in its basement (Resolution 8293).",
+      "source": "sf-planning-commission-minutes-1979-06-07"
+    }
+  ]
+}

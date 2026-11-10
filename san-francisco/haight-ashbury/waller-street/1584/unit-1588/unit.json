@@ -1,0 +1,43 @@
+{
+  "address": "1588 Waller Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/waller-street/1584/unit-1588/",
+  "apn": "1247040",
+  "block": "1247",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1070
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 732232,
+    "assessed_improvement_value": 488154,
+    "last_sale_date": "2015-12-18"
+  },
+  "permits": [
+    {
+      "number": "202006249080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-24",
+      "status_date": "2020-07-20",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "to comply with complaint# 202037553: open up a section of the siding aprox 10ft long x 3ft wide, about 20ft above ground. replace a leaky pipe, clean mold, install insulation, install construction paper, siding back in place and paint. all work at back of bldg, not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1247040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1247&street_number=1588",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

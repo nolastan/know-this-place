@@ -1,0 +1,46 @@
+{
+  "address": "1520 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/taylor-street/1520/unit-203/",
+  "unit": "203",
+  "apn": "0158055",
+  "block": "0158",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1145,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 366359,
+    "assessed_improvement_value": 366359,
+    "last_sale_date": "2001-08-15"
+  },
+  "permits": [
+    {
+      "number": "200501314438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-31",
+      "status_date": "2005-05-03",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace kchn cabinets/no electrical & plmbg work/replace appliances for the like/replace vanity at",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0158055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0158&unit=203",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

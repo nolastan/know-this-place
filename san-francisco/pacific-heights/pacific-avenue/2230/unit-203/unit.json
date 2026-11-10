@@ -1,0 +1,57 @@
+{
+  "address": "2230 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2230/unit-203/",
+  "unit": "203",
+  "apn": "0580027",
+  "block": "0580",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 785,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 511786,
+    "assessed_improvement_value": 511786,
+    "last_sale_date": "2014-05-07"
+  },
+  "permits": [
+    {
+      "number": "202212208794",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-20",
+      "status_date": "2023-02-09",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "patch and repair drywall. lights,install 4 outlets, a recessed lights, maintain rating separation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207138388",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-13",
+      "status_date": "2022-11-09",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "one unit: bath remodel, no structural changes. relocate toilet and new wall mounted toilet. relocate plumbing for new shower. replace window to retrofit. upgrade plumbing and mechanical to code, new humidity fan. add 2 recessed lights.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=203",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

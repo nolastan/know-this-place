@@ -229,7 +229,12 @@ on one of several parcels sharing a point that are *not* one condominium's
 units** — an address that joins to one active parcel while a sibling row ("19 A"
 beside "19") shares that point with a parcel of another map. Nothing declines
 these, because airspace lots of one building look the same; read each and mark
-a wrong one `unresolved` with `by_hand`. It also lists **every resolution onto a
+a wrong one `unresolved` with `by_hand`. It lists **every condominium
+resolution whose unit the roll files at another street number, where EAS puts
+the recorded number on no parcel of that unit's map lot** (#557): one map lot
+can hold several buildings, and a point that reaches the tower next door would
+seed the recorded address as a page made of the neighbour's units. Look for a
+parcel of the address's own before applying. It also lists **every resolution onto a
 parcel with no row on the secured roll** — usually a condominium's original
 lot, which EAS still carries the street number on while the building's units
 sit on `<block>C…` lots; `seed-list` skips these silently, so settle them
@@ -618,11 +623,18 @@ inference and anything on a street the dossier flags as renumbered.
 **Corner placements get a mechanical check too.** `python3
 research/tools/corner.py --retest <findings-file>` re-tests every resolved
 corner.py placement in a batch against the DPW street centrelines: quadrant
-and reach for a corner, side for a line. Each `DISAGREES` is a placement to
+and reach for a corner, side and offset for a line (`offset_ft`,
+`direction`), reach alone for two streets and no quadrant. Each `DISAGREES` is a placement to
 re-read against the page's own record and the parcels at the corner, not an
-automatic retraction. One the re-read confirms comes off the page:
+automatic retraction; `corner.py A B --along DIR` measures the corner's
+lots from the node for the re-read. One the re-read confirms comes off the page:
 `resolution.status` back to `unresolved` with the reason in its `note`, and
 `publish` to `declined` with "Removed from the page on <date>".
+It tests only entries carrying `street_name` and `extra.cross_street_name`
+(plus `extra.corner_quad` or `extra.side` for more than reach); anything else
+it counts as `no fields`.
+**Fill those from the record before reading a re-test as a pass**, and write
+them at placement time so the next re-test needs no filling.
 
 Corrections are an ordinary site edit in the same PR.
 

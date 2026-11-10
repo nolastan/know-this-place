@@ -1,0 +1,57 @@
+{
+  "address": "3045 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/3045/unit-603/",
+  "unit": "603",
+  "apn": "0982061",
+  "block": "0982",
+  "lot": "061",
+  "parcel": {
+    "building_area_sqft": 1089,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 584207,
+    "assessed_improvement_value": 584207,
+    "last_sale_date": "2006-03-06"
+  },
+  "permits": [
+    {
+      "number": "202506178917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-17",
+      "status_date": "2025-09-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit: open walls to add new water line for a new washer and enclose; patch back in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611308813",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-30",
+      "status_date": "2007-03-23",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "retile bathroom & shower stall. new shower pan, new wet location light in shower, replace outlets with gfci, new window in existing frame. replace, sink, bathtub, shower hardware. retain (e) fixtures & locations. new shower stall door. new light to be flourescent.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0982061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0982&unit=603",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

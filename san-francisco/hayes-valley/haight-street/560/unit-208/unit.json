@@ -1,0 +1,67 @@
+{
+  "address": "560 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/haight-street/560/unit-208/",
+  "unit": "208",
+  "apn": "0848041",
+  "block": "0848",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 1525,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 916800,
+    "assessed_improvement_value": 611200,
+    "last_sale_date": "2017-11-22"
+  },
+  "permits": [
+    {
+      "number": "202205194646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-19",
+      "status_date": "2022-05-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit: revision to no-plan pa# 202105140396. reduce scope of work. original permit was for 2 bathrooms. reduce to only 1 bathroom. remove 2nd flr bathroom from scope.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105140396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-14",
+      "status_date": "2022-05-25",
+      "estimated_cost": 15000,
+      "revised_cost": 30000,
+      "description": "2 bathrooms remodel at first level and upper level in kind. no change to layout. no new wall and no existing all relocation. new lighting shall comply with cec 150.0 (k)5. total number of plumbing fixtures no change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202102033930",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-02-03",
+      "status_date": "2026-01-23",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "1/f bath remodel and living room interior wall changes. 2/f bath remodel. no other work in unit or changes to (e) sq footage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0848041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0848&unit=208",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

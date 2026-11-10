@@ -1,0 +1,47 @@
+{
+  "address": "237 Arguello Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/arguello-boulevard/237/unit-11/",
+  "unit": "11",
+  "apn": "1361059",
+  "block": "1361",
+  "lot": "059",
+  "parcel": {
+    "building_area_sqft": 890,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 265237,
+    "assessed_improvement_value": 212184,
+    "last_sale_date": "1992-01-17"
+  },
+  "permits": [
+    {
+      "number": "201308305661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-30",
+      "status_date": "2013-12-04",
+      "estimated_cost": 13970,
+      "revised_cost": 13970,
+      "description": "r & r kitchen cabs, new linoleum floor, new counter top, new hot & cold angle stops, are=8'x9' electrical: 3 new additional outlets to kitchen counter (2) small appliance circuits to be installed. move refridge outlet, (n) flourescent light (4) title 24; power (4) future hood fan, new sub panel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1361059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1361&unit=11",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

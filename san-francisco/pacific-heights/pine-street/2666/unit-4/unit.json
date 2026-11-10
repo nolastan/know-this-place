@@ -1,0 +1,46 @@
+{
+  "address": "2666 Pine Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pine-street/2666/unit-4/",
+  "unit": "4",
+  "apn": "1027028",
+  "block": "1027",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 1235,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 415866,
+    "assessed_improvement_value": 415866,
+    "last_sale_date": "2004-02-24"
+  },
+  "permits": [
+    {
+      "number": "202102245217",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-24",
+      "status_date": "2021-06-17",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: kitchen remodel in kind. new cabinets, counters and appliances.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1027028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1027&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

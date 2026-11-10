@@ -1,0 +1,84 @@
+{
+  "address": "1461 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/hayes-street/1465/unit-1461/",
+  "apn": "1205047",
+  "block": "1205",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 1912,
+    "rooms": 6,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 496626,
+    "assessed_improvement_value": 487976,
+    "assessed_fixtures_value": 78,
+    "last_sale_date": "2021-08-19"
+  },
+  "permits": [
+    {
+      "number": "201910215064",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-21",
+      "status_date": "2021-07-02",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "replace e windows, reframe area for larger windows at the ground floor. all wook, double hung, ogee lugs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908290274",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-29",
+      "status_date": "2021-07-08",
+      "estimated_cost": 19690,
+      "revised_cost": 22000,
+      "description": "kitchen remodel. no structural damages. update plumbing and electrical per code. new cabinetry, appliances and countertop. add 4 recess lights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804186682",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-18",
+      "status_date": "2018-06-27",
+      "estimated_cost": 10000,
+      "revised_cost": 15831,
+      "description": "remove/replace tub, valve, tile walls, vanity, flooring & fixtures. install new fan. all like for like. 5x12 bathroom. lighting per cec 150.0(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9709139",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-20",
+      "status_date": "1997-10-29",
+      "estimated_cost": 10000,
+      "description": "rear stair & porch repair per plan",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1997–2019",
+    "shown_on_page": 4,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1205047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1205&street_number=1461",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

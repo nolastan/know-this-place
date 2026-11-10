@@ -1,0 +1,34 @@
+{
+  "address": "1350 Natoma Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/natoma-street/1350/unit-1/",
+  "unit": "1",
+  "apn": "3548111",
+  "block": "3548",
+  "lot": "111",
+  "parcel": {
+    "building_area_sqft": 1143,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 186848,
+    "assessed_improvement_value": 508025
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3548111&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3548&unit=1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "address": "101 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/south-beach/spear-street/400/unit-203/",
+  "unit": "203",
+  "apn": "3768116",
+  "block": "3768",
+  "lot": "116",
+  "parcel": {
+    "building_area_sqft": 955,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 195608,
+    "assessed_improvement_value": 287640,
+    "last_sale_date": "1996-10-29"
+  },
+  "permits": [
+    {
+      "number": "200705040444",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-04",
+      "status_date": "2007-05-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200607065807 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607065807",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-07-06",
+      "status_date": "2007-04-27",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "remodel (e) condo, re-arrange (e) sprinkler and add 6 (n) sprinklers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602154662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-15",
+      "status_date": "2007-04-27",
+      "estimated_cost": 94000,
+      "revised_cost": 94000,
+      "description": "demo (e) walls, kitchen, bath (interior only), construct newly configured bath, kitchen, bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3768116&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3768&unit=203",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

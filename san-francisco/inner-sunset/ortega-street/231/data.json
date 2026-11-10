@@ -1,0 +1,190 @@
+{
+  "address": "231 Ortega Street, San Francisco, CA 94116",
+  "path": "/san-francisco/inner-sunset/ortega-street/231/",
+  "apn": "2125001F",
+  "block": "2125",
+  "lot": "001F",
+  "eas_baseid": "329935",
+  "coordinates": {
+    "lat": 37.752582,
+    "lng": -122.466005
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1120,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0231 ORTEGA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 452044,
+    "assessed_improvement_value": 301360,
+    "last_sale_date": "2002-01-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200410056033",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2004-10-05",
+      "status_date": "2006-04-17",
+      "estimated_cost": 100000,
+      "description": "construct 3 story addition to rear of exist 2 story build. remodel e gr flr,2nd flr,3rd fl per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306227596",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2003-06-22",
+      "status_date": "2004-12-22",
+      "estimated_cost": 100000,
+      "description": "3 story horizontal addition to rear left front of existing building as per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206108558",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2002-06-10",
+      "status_date": "2003-02-13",
+      "estimated_cost": 200000,
+      "description": "erect a three story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206108552",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2002-06-10",
+      "status_date": "2003-02-13",
+      "description": "demolish 2 stories 1 family dwelling unit bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010032248",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-03",
+      "status_date": "2001-02-03",
+      "estimated_cost": 1437,
+      "revised_cost": 1437,
+      "description": "install 4 vinyl windows in kind no change in size or location face front of street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9909615",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-17",
+      "status_date": "2000-05-19",
+      "estimated_cost": 1290,
+      "description": "install 3 vinyl windows in-kind, no change in size or locatn",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809826",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-06-01",
+      "status_date": "1999-02-24",
+      "estimated_cost": 1785,
+      "description": "install 5 vinyl windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621201",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-11-01",
+      "status_date": "1997-03-31",
+      "estimated_cost": 620,
+      "description": "install 2 alum windows in (e)frames in residence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414136",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-01",
+      "status_date": "1995-08-18",
+      "estimated_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ORTEGA&street_type=ST&address_number=231",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2125001F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2125&lot=001F",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2125001F",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-04-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 April 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n190/mode/1up",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-11-10",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 10 November 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/58minutesofsanfran2005san/page/n279/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-04-07",
+      "kind": "occupancy",
+      "description": "An existing dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-04-07"
+    },
+    {
+      "date": "2005-11-10",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and denied the proposed project to construct a full third story on the existing single-family dwelling and to extend the building toward the front, west side, and rear at 231 Ortega Street.",
+      "source": "sf-planning-commission-minutes-2005-11-10"
+    }
+  ]
+}

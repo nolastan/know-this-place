@@ -1,0 +1,133 @@
+{
+  "address": "56 Gold Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/gold-street/56/",
+  "apn": "0175015",
+  "block": "0175",
+  "lot": "015",
+  "eas_baseid": "279213",
+  "coordinates": {
+    "lat": 37.796859,
+    "lng": -122.402905
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2680.2,
+    "building_area_sqft": 4126,
+    "lot_depth_ft": 60,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 0056 GOLD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 195898,
+    "assessed_improvement_value": 380960
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jackson Square Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1850–1911",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202310209096",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-20",
+      "status_date": "2025-02-14",
+      "estimated_cost": 500,
+      "revised_cost": 1000,
+      "description": "abe#20191118290. to comply w/accessible business entrance program/technical infeasibility or unreasonable harship per ordinance 51-16. new portable standing sign, wireless doorbell.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615895",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-27",
+      "status_date": "1997-03-03",
+      "estimated_cost": 21980,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714059",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-09-30",
+      "status_date": "1989-02-02",
+      "estimated_cost": 150000,
+      "description": "primarily decorative, applied materials-no structural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOLD&street_type=ST&address_number=56",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0175015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0175&lot=015",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0175015",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40290547931977%2037.79685915748467)%27)",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "noehill-nat1971000186",
+      "name": "NoeHill in San Francisco, \"National Register #71000186: Jackson Square Historic District\"",
+      "query": "https://noehill.com/sf/landmarks/nat1971000186.aspx",
+      "label": "NoeHill in San Francisco",
+      "retrieved": "2026-11-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906",
+      "kind": "construction",
+      "description": "Built.",
+      "source": "noehill-nat1971000186"
+    }
+  ]
+}

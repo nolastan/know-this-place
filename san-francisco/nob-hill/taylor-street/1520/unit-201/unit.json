@@ -1,0 +1,57 @@
+{
+  "address": "1520 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/taylor-street/1520/unit-201/",
+  "unit": "201",
+  "apn": "0158053",
+  "block": "0158",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1130,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 750965,
+    "assessed_improvement_value": 500643,
+    "last_sale_date": "2018-06-22"
+  },
+  "permits": [
+    {
+      "number": "201611293711",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-11-29",
+      "status_date": "2026-01-09",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit - new tiles in bathrroms, floor & bath (2 each) & kitchen floor; new coutertops & cabinets in bathrroms. and kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611293714",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-11-29",
+      "status_date": "2026-01-09",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "new tile in baths. floor and bath 2 ea , kitchen fl, new countertops, cabinets in bahts and kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0158053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0158&unit=201",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

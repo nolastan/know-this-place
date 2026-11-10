@@ -1,0 +1,52 @@
+{
+  "address": "1255 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/california-street/1255/unit-404/",
+  "unit": "404",
+  "apn": "0252043",
+  "block": "0252",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1410,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 599254,
+    "assessed_improvement_value": 510532,
+    "last_sale_date": "1993-06-08"
+  },
+  "permits": [
+    {
+      "number": "200802114472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-11",
+      "status_date": "2008-07-15",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace kitchen cabinets, counter tops. no change to location of cabinets or appliances",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2008",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0252043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0252&unit=404",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

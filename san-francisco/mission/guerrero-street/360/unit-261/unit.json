@@ -1,0 +1,58 @@
+{
+  "address": "1839 15th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/360/unit-261/",
+  "unit": "261",
+  "apn": "3556083",
+  "block": "3556",
+  "lot": "083",
+  "parcel": {
+    "building_area_sqft": 1196,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 189374,
+    "assessed_improvement_value": 216427,
+    "last_sale_date": "1990-12-14"
+  },
+  "permits": [
+    {
+      "number": "200612119552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-11",
+      "status_date": "2007-05-21",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "revise building permit #2006//11/21/8195 to include radiant heat system under tile floor in master bathroom with thermostat",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611218195",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-21",
+      "status_date": "2007-05-21",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "master bathroom: swap locations of sink and tub. install new spa tub with shower,relocate doorway, replace main light with fluorescent,add 4 electrical outlets (gfci) and 6 light fixtures, install wall tile and floor tile. master bedroom:add 3 electrical outlets (+afic) and 1 overhead light fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556083&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&unit=261",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

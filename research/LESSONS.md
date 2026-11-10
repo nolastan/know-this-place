@@ -2806,6 +2806,71 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   from the node misjudges very wide streets: the Claus Spreckels Building's
   exact 75 by 70 lot is 125 ft from Market and Third's node and is the corner.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A street network's first vertex is not the street's direction.** DPW
+  centreline segments often begin with a 25–60 ft kerb-return arc, so
+  `--retest` took Market at 7th as running 13° north of east and Broadway at
+  Mason as running north, and flagged three correct placements as on the
+  wrong side. *Take a bearing from the first vertex at least 100 ft from the
+  node, or the far end.* And a retest's disagreement names a lot, not a
+  verdict: of 1907's 18, 3 were the axis, 1 a wide-street reach, and 3 had the
+  right parcel one corner over, which earned a re-placement rather than only
+  a retraction. ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **An exact lot area is evidence of a lot only where the lots differ.** The
+  1909 batch put a "NE corner of Washington and Locust, 50 by 127:8½" contract
+  on 3560 Washington because its area matched to the square foot — but every
+  full-depth lot on that block face is 127:8½ deep and most are 50 wide, and
+  3560 is three lots from the corner. On a tract of uniform lots the area says
+  nothing about position; the corner or the offset has to. *Before taking an
+  area match, count how many lots on the block face share it.* A cheaper
+  check catches the wrong-quadrant half: **a corner parcel's own number says
+  which side of the cross street it is on** (500 Guerrero is in the block south
+  of 17th, so it cannot be the NW corner), and its parity which side of its own
+  street. ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A retraction has to reach the copy another batch published.** The
+  same printing is often read twice — the daily list and the Saturday
+  section, a contracts pass and a permits re-read — and the second copy is
+  declined as "already on the page". In 1910 the re-test flagged 19th and
+  Mission's contract on 2280 Mission in the contracts batch, where it was
+  declined; the fact on the page came from `sn85066387-1910-permits-0138`,
+  which the re-test never reads. *When a flagged entry is declined as a
+  duplicate, the published twin is the one to retract.* `corner.py --retest`
+  now prints each disagreement's twins (same date, same parcel, any sibling
+  file); check them before closing. The same re-test found the lot-area trap
+  twice more — 415 O'Farrell and 2280 Mission each matched the record's area
+  within 2% and sat 75-85 ft from the corner it names.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A check that tests nothing reports nothing wrong.** `corner.py --retest`
+  on the 1910 January–June real-estate batch printed "41 placements: 41
+  untested" with exit 0: the batch's hand placements kept their corners only
+  in `address_as_written`, and the test reads structured fields. Seven more
+  published batches (the 1910 h2/permits/offsets files and the 1911–1913
+  contract lists, about 530 placements) carry none either. *Read the counts,
+  not the exit code, and make a placement's geometry machine-readable when it
+  is written* — `--retest` now names the gap as `no fields`.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A line's offset is checkable; a multi-street node is not where it is
+  measured from.** `--retest` tested a line entry for its side of the street
+  only. It now also checks that the parcel's frontage overlaps the record's
+  lot: the node is the centreline crossing, so the frontage should begin half
+  a cross street's width past the printed offset — 22-39 ft on every 1910
+  real-estate offset entry. Records with two streets and no quadrant now get
+  the 100 ft reach test. *Where several streets meet in one DPW node on
+  Market (Third–Kearny–Geary; Grant–O'Farrell) the node sits about 100 ft off
+  the cross street's line, and a flag there is a re-read, not a verdict:*
+  701 Market's exact 75 ft Claus Spreckels lot puts 711 at 75 ft, as printed.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **A lot area matched to the wrong piece of the record is no match.** The
+  1910 July–December batch put "south side of Market, 250 feet west of Sixth,
+  with an L 25x90 in Stevenson" on 1023 Market because the parcel is 2,250
+  sq ft — the L's size, not the Market lot's, which the record never gives —
+  and the re-test found its frontage 30-60 ft short of the printed offset.
+  *Match an area only against the lot the record dimensions, and only where
+  that lot is the building's.* And when re-testing an offset, **measure from
+  the block's first lot, not from half a street past the node**: at 7th
+  Avenue and California the block begins 74 ft from the DPW node.
+  `corner.py A B --along DIR` prints every outline's span from the node, so
+  the block line and the lot at the printed offset can be read off directly.
+  ([sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball
@@ -3067,3 +3132,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   findings file — a reading view is for reading, never for quoting.*
   (2026-10-31,
   [sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+- **One map lot can hold several buildings, and a point query cut short hides
+  the one you want.** 736 Mission Street, the Contemporary Jewish Museum, has
+  a parcel of its own, 3706276, which sf-parcels states as 736–736 Mission.
+  Its EAS point falls in 154 active parcels of one map lot: the museum, the
+  706 Mission tower's units and a garage. `resolve_eas.py` asked each point
+  for twenty parcels, got twenty of the tower's units, and since #446 filed
+  the museum on unit 0503 of the building next door. The point query is no
+  longer truncated, a condominium stack is narrowed to the parcels that state
+  the recorded number, and `report` lists any condominium resolution whose
+  unit the roll files at another number while EAS lists the recorded number
+  nowhere on that map lot. *Read that list before `apply` or `manifest`; a
+  parcel whose own range is the recorded address decides it.* (2026-11-09,
+  #557)

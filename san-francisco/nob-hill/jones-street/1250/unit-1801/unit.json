@@ -1,0 +1,112 @@
+{
+  "address": "1250 Jones Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/jones-street/1250/unit-1801/",
+  "unit": "1801",
+  "apn": "0221086",
+  "block": "0221",
+  "lot": "086",
+  "parcel": {
+    "building_area_sqft": 1642,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1542465,
+    "assessed_improvement_value": 1028309,
+    "last_sale_date": "2021-03-19"
+  },
+  "permits": [
+    {
+      "number": "202607145020",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-14",
+      "status_date": "2026-07-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa # 202108136444. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504184757",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-04-18",
+      "status_date": "2025-04-18",
+      "estimated_cost": 1,
+      "revised_cost": 10000,
+      "description": "recommencement and completion of work approved under bpa#: 202108136444",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202110150591",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-10-15",
+      "status_date": "2021-10-21",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "one unit: install new stackup washer/elec dryer (ventless) into (e) closet. new laundry box.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202109138337",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-09-13",
+      "status_date": "2026-01-23",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "#1801: add washer & dryer (220v electric), ventless type. (kitchen remodel under pa# 202108136444)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108136444",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-08-13",
+      "status_date": "2021-08-16",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "remodel 1 kitchen. new flooring and paint. no strutural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9122973",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-04",
+      "status_date": "1992-04-10",
+      "estimated_cost": 2442,
+      "description": "remove existing double hung windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116428",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-05",
+      "status_date": "1992-03-16",
+      "estimated_cost": 11500,
+      "revised_cost": 0,
+      "description": "install new cabinets,green sheetrock medicine chests in bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221086&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=1801",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

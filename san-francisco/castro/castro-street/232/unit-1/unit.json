@@ -1,0 +1,129 @@
+{
+  "address": "232 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/232/unit-1/",
+  "unit": "1",
+  "apn": "2613035",
+  "block": "2613",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 1947,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 606699,
+    "assessed_improvement_value": 313534,
+    "last_sale_date": "1999-03-09"
+  },
+  "permits": [
+    {
+      "number": "202601123629",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2026-01-12",
+      "status_date": "2026-02-17",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "re-roofing (with hotworks) at upper flat roof and rear low slope roof in kind. no work to (e) roof structural sheathing. no work to (e) front roof deck. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511021368",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-02",
+      "status_date": "2016-01-29",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remove (e) water damaged exterior siding in interior lightwell full height and top of south facing wall at rear. install new hardy plank 1 x 10 siding. prime, caulk and paint to finish in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713539",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-07-21",
+      "status_date": "1999-04-06",
+      "estimated_cost": 4000,
+      "description": "install fire alarm system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9712142",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-07-07",
+      "status_date": "1997-09-09",
+      "estimated_cost": 1,
+      "description": "revise appl #9611899 for sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620434",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-10-23",
+      "status_date": "1997-09-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "minor revisions tie to pa#9411889 for city's as built record",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613537",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-25",
+      "status_date": "1997-09-09",
+      "estimated_cost": 1,
+      "description": "file as built shoring plan per app #9411889 for city record",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611899",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-07-03",
+      "status_date": "1997-07-09",
+      "estimated_cost": 14000,
+      "description": "install full fire sprinkler",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411889S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1994-07-26",
+      "status_date": "1997-09-09",
+      "estimated_cost": 350000,
+      "revised_cost": 715000,
+      "description": "erect a three five story three unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411890",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1994-07-26",
+      "status_date": "1996-07-30",
+      "description": "demolish two family dwelling units",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2613035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2613&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

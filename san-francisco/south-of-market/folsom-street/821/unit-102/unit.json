@@ -1,0 +1,67 @@
+{
+  "address": "821 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/821/unit-102/",
+  "unit": "102",
+  "apn": "3752395",
+  "block": "3752",
+  "lot": "395",
+  "parcel": {
+    "building_area_sqft": 3228,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1106926,
+    "assessed_improvement_value": 755792,
+    "last_sale_date": "2006-03-31"
+  },
+  "permits": [
+    {
+      "number": "201810254160",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-25",
+      "status_date": "2018-12-24",
+      "estimated_cost": 6000,
+      "revised_cost": 12000,
+      "description": "#102: add in restroom in side extg commercial space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607257470",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-25",
+      "status_date": "2006-07-25",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "t.i.include: audible/visual notification appliances & control relay & duct detection for fan control.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603287724",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-28",
+      "status_date": "2006-08-30",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "restroom remodel along with employee office & work station, ada complaint toilet. mechanical will file seperate permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752395&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=102",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

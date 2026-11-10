@@ -11,6 +11,7 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 - [Federal Street](federal-street/) — 2 buildings, built 1912–1923; 2 in the South End Historic District.
 - [Folsom Street](folsom-street/) — 1 building.
 - [Fremont Street](fremont-street/) — 3 buildings, built 1928–2018.
+- [Guy Place](guy-place/) — 1 building, built 1998.
 - [Harrison Street](harrison-street/) — 11 buildings, built 1925–1989.
 - [Hawthorne Street](hawthorne-street/) — 10 buildings, built 1900–1987; 2 in the New Montgomery-Mission-Second Street Conservation District.
 - [Howard Street](howard-street/) — 6 buildings, built 1987–2019.

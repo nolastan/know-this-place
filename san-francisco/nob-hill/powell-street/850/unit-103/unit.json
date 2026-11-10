@@ -1,0 +1,46 @@
+{
+  "address": "850 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/850/unit-103/",
+  "unit": "103",
+  "apn": "0243061",
+  "block": "0243",
+  "lot": "061",
+  "parcel": {
+    "building_area_sqft": 1351,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 617997,
+    "assessed_improvement_value": 411998,
+    "last_sale_date": "2022-12-07"
+  },
+  "permits": [
+    {
+      "number": "201003259006",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-25",
+      "status_date": "2010-06-03",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "patch repair area of living room ceiling only. repair in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "address": "795 Sutter Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/sutter-street/795/unit-401/",
+  "unit": "401",
+  "apn": "0298048",
+  "block": "0298",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1852,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 867534,
+    "assessed_improvement_value": 867534,
+    "last_sale_date": "2017-03-22"
+  },
+  "permits": [
+    {
+      "number": "201404072639",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-07",
+      "status_date": "2014-07-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#401 - remodel (e) bathroom: demo existing bathtub to a new shower, new tile t match existing, new glass block wall on newly tiled window shelf. compliance with ordinance #155-13 not required",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2014",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0298048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0298&unit=401",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "address": "555 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/555/unit-302/",
+  "unit": "302",
+  "apn": "3776162",
+  "block": "3776",
+  "lot": "162",
+  "parcel": {
+    "building_area_sqft": 1276,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 720000,
+    "assessed_improvement_value": 480000,
+    "last_sale_date": "2016-12-28"
+  },
+  "permits": [
+    {
+      "number": "202207299570",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-29",
+      "status_date": "2022-09-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision permit # 2022-0428-3178: replacing tub with walk in shower",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204283178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-28",
+      "status_date": "2022-09-30",
+      "estimated_cost": 13340,
+      "revised_cost": 26000,
+      "description": "(1) bathroom remodel like for like - new tub, new tiles, update plumbing and electrical up to code. (1) kitchen remodel like for like - install new countertops.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3776162&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3776&unit=302",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

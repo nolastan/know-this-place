@@ -1,0 +1,35 @@
+{
+  "address": "100 Parker Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/parker-avenue/100/unit-105/",
+  "unit": "105",
+  "apn": "1065058",
+  "block": "1065",
+  "lot": "058",
+  "parcel": {
+    "building_area_sqft": 585,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 72695,
+    "assessed_improvement_value": 72695,
+    "last_sale_date": "2000-09-06"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1065058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1065&unit=105",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

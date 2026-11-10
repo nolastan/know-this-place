@@ -1,0 +1,47 @@
+{
+  "address": "3439 Sacramento Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/sacramento-street/3439/unit-202/",
+  "unit": "202",
+  "apn": "1020072",
+  "block": "1020",
+  "lot": "072",
+  "parcel": {
+    "building_area_sqft": 1933,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1166384,
+    "assessed_improvement_value": 777586,
+    "last_sale_date": "2011-05-03"
+  },
+  "permits": [
+    {
+      "number": "201208137261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-13",
+      "status_date": "2013-03-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#202 -interior and structural improvements to e condo. structural changes include new wall opening at interior between kitchen and dining. kitchen cabinets, 2 plugs. no change to area, envelope, and occupancy.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1020072&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1020&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

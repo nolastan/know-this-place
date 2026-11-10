@@ -1,0 +1,53 @@
+{
+  "address": "168 29th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/noe-valley/29th-street/168/unit-1/",
+  "unit": "1",
+  "apn": "6617040",
+  "block": "6617",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1098,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 609831,
+    "assessed_improvement_value": 609831,
+    "last_sale_date": "2005-05-17"
+  },
+  "permits": [
+    {
+      "number": "202507029997",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-02",
+      "status_date": "2025-07-18",
+      "estimated_cost": 37000,
+      "revised_cost": 37000,
+      "description": "re-roofing flat roof w/ hot works. no work to (e) roof structural sheathing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2016–2025",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6617040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6617&unit=1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

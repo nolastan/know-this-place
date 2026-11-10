@@ -1,0 +1,46 @@
+{
+  "address": "1817 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/california-street/1817/unit-309/",
+  "unit": "309",
+  "apn": "0648079",
+  "block": "0648",
+  "lot": "079",
+  "parcel": {
+    "building_area_sqft": 713,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 601704,
+    "assessed_improvement_value": 401136,
+    "last_sale_date": "2022-04-04"
+  },
+  "permits": [
+    {
+      "number": "202112134256",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-13",
+      "status_date": "2021-12-20",
+      "estimated_cost": 15000,
+      "revised_cost": 40000,
+      "description": "replace cabinets only for kitchen and 2 bathrooms.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0648079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0648&unit=309",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

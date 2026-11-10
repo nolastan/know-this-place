@@ -1,0 +1,68 @@
+{
+  "address": "2171 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2171/unit-12/",
+  "unit": "12",
+  "apn": "0639028",
+  "block": "0639",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 1900,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 838884,
+    "assessed_improvement_value": 838884,
+    "last_sale_date": "2020-09-29"
+  },
+  "permits": [
+    {
+      "number": "202402296825",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-29",
+      "status_date": "2025-02-18",
+      "estimated_cost": 12000,
+      "revised_cost": 20552,
+      "description": "#12: in kind bathroom remodel. no windows change, no wall removed, replacing all fixtures in the same locations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510034515",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-10-03",
+      "status_date": "2005-11-14",
+      "estimated_cost": 5264,
+      "revised_cost": 5264,
+      "description": "replace window in kind on back of house,going from dark alumi to white vinyl.no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108075428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-07",
+      "status_date": "2001-09-12",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "replace roof deck for leaks. resurfacing the floor of balcony w/ waterproof membrane & ceramic tile.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0639028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0639&unit=12",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

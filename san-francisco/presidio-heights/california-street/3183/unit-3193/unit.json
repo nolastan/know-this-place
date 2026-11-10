@@ -1,0 +1,54 @@
+{
+  "address": "3193 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/california-street/3183/unit-3193/",
+  "apn": "1031045",
+  "block": "1031",
+  "lot": "045",
+  "parcel": {
+    "rooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 551643,
+    "assessed_improvement_value": 551643,
+    "last_sale_date": "2015-04-16"
+  },
+  "permits": [
+    {
+      "number": "201607071726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-07",
+      "status_date": "2017-03-10",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "dry rot & termite repair in the back, 8'x20' in size. all repairs in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302207897",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-20",
+      "status_date": "2003-07-09",
+      "estimated_cost": 5848,
+      "revised_cost": 5848,
+      "description": "replace windows 9 like for like in both front 3 and back",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1031045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1031&street_number=3193",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

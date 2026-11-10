@@ -1,0 +1,67 @@
+{
+  "address": "695 Grand View Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/grand-view-avenue/695/unit-202/",
+  "unit": "202",
+  "apn": "6501056",
+  "block": "6501",
+  "lot": "056",
+  "parcel": {
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 261469,
+    "assessed_improvement_value": 261469,
+    "last_sale_date": "2002-03-15"
+  },
+  "permits": [
+    {
+      "number": "202509104949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-10",
+      "status_date": "2025-12-12",
+      "estimated_cost": 25000,
+      "revised_cost": 35000,
+      "description": "one unit.kitchen remodel replace cabinets and flooring in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201302260963",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-02-26",
+      "status_date": "2013-02-26",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "one unit - remove drywall in ceiling in 3 rooms, insulate with r-19 or better, install new 5/8\" type x drywall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108226585",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-22",
+      "status_date": "2002-02-22",
+      "estimated_cost": 4571,
+      "revised_cost": 4571,
+      "description": "7 windows to be replaced size for size front of building 1st floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6501056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6501&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

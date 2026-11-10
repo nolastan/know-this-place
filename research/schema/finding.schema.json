@@ -211,6 +211,11 @@
        "type": "string",
        "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
       },
+      "building_lots": {
+       "type": "array",
+       "items": {"type": "string"},
+       "description": "A building divided into airspace parcels on one map lot that the roll does not class as condominiums: every lot on its block, which seed-list writes as the building's units."
+      },
       "note": {
        "type": "string",
        "description": "Required in spirit for unresolved/rejected: why."

@@ -22,12 +22,16 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1930.
 - [Grafton Avenue](grafton-avenue/) — 1 building, built 1915.
 - [Granada Avenue](granada-avenue/) — 1 building, built 1989.
+- [Holloway Avenue](holloway-avenue/) — 1 building, built 1985.
+- [Howth Street](howth-street/) — 1 building, built 1908.
+- [Huron Avenue](huron-avenue/) — 1 building, built 1928.
 - [Josiah Avenue](josiah-avenue/) — 1 building, built 1910.
 - [Jules Avenue](jules-avenue/) — 2 buildings, built 1926–1927.
 - [Lakeview Avenue](lakeview-avenue/) — 1 building, built 1916.
 - [Lee Avenue](lee-avenue/) — 1 building, built 1910.
 - [Lobos Street](lobos-street/) — 1 building, built 1906.
 - [Louisburg Street](louisburg-street/) — 1 building, built 1990.
+- [Majestic Avenue](majestic-avenue/) — 1 building.
 - [Miramar Avenue](miramar-avenue/) — 2 buildings, built 1905–1917.
 - [Mission Street](mission-street/) — 1 building, built 1924.
 - [Montana Street](montana-street/) — 1 building, built 1907.

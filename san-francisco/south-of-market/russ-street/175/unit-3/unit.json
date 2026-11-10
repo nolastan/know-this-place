@@ -1,0 +1,41 @@
+{
+  "address": "175 Russ Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/russ-street/175/unit-3/",
+  "unit": "3",
+  "apn": "3731204",
+  "block": "3731",
+  "lot": "204",
+  "parcel": {
+    "building_area_sqft": 808,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 408000,
+    "assessed_improvement_value": 272000,
+    "last_sale_date": "2014-05-02"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2016",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3731204&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3731&unit=3",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

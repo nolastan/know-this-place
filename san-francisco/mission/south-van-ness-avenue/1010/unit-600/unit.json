@@ -1,0 +1,111 @@
+{
+  "address": "600 Capp Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/1010/unit-600/",
+  "apn": "3615068",
+  "block": "3615",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1532,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 960600,
+    "assessed_improvement_value": 640400,
+    "last_sale_date": "2022-06-17"
+  },
+  "permits": [
+    {
+      "number": "202207158582",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-15",
+      "status_date": "2022-10-17",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel one existing kitchen (like for like) no structural changes or modifications",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202008051198",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-08-05",
+      "status_date": "2021-01-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace (e) front stairs due to dry rot damage. demo (e) concrete columns at front stairs and replaced w/wood pilars and bring hand rails to code. new railing to be balusters.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806010709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-01",
+      "status_date": "2018-07-25",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "replace bathtub with shower pan & wall surround. project to include electrical. build wing wall adjacent to shower. install exhaust fan & roof jack. 29 sq ft",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311262838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-26",
+      "status_date": "2014-01-16",
+      "estimated_cost": 7402,
+      "revised_cost": 7402,
+      "description": "replace 7 windows max u-factor .40 visible from street with anderson fibrex no structural changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809151646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-15",
+      "status_date": "2009-01-07",
+      "estimated_cost": 10200,
+      "revised_cost": 10200,
+      "description": "bathroom remodel (2) replace sinks faucets and some tile work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205146496",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-05-14",
+      "status_date": "2002-09-03",
+      "estimated_cost": 695,
+      "revised_cost": 8000,
+      "description": "correct all items per insoection report #3r-3484/install insulation/smoke det.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410586",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-10-02",
+      "status_date": "1985-11-25",
+      "estimated_cost": 3208,
+      "description": "repair fire domage & replace shingles & 2 windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3615068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3615&street_number=600",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

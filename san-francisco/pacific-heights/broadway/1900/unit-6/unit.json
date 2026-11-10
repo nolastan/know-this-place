@@ -1,0 +1,35 @@
+{
+  "address": "1900 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1900/unit-6/",
+  "unit": "6",
+  "apn": "0567035",
+  "block": "0567",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 1254,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 746877,
+    "assessed_improvement_value": 497918,
+    "last_sale_date": "2020-10-19"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

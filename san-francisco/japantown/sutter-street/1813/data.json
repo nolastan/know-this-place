@@ -1,9 +1,7 @@
 {
   "address": "1813–1815 Sutter Street, San Francisco, CA 94115",
   "path": "/san-francisco/japantown/sutter-street/1813/",
-  "apn": "0685102",
   "block": "0685",
-  "lot": "102",
   "eas_baseid": "424722",
   "coordinates": {
     "lat": 37.786203,
@@ -16,24 +14,20 @@
   ],
   "parcel": {
     "year_built": 1876,
-    "stories": 2,
-    "rooms": 7,
-    "bathrooms": 3,
-    "bedrooms": 4,
-    "building_area_sqft": 2201,
     "use": "Single Family Residential",
     "property_class": "Condominium",
     "construction_type_code": "NA",
     "supervisor_district": 5,
     "assessor_neighborhood": "Lower Pacific Heights",
     "analysis_neighborhood": "Japantown",
-    "property_location_raw": "0000 1815 SUTTER              ST0000"
+    "units": 2
   },
-  "assessment": {
-    "roll_year": 2025,
-    "assessed_land_value": 873979,
-    "assessed_improvement_value": 674171,
-    "last_sale_date": "2021-11-29"
+  "condominium": {
+    "lots": [
+      "102",
+      "103"
+    ],
+    "method": "Proposed from the 2025 roll for block 0685: every condominium parcel the roll files under 1815 SUTTER ST, and the unbroken run of lots beside parcel 0685102 on the same street with the same year built (1876) — street numbers 1815, 1817. 2 lots, 102–103."
   },
   "historic_status": {
     "ceqa_status_code": "A",
@@ -68,16 +62,6 @@
       "source": "sf-building-permits"
     },
     {
-      "number": "M1161807",
-      "type": "otc alterations permit",
-      "status": "issued",
-      "filed": "2019-11-05",
-      "status_date": "2019-11-05",
-      "revised_cost": 244,
-      "description": "remove \"1813 sutter street\" from block & lot# 0685/049. addresses to be remain as \"1815-1817 sutter street\", for 2 units building per pa# 9925352.",
-      "source": "sf-building-permits"
-    },
-    {
       "number": "200810174441",
       "type": "additions alterations or repairs",
       "status": "complete",
@@ -86,6 +70,17 @@
       "estimated_cost": 8749,
       "revised_cost": 8749,
       "description": "replace garage doors into existing openings- 2 doors visable from the street. no structural changes. change to metal sectional roll up door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809292957",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-29",
+      "status_date": "2009-04-22",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "remodel existing kitchen and bath on ground floor, lower unit. split large bedroom into 2 offices. electrical panel upgrade.",
       "source": "sf-building-permits"
     },
     {
@@ -161,16 +156,6 @@
       "estimated_cost": 4700,
       "description": "reroof",
       "source": "sf-building-permits"
-    },
-    {
-      "number": "8604425",
-      "type": "additions alterations or repairs",
-      "status": "complete",
-      "filed": "1986-04-17",
-      "status_date": "1986-10-31",
-      "estimated_cost": 12000,
-      "description": "horizontal extension-enlarge bathroom, kitchen, breakfast ro",
-      "source": "sf-building-permits"
     }
   ],
   "sources": [
@@ -182,15 +167,15 @@
     },
     {
       "id": "sf-assessor-roll",
-      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
-      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0685102&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-09-02"
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0685)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0685&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
     },
     {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
-      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0685&lot=102",
-      "retrieved": "2026-09-02"
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0685",
+      "retrieved": "2026-11-09"
     },
     {
       "id": "sf-planning",
@@ -225,9 +210,35 @@
       "query": "https://digitalsf.org/record/29675",
       "label": "San Francisco Subjects Photograph Collection (SFP 162), San Francisco Public Library",
       "retrieved": "2026-09-02"
+    },
+    {
+      "id": "noehill-nat1973000443",
+      "name": "NoeHill in San Francisco, \"National Register #73000443: Building at 1813-1813B Sutter Street\"",
+      "query": "https://noehill.com/sf/landmarks/nat1973000443.asp",
+      "label": "NoeHill in San Francisco",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "nrhp-73000443",
+      "name": "National Register of Historic Places nomination, Building at 1813--1813B Sutter Street (reference number 73000443), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/73000443_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-06"
     }
   ],
   "historical_record": [
+    {
+      "date": "1876",
+      "kind": "construction",
+      "description": "Built at 1624 Post Street as a rental property, and connected to the city water system there.",
+      "source": "nrhp-73000443"
+    },
+    {
+      "date": "1970s",
+      "kind": "move",
+      "description": "The Italianate house was moved here from 1624 Post Street.",
+      "source": "noehill-nat1973000443"
+    },
     {
       "date": "1974-1982",
       "kind": "photograph",

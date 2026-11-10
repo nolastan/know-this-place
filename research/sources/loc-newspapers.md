@@ -6,6 +6,59 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-09 (the 1910 July–December real-estate batch
+  re-tested, and the two 1908 placements the last line named re-read. h2's 39
+  corner.py placements carried no corner fields (`--retest`: "39 no fields");
+  all 39 were given `street_name`, `extra.cross_street_name` and the
+  record's `corner_quad` or `side` (plus `offset_ft`, `direction`, `lot_ft`
+  where printed) and re-tested: **35 ok, 4 disagreeing**; flipping every
+  quadrant and side made all 34 directional entries disagree. 2 kept — the Call
+  Building (0405, 125 ft from the Market–Third–Kearny–Geary node) and the
+  Savings Union (0444, 135 ft from the Market–Grant–O'Farrell node), both
+  placed by name with Planning naming the parcel; 2 retracted — **0013** off
+  1023 Market (frontage 212–239 ft from the Sixth Street node against a lot
+  printed 250 ft out; its 2,250 sq ft "match" was the record's 25 by 90 L in
+  Stevenson Street, not the Market lot) and **0415** off 401 O'Farrell (the
+  SW corner, not the NE the loan names; the page's NRHP record dates its hotel
+  to 1909, a year before the loan). The 1908 pair, measured with the new
+  `corner.py A B --along DIR`: **1285** off 651 5th Avenue (its parcel fronts
+  70 ft past the printed lot; the lot at 230 ft is 639 5th Avenue, 5 ft off)
+  and **1540** off 243 7th Avenue (20 ft past; the lot at 232:6 is 241 7th
+  Avenue, rolled 1911) — neither re-placed. 4 published facts off 4 pages. The
+  h2 batch now has 131 resolved and 128 published; the re-test re-run gives 37
+  placements, 35 ok, 2 the kept by-name entries. 2 of 39 retracted,
+  against 0 of 41 for January–June.)
+> - **Verified:** 2026-11-08 (a second pass over the same 1910
+  January–June real-estate batch, run before the 2026-11-07 pass merged;
+  merged onto it. `--retest` gained an **offset check** (a line entry's
+  parcel frontage must overlap the printed lot, allowing half a cross
+  street's width) and a **reach check** for two-street records with no
+  quadrant. On this batch: every offset entry's frontage begins 22-39 ft past
+  the printed offset; 5 of the 6 by-name placements given their two streets,
+  4 within 100 ft, and 0081, the Savings Union on 1 Grant, 135 ft from the one
+  DPW node of Market, Grant and O'Farrell — kept, Planning names the parcel
+  the Savings Union branch, roll 1910. Nothing off a page. Swept over the
+  1907–1910 contract batches: Market "75 / 275 ft SW of Third" flags (711,
+  735) are the Market–Third–Kearny–Geary node, which sits about 100 ft off
+  Third's line — 701's exact 75 ft Claus Spreckels lot puts 711 where printed
+  — and **two 1908 placements to re-read: 651 5th Avenue ("W line, 230 S of
+  Balboa") and 243 7th Avenue ("W line, 232:6 S of California")**, frontages
+  110 and 95 ft past the printed offset, whose `resolution.apn` (1639059,
+  1426061) is not the parcel their method names (1639012, 1426009).)
+> - **Verified:** 2026-11-07 (the 1910 January–June real-estate batch
+  re-tested with `corner.py --retest`: its 41 corner.py placements were hand
+  placements that kept the corner only in `address_as_written`, so the first
+  run printed "41 untested" — a pass on nothing. 35 were given the record's
+  `street_name`, `cross_street_name`, and `corner_quad` or `side` (plus
+  `offset_ft` and `direction` where printed) and re-tested: **35 ok, 0
+  disagreeing**; flipping every quadrant and side made all 35 disagree, so the
+  test discriminates. 6 have no quadrant to test — the Union Trust and Savings
+  Union at the Grant–Market–O'Farrell gore, the Head Building at Post and
+  Grant, the Mission Savings Bank at 16th and Valencia, the First Baptist
+  Church at the Waller–Octavia junction and the Turn Verein's "site of the old
+  one" — all placed by name or by a lot area to the square foot. No page
+  changed; the batch stays at 76 resolved and 73 published. `--retest` now
+  counts such entries as `no fields` and says so.)
 > - **Verified:** 2026-11-02 (the *Call* of Sunday 25 March 1906, the only
   issue of January–March 1906 on the bulk route, from `curiv_jenner_ver01`
   reel `00100480748`: 56 OCR pages scanned, 337 numbered-address mentions, no
@@ -16,6 +69,43 @@
   Fillmore; page seeded). 24 unresolved, 15 of them pre-fire in the district
   that burned three weeks later. Batch file
   `findings/loc-newspapers/sn85066387-1906-03-25-real-estate.json`.)
+> - **Verified:** 2026-11-06 (the 1910 Building Contracts batch re-tested:
+  207 corner.py placements checked with `corner.py --retest` — 187 ok, 11
+  untested, 9 disagreeing; each re-read against the parcels at the corner,
+  their quadrant against the DPW node and their outlines measured. 6
+  retracted (5 published, now off 5 pages; 1 declined, whose published twin
+  in the permits batch is retracted with it and off 2280 Mission); 2
+  re-placed — the Keystone apartments' painting contract to 1369 Hyde, the
+  building the record names, and E. C. Deiselkamp's brick dwelling to 2759
+  Broderick, the SW corner lot of Union, seeded; 1 kept (the Olympic Club,
+  placed by name on a 307 ft holding). 4% of placements, between 1909's 3%
+  and 1907's 5%. The batch now has 210 resolved and 163 published; the
+  re-test re-run gives 201 placements, 189 ok, 11 untested, 1 the kept
+  Olympic Club.)
+> - **Verified:** 2026-11-05 (the 1909 Building Contracts batch re-tested:
+  230 corner.py placements checked with `corner.py --retest` — 218 ok, 4
+  untested, 8 disagreeing; each re-read against the parcels at the corner and
+  their quadrant against the DPW node. 7 retracted (6 published, now off 6
+  pages; 1 already declined as a further contract); 1 re-placed — George
+  Hudson's 1909 three-storey contract at the NW corner of 17th and Guerrero,
+  moved from 500 Guerrero (the SW corner) to 494 Guerrero, the NW corner's one
+  parcel, roll 1909, three storeys. None stand. The lowest rate of the three
+  batches re-tested (3% against 1908's 7% and 1907's 5%). The batch now has
+  277 resolved and 223 published on 222 pages; the re-test re-run gives 223
+  placements, 219 ok, 4 untested.)
+> - **Verified:** 2026-11-04 (the 1907 Building Contracts batch re-tested:
+  274 corner.py placements checked with `corner.py --retest` — 255 ok, 1
+  untested, 18 disagreeing; each re-read against the parcels at the corner
+  (`corner.py A B --year 1907`) and the parcel centroids against the DPW node.
+  11 retracted (9 published, now off 9 pages; 2 already declined); 3 re-placed
+  on the parcel that holds the corner the record names — 1301 Leavenworth
+  (exact 57:6 by 82:6 lot) and 749 Grant, both seeded, and the Italian-American
+  Bank's fixtures contract moved from the Potter Building to 456 Montgomery,
+  where three more named bank entries now resolve as further contracts; 4 stand.
+  Three of the four were false alarms from `network_corner`'s axis, which took
+  a street's bearing from a 27–62 ft kerb-return arc (Market at 7th, Broadway at
+  Mason); fixed in `corner.py`, and the 1906 and 1908 re-tests re-run with no
+  change. The batch now has 290 resolved and 233 published on 233 pages.)
 > - **Verified:** 2026-11-03 (the 1908 Building Contracts batch re-tested:
   441 corner.py placements checked with the new `corner.py --retest` against
   the DPW street centrelines — 395 ok, 12 untested, 34 disagreeing; each
@@ -304,6 +394,19 @@ Saturdays, not 52. Three things differ from 1912:
   half the numbered entries have no EAS record at all (Western Addition and
   downtown lots taken by later buildings).
 
+- **Re-tested 2026-11-07, and nothing moved.** The batch's 41 corner.py
+  placements were placed by hand before the structured corner fields
+  existed: no `street_name`, no `extra.cross_street_name`, no `corner_quad`
+  or `side`. `--retest` could test none of them and said only "41
+  untested". 35 now carry the fields, read from `address_as_written`, and all
+  35 pass. **The same is true of every file still in the queue**:
+  `h2-real-estate` (39 placements, 0 with fields), `permits` (42, 0),
+  `offsets` (16, 0 — their `cross_street` is free text like "HYDE (block
+  face to LEAVENWORTH)"), and the 1911 (167, 0), 1912 (199, 0) and
+  1913 Feb/Jul–Dec (65, 0) contract lists, which keep the cross street only
+  as `cross_street_as_printed`. Each re-test there begins by filling the
+  fields from the record; `--retest` now counts the gap as `no fields`.
+
 ### Cautions for the 1910 section
 
 - **The realty columns put the private buyer between the address and the
@@ -327,6 +430,12 @@ Saturdays, not 52. Three things differ from 1912:
   already crediting the same architect (3106 16th, 317 and 245 Leavenworth,
   3541 18th, 100 New Montgomery, 414 Mason, 524 Post, 1369 Hyde), which is the
   best check a corner placement gets.
+
+- **Re-tested again 2026-11-08, with the offset and reach checks:** nothing
+  moved. 0081, the Savings Union on 1 Grant, is 135 ft from the
+  Market–Grant–O'Farrell node, which DPW draws as one point in the middle of
+  Market — kept on Planning's SAVINGS UNION BRANCH, roll 1910, like the Claus
+  Spreckels Building at Market and Third.
 
 ### Cautions for the second half of 1910
 
@@ -353,6 +462,13 @@ Saturdays, not 52. Three things differ from 1912:
 - **The roll files some corner parcels under the other street.** The manifest
   took Pine for 1100 Pine / 1005 Jones and McAllister for 856 Divisadero;
   both were moved to the roll's `property_location` before seeding (see LESSONS).
+- **Re-tested 2026-11-09: the July–December batch lost two.** Its 39
+  placements were filled from `address_as_written` the same way: 35 ok, 2
+  kept by name at Market's multi-street nodes, 2 retracted (0013, 1023
+  Market; 0415, 401 O'Farrell — see the Verified line). **Read the whole
+  passage before filling a cross street**: 0240's "Eecond and Xmoma" reads as
+  Tehama until the same paragraph prints "Second and Na totna"; the
+  placement was on Natoma and passes there.
 
 ### The 1910 permits re-read (#407)
 
@@ -553,6 +669,31 @@ pages). Same method as 1911–1913. What was new:
   about 40% of their shards; each had written its blocks with a marker, so
   trimming to the last marker and resuming each reader with its context lost
   nothing (see LESSONS).
+- **Re-tested 2026-11-06: 6 facts off their pages, 2 moved to the right
+  corner.** `corner.py --retest` found 9 of 207 placements in disagreement;
+  8 were confirmed on a re-read, 1 kept. Wrong quadrant or side: 479 Fulton
+  is the SE corner of Octavia, not the NE (the NE is one 1974 parcel, 450-550
+  Fulton); 1427 6th Avenue is the west side where the record says the E line
+  (the east-side lot at 150 ft, 1426, is of 1907 and four storeys); and 1401
+  Hyde is the NW corner of Washington — the SW is **1369 Hyde, which Planning
+  names KEYSTONE APARTMENTS, the building the record names**, so the
+  painting contract moved there. Lots one to five lots from the corner the
+  record names: 415 O'Farrell (the SW corner lot, 401 O'Farrell, is roll
+  1910 and six storeys like the record but 6,372 sq ft against 75 by 72, and
+  this source's own December loan record calls it 72 by 92 — not re-placed);
+  71 Parnassus (the SE corner lot, 81-97 Parnassus, is the record's 30 by 100
+  to the square foot, but roll 1907 — left with the refused single
+  candidates); 439 Union (the SW corner of Kearny is 401 Union, 1979
+  condominiums); **2727 Union, whose contract moved to the corner lot, 2759
+  Broderick** — 32:8 by 87:6 on the parcel shapes, the record's lot, roll 1910
+  (page seeded); and 2280 Mission, two lots north of 19th, whose 2,208 sq ft
+  matched the record's 24:6 by 90 while the corner lot is 41 ft wide and of
+  1906. **That one was declined here and published from the permits batch**
+  (`sn85066387-1910-permits-0138`), so the retraction reached a second file:
+  `--retest` now prints each disagreement's twins — the same date on the same
+  parcel in a sibling batch — so the next re-test sees them. Kept: the Olympic
+  Club's contract on 524 Post, placed by name, whose record lot is the club's
+  whole 307:6 holding west of Mason; the 100 ft reach is a single-lot test.
 
 ### The 1909 Building Contracts lists
 
@@ -598,6 +739,24 @@ pages), on the 1910 method. What was new:
 - **Where it fails** is where 1910 failed: 374 no parcel with a roll year near
   1909, 294 single candidates refused, 191 unmeasurable, 67 on streets EAS no
   longer joins.
+- **Re-tested 2026-11-05: 6 facts off their pages, 1 moved to the right
+  corner.** `corner.py --retest` found 8 of 230 placements in disagreement,
+  and every one was confirmed on a re-read. Three in the wrong quadrant or on
+  the wrong side: 2300 Lombard is the NW corner of Pierce, not the NE (the NE
+  is 2298 Lombard, condominiums of 2007); 760 8th Avenue is the east side, the
+  evens, where the record says the W line (the west-side lots at 200 ft are of
+  1936 and 1978); and 500 Guerrero is the SW corner of 17th, so Hudson's
+  contract moved to 494 Guerrero, the NW corner, roll 1909 and three storeys.
+  Five lots two to four lots from a corner held by another lot: 222 Powell
+  (the corner lot, 200 Powell, fits the 27:4 by 77:6 but is of 1933), 1624
+  Sacramento twice (the corner lot 0621013, 1688 Sacramento, *is* the record's
+  77:8½ by 85 to the square foot, and carries a 1995 building), 746 Commercial
+  (the NW corner lot is twice the record's 41:11 by 30), and **3560
+  Washington, whose 50 by 127:8½ matches the record exactly and is still the
+  wrong lot**: every full-depth lot on that block face is 127:8½ deep and most
+  are 50 wide, and the NE corner itself, 3590 Washington, is of 1909 but
+  re-lotted as condominiums. An exact area is evidence of a lot only where the
+  lots around it differ.
 
 ### The 1908 Building Contracts lists
 
@@ -652,6 +811,18 @@ Read 2026-10-04, every page of 1908 the three batches hold (`indio`,
   Building's four entries at 701 Market, whose 75 by 70 lot matches exactly
   and is the corner of Third and Market; Market's width puts it 125 ft from
   the node. The batch now has 498 resolved and 367 published on 367 pages.
+- **Re-read 2026-11-09: two offset placements off.** The 2026-11-08 offset
+  check flagged 651 5th Avenue (1285, "W line, 230 S of Balboa") and 243 7th
+  Avenue (1540, "W line, 232:6 S of California"). Both were placed on
+  corner.py's EAS crossing estimate, which put the printed offset on 651 and
+  243; on the parcel outlines measured from the DPW node their parcels (since
+  re-cut, the pages on the successors 1639059 and 1426061) front 70 and 20 ft
+  past the printed lot. Measured with `corner.py A B --along S`, the printed
+  lots are 639 5th Avenue (5 ft off, roll 1906) and 241 7th Avenue (4.5 ft
+  off, and rolled 1911) — both past the 4 ft the batch was placed on — so
+  both came off without a re-placement. The batch now has 496 resolved and
+  365 published. **Measure an offset from the block's first
+  lot, not the node**: California's line is 74 ft from its 7th Avenue node.
 
 ### The 1907 Building Contracts lists
 
@@ -694,6 +865,28 @@ Read 2026-10-04, every page of 1907 the three batches hold (`hercules_ver01`,
   *new* building of 1910, at Grant Avenue, on a lot that before the fire held a
   one-storey wooden shop. The three 1906 and four 1907 entries stay
   unresolved, with that reason recorded.
+- **Re-tested 2026-11-04: 9 facts off their pages, 3 moved to the right
+  corner.** `corner.py --retest` found 18 of 274 placements in disagreement.
+  Re-read against the parcels at each corner: 11 are retracted — six where the
+  placed lot is two to four lots from a corner held by another building (10
+  Rondel, 270 O'Farrell beside the six-storey Hotel Gloster, 423 Gough, 775
+  Frederick, 1407 Noe, 6100 California at the 23rd Avenue end), three in the
+  wrong quadrant or on the wrong side (4212 25th is the NW corner; 562 Grant the
+  SE, twice; 570 7th Avenue the east side), and the already-declined SW-corner
+  Drumm entry on 2 California, which is the NW. **The corner lot at 401 Gough
+  (0808005) matches the 26 by 90 exactly but has no 2025 roll row**, so that
+  1907 four-storey frame goes nowhere. Three were re-placed where the right
+  parcel fits the record as well as the method asks: 1385 Clay's contract to
+  0216006 (1301 Leavenworth / 1416 Clay, 4,743.75 sq ft — 57:6 by 82:6, the
+  record's ?7:6 by 82:6), 800 Grant's to 0225001 (749 Grant, the SW corner's
+  one parcel, 1907, two storeys), and the Italian-American Bank's fixtures from
+  the Potter Building (block 0228, the NE corner) to 456 Montgomery, the bank's
+  Landmark No. 110 site, already carrying its 1906 granite contract. Four
+  stand: 1049 Market (twice) and 870 Broadway, where the test's street axis was
+  a kerb-return arc (fixed in `corner.py`), and 1377 Harrison, 103 ft out but
+  inside the record's own 100-ft corner lot on two 82:6 streets. The SW corner
+  of California and Grant is the Sing Fat Building, whose roll row has no year,
+  so its two entries stay unresolved.
 - **Where it fails:** 508 no parcel with a roll year near 1907, 459 single
   candidates refused, 444 unmeasurable, 156 on garbled or vanished streets,
   53 matching several parcels, 28 numbers refused or unknown, 11 re-lotted
@@ -1013,6 +1206,15 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   further contracts for a building already carrying one, 1 contradicting a
   1908 contract already on the page. Batch file
   `findings/loc-newspapers/sn85066387-1907-building-contracts.json`.)
+- **Verified:** 2026-11-10 (#556, the findings the old condominium rule held
+  back, re-resolved now that a condominium is paged as a building. Three
+  move: 673 Kansas, a 1907 building of two units, seeded and carrying its
+  1911 basement-flat contract; 2337 Mission, the Excelsior Hall of 1910, and
+  172 Carl, a 1913 cottage turned into flats, both resolved and declined,
+  because the roll gives no year for the first and 1952 for the second.
+  **Check the seeder's proposed lots against sf-parcels' `mapblklot`:** at
+  673 Kansas it proposed four lots, 041 to 044, where 043 and 044 are 675 and
+  675A Kansas, a separate condominium next door built the same year.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1910 Real Estate and Financial Section read in full, three
   times over** — numbered/architect/corner entries (#three 1910 batches),
@@ -1035,10 +1237,14 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   (2026-11-03, `corner.py --retest`: 30 retracted, see the 1908 section); 1499 Sutter's 1907 placement
   stands (the parcel shapes put 0689012 at block 0689's NW corner, the SE corner of Sutter and Gough,
   and its 137:6 square lot matches exactly — the doubt came from the crossing estimate, 120 ft off);
-  the Union Trust building is placed as demolished (see the 1907 section). **Next:** the same
-  `--retest` on the 1907, 1909, 1910 (all four files), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
+  the Union Trust building is placed as demolished (see the 1907 section). **The 1907 lists' corner
+  placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **The 1909 lists'
+  corner placements are re-tested** (2026-11-05: 7 retracted, 1 re-placed, see the 1909 section). **The 1910
+  lists' corner placements are re-tested** (2026-11-06: 6 retracted, 2 re-placed, see the 1910 section). **The 1910 January–June real-estate
+  batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section; re-tested again 2026-11-08 with the new offset and reach checks: 40 ok or kept). **The 1910 July–December real-estate batch's placements are re-tested** (2026-11-09: 35 ok, 2 retracted, 2 kept by name; see the second-half 1910 cautions), and 1908's 651 5th Avenue and 243 7th Avenue are re-read and retracted. **Next:** the same
+  `--retest` on the other two 1910 files (`permits`, `offsets`), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
   one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
-  of 375 published; then the 1907–1913 lists'
+  of 375 published, 1907's 9 of 242 retracted and 3 moved, 1909's 6 of 229 retracted and 1 moved; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
   parcel was re-cut. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — was sized on 2026-10-06 against

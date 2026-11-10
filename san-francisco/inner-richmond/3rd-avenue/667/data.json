@@ -1,0 +1,157 @@
+{
+  "address": "667–669 3rd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/3rd-avenue/667/",
+  "apn": "1641017",
+  "block": "1641",
+  "lot": "017",
+  "eas_baseid": "472054",
+  "coordinates": {
+    "lat": 37.776124,
+    "lng": -122.461035
+  },
+  "address_range": "667–669",
+  "street_numbers_on_parcel": [
+    "667",
+    "669"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3917,
+    "basement_area_sqft": 683,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "WOO",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0669 0667 03RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 790333,
+    "assessed_improvement_value": 1236952,
+    "last_sale_date": "2005-01-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200704189063",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-18",
+      "status_date": "2007-04-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision 200503076870. install gas meter for new unit. relocate bathroom and laundry room for 2nd and 3rd floor each unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612139726",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-13",
+      "status_date": "2006-12-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to modify application#200503076870. the job address should be known as 667-3rd ave and 669 3rd ave.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M50923",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-13",
+      "status_date": "2006-12-13",
+      "revised_cost": 0,
+      "description": "verification and additional address",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608220120",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-08-22",
+      "status_date": "2006-08-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision of app 2005/03/07/6870 s1.r, revise south side foundation detail as a-s and b-s shown on sheet s1.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503076870",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2005-03-07",
+      "status_date": "2007-05-16",
+      "estimated_cost": 200000,
+      "revised_cost": 380000,
+      "description": "add & remodel from single family residence to 2 family residences.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1981-11-10",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1450,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=AVE&address_number=667",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1641017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1641&lot=017",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1641017",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-12-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 December 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/58minutesofsanfran2005san/page/n292/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-12-01",
+      "kind": "occupancy",
+      "description": "An existing three-story, single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-12-01"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "address": "1233 Howard Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/howard-street/1233/unit-2e/",
+  "unit": "2E",
+  "apn": "3729107",
+  "block": "3729",
+  "lot": "107",
+  "parcel": {
+    "building_area_sqft": 1120,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 606795,
+    "assessed_improvement_value": 404529,
+    "last_sale_date": "2014-05-09"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3729107&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3729&unit=2E",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

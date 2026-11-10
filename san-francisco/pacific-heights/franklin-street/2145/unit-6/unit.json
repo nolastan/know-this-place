@@ -1,0 +1,68 @@
+{
+  "address": "2145 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/2145/unit-6/",
+  "unit": "6",
+  "apn": "0593049",
+  "block": "0593",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 1810,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 183963,
+    "assessed_improvement_value": 505934,
+    "last_sale_date": "1989-12-29"
+  },
+  "permits": [
+    {
+      "number": "202302272674",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-27",
+      "status_date": "2023-03-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision: permit number 202302061445: was issued for unt 4. work taking place in one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308134160",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-13",
+      "status_date": "2013-08-15",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace 4 windows in 2 bathrooms. same size, same location, non-street facing. no egress windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903184335",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-18",
+      "status_date": "2009-10-27",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit - remove/replace vanity, remove tub & install shower, remove/replace toilet & existing window, update electrical & add cans, install tile @ bath #1 area. remove/replace tub, toilet & vanity, update electrical, add cans, install tile @ bath #2.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0593049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0593&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

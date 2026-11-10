@@ -1,0 +1,78 @@
+{
+  "address": "2190 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/2190/unit-7w/",
+  "unit": "7W",
+  "apn": "0565039",
+  "block": "0565",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 3200,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2877677,
+    "assessed_improvement_value": 1918451,
+    "last_sale_date": "2021-08-16"
+  },
+  "permits": [
+    {
+      "number": "202302101829",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-10",
+      "status_date": "2025-10-06",
+      "estimated_cost": 160000,
+      "revised_cost": 160000,
+      "description": "remodel (4) bathrooms and (1) kitchen to include new fixtures and finishes in kind - no relocation of plumbing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210091597",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-10-09",
+      "status_date": "2012-10-12",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "7w, breakfast room - remove cabinets, non bearing wall, ornamental header and refigerator. new soffit to match existing. new low voltage recessed light fixture to match existing halo h1499t 50watt 12 volt mr16 max with 1493w trim. relocate light fixture. patch hardwood flooring as needed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205136396",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-13",
+      "status_date": "2006-12-29",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "#8 remodel of kitchen bedrooms and bathrooms also #7 (same) renew app #200009221273",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009150668",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2000-09-15",
+      "status_date": "2024-10-31",
+      "description": "disregard application",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0565039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0565&unit=7W",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

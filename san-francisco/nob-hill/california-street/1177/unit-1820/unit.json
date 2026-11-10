@@ -1,0 +1,68 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1820/",
+  "unit": "1820",
+  "apn": "0253A002",
+  "block": "0253A",
+  "lot": "002",
+  "parcel": {
+    "building_area_sqft": 1893,
+    "rooms": 6,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 439738,
+    "assessed_improvement_value": 667759,
+    "last_sale_date": "2025-01-10"
+  },
+  "permits": [
+    {
+      "number": "202506118418",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-11",
+      "status_date": "2025-07-11",
+      "estimated_cost": 95000,
+      "revised_cost": 103967,
+      "description": "18/f suite 1820: interior renovation of kitchen and 2 bathrooms. remove 1 non-structural wall. no exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503248324",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-24",
+      "status_date": "2005-03-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa 200407300296 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407300296",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-07-30",
+      "status_date": "2004-07-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "continue exist cafe space to be remodel under new tenant for same cafe use-exist plumb&elec......",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1820",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "address": "690 Market Street, San Francisco, CA 94104",
+  "path": "/san-francisco/east-cut/market-street/690/unit-2005/",
+  "unit": "2005",
+  "apn": "0311102",
+  "block": "0311",
+  "lot": "102",
+  "parcel": {
+    "building_area_sqft": 952,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 467936,
+    "assessed_improvement_value": 467936,
+    "last_sale_date": "2013-01-15"
+  },
+  "permits": [
+    {
+      "number": "201508315727",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-31",
+      "status_date": "2015-12-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit: revision to ref pa 2014 0725 2176 -reduction of work -delete 1 bathroom renovation, 2 closets. removing work at master closet. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407252176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-25",
+      "status_date": "2015-12-28",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "#2005:replace powder room w/new full bathroom w/shower stall; convert (e) master closet to study, add murphy bed w/enclosure; add 2 (n) master bedroom closets; replace (e) tile and hardwood floor w/eng hardwood; replace & install",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0311102&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0311&unit=2005",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

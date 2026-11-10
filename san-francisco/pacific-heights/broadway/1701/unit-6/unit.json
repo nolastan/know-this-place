@@ -1,0 +1,58 @@
+{
+  "address": "1701 Broadway, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/broadway/1701/unit-6/",
+  "unit": "6",
+  "apn": "0576071",
+  "block": "0576",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1821,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1470833,
+    "assessed_improvement_value": 980555,
+    "last_sale_date": "2022-04-22"
+  },
+  "permits": [
+    {
+      "number": "201507141402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-14",
+      "status_date": "2015-11-18",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "replace all cabinets, appliances in kitchen, replace fixtures and finishes in masterbath. replace fixtures and finishes in guest bath. replace one window with awning window in guest bath in rear of bldg. no walls to be altered or removed. n/a for the maher ordinance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200304253185",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-04-25",
+      "status_date": "2003-08-08",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "remove bathtub & install new tub move shower valve to other wall.remove cabinet & install vanity",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0576071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0576&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

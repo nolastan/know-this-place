@@ -1,0 +1,69 @@
+{
+  "address": "101 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/101/unit-2/",
+  "unit": "2",
+  "apn": "2623093",
+  "block": "2623",
+  "lot": "093",
+  "parcel": {
+    "building_area_sqft": 1124,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1013155,
+    "assessed_improvement_value": 675436,
+    "last_sale_date": "2020-11-12"
+  },
+  "permits": [
+    {
+      "number": "201505015110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-01",
+      "status_date": "2015-06-17",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "one unit - to comply w/complaint #201534081: install 12\" x 30\" window in top floor bedroom for ventilation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408264695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-26",
+      "status_date": "2015-02-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit. replace private existing deck. replace in kind. decking repairs less than 50% of deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405145693",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-14",
+      "status_date": "2015-02-23",
+      "estimated_cost": 68000,
+      "revised_cost": 68000,
+      "description": "one unit- remodel bathroom replace all fixtures in same locationss; replace sliding door/ rear door/ bathroom window u factor of .4; new hardwood flooring on 2/f/ re-finish (e) hardwood on 1/f; install recessed can lightings/ lower bay window framing/ paint interior/ misc. rot repair,",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

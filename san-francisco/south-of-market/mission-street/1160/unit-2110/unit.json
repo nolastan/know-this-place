@@ -1,0 +1,69 @@
+{
+  "address": "1160 Mission Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/mission-street/1160/unit-2110/",
+  "unit": "2110",
+  "apn": "3702278",
+  "block": "3702",
+  "lot": "278",
+  "parcel": {
+    "building_area_sqft": 626,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 360132,
+    "assessed_improvement_value": 240087,
+    "last_sale_date": "2010-04-16"
+  },
+  "permits": [
+    {
+      "number": "201005031554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-03",
+      "status_date": "2010-05-12",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "add (n) smoke detector to 2110 inteconnected all detectors into 2108. fire insp to field verify that all sd's in both units are inter-connected with each other.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004220873",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-04-22",
+      "status_date": "2010-04-23",
+      "estimated_cost": 250,
+      "revised_cost": 250,
+      "description": "21st floor. add one sprinkler due to tenant modification",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002166549",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-16",
+      "status_date": "2010-05-12",
+      "estimated_cost": 2000,
+      "revised_cost": 1000,
+      "description": "an opening to be constructed to merge condo one unit into one unit. one unit has never been occupied. this work/application is for one unit. compliance with ab-005 required final sign-off by fire inspector. sprinklers and fire alarm on separate permit per ab-005.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3702278&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3702&unit=2110",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

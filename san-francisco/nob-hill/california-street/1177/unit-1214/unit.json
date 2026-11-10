@@ -1,0 +1,53 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1214/",
+  "unit": "1214",
+  "apn": "0253A064",
+  "block": "0253A",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 1399,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 652800,
+    "assessed_improvement_value": 435200,
+    "last_sale_date": "2022-05-06"
+  },
+  "permits": [
+    {
+      "number": "201507212045",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-21",
+      "status_date": "2015-10-29",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "#1214 - replace kitchen & bath cabinets, countertop, fixtures, appliances, & floor finishes. add shut off valves at kitchen & bathrooms. replace light fixtrues, & add light fixture in living room. comply with cec 150.0(k) 5.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1214",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

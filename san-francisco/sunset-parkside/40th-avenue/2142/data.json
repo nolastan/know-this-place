@@ -1,0 +1,143 @@
+{
+  "address": "2142 40th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/40th-avenue/2142/",
+  "apn": "2178042",
+  "block": "2178",
+  "lot": "042",
+  "eas_baseid": "331961",
+  "coordinates": {
+    "lat": 37.746839,
+    "lng": -122.498197
+  },
+  "parcel": {
+    "year_built": 1949,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2680,
+    "basement_area_sqft": 275,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2142 40TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 207645,
+    "assessed_improvement_value": 569941,
+    "last_sale_date": "1995-08-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1949",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200804240584",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-24",
+      "status_date": "2008-09-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200311170325 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311170325",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-11-17",
+      "status_date": "2008-09-03",
+      "estimated_cost": 188280,
+      "revised_cost": 265000,
+      "description": "add horizontally to rear yard 15'-0\" + new deck/stairs required exit. add third floor vertical addit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102212615",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-02-21",
+      "status_date": "2001-06-21",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "replace 4 wndw in kind/double pane vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900959",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-01-15",
+      "status_date": "1999-05-13",
+      "estimated_cost": 600,
+      "description": "two new partitions to create storage room at ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819786",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-30",
+      "status_date": "1999-03-01",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=40TH&street_type=AVE&address_number=2142",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2178042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2178&lot=042",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2178042",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-09-09",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 9 September 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n107/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-09-09",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved a two-story rear addition with stairs and a one-story addition on top of the building.",
+      "source": "sf-planning-commission-minutes-2004-09-09"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "3011 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3011/unit-3/",
+  "unit": "3",
+  "apn": "4085047",
+  "block": "4085",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 1176,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 594159,
+    "assessed_improvement_value": 118831,
+    "last_sale_date": "2012-11-02"
+  },
+  "permits": [
+    {
+      "number": "202407096057",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2024-07-09",
+      "status_date": "2024-08-05",
+      "estimated_cost": 800000,
+      "revised_cost": 300000,
+      "description": "one unit: in kind fire repairs (4th floor/penthouse). remove and replace damaged drywall, insulation & finishes, in kind throughout residence. remove & replace windows in kind at lightwell. replace exterior finishes, walls & deck in kind. replace drywall & insulation at 4th floor interior stairwell.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307242786",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-07-24",
+      "status_date": "2025-10-16",
+      "estimated_cost": 50000,
+      "revised_cost": 340250,
+      "description": "one unit: 4th floor. repair fire damage per nov 2023-01881: remodel entire unit apart from front windows. new kitchen and bathroom fixtures and fininshes. replace furnace and ducting. replace electrical.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4085047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4085&unit=3",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

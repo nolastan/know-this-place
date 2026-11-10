@@ -1,0 +1,58 @@
+{
+  "address": "930 Pine Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/pine-street/930/unit-302/",
+  "unit": "302",
+  "apn": "0254066",
+  "block": "0254",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 738,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 275896,
+    "assessed_improvement_value": 275896,
+    "last_sale_date": "2002-12-20"
+  },
+  "permits": [
+    {
+      "number": "201901301653",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-30",
+      "status_date": "2019-04-08",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "bathroom remodel like-for-like. upgrade electrical to code. no change of existing floor plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406015185",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-01",
+      "status_date": "2005-01-20",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace rotten framing, reinstall window, replace some shingles, repair and restucco soffitt",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0254066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0254&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

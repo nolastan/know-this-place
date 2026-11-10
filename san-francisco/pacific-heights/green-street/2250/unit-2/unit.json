@@ -1,0 +1,44 @@
+{
+  "address": "2250 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/2250/unit-2/",
+  "unit": "2",
+  "apn": "0539055",
+  "block": "0539",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 554,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60444,
+    "assessed_improvement_value": 93001
+  },
+  "permits": [
+    {
+      "number": "202411044364",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2024-11-22",
+      "status_date": "2026-01-08",
+      "estimated_cost": 100000,
+      "revised_cost": 120000,
+      "description": "voluntary seismic upgrade per cebc 2022 ch-a4 on ground floor. 1st floor and 2nd floor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0539055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0539&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

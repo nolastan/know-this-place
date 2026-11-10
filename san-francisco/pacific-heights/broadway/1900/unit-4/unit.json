@@ -1,0 +1,47 @@
+{
+  "address": "1900 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1900/unit-4/",
+  "unit": "4",
+  "apn": "0567033",
+  "block": "0567",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 1518,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 819664,
+    "assessed_improvement_value": 898789,
+    "last_sale_date": "2009-10-21"
+  },
+  "permits": [
+    {
+      "number": "201107079708",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-07",
+      "status_date": "2011-10-11",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "work is at one unit: kitchen and bathroom remodel, relocate washer/dryer from kitchen to hallway closet. remodel areas include (e) kitchen (130 sq. ft), master bathroom (45 sq. ft) and hallway bthroom (51 sq. ft.) lighting must comply with cec 150(k). dryer exhaust duct to be reused.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

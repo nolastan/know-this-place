@@ -1,0 +1,58 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-215/",
+  "unit": "215",
+  "apn": "3789468",
+  "block": "3789",
+  "lot": "468",
+  "parcel": {
+    "building_area_sqft": 1577,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 780230,
+    "assessed_improvement_value": 520151,
+    "last_sale_date": "2011-03-18"
+  },
+  "permits": [
+    {
+      "number": "201407312739",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-31",
+      "status_date": "2014-11-05",
+      "estimated_cost": 10500,
+      "revised_cost": 13500,
+      "description": "remove (e) bathroom vanitys, tile work, existing plumbing and electrical fixtures and replace with new. no walls moved, removed or added. all fixture locatons and layouts to remain unchanged. n/a maher ordinance 155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403249570",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-24",
+      "status_date": "2004-09-01",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "chg out kitchen cabinets,appliance&add elctrical outlets&lighting & external exist gas to range.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789468&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=215",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "address": "77 Grand View Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/grand-view-avenue/73/unit-303/",
+  "unit": "303",
+  "apn": "2748037",
+  "block": "2748",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1164,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 480892,
+    "assessed_improvement_value": 480892,
+    "last_sale_date": "2005-04-22"
+  },
+  "permits": [
+    {
+      "number": "201208076733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-07",
+      "status_date": "2012-08-16",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace 90 sq ft of siding. install new hardi siding. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107200636",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-20",
+      "status_date": "2011-09-01",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "remove old tile at tub surround, change out shower valve, install new lavatory, tile floor, paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012136568",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-13",
+      "status_date": "2012-02-15",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "one unit -to comply w/comp #201065230: remove (e) balcony/deck on 3rd floor. deck will be completely removed from roof, a safety guardrail 42\" min in height will be installed at existing sliding door . a separte per will be obtained if decides to reinstall the roof deck.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2748037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2748&unit=303",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

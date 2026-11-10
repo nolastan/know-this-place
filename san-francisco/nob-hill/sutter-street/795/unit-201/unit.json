@@ -1,0 +1,68 @@
+{
+  "address": "795 Sutter Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/sutter-street/795/unit-201/",
+  "unit": "201",
+  "apn": "0298042",
+  "block": "0298",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 1784,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159665,
+    "assessed_improvement_value": 254169
+  },
+  "permits": [
+    {
+      "number": "202606153241",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-15",
+      "status_date": "2026-06-15",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revision of pa#202512172053 to add kitchen hood install to scope of work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202512172053",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-17",
+      "status_date": "2026-06-24",
+      "estimated_cost": 35000,
+      "revised_cost": 22000,
+      "description": "recommencement and completion of work approved under pa# 2024-1009-2664",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410092664",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-09",
+      "status_date": "2024-10-09",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit: re-do bathroom shower pan and tile. bath #2 - retile. e) toilets and vanities to remain",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0298042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0298&unit=201",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

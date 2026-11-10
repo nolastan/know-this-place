@@ -1,0 +1,47 @@
+{
+  "address": "260 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/260/unit-6/",
+  "unit": "6",
+  "apn": "3753172",
+  "block": "3753",
+  "lot": "172",
+  "parcel": {
+    "building_area_sqft": 938,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 465445,
+    "assessed_improvement_value": 465445,
+    "last_sale_date": "2021-03-19"
+  },
+  "permits": [
+    {
+      "number": "201304013500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-01",
+      "status_date": "2013-06-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "renovation of kitchen in kind. replace cabinets and instll new appliances. no structural work. bring (e) electrical no code. no commercial use.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753172&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

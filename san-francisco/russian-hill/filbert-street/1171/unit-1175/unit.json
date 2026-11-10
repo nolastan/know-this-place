@@ -1,0 +1,56 @@
+{
+  "address": "1175 Filbert Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/filbert-street/1171/unit-1175/",
+  "apn": "0097063",
+  "block": "0097",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 1305,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 801108,
+    "assessed_improvement_value": 801108,
+    "last_sale_date": "2023-02-10"
+  },
+  "permits": [
+    {
+      "number": "201309035806",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-03",
+      "status_date": "2013-09-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "bathroom remodel, new plumbing fixture, no walls moved. new lighting fixtures, new tile, new tub.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909287818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-28",
+      "status_date": "2010-01-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel kitchen & laundry only; 1 new header beam.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0097063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0097&street_number=1175",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

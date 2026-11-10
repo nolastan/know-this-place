@@ -1,0 +1,64 @@
+{
+  "address": "101 States Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/states-street/101/unit-5/",
+  "unit": "5",
+  "apn": "2623096",
+  "block": "2623",
+  "lot": "096",
+  "parcel": {
+    "building_area_sqft": 1635,
+    "rooms": 6,
+    "bedrooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 893648,
+    "assessed_improvement_value": 927112,
+    "last_sale_date": "2016-12-28"
+  },
+  "permits": [
+    {
+      "number": "201808217915",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-21",
+      "status_date": "2019-05-21",
+      "estimated_cost": 30000,
+      "revised_cost": 33000,
+      "description": "replace e windows and doors interior and exterior, see schedules. no changes bisible from street. n 24\"x60\" window at 3rd level. replce e interior wall at stairway. new recessed lighting at main level, move e sink at 3rd fl bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608316491",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-31",
+      "status_date": "2016-11-14",
+      "estimated_cost": 35000,
+      "revised_cost": 50000,
+      "description": "replace kitchen counter top, add 2 cabinets. remodel (3) existing baths. no movement of fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2007–2018",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

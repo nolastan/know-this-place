@@ -1,0 +1,154 @@
+{
+  "address": "336 Munich Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/munich-street/336/",
+  "apn": "6074032",
+  "block": "6074",
+  "lot": "032",
+  "eas_baseid": "390693",
+  "coordinates": {
+    "lat": 37.720369,
+    "lng": -122.427544
+  },
+  "parcel": {
+    "year_built": 2009,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1920,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0336 MUNICH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73893,
+    "assessed_improvement_value": 682691
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2009",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809303080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-30",
+      "status_date": "2009-09-25",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "to complete work and obtain final inspection for work approved under pa#20040645620.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809232375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-23",
+      "status_date": "2009-09-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to orig. permit 200406045620. structural ing. replacement of hod downs with strap type hold down at various locations(also post connetion). roof system is changed from tradtional joist system to sip panel construction",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406045613",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2004-06-04",
+      "status_date": "2006-06-30",
+      "description": "demolish a one story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406045620",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "2004-06-04",
+      "status_date": "2009-01-27",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "erect a two story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2004–2009",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MUNICH&street_type=ST&address_number=336",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6074032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6074&lot=032",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6074032",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-03-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 March 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n163/mode/1up",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-04-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 April 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/57minutesofsanfran2005san/page/n193/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-03-24",
+      "kind": "occupancy",
+      "description": "An existing single-family dwelling stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-03-24"
+    },
+    {
+      "date": "2005-04-07",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the demolition at 336 Munich Street.",
+      "source": "sf-planning-commission-minutes-2005-04-07"
+    },
+    {
+      "date": "2005-04-07",
+      "kind": "planning decision",
+      "description": "The City Planning Commission did not take discretionary review and approved the new construction at 336 Munich Street.",
+      "source": "sf-planning-commission-minutes-2005-04-07"
+    }
+  ]
+}

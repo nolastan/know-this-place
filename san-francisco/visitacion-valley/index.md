@@ -6,6 +6,7 @@ The city's Visitacion Valley analysis neighborhood, in the south-eastern corner 
 
 - [Arleta Avenue](arleta-avenue/) — 1 building, built 1912.
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 2 buildings, built 1930–1955.
+- [Campbell Avenue](campbell-avenue/) — 1 building, built 2008.
 - [Lathrop Avenue](lathrop-avenue/) — 1 building, built 1943; 1 in the Little Hollywood Historic District.
 - [Leland Avenue](leland-avenue/) — 1 building.
 - [Raymond Avenue](raymond-avenue/) — 1 building, built 1940.

@@ -8,7 +8,7 @@
   "examined": 84,
   "mentions": 393,
   "remaining": "July to December 1910 (26 Saturdays, curiv_klamath_ver01 from July, curiv_mecca_ver01 and curiv_needles_ver01) is on disk in a session that fetched it and unread. In January to June, the building-contract and permit paragraphs that name only a private owner and no architect (roughly 150 corner and offset entries) were not taken; they are the next corner.py batch. The Real Estate Transactions lists are metes-and-bounds and were not read for entries.",
-  "note": "393 numbered-address mentions on the 84 pages, merged into 268 passages, and about 150 passages naming an architect or a corner, read one by one. About a third of the numbered mentions are brokers' and advertisers' own offices, and many are Oakland, Richmond, the peninsula or the Central Valley. 172 findings: 76 at a street number, 96 located by corner, offset or building name; 76 resolved (45 by hand), 96 unresolved, most because the building has been replaced and nothing of the period survives on the corner, or the number no longer exists; 73 published on 68 pages, 28 of them seeded; 3 declined as duplicates of what the page already carried."
+  "note": "393 numbered-address mentions on the 84 pages, merged into 268 passages, and about 150 passages naming an architect or a corner, read one by one. About a third of the numbered mentions are brokers' and advertisers' own offices, and many are Oakland, Richmond, the peninsula or the Central Valley. 172 findings: 76 at a street number, 96 located by corner, offset or building name; 76 resolved (45 by hand), 96 unresolved, most because the building has been replaced and nothing of the period survives on the corner, or the number no longer exists; 73 published on 68 pages, 28 of them seeded; 3 declined as duplicates of what the page already carried. Re-tested 2026-11-07 with corner.py --retest: 35 of the 41 corner.py placements given street_name, extra.cross_street_name and extra.corner_quad or extra.side from the record (they had none) and all 35 agree with the DPW street network; the other 6 are placed by building name and name no quadrant. Nothing came off a page. Re-tested again 2026-11-08 with the reach check for 'at X and Y' records: 5 of those 6 given street_name and extra.cross_street_name from the record (0090, the hall 'on the site of the old one', has no corner); 4 within 100 ft of the corner, and 0081, the San Francisco Savings Union on 1 Grant, 135 ft from the one DPW node of Market, Grant and O'Farrell, in the middle of Market - kept, since Planning names the parcel the Savings Union branch, roll 1910. The offset check passes every offset entry: frontages begin 22-39 ft past the printed offset, half a cross street's width."
  },
  "findings": [
   {
@@ -2703,7 +2703,9 @@
    "extra": {
     "architect": "Crim & Scott",
     "lot_as_recorded": "100 feet square",
-    "record_date": "1910-01-08"
+    "record_date": "1910-01-08",
+    "cross_street_name": "VALENCIA",
+    "cross_street_type": "ST"
    },
    "citation": {
     "label": "The San Francisco Call, 8 January 1910, p. 17",
@@ -2728,7 +2730,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "16TH",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0078",
@@ -2739,7 +2743,9 @@
    "description": "The Union Trust Company's banking building: Clinton Day completed the plans for the banking-room interior.",
    "extra": {
     "architect_as_recorded": "Clinton Day (interior plans)",
-    "record_date": "1910-01-08"
+    "record_date": "1910-01-08",
+    "cross_street_name": "GRANT",
+    "cross_street_type": "AVE"
    },
    "citation": {
     "label": "The San Francisco Call, 8 January 1910, p. 17",
@@ -2765,7 +2771,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "MARKET",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0079",
@@ -2777,7 +2785,10 @@
    "extra": {
     "price_usd": 375000,
     "buyer": "United States government",
-    "record_date": "1910-01-08"
+    "record_date": "1910-01-08",
+    "cross_street_name": "SANSOME",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 8 January 1910, p. 17",
@@ -2804,7 +2815,9 @@
     "status": "published",
     "note": "About the building's origin: the site bought for the subtreasury the page records, not an occupancy of the building.",
     "pr": "405"
-   }
+   },
+   "street_name": "PINE",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0080",
@@ -2816,7 +2829,10 @@
    "extra": {
     "architect": "J. E. Krafft & Sons",
     "storeys": "6 and basement",
-    "record_date": "1910-01-08"
+    "record_date": "1910-01-08",
+    "cross_street_name": "LEAVENWORTH",
+    "cross_street_type": "ST",
+    "corner_quad": "NW"
    },
    "citation": {
     "label": "The San Francisco Call, 8 January 1910, p. 19",
@@ -2841,7 +2857,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "EDDY",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0081",
@@ -2852,7 +2870,9 @@
    "description": "The San Francisco Savings Union's building, under construction to plans by Bliss & Faville: granite walls trimmed with bronze, a granite dome, and frontages on four streets, Grant Avenue, Market, O'Farrell and Bagley Place.",
    "extra": {
     "architect": "Bliss & Faville",
-    "record_date": "1910-01-15"
+    "record_date": "1910-01-15",
+    "cross_street_name": "OFARRELL",
+    "cross_street_type": "ST"
    },
    "citation": {
     "label": "The San Francisco Call, 15 January 1910, p. 17",
@@ -2877,7 +2897,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "GRANT",
+   "street_type": "AVE"
   },
   {
    "id": "sn85066387-1910-real-estate-0082",
@@ -2889,7 +2911,10 @@
    "extra": {
     "architect": "Bliss & Faville",
     "cost_usd": 300000,
-    "record_date": "1910-01-15"
+    "record_date": "1910-01-15",
+    "cross_street_name": "MISSION",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 15 January 1910, p. 17",
@@ -2914,7 +2939,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "NEW MONTGOMERY",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0083",
@@ -2927,7 +2954,12 @@
     "architect": "Cunningham & Politeo",
     "owner_firm": "J. G. Walker Company",
     "lot_as_recorded": "93:6x93:6",
-    "record_date": "1910-01-15"
+    "record_date": "1910-01-15",
+    "cross_street_name": "ELLIS",
+    "cross_street_type": "ST",
+    "side": "W",
+    "offset_ft": 44,
+    "direction": "N"
    },
    "citation": {
     "label": "The San Francisco Call, 15 January 1910, p. 17",
@@ -2952,7 +2984,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "POWELL",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0084",
@@ -2963,7 +2997,10 @@
    "description": "The Buena Vista apartment house, a four-storey and basement frame building, was sold.",
    "extra": {
     "building_name_as_recorded": "Buena Vista apartment house",
-    "record_date": "1910-01-22"
+    "record_date": "1910-01-22",
+    "cross_street_name": "CENTRAL",
+    "cross_street_type": "AVE",
+    "corner_quad": "NE"
    },
    "citation": {
     "label": "The San Francisco Call, 22 January 1910, p. 16",
@@ -2988,7 +3025,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "HAIGHT",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0085",
@@ -2999,7 +3038,12 @@
    "description": "The Church of the Advent bought the lot, 57 ft 6 in on Fell Street and running back 130 feet to Hickory Avenue, as the site of a new stone church with a frame clergy house beside it.",
    "extra": {
     "institution": "Church of the Advent",
-    "record_date": "1910-01-29"
+    "record_date": "1910-01-29",
+    "cross_street_name": "FRANKLIN",
+    "cross_street_type": "ST",
+    "side": "S",
+    "offset_ft": 137.5,
+    "direction": "W"
    },
    "citation": {
     "label": "The San Francisco Call, 29 January 1910, p. 15",
@@ -3025,7 +3069,9 @@
     "status": "published",
     "note": "About the building's origin: the lot bought for the church built on it that year.",
     "pr": "405"
-   }
+   },
+   "street_name": "FELL",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0086",
@@ -3036,7 +3082,12 @@
    "description": "The Catholic archbishop of San Francisco let the contract for a four-storey brick clergy house on this lot, the building the present rectory replaced.",
    "extra": {
     "owner_institution": "Roman Catholic Archbishop of San Francisco",
-    "record_date": "1910-01-29"
+    "record_date": "1910-01-29",
+    "cross_street_name": "GRANT",
+    "cross_street_type": "AVE",
+    "side": "N",
+    "offset_ft": 87.5,
+    "direction": "E"
    },
    "citation": {
     "label": "The San Francisco Call, 29 January 1910, p. 15",
@@ -3062,7 +3113,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "CALIFORNIA",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0087",
@@ -3073,7 +3126,12 @@
    "description": "The Wall estate let the contract for a six-storey brick building covering a 55 by 77 ft 6 in lot. Cunningham & Politeo, architects.",
    "extra": {
     "architect": "Cunningham & Politeo",
-    "record_date": "1910-01-29"
+    "record_date": "1910-01-29",
+    "cross_street_name": "POWELL",
+    "cross_street_type": "ST",
+    "side": "N",
+    "offset_ft": 27.5,
+    "direction": "E"
    },
    "citation": {
     "label": "The San Francisco Call, 29 January 1910, p. 15",
@@ -3098,7 +3156,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "OFARRELL",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0088",
@@ -3109,7 +3169,10 @@
    "description": "The Mission Turnverein chose A. Reinhold Denke's design for its new hall after a competition among seven architects; the building was estimated at $40,000, exclusive of the land.",
    "extra": {
     "architect": "A. Reinhold Denke",
-    "record_date": "1910-02-05"
+    "record_date": "1910-02-05",
+    "cross_street_name": "LAPIDGE",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 5 February 1910, p. 15",
@@ -3134,7 +3197,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "18TH",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0089",
@@ -3146,7 +3211,10 @@
    "extra": {
     "architect": "A. Reinhold Denke",
     "cost_usd": 42500,
-    "record_date": "1910-04-23"
+    "record_date": "1910-04-23",
+    "cross_street_name": "LAPIDGE",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 23 April 1910, p. 16",
@@ -3171,7 +3239,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "18TH",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0090",
@@ -3218,7 +3288,12 @@
    "description": "Planned: a six-storey and basement class C apartment building. H. Geilfus & Son, architects.",
    "extra": {
     "architect": "H. Geilfus & Son",
-    "record_date": "1910-02-26"
+    "record_date": "1910-02-26",
+    "cross_street_name": "EDDY",
+    "cross_street_type": "ST",
+    "side": "W",
+    "offset_ft": 57.4,
+    "direction": "S"
    },
    "citation": {
     "label": "The San Francisco Call, 26 February 1910, p. 15",
@@ -3243,7 +3318,9 @@
    "publish": {
     "status": "declined",
     "note": "The page already records the 1910 building by H. Geilfuss & Sons; the plan's storey count adds nothing the page can hold without contradicting its survey."
-   }
+   },
+   "street_name": "LEAVENWORTH",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0092",
@@ -3254,7 +3331,10 @@
    "description": "Planned: one of two buildings of six four-room flats each, at the corner. Herman Barth, architect.",
    "extra": {
     "architect": "Herman Barth",
-    "record_date": "1910-02-26"
+    "record_date": "1910-02-26",
+    "cross_street_name": "CLAY",
+    "cross_street_type": "ST",
+    "corner_quad": "NW"
    },
    "citation": {
     "label": "The San Francisco Call, 26 February 1910, p. 16",
@@ -3279,7 +3359,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "HYDE",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0093",
@@ -3327,7 +3409,10 @@
    "extra": {
     "architect": "N. W. Sexton",
     "cost_usd": 55000,
-    "record_date": "1910-02-26"
+    "record_date": "1910-02-26",
+    "cross_street_name": "TAYLOR",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 26 February 1910, p. 17",
@@ -3352,7 +3437,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "SUTTER",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0095",
@@ -3363,7 +3450,10 @@
    "description": "The hotel was designed in the colonial style, faced in red pressed brick with white marble.",
    "extra": {
     "architect": "N. W. Sexton",
-    "record_date": "1910-03-26"
+    "record_date": "1910-03-26",
+    "cross_street_name": "TAYLOR",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 26 March 1910, p. 15",
@@ -3388,7 +3478,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "SUTTER",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0096",
@@ -3400,7 +3492,10 @@
    "extra": {
     "architect": "T. Paterson Ross & A. W. Burgren",
     "cost_usd": 90000,
-    "record_date": "1910-03-26"
+    "record_date": "1910-03-26",
+    "cross_street_name": "HARLAN",
+    "cross_street_type": "PL",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 26 March 1910, p. 17",
@@ -3425,7 +3520,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "GRANT",
+   "street_type": "AVE"
   },
   {
    "id": "sn85066387-1910-real-estate-0097",
@@ -3436,7 +3533,10 @@
    "description": "The new Baldwin Building, planned as an eight-storey steel-frame hotel, each room steam-heated with a private telephone; the lot's temporary buildings were cleared and work was to begin on 1 June.",
    "extra": {
     "architect": "T. Paterson Ross & A. W. Burgren",
-    "record_date": "1910-04-09"
+    "record_date": "1910-04-09",
+    "cross_street_name": "HARLAN",
+    "cross_street_type": "PL",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 9 April 1910, p. 14",
@@ -3461,7 +3561,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "GRANT",
+   "street_type": "AVE"
   },
   {
    "id": "sn85066387-1910-real-estate-0098",
@@ -3472,7 +3574,10 @@
    "description": "Contracts were let for a three-storey brick and frame apartment hotel of 18 apartments of two and three rooms, in the classic style, the walls hung with imported linen tapestry paper. Charles M. and Arthur F. Rousseau, architects.",
    "extra": {
     "architect": "Charles M. and Arthur F. Rousseau",
-    "record_date": "1910-04-02"
+    "record_date": "1910-04-02",
+    "cross_street_name": "LEAVENWORTH",
+    "cross_street_type": "ST",
+    "corner_quad": "NW"
    },
    "citation": {
     "label": "The San Francisco Call, 2 April 1910, p. 21",
@@ -3498,7 +3603,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "PINE",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0099",
@@ -3510,7 +3617,12 @@
    "extra": {
     "architect": "Charles J. Rousseau",
     "cost_usd": 32000,
-    "record_date": "1910-04-02"
+    "record_date": "1910-04-02",
+    "cross_street_name": "SUTTER",
+    "cross_street_type": "ST",
+    "side": "W",
+    "offset_ft": 137.5,
+    "direction": "S"
    },
    "citation": {
     "label": "The San Francisco Call, 2 April 1910, p. 21",
@@ -3535,7 +3647,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "TAYLOR",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0100",
@@ -3584,7 +3698,9 @@
    "description": "The First Baptist Church's new building was nearing completion outside: about $70,000, with a dome rising 90 feet above the sidewalk and an auditorium for about 1,200.",
    "extra": {
     "institution": "First Baptist Church",
-    "record_date": "1910-04-02"
+    "record_date": "1910-04-02",
+    "cross_street_name": "OCTAVIA",
+    "cross_street_type": "ST"
    },
    "citation": {
     "label": "The San Francisco Call, 2 April 1910, p. 22",
@@ -3609,7 +3725,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "WALLER",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0102",
@@ -3621,7 +3739,12 @@
    "extra": {
     "architect": "William Knowles",
     "owner_firm": "William Ede Company",
-    "record_date": "1910-04-02"
+    "record_date": "1910-04-02",
+    "cross_street_name": "07TH",
+    "cross_street_type": "ST",
+    "side": "SE",
+    "offset_ft": 300,
+    "direction": "NE"
    },
    "citation": {
     "label": "The San Francisco Call, 2 April 1910, p. 22",
@@ -3646,7 +3769,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "MARKET",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0103",
@@ -3657,7 +3782,10 @@
    "description": "Planned: a six-storey and basement fireproof hotel of reinforced concrete, faced in light cream Caen stone, with four electric elevators and a bath to every room, to be finished in 120 working days. MacDonald & Applegarth, architects.",
    "extra": {
     "architect": "MacDonald & Applegarth",
-    "record_date": "1910-04-09"
+    "record_date": "1910-04-09",
+    "cross_street_name": "POWELL",
+    "cross_street_type": "ST",
+    "side": "N"
    },
    "citation": {
     "label": "The San Francisco Call, 9 April 1910, p. 14",
@@ -3682,7 +3810,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "POST",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0104",
@@ -3731,7 +3861,12 @@
    "extra": {
     "owner_firm": "Berkshire apartments",
     "cost_usd": 120000,
-    "record_date": "1910-04-16"
+    "record_date": "1910-04-16",
+    "cross_street_name": "SUTTER",
+    "cross_street_type": "ST",
+    "side": "W",
+    "offset_ft": 122,
+    "direction": "S"
    },
    "citation": {
     "label": "The San Francisco Call, 16 April 1910, p. 14",
@@ -3756,7 +3891,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "JONES",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0106",
@@ -3768,7 +3905,9 @@
    "extra": {
     "building_name_as_recorded": "Addison Head building",
     "lessee": "Barber Asphalt Paving Company",
-    "record_date": "1910-04-23"
+    "record_date": "1910-04-23",
+    "cross_street_name": "GRANT",
+    "cross_street_type": "AVE"
    },
    "citation": {
     "label": "The San Francisco Call, 23 April 1910, p. 16",
@@ -3793,7 +3932,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "POST",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0107",
@@ -3805,7 +3946,10 @@
    "extra": {
     "architect": "B. J. S. Cahill",
     "lot_as_recorded": "75x70",
-    "record_date": "1910-04-23"
+    "record_date": "1910-04-23",
+    "cross_street_name": "11TH",
+    "cross_street_type": "AVE",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 23 April 1910, p. 16",
@@ -3830,7 +3974,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "CLEMENT",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0108",
@@ -3841,7 +3987,12 @@
    "description": "Under construction: a four-storey brick and frame building of twelve apartments of two and three rooms, with baths and buffet kitchens. Arthur Francis Rousseau, architect.",
    "extra": {
     "architect": "Arthur F. Rousseau",
-    "record_date": "1910-04-23"
+    "record_date": "1910-04-23",
+    "cross_street_name": "LEAVENWORTH",
+    "cross_street_type": "ST",
+    "side": "N",
+    "offset_ft": 87.5,
+    "direction": "W"
    },
    "citation": {
     "label": "The San Francisco Call, 23 April 1910, p. 16",
@@ -3867,7 +4018,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "PINE",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0109",
@@ -3879,7 +4032,10 @@
    "extra": {
     "architect": "F. H. Martens and A. I. Coffey",
     "cost_usd": 36000,
-    "record_date": "1910-04-30"
+    "record_date": "1910-04-30",
+    "cross_street_name": "MCALLISTER",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 30 April 1910, p. 18",
@@ -3904,7 +4060,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "SCOTT",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0110",
@@ -3915,7 +4073,10 @@
    "description": "Planned: an apartment house of two-, three- and four-room apartments in pressed brick with terra-cotta trim, with passenger and freight elevators, electric dumbwaiters to every apartment and a large lobby. Frederick H. Meyer, architect.",
    "extra": {
     "architect": "Frederick H. Meyer",
-    "record_date": "1910-04-30"
+    "record_date": "1910-04-30",
+    "cross_street_name": "JONES",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 30 April 1910, p. 18",
@@ -3940,7 +4101,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "POST",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0111",
@@ -3952,7 +4115,12 @@
    "extra": {
     "architect": "Frederick H. Meyer",
     "cost_usd": 130000,
-    "record_date": "1910-05-14"
+    "record_date": "1910-05-14",
+    "cross_street_name": "JONES",
+    "cross_street_type": "ST",
+    "side": "S",
+    "offset_ft": 78,
+    "direction": "W"
    },
    "citation": {
     "label": "The San Francisco Call, 14 May 1910, p. 11",
@@ -3977,7 +4145,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "POST",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0112",
@@ -3989,7 +4159,12 @@
    "extra": {
     "architect": "William Beasley",
     "lot_as_recorded": "60x137:6",
-    "record_date": "1910-05-14"
+    "record_date": "1910-05-14",
+    "cross_street_name": "HYDE",
+    "cross_street_type": "ST",
+    "side": "N",
+    "offset_ft": 137.5,
+    "direction": "W"
    },
    "citation": {
     "label": "The San Francisco Call, 14 May 1910, p. 11",
@@ -4015,7 +4190,9 @@
     "status": "published",
     "note": "About the building's origin: a lease signed before the 1910 building went up.",
     "pr": "405"
-   }
+   },
+   "street_name": "PINE",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0113",
@@ -4027,7 +4204,12 @@
    "extra": {
     "architect": "Arthur J. Laib",
     "cost_usd": 40000,
-    "record_date": "1910-05-14"
+    "record_date": "1910-05-14",
+    "cross_street_name": "LARKIN",
+    "cross_street_type": "ST",
+    "side": "N",
+    "offset_ft": 91,
+    "direction": "W"
    },
    "citation": {
     "label": "The San Francisco Call, 14 May 1910, p. 12",
@@ -4052,7 +4234,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "SUTTER",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0114",
@@ -4064,7 +4248,12 @@
    "extra": {
     "architect": "Pacific Architectural and Engineering Company",
     "cost_usd": 90000,
-    "record_date": "1910-05-14"
+    "record_date": "1910-05-14",
+    "cross_street_name": "MASON",
+    "cross_street_type": "ST",
+    "side": "N",
+    "offset_ft": 50,
+    "direction": "E"
    },
    "citation": {
     "label": "The San Francisco Call, 14 May 1910, p. 12",
@@ -4090,7 +4279,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "BUSH",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0115",
@@ -4139,7 +4330,10 @@
    "description": "The corner was leased to a local hotel company, and L. B. Dutton was preparing plans for an eight-storey hotel on it.",
    "extra": {
     "architect": "L. B. Dutton",
-    "record_date": "1910-06-18"
+    "record_date": "1910-06-18",
+    "cross_street_name": "SUTTER",
+    "cross_street_type": "ST",
+    "corner_quad": "SE"
    },
    "citation": {
     "label": "The San Francisco Call, 18 June 1910, p. 10",
@@ -4164,7 +4358,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "KEARNY",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0117",
@@ -4176,7 +4372,12 @@
    "extra": {
     "architect": "William H. Weeks",
     "cost_usd": 80000,
-    "record_date": "1910-06-18"
+    "record_date": "1910-06-18",
+    "cross_street_name": "MASON",
+    "cross_street_type": "ST",
+    "side": "N",
+    "offset_ft": 77,
+    "direction": "W"
    },
    "citation": {
     "label": "The San Francisco Call, 18 June 1910, p. 10",
@@ -4201,7 +4402,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "GEARY",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0118",
@@ -4212,7 +4415,10 @@
    "description": "Construction was to begin within a month on a three-storey steel-frame office building filling the last lot of small buildings on the block. Havens & Toepke, architects.",
    "extra": {
     "architect": "Havens & Toepke",
-    "record_date": "1910-06-25"
+    "record_date": "1910-06-25",
+    "cross_street_name": "OFARRELL",
+    "cross_street_type": "ST",
+    "side": "W"
    },
    "citation": {
     "label": "The San Francisco Call, 25 June 1910, p. 13",
@@ -4237,7 +4443,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "STOCKTON",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0119",
@@ -4249,7 +4457,10 @@
    "extra": {
     "architect": "Alfred Henry Jacobs",
     "cost_usd": 155000,
-    "record_date": "1910-04-30"
+    "record_date": "1910-04-30",
+    "cross_street_name": "JONES",
+    "cross_street_type": "ST",
+    "corner_quad": "NW"
    },
    "citation": {
     "label": "The San Francisco Call, 30 April 1910, p. 19",
@@ -4274,7 +4485,9 @@
    "publish": {
     "status": "declined",
     "note": "The page already records the Herald Hotel of 1910 by Alfred Henry Jacobs, seven storeys and 150 rooms, from its National Register nomination, framed against the 1983 roll year."
-   }
+   },
+   "street_name": "EDDY",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0120",
@@ -4285,7 +4498,10 @@
    "description": "The Buckley Building, then standing on this corner, was to gain three more storeys, to plans by Norman R. Coulter.",
    "extra": {
     "architect": "Norman R. Coulter",
-    "record_date": "1910-03-26"
+    "record_date": "1910-03-26",
+    "cross_street_name": "MARKET",
+    "cross_street_type": "ST",
+    "corner_quad": "SE"
    },
    "citation": {
     "label": "The San Francisco Call, 26 March 1910, p. 15",
@@ -4310,7 +4526,9 @@
    "publish": {
     "status": "published",
     "pr": "405"
-   }
+   },
+   "street_name": "SPEAR",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0121",
@@ -4321,7 +4539,10 @@
    "description": "The Keystone apartments: a $400,000 building with a roof garden, billiard room, bowling alley and library. Oliver, Foulkes & Kaiser, architects.",
    "extra": {
     "architect": "Oliver, Foulkes & Kaiser",
-    "record_date": "1910-01-22"
+    "record_date": "1910-01-22",
+    "cross_street_name": "HYDE",
+    "cross_street_type": "ST",
+    "corner_quad": "SW"
    },
    "citation": {
     "label": "The San Francisco Call, 22 January 1910, p. 15",
@@ -4346,7 +4567,9 @@
    "publish": {
     "status": "declined",
     "note": "The page already records the Keystone's 1910 roof garden, billiard room, bowling alley and $500,000 cost from another source, and credits Oliver, Foulks & Kaiser."
-   }
+   },
+   "street_name": "WASHINGTON",
+   "street_type": "ST"
   },
   {
    "id": "sn85066387-1910-real-estate-0122",

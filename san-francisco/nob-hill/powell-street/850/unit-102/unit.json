@@ -1,0 +1,58 @@
+{
+  "address": "850 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/850/unit-102/",
+  "unit": "102",
+  "apn": "0243060",
+  "block": "0243",
+  "lot": "060",
+  "parcel": {
+    "building_area_sqft": 1065,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 684600,
+    "assessed_improvement_value": 456400,
+    "last_sale_date": "2018-02-08"
+  },
+  "permits": [
+    {
+      "number": "200710196008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-19",
+      "status_date": "2008-03-26",
+      "estimated_cost": 600,
+      "revised_cost": 600,
+      "description": "revision to p?a 200710094834: add pocket doors instead of bi-fold doors in dining room. build closet in bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710094834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-09",
+      "status_date": "2008-03-26",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "interior remodel one unit/ remodel kitchen and bathroom, add 1 new bathroom, associated plumbing & electrical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

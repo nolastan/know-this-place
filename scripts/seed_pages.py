@@ -618,6 +618,13 @@ def article_for(year, phrase: str) -> str:
     return "an" if phrase[:1].lower() in "aeiou" else "a"
 
 
+def dwelling_units(p: dict) -> int | None:
+    """The unit count a building's type may state. A building divided into
+    airspace parcels (`condo_view`) counts parcels, not homes: 78 Haight
+    Street's two lots hold sixty-four flats."""
+    return None if p.get("airspace") else p.get("units")
+
+
 def building_type(pclass: str, units: int | None) -> str:
     """A short building-type phrase for the identity tag."""
     c = (pclass or "").lower()
@@ -1635,7 +1642,7 @@ def indent_block(text: str, pad: str) -> str:
 
 PHOTO_KEYS = frozenset({
     "file", "width", "height", "title", "author", "author_url", "cropped",
-    "license", "license_url", "source_url", "contributed", "retrieved",
+    "license", "license_url", "source_url", "contributed", "own", "retrieved",
 })
 
 # The name the credit gives a photo's source, by host. A contributed photo,
@@ -1718,7 +1725,8 @@ def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
         lazy = '' if "media-lift" in cls else ' loading="lazy"'
         inner = (f'  <img src="{esca(src)}"{size} alt="{esca("Photo of " + label)}"'
                  f'{lazy} decoding="async">')
-        if caption:
+        # The site's own photos (`"own": true`, Stan's) carry no credit line.
+        if caption and not photo.get("own"):
             inner += f'\n  <figcaption class="photo-credit">{photo_credit_html(photo)}</figcaption>'
     else:
         inner = ("  <div class=\"media-empty\">\n"
@@ -1772,7 +1780,7 @@ def hero_lines(rec: dict) -> tuple[str, str]:
     if name:
         return name, title
     p = rec.get("parcel", {})
-    return title, building_type(p.get("property_class"), p.get("units"))
+    return title, building_type(p.get("property_class"), dwelling_units(p))
 
 
 def meta_description(rec: dict) -> str:
@@ -1781,7 +1789,7 @@ def meta_description(rec: dict) -> str:
     where = f"{name} ({page_title(rec)})" if name else page_title(rec)
     bits = [f"{where}, San Francisco:"]
     year = p.get("year_built")
-    btype = building_type(p.get("property_class"), p.get("units")).lower()
+    btype = building_type(p.get("property_class"), dwelling_units(p)).lower()
     article = article_for(year, btype)
     bits.append(f"{article} {year} {btype}" if year else f"{article} {btype}")
     dist = district_of(rec).get("name")
@@ -1799,7 +1807,7 @@ def heading_html(rec: dict, heading: str) -> str:
     if not building_name(rec):
         return f"<h1>{esc(heading)}</h1>"
     p = rec.get("parcel", {})
-    btype = building_type(p.get("property_class"), p.get("units"))
+    btype = building_type(p.get("property_class"), dwelling_units(p))
     return (f'<h1 class="named"><i class="hgi-stroke {building_icon(btype)} type-icon" '
             f'role="img" aria-label="{esca(btype)}" title="{esca(btype)}"></i>'
             f'{esc(heading)}</h1>')
@@ -1811,7 +1819,7 @@ def named_icon(rec: dict) -> str:
     if not building_name(rec):
         return ""
     p = rec.get("parcel", {})
-    return building_icon(building_type(p.get("property_class"), p.get("units")))
+    return building_icon(building_type(p.get("property_class"), dwelling_units(p)))
 
 
 def named_link_text(name: str | None, icon: str, address: str) -> str:
@@ -1903,8 +1911,14 @@ def measurement_tags(p: dict) -> list:
     # apartment building", "Two-flat") — never state a fact twice.
     units = p.get("units")
     if units and units > 1 and not re.search(
-            r"\d|\bTwo\b|\bThree\b|\bFour\b", building_type(p.get("property_class"), units)):
-        out.append(("ic-layers", plural(units, "residential unit")))
+            r"\d|\bTwo\b|\bThree\b|\bFour\b", building_type(p.get("property_class"), dwelling_units(p))):
+        # A commercial condominium's lots are offices and shops: the
+        # Warfield's twenty-three are office floors and a theater.
+        pclass = (p.get("property_class") or "").lower()
+        commercial_condo = "condo" in pclass and not pclass.startswith("condominium")
+        out.append(("ic-layers",
+                    plural(units, "parcel" if p.get("airspace") else
+                           "unit" if commercial_condo else "residential unit")))
     if p.get("rooms"):
         out.append(("hgi-door-01", plural(p["rooms"], "room")))
     if p.get("bedrooms"):
@@ -4709,7 +4723,11 @@ def unit_slugs(rows: list, building_number: str) -> dict:
     for r in rows:
         if counts[names[r["lot"]]] > 1:
             n = roll_street_number(r.get("property_location") or "")
-            names[r["lot"]] = f"{n}-{names[r['lot']]}" if n else names[r["lot"]]
+            # A name that is already the street number gains nothing by
+            # repeating it: 232 O'Farrell Street's four airspace parcels are
+            # all filed at 201 Powell Street, and go to the lot.
+            names[r["lot"]] = (f"{n}-{names[r['lot']]}" if n and names[r["lot"]] != n
+                               else names[r["lot"]])
     counts = collections.Counter(names.values())
     for r in rows:
         if counts[names[r["lot"]]] > 1:
@@ -4765,6 +4783,10 @@ def condo_view(rec: dict) -> dict:
     view = dict(rec)
     p = dict(rec.get("parcel") or {})
     p["units"] = len(rec["condominium"]["lots"])
+    # A building divided into airspace parcels the roll does not call
+    # condominiums: its "units" are parcels, not homes (`measurement_tags`).
+    if not is_condo_building(rec):
+        p["airspace"] = True
     view["parcel"] = p
     a = {}
     for _, key, _ in VALUE_PARTS:
@@ -4805,7 +4827,8 @@ def condo_units_html(rec: dict, indent: str) -> str:
         return ""
     number = rec["path"].strip("/").split("/")[-1]
     area_total = condo_floor_area(units)
-    lede = (f"{plural(len(units), 'unit')} on the assessor's roll"
+    word = "unit" if is_condo_building(rec) else "parcel"
+    lede = (f"{plural(len(units), word)} on the assessor's roll"
             + (f", {area_total:,} square feet between them" if area_total else "")
             + ". Each has a page of its own: its assessed value, last sale and "
               "permits.")
@@ -4822,17 +4845,25 @@ def condo_units_html(rec: dict, indent: str) -> str:
                      + "</li>")
     return (f'{indent}<section class="condo-units">\n'
             f'{indent}  <div class="section-head"><i class="hgi-stroke hgi-apartment"></i>'
-            f'<h2>Units</h2></div>\n'
+            f'<h2>{word.capitalize()}s</h2></div>\n'
             f'{indent}  <p class="prose"><small>{esc(lede)}</small></p>\n'
             f'{indent}  <ul class="unit-grid">\n' + "\n".join(items)
             + f'\n{indent}  </ul>\n{indent}</section>\n')
+
+
+def is_condo_building(bldg: dict) -> bool:
+    """Whether a building with unit pages is a condominium, or one divided
+    into airspace parcels the roll classes otherwise (an office, a shop, a
+    hotel). Only a condominium's parcels are called condominium units."""
+    return "condo" in ((bldg.get("parcel") or {}).get("property_class") or "").lower()
 
 
 def unit_meta_description(rec: dict, bldg: dict, bheading: str) -> str:
     where = f"{unit_label(rec)}, {bheading}"
     if bheading != page_title(bldg):
         where += f" ({page_title(rec)})"
-    return (f"{where}, San Francisco: one condominium unit — floor area, "
+    kind = "one condominium unit" if is_condo_building(bldg) else "one parcel of the building"
+    return (f"{where}, San Francisco: {kind} — floor area, "
             f"assessed value and permits from city records, fully cited.")
 
 
@@ -4864,7 +4895,7 @@ def render_unit_html(rec: dict) -> str:
     # The line under the heading says whose unit this is: the building's name
     # where it has one, and the building's address where the unit's is
     # another number. The heading already carries the street address.
-    sub_bits = ["Condominium unit"]
+    sub_bits = ["Condominium unit" if is_condo_building(bldg) else "Parcel"]
     if building_name(bldg):
         sub_bits.append(f"in {bheading}")
     elif page_title(rec) != page_title(bldg):
@@ -5413,7 +5444,7 @@ def hook_for(rec: dict, with_district: bool = True) -> str:
         return rec["hook"]
     p = rec.get("parcel", {})
     year = p.get("year_built")
-    btype = building_type(p.get("property_class"), p.get("units")).lower()
+    btype = building_type(p.get("property_class"), dwelling_units(p)).lower()
     article = article_for(year, btype).capitalize()
     head = f"{article} {year} {btype}" if year else f"{article} {btype}"
     dist = district_of(rec).get("name") if with_district else None
@@ -7489,6 +7520,13 @@ def cmd_seed_list(args) -> int:
                 and not row.get("sole_parcel_for_address")):
             row["condo"] = True
             row["status"] = "seedable"
+        # A building divided into airspace parcels that the roll does not call
+        # condominiums (1155 Market Street's four office lots): the resolver
+        # found them on one map lot and names them, and the building is
+        # written the same way, a page per parcel.
+        if e.get("building_lots"):
+            row["condo"] = True
+            row["status"] = "seedable"
         if row["status"] != "seedable":
             print(f"  {row['status']} for {e['apn']} "
                   f"({e['numbers'][0]} {e['street_display']}) — skipped",
@@ -7521,7 +7559,13 @@ def cmd_seed_list(args) -> int:
             json.dumps(rec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         if row.get("condo"):
             try:
-                print("  " + make_condo(page_dir, rec["sources"][0]["retrieved"], roll_year),
+                lots = row.get("building_lots")
+                print("  " + make_condo(
+                    page_dir, rec["sources"][0]["retrieved"], roll_year, lots,
+                    (f"The {len(lots)} active parcels at the address's point, which "
+                     f"sf-parcels files under one map lot on block {row['apn'][:4]}: "
+                     f"airspace parcels of one building, lots {', '.join(lots)}."
+                     if lots else None)),
                       file=sys.stderr)
             except SystemExit as e:
                 (page_dir / "data.json").unlink()
@@ -7792,7 +7836,7 @@ def cmd_hubs(args) -> int:
 # --------------------------------------------------------------------------
 # `condo` — a condominium building and its unit pages
 # --------------------------------------------------------------------------
-CONDO_KEYS = frozenset({"lots", "method"})
+CONDO_KEYS = frozenset({"lots", "method", "building_permit_units"})
 
 # What the building page keeps of a unit parcel's `parcel` block: the facts
 # every unit of the building shares. The rest is the unit's.
@@ -7861,7 +7905,8 @@ def _norm_unit(text) -> str:
     return re.sub(r"^0+(?=[0-9A-Za-z])", "", re.sub(r"[^0-9A-Za-z/]", "", str(text or ""))).upper()
 
 
-def assign_condo_permits(permits: list, units: list, building_number: str) -> tuple:
+def assign_condo_permits(permits: list, units: list, building_number: str,
+                         building_units: list = None) -> tuple:
     """({lot: [permit rows]}, [building permit rows]).
 
     DBI files a condominium building's permits under whichever unit lot it
@@ -7871,7 +7916,15 @@ def assign_condo_permits(permits: list, units: list, building_number: str) -> tu
     unit of this building is that unit's, and a permit naming none is the
     building's. A unit the roll knows only by its own street number (2223 of
     2223–2225 North Point Street) takes the permits filed at that number.
+
+    `building_units` are the designations DBI stamps on the building's own
+    permits (`condominium.building_permit_units`). At 988 Market Street DBI
+    keeps the address on unit 1M1's lot and writes "1 M1" in the `unit`
+    column of everything filed there: three upper floors' fit-outs, a
+    basement's, a dish on the roof. A permit carrying one of these is the
+    building's, because the column no longer says whose it is.
     """
+    shared = {_norm_unit(u) for u in building_units or []}
     by_unit, by_number = {}, {}
     for r in units:
         loc = r.get("property_location") or ""
@@ -7888,16 +7941,25 @@ def assign_condo_permits(permits: list, units: list, building_number: str) -> tu
         seen.add(key)
         u = _norm_unit(f"{x.get('unit') or ''}{x.get('unit_suffix') or ''}")
         n = (x.get("street_number") or "").lstrip("0").lower()
-        lot = by_unit.get(u) if u and u != "0" else by_number.get(n)
+        if u and u in shared:
+            lot = None
+        else:
+            lot = by_unit.get(u) if u and u != "0" else by_number.get(n)
         (out[lot] if lot else building).append(x)
     return out, building
 
 
 def build_unit_record(bldg: dict, r: dict, slug: str, permits: list,
-                      retrieved: str, roll_year: int) -> dict:
+                      retrieved: str, roll_year: int, own_area: bool = True) -> dict:
     bpath = bldg["path"]
     path = f"{bpath}{slug}/"
     street = page_title(bldg).split(" ", 1)[1]
+    # A unit on the building's other frontage is addressed on its own street:
+    # the Warfield's shop at 16 Taylor Street is not "16 Market Street".
+    loc = r.get("property_location") or ""
+    rname, rtype = " ".join(loc[10:30].split()), loc[30:32].strip()
+    if rname and street_slug(rname, rtype) not in (None, bpath.strip("/").split("/")[-2]):
+        street = street_display(rname, rtype)
     n = roll_street_number(r.get("property_location")) or bpath.strip("/").split("/")[-1]
     zip_tail = bldg["address"].split(",", 1)[1].strip()
     rec = {
@@ -7913,7 +7975,7 @@ def build_unit_record(bldg: dict, r: dict, slug: str, permits: list,
                        ("bedrooms", "number_of_bedrooms"), ("bathrooms", "number_of_bathrooms"),
                        ("basement_area_sqft", "basement_area")):
         v = num(r.get(field))
-        if v:
+        if v and (own_area or key != "building_area_sqft"):
             p[key] = v
     if p:
         rec["parcel"] = p
@@ -7974,6 +8036,9 @@ def condo_building_record(bldg: dict, rows: list, lots: list, method: str,
         p["property_class"] = "Condominium"
     rec["parcel"] = p
     rec["condominium"] = {"lots": lots, "method": method}
+    shared = (bldg.get("condominium") or {}).get("building_permit_units")
+    if shared:
+        rec["condominium"]["building_permit_units"] = shared
     entries = sorted((permit_entry(x, rec["path"]) for x in permits),
                      key=lambda x: (x.get("filed") or ""), reverse=True)
     rec["permits"], summary = trim_permits(entries)
@@ -8017,8 +8082,41 @@ def condo_building_record(bldg: dict, rows: list, lots: list, method: str,
     return rec
 
 
+def retired_lot_permits(block: str, units: list, live_lots: set) -> list:
+    """Permits DBI still files under a lot the block no longer has, at one of
+    the building's own addresses.
+
+    A condominium map retires the lot the building stood on, and DBI leaves
+    every permit issued before the map on it: the Warfield's first twenty-five
+    years of records are on lot 007 of block 0342, which the roll dropped when
+    lots 018–040 replaced it. Asking only for the unit lots loses them. Same
+    block, same street and number, and a lot not on this year's roll: a
+    neighbour's permits are on a lot the roll still has.
+    """
+    def key(number, name):
+        return ((number or "").lstrip("0").lower(),
+                " ".join(unpad(t) for t in (name or "").upper().split()))
+    addresses = set()
+    for r in units:
+        loc = r.get("property_location") or ""
+        name = " ".join(loc[10:30].split())
+        for n in (roll_street_number(loc), loc[0:4].lstrip("0")):
+            if n and name:
+                addresses.add(key(n, name))
+    if not addresses:
+        return []
+    numbers = sorted({n for n, _ in addresses})
+    rows = api_get(DS_PERMITS, {
+        "$where": f"block='{block}' AND street_number in ({_quote_list(numbers)})",
+        "$select": PERMIT_SELECT, "$limit": 50000})
+    return [x for x in rows
+            if (x.get("lot") or "").upper() not in live_lots
+            and key(x.get("street_number"), x.get("street_name")) in addresses]
+
+
 def make_condo(page_dir: Path, retrieved: str, roll_year: int,
-               lots: list = None, method: str = None) -> str:
+               lots: list = None, method: str = None,
+               building_units: list = None) -> str:
     """Make the building page in `page_dir` a condominium building with a
     unit page per lot; returns a one-line report.
 
@@ -8069,8 +8167,27 @@ def make_condo(page_dir: Path, retrieved: str, roll_year: int,
             "$where": f"block='{block}' AND lot in ({_quote_list(chunk)})",
             "$select": PERMIT_SELECT, "$limit": 50000})
     number = bldg["path"].strip("/").split("/")[-1]
-    by_permit_lot, own = assign_condo_permits(permits, units, number)
+    if building_units is not None:
+        shared = sorted({_norm_unit(u) for u in building_units if u.strip()})
+        bldg["condominium"] = dict(bldg.get("condominium") or {})
+        bldg["condominium"].pop("building_permit_units", None)
+        if shared:
+            bldg["condominium"]["building_permit_units"] = shared
+    shared = (bldg.get("condominium") or {}).get("building_permit_units")
+    by_permit_lot, own = assign_condo_permits(permits, units, number, shared)
+    seen = {x.get("permit_number") for x in permits}
+    for x in retired_lot_permits(block, units, set(by_lot)):
+        if x.get("permit_number") not in seen:
+            seen.add(x.get("permit_number"))
+            own.append(x)
+            permits.append(x)
     slugs = unit_slugs(units, number)
+    # The roll sometimes states the building's floor area on every unit:
+    # each of 988 Market Street's twenty-two office lots carries 39,438 sq ft.
+    # A figure every unit shares is not any unit's, and summing it would
+    # state the building twenty-two times over.
+    areas = [num(r.get("property_area")) for r in units if num(r.get("property_area"))]
+    own_area = not (len(areas) >= 3 and len(set(areas)) == 1)
     new = condo_building_record(bldg, rows, lots, method, retrieved, roll_year, own)
     data_path.write_text(json.dumps(new, indent=2, ensure_ascii=False) + "\n",
                          encoding="utf-8")
@@ -8085,7 +8202,7 @@ def make_condo(page_dir: Path, retrieved: str, roll_year: int,
                 pass
     for r in units:
         urec = build_unit_record(new, r, slugs[r["lot"]], by_permit_lot.get(r["lot"], []),
-                                 retrieved, roll_year)
+                                 retrieved, roll_year, own_area)
         udir = page_dir / slugs[r["lot"]]
         udir.mkdir(exist_ok=True)
         (udir / UNIT_FILE).write_text(json.dumps(urec, indent=2, ensure_ascii=False) + "\n",
@@ -8102,7 +8219,9 @@ def cmd_condo(args) -> int:
         page_dir = (Path.cwd() / raw).resolve()
         if page_dir.name == "data.json":
             page_dir = page_dir.parent
-        print(make_condo(page_dir, retrieved, args.roll_year, lots, args.method))
+        print(make_condo(page_dir, retrieved, args.roll_year, lots, args.method,
+                         args.building_permit_units.split(",")
+                         if args.building_permit_units is not None else None))
     return 0
 
 
@@ -8167,6 +8286,11 @@ def main() -> int:
     p.add_argument("--lots", help="comma-separated lots on the page's block, "
                                   "replacing the proposed or recorded list")
     p.add_argument("--method", help="with --lots: how the list was established")
+    p.add_argument("--building-permit-units",
+                   help="comma-separated unit designations DBI stamps on the "
+                        "building's own permits (988 Market Street's '1M1'); "
+                        "permits carrying one stay on the building. Recorded "
+                        "on the page; pass '' to clear")
     p.add_argument("--roll-year", type=int, default=2025)
     p.add_argument("--retrieved", default=None,
                    help="retrieval date to record in sources (default: today)")

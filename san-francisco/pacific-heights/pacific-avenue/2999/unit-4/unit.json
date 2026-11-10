@@ -1,0 +1,86 @@
+{
+  "address": "2999 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2999/unit-4/",
+  "unit": "4",
+  "apn": "0976083",
+  "block": "0976",
+  "lot": "083",
+  "parcel": {
+    "building_area_sqft": 4285,
+    "rooms": 10,
+    "bedrooms": 4,
+    "bathrooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3074823,
+    "assessed_improvement_value": 2049879,
+    "last_sale_date": "2011-05-12"
+  },
+  "permits": [
+    {
+      "number": "201310119080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-11",
+      "status_date": "2014-05-08",
+      "estimated_cost": 225000,
+      "revised_cost": 225000,
+      "description": "replace fixtures & finishes in 2 bathrooms, add casework in various room, paint & re-finish hardwood floors, no walls to be relocated.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204118059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-11",
+      "status_date": "2012-04-26",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "widen doorway, install 4x12x8' header, non-load bearing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501123068",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-12",
+      "status_date": "2005-05-24",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace plumbing fixtures & finishes in same locations in (2) (e) bathrms. replace plumbing fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409083619",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-08",
+      "status_date": "2005-05-24",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "#4-interior remodel of kitchen/master bedroom/bathroom suite.remove 1/f (e)bathroom,closet,1 wall to",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2004–2017",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0976083&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0976&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

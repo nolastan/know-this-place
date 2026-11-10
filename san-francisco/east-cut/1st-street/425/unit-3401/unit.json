@@ -1,0 +1,58 @@
+{
+  "address": "425 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/425/unit-3401/",
+  "unit": "3401",
+  "apn": "3765233",
+  "block": "3765",
+  "lot": "233",
+  "parcel": {
+    "building_area_sqft": 837,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 704864,
+    "assessed_improvement_value": 704864,
+    "last_sale_date": "2014-06-18"
+  },
+  "permits": [
+    {
+      "number": "202601234428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-23",
+      "status_date": "2026-03-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 201409035325. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409035325",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2014-09-03",
+      "status_date": "2026-03-09",
+      "estimated_cost": 12000,
+      "revised_cost": 15000,
+      "description": "one unit: bath remodel. new tile on walls and floor. new vanity, new fan, light. demo existing fixtures. compliance with ordinance no. 155-13 not required.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3765233&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3765&unit=3401",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

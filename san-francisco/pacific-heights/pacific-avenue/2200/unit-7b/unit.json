@@ -1,0 +1,53 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-7b/",
+  "unit": "7B",
+  "apn": "0580071",
+  "block": "0580",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 966,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 762000,
+    "assessed_improvement_value": 508000,
+    "last_sale_date": "2018-01-10"
+  },
+  "permits": [
+    {
+      "number": "201702169557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-16",
+      "status_date": "2017-07-17",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "#7-b -remodel bathroom, powder room, minor works in bedrrom and living room; new bath fixtures at same location -misc, framing- elect hlight & upgrades -dry wall, tile, flooring & painting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2017",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=7B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

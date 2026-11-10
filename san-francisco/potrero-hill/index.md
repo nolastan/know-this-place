@@ -22,6 +22,7 @@ opened here in 1905.
 - [Carolina Street](carolina-street/) — 1 building, built 1985.
 - [Connecticut Street](connecticut-street/) — 2 buildings, built 1900–1906.
 - [De Haro Street](de-haro-street/) — 5 buildings, built 1895–1960.
+- [Indiana Street](indiana-street/) — 2 buildings, built 2000–2002.
 - [Kansas Street](kansas-street/) — 1 building, built 1964.
 - [Mariposa Street](mariposa-street/) — 7 buildings, built 1904–1995.
 - [Maryland Street](maryland-street/) — 1 building; 1 in the Union Iron Works Historic District.

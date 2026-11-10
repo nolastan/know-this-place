@@ -39,7 +39,7 @@
         "path": "/san-francisco/east-cut/1st-street/42/",
         "eas_address": "42 01ST ST",
         "method": "EAS exact match on 50 01ST ST → parcel 3708055; sf-parcels has blklot 3708055 active, 42–50 01ST; the 2025 roll records it as miscellaneous/mixed-use, built 1917. EAS puts 42, 50 01ST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 42. The record spells the street out as FIRST; EAS holds the numbered streets as zero-padded ordinals, so this is 01ST.",
-        "checked_on": "2026-10-16"
+        "checked_on": "2026-11-10"
       }
     },
     {
@@ -61,14 +61,23 @@
       },
       "confidence": "high",
       "publish": {
-        "status": "pending",
-        "note": "Blocked: 1155 Market is a commercial condominium on four active parcels (3702820-3702823); the directory contract defers those. Same blocker as 2026-08-28b-0001. Revisit if a page for the building appears."
+        "status": "declined",
+        "note": "Declined as a second account of one event: the August sale of eight floors of 1155 Market Street is carried by The San Francisco Standard (news/items/sf-standard/2026-08-28b.json, 2026-08-28b-0001) on /san-francisco/south-of-market/market-street/1155/."
       },
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-10-16",
-        "method": "sf-eas-addresses has 1155 MARKET ST but it does not join to one parcel. 1155 MARKET ST's coordinates fall in 4 active parcels (3702821, 3702823, 3702822, 3702820), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-        "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+        "status": "resolved",
+        "apn": "3702820",
+        "path": "/san-francisco/south-of-market/market-street/1155/",
+        "eas_address": "1155 MARKET ST",
+        "method": "EAS exact match on 1155 MARKET ST → parcel 3702820; sf-parcels has blklot 3702820 active, 1155–1155 MARKET; the 2025 roll records it as commercial office. Parcel 3702820 is one of 4 airspace parcels of one building (3702820, 3702821, 3702822, 3702823); the fact is the building's, and goes on the building's page at this path, which lists its parcels. 1155 MARKET ST's coordinates fall in 4 active parcels that sf-parcels files under one map lot, 3702820: one building divided into airspace parcels; 3702820 stands for the building.",
+        "checked_on": "2026-11-10",
+        "building_lots": [
+          "820",
+          "821",
+          "822",
+          "823"
+        ],
+        "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
       }
     },
     {
@@ -99,7 +108,7 @@
         "path": "/san-francisco/east-cut/market-street/525/",
         "eas_address": "525 MARKET ST",
         "method": "EAS exact match on 525 MARKET ST → parcel 3708056; sf-parcels has blklot 3708056 active, 525–525 MARKET; the 2025 roll records it as commercial office, built 1973.",
-        "checked_on": "2026-10-16"
+        "checked_on": "2026-11-10"
       }
     }
   ]

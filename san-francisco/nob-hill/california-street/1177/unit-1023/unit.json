@@ -1,0 +1,57 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1023/",
+  "unit": "1023",
+  "apn": "0253A099",
+  "block": "0253A",
+  "lot": "099",
+  "parcel": {
+    "building_area_sqft": 706,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 491481,
+    "assessed_improvement_value": 327654,
+    "last_sale_date": "2019-09-05"
+  },
+  "permits": [
+    {
+      "number": "202002184703",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-18",
+      "status_date": "2021-03-30",
+      "estimated_cost": 25000,
+      "revised_cost": 36000,
+      "description": "one unit: kitchen and bathroom remodel in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912099007",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-12-09",
+      "status_date": "2026-01-09",
+      "estimated_cost": 120000,
+      "revised_cost": 75000,
+      "description": "interior remodel at condo unit in a residential tower: replace bathroom & kitchen finishes, fixtures, add washer & dryer, add one interior partition wall; add light fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A099&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1023",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

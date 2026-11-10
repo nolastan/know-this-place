@@ -1,0 +1,47 @@
+{
+  "address": "795 Sutter Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/sutter-street/795/unit-602/",
+  "unit": "602",
+  "apn": "0298055",
+  "block": "0298",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1304,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 79373,
+    "assessed_improvement_value": 209311,
+    "last_sale_date": "2013-03-28"
+  },
+  "permits": [
+    {
+      "number": "201708094372",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-09",
+      "status_date": "2017-09-12",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "install 6\" diameter flue for fan from replacement microwave in kitchen on top floor residential condo. flue 9 1/2' in length terminating 36\" above flat roof. flue will be 17' from east property line. install roof jack/storm collar & seal roof. n/a for maher.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0298055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0298&unit=602",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

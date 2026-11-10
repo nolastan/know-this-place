@@ -1,0 +1,80 @@
+{
+  "address": "2 Jessie Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/jessie-street/410/unit-1005/",
+  "unit": "1005",
+  "apn": "3704112",
+  "block": "3704",
+  "lot": "112",
+  "parcel": {
+    "building_area_sqft": 996,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 357500,
+    "assessed_improvement_value": 357500,
+    "last_sale_date": "2007-06-15"
+  },
+  "permits": [
+    {
+      "number": "200905077890",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-07",
+      "status_date": "2009-11-23",
+      "estimated_cost": 4300,
+      "revised_cost": 4300,
+      "description": "add 3 speakers and 3 stand alone smoke detectors due to a remodel of one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712211180",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-12-21",
+      "status_date": "2009-12-11",
+      "estimated_cost": 120000,
+      "revised_cost": 80000,
+      "description": "one unit - mechanical electrical upgrade. ces-200712793.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712200977",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2007-12-20",
+      "status_date": "2009-12-11",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "one unit provide private roof access, (n) stair, (n) stair enclosure, (n) roof deck, (n) grill counter & surround, (n) guardrails, (n) sink. chimney, flue vent and enclosure under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712170652",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-17",
+      "status_date": "2007-12-20",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "one unit - new ineterior partitions, kitchen cabinets and finishes, and a bathroom remodel w/ fixtures in one unit (live work) on floor 10. plumbing, elec. under separate permit. remove and reconfigure existing interior partitions (non structural)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3704112&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3704&unit=1005",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

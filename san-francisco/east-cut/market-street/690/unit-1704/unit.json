@@ -1,0 +1,58 @@
+{
+  "address": "690 Market Street, San Francisco, CA 94104",
+  "path": "/san-francisco/east-cut/market-street/690/unit-1704/",
+  "unit": "1704",
+  "apn": "0311086",
+  "block": "0311",
+  "lot": "086",
+  "parcel": {
+    "building_area_sqft": 1900,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 834900,
+    "assessed_improvement_value": 556598,
+    "last_sale_date": "2012-07-11"
+  },
+  "permits": [
+    {
+      "number": "201506108616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-10",
+      "status_date": "2015-07-09",
+      "estimated_cost": 9257,
+      "revised_cost": 9766,
+      "description": "17th flr: ste 1704, fire sprinkler 19 cut to fit new ceiling, ref. 201208076730; maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208076730",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-07",
+      "status_date": "2016-06-17",
+      "estimated_cost": 40000,
+      "revised_cost": 20000,
+      "description": "#1704, 17th floor - remodel (e) kitchen, three bathroom & re-wire elect, lighting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0311086&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0311&unit=1704",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

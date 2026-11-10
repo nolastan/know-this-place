@@ -1,0 +1,127 @@
+{
+  "address": "401 University Street, San Francisco, CA 94134",
+  "path": "/san-francisco/portola/university-street/401/",
+  "apn": "5973002",
+  "block": "5973",
+  "lot": "002",
+  "eas_baseid": "491742",
+  "coordinates": {
+    "lat": 37.725032,
+    "lng": -122.413327
+  },
+  "also_addressed": [
+    "801 FELTON ST",
+    "999 FELTON ST"
+  ],
+  "parcel": {
+    "lot_area_sqft": 1495197,
+    "use": "Industrial",
+    "property_class": "Industrial Gov",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "0000 0401 UNIVERSITY          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M404667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-06-28",
+      "status_date": "2013-06-28",
+      "revised_cost": 1,
+      "description": "streeet space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902273100",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-27",
+      "status_date": "2009-03-03",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "fire alarm system of new vehicle/material storage building, consisting of (1) fire alarm control panel, (5) manual pull stations (1) smoke detector above control panel, (16) heat detectors, (8) horn/strobe combination.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "2008–2013",
+    "shown_on_page": 2,
+    "note": "8 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNIVERSITY&street_type=ST&address_number=401",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5973002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5973&lot=002",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5973002",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-09-01",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 1 September 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/58minutesofsanfran2005san/page/n90/mode/1up",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2005-09-22",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 22 September 2005",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/58minutesofsanfran2005san/page/n157/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2005-09-01",
+      "kind": "occupancy",
+      "description": "A vacant lot stood at the property.",
+      "source": "sf-planning-commission-minutes-2005-09-01"
+    },
+    {
+      "date": "2005-09-22",
+      "kind": "planning decision",
+      "description": "The City Planning Commission disapproved the conditional use authorization to install a wireless telecommunications facility on a new 30-foot flagpole on a vacant lot at 401 University Street.",
+      "source": "sf-planning-commission-minutes-2005-09-22"
+    },
+    {
+      "date": "2005-09-22",
+      "kind": "planning decision",
+      "description": "The City Planning Commission disapproved the General Plan referral for the installation of a wireless telecommunications facility at 401 University Street.",
+      "source": "sf-planning-commission-minutes-2005-09-22"
+    }
+  ]
+}

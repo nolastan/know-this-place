@@ -1,0 +1,68 @@
+{
+  "address": "2850 Fillmore Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/2195/unit-d/",
+  "unit": "D",
+  "apn": "0557044",
+  "block": "0557",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 1099,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 112577,
+    "assessed_improvement_value": 375304,
+    "last_sale_date": "1989-06-16"
+  },
+  "permits": [
+    {
+      "number": "202202157980",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-15",
+      "status_date": "2022-05-24",
+      "estimated_cost": 3937,
+      "revised_cost": 3937,
+      "description": "replacing (1) one window, non street visible. in rear of home, same size and location. proposed: (n) wood fiber <.30 u-factor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M21257",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-07-23",
+      "status_date": "2002-07-23",
+      "revised_cost": 15000,
+      "description": "street space permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207181753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-18",
+      "status_date": "2002-12-05",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "repair dry rotted siding @ rear one unit fillmore replace dryrotted framing and siding in like kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0557044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0557&unit=D",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

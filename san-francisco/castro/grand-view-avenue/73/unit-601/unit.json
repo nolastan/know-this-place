@@ -1,0 +1,46 @@
+{
+  "address": "77 Grand View Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/grand-view-avenue/73/unit-601/",
+  "unit": "601",
+  "apn": "2748040",
+  "block": "2748",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1128,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 515193,
+    "assessed_improvement_value": 515193,
+    "last_sale_date": "2005-08-18"
+  },
+  "permits": [
+    {
+      "number": "201003188514",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-18",
+      "status_date": "2010-07-15",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove existing shower pan & tiled wall, install waste and water for adjacent washer/dryer, rerock walls/ceiling, reinstall shower pan & tile. no moving or adding walls, no lighting work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2748040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2748&unit=601",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-419/",
+  "unit": "419",
+  "apn": "3789504",
+  "block": "3789",
+  "lot": "504",
+  "parcel": {
+    "building_area_sqft": 1456,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 301296,
+    "assessed_improvement_value": 317176,
+    "last_sale_date": "1997-04-30"
+  },
+  "permits": [
+    {
+      "number": "201511233404",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-23",
+      "status_date": "2016-03-14",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "bathroom remodel including new cabinets, fixtures & finishes. plumbing & electrical work under seperate permits. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906180764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-18",
+      "status_date": "2009-08-04",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remove & replace flloring, carpet & hardwood, kitchen cabinets, applicances, counter top, bathrooms tiles with marble and bathroom countertops with granite, paint interior walls. replace skylights.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789504&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=419",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

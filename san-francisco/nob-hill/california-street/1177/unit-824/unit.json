@@ -1,0 +1,63 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-824/",
+  "unit": "824",
+  "apn": "0253A136",
+  "block": "0253A",
+  "lot": "136",
+  "parcel": {
+    "building_area_sqft": 1653,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1194718,
+    "assessed_improvement_value": 1194718,
+    "last_sale_date": "2017-08-15"
+  },
+  "permits": [
+    {
+      "number": "201803163838",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-16",
+      "status_date": "2018-12-11",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "one unit: new flooring & paint throughout; new kitchen cabinets, counter tops & appliances, new bathroom finishes/fixtures, high efficacy lighting in bathroom/kitchen, no structural work, no wall alteration",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301084755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-08",
+      "status_date": "2003-12-19",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "interior remodel-new plumbing&light fixture,flooring. no structural work. no relocation of int. part",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2003–2018",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A136&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=824",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

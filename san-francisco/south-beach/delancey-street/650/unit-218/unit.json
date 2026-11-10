@@ -1,0 +1,47 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-218/",
+  "unit": "218",
+  "apn": "3789471",
+  "block": "3789",
+  "lot": "471",
+  "parcel": {
+    "building_area_sqft": 1548,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1213944,
+    "assessed_improvement_value": 809296,
+    "last_sale_date": "2019-07-18"
+  },
+  "permits": [
+    {
+      "number": "201405196171",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-19",
+      "status_date": "2015-01-14",
+      "estimated_cost": 25000,
+      "revised_cost": 30000,
+      "description": "remodel kitchen and bathroom on first floor. relocate the bathroom door per plan. remove non-bearing wall per plan. remodel 2nd floor bathroom. maher ordinance # 155-13 n/a.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789471&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=218",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "address": "646 Lakeview Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/lakeview-avenue/646/",
+  "apn": "7016021",
+  "block": "7016",
+  "lot": "021",
+  "eas_baseid": "412078",
+  "coordinates": {
+    "lat": 37.718437,
+    "lng": -122.457568
+  },
+  "parcel": {
+    "year_built": 2005,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2310,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0646 LAKEVIEW            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 528862,
+    "assessed_improvement_value": 352572,
+    "last_sale_date": "2010-07-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2005",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M104805",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-01-28",
+      "status_date": "2008-01-28",
+      "revised_cost": 1,
+      "description": "verification of address",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206259960",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "2002-06-25",
+      "status_date": "2005-07-15",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "new building - 1 dwelling, 3 stories building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKEVIEW&street_type=AVE&address_number=646",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7016021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7016&lot=021",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7016021",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2003-08-21",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 21 August 2003",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/54minutesofsanfran2003san/page/n128/mode/1up",
+      "retrieved": "2026-11-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003-08-21",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved, with modifications, the construction of a one-story over garage and basement single-family dwelling at 646 Lakeview Avenue.",
+      "source": "sf-planning-commission-minutes-2003-08-21"
+    }
+  ]
+}

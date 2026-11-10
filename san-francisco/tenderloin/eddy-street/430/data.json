@@ -1,0 +1,126 @@
+{
+  "address": "430 Eddy Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/eddy-street/430/",
+  "apn": "0334008",
+  "block": "0334",
+  "lot": "008",
+  "eas_baseid": "492071",
+  "coordinates": {
+    "lat": 37.78394,
+    "lng": -122.414835
+  },
+  "parcel": {
+    "lot_area_sqft": 3575,
+    "lot_depth_ft": 37.5,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Residential",
+    "construction_type_code": "NA",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0430 EDDY                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3463782,
+    "last_sale_date": "2020-11-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "survey_name": "PARKING LOT",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201605056698",
+      "type": "new construction",
+      "status": "cancelled",
+      "filed": "2016-05-05",
+      "status_date": "2024-11-08",
+      "estimated_cost": 3750000,
+      "revised_cost": 5500000,
+      "description": "to erect 8 stories, 1 basement, type i-a, 23 units residential condo with commercial, mixed use building. (r-2,m)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EDDY&street_type=ST&address_number=430",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0334008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0334&lot=008",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0334008",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41483509673411%2037.78393983220054)%27)",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-12-02",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 2 December 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n251/mode/1up",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2004-12-09",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 9 December 2004",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/56minutesofsanfran2004san/page/n282/mode/1up",
+      "retrieved": "2026-11-09"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2004-12-02",
+      "kind": "occupancy",
+      "description": "A vacant parcel stood at the property.",
+      "source": "sf-planning-commission-minutes-2004-12-02"
+    },
+    {
+      "date": "2004-12-09",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved the adoption of CEQA findings for the development of 24 senior housing units.",
+      "source": "sf-planning-commission-minutes-2004-12-09"
+    },
+    {
+      "date": "2004-12-09",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved the conditional use authorization for a building exceeding 40 feet in height, to construct a 5-story building with 24 senior affordable housing units.",
+      "source": "sf-planning-commission-minutes-2004-12-09"
+    }
+  ]
+}

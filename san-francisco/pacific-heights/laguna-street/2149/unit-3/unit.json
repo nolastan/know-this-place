@@ -1,0 +1,101 @@
+{
+  "address": "2151 Laguna Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/laguna-street/2149/unit-3/",
+  "unit": "3",
+  "apn": "0627017",
+  "block": "0627",
+  "lot": "017",
+  "parcel": {
+    "building_area_sqft": 2624,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2002770,
+    "assessed_improvement_value": 2002770,
+    "last_sale_date": "2023-05-25"
+  },
+  "permits": [
+    {
+      "number": "202510066791",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-10-06",
+      "status_date": "2025-10-15",
+      "estimated_cost": 1,
+      "revised_cost": 13370,
+      "description": "revision to pa 202507281761, one unit - new windows @ kitchen/pantry; removal of kitchen wall w/added ceiling joists; add adjustments to power & lighing; (n) gas fireplace w/gas line for gas log kit; update primary bathroom layout",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202507281761",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-28",
+      "status_date": "2025-08-01",
+      "estimated_cost": 75000,
+      "revised_cost": 220688,
+      "description": "one unit. interior renovation of existing condo kitchen, bathrooms, powder room, laundry room, foyer and dining room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910154451",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-10-15",
+      "status_date": "2024-10-01",
+      "estimated_cost": 400000,
+      "revised_cost": 400000,
+      "description": "#3- remodel kitchen, 3 baths. change steam radiators to infloor hydronic heat. relocate some non bearing partition walls, relocate selected doors. no window work, structural, or exterior. relocate laundry. (e) boiler for entire building shall remain.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105176215",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-17",
+      "status_date": "2012-02-02",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "repair crack in existing retaining wall on west face at northwess corner along clay st",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208204451",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-20",
+      "status_date": "2002-08-21",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "new kitchen & bathroom cabinets, appliances + floor coverning",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208194336",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-08-19",
+      "status_date": "2002-08-21",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "renew app 9620491-for final inspection",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

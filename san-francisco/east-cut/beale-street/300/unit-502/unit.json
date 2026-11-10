@@ -1,0 +1,58 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-502/",
+  "unit": "502",
+  "apn": "3747068",
+  "block": "3747",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1698,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1104904,
+    "assessed_improvement_value": 736603,
+    "last_sale_date": "2023-06-12"
+  },
+  "permits": [
+    {
+      "number": "200706053073",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-05",
+      "status_date": "2007-11-29",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "add 3 each sprinklers and replace 2 sprinklers in existing condo. al sprinklers for residential",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200704279901",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-27",
+      "status_date": "2007-11-29",
+      "estimated_cost": 25500,
+      "revised_cost": 25500,
+      "description": "interior elevators new lighting niches for flourescent lighting added to extg walls . sprinkler and fire alarm on seperate permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=502",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-201/",
+  "unit": "201",
+  "apn": "0253A240",
+  "block": "0253A",
+  "lot": "240",
+  "parcel": {
+    "building_area_sqft": 884,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 502513,
+    "assessed_improvement_value": 335008,
+    "last_sale_date": "2022-08-15"
+  },
+  "permits": [
+    {
+      "number": "202209222907",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-22",
+      "status_date": "2022-12-21",
+      "estimated_cost": 5000,
+      "revised_cost": 13000,
+      "description": "remodeling one bathroom. non structural.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A240&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=201",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

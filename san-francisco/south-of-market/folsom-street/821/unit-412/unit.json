@@ -1,0 +1,44 @@
+{
+  "address": "821 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/821/unit-412/",
+  "unit": "412",
+  "apn": "3752453",
+  "block": "3752",
+  "lot": "453",
+  "parcel": {
+    "building_area_sqft": 1453
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 642274,
+    "assessed_improvement_value": 642274,
+    "last_sale_date": "2006-01-20"
+  },
+  "permits": [
+    {
+      "number": "201608306334",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-30",
+      "status_date": "2016-12-20",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "replace 4th floor common deck waterproofing including base flashing overflow scuppers,remove & reinstall sliding doors @two units.to install new pan flashing ,remove floor tiles & mortar bed also some stucco for flashing also fix some drywall,all the repairs will be like for like;maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752453&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=412",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

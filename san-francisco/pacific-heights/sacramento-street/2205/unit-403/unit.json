@@ -1,0 +1,55 @@
+{
+  "address": "2205 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2205/unit-403/",
+  "unit": "403",
+  "apn": "0638055",
+  "block": "0638",
+  "lot": "055",
+  "parcel": {
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 499508,
+    "assessed_improvement_value": 499508,
+    "last_sale_date": "2000-06-23"
+  },
+  "permits": [
+    {
+      "number": "M14618",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-25",
+      "status_date": "2001-09-25",
+      "revised_cost": 44000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008016677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-01",
+      "status_date": "2001-07-30",
+      "estimated_cost": 44000,
+      "revised_cost": 44000,
+      "description": "remodel kitchen,m bath, 1/2 bath, living rm fireplace washer dryer painting trm new windows, doors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0638055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0638&unit=403",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

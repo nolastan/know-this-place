@@ -1,0 +1,56 @@
+{
+  "address": "555 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/555/unit-a/",
+  "unit": "A",
+  "apn": "3776453",
+  "block": "3776",
+  "lot": "453",
+  "parcel": {
+    "building_area_sqft": 1468,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 489858,
+    "assessed_improvement_value": 376811,
+    "last_sale_date": "2012-06-04"
+  },
+  "permits": [
+    {
+      "number": "201206152714",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-15",
+      "status_date": "2012-09-17",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "install and vent bathroom exhaust fan, install heat pump, install indoor fan coil and supply ducting. ref 201206072145",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201206072145",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-07",
+      "status_date": "2012-09-17",
+      "estimated_cost": 145000,
+      "revised_cost": 145000,
+      "description": "t.i of (e)vacant retail space for art gallery (change of use m to a). includes new non-rated partitions, new storefront entry doors at (e) location, new topping slab at floor, (n)mezz stair,toilet room, kitchenette, storage and office. sprinkler, mech, fire alarm sep permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3776453&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3776&unit=A",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

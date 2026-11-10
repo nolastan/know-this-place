@@ -1,0 +1,47 @@
+{
+  "address": "1160 Mission Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/mission-street/1160/unit-508/",
+  "unit": "508",
+  "apn": "3702068",
+  "block": "3702",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1184,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 556200,
+    "assessed_improvement_value": 370800,
+    "last_sale_date": "2020-05-20"
+  },
+  "permits": [
+    {
+      "number": "200808078597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-07",
+      "status_date": "2008-11-06",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "#508- remodel existing unit to include closing existing door opening, opening for new doors, retile bathroom and add shower head.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3702068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-04"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3702&unit=508",
+      "retrieved": "2026-11-04"
+    }
+  ]
+}

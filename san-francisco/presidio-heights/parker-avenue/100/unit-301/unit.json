@@ -1,0 +1,80 @@
+{
+  "address": "100 Parker Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/parker-avenue/100/unit-301/",
+  "unit": "301",
+  "apn": "1065064",
+  "block": "1065",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 1237,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 795906,
+    "assessed_improvement_value": 530604,
+    "last_sale_date": "2021-09-07"
+  },
+  "permits": [
+    {
+      "number": "201509036128",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2015-09-03",
+      "status_date": "2016-06-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 2015-0727-2493 kitchen wall, vent stack to remain. reconfigure closet to single door. remove structural work scope. inspection fee paid permit #201507272493",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508063530",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2015-08-06",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "revision to 2015107272493 structural revision",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507272493",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2015-07-27",
+      "status_date": "2016-06-23",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "#301 - remodel bathroom & kitchen. remove wall between diving room & living room, remove partition wall between two closets in bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010042275",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-04",
+      "status_date": "2001-02-23",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "bathroom remodel, replace tub, tile, tiolet, sink, plumbing fixtures in one unit only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1065064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1065&unit=301",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

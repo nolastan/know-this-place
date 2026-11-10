@@ -1,0 +1,58 @@
+{
+  "address": "690 Market Street, San Francisco, CA 94104",
+  "path": "/san-francisco/east-cut/market-street/690/unit-1904/",
+  "unit": "1904",
+  "apn": "0311096",
+  "block": "0311",
+  "lot": "096",
+  "parcel": {
+    "building_area_sqft": 1900,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 872400,
+    "assessed_improvement_value": 581600,
+    "last_sale_date": "2017-06-12"
+  },
+  "permits": [
+    {
+      "number": "201507272570",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-27",
+      "status_date": "2015-07-31",
+      "estimated_cost": 50880,
+      "revised_cost": 50880,
+      "description": "garage-demo duct & wall opening. 2/f add (1) fan coil for conference room. 5/f & 6/f: relocate (2) fan coils for break room & office.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502269452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-26",
+      "status_date": "2015-05-12",
+      "estimated_cost": 46200,
+      "revised_cost": 46200,
+      "description": "#1904 - remove and replace light fixtures (e) toilets; remove and replace carpet, (n) hardwood floor to match (e); new paint throughout; relocate shower to orginal location; new fixtures and finishes in bath; to comply with cec150.0(k)5",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0311096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0311&unit=1904",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

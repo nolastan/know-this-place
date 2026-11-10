@@ -1,0 +1,58 @@
+{
+  "address": "560 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/haight-street/560/unit-108/",
+  "unit": "108",
+  "apn": "0848031",
+  "block": "0848",
+  "lot": "031",
+  "parcel": {
+    "building_area_sqft": 1215,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 746400,
+    "assessed_improvement_value": 497600,
+    "last_sale_date": "2021-04-22"
+  },
+  "permits": [
+    {
+      "number": "201501296949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-29",
+      "status_date": "2016-01-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "subdivide existing first floor bathroom into 1/2 bath and storage closet, revision to appn. 201501135562.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501135562",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-13",
+      "status_date": "2016-01-08",
+      "estimated_cost": 12000,
+      "revised_cost": 40000,
+      "description": "one unit: replace kitchen cabinets & fixtures, retile three bathrooms & replace vanities. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0848031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0848&unit=108",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

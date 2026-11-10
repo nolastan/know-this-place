@@ -1,0 +1,47 @@
+{
+  "address": "368 Holloway Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/holloway-avenue/625/unit-16/",
+  "unit": "16",
+  "apn": "6985058",
+  "block": "6985",
+  "lot": "058",
+  "parcel": {
+    "building_area_sqft": 1312,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 83967,
+    "assessed_improvement_value": 277137,
+    "last_sale_date": "1994-09-28"
+  },
+  "permits": [
+    {
+      "number": "201105125951",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-12",
+      "status_date": "2011-07-08",
+      "estimated_cost": 4220,
+      "revised_cost": 4220,
+      "description": "perform deck decay repair @ edge of decks scupper. replace in kind. replace in kind metal flashing. post saddles at 3 locations on deck. no structural.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6985058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6985&unit=16",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

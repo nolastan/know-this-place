@@ -300,6 +300,10 @@ neighborhood hubs, because every one of them draws its picture through
   the check that it found them all. The `via` name comes from
   `seed_pages.PHOTO_SOURCES` by host, so an Unsplash or Pexels photo is
   credited to its own site rather than to Commons.
+- **Or the site's own** — a photo Stan took himself carries `"own": true` and
+  only `file`, `width`, `height` and `retrieved` (the day it was taken): no
+  author, no license, and no credit line under the picture. It is still cut,
+  scaled and stripped as above, with anyone recognisable cropped out.
 - **The building, not people**: a photo where a person can be recognised, a
   view *from* the place, a detail too close to say which building it is, or a
   picture of a different building of the same name is not used.
@@ -374,6 +378,17 @@ corbett-avenue/655/
   `status: "condo-unit"`, and `seed-list` writes the building and its units
   as `condo` would. It refuses, and seeds nothing, where the proposed lots
   include a unit another page already documents.
+- **A building divided into airspace parcels that the roll does not call
+  condominiums is paged the same way.** 1155 Market Street is four office
+  lots, 575 Sutter Street ten retail lots, all on one `mapblklot`. Where the
+  parcels at an address's point share one map lot on one block but most are
+  not condominiums, `resolve_eas.py` takes the lowest, files the fact at the
+  building's path and records every lot in `resolution.building_lots`;
+  `manifest` passes them on and `seed-list` writes the building with exactly
+  those lots. Its units are headed "Parcel", not "Condominium unit", because
+  the building's `parcel.property_class` does not say condominium. Parcels
+  on different map lots (701 Illinois Street's Port overlay) are still a
+  coin toss and stay unresolved.
 - **The building has no `apn`, `lot` or `assessment`.** Its assessed value is
   its units' sum, read off the unit pages at render time (`condo_view`), so
   no figure is stated twice. Its `parcel` keeps only what every unit shares:
@@ -383,6 +398,17 @@ corbett-avenue/655/
   by its lot. DBI files the lobby, the roof and the street space under
   whichever unit's lot holds the address (999 Green Street's are all on
   unit 1903's), so the lot says nothing about whose a permit is.
+- **Two things DBI does to a mapped building, and what `condo` does about
+  them.** Permits issued before the map stay on the lot the map retired, so
+  `condo` also takes the permits on the block filed at the building's own
+  street numbers under a lot the roll no longer has, and puts them on the
+  building. And where DBI stamps one unit's designation on the building's
+  own permits (988 Market Street's are all "1 M1", roof and basement
+  included), `--building-permit-units 1M1` records that in
+  `condominium.building_permit_units` and those permits stay on the building.
+- **A floor area every unit shares is the building's, restated**, and is left
+  off the unit pages: the roll gives each of 988 Market Street's office lots
+  the same 39,438 sq ft.
 - **`unit.json` is a closed vocabulary** (`seed_pages.UNIT_KEYS`). Whatever is
   true of the whole building, from a notable resident to a survey, goes on
   the building. A unit page never prints the roll's class, because

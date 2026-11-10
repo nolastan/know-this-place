@@ -1,0 +1,58 @@
+{
+  "address": "425 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/425/unit-5903/",
+  "unit": "5903",
+  "apn": "3765407",
+  "block": "3765",
+  "lot": "407",
+  "parcel": {
+    "building_area_sqft": 1677,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1289000,
+    "assessed_improvement_value": 1289000,
+    "last_sale_date": "2019-06-28"
+  },
+  "permits": [
+    {
+      "number": "201907024941",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-02",
+      "status_date": "2020-02-24",
+      "estimated_cost": 10000,
+      "revised_cost": 34000,
+      "description": "reconfigure closet and bathroom of master suite. bathtub removal.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703302812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-30",
+      "status_date": "2017-06-29",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "kitchen remodel - replacing cabinetry, counter top, location of sink, new appliances in place, new electrical per current code, removal of wiring in non bearing wall, (n) pot filler (plumbing), moving of oven. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3765407&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3765&unit=5903",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

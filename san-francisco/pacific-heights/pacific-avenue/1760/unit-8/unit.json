@@ -1,0 +1,58 @@
+{
+  "address": "1760 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/1760/unit-8/",
+  "unit": "8",
+  "apn": "0575061",
+  "block": "0575",
+  "lot": "061",
+  "parcel": {
+    "building_area_sqft": 1749,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 407001,
+    "assessed_improvement_value": 478975,
+    "last_sale_date": "1996-01-12"
+  },
+  "permits": [
+    {
+      "number": "201311081463",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-08",
+      "status_date": "2014-05-12",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "one unit-renovation to (e) kitchen, master bathroom, guest bathroom & wet bar including replacement of (e) plumbing fixtures, finishes, cabinetry & light fixtures. carpet to be replaced & wood floors to be refinished to match new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612149834",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-12-14",
+      "status_date": "2006-12-14",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "remove & replace 9 windows, all like for like & constructred of wood. replacements are 4 double hung & 5 casement window. these is no change in the size or location of the openings. .67 u factor min.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0575061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0575&unit=8",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

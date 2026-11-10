@@ -1,0 +1,69 @@
+{
+  "address": "425 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/425/unit-5202/",
+  "unit": "5202",
+  "apn": "3765376",
+  "block": "3765",
+  "lot": "376",
+  "parcel": {
+    "building_area_sqft": 1971,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1508580,
+    "assessed_improvement_value": 1508580,
+    "last_sale_date": "2022-07-25"
+  },
+  "permits": [
+    {
+      "number": "202301109969",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-01-10",
+      "status_date": "2023-01-10",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "one unit: redo shower tile, replace shower, change out flourescent recessed lights for led. no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210152050",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-10-15",
+      "status_date": "2014-12-17",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "one unit -revision to appl #2012.09.19.0135: relocate washer & dryer, extend hallway hatch & provide dedicated outlet (refrigerator), provide 2 countertop outlets, frame in recessed built-in hutch (hollow wall area), drywall repair & paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209190135",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-09-19",
+      "status_date": "2014-12-17",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "one unit-extend kitchen granite (which include wall demo), demo closet & reframe to accomodate cabinetry (built in hutch). re-route electrical switches & outlets, install lights & dry wall repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3765376&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3765&unit=5202",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

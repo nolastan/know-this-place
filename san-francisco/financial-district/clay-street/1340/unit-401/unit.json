@@ -1,0 +1,91 @@
+{
+  "address": "1340 Clay Street, San Francisco, CA 94109",
+  "path": "/san-francisco/financial-district/clay-street/1340/unit-401/",
+  "unit": "401",
+  "apn": "0215033",
+  "block": "0215",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 2470,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1354097,
+    "assessed_improvement_value": 902731,
+    "last_sale_date": "2019-04-29"
+  },
+  "permits": [
+    {
+      "number": "201905301956",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-30",
+      "status_date": "2019-09-23",
+      "estimated_cost": 1500,
+      "revised_cost": 4000,
+      "description": "one unit: revision to pa #201905211273. to include new partition and soffit area, plumbing work - instant hot, new garbage disposal & water filter at kitchen. lighting & electrical.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905211273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-21",
+      "status_date": "2019-09-23",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replace sheetrock, insulation, electrical lighting & switches. replace door. repair in-kind. n/a for maher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112120522",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-12",
+      "status_date": "2012-05-22",
+      "estimated_cost": 1000,
+      "revised_cost": 2500,
+      "description": "one unit-refer to pa# 2011-1208-0320-relocate 4 (e) heads & add 1 new sprinkler head in one unit only @4th floor. refer to pa# 2011-1208-0320",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112080320",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-08",
+      "status_date": "2012-05-17",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "interior remodeling work of an extg condominium residence including the demolition of non loadbearing/non structural partitions, relocation of interior doors, and the replacement of the extg fireplace with a new gas insert.sprinkler and fire alarm revisions under separate application",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405264867",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-26",
+      "status_date": "2004-05-26",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "#401- interior remodel of 2 1/2 baths,new corner pocket door & pass through,new kitchen appliances",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0215033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0215&unit=401",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

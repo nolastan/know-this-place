@@ -1,0 +1,58 @@
+{
+  "address": "650 Delancey Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/delancey-street/650/unit-203/",
+  "unit": "203",
+  "apn": "3789456",
+  "block": "3789",
+  "lot": "456",
+  "parcel": {
+    "building_area_sqft": 1619,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1544854,
+    "assessed_improvement_value": 1029902,
+    "last_sale_date": "2015-12-16"
+  },
+  "permits": [
+    {
+      "number": "201607263392",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-26",
+      "status_date": "2016-07-26",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "relocate washer & dryer fron 2/f to 1/f, move water heater tank 3' from current location, remove forced air heater unit & replace by electrical radiant heating in future storage, enlarge shower area of master bathroom. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511182942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-18",
+      "status_date": "2015-12-03",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "#203- water damage repair - remove & reset upper cabinet/ no plumbing work; remove & replace r13 insulation, ; remove & replace double layer of 5/* drywall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3789456&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3789&unit=203",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

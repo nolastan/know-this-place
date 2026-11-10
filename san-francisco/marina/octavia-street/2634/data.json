@@ -1,0 +1,84 @@
+{
+  "address": "2634 Octavia Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/octavia-street/2634/",
+  "block": "0553",
+  "eas_baseid": "285079",
+  "coordinates": {
+    "lat": 37.796602,
+    "lng": -122.428386
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 7,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Marina"
+  },
+  "condominium": {
+    "lots": [
+      "047",
+      "048",
+      "049",
+      "050",
+      "051",
+      "052",
+      "053"
+    ],
+    "method": "Proposed from the 2025 roll for block 0553: every condominium parcel the roll files under 2634 OCTAVIA ST, and the unbroken run of lots beside parcel 0553047 on the same street with the same year built (1904). 7 lots, 047–053."
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OCTAVIA&street_type=ST&address_number=2634",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0553)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0553&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0553",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0553047",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-12-20",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 20 December 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n335/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-12-20",
+      "kind": "planning decision",
+      "description": "The City Planning Commission voted 3-2 to find the conversion of the six-unit building to condominiums inconsistent with the Master Plan (Resolution 8458).",
+      "source": "sf-planning-commission-minutes-1979-12-20"
+    }
+  ]
+}

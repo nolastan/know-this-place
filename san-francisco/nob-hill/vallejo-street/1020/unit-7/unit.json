@@ -1,0 +1,53 @@
+{
+  "address": "1020 Vallejo Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/vallejo-street/1020/unit-7/",
+  "unit": "7",
+  "apn": "0127147",
+  "block": "0127",
+  "lot": "147",
+  "parcel": {
+    "building_area_sqft": 2410,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4447710,
+    "assessed_improvement_value": 2965140,
+    "last_sale_date": "2022-09-23"
+  },
+  "permits": [
+    {
+      "number": "202305157782",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-15",
+      "status_date": "2024-07-15",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "one unit: kitchen, primary bath and powder room remodel. replace all finishes and fixtures in kind. no layout change",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2012–2023",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127147&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "address": "840 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/powell-street/840/unit-501/",
+  "unit": "501",
+  "apn": "0243047",
+  "block": "0243",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 3077,
+    "rooms": 9,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1346400,
+    "assessed_improvement_value": 897600,
+    "last_sale_date": "2023-11-28"
+  },
+  "permits": [
+    {
+      "number": "200410126547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-12",
+      "status_date": "2005-07-05",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "remodel master bthrm and kchn in kind/refinish hardwood floors/paint/carpet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2004",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=501",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

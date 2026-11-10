@@ -1,0 +1,46 @@
+{
+  "address": "220 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/220/unit-614/",
+  "unit": "614",
+  "apn": "0060073",
+  "block": "0060",
+  "lot": "073",
+  "parcel": {
+    "building_area_sqft": 594,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 351900,
+    "assessed_improvement_value": 234600,
+    "last_sale_date": "2024-05-08"
+  },
+  "permits": [
+    {
+      "number": "201707283196",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-07-28",
+      "status_date": "2017-08-30",
+      "estimated_cost": 1200,
+      "revised_cost": 14000,
+      "description": "one unit: remove and replace counter top in kitchen, change faucet of kitchen, change faucet of bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0060073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0060&unit=614",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "1177 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/california-street/1177/unit-1211/",
+  "unit": "1211",
+  "apn": "0253A062",
+  "block": "0253A",
+  "lot": "062",
+  "parcel": {
+    "building_area_sqft": 437,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 243000,
+    "assessed_improvement_value": 162000,
+    "last_sale_date": "2020-02-21"
+  },
+  "permits": [
+    {
+      "number": "201410108648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-10",
+      "status_date": "2015-02-03",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "one unit: install \"murphy\" bed in living room; partially replace cabinetry throughout; install desk @ living room niche; replace 2x4 fluorescent fixture @ kitchen w/recessed lights; install built-in microwave @ kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401287222",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-28",
+      "status_date": "2014-05-08",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "one unit: replace bath tubs, replace kitchen counter tops, replace appliances",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0253A062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0253A&unit=1211",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

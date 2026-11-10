@@ -1,0 +1,31 @@
+{
+  "address": "3930 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/24th-street/3932/unit-17/",
+  "unit": "17",
+  "apn": "3654062",
+  "block": "3654",
+  "lot": "062",
+  "parcel": {
+    "building_area_sqft": 859
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 98232,
+    "assessed_improvement_value": 123180
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3654062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3654&unit=17",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

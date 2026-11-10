@@ -1,0 +1,80 @@
+{
+  "address": "455 25th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/25th-avenue/455/",
+  "block": "1457",
+  "eas_baseid": "445625",
+  "coordinates": {
+    "lat": 37.78097,
+    "lng": -122.485148
+  },
+  "parcel": {
+    "year_built": 1996,
+    "units": 3,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond"
+  },
+  "condominium": {
+    "lots": [
+      "047",
+      "048",
+      "049"
+    ],
+    "method": "Proposed from the 2025 roll for block 1457: every condominium parcel the roll files under 455 25TH AV, and the unbroken run of lots beside parcel 1457047 on the same street with the same year built (1996). 3 lots, 047–049."
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1996",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=455",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1457)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1457&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1457",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1457047",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-08-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 August 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n193/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-08-03",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 6-0, without discretionary review, demolishing the two-storey, three-unit building for a new four-storey, three-unit building.",
+      "source": "sf-planning-commission-minutes-1995-08-03"
+    }
+  ]
+}

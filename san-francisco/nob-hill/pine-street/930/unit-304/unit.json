@@ -1,0 +1,57 @@
+{
+  "address": "930 Pine Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/pine-street/930/unit-304/",
+  "unit": "304",
+  "apn": "0254068",
+  "block": "0254",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 715,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 229870,
+    "assessed_improvement_value": 167977,
+    "last_sale_date": "1991-08-06"
+  },
+  "permits": [
+    {
+      "number": "200601273183",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-01-27",
+      "status_date": "2006-01-27",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "kitchen change formica countertop with silestone countertop. replace fizig, dishwasher, sink, rangehood w/same size appliances. replace floor with hardwood floor, light with new fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601172331",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-01-17",
+      "status_date": "2007-02-08",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace (e)tile on bathroom floor & tub surround,replace light fixture,fan,vanity,sink,faucet in sink & shower with new fixtures,vanity,light & sink & faucet.change lights -hall,bedroom,kitchen,dining,exhaust fan.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0254068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0254&unit=304",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

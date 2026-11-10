@@ -185,8 +185,9 @@
   them with a street number, 2 of which become pages — 601–625 Polk, which the
   volume gives as 624 Polk, and 470–480 Winston Drive. Of the other five
   numbered addresses, 526 California, 117 Capp and 304 Turk have no EAS record;
-  141 Albion is now five condominium parcels and is held back under the
-  condominium rule in AGENTS.md; and 1600 Holloway is the whole SFSU campus
+  141 Albion is five condominium parcels, held back under the old
+  condominium rule and resolved to the building on 2026-11-10 (#556), though
+  the pass recorded no fact for it and nothing is published; and 1600 Holloway is the whole SFSU campus
   parcel. The remaining 29 are located by corner, by street segment, by park
   feature or by venue name — Temple Emanu-El on Sutter, Belden Place, Woodward's
   Gardens, 18th near Valencia, 15th and Mission, 20th and Folsom, Army Street,

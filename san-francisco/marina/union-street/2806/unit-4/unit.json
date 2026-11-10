@@ -1,0 +1,35 @@
+{
+  "address": "2806 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2806/unit-4/",
+  "unit": "4",
+  "apn": "0948035",
+  "block": "0948",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 992,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 449528,
+    "assessed_improvement_value": 449528,
+    "last_sale_date": "2004-08-04"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0948035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0948&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

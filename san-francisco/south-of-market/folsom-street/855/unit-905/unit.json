@@ -1,0 +1,66 @@
+{
+  "address": "855 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/855/unit-905/",
+  "unit": "905",
+  "apn": "3752354",
+  "block": "3752",
+  "lot": "354",
+  "parcel": {
+    "building_area_sqft": 838
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 369316,
+    "assessed_improvement_value": 369316,
+    "last_sale_date": "2002-03-29"
+  },
+  "permits": [
+    {
+      "number": "200707136747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-13",
+      "status_date": "2007-09-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200608250531,#200603307930 for final only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608250531",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-08-25",
+      "status_date": "2006-08-25",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "demo e balcony guardrail and replace with 1/2 \" tempered glass guardrail to be min 3'1 from finish floor. install new partiton wall at entry hall with tempered glass partition. removal of outlet at guardrail routed to e cabinetry,2 new outlets at partition. 2 stes. led rop lighting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603307930",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-30",
+      "status_date": "2006-03-30",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "removal of (e) non strucual partition wall, new kitchen and applances,new stair lighting low voltage, repace (e) track light w/new fluoresent fexture at ktichen, demo 3 switches, 3 outlets, install 4 switches for (e) and new lighting, replacement of (e) hardwood floors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752354&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=905",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

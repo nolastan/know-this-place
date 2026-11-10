@@ -1,0 +1,46 @@
+{
+  "address": "2117 Bush Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/bush-street/2117/unit-3/",
+  "unit": "3",
+  "apn": "0677066",
+  "block": "0677",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 813,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 199125,
+    "assessed_improvement_value": 169252
+  },
+  "permits": [
+    {
+      "number": "201004200658",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-20",
+      "status_date": "2010-12-01",
+      "estimated_cost": 18850,
+      "revised_cost": 18850,
+      "description": "rear house- change in kitchen cabientry, update lighting, remove garbage disposal, move refrigerator, change existing window to fire glass at same location, same size, change existing windows to sliding door. both window not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0677066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-05"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0677&unit=3",
+      "retrieved": "2026-11-05"
+    }
+  ]
+}

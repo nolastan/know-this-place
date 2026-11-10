@@ -1,0 +1,46 @@
+{
+  "address": "930 Pine Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/pine-street/930/unit-114/",
+  "unit": "114",
+  "apn": "0254047",
+  "block": "0254",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 505,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 302940,
+    "assessed_improvement_value": 201960,
+    "last_sale_date": "2024-02-22"
+  },
+  "permits": [
+    {
+      "number": "202206136220",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2022-06-13",
+      "status_date": "2022-06-13",
+      "estimated_cost": 1,
+      "revised_cost": 0,
+      "description": "permit for use of an intermediate length occupancy within existing legally permitted use and occupancy.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0254047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0254&unit=114",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

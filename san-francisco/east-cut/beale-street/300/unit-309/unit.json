@@ -1,0 +1,44 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-309/",
+  "unit": "309",
+  "apn": "3747038",
+  "block": "3747",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 656
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 235126,
+    "assessed_improvement_value": 156745,
+    "last_sale_date": "1999-05-14"
+  },
+  "permits": [
+    {
+      "number": "201305308275",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-30",
+      "status_date": "2013-09-03",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replacing extg kitchen and bath counters with new counter top.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=309",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
