@@ -1,0 +1,69 @@
+{
+  "address": "1070 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1070/unit-801/",
+  "unit": "801",
+  "apn": "0121A022",
+  "block": "0121A",
+  "lot": "022",
+  "parcel": {
+    "building_area_sqft": 1616,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1524955,
+    "assessed_improvement_value": 1016637,
+    "last_sale_date": "2022-05-25"
+  },
+  "permits": [
+    {
+      "number": "202406053740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-05",
+      "status_date": "2024-06-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "revision to pa# 2022-0830-1557. layout change. removal of all interior finishes, fixtures, appliances & partition framing. interior remodel as per drawings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303304758",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2023-03-30",
+      "status_date": "2024-06-14",
+      "estimated_cost": 1,
+      "revised_cost": 30000,
+      "description": "interior renovation of unit. reconfigure spaces resulting in moving walls, lighting, 8 plumbing. (n) layout/finishes throughout. replace all windows in-kind. ref pa #202208301557",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208301557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-30",
+      "status_date": "2024-06-28",
+      "estimated_cost": 400000,
+      "revised_cost": 400000,
+      "description": "one unit: interior renovation of unit reconfiguration of spaces resulting in the moving of interior walls. lighting 8 plumbing to be renovated to reflect new layout. new finishes throughout. replacing al 13 windows in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121A022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121A&unit=801",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

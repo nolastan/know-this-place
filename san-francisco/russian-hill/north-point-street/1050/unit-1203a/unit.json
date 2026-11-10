@@ -1,0 +1,58 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-1203a/",
+  "unit": "1203A",
+  "apn": "0451224",
+  "block": "0451",
+  "lot": "224",
+  "parcel": {
+    "building_area_sqft": 615,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 439613,
+    "assessed_improvement_value": 293073,
+    "last_sale_date": "2013-04-04"
+  },
+  "permits": [
+    {
+      "number": "201407221845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-22",
+      "status_date": "2014-08-29",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replace existing alumminum window with new alumnium window same type and size. alumnium window is orginal building material.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201306260601",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-26",
+      "status_date": "2014-08-29",
+      "estimated_cost": 20000,
+      "revised_cost": 18500,
+      "description": "remove existing kitchen cabinets, countertop, sink, dishwasher, range & exhaust fan with new; add peninsula in kitchen with built-in fridge/freezer;flip circuit breaker panel so access from bedroom (currently accessible via closet) reoute conduit from current refrigerator locaton to new peninsula;",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451224&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1203A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-1505/",
+  "unit": "1505",
+  "apn": "0451079",
+  "block": "0451",
+  "lot": "079",
+  "parcel": {
+    "building_area_sqft": 354,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 327000,
+    "assessed_improvement_value": 218000,
+    "last_sale_date": "2024-07-29"
+  },
+  "permits": [
+    {
+      "number": "200104025777",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-02",
+      "status_date": "2001-06-29",
+      "estimated_cost": 1460,
+      "revised_cost": 1460,
+      "description": "construction of a 6\" deepceiling soffit, made of light gauge metal framing & 1/2 \" gypsum board, aro",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006021594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-02",
+      "status_date": "2001-07-02",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "existing kitchen unit replace w/new appliances & cabinetry, rough plumbing & electrical remain, exis",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1505",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

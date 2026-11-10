@@ -1,0 +1,43 @@
+{
+  "address": "580 Howard Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/howard-street/580/unit-204/",
+  "unit": "204",
+  "apn": "3721097",
+  "block": "3721",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 1226
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46679,
+    "assessed_improvement_value": 328039
+  },
+  "permits": [
+    {
+      "number": "201809241160",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-24",
+      "status_date": "2018-09-24",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replace a new (e) cabinets, paint & touch up. n/a for maher.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3721097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3721&unit=204",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

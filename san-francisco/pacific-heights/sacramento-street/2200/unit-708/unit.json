@@ -1,0 +1,57 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-708/",
+  "unit": "708",
+  "apn": "0627A056",
+  "block": "0627A",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 950,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 375106,
+    "assessed_improvement_value": 375106,
+    "last_sale_date": "2003-02-28"
+  },
+  "permits": [
+    {
+      "number": "201802211884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-21",
+      "status_date": "2018-08-15",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "remodel (1) bathroom. replace tub and vanity. maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110076419",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-07",
+      "status_date": "2011-11-01",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "one unit: install washer & dryer in place of the guest shower and upgrading the electrical, no wall relocation. provide min. 100 sq. in. opening for make up air to dryer. dryer exhaust to terminate to exterior, in. 3' fr. property line and building opening",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=708",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

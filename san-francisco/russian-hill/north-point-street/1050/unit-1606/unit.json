@@ -1,0 +1,46 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-1606/",
+  "unit": "1606",
+  "apn": "0451253",
+  "block": "0451",
+  "lot": "253",
+  "parcel": {
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 958873,
+    "assessed_improvement_value": 639248,
+    "last_sale_date": "2015-12-30"
+  },
+  "permits": [
+    {
+      "number": "201602230327",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-23",
+      "status_date": "2016-06-02",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove extg kitchen counter top and sink fixtures with new countertop, sink, & fixture. change bathroom vanity fixtures and in hallway bath change tile and fixtures. no walls to be altered or removed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451253&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1606",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

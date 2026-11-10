@@ -1,0 +1,68 @@
+{
+  "address": "650 2nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/2nd-street/650/unit-602/",
+  "unit": "602",
+  "apn": "3788070",
+  "block": "3788",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 1380,
+    "rooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 836637,
+    "assessed_improvement_value": 557756,
+    "last_sale_date": "2018-07-16"
+  },
+  "permits": [
+    {
+      "number": "201009291821",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-29",
+      "status_date": "2010-12-07",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "add one fire sprinkler head on extg system. building permit #200808128015. light hazard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008128615",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-12",
+      "status_date": "2010-12-07",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "one unit. build a 28\" high platform, new closet area, new book shelves, add one door in bathroom, add one cabinet in dining rm, replace bathroom vanity, ligthing works & relocate outlets and mep. fire sprinklers and fire alarm on separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610266164",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-10-26",
+      "status_date": "2006-10-26",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "work @ one unit. move door, remove dividing wall in closet, create sofit, hang track for curtains, build shelves, build dry wall above (e) steel frame structure. refinish floors (hard wood) install cork floor, remove kitchen island, install pin lights in sofit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3788070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3788&unit=602",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

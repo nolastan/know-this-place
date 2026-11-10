@@ -1,0 +1,56 @@
+{
+  "address": "1034 Filbert Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/filbert-street/1034/unit-248/",
+  "unit": "248",
+  "apn": "0093060",
+  "block": "0093",
+  "lot": "060",
+  "parcel": {
+    "building_area_sqft": 2325,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 664498,
+    "assessed_improvement_value": 805713,
+    "last_sale_date": "1996-04-12"
+  },
+  "permits": [
+    {
+      "number": "200806265432",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-26",
+      "status_date": "2008-07-02",
+      "estimated_cost": 150,
+      "revised_cost": 150,
+      "description": "oopen up floor and cut new hole to exterior for bathroom vent . prior to inspection. requested by distric inspector. hole opening to be 1 12\"x12\" tile.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707035859",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-03",
+      "status_date": "2008-07-02",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace existing tub with whirlpool, replace existing vanity with double sinks, insall new steam shower, retile.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0093060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0093&unit=248",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

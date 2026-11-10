@@ -1,0 +1,58 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-1801/",
+  "unit": "1801",
+  "apn": "0451130",
+  "block": "0451",
+  "lot": "130",
+  "parcel": {
+    "building_area_sqft": 2365,
+    "rooms": 7,
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1832940,
+    "assessed_improvement_value": 1221960,
+    "last_sale_date": "2023-11-06"
+  },
+  "permits": [
+    {
+      "number": "201602028664",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-02",
+      "status_date": "2016-05-02",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "#1801: bathroom remodel: no structural work,replace bath vanity & fixtures w/ new, replace toilet,new bath tub door, new lighting fixtures at same location tile floor, install all led lights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509026008",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-02",
+      "status_date": "2016-01-12",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "#1801- kitchen remodel: no structural work; replace cabinets, appliances with new in same location, no rough plumbing, move existing electrical panel to approved location, upgrade electrical in kitchen to code, add lighting (50% high efficacy) mew range hood connect to (e) duct, no removal of walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451130&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1801",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

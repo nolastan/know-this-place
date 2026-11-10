@@ -1,0 +1,94 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-1450/",
+  "unit": "1450",
+  "apn": "0296117",
+  "block": "0296",
+  "lot": "117",
+  "parcel": {
+    "building_area_sqft": 1195
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 681842,
+    "assessed_improvement_value": 681842,
+    "last_sale_date": "2016-12-29"
+  },
+  "permits": [
+    {
+      "number": "201709209115",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-20",
+      "status_date": "2017-09-27",
+      "estimated_cost": 5500,
+      "revised_cost": 350,
+      "description": "suite 1450: add life safety device to existing system. ref app#201705307834. t.i pa# 201705106153. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709016727",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-01",
+      "status_date": "2017-11-07",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "revision to electrical. ref app#201705106153. t-24. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705307834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-30",
+      "status_date": "2017-09-27",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "relocate 2 (e) speaker/strobes and add 2 strobes as indicated on plans. ref pa 2017-0512-6453",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705106153",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-10",
+      "status_date": "2017-10-30",
+      "estimated_cost": 125000,
+      "revised_cost": 145000,
+      "description": "14th floor suite 1450 - interior t.i. : partitoins, casework, ceiling, related electrical, plumbing, interior finishes. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704063346",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-06",
+      "status_date": "2017-09-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "empty suite. 14th flr: #1450: demo and remove all debris from approx 200 lf of non bearing interior partitions maher na. vacant space.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2017",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296117&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=1450",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

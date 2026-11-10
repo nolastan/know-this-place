@@ -1,0 +1,45 @@
+{
+  "address": "542 Natoma Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/natoma-street/544/unit-c-1/",
+  "unit": "C-1",
+  "apn": "3726168",
+  "block": "3726",
+  "lot": "168",
+  "parcel": {
+    "building_area_sqft": 2262
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1117717,
+    "assessed_improvement_value": 745142,
+    "assessed_fixtures_value": 150038,
+    "last_sale_date": "2014-09-05"
+  },
+  "permits": [
+    {
+      "number": "202001212375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-21",
+      "status_date": "2020-09-09",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "remodel 3rd lvl entry, 1/2 bath, guest bath. rmeodel 4th level kitchen, remodel 4th level master bath, 8th level (roof) new fenestration & hot tub on roof deck.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3726168&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3726&unit=C-1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

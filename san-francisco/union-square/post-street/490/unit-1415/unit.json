@@ -1,0 +1,55 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-1415/",
+  "unit": "1415",
+  "apn": "0296112",
+  "block": "0296",
+  "lot": "112",
+  "parcel": {
+    "building_area_sqft": 369
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 204310,
+    "assessed_improvement_value": 204310,
+    "last_sale_date": "2014-07-18"
+  },
+  "permits": [
+    {
+      "number": "201410249791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-24",
+      "status_date": "2014-12-22",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "14th floor fire alarm t.i. suite 1415: relocate 2 speaker strobes on an existing fire alarm system. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408194157",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-19",
+      "status_date": "2015-02-03",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "suite #1415:14th flr, ste 1415: interior tenant improvements, new partitions and door, floor sink related electrical and plumbing, demo existing walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296112&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=1415",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

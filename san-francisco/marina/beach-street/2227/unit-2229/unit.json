@@ -1,0 +1,78 @@
+{
+  "address": "2229 Beach Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/beach-street/2227/unit-2229/",
+  "apn": "0918021",
+  "block": "0918",
+  "lot": "021",
+  "parcel": {
+    "building_area_sqft": 2250,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1701054,
+    "assessed_improvement_value": 1134036,
+    "last_sale_date": "2023-03-07"
+  },
+  "permits": [
+    {
+      "number": "202203281047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-28",
+      "status_date": "2022-10-20",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "3/f: interior bathroom renovation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201045354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-04",
+      "status_date": "2022-11-15",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "interior renovations at (1) unit including: kitchen renovation, bathroom in kind renovation, new roof deck & access stair w/ hatch. interior walls, rear window replacements. no change to street facing exteriors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204083345",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-08",
+      "status_date": "2002-09-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "two bathrooms to be taken down to studs & modermized with slight change to confiquration in one bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-12",
+      "status_date": "1990-02-12",
+      "estimated_cost": 6800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0918021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0918&street_number=2229",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

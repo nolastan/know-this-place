@@ -1,0 +1,47 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-33c/",
+  "unit": "33C",
+  "apn": "3722327",
+  "block": "3722",
+  "lot": "327",
+  "parcel": {
+    "building_area_sqft": 1670,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1782829,
+    "assessed_improvement_value": 1188552,
+    "last_sale_date": "2022-03-29"
+  },
+  "permits": [
+    {
+      "number": "201506027883",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-06-02",
+      "status_date": "2015-06-02",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "new counter tops & built in cabinets,no walls being moed, misc elec modifications,new wood flooring & paitn throughout.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722327&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=33C",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

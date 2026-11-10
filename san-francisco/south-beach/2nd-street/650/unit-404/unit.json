@@ -1,0 +1,63 @@
+{
+  "address": "650 2nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/2nd-street/650/unit-404/",
+  "unit": "404",
+  "apn": "3788062",
+  "block": "3788",
+  "lot": "062",
+  "parcel": {
+    "building_area_sqft": 1794,
+    "rooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 775795,
+    "assessed_improvement_value": 517193,
+    "last_sale_date": "2013-04-18"
+  },
+  "permits": [
+    {
+      "number": "201311252768",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-25",
+      "status_date": "2014-05-19",
+      "estimated_cost": 3300,
+      "revised_cost": 3300,
+      "description": "#404 - add or relocate (6) sprinkler heads for remodel. ref pa #2013.0815.4374",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308154374",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-08-15",
+      "status_date": "2013-08-22",
+      "estimated_cost": 155000,
+      "revised_cost": 155000,
+      "description": "one unit-demo & construction to determine dry rot behind drywall & under floor in valences/drop ceiling etc.. bathroom & kitchen remodel complete all updating. construction listed here. (demo plan attached)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2013–2014",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3788062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3788&unit=404",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

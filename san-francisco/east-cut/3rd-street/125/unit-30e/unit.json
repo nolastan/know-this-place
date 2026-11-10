@@ -1,0 +1,58 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-30e/",
+  "unit": "30E",
+  "apn": "3722311",
+  "block": "3722",
+  "lot": "311",
+  "parcel": {
+    "building_area_sqft": 2533,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1765400,
+    "assessed_improvement_value": 1765400,
+    "last_sale_date": "2010-12-15"
+  },
+  "permits": [
+    {
+      "number": "201106168244",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-16",
+      "status_date": "2011-07-06",
+      "estimated_cost": 515,
+      "revised_cost": 515,
+      "description": "one unit-fire sprinkler t.i-relocate 1 sprinkler and plug 1 sprinkler.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104083733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-08",
+      "status_date": "2011-10-28",
+      "estimated_cost": 292000,
+      "revised_cost": 292000,
+      "description": "one unit-remove & add some ceiling lighting, add wall conces, add gypsum above kitchen cabinets, add header at kitchen & entry. expand opening at master study. new cabinetry in kitchen & bathrooms. new flooring & paint. field verify if fire sprinklers are affected by partition work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722311&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=30E",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

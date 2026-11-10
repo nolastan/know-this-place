@@ -1,0 +1,57 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-603/",
+  "unit": "603",
+  "apn": "0451171",
+  "block": "0451",
+  "lot": "171",
+  "parcel": {
+    "building_area_sqft": 696,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60923,
+    "assessed_improvement_value": 243741
+  },
+  "permits": [
+    {
+      "number": "202408199005",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-19",
+      "status_date": "2025-08-07",
+      "estimated_cost": 48000,
+      "revised_cost": 50000,
+      "description": "one unit: demo (e) kitchen cabinets, counter, etc. replace in kind with new cabinets, countertop, appliances etc. replace tub valve in bathroom. replace vanity, top and toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101122505",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-01-12",
+      "status_date": "2021-01-12",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "replacer (e) tub w/ (n) walk-in soaker tub, minor drywall patch in master bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451171&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=603",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

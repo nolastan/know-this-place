@@ -1,0 +1,58 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-28f/",
+  "unit": "28F",
+  "apn": "3722300",
+  "block": "3722",
+  "lot": "300",
+  "parcel": {
+    "building_area_sqft": 1527,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1814665,
+    "assessed_improvement_value": 1209777,
+    "last_sale_date": "2022-05-12"
+  },
+  "permits": [
+    {
+      "number": "201411071058",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-07",
+      "status_date": "2014-11-14",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "one unit: relocate two fire sprinklers (pendent); relocate one and add 1 pendent head. (t.i. #201406208971).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406208971",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-20",
+      "status_date": "2015-05-05",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "#28f - new vanity, backsplashes, countertops & faces, sinks, faucets. replace door jambs, add soffit, valances, pocket door, wall for pocket door. new hardwood flooring & paint throughout. new recessed & track lighting thruout. add whisper fan, hot water dispenser/filter.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722300&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=28F",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

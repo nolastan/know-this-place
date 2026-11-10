@@ -1,0 +1,28 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-808/",
+  "unit": "808",
+  "apn": "0451193",
+  "block": "0451",
+  "lot": "193",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 144820,
+    "assessed_improvement_value": 144820
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451193&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=808",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
