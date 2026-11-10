@@ -80,7 +80,7 @@ sit in — the three it touched most, and how many in all.
 | `argonaut-sfhs/vol-29-no-2.json` | 7 | 11 KB | 1865–1906 | 5 | 5 | `chinatown`, `pacific-heights`, `marina` |
 | `argonaut-sfhs/vol-30-no-1.json` | 17 | 23 KB | 1854–1912 | 8 | 8 | `financial-district`, `tenderloin` |
 | `argonaut-sfhs/vol-30-no-2.json` | 17 | 18 KB | 1855 | 1 | 1 | `tenderloin` |
-| `argonaut-sfhs/vol-31-no-1.json` | 40 | 43 KB | 1912–2012 | 6 | 6 | `tenderloin`, `lakeshore` |
+| `argonaut-sfhs/vol-31-no-1.json` | 40 | 44 KB | 1912–2012 | 7 | 6 | `tenderloin`, `lakeshore`, `mission` |
 | `argonaut-sfhs/vol-31-no-2.json` | 22 | 27 KB | 1852–1863 | 6 | 6 | `western-addition`, `lone-mountain`, `north-beach` |
 | `argonaut-sfhs/vol-32-no-1.json` | 15 | 20 KB | 1847–1951 | 7 | 7 | `castro`, `financial-district` |
 | `article-10-landmarks/batch-1-lm001-lm050.json` | 161 | 308 KB | 1782–1985 | 146 | 136 | `chinatown`, `nob-hill`, `tenderloin` +13 |
