@@ -1,0 +1,49 @@
+{
+  "address": "975 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/977/unit-975/",
+  "apn": "3619114",
+  "block": "3619",
+  "lot": "114",
+  "parcel": {
+    "building_area_sqft": 942,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 217150,
+    "assessed_improvement_value": 144762
+  },
+  "permits": [
+    {
+      "number": "201610200830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-20",
+      "status_date": "2016-12-22",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "middle unit- renovate kitchen with new cabinets, countertop and appliances, renovate bathroom with new tiles, toilet and vanity, no layout & structural change, same in kind. kitchen & bathroom remodel in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015–2016",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3619114&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3619&street_number=975",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

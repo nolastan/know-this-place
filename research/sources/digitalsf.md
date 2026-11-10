@@ -755,6 +755,26 @@ records carry one; exactly one of those also carries a street number.
   `citation_of()` does this, and refuses a record that names neither rather
   than citing "the archive".
 
+- **Verified:** 2026-11-10 (#556, the photographs the old condominium rule
+  held back, re-resolved now that a condominium is paged as a building. 64
+  findings move from unresolved to resolved: SFP 23 27 published and 12
+  declined, SFP 162 8 and 8, SFH 371 2 and 1, SFH 3 none and 1, the tail
+  3 and 2. **40 published on 37 pages, 31 of them seeded** as condominium
+  buildings; 24 declined. The rule for a building with no page yet: seed it
+  only where the roll dates the building no later than the photograph, or
+  inside the range the archivist gives for it. Where
+  the roll dates it later, gives no year, or the photograph is undated, the
+  finding is declined, since the only entry would be a picture of what stood
+  there before. On a page that already existed the photograph is published
+  with the usual `unknowns` line. **Nine of the 31 seeds needed their lots
+  corrected by hand against sf-parcels' `mapblklot`:** five came out as plain
+  pages because the unit's roll row carries the lot area (977 Church, 2637
+  22nd, 701 Florida, 2741 Bush, 320 Maple), and four left out a unit the roll
+  files at another street number (640 Davis, 206 Steiner, 2917 24th, 406
+  39th). Left unresolved on purpose: 1741 Powell, 2166 Hayes and 173 Cook,
+  which the resolver's own check flags as landing on the building next door;
+  and the two photographs of 1436 Vallejo, whose path is already taken by the
+  page for another parcel, 0549029.)
 - **Verified:** 2026-09-06 (read, resolved and published **SFP 136, the San
   Francisco Portrait Photograph Collection**, whole: 2,664 records → 10
   findings → 2 resolved → **2 published on 2 pages**, none seeded. Findings:

@@ -1,0 +1,35 @@
+{
+  "address": "180 7th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/7th-street/170/unit-410/",
+  "unit": "410",
+  "apn": "3727166",
+  "block": "3727",
+  "lot": "166",
+  "parcel": {
+    "building_area_sqft": 902,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 508906,
+    "assessed_improvement_value": 508906,
+    "last_sale_date": "2017-06-07"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3727166&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3727&unit=410",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

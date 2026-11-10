@@ -1,0 +1,54 @@
+{
+  "address": "650 Davis Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/davis-street/640/unit-650/",
+  "apn": "0168057",
+  "block": "0168",
+  "lot": "057",
+  "parcel": {
+    "building_area_sqft": 94362
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33296298,
+    "assessed_improvement_value": 22197532,
+    "last_sale_date": "2018-11-01"
+  },
+  "permits": [
+    {
+      "number": "202604038826",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-03",
+      "status_date": "2026-04-03",
+      "estimated_cost": 8400,
+      "revised_cost": 8400,
+      "description": "1st floor: furnish and install (1) heat pump unit. furnish and install associated ductwork and air registers/diffusers. ref# 2026-0218-6079.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202603258251",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-25",
+      "status_date": "2026-04-07",
+      "estimated_cost": 2959528,
+      "revised_cost": 2959528,
+      "description": "2/fl- ti to demo and construct (n) offices, (n) space to include (n) workstations, meetin spaces, lounges, and breakroom. mep included",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0168057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0168&street_number=650",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

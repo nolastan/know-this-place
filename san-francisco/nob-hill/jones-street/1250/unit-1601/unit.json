@@ -1,0 +1,63 @@
+{
+  "address": "1250 Jones Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/jones-street/1250/unit-1601/",
+  "unit": "1601",
+  "apn": "0221082",
+  "block": "0221",
+  "lot": "082",
+  "parcel": {
+    "building_area_sqft": 1642,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2384034,
+    "assessed_improvement_value": 1589350,
+    "last_sale_date": "2008-05-02"
+  },
+  "permits": [
+    {
+      "number": "200807227265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-22",
+      "status_date": "2009-06-11",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "revision to application 200807166858. interior remodel of residential condo including kitchen 2 bathrooms, bar area and common space. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807166858",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-16",
+      "status_date": "2009-06-11",
+      "estimated_cost": 100000,
+      "revised_cost": 5000,
+      "description": "#1601: interior remodel including 1 bathroom, 1 wet bar, 1 storage room, 1 water closet & 1 kitchen. no sttructural work. interior demo of cabinets, doors, trim, flooring & fixtures, walls, framing & drywall to remain. balance of work under seperate permit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008–2009",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221082&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=1601",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
