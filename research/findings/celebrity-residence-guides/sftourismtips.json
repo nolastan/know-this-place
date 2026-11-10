@@ -8,7 +8,7 @@
   "examined": 1,
   "mentions": 28,
   "remaining": "Nothing. The guide is exhausted; another guide is a lead, not a find.",
-  "note": "28 numbered addresses: the 26 residence and event addresses the dossier counts, plus two sidewalk plaques for Jerry Garcia on Mission Street. 25 of the 26 are on pages (two of them, 1945 Franklin and one claim at 2080 Washington, only as a recorded omission of a current resident); 1235 Masonic is a condominium unit and has none."
+  "note": "28 numbered addresses: the 26 residence and event addresses the dossier counts, plus two sidewalk plaques for Jerry Garcia on Mission Street. 25 of the 26 are on pages (two of them, 1945 Franklin and one claim at 2080 Washington, only as a recorded omission of a current resident); 1235 Masonic is a condominium unit, and since 2026-11-10 its claim is on the building's page at 1233 Masonic."
  },
  "findings": [
   {
@@ -365,13 +365,19 @@
    },
    "confidence": "medium",
    "resolution": {
-    "status": "unresolved",
-    "eas_address": "1235 MASONIC AVE",
-    "checked_on": "2026-09-26",
-    "method": "EAS: 1235 MASONIC AVE (the guide says \"Street\"; Masonic is an avenue, and EAS's Haight Ashbury neighborhood matches the guide's own \"in The Haight\") on parcel_number 1244004. sf-parcels: 1244004 is retired and off the roll; the active parcels are 1244042, 1244043 and 1244044, one per number of 1233-1237 Masonic.",
-    "note": "The building is three condominium parcels, 1235 being 1244043, and a condominium unit gets no page (root AGENTS.md; #228). This is the one of the guide's 26 addresses the dossier counts as not resolving, and why: not an EAS miss but the condominium rule."
+    "status": "resolved",
+    "apn": "1244043",
+    "path": "/san-francisco/castro/masonic-avenue/1233/",
+    "eas_address": "1233 MASONIC AVE",
+    "method": "EAS exact match on 1235 MASONIC AVE → parcel 1244043; sf-parcels has blklot 1244043 active, 1235–1235 MASONIC; the 2025 roll records it as single family residential, built 1910. EAS puts 1233, 1235, 1237 MASONIC AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1233. Parcel 1244043 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS files the address under parcel 1244004, which sf-parcels reports retired; the active parcel its coordinates fall in is 1244043.",
+    "checked_on": "2026-11-09",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
    },
-   "note": "Recorded for the first time under #422; the original pass left no trace of why this address had no page."
+   "note": "Recorded for the first time under #422; the original pass left no trace of why this address had no page.",
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
+   }
   },
   {
    "id": "sftourismtips-0012",
