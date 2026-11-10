@@ -1206,6 +1206,15 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   further contracts for a building already carrying one, 1 contradicting a
   1908 contract already on the page. Batch file
   `findings/loc-newspapers/sn85066387-1907-building-contracts.json`.)
+- **Verified:** 2026-11-10 (#556, the findings the old condominium rule held
+  back, re-resolved now that a condominium is paged as a building. Three
+  move: 673 Kansas, a 1907 building of two units, seeded and carrying its
+  1911 basement-flat contract; 2337 Mission, the Excelsior Hall of 1910, and
+  172 Carl, a 1913 cottage turned into flats, both resolved and declined,
+  because the roll gives no year for the first and 1952 for the second.
+  **Check the seeder's proposed lots against sf-parcels' `mapblklot`:** at
+  673 Kansas it proposed four lots, 041 to 044, where 043 and 044 are 675 and
+  675A Kansas, a separate condominium next door built the same year.)
 - **Coverage:** 1890s and 1900s years scanned in August 2026 for mentions only
   (above); **1910 Real Estate and Financial Section read in full, three
   times over** — numbered/architect/corner entries (#three 1910 batches),
