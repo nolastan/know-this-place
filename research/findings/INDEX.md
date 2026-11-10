@@ -85,10 +85,10 @@ sit in — the three it touched most, and how many in all.
 | `argonaut-sfhs/vol-32-no-1.json` | 15 | 20 KB | 1847–1951 | 7 | 7 | `castro`, `financial-district` |
 | `article-10-landmarks/batch-1-lm001-lm050.json` | 161 | 308 KB | 1782–1985 | 146 | 136 | `chinatown`, `nob-hill`, `tenderloin` +13 |
 | `article-10-landmarks/batch-2-lm051-lm100.json` | 169 | 319 KB | 1853–2023 | 161 | 153 | `pacific-heights`, `mission`, `nob-hill` +20 |
-| `article-10-landmarks/batch-3-lm101-lm200.json` | 232 | 448 KB | 1856–1991 | 210 | 205 | `mission`, `financial-district`, `tenderloin` +22 |
-| `article-10-landmarks/batch-4-lm201-lm250.json` | 190 | 380 KB | 1850–2019 | 171 | 170 | `golden-gate-park`, `mission`, `castro` +18 |
-| `article-10-landmarks/batch-5-lm251-lm300.json` | 819 | 1.6 MB | 1847–2022 | 712 | 639 | `castro`, `mission`, `pacific-heights` +27 |
-| `article-10-landmarks/batch-6-lm301-lm336.json` | 667 | 1.1 MB | 1849–2026 | 608 | 562 | `mission`, `marina`, `hayes-valley` +25 |
+| `article-10-landmarks/batch-3-lm101-lm200.json` | 232 | 453 KB | 1856–1991 | 217 | 212 | `financial-district`, `mission`, `tenderloin` +22 |
+| `article-10-landmarks/batch-4-lm201-lm250.json` | 190 | 386 KB | 1850–2019 | 181 | 178 | `golden-gate-park`, `mission`, `castro` +19 |
+| `article-10-landmarks/batch-5-lm251-lm300.json` | 819 | 1.6 MB | 1847–2022 | 718 | 643 | `castro`, `mission`, `pacific-heights` +27 |
+| `article-10-landmarks/batch-6-lm301-lm336.json` | 667 | 1.1 MB | 1849–2026 | 612 | 565 | `mission`, `marina`, `hayes-valley` +25 |
 | `celebrity-residence-guides/sftourismtips.json` | 31 | 47 KB | 1876–1996 | 29 | 27 | `haight-ashbury`, `pacific-heights`, `seacliff` +11 |
 | `corbett-heights-neighbors/archive-page-2.json` | 22 | 38 KB | 1885–2016 | 19 | 9 | `castro` |
 | `corbett-heights-neighbors/archive-page-3.json` | 36 | 66 KB | 1889–2025 | 33 | 32 | `castro`, `mission`, `haight-ashbury` +2 |
@@ -267,10 +267,10 @@ are listed so their size is visible before anyone opens one.
 | `backfill-2026-06.json` | 9 | 3 KB | `bayview-hunters-point`, `financial-district`, `inner-richmond` +5 |
 | `batch-1-lm001-lm050.json` | 5 | 2 KB | `chinatown`, `pacific-heights`, `nob-hill` |
 | `batch-2-lm051-lm100.json` | 1 | 1 KB | `pacific-heights` |
-| `batch-3-lm101-lm200.json` | 6 | 2 KB | `financial-district`, `russian-hill`, `western-addition` +3 |
+| `batch-3-lm101-lm200.json` | 2 | 1 KB | `financial-district`, `pacific-heights` |
 | `batch-4-lm201-lm250.json` | 1 | 1 KB | `south-of-market` |
-| `batch-5-lm251-lm300.json` | 30 | 12 KB | `nob-hill`, `mission`, `excelsior` +11 |
-| `batch-6-lm301-lm336.json` | 29 | 11 KB | `marina`, `nob-hill`, `pacific-heights` +9 |
+| `batch-5-lm251-lm300.json` | 3 | 1 KB | `financial-district`, `haight-ashbury`, `castro` |
+| `batch-6-lm301-lm336.json` | 2 | 1 KB | `marina` |
 | `biographies-a-c.json` | 8 | 3 KB | `castro`, `presidio-heights`, `russian-hill` +1 |
 | `biographies-d-f.json` | 106 | 39 KB | `pacific-heights`, `nob-hill`, `presidio-heights` +19 |
 | `biographies-g-i.json` | 65 | 24 KB | `pacific-heights`, `sunset-parkside`, `glen-park` +15 |

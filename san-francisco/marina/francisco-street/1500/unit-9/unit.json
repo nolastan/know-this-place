@@ -1,0 +1,35 @@
+{
+  "address": "1500 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/1500/unit-9/",
+  "unit": "9",
+  "apn": "0471027",
+  "block": "0471",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 968,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 183963,
+    "assessed_improvement_value": 441537,
+    "last_sale_date": "1990-05-25"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0471027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0471&unit=9",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

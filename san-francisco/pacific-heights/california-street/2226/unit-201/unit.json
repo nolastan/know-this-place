@@ -1,0 +1,58 @@
+{
+  "address": "2226 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2226/unit-201/",
+  "unit": "201",
+  "apn": "0637041",
+  "block": "0637",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 1832,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 955087,
+    "assessed_improvement_value": 636724,
+    "last_sale_date": "2021-09-28"
+  },
+  "permits": [
+    {
+      "number": "202007079687",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-07-07",
+      "status_date": "2021-04-12",
+      "estimated_cost": 31500,
+      "revised_cost": 44000,
+      "description": "remodel existing kitchen 132 sf and bath 49 sf, add stacked, ventless washer and dryer. the ventless washer and dryer is going to be located in an existing closet next to the bathroom.relocate and replace electric sub panel to be code compliant",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101259013",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-01-25",
+      "status_date": "2015-08-25",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remodel existing bathroom in existing location. no structural. all in one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0637041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0637&unit=201",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

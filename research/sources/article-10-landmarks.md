@@ -205,6 +205,17 @@ entry's `name` names the landmark and number, and its `query` is the PDF.
 
 ---
 
+**Verified:** 2026-11-10 (#556, the findings the old condominium rule held
+back, re-resolved now that a condominium is paged as a building: 27 of the
+57 move, all onto building pages. 22 published on 12 pages, 6 of them
+seeded (333 Grant, 2226 California, 545 Ashbury, 140 Divisadero, 1435 Bay,
+1500 Francisco), each seeded page's lots checked against sf-parcels'
+`mapblklot`. 5 declined: two events the page already carried from another
+source (690 Market), a repeated architect credit (333 Grant), and two
+facts about a building since replaced, 1927 Hayes and 425 14th, where no
+page is seeded for a predecessor alone. The other 30 are still unresolved
+for reasons of their own, the 55 Laguna campus chief among them.)
+
 **Verified:** 2026-09-30 — **every landmark in the index read, LM001–LM336.** Batches 1–5
 as before (LM001–LM300: 1571 findings, 1400 resolved, 1303 published). **LM301–LM336**
 (36 PDFs, all with text layers — no OCR needed): 667 findings, 608 resolved, 562 published
