@@ -68,8 +68,10 @@
   the condominium rule, not EAS.** The guide says "Masonic Street"; EAS has 1235
   MASONIC AVE in Haight Ashbury, matching the guide's "in The Haight", but on
   parcel 1244004, which is retired. The building is now three condominium
-  parcels, 1244042–1244044, one per number of 1233–1237, so it gets no page
-  (#228). Nothing recorded that until the rebuild.
+  parcels, 1244042–1244044, one per number of 1233–1237, so it got no page
+  (#228). Nothing recorded that until the rebuild. Since #446 a condominium is
+  paged as a building with a page per unit, so on 2026-11-10 (#556) the claim
+  went on the building's page at 1233 Masonic Avenue, the lowest number.
 - **The guide's number is not always the page's.** 2047 Taylor and 288 Precita
   are on pages filed under 2043 Taylor and 286 Precita, the lowest EAS number on
   each parcel; 131 24th Avenue is carried on the page for 129.
@@ -78,4 +80,6 @@
   both are declined as facts about the pavement.
 - **Verified:** 2026-09-26 (re-fetched and re-read whole for #422: unchanged in
   substance. 28 numbered addresses, 26 claims on 24 pages, 2 current-resident
-  claims recorded only as omissions, 1235 Masonic a condominium unit.)
+  claims recorded only as omissions, 1235 Masonic a condominium unit.
+  2026-11-10: 1235 Masonic placed on the condominium building's page, which
+  makes 27 claims on 25 pages.)
