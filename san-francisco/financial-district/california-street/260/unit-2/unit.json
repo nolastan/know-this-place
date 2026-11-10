@@ -1,0 +1,31 @@
+{
+  "address": "260 California Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/california-street/260/unit-2/",
+  "unit": "2",
+  "apn": "0237021",
+  "block": "0237",
+  "lot": "021",
+  "parcel": {
+    "building_area_sqft": 4277
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 939741,
+    "assessed_improvement_value": 746845
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0237021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0237&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

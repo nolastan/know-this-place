@@ -200,17 +200,17 @@ sit in — the three it touched most, and how many in all.
 | `sf-context-statements/van-ness-auto-row-forms.json` | 110 | 291 KB | 1906–1947 | 94 | 94 | `tenderloin`, `nob-hill`, `western-addition` +4 |
 | `sf-context-statements/van-ness-auto-row.json` | 453 | 916 KB | 1901–2010 | 352 | 352 | `tenderloin`, `nob-hill`, `western-addition` +6 |
 | `sf-context-statements/victorian-era-styles.json` | 45 | 107 KB | 1856–1984 | 43 | 37 | `pacific-heights`, `hayes-valley`, `haight-ashbury` +12 |
-| `sf-environmental-review/address-in-title.json` | 109 | 222 KB | 1853–2010 | 74 | 73 | `nob-hill`, `east-cut`, `south-of-market` +16 |
-| `sf-environmental-review/area-plan-tables.json` | 320 | 614 KB | 1865–1988 | 284 | 257 | `bayview-hunters-point`, `golden-gate-park`, `south-of-market` +6 |
-| `sf-environmental-review/area-plans.json` | 288 | 578 KB | 1830–2010 | 156 | 134 | `financial-district`, `south-of-market`, `east-cut` +13 |
+| `sf-environmental-review/address-in-title.json` | 109 | 227 KB | 1853–2010 | 84 | 77 | `nob-hill`, `east-cut`, `south-of-market` +18 |
+| `sf-environmental-review/area-plan-tables.json` | 320 | 615 KB | 1865–1988 | 287 | 257 | `bayview-hunters-point`, `golden-gate-park`, `south-of-market` +6 |
+| `sf-environmental-review/area-plans.json` | 288 | 582 KB | 1830–2010 | 167 | 136 | `financial-district`, `south-of-market`, `east-cut` +13 |
 | `sf-environmental-review/downtown-1975-1982.json` | 120 | 227 KB | 1851–1983 | 78 | 73 | `financial-district`, `union-square`, `east-cut` +3 |
-| `sf-environmental-review/downtown-1983-1991.json` | 110 | 221 KB | 1854–1991 | 77 | 59 | `east-cut`, `financial-district`, `chinatown` +5 |
-| `sf-environmental-review/downtown-1995-2011.json` | 147 | 284 KB | 1850–2005 | 96 | 72 | `south-of-market`, `east-cut`, `financial-district` +9 |
-| `sf-environmental-review/institutional-campuses.json` | 169 | 296 KB | 1850–2007 | 139 | 129 | `tenderloin`, `nob-hill`, `golden-gate-park` +12 |
-| `sf-environmental-review/named-sites-1974-1982.json` | 59 | 113 KB | 1849–1982 | 43 | 39 | `financial-district`, `chinatown`, `south-beach` +4 |
-| `sf-environmental-review/named-sites-1983-2005.json` | 141 | 285 KB | 1887–2003 | 102 | 98 | `north-beach`, `outer-mission`, `chinatown` +11 |
-| `sf-environmental-review/outside-downtown.json` | 61 | 118 KB | 1852–2005 | 28 | 28 | `mission`, `north-beach`, `haight-ashbury` +6 |
-| `sf-environmental-review/unread-docs.json` | 1,100 | 2.0 MB | 1849–2012 | 449 | 353 | `financial-district`, `south-of-market`, `nob-hill` +21 |
+| `sf-environmental-review/downtown-1983-1991.json` | 110 | 222 KB | 1854–1991 | 79 | 60 | `east-cut`, `financial-district`, `chinatown` +5 |
+| `sf-environmental-review/downtown-1995-2011.json` | 147 | 288 KB | 1850–2005 | 104 | 74 | `south-of-market`, `east-cut`, `financial-district` +9 |
+| `sf-environmental-review/institutional-campuses.json` | 169 | 297 KB | 1850–2007 | 140 | 130 | `tenderloin`, `nob-hill`, `golden-gate-park` +12 |
+| `sf-environmental-review/named-sites-1974-1982.json` | 59 | 113 KB | 1849–1982 | 44 | 39 | `financial-district`, `chinatown`, `south-beach` +5 |
+| `sf-environmental-review/named-sites-1983-2005.json` | 141 | 289 KB | 1887–2003 | 111 | 100 | `north-beach`, `outer-mission`, `chinatown` +11 |
+| `sf-environmental-review/outside-downtown.json` | 61 | 120 KB | 1852–2005 | 35 | 34 | `mission`, `potrero-hill`, `north-beach` +8 |
+| `sf-environmental-review/unread-docs.json` | 1,100 | 2.0 MB | 1849–2012 | 505 | 376 | `financial-district`, `east-cut`, `south-of-market` +22 |
 | `sf-planning-commission-minutes/minutes-1968-1969.json` | 372 | 685 KB | 1968–1969 | 163 | 162 | `chinatown`, `bayview-hunters-point`, `pacific-heights` +25 |
 | `sf-planning-commission-minutes/minutes-1970.json` | 455 | 836 KB | 1854–1970 | 250 | 235 | `mission`, `pacific-heights`, `outer-richmond` +30 |
 | `sf-planning-commission-minutes/minutes-1971.json` | 323 | 577 KB | 1876–1971 | 154 | 142 | `castro`, `pacific-heights`, `bayview-hunters-point` +24 |
@@ -252,12 +252,12 @@ are listed so their size is visible before anyone opens one.
 |---|---:|---:|---|
 | `2026-09-15.json` | 17 | 6 KB | `mission`, `russian-hill`, `outer-richmond` +9 |
 | `2026-09-16.json` | 46 | 17 KB | `marina`, `pacific-heights`, `mission` +21 |
-| `address-in-title.json` | 31 | 11 KB | `nob-hill`, `potrero-hill`, `south-of-market` +10 |
+| `address-in-title.json` | 0 | 1 KB | — |
 | `african-american-hcs.json` | 119 | 56 KB | `bayview-hunters-point`, `western-addition`, `pacific-heights` +23 |
 | `archive-page-2.json` | 4 | 1 KB | `corbett-heights` |
 | `archive-page-3.json` | 2 | 1 KB | `haight-ashbury`, `corbett-heights` |
-| `area-plan-tables.json` | 114 | 42 KB | `bayview-hunters-point`, `south-of-market`, `potrero-hill` |
-| `area-plans.json` | 26 | 10 KB | `financial-district`, `visitacion-valley`, `east-cut` +4 |
+| `area-plan-tables.json` | 0 | 1 KB | — |
+| `area-plans.json` | 2 | 1 KB | `financial-district`, `east-cut` |
 | `away-2026-09-12.json` | 1 | 1 KB | `hayes-valley` |
 | `backfill-2026-01.json` | 7 | 3 KB | `mission`, `north-beach`, `chinatown` +3 |
 | `backfill-2026-02.json` | 7 | 3 KB | `marina`, `corbett-heights`, `mission` +4 |
@@ -298,9 +298,9 @@ are listed so their size is visible before anyone opens one.
 | `digitalsf-sfp-23.json` | 723 | 302 KB | `sunset-parkside`, `inner-sunset`, `mission` +33 |
 | `districts.json` | 76 | 27 KB | `nob-hill`, `tenderloin`, `financial-district` +5 |
 | `dogpatch-context-statement.json` | 60 | 23 KB | `dogpatch`, `potrero-hill` |
-| `downtown-1975-1982.json` | 17 | 6 KB | `financial-district`, `union-square`, `north-beach` +2 |
-| `downtown-1983-1991.json` | 11 | 4 KB | `financial-district`, `chinatown`, `south-of-market` +2 |
-| `downtown-1995-2011.json` | 12 | 4 KB | `south-of-market`, `financial-district`, `east-cut` +2 |
+| `downtown-1975-1982.json` | 0 | 1 KB | — |
+| `downtown-1983-1991.json` | 1 | 1 KB | `east-cut` |
+| `downtown-1995-2011.json` | 0 | 1 KB | — |
 | `duboce-triangle-context-statement.json` | 39 | 15 KB | `castro`, `mission`, `financial-district` +2 |
 | `early-residential-development.json` | 10 | 4 KB | `portola`, `noe-valley`, `north-beach` +5 |
 | `early-settlement-era-styles.json` | 1 | 1 KB | `marina` |
@@ -315,7 +315,7 @@ are listed so their size is visible before anyone opens one.
 | `inner-sunset-context-statement.json` | 315 | 119 KB | `inner-sunset` |
 | `insomniacookies-2026-09-12.json` | 3 | 1 KB | `east-cut`, `lakeshore`, `south-of-market` |
 | `instacart-2026-09-12.json` | 25 | 9 KB | `bayview-hunters-point`, `nob-hill`, `marina` +15 |
-| `institutional-campuses.json` | 17 | 6 KB | `tenderloin`, `nob-hill`, `potrero-hill` +5 |
+| `institutional-campuses.json` | 0 | 1 KB | — |
 | `issues-2023-11-to-2024-12.json` | 5 | 2 KB | `corbett-heights`, `noe-valley` |
 | `issues-2026-02-to-2026-07.json` | 1 | 1 KB | `castro` |
 | `japantown-hcs.json` | 51 | 19 KB | `pacific-heights`, `japantown`, `western-addition` +1 |
@@ -366,8 +366,8 @@ are listed so their size is visible before anyone opens one.
 | `modern-postmodern-styles.json` | 111 | 42 KB | `south-of-market`, `financial-district`, `chinatown` +26 |
 | `modernistic-styles.json` | 11 | 4 KB | `mission`, `sunset-parkside`, `north-beach` +5 |
 | `momence-2026-09-11.json` | 4 | 2 KB | `haight-ashbury`, `inner-richmond`, `mission` |
-| `named-sites-1974-1982.json` | 3 | 1 KB | `financial-district`, `union-square` |
-| `named-sites-1983-2005.json` | 25 | 9 KB | `north-beach`, `russian-hill`, `financial-district` +2 |
+| `named-sites-1974-1982.json` | 0 | 1 KB | — |
+| `named-sites-1983-2005.json` | 1 | 1 KB | `mission` |
 | `neighborhood-commercial-hcs.json` | 64 | 24 KB | `mission`, `west-of-twin-peaks`, `pacific-heights` +19 |
 | `new-deal-hcs.json` | 54 | 21 KB | `outer-richmond`, `tenderloin`, `sunset-parkside` +23 |
 | `news-2026-07.json` | 5 | 2 KB | `mission`, `south-of-market` |
@@ -419,7 +419,7 @@ are listed so their size is visible before anyone opens one.
 | `north-beach-hcs.json` | 342 | 130 KB | `north-beach`, `chinatown`, `russian-hill` +3 |
 | `oceanside-hcs.json` | 19 | 7 KB | `sunset-parkside` |
 | `omi-context-statement.json` | 38 | 16 KB | `oceanview-merced-ingleside`, `ingleside-terraces`, `outer-mission` |
-| `outside-downtown.json` | 5 | 2 KB | `outer-richmond`, `western-addition`, `west-of-twin-peaks` +1 |
+| `outside-downtown.json` | 0 | 1 KB | — |
 | `parkside-hcs.json` | 141 | 50 KB | `sunset-parkside`, `west-of-twin-peaks` |
 | `popos-public-art.json` | 83 | 32 KB | `east-cut`, `financial-district`, `south-beach` +4 |
 | `ppie-marina-hcs.json` | 85 | 31 KB | `marina`, `nob-hill`, `pacific-heights` |
@@ -471,7 +471,7 @@ are listed so their size is visible before anyone opens one.
 | `transit-center-district-survey.json` | 61 | 22 KB | `east-cut`, `south-of-market`, `south-beach` +1 |
 | `umb-survey-ratings.json` | 1,020 | 380 KB | `tenderloin`, `nob-hill`, `financial-district` +28 |
 | `umb-survey.json` | 99 | 37 KB | `pacific-heights`, `mission`, `chinatown` +17 |
-| `unread-docs.json` | 85 | 32 KB | `nob-hill`, `south-of-market`, `chinatown` +16 |
+| `unread-docs.json` | 7 | 2 KB | `east-cut`, `nob-hill`, `financial-district` +1 |
 | `uptown-tenderloin-district.json` | 200 | 73 KB | `tenderloin` |
 | `uptown-tenderloin-section8.json` | 1 | 1 KB | `south-of-market` |
 | `van-ness-auto-row-context-statement.json` | 122 | 51 KB | `tenderloin`, `nob-hill`, `western-addition` +6 |

@@ -1,0 +1,66 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-407/",
+  "unit": "407",
+  "apn": "3747055",
+  "block": "3747",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1397
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 904354,
+    "assessed_improvement_value": 602900,
+    "last_sale_date": "2012-04-10"
+  },
+  "permits": [
+    {
+      "number": "201309187120",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-18",
+      "status_date": "2014-08-04",
+      "estimated_cost": 62000,
+      "revised_cost": 62000,
+      "description": "kitchen remodel: new cabinets, countertop, sink, appliances, new outlets under cabinet led lights, over cabinet lights, 5 ceiling lights, lights in dining room/living room; 1/2 bath - new sink, 3 ceiling lights, 2 sconce lights, cabinet, countertop.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009241575",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2010-09-24",
+      "status_date": "2013-10-07",
+      "estimated_cost": 25934,
+      "revised_cost": 25934,
+      "description": "one unit: remove and replace kitchen cabinets, counters, appliances, lighting, update electrical outlets. add circuit for fridge, wine fridge,microwave, replace countertops in bathrooms, remove shower walls and replace with tile. connect all new sinks in kitchen and bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706154095",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-15",
+      "status_date": "2007-08-09",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "replace (1) (e) kitchen & bathroom counter tops with new counter tops, sinks and fausets with new sink and fauset replace existing toilets with new toilets replace (e) trach lighting with new trach lighting all in one unit (1) kitchen (2) bath remodel. non structural.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=407",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

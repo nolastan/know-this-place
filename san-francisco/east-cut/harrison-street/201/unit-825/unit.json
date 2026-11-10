@@ -1,0 +1,47 @@
+{
+  "address": "201 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/harrison-street/201/unit-825/",
+  "unit": "825",
+  "apn": "3767242",
+  "block": "3767",
+  "lot": "242",
+  "parcel": {
+    "building_area_sqft": 572,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 156761,
+    "assessed_improvement_value": 260149,
+    "last_sale_date": "1998-07-01"
+  },
+  "permits": [
+    {
+      "number": "202007029498",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-07-02",
+      "status_date": "2021-02-23",
+      "estimated_cost": 93000,
+      "revised_cost": 93500,
+      "description": "kitchen and bathroom remodel. replace flooring and light fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3767242&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3767&unit=825",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

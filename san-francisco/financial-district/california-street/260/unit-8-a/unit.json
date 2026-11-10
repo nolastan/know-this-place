@@ -1,0 +1,43 @@
+{
+  "address": "260 California Street, San Francisco, CA 94111",
+  "path": "/san-francisco/financial-district/california-street/260/unit-8-a/",
+  "unit": "8-A",
+  "apn": "0237037",
+  "block": "0237",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1361
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 299007,
+    "assessed_improvement_value": 237634
+  },
+  "permits": [
+    {
+      "number": "202412176978",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-17",
+      "status_date": "2025-04-04",
+      "estimated_cost": 15600,
+      "revised_cost": 19552,
+      "description": "6/fl- 202408057915- fire sprinkler ti work on (n) office ceiling layout. removing heads of dropped ceiling area taht will be removed. relocating 9 heads and install 28 (n) heads",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0237037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0237&unit=8-A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

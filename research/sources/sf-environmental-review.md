@@ -687,6 +687,28 @@
   existed: the Van Ness Avenue Plan DEIR counts 47 significant buildings but
   does not print the list, which is in the Heritage survey it cites.
 
+- **Verified:** 2026-11-10 (#556, the findings the old condominium rule held
+  back, re-resolved now that a condominium is paged as a building; nothing
+  new was read). 108 findings move from unresolved to resolved: **41 published
+  on 23 pages, 10 of them seeded** as condominium buildings, and 67 declined.
+  **This source describes a site before a project, so most of what a
+  condominium blocked is about the building the condominium replaced.** On a
+  page that already existed those went in as `site history`; where no page
+  existed and the roll dates the building after the record, the finding is
+  declined and no page is seeded (25 findings, 17 parcels). The other declines
+  repeat what the page already says from the Planning Commission minutes or a
+  National Register nomination, are undated, or are not about the building (a
+  noise reading, a fuel tank closure). Eight more that would also resolve are
+  left unresolved: five where the resolver's answer may be the lot next door
+  (75 Howard, 700 Mission, 699 Second, 897 California, 201 Folsom), two at 153
+  Kearny, whose page is a unit parcel and not yet a building page, and 1190
+  Sacramento, which was never condominium-blocked. **Lots:** eight of the ten
+  seeds matched their sf-parcels `mapblklot`; 400 Beale was missing two units
+  the roll classes as apartments. 2101 Bryant shares map lot 4080067 with the
+  2009 building at 2125 Bryant, so its page rightly lists only the 23 units
+  the roll files at 2101 and dates 1919 — **one map lot is not always one
+  building.**
+
 - **Verified:** 2026-09-27, eleventh run: the four tables left unmined inside
   the area-plan documents, 320 findings in `area-plan-tables.json`, 257
   published. **Bayview Hunters Point DEIR (2004) Appendix B, Table B-1** —

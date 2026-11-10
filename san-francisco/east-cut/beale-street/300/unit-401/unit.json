@@ -1,0 +1,67 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-401/",
+  "unit": "401",
+  "apn": "3747049",
+  "block": "3747",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 1640,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1060200,
+    "assessed_improvement_value": 706800,
+    "last_sale_date": "2015-05-01"
+  },
+  "permits": [
+    {
+      "number": "200806275536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-27",
+      "status_date": "2008-11-17",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "work @ one unit only. alter kitchen countertops. add cabinets. no structural work. no new lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410197180",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-19",
+      "status_date": "2005-01-28",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace bath tub/shower stall,replace kitchen appliances,add several can lights.no structural altera",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8010567",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1980-12-01",
+      "status_date": "1983-08-31",
+      "estimated_cost": 1923368,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=401",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

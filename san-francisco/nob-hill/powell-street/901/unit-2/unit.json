@@ -1,0 +1,58 @@
+{
+  "address": "901 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/901/unit-2/",
+  "unit": "2",
+  "apn": "0223034",
+  "block": "0223",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 654,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 373883,
+    "assessed_improvement_value": 373883,
+    "last_sale_date": "2013-11-01"
+  },
+  "permits": [
+    {
+      "number": "202511189879",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-18",
+      "status_date": "2026-05-22",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit : existing trash shute to be removed. floor opening in relation to the trash shute to be closed. install custmer order cabinets- refinish flooring. kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202509165394",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-09-16",
+      "status_date": "2025-09-16",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "replace new kitchen cabinets, change and replace new countertop and new lights under the cabinets.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0223034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0223&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
