@@ -1,0 +1,33 @@
+{
+  "address": "160 Missouri Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/missouri-street/158/unit-160/",
+  "apn": "3984036",
+  "block": "3984",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 1043,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 745951,
+    "assessed_improvement_value": 476901
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3984036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3984&street_number=160",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "1250 Jones Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/jones-street/1250/unit-302/",
+  "unit": "302",
+  "apn": "0221048",
+  "block": "0221",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1115,
+    "rooms": 5,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 704864,
+    "assessed_improvement_value": 740915,
+    "last_sale_date": "2014-04-04"
+  },
+  "permits": [
+    {
+      "number": "201405095345",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-09",
+      "status_date": "2014-10-31",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit: non-bearing interior, renovation of (e) condo residence, alterations incl. plumbing, finishe, install of laundry machine hookup, minor interior partition changes, no changes to # of bedrooms, (e) lighting, cooking facilities or penestration, no changes to exit path or entrance drive.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

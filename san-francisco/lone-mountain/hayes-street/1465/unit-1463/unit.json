@@ -1,0 +1,61 @@
+{
+  "address": "1463 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/hayes-street/1465/unit-1463/",
+  "apn": "1205048",
+  "block": "1205",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 2015,
+    "rooms": 6,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 418509,
+    "assessed_improvement_value": 179353,
+    "last_sale_date": "1999-07-23"
+  },
+  "permits": [
+    {
+      "number": "202405021306",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-02",
+      "status_date": "2024-09-03",
+      "estimated_cost": 20000,
+      "revised_cost": 26000,
+      "description": "remodel one kitchen in kind. no floor plan changes or structural work. update plmg and elec. per code. add 6 led recessed lights. replace rear yard facing door and window in kind. same style and size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700075",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-01-05",
+      "status_date": "1987-07-17",
+      "estimated_cost": 9000,
+      "description": "remove cellulose debris repair framing base wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1987–2024",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1205048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1205&street_number=1463",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -29,6 +29,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [36th Avenue](36th-avenue/) — 1 building, built 1962.
 - [37th Avenue](37th-avenue/) — 4 buildings, built 1914–1925.
 - [38th Avenue](38th-avenue/) — 1 building.
+- [39th Avenue](39th-avenue/) — 1 building, built 1904.
 - [40th Avenue](40th-avenue/) — 1 building, built 1924.
 - [41st Avenue](41st-avenue/) — 1 building, built 1913.
 - [42nd Avenue](42nd-avenue/) — 1 building, built 1911.
