@@ -56,9 +56,11 @@
   - **The star address is often the one that no longer exists.** The
     brewery the September issue is about, at 111–121 Douglass Street, was
     demolished in 1915 for the Market Street extension and has no EAS record;
-    its site is now the eleven condominium parcels of 2750 Market Street,
-    which cannot carry a page either. Eight dated facts about it are
-    `unresolved` for that reason. What reached a page is the site history of
+    its site is now the eleven condominium parcels of 2750 Market Street.
+    The facts recorded under the brewery's own Douglass Street numbers are
+    still `unresolved`; the three recorded under 2750 Market (the 1932
+    service station, its 1980 demolition, the 1982 condominiums) went onto
+    the condominium building's page on 2026-11-10 (#556). What reached a page is the site history of
     **109 Douglass Street**, the partner's house that survived next door.
   - **Filing a lost address on the street hub costs the hub's automation.**
     `seed_pages.py hubs` refuses to rebuild any street hub that has grown a
@@ -116,8 +118,12 @@
     Rainey and Phillips, four alterations, twenty-five rooms as the Georgian
     Apartments, demolition before 1950, a Shell station of 1953 and thirteen
     condominiums in 1985 — and the address is a condominium today, so EAS
-    carries it with no parcel number and not one of the eight facts can reach
-    a page. **Check the star address against EAS before planning the run
+    carries it with no parcel number and for a time not one of the eight
+    facts could reach a page. Since #446 a condominium is paged as a building,
+    and on 2026-11-10 (#556) all eight went onto 1200 Clayton Street, the
+    seven about earlier buildings as site history. The two dated before the
+    1909 renumbering were resolved by hand on the article's own chain of
+    lots. **Check the star address against EAS before planning the run
     around it**; it is the second time in this source (after the 111–121
     Douglass brewery) that the article's subject is the one address that
     cannot have a page.

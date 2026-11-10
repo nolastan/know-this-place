@@ -93,9 +93,9 @@ sit in — the three it touched most, and how many in all.
 | `corbett-heights-neighbors/archive-page-2.json` | 22 | 38 KB | 1885–2016 | 19 | 9 | `castro` |
 | `corbett-heights-neighbors/archive-page-3.json` | 36 | 66 KB | 1889–2025 | 33 | 32 | `castro`, `mission`, `haight-ashbury` +2 |
 | `corbett-heights-neighbors/issues-2023-11-to-2024-12.json` | 49 | 85 KB | 1883–2024 | 37 | 32 | `castro`, `noe-valley` |
-| `corbett-heights-neighbors/issues-2026-02-to-2026-07.json` | 56 | 102 KB | 1875–2026 | 43 | 27 | `castro` |
+| `corbett-heights-neighbors/issues-2026-02-to-2026-07.json` | 56 | 114 KB | 1875–2026 | 51 | 35 | `castro` |
 | `corbett-heights-neighbors/vol-viii-no-8.json` | 12 | 21 KB | 1864–2003 | 11 | 8 | `castro`, `mission` |
-| `corbett-heights-neighbors/vol-viii-no-9.json` | 22 | 36 KB | 1876–1982 | 9 | 8 | `castro`, `noe-valley` |
+| `corbett-heights-neighbors/vol-viii-no-9.json` | 22 | 38 KB | 1876–1982 | 12 | 11 | `castro`, `noe-valley` |
 | `digitalsf/no-citation-field.json` | 0 | 4 KB | — | 0 | 0 | — |
 | `digitalsf/sfh-3.json` | 3 | 9 KB | — | 3 | 0 | `tenderloin`, `pacific-heights` |
 | `digitalsf/sfh-371.json` | 421 | 812 KB | 1873–1996 | 120 | 118 | `tenderloin`, `japantown`, `pacific-heights` +11 |
@@ -317,7 +317,7 @@ are listed so their size is visible before anyone opens one.
 | `instacart-2026-09-12.json` | 25 | 9 KB | `bayview-hunters-point`, `nob-hill`, `marina` +15 |
 | `institutional-campuses.json` | 17 | 6 KB | `tenderloin`, `nob-hill`, `potrero-hill` +5 |
 | `issues-2023-11-to-2024-12.json` | 5 | 2 KB | `corbett-heights`, `noe-valley` |
-| `issues-2026-02-to-2026-07.json` | 4 | 1 KB | `corbett-heights`, `castro` |
+| `issues-2026-02-to-2026-07.json` | 1 | 1 KB | `castro` |
 | `japantown-hcs.json` | 51 | 19 KB | `pacific-heights`, `japantown`, `western-addition` +1 |
 | `landmark-pages.json` | 10 | 4 KB | `east-cut`, `south-beach`, `north-beach` +5 |
 | `large-apartment-hcs.json` | 54 | 22 KB | `pacific-heights`, `nob-hill`, `russian-hill` +10 |
@@ -478,7 +478,7 @@ are listed so their size is visible before anyone opens one.
 | `van-ness-auto-row-forms.json` | 2 | 1 KB | `pacific-heights`, `tenderloin` |
 | `victorian-era-styles.json` | 22 | 8 KB | `pacific-heights`, `hayes-valley`, `haight-ashbury` +6 |
 | `vol-viii-no-8.json` | 1 | 1 KB | `castro` |
-| `vol-viii-no-9.json` | 1 | 1 KB | `noe-valley` |
+| `vol-viii-no-9.json` | 1 | 1 KB | `castro` |
 | `vuori-2026-09-12.json` | 1 | 1 KB | `marina` |
 | `wework-2026-09-12.json` | 1 | 1 KB | `east-cut` |
 

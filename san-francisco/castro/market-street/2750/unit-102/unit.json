@@ -1,0 +1,47 @@
+{
+  "address": "2750 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/2750/unit-102/",
+  "unit": "102",
+  "apn": "2650046",
+  "block": "2650",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 1508,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 665627,
+    "assessed_improvement_value": 665627,
+    "last_sale_date": "2017-10-10"
+  },
+  "permits": [
+    {
+      "number": "201205301473",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-30",
+      "status_date": "2012-06-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#9919613 all work is complete. to correct unit number on records to #102",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2650046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2650&unit=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

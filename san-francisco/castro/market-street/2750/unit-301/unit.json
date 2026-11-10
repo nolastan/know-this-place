@@ -1,0 +1,102 @@
+{
+  "address": "2750 Market Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/market-street/2750/unit-301/",
+  "unit": "301",
+  "apn": "2650053",
+  "block": "2650",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1528,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 655952,
+    "assessed_improvement_value": 663234,
+    "last_sale_date": "2021-04-20"
+  },
+  "permits": [
+    {
+      "number": "202112023573",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-02",
+      "status_date": "2022-10-20",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "one unit: remove non load bearing wall @ kitchen. (n) washer & dryer. expand bedroom closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202006228980",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-22",
+      "status_date": "2020-10-16",
+      "estimated_cost": 48000,
+      "revised_cost": 48000,
+      "description": "one unit: new flooring, carpet and hardwood. reface kitchen cabinets. new stone counter tops in kitchen. new appliances in kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002285729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-28",
+      "status_date": "2020-06-05",
+      "estimated_cost": 11837,
+      "revised_cost": 11837,
+      "description": "replacing 4 aluminum double hungs with renewal by anderson double hung's like form like. windows retrofit installation. 5 units. max u factor 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712267367",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-26",
+      "status_date": "2018-01-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for workapprove udner pa#201409166437.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711063166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-06",
+      "status_date": "2018-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#201409166437. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409166437",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-16",
+      "status_date": "2014-09-24",
+      "estimated_cost": 13740,
+      "revised_cost": 13740,
+      "description": "replace 7 windows, like for like with andersen wood clad, visable from street, u factor =0.32, bedrooms to comply with egress.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2650053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2650&unit=301",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
