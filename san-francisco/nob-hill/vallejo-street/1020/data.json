@@ -1,0 +1,104 @@
+{
+  "address": "1020 Vallejo Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/vallejo-street/1020/",
+  "block": "0127",
+  "eas_baseid": "278205",
+  "coordinates": {
+    "lat": 37.798146,
+    "lng": -122.4145
+  },
+  "parcel": {
+    "year_built": 1984,
+    "units": 7,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Nob Hill"
+  },
+  "condominium": {
+    "lots": [
+      "141",
+      "142",
+      "143",
+      "144",
+      "145",
+      "146",
+      "147"
+    ],
+    "method": "Proposed from the 2025 roll for block 0127: every condominium parcel the roll files under 1020 VALLEJO ST, and the unbroken run of lots beside parcel 0127141 on the same street with the same year built (1984). 7 lots, 141–147."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1984",
+    "survey_name": "THE HERMITAGE",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Russian Hill-Vallejo Street Crest Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1941",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALLEJO&street_type=ST&address_number=1020",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0127)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0127&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0127141",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41450001290636%2037.7981458433925)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "nrhp-87002289",
+      "name": "National Register of Historic Places nomination, Russian Hill-Vallejo Street Crest District (reference number 87002289), National Park Service.",
+      "query": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/87002289_text",
+      "label": "National Register of Historic Places nomination, National Park Service",
+      "retrieved": "2026-09-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980–1982",
+      "kind": "construction",
+      "description": "Seven-unit shingled condominium building by Esherick Homsey Dodge & Davis, on the site of two of Worcester's cottages demolished about 1960 for a high-rise never built.",
+      "source": "nrhp-87002289"
+    }
+  ],
+  "building": {
+    "name": "The Hermitage",
+    "architect": "Esherick Homsey Dodge & Davis"
+  }
+}
