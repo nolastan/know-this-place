@@ -8,7 +8,7 @@
     "examined": 162,
     "mentions": 581,
     "remaining": "Building-news and contract entries that give a corner or an offset but no lot size (for example Henry Human's six flats 149:4 1/2 feet west of Baker, the Browne building at O'Farrell and Taylor, and about as many again through the year) were not taken; an offset measured on the sf-parcels shapes can place some of them without a lot. The Real Estate Transactions deed lists (nominal $10 considerations) were not read for entries. Five Presidio Terrace tract-lot entries from the July-December batch still wait on a tract-lot to APN key.",
-    "note": "581 lot-size passages on the 162 pages located by a corner, an offset or a number; 336 of them in building, contract or loan vocabulary, read one by one, and the rest vacant-lot sales. 178 findings not already in either 1910 batch: 54 building contracts, 54 construction notices and building loans, 67 sales of buildings, 3 leases. 49 resolved (43 by hand with corner.py --batch, 6 on a printed number), 129 unresolved - most because no parcel on the corner or block face still matches the record's lot with a roll year of the period (the building replaced, or the lot re-cut), or because several identical lots match and the record gives no offset or side to choose. 46 published on 44 pages, 29 of them seeded; 3 declined."
+    "note": "581 lot-size passages on the 162 pages located by a corner, an offset or a number; 336 of them in building, contract or loan vocabulary, read one by one, and the rest vacant-lot sales. 178 findings not already in either 1910 batch: 54 building contracts, 54 construction notices and building loans, 67 sales of buildings, 3 leases. 49 resolved (43 by hand with corner.py --batch, 6 on a printed number), 129 unresolved - most because no parcel on the corner or block face still matches the record's lot with a roll year of the period (the building replaced, or the lot re-cut), or because several identical lots match and the record gives no offset or side to choose. 46 published on 44 pages, 29 of them seeded; 3 declined. Re-tested 2026-11-10 with corner.py --retest against the DPW street centrelines, once the 42 corner.py placements were given street_name, cross_street_name, corner_quad or side, offset_ft, direction and lot_ft from the record: 41 ok after 0118 was moved from 523 to 472 Madrid (the record's NW line NE of Persia, not the SE line SW of it) and 0141 retracted off 4117 18th (three lots from the corner its record names). Now 47 resolved and 44 published."
   },
   "findings": [
     {
@@ -206,7 +206,15 @@
         "lot_as_recorded": "38:9x137:6",
         "offset_ft": 167,
         "cross_street": "HYDE (block face to LEAVENWORTH)",
-        "record_date": "1910-01-01"
+        "record_date": "1910-01-01",
+        "cross_street_name": "HYDE",
+        "cross_street_type": "ST",
+        "side": "S",
+        "direction": "E",
+        "lot_ft": [
+          38.75,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 1 January 1910, p. 12",
@@ -233,7 +241,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "WASHINGTON",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0007",
@@ -286,9 +296,17 @@
         "price_usd": 12500,
         "offset_as_printed": "28:1%",
         "lot_as_recorded": "25x100",
-        "offset_ft": 28,
+        "offset_ft": 28.1,
         "cross_street": "COLE (block face to SHRADER)",
-        "record_date": "1910-01-01"
+        "record_date": "1910-01-01",
+        "cross_street_name": "COLE",
+        "cross_street_type": "ST",
+        "side": "N",
+        "direction": "W",
+        "lot_ft": [
+          25,
+          100
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 1 January 1910, p. 12",
@@ -315,7 +333,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "FELL",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0009",
@@ -329,9 +349,17 @@
         "price_usd": 14000,
         "lot_price_before_usd": 4000,
         "lot_as_recorded": "30x137:6",
-        "offset_ft": 176,
+        "offset_ft": 176.875,
         "cross_street": "BAKER (block face to LYON)",
-        "record_date": "1910-01-01"
+        "record_date": "1910-01-01",
+        "cross_street_name": "BAKER",
+        "cross_street_type": "ST",
+        "side": "N",
+        "direction": "W",
+        "lot_ft": [
+          30,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 1 January 1910, p. 12",
@@ -359,7 +387,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "HAYES",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0010",
@@ -961,9 +991,17 @@
         "cost_as_printed": "160.000",
         "offset_from": "The San Francisco Call, 26 February 1910, p. 17: N line of Sutter street, 107:6 E of Grant avenue",
         "lot_as_recorded": "30x60",
-        "offset_ft": 107,
+        "offset_ft": 107.5,
         "cross_street": "GRANT (block face to KEARNY)",
-        "record_date": "1910-02-05"
+        "record_date": "1910-02-05",
+        "cross_street_name": "GRANT",
+        "cross_street_type": "AVE",
+        "side": "N",
+        "direction": "E",
+        "lot_ft": [
+          30,
+          60
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 5 February 1910, p. 15",
@@ -989,7 +1027,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "SUTTER",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0027",
@@ -1005,7 +1045,14 @@
         "broker": "Shainwald, Buckbee & Co.",
         "lot_as_recorded": "137:6x137:6",
         "cross_street": "TURK",
-        "record_date": "1910-02-05"
+        "record_date": "1910-02-05",
+        "cross_street_name": "TURK",
+        "cross_street_type": "ST",
+        "corner_quad": "NW",
+        "lot_ft": [
+          137.5,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 5 February 1910, p. 15",
@@ -1030,7 +1077,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "POLK",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0028",
@@ -1225,9 +1274,17 @@
         "material": "frame",
         "use": "apartment building",
         "lot_as_recorded": "40x100",
-        "offset_ft": 62,
+        "offset_ft": 62.5,
         "cross_street": "HAIGHT (block face to WALLER)",
-        "record_date": "1910-02-12"
+        "record_date": "1910-02-12",
+        "cross_street_name": "HAIGHT",
+        "cross_street_type": "ST",
+        "side": "W",
+        "direction": "S",
+        "lot_ft": [
+          40,
+          100
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 12 February 1910, p. 17",
@@ -1254,7 +1311,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "MASONIC",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0034",
@@ -1339,9 +1398,17 @@
         "class": "C",
         "material": "brick",
         "lot_as_recorded": "E 137:6 by S 68:9",
-        "offset_ft": 137,
+        "offset_ft": 137.5,
         "cross_street": "LARKIN (block face to HYDE)",
-        "record_date": "1910-02-12"
+        "record_date": "1910-02-12",
+        "cross_street_name": "LARKIN",
+        "cross_street_type": "ST",
+        "side": "S",
+        "direction": "E",
+        "lot_ft": [
+          137.5,
+          68.75
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 12 February 1910, p. 17",
@@ -1367,7 +1434,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "EDDY",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0037",
@@ -1382,9 +1451,17 @@
         "price_as_printed": "$0,200",
         "lot_as_printed": "23x137:6",
         "lot_as_recorded": "25x137:6",
-        "offset_ft": 137,
+        "offset_ft": 137.5,
         "cross_street": "PIERCE (block face to SCOTT)",
-        "record_date": "1910-02-19"
+        "record_date": "1910-02-19",
+        "cross_street_name": "PIERCE",
+        "cross_street_type": "ST",
+        "side": "N",
+        "direction": "W",
+        "lot_ft": [
+          25,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 19 February 1910, p. 16",
@@ -1411,7 +1488,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "UNION",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0038",
@@ -1427,7 +1506,15 @@
         "lot_as_recorded": "25x120",
         "offset_ft": 225,
         "cross_street": "LAKE (block face to CALIFORNIA)",
-        "record_date": "1910-02-19"
+        "record_date": "1910-02-19",
+        "cross_street_name": "LAKE",
+        "cross_street_type": "ST",
+        "side": "W",
+        "direction": "S",
+        "lot_ft": [
+          25,
+          120
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 19 February 1910, p. 16",
@@ -1453,7 +1540,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "08TH",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0039",
@@ -1630,7 +1719,14 @@
         "street_as_printed": "J street (Judah Street)",
         "lot_as_recorded": "30x100",
         "cross_street": "JUDAH",
-        "record_date": "1910-02-19"
+        "record_date": "1910-02-19",
+        "cross_street_name": "JUDAH",
+        "cross_street_type": "ST",
+        "corner_quad": "NW",
+        "lot_ft": [
+          30,
+          100
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 19 February 1910, p. 16",
@@ -1657,7 +1753,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "48TH",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0044",
@@ -1705,7 +1803,14 @@
         "second_lot": "43:9x137:6 to the west, facing Broadway",
         "lot_as_recorded": "63:9x137:6",
         "cross_street": "DIVISADERO",
-        "record_date": "1910-02-26"
+        "record_date": "1910-02-26",
+        "cross_street_name": "DIVISADERO",
+        "cross_street_type": "ST",
+        "corner_quad": "SW",
+        "lot_ft": [
+          63.75,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 26 February 1910, p. 15",
@@ -1732,7 +1837,8 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "BROADWAY"
     },
     {
       "id": "sn85066387-1910-permits-0046",
@@ -1818,9 +1924,17 @@
         "class": "A",
         "contract_usd": 10603,
         "lot_as_recorded": "N 60 by E 30",
-        "offset_ft": 107,
+        "offset_ft": 107.5,
         "cross_street": "GRANT (block face to KEARNY)",
-        "record_date": "1910-02-26"
+        "record_date": "1910-02-26",
+        "cross_street_name": "GRANT",
+        "cross_street_type": "AVE",
+        "side": "N",
+        "direction": "E",
+        "lot_ft": [
+          30,
+          60
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 26 February 1910, p. 17",
@@ -1846,7 +1960,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "SUTTER",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0049",
@@ -1969,9 +2085,17 @@
         "broker": "Madison & Burke",
         "offset_from": "The San Francisco Call, 2 April 1910, p. 22: east side of Van Ness avenue, 74 2/3 feet south of Washington street, 40 by 120, improved with an apartment house building",
         "lot_as_recorded": "40x120",
-        "offset_ft": 74,
+        "offset_ft": 74.67,
         "cross_street": "WASHINGTON (block face to CLAY)",
-        "record_date": "1910-03-05"
+        "record_date": "1910-03-05",
+        "cross_street_name": "WASHINGTON",
+        "cross_street_type": "ST",
+        "side": "E",
+        "direction": "S",
+        "lot_ft": [
+          40,
+          120
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 5 March 1910, p. 21",
@@ -1998,7 +2122,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "VAN NESS",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0053",
@@ -2047,7 +2173,14 @@
         "broker": "Madison & Burke",
         "lot_as_recorded": "25x77:7",
         "cross_street": "BAKER",
-        "record_date": "1910-03-05"
+        "record_date": "1910-03-05",
+        "cross_street_name": "BAKER",
+        "cross_street_type": "ST",
+        "corner_quad": "NE",
+        "lot_ft": [
+          25,
+          77.58
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 5 March 1910, p. 21",
@@ -2074,7 +2207,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "CALIFORNIA",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0055",
@@ -2123,9 +2258,17 @@
         "price_usd": 110000,
         "lot_as_printed": "105x87:0",
         "lot_as_recorded": "105x87:6",
-        "offset_ft": 137,
+        "offset_ft": 137.5,
         "cross_street": "KEARNY (block face to MONTGOMERY)",
-        "record_date": "1910-03-05"
+        "record_date": "1910-03-05",
+        "cross_street_name": "KEARNY",
+        "cross_street_type": "ST",
+        "side": "S",
+        "direction": "E",
+        "lot_ft": [
+          105,
+          87.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 5 March 1910, p. 21",
@@ -2150,7 +2293,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "PACIFIC",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0057",
@@ -2202,9 +2347,17 @@
         "contract_usd": 42000,
         "lot_as_printed": "24:414x137:6",
         "lot_as_recorded": "24:4x137:6",
-        "offset_ft": 136,
+        "offset_ft": 136.5,
         "cross_street": "POWELL (block face to MASON)",
-        "record_date": "1910-03-12"
+        "record_date": "1910-03-12",
+        "cross_street_name": "POWELL",
+        "cross_street_type": "ST",
+        "side": "N",
+        "direction": "W",
+        "lot_ft": [
+          24.35,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 12 March 1910, p. 18",
@@ -2230,7 +2383,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "POST",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0059",
@@ -2892,7 +3047,14 @@
         "societies": 35,
         "lot_as_recorded": "137:6x137:6",
         "cross_street": "TURK",
-        "record_date": "1910-03-26"
+        "record_date": "1910-03-26",
+        "cross_street_name": "TURK",
+        "cross_street_type": "ST",
+        "corner_quad": "NW",
+        "lot_ft": [
+          137.5,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 26 March 1910, p. 17",
@@ -2918,7 +3080,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "POLK",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0078",
@@ -3199,9 +3363,17 @@
         "use": "apartment building",
         "contract_usd": 5288,
         "lot_as_recorded": "50x137:6",
-        "offset_ft": 87,
+        "offset_ft": 87.5,
         "cross_street": "HYDE (block face to LEAVENWORTH)",
-        "record_date": "1910-04-02"
+        "record_date": "1910-04-02",
+        "cross_street_name": "HYDE",
+        "cross_street_type": "ST",
+        "side": "N",
+        "direction": "E",
+        "lot_ft": [
+          50,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 2 April 1910, p. 22",
@@ -3228,7 +3400,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "PINE",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0086",
@@ -3244,7 +3418,14 @@
         "lot_as_printed": "N 187:6,.. W. 137:6, S 137:6",
         "lot_as_recorded": "137:6x137:6",
         "cross_street": "GRANT",
-        "record_date": "1910-04-02"
+        "record_date": "1910-04-02",
+        "cross_street_name": "GRANT",
+        "cross_street_type": "AVE",
+        "corner_quad": "NE",
+        "lot_ft": [
+          137.5,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 2 April 1910, p. 22",
@@ -3270,7 +3451,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "CALIFORNIA",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0087",
@@ -3286,9 +3469,17 @@
         "use": "residence",
         "contract_usd": 14765,
         "lot_as_recorded": "50x100",
-        "offset_ft": 62,
+        "offset_ft": 62.5,
         "cross_street": "SPRUCE (block face to LOCUST)",
-        "record_date": "1910-04-02"
+        "record_date": "1910-04-02",
+        "cross_street_name": "SPRUCE",
+        "cross_street_type": "ST",
+        "side": "S",
+        "direction": "E",
+        "lot_ft": [
+          50,
+          100
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 2 April 1910, p. 22",
@@ -3315,7 +3506,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "WASHINGTON",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0088",
@@ -3437,9 +3630,17 @@
         "price_usd": 25000,
         "broker": "J. W. Wright & Co.",
         "lot_as_recorded": "50x137:6",
-        "offset_ft": 147,
+        "offset_ft": 147.5,
         "cross_street": "CLAYTON (block face to ASHBURY)",
-        "record_date": "1910-04-09"
+        "record_date": "1910-04-09",
+        "cross_street_name": "CLAYTON",
+        "cross_street_type": "ST",
+        "side": "S",
+        "direction": "E",
+        "lot_ft": [
+          50,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 9 April 1910, p. 15",
@@ -3466,7 +3667,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "HAIGHT",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0092",
@@ -3518,7 +3721,15 @@
         "lot_as_recorded": "34:9x100",
         "offset_ft": 34,
         "cross_street": "CLAY (block face to WASHINGTON)",
-        "record_date": "1910-04-09"
+        "record_date": "1910-04-09",
+        "cross_street_name": "CLAY",
+        "cross_street_type": "ST",
+        "side": "E",
+        "direction": "N",
+        "lot_ft": [
+          34.75,
+          100
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 9 April 1910, p. 15",
@@ -3544,7 +3755,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "HYDE",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0094",
@@ -3561,7 +3774,14 @@
         "cost_as_printed": "$9,(KH-",
         "lot_as_recorded": "25x82:6",
         "cross_street": "02ND",
-        "record_date": "1910-04-16"
+        "record_date": "1910-04-16",
+        "cross_street_name": "CLEMENT",
+        "cross_street_type": "ST",
+        "corner_quad": "SE",
+        "lot_ft": [
+          25,
+          82.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 16 April 1910, p. 14",
@@ -3588,7 +3808,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "02ND",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0095",
@@ -3761,7 +3983,15 @@
         "lot_as_recorded": "25x120",
         "offset_ft": 125,
         "cross_street": "LAKE (block face to CALIFORNIA)",
-        "record_date": "1910-04-16"
+        "record_date": "1910-04-16",
+        "cross_street_name": "LAKE",
+        "cross_street_type": "ST",
+        "side": "W",
+        "direction": "S",
+        "lot_ft": [
+          25,
+          120
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 16 April 1910, p. 14",
@@ -3788,7 +4018,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "10TH",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0100",
@@ -3805,7 +4037,14 @@
         "buyer_firm": "Excelsior realty and investment company",
         "lot_as_recorded": "62:6x106:3",
         "cross_street": "DIVISADERO",
-        "record_date": "1910-04-23"
+        "record_date": "1910-04-23",
+        "cross_street_name": "DIVISADERO",
+        "cross_street_type": "ST",
+        "corner_quad": "SE",
+        "lot_ft": [
+          62.5,
+          106.25
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 23 April 1910, p. 14",
@@ -3831,7 +4070,9 @@
       "publish": {
         "status": "declined",
         "note": "The page already carries two 1910 sales of this corner (July and December) from the same paper; this April trade adds no fact about the building, and prints two storeys against the three the page and the assessor give."
-      }
+      },
+      "street_name": "MCALLISTER",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0101",
@@ -3920,7 +4161,14 @@
         "contract_usd": 12000,
         "lot_as_recorded": "32:6x110",
         "cross_street": "17TH",
-        "record_date": "1910-04-30"
+        "record_date": "1910-04-30",
+        "cross_street_name": "17TH",
+        "cross_street_type": "ST",
+        "corner_quad": "SW",
+        "lot_ft": [
+          32.5,
+          110
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 30 April 1910, p. 18",
@@ -3946,7 +4194,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "CAPP",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0104",
@@ -3998,9 +4248,17 @@
         "flats": 6,
         "contract_usd": 8525,
         "lot_as_recorded": "25x68:9",
-        "offset_ft": 137,
+        "offset_ft": 137.5,
         "cross_street": "MASON (block face to TAYLOR)",
-        "record_date": "1910-05-07"
+        "record_date": "1910-05-07",
+        "cross_street_name": "MASON",
+        "cross_street_type": "ST",
+        "side": "N",
+        "direction": "W",
+        "lot_ft": [
+          25,
+          68.75
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 7 May 1910, p. 14",
@@ -4027,7 +4285,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "JACKSON",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0106",
@@ -4451,7 +4711,14 @@
         "lot_as_printed": "N 2«:8 by W*. 100",
         "lot_as_recorded": "26:8x100",
         "cross_street": "23RD",
-        "record_date": "1910-05-21"
+        "record_date": "1910-05-21",
+        "cross_street_name": "23RD",
+        "cross_street_type": "ST",
+        "corner_quad": "NW",
+        "lot_ft": [
+          26.67,
+          100
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 21 May 1910, p. 10",
@@ -4478,7 +4745,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "DOUGLASS",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0118",
@@ -4495,8 +4764,16 @@
         "contract_usd": 2050,
         "lot_as_recorded": "25x100",
         "offset_ft": 125,
-        "cross_street": "PERSIA (block face to RUSSIA)",
-        "record_date": "1910-05-21"
+        "cross_street": "PERSIA (block face to BRAZIL)",
+        "record_date": "1910-05-21",
+        "cross_street_name": "PERSIA",
+        "cross_street_type": "AVE",
+        "side": "NW",
+        "direction": "NE",
+        "lot_ft": [
+          25,
+          100
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 21 May 1910, p. 10",
@@ -4512,18 +4789,21 @@
       "confidence": "high",
       "resolution": {
         "status": "resolved",
-        "apn": "6088012",
-        "path": "/san-francisco/excelsior/madrid-street/523/",
-        "eas_address": "523 MADRID ST",
-        "method": "Placed by hand with research/tools/corner.py --batch on the record's lot and offset: northwest line of Madrid 125 feet northeast of Persia, 25 x 100: the lot whose frontage runs 125-150 feet from Persia, 523 Madrid, is 2,495 sq ft, roll 1911, two storeys. The page path comes from resolve_eas on that parcel's EAS address, 523 MADRID ST: EAS exact match on 523 MADRID ST → parcel 6088012; sf-parcels has blklot 6088012 active, 523–523 MADRID; the 2025 roll records it as single family residential, built 1911. Filed under excelsior, not the mission directory the resolver's nearest-page rule chose: the site files Athens, Lisbon, Moscow and Russia, the streets round this block, under excelsior.",
-        "checked_on": "2026-09-24",
-        "note": "No page at this path yet; the parcel is the publisher's to seed.",
+        "apn": "6080016",
+        "path": "/san-francisco/excelsior/madrid-street/472/",
+        "eas_address": "472 MADRID ST",
+        "method": "Re-placed by hand on 2026-11-10 with research/tools/corner.py MADRID PERSIA --along NE, tested against the DPW node (3psu-pn9h): NW line of Madrid 125 feet NE of Persia, NE 25 by NW 100: the block line on that face begins 30 ft from the node, and the lot whose frontage runs 155-180 ft from the node (125-150 ft from Persia's line) on the NW side is 6080016, 472 Madrid, 2,495 sq ft against the record's 2,500, roll 1910, one storey (the record's cottage is one and a half). Every lot on that face is 25 by 100, so the area says nothing; the offset and the side do. EAS exact match on 472 MADRID ST → parcel 6080016; sf-parcels has blklot 6080016 active; the 2025 roll records it as single family residential, built 1910. Page seeded by this re-placement.",
+        "checked_on": "2026-11-10",
+        "note": "Re-placed 2026-11-10: re-tested with corner.py --retest against the DPW street centrelines (3psu-pn9h), the 2026-09-24 placement on 6088012 (523 MADRID ST, /san-francisco/excelsior/madrid-street/523/) disagreed — not on the NW side of Madrid. 523 is on the odd (SE) side and in the block SW of Persia, toward Russia: diagonally across the intersection from the lot the record describes, both side and direction reversed. The record's block face, NE of Persia toward Brazil on the even side, has 6080016 (472 Madrid) at exactly 125-150 ft, roll 1910. The fact was taken off /san-francisco/excelsior/madrid-street/523/ and put on /san-francisco/excelsior/madrid-street/472/.",
         "by_hand": true
       },
       "publish": {
         "status": "published",
-        "pr": "413"
-      }
+        "pr": "608",
+        "note": "Moved 2026-11-10 from /san-francisco/excelsior/madrid-street/523/ (PR 413). published as: MacArthur Brothers contracted to put up a one-and-a-half-storey frame cottage for $2,050."
+      },
+      "street_name": "MADRID",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0119",
@@ -4684,7 +4964,15 @@
         "lot_as_recorded": "42:6x127:8",
         "offset_ft": 120,
         "cross_street": "PIERCE (block face to SCOTT)",
-        "record_date": "1910-06-04"
+        "record_date": "1910-06-04",
+        "cross_street_name": "PIERCE",
+        "cross_street_type": "ST",
+        "side": "N",
+        "direction": "W",
+        "lot_ft": [
+          42.5,
+          127.71
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 4 June 1910, p. 11",
@@ -4710,7 +4998,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "PACIFIC",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0124",
@@ -4836,9 +5126,17 @@
         "broker": "Baldwin & Howell; Speck, Paschel & Co.",
         "seller_firm_other_side": "Excelsior realty and investment company",
         "lot_as_recorded": "30x132",
-        "offset_ft": 154,
+        "offset_ft": 154.75,
         "cross_street": "VAN NESS (block face to FRANKLIN)",
-        "record_date": "1910-06-11"
+        "record_date": "1910-06-11",
+        "cross_street_name": "VAN NESS",
+        "cross_street_type": "AVE",
+        "side": "N",
+        "direction": "W",
+        "lot_ft": [
+          30,
+          132
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 11 June 1910, p. 10",
@@ -4864,7 +5162,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "PACIFIC",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0128",
@@ -4954,7 +5254,10 @@
         "contract_usd": 10583,
         "lot_as_printed": "S .2T3.br:82W:3",
         "cross_street": "MASON",
-        "record_date": "1910-06-11"
+        "record_date": "1910-06-11",
+        "cross_street_name": "MASON",
+        "cross_street_type": "ST",
+        "corner_quad": "SE"
       },
       "citation": {
         "label": "The San Francisco Call, 11 June 1910, p. 11",
@@ -4979,7 +5282,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "CALIFORNIA",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0131",
@@ -5149,7 +5454,15 @@
         "lot_as_recorded": "25x98:8",
         "offset_ft": 75,
         "cross_street": "DOLORES (block face to CHURCH)",
-        "record_date": "1910-07-09"
+        "record_date": "1910-07-09",
+        "cross_street_name": "DOLORES",
+        "cross_street_type": "ST",
+        "side": "S",
+        "direction": "W",
+        "lot_ft": [
+          25,
+          98.67
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 9 July 1910, p. 10",
@@ -5175,7 +5488,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "17TH",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0136",
@@ -5384,7 +5699,13 @@
         "lender": "A. E. and A. Sbarboro",
         "lot_as_recorded": "50x75",
         "cross_street": "COLLINGWOOD",
-        "record_date": "1910-08-27"
+        "record_date": "1910-08-27",
+        "cross_street_name": "COLLINGWOOD",
+        "cross_street_type": "ST",
+        "lot_ft": [
+          50,
+          75
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 27 August 1910, p. 8",
@@ -5400,18 +5721,22 @@
       "confidence": "high",
       "conflict": "The loan was for stores and flats; the assessor counts one storey on the parcel.",
       "resolution": {
-        "status": "resolved",
+        "status": "unresolved",
         "apn": "2695042",
         "path": "/san-francisco/castro/18th-street/4117/",
         "eas_address": "4117 18TH ST",
         "method": "Placed by hand with research/tools/corner.py --batch on the record's lot and offset: Eighteenth and Collingwood, a 50 x 75 lot (3,750 sq ft): the one corner parcel of that area, 4117-4121 18th Street, is 3,750 sq ft, roll 1911; the roll counts one storey against the loan's stores and flats. The page path comes from resolve_eas on that parcel's EAS address, 4117 18TH ST: EAS exact match on 4117 18TH ST → parcel 2695042; sf-parcels has blklot 2695042 active, 4117–4121 18TH; the 2025 roll records it as commercial retail, built 1911. EAS puts 4117, 4121 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4117.",
-        "checked_on": "2026-09-24",
-        "by_hand": true
+        "checked_on": "2026-11-10",
+        "by_hand": true,
+        "note": "Retracted 2026-11-10: re-tested with corner.py --retest against the DPW street centrelines (3psu-pn9h), the placement on 2695042 (4117 18TH ST, /san-francisco/castro/18th-street/4117/) disagrees — its outline is 156 ft from the Eighteenth-Collingwood node: it fronts 18th about 150-200 ft east of Collingwood, three lots in, not at the corner. The 2026-09-24 note called it 'the one corner parcel of that area'; it is not. Two corner parcels are 3,750 sq ft (50 by 75): 2695041 at the SE corner (107 Collingwood / 4141-4149 18th), three storeys but roll 1913, three years after this August 1910 loan; and 2648052 at the NW corner (4200 18th), roll 1967. The record names no corner, so nothing was taken in its place."
       },
       "publish": {
-        "status": "published",
-        "pr": "413"
-      }
+        "status": "declined",
+        "pr": "608",
+        "note": "Removed from the page on 2026-11-10: the placement failed the street-network re-test (see resolution.note). Originally published as: A $21,500 loan was made for building stores and flats on the 50 by 75 foot lot."
+      },
+      "street_name": "18TH",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0142",
@@ -5574,7 +5899,15 @@
         "lot_as_recorded": "27x117:10",
         "offset_ft": 100,
         "cross_street": "16TH (block face to 15TH)",
-        "record_date": "1910-09-17"
+        "record_date": "1910-09-17",
+        "cross_street_name": "16TH",
+        "cross_street_type": "ST",
+        "side": "E",
+        "direction": "N",
+        "lot_ft": [
+          27,
+          117.83
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 17 September 1910, p. 9",
@@ -5600,7 +5933,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "DOLORES",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0147",
@@ -5910,7 +6245,14 @@
         "lot_from": "The San Francisco Call, 22 January 1910, p. 15: the northwest corner of Jackson and Laurel streets, a vacant lot 35x127:8, sold",
         "lot_as_recorded": "35x127:8",
         "cross_street": "LAUREL",
-        "record_date": "1910-10-01"
+        "record_date": "1910-10-01",
+        "cross_street_name": "LAUREL",
+        "cross_street_type": "ST",
+        "corner_quad": "NW",
+        "lot_ft": [
+          35,
+          127.71
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 1 October 1910, p. 10",
@@ -5937,7 +6279,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "JACKSON",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0156",
@@ -5990,7 +6334,14 @@
         "cost_as_printed": "$1,e9i",
         "lot_as_recorded": "75x50",
         "cross_street": "UNION",
-        "record_date": "1910-10-01"
+        "record_date": "1910-10-01",
+        "cross_street_name": "UNION",
+        "cross_street_type": "ST",
+        "corner_quad": "SE",
+        "lot_ft": [
+          75,
+          50
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 1 October 1910, p. 10",
@@ -6016,7 +6367,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "POLK",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0158",
@@ -6030,7 +6383,14 @@
         "lender": "Union trust company",
         "lot_as_recorded": "55x120",
         "cross_street": "GOUGH",
-        "record_date": "1910-10-08"
+        "record_date": "1910-10-08",
+        "cross_street_name": "HAIGHT",
+        "cross_street_type": "ST",
+        "corner_quad": "NE",
+        "lot_ft": [
+          55,
+          120
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 8 October 1910, p. 9",
@@ -6056,7 +6416,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "GOUGH",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0159",
@@ -6143,9 +6505,17 @@
         "price_usd": 18000,
         "broker": "Shainwald, Buckbee & Co.",
         "lot_as_recorded": "25x137:6",
-        "offset_ft": 206,
+        "offset_ft": 206.25,
         "cross_street": "HYDE (block face to LEAVENWORTH)",
-        "record_date": "1910-10-22"
+        "record_date": "1910-10-22",
+        "cross_street_name": "HYDE",
+        "cross_street_type": "ST",
+        "side": "S",
+        "direction": "E",
+        "lot_ft": [
+          25,
+          137.5
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 22 October 1910, p. 10",
@@ -6172,7 +6542,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "WASHINGTON",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0162",
@@ -6331,7 +6703,14 @@
         "lot_as_recorded": "25x95",
         "offset_ft": 75,
         "cross_street": "LAKE (block face to CALIFORNIA)",
-        "record_date": "1910-11-12"
+        "record_date": "1910-11-12",
+        "cross_street_name": "LAKE",
+        "cross_street_type": "ST",
+        "direction": "S",
+        "lot_ft": [
+          25,
+          95
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 12 November 1910, p. 10",
@@ -6352,13 +6731,15 @@
         "eas_address": "116 08TH AVE",
         "method": "Placed by hand with research/tools/corner.py --batch on the record's lot and offset: Eighth avenue 75 feet south of Lake, 25 x 95: the lot whose frontage runs 75-100 feet from Lake, 116 8th Avenue, is 2,375 sq ft (exactly 25 x 95), roll 1910, two storeys; no lot on the west side matches. The page path comes from resolve_eas on that parcel's EAS address, 116 08TH AVE: EAS exact match on 116 08TH AVE → parcel 1367045; sf-parcels has blklot 1367045 active, 116–116 08TH; the 2025 roll records it as single family residential, built 1910.",
         "checked_on": "2026-09-24",
-        "note": "No page at this path yet; the parcel is the publisher's to seed.",
+        "note": "No page at this path yet; the parcel is the publisher's to seed. Re-tested by hand 2026-11-10 (corner.py 08TH LAKE --along S): the record prints no side of the avenue, so --retest can test no quadrant; the block line begins 35-37 ft from the DPW node and 1367045's frontage runs 112-137 ft out, 75-100 ft from Lake's line, the record's lot to the foot, at 2,375 sq ft (exactly 25 by 95); the west-side lot at that offset, 1368002, is 4,434 sq ft and roll 1902. Kept.",
         "by_hand": true
       },
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "08TH",
+      "street_type": "AVE"
     },
     {
       "id": "sn85066387-1910-permits-0167",
@@ -6622,9 +7003,17 @@
         "price_usd_approx": 7300,
         "broker": "Boardman Bros. & Co.",
         "lot_as_recorded": "25x100",
-        "offset_ft": 32,
+        "offset_ft": 32.5,
         "cross_street": "FILBERT (block face to UNION)",
-        "record_date": "1910-12-10"
+        "record_date": "1910-12-10",
+        "cross_street_name": "FILBERT",
+        "cross_street_type": "ST",
+        "side": "E",
+        "direction": "S",
+        "lot_ft": [
+          25,
+          100
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 10 December 1910, p. 10",
@@ -6650,7 +7039,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "SCOTT",
+      "street_type": "ST"
     },
     {
       "id": "sn85066387-1910-permits-0175",
@@ -6773,7 +7164,15 @@
         "lot_as_recorded": "20x71:3",
         "offset_ft": 60,
         "cross_street": "HYDE (block face to LARKIN)",
-        "record_date": "1910-12-24"
+        "record_date": "1910-12-24",
+        "cross_street_name": "HYDE",
+        "cross_street_type": "ST",
+        "side": "S",
+        "direction": "W",
+        "lot_ft": [
+          20,
+          71.25
+        ]
       },
       "citation": {
         "label": "The San Francisco Call, 24 December 1910, p. 9",
@@ -6800,7 +7199,9 @@
       "publish": {
         "status": "published",
         "pr": "413"
-      }
+      },
+      "street_name": "CLAY",
+      "street_type": "ST"
     }
   ]
 }

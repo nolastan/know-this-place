@@ -58,7 +58,7 @@ An entry, with the share of the 45,103 that carry each key:
 | `date_precision` | 100% |
 | `extra` | 97% |
 | `raw` | 97% |
-| `street_name` | 93% |
+| `street_name` | 94% |
 | `confidence` | 93% |
 | `street_type` | 87% |
 | `street_number` | 67% |
@@ -121,7 +121,7 @@ sit in — the three it touched most, and how many in all.
 | `loc-newspapers/sn85066387-1910-building-contracts.json` | 1,315 | 2.9 MB | 1910 | 210 | 163 | `nob-hill`, `mission`, `tenderloin` +23 |
 | `loc-newspapers/sn85066387-1910-h2-real-estate.json` | 450 | 755 KB | 1910 | 132 | 128 | `nob-hill`, `inner-richmond`, `financial-district` +20 |
 | `loc-newspapers/sn85066387-1910-offsets.json` | 120 | 183 KB | 1910 | 19 | 15 | `nob-hill`, `financial-district`, `castro` +6 |
-| `loc-newspapers/sn85066387-1910-permits.json` | 178 | 343 KB | 1910 | 48 | 45 | `nob-hill`, `inner-richmond`, `financial-district` +16 |
+| `loc-newspapers/sn85066387-1910-permits.json` | 178 | 355 KB | 1910 | 47 | 44 | `nob-hill`, `inner-richmond`, `financial-district` +16 |
 | `loc-newspapers/sn85066387-1910-real-estate.json` | 172 | 305 KB | 1909–1910 | 76 | 73 | `nob-hill`, `mission`, `financial-district` +16 |
 | `loc-newspapers/sn85066387-1911-building-contracts.json` | 1,341 | 2.6 MB | 1911 | 176 | 153 | `tenderloin`, `nob-hill`, `mission` +22 |
 | `loc-newspapers/sn85066387-1911-real-estate.json` | 135 | 220 KB | 1911 | 63 | 54 | `east-cut`, `south-of-market`, `pacific-heights` +20 |

@@ -6,6 +6,19 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-10 (the 1910 permits batch,
+  `sn85066387-1910-permits.json`, re-tested with `corner.py --retest`. Its 42
+  placements carried no corner fields ("42 no fields"); all 42 filled from
+  the record and re-tested: **39 ok, 2 disagreeing, 1 untested**; flipping
+  every quadrant and side made all 41 directional entries disagree. Both
+  disagreements confirmed on a re-read: **0118** moved from 523 Madrid to
+  **472 Madrid** (page seeded) — the record's NW line NE of Persia, where the
+  placement had the SE line SW of it; **0141** retracted off 4117 18th, a lot
+  three in from the Collingwood corner the record names, with no corner lot
+  of the period to take its place. The untested entry, 0166 on 8th Avenue,
+  prints no side; `--retest` now checks the offset of such a record, and it
+  passes. Re-run: 41 placements, 41 ok. The batch now has 47 resolved and
+  44 published, from 48 and 45. 1 fact off 1 page, 1 moved.)
 > - **Verified:** 2026-11-09 (the 1910 July–December real-estate batch
   re-tested, and the two 1908 placements the last line named re-read. h2's 39
   corner.py placements carried no corner fields (`--retest`: "39 no fields");
@@ -400,7 +413,8 @@ Saturdays, not 52. Three things differ from 1912:
   or `side`. `--retest` could test none of them and said only "41
   untested". 35 now carry the fields, read from `address_as_written`, and all
   35 pass. **The same is true of every file still in the queue**:
-  `h2-real-estate` (39 placements, 0 with fields), `permits` (42, 0),
+  `h2-real-estate` (39 placements, 0 with fields; filled and re-tested
+  2026-11-09), `permits` (42, 0; filled and re-tested 2026-11-10),
   `offsets` (16, 0 — their `cross_street` is free text like "HYDE (block
   face to LEAVENWORTH)"), and the 1911 (167, 0), 1912 (199, 0) and
   1913 Feb/Jul–Dec (65, 0) contract lists, which keep the cross street only
@@ -513,6 +527,27 @@ or an offset **and** a lot size — and placed them in bulk with
 - **Old St. Mary's Church had no page.** The 660 California page is the
   rectory lot (0241011); the church is 0241012, filed by EAS as 680 California
   and 614 Grant, and was seeded by this pass.
+- **Re-tested 2026-11-10: 1 fact off its page, 1 moved to the right lot.**
+  None of the 42 corner.py placements carried the structured fields; all 42
+  were filled from the record (`street_name`, `cross_street_name`,
+  `corner_quad` or `side`, the printed offset to the inch, `direction`,
+  `lot_ft`) — 0026's offset and 0052's 74⅔ ft come from the sibling record
+  each placement already cites. First run: **39 ok, 2 disagreeing, 1
+  untested**; flipping every quadrant and side made all 41 directional
+  entries disagree. **0118 moved**: "NW line of Madrid, 125 NE of Persia" sat
+  on 523 Madrid, which is on the odd (SE) side *and* in the block SW of
+  Persia — diagonally across the intersection, the placement having looked
+  along the block face toward Russia instead of Brazil. The record's lot is
+  472 Madrid (6080016), 125–150 ft from Persia's line, roll 1910; page seeded,
+  contract moved. **0141 retracted** off 4117 18th: "their 50 by 75 foot lot
+  at Eighteenth and Collingwood" was placed on a 3,750 sq ft lot that fronts
+  18th three lots east of the corner (outline 156 ft from the node); the two
+  3,750 sq ft corner lots are roll 1913 (SE) and 1967 (NW), so nothing was
+  taken in its place. **0166** ("Eighth avenue, 75 feet south of Lake", no
+  side printed) was untested; `--retest` now runs the offset check on a
+  record with an offset and no side, and it passes (75–100 ft from the block
+  line, the record's 25 by 95 exactly; the west-side lot is 1902 and twice
+  the width). Re-run: **41 placements, 41 ok.** 1 of 42 retracted, 1 moved.
 
 ### The 1911 Building Contracts lists
 
@@ -1241,8 +1276,10 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   placements are re-tested** (2026-11-04: 11 retracted, 3 re-placed, see the 1907 section). **The 1909 lists'
   corner placements are re-tested** (2026-11-05: 7 retracted, 1 re-placed, see the 1909 section). **The 1910
   lists' corner placements are re-tested** (2026-11-06: 6 retracted, 2 re-placed, see the 1910 section). **The 1910 January–June real-estate
-  batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section; re-tested again 2026-11-08 with the new offset and reach checks: 40 ok or kept). **The 1910 July–December real-estate batch's placements are re-tested** (2026-11-09: 35 ok, 2 retracted, 2 kept by name; see the second-half 1910 cautions), and 1908's 651 5th Avenue and 243 7th Avenue are re-read and retracted. **Next:** the same
-  `--retest` on the other two 1910 files (`permits`, `offsets`), 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
+  batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section; re-tested again 2026-11-08 with the new offset and reach checks: 40 ok or kept). **The 1910 July–December real-estate batch's placements are re-tested** (2026-11-09: 35 ok, 2 retracted, 2 kept by name; see the second-half 1910 cautions), and 1908's 651 5th Avenue and 243 7th Avenue are re-read and retracted. **The 1910 permits
+  batch's placements are re-tested** (2026-11-10: 41 ok after 1 retracted and 1 moved; see "The 1910
+  permits re-read"). **Next:** the same
+  `--retest` on the last 1910 file (`offsets`, whose `cross_street` is free text), then the 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
   one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
   of 375 published, 1907's 9 of 242 retracted and 3 moved, 1909's 6 of 229 retracted and 1 moved; then the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
