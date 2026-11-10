@@ -1,0 +1,75 @@
+{
+  "address": "1001 California Street, San Francisco, CA 94108",
+  "path": "/san-francisco/financial-district/california-street/1001/unit-8/",
+  "unit": "8",
+  "apn": "0254090",
+  "block": "0254",
+  "lot": "090",
+  "parcel": {
+    "building_area_sqft": 1500,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 764807,
+    "assessed_improvement_value": 996144,
+    "last_sale_date": "2009-10-27"
+  },
+  "permits": [
+    {
+      "number": "201002025769",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-02-02",
+      "status_date": "2010-02-02",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "increase project valuation $150,000; reference pa 200911050653, per request by district building inspector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911050653",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-11-05",
+      "status_date": "2009-11-16",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "penthouse - interior non-structural remodel of penthouse unit. remodel (1) existing kitchen and (1) existing bathroom. new exterior doors in existing openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910209375",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-20",
+      "status_date": "2009-10-27",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "remove kitchen cabinets and appliances. remove existing non-structural ceiling soffits and closets walls. in penthouse unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2009–2010",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0254090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0254&unit=8",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

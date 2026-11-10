@@ -1,0 +1,47 @@
+{
+  "address": "400 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/400/unit-2303/",
+  "unit": "2303",
+  "apn": "3766240",
+  "block": "3766",
+  "lot": "240",
+  "parcel": {
+    "building_area_sqft": 1074,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602500,
+    "assessed_improvement_value": 602500,
+    "last_sale_date": "2016-03-09"
+  },
+  "permits": [
+    {
+      "number": "201803073076",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-07",
+      "status_date": "2019-09-06",
+      "estimated_cost": 99160,
+      "revised_cost": 119290,
+      "description": "merging of two units into one single unit, demising wall between(e) units to be removed, one kitchen to be removed, kitchen, bathroom and living space to be removed, lighting to be updated, plumbing to be re-routed by nessary, fire sprinkler heads to be relocated as required (e) wall is removed",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3766240&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3766&unit=2303",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

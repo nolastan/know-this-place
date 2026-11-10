@@ -1,0 +1,72 @@
+{
+  "address": "300 Beale Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/beale-street/300/unit-405/",
+  "unit": "405",
+  "apn": "3747053",
+  "block": "3747",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1096
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 475608,
+    "assessed_improvement_value": 475608,
+    "last_sale_date": "2006-12-29"
+  },
+  "permits": [
+    {
+      "number": "201208318721",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-31",
+      "status_date": "2014-01-02",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "add two horns to existing fire alarm system on 4th floor, one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208076749",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-08-07",
+      "status_date": "2012-08-10",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "relocate 3 fire sprinklers suite 405",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204108027",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-04-10",
+      "status_date": "2013-10-07",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "bathroom remodel kitchen lighting replace reconfigure closets.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2006–2012",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3747053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3747&unit=405",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

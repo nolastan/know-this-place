@@ -1021,10 +1021,17 @@
     "rating": "Heritage “A”, 1983 preliminary survey"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-09-06",
-    "method": "sf-eas-addresses has 795 SUTTER ST but it does not join to one parcel. 795 SUTTER ST's coordinates fall in 18 active parcels (0298039, 0298046, 0298048, 0298050…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names."
+    "status": "resolved",
+    "apn": "0298039",
+    "path": "/san-francisco/nob-hill/sutter-street/795/",
+    "eas_address": "795 SUTTER ST",
+    "method": "EAS exact match on 795 SUTTER ST → parcel 0298039; sf-parcels has blklot 0298039 active, 795–795 SUTTER; the 2025 roll records it as single family residential, built 1913. Parcel 0298039 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 795 SUTTER ST's coordinates fall in 18 active parcels, one condominium map's units on the 2025 roll; 0298039 stands for the building.",
+    "checked_on": "2026-11-10"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/603",
+    "note": "Re-expressed for the page."
    }
   },
   {
