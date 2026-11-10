@@ -1,0 +1,47 @@
+{
+  "address": "2040 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/2040/unit-503/",
+  "unit": "503",
+  "apn": "0599030",
+  "block": "0599",
+  "lot": "030",
+  "parcel": {
+    "building_area_sqft": 1108,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 843346,
+    "assessed_improvement_value": 562229,
+    "last_sale_date": "2023-03-03"
+  },
+  "permits": [
+    {
+      "number": "200901200500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-20",
+      "status_date": "2009-03-25",
+      "estimated_cost": 27500,
+      "revised_cost": 27500,
+      "description": "bath & kitchen renovation- new fixtures & finishes.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0599030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0599&unit=503",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

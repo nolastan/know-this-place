@@ -1,0 +1,45 @@
+{
+  "address": "1280 Ellis Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/ellis-street/1280/unit-5/",
+  "unit": "5",
+  "apn": "0711A005",
+  "block": "0711A",
+  "lot": "005",
+  "parcel": {
+    "building_area_sqft": 1268,
+    "rooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 19374,
+    "assessed_improvement_value": 68814
+  },
+  "permits": [
+    {
+      "number": "200212093089",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-12-09",
+      "status_date": "2002-12-10",
+      "estimated_cost": 8100,
+      "revised_cost": 8100,
+      "description": "replace alum with new insulated alum total 6 windows. visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0711A005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0711A&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

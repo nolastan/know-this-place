@@ -1,0 +1,98 @@
+{
+  "address": "3436 Clay Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/clay-street/3436/",
+  "block": "0996",
+  "eas_baseid": "292323",
+  "coordinates": {
+    "lat": 37.789041,
+    "lng": -122.449536
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 6,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights"
+  },
+  "condominium": {
+    "lots": [
+      "040",
+      "041",
+      "042",
+      "043",
+      "044",
+      "045"
+    ],
+    "method": "Proposed from the 2025 roll for block 0996: every condominium parcel the roll files under 3436 CLAY ST, and the unbroken run of lots beside parcel 0996040 on the same street with the same year built (1904). 6 lots, 040–045."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAY&street_type=ST&address_number=3436",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0996)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0996&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0996",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0996040",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44953558879615%2037.789040600043926)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-12-13",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 13 December 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n323/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-12-13",
+      "kind": "planning decision",
+      "description": "The City Planning Commission voted 4-2 to find the conversion of the six-unit building to condominiums consistent with the Master Plan (Resolution 8451).",
+      "source": "sf-planning-commission-minutes-1979-12-13"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "address": "1307 Bay Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/bay-street/1307/unit-3/",
+  "unit": "3",
+  "apn": "0472044",
+  "block": "0472",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 1335,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1217268,
+    "assessed_improvement_value": 811512,
+    "last_sale_date": "2022-07-18"
+  },
+  "permits": [
+    {
+      "number": "201204269144",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2012-04-26",
+      "status_date": "2012-04-26",
+      "estimated_cost": 11997,
+      "revised_cost": 11997,
+      "description": "replace 3 windows with new wood windows, window visable from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807287761",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-07-28",
+      "status_date": "2010-06-17",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "revision to 200804048797: new psl added to pick up ceiling joist, detail 5 s1-1. existing 6x12 on level 2 verified as bearing wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807287779",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-07-28",
+      "status_date": "2010-06-17",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replace existing electric base board decker in existing location with 5 new electric base board heaters,3 500-w, 1 -750w and 1-1500w for one unit, existing heaters can be verified by electrical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804048797",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-04-04",
+      "status_date": "2010-06-17",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "removal of bearing interior partitions,replace with new beam. structural reinforcement/replace with new beam, kitchen & bathroom remodeling, electrical, plumbing work & bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0472044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0472&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

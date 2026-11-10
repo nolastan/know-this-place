@@ -1,0 +1,95 @@
+{
+  "address": "578 Waller Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/waller-street/574/unit-578/",
+  "apn": "0861067",
+  "block": "0861",
+  "lot": "067",
+  "parcel": {
+    "building_area_sqft": 1241,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 772425,
+    "assessed_improvement_value": 772425,
+    "last_sale_date": "2016-05-11"
+  },
+  "permits": [
+    {
+      "number": "202408027790",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-02",
+      "status_date": "2024-10-09",
+      "estimated_cost": 3608,
+      "revised_cost": 3608,
+      "description": "replace 1 rear window. non-street visible, (e) aluminium with new wood composite - double hung.no size change. max u-factor 0.30 or better.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901220905",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-22",
+      "status_date": "2019-10-09",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "bathroom remodel. replace tub, sink, vanity, tile.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503100431",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-03-10",
+      "status_date": "2015-03-10",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "replace 5 windows, size for size, not visible from street. u value 0.29",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802124552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-12",
+      "status_date": "2008-03-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "non structural kitchen remodel: replace existing cabinets and floors. replace countertops. replace range, microwave and refrig. relocate sink and dishwasher, new sink in bathroom. min 50% of kitchen light wattage must be fluorescent, provide fluorescent light or occupancy sensor in bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506786",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-09",
+      "status_date": "1995-12-28",
+      "estimated_cost": 2500,
+      "description": "window repair remvoe 3' sect in pantry of n/b wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1995–2024",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0861067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0861&street_number=578",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

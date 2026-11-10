@@ -1,0 +1,46 @@
+{
+  "address": "1450 Greenwich Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/greenwich-street/1450/unit-504/",
+  "unit": "504",
+  "apn": "0502033",
+  "block": "0502",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 896,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 748700,
+    "assessed_improvement_value": 499128,
+    "last_sale_date": "2008-04-18"
+  },
+  "permits": [
+    {
+      "number": "200808229861",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-22",
+      "status_date": "2009-04-16",
+      "estimated_cost": 17000,
+      "revised_cost": 30000,
+      "description": "#504- kitchen remodel: new cabinets, appliances, no electrical, painting, remove tile floor. sunroom: replace windows, shower room: new partition wall, new fixtures & tile shower, powder room: new wall, fixtures,cabinets.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0502033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0502&unit=504",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

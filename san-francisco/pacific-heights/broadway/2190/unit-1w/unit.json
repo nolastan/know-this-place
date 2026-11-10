@@ -1,0 +1,63 @@
+{
+  "address": "2190 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/2190/unit-1w/",
+  "unit": "1W",
+  "apn": "0565028",
+  "block": "0565",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 3380,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2160566,
+    "assessed_improvement_value": 2160566,
+    "last_sale_date": "2005-03-16"
+  },
+  "permits": [
+    {
+      "number": "200011075069",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-11-07",
+      "status_date": "2001-06-04",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "install hot tub and glass windscreen on existing terrace, work will be in one unit w only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010102550",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-10-10",
+      "status_date": "2001-05-31",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "install glass & metal solarium structure on exist terrace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2000–2020",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0565028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0565&unit=1W",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

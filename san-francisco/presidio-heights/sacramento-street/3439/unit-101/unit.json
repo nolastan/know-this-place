@@ -1,0 +1,53 @@
+{
+  "address": "3439 Sacramento Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/sacramento-street/3439/unit-101/",
+  "unit": "101",
+  "apn": "1020070",
+  "block": "1020",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 1596,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1093214,
+    "assessed_improvement_value": 1093214,
+    "last_sale_date": "2001-04-11"
+  },
+  "permits": [
+    {
+      "number": "202209122261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-12",
+      "status_date": "2022-12-01",
+      "estimated_cost": 148020,
+      "revised_cost": 148020,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2014–2022",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1020070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1020&unit=101",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

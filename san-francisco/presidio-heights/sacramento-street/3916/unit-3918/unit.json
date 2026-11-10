@@ -1,0 +1,66 @@
+{
+  "address": "3918 Sacramento Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/sacramento-street/3916/unit-3918/",
+  "apn": "1014075",
+  "block": "1014",
+  "lot": "075",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1137827,
+    "assessed_improvement_value": 758550,
+    "last_sale_date": "2018-08-14"
+  },
+  "permits": [
+    {
+      "number": "201702229855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-22",
+      "status_date": "2017-05-03",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "remove/replace rotted windows & affected siding w/same size windows (12); not visible to street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404213759",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-21",
+      "status_date": "2014-07-17",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "kitchen & 2 baths remodel; remove lath & lath plaster; rewire, new plumbing, new sheetrock;, new tile new cabinets new fixtures; replace doors. comply with cec150(k) 8 & 10",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M481787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-21",
+      "status_date": "2014-04-21",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1014075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1014&street_number=3918",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

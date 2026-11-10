@@ -1,0 +1,64 @@
+{
+  "address": "1865 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/california-street/1865/unit-7/",
+  "unit": "7",
+  "apn": "0648089",
+  "block": "0648",
+  "lot": "089",
+  "parcel": {
+    "building_area_sqft": 1475,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 382079,
+    "assessed_improvement_value": 257487,
+    "last_sale_date": "1996-03-12"
+  },
+  "permits": [
+    {
+      "number": "201008048081",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-04",
+      "status_date": "2010-11-02",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "repl kitchen cabinets, install recessed lights, relocate electrical panel, kitchen alteration",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703146235",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-03-14",
+      "status_date": "2007-05-25",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replace water value. retile walls, floors, install now toilet and faucets. remodel (1) bath. flourenscent lighting or controlled by motion sensor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2007–2016",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0648089&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0648&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

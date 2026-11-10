@@ -1,0 +1,91 @@
+{
+  "address": "245 5th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/5th-street/245/unit-312/",
+  "unit": "312",
+  "apn": "3733121",
+  "block": "3733",
+  "lot": "121",
+  "parcel": {
+    "building_area_sqft": 1283,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 510000,
+    "assessed_improvement_value": 340000,
+    "last_sale_date": "2019-06-28"
+  },
+  "permits": [
+    {
+      "number": "202205093824",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-09",
+      "status_date": "2022-08-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for work approved under previous pa 2020012090628. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203291138",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-03-29",
+      "status_date": "2026-01-23",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "#312: 1 window replacement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111162531",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-16",
+      "status_date": "2022-06-22",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "modify of fire sprinklers system to accommodate new partitioning at one unit pa#202012090628. total relocate (1) add (4) sprinkler heads.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202012090628",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2020-12-09",
+      "status_date": "2022-08-09",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "one unit. interior renovation w/ no change to envelope or structure. changes incl replacement of fixtures & finishes in kitchen and bathroom. replacement of ladder w/ stairs to loft, replacement of light and plumb fixtures. sprinkler mods needed to be under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108166198",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-16",
+      "status_date": "2001-09-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#9617055 for final inspection",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3733121&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3733&unit=312",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

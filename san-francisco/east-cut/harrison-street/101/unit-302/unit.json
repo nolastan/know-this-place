@@ -1,0 +1,73 @@
+{
+  "address": "101 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/harrison-street/101/unit-302/",
+  "unit": "302",
+  "apn": "3768134",
+  "block": "3768",
+  "lot": "134",
+  "parcel": {
+    "building_area_sqft": 506,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442178,
+    "assessed_improvement_value": 294782,
+    "last_sale_date": "2017-04-07"
+  },
+  "permits": [
+    {
+      "number": "201703070850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-07",
+      "status_date": "2017-03-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain a final inspection for work approved under pa#201207114590. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407141188",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-14",
+      "status_date": "2014-07-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#201207114590 all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207114590",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-07-11",
+      "status_date": "2014-11-26",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "bathroom remodel at one unit: remove (e)fixtures, install new tub, toilet, vanity & sink, exhaust fan, gfi plug circuit, tile & paint. no wall relocation. permanently installed lights in bathroom shall be high efficacy unless they are controlled by manual on occupancy sensors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2012–2019",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3768134&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3768&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "address": "360 Guerrero Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/360/unit-201/",
+  "unit": "201",
+  "apn": "3556158",
+  "block": "3556",
+  "lot": "158",
+  "parcel": {
+    "building_area_sqft": 775,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 518916,
+    "assessed_improvement_value": 345944,
+    "last_sale_date": "2021-01-15"
+  },
+  "permits": [
+    {
+      "number": "201510200265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-20",
+      "status_date": "2016-01-11",
+      "revised_cost": 18000,
+      "description": "bathroom and kitchen remodel. replace kitchen cabinets and counter tops. update lighting with led can lights. replace tub surround with new shower control, vanity top, cabinet and toilet. install six led can lights in the living room/dining room and four led recess lights in the bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556158&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&unit=201",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

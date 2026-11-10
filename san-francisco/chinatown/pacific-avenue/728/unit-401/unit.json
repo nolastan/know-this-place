@@ -1,0 +1,56 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-401/",
+  "unit": "401",
+  "apn": "0161058",
+  "block": "0161",
+  "lot": "058",
+  "parcel": {
+    "building_area_sqft": 1169,
+    "rooms": 5,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119464,
+    "assessed_improvement_value": 439699
+  },
+  "permits": [
+    {
+      "number": "200301306305",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-30",
+      "status_date": "2003-03-18",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "replace 1400 sf drop ceiling tile only, replace 18 fluoresent light fixtures replacement of 600 sf d",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301306308",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-01-30",
+      "status_date": "2009-11-24",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace 1400 ft of drop ceilling tile only at tbar ceiling. 5 fluorescent fixt, replace 300 ft drywa",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=401",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

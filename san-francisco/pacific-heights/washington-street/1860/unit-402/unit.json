@@ -1,0 +1,47 @@
+{
+  "address": "1860 Washington Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/washington-street/1860/unit-402/",
+  "unit": "402",
+  "apn": "0599124",
+  "block": "0599",
+  "lot": "124",
+  "parcel": {
+    "building_area_sqft": 920,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 133012,
+    "assessed_improvement_value": 191394,
+    "last_sale_date": "1987-09-22"
+  },
+  "permits": [
+    {
+      "number": "201405296989",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-29",
+      "status_date": "2015-05-15",
+      "estimated_cost": 17000,
+      "revised_cost": 25000,
+      "description": "#402 - remodeling kitchen & bathroom (no changes on the positions of appliances & fixtures), new painting, flooring & new l.e.d. lts on the kitchen & wall light fixtures @ bathroom (hi-eff.)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0599124&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0599&unit=402",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

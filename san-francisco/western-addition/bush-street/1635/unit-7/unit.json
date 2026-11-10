@@ -1,0 +1,45 @@
+{
+  "address": "1635 Bush Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/bush-street/1635/unit-7/",
+  "unit": "7",
+  "apn": "0672025",
+  "block": "0672",
+  "lot": "025",
+  "parcel": {
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 461778,
+    "assessed_improvement_value": 307852,
+    "last_sale_date": "2013-04-19"
+  },
+  "permits": [
+    {
+      "number": "201307232554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-23",
+      "status_date": "2013-10-02",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace kitchen cabinets and replace bathroom floor and wall tile one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0672025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0672&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

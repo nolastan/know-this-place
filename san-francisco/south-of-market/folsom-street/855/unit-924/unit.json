@@ -1,0 +1,68 @@
+{
+  "address": "855 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/855/unit-924/",
+  "unit": "924",
+  "apn": "3752373",
+  "block": "3752",
+  "lot": "373",
+  "parcel": {
+    "building_area_sqft": 838,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 489600,
+    "assessed_improvement_value": 326400,
+    "last_sale_date": "2023-08-03"
+  },
+  "permits": [
+    {
+      "number": "201002015709",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2010-02-01",
+      "status_date": "2010-04-19",
+      "estimated_cost": 1500,
+      "revised_cost": 5000,
+      "description": "one unit - to comply with nov # 2007.17.416 to legalize and enlarge 9th story mezzanine to 10th story. legalize closet previously a concealed space. clarify: fully sprinklered closet per # 2005.12.01.9253. new handwired independent 110 v smoke detectors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901260824",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2009-01-26",
+      "status_date": "2010-05-04",
+      "estimated_cost": 500,
+      "revised_cost": 1500,
+      "description": "comply with nov# 200717416 regarding mezzanine floor area ratio to comply with 2007 ubc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810245062",
+      "type": "additions alterations or repairs",
+      "status": "revoked",
+      "filed": "2008-10-24",
+      "status_date": "2009-03-05",
+      "estimated_cost": 1500,
+      "description": "this a retroactive remodel permit to legaz storage space in back of mezzanine of dwelling, to comply w/ nov 200717416, adding voice alarm communication systm to dwelling in accord w/ sec. 907.2.12.2.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752373&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=924",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

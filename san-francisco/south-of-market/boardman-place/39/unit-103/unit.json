@@ -1,0 +1,80 @@
+{
+  "address": "39 Boardman Place, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/boardman-place/39/unit-103/",
+  "unit": "103",
+  "apn": "3779155",
+  "block": "3779",
+  "lot": "155",
+  "parcel": {
+    "building_area_sqft": 964,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 510074,
+    "assessed_improvement_value": 510074,
+    "last_sale_date": "2017-05-04"
+  },
+  "permits": [
+    {
+      "number": "201406108022",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-10",
+      "status_date": "2014-06-18",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "one unit: replace 80 sq. ft of water damaged drywall with 5/8\" type x sheetrock. n/a maher ord # 155-13 and interirm control",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402078024",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-07",
+      "status_date": "2014-07-14",
+      "estimated_cost": 3000,
+      "revised_cost": 4000,
+      "description": "unti #103: replace extg wood stair with steel stairs. n/a for the maher ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401095919",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-09",
+      "status_date": "2014-06-11",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit: remove old kitchen cabinets and install new cabinets, no windows (compliance with ordinance no 15-133 not required.)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808290405",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-29",
+      "status_date": "2008-10-09",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "add electrical for ventless dryer in lower bathroom. add laundry supply and drain for washer in lower bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3779155&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3779&unit=103",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

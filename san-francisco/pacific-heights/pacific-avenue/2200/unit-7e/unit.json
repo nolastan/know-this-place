@@ -1,0 +1,58 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-7e/",
+  "unit": "7E",
+  "apn": "0580074",
+  "block": "0580",
+  "lot": "074",
+  "parcel": {
+    "building_area_sqft": 1050,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319771,
+    "assessed_improvement_value": 319771,
+    "last_sale_date": "2006-03-28"
+  },
+  "permits": [
+    {
+      "number": "201606079279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-07",
+      "status_date": "2016-08-17",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "cosmetic remodel of a kitchen. plumbing and electric under seperate application. no new wall opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409025246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-02",
+      "status_date": "2015-05-07",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit: cosmetic remodel of one (1) bedroom, electric & plumbing under separate application. no walls added, moved or removed. all fixture locations and layouts to remain unchanged.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=7E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-9a/",
+  "unit": "9A",
+  "apn": "0580082",
+  "block": "0580",
+  "lot": "082",
+  "parcel": {
+    "building_area_sqft": 1520,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 181833,
+    "assessed_improvement_value": 935630,
+    "last_sale_date": "2023-10-25"
+  },
+  "permits": [
+    {
+      "number": "200804220288",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-04-22",
+      "status_date": "2008-11-17",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "work @ one unit only. replace plumbing fixtures in kind in master bathroom & guest bathroom. change (e) single guest vanity cabinet in bathroom in kind. change (e) closet doors with new closet doors in master bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802074270",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-02-07",
+      "status_date": "2008-11-17",
+      "estimated_cost": 8800,
+      "revised_cost": 8800,
+      "description": "work @ one unit. replace (e) kitchen cabinets, no changes in plumbing and electrical. all work on 9th floor in one unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580082&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=9A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

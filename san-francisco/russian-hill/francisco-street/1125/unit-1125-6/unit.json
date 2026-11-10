@@ -1,0 +1,79 @@
+{
+  "address": "1125 Francisco Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/francisco-street/1125/unit-1125-6/",
+  "unit": "6",
+  "apn": "0478026",
+  "block": "0478",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 1183,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 315627,
+    "assessed_improvement_value": 212629,
+    "last_sale_date": "1995-10-27"
+  },
+  "permits": [
+    {
+      "number": "202303163831",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-03-16",
+      "status_date": "2026-01-23",
+      "estimated_cost": 88000,
+      "revised_cost": 88000,
+      "description": "remodel kitchen, add 1/2 bath, open wall on hallway for new access to get into e closet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712045373",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2017-12-04",
+      "status_date": "2017-12-04",
+      "revised_cost": 0,
+      "description": "replace windows 1st - double casement sashes, 2nd - single casement sashes; in kind. clear single glazed glass, douglas fir primed, mutin profile is true divided light, no changes to exterior trim.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208137264",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-08-13",
+      "status_date": "2014-10-21",
+      "estimated_cost": 20000,
+      "revised_cost": 18277,
+      "description": "kitchen remodel: new cabinets, new countertops, new tiling, new appliances, paint. bathroom remodel: new sink, new toilet, new tiling, paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003309268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-30",
+      "status_date": "2010-05-11",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "one unit - replace 9 individual & 3 pairs of wood sashes with exact replica wood sash w/insulated glass 2 double hungs, 7 single casements, and 3 paris. all orig divided lites & mullion spacing to be matched.no window faces street, all int courtyard, replace in kind(clear opening),u-factor 0.40 max.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0478026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0478&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

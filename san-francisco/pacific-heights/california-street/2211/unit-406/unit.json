@@ -1,0 +1,58 @@
+{
+  "address": "2211 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2211/unit-406/",
+  "unit": "406",
+  "apn": "0652063",
+  "block": "0652",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 560,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 271553,
+    "assessed_improvement_value": 271553,
+    "last_sale_date": "2003-03-24"
+  },
+  "permits": [
+    {
+      "number": "201711274873",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-27",
+      "status_date": "2018-02-09",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit: bathroom remodel. no change on walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409245169",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2004-09-24",
+      "status_date": "2004-10-29",
+      "estimated_cost": 11155,
+      "revised_cost": 11155,
+      "description": "one unit-remodel of kitchen, kitchen cabinets, counters, tile. adding combination washer & dryer.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0652063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0652&unit=406",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

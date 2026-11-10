@@ -1,0 +1,58 @@
+{
+  "address": "195 25th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/25th-avenue/195/unit-501/",
+  "unit": "501",
+  "apn": "1333052",
+  "block": "1333",
+  "lot": "052",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 516862,
+    "assessed_improvement_value": 516862,
+    "last_sale_date": "2011-12-06"
+  },
+  "permits": [
+    {
+      "number": "202507312077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-31",
+      "status_date": "2026-01-16",
+      "estimated_cost": 30000,
+      "revised_cost": 60000,
+      "description": "remodeling (2) bathrooms: both tub to shower, new shower valves, new vanities and toilets. replaced kitchen counter top &sink. install new can lights in bathroom and new outlets. like for like. replace kitchen counter top and sink. install nee can lights in bathroom and new outlets. no layout change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401305245",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-01-30",
+      "status_date": "2007-05-23",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replace kitchen cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1333052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1333&unit=501",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

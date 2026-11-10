@@ -1,0 +1,58 @@
+{
+  "address": "1900 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1900/unit-3/",
+  "unit": "3",
+  "apn": "0567032",
+  "block": "0567",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 1315,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 931200,
+    "assessed_improvement_value": 620800,
+    "last_sale_date": "2021-10-20"
+  },
+  "permits": [
+    {
+      "number": "201801098214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-09",
+      "status_date": "2018-04-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201710312800. moving 2 walls and add a bathroom to permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201710312800",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-10-31",
+      "status_date": "2018-04-27",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "one unit: second floor, remodel kitchen, 2 bathrooms, lighting, finishes. no walls moved, removed, added or infilled. all existing layout to remain unchanged. all wor within unit no wk in common areas, no fire alarm or fire sprinkler work required.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0567032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0567&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

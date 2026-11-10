@@ -1,0 +1,58 @@
+{
+  "address": "786 Minna Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/minna-street/786/unit-9/",
+  "unit": "9",
+  "apn": "3728113",
+  "block": "3728",
+  "lot": "113",
+  "parcel": {
+    "building_area_sqft": 1460,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 420321,
+    "assessed_improvement_value": 420321,
+    "last_sale_date": "2023-04-05"
+  },
+  "permits": [
+    {
+      "number": "201109235402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-23",
+      "status_date": "2011-10-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201109194991. move non bearing partition to enlarge existing closet. relocate bathroom door per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109194991",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-19",
+      "status_date": "2011-10-27",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "one unit: bathroom remodel reconfigure vanity, no structural work, 3 new light fixtures, no wall relocation, new lighting per cec (150k)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3728113&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3728&unit=9",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

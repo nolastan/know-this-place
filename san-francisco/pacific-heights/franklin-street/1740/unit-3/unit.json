@@ -1,0 +1,58 @@
+{
+  "address": "1740 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/1740/unit-3/",
+  "unit": "3",
+  "apn": "0642015",
+  "block": "0642",
+  "lot": "015",
+  "parcel": {
+    "building_area_sqft": 1688,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 996000,
+    "assessed_improvement_value": 664000,
+    "last_sale_date": "2018-10-24"
+  },
+  "permits": [
+    {
+      "number": "202203210386",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-21",
+      "status_date": "2022-10-14",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "one unit: remodel (e) kitchen. install new water fixtures. moving gas line. no removal of walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202008212279",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-08-21",
+      "status_date": "2020-08-21",
+      "estimated_cost": 27500,
+      "revised_cost": 27500,
+      "description": "remodel 1 existing bath, replace toilet low sinke tub. no change to bath footprint or relocation of plumbing or elec. interior only. no change to access. no change to layout and openings",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0642015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0642&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

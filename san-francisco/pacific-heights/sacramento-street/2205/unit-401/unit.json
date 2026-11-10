@@ -1,0 +1,72 @@
+{
+  "address": "2205 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2205/unit-401/",
+  "unit": "401",
+  "apn": "0638053",
+  "block": "0638",
+  "lot": "053",
+  "parcel": {
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 88799,
+    "assessed_improvement_value": 250914
+  },
+  "permits": [
+    {
+      "number": "201512145100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-14",
+      "status_date": "2016-02-29",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "kitchen remodel: install new cabinets & appliances. no wlals moved, remodel, added or infilled. all (e) layoutes to remain unchanged.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507242352",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-24",
+      "status_date": "2015-11-06",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel bathroom - new tub/tile, remodel 1/2 bath - toilet and vanity, no walls to be altered or removed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506159039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-15",
+      "status_date": "2015-11-06",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "#401 - run gas line for fireplace logs; install new sheetrock over damaged in hallway; install new elect. outlets and switches; furnace permit has been obtained.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2006–2015",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0638053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0638&unit=401",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

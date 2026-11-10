@@ -1,0 +1,68 @@
+{
+  "address": "2410 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2410/unit-5/",
+  "unit": "5",
+  "apn": "0582031",
+  "block": "0582",
+  "lot": "031",
+  "parcel": {
+    "building_area_sqft": 870,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 494896,
+    "assessed_improvement_value": 329929,
+    "last_sale_date": "2010-02-19"
+  },
+  "permits": [
+    {
+      "number": "201402249206",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-24",
+      "status_date": "2015-07-01",
+      "estimated_cost": 6107,
+      "revised_cost": 6107,
+      "description": "replace 1 window like for like with andersen wood clad. not visible from street. in living room. ufactor .40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003225073",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-22",
+      "status_date": "2000-03-28",
+      "revised_cost": 1,
+      "description": "renewal of application 9912651",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000124811",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-01-24",
+      "status_date": "2000-03-27",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "kitchen remodeling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0582031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0582&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

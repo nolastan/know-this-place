@@ -1,0 +1,28 @@
+{
+  "address": "3939 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/3939/unit-lot-096/",
+  "apn": "3601096",
+  "block": "3601",
+  "lot": "096",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 564841,
+    "assessed_improvement_value": 564841,
+    "last_sale_date": "2003-06-27"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&street_number=3939",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

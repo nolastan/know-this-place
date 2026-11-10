@@ -1,0 +1,46 @@
+{
+  "address": "1817 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/california-street/1817/unit-106/",
+  "unit": "106",
+  "apn": "0648038",
+  "block": "0648",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 542,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 343800,
+    "assessed_improvement_value": 229200,
+    "last_sale_date": "2018-07-06"
+  },
+  "permits": [
+    {
+      "number": "201808278465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-27",
+      "status_date": "2019-11-08",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "one unit. kitchen and bath remodel, like for like. update flooring and paint thoughout. keep (e) floor plan. no partition demo, no new walls. maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0648038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0648&unit=106",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

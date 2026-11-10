@@ -1,0 +1,86 @@
+{
+  "address": "2542 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2542/unit-303/",
+  "unit": "303",
+  "apn": "0630057",
+  "block": "0630",
+  "lot": "057",
+  "parcel": {
+    "building_area_sqft": 1106,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 537203,
+    "assessed_improvement_value": 537203,
+    "last_sale_date": "2012-11-16"
+  },
+  "permits": [
+    {
+      "number": "202306150151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-15",
+      "status_date": "2023-08-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace (6) windows rear facing (not visible from street). scaffolding to be errected.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211284998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-28",
+      "status_date": "2013-08-28",
+      "estimated_cost": 30000,
+      "revised_cost": 40000,
+      "description": "remodel kitchen & bath, new hardwood floor, recess lighting throughout condo totaling 25 led lighting compliant to title 24, relocate electrical panel from closet to hallway.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709072042",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-09-07",
+      "status_date": "2015-05-04",
+      "estimated_cost": 10050,
+      "revised_cost": 10050,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308283271",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-28",
+      "status_date": "2004-01-05",
+      "estimated_cost": 3860,
+      "revised_cost": 3860,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2003–2023",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0630057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0630&unit=303",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

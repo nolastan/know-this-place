@@ -1,0 +1,46 @@
+{
+  "address": "3045 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/3045/unit-304/",
+  "unit": "304",
+  "apn": "0982050",
+  "block": "0982",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1361,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 398125,
+    "assessed_improvement_value": 398125,
+    "last_sale_date": "2001-09-07"
+  },
+  "permits": [
+    {
+      "number": "201201242767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-24",
+      "status_date": "2012-11-02",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit: kitchen and bath renovation. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0982050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0982&unit=304",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

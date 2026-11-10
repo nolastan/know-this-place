@@ -1,0 +1,47 @@
+{
+  "address": "1817 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/california-street/1817/unit-208/",
+  "unit": "208",
+  "apn": "0648064",
+  "block": "0648",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 537,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 428641,
+    "assessed_improvement_value": 285761,
+    "last_sale_date": "2020-09-30"
+  },
+  "permits": [
+    {
+      "number": "202311171042",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-17",
+      "status_date": "2024-02-22",
+      "estimated_cost": 25000,
+      "revised_cost": 60000,
+      "description": "one unit: (1) kitchen remodeling: (1) bathroom remodeling: (3) installation recessed lights on ceiling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0648064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0648&unit=208",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

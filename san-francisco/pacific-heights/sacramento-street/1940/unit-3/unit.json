@@ -1,0 +1,46 @@
+{
+  "address": "1940 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/sacramento-street/1940/unit-3/",
+  "unit": "3",
+  "apn": "0624016",
+  "block": "0624",
+  "lot": "016",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 967572,
+    "assessed_improvement_value": 645048,
+    "last_sale_date": "2023-01-10"
+  },
+  "permits": [
+    {
+      "number": "201305318406",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-31",
+      "status_date": "2013-09-11",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "kitchen remodeling, electrical work, plumbing work, kitchen cabinet and granite installation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0624016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0624&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

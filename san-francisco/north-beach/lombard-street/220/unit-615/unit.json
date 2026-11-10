@@ -1,0 +1,58 @@
+{
+  "address": "220 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/220/unit-615/",
+  "unit": "615",
+  "apn": "0060074",
+  "block": "0060",
+  "lot": "074",
+  "parcel": {
+    "building_area_sqft": 1263,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 873936,
+    "assessed_improvement_value": 582624,
+    "last_sale_date": "2022-07-15"
+  },
+  "permits": [
+    {
+      "number": "201403049840",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-04",
+      "status_date": "2014-05-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: kitchen remodel, replace in-kind, install five (5) can lights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308124074",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-12",
+      "status_date": "2013-11-18",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "master bathroom remodeling : new shower pan; new membrane, new til at floor & shower, new vanity, new fan, new steam unit, new lights. guest bathroom: new floor tile, new fan, new light fixture. no framing change",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0060074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0060&unit=615",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

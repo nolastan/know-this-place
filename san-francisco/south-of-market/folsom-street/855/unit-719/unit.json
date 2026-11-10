@@ -1,0 +1,46 @@
+{
+  "address": "855 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/855/unit-719/",
+  "unit": "719",
+  "apn": "3752326",
+  "block": "3752",
+  "lot": "326",
+  "parcel": {
+    "building_area_sqft": 1343,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 536648,
+    "assessed_improvement_value": 536648,
+    "last_sale_date": "2004-09-15"
+  },
+  "permits": [
+    {
+      "number": "202412036106",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-03",
+      "status_date": "2025-02-18",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit- kitchen remodel in kind upgrade electrical as needed. (n) appliances, cabinets, and countertops. no wall to be removed no exterior work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752326&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=719",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

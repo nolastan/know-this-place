@@ -1,0 +1,58 @@
+{
+  "address": "2950 Clay Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/clay-street/2950/unit-301/",
+  "unit": "301",
+  "apn": "1001050",
+  "block": "1001",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602731,
+    "assessed_improvement_value": 602731,
+    "last_sale_date": "2001-03-29"
+  },
+  "permits": [
+    {
+      "number": "202507231384",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-23",
+      "status_date": "2025-09-10",
+      "estimated_cost": 4460,
+      "revised_cost": 4460,
+      "description": "one unit: retrofit install (4) windows - all windows are not street facing. (e) aluminum - 4x double hung. (n) fibrex - 4x double hung. u factor<.30, no size change - windows are all in kind and same opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407282356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-07-28",
+      "status_date": "2014-12-19",
+      "estimated_cost": 34000,
+      "revised_cost": 34000,
+      "description": "minor kitchen renovation, new cabinets, floor, counter tops, appliances & sink, cec 150.(k) 3",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1001050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1001&unit=301",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "2040 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/2040/unit-702/",
+  "unit": "702",
+  "apn": "0599047",
+  "block": "0599",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 724,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 478740,
+    "assessed_improvement_value": 478740,
+    "last_sale_date": "2017-06-07"
+  },
+  "permits": [
+    {
+      "number": "200705221988",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-22",
+      "status_date": "2007-08-09",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "one unit. 1 bedroom condo: replace kitchen, install new shower valve (by others) and redo bathroom & powder room. install new flooring, paint. replace all lighting in kitchen with flourescent lighting so two with the bathroom and powder romm. per title 24.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0599047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0599&unit=702",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

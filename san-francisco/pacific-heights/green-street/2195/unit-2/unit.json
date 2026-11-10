@@ -1,0 +1,68 @@
+{
+  "address": "2195 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/2195/unit-2/",
+  "unit": "2",
+  "apn": "0557036",
+  "block": "0557",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 1359,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 187286,
+    "assessed_improvement_value": 325726,
+    "last_sale_date": "1997-05-20"
+  },
+  "permits": [
+    {
+      "number": "202512151814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-15",
+      "status_date": "2026-03-30",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "one unit: kitchen counter tops-2 vanity tops, add laundry hook ups, shower waterproof + tiles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M268367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-06-13",
+      "status_date": "2011-06-13",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103152075",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-15",
+      "status_date": "2012-02-16",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remodel kitchen and 2 baths. remove one wall,replace with strongwall and beam. general mep upgrade.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0557036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0557&unit=2",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

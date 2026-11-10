@@ -1,0 +1,46 @@
+{
+  "address": "2105 Buchanan Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/buchanan-street/2105/unit-3/",
+  "unit": "3",
+  "apn": "0637022",
+  "block": "0637",
+  "lot": "022",
+  "parcel": {
+    "building_area_sqft": 1700,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 362375,
+    "assessed_improvement_value": 337698
+  },
+  "permits": [
+    {
+      "number": "201503120693",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-12",
+      "status_date": "2016-02-04",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "#3 - kitchen & bathrooms remodel. new cabinetry, appliances & finishes in kitchen. new tile, fixtures & cabinetry in bathrooms. new master closet/study. no change to exterior facade, no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0637022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0637&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

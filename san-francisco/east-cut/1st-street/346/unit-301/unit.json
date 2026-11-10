@@ -1,0 +1,58 @@
+{
+  "address": "346 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/346/unit-301/",
+  "unit": "301",
+  "apn": "3749120",
+  "block": "3749",
+  "lot": "120",
+  "parcel": {
+    "building_area_sqft": 1505,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 557215,
+    "assessed_improvement_value": 590086,
+    "last_sale_date": "2012-08-31"
+  },
+  "permits": [
+    {
+      "number": "202512081222",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-12-08",
+      "status_date": "2025-12-08",
+      "estimated_cost": 46500,
+      "revised_cost": 88000,
+      "description": "one unit: remodel in-kind. (e) kitchen, two (e) bathrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202511240303",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-11-24",
+      "status_date": "2025-11-24",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "replace wood decking supported on existing roof with bison support system or equivalent",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3749120&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3749&unit=301",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

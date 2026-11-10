@@ -1,0 +1,47 @@
+{
+  "address": "850 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/850/unit-702/",
+  "unit": "702",
+  "apn": "0243090",
+  "block": "0243",
+  "lot": "090",
+  "parcel": {
+    "building_area_sqft": 1808,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 703800,
+    "assessed_improvement_value": 469200,
+    "last_sale_date": "2024-04-15"
+  },
+  "permits": [
+    {
+      "number": "200506013826",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-01",
+      "status_date": "2005-10-20",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "replace four (e) windows with new window inserts. no change to openings. new lighting & plaster work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=702",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "address": "525 27th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/mission/27th-street/525/",
+  "block": "6590",
+  "eas_baseid": "456634",
+  "coordinates": {
+    "lat": 37.74638,
+    "lng": -122.431978
+  },
+  "parcel": {
+    "year_built": 1998,
+    "units": 5,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley"
+  },
+  "condominium": {
+    "lots": [
+      "090",
+      "091",
+      "092",
+      "093",
+      "094"
+    ],
+    "method": "Proposed from the 2025 roll for block 6590: every condominium parcel the roll files under 525 27TH ST, and the unbroken run of lots beside parcel 6590092 on the same street with the same year built (1998) — street numbers 521, 523, 525. 5 lots, 090–094."
+  },
+  "permits": [
+    {
+      "number": "9725832",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-12-29",
+      "status_date": "1998-01-02",
+      "estimated_cost": 1,
+      "description": "revision to 9611984, new construction 5-unit building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611984",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1996-07-03",
+      "status_date": "1998-01-02",
+      "estimated_cost": 450000,
+      "revised_cost": 850000,
+      "description": "erect 3 story 5 unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=ST&address_number=525",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 6590)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=6590&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6590",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-03-07",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 7 March 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n79/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-03-07",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 7-0, five dwelling units on the site of about 7,500 square feet (Motion 14065).",
+      "source": "sf-planning-commission-minutes-1996-03-07"
+    }
+  ]
+}

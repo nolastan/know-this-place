@@ -1,0 +1,68 @@
+{
+  "address": "850 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/850/unit-904/",
+  "unit": "904",
+  "apn": "0243098",
+  "block": "0243",
+  "lot": "098",
+  "parcel": {
+    "building_area_sqft": 1415,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 567136,
+    "assessed_improvement_value": 408774,
+    "last_sale_date": "1999-11-01"
+  },
+  "permits": [
+    {
+      "number": "201808137223",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-13",
+      "status_date": "2018-11-08",
+      "estimated_cost": 15000,
+      "revised_cost": 15864,
+      "description": "bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410098533",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-10-09",
+      "status_date": "2014-10-09",
+      "estimated_cost": 5500,
+      "revised_cost": 9037,
+      "description": "new tile floor in powder room, new vanity, new paint, no alteration of walls, window and door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107103310",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-10",
+      "status_date": "2001-10-22",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove existing partitions as indicated, construct new partitions and ceilings, paint 3 rooms, new l",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243098&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=904",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

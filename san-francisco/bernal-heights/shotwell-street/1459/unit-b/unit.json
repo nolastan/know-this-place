@@ -1,0 +1,47 @@
+{
+  "address": "1459 Shotwell Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/shotwell-street/1459/unit-b/",
+  "unit": "B",
+  "apn": "5522054",
+  "block": "5522",
+  "lot": "054",
+  "parcel": {
+    "building_area_sqft": 1074,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 780000,
+    "assessed_improvement_value": 520000,
+    "last_sale_date": "2018-02-27"
+  },
+  "permits": [
+    {
+      "number": "202104148518",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-14",
+      "status_date": "2021-10-13",
+      "estimated_cost": 25000,
+      "revised_cost": 30000,
+      "description": "one unit: 2 bathrooms remodel in kind. bath a: 39 sqft new curbed shower, toilet, vanity. bath b: 39 sqft new tub/shower, toilet, vanity. all work in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5522054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5522&unit=B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "2211 Broderick Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/broderick-street/2211/unit-4/",
+  "unit": "4",
+  "apn": "0981071",
+  "block": "0981",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 816,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 438985,
+    "assessed_improvement_value": 438985,
+    "last_sale_date": "2012-05-03"
+  },
+  "permits": [
+    {
+      "number": "202311020032",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-11-02",
+      "status_date": "2023-11-02",
+      "estimated_cost": 15374,
+      "revised_cost": 15374,
+      "description": "one unit: replace (11) windows with retrofit vinyl windows. not street visible. u-factor 0.30 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205079935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-07",
+      "status_date": "2012-07-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "bathroom renovation. no structural. all lighting changes shall comply with cec 150 k. verify in field bath exhaust fan.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0981071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0981&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

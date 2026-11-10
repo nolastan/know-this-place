@@ -1,0 +1,57 @@
+{
+  "address": "1224 Sacramento Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/sacramento-street/1224/unit-2/",
+  "unit": "2",
+  "apn": "0221146",
+  "block": "0221",
+  "lot": "146",
+  "parcel": {
+    "building_area_sqft": 825,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 666029,
+    "assessed_improvement_value": 444019,
+    "last_sale_date": "2020-03-17"
+  },
+  "permits": [
+    {
+      "number": "M19261",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-11",
+      "status_date": "2002-09-11",
+      "revised_cost": 14000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200109249062",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-09-24",
+      "status_date": "2002-05-02",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "all steel construct balcony with fire sprinkler to be added to (e) structure",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221146&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

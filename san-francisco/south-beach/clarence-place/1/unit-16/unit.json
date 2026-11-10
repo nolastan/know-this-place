@@ -1,0 +1,35 @@
+{
+  "address": "1 Clarence Place, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/clarence-place/1/unit-16/",
+  "unit": "16",
+  "apn": "3788101",
+  "block": "3788",
+  "lot": "101",
+  "parcel": {
+    "building_area_sqft": 931,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 281020,
+    "assessed_improvement_value": 215550,
+    "last_sale_date": "1997-09-23"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3788101&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3788&unit=16",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

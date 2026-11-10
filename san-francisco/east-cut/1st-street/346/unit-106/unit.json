@@ -1,0 +1,58 @@
+{
+  "address": "346 1st Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/1st-street/346/unit-106/",
+  "unit": "106",
+  "apn": "3749105",
+  "block": "3749",
+  "lot": "105",
+  "parcel": {
+    "building_area_sqft": 1020,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 307453,
+    "assessed_improvement_value": 307453,
+    "last_sale_date": "2003-12-22"
+  },
+  "permits": [
+    {
+      "number": "202506047949",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-04",
+      "status_date": "2025-06-04",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "recommencement and completion of work approved under pa #2022-0128-6941",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201286941",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-01-28",
+      "status_date": "2022-01-28",
+      "estimated_cost": 15000,
+      "revised_cost": 19000,
+      "description": "remodel bathrooms: change lighting. install tile at shower and floor. new sinks and toilets.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3749105&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3749&unit=106",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

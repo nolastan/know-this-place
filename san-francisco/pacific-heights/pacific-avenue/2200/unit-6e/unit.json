@@ -1,0 +1,58 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-6e/",
+  "unit": "6E",
+  "apn": "0580068",
+  "block": "0580",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1099,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 539245,
+    "assessed_improvement_value": 539245,
+    "last_sale_date": "2007-03-12"
+  },
+  "permits": [
+    {
+      "number": "200209096034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-09-09",
+      "status_date": "2002-09-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew app#2002/05/03/5650 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205035650",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-03",
+      "status_date": "2002-09-03",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "replace kitchen counterto9ps replace laminate flooring in entrance foyer kitchen and half bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=6E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

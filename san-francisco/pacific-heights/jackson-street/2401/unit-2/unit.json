@@ -1,0 +1,58 @@
+{
+  "address": "2401 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/2401/unit-2/",
+  "unit": "2",
+  "apn": "0606032",
+  "block": "0606",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 1426,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 591079,
+    "assessed_improvement_value": 394049,
+    "last_sale_date": "2012-11-07"
+  },
+  "permits": [
+    {
+      "number": "202503273181",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-03-27",
+      "status_date": "2025-03-27",
+      "estimated_cost": 39000,
+      "revised_cost": 39000,
+      "description": "replace (23) windows and (1) swing door. visible from the street are wood double hungs with continues ogee lugs and cottage smaller shash with (sdl) grids to match existing pattern in existing openings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202501279085",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-27",
+      "status_date": "2025-01-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "adminstrative permit application to correct the unit # address for completed permit 201306109062. change address from one unit to one unit. all work was in one unit. no work on this permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0606032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0606&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

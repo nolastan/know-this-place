@@ -1,0 +1,83 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-1/",
+  "unit": "1",
+  "apn": "0161082",
+  "block": "0161",
+  "lot": "082",
+  "parcel": {
+    "building_area_sqft": 13106
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1124600,
+    "assessed_improvement_value": 1124600,
+    "last_sale_date": "2016-02-09"
+  },
+  "permits": [
+    {
+      "number": "201506158981",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-15",
+      "status_date": "2018-04-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under expired pa#201403110910. all work is complete. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411141499",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-11-14",
+      "status_date": "2015-03-23",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "common area: renovate 10 common area bathrooms floors 3 - 7, replace 10 toilets, retiel floors, replace 5 urinals, replace 15 sinks only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403170910",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-17",
+      "status_date": "2015-06-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace electric fire pump controller with new controller of same make & model. all work will take place in pump room in basement adjacent ot parking garage. compliance with ordinance #155-13 not required",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204238920",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-04-23",
+      "status_date": "2019-11-06",
+      "estimated_cost": 48000,
+      "revised_cost": 120000,
+      "description": "volunteer upgrade/replacement of (e) fire alarm system. install 1 facp, 1 power supply, 3 annunciators, 32 smokes, 2 neats, 92 notification devices, w/ 37 point modules to monitor devices installed by others. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2003–2015",
+    "shown_on_page": 4,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161082&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

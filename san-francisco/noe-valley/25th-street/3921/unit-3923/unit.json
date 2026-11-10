@@ -1,0 +1,42 @@
+{
+  "address": "3923 25th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/25th-street/3921/unit-3923/",
+  "apn": "6549050",
+  "block": "6549",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1314
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 66794,
+    "assessed_improvement_value": 206575
+  },
+  "permits": [
+    {
+      "number": "201404223848",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-04-22",
+      "status_date": "2014-04-22",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6549050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6549&street_number=3923",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "address": "1307 Bay Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/bay-street/1307/",
+  "block": "0472",
+  "eas_baseid": "282885",
+  "coordinates": {
+    "lat": 37.803586,
+    "lng": -122.428646
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 5,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina"
+  },
+  "condominium": {
+    "lots": [
+      "042",
+      "043",
+      "044",
+      "045",
+      "046"
+    ],
+    "method": "Proposed from the 2025 roll for block 0472: every condominium parcel the roll files under 1307 BAY ST, and the unbroken run of lots beside parcel 0472042 on the same street with the same year built (1923). 5 lots, 042–046."
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAY&street_type=ST&address_number=1307",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0472)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0472&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0472",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0472042",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-04-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 April 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n115/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-04-12",
+      "kind": "planning decision",
+      "description": "The City Planning Commission voted 4-2 to approve converting the five-unit building to condominiums, with purchase by two-thirds of the tenants required (Resolution 8230).",
+      "source": "sf-planning-commission-minutes-1979-04-12"
+    }
+  ]
+}

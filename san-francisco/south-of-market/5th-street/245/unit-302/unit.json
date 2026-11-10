@@ -1,0 +1,135 @@
+{
+  "address": "245 5th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/5th-street/245/unit-302/",
+  "unit": "302",
+  "apn": "3733111",
+  "block": "3733",
+  "lot": "111",
+  "parcel": {
+    "building_area_sqft": 4500,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 556695,
+    "assessed_improvement_value": 501961,
+    "last_sale_date": "2008-05-27"
+  },
+  "permits": [
+    {
+      "number": "202610280019",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-10-28",
+      "status_date": "2026-11-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 202003137076. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202003137076",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-03-13",
+      "status_date": "2020-07-09",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "add new sink and grill to roof deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703302818",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-30",
+      "status_date": "2019-04-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final 201407161393, 201105317083. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508245099",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-24",
+      "status_date": "2015-08-27",
+      "estimated_cost": 9252,
+      "revised_cost": 1,
+      "description": "add 14 sprinkler heads, relocate 4 sprinkler heads. as built 201507101193 revision to existing plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507101193",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-10",
+      "status_date": "2015-08-27",
+      "estimated_cost": 3500,
+      "revised_cost": 9252,
+      "description": "add 14 fire sprinklers. relocate 4 existing fire sprinklers.201105317083 and 201407161393",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201407161393",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-07-16",
+      "status_date": "2014-07-30",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revisions to pa# 2011-0531-7083. bathroom configuration, mechanical room, mezzanine toilet room, structural details.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201402078075",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-02-07",
+      "status_date": "2014-02-07",
+      "estimated_cost": 12500,
+      "revised_cost": 17000,
+      "description": "replace new bathroom doors in 2 bathrooms 3x6'8 in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105317083",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-05-31",
+      "status_date": "2011-07-25",
+      "estimated_cost": 180000,
+      "revised_cost": 180000,
+      "description": "one unit. interior demo and replacement of mezzanine and stairs. reconfiguration of kitchen and two bathrooms, new lighting and plumbing fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005041655",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-04",
+      "status_date": "2012-05-09",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace wood deck on roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3733111&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3733&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

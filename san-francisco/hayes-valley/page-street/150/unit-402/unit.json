@@ -1,0 +1,46 @@
+{
+  "address": "150 Page Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/page-street/150/unit-402/",
+  "unit": "402",
+  "apn": "0838063",
+  "block": "0838",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 474,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 401689,
+    "assessed_improvement_value": 267791,
+    "last_sale_date": "2020-08-24"
+  },
+  "permits": [
+    {
+      "number": "200605101210",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-05-10",
+      "status_date": "2006-05-10",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "renovation of (e) condo. remodel of an (e) bathroom, kitchen adn bedroom . removing now bearing walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0838063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0838&unit=402",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

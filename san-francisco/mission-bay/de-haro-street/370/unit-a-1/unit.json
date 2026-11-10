@@ -1,0 +1,35 @@
+{
+  "address": "370 De Haro Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission-bay/de-haro-street/370/unit-a-1/",
+  "unit": "A-1",
+  "apn": "3956011",
+  "block": "3956",
+  "lot": "011",
+  "parcel": {
+    "building_area_sqft": 1950,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 694510,
+    "assessed_improvement_value": 463008,
+    "last_sale_date": "2012-07-26"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3956011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3956&unit=A-1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

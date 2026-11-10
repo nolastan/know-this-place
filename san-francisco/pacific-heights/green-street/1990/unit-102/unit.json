@@ -1,0 +1,63 @@
+{
+  "address": "1990 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/1990/unit-102/",
+  "unit": "102",
+  "apn": "0542047",
+  "block": "0542",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 690,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 680421,
+    "assessed_improvement_value": 453614,
+    "last_sale_date": "2022-07-27"
+  },
+  "permits": [
+    {
+      "number": "202308144339",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-14",
+      "status_date": "2024-01-18",
+      "estimated_cost": 12000,
+      "revised_cost": 28575,
+      "description": "#102: bathroom remodel in kind, new vanity, toilet, tub, floor and shower surround tile , no wall moving and no changing location. all work is non-structural only. no wall/framing modification.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805300513",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-30",
+      "status_date": "2018-11-05",
+      "estimated_cost": 12000,
+      "revised_cost": 22347,
+      "description": "one unit: kitchen remodel, approx 120 sq ft. like for like.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2018–2023",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0542047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0542&unit=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

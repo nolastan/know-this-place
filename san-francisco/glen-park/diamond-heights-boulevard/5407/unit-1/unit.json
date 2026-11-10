@@ -1,0 +1,67 @@
+{
+  "address": "5407 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5407/unit-1/",
+  "unit": "1",
+  "apn": "7539022",
+  "block": "7539",
+  "lot": "022",
+  "parcel": {
+    "building_area_sqft": 840,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 211020,
+    "assessed_improvement_value": 180356,
+    "last_sale_date": "1991-06-21"
+  },
+  "permits": [
+    {
+      "number": "201506037903",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-03",
+      "status_date": "2015-07-22",
+      "estimated_cost": 30000,
+      "revised_cost": 40000,
+      "description": "compliance with mandatory seismic retrofit program 2012 iebc a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-01-27",
+      "status_date": "1995-05-04",
+      "estimated_cost": 5500,
+      "description": "replace exist wood roof deck w/new roof deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017658",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-08-31",
+      "status_date": "1990-12-21",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7539022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7539&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

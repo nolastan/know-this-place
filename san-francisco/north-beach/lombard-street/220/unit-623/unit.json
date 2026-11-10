@@ -1,0 +1,44 @@
+{
+  "address": "220 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/220/unit-623/",
+  "unit": "623",
+  "apn": "0060080",
+  "block": "0060",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 952
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 508180,
+    "assessed_improvement_value": 508180,
+    "last_sale_date": "2001-09-28"
+  },
+  "permits": [
+    {
+      "number": "200505112111",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-11",
+      "status_date": "2005-07-25",
+      "estimated_cost": 42409,
+      "revised_cost": 42409,
+      "description": "remodel kitchen, smoke detectors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0060080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0060&unit=623",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

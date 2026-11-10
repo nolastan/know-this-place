@@ -1,0 +1,56 @@
+{
+  "address": "159 Ripley Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/ripley-street/151/unit-2/",
+  "unit": "2",
+  "apn": "5543026",
+  "block": "5543",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 975,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 63507,
+    "assessed_improvement_value": 125885
+  },
+  "permits": [
+    {
+      "number": "200011095326",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-09",
+      "status_date": "2001-05-09",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "replace dryrotted decks at rear courtyard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913462",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-07-27",
+      "status_date": "1989-09-06",
+      "estimated_cost": 37480,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5543026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5543&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

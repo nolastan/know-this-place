@@ -1,0 +1,53 @@
+{
+  "address": "2068 3rd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/3rd-street/2068/unit-1/",
+  "unit": "1",
+  "apn": "3995089",
+  "block": "3995",
+  "lot": "089",
+  "parcel": {
+    "building_area_sqft": 1010,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 315002,
+    "assessed_improvement_value": 315002,
+    "last_sale_date": "2003-04-11"
+  },
+  "permits": [
+    {
+      "number": "201109013721",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-09-01",
+      "status_date": "2011-09-15",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "one unit - remove and replace stucco at front wall. remove existing windows, install water proofing and put back existing windows at same location",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2011–2013",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3995089&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3995&unit=1",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

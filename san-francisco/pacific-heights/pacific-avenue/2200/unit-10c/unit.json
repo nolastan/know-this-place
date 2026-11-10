@@ -1,0 +1,64 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-10c/",
+  "unit": "10C",
+  "apn": "0580090",
+  "block": "0580",
+  "lot": "090",
+  "parcel": {
+    "building_area_sqft": 1529,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 985138,
+    "assessed_improvement_value": 985138,
+    "last_sale_date": "2012-08-07"
+  },
+  "permits": [
+    {
+      "number": "202609047749",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-09-04",
+      "status_date": "2026-09-04",
+      "estimated_cost": 31683,
+      "revised_cost": 31683,
+      "description": "in-kind remodeling of 1 kitchen(s) in 1st fl and in-kind remodeling of 2 bathroom(s) in 1st fl with 1 shower pan(s).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210262895",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-26",
+      "status_date": "2013-02-19",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "one unit-c -drop ceiling containing gypsom board w/electrical @ kitchen, dining & living room area, replace existing interior doors. relocate lights & smoke alarms to new lowered ceiling.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2012–2026",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=10C",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

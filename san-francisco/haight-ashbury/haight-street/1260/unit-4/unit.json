@@ -1,0 +1,33 @@
+{
+  "address": "1260 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/haight-street/1260/unit-4/",
+  "unit": "4",
+  "apn": "1234045",
+  "block": "1234",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 996,
+    "rooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 425985,
+    "assessed_improvement_value": 425985,
+    "last_sale_date": "2010-11-05"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1234045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1234&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-606/",
+  "unit": "606",
+  "apn": "0161075",
+  "block": "0161",
+  "lot": "075",
+  "parcel": {
+    "building_area_sqft": 776
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 379135,
+    "assessed_improvement_value": 379135,
+    "last_sale_date": "2005-03-16"
+  },
+  "permits": [
+    {
+      "number": "200505313791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-31",
+      "status_date": "2005-12-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remodel existing dental office to mecdical doctor's office replace partitions to mental studie wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=606",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "address": "2999 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2999/unit-2/",
+  "unit": "2",
+  "apn": "0976081",
+  "block": "0976",
+  "lot": "081",
+  "parcel": {
+    "building_area_sqft": 2551,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1311041,
+    "assessed_improvement_value": 931660,
+    "last_sale_date": "2022-03-31"
+  },
+  "permits": [
+    {
+      "number": "202211015659",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-01",
+      "status_date": "2023-12-12",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "one unit: remove & relocate non bearing frame walls @ bath, remodel/ reconfigure 2 bath & study. all (n) interior finishes replaced. upfate recess lights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708230755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-23",
+      "status_date": "2007-10-30",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "10 foot by 25 foot existing patio deck. remove and install new urethane deck coating system by iso-flex and permitier flashing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206048141",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-06-04",
+      "status_date": "2002-10-23",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "placement of a new 60 minute rated fire window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201257726",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-01-25",
+      "status_date": "2002-12-17",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "interior non-structural t.i. for (e) apartment, remodel (e) bath, kitchen & tv room, new plum/ltg fi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0976081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0976&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

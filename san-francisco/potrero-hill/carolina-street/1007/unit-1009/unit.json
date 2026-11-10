@@ -1,0 +1,46 @@
+{
+  "address": "1009 Carolina Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/carolina-street/1007/unit-1009/",
+  "apn": "4161083",
+  "block": "4161",
+  "lot": "083",
+  "parcel": {
+    "building_area_sqft": 1195,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 809400,
+    "assessed_improvement_value": 539600,
+    "last_sale_date": "2024-09-13"
+  },
+  "permits": [
+    {
+      "number": "201606039127",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-03",
+      "status_date": "2016-06-22",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "install 200 sq ft. replace (e) membrane.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4161083&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4161&street_number=1009",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

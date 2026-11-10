@@ -1,0 +1,86 @@
+{
+  "address": "2806 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2806/unit-1/",
+  "unit": "1",
+  "apn": "0948032",
+  "block": "0948",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 998,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1199400,
+    "assessed_improvement_value": 799600,
+    "last_sale_date": "2024-09-03"
+  },
+  "permits": [
+    {
+      "number": "201601056401",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-05",
+      "status_date": "2016-04-18",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: replace 13 windows, size for size, not visible from street. u-value 0.30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510270869",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-27",
+      "status_date": "2016-03-18",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "one unit: master bathroom remodel. tub/shower/vanity/toilet replacement. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507222202",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-22",
+      "status_date": "2016-05-31",
+      "estimated_cost": 8500,
+      "revised_cost": 15600,
+      "description": "one unit:remodel bathroom & laundry.install (n) exhaust fan & humidity sensor, h.e. bulb and pipe term 3' of ext opening. pendant light,shower valve,new pedestal sink, tile shower pan & paint. luandry: install new fan exhaust, light & replace sub panel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501307071",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-30",
+      "status_date": "2016-05-31",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "#1- relocate kitchen into dining area, enlarge living/dining area opening, convert (e) kitchen into bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2015–2016",
+    "shown_on_page": 4,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0948032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0948&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

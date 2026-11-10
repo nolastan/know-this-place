@@ -1,0 +1,32 @@
+{
+  "address": "260 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/260/unit-7/",
+  "unit": "7",
+  "apn": "3753173",
+  "block": "3753",
+  "lot": "173",
+  "parcel": {
+    "building_area_sqft": 1036
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 250823,
+    "assessed_improvement_value": 290017,
+    "last_sale_date": "1998-10-23"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753173&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&unit=7",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

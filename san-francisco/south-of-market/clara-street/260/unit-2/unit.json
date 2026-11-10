@@ -1,0 +1,55 @@
+{
+  "address": "260 Clara Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/clara-street/260/unit-2/",
+  "unit": "2",
+  "apn": "3753176",
+  "block": "3753",
+  "lot": "176",
+  "parcel": {
+    "building_area_sqft": 1172
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 358722,
+    "assessed_improvement_value": 358722,
+    "last_sale_date": "2010-11-05"
+  },
+  "permits": [
+    {
+      "number": "202401033367",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-03",
+      "status_date": "2025-01-28",
+      "estimated_cost": 39353,
+      "revised_cost": 39353,
+      "description": "common area; waterproofing repairs: r/r waterproofing coating on existing exterior deck, including new plywood substrate and new perimeter flashing, replacment is like for like. no change size or configuration. work is exterior/hoa. adjacent to one unit. not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408101103",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-08-10",
+      "status_date": "2007-06-15",
+      "estimated_cost": 300,
+      "revised_cost": 300,
+      "description": "replace (e) floor tile in downstair 1/2 bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753176&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

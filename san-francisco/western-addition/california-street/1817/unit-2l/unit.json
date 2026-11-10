@@ -1,0 +1,57 @@
+{
+  "address": "1817 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/california-street/1817/unit-2l/",
+  "unit": "2L",
+  "apn": "0648054",
+  "block": "0648",
+  "lot": "054",
+  "parcel": {
+    "building_area_sqft": 814,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 97602,
+    "assessed_improvement_value": 183505
+  },
+  "permits": [
+    {
+      "number": "201908078163",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-07",
+      "status_date": "2019-08-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 201907176105. remodeling only 1 bath, not 1 1/2 baths",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907176105",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-17",
+      "status_date": "2019-08-07",
+      "estimated_cost": 30000,
+      "revised_cost": 45000,
+      "description": "remodel kitchen and 1.5 bathroom like for like. same layout.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0648054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0648&unit=2L",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

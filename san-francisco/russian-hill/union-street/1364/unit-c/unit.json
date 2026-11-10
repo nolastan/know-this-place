@@ -1,0 +1,69 @@
+{
+  "address": "1364 Union Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/union-street/1364/unit-c/",
+  "unit": "C",
+  "apn": "0525051",
+  "block": "0525",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 1879,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1249144,
+    "assessed_improvement_value": 1249144,
+    "last_sale_date": "2010-12-03"
+  },
+  "permits": [
+    {
+      "number": "202002184719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-18",
+      "status_date": "2025-07-09",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "add new clerestory sawtooth above extg entry, relocate extg skylight. partial remodel at extg kitchen. remodel extg guest and master bathroom. replace extg furnace.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102281091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-28",
+      "status_date": "2011-06-14",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "remove & replace (e) rear balcony railing only with glass (1/4\" tempered), infill panels design-rail by feeney inc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612049005",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-04",
+      "status_date": "2007-07-24",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "install new cabinets in kitchen-redo 2 bathrooms.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0525051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0525&unit=C",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

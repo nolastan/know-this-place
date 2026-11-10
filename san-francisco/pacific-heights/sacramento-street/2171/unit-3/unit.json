@@ -1,0 +1,57 @@
+{
+  "address": "2171 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2171/unit-3/",
+  "unit": "3",
+  "apn": "0639019",
+  "block": "0639",
+  "lot": "019",
+  "parcel": {
+    "building_area_sqft": 610,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 527482,
+    "assessed_improvement_value": 351655,
+    "last_sale_date": "2023-05-15"
+  },
+  "permits": [
+    {
+      "number": "202310239231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-23",
+      "status_date": "2024-02-09",
+      "estimated_cost": 25000,
+      "revised_cost": 46000,
+      "description": "remodel bathroom in kind all new fixtures, add wash/ dryer combo : add 6 recessed lights in livingroom and hallway: replace kitchen countertop: relocate electrical panel outside from closet: shower pan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201906052570",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-05",
+      "status_date": "2019-08-20",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit. repair in kind patio/balcony tiles to original ceramic tiles. replace in kind sliding patio/balcony glass door.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0639019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0639&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

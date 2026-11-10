@@ -1,0 +1,44 @@
+{
+  "address": "220 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/220/unit-515/",
+  "unit": "515",
+  "apn": "0060065",
+  "block": "0060",
+  "lot": "065",
+  "parcel": {
+    "building_area_sqft": 1033
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 414371,
+    "assessed_improvement_value": 414371,
+    "last_sale_date": "2000-08-01"
+  },
+  "permits": [
+    {
+      "number": "201103101790",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-10",
+      "status_date": "2011-06-23",
+      "estimated_cost": 86000,
+      "revised_cost": 86000,
+      "description": "maintenance coat on deck, waterprofing repairs, replace storefront solarium in-kind of unit only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0060065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0060&unit=515",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

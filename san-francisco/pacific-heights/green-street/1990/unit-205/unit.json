@@ -1,0 +1,57 @@
+{
+  "address": "1990 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/1990/unit-205/",
+  "unit": "205",
+  "apn": "0542054",
+  "block": "0542",
+  "lot": "054",
+  "parcel": {
+    "building_area_sqft": 830,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 292846,
+    "assessed_improvement_value": 184482
+  },
+  "permits": [
+    {
+      "number": "202602206236",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-20",
+      "status_date": "2026-06-25",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit: replace kitchen cabinets, keeping layout. remodel bathroom, convert tub to shower. no removal of walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202401023326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-02",
+      "status_date": "2024-03-08",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "one unit: remove and replace tile, replace shower valve, replace existing fan with light switch. paint.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0542054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0542&unit=205",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

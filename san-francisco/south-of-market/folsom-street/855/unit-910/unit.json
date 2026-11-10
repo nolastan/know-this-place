@@ -1,0 +1,44 @@
+{
+  "address": "855 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/855/unit-910/",
+  "unit": "910",
+  "apn": "3752359",
+  "block": "3752",
+  "lot": "359",
+  "parcel": {
+    "building_area_sqft": 838
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325863,
+    "assessed_improvement_value": 325863,
+    "last_sale_date": "2002-08-19"
+  },
+  "permits": [
+    {
+      "number": "200810245058",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-10-24",
+      "status_date": "2010-05-18",
+      "estimated_cost": 1500,
+      "revised_cost": 5000,
+      "description": "intent:resolve nov#200717420; legalize-enlarge 9th story mezzanine to 10th story; legalize closet,previous concealed sp.of resident unit. scope:clarify:#200907313882 reclassifies 9th story mezz as 10th story; clarify: fully sprkler closet per #200512019253;new hard wired independ 110v sd",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752359&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=910",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
