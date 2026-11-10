@@ -1,0 +1,47 @@
+{
+  "address": "1360 Montgomery Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/montgomery-street/1360/unit-11/",
+  "unit": "11",
+  "apn": "0106056",
+  "block": "0106",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 1538,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1910174,
+    "assessed_improvement_value": 1273449,
+    "last_sale_date": "2022-01-31"
+  },
+  "permits": [
+    {
+      "number": "202206176592",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-17",
+      "status_date": "2023-04-26",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel 1 kitchen & 2 bathrooms in kind. new vanity, tile plumbing fixtures in bathroom. new plumbing fixtures, cabinets and countertops, applicance in kitchen. no structural work. no new wall and no existing wall relocation. new lighting shall comply with cec 150.0 (k)3 and (k)5.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0106056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0106&unit=11",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

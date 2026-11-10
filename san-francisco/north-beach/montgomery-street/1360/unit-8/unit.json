@@ -1,0 +1,45 @@
+{
+  "address": "1360 Montgomery Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/montgomery-street/1360/unit-8/",
+  "unit": "8",
+  "apn": "0106053",
+  "block": "0106",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1255,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 203129,
+    "assessed_improvement_value": 408369
+  },
+  "permits": [
+    {
+      "number": "202304115512",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-11",
+      "status_date": "2023-11-29",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "proposed 30 sq ft closet remodel add new stackable laundry one unit 3rd fl.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0106053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0106&unit=8",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

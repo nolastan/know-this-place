@@ -1,0 +1,57 @@
+{
+  "address": "742 Natoma Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/natoma-street/740/unit-742/",
+  "apn": "3728193",
+  "block": "3728",
+  "lot": "193",
+  "parcel": {
+    "building_area_sqft": 1162,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 706200,
+    "assessed_improvement_value": 470800,
+    "last_sale_date": "2018-05-25"
+  },
+  "permits": [
+    {
+      "number": "202402125704",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-02-12",
+      "status_date": "2024-02-12",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "remove (e) modified bitumen and install 3 layers of modified bitumen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803214249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-21",
+      "status_date": "2018-04-24",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel one bathroom. install one shower. new tile, new vanity. no change to extg lighting. no structural changes. no walls moved, removed, added, or infilled. all extg layouts to remain.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3728193&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3728&street_number=742",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

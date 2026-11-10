@@ -1,0 +1,31 @@
+{
+  "address": "333 Grant Avenue, San Francisco, CA 94108",
+  "path": "/san-francisco/financial-district/grant-avenue/333/unit-lot-026/",
+  "apn": "0286026",
+  "block": "0286",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 11990
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2575525,
+    "assessed_improvement_value": 4893505,
+    "last_sale_date": "2009-02-27"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0286026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0286&street_number=333",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

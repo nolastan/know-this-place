@@ -1,0 +1,47 @@
+{
+  "address": "1250 Jones Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/jones-street/1250/unit-1702/",
+  "unit": "1702",
+  "apn": "0221085",
+  "block": "0221",
+  "lot": "085",
+  "parcel": {
+    "building_area_sqft": 1103,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 937033,
+    "assessed_improvement_value": 624688,
+    "last_sale_date": "2019-05-01"
+  },
+  "permits": [
+    {
+      "number": "200710155354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-15",
+      "status_date": "2008-02-08",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remove (e) lumbing fixtures and tile in guest bathroom. install new plumbing fixtures in same locations and install new tile throughout. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221085&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=1702",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

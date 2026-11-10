@@ -1,0 +1,46 @@
+{
+  "address": "2639 22nd Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/22nd-street/2637/unit-2639/",
+  "apn": "4153050",
+  "block": "4153",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1569,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 951660,
+    "assessed_improvement_value": 634440,
+    "last_sale_date": "2023-10-03"
+  },
+  "permits": [
+    {
+      "number": "202210204764",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-10-20",
+      "status_date": "2022-10-20",
+      "estimated_cost": 25900,
+      "revised_cost": 25900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4153050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4153&street_number=2639",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

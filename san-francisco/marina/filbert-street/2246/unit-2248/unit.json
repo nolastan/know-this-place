@@ -1,0 +1,109 @@
+{
+  "address": "2248 Filbert Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/filbert-street/2246/unit-2248/",
+  "apn": "0515045",
+  "block": "0515",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 2119,
+    "rooms": 6,
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 274116,
+    "assessed_improvement_value": 633827,
+    "assessed_fixtures_value": 51,
+    "last_sale_date": "1990-03-02"
+  },
+  "permits": [
+    {
+      "number": "201211295160",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-29",
+      "status_date": "2013-02-04",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair dry rot an (e) work, work less than 50% repair in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012287476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-28",
+      "status_date": "2011-02-17",
+      "estimated_cost": 4289,
+      "revised_cost": 4289,
+      "description": "replace 4 windows, size for size, not visible from street, u-value 0.29",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9715583",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-08-15",
+      "status_date": "1998-12-01",
+      "estimated_cost": 20000,
+      "revised_cost": 80000,
+      "description": "convert (e) attic level into bedrooms bathroom rooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9701723",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-30",
+      "status_date": "1997-08-06",
+      "estimated_cost": 2000,
+      "description": "reconstruct (e)stairway to attic same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609453",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-30",
+      "status_date": "1996-10-30",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211057",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-07-07",
+      "status_date": "1993-08-17",
+      "estimated_cost": 9000,
+      "description": "new counter top, sink, fridge, stove, cabinets, paint, sand+",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9114618",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-08-14",
+      "status_date": "1992-04-22",
+      "estimated_cost": 9000,
+      "description": "new kitchen cabinets at upper, new tile counter top.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0515045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0515&street_number=2248",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "address": "1360 Montgomery Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/montgomery-street/1360/",
+  "block": "0106",
+  "eas_baseid": "277625",
+  "coordinates": {
+    "lat": 37.801798,
+    "lng": -122.404324
+  },
+  "parcel": {
+    "year_built": 1936,
+    "units": 12,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach"
+  },
+  "condominium": {
+    "lots": [
+      "046",
+      "047",
+      "048",
+      "049",
+      "050",
+      "051",
+      "052",
+      "053",
+      "054",
+      "055",
+      "056",
+      "057"
+    ],
+    "method": "Proposed from the 2025 roll for block 0106: every condominium parcel the roll files under 1360 MONTGOMERY ST, and the unbroken run of lots beside parcel 0106046 on the same street with the same year built (1936). 12 lots, 046–057."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1936",
+    "survey_name": "MALLOCH APARTMENT BUILDING",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "source": "sf-historic-districts"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONTGOMERY&street_type=ST&address_number=1360",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0106)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0106&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0106",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0106046",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40432388399613%2037.801797798703284)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "digitalsf-11281",
+      "name": "1360 Montgomery Street, 1959. Leslie Sheraton Color Slides of California (SFP 148), San Francisco History Center, San Francisco Public Library.",
+      "query": "https://digitalsf.org/record/11281",
+      "label": "Leslie Sheraton Color Slides of California (SFP 148), San Francisco Public Library",
+      "retrieved": "2026-09-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1959",
+      "kind": "photograph",
+      "description": "Leslie Sheraton photographed the property.",
+      "source": "digitalsf-11281"
+    }
+  ]
+}

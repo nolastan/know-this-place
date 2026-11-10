@@ -1,0 +1,58 @@
+{
+  "address": "33 Vandewater Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/vandewater-street/33/unit-104/",
+  "unit": "104",
+  "apn": "0041076",
+  "block": "0041",
+  "lot": "076",
+  "parcel": {
+    "building_area_sqft": 600,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 588991,
+    "assessed_improvement_value": 392661,
+    "last_sale_date": "2018-09-19"
+  },
+  "permits": [
+    {
+      "number": "200909016002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-01",
+      "status_date": "2010-01-14",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove tub, replace with shower, re-tile bathroom, remove toilet, replace with new. remove sinks (kitchen & bathroom), countertops, replace new. remove tile around fireplace, replace with new. remove pergo floor, replace with new & paint. move light fixtures & switches",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308011012",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-01",
+      "status_date": "2003-09-24",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "change out existing kitchen counter tops & appliances in existing unit. no structural no exterior",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0041076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0041&unit=104",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
