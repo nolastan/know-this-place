@@ -41,14 +41,23 @@
       },
       "confidence": "high",
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-11-05",
-        "method": "sf-eas-addresses has 1155 MARKET ST but it does not join to one parcel. 1155 MARKET ST's coordinates fall in 4 active parcels (3702821, 3702823, 3702822, 3702820) that are not one condominium's units, so none of them is the building by rule.",
-        "note": "The address exists but cannot be joined to a parcel, so there is no page to put it on. EAS leaves addresses unparcelled for rear units, vacated lots and addresses in flux; a later pass may find one."
+        "status": "resolved",
+        "apn": "3702820",
+        "path": "/san-francisco/south-of-market/market-street/1155/",
+        "eas_address": "1155 MARKET ST",
+        "method": "EAS exact match on 1155 MARKET ST → parcel 3702820; sf-parcels has blklot 3702820 active, 1155–1155 MARKET; the 2025 roll records it as commercial office. Parcel 3702820 is one of 4 airspace parcels of one building (3702820, 3702821, 3702822, 3702823); the fact is the building's, and goes on the building's page at this path, which lists its parcels. 1155 MARKET ST's coordinates fall in 4 active parcels that sf-parcels files under one map lot, 3702820: one building divided into airspace parcels; 3702820 stands for the building.",
+        "checked_on": "2026-11-10",
+        "building_lots": [
+          "820",
+          "821",
+          "822",
+          "823"
+        ],
+        "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
       },
       "publish": {
-        "status": "pending",
-        "note": "Blocked, re-checked 2026-11-05 after the condominium routing (#446): 1155 Market Street is four office airspace parcels on one map lot (3702820-3702823) that the 2025 roll classes 'Office', not condominium, so the condo-building route does not take it. That vertical subdivision is the story. Ready to publish if multi-parcel buildings that share a map lot get the same building page as condominiums."
+        "status": "published",
+        "note": "Seeded /san-francisco/south-of-market/market-street/1155/ from research/manifests/news-2026-11-10-airspace.json as a building of four office airspace parcels on one map lot (3702820-3702823), with a page per parcel. The Registry's later account of the same sale (2026-10-16-reg-0002) is declined in its favour. Buyer and seller stay in extra. No card on the homepage news grid: its oldest card is dated November 2026, so this entry sorts below all twelve."
       }
     }
   ]

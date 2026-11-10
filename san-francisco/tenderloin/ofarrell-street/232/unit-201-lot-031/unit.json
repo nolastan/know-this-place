@@ -1,0 +1,27 @@
+{
+  "address": "201 Powell Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/ofarrell-street/232/unit-201-lot-031/",
+  "apn": "0315031",
+  "block": "0315",
+  "lot": "031",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4768937,
+    "assessed_improvement_value": 3179291
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0315031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0315&street_number=201",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}
