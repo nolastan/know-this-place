@@ -702,7 +702,7 @@
   left unresolved: five where the resolver's answer may be the lot next door
   (75 Howard, 700 Mission, 699 Second, 897 California, 201 Folsom), two at 153
   Kearny, whose page is a unit parcel and not yet a building page, and 1190
-  Sacramento, which was never condominium-blocked. **Lots:** nine of the ten
+  Sacramento, which was never condominium-blocked. **Lots:** eight of the ten
   seeds matched their sf-parcels `mapblklot`; 400 Beale was missing two units
   the roll classes as apartments. 2101 Bryant shares map lot 4080067 with the
   2009 building at 2125 Bryant, so its page rightly lists only the 23 units
