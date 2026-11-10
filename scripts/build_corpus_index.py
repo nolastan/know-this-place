@@ -51,7 +51,12 @@ def source_ids(data: dict) -> list:
     return seen
 
 
-def main() -> None:
+def corpus_body() -> tuple[str, int, list]:
+    """The text corpus.jsonl should hold, its page count, and skipped notes.
+
+    validate.py calls this too and compares it with the committed file, so a
+    data.json change committed without a rebuild fails locally, not only in CI.
+    """
     content = ROOT / "san-francisco"
     lines = []
     skipped = []
@@ -89,10 +94,14 @@ def main() -> None:
         lines.append((path, json.dumps(rec, separators=(",", ":"), ensure_ascii=False)))
 
     lines.sort(key=lambda pair: pair[0])
-    out = ROOT / "corpus.jsonl"
     body = "\n".join(line for _, line in lines)
-    out.write_text(body + "\n" if body else "", encoding="utf-8")
-    print(f"corpus.jsonl written with {len(lines)} page(s)")
+    return (body + "\n" if body else ""), len(lines), skipped
+
+
+def main() -> None:
+    body, count, skipped = corpus_body()
+    (ROOT / "corpus.jsonl").write_text(body, encoding="utf-8")
+    print(f"corpus.jsonl written with {count} page(s)")
     for note in skipped:
         print(f"  skipped — {note}")
 
