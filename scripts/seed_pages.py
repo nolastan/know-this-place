@@ -618,6 +618,13 @@ def article_for(year, phrase: str) -> str:
     return "an" if phrase[:1].lower() in "aeiou" else "a"
 
 
+def dwelling_units(p: dict) -> int | None:
+    """The unit count a building's type may state. A building divided into
+    airspace parcels (`condo_view`) counts parcels, not homes: 78 Haight
+    Street's two lots hold sixty-four flats."""
+    return None if p.get("airspace") else p.get("units")
+
+
 def building_type(pclass: str, units: int | None) -> str:
     """A short building-type phrase for the identity tag."""
     c = (pclass or "").lower()
@@ -1773,7 +1780,7 @@ def hero_lines(rec: dict) -> tuple[str, str]:
     if name:
         return name, title
     p = rec.get("parcel", {})
-    return title, building_type(p.get("property_class"), p.get("units"))
+    return title, building_type(p.get("property_class"), dwelling_units(p))
 
 
 def meta_description(rec: dict) -> str:
@@ -1782,7 +1789,7 @@ def meta_description(rec: dict) -> str:
     where = f"{name} ({page_title(rec)})" if name else page_title(rec)
     bits = [f"{where}, San Francisco:"]
     year = p.get("year_built")
-    btype = building_type(p.get("property_class"), p.get("units")).lower()
+    btype = building_type(p.get("property_class"), dwelling_units(p)).lower()
     article = article_for(year, btype)
     bits.append(f"{article} {year} {btype}" if year else f"{article} {btype}")
     dist = district_of(rec).get("name")
@@ -1800,7 +1807,7 @@ def heading_html(rec: dict, heading: str) -> str:
     if not building_name(rec):
         return f"<h1>{esc(heading)}</h1>"
     p = rec.get("parcel", {})
-    btype = building_type(p.get("property_class"), p.get("units"))
+    btype = building_type(p.get("property_class"), dwelling_units(p))
     return (f'<h1 class="named"><i class="hgi-stroke {building_icon(btype)} type-icon" '
             f'role="img" aria-label="{esca(btype)}" title="{esca(btype)}"></i>'
             f'{esc(heading)}</h1>')
@@ -1812,7 +1819,7 @@ def named_icon(rec: dict) -> str:
     if not building_name(rec):
         return ""
     p = rec.get("parcel", {})
-    return building_icon(building_type(p.get("property_class"), p.get("units")))
+    return building_icon(building_type(p.get("property_class"), dwelling_units(p)))
 
 
 def named_link_text(name: str | None, icon: str, address: str) -> str:
@@ -1904,13 +1911,14 @@ def measurement_tags(p: dict) -> list:
     # apartment building", "Two-flat") — never state a fact twice.
     units = p.get("units")
     if units and units > 1 and not re.search(
-            r"\d|\bTwo\b|\bThree\b|\bFour\b", building_type(p.get("property_class"), units)):
+            r"\d|\bTwo\b|\bThree\b|\bFour\b", building_type(p.get("property_class"), dwelling_units(p))):
         # A commercial condominium's lots are offices and shops: the
         # Warfield's twenty-three are office floors and a theater.
         pclass = (p.get("property_class") or "").lower()
         commercial_condo = "condo" in pclass and not pclass.startswith("condominium")
         out.append(("ic-layers",
-                    plural(units, "unit" if commercial_condo else "residential unit")))
+                    plural(units, "parcel" if p.get("airspace") else
+                           "unit" if commercial_condo else "residential unit")))
     if p.get("rooms"):
         out.append(("hgi-door-01", plural(p["rooms"], "room")))
     if p.get("bedrooms"):
@@ -4715,7 +4723,11 @@ def unit_slugs(rows: list, building_number: str) -> dict:
     for r in rows:
         if counts[names[r["lot"]]] > 1:
             n = roll_street_number(r.get("property_location") or "")
-            names[r["lot"]] = f"{n}-{names[r['lot']]}" if n else names[r["lot"]]
+            # A name that is already the street number gains nothing by
+            # repeating it: 232 O'Farrell Street's four airspace parcels are
+            # all filed at 201 Powell Street, and go to the lot.
+            names[r["lot"]] = (f"{n}-{names[r['lot']]}" if n and names[r["lot"]] != n
+                               else names[r["lot"]])
     counts = collections.Counter(names.values())
     for r in rows:
         if counts[names[r["lot"]]] > 1:
@@ -4771,6 +4783,10 @@ def condo_view(rec: dict) -> dict:
     view = dict(rec)
     p = dict(rec.get("parcel") or {})
     p["units"] = len(rec["condominium"]["lots"])
+    # A building divided into airspace parcels the roll does not call
+    # condominiums: its "units" are parcels, not homes (`measurement_tags`).
+    if not is_condo_building(rec):
+        p["airspace"] = True
     view["parcel"] = p
     a = {}
     for _, key, _ in VALUE_PARTS:
@@ -4811,7 +4827,8 @@ def condo_units_html(rec: dict, indent: str) -> str:
         return ""
     number = rec["path"].strip("/").split("/")[-1]
     area_total = condo_floor_area(units)
-    lede = (f"{plural(len(units), 'unit')} on the assessor's roll"
+    word = "unit" if is_condo_building(rec) else "parcel"
+    lede = (f"{plural(len(units), word)} on the assessor's roll"
             + (f", {area_total:,} square feet between them" if area_total else "")
             + ". Each has a page of its own: its assessed value, last sale and "
               "permits.")
@@ -4828,17 +4845,25 @@ def condo_units_html(rec: dict, indent: str) -> str:
                      + "</li>")
     return (f'{indent}<section class="condo-units">\n'
             f'{indent}  <div class="section-head"><i class="hgi-stroke hgi-apartment"></i>'
-            f'<h2>Units</h2></div>\n'
+            f'<h2>{word.capitalize()}s</h2></div>\n'
             f'{indent}  <p class="prose"><small>{esc(lede)}</small></p>\n'
             f'{indent}  <ul class="unit-grid">\n' + "\n".join(items)
             + f'\n{indent}  </ul>\n{indent}</section>\n')
+
+
+def is_condo_building(bldg: dict) -> bool:
+    """Whether a building with unit pages is a condominium, or one divided
+    into airspace parcels the roll classes otherwise (an office, a shop, a
+    hotel). Only a condominium's parcels are called condominium units."""
+    return "condo" in ((bldg.get("parcel") or {}).get("property_class") or "").lower()
 
 
 def unit_meta_description(rec: dict, bldg: dict, bheading: str) -> str:
     where = f"{unit_label(rec)}, {bheading}"
     if bheading != page_title(bldg):
         where += f" ({page_title(rec)})"
-    return (f"{where}, San Francisco: one condominium unit — floor area, "
+    kind = "one condominium unit" if is_condo_building(bldg) else "one parcel of the building"
+    return (f"{where}, San Francisco: {kind} — floor area, "
             f"assessed value and permits from city records, fully cited.")
 
 
@@ -4870,7 +4895,7 @@ def render_unit_html(rec: dict) -> str:
     # The line under the heading says whose unit this is: the building's name
     # where it has one, and the building's address where the unit's is
     # another number. The heading already carries the street address.
-    sub_bits = ["Condominium unit"]
+    sub_bits = ["Condominium unit" if is_condo_building(bldg) else "Parcel"]
     if building_name(bldg):
         sub_bits.append(f"in {bheading}")
     elif page_title(rec) != page_title(bldg):
@@ -5419,7 +5444,7 @@ def hook_for(rec: dict, with_district: bool = True) -> str:
         return rec["hook"]
     p = rec.get("parcel", {})
     year = p.get("year_built")
-    btype = building_type(p.get("property_class"), p.get("units")).lower()
+    btype = building_type(p.get("property_class"), dwelling_units(p)).lower()
     article = article_for(year, btype).capitalize()
     head = f"{article} {year} {btype}" if year else f"{article} {btype}"
     dist = district_of(rec).get("name") if with_district else None
@@ -7495,6 +7520,13 @@ def cmd_seed_list(args) -> int:
                 and not row.get("sole_parcel_for_address")):
             row["condo"] = True
             row["status"] = "seedable"
+        # A building divided into airspace parcels that the roll does not call
+        # condominiums (1155 Market Street's four office lots): the resolver
+        # found them on one map lot and names them, and the building is
+        # written the same way, a page per parcel.
+        if e.get("building_lots"):
+            row["condo"] = True
+            row["status"] = "seedable"
         if row["status"] != "seedable":
             print(f"  {row['status']} for {e['apn']} "
                   f"({e['numbers'][0]} {e['street_display']}) — skipped",
@@ -7527,7 +7559,13 @@ def cmd_seed_list(args) -> int:
             json.dumps(rec, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         if row.get("condo"):
             try:
-                print("  " + make_condo(page_dir, rec["sources"][0]["retrieved"], roll_year),
+                lots = row.get("building_lots")
+                print("  " + make_condo(
+                    page_dir, rec["sources"][0]["retrieved"], roll_year, lots,
+                    (f"The {len(lots)} active parcels at the address's point, which "
+                     f"sf-parcels files under one map lot on block {row['apn'][:4]}: "
+                     f"airspace parcels of one building, lots {', '.join(lots)}."
+                     if lots else None)),
                       file=sys.stderr)
             except SystemExit as e:
                 (page_dir / "data.json").unlink()

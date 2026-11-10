@@ -411,6 +411,10 @@ class City:
         self.parcels: dict = {}
         self.roll: dict = {}
         self.spatial: dict = {}
+        # A building split into airspace parcels on one map lot, none of them a
+        # condominium on the roll: the parcel picked to stand for it -> every
+        # lot on the map lot at the point (`split_stack`).
+        self.split: dict = {}
         self.by_effective: dict = defaultdict(list)
         self.by_addr: dict = defaultdict(list)     # (NAME, TYPE, NUM) -> rows
         self.by_name_num: dict = defaultdict(list)  # (NAME, NUM) -> rows
@@ -510,6 +514,19 @@ class City:
                     f" {row.get('address') or 'The address'}'s coordinates fall in "
                     f"{len(found)} active parcels, one condominium map's units on the "
                     f"2025 roll; {pick} stands for the building.")
+            elif self.split_stack(found):
+                # One building divided into airspace parcels that the roll
+                # classes as offices, shops or a hotel rather than condominiums
+                # (1155 Market Street's four office lots). It is paged the way a
+                # condominium is: one building page, a page per parcel (#580).
+                lots = self.split_stack(found)
+                pick = lots[0]
+                self.split[pick] = lots
+                return pick, pick, (
+                    f" {row.get('address') or 'The address'}'s coordinates fall in "
+                    f"{len(found)} active parcels that sf-parcels files under one map "
+                    f"lot, {found[0].get('mapblklot')}: one building divided into "
+                    f"airspace parcels; {pick} stands for the building.")
             else:
                 # Parcels that share a point but not a condominium map — a
                 # Port overlay on a seawall lot, two lots that meet there.
@@ -549,6 +566,21 @@ class City:
         if len(condos) * 2 <= len(found):
             return ""
         return condos[0]
+
+    def split_stack(self, found: list) -> list:
+        """Every parcel of a building divided into airspace parcels, or [].
+
+        The same test as `condo_stack` without the roll's class: several active
+        parcels on one point that sf-parcels files under one `mapblklot` on one
+        block are one lot's subdivisions, whatever the roll calls them. Parcels
+        that merely meet at a point (701 Illinois Street's Port overlay) are on
+        different map lots, and stay a coin toss.
+        """
+        maps = {p.get("mapblklot") for p in found}
+        blocks = {p["blklot"][:4] for p in found}
+        if len(found) < 2 or len(maps) != 1 or None in maps or len(blocks) != 1:
+            return []
+        return sorted(p["blklot"] for p in found)
 
     def attach(self, parcels: list, roll: list) -> None:
         """Add the parcel map and the roll, fetched only for the APNs in play."""
@@ -1061,6 +1093,11 @@ def place(city: City, parcel: str, name: str, stype: str, matched: list,
             method += (" No page on the site is filed under that directory yet, so the analysis "
                        "neighborhood's own name is used and the publisher should confirm it "
                        "against the directory contract before seeding.")
+    split = city.split.get(parcel)
+    if split and not condo:
+        method += (f" Parcel {parcel} is one of {len(split)} airspace parcels of one "
+                   f"building ({', '.join(split)}); the fact is the building's, and goes "
+                   f"on the building's page at this path, which lists its parcels.")
     if condo:
         method += (f" Parcel {parcel} is one unit of a condominium ({condo.split(' — ')[0]}); "
                    f"the fact is the building's, and goes on the building's page at this "
@@ -1068,10 +1105,12 @@ def place(city: City, parcel: str, name: str, stype: str, matched: list,
     res = {"status": "resolved", "apn": parcel, "path": path,
            "eas_address": eas_label(name, stype, lead), "method": method,
            "checked_on": today}
+    if split and not condo:
+        res["building_lots"] = [b[4:] for b in split]
     if why.startswith("no page yet"):
         res["note"] = ("No page at this path yet; the publisher seeds it with seed-list, "
                        "which writes a condominium building with a page per unit."
-                       if condo else
+                       if condo or split else
                        "No page at this path yet; the parcel is the publisher's to seed.")
     return res
 
@@ -1826,6 +1865,10 @@ def build_manifest(city: City, data: dict) -> list:
                  "street_name": eas_name, "street_type": stype,
                  "street_display": street_display(eas_name, stype),
                  "numbers": numbers, "other_street_addresses": others}
+        # A building divided into airspace parcels: the seeder writes it the
+        # way it writes a condominium, from exactly these lots.
+        if res.get("building_lots"):
+            entry["building_lots"] = res["building_lots"]
         # The seeder runs its own condominium check on the roll's class code
         # alone, which is right for a unit stack and wrong for an old parcel
         # that was condominium-mapped and never split. This resolution only
