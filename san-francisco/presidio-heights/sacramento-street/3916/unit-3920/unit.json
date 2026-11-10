@@ -1,0 +1,78 @@
+{
+  "address": "3920 Sacramento Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/sacramento-street/3916/unit-3920/",
+  "apn": "1014076",
+  "block": "1014",
+  "lot": "076",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 810000,
+    "assessed_improvement_value": 810000,
+    "last_sale_date": "2014-04-08"
+  },
+  "permits": [
+    {
+      "number": "202604179655",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-04-17",
+      "status_date": "2026-04-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#201705116318 all work complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202402125762",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-12",
+      "status_date": "2024-02-14",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "install sliding glass window screens for awning at the rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202310269570",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-26",
+      "status_date": "2023-12-01",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "to comply with nov# 202312112. have pre-fab aluminum awning inspected & legalized.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705116318",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-05-11",
+      "status_date": "2026-04-21",
+      "estimated_cost": 15000,
+      "revised_cost": 26000,
+      "description": "remodel (2) bathrooms in existing locations, no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1014076&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1014&street_number=3920",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

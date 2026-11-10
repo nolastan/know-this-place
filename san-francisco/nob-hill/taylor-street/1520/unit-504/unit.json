@@ -1,0 +1,55 @@
+{
+  "address": "1520 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/taylor-street/1520/unit-504/",
+  "unit": "504",
+  "apn": "0158074",
+  "block": "0158",
+  "lot": "074",
+  "parcel": {
+    "building_area_sqft": 1750,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 35315,
+    "assessed_improvement_value": 316958
+  },
+  "permits": [
+    {
+      "number": "202508042229",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-04",
+      "status_date": "2025-12-18",
+      "revised_cost": 10000,
+      "description": "one unit: minor bathtub remodel, remove and install new bathtub/shower base, valve and surround. no change layout. in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005160128",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-16",
+      "status_date": "2000-08-31",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "kitchen remodel, cabinets and fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0158074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0158&unit=504",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

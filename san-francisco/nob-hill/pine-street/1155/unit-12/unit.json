@@ -1,0 +1,58 @@
+{
+  "address": "1155 Pine Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/pine-street/1155/unit-12/",
+  "unit": "12",
+  "apn": "0276106",
+  "block": "0276",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 754,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 421082,
+    "assessed_improvement_value": 280718,
+    "last_sale_date": "2008-09-03"
+  },
+  "permits": [
+    {
+      "number": "202510016539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-01",
+      "status_date": "2026-01-05",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "in-kind remodeling of 1 bathroom(s) in 4th fl with 0 shower pan(s).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202507171083",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-17",
+      "status_date": "2025-07-17",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "in-kind remodeling of 1 bathroom(s) in 2nd fl with 0 shower pan(s).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0276106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0276&unit=12",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

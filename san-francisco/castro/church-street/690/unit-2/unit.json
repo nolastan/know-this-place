@@ -1,0 +1,31 @@
+{
+  "address": "690 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/church-street/690/unit-2/",
+  "unit": "2",
+  "apn": "3585109",
+  "block": "3585",
+  "lot": "109",
+  "parcel": {
+    "building_area_sqft": 699
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 87376,
+    "assessed_improvement_value": 122641
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585109&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

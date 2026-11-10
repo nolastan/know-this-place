@@ -1,0 +1,47 @@
+{
+  "address": "1415 Indiana Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/indiana-street/1415/unit-203/",
+  "unit": "203",
+  "apn": "4293027",
+  "block": "4293",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 1507,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 554689,
+    "assessed_improvement_value": 554689,
+    "last_sale_date": "2018-06-27"
+  },
+  "permits": [
+    {
+      "number": "202107194673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-19",
+      "status_date": "2022-10-12",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "to comply w/ non# 202175291. change carpet to hardwood maple on steps. replace handrail of stairs. replace guardrail of stairs. no plan reqd per j.h. non structural.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4293027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4293&unit=203",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

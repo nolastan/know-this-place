@@ -1,0 +1,44 @@
+{
+  "address": "855 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/855/unit-723/",
+  "unit": "723",
+  "apn": "3752330",
+  "block": "3752",
+  "lot": "330",
+  "parcel": {
+    "building_area_sqft": 1343
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 745275,
+    "assessed_improvement_value": 745275,
+    "last_sale_date": "2018-05-25"
+  },
+  "permits": [
+    {
+      "number": "202512041021",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-04",
+      "status_date": "2025-12-30",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "one unit: install 15-18 gyp board patches in unit. install double layer 5/8 type x gap board.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752330&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=723",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

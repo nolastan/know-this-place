@@ -1,0 +1,33 @@
+{
+  "address": "101 Harrison Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/harrison-street/101/unit-207/",
+  "unit": "207",
+  "apn": "3768119",
+  "block": "3768",
+  "lot": "119",
+  "parcel": {
+    "building_area_sqft": 900,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 170978,
+    "assessed_improvement_value": 187266,
+    "last_sale_date": "1996-10-03"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3768119&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3768&unit=207",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "address": "174 Corwin Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/corwin-street/170/unit-174/",
+  "apn": "2714036",
+  "block": "2714",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 516
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 263766,
+    "assessed_improvement_value": 232365,
+    "last_sale_date": "2012-06-27"
+  },
+  "permits": [
+    {
+      "number": "8407826",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-07-19",
+      "status_date": "1984-08-30",
+      "estimated_cost": 3231,
+      "description": "installation of 3 aluminum windows in the living bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2714036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2714&street_number=174",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

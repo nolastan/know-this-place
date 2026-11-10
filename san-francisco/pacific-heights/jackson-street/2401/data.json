@@ -1,0 +1,172 @@
+{
+  "address": "2401 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/2401/",
+  "block": "0606",
+  "eas_baseid": "286236",
+  "coordinates": {
+    "lat": 37.792288,
+    "lng": -122.434825
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 9,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "FILLMR",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights"
+  },
+  "condominium": {
+    "lots": [
+      "031",
+      "032",
+      "033",
+      "034",
+      "035",
+      "036",
+      "037",
+      "038",
+      "039"
+    ],
+    "method": "Proposed from the 2025 roll for block 0606: every condominium parcel the roll files under 2401 JACKSON ST, and the unbroken run of lots beside parcel 0606031 on the same street with the same year built (1908). 9 lots, 031–039."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Upper Fillmore Neighborhood Commercial Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1865–1905; 1906–1929",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "M736047",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-11-03",
+      "status_date": "2016-11-03",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508113935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-11",
+      "status_date": "2016-02-04",
+      "estimated_cost": 23510,
+      "revised_cost": 13200,
+      "description": "soft story retrofit per sfbc chapter 34b. 2012iebc appendix a-4 (commercial). residential soft story under pa 201508043306",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508043306",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-04",
+      "status_date": "2016-02-05",
+      "estimated_cost": 82290,
+      "revised_cost": 92600,
+      "description": "this project involve seismic strenghthening measures to comply with the san francisco soft story using the iebc appendix a-4. sfbc chapter 34b. see pa# 201508113935 per commerical soft story.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309106346",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-10",
+      "status_date": "2013-09-10",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair of stucco above roof area on bay windows; visible to street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16000",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-04-19",
+      "status_date": "2001-10-19",
+      "revised_cost": 25000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103305644",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-03-30",
+      "status_date": "2001-06-19",
+      "estimated_cost": 10000,
+      "revised_cost": 25000,
+      "description": "repair (e) wood stairs/railings in rear lightwell",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "2001–2017",
+    "shown_on_page": 6,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=2401",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0606)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0606&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0606",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0606031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43482526395704%2037.79228829120901)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1979-08-09",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 9 August 1979",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/38minutesofsanfran1979san/page/n230/mode/1up",
+      "retrieved": "2026-10-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-08-09",
+      "kind": "planning decision",
+      "description": "The City Planning Commission voted 4-3 to approve, with conditions, converting the building's seven apartments and two commercial units to condominiums, six tenants intending to buy (Resolution 8345).",
+      "source": "sf-planning-commission-minutes-1979-08-09"
+    }
+  ]
+}

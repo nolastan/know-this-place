@@ -1,0 +1,53 @@
+{
+  "address": "2040 Laguna Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/laguna-street/2040/unit-303/",
+  "unit": "303",
+  "apn": "0639038",
+  "block": "0639",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 511,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 532821,
+    "assessed_improvement_value": 355213,
+    "last_sale_date": "2020-04-03"
+  },
+  "permits": [
+    {
+      "number": "201504204067",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-20",
+      "status_date": "2015-07-09",
+      "estimated_cost": 25000,
+      "revised_cost": 32000,
+      "description": "one unit: remove and replace kitchen cabinets, counter tops & appliances, remove tub tile surround & vanity install new tile & vanity, install new flooring, paint entire unit. no structural work. compliance with maher ordinance no. 155-13.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0639038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0639&unit=303",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

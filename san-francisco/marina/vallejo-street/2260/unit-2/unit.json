@@ -1,0 +1,45 @@
+{
+  "address": "2260 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/vallejo-street/2260/unit-2/",
+  "unit": "2",
+  "apn": "0557046",
+  "block": "0557",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 2508,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 74949,
+    "assessed_improvement_value": 140914
+  },
+  "permits": [
+    {
+      "number": "202105140395",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-14",
+      "status_date": "2021-11-16",
+      "estimated_cost": 40000,
+      "revised_cost": 45000,
+      "description": "one unit: no new wall & no existing wall relocation. remodel in kind kitchen, master bath and guest bathroom. no changes to floor plan or walls. install/replace appliances, fixtures, cabinets, countertops and lights. new lighting shall comply with cec 150.0 (k)3 & (k)5",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0557046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0557&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

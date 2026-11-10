@@ -1,0 +1,62 @@
+{
+  "address": "1940 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/sacramento-street/1940/unit-2/",
+  "unit": "2",
+  "apn": "0624015",
+  "block": "0624",
+  "lot": "015",
+  "parcel": {
+    "rooms": 6,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 733818,
+    "assessed_improvement_value": 733818,
+    "last_sale_date": "2009-12-10"
+  },
+  "permits": [
+    {
+      "number": "200506074356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-07",
+      "status_date": "2005-10-14",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove & replace tub, tile surround, vanity and toilet, re-tile floor, no structural work. flouresce",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502236051",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-23",
+      "status_date": "2005-05-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove and replace shower plan and tile remove and replace vanity remove and replace toilet in guest",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2005–2017",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0624015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0624&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

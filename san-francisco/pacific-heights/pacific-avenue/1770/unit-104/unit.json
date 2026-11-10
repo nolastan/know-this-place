@@ -1,0 +1,58 @@
+{
+  "address": "1770 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/1770/unit-104/",
+  "unit": "104",
+  "apn": "0575020",
+  "block": "0575",
+  "lot": "020",
+  "parcel": {
+    "building_area_sqft": 1500,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 565760,
+    "assessed_improvement_value": 403217,
+    "last_sale_date": "2010-12-21"
+  },
+  "permits": [
+    {
+      "number": "201508285517",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-28",
+      "status_date": "2016-03-23",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit, interior remodeling of convert kitchen storage to washer and dryer. replace lightwell window in bathroom. compliance with maher ordinance no 155-13 not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502286386",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-02-28",
+      "status_date": "2006-12-21",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "existing kitchen remodeling -no structural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0575020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0575&unit=104",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-302/",
+  "unit": "302",
+  "apn": "0161053",
+  "block": "0161",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1015
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 432972,
+    "assessed_improvement_value": 173188,
+    "last_sale_date": "2020-12-21"
+  },
+  "permits": [
+    {
+      "number": "202511129352",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-11-12",
+      "status_date": "2025-11-12",
+      "estimated_cost": 23500,
+      "revised_cost": 11022,
+      "description": "unit(s) 201 & 308 ti fire alarm- add 5 strobe remove and relocate (e), 5 horn/strobe remove and relocate (e), 1 wireless communicator install-phone line remove, 1 new monitor module install one unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=302",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "address": "5 Fella Place, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/fella-place/5/",
+  "block": "0272",
+  "eas_baseid": "280903",
+  "coordinates": {
+    "lat": 37.790776,
+    "lng": -122.408355
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 7,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RM-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Nob Hill"
+  },
+  "condominium": {
+    "lots": [
+      "028",
+      "029",
+      "030",
+      "031",
+      "032",
+      "033",
+      "034"
+    ],
+    "method": "Proposed from the 2025 roll for block 0272: every condominium parcel the roll files under 5 FELLA PL, and the unbroken run of lots beside parcel 0272028 on the same street with the same year built (1912). 7 lots, 028–034."
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "survey_name": "WESTMINISTER APARTMENTS",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606079255",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-07",
+      "status_date": "2016-11-10",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "soft story retrofit per sfbc chapter 34b 2012 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FELLA&street_type=PL&address_number=5",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0272)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0272&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0272",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0272028",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1980-02-14",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 14 February 1980",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/39minutesofsanfran1980san/page/n78/mode/1up",
+      "retrieved": "2026-10-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-02-14",
+      "kind": "planning decision",
+      "description": "The City Planning Commission approved, 6-1, converting the seven-unit building to condominiums (Resolution 8490).",
+      "source": "sf-planning-commission-minutes-1980-02-14"
+    }
+  ]
+}

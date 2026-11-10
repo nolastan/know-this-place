@@ -1,0 +1,32 @@
+{
+  "address": "407 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/407/unit-3070/",
+  "unit": "3070",
+  "apn": "3580096",
+  "block": "3580",
+  "lot": "096",
+  "parcel": {
+    "building_area_sqft": 700,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 7040,
+    "assessed_improvement_value": 52761
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&unit=3070",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

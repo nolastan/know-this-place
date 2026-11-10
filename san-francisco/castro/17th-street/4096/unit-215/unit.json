@@ -1,0 +1,66 @@
+{
+  "address": "4096 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4096/unit-215/",
+  "unit": "215",
+  "apn": "2623141",
+  "block": "2623",
+  "lot": "141",
+  "parcel": {
+    "building_area_sqft": 931
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 376701,
+    "assessed_improvement_value": 250879,
+    "last_sale_date": "2001-05-24"
+  },
+  "permits": [
+    {
+      "number": "200909237515",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-09-23",
+      "status_date": "2011-11-28",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "bathroom remodel-demo bathroom to studs, install new tile shower, 4 can lights, 2 sinks, new touilet, new vanity & cabinet. no relocation of (e) walls. apply 5/8 type x gypum board at right angle to 2x4 wood studs at 16\"oc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611026654",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-02",
+      "status_date": "2006-12-11",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "one unit. asbestos abatement: removal of ceiling drywall, installation of new drywall. 5/8 type \"x\" gyp.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312293134",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-29",
+      "status_date": "2004-02-09",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace 3 windows. size for size. alum to paintable wood composite. visible from street",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623141&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=215",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "address": "321 Langton Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/langton-street/321/unit-11/",
+  "unit": "11",
+  "apn": "3780104",
+  "block": "3780",
+  "lot": "104",
+  "parcel": {
+    "building_area_sqft": 987,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 606228,
+    "assessed_improvement_value": 404152,
+    "last_sale_date": "2017-11-30"
+  },
+  "permits": [
+    {
+      "number": "201104043456",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-04-04",
+      "status_date": "2012-10-12",
+      "estimated_cost": 1650,
+      "revised_cost": 1650,
+      "description": "add a door to the back room to create a second bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3780104&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3780&unit=11",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

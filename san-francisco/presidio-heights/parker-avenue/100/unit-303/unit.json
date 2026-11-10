@@ -1,0 +1,46 @@
+{
+  "address": "100 Parker Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/parker-avenue/100/unit-303/",
+  "unit": "303",
+  "apn": "1065066",
+  "block": "1065",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 1034,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 44928,
+    "assessed_improvement_value": 83470
+  },
+  "permits": [
+    {
+      "number": "200911161295",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-16",
+      "status_date": "2009-12-08",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "work @ two units. living room window. remove trim & r-flash two windows to a water tight condition. install new head flashing & window pan flashing. instal new trim.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1065066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1065&unit=303",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

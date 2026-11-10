@@ -1,0 +1,40 @@
+{
+  "address": "780 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/780/unit-2/",
+  "unit": "2",
+  "apn": "3590068",
+  "block": "3590",
+  "lot": "068",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 42427,
+    "assessed_improvement_value": 96463
+  },
+  "permits": [
+    {
+      "number": "201702280302",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-02-28",
+      "status_date": "2017-02-28",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "#2 - replace kitchen cabinets, floor finishes, electrical (e) outlets with (n), replace counters.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3590068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3590&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

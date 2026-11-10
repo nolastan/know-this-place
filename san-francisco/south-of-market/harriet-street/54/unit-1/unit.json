@@ -1,0 +1,50 @@
+{
+  "address": "54 Harriet Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/harriet-street/54/unit-1/",
+  "unit": "1",
+  "apn": "3731168",
+  "block": "3731",
+  "lot": "168",
+  "parcel": {
+    "building_area_sqft": 1382
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 331814,
+    "assessed_improvement_value": 331814,
+    "last_sale_date": "2011-02-15"
+  },
+  "permits": [
+    {
+      "number": "201806152082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-15",
+      "status_date": "2019-05-29",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: retiling of shower/bathroom floor/walls, change vanity, replace old shower; no walls altered.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2016–2019",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3731168&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3731&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

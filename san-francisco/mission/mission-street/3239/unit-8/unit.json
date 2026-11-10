@@ -1,0 +1,91 @@
+{
+  "address": "3239 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/3239/unit-8/",
+  "unit": "8",
+  "apn": "5615089",
+  "block": "5615",
+  "lot": "089",
+  "parcel": {
+    "building_area_sqft": 1042,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 413347,
+    "assessed_improvement_value": 275560,
+    "last_sale_date": "2008-09-22"
+  },
+  "permits": [
+    {
+      "number": "202607275574",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-07-27",
+      "status_date": "2026-09-01",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "one unit: replacement of header + door to 2nd floor rear deck. header @ 3rd floor framing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202607084697",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-07-08",
+      "status_date": "2026-09-01",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "one unit: restore and repair 1 cantilevered decks, removal of sheetrock from interior ceiling and replace rotted joists. less than 50% deck repair, non street facing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508122866",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-08-12",
+      "status_date": "2025-08-12",
+      "estimated_cost": 38000,
+      "revised_cost": 0,
+      "description": "replace fire alarm system to meet sfca code and add lf horns in all units, wireless radio monitor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004099954",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-09",
+      "status_date": "2010-05-07",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "installation of washer/dryer unit @ kitchen/dining rm. soffit installation around ne vent pipe to be 1-hr. construction. no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003319356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-31",
+      "status_date": "2010-04-22",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "one unit: replace decking & guardrails. (e) rear deck, 3rd. flr.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5615089&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5615&unit=8",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-503/",
+  "unit": "503",
+  "apn": "0161066",
+  "block": "0161",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 734
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 419856,
+    "assessed_improvement_value": 279903,
+    "assessed_fixtures_value": 274810,
+    "last_sale_date": "2018-06-22"
+  },
+  "permits": [
+    {
+      "number": "201909131534",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-13",
+      "status_date": "2019-09-13",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "one unit; insatll add new horn/strobe, 3 strobe at 5th fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905079926",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-07",
+      "status_date": "2019-05-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "relocate (11) fire sprinklers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901140345",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-14",
+      "status_date": "2019-10-31",
+      "estimated_cost": 60000,
+      "revised_cost": 120000,
+      "description": "5th floor suite 503 - t.i. improvement, new walls, doors, relocating plumbing, new lights",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=503",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

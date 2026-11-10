@@ -1,0 +1,47 @@
+{
+  "address": "855 Folsom Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/folsom-street/855/unit-734/",
+  "unit": "734",
+  "apn": "3752341",
+  "block": "3752",
+  "lot": "341",
+  "parcel": {
+    "building_area_sqft": 932,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 611254,
+    "assessed_improvement_value": 407502,
+    "last_sale_date": "2021-11-24"
+  },
+  "permits": [
+    {
+      "number": "200804210233",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-21",
+      "status_date": "2008-08-22",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replacing kitchen cabinets- changing position of sink & applicances. no changes to existing structure.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752341&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&unit=734",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "address": "840 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/powell-street/840/unit-302/",
+  "unit": "302",
+  "apn": "0243044",
+  "block": "0243",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 3077,
+    "rooms": 9,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1373000,
+    "assessed_improvement_value": 1373000,
+    "last_sale_date": "2004-08-16"
+  },
+  "permits": [
+    {
+      "number": "200801102252",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-10",
+      "status_date": "2008-10-06",
+      "estimated_cost": 9500,
+      "revised_cost": 10000,
+      "description": "one unit-remodel kitchen, new plumbing fixtures, new lighting, new cabinets and new counter tops. no new structural",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708139561",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-08-13",
+      "status_date": "2009-12-29",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "change toilet and lav in power, new cabinets in linving room and sun room, new recess lights in hallway ceiling. paint 4 rooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307149439",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-07-14",
+      "status_date": "2007-04-04",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove one piece of extng kitchen cabinetry(6'x3'),replace countertops,reface cabinetry & retile flr",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=302",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

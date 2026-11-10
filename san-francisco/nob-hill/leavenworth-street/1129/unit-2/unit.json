@@ -1,0 +1,57 @@
+{
+  "address": "2 Kimball Place, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/leavenworth-street/1129/unit-2/",
+  "apn": "0248079",
+  "block": "0248",
+  "lot": "079",
+  "parcel": {
+    "building_area_sqft": 1958,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 500186,
+    "assessed_improvement_value": 500186,
+    "last_sale_date": "2010-05-03"
+  },
+  "permits": [
+    {
+      "number": "201112050082",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-12-05",
+      "status_date": "2013-02-27",
+      "estimated_cost": 2562,
+      "revised_cost": 2562,
+      "description": "install like for like pella retrofit block frame wood double hung windows to repl existing dh single pane windows,new window are wood clad and meet egress requirments 10 total windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909146778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-14",
+      "status_date": "2010-04-30",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "interior remodeling: remove sauna & add closet to master bedroom, remodel & remove door master bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0248079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0248&street_number=2",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

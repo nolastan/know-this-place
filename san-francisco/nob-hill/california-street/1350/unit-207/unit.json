@@ -1,0 +1,47 @@
+{
+  "address": "1350 California Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/california-street/1350/unit-207/",
+  "unit": "207",
+  "apn": "0248049",
+  "block": "0248",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 1165,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 455007,
+    "assessed_improvement_value": 455007,
+    "last_sale_date": "2012-11-29"
+  },
+  "permits": [
+    {
+      "number": "202603057007",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-05",
+      "status_date": "2026-04-20",
+      "estimated_cost": 29000,
+      "revised_cost": 29000,
+      "description": "one unit: master bath: replace only. free standing shower base, shower stall, shower door, corner shelf, trim kit, grab bar like for like. hall bath: tub.shower replace only, free standing tub, shower walls, tub door, shelf grab bar. corner shelf, grab bar, trim kit, valve.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0248049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0248&unit=207",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

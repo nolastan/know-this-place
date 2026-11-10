@@ -1,0 +1,66 @@
+{
+  "address": "300 Valley Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/valley-street/302/unit-2/",
+  "unit": "2",
+  "apn": "6613050",
+  "block": "6613",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 2161
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 845638,
+    "assessed_improvement_value": 563755,
+    "last_sale_date": "2007-12-04"
+  },
+  "permits": [
+    {
+      "number": "202407116236",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-11",
+      "status_date": "2025-10-02",
+      "estimated_cost": 160166,
+      "revised_cost": 160166,
+      "description": "interior rennovation of living room/dining room, kitchen, bathroom and internal stairs including new finishes, fixtures and appliances in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009214647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-21",
+      "status_date": "2021-01-21",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "one unit: remodel bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708023693",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-08-02",
+      "status_date": "2017-12-18",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit: remodel bathroom, e wtile, fixtures. upgrade electrical/lighting to current code. all work in kind. no structural or exterior work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6613050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6613&unit=2",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

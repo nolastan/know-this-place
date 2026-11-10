@@ -1,0 +1,47 @@
+{
+  "address": "1325 Indiana Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/indiana-street/1325/unit-43/",
+  "unit": "43",
+  "apn": "4228122",
+  "block": "4228",
+  "lot": "122",
+  "parcel": {
+    "building_area_sqft": 943,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 609191,
+    "assessed_improvement_value": 406128,
+    "last_sale_date": "2021-04-29"
+  },
+  "permits": [
+    {
+      "number": "201203307242",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-30",
+      "status_date": "2012-05-08",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "new floor finish, living room floor w/ pre-finish hardwood approx 600 sf. extend (e) 1st fl closet 7' to the right w/ new 84\"x24\" end wall. work at one unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4228122&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4228&unit=43",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

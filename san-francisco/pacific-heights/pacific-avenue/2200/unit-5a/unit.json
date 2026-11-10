@@ -1,0 +1,80 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-5a/",
+  "unit": "5A",
+  "apn": "0580058",
+  "block": "0580",
+  "lot": "058",
+  "parcel": {
+    "building_area_sqft": 1545,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 212832,
+    "assessed_improvement_value": 382807,
+    "last_sale_date": "1987-08-21"
+  },
+  "permits": [
+    {
+      "number": "201806051063",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-05",
+      "status_date": "2019-02-06",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "kitchen and bathroom remodeling in kind. flooring replacement and paint. kitchen 5'x12', bath 4'x10'. no wall moving or relocating",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204022852",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-02",
+      "status_date": "2002-04-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#2001/01/22/0329 for final insp.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204022850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-02",
+      "status_date": "2002-04-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#2000/04/03/6191 for final insp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101220329",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-22",
+      "status_date": "2001-07-22",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "to renew permit#2000/04/03/6191 unitl work is completed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=5A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

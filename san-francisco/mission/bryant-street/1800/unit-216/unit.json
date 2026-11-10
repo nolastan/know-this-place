@@ -1,0 +1,35 @@
+{
+  "address": "1800 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/1800/unit-216/",
+  "unit": "216",
+  "apn": "3970041",
+  "block": "3970",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 976,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 487276,
+    "assessed_improvement_value": 487276,
+    "last_sale_date": "2013-10-17"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3970041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3970&unit=216",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

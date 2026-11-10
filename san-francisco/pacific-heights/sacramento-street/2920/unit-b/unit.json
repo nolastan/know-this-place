@@ -1,0 +1,58 @@
+{
+  "address": "2920 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2920/unit-b/",
+  "unit": "B",
+  "apn": "1004039",
+  "block": "1004",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 1542,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 237947,
+    "assessed_improvement_value": 594885,
+    "last_sale_date": "1993-10-17"
+  },
+  "permits": [
+    {
+      "number": "202404089509",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-08",
+      "status_date": "2024-06-28",
+      "estimated_cost": 42000,
+      "revised_cost": 42000,
+      "description": "front bldg structural repair of existing roof deck over front garage structure for exploratory demo; upgrade guardrail connection to roof system; reconstruct deck system over exisint structural joists. replace steel guardrail w/glass; install 1-hr rated parapet @ east side",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202402015091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-01",
+      "status_date": "2024-06-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "demo sections of the tile deck to determine how to repair and re-tile deck correctly. cover leaking areas with plastics, tile & water proofing only approx 400 sq ft",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1004039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1004&unit=B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

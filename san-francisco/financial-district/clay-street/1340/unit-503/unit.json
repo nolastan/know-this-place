@@ -1,0 +1,47 @@
+{
+  "address": "1340 Clay Street, San Francisco, CA 94109",
+  "path": "/san-francisco/financial-district/clay-street/1340/unit-503/",
+  "unit": "503",
+  "apn": "0215039",
+  "block": "0215",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 1650,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 966000,
+    "assessed_improvement_value": 644000,
+    "last_sale_date": "2024-11-08"
+  },
+  "permits": [
+    {
+      "number": "201203136004",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-03-13",
+      "status_date": "2014-06-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "#503 - tile, plumbing & lihgting on one bath & tile, plumbing on 2nd bath.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0215039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0215&unit=503",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

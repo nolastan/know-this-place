@@ -1,0 +1,93 @@
+{
+  "address": "245 5th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/5th-street/245/unit-314/",
+  "unit": "314",
+  "apn": "3733123",
+  "block": "3733",
+  "lot": "123",
+  "parcel": {
+    "building_area_sqft": 1465,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 170996,
+    "assessed_improvement_value": 267096,
+    "last_sale_date": "1996-12-11"
+  },
+  "permits": [
+    {
+      "number": "201303192508",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-19",
+      "status_date": "2013-03-29",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "add 1 sprinkler head in new storage area. bldg ref pa# 201210031251",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301147878",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2013-01-14",
+      "status_date": "2026-01-09",
+      "description": "revision to 201210031251. changes to ceiling and wall framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301147882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-14",
+      "status_date": "2013-04-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201210031251. detail of existing and proposed ceiling and wall framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201210031251",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-03",
+      "status_date": "2013-04-30",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "extension of (e) storage closet into open studio space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200810245005",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-10-24",
+      "status_date": "2008-10-24",
+      "estimated_cost": 33000,
+      "revised_cost": 33000,
+      "description": "repair work in facade, sheetmetal flashing, cracks no change in app. seal windows. paint building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2008–2013",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3733123&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3733&unit=314",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

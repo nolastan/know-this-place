@@ -1,0 +1,57 @@
+{
+  "address": "850 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/850/unit-402/",
+  "unit": "402",
+  "apn": "0243077",
+  "block": "0243",
+  "lot": "077",
+  "parcel": {
+    "building_area_sqft": 1282,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 522776,
+    "assessed_improvement_value": 348515,
+    "last_sale_date": "2009-09-04"
+  },
+  "permits": [
+    {
+      "number": "200504129829",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-04-12",
+      "status_date": "2009-12-29",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503258437",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-03-25",
+      "status_date": "2009-12-29",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "bathroom remodel of existing bathroom, remove and replace existing tile and fixtures, no structural",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243077&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=402",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

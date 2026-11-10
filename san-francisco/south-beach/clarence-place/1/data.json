@@ -1,0 +1,118 @@
+{
+  "address": "1 Clarence Place, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/clarence-place/1/",
+  "block": "3788",
+  "eas_baseid": "446112",
+  "coordinates": {
+    "lat": 37.780064,
+    "lng": -122.393173
+  },
+  "parcel": {
+    "year_built": 1997,
+    "units": 18,
+    "use": "Single Family Residential",
+    "property_class": "Live/Work Condominium",
+    "construction_type_code": "D",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South Beach",
+    "analysis_neighborhood": "Financial District/South Beach"
+  },
+  "condominium": {
+    "lots": [
+      "088",
+      "089",
+      "090",
+      "091",
+      "092",
+      "093",
+      "094",
+      "095",
+      "096",
+      "097",
+      "098",
+      "099",
+      "100",
+      "101",
+      "102",
+      "103",
+      "104",
+      "105"
+    ],
+    "method": "Every active parcel of sf-parcels map lot 3788088 with a row on the 2025 roll: 18 lots, 088–105."
+  },
+  "historic_district": {
+    "name": "South End Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201008027896",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-02",
+      "status_date": "2011-03-25",
+      "estimated_cost": 72950,
+      "revised_cost": 72950,
+      "description": "re-roofing only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005243077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-24",
+      "status_date": "2011-01-31",
+      "estimated_cost": 240000,
+      "revised_cost": 240000,
+      "description": "erect scaffolding, remove stucco, repair leaks, replace stucco,including new flushing & paper. not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLARENCE&street_type=PL&address_number=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 3788)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=3788&closed_roll_year=2025",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3788",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39317305117066%2037.78006444257259)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1995-08-10",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 10 August 1995",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/41minutesofsanfran1995san/page/n200/mode/1up",
+      "retrieved": "2026-10-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-08-10",
+      "kind": "occupancy",
+      "description": "A parking lot of 21,810.5 square feet occupied the site, serving the retail and office building next door; a 40-foot building of eighteen live-work units over a garage was proposed for it.",
+      "source": "sf-planning-commission-minutes-1995-08-10"
+    }
+  ]
+}

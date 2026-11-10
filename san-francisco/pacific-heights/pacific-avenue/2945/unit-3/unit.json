@@ -1,0 +1,47 @@
+{
+  "address": "2945 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2945/unit-3/",
+  "unit": "3",
+  "apn": "0976037",
+  "block": "0976",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1225,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 353664,
+    "assessed_improvement_value": 252863,
+    "last_sale_date": "1992-06-24"
+  },
+  "permits": [
+    {
+      "number": "201704103594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-10",
+      "status_date": "2017-06-08",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "bathroom renovation in place. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0976037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0976&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

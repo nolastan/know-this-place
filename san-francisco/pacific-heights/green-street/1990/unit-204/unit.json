@@ -1,0 +1,79 @@
+{
+  "address": "1990 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/1990/unit-204/",
+  "unit": "204",
+  "apn": "0542053",
+  "block": "0542",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1170,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 724000,
+    "assessed_improvement_value": 724000,
+    "last_sale_date": "2017-04-06"
+  },
+  "permits": [
+    {
+      "number": "202509175493",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-09-17",
+      "status_date": "2025-09-17",
+      "estimated_cost": 13081,
+      "revised_cost": 13081,
+      "description": "one unit: replace 14 windows in kind with retrofit wood and vinyl. street visible, 9 wood and 5 vinyl. no size change or location. u factor < 0.30. same opening, same operation. no structural work. maintain eero per cbc 1031 as required",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202503122102",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-03-12",
+      "status_date": "2025-03-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit. revision to pa# 202406043650 (full scope change). replace 6 windows with retrofit vinyl windows. no change to size or location. not street visible. u-factor not more than 0.30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202502110117",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-02-11",
+      "status_date": "2025-03-06",
+      "estimated_cost": 28788,
+      "revised_cost": 28788,
+      "description": "remove and replace (9) windows, in kind using retrofit installation same size and location. side of the house is the location of the windows with aluminum clad wod with ogee lugs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202406043650",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-06-04",
+      "status_date": "2024-06-04",
+      "estimated_cost": 21085,
+      "revised_cost": 21085,
+      "description": "replace (14) windows with retrofit wood windows street visible. no change to size or location u-factor <.30",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0542053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0542&unit=204",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

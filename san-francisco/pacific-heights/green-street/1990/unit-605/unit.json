@@ -1,0 +1,46 @@
+{
+  "address": "1990 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/green-street/1990/unit-605/",
+  "unit": "605",
+  "apn": "0542071",
+  "block": "0542",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1375,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 415820,
+    "assessed_improvement_value": 150195
+  },
+  "permits": [
+    {
+      "number": "202406174671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-17",
+      "status_date": "2024-10-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "tear out existing bathroom tile in shower and floor. replace with new tile.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0542071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0542&unit=605",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

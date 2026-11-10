@@ -1,0 +1,58 @@
+{
+  "address": "195 25th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/25th-avenue/195/unit-102/",
+  "unit": "102",
+  "apn": "1333045",
+  "block": "1333",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 653209,
+    "assessed_improvement_value": 653209,
+    "last_sale_date": "2000-03-30"
+  },
+  "permits": [
+    {
+      "number": "202201105609",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-01-10",
+      "status_date": "2022-01-10",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "one unit: remove tub to create shower stall with curb & glass inclosure.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103285430",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-28",
+      "status_date": "2001-07-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "final inspection 2000/09/05/9681.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1333045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1333&unit=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

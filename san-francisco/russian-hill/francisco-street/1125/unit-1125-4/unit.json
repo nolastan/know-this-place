@@ -1,0 +1,80 @@
+{
+  "address": "1125 Francisco Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/francisco-street/1125/unit-1125-4/",
+  "unit": "4",
+  "apn": "0478024",
+  "block": "0478",
+  "lot": "024",
+  "parcel": {
+    "building_area_sqft": 1044,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 307322,
+    "assessed_improvement_value": 228598,
+    "last_sale_date": "1996-01-31"
+  },
+  "permits": [
+    {
+      "number": "201909232349",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-23",
+      "status_date": "2020-07-31",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit - minor remodel to convert hallway closet to 1/2 bath; change dining room to closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904097473",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-09",
+      "status_date": "2019-05-31",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remodel bathroom, replace tile. upgrade electric and plumbing. no structural work, no wall modification.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304255417",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2013-04-25",
+      "status_date": "2013-09-05",
+      "estimated_cost": 20147,
+      "revised_cost": 20147,
+      "description": "bathroom remodel in kind, sink, faucet, tub, wall surround, shower valve, vanity, toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303041450",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-03-04",
+      "status_date": "2013-03-04",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "one bathroom remodel, replace shower pan, new vanity, new counter top, new toilet, like for like. permanent lighting in bathroom shall be high efficacy or controlled by manual on occupancy sensors. no new opening or wall layout change.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0478024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0478&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

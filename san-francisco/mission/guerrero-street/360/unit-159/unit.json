@@ -1,0 +1,47 @@
+{
+  "address": "1839 15th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/360/unit-159/",
+  "unit": "159",
+  "apn": "3556218",
+  "block": "3556",
+  "lot": "218",
+  "parcel": {
+    "building_area_sqft": 757,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 357044,
+    "assessed_improvement_value": 357044,
+    "last_sale_date": "2006-12-29"
+  },
+  "permits": [
+    {
+      "number": "202105100028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-10",
+      "status_date": "2021-07-06",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit: remodel (1) bathroom & (1) kitchen. bathroom install shower pan instead of bathtub. reinstall fixtures for same location. no walls moved. kitchen install new vabinets, new countertop, all new appliances & fixtures in same location.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556218&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&unit=159",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

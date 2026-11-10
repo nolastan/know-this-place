@@ -1,0 +1,34 @@
+{
+  "address": "1818 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1818/unit-303/",
+  "unit": "303",
+  "apn": "0568039",
+  "block": "0568",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 675,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 344760,
+    "assessed_improvement_value": 344760,
+    "last_sale_date": "2003-11-14"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0568039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0568&unit=303",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "address": "407 Sanchez Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/sanchez-street/407/unit-1010/",
+  "unit": "1010",
+  "apn": "3580080",
+  "block": "3580",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 1135,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 7040,
+    "assessed_improvement_value": 72198
+  },
+  "permits": [
+    {
+      "number": "202402065292",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2024-02-06",
+      "status_date": "2024-08-29",
+      "estimated_cost": 211332,
+      "revised_cost": 211332,
+      "description": "voluntary upgrade of (e) fire alarm syte to meet requirements of sffd ab3-08 and notification is being add in the parking struture.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005159943",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-15",
+      "status_date": "2000-06-02",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "replace post at entrance way for decorative post only and repair deck joist onlyn",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002293104",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-29",
+      "status_date": "2001-02-28",
+      "revised_cost": 36700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9013587",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-07-12",
+      "status_date": "1991-02-16",
+      "estimated_cost": 6000,
+      "description": "install metal fire escape",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8816947",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-11-03",
+      "status_date": "1989-09-24",
+      "estimated_cost": 42000,
+      "description": "repair dry rot at stair well",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811959",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-08-16",
+      "status_date": "1989-04-04",
+      "estimated_cost": 15000,
+      "description": "roof parapet repairs to stop water infiltration to bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3580080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3580&unit=1010",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

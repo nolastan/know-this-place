@@ -1,0 +1,44 @@
+{
+  "address": "728 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/728/unit-501/",
+  "unit": "501",
+  "apn": "0161064",
+  "block": "0161",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 810
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 224353,
+    "assessed_improvement_value": 295408,
+    "last_sale_date": "1992-02-28"
+  },
+  "permits": [
+    {
+      "number": "200210310501",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-31",
+      "status_date": "2002-12-03",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "5/f- relocate entrance door of tenant space",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&unit=501",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

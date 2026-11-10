@@ -523,6 +523,40 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
+- **Verified:** 2026-11-10 (#556, the findings the old condominium rule held
+  back, re-resolved now that a condominium is paged as a building; nothing
+  new was read). 391 findings move from unresolved to resolved: **319
+  published on 244 pages, 219 of them seeded** as condominium buildings, and
+  72 declined. Most of what a condominium blocked here is a conversion, a
+  live/work project or a discretionary review of the building that is still
+  there, so it publishes as written. Where no page existed and the roll dates
+  the building more than five years after the record, the finding is about
+  what stood or was proposed there before it and is declined, with no page
+  seeded for a predecessor alone (70 findings); the other two are about a
+  different site on a Port parcel and a fine on a subdivider.
+  Forty-two more that would also resolve are left unresolved: 18 where the
+  resolver's answer may be the lot next door (801 Grove, 2473 Sutter, 897
+  California, 1800 Fillmore, 25 Dolores, 676 Capp, 1241 Fifth Avenue, 427
+  14th, 2460 Lombard, 203 Folsom), and 23 whose page would be, or already
+  is, a single parcel of a multi-parcel map lot and not yet a building page
+  (900 Bush, 2450 Hyde, 2060 Union, 2363 Larkin, 725 Florida, 2130 Harrison,
+  700 Kearny, 292 Ivy, 483 Greenwich, 200 Beach, 801 Market, 851 Beach, 401
+  Main, 1061 Capitol, 803 Divisadero), plus 3835 Scott, which the seeder
+  cannot page because its proposal runs on into 3825 Scott next door.
+  **Lots:** every target page was compared with the sf-parcels `mapblklot`
+  of the finding's own parcel and the 2025 roll. 37 lot lists were corrected
+  with `seed_pages.py condo --lots`: the seeder's proposal stops at a change
+  of street number, so a corner building filed under two streets (1584
+  Waller and 660 Cole, 1702 Broderick and 2694 Bush) loses half its units,
+  and it runs on into the next map when the neighbour shares a street and a
+  year (3825 and 3835 Scott, 2068 Third, 786 Minna). Two of the 37 were
+  pages that already existed and did not hold the finding's parcel (3620
+  19th Street, 8 lots of 41; 1598 Dolores, 8 of 13). 220 Lombard keeps the 62
+  units the roll files there, because map lot 0060026 also holds 240 Lombard
+  and 111 Chestnut. **Compare lots against the map lot of the finding's
+  parcel, not of the page's first lot** — the first check here used the
+  latter and passed pages whose lots belonged to the building next door.
+
 - **Verified:** **2026-11-09** (volume 54 from 4 December 2003, and
   volumes 55–58, 2004 and 2005: 1,146 findings from 82 meeting days, read by
   Meta Muse to the end of its run and converted, page-located, resolved and

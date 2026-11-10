@@ -1,0 +1,64 @@
+{
+  "address": "1800 Bryant Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/bryant-street/1800/unit-309/",
+  "unit": "309",
+  "apn": "3970050",
+  "block": "3970",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 962,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 615107,
+    "assessed_improvement_value": 615107,
+    "last_sale_date": "2016-12-23"
+  },
+  "permits": [
+    {
+      "number": "201411141527",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-14",
+      "status_date": "2015-11-13",
+      "estimated_cost": 1,
+      "revised_cost": 2700,
+      "description": "revision appl 2014.0909.5907 to enlarge bathroom per plan for one unit. maher n/a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409095902",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-09",
+      "status_date": "2015-11-13",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: bathroom remodel, new showers stall, new fixtures. no walls moved, removed or added. all fixtures locations and layouts to remain unchanged.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2014–2015",
+    "shown_on_page": 2,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3970050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3970&unit=309",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

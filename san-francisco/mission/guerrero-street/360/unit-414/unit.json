@@ -1,0 +1,69 @@
+{
+  "address": "360 Guerrero Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/guerrero-street/360/unit-414/",
+  "unit": "414",
+  "apn": "3556211",
+  "block": "3556",
+  "lot": "211",
+  "parcel": {
+    "building_area_sqft": 963,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 147727,
+    "assessed_improvement_value": 200357,
+    "last_sale_date": "1991-06-18"
+  },
+  "permits": [
+    {
+      "number": "201709148270",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-14",
+      "status_date": "2017-11-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "install new sheet rock in closet, patch ceiling where needed. kitchen faucet and angel stop, p-trap replacement due leakage. relocate subpanel, install and replace (e) lights to led. run one circuit to electric heat.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508184607",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-18",
+      "status_date": "2015-10-01",
+      "estimated_cost": 5589,
+      "revised_cost": 5589,
+      "description": "replace (1) sliding door - fibrex not visible from street. u-factor ,.32 no size change",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307192329",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-19",
+      "status_date": "2013-09-04",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "kitchen remodel - change cabinet & countertops, change existing appliances. no structural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556211&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&unit=414",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

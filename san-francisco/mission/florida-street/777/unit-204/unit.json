@@ -1,0 +1,32 @@
+{
+  "address": "777 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/777/unit-204/",
+  "unit": "204",
+  "apn": "4081039",
+  "block": "4081",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 960
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 382308,
+    "assessed_improvement_value": 382308,
+    "last_sale_date": "2017-10-31"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4081039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4081&unit=204",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

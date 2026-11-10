@@ -1,0 +1,58 @@
+{
+  "address": "2950 Clay Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/clay-street/2950/unit-204/",
+  "unit": "204",
+  "apn": "1001049",
+  "block": "1001",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 1298,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 483806,
+    "assessed_improvement_value": 483806,
+    "last_sale_date": "2001-09-14"
+  },
+  "permits": [
+    {
+      "number": "202501299302",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-29",
+      "status_date": "2025-07-31",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit: kitchen remodeling like for like replace plumbing fixtures appliances and gfci. update e/m/p up to code.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804300997",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-30",
+      "status_date": "2008-09-25",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "2 bathroom remodels: new toilet, bath, vanity, floors & wall, 2nd bathroom: new toilet, shower, vanity. floors & walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1001049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1001&unit=204",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

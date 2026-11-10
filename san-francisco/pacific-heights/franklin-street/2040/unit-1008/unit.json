@@ -1,0 +1,58 @@
+{
+  "address": "2040 Franklin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/franklin-street/2040/unit-1008/",
+  "unit": "1008",
+  "apn": "0599080",
+  "block": "0599",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 752,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 621787,
+    "assessed_improvement_value": 414524,
+    "last_sale_date": "2019-06-03"
+  },
+  "permits": [
+    {
+      "number": "201011154903",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-11-15",
+      "status_date": "2011-03-25",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "one unit - remodel kitchen & bathroom, living, dining & bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406106134",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-10",
+      "status_date": "2004-09-17",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remodel unit to include both baths & kitchen. move one non-structural closet wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0599080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0599&unit=1008",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

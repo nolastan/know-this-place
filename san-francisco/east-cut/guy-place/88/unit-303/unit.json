@@ -1,0 +1,35 @@
+{
+  "address": "88 Guy Place, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/guy-place/88/unit-303/",
+  "unit": "303",
+  "apn": "3749173",
+  "block": "3749",
+  "lot": "173",
+  "parcel": {
+    "building_area_sqft": 839,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 455130,
+    "assessed_improvement_value": 455130,
+    "last_sale_date": "2018-02-26"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3749173&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3749&unit=303",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

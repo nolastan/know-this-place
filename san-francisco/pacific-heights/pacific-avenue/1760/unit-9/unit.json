@@ -1,0 +1,47 @@
+{
+  "address": "1760 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/1760/unit-9/",
+  "unit": "9",
+  "apn": "0575062",
+  "block": "0575",
+  "lot": "062",
+  "parcel": {
+    "building_area_sqft": 1766,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1377992,
+    "assessed_improvement_value": 918660,
+    "last_sale_date": "2020-02-06"
+  },
+  "permits": [
+    {
+      "number": "200610266073",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-26",
+      "status_date": "2006-11-13",
+      "estimated_cost": 9992,
+      "revised_cost": 9992,
+      "description": "work @ one unit. remove & replace 7 windows, all like for like with no change in the size or location of the opening. 4 double hang. 1 right hanged casement. 1 left hinged casement & 1 fixed casement. windows cannot be seen from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0575062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0575&unit=9",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

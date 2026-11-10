@@ -1,0 +1,98 @@
+{
+  "address": "953 Clayton Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/clayton-street/953/unit-5/",
+  "unit": "5",
+  "apn": "1279094",
+  "block": "1279",
+  "lot": "094",
+  "parcel": {
+    "building_area_sqft": 1409,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 916954,
+    "assessed_improvement_value": 611302,
+    "last_sale_date": "2018-12-14"
+  },
+  "permits": [
+    {
+      "number": "200210300365",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-10-30",
+      "status_date": "2002-12-10",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "remove non bearing partition wall gr floor parellel to joist span separated by 10', texture walls/ce",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207030689",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-07-03",
+      "status_date": "2002-07-03",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "reduce size of closet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313048",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-08-02",
+      "status_date": "2018-10-05",
+      "estimated_cost": 1000,
+      "description": "repair decking joists and two staircase",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-07-23",
+      "status_date": "1993-09-02",
+      "estimated_cost": 9045,
+      "description": "bolt framing & repair beelte ingested support post",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312154",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-07-20",
+      "status_date": "1993-09-02",
+      "estimated_cost": 5000,
+      "description": "renew app #8811753 (expired)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811753",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-08-15",
+      "status_date": "1991-02-28",
+      "estimated_cost": 30000,
+      "description": "vertical addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1279094&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1279&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "77 Grand View Avenue, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/grand-view-avenue/73/unit-702/",
+  "unit": "702",
+  "apn": "2748043",
+  "block": "2748",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 1080,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 922488,
+    "assessed_improvement_value": 395349,
+    "last_sale_date": "2020-01-16"
+  },
+  "permits": [
+    {
+      "number": "201909111330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-11",
+      "status_date": "2019-11-13",
+      "estimated_cost": 10000,
+      "revised_cost": 25000,
+      "description": "replace kitchen cabinets w/countertops. replace bathroom fixtures and kitchen & bathroom remodel. no wall/framing modification no strtuctural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011084537",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2010-11-08",
+      "status_date": "2025-04-15",
+      "revised_cost": 0,
+      "description": "revision to permit # 201010042237...",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2748043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2748&unit=702",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

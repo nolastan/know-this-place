@@ -1,0 +1,58 @@
+{
+  "address": "4096 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4096/unit-110/",
+  "unit": "110",
+  "apn": "2623125",
+  "block": "2623",
+  "lot": "125",
+  "parcel": {
+    "building_area_sqft": 944,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 531968,
+    "assessed_improvement_value": 372048,
+    "last_sale_date": "2008-04-24"
+  },
+  "permits": [
+    {
+      "number": "201801199099",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-01-19",
+      "status_date": "2018-01-19",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "one unit replace approx 700 sq ft, water damaged drywall ceiling & walls, install ceiling lights approx 18 replace bathtub & tile thats water damaged w.whirpool tub & new tile, add dedicated circuit for whirlpool tub all lights shall be high efficiancy & controlled my dimmers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503160964",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-16",
+      "status_date": "2017-01-17",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodel. repair drywall removed for plumbing & electrical work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623125&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=110",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "address": "2801 Jackson Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/jackson-street/2801/unit-12/",
+  "unit": "12",
+  "apn": "0980066",
+  "block": "0980",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 1330,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1071606,
+    "assessed_improvement_value": 714404,
+    "last_sale_date": "2021-03-29"
+  },
+  "permits": [
+    {
+      "number": "202412136766",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-13",
+      "status_date": "2025-02-07",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace moisture intrusion damaged exterior stair landing's sheathing & coating, like for like. not visible to street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107013575",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-01",
+      "status_date": "2021-07-28",
+      "estimated_cost": 35000,
+      "revised_cost": 1,
+      "description": "replace (e) kitchen countertops/ plumbing locations to remain the same. install new closet doors. no structural/ no wall removal",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2015–2024",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0980066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0980&unit=12",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "address": "2945 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2945/unit-5/",
+  "unit": "5",
+  "apn": "0976039",
+  "block": "0976",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 914,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 743629,
+    "assessed_improvement_value": 495753,
+    "last_sale_date": "2020-11-06"
+  },
+  "permits": [
+    {
+      "number": "200805061360",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-06",
+      "status_date": "2008-10-10",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "r/r kitchen cabinets, install new counter tops, reinstall d/w, ref, range @ same location, install new washer and dryer. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804250632",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-25",
+      "status_date": "2008-10-09",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "#5- remove/replace wall and trim finishes, remove/replace floor finish, reset brick veneer at exterior. paint and finish.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712059714",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-12-05",
+      "status_date": "2007-12-07",
+      "estimated_cost": 97500,
+      "revised_cost": 97500,
+      "description": "soil densification- low pressure grouting to stablize the soil under the building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2007–2008",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0976039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0976&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

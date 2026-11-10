@@ -1,0 +1,58 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-3f/",
+  "unit": "3F",
+  "apn": "0580051",
+  "block": "0580",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 1526,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 720997,
+    "assessed_improvement_value": 720997,
+    "last_sale_date": "2023-06-13"
+  },
+  "permits": [
+    {
+      "number": "200810103883",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-10-10",
+      "status_date": "2010-03-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "work @ one unit only. master bathroom alteration. new vanity & mirror, tile & fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512220877",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-22",
+      "status_date": "2006-12-20",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "minor kitchen remodel including new cabinets, electrical fixtures, and appliances (1) kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=3F",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

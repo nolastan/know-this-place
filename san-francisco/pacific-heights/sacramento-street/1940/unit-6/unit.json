@@ -1,0 +1,63 @@
+{
+  "address": "1940 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/sacramento-street/1940/unit-6/",
+  "unit": "6",
+  "apn": "0624019",
+  "block": "0624",
+  "lot": "019",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1083565,
+    "assessed_improvement_value": 839318,
+    "last_sale_date": "2017-08-30"
+  },
+  "permits": [
+    {
+      "number": "201702028541",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-02",
+      "status_date": "2017-06-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 201611223333. switch unit from 1 to 6. upgrade electrical installation throughout unit, replace light fixtures w/led. dining room, remove closets on western wall, remove swinging door to kitchen, relocate atrium door to west wall, build opening to kitchen, full bath, vanity counter",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302036539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-03",
+      "status_date": "2003-09-09",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "new skylight and remodel of existing bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2003–2017",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0624019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0624&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

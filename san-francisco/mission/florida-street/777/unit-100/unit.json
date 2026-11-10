@@ -1,0 +1,49 @@
+{
+  "address": "777 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/777/unit-100/",
+  "unit": "100",
+  "apn": "4081026",
+  "block": "4081",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 1134
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 28849,
+    "assessed_improvement_value": 28849
+  },
+  "permits": [
+    {
+      "number": "201907166028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-16",
+      "status_date": "2019-08-29",
+      "estimated_cost": 1600,
+      "revised_cost": 1600,
+      "description": "installation of fabricated evacuation maps",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2004–2019",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4081026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4081&unit=100",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

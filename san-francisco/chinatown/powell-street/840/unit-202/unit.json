@@ -1,0 +1,80 @@
+{
+  "address": "840 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/powell-street/840/unit-202/",
+  "unit": "202",
+  "apn": "0243042",
+  "block": "0243",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 3077,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1380000,
+    "assessed_improvement_value": 920000,
+    "last_sale_date": "2022-10-31"
+  },
+  "permits": [
+    {
+      "number": "202301200476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-20",
+      "status_date": "2023-11-08",
+      "estimated_cost": 90000,
+      "revised_cost": 146255,
+      "description": "(1) kitchen remodel, new kitchen cabinets and appliances. remodel (3) bathrooms and (1) powder room. install (n) fixtures to (e) locations. (3) shower pans. replace (e) outlets to (n) outlets; replace (e) lighting fixtures to (n) fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212017515",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-01",
+      "status_date": "2023-11-03",
+      "estimated_cost": 750,
+      "revised_cost": 1500,
+      "description": "selected demo for (1) kitchen cabinets & fixtures; (2) bathroom cabinets & fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203170282",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-17",
+      "status_date": "2022-04-14",
+      "estimated_cost": 450,
+      "revised_cost": 450,
+      "description": "one unit: amend to pa202203089457 - non-structural - close off access / communicating bathroom door from bedroom. non-bearing provide new access doorway to (e) bathroom non-bearing. to comply with complaint 202288511.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203089457",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-08",
+      "status_date": "2022-04-14",
+      "estimated_cost": 350,
+      "revised_cost": 350,
+      "description": "put in new bathroom door/replace.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

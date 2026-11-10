@@ -1,0 +1,59 @@
+{
+  "address": "300 Valley Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/valley-street/302/unit-6/",
+  "unit": "6",
+  "apn": "6613054",
+  "block": "6613",
+  "lot": "054",
+  "parcel": {
+    "building_area_sqft": 2051,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "basement_area_sqft": 176
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1591812,
+    "assessed_improvement_value": 1061208,
+    "last_sale_date": "2022-04-21"
+  },
+  "permits": [
+    {
+      "number": "201501054899",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-05",
+      "status_date": "2015-02-10",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "#6 - remove partion wall between bath & vanity area, replace tile on bathtub walls & floor tile, replace shower fixtures & sink vanity, remvoe overhead recessed light, install 2 wall lights. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006174713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-17",
+      "status_date": "2010-07-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "add 1/2 bath, sink and toilet. partition walls only. no walls moved or removed. provide exhaust. no rated floor penetration, terminate 3'min from pl and bldg opening. occupancy sensor for lighting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6613054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6613&unit=6",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

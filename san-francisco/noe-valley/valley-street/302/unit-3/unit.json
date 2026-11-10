@@ -1,0 +1,47 @@
+{
+  "address": "300 Valley Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/valley-street/302/unit-3/",
+  "unit": "3",
+  "apn": "6613051",
+  "block": "6613",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 1428,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1184307,
+    "assessed_improvement_value": 789538,
+    "last_sale_date": "2021-10-12"
+  },
+  "permits": [
+    {
+      "number": "202604270116",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-27",
+      "status_date": "2026-04-27",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "one unit: remodel of kitchen and bathroom in kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6613051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6613&unit=3",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

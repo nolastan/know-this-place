@@ -1,0 +1,53 @@
+{
+  "address": "1317 Hyde Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/hyde-street/1317/unit-1/",
+  "unit": "1",
+  "apn": "0217038",
+  "block": "0217",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 775,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 517200,
+    "assessed_improvement_value": 344800,
+    "last_sale_date": "2022-03-07"
+  },
+  "permits": [
+    {
+      "number": "200904106005",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-04-10",
+      "status_date": "2009-04-10",
+      "estimated_cost": 8839,
+      "revised_cost": 12000,
+      "description": "renovate extg bathroom at 1st floor with replacement wndw at extg light well. in bedroom: replace 2 extg plaster and lathe walls with drywall(insulate and soundproof). in livingroom:replace 1 extg wall/built in hatch with drywall (insulate and sound proof)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2009–2012",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0217038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0217&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

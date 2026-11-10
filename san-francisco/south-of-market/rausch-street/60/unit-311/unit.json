@@ -1,0 +1,35 @@
+{
+  "address": "60 Rausch Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/rausch-street/60/unit-311/",
+  "unit": "311",
+  "apn": "3730223",
+  "block": "3730",
+  "lot": "223",
+  "parcel": {
+    "building_area_sqft": 1472,
+    "rooms": 4,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 593028,
+    "assessed_improvement_value": 395352,
+    "last_sale_date": "2022-12-21"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3730223&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3730&unit=311",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

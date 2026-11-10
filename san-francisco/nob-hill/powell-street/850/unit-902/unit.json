@@ -1,0 +1,75 @@
+{
+  "address": "850 Powell Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/powell-street/850/unit-902/",
+  "unit": "902",
+  "apn": "0243096",
+  "block": "0243",
+  "lot": "096",
+  "parcel": {
+    "building_area_sqft": 1912,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1548000,
+    "assessed_improvement_value": 1032000,
+    "last_sale_date": "2018-10-09"
+  },
+  "permits": [
+    {
+      "number": "201011165029",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-16",
+      "status_date": "2012-03-05",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "one unit - interior renovation of existing condo, including new non-load bearing partitions, remodel of kitchen & bathrooms, new power/lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011034275",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-03",
+      "status_date": "2011-04-01",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "exploratory demo only. to determine viability of proposed future remodel on a separate permit. selective removal of portions of interior,non bearing partition wall to determine its construction & to inspec for the presence of elements in the wall electr. or plumb lines. no work in these trades.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812047845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-04",
+      "status_date": "2010-03-09",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "#902 -remvoe (e) non-permitted walls, floor & ceiling which close off (e) light & vent shaft. restore shaft to its original plan dimension opening & construct new walls @ shaft. remove hard cover over shaft @ roof & install glazed canopy. install e.i.f.s. on shaft walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2008–2012",
+    "shown_on_page": 3,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0243096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0243&unit=902",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

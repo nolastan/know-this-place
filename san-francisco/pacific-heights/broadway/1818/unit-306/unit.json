@@ -1,0 +1,69 @@
+{
+  "address": "1818 Broadway, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/broadway/1818/unit-306/",
+  "unit": "306",
+  "apn": "0568042",
+  "block": "0568",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 930,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 827742,
+    "assessed_improvement_value": 551828,
+    "last_sale_date": "2021-09-15"
+  },
+  "permits": [
+    {
+      "number": "201508245108",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-24",
+      "status_date": "2015-12-15",
+      "estimated_cost": 5428,
+      "revised_cost": 5428,
+      "description": "one unit - replace 4 windows in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301288932",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-28",
+      "status_date": "2013-05-20",
+      "estimated_cost": 6000,
+      "revised_cost": 13460,
+      "description": "replace new tub new tile on the wall & floor, in bathroom, plumbing two new sinks ,new fixtures for shower & tub, install new cabinet & counter top, install new 6 led lgihts in the bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211305254",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-30",
+      "status_date": "2013-05-20",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace new cabinet, new countertop, new outlets, 2 new sinks. kitchen remodel, no structural.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0568042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0568&unit=306",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

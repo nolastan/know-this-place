@@ -1,0 +1,47 @@
+{
+  "address": "60 Rausch Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/rausch-street/60/unit-404/",
+  "unit": "404",
+  "apn": "3730228",
+  "block": "3730",
+  "lot": "228",
+  "parcel": {
+    "building_area_sqft": 755,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 364711,
+    "assessed_improvement_value": 444641,
+    "last_sale_date": "2013-05-02"
+  },
+  "permits": [
+    {
+      "number": "202601164020",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-16",
+      "status_date": "2026-02-09",
+      "estimated_cost": 20,
+      "revised_cost": 20,
+      "description": "one unit: to comply with nov 202548701: install a 24 by 32 drywall behind dishwasher.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3730228&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3730&unit=404",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

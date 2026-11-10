@@ -1,0 +1,35 @@
+{
+  "address": "5330 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5320/unit-205j/",
+  "unit": "205J",
+  "apn": "7534048",
+  "block": "7534",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 636,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 210846,
+    "assessed_improvement_value": 210846,
+    "last_sale_date": "1999-02-12"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7534048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7534&unit=205J",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -9,7 +9,7 @@
   },
   "parcel": {
     "year_built": 2001,
-    "units": 25,
+    "units": 28,
     "use": "Single Family Residential",
     "property_class": "Live/Work Condominium",
     "construction_type_code": "NA",
@@ -33,19 +33,22 @@
       "022",
       "023",
       "024",
+      "025",
       "026",
       "027",
       "028",
       "029",
+      "030",
       "031",
       "032",
+      "033",
       "034",
       "035",
       "036",
       "037",
       "038"
     ],
-    "method": "Proposed from the 2025 roll for block 3956: every condominium parcel the roll files under 370 DE HARO ST, and the unbroken run of lots beside parcel 3956011 on the same street with the same year built (2001). 25 lots, 011–038."
+    "method": "Every active parcel of sf-parcels map lot 3956011 with a row on the 2025 roll: 28 lots, 011–038."
   },
   "historic_status": {
     "ceqa_status_code": "C",
@@ -201,6 +204,17 @@
       "source": "sf-building-permits"
     },
     {
+      "number": "200111022402",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-11-02",
+      "status_date": "2001-11-08",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "the skylights are in place also the front gate those 2 items were not in original driveway",
+      "source": "sf-building-permits"
+    },
+    {
       "number": "200109188556",
       "type": "additions alterations or repairs",
       "status": "expired",
@@ -306,10 +320,10 @@
     }
   ],
   "permit_summary": {
-    "count_on_file": 24,
+    "count_on_file": 26,
     "range": "1993–2025",
-    "shown_on_page": 23,
-    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+    "shown_on_page": 24,
+    "note": "DBI holds 26 permits for this parcel, most of them tenant improvements on individual floors. The timeline shows the 24 largest by stated cost, plus the earliest on file; the DBI query in the sources below returns all 26. 1 of them are nominal $1 street-space or sidewalk permits."
   },
   "sources": [
     {
@@ -322,19 +336,40 @@
       "id": "sf-assessor-roll",
       "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 3956)",
       "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=3956&closed_roll_year=2025",
-      "retrieved": "2026-11-10"
+      "retrieved": "2026-11-09"
     },
     {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3956",
-      "retrieved": "2026-11-10"
+      "retrieved": "2026-11-09"
     },
     {
       "id": "sf-planning",
       "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
       "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3956011",
       "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-01-20",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 20 January 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n20/mode/1up",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1994-11-03",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 3 November 1994",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/40minutesofsanfran1994san/page/n201/mode/1up",
+      "retrieved": "2026-10-23"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1998-05-14",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 14 May 1998",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/45minutesofsanfran1998san/page/n223/mode/1up",
+      "retrieved": "2026-10-31"
     },
     {
       "id": "sf-board-of-permit-appeals-minutes-1995-11-29",
@@ -345,14 +380,32 @@
     }
   ],
   "unknowns": [
-    "The roll gives this building's units more than one year built: 24 of them 1999, 1 of them 2001."
+    "The roll gives this building's units more than one year built: 27 of them 1999, 1 of them 2001."
   ],
   "historical_record": [
+    {
+      "date": "1994-01-20",
+      "kind": "planning decision",
+      "description": "On discretionary review the City Planning Commission approved, 4-2, a live/work project of up to seven artists' live/work units and up to seven commercial units beside an existing nightclub (Motion 13628).",
+      "source": "sf-planning-commission-minutes-1994-01-20"
+    },
+    {
+      "date": "1994-11-03",
+      "kind": "planning decision",
+      "description": "On discretionary review the City Planning Commission approved, 4-3 and with conditions, the revised live/work project: seven artists' live/work units of about 1,000 square feet and 21 commercial units in two buildings, with 37 parking spaces (Motion 13773).",
+      "source": "sf-planning-commission-minutes-1994-11-03"
+    },
     {
       "date": "1995-11-29",
       "kind": "permit appeal",
       "description": "The Board of Permit Appeals upheld the Department of Building Inspection's issuance of a permit to erect a building with three stories and seven live/work units at 370 DeHaro Street, granting the permit with the condition that the Notice of Special Restrictions be amended to warn prospective occupants of the industrial zoning and its noise, odors, dust, glare and traffic.",
       "source": "sf-board-of-permit-appeals-minutes-1995-11-29"
+    },
+    {
+      "date": "1998-05-14",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission refused, 5-0, the conversion of a building approved as 20 commercial lofts, and one more loft then under construction, into live/work units.",
+      "source": "sf-planning-commission-minutes-1998-05-14"
     }
   ]
 }

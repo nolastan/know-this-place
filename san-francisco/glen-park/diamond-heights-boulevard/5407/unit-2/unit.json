@@ -1,0 +1,58 @@
+{
+  "address": "5407 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5407/unit-2/",
+  "unit": "2",
+  "apn": "7539023",
+  "block": "7539",
+  "lot": "023",
+  "parcel": {
+    "building_area_sqft": 840,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 481200,
+    "assessed_improvement_value": 320800,
+    "last_sale_date": "2020-06-30"
+  },
+  "permits": [
+    {
+      "number": "202502240949",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-24",
+      "status_date": "2025-05-07",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit -deck was removed by roofer,reinstall deck.no increase in deck size.frame with 2x6 redwood board decks documented per bpa#9501182. less than 250 sf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607136445",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-07-13",
+      "status_date": "2007-03-30",
+      "estimated_cost": 3830,
+      "revised_cost": 3830,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7539023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7539&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

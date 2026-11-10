@@ -1,0 +1,33 @@
+{
+  "address": "2238 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/vallejo-street/2238/unit-lot-034/",
+  "apn": "0557034",
+  "block": "0557",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 1550,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 487154,
+    "assessed_improvement_value": 520092,
+    "last_sale_date": "1993-05-12"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0557034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0557&street_number=2238",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

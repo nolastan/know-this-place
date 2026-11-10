@@ -1,0 +1,45 @@
+{
+  "address": "1520 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/taylor-street/1520/unit-404/",
+  "unit": "404",
+  "apn": "0158068",
+  "block": "0158",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1185,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 735508,
+    "assessed_improvement_value": 490332
+  },
+  "permits": [
+    {
+      "number": "201509146798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-14",
+      "status_date": "2015-12-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "kitchen remodel. new cabinets, drywall repair, new appliances. pluming/elec. no changes to floor plan",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0158068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0158&unit=404",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

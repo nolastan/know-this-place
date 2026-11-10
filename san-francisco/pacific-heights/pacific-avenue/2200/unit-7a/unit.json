@@ -1,0 +1,47 @@
+{
+  "address": "2200 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/2200/unit-7a/",
+  "unit": "7A",
+  "apn": "0580070",
+  "block": "0580",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 1545,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 910904,
+    "assessed_improvement_value": 607262,
+    "last_sale_date": "2005-10-06"
+  },
+  "permits": [
+    {
+      "number": "201307222420",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-07-22",
+      "status_date": "2013-07-22",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "update 2 bathrooms: remove damaged linolium floor, replace with tiles. replace vanity countertop, faucet. cover over extg shower and wall tiles with new tiles. shall not remove extg shower and wall tiles.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0580070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0580&unit=7A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

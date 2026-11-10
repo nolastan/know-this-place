@@ -1,0 +1,58 @@
+{
+  "address": "1340 Clay Street, San Francisco, CA 94109",
+  "path": "/san-francisco/financial-district/clay-street/1340/unit-801/",
+  "unit": "801",
+  "apn": "0215046",
+  "block": "0215",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 2000,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1724490,
+    "assessed_improvement_value": 987029,
+    "last_sale_date": "2022-06-15"
+  },
+  "permits": [
+    {
+      "number": "202305238383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-23",
+      "status_date": "2023-07-13",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "1 new low frequency horn will be added and 2 low frequency horns will be replaced. bpa ref #202212208710.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212208710",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-20",
+      "status_date": "2025-01-09",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "one unit - new countertops; 2 bathroom remodel, retrofit ceiling; can lights in kitchen; replace window seals, painting and tiling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0215046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0215&unit=801",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

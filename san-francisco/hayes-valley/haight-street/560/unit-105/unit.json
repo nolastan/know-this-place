@@ -1,0 +1,33 @@
+{
+  "address": "560 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/haight-street/560/unit-105/",
+  "unit": "105",
+  "apn": "0848028",
+  "block": "0848",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 2073,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 482687,
+    "assessed_improvement_value": 482687,
+    "last_sale_date": "2003-11-26"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0848028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0848&unit=105",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

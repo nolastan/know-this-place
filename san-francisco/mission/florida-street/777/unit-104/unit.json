@@ -1,0 +1,54 @@
+{
+  "address": "777 Florida Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/florida-street/777/unit-104/",
+  "unit": "104",
+  "apn": "4081030",
+  "block": "4081",
+  "lot": "030",
+  "parcel": {
+    "building_area_sqft": 1352
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 34390,
+    "assessed_improvement_value": 34390
+  },
+  "permits": [
+    {
+      "number": "202606012234",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-01",
+      "status_date": "2026-06-03",
+      "estimated_cost": 5000,
+      "revised_cost": 29033,
+      "description": "1/fl-one unit-removal of 7 ft walls erected w/o permit. return restroom to gender neutral accessible restroom. partial height walls and associated doors. removal of unpermitted tab. no change of use and mep deffered. to comply with complaint # 202657043",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202603258261",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-03-25",
+      "status_date": "2026-03-25",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "removal of 7 ft walls erected w/o permit described in nov#202649415. return restroom to gender neutral resroom. confirm violation is at one unit, lot#030.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4081030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4081&unit=104",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

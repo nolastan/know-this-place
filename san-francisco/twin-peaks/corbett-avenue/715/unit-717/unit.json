@@ -1,0 +1,68 @@
+{
+  "address": "717 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/715/unit-717/",
+  "apn": "2755044",
+  "block": "2755",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 2156,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1633195,
+    "assessed_improvement_value": 1088793,
+    "last_sale_date": "2022-06-09"
+  },
+  "permits": [
+    {
+      "number": "202005277896",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-05-27",
+      "status_date": "2020-06-10",
+      "estimated_cost": 10000,
+      "revised_cost": 18000,
+      "description": "replace kitchen countertop in knid",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702078791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-07",
+      "status_date": "2017-09-26",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "to remove an (e) bathroom. to remove 2 property line windows and replace woth 1 new fixed window 45 min fire rated window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502178461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-17",
+      "status_date": "2015-09-28",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "direct vent living room re-face fireplace, new fireplace unit and flue, new tile, cabinetry and lighting led, new hearth stone, no change to location.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2755044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2755&street_number=717",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

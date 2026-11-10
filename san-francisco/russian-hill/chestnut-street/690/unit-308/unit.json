@@ -1,0 +1,47 @@
+{
+  "address": "690 Chestnut Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/chestnut-street/690/unit-308/",
+  "unit": "308",
+  "apn": "0051143",
+  "block": "0051",
+  "lot": "143",
+  "parcel": {
+    "building_area_sqft": 14480,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 260576,
+    "assessed_improvement_value": 407167,
+    "last_sale_date": "1997-06-19"
+  },
+  "permits": [
+    {
+      "number": "202312202877",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-12-20",
+      "status_date": "2023-12-21",
+      "estimated_cost": 6200,
+      "revised_cost": 6200,
+      "description": "tub to shower (non structural) remove (e) tub, convert drain from 1.5\" to 2\", remove & replace valve, install new water proof acrlic shower pan & water proof solid surace walls (include dry wall)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0051143&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0051&unit=308",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}
