@@ -378,6 +378,17 @@ corbett-avenue/655/
   `status: "condo-unit"`, and `seed-list` writes the building and its units
   as `condo` would. It refuses, and seeds nothing, where the proposed lots
   include a unit another page already documents.
+- **A building divided into airspace parcels that the roll does not call
+  condominiums is paged the same way.** 1155 Market Street is four office
+  lots, 575 Sutter Street ten retail lots, all on one `mapblklot`. Where the
+  parcels at an address's point share one map lot on one block but most are
+  not condominiums, `resolve_eas.py` takes the lowest, files the fact at the
+  building's path and records every lot in `resolution.building_lots`;
+  `manifest` passes them on and `seed-list` writes the building with exactly
+  those lots. Its units are headed "Parcel", not "Condominium unit", because
+  the building's `parcel.property_class` does not say condominium. Parcels
+  on different map lots (701 Illinois Street's Port overlay) are still a
+  coin toss and stay unresolved.
 - **The building has no `apn`, `lot` or `assessment`.** Its assessed value is
   its units' sum, read off the unit pages at render time (`condo_view`), so
   no figure is stated twice. Its `parcel` keeps only what every unit shares:
