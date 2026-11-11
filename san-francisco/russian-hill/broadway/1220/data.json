@@ -1,0 +1,131 @@
+{
+  "address": "1220–1222 Broadway, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/broadway/1220/",
+  "apn": "0152009",
+  "block": "0152",
+  "lot": "009",
+  "eas_baseid": "479760",
+  "coordinates": {
+    "lat": 37.796815,
+    "lng": -122.41728
+  },
+  "address_range": "1220–1222",
+  "street_numbers_on_parcel": [
+    "1220",
+    "1222"
+  ],
+  "parcel": {
+    "year_built": 1958,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 4499,
+    "building_area_sqft": 3988,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1222 1220 BROADWAY              0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1887825,
+    "assessed_improvement_value": 809067
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1958",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911187583",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-18",
+      "status_date": "2020-01-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replacing the window facing the street with marvin aluminum clad wood windows to match existing configuration",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201907115671",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-07-11",
+      "status_date": "2026-01-09",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "1)replace exterior sliding windows at front of bldg on 2nd floor, new replacement should match the original size & style. 2) replace the extg window trims to nw redwood trim on the 2nd floor. 3)smooting out the wall behind signage & removing the signage on 1st floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507161724",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-16",
+      "status_date": "2015-07-16",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2015–2019",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROADWAY&street_type=&address_number=1220",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0152009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0152&lot=009",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0152009",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-11-19",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 19 November 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/1minutesofmeeting1980sanf/page/n34/mode/1up",
+      "retrieved": "2026-11-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-11-19",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled City Planning's conditions on a variance at 1220-1222 Broadway after a site inspection, on new conditions: the drive-through closed into a carport, the driveway made open space, no further additions, and parking in the new structure reached from Waldo Alley only.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-11-19"
+    }
+  ]
+}

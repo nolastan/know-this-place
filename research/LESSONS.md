@@ -3169,3 +3169,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   before a harvested surname). Then drop any note sentence that lost a name.
   *Run it over every field that is committed, not only the description.*
   (2026-11-10, sf-board-of-permit-appeals-minutes)
+
+- **Minutes printed in two columns lose their votes in the OCR.** From
+  October 1980 the Board of Permit Appeals typed each appeal on the left and
+  its vote in an ACTION column on the right; the hOCR search text strings the
+  appeals together and dumps the votes in a heap after them, sometimes split
+  across items, so pairing by order guesses wrong wherever an appeal has no
+  vote or two lines of one. Fetch the page image
+  (`https://archive.org/download/<item>/page/n<N>_w1100.jpg`) for every page
+  with an ACTION column and pair each vote by eye; it cost sixteen images for
+  a 60-page volume and is the only reading that holds. A permit protest that
+  the Board *upholds* leaves the permit standing; an appeal against a
+  *denial* that it upholds keeps the denial — write the description from
+  the decision appealed, not the verb. (2026-11-11,
+  sf-board-of-permit-appeals-minutes)

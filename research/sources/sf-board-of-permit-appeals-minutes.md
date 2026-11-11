@@ -4,9 +4,9 @@
 > [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `sf-board-of-permit-appeals-minutes`.
 >
-> - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** open
+> - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** all 21 volumes the Library scanned read, 1974 – 1996 (996 meetings), by Meta Muse, an external reader, and converted here: 8,815 findings, 7,413 resolved, 3,407 published on 2,513 pages, about 1,650 of them seeded. Not read: `1minutesofmeeting1980sanf` (24 September – December 1980). Missing from the scans: most of 1987, and the meetings each year's coverage block lists
+> - **Coverage:** all 22 volumes the Library scanned read, 1974 – 1996 (1,005 meetings): 21 by Meta Muse, an external reader, converted here (8,815 findings, 7,413 resolved, 3,407 published on 2,513 pages, about 1,650 seeded), and `1minutesofmeeting1980sanf` (24 September – 17 December 1980, 9 meetings) read here on 2026-11-11 (85 findings, 70 resolved, 44 published on 44 pages, 19 seeded). Missing from the scans: most of 1987, and the meetings each year's coverage block lists
 > - **Local corpus:** `research/corpora/sf-board-of-permit-appeals-minutes/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -52,8 +52,13 @@
   1995–1996 OCR double-spaces words. Some volumes print an appeal's number
   wrongly at one meeting and rightly at the next; the reader recorded what
   was printed and noted the conflict. `minutesofmeeting1980sanf` stops at
-  20 August 1980; `1minutesofmeeting1980sanf` (62 images) holds 24
-  September 1980 onward and has **not been read**. 1987's minutes are
+  20 August 1980; `1minutesofmeeting1980sanf` (62 leaves, 60 viewer pages;
+  its catalogue title wrongly says 1996) holds 24 September – 17 December
+  1980 and is batch `appeals-1980b`. **From October 1980 the minutes print
+  the vote in a right-hand ACTION column that the OCR detaches from its
+  appeal** — pair them from the page images, never by order (LESSONS.md).
+  Stipulations and findings are printed on a closing page, keyed by appeal
+  number. 1987's minutes are
   mostly missing from the combined 1987–1988 volume (11 meetings).
 - **People:** The appellant lines are full of private people — owners,
   neighbours, permit holders ("issuance … to Mr. X"), attorneys, and
@@ -73,15 +78,33 @@
 - **Coverage:** Every volume from `minutesofmeeting1974sanf` to
   `minutesofmeeting1996sanf` read whole (996 meetings), one findings file a
   year (`appeals-<year>.json`); each file's `coverage` block names the
-  meetings not in the scan. **Remaining:** `1minutesofmeeting1980sanf`
-  (62 images, 24 September 1980 onward) has not been read. The Board's
-  minutes after 1996 are not in the Library's scanned run. 4,715 findings
+  meetings not in the scan; the second 1980 volume is `appeals-1980b.json`.
+  **Remaining: nothing in the scanned run.** The Board's minutes after 1996
+  are not in the Library's scanned run; the meetings missing from the scans
+  (most of 1987, 15 and 29 October and 5 November 1980, and the rest each
+  coverage block names) would need the paper volumes. 4,715 findings
   were declined on purpose — 2,956 procedural (continuances, rehearings,
   withdrawals, dismissals), 1,031 penalty-fee disputes, 221 police
   revocations, suspensions and vice-permit decisions, 60 personal licences,
   about 150 not confirmed against the OCR (quote or street number not
   found), duplicates and facts about a predecessor building — and 1,402
   stayed unresolved, most of them an address EAS no longer holds.
+- **Verified:** 2026-11-11 (`1minutesofmeeting1980sanf`, read here whole:
+  9 meetings / 60 pages, 90 numbered-address appeal items → 85 findings,
+  70 resolved, 44 published on 44 pages, 19 seeded; 26 declined — 11
+  procedural, superseded by a later hearing, or reopened by a rehearing whose
+  outcome is not in the volume; 6 penalties and enforcement disputes; 8
+  occupancies the pages already carry from other years of these minutes, or
+  about a building since replaced; 1 seasonal sale. 15 unresolved — 10
+  addresses EAS no longer holds or splits across parcels, 2 with no street
+  number (Pier 39, Ghirardelli Square), 1 street EAS doesn't hold (Jacinto
+  Way, not taken as San Jacinto Way), and 2175 Grove twice, whose point falls
+  on a condominium map lot the roll files at 2167. Every vote on the eight ACTION-column meetings paired from the
+  page image; every quotation and street number checked against the page's
+  OCR. **What it learned:** the two-column ACTION layout (above, and
+  LESSONS.md); four raw quotations carried a permit holder's name ("permit
+  to Mr. X to alter") and were scrubbed before commit — the name filter has
+  to run over `raw.text` too.)
 - **Verified:** 2026-11-10 (first pass, the whole run — read 21 volumes /
   996 meetings, found 8,815, resolved 7,413, published 3,407 on 2,513 pages.
   Every quotation was matched against the volume's OCR: 7,893 verbatim,

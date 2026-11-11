@@ -27,6 +27,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Diamond Street](diamond-street/) — 2 buildings, built 1893–1900; 1 in the Diamond & Elizabeth Streets Historic District.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
+- [Harper Street](harper-street/) — 1 building, built 1900.
 - [Hill Street](hill-street/) — 1 building, built 1965.
 - [Hoffman Avenue](hoffman-avenue/) — 1 building.
 - [Homestead Street](homestead-street/) — 1 building, built 1909; 1 in the Diamond & Elizabeth Streets Historic District.
