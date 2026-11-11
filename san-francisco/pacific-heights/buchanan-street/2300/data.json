@@ -1,0 +1,182 @@
+{
+  "address": "2300 Buchanan Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/buchanan-street/2300/",
+  "apn": "0614012",
+  "block": "0614",
+  "lot": "012",
+  "eas_baseid": "286336",
+  "coordinates": {
+    "lat": 37.791384,
+    "lng": -122.430792
+  },
+  "parcel": {
+    "year_built": 1964,
+    "units": 7,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 9,
+    "lot_area_sqft": 3132.05,
+    "building_area_sqft": 6618,
+    "lot_depth_ft": 2.69,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2300 BUCHANAN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1421790,
+    "assessed_improvement_value": 2132687,
+    "last_sale_date": "2003-07-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1964",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201706028257",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-02",
+      "status_date": "2018-04-20",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "window replacement in kind one unit only. 12 in the front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404161474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-16",
+      "status_date": "2004-05-18",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310298855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-10-29",
+      "status_date": "2003-11-06",
+      "estimated_cost": 100,
+      "revised_cost": 100,
+      "description": "revise to appln appln #200307119323 to reflect as built upper floor plan pertaining to original",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307119323",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-11",
+      "status_date": "2003-11-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "final inspection for bpa8106131,8309174. see copied attached job card for reference.nov 200340377.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012057161",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-12-05",
+      "status_date": "2001-06-05",
+      "estimated_cost": 14600,
+      "revised_cost": 14600,
+      "description": "install 8 vinyl patio doors & 2 vinyl windows in kind into existng frames no change in size or locat",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9915160",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-07-26",
+      "status_date": "2001-12-31",
+      "estimated_cost": 1765,
+      "description": "install two vinyl windows in kind, into existing frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8313094",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-12-27",
+      "status_date": "1985-03-21",
+      "estimated_cost": 1,
+      "description": "revision to permit issued under appl. # 8106131.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309174",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-09-15",
+      "status_date": "1985-03-21",
+      "estimated_cost": 100000,
+      "description": "addition pent house # 8",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8106131",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-07-10",
+      "status_date": "1983-03-04",
+      "estimated_cost": 60000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUCHANAN&street_type=ST&address_number=2300",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0614012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0614&lot=012",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0614012",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-01-06",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 6 January 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n8/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-01-06",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 2300 Buchanan Street to stand, with a condition.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-01-06"
+    }
+  ]
+}

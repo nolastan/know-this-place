@@ -1,0 +1,151 @@
+{
+  "address": "354–356 30th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/30th-avenue/354/",
+  "apn": "1404032",
+  "block": "1404",
+  "lot": "032",
+  "eas_baseid": "302476",
+  "coordinates": {
+    "lat": 37.782617,
+    "lng": -122.489963
+  },
+  "address_range": "354–356",
+  "street_numbers_on_parcel": [
+    "354",
+    "356"
+  ],
+  "parcel": {
+    "year_built": 1984,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 6,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3108,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0356 0354 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 324952,
+    "assessed_improvement_value": 402144
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1984",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202502251080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-25",
+      "status_date": "2025-03-06",
+      "estimated_cost": 16989,
+      "revised_cost": 16989,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309230",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-03",
+      "status_date": "1993-10-03",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600045",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-01-01",
+      "status_date": "1986-03-14",
+      "estimated_cost": 4000,
+      "description": "add one play room, one storage room and one bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312998",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-12-21",
+      "status_date": "1984-04-19",
+      "estimated_cost": 10000,
+      "description": "revisions for 8309074 bay window, pitch roof etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8310156",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1983-10-12",
+      "status_date": "1984-01-03",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309074",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1983-09-15",
+      "status_date": "1984-07-17",
+      "estimated_cost": 245000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=354",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1404032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1404&lot=032",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1404032",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1983-12-14",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 14 December 1983",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1983sanf/page/n282/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1983-12-14",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to erect a structure at 354-56 30th Avenue to stand, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1983-12-14"
+    }
+  ]
+}

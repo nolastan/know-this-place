@@ -1,0 +1,118 @@
+{
+  "address": "338 3rd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/3rd-avenue/338/",
+  "apn": "1434032",
+  "block": "1434",
+  "lot": "032",
+  "eas_baseid": "303754",
+  "coordinates": {
+    "lat": 37.78235,
+    "lng": -122.460824
+  },
+  "parcel": {
+    "year_built": 1977,
+    "units": 3,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1170,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0338 03RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 853875,
+    "assessed_improvement_value": 853875,
+    "last_sale_date": "2002-05-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1977",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9927335",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-02-10",
+      "status_date": "2000-06-15",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "correct nov-new door,remove iron grille,provide wall opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411571",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1994-07-22",
+      "status_date": "1996-09-25",
+      "estimated_cost": 3000,
+      "description": "partition existing storage to provide corridor to back yard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001109",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1990-01-18",
+      "status_date": "1990-01-18",
+      "estimated_cost": 15000,
+      "description": "add 1 social room 1 library and 1/2 bath @ (e) storage area",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=AVE&address_number=338",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1434032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1434&lot=032",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1434032",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1993-02-17",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 17 February 1993",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n30/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1993-02-17",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator and denied the Off-Street Parking Variance for the property at 338 - 3rd Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1993-02-17"
+    }
+  ]
+}

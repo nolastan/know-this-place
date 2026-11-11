@@ -1,0 +1,44 @@
+{
+  "address": "2323 Noriega Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/noriega-street/2323/unit-203/",
+  "unit": "203",
+  "apn": "2067074",
+  "block": "2067",
+  "lot": "074",
+  "parcel": {
+    "building_area_sqft": 660
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 227847,
+    "assessed_improvement_value": 227847,
+    "last_sale_date": "2022-07-15"
+  },
+  "permits": [
+    {
+      "number": "202209283354",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-28",
+      "status_date": "2022-12-21",
+      "estimated_cost": 14000,
+      "revised_cost": 50000,
+      "description": "relocate (e) health service/accupuncture from 2000 noriega street to 2323 noriega street, suite 203. (e) facility has ada common area that complies, v.i.f. existing hvac system remain. no massage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2067074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2067&unit=203",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

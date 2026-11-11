@@ -1,0 +1,129 @@
+{
+  "address": "544 27th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/mission/27th-street/544/",
+  "apn": "6581054",
+  "block": "6581",
+  "lot": "054",
+  "eas_baseid": "402903",
+  "coordinates": {
+    "lat": 37.746807,
+    "lng": -122.432496
+  },
+  "parcel": {
+    "year_built": 1971,
+    "units": 8,
+    "stories": 3,
+    "rooms": 22,
+    "bathrooms": 8,
+    "lot_area_sqft": 5700,
+    "building_area_sqft": 7200,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0544 27TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47791,
+    "assessed_improvement_value": 358781
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1971",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202503252966",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-03-25",
+      "status_date": "2026-02-04",
+      "estimated_cost": 25000,
+      "revised_cost": 30000,
+      "description": "replace fire alarm system to sf/ca code interpretation 1103.6.7.1 and wire in the lf horns inside of the units & wireless monitoring",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202503172343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-17",
+      "status_date": "2025-08-19",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove cedar shingles and replace with hardie shingles facing street. dryrot repair on stucco (appx 200 sf of stucco ) and (appx 900sf of siding)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202407166572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-07-16",
+      "status_date": "2024-07-25",
+      "estimated_cost": 23300,
+      "revised_cost": 23300,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213691",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-08-14",
+      "status_date": "1993-02-26",
+      "estimated_cost": 6650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=ST&address_number=544",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6581054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6581&lot=054",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6581054",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1974-12-02",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 2 December 1974",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1974sanf/page/n248/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-12-02",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's denial of a variance on the property at 544 27th Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1974-12-02"
+    }
+  ]
+}

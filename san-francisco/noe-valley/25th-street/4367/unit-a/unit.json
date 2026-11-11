@@ -1,0 +1,130 @@
+{
+  "address": "4367 25th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/25th-street/4367/unit-a/",
+  "unit": "A",
+  "apn": "6545041",
+  "block": "6545",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 1953,
+    "rooms": 8,
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 870848,
+    "assessed_improvement_value": 870848,
+    "last_sale_date": "2007-05-24"
+  },
+  "permits": [
+    {
+      "number": "201704133924",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-13",
+      "status_date": "2017-07-17",
+      "estimated_cost": 11645,
+      "revised_cost": 11645,
+      "description": "replacing 5 old aluminum double hung windows with paintable real wood composite windows, like for like.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910028166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-02",
+      "status_date": "2010-04-20",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit only - remodel to 1st floor including: remodel bathroom, change tub to shower, alteration to mech room, alter 3 windows at east side, add sliding door to patio and a mech room door to exterior corridor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904156324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-15",
+      "status_date": "2009-05-08",
+      "estimated_cost": 8567,
+      "revised_cost": 8567,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212193857",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-12-19",
+      "status_date": "2003-04-08",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "remodel kitchen in upstairs unit.no structural work.install new roofing membrane on back deck & new",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011034872",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-03",
+      "status_date": "2001-05-03",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "remdoel existing kitchen, change cabinets counter tops & appliances one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022198",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-10-30",
+      "status_date": "1992-03-27",
+      "estimated_cost": 1,
+      "description": "bring building into code per dahi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717259",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-12-07",
+      "status_date": "1988-07-29",
+      "estimated_cost": 5000,
+      "description": "revision per approved appl #8614006. revised bay window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614007",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1986-11-10",
+      "status_date": "1987-05-27",
+      "description": "demolish residential",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614006",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1986-11-05",
+      "status_date": "1988-07-29",
+      "estimated_cost": 180000,
+      "description": "to erect 3 story residential",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6545041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6545&unit=A",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "address": "539 Ivy Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/ivy-street/539/",
+  "block": "0806",
+  "eas_baseid": "288627",
+  "coordinates": {
+    "lat": 37.776741,
+    "lng": -122.427038
+  },
+  "parcel": {
+    "year_built": 1983,
+    "units": 2,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley"
+  },
+  "condominium": {
+    "lots": [
+      "049",
+      "050"
+    ],
+    "method": "Proposed from the 2025 roll for block 0806: every condominium parcel the roll files under 539 IVY ST, and the unbroken run of lots beside parcel 0806049 on the same street with the same year built (1983) — street numbers 539, 541. 2 lots, 049–050."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1983",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "8613891",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-11-05",
+      "status_date": "1986-12-04",
+      "estimated_cost": 500,
+      "description": "repair holes in ceiling at rear of garage for fire-resistant",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203913",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1982-05-18",
+      "status_date": "1983-08-11",
+      "estimated_cost": 115000,
+      "description": "bldg use: resid",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=IVY&street_type=ST&address_number=539",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0806)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0806&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0806",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0806049",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42703768188515%2037.77674064980307)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-01-13",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 13 January 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n14/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-01-13",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator and granted the variance for lot area, rear yard and height at the rear of the building at 539 Ivy Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-01-13"
+    }
+  ]
+}

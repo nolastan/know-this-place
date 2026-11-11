@@ -1,0 +1,64 @@
+{
+  "address": "1940 Stockton Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/stockton-street/1940/unit-102/",
+  "unit": "102",
+  "apn": "0062053",
+  "block": "0062",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1347,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 183963,
+    "assessed_improvement_value": 417617,
+    "last_sale_date": "1990-06-26"
+  },
+  "permits": [
+    {
+      "number": "201908229628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-22",
+      "status_date": "2019-12-10",
+      "estimated_cost": 25000,
+      "revised_cost": 32122,
+      "description": "retile bathrooms, replace vanities, replace shower valve & faucets. 77sqft & 35sqft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809161760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-16",
+      "status_date": "2008-10-03",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008–2019",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0062053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0062&unit=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

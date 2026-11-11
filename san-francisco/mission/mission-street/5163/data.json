@@ -1,0 +1,123 @@
+{
+  "address": "5163 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/mission-street/5163/",
+  "apn": "6411021",
+  "block": "6411",
+  "lot": "021",
+  "eas_baseid": "397631",
+  "coordinates": {
+    "lat": 37.715957,
+    "lng": -122.441038
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "lot_area_sqft": 2445,
+    "building_area_sqft": 1333,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 5163 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 245906,
+    "assessed_improvement_value": 138314,
+    "last_sale_date": "2000-05-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501138176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-13",
+      "status_date": "2025-01-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing-torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202305117582",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-05-11",
+      "status_date": "2023-08-10",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "accessible business entrance progrm per ordinance 51-16, abe 201911047772, ada entrance door, push buttons and ramp, relocate door & reslope ramp 1\":12\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501778",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1985-02-21",
+      "status_date": "1985-03-07",
+      "estimated_cost": 975,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1985–2025",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=5163",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6411021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6411&lot=021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6411021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1981-01-14",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 14 January 1981",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1981sanf/page/n12/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1981-01-14",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Police Department on the place of entertainment permit at 5163 Mission Street and concurred with the department on the dance hall keeper permit, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1981-01-14"
+    }
+  ]
+}

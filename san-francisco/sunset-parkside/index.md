@@ -34,9 +34,12 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [46th Avenue](46th-avenue/) — 7 buildings, built 1908–1950.
 - [47th Avenue](47th-avenue/) — 4 buildings, built 1907–1950.
 - [48th Avenue](48th-avenue/) — 6 buildings, built 1907–1950.
+- [Berkshire Way](berkshire-way/) — 1 building, built 1952.
 - [Country Club Drive](country-club-drive/) — 1 building, built 1953.
 - [Crestlake Drive](crestlake-drive/) — 2 buildings, built 1936–1937.
 - [Cutler Avenue](cutler-avenue/) — 1 building, built 1927.
+- [Escondido Avenue](escondido-avenue/) — 1 building, built 1949.
+- [Eucalyptus Drive](eucalyptus-drive/) — 1 building, built 1953.
 - [Forest View Drive](forest-view-drive/) — 1 building, built 1940.
 - [Gellert Drive](gellert-drive/) — 1 building, built 1951.
 - [Great Highway](great-highway/) — 2 buildings, built 1908–1946.
@@ -50,6 +53,7 @@ The city's Sunset/Parkside analysis neighborhood — the avenues laid out across
 - [Lincoln Way](lincoln-way/) — 1 building, built 1951.
 - [Middlefield Drive](middlefield-drive/) — 1 building, built 1942.
 - [Moraga Street](moraga-street/) — 3 buildings, built 1940.
+- [Morningside Drive](morningside-drive/) — 1 building, built 1951.
 - [Noriega Street](noriega-street/) — 3 buildings, built 1932–1949.
 - [Ortega Street](ortega-street/) — 1 building, built 1943.
 - [Quintara Street](quintara-street/) — 1 building, built 1966.

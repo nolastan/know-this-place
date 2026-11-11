@@ -1,0 +1,91 @@
+{
+  "address": "3622 Broderick Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/broderick-street/3622/unit-1/",
+  "unit": "1",
+  "apn": "0914030",
+  "block": "0914",
+  "lot": "030",
+  "parcel": {
+    "building_area_sqft": 1703,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1483566,
+    "assessed_improvement_value": 989044,
+    "last_sale_date": "2021-07-16"
+  },
+  "permits": [
+    {
+      "number": "202603177724",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-17",
+      "status_date": "2026-04-30",
+      "estimated_cost": 30000,
+      "revised_cost": 72337,
+      "description": "all interior remodel, no structural. kitchen remodel, replace water heater, bath #1 replace in-kind;, removal of defunct garage vent/duct",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202002134397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-13",
+      "status_date": "2020-02-24",
+      "estimated_cost": 10000,
+      "revised_cost": 24000,
+      "description": "one unit: removal of non-bearing wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809079423",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-07",
+      "status_date": "2018-10-23",
+      "estimated_cost": 3250,
+      "revised_cost": 3250,
+      "description": "shhetrock and furring out of back side of bathroom wall in laudnry room. removed damaged sheetrock, replace in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101190201",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-19",
+      "status_date": "2001-05-02",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel extg kchn",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000114144",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-01-14",
+      "status_date": "2000-04-06",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "remodel 2 bathrooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0914030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0914&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

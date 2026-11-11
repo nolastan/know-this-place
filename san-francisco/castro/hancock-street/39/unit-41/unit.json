@@ -1,0 +1,57 @@
+{
+  "address": "41 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/39/unit-41/",
+  "apn": "3585127",
+  "block": "3585",
+  "lot": "127",
+  "parcel": {
+    "building_area_sqft": 1194,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 642500,
+    "assessed_improvement_value": 642500,
+    "last_sale_date": "2014-05-14"
+  },
+  "permits": [
+    {
+      "number": "201907176170",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-17",
+      "status_date": "2019-08-16",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "fix dryrot on one unit from back of house. replace vinyl siding for hardy plank siding. approx. 650 sqft not visible from street. replace back door, fire-rated 20 min.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806061175",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-06",
+      "status_date": "2018-06-27",
+      "estimated_cost": 17176,
+      "revised_cost": 17176,
+      "description": "replace two wood-clad casements with wood composite casements like-for-like. also two aluminum sliding doors with wood-clad sliding doors like-for-like.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585127&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&street_number=41",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

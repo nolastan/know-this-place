@@ -20,14 +20,17 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Arlington Street](arlington-street/) — 1 building, built 1938.
 - [Baden Street](baden-street/) — 1 building, built 1939.
 - [Beacon Street](beacon-street/) — 1 building, built 1963.
+- [Berkeley Way](berkeley-way/) — 1 building, built 1993.
 - [Bosworth Street](bosworth-street/) — 4 buildings, built 1910–1937.
 - [Brompton Avenue](brompton-avenue/) — 10 buildings, built 1908–1963.
 - [Chenery Street](chenery-street/) — 16 buildings, built 1900–1951; 5 in the Glen Park Center Historic District.
+- [Chilton Avenue](chilton-avenue/) — 1 building, built 1909.
 - [Congo Street](congo-street/) — 1 building, built 1917.
 - [Detroit Street](detroit-street/) — 1 building, built 1947.
 - [Diamond Heights Boulevard](diamond-heights-boulevard/) — 1 building, built 1964.
 - [Diamond Street](diamond-street/) — 5 buildings, built 1916–1951; 2 in the Glen Park Center Historic District.
 - [Digby Street](digby-street/) — 1 building.
+- [Edna Street](edna-street/) — 1 building, built 1925.
 - [Elk Street](elk-street/) — 1 building.
 - [Everson Street](everson-street/) — 1 building, built 1963.
 - [Fairmount Street](fairmount-street/) — 1 building, built 1907.
@@ -39,8 +42,11 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Lippard Avenue](lippard-avenue/) — 1 building.
 - [Malta Drive](malta-drive/) — 1 building, built 1974.
 - [Mangels Avenue](mangels-avenue/) — 1 building, built 1900.
+- [Martha Avenue](martha-avenue/) — 1 building, built 1968.
+- [Melrose Avenue](melrose-avenue/) — 1 building, built 1941.
 - [Miguel Street](miguel-street/) — 1 building, built 1978.
 - [Milton Street](milton-street/) — 2 buildings, built 1908–1925.
+- [Moffitt Street](moffitt-street/) — 1 building, built 1951.
 - [Monterey Boulevard](monterey-boulevard/) — 1 building, built 1900.
 - [Poppy Lane](poppy-lane/) — 1 building, built 2008.
 - [Portola Drive](portola-drive/) — 1 building.
@@ -50,7 +56,9 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Surrey Street](surrey-street/) — 1 building, built 2007.
 - [Sussex Street](sussex-street/) — 4 buildings, built 1977.
 - [Theresa Street](theresa-street/) — 1 building, built 1924.
+- [Topaz Way](topaz-way/) — 2 buildings, built 1976.
 - [Turquoise Way](turquoise-way/) — 3 buildings, built 1962–1964; 3 in the Diamond Heights Historic District.
+- [Van Buren Street](van-buren-street/) — 1 building, built 1979.
 - [Whitney Street](whitney-street/) — 1 building, built 1908.
 - [Wilder Street](wilder-street/) — 3 buildings, built 1938–1954.
 

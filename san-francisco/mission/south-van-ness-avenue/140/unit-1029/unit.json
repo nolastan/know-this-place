@@ -1,0 +1,47 @@
+{
+  "address": "140 South Van Ness Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/south-van-ness-avenue/140/unit-1029/",
+  "unit": "1029",
+  "apn": "3514234",
+  "block": "3514",
+  "lot": "234",
+  "parcel": {
+    "building_area_sqft": 1153,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 364800,
+    "assessed_improvement_value": 547200,
+    "last_sale_date": "2021-07-16"
+  },
+  "permits": [
+    {
+      "number": "202610099303",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-10-09",
+      "status_date": "2026-10-21",
+      "estimated_cost": 17000,
+      "revised_cost": 28192,
+      "description": "one unit: tub to shower conversion.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3514234&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3514&unit=1029",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

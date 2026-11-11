@@ -1,0 +1,47 @@
+{
+  "address": "1700 Gough Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/gough-street/1700/unit-41/",
+  "unit": "41",
+  "apn": "0648130",
+  "block": "0648",
+  "lot": "130",
+  "parcel": {
+    "building_area_sqft": 960,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 382334,
+    "assessed_improvement_value": 382334,
+    "last_sale_date": "2003-03-07"
+  },
+  "permits": [
+    {
+      "number": "202307212710",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-07-21",
+      "status_date": "2023-10-16",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replacement of drywall about 30 sq ft in bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0648130&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0648&unit=41",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

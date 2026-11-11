@@ -1,0 +1,107 @@
+{
+  "address": "345 Bosworth Street, San Francisco, CA 94112",
+  "path": "/san-francisco/glen-park/bosworth-street/345/",
+  "apn": "6751042A",
+  "block": "6751",
+  "lot": "042A",
+  "eas_baseid": "275251",
+  "coordinates": {
+    "lat": 37.73323,
+    "lng": -122.430132
+  },
+  "parcel": {
+    "year_built": 1919,
+    "units": 3,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 2200,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0107 0105 ROUSSEAU            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 36912,
+    "assessed_improvement_value": 60934
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1919",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9821658",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-22",
+      "status_date": "1999-02-22",
+      "estimated_cost": 2100,
+      "description": "install 5 replacement windows 1-bedrm & 4 other",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713963",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-29",
+      "status_date": "1988-07-11",
+      "estimated_cost": 4000,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BOSWORTH&street_type=ST&address_number=345",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6751042A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6751&lot=042A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6751042A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-05-22",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 22 May 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n146/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-05-22",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and granted the permit to remove two trees at 345 Bosworth Street, on the condition that over-the-counter replacement trees approved by Urban Forestry be simultaneously planted upon removal of the older trees.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-05-22"
+    }
+  ]
+}

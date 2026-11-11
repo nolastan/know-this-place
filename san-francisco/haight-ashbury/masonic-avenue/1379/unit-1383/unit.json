@@ -1,0 +1,56 @@
+{
+  "address": "1383 Masonic Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/masonic-avenue/1379/unit-1383/",
+  "apn": "1255093",
+  "block": "1255",
+  "lot": "093",
+  "parcel": {
+    "building_area_sqft": 750,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 378658,
+    "assessed_improvement_value": 378658,
+    "last_sale_date": "2012-07-10"
+  },
+  "permits": [
+    {
+      "number": "200007195522",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-19",
+      "status_date": "2000-08-01",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair rear stairs,remove dryrot& replace w/pt lumber stringer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9109055",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-05-24",
+      "status_date": "1991-09-05",
+      "estimated_cost": 28500,
+      "description": "install new kitchen cabinets, counter, & book case.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1255093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1255&street_number=1383",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "address": "3053 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/3051/unit-3053/",
+  "apn": "4271067",
+  "block": "4271",
+  "lot": "067",
+  "parcel": {
+    "building_area_sqft": 993,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 631870,
+    "assessed_improvement_value": 307929
+  },
+  "permits": [
+    {
+      "number": "202409201303",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-20",
+      "status_date": "2025-05-13",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace and repair sheetrock. add insulation per code. (interior). no wall removal.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408229305",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-08-22",
+      "status_date": "2024-08-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remove existing stucco and replace in kind at the front of the building. approximately 1200 sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202406255188",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2024-06-25",
+      "status_date": "2025-02-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative revision to 202405091817 and 202406144490. remove from scope of work all exterior stucco, painting and interior sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202406144490",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-14",
+      "status_date": "2025-05-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to pa# 2024-0509-1817; remove and replace 13 street facing windows, some sheet rock and some exterior stucco, patch interior sheet rock and exterior stuco, retrofit windows will be replaced with in kind aluminum clad wood new construction windows (new and onld windows do not have ogee lugs)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405091817",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-05-09",
+      "status_date": "2024-05-09",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "remove and replace 13 windows (in kind) front facing. remove some interior sheetrock. patch and repair interior surrounding areas around window",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4271067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4271&street_number=3053",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

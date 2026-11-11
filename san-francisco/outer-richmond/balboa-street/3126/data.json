@@ -1,0 +1,141 @@
+{
+  "address": "3126 Balboa Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/balboa-street/3126/",
+  "apn": "1575038",
+  "block": "1575",
+  "lot": "038",
+  "eas_baseid": "308972",
+  "coordinates": {
+    "lat": 37.776181,
+    "lng": -122.492513
+  },
+  "parcel": {
+    "year_built": 1959,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3130,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 3126 BALBOA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1107190,
+    "assessed_improvement_value": 738127
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1959",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202312202833",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-12-20",
+      "status_date": "2024-05-02",
+      "estimated_cost": 15000,
+      "revised_cost": 28000,
+      "description": "one unit: remodel of one kitchen, bring electrical and plumbing up to code. replace everything in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307242822",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-24",
+      "status_date": "2024-05-03",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "dryrot repair, replace rotten plywood in-kind, ply replace w 1/2\" str i w/ 3\"/12\" 10d nail, 3x edge. front of bldg only, approx 700 s.f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201603303425",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-30",
+      "status_date": "2016-04-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006122408",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-12",
+      "status_date": "2000-10-12",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-18",
+      "status_date": "1993-03-19",
+      "estimated_cost": 3000,
+      "description": "replace dry-rotted studs next to garage-restucco front bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BALBOA&street_type=ST&address_number=3126",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1575038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1575&lot=038",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1575038",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-02-24",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 24 February 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n40/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-02-24",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 3126 Balboa Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-02-24"
+    }
+  ]
+}

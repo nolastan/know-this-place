@@ -1,0 +1,55 @@
+{
+  "address": "219 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-219/",
+  "apn": "7381070",
+  "block": "7381",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 2062,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81756,
+    "assessed_improvement_value": 120109
+  },
+  "permits": [
+    {
+      "number": "202507312034",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-31",
+      "status_date": "2025-08-01",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "partial bathroom remodeling. replace shower pan, wet walls, shower head, and valve.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202308255232",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-25",
+      "status_date": "2023-12-28",
+      "estimated_cost": 27425,
+      "revised_cost": 27425,
+      "description": "replace 12) windows (8) arestreet facing and (1) patio doors. materials is vinyl. no size changes. u.factor ,.30",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=219",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

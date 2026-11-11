@@ -1,0 +1,91 @@
+{
+  "address": "990 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/990/unit-6/",
+  "unit": "6",
+  "apn": "0120050",
+  "block": "0120",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 4700,
+    "rooms": 7,
+    "bedrooms": 4,
+    "bathrooms": 6
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4002138,
+    "assessed_improvement_value": 4038830,
+    "last_sale_date": "2013-04-18"
+  },
+  "permits": [
+    {
+      "number": "201509177293",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-09-17",
+      "status_date": "2015-09-17",
+      "estimated_cost": 9167,
+      "revised_cost": 10001,
+      "description": "ground fl, one unit: replace or add fire sprinklers to accommodate new buildout ti 2015-0625-9962. 4 adds, 12 re-lo, 18 change-out",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506259962",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-25",
+      "status_date": "2016-01-14",
+      "estimated_cost": 26000,
+      "revised_cost": 26000,
+      "description": "one unit lower level - relocating bathroom, adding sauna, removing partition wall in lieu of folding door, instsalling hvac @ basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505146398",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-05-14",
+      "status_date": "2015-05-14",
+      "estimated_cost": 3000,
+      "revised_cost": 3500,
+      "description": "removal of wall surfaces at 1st flr family room for electrical wiring etc. including non bearing partitions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309035793",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-03",
+      "status_date": "2014-01-14",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "remodel 4 bathrooms and 1 powder room. add new down lighting, reused cans, refinish extg floors, paint. no structural work to be performed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707166830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-16",
+      "status_date": "2007-07-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "correct documentation for application 200505273670 treflect that work was performed in one unit rather than one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0120050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0120&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

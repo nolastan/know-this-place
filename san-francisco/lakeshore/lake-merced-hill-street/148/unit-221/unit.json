@@ -1,0 +1,45 @@
+{
+  "address": "221 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-221/",
+  "apn": "7381071",
+  "block": "7381",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 384235,
+    "assessed_improvement_value": 384235,
+    "last_sale_date": "2000-03-02"
+  },
+  "permits": [
+    {
+      "number": "202109279213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-27",
+      "status_date": "2022-01-18",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "front deck repair- remove existing coating, demo approx 40 sq. ft. stucco around wall to install new deck-to-wall flashing, remove and reset sliding door, new door pan, replace substrate, add new deck coating and replace new stucco approx 40 sq. ft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=221",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

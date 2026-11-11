@@ -1,0 +1,55 @@
+{
+  "address": "305 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/castro-street/305/unit-300/",
+  "unit": "300",
+  "apn": "3562044",
+  "block": "3562",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 992
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 942602,
+    "assessed_improvement_value": 628401,
+    "last_sale_date": "2023-05-04"
+  },
+  "permits": [
+    {
+      "number": "202301270888",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-27",
+      "status_date": "2023-04-11",
+      "estimated_cost": 14500,
+      "revised_cost": 56000,
+      "description": "one unit: remodel (2) (e) bathrooms. replace lights and plumbing fixtures with no chagne to (e) layout.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210017928",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-10-01",
+      "status_date": "2002-10-01",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "repair/replace as neessary tread, on stairway, repair/replace as needed stiringers on stairwyas",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3562044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3562&unit=300",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "address": "949 Brussels Street, San Francisco, CA 94134",
+  "path": "/san-francisco/bayview-hunters-point/brussels-street/949/",
+  "apn": "6158034",
+  "block": "6158",
+  "lot": "034",
+  "eas_baseid": "392518",
+  "coordinates": {
+    "lat": 37.720636,
+    "lng": -122.402572
+  },
+  "parcel": {
+    "year_built": 1960,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "lot_area_sqft": 4080,
+    "building_area_sqft": 1632,
+    "basement_area_sqft": 420,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "0000 0949 BRUSSELS            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 22279,
+    "assessed_improvement_value": 44554
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1960",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8908909",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1989-06-02",
+      "status_date": "1989-06-02",
+      "estimated_cost": 600,
+      "description": "curb cut w/violation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604007",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-04-09",
+      "status_date": "1989-01-09",
+      "estimated_cost": 300,
+      "description": "cut out 12' of curb and old side walk for off street parking",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRUSSELS&street_type=ST&address_number=949",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6158034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6158&lot=034",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6158034",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1994-11-30",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 30 November 1994",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n334/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-11-30",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and denied the permit to alter the building at 949 Brussels Street to legalize a second curb cut, with enforcement stayed until title passes to someone outside the family.",
+      "source": "sf-board-of-permit-appeals-minutes-1994-11-30"
+    }
+  ]
+}

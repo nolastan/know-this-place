@@ -1,0 +1,45 @@
+{
+  "address": "3177 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/california-street/3171/unit-3177/",
+  "apn": "1031058",
+  "block": "1031",
+  "lot": "058",
+  "parcel": {
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 473000,
+    "assessed_improvement_value": 473000,
+    "last_sale_date": "2015-11-04"
+  },
+  "permits": [
+    {
+      "number": "202510107245",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-10",
+      "status_date": "2025-12-03",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "bathroom remodeling install new bath tub, install shower valve and add one new light in the ceiling, we are not going to demolish the entire bathroom, we only demolishing around the bath tub for installing the new bath tub, same size, same location, same material",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1031058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1031&street_number=3177",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

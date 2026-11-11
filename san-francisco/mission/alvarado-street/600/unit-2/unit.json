@@ -1,0 +1,47 @@
+{
+  "address": "600 Alvarado Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/alvarado-street/600/unit-2/",
+  "unit": "2",
+  "apn": "2771070",
+  "block": "2771",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 694,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 603296,
+    "assessed_improvement_value": 603296,
+    "last_sale_date": "2022-03-04"
+  },
+  "permits": [
+    {
+      "number": "202002053659",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-05",
+      "status_date": "2022-01-07",
+      "estimated_cost": 35000,
+      "revised_cost": 40000,
+      "description": "one unit - relocate entry door, remove (e) pantry & closet, bathroom & kitchen interior remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2771070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2771&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

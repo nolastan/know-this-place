@@ -1,0 +1,112 @@
+{
+  "address": "496–498 19th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/19th-avenue/496/",
+  "apn": "1526018",
+  "block": "1526",
+  "lot": "018",
+  "eas_baseid": "306851",
+  "coordinates": {
+    "lat": 37.778614,
+    "lng": -122.477912
+  },
+  "address_range": "496–498",
+  "street_numbers_on_parcel": [
+    "496",
+    "498"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 3,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 3440,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0498 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58884,
+    "assessed_improvement_value": 83371
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009093753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-09",
+      "status_date": "2021-04-07",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "remove and replace stucco front and side of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307949",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-08-15",
+      "status_date": "1983-10-19",
+      "estimated_cost": 1260,
+      "description": "removed loose stucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=496",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1526018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1526&lot=018",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1526018",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-12-22",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 22 December 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n250/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-12-22",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's denial of a rear yard variance for the property at 496-98 Nineteenth Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-12-22"
+    }
+  ]
+}

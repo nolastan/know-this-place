@@ -1,0 +1,47 @@
+{
+  "address": "1909 Eddy Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/eddy-street/1901/unit-512/",
+  "unit": "512",
+  "apn": "1129062",
+  "block": "1129",
+  "lot": "062",
+  "parcel": {
+    "building_area_sqft": 1243,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 438773,
+    "assessed_improvement_value": 438773,
+    "last_sale_date": "2006-09-12"
+  },
+  "permits": [
+    {
+      "number": "200505233110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-05-23",
+      "status_date": "2005-09-09",
+      "estimated_cost": 9330,
+      "revised_cost": 9330,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1129062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1129&unit=512",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

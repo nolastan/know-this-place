@@ -1,0 +1,130 @@
+{
+  "address": "632 Persia Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/persia-avenue/632/",
+  "apn": "6090033",
+  "block": "6090",
+  "lot": "033",
+  "eas_baseid": "391380",
+  "coordinates": {
+    "lat": 37.720423,
+    "lng": -122.430837
+  },
+  "parcel": {
+    "year_built": 1991,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1980,
+    "basement_area_sqft": 588,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0632 PERSIA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 247557,
+    "assessed_improvement_value": 335973,
+    "last_sale_date": "1991-07-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1991",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8924601",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1989-12-14",
+      "status_date": "1990-02-13",
+      "description": "demolish retail sales",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810927",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1988-08-05",
+      "status_date": "1991-07-03",
+      "estimated_cost": 134000,
+      "description": "two stories single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810933",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1988-08-04",
+      "status_date": "1996-08-06",
+      "description": "demolish commercial (vacant)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PERSIA&street_type=AVE&address_number=632",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6090033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6090&lot=033",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6090033",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1989-12-13",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 13 December 1989",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1989sanf/page/n230/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1990-01-24",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 24 January 1990",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1990sanf/page/n32/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1989-12-13",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and granted the permit to erect a structure at 632 Persia Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1989-12-13"
+    },
+    {
+      "date": "1990-01-24",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals reheard the appeal concerning the permit to erect a structure at 632 Persia Street and upheld the departments and the permit, on condition the parapet be eliminated at the rear and sides and the front facade be lowered in height 2 feet while keeping the proposed facade design.",
+      "source": "sf-board-of-permit-appeals-minutes-1990-01-24"
+    }
+  ]
+}

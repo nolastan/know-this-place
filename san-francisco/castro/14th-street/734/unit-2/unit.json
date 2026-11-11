@@ -1,0 +1,58 @@
+{
+  "address": "734 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/734/unit-2/",
+  "unit": "2",
+  "apn": "3537103",
+  "block": "3537",
+  "lot": "103",
+  "parcel": {
+    "building_area_sqft": 707,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 286036,
+    "assessed_improvement_value": 286036,
+    "last_sale_date": "2003-06-13"
+  },
+  "permits": [
+    {
+      "number": "201601197334",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-01-19",
+      "status_date": "2016-01-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to permit #201501236489. replacement windows on front elevation of building to be fiberglass double-hung windows. building was constructed in 1990. not wood clad as erroneously stated on original permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501236489",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-23",
+      "status_date": "2015-01-23",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace windows size for size max factor .32 visable from the street. no structural changes - wood clad.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3537103&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3537&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

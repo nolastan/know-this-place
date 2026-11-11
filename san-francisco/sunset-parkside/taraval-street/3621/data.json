@@ -1,0 +1,97 @@
+{
+  "address": "3621 Taraval Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/taraval-street/3621/",
+  "apn": "2379042",
+  "block": "2379",
+  "lot": "042",
+  "eas_baseid": "336507",
+  "coordinates": {
+    "lat": 37.74151,
+    "lng": -122.505053
+  },
+  "parcel": {
+    "year_built": 1956,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1887,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 3621 TARAVAL             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 746422,
+    "assessed_improvement_value": 213246,
+    "last_sale_date": "2004-06-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1956",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9021076",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-12",
+      "status_date": "1991-01-25",
+      "estimated_cost": 2680,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TARAVAL&street_type=ST&address_number=3621",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2379042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2379&lot=042",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2379042",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1978-08-30",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 30 August 1978",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1978sanf/page/n214/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-08-30",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the denial of a permit for a food product and marketing establishment at 3621 Taraval Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1978-08-30"
+    }
+  ]
+}

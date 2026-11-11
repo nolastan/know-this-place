@@ -1,0 +1,107 @@
+{
+  "address": "4032 Ulloa Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/ulloa-street/4032/",
+  "apn": "2384016",
+  "block": "2384",
+  "lot": "016",
+  "eas_baseid": "336743",
+  "coordinates": {
+    "lat": 37.740363,
+    "lng": -122.49977
+  },
+  "parcel": {
+    "year_built": 1944,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 995,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 4032 ULLOA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 639380,
+    "assessed_improvement_value": 274017
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1944",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200807257659",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-25",
+      "status_date": "2008-09-29",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "remove/rebuild existing rear deck in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601224",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-02-03",
+      "status_date": "1987-01-12",
+      "estimated_cost": 4700,
+      "description": "build deck & ramps to accomodate for handicapped owner",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ULLOA&street_type=ST&address_number=4032",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2384016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2384&lot=016",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2384016",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-12-03",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 3 December 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n172/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1986-12-03",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 4032 Ulloa Street to stand, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-12-03"
+    }
+  ]
+}

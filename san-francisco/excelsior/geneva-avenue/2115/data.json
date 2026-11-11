@@ -1,0 +1,185 @@
+{
+  "address": "2115 Geneva Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/excelsior/geneva-avenue/2115/",
+  "apn": "6323008M",
+  "block": "6323",
+  "lot": "008M",
+  "eas_baseid": "396131",
+  "coordinates": {
+    "lat": 37.708739,
+    "lng": -122.420499
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 2,
+    "rooms": 8,
+    "bedrooms": 2,
+    "lot_area_sqft": 2345.75,
+    "building_area_sqft": 3988,
+    "lot_depth_ft": 93.83,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Visitacion Valley",
+    "property_location_raw": "0000 2115 GENEVA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 97941,
+    "assessed_improvement_value": 198224
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202608146608",
+      "type": "additions alterations or repairs",
+      "status": "triage",
+      "filed": "2026-08-14",
+      "status_date": "2026-08-14",
+      "estimated_cost": 300000,
+      "description": "convert commercial to residential 2 units. convert part of the lower level of (e) building into living space. convert upper lvl to living space, convert part of the roof to outdoor living space for 2nd lvl residence.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803204165",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2018-03-20",
+      "status_date": "2024-12-09",
+      "estimated_cost": 10000,
+      "description": "comply with complaint# 201833281, # 200669592 enf. legalize gr fl unit. to convert to 3 residential units, no commercial.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815636",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-11",
+      "status_date": "1999-03-08",
+      "estimated_cost": 800,
+      "description": "remove window & install new glass door unit i in front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623781",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-12-11",
+      "status_date": "1996-12-16",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9416219",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-05",
+      "status_date": "1995-03-31",
+      "estimated_cost": 1000,
+      "description": "install new door at front of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321521",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1993-12-09",
+      "status_date": "1995-01-11",
+      "estimated_cost": 1000,
+      "revised_cost": 8000,
+      "description": "install 2 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208032",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-09-30",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2850,
+      "description": "bldg use: coml",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8204626",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-06-08",
+      "status_date": "1986-05-19",
+      "estimated_cost": 30000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201964",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-03-15",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200894",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-02-05",
+      "status_date": "1983-03-04",
+      "estimated_cost": 4500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GENEVA&street_type=AVE&address_number=2115",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6323008M&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6323&lot=008M",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6323008M",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1983-10-26",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 26 October 1983",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1983sanf/page/n244/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1983-10-26",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Police Department's denial of a permit for mechanical amusement devices at 2115 Geneva Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1983-10-26"
+    }
+  ]
+}

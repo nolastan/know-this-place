@@ -17,6 +17,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Central Avenue](central-avenue/) — 1 building, built 1905.
 - [Clayton Street](clayton-street/) — 1 building, built 1900; 1 in the Panhandle Historic District.
 - [Cole Street](cole-street/) — A two-flat 1903 building linked to Charles Manson in 1967.
+- [Delmar Street](delmar-street/) — 3 buildings, built 1900–1904; 1 in the Ashbury Heights Historic District.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1885.
 - [Downey Street](downey-street/) — 1 building, built 1914.
 - [Fell Street](fell-street/) — 1 building, built 1987.
@@ -29,6 +30,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Potomac Street](potomac-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
 - [Rivoli Street](rivoli-street/) — 1 building, built 1911; 1 in the Cole Valley Historic District.
 - [Scott Street](scott-street/) — 1 building, built 1900.
+- [Seymour Street](seymour-street/) — 1 building, built 1999.
 - [Stanyan Street](stanyan-street/) — 1 building, built 1911; 1 in the Panhandle Historic District.
 - [Steiner Street](steiner-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
 - [Waller Street](waller-street/) — 1 building, built 1904.

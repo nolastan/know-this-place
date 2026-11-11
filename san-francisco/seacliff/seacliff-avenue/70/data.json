@@ -1,0 +1,132 @@
+{
+  "address": "70 Seacliff Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/seacliff-avenue/70/",
+  "apn": "1306005",
+  "block": "1306",
+  "lot": "005",
+  "eas_baseid": "300232",
+  "coordinates": {
+    "lat": 37.78912,
+    "lng": -122.48614
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 3600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0070 SEACLIFF            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 422649,
+    "assessed_improvement_value": 581154
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sea Cliff Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202208110358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-11",
+      "status_date": "2022-09-02",
+      "estimated_cost": 52000,
+      "revised_cost": 52000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8501519",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-02-13",
+      "status_date": "1985-08-01",
+      "estimated_cost": 2500,
+      "description": "construct open balcony",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207656",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-09-17",
+      "status_date": "1983-04-08",
+      "estimated_cost": 12000,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SEACLIFF&street_type=AVE&address_number=70",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1306005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1306&lot=005",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1306005",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48614031054016%2037.78911995668039)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1985-04-10",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 10 April 1985",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1985sanf/page/n78/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1985-04-10",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 70 Sea Cliff Avenue to stand, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1985-04-10"
+    }
+  ]
+}

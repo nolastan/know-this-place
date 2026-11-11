@@ -1,0 +1,66 @@
+{
+  "address": "141 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-141/",
+  "apn": "7381042",
+  "block": "7381",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 901448,
+    "assessed_improvement_value": 600965,
+    "last_sale_date": "2021-06-22"
+  },
+  "permits": [
+    {
+      "number": "202109037800",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-03",
+      "status_date": "2022-05-13",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "reduce (16) windows and (2) doors- retrofit- ufactor .30 non-street visible- same size as existing (e) aluminum (n) vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807114224",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-11",
+      "status_date": "2019-02-25",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "repair of 2nd floor rear deck (less than 50% to be replaced)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303287",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-03-02",
+      "status_date": "1993-09-30",
+      "estimated_cost": 20000,
+      "description": "repair walls wood decay/9300019/9300581-9300585",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=141",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

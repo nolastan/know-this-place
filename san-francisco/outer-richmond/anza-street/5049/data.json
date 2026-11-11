@@ -1,0 +1,127 @@
+{
+  "address": "5049 Anza Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/anza-street/5049/",
+  "apn": "1584001B",
+  "block": "1584",
+  "lot": "001B",
+  "eas_baseid": "309348",
+  "coordinates": {
+    "lat": 37.777168,
+    "lng": -122.502528
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 4125,
+    "building_area_sqft": 2838,
+    "basement_area_sqft": 400,
+    "lot_depth_ft": 82.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 5049 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 49823,
+    "assessed_improvement_value": 122472
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507080356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-08",
+      "status_date": "2025-12-02",
+      "estimated_cost": 18149,
+      "revised_cost": 18149,
+      "description": "replace (9) windows like for like the same size as existing openings and location. all visible from street. new windows will be fiberglass pocket fit installation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004230919",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-23",
+      "status_date": "2010-07-07",
+      "estimated_cost": 2750,
+      "revised_cost": 2750,
+      "description": "dry-rot repair, repair sidewalk @ side of property & corner area. replace stucco/siding in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503428",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-04-04",
+      "status_date": "1987-03-16",
+      "estimated_cost": 34000,
+      "description": "vertical ext., bedroom addition with toilet & bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1985–2025",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=5049",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1584001B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1584&lot=001B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1584001B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-04-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 April 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n74/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1986-04-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator and granted the rear yard variance for property at 5049 Anza Street, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-04-16"
+    }
+  ]
+}

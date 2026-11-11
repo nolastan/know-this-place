@@ -1,0 +1,47 @@
+{
+  "address": "855 La Playa, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/la-playa/855/unit-261/",
+  "unit": "261",
+  "apn": "1692073",
+  "block": "1692",
+  "lot": "073",
+  "parcel": {
+    "building_area_sqft": 1028,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 173353,
+    "assessed_improvement_value": 204561,
+    "last_sale_date": "1992-07-16"
+  },
+  "permits": [
+    {
+      "number": "201505206761",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-20",
+      "status_date": "2015-06-16",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "one unit: repair rear balcony ; like for like; less than 50%",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1692073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1692&unit=261",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

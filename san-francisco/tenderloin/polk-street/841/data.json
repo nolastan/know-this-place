@@ -1,0 +1,93 @@
+{
+  "address": "841 Polk Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/polk-street/841/",
+  "apn": "0718004",
+  "block": "0718",
+  "lot": "004",
+  "eas_baseid": "287901",
+  "coordinates": {
+    "lat": 37.784554,
+    "lng": -122.41976
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 2922,
+    "use": "Commercial Misc",
+    "property_class": "Parking Lot",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Van Ness/ Civic Center",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0841 POLK                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1190674,
+    "last_sale_date": "2021-06-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POLK&street_type=ST&address_number=841",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0718004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0718&lot=004",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0718004",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1974-03-25",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 25 March 1974",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1974sanf/page/n50/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1974-04-08",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 8 April 1974",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1974sanf/page/n58/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-03-25",
+      "kind": "occupancy",
+      "description": "Parking Company of America was at 841 Polk Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1974-03-25"
+    },
+    {
+      "date": "1974-04-08",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the denial of a permit for a Public Parking Station at 841 Polk Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1974-04-08"
+    }
+  ]
+}

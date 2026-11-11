@@ -1,0 +1,169 @@
+{
+  "address": "2014 19th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission/19th-street/2014/",
+  "apn": "4030013",
+  "block": "4030",
+  "lot": "013",
+  "eas_baseid": "367494",
+  "coordinates": {
+    "lat": 37.761156,
+    "lng": -122.402579
+  },
+  "parcel": {
+    "year_built": 1904,
+    "units": 3,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2151,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 2014 19TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1468602,
+    "assessed_improvement_value": 629396,
+    "last_sale_date": "2018-04-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911228043",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-22",
+      "status_date": "2019-11-22",
+      "estimated_cost": 350,
+      "revised_cost": 350,
+      "description": "repair hand rail at front stairwell per the inspector",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911157406",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-11-15",
+      "status_date": "2019-11-15",
+      "estimated_cost": 14150,
+      "revised_cost": 14150,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905213",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-03",
+      "status_date": "1989-07-11",
+      "estimated_cost": 500,
+      "description": "correct violation remove approx 5' x 10' wood deck at front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813857",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-09-16",
+      "status_date": "1989-02-21",
+      "estimated_cost": 500,
+      "description": "correct violation, remove wood deck at front entry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808456",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-06-28",
+      "status_date": "1988-09-14",
+      "estimated_cost": 90,
+      "description": "remove hall window frame, replace wall paneling, floor tile",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805081",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-04-21",
+      "status_date": "1989-01-05",
+      "estimated_cost": 600,
+      "description": "remove exist wood deck to a point to form a landing per dcp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8703108",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-03-10",
+      "status_date": "1988-02-08",
+      "estimated_cost": 600,
+      "description": "remove existing wood deck to a point to form a landing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407868",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-07-20",
+      "status_date": "1985-07-01",
+      "estimated_cost": 3000,
+      "description": "extend existing garage under exist. deck. add concrete wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=2014",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4030013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4030&lot=013",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4030013",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1985-05-22",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 22 May 1985",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1985sanf/page/n120/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1985-05-22",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and denied the permit to alter the building at 2014 19th Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1985-05-22"
+    }
+  ]
+}

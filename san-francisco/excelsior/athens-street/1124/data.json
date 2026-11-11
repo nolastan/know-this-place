@@ -1,0 +1,161 @@
+{
+  "address": "1124 Athens Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/athens-street/1124/",
+  "apn": "6445002",
+  "block": "6445",
+  "lot": "002",
+  "eas_baseid": "398391",
+  "coordinates": {
+    "lat": 37.712635,
+    "lng": -122.435502
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2278,
+    "building_area_sqft": 2340,
+    "basement_area_sqft": 640,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 1124 ATHENS              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 22843,
+    "assessed_improvement_value": 90458
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408078123",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-07",
+      "status_date": "2024-09-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 2024-0621-5031 deck repairs exceeding more than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202406215031",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-21",
+      "status_date": "2024-09-06",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "repair rear deck; 50% or less.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901130072",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-01-13",
+      "status_date": "2012-11-08",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair fire damage in kind. fire place to be removed and not replaced. no plans required per field inspector. around fire place roughly 500 sqft repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310026426",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-10-02",
+      "status_date": "2004-12-02",
+      "estimated_cost": 4900,
+      "revised_cost": 4900,
+      "description": "replace 4 windows, size for size,alum to vinyl, visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9519015",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-09",
+      "status_date": "1996-07-19",
+      "estimated_cost": 7500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9100449",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-01-14",
+      "status_date": "1991-04-24",
+      "estimated_cost": 4405,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009174",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-05-11",
+      "status_date": "1991-03-18",
+      "estimated_cost": 17000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ATHENS&street_type=ST&address_number=1124",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6445002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6445&lot=002",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6445002",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-04-03",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 3 April 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n94/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-04-03",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and granted the permit to alter the building at 1124 Athens Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-04-03"
+    }
+  ]
+}

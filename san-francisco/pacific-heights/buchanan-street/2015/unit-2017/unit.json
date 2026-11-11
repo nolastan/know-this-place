@@ -1,0 +1,34 @@
+{
+  "address": "2017 Buchanan Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/buchanan-street/2015/unit-2017/",
+  "apn": "0652074",
+  "block": "0652",
+  "lot": "074",
+  "parcel": {
+    "building_area_sqft": 2850,
+    "rooms": 7,
+    "bedrooms": 4,
+    "bathrooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1657310,
+    "assessed_improvement_value": 1657310,
+    "last_sale_date": "2016-02-05"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0652074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0652&street_number=2017",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

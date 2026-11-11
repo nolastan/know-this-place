@@ -1,0 +1,73 @@
+{
+  "address": "1406 Golden Gate Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/golden-gate-avenue/1404/unit-1406/",
+  "apn": "0754032",
+  "block": "0754",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 1628,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1015378,
+    "assessed_improvement_value": 818412,
+    "last_sale_date": "2020-02-14"
+  },
+  "permits": [
+    {
+      "number": "202603167662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-16",
+      "status_date": "2026-07-20",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "legalization of an (e) deck to resolve compliant#: 200988622.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504104100",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-10",
+      "status_date": "2025-11-21",
+      "estimated_cost": 75000,
+      "revised_cost": 87000,
+      "description": "remodel second floor of a three story condo. 2/fl- remodel to include remodel of kitchen relocate powder room enlarge (e) openings in dining living and kitchen to create arched openings (all interior) mep system will be upgrade as required per code (n) lighting throughout remodeled",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904075762",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "2009-04-07",
+      "status_date": "2018-12-05",
+      "estimated_cost": 4000,
+      "description": "rebuild rear stairs & deck in previous configuration, to comply w/ nov 200735049 & 200988622.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2009–2026",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0754032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0754&street_number=1406",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

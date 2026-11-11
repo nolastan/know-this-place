@@ -1,0 +1,153 @@
+{
+  "address": "2306 Leavenworth Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/leavenworth-street/2306/",
+  "apn": "0067013A",
+  "block": "0067",
+  "lot": "013A",
+  "eas_baseid": "276539",
+  "coordinates": {
+    "lat": 37.802565,
+    "lng": -122.417558
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 1655,
+    "building_area_sqft": 1896,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 2306 LEAVENWORTH         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1032125,
+    "assessed_improvement_value": 422219,
+    "last_sale_date": "1989-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Castle Court Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201508245143",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-24",
+      "status_date": "2015-12-08",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "in kind repair of wood rotted members on 1st two levels of (e) 3 story rear deck. replacement of existing post footings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8902567",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-02-16",
+      "status_date": "1990-09-12",
+      "estimated_cost": 19800,
+      "description": "modification to roof top stair enclosure",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901181",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-25",
+      "status_date": "1989-09-20",
+      "estimated_cost": 47000,
+      "description": "new structural headers @ garage, 1st & 2nd fl lvls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900610",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-13",
+      "status_date": "1989-08-10",
+      "estimated_cost": 26000,
+      "description": "remodel exist kitchen & master bath, new cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-09-17",
+      "status_date": "1984-10-24",
+      "estimated_cost": 12000,
+      "description": "remove old plumbing fixture and old tile install new plg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LEAVENWORTH&street_type=ST&address_number=2306",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0067013A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0067&lot=013A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0067013A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41755820487997%2037.80256485880582)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-03-17",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 17 March 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n58/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-03-17",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' granting of a permit to alter the building at 2306 Leavenworth Street, over a protest against the issuance, following a site inspection.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-03-17"
+    }
+  ]
+}

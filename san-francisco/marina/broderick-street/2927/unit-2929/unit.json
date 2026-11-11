@@ -1,0 +1,90 @@
+{
+  "address": "2929 Broderick Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/broderick-street/2927/unit-2929/",
+  "apn": "0942050",
+  "block": "0942",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1192,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 676500,
+    "assessed_improvement_value": 676500,
+    "last_sale_date": "2014-02-07"
+  },
+  "permits": [
+    {
+      "number": "202409160893",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-16",
+      "status_date": "2025-01-13",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "voluntary structural reinforcement/repair at rear stair with new concrete footing and plywood sheathing (no work on stairs)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704174136",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-17",
+      "status_date": "2018-02-05",
+      "estimated_cost": 6000,
+      "revised_cost": 8000,
+      "description": "replace in kind at street facade, 4 wood windows with new wood windows, replace 7 wood windows with new wood aluminum clad windows & 2 doors at rear yard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703020564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-02",
+      "status_date": "2018-02-05",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "2nd flr: remove (e) brick flue and portion of interior walls. install new posts & beams. relocate & remodel kitchen, renovate bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201031576",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-01-03",
+      "status_date": "2012-01-03",
+      "estimated_cost": 2600,
+      "revised_cost": 2600,
+      "description": "repair framing left side basement wall in kind, approx 15' in kind repair, repair bases of support posts at the rear deck, less than 50% repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000120494",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-01-20",
+      "status_date": "2000-07-11",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "kitchen & bath remodel,remve/repl cabinets,appliances,construct partition walls,close window/doorwy",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0942050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0942&street_number=2929",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

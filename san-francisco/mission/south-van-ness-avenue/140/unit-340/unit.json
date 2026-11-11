@@ -1,0 +1,46 @@
+{
+  "address": "140 South Van Ness Avenue, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/south-van-ness-avenue/140/unit-340/",
+  "unit": "340",
+  "apn": "3514075",
+  "block": "3514",
+  "lot": "075",
+  "parcel": {
+    "building_area_sqft": 1115,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 527606,
+    "assessed_improvement_value": 527606,
+    "last_sale_date": "2014-07-29"
+  },
+  "permits": [
+    {
+      "number": "202601093509",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-09",
+      "status_date": "2026-03-02",
+      "estimated_cost": 15000,
+      "revised_cost": 28192,
+      "description": "one unit: bathroom remodel, shower like for like, replace toilet, sink, vanity, shower, fan upgrade, mep to code 60 sq ft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3514075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3514&unit=340",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

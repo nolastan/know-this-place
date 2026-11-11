@@ -1,0 +1,134 @@
+{
+  "address": "600 30th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/30th-street/600/",
+  "apn": "7537018",
+  "block": "7537",
+  "lot": "018",
+  "eas_baseid": "470711",
+  "coordinates": {
+    "lat": 37.741803,
+    "lng": -122.43358
+  },
+  "parcel": {
+    "units": 1,
+    "lot_area_sqft": 1171,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 0600 30TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 379511,
+    "last_sale_date": "1998-09-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201305298144",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-29",
+      "status_date": "2013-06-20",
+      "estimated_cost": 10173,
+      "revised_cost": 10173,
+      "description": "replace all siding on back (north) wall. all work in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809303017",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-30",
+      "status_date": "2008-10-15",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair dryrot in garage are-two ceiling joists, 2 studs, header 4x10x42\" over exist window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605111419",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-11",
+      "status_date": "2006-11-15",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "bathroom remodel. total 2 bathrooms, all l ighting to be floruscent",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808093",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-06",
+      "status_date": "1998-07-16",
+      "estimated_cost": 9500,
+      "description": "renewal 9602595",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9602595",
+      "type": "new construction wood frame",
+      "status": "expired",
+      "filed": "1996-02-15",
+      "status_date": "1998-01-13",
+      "estimated_cost": 80000,
+      "description": "erect a two story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=ST&address_number=600",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7537018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7537&lot=018",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7537018",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1995-12-06",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 6 December 1995",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1995sanf/page/n282/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-12-06",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator's denial of a Rear Yard and Front Setback Variance to construct a two-story over garage, single family dwelling on an existing vacant lot at 600-30th Street, granting the variance with conditions on ceiling height, parapet and plans.",
+      "source": "sf-board-of-permit-appeals-minutes-1995-12-06"
+    }
+  ]
+}

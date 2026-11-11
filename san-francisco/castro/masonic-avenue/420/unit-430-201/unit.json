@@ -1,0 +1,69 @@
+{
+  "address": "430 Masonic Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/castro/masonic-avenue/420/unit-430-201/",
+  "unit": "201",
+  "apn": "1160041",
+  "block": "1160",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 1984,
+    "rooms": 7,
+    "bedrooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 589501,
+    "assessed_improvement_value": 589501,
+    "last_sale_date": "2007-03-07"
+  },
+  "permits": [
+    {
+      "number": "201907226572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-22",
+      "status_date": "2020-02-26",
+      "estimated_cost": 49000,
+      "revised_cost": 49000,
+      "description": "remodel 2 bathrooms, in-kind, new plumbing & electrical fixtures. no structural work. no walls infilled or modfied. add recessed lights aroudn the house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803153745",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-15",
+      "status_date": "2018-08-30",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: replace 8 existing windows with new fiber glass windows to fit the existing openings. bedroom emergency / rescue window to maintain. like for like. u factor 0.32 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303263039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-26",
+      "status_date": "2013-07-26",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodeling - replace existing cabinet, counter top and appliances, install hardwood floor in kitchen area. update electrical and plumbing as needed. patch and paint. lighting change will comply w/cec 150(k).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1160041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1160&unit=201",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

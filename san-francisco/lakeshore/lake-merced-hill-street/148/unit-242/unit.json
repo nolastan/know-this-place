@@ -1,0 +1,44 @@
+{
+  "address": "242 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-242/",
+  "apn": "7381093",
+  "block": "7381",
+  "lot": "093",
+  "parcel": {
+    "building_area_sqft": 2062,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 872949,
+    "assessed_improvement_value": 581966,
+    "last_sale_date": "2022-04-29"
+  },
+  "permits": [
+    {
+      "number": "9608471",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-15",
+      "status_date": "1996-11-15",
+      "estimated_cost": 5325,
+      "description": "remodel kitchen,cabinets, countertops, add electrical outlet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=242",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

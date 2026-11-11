@@ -1,0 +1,90 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-4f/",
+  "unit": "4F",
+  "apn": "7381136",
+  "block": "7381",
+  "lot": "136",
+  "parcel": {
+    "building_area_sqft": 1474,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 707186,
+    "assessed_improvement_value": 471458,
+    "last_sale_date": "2021-04-19"
+  },
+  "permits": [
+    {
+      "number": "202107194675",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-07-19",
+      "status_date": "2021-07-21",
+      "estimated_cost": 17100,
+      "revised_cost": 17100,
+      "description": "one unit-replace 7 windows and 2 sliding doors. same size, style and location, aluminum to vinly w/ double glass. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802020310",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-02-02",
+      "status_date": "2018-02-02",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "revision to permit # 201702169568, add overhear ceiling lighting to hallway, bedrooom, den, living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201702169568",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-16",
+      "status_date": "2018-05-01",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#4 -remove / replace counter, cabinets, tub/shower, flooring wall tiles, plumbing fixtures, electrical fixtures, kitchen - remove/replace win, counter tops ; paint throughout dwelling -interior only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309136826",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-13",
+      "status_date": "2013-10-29",
+      "estimated_cost": 12200,
+      "revised_cost": 12200,
+      "description": "replace 7 windows, 2 patio doors, size for size. not visible from the street with simonton windows double panel. u factor is 0.40 max. bedroom windows shall be rescue/egress compliant.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9713058",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-15",
+      "status_date": "1998-01-23",
+      "estimated_cost": 2000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381136&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=4F",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "address": "38 Belcher Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/belcher-street/38/unit-3/",
+  "unit": "3",
+  "apn": "3537127",
+  "block": "3537",
+  "lot": "127",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 624240,
+    "assessed_improvement_value": 416160,
+    "last_sale_date": "2023-04-04"
+  },
+  "permits": [
+    {
+      "number": "202405081647",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-05-08",
+      "status_date": "2024-05-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 2024-0223-6409 downsizing roofhatch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202403077316",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-07",
+      "status_date": "2024-10-17",
+      "estimated_cost": 17945,
+      "revised_cost": 17945,
+      "description": "one unit: replace facade windows, (6 windows), cut stucco, remove old windows and install new one in kind. existing: aluminum new: aluminum",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202402236409",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-02-23",
+      "status_date": "2024-03-28",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remove some portion of existing ceiling; provide new stairs and under stairs storage; remove some portion of existing roof create new roof hatch and roof deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3537127&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3537&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

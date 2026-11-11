@@ -1,0 +1,119 @@
+{
+  "address": "620 Mendell Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/mendell-street/620/",
+  "apn": "5254002",
+  "block": "5254",
+  "lot": "002",
+  "eas_baseid": "374583",
+  "coordinates": {
+    "lat": 37.739379,
+    "lng": -122.386338
+  },
+  "parcel": {
+    "year_built": 1987,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 1750,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0620 MENDELL             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 860195,
+    "assessed_improvement_value": 444951,
+    "last_sale_date": "2018-04-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1987",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201805048199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-04",
+      "status_date": "2018-08-03",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "non-structural interior remodel to include 1st fl - add a wall to creat a hall to yard; 2nd fl - add 1 full bath, convert (e), living room to office & bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413235",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1984-12-17",
+      "status_date": "1986-03-13",
+      "estimated_cost": 106433,
+      "description": "to erect single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401846",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1984-02-21",
+      "status_date": "1984-08-21",
+      "estimated_cost": 72000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MENDELL&street_type=ST&address_number=620",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5254002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5254&lot=002",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5254002",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1985-09-18",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 18 September 1985",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1985sanf/page/n214/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1985-09-18",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to erect a building at 620 Mendell Street to stand, with a condition.",
+      "source": "sf-board-of-permit-appeals-minutes-1985-09-18"
+    }
+  ]
+}

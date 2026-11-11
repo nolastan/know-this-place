@@ -1,0 +1,52 @@
+{
+  "address": "1381 Masonic Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/masonic-avenue/1379/unit-1381/",
+  "apn": "1255094",
+  "block": "1255",
+  "lot": "094",
+  "parcel": {
+    "building_area_sqft": 1748,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1118798,
+    "assessed_improvement_value": 745864,
+    "last_sale_date": "2019-10-02"
+  },
+  "permits": [
+    {
+      "number": "201809140178",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-14",
+      "status_date": "2019-01-25",
+      "estimated_cost": 25000,
+      "revised_cost": 30000,
+      "description": "kitchen & bathroom remodel, remove dining room non-bearing wall, install new cabinets & countertop, new lighting & new plumbing fixtures. enlarge bathroom showerpan, toilet relocation. upgrade laundry room, install new washer & dryer.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2018",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1255094&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1255&street_number=1381",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

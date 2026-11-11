@@ -11,6 +11,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 2002.
 - [Ashton Avenue](ashton-avenue/) — 1 building, built 1923.
 - [Belle Avenue](belle-avenue/) — 1 building, built 1947.
+- [Bepler Street](bepler-street/) — 1 building, built 1986.
 - [Beverly Street](beverly-street/) — 1 building, built 1914.
 - [Bright Street](bright-street/) — 1 building, built 1996.
 - [Broad Street](broad-street/) — 4 buildings, built 1896–1946.
@@ -32,6 +33,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Lobos Street](lobos-street/) — 1 building, built 1906.
 - [Louisburg Street](louisburg-street/) — 1 building, built 1990.
 - [Majestic Avenue](majestic-avenue/) — 1 building.
+- [Minerva Street](minerva-street/) — 1 building, built 1976.
 - [Miramar Avenue](miramar-avenue/) — 2 buildings, built 1905–1917.
 - [Mission Street](mission-street/) — 1 building, built 1924.
 - [Montana Street](montana-street/) — 1 building, built 1907.

@@ -1,0 +1,58 @@
+{
+  "address": "1913 Eddy Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/eddy-street/1901/unit-612/",
+  "unit": "612",
+  "apn": "1129068",
+  "block": "1129",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1243,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 706860,
+    "assessed_improvement_value": 471240,
+    "last_sale_date": "2023-12-01"
+  },
+  "permits": [
+    {
+      "number": "202510318706",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-31",
+      "status_date": "2025-12-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit : replace 1 patio door and 2 windows aluminum existing with (n) 1 fiberglass patio door and two fberglass windows. pocket fit installation. no mep work. no size or location change. all replaced in kind in the existing openings. u factore 0.28. non street visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508082661",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-08",
+      "status_date": "2025-12-31",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "one unit. remodel of (e) main bathroom, partial remodel of guest bathroom (new vanity + plumbing trim) library cabinets, countertops, bookshelves and electrical outlets, new electrical sub panel. add new condensing w/d in existing closet with 100 sqin opening for makeup air.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1129068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1129&unit=612",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

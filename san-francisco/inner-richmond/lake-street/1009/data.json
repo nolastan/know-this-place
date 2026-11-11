@@ -1,0 +1,135 @@
+{
+  "address": "1009–1011 Lake Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/lake-street/1009/",
+  "apn": "1371048",
+  "block": "1371",
+  "lot": "048",
+  "eas_baseid": "438534",
+  "coordinates": {
+    "lat": 37.786174,
+    "lng": -122.470305
+  },
+  "address_range": "1009–1011",
+  "street_numbers_on_parcel": [
+    "1009",
+    "1011"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2725,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "1011 1009 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 708439,
+    "assessed_improvement_value": 322048
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201803224288",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-22",
+      "status_date": "2018-07-06",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace existing foundation (sub standard) at existing rear unit at ground level. replace windows at rear of ground level - 1 sliding door & 1 window replaced",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712045361",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-04",
+      "status_date": "2018-01-22",
+      "estimated_cost": 20000,
+      "revised_cost": 25000,
+      "description": "repair concrete patio in backyard. replace garage door and side entry door, in kind wood, same opening. repair/replace damaged siding in the back of the building. repair damaged plaster on interior walls. paint siding in back of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807237411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-23",
+      "status_date": "2008-10-10",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repair less than 50% of deck and stairs that are existing at rear. no change to door and windows. 200858853-his.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022281",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-10-26",
+      "status_date": "1991-08-16",
+      "estimated_cost": 2200,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=1009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1371048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1371&lot=048",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1371048",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-03-05",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 5 March 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1980sanf/page/n38/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-03-05",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 1011 Lake Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-03-05"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "200 Francisco Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/francisco-street/200/unit-1/",
+  "unit": "1",
+  "apn": "0039106",
+  "block": "0039",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 938,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 568276,
+    "assessed_improvement_value": 568276
+  },
+  "permits": [
+    {
+      "number": "200607247418",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-24",
+      "status_date": "2006-10-24",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "dry rot repair to framing, replace in kind. 3/f deck 40% @ the rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507218246",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-07-21",
+      "status_date": "2005-07-21",
+      "estimated_cost": 19400,
+      "revised_cost": 19400,
+      "description": "replace 13 windows size for size. aluminum to wood. visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0039106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0039&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

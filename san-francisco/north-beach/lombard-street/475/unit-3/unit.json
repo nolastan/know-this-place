@@ -1,0 +1,53 @@
+{
+  "address": "475 Lombard Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/lombard-street/475/unit-3/",
+  "unit": "3",
+  "apn": "0077044",
+  "block": "0077",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 2193,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 431600,
+    "assessed_improvement_value": 825695,
+    "last_sale_date": "1989-03-15"
+  },
+  "permits": [
+    {
+      "number": "200705141199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-14",
+      "status_date": "2008-02-15",
+      "estimated_cost": 175000,
+      "revised_cost": 175000,
+      "description": "one unit: kitchen remodel - remodel of (e) cabinets and appliances and installation of new appliances. changes in lighting. replace trim. replace fireplace with gas. bathroom remodel (two) bathrooms. one new tub and 2 showers. refinish floors. sheetrock repair. install new furnace in (e) location.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2007–2008",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0077044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0077&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

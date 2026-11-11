@@ -1,0 +1,182 @@
+{
+  "address": "2066 36th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/36th-avenue/2066/",
+  "apn": "2155035",
+  "block": "2155",
+  "lot": "035",
+  "eas_baseid": "331044",
+  "coordinates": {
+    "lat": 37.748479,
+    "lng": -122.494014
+  },
+  "parcel": {
+    "year_built": 1954,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1825,
+    "basement_area_sqft": 475,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2066 36TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1270853,
+    "assessed_improvement_value": 544650,
+    "last_sale_date": "2018-07-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1954",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201212035356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-12-03",
+      "status_date": "2013-01-18",
+      "estimated_cost": 6900,
+      "revised_cost": 6900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203201875",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-03-20",
+      "status_date": "2002-09-18",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "add bathtub in ground floor level per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102132067",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-13",
+      "status_date": "2001-05-15",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "install elevator between garage level and 2nd floor including framing for shaft opening and shaft wa",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920506",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-29",
+      "status_date": "2000-05-30",
+      "estimated_cost": 4700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9604865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-25",
+      "status_date": "1996-06-05",
+      "estimated_cost": 1500,
+      "description": "replace exist window w/sliding dr to deck/add casement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515861",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-09-26",
+      "status_date": "1996-06-05",
+      "estimated_cost": 18000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8819744",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-12-14",
+      "status_date": "1989-06-28",
+      "estimated_cost": 1,
+      "description": "to final job #8705333.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8807948",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-06-14",
+      "status_date": "1988-07-25",
+      "estimated_cost": 2575,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705333",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-04-23",
+      "status_date": "1987-11-23",
+      "estimated_cost": 9846,
+      "description": "remove and replace sheetrock on ceiling and wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=36TH&street_type=AVE&address_number=2066",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2155035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2155&lot=035",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2155035",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1996-03-13",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 13 March 1996",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1996sanf/page/n75/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-03-13",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the department and granted the permit to alter the building at 2066 - 36th Avenue, constructing a 7-foot rear deck and a handicapped bathroom and bedroom at the ground floor.",
+      "source": "sf-board-of-permit-appeals-minutes-1996-03-13"
+    }
+  ]
+}

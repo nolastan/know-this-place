@@ -1,0 +1,123 @@
+{
+  "address": "249 Winding Way, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/winding-way/249/",
+  "apn": "6451022",
+  "block": "6451",
+  "lot": "022",
+  "eas_baseid": "398615",
+  "coordinates": {
+    "lat": 37.709171,
+    "lng": -122.435441
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 1929,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0249 WINDING             WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 66591,
+    "assessed_improvement_value": 195277
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8904132",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-03-15",
+      "status_date": "1991-12-16",
+      "estimated_cost": 20000,
+      "description": "vertical & horizontal addition (enclose deck)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8702224",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-02-19",
+      "status_date": "1989-09-24",
+      "estimated_cost": 65000,
+      "description": "horizontal extension, family room & bath addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615346",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-12-04",
+      "status_date": "1987-02-17",
+      "estimated_cost": 1350,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1986–2015",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WINDING&street_type=WAY&address_number=249",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6451022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6451&lot=022",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6451022",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1990-06-06",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 6 June 1990",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1990sanf/page/n166/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1990-06-06",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the department and granted the permit to alter a building at 249 Winding Way.",
+      "source": "sf-board-of-permit-appeals-minutes-1990-06-06"
+    }
+  ]
+}

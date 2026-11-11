@@ -1,0 +1,67 @@
+{
+  "address": "115 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-115/",
+  "apn": "7381054",
+  "block": "7381",
+  "lot": "054",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 527115,
+    "assessed_improvement_value": 527115,
+    "last_sale_date": "2014-05-30"
+  },
+  "permits": [
+    {
+      "number": "202411064502",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-06",
+      "status_date": "2025-05-29",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "to comply nov 202417701- fire damage repair to party wall in kitchen and bathroom area of one unit, staircase area for one unit. interior finishes, roof material , as needed and electrical work like for like as needed. fire damage interior work only, no exterior work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202404260901",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-04-26",
+      "status_date": "2024-05-09",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "repair in kind after fire. drywall repair to fire damaged areas, replace lighting and plumbing fixtures, no wire or pipe to be replaced. repair roof above areas cut by fire department.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9710557",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-06-11",
+      "status_date": "1998-01-23",
+      "estimated_cost": 2000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381054&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=115",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

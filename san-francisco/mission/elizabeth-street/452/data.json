@@ -1,0 +1,104 @@
+{
+  "address": "452 Elizabeth Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/elizabeth-street/452/",
+  "apn": "3653017",
+  "block": "3653",
+  "lot": "017",
+  "eas_baseid": "364502",
+  "coordinates": {
+    "lat": 37.752533,
+    "lng": -122.430908
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2905,
+    "building_area_sqft": 2542,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0452 ELIZABETH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1905398,
+    "assessed_improvement_value": 816596,
+    "last_sale_date": "2021-12-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9114335",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-08-12",
+      "status_date": "1991-12-12",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1991–2011",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELIZABETH&street_type=ST&address_number=452",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3653017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3653&lot=017",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3653017",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1974-04-01",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 1 April 1974",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1974sanf/page/n56/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-04-01",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator's disapproval of the application for a permit to alter the building at 452 Elizabeth Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1974-04-01"
+    }
+  ]
+}

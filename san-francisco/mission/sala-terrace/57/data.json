@@ -1,0 +1,96 @@
+{
+  "address": "57 Sala Terrace, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/sala-terrace/57/",
+  "apn": "7044C006",
+  "block": "7044C",
+  "lot": "006",
+  "eas_baseid": "413223",
+  "coordinates": {
+    "lat": 37.714118,
+    "lng": -122.445821
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2195,
+    "building_area_sqft": 1645,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Outer Mission",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0057 SALA                TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48026,
+    "assessed_improvement_value": 99186
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9718614",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-22",
+      "status_date": "1997-11-12",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SALA&street_type=TER&address_number=57",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7044C006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7044C&lot=006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7044C006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-10-31",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 31 October 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n282/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-10-31",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the permit to alter the building at 57 Sala Terrace, concurring in the granting of the permit.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-10-31"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "address": "2825 26th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/26th-street/2817/unit-e/",
+  "unit": "E",
+  "apn": "4334026",
+  "block": "4334",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 960,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 665627,
+    "assessed_improvement_value": 443752,
+    "last_sale_date": "2018-02-05"
+  },
+  "permits": [
+    {
+      "number": "201703020476",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-03-02",
+      "status_date": "2026-01-09",
+      "estimated_cost": 3300,
+      "revised_cost": 3300,
+      "description": "one unit - replace 2 alumninum door s with new vinyl doble pane at back of bldg. u=.3",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812309340",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-30",
+      "status_date": "2009-03-10",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "bathroom remodel/new plumbing + electrical fixtures sheetrock, tile no structural work. kitchen upgrade- replace cabinets + appliances in existing location new tile foor no walls will be opened. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4334026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4334&unit=E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

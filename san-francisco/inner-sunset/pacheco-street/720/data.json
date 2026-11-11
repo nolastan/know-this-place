@@ -1,0 +1,109 @@
+{
+  "address": "720 Pacheco Street, San Francisco, CA 94116",
+  "path": "/san-francisco/inner-sunset/pacheco-street/720/",
+  "apn": "2123A010",
+  "block": "2123A",
+  "lot": "010",
+  "eas_baseid": "329837",
+  "coordinates": {
+    "lat": 37.751991,
+    "lng": -122.468244
+  },
+  "parcel": {
+    "year_built": 1937,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 5355,
+    "building_area_sqft": 1344,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0720 PACHECO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 174122,
+    "assessed_improvement_value": 260124
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1937",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107073858",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2021-07-07",
+      "status_date": "2021-07-07",
+      "estimated_cost": 7779,
+      "revised_cost": 7779,
+      "description": "replacing (1) window, in kind retrofit fashion. street facing, visible. existing : wood. proposed: wood clad (anderson e-series) < .3 u factor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508113892",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-11",
+      "status_date": "2015-08-20",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACHECO&street_type=ST&address_number=720",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2123A010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2123A&lot=010",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2123A010",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-01-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 January 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1980sanf/page/n16/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-01-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 720 Pacheco Street to stand, with conditions on the balcony, roof and siding.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-01-16"
+    }
+  ]
+}

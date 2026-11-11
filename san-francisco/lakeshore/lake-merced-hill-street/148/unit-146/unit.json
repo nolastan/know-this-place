@@ -1,0 +1,45 @@
+{
+  "address": "146 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-146/",
+  "apn": "7381024",
+  "block": "7381",
+  "lot": "024",
+  "parcel": {
+    "building_area_sqft": 2062,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 903569,
+    "assessed_improvement_value": 602378,
+    "last_sale_date": "2018-07-12"
+  },
+  "permits": [
+    {
+      "number": "201909303080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-30",
+      "status_date": "2019-11-25",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "replacement of 11 windows and 1 patio slider like for like, material to be vinyl.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=146",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

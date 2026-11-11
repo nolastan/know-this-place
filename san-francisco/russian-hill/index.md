@@ -8,6 +8,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Bay Street](bay-street/) — 2 buildings, built 1906–1950.
 - [Beach Street](beach-street/) — 1 building; 1 in the Aquatic Park Historic District.
 - [Bernard Street](bernard-street/) — 1 building, built 1907.
+- [Bret Harte Terrace](bret-harte-terrace/) — 3 buildings, built 1940–1988.
 - [Broadway](broadway/) — 3 buildings, built 1912.
 - [Chestnut Street](chestnut-street/) — 1 building, built 1926.
 - [Columbus Avenue](columbus-avenue/) — 1 building, built 1931.

@@ -1,0 +1,150 @@
+{
+  "address": "2559 Diamond Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-street/2559/",
+  "apn": "6713043",
+  "block": "6713",
+  "lot": "043",
+  "eas_baseid": "405700",
+  "coordinates": {
+    "lat": 37.73799,
+    "lng": -122.434402
+  },
+  "parcel": {
+    "year_built": 1990,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2080,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 2559 DIAMOND             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 335929,
+    "assessed_improvement_value": 419919,
+    "last_sale_date": "1994-09-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1990",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402135765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-13",
+      "status_date": "2024-06-14",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "in-kind remodeling of 1 bathroom(s) in 2nd fl with 1 shower pan(s).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503097114",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-03-09",
+      "status_date": "2007-03-27",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004076628",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-07",
+      "status_date": "2000-08-07",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "1989058",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-05-09",
+      "status_date": "1990-01-21",
+      "estimated_cost": 2000,
+      "description": "revisions to foundations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812330",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1988-08-23",
+      "status_date": "1990-03-02",
+      "estimated_cost": 120000,
+      "description": "two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812333",
+      "type": "demolitions",
+      "status": "reinstated",
+      "filed": "1988-08-23",
+      "status_date": "1989-05-09",
+      "description": "demolish 1 family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIAMOND&street_type=ST&address_number=2559",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6713043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6713&lot=043",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6713043",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1989-04-26",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 26 April 1989",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1989sanf/page/n82/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1989-04-26",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to demolish a building at 2559 Diamond Street to stand, subject to conditions agreed upon by the parties.",
+      "source": "sf-board-of-permit-appeals-minutes-1989-04-26"
+    }
+  ]
+}

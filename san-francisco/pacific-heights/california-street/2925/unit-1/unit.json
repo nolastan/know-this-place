@@ -1,0 +1,56 @@
+{
+  "address": "2925 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2925/unit-1/",
+  "unit": "1",
+  "apn": "1029075",
+  "block": "1029",
+  "lot": "075",
+  "parcel": {
+    "building_area_sqft": 483,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60931,
+    "assessed_improvement_value": 113183
+  },
+  "permits": [
+    {
+      "number": "201710030303",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-10-03",
+      "status_date": "2017-10-03",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618966",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-04",
+      "status_date": "1997-03-28",
+      "estimated_cost": 20790,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1029075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1029&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

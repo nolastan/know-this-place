@@ -1,0 +1,32 @@
+{
+  "address": "865 Wisconsin Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/wisconsin-street/865/unit-lot-103/",
+  "apn": "4162103",
+  "block": "4162",
+  "lot": "103",
+  "parcel": {
+    "building_area_sqft": 1230,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 258517,
+    "assessed_improvement_value": 377937
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4162103&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4162&street_number=865",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

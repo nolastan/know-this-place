@@ -1,0 +1,153 @@
+{
+  "address": "32 Napier Lane, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/napier-lane/32/",
+  "apn": "0085060",
+  "block": "0085",
+  "lot": "060",
+  "eas_baseid": "276912",
+  "coordinates": {
+    "lat": 37.802602,
+    "lng": -122.403852
+  },
+  "parcel": {
+    "year_built": 1979,
+    "units": 1,
+    "stories": 2,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 1651.13,
+    "building_area_sqft": 1088,
+    "lot_depth_ft": 55.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0032 NAPIER              LN0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 354319,
+    "assessed_improvement_value": 311657
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202309227258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-22",
+      "status_date": "2024-06-07",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "remove and install 9 windows per record no. 2023-009268coa; (e) double-hung & casement wood to (n) casement aluminum-clad wood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201313266",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2012-01-31",
+      "status_date": "2014-06-17",
+      "estimated_cost": 9000,
+      "revised_cost": 4800,
+      "description": "window replacement. two 2-unit windows on 1st floor living area. not visible from street or public right of way.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9409935",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-06-30",
+      "status_date": "1995-03-21",
+      "estimated_cost": 50000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400654",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-01-13",
+      "status_date": "1995-02-07",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400655",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-01-13",
+      "status_date": "1995-02-07",
+      "estimated_cost": 5000,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NAPIER&street_type=LN&address_number=32",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0085060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0085&lot=060",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0085060",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40385181624207%2037.80260227759814)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1992-01-08",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 8 January 1992",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1992sanf/page/n10/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1992-01-08",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's granting of minimum lot area, lot frontage and rear yard variances for 32 - 34 Napier Lane, the motion to overrule failing for want of four votes.",
+      "source": "sf-board-of-permit-appeals-minutes-1992-01-08"
+    }
+  ]
+}

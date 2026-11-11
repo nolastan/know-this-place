@@ -1,0 +1,117 @@
+{
+  "address": "1733 Greenwich Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/greenwich-street/1733/",
+  "apn": "0520028",
+  "block": "0520",
+  "lot": "028",
+  "eas_baseid": "284142",
+  "coordinates": {
+    "lat": 37.799678,
+    "lng": -122.428225
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2857,
+    "building_area_sqft": 2738,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1735 1733 GREENWICH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 92382,
+    "assessed_improvement_value": 231010
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602169600",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-16",
+      "status_date": "2016-03-14",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair stairs on exterior of house (back of house). dry rot repairs on back stairs common area stairs. repair area less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513564",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-23",
+      "status_date": "1999-11-08",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9026091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-12-27",
+      "status_date": "1991-03-13",
+      "estimated_cost": 972,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=1733",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0520028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0520&lot=028",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0520028",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1978-05-03",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 3 May 1978",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1978sanf/page/n116/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-05-03",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the denial of a permit to alter the building at 1733 Greenwich Street, requiring fire-rated sheet rock and sprinklers in the newly-created ground floor living area.",
+      "source": "sf-board-of-permit-appeals-minutes-1978-05-03"
+    }
+  ]
+}

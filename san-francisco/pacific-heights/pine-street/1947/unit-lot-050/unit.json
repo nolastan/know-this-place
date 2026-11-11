@@ -1,0 +1,31 @@
+{
+  "address": "1947 Pine Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pine-street/1947/unit-lot-050/",
+  "apn": "0663050",
+  "block": "0663",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 2271,
+    "rooms": 8
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 164218,
+    "assessed_improvement_value": 236480
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0663050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0663&street_number=1947",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

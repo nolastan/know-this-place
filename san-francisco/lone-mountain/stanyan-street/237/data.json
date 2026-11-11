@@ -1,0 +1,129 @@
+{
+  "address": "237 Stanyan Street, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/stanyan-street/237/",
+  "apn": "1166001C",
+  "block": "1166",
+  "lot": "001C",
+  "eas_baseid": "296109",
+  "coordinates": {
+    "lat": 37.776653,
+    "lng": -122.455302
+  },
+  "parcel": {
+    "year_built": 1938,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2223,
+    "building_area_sqft": 1692,
+    "lot_depth_ft": 85.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lone Mountain",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 0237 STANYAN             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 346722,
+    "assessed_improvement_value": 259169,
+    "last_sale_date": "1993-02-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1938",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9417083",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-10-18",
+      "status_date": "1995-08-17",
+      "estimated_cost": 7400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413699",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-09-02",
+      "status_date": "1995-04-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to application 9314687",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9409655",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-06-16",
+      "status_date": "1995-04-27",
+      "estimated_cost": 2500,
+      "description": "rear extension on main fl & top floor. revise bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314687S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-08-27",
+      "status_date": "1995-04-27",
+      "estimated_cost": 25000,
+      "description": "rear extension on main & top flrs. revised bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STANYAN&street_type=ST&address_number=237",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1166001C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1166&lot=001C",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1166001C",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1994-06-01",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 1 June 1994",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n254/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-06-01",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and granted the permit to alter the building at 237 Stanyan Street for a rear extension to the main and top floors and a bathroom remodel, with the condition that revised plans conform to the plan agreed by the parties.",
+      "source": "sf-board-of-permit-appeals-minutes-1994-06-01"
+    }
+  ]
+}

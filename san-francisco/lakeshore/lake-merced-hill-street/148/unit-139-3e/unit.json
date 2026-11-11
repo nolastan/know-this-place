@@ -1,0 +1,57 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-3e/",
+  "unit": "3E",
+  "apn": "7381129",
+  "block": "7381",
+  "lot": "129",
+  "parcel": {
+    "building_area_sqft": 1474,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 371347,
+    "assessed_improvement_value": 390274,
+    "last_sale_date": "1988-04-29"
+  },
+  "permits": [
+    {
+      "number": "202007160317",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-07-16",
+      "status_date": "2020-08-27",
+      "estimated_cost": 5000,
+      "revised_cost": 15000,
+      "description": "bath remodel 45 sf shower to shower conversion, no change in footprint; new acrylic solid surface shower base/solid surface acrylic shower walls; new 5/8\" densshield substrate behind shower walls; new fan/light in existing location; replacement vanity, like for like, same footprint;",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310250248",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-25",
+      "status_date": "2014-01-07",
+      "estimated_cost": 20000,
+      "revised_cost": 35000,
+      "description": "remodel kitchen, (2) bathrooms, chang (6) windows and (2) sliding doors. u-factor 0.40 max. lighting to comply with cec 150(k).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381129&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=3E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

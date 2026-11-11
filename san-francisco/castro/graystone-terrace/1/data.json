@@ -1,0 +1,149 @@
+{
+  "address": "1 Graystone Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/graystone-terrace/1/",
+  "apn": "2661031",
+  "block": "2661",
+  "lot": "031",
+  "eas_baseid": "343685",
+  "coordinates": {
+    "lat": 37.759037,
+    "lng": -122.447358
+  },
+  "parcel": {
+    "year_built": 1982,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3027,
+    "building_area_sqft": 3276,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Clarendon Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 0001 GRAYSTONE           TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319130,
+    "assessed_improvement_value": 626517,
+    "last_sale_date": "1991-03-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1982",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9702213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-06",
+      "status_date": "1997-02-20",
+      "estimated_cost": 4303,
+      "description": "shotcrete wall to prevent erosion at house foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315069S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-09-02",
+      "status_date": "1995-09-06",
+      "estimated_cost": 9000,
+      "revised_cost": 25100,
+      "description": "horizontas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9203520",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-06",
+      "status_date": "1992-10-06",
+      "estimated_cost": 1000,
+      "description": "renew # 9115643-repl kitch cabs,cnter tops, add barbeque",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9115643",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-08-29",
+      "status_date": "1992-03-11",
+      "estimated_cost": 8000,
+      "description": "remodel kitchen on 2nd floor - express plan check",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9109559S",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-05-31",
+      "status_date": "1993-10-27",
+      "estimated_cost": 9000,
+      "description": "adding family room w/ toilet, closet, 2 windows, & door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708838",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-06-25",
+      "status_date": "1988-02-03",
+      "estimated_cost": 12985,
+      "description": "install elevator. remove 2 floor areas & reconstruct wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRAYSTONE&street_type=TER&address_number=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2661031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2661&lot=031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2661031",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-12-19",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 19 December 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n332/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-12-19",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and denied the permit to erect a structure at 1 Graystone Terrace.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-12-19"
+    }
+  ]
+}

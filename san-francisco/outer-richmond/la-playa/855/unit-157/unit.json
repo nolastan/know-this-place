@@ -1,0 +1,47 @@
+{
+  "address": "855 La Playa, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/la-playa/855/unit-157/",
+  "unit": "157",
+  "apn": "1692157",
+  "block": "1692",
+  "lot": "157",
+  "parcel": {
+    "building_area_sqft": 1014,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 282153,
+    "assessed_improvement_value": 282153,
+    "last_sale_date": "2001-11-27"
+  },
+  "permits": [
+    {
+      "number": "202311150813",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-11-15",
+      "status_date": "2023-11-15",
+      "estimated_cost": 15246,
+      "revised_cost": 15246,
+      "description": "#157: partial bathroom remodel (non structural). remove existing shower and replace with new kohler shower pan and wall system. change out elec. outlets for new gfci outlets same size and location for all work. (e) vanity and (e) toilet to remain.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1692157&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1692&unit=157",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

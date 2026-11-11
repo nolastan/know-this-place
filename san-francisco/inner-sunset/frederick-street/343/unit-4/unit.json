@@ -1,0 +1,58 @@
+{
+  "address": "343 Frederick Street, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/frederick-street/343/unit-4/",
+  "unit": "4",
+  "apn": "1268069",
+  "block": "1268",
+  "lot": "069",
+  "parcel": {
+    "building_area_sqft": 766,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 646340,
+    "assessed_improvement_value": 430890,
+    "last_sale_date": "2020-06-16"
+  },
+  "permits": [
+    {
+      "number": "201903155353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-15",
+      "status_date": "2019-04-04",
+      "estimated_cost": 6000,
+      "revised_cost": 5000,
+      "description": "siding repair (about 20sq ft) and fixing leaking for two windows facing the rear yard. all work not visible from the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406037356",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-03",
+      "status_date": "2014-10-28",
+      "estimated_cost": 5000,
+      "revised_cost": 15000,
+      "description": "one unit: remodel extg kitchen. replace counter top with kitchen sink, cabinets, and flooring.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1268069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1268&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

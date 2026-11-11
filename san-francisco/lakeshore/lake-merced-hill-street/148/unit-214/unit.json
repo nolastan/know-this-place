@@ -1,0 +1,68 @@
+{
+  "address": "214 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-214/",
+  "apn": "7381106",
+  "block": "7381",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 612928,
+    "assessed_improvement_value": 400566,
+    "last_sale_date": "2013-09-27"
+  },
+  "permits": [
+    {
+      "number": "201709209088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-20",
+      "status_date": "2018-02-14",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "install elevator within residentail unit. no extra work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612013956",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2016-12-01",
+      "status_date": "2017-09-19",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "install residential elevator.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610316533",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-10-31",
+      "status_date": "2007-04-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "closet shelving jackets, doors. new ktichen appliance, tile front of fireplace, hardwood floor in bedrooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=214",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

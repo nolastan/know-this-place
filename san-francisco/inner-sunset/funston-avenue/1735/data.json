@@ -1,0 +1,119 @@
+{
+  "address": "1735 Funston Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/funston-avenue/1735/",
+  "apn": "2036A010",
+  "block": "2036A",
+  "lot": "010",
+  "eas_baseid": "326085",
+  "coordinates": {
+    "lat": 37.755819,
+    "lng": -122.470299
+  },
+  "parcel": {
+    "year_built": 1974,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 3001,
+    "building_area_sqft": 2012,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1735 FUNSTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60018,
+    "assessed_improvement_value": 120086
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1974",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200708068863",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-06",
+      "status_date": "2008-08-06",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "e kitchen remodel, remove and replace cabinets and counter, replace and patch sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508180578",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-18",
+      "status_date": "2005-08-18",
+      "estimated_cost": 8485,
+      "revised_cost": 8485,
+      "description": "retrofit 8 windows, 4 visible & 1 patio doors no structural changes. window trim detail to remain as",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000106343",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-06",
+      "status_date": "2000-08-13",
+      "estimated_cost": 4950,
+      "revised_cost": 4950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FUNSTON&street_type=AVE&address_number=1735",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2036A010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2036A&lot=010",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2036A010",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1974-05-06",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 6 May 1974",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1974sanf/page/n80/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1974-05-06",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the granting of a permit to erect a structure at 1735 Funston Avenue, over the protest of the appellant.",
+      "source": "sf-board-of-permit-appeals-minutes-1974-05-06"
+    }
+  ]
+}

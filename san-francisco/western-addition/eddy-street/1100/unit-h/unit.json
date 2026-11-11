@@ -1,0 +1,47 @@
+{
+  "address": "1100 Eddy Street, San Francisco, CA 94109",
+  "path": "/san-francisco/western-addition/eddy-street/1100/unit-h/",
+  "unit": "H",
+  "apn": "0735112",
+  "block": "0735",
+  "lot": "112",
+  "parcel": {
+    "building_area_sqft": 892,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 432972,
+    "assessed_improvement_value": 288647,
+    "last_sale_date": "2021-10-28"
+  },
+  "permits": [
+    {
+      "number": "202204263055",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-26",
+      "status_date": "2023-06-12",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit: in kind remodel of kitchen & (2) baths. no removal of walls. to comply to complaints 202289780 and 202289779. kitchen: cabinets, appliances, countertop, hood, electrical. baths: shower vanity, tiles.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0735112&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0735&unit=H",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

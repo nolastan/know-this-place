@@ -1,0 +1,33 @@
+{
+  "address": "48 Malta Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/malta-drive/46/unit-48/",
+  "apn": "3033034",
+  "block": "3033",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 1860,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1034227,
+    "assessed_improvement_value": 443237
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3033034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3033&street_number=48",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

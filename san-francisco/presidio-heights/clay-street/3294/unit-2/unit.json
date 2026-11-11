@@ -1,0 +1,47 @@
+{
+  "address": "3294 Clay Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/clay-street/3294/unit-2/",
+  "unit": "2",
+  "apn": "0998022",
+  "block": "0998",
+  "lot": "022",
+  "parcel": {
+    "building_area_sqft": 1207,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 635228,
+    "assessed_improvement_value": 635228,
+    "last_sale_date": "2002-06-18"
+  },
+  "permits": [
+    {
+      "number": "200806134410",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-13",
+      "status_date": "2008-08-26",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "bathroom remodel and extend closet & linen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0998022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0998&unit=2",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

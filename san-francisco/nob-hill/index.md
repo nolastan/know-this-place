@@ -32,12 +32,15 @@ that neighborhood.
 - [Polk Street](polk-street/) — 1 building, built 1909.
 - [Post Street](post-street/) — 1 building, built 1912; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Powell Street](powell-street/) — 1 building.
+- [Priest Street](priest-street/) — 2 buildings, built 1991.
 - [Reed Street](reed-street/) — 1 building, built 1937.
 - [Russian Hill Place](russian-hill-place/) — 1 building, built 1916; 1 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Sacramento Street](sacramento-street/) — 1 building.
 - [Stockton Street](stockton-street/) — 4 buildings, built 1915–1928.
 - [Sutter Street](sutter-street/) — 1 building.
 - [Taylor Street](taylor-street/) — 1 building, built 1929.
+- [Torrens Court](torrens-court/) — 1 building, built 1919.
+- [Truett Street](truett-street/) — 1 building, built 1908.
 - [Vallejo Street](vallejo-street/) — 1 building, built 1957; 1 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Van Ness Avenue](van-ness-avenue/) — 8 buildings, built 1911–1919.
 - [Washington Street](washington-street/) — 2 buildings, built 1915.

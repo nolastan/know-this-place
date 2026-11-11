@@ -1,0 +1,45 @@
+{
+  "address": "1963 Pine Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/pine-street/1947/unit-1963/",
+  "apn": "0663053",
+  "block": "0663",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 2090,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 195317,
+    "assessed_improvement_value": 400925
+  },
+  "permits": [
+    {
+      "number": "201310229954",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-22",
+      "status_date": "2014-09-22",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "open wall between kitchen and living room, remodel kitchen and two bathrooms. in one unit pine street",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0663053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0663&street_number=1963",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "address": "3050 Pacific Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/pacific-avenue/3050/",
+  "apn": "0964009A",
+  "block": "0964",
+  "lot": "009A",
+  "eas_baseid": "291585",
+  "coordinates": {
+    "lat": 37.792641,
+    "lng": -122.445414
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "lot_area_sqft": 6625,
+    "building_area_sqft": 4770,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 3050 PACIFIC             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 226161,
+    "assessed_improvement_value": 215071
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Pacific Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1895–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200708089188",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-08",
+      "status_date": "2009-02-12",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "shoring along west property line during construction of a new property line wall on adjacent property located at 3052 pacific. property line wall under separate permit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002101615",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-10",
+      "status_date": "2000-06-10",
+      "revised_cost": 1,
+      "description": "renew expired appl #9320344, #9411536, #9902212",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902212",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-02-04",
+      "status_date": "1999-06-04",
+      "estimated_cost": 1,
+      "description": "renew expired appn. 9320344,9411536 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506405",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-05-03",
+      "status_date": "1997-08-08",
+      "estimated_cost": 1,
+      "description": "renew expired appl #9320344",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411536",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-07-20",
+      "status_date": "1996-01-02",
+      "estimated_cost": 1,
+      "description": "revision to appl #9320344",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320344",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-11-19",
+      "status_date": "1995-05-02",
+      "estimated_cost": 150000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309351",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-09-21",
+      "status_date": "1984-02-28",
+      "estimated_cost": 4000,
+      "description": "solar panel on roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACIFIC&street_type=AVE&address_number=3050",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0964009A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0964&lot=009A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0964009A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44541403466222%2037.792641461625074)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1994-05-25",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 25 May 1994",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n250/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1994-10-12",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 12 October 1994",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n305/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-05-25",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and granted the permit to alter the building at 3050 Pacific Avenue for an interior remodel of two bathrooms and a kitchen-family room and a garage addition at the front of the building.",
+      "source": "sf-board-of-permit-appeals-minutes-1994-05-25"
+    },
+    {
+      "date": "1994-10-12",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's determination that the suspension of Building Permit Application No. 9320344 be lifted for the proposed garage at 3050 Pacific Avenue, with four conditions imposed on the permit holder to mitigate the effects of the garage on the neighbors.",
+      "source": "sf-board-of-permit-appeals-minutes-1994-10-12"
+    },
+    {
+      "date": "1994-10-12",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's determination concerning the garage built at 3050 Pacific Avenue, whether it is in a front yard versus a rear yard, the front setback exception, and the height allowed for the garage, with four conditions imposed on the permit holders.",
+      "source": "sf-board-of-permit-appeals-minutes-1994-10-12"
+    }
+  ]
+}

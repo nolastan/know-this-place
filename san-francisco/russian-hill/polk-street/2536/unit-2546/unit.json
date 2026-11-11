@@ -1,0 +1,55 @@
+{
+  "address": "2546 Polk Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/polk-street/2536/unit-2546/",
+  "unit": "2546",
+  "apn": "0524043",
+  "block": "0524",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 850,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 343461,
+    "assessed_improvement_value": 343461,
+    "last_sale_date": "2002-04-19"
+  },
+  "permits": [
+    {
+      "number": "9112719",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-07-18",
+      "status_date": "1991-12-19",
+      "estimated_cost": 1950,
+      "description": "foundation cap of approx. 20 ft, 8\" x 12\" wide epoxy dwell",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112064",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-10",
+      "status_date": "1991-07-19",
+      "estimated_cost": 1550,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0524043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0524&unit=2546",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "address": "1918–1920 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/hayes-street/1918/",
+  "apn": "1195002F",
+  "block": "1195",
+  "lot": "002F",
+  "eas_baseid": "296907",
+  "coordinates": {
+    "lat": 37.773876,
+    "lng": -122.448154
+  },
+  "address_range": "1918–1920",
+  "street_numbers_on_parcel": [
+    "1918",
+    "1920"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 1720,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 1920 HAYES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48026,
+    "assessed_improvement_value": 11981
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306059218",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-05",
+      "status_date": "2023-09-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with abe entrance program/ord 51-16, abe# 201811262521.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306059219",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-05",
+      "status_date": "2023-09-08",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply with abe program/ordinance 51-16, abe# 201804230383",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805088508",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-08",
+      "status_date": "2018-06-06",
+      "estimated_cost": 12880,
+      "revised_cost": 12880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAYES&street_type=ST&address_number=1918",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1195002F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1195&lot=002F",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1195002F",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-12-29",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 29 December 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n276/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-12-29",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Police Department's denial of a permit for a mechanical amusement device at 1918 Hayes, by a 4-1 vote.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-12-29"
+    }
+  ]
+}

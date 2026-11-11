@@ -1,0 +1,47 @@
+{
+  "address": "3240 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/3240/unit-c/",
+  "unit": "C",
+  "apn": "1007035",
+  "block": "1007",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 1948,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1435304,
+    "assessed_improvement_value": 956869,
+    "last_sale_date": "2021-02-09"
+  },
+  "permits": [
+    {
+      "number": "201508245080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-24",
+      "status_date": "2015-12-16",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "bathroom remodel. new wood flooring. remove and replace existing lighting. no structural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1007035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1007&unit=C",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

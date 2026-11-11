@@ -1,0 +1,98 @@
+{
+  "address": "954 Vienna Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/vienna-street/954/",
+  "apn": "6404007",
+  "block": "6404",
+  "lot": "007",
+  "eas_baseid": "397451",
+  "coordinates": {
+    "lat": 37.714533,
+    "lng": -122.435211
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2510.75,
+    "building_area_sqft": 920,
+    "basement_area_sqft": 120,
+    "lot_depth_ft": 0.43,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0954 VIENNA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139375,
+    "assessed_improvement_value": 165269
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9916478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-10",
+      "status_date": "1999-11-30",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VIENNA&street_type=ST&address_number=954",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6404007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6404&lot=007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6404007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-09-05",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 5 September 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n230/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-09-05",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the permit to alter the building at 954 Vienna Street, concurring in the granting of the permit.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-09-05"
+    }
+  ]
+}
