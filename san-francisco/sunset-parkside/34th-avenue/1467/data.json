@@ -1,0 +1,99 @@
+{
+  "address": "1467 34th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/34th-avenue/1467/",
+  "apn": "1819012",
+  "block": "1819",
+  "lot": "012",
+  "eas_baseid": "319039",
+  "coordinates": {
+    "lat": 37.759738,
+    "lng": -122.49331
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1450,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1467 34TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 182770,
+    "assessed_improvement_value": 183778
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200401083597",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-01-08",
+      "status_date": "2009-01-27",
+      "estimated_cost": 6800,
+      "revised_cost": 6800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=34TH&street_type=AVE&address_number=1467",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1819012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1819&lot=012",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1819012",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-10-08",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 8 October 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/1minutesofmeeting1980sanf/page/n12/mode/1up",
+      "retrieved": "2026-11-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-10-08",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' issuance of a permit to alter the building at 1467 34th Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-10-08"
+    }
+  ]
+}

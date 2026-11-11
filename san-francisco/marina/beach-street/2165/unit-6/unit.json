@@ -1,0 +1,58 @@
+{
+  "address": "2165 Beach Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/beach-street/2165/unit-6/",
+  "unit": "6",
+  "apn": "0919015",
+  "block": "0919",
+  "lot": "015",
+  "parcel": {
+    "building_area_sqft": 1515,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1033493,
+    "assessed_improvement_value": 688994,
+    "last_sale_date": "2019-08-28"
+  },
+  "permits": [
+    {
+      "number": "202005267752",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-05-26",
+      "status_date": "2020-06-15",
+      "estimated_cost": 38000,
+      "revised_cost": 40000,
+      "description": "remove/replace (10) (e) wood windows, new marvin replacement insert windows (clad exteriors/wood interiors). no new framing or trim will be installed. windows are facing rear garden not visible to street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604038082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-04-03",
+      "status_date": "2006-05-10",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "all work in one unit. remove 1 base kitchen cabinet to expose, concealed laundry connections, re-work plumbing / laundry connections to code, install washer dryer in kitchen. install countertop above washer dryer. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0919015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0919&unit=6",
+      "retrieved": "2026-11-11"
+    }
+  ]
+}

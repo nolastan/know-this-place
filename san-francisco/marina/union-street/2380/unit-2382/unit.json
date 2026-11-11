@@ -1,0 +1,89 @@
+{
+  "address": "2382 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2380/unit-2382/",
+  "apn": "0535036",
+  "block": "0535",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 1000,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 742773,
+    "assessed_improvement_value": 742773,
+    "last_sale_date": "2017-03-31"
+  },
+  "permits": [
+    {
+      "number": "200707136796",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-13",
+      "status_date": "2008-02-28",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace 10 windows with same look, designs space, 1 window visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507056832",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-05",
+      "status_date": "2005-08-12",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "revision to permit 200503147481 per bldng inspc instruction revert back to prior condition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503147481",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2005-03-14",
+      "status_date": "2005-08-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev 200502105308&200412222029. add small storage area under stairwell.1 layer 5/8: type x sheetrock.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502105308",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-10",
+      "status_date": "2005-07-11",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "add structural support to kitchen ceiling.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412222029",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-22",
+      "status_date": "2005-07-11",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "remodel kchn/hall bth/master bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0535036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0535&street_number=2382",
+      "retrieved": "2026-11-11"
+    }
+  ]
+}

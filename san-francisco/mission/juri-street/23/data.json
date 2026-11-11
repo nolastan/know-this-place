@@ -1,0 +1,92 @@
+{
+  "address": "23 Juri Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/juri-street/23/",
+  "block": "6532",
+  "eas_baseid": "401450",
+  "coordinates": {
+    "lat": 37.749745,
+    "lng": -122.422043
+  },
+  "parcel": {
+    "year_built": 1982,
+    "units": 3,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Mission"
+  },
+  "condominium": {
+    "lots": [
+      "039",
+      "040",
+      "041"
+    ],
+    "method": "Proposed from the 2025 roll for block 6532: every condominium parcel the roll files under 23 JURI ST, and the unbroken run of lots beside parcel 6532039 on the same street with the same year built (1982). 3 lots, 039–041."
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1982",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201404284375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-28",
+      "status_date": "2014-05-22",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "install prefinished siding over existing plywood on rear and in lightwell. approx 2400 sq ft (work in common area only). work is not visible from the street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JURI&street_type=ST&address_number=23",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 6532)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=6532&closed_roll_year=2025",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6532",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6532039",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-11-12",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 12 November 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/1minutesofmeeting1980sanf/page/n28/mode/1up",
+      "retrieved": "2026-11-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-11-12",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's decision on the construction at 23 Juri Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-11-12"
+    }
+  ]
+}
