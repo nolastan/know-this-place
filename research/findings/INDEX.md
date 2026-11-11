@@ -463,6 +463,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-11-04.json` | 4 | 1 KB | `twin-peaks`, `south-of-market`, `financial-district` +1 |
 | `news-2026-11-07.json` | 1 | 1 KB | `financial-district` |
 | `news-2026-11-10-airspace.json` | 4 | 2 KB | `tenderloin`, `south-of-market`, `nob-hill` +1 |
+| `news-2026-11-11.json` | 2 | 1 KB | `union-square`, `tenderloin` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
 | `news-condo-446.json` | 2 | 1 KB | `castro`, `east-cut` |
 | `north-beach-hcs.json` | 0 | 1 KB | — |
