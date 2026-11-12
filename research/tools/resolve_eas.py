@@ -1148,6 +1148,57 @@ def recorded_parcels(f: dict) -> list:
     return out
 
 
+def printed_lots(f: dict) -> list:
+    """Every lot a record prints, including a list the reader kept apart.
+
+    `recorded_parcels` reads the one lot a survey prints beside its address. The
+    minutes often print several ("Lots 005, 006 and 007 in Assessor's Block
+    4100"), and the reader files those under `assessor_lots_as_recorded`. They
+    are not used to choose a parcel; they are used to refuse one — see
+    `spans_more`.
+    """
+    extra = f.get("extra") or {}
+    block = extra.get("assessor_block_as_recorded")
+    m = re.fullmatch(r"(\d{1,4})([A-Z]?)", str(block or "").strip().upper())
+    if not m:
+        return []
+    blk = m.group(1).zfill(4) + m.group(2)
+    out = []
+    for key in ("assessor_lot_as_recorded", "assessor_lots_as_recorded"):
+        lots = extra.get(key)
+        if isinstance(lots, (list, tuple)):
+            lots = ",".join(str(x) for x in lots)
+        for lot in re.split(r"[,\s;&]+|\band\b", str(lots or "").strip().upper(), flags=re.I):
+            m2 = re.fullmatch(r"(\d{1,3})([A-Z]?)", (lot or "").strip())
+            if m2:
+                out.append(blk + m2.group(1).zfill(3) + m2.group(2))
+    return list(dict.fromkeys(out))
+
+
+def spans_more(city: City, f: dict, parcel: str) -> bool:
+    """True when the record prints lots that are not all this parcel's building.
+
+    A heading's first number can sit inside one condominium while the record is
+    about three lots that became eleven buildings (598 Missouri Street, lots 5,
+    6 and 7) or two houses (44 Niantic Avenue, lots 5 and 6). Placing that on
+    the one building the number happens to fall in would state a rezoning or a
+    subdivision as a fact about a single address. So a record that prints more
+    than one lot is placed by its number only when every printed lot is active
+    today and on the chosen parcel's map lot; otherwise it is left for a hand
+    resolution.
+    """
+    lots = printed_lots(f)
+    if len(lots) < 2:
+        return False
+    chosen = (city.parcels.get(parcel) or {}).get("mapblklot") or parcel
+    for lot in lots:
+        row = city.parcels.get(lot)
+        if (not row or str(row.get("active")).lower() not in ("true", "1")
+                or (row.get("mapblklot") or lot) != chosen):
+            return True
+    return False
+
+
 def recorded_parcel_check(f: dict, parcel: str) -> str:
     """How the parcel a record printed compares with the one it resolved to.
 
@@ -1218,6 +1269,8 @@ def own_parcel(city: City, f: dict, name: str, stype: str, title: dict, label: s
         parcel = one_condominium(city, printed)
         if not parcel:
             return None
+    if spans_more(city, f, parcel):
+        return None
     numbers, street = roll_address(city, parcel)
     own = city.parcels[parcel]
     on_street = (
@@ -1228,6 +1281,27 @@ def own_parcel(city: City, f: dict, name: str, stype: str, title: dict, label: s
         return None
     held = city.parcel_numbers(parcel, name, stype)
     lead = sorted(set(held) | set(title["unparcelled"]), key=num_key)
+    # The lot being on the street is not enough: a reader who drops a block's
+    # letter ("3275" for 3275A) lands on a real lot of the same street a block
+    # away — 2 Upland Drive went to 110 Upland Drive. So the record's number
+    # has to be recognisable on the lot too: a number the roll, sf-parcels or
+    # EAS holds for it, or one that is such a number with digits lost in the
+    # scan ("9" for 949).
+    own_numbers = {str(n).upper() for n in list(numbers) + list(held)}
+    for k in ("from_address_num", "to_address_num"):
+        if own.get(k):
+            own_numbers.add(str(own[k]).lstrip("0").upper())
+    asked = ({str(n).upper() for n in title["misses"] + title["unparcelled"]}
+             | {str(f.get("street_number") or "").upper()})
+    asked.discard("")
+
+    def lost_digits(short: str, full: str) -> bool:
+        it = iter(full)
+        return len(short) < len(full) and all(ch in it for ch in short)
+
+    if not (asked & (own_numbers | set(title["unparcelled"]))
+            or any(lost_digits(a, o) for a in asked for o in own_numbers)):
+        return None
     if not lead and parcel not in city.pages:
         return None
     filed = ("–".join(str(n) for n in ([numbers[0], numbers[-1]] if len(numbers) > 1
@@ -1703,7 +1777,8 @@ def decide(city: City, f: dict, today: str) -> dict:
                      f"in, which sf-parcels puts on a neighbouring lot. The stated parcel is "
                      f"taken.")
             title["parcels"] = {keep: title["parcels"][keep]}
-        elif one_condominium(city, title["parcels"]):
+        elif (one_condominium(city, title["parcels"])
+              and not spans_more(city, f, one_condominium(city, title["parcels"]))):
             # The numbers are on different parcels because the building was
             # condominium-mapped after the record was written: the old lot was
             # retired and each flat became a parcel of its own, carrying its own
@@ -1812,6 +1887,7 @@ def candidate_parcels(city: City, findings: dict) -> list:
         # The lot a record prints is a candidate whether or not its number
         # survives in EAS — `own_parcel` reads it when the number does not.
         apns.update(recorded_parcels(f))
+        apns.update(printed_lots(f))
         for name, stype, numbers in recorded_addresses(f, city):
             for n in numbers:
                 for r in city.rows_for(name, stype, n):
