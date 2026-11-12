@@ -1,0 +1,143 @@
+{
+  "address": "2216–2218 Clement Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/clement-street/2216/",
+  "apn": "1410019",
+  "block": "1410",
+  "lot": "019",
+  "eas_baseid": "302742",
+  "coordinates": {
+    "lat": 37.782349,
+    "lng": -122.483115
+  },
+  "address_range": "2216–2218",
+  "street_numbers_on_parcel": [
+    "2216",
+    "2218"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 3,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4369,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "OTCLEM",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "2218 2216 CLEMENT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 450920,
+    "assessed_improvement_value": 676394,
+    "last_sale_date": "1990-07-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505156552",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-05-15",
+      "status_date": "2025-05-15",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "reroof w/hot work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405283101",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "2024-05-28",
+      "status_date": "2024-09-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to comply w/ awning amnesty program: 1 fixed awning 232 sf. 3 retractable awning 84 sf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305452",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-04-05",
+      "status_date": "1993-08-16",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001802",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-01-30",
+      "status_date": "1990-03-14",
+      "estimated_cost": 100,
+      "description": "nail the ceiling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606612",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-06-05",
+      "status_date": "1986-07-28",
+      "estimated_cost": 8550,
+      "description": "replace kitchen cabinets & new countertop",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENT&street_type=ST&address_number=2216",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1410019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1410&lot=019",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1410019",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1913-07-19",
+      "name": "The San Francisco Call, 19 July 1913, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-19/ed-1/seq-15/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-07-19",
+      "kind": "building contract",
+      "description": "Thomas Hamill contracted for all work except plumbing, brickwork, patent chimneys, sheet metal and one other trade on a two-storey frame building.",
+      "source": "loc-sf-call-1913-07-19"
+    }
+  ]
+}

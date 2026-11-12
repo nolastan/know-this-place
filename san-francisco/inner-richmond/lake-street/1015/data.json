@@ -1,0 +1,147 @@
+{
+  "address": "1015 Lake Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/lake-street/1015/",
+  "apn": "1371047",
+  "block": "1371",
+  "lot": "047",
+  "eas_baseid": "301510",
+  "coordinates": {
+    "lat": 37.78617,
+    "lng": -122.470391
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1294,
+    "basement_area_sqft": 204,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 1015 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46181,
+    "assessed_improvement_value": 181368
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M717507",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-08-29",
+      "status_date": "2016-08-29",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201252863",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-25",
+      "status_date": "2012-03-16",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "add led lighting to studio ceiling (12) recessed fixtures. replace ceiling with 5/8\" type x drywall. replace bathroom vanity top - new laminate top.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911866",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-15",
+      "status_date": "1999-07-12",
+      "estimated_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809991S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-06-02",
+      "status_date": "1999-09-28",
+      "estimated_cost": 35000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620037",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-17",
+      "status_date": "1997-01-24",
+      "estimated_cost": 5000,
+      "description": "replace beam in garage w/steel/add to landing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8813919",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-09-20",
+      "status_date": "1989-07-20",
+      "estimated_cost": 100,
+      "description": "for final inspection under #8000520, 8007273",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=1015",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1371047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1371&lot=047",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1371047",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1907-09-26",
+      "name": "The San Francisco Call, 26 September 1907, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-09-26/ed-1/seq-15/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-09-26",
+      "kind": "building contract",
+      "description": "Felix Marcuse contracted to put up a one-storey cottage, at $2,275.",
+      "source": "loc-sf-call-1907-09-26"
+    }
+  ]
+}
