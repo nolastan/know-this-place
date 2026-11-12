@@ -6,6 +6,19 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-12 (the unresolved entries re-placed by lot
+  geometry instead of roll year. Of 10,495 unresolved, 5,374 give a
+  measurable line or corner; the record's lot drawn on the parcel shapes
+  from the block corner puts 1,016 on one unchanged lot, 759 inside a larger
+  parcel and 1,090 at a point with no lot printed. The strictest grade, lot
+  lines within 2 ft of today's, is 784 rows; the 283 of them on existing
+  pages were each read by a second reader against the print and the page:
+  **168 published on 138 pages** (140 as facts about the standing building,
+  28 as `site history` on a later building's page), 115 held, almost all
+  because the roll year alone cannot say whether the building is the same
+  one. No page seeded. Not yet done: the 501 strict-grade rows whose parcel
+  has no page, the weaker grades, and about 4,100 entries missing a side,
+  offset or street in the OCR. See LESSONS.md, 2026-11-12.)
 > - **Verified:** 2026-11-10 (the 1910 permits batch,
   `sn85066387-1910-permits.json`, re-tested with `corner.py --retest`. Its 42
   placements carried no corner fields ("42 no fields"); all 42 filled from
