@@ -3183,3 +3183,43 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *denial* that it upholds keeps the denial — write the description from
   the decision appealed, not the verb. (2026-11-11,
   sf-board-of-permit-appeals-minutes)
+- **A record that gives a lot can be placed without asking the roll what year
+  the building is.** 10,495 Call entries sat unresolved because `corner.py`
+  accepts a parcel only when its roll year fits, and because it lists only
+  blocks with an EAS point within 60 m, so a block that is one large parcel is
+  invisible to it. Drawing the record's own lot as a rectangle on the
+  `acdm-wktn` shapes, in a frame along the street's DPW heading with its
+  origin at the block's first lot lines, placed about 2,800 of them; against
+  the placements already published and re-tested it agreed on 876 of 884
+  where the lot is unchanged. *Place by geometry first, then ask separately
+  whether the building described is the one standing.* Where every parcel
+  under the lot is later, the fact is `site history` on that parcel's page,
+  worded so it cannot be read as today's building. (2026-11-12; engine in the
+  project files under `pre1909/`, to be moved into `research/tools/`;
+  [sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **Only a lot whose lines fall on today's lot lines is safe to take from the
+  geometry alone.** A 120-row break test found no wrong parcel among 45 rows
+  where one parcel is the record's lot, and 4 among 75 where the lot printed
+  no size or sat inside a merged parcel: a block corner moved 64 ft by
+  Octavia Boulevard, a "SE corner" whose lot ran "E 110 by N 23", Ivy read
+  for Lily, 185 for 165. Broadway was widened about 7 ft a side after 1909.
+  *Use the lot's compass letters as a check on the corner named, compare the
+  block corner either side of the cross street, and treat a record with no
+  lot as a point, not a placement.* (2026-11-12)
+- **The roll year cannot say whether a building was replaced.** In review
+  the roll called standing buildings later (a remodel year on the Hotel
+  Drake-Wiltshire, a condominium-conversion year on the Chronicle Building),
+  called the 1912 Flood mansion earlier, and kept 1907 on a cleared lot.
+  114 of 283 exact-lot rows were held on this alone. *Publish a contract as
+  a fact about the standing building only where storeys agree and the year
+  fits, or the page documents the building from another source; publish it
+  as site history only where a specific year 15 or more years later comes
+  with different storeys or use, or a documented successor.* A contract for
+  a low building followed by one for "alterations and additions" on the same
+  lot is often how a taller building came about (3040 16th, 414 9th, 128
+  Eddy). (2026-11-12)
+- **A finding's `raw.text` is a clip, not the entry.** The extraction cut the
+  owner clause before "with" and sometimes the price after the lot, so a
+  reviewer given only the clip reports owner firms and prices as "not in the
+  print". *Tell a reviewer what was cut, or give them the page text.*
+  (2026-11-12)

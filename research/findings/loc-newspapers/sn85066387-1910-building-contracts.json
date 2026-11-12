@@ -1427,7 +1427,7 @@
    "address_as_written": "SW corner of Ofarrell street and Taylor street, W 75 by S 72",
    "street_name": "OFARRELL",
    "street_type": "ST",
-   "description": "William Helbing contracted to put up a six-storey and basement steel and brick building, at $58,500.",
+   "description": "William Helbing contracted to put up a steel and brick building with a basement, at $58,500.",
    "extra": {
     "contractors": [
      "William Helbing"
@@ -1469,19 +1469,17 @@
    "confidence": "high",
    "note": "'with' printed as 'to'; storey count garbled ('*-;_ utarv'), six storeys taken from the Call's prose of 1910-01-15 on the same contract",
    "resolution": {
-    "status": "unresolved",
-    "apn": "0324022",
-    "path": "/san-francisco/tenderloin/ofarrell-street/415/",
-    "eas_address": "415 OFARRELL ST",
-    "method": "Placed by hand with research/tools/corner.py's geometry on the record's corner: SW corner of OFARRELL ST and TAYLOR ST, lot W 75 by S 72: the parcel 0324022 (415 OFARRELL ST), lot area 5309 sq ft against the record's 75x72; roll year 1908, 6.0 storeys; in the SW corner the record names. The only parcel matching the roll year within two years, and where the record gives them the offset within 4 ft and the lot within 4%. The page path comes from resolve_eas on that parcel's EAS address: EAS exact match on 415 OFARRELL ST → parcel 0324022; sf-parcels has blklot 0324022 active, 415–421 OFARRELL; the 2025 roll records it as commercial hotel, built 1908. EAS puts 415, 417, 419, 421 OFARRELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 415.",
-    "checked_on": "2026-11-06",
-    "by_hand": true,
-    "note": "Retracted 2026-11-06: re-tested with corner.py --retest against the DPW street centrelines (3psu-pn9h), the placement on 0324022 (415 OFARRELL ST, /san-francisco/tenderloin/ofarrell-street/415/) disagrees — outline 113 ft from the corner; 415-421 O'Farrell is the second lot west of Taylor, its 75 ft front beginning about 73 ft from the corner; the SW corner lot is 0324001 (401-411 O'Farrell, 351/385 Taylor, Planning's R. S. Brown Hotel (Columbia Hotel)), roll 1910, six storeys, but 6,372 sq ft against the record's 75 by 72 (5,400) — 18% over, and the h2 batch's own December 1910 loan record gives that corner as 72 by 92. The 2026-10-03 placement used the crossing estimate from EAS points alone, before the centreline test existed. No other parcel was taken in its place: the corner lot's area is past the 4% the batch was placed on, and the two 1910 records disagree about its dimensions."
+    "status": "resolved",
+    "apn": "0324001",
+    "path": "/san-francisco/tenderloin/ofarrell-street/401/",
+    "eas_address": "401 OFARRELL ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"SW corner of Ofarrell street and Taylor street, W 75 by S 72\": the record's corner lot drawn from the block corner; 99% of the record's lot lies on parcel 0324001 and covers 84% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Roll 1910, 6 storeys; page: Columbia Hotel, Sutton and Weeks, steel frame with brick walls (NRHP, dated 1909, five storeys over a basement). Record 1910-01, steel and brick with basement on this corner: material and year fit.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
    },
    "publish": {
-    "status": "declined",
-    "pr": "456",
-    "note": "Removed from the page on 2026-11-06: the placement failed the street-network re-test (see resolution.note). Originally published as: William Helbing contracted to put up a six-storey and basement steel and brick building, at $58,500."
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -10334,10 +10332,17 @@
    "confidence": "high",
    "note": "flat count printed '<15 fats t' (15 flats?) not recorded; amount partly unreadable; second contractor name unreadable",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: the parcels found were refused - 3518018 (255 10TH ST): built 1932,side."
+    "status": "resolved",
+    "apn": "3518018",
+    "path": "/san-francisco/south-of-market/10th-street/255/",
+    "eas_address": "255 10TH ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"NE line of Tenth street, 175 NW of Folsom street, NW 100 by NE 100\": record span 216.0-316.0 ft from the street node against the parcel's front 216.2-316.2 ft, lot lines within 0.2 ft of today's; 99% of the record's lot lies on parcel 3518018 and covers 100% of it. A second reader checked the print against the extraction and the page: the building described is an earlier one, so the fact is site history. Page documents the present building as an automobile repair shop of 1932 built on the site of a row of flats that had stood since at least the 1910s; roll 1932, industrial.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -11759,7 +11764,7 @@
    "address_as_written": "E line of Hyde street, 34 N of Clay street, N 34:9 by E 100",
    "street_name": "HYDE",
    "street_type": "ST",
-   "description": "Joseph A. Hill contracted for all work except plumbing on three-storey frame flats.",
+   "description": "A builder contracted for all work except plumbing on three-storey frame flats, at $10,337.70.",
    "extra": {
     "contractors": [
      "Joseph A. Hill"
@@ -11804,10 +11809,17 @@
    "confidence": "high",
    "note": "contractor surname 'mil' read Hill (guess); use '<ttatii)' read flats",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: the parcels found were refused - 0216014 (1304 HYDE ST): side."
+    "status": "resolved",
+    "apn": "0216014",
+    "path": "/san-francisco/nob-hill/hyde-street/1304/",
+    "eas_address": "1304 HYDE ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"E line of Hyde street, 34 N of Clay street, N 34:9 by E 100\": record span 58.4-93.2 ft from the street node against the parcel's front 58.3-93.2 ft, lot lines within 0.1 ft of today's; 100% of the record's lot lies on parcel 0216014 and covers 100% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Roll 1911, 3 storeys, 6 units; page: lot sold (reported 9 Apr 1910) to a buyer who meant to put up six apartment flats, and the building let as the Marguerite Apartments by Feb 1912. Record Mar 1910, three-storey frame flats. Year (+1), storeys, use and the page's history agree.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -18198,7 +18210,7 @@
    "address_as_written": "N line of Bush street, 62:9 W of Jones street, W 23 by N 100",
    "street_name": "BUSH",
    "street_type": "ST",
-   "description": "E. D. Crowley and Frank J. Klinn contracted to put up a flat and apartments.",
+   "description": "E. D. Crowley and a second contractor contracted to put up a flat and apartments.",
    "extra": {
     "contractors": [
      "E. D. Crowley",
@@ -18241,10 +18253,17 @@
    "confidence": "medium",
    "note": "'Bnnh' read Bush; amount '$1«9SO' unreadable (1,950 or 1?,950)",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the block face matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "0276010",
+    "path": "/san-francisco/nob-hill/bush-street/1018/",
+    "eas_address": "1018 BUSH ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"N line of Bush street, 62:9 W of Jones street, W 23 by N 100\": record span 96.6-119.6 ft from the street node against the parcel's front 96.4-121.4 ft, lot lines within 1.8 ft of today's; 100% of the record's lot lies on parcel 0276010 and covers 92% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Roll 1910; page documents the Bosler Apartments of 1910 at 1020 Bush and a 7 Oct 1910 contract to complete a three-storey brick building. Record Mar 1910, to erect flat and apartments. Year and use agree; the record gives no storeys or material.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -25399,10 +25418,17 @@
    "confidence": "medium",
    "note": "lot '2o' read 20",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the block face matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "0271004",
+    "path": "/san-francisco/financial-district/grant-avenue/417/",
+    "eas_address": "417 GRANT AVE",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"W line of Grant avenue, 67:6 N of Bush street, N 20 by W 63:0\": record span 100.3-120.3 ft from the street node against the parcel's front 100.6-120.6 ft, lot lines within 0.3 ft of today's; 96% of the record's lot lies on parcel 0271004 and covers 88% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Roll 1910, 3 storeys; record April 1910, three-storey and basement brick; page's 1990 survey lists it as unreinforced masonry. Year, storeys and material fit.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -25564,10 +25590,17 @@
    "confidence": "high",
    "note": "side printed 'SWIIw', read SW line",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the block face matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "3779120",
+    "path": "/san-francisco/south-of-market/harriet-street/351/",
+    "eas_address": "351 HARRIET ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"SW line of Sixth street, 225 NW of Brannan street, NW 50 by SW 160\": record span 266.9-316.9 ft from the street node against the parcel's front 266.9-316.9 ft, lot lines within 0.0 ft of today's; 100% of the record's lot lies on parcel 3779120 and covers 81% of it. A second reader checked the print against the extraction and the page: the building described is an earlier one, so the fact is site history. Roll and page 1936, 3 storeys, Industrial (page filed under 351-355 Harriet Street, the lot running through from Sixth). Record is a one-storey frame of 1910: 26 years earlier, different storeys.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -35315,10 +35348,17 @@
    "confidence": "medium",
    "note": "lot 'El2t)' read E 120; amount 'fss,sotr' unreadable",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: the parcels found were refused - 1366028 (178 07TH AVE): built 1905,offset; 1366029 (174 07TH AVE): built 1901,offset; 1366030 (172 07TH AVE): built 1904,offset; 1366031 (158 07TH AVE): offset; 1366032 (152 07TH AVE): built 1960,offset; 1366033 (148 07TH AVE): offset; 1366035 (140 07TH AVE): built 1915,offset; 1366036 (136 07TH AVE): built 1907,offset."
+    "status": "resolved",
+    "apn": "1366053",
+    "path": "/san-francisco/inner-richmond/7th-avenue/144/",
+    "eas_address": "144 7TH AVE",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"E line of Seventh avenue, 275 S of Lake street, S 25 by E 120\": record span 315.8-340.8 ft from the street node against the parcel's front 315.8-340.8 ft, lot lines within 0.0 ft of today's; 99% of the record's lot lies on parcel 1366053 and covers 100% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. The page documents the house as built in 1910 to Maxwell G. Bugbee's design; roll 1910. A June 1910 contract for all work on exactly this lot is that building. The print says two storeys and the roll three (no basement mentioned), which I take as a basement or garage level counted by the roll; the page's own 1910 documentation carries the identification.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -39218,7 +39258,7 @@
    "address_as_written": "NW corner of Eddy street and Taylor street, W 80 by N 87:6",
    "street_name": "EDDY",
    "street_type": "ST",
-   "description": "Condon & Baird, Otis elevator company and Mangrum & Otter contracted for plumbing, gas fitting, electric passenger elevator, steam and hot water heating on a five-storey and basement class C brick building for Ridgeway realty company.",
+   "description": "Otis elevator company, Mangrum & Otter and a third firm contracted for plumbing, gas fitting, an electric passenger elevator, and steam and hot water heating on a five-storey and basement class C brick building, at $12,473.",
    "extra": {
     "contractors": [
      "Condon & Baird",
@@ -39264,10 +39304,17 @@
    "confidence": "medium",
    "note": "'NAY corner' read NW; 'SO' read 80; 'tiv.>' read five; owner printed 'Ridjrewa.v realty company'; 'Condon & Band' read Condon & Baird",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: several parcels fit and nothing in the record chooses between them - 0332003 (200 EDDY ST), built 1911; 0332005 (234 EDDY ST), built 1909."
+    "status": "resolved",
+    "apn": "0332003",
+    "path": "/san-francisco/tenderloin/eddy-street/200/",
+    "eas_address": "200 EDDY ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"NW corner of Eddy street and Taylor street, W 80 by N 87:6\": the record's corner lot drawn from the block corner; 98% of the record's lot lies on parcel 0332003 and covers 100% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Page: built 1910, five storeys over a basement, Ralph Warner Hart; roll 1911, 5 storeys; record 1910-06 for a five-storey and basement class C brick building. Year, storeys and material agree.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -44919,7 +44966,7 @@
    "address_as_written": "SE corner of Bush street and Powell street, E 43 by S 67:6",
    "street_name": "BUSH",
    "street_type": "ST",
-   "description": "J. L. Leonard and Central iron works contracted for excavating and concrete work, structural steel, cast iron bases and bay window framing on a six-storey and basement class C building.",
+   "description": "The Central Iron Works and a second contractor contracted for excavating and concrete work, structural steel, cast iron bases and bay window framing on a six-storey and basement class C building.",
    "extra": {
     "contractors": [
      "J. L. Leonard",
@@ -44961,10 +45008,17 @@
    "confidence": "high",
    "note": "entry cut off after 'for' by an interleaved news story; amount not in block; contractor initial 'I*' read L",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the corner matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "0285010",
+    "path": "/san-francisco/nob-hill/powell-street/550/",
+    "eas_address": "550 POWELL ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"SE corner of Bush street and Powell street, E 43 by S 67:6\": the record's corner lot drawn from the block corner; 100% of the record's lot lies on parcel 0285010 and covers 95% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Roll 1911, 6 storeys; page: the Chesterfield Apartments, 1911, with a 2 July 1910 general contract for a six-storey and basement apartment building on this lot. Record 14 July 1910, structural trades on a six-storey and basement class C building. Year (+1), storeys and documented history agree.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -48941,10 +48995,17 @@
    "confidence": "high",
    "note": "lot printed without directions",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: the parcels found were refused - 3731104 (58 HARRIET ST): offset; 3731105 (62 HARRIET ST): built 1916,offset; 3731115 (19 A HARRIET ST): offset,side."
+    "status": "resolved",
+    "apn": "3731168",
+    "path": "/san-francisco/south-of-market/harriet-street/54/",
+    "eas_address": "54 HARRIET ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"SW line of Harriet street, 275 SE of Howard street, 25 by 75\": record span 316.6-341.6 ft from the street node against the parcel's front 317.5-342.5 ft, lot lines within 0.9 ft of today's; 96% of the record's lot lies on parcel 3731168 and covers 96% of it. A second reader checked the print against the extraction and the page: the building described is an earlier one, so the fact is site history. Roll 1999; the page documents the Planning Commission's 1998 approval to demolish a two-unit building here and a 1997 permit to 'demolish 2 story two family dwelling'. The demolished building may well have been the record's, but today's is not.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -52331,7 +52392,7 @@
    "address_as_written": "SE corner of Bush street and Powell street, E 45 by S 67:6",
    "street_name": "BUSH",
    "street_type": "ST",
-   "description": "Modern sheet metal works and Horace W. Tyrrel contracted for galvanized iron, tin, copper marquise, patent chimneys, painting, tinting and varnishing on six-storey and basement class C apartments.",
+   "description": "Modern Sheet Metal Works and Horace W. Tyrrel contracted for galvanized iron, tin, a copper marquise, patent chimneys, painting, tinting and varnishing on a six-storey and basement class C apartment building, at $1,634.",
    "extra": {
     "contractors": [
      "Modern sheet metal works",
@@ -52376,10 +52437,17 @@
    "confidence": "high",
    "note": "'Bu*n' read Bush, 'Dowell' read Powell; 'Haas C' read class C",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: the parcels found were refused - 0285010 (550 POWELL ST): side."
+    "status": "resolved",
+    "apn": "0285010",
+    "path": "/san-francisco/nob-hill/powell-street/550/",
+    "eas_address": "550 POWELL ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"SE corner of Bush street and Powell street, E 45 by S 67:6\": the record's corner lot drawn from the block corner; 100% of the record's lot lies on parcel 0285010 and covers 100% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. As row 1910-0832: roll 1911, 6 storeys, the Chesterfield Apartments of 1911. Record 27 Aug 1910, sheet metal and painting on a six-storey and basement class C apartment building.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -53296,10 +53364,17 @@
    "confidence": "high",
    "note": "lot printed without directions",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the block face matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "3556006",
+    "path": "/san-francisco/mission/guerrero-street/326/",
+    "eas_address": "326 GUERRERO ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"W line of Guerrero street, 133 S of Fifteenth street, 23 x 100\": record span 166.1-189.1 ft from the street node against the parcel's front 164.2-189.0 ft, lot lines within 1.9 ft of today's; 100% of the record's lot lies on parcel 3556006 and covers 91% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Record Aug 1910: three-storey frame. Roll 1910, 3 storeys, 3 units; survey contributor to the Mission Reconstruction District; and the page already has an April 1910 notice of a frame building to be erected here on plans by Arthur G. Scholz, which dates construction on this lot to 1910 independently of the roll's bucket year.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -54838,10 +54913,17 @@
    "confidence": "medium",
    "note": "offset '22s' read 225; printed 'K street' = Kirkham; lot without directions",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the block face matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "1848015",
+    "path": "/san-francisco/inner-sunset/5th-avenue/1459/",
+    "eas_address": "1459 05TH AVE",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"W line of Fifth avenue, 225 N of Kirkham street, 25x120\": record span 265.0-290.0 ft from the street node against the parcel's front 265.0-290.0 ft, lot lines within 0.0 ft of today's; 100% of the record's lot lies on parcel 1848015 and covers 100% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Roll 1910, 2 storeys, single-family; record September 1910, two-storey frame. Year and storeys fit, and the page independently dates the house 1910.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -55282,7 +55364,7 @@
    "address_as_written": "NW corner of Tenth avenue and California street, W 32:6 by N 100",
    "street_name": "10TH",
    "street_type": "AVE",
-   "description": "John V. Btlefel contracted for alterations and additions to make a two story frame building (flats) to two-storey frame flats.",
+   "description": "A builder contracted for alterations and additions to make the building a two-storey frame building of flats.",
    "extra": {
     "contractors": [
      "John V. Btlefel"
@@ -55322,10 +55404,17 @@
    "confidence": "medium",
    "note": "printed 'NW line of Tenth avenue and California street', read as NW corner; amount '$3.(108' unreadable; contractor surname garbled",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: the parcels found were refused - 1370021 (4800 CALIFORNIA ST): side."
+    "status": "resolved",
+    "apn": "1370021",
+    "path": "/san-francisco/inner-richmond/california-street/4800/",
+    "eas_address": "4800 CALIFORNIA ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"NW corner of Tenth avenue and California street, W 32:6 by N 100\": the record's corner lot drawn from the block corner; 94% of the record's lot lies on parcel 1370021 and covers 100% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. An alteration of September 1910 to make a two-storey frame building of flats; roll 1905, 2 storeys, 3 units, multi-family. The building predates the record and matches in storeys and use.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -62024,10 +62113,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: the parcels found were refused - 0334015 (484 EDDY ST): side."
+    "status": "resolved",
+    "apn": "0334015",
+    "path": "/san-francisco/tenderloin/eddy-street/484/",
+    "eas_address": "484 EDDY ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"N line of Eddy street, 37:6 E of Hyde street, E 25 by N 87:6\": record span 73.0-98.0 ft from the street node against the parcel's front 73.0-98.0 ft, lot lines within 0.0 ft of today's; 100% of the record's lot lies on parcel 0334015 and covers 99% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Roll 1910, 3 storeys; page: flats of 1911 by J. A. Porporato, three storeys over a basement, brick (NRHP). Record 1910-10, three-storey and basement brick: all agree.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -62550,10 +62646,17 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the block face matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "3618027",
+    "path": "/san-francisco/mission/dolores-street/861/",
+    "eas_address": "861 DOLORES ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"E line of Dolores street, 209 N of Twenty-second street, N 33 by E 117:6\": record span 244.7-277.7 ft from the street node against the parcel's front 244.3-279.2 ft, lot lines within 1.5 ft of today's; 94% of the record's lot lies on parcel 3618027 and covers 88% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Record Oct 1910: two-storey frame. Roll 1910, 2 storeys, single-family dwelling. Year and storeys agree. Caveat: 1910 is also a bucket year, so the year match is weaker than it looks; nothing contradicts.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -70863,10 +70966,17 @@
    "confidence": "high",
    "note": "five room cottage; H street = Lincoln Way",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the block face matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "1727038",
+    "path": "/san-francisco/inner-sunset/24th-avenue/1234/",
+    "eas_address": "1234 24TH AVE",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"E line of Twenty-fourth avenue, 200 S of Lincoln way, S 23 by E 120\": record span 246.1-269.1 ft from the street node against the parcel's front 246.1-271.1 ft, lot lines within 2.0 ft of today's; 100% of the record's lot lies on parcel 1727038 and covers 92% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Roll 1911, 1 storey, single-family; record December 1910, a frame cottage. Year (+1), storeys and use fit.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
@@ -71179,10 +71289,17 @@
    "confidence": "medium",
    "note": "offset '20«:3' read 206:3; direction 'TV' read W",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-10-03",
-    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
-    "note": "research/tools/corner.py: no parcel on the block face matches the record's lot within 4% - the building replaced, or the lot re-cut."
+    "status": "resolved",
+    "apn": "1052009",
+    "path": "/san-francisco/pacific-heights/sutter-street/2450/",
+    "eas_address": "2450 SUTTER ST",
+    "method": "Placed by hand on the sf-parcels shapes (acdm-wktn), measuring from the block corner the DPW centrelines (3psu-pn9h) give for the record's \"N line of Sutter street, 206:3 W of Divisadero street, N 137:6 by W 84:3\": record span 246.6-330.8 ft from the street node against the parcel's front 246.7-330.9 ft, lot lines within 0.1 ft of today's; 100% of the record's lot lies on parcel 1052009 and covers 100% of it. A second reader checked the print against the extraction and the page: the building described is taken as the one standing. Page documents the San Francisco Turnverein hall: design chosen July 1910 (three storeys and basement, brick with steel frame, 84:3 by 137:6), permit Dec 1910, completed autumn 1911; roll 1911, 3 storeys. Page entries are dated 1910-07-09, 10-15 and 12-03; this is a separate contract of 12-29.",
+    "checked_on": "2026-11-12",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "PENDING"
    }
   },
   {
