@@ -280,6 +280,15 @@ class StreetIndex:
         if not name:
             return None, ""
         if name in self.types:
+            # EAS holds one stray row under a spelled-out ordinal — "SIXTH ST",
+            # one address in Mission Bay — beside the thousands it files under
+            # the padded form. The exact match used to win, so "172 Sixth
+            # Street" was looked up on the stray and came back "does not exist
+            # today" while 172 06TH ST sat in EAS. The padded street is the
+            # street; the word is only the record's spelling of it.
+            padded = ORDINAL_WORDS.get(squash(name))
+            if padded and padded != name and padded in self.types:
+                return padded, "ordinal"
             return name, "exact"
         if name in self.aliases:
             target = self.aliases[name]
@@ -1167,6 +1176,73 @@ def recorded_parcel_check(f: dict, parcel: str) -> str:
     return "relot" if any(r.startswith(blk) for r in recorded) else "block"
 
 
+def one_condominium(city: City, parcels) -> str:
+    """The unit that stands for the building, if these parcels are one condominium's."""
+    rows = [city.parcels.get(p) for p in parcels]
+    if len(rows) < 2 or not all(rows):
+        return ""
+    if not all(str(r.get("active")).lower() in ("true", "1") for r in rows):
+        return ""
+    return city.condo_stack(rows)
+
+
+def own_parcel(city: City, f: dict, name: str, stype: str, title: dict, label: str,
+               today: str) -> dict | None:
+    """Place a record on the lot it prints, where EAS no longer has its number.
+
+    The number lookup is the resolver's first test and it fails closed: no EAS
+    row, no page. But a record that prints its own assessor block and lot has
+    placed itself without the number, and three things can make the number miss
+    while the lot is still there — the city re-addressed the parcel onto its
+    other frontage (705 Utah Street is "2321 19TH ST" in EAS and "705 UTAH" on
+    the roll), the scan lost digits of the number ("9 RHODE ISLAND" for 949), or
+    EAS holds the number with no parcel beside it (200 06TH ST).
+
+    Taken only when every lot the record prints is active, they are one map
+    lot, and the lot is on the street the record names — by the roll's own
+    `property_location`, by sf-parcels' address range, or by an EAS row. And
+    only when there is somewhere unambiguous to put it: a page the parcel
+    already has, or a number EAS holds on that street for it. Anything else is
+    left for a hand resolution, with the lot named in the note.
+    """
+    printed = list(dict.fromkeys(recorded_parcels(f)))
+    if not printed:
+        return None
+    rows = [city.parcels.get(p) for p in printed]
+    if not all(rows) or not all(str(r.get("active")).lower() in ("true", "1") for r in rows):
+        return None
+    if len({r.get("mapblklot") for r in rows}) != 1:
+        return None
+    parcel = printed[0]
+    if len(printed) > 1:
+        parcel = one_condominium(city, printed)
+        if not parcel:
+            return None
+    numbers, street = roll_address(city, parcel)
+    own = city.parcels[parcel]
+    on_street = (
+        (street and squash(name) and squash(name) in squash(street))
+        or (own.get("street_name") or "") == name
+        or any((r.get("street_name") or "") == name for r in city.by_parcel.get(parcel, [])))
+    if not on_street:
+        return None
+    held = city.parcel_numbers(parcel, name, stype)
+    lead = sorted(set(held) | set(title["unparcelled"]), key=num_key)
+    if not lead and parcel not in city.pages:
+        return None
+    filed = ("–".join(str(n) for n in ([numbers[0], numbers[-1]] if len(numbers) > 1
+                                         else numbers)) + f" {street}").strip()
+    head = (f"No parcel in sf-eas-addresses for {label}; the record prints its own lot, "
+            f"assessor block {f['extra']['assessor_block_as_recorded']} lot "
+            f"{f['extra']['assessor_lot_as_recorded']}, which is active and on this street"
+            + (f" (the roll files it at {filed})" if filed else "")
+            + ", so the record's own lot is taken")
+    res = place(city, parcel, name, stype, lead, head, today)
+    if res.get("status") != "resolved":
+        return None
+    return res
+
+
 def block_check(city: City, f: dict, parcel: str) -> tuple:
     """(clause, agrees) — the archivist's assessor block against the parcel's."""
     recorded = (f.get("extra") or {}).get("assessor_block_as_recorded")
@@ -1525,6 +1601,10 @@ def decide(city: City, f: dict, today: str) -> dict:
 
     # ---- the ordinary cases ------------------------------------------------ #
     if not title["parcels"]:
+        own = own_parcel(city, f, name, stype, title, label, today)
+        if own:
+            own["method"] += spelling
+            return own
         near = city.neighbours(name, stype or "", title_numbers[0])
         where = (f" The nearest surviving numbers on the street are "
                  f"{', '.join(near[:6])}." if near else
@@ -1623,6 +1703,23 @@ def decide(city: City, f: dict, today: str) -> dict:
                      f"in, which sf-parcels puts on a neighbouring lot. The stated parcel is "
                      f"taken.")
             title["parcels"] = {keep: title["parcels"][keep]}
+        elif one_condominium(city, title["parcels"]):
+            # The numbers are on different parcels because the building was
+            # condominium-mapped after the record was written: the old lot was
+            # retired and each flat became a parcel of its own, carrying its own
+            # street number. They are still one map lot and one building, and
+            # since #228 the building is what has the page — `place` files the
+            # fact there. Nothing is being chosen between; a pair of flats at
+            # 2067 and 2069 Green Street is not two places.
+            keep = one_condominium(city, title["parcels"])
+            lot = (city.parcels.get(keep) or {}).get("mapblklot")
+            named = (f" The recorded numbers are on {len(title['parcels'])} parcels today "
+                     f"({listed}); sf-parcels files all of them under one map lot, {lot}, and "
+                     f"the roll classes them as condominiums, so they are the units of one "
+                     f"building and the range is that building's.")
+            merged = sorted({n for ns in title["parcels"].values() for n in ns}, key=num_key)
+            title["keys"] = {keep: title["keys"].get(keep)}
+            title["parcels"] = {keep: merged}
         else:
             return {"status": "unresolved", "checked_on": today,
                     "method": (f"{label} spans more than one parcel in sf-eas-addresses today: "
@@ -1712,6 +1809,9 @@ def candidate_parcels(city: City, findings: dict) -> list:
     """
     apns: set = set()
     for f in findings["findings"]:
+        # The lot a record prints is a candidate whether or not its number
+        # survives in EAS — `own_parcel` reads it when the number does not.
+        apns.update(recorded_parcels(f))
         for name, stype, numbers in recorded_addresses(f, city):
             for n in numbers:
                 for r in city.rows_for(name, stype, n):
