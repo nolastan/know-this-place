@@ -1,0 +1,56 @@
+{
+  "address": "1070 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1070/unit-1101/",
+  "unit": "1101",
+  "apn": "0121A031",
+  "block": "0121A",
+  "lot": "031",
+  "parcel": {
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1163902,
+    "assessed_improvement_value": 1163902,
+    "last_sale_date": "2004-08-17"
+  },
+  "permits": [
+    {
+      "number": "202506138698",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-13",
+      "status_date": "2026-11-04",
+      "estimated_cost": 531883,
+      "revised_cost": 531883,
+      "description": "interior remodel, replace windows in kind and in place. electrical and plumbing work. no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411199756",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-11-19",
+      "status_date": "2010-03-15",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "revise 200410066092,replace ceiling.reloc&repl rain water leader. add dryer exhaust duct.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121A031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121A&unit=1101",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

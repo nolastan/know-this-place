@@ -1,0 +1,67 @@
+{
+  "address": "128 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-128/",
+  "apn": "7381015",
+  "block": "7381",
+  "lot": "015",
+  "parcel": {
+    "building_area_sqft": 2062,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 563889,
+    "assessed_improvement_value": 356721,
+    "last_sale_date": "2013-10-29"
+  },
+  "permits": [
+    {
+      "number": "202011259735",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-25",
+      "status_date": "2020-12-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "correct permit address: instead of 123 s lake merced to 128 s lake merced pa# ref 202008071345",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201312033240",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-03",
+      "status_date": "2014-01-21",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "g/f - add 1 full bath at (e) store and 1 wet bar in utility room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311202433",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-11-20",
+      "status_date": "2013-11-20",
+      "estimated_cost": 2200,
+      "revised_cost": 2500,
+      "description": "bathroom remodeling, remove ext tile and drywall from wwalls and floor. install new on 3rd floor. no fixtures change.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=128",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

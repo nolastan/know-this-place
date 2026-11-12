@@ -1,0 +1,159 @@
+{
+  "address": "1320 Anza Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/anza-street/1320/",
+  "apn": "1540021",
+  "block": "1540",
+  "lot": "021",
+  "eas_baseid": "307372",
+  "coordinates": {
+    "lat": 37.779415,
+    "lng": -122.462469
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1430,
+    "basement_area_sqft": 180,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 1320 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 312342,
+    "assessed_improvement_value": 338588
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200006051807",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-05",
+      "status_date": "2000-10-05",
+      "estimated_cost": 4684,
+      "revised_cost": 4684,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909778",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-06-07",
+      "status_date": "1990-01-12",
+      "estimated_cost": 5,
+      "description": "apply to extend permit #8801421",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904741",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-03-27",
+      "status_date": "1989-09-12",
+      "estimated_cost": 5,
+      "description": "revision of floor layout to approved application 8805061",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805061",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-20",
+      "status_date": "1989-09-12",
+      "estimated_cost": 1,
+      "description": "supplemental to #8801421, for city planning review only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801421",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-02-05",
+      "status_date": "1989-09-12",
+      "estimated_cost": 160000,
+      "description": "re-instate #8601108 for continue work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615899",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-12-15",
+      "status_date": "1988-04-22",
+      "estimated_cost": 75000,
+      "description": "revision of building permit appl #8601108 (2nd unit addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601108",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-01-30",
+      "status_date": "1987-06-19",
+      "estimated_cost": 160000,
+      "description": "remodel 1st & 2nd storys add 3rd floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=1320",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1540021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1540&lot=021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1540021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-07-02",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 2 July 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n128/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1986-07-02",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 1320 Anza Street to stand, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-07-02"
+    }
+  ]
+}

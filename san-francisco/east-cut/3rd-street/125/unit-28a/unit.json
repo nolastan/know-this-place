@@ -1,0 +1,58 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-28a/",
+  "unit": "28A",
+  "apn": "3722295",
+  "block": "3722",
+  "lot": "295",
+  "parcel": {
+    "building_area_sqft": 2027,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1555594,
+    "assessed_improvement_value": 1555596,
+    "last_sale_date": "2006-05-16"
+  },
+  "permits": [
+    {
+      "number": "202501077815",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-01-07",
+      "status_date": "2025-01-16",
+      "estimated_cost": 1250,
+      "revised_cost": 1250,
+      "description": "one unit- ref 202408209012- ti fire sprinkler relocated 2 fire spriklers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408209012",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-20",
+      "status_date": "2025-07-09",
+      "estimated_cost": 220000,
+      "revised_cost": 220000,
+      "description": "one unit- interior remodel kitchen with new cabinets, counter tops and appliances. replace cabinet fixtures and finsihes in 3x bathrooms. new hardwood floors and painting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722295&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=28A",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

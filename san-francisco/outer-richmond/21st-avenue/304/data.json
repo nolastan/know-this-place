@@ -1,0 +1,120 @@
+{
+  "address": "304–306 21st Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/21st-avenue/304/",
+  "apn": "1452040B",
+  "block": "1452",
+  "lot": "040B",
+  "eas_baseid": "453605",
+  "coordinates": {
+    "lat": 37.781989,
+    "lng": -122.480427
+  },
+  "address_range": "304–306",
+  "street_numbers_on_parcel": [
+    "304",
+    "306"
+  ],
+  "parcel": {
+    "year_built": 1920,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2160,
+    "building_area_sqft": 2186,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0306 0304 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 52641,
+    "assessed_improvement_value": 87422
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508261399",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-08-26",
+      "status_date": "2005-08-26",
+      "estimated_cost": 5700,
+      "revised_cost": 5700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9112334",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-07-12",
+      "status_date": "1991-12-06",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=304",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1452040B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1452&lot=040B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1452040B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1981-12-02",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 2 December 1981",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1981sanf/page/n174/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1981-12-02",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 304-306 21st Avenue to stand.",
+      "source": "sf-board-of-permit-appeals-minutes-1981-12-02"
+    },
+    {
+      "date": "1981-12-02",
+      "kind": "occupancy",
+      "description": "Golden Yue Kwan Hui was at 304-306 21st Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1981-12-02"
+    }
+  ]
+}

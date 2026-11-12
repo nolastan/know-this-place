@@ -1,0 +1,31 @@
+{
+  "address": "580 Howard Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/howard-street/580/unit-500/",
+  "unit": "500",
+  "apn": "3721106",
+  "block": "3721",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 3500,
+    "bedrooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "last_sale_date": "2010-04-12"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3721106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3721&unit=500",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

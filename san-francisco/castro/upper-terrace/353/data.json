@@ -1,0 +1,149 @@
+{
+  "address": "353 Upper Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/upper-terrace/353/",
+  "apn": "2629A028",
+  "block": "2629A",
+  "lot": "028",
+  "eas_baseid": "342800",
+  "coordinates": {
+    "lat": 37.762451,
+    "lng": -122.446375
+  },
+  "parcel": {
+    "year_built": 1979,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 2,
+    "bedrooms": 1,
+    "lot_area_sqft": 2766,
+    "building_area_sqft": 1270,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0353 UPPER               TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 254827,
+    "assessed_improvement_value": 227884
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602018521",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-02-01",
+      "status_date": "2016-02-01",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508230998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-23",
+      "status_date": "2005-09-26",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "repair center patio floor, replace tile ,replace 3 patio door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9916677",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-12",
+      "status_date": "1999-08-19",
+      "estimated_cost": 1,
+      "description": "delete center patio deck repaid from #877138/9907930",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911241",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-08",
+      "status_date": "1999-08-10",
+      "estimated_cost": 4500,
+      "description": "repair damaged wooden beam",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9907930",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-23",
+      "status_date": "1999-08-16",
+      "estimated_cost": 9500,
+      "description": "repair landing at right side of garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402983",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-02-24",
+      "status_date": "1994-06-24",
+      "estimated_cost": 3200,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UPPER&street_type=TER&address_number=353",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2629A028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2629A&lot=028",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2629A028",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-12-15",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 15 December 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n262/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-12-15",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to erect a structure at 353 Upper Terrace, on further hearing after a site inspection.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-12-15"
+    }
+  ]
+}

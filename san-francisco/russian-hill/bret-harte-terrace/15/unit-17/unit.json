@@ -1,0 +1,97 @@
+{
+  "address": "17 Bret Harte Terrace, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/bret-harte-terrace/15/unit-17/",
+  "apn": "0044029",
+  "block": "0044",
+  "lot": "029",
+  "parcel": {
+    "building_area_sqft": 1793,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1248480,
+    "assessed_improvement_value": 855545,
+    "last_sale_date": "2022-12-19"
+  },
+  "permits": [
+    {
+      "number": "202307192529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-19",
+      "status_date": "2023-10-19",
+      "estimated_cost": 20000,
+      "revised_cost": 28000,
+      "description": "remodel (e) bathroom on the 4th fl. no change to exterior or structural elements. add closet in (e) bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000127427",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-27",
+      "status_date": "2000-05-27",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613954",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-11-05",
+      "status_date": "1987-03-25",
+      "estimated_cost": 2000,
+      "description": "horizontal extension, fire escape landing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607524",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-06-25",
+      "status_date": "1987-03-25",
+      "estimated_cost": 50000,
+      "description": "install new elevator, replace exterior stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606558",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-06-04",
+      "status_date": "1987-02-26",
+      "estimated_cost": 15000,
+      "description": "demo & construct bath rm, new lavy, toilet, shower",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606432",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-06-02",
+      "status_date": "1989-09-24",
+      "estimated_cost": 12000,
+      "description": "install new cabinets, appliances, skink sheet rock walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0044029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0044&street_number=17",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

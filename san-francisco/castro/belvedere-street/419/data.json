@@ -1,0 +1,184 @@
+{
+  "address": "419 Belvedere Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/belvedere-street/419/",
+  "apn": "1278004",
+  "block": "1278",
+  "lot": "004",
+  "eas_baseid": "299633",
+  "coordinates": {
+    "lat": 37.764609,
+    "lng": -122.448636
+  },
+  "parcel": {
+    "year_built": 1905,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3184,
+    "building_area_sqft": 2664,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0419 BELVEDERE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 67431,
+    "assessed_improvement_value": 44554
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cole Valley Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200305164876",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-05-16",
+      "status_date": "2003-05-16",
+      "estimated_cost": 4400,
+      "revised_cost": 4400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9218033",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-10-16",
+      "status_date": "1993-03-17",
+      "estimated_cost": 3000,
+      "description": "renewal of expired appl & final inspection under #9107707",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107707",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-05-07",
+      "status_date": "1992-09-15",
+      "estimated_cost": 50000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005080",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-15",
+      "status_date": "1990-08-29",
+      "estimated_cost": 2000,
+      "description": "remove & replace chimney with brick",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8408005",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-07-25",
+      "status_date": "1985-01-15",
+      "estimated_cost": 600,
+      "description": "1 pole ladder v-34 from rear bedroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8300085",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-01-04",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1000,
+      "description": "continue work from appl. 8100028",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8100028",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1981-01-21",
+      "status_date": "1986-03-04",
+      "estimated_cost": 2000,
+      "description": "legalize bottom unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1981–2010",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BELVEDERE&street_type=ST&address_number=419",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1278004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1278&lot=004",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1278004",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4486356475192%2037.76460924850361)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1983-09-28",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 28 September 1983",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1983sanf/page/n222/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1983-09-28",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and granted the permit to alter the building at 419 Belvedere Street, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1983-09-28"
+    },
+    {
+      "date": "1983-09-28",
+      "kind": "occupancy",
+      "description": "The building at 419 Belvedere Street had a third-floor unit.",
+      "source": "sf-board-of-permit-appeals-minutes-1983-09-28"
+    }
+  ]
+}

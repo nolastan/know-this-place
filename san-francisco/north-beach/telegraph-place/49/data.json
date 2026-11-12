@@ -1,0 +1,184 @@
+{
+  "address": "49–53 Telegraph Place, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/telegraph-place/49/",
+  "apn": "0078049",
+  "block": "0078",
+  "lot": "049",
+  "eas_baseid": "456920",
+  "coordinates": {
+    "lat": 37.80302,
+    "lng": -122.407203
+  },
+  "address_range": "49–53",
+  "street_numbers_on_parcel": [
+    "49",
+    "51",
+    "53"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 3,
+    "lot_area_sqft": 1581.48,
+    "building_area_sqft": 1298,
+    "lot_depth_ft": 46,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0051 TELEGRAPH           PL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1772762,
+    "assessed_improvement_value": 1477295,
+    "last_sale_date": "2002-03-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202504255264",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-04-25",
+      "status_date": "2025-04-25",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revision to pa 202410102723 replace in-kind (e) 4\"x12\" header and install a (n) door. (e) header in dryrot to replace on top floor (rear)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410102723",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-10",
+      "status_date": "2024-10-30",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "for top flr- residential kitchen and flooring remodel. replace (e) powder room door. (n) tile (n) railing, and (n) waterproofing for balcony.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409083528",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-09-08",
+      "status_date": "2005-05-03",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "partial demo of two interior non structural walls remove raised platform on 2/f removing existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9806426",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-04-14",
+      "status_date": "1998-04-27",
+      "estimated_cost": 1,
+      "description": "renew appln #9407005",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9804554",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-03-17",
+      "status_date": "1998-04-21",
+      "estimated_cost": 4000,
+      "description": "repair wood deck-dry rot repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9719658",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-03",
+      "status_date": "2000-10-31",
+      "estimated_cost": 4000,
+      "description": "repair work to (e) deck,railings,steps,floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9407005",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-05-04",
+      "status_date": "1995-12-28",
+      "estimated_cost": 26000,
+      "revised_cost": 64000,
+      "description": "reinforce (e) foundation reinforce (e) walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9404653S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-03-28",
+      "status_date": "2000-10-31",
+      "estimated_cost": 235000,
+      "description": "vertical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TELEGRAPH&street_type=PL&address_number=49",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0078049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0078&lot=049",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0078049",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1995-03-22",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 22 March 1995",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1995sanf/page/n51/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-03-22",
+      "kind": "occupancy",
+      "description": "The building at 49-53 Telegraph Place was a two-story, three-family dwelling.",
+      "source": "sf-board-of-permit-appeals-minutes-1995-03-22"
+    },
+    {
+      "date": "1995-03-22",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's grant of a Rear Yard Variance for 49-53 Telegraph Place to allow a two-story vertical addition to the existing two-story three-family dwelling and the merger of three dwelling units to two, granting the variance.",
+      "source": "sf-board-of-permit-appeals-minutes-1995-03-22"
+    }
+  ]
+}

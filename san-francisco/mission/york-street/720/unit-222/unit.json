@@ -1,0 +1,44 @@
+{
+  "address": "720 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/720/unit-222/",
+  "unit": "222",
+  "apn": "4080048",
+  "block": "4080",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 555
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 214178,
+    "assessed_improvement_value": 214178,
+    "last_sale_date": "2001-12-31"
+  },
+  "permits": [
+    {
+      "number": "201808157446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-15",
+      "status_date": "2018-10-16",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "2nd fl. 9x6 replace kitchen cabinets, counter tops & sink. 5x7 replace bathroom vanity & sink. replace flooring & underlayment. replace baseboards. two new closet doors. install closet shelves. change lock on front door. n/a for maher.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4080048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4080&unit=222",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

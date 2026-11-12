@@ -1,0 +1,151 @@
+{
+  "address": "163 Vienna Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/vienna-street/163/",
+  "apn": "5959028",
+  "block": "5959",
+  "lot": "028",
+  "eas_baseid": "388037",
+  "coordinates": {
+    "lat": 37.725651,
+    "lng": -122.426154
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1550,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0163 VIENNA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 581252,
+    "assessed_improvement_value": 387498,
+    "last_sale_date": "2004-11-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200405194298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-19",
+      "status_date": "2004-07-21",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "repair dry rot as. per item 1c",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405103430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-10",
+      "status_date": "2004-07-21",
+      "estimated_cost": 14300,
+      "revised_cost": 14300,
+      "description": "repair dryrot per termite report #41749 item 2a,5b only also see",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403269766",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-26",
+      "status_date": "2004-07-27",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repair dryrot as. termite report #41749 item 3b",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700926",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-01-22",
+      "status_date": "1987-09-01",
+      "estimated_cost": 9000,
+      "description": "horizontal extension, deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8413521",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-12-31",
+      "status_date": "1986-03-04",
+      "estimated_cost": 3000,
+      "description": "bring up to code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8400659",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-01-18",
+      "status_date": "1985-04-11",
+      "estimated_cost": 2000,
+      "description": "repair to comply with complaint #022093",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VIENNA&street_type=ST&address_number=163",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5959028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5959&lot=028",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5959028",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1984-10-03",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 3 October 1984",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1984sanf/page/n222/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1984-10-03",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator and denied the building permit application for work done at 163 Vienna Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1984-10-03"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "139 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-139-1e/",
+  "unit": "1E",
+  "apn": "7381117",
+  "block": "7381",
+  "lot": "117",
+  "parcel": {
+    "building_area_sqft": 1269,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 627300,
+    "assessed_improvement_value": 418200,
+    "last_sale_date": "2024-05-22"
+  },
+  "permits": [
+    {
+      "number": "201701278124",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-01-27",
+      "status_date": "2017-01-30",
+      "estimated_cost": 5000,
+      "revised_cost": 25000,
+      "description": "new header to widen opening in bearing wall. remodel of kitchen and 2 bathrooms in one unit without alteration of wall, window, door and fixture.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905017528",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-01",
+      "status_date": "2009-05-11",
+      "estimated_cost": 5588,
+      "revised_cost": 5588,
+      "description": "work @ one unit only. replace 2 doors. size for size with milgard aluminum doors. not visable from the street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381117&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=1E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

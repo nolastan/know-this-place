@@ -1,0 +1,47 @@
+{
+  "address": "870 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/870/unit-102/",
+  "unit": "102",
+  "apn": "0025033",
+  "block": "0025",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 1593,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1121122,
+    "assessed_improvement_value": 1121122,
+    "last_sale_date": "2017-04-11"
+  },
+  "permits": [
+    {
+      "number": "202310128532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-12",
+      "status_date": "2023-12-27",
+      "estimated_cost": 2500,
+      "revised_cost": 4000,
+      "description": "one unit: for nov# 202310231. a complaint investgation has revelead the patio door and window were replacement without the benefit of a building permit. replace one patio door and one window. same size and location u=.30max. not visible from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0025033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0025&unit=102",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

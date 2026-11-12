@@ -1,0 +1,43 @@
+{
+  "address": "317 Elizabeth Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/elizabeth-street/315/unit-317/",
+  "apn": "3651048",
+  "block": "3651",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1557,
+    "rooms": 6
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 212459,
+    "assessed_improvement_value": 116843
+  },
+  "permits": [
+    {
+      "number": "201909171827",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-17",
+      "status_date": "2019-09-24",
+      "estimated_cost": 2000,
+      "revised_cost": 12000,
+      "description": "replace (e) exit stairs in kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3651048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3651&street_number=317",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "460 Francisco Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/francisco-street/460/unit-202/",
+  "unit": "202",
+  "apn": "0041093",
+  "block": "0041",
+  "lot": "093",
+  "parcel": {
+    "building_area_sqft": 585,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 112577,
+    "assessed_improvement_value": 168876,
+    "last_sale_date": "1989-06-13"
+  },
+  "permits": [
+    {
+      "number": "202012020052",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-02",
+      "status_date": "2020-12-29",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "ground level parking garage water damage repair. installa new batt insulation. install nail plates. install fire rated drywall. install 1/2\" sound board, entired existing ceiling repair 1500 sq ft. prime and print reapir to match existing. all in interior of garage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0041093&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0041&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

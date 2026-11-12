@@ -1,0 +1,47 @@
+{
+  "address": "300 Berry Street, San Francisco, CA 94158",
+  "path": "/san-francisco/mission-bay/berry-street/300/unit-1213/",
+  "unit": "1213",
+  "apn": "8704226",
+  "block": "8704",
+  "lot": "226",
+  "parcel": {
+    "building_area_sqft": 968,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 439613,
+    "assessed_improvement_value": 439613,
+    "last_sale_date": "2011-09-29"
+  },
+  "permits": [
+    {
+      "number": "202101072205",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-07",
+      "status_date": "2021-04-26",
+      "estimated_cost": 15750,
+      "revised_cost": 22000,
+      "description": "minor kitchen remodel, no structural, no exterior. r/r cabinets, appliances in same location. hook up sink garbage disposal, dishwasher, same location. no changes to existing electrical or lights",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=8704226&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=8704&unit=1213",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

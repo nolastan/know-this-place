@@ -1,0 +1,120 @@
+{
+  "address": "577 Vienna Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/vienna-street/577/",
+  "apn": "6091027",
+  "block": "6091",
+  "lot": "027",
+  "eas_baseid": "391410",
+  "coordinates": {
+    "lat": 37.71919,
+    "lng": -122.431035
+  },
+  "parcel": {
+    "year_built": 1991,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1904,
+    "basement_area_sqft": 634,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0577 VIENNA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 270540,
+    "assessed_improvement_value": 308564,
+    "last_sale_date": "1991-11-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1991",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404029177",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-02",
+      "status_date": "2025-01-16",
+      "estimated_cost": 68000,
+      "revised_cost": 68000,
+      "description": "1st fl provide (n) wetbar and (n) recessed lighting 2nd fl remodel (e) kitchen and new lighting. new skylight",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813681",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-07-17",
+      "status_date": "1999-03-08",
+      "estimated_cost": 1200,
+      "description": "alter bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8916770",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1989-09-13",
+      "status_date": "1991-05-16",
+      "estimated_cost": 178400,
+      "description": "to erect 1 dwelling unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VIENNA&street_type=ST&address_number=577",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6091027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6091&lot=027",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6091027",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1990-10-17",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 17 October 1990",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1990sanf/page/n274/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1990-10-17",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the department and granted the permit to erect a structure at 577 Vienna Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1990-10-17"
+    }
+  ]
+}

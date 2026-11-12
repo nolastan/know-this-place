@@ -1,0 +1,55 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-239/",
+  "unit": "239",
+  "apn": "0296027",
+  "block": "0296",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 529
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 213322,
+    "assessed_improvement_value": 213322,
+    "last_sale_date": "2014-08-25"
+  },
+  "permits": [
+    {
+      "number": "201411191908",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-19",
+      "status_date": "2015-03-13",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "space #239; revision to lighting plan, treatment room lighting/ceiling finish/electrical to remain. new lighting and electrical at (n) reception area and wc only. rev. 1 to application 201409085689; maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409085689",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2014-09-08",
+      "status_date": "2014-12-05",
+      "estimated_cost": 25000,
+      "revised_cost": 26160,
+      "description": "one unit - demo designated partition walls, counter tops, sinks (n) accessible bathrm w/n wall (n) dropped ceiling (n) ceiling lights, (n) wood flooring & (n) carpet & (n) tile at bathroom, (n) built-ins (n) sinks at designated locations; maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=239",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

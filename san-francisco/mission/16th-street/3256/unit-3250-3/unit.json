@@ -1,0 +1,47 @@
+{
+  "address": "3250 16th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/16th-street/3256/unit-3250-3/",
+  "unit": "3",
+  "apn": "3556129",
+  "block": "3556",
+  "lot": "129",
+  "parcel": {
+    "building_area_sqft": 1041,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 70713,
+    "assessed_improvement_value": 139686,
+    "last_sale_date": "1991-08-21"
+  },
+  "permits": [
+    {
+      "number": "200808199517",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-08-19",
+      "status_date": "2010-02-26",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "final & test fire alarm system - (7) horn/strobe, (8) horns, (4) smoke det, (4) pull stateions, (2) heat det, (2) water flow, (2) valve tamper, (1) facp, (1) booster. *final and test for alarm system",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3556129&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3556&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

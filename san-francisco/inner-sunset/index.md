@@ -17,19 +17,23 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [21st Avenue](21st-avenue/) — 1 building, built 1929.
 - [23rd Avenue](23rd-avenue/) — 2 buildings, built 1924–1950.
 - [24th Avenue](24th-avenue/) — 4 buildings, built 1911–1950.
+- [Aloha Avenue](aloha-avenue/) — 1 building, built 1971.
 - [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1913.
 - [Belgrave Avenue](belgrave-avenue/) — 1 building, built 1972.
 - [Carl Street](carl-street/) — 1 building, built 1962.
 - [Carmel Street](carmel-street/) — 1 building, built 1965.
+- [Christopher Drive](christopher-drive/) — 2 buildings, built 1959.
 - [Clarendon Avenue](clarendon-avenue/) — 1 building, built 1956.
 - [Clayton Street](clayton-street/) — 1 building, built 1927.
 - [Cragmont Avenue](cragmont-avenue/) — 1 building, built 1934.
+- [Dellbrook Avenue](dellbrook-avenue/) — 1 building, built 1958.
 - [Edgewood Avenue](edgewood-avenue/) — 1 building, built 1986.
 - [Eighth Avenue](8th-avenue/) — 22 buildings, built 1900–1937.
 - [Fifth Avenue](5th-avenue/) — 17 buildings, built 1900–1954.
 - [Fourth Avenue](4th-avenue/) — 5 buildings, built 1904–1910.
 - [Frederick Street](frederick-street/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 2 buildings, built 1900–1958.
+- [Hill Point Avenue](hill-point-avenue/) — 1 building, built 1917.
 - [Hugo Street](hugo-street/) — 8 buildings, built 1905–1914.
 - [Irving Street](irving-street/) — 25 buildings, built 1900–1989; 2 in the Irving Street and 15th Avenue Neighborhood Commerical Historic District.
 - [Judah Street](judah-street/) — 6 buildings, built 1905–1953.
@@ -37,6 +41,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Lawton Street](lawton-street/) — 2 buildings, built 1914.
 - [Lincoln Way](lincoln-way/) — 7 buildings, built 1900–1928.
 - [Locksley Avenue](locksley-avenue/) — 1 building, built 1961.
+- [Lomita Avenue](lomita-avenue/) — 1 building, built 1971.
 - [Moraga Street](moraga-street/) — 1 building, built 1902.
 - [Ninth Avenue](9th-avenue/) — 39 buildings, built 1900–1990.
 - [Noriega Street](noriega-street/) — 1 building, built 1911.

@@ -1,0 +1,76 @@
+{
+  "address": "902 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/902/unit-1/",
+  "unit": "1",
+  "apn": "2799049",
+  "block": "2799",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 716,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 385560,
+    "assessed_improvement_value": 257040,
+    "last_sale_date": "2023-07-14"
+  },
+  "permits": [
+    {
+      "number": "202408219136",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-21",
+      "status_date": "2024-12-05",
+      "estimated_cost": 5000,
+      "revised_cost": 65000,
+      "description": "one unit: installing new laminate flooring, new sheet rock in bathroom, installing bath surround tile/bathroom remodel, installing new cabinets and counter tops in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504204044",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2015-04-20",
+      "status_date": "2015-04-20",
+      "revised_cost": 0,
+      "description": "replace front aluminum windows and doors with fiberglass milgard ultra windows and replace side and rear with vinyl windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9622456",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-19",
+      "status_date": "1996-12-17",
+      "estimated_cost": 4600,
+      "description": "remove drywall ceiling,2 deck joist repair,access repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118086",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-30",
+      "status_date": "1991-12-10",
+      "estimated_cost": 6100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2799049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2799&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

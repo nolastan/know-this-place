@@ -1,0 +1,44 @@
+{
+  "address": "720 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/720/unit-205/",
+  "unit": "205",
+  "apn": "4080031",
+  "block": "4080",
+  "lot": "031",
+  "parcel": {
+    "building_area_sqft": 557
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 264000,
+    "assessed_improvement_value": 264000,
+    "last_sale_date": "2004-11-19"
+  },
+  "permits": [
+    {
+      "number": "202302091699",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-09",
+      "status_date": "2023-03-13",
+      "estimated_cost": 25000,
+      "revised_cost": 28000,
+      "description": "one bathroom romodel in kind. replace tub with new tub. non structural",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4080031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4080&unit=205",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

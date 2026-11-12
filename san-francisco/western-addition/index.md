@@ -15,6 +15,7 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 - [Eddy Street](eddy-street/) — 2 buildings, built 1900–1996.
 - [Ellis Street](ellis-street/) — 2 buildings, built 1900.
 - [Fillmore Street](fillmore-street/) — 1 building, built 1911.
+- [Fortuna Avenue](fortuna-avenue/) — 1 building, built 1948.
 - [Franklin Street](franklin-street/) — 1 building, built 1921.
 - [Friendship Court](friendship-court/) — 1 building, built 1971.
 - [Fulton Street](fulton-street/) — 1 building, built 1900; 1 in the NOPA Historic District.

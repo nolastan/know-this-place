@@ -1,0 +1,105 @@
+{
+  "address": "25 Fillmore Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fillmore-street/25/",
+  "apn": "0875002",
+  "block": "0875",
+  "lot": "002",
+  "eas_baseid": "290071",
+  "coordinates": {
+    "lat": 37.769718,
+    "lng": -122.430181
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 1258.75,
+    "building_area_sqft": 900,
+    "lot_depth_ft": 53,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0025 FILLMORE            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139375,
+    "assessed_improvement_value": 118462
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1924",
+    "survey_name": "25 Fillmore St",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200408131530",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-13",
+      "status_date": "2004-08-18",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILLMORE&street_type=ST&address_number=25",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0875002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0875&lot=002",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0875002",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-04-28",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 28 April 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n78/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-04-28",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Health's denial of a permit for a wholesale coffee business at 25 Fillmore Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-04-28"
+    },
+    {
+      "date": "1982-04-28",
+      "kind": "occupancy",
+      "description": "The building at 25 Fillmore Street was residential.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-04-28"
+    }
+  ]
+}

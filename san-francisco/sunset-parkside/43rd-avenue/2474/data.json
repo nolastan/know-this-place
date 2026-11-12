@@ -1,0 +1,118 @@
+{
+  "address": "2474 43rd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/43rd-avenue/2474/",
+  "apn": "2383023A",
+  "block": "2383",
+  "lot": "023A",
+  "eas_baseid": "336696",
+  "coordinates": {
+    "lat": 37.740552,
+    "lng": -122.500979
+  },
+  "parcel": {
+    "year_built": 1944,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 995,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2474 43RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 429047,
+    "assessed_improvement_value": 183874,
+    "last_sale_date": "2013-11-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1944",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9819028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-21",
+      "status_date": "1998-12-15",
+      "estimated_cost": 18000,
+      "description": "construct family room, laundry area, storage and full bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805089",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-04-20",
+      "status_date": "1988-08-10",
+      "estimated_cost": 500,
+      "description": "change garage door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612113",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-10-01",
+      "status_date": "1988-09-22",
+      "estimated_cost": 1000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=43RD&street_type=AVE&address_number=2474",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2383023A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2383&lot=023A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2383023A",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1976-08-04",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 4 August 1976",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1976sanf/page/n146/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1976-08-04",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator's determination regarding the property at 2474 43rd Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1976-08-04"
+    }
+  ]
+}

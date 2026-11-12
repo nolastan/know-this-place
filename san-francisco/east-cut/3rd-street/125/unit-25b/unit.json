@@ -1,0 +1,58 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-25b/",
+  "unit": "25B",
+  "apn": "3722278",
+  "block": "3722",
+  "lot": "278",
+  "parcel": {
+    "building_area_sqft": 1777,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1750993,
+    "assessed_improvement_value": 1167328,
+    "last_sale_date": "2022-04-26"
+  },
+  "permits": [
+    {
+      "number": "202311281484",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-28",
+      "status_date": "2024-04-15",
+      "estimated_cost": 145000,
+      "revised_cost": 145000,
+      "description": "remodel master bath only, relocate some electrical @ living room. relocate j-box.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104123954",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-12",
+      "status_date": "2011-09-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "reface (1) kitchen cabinets and install new built-in cabinets in living room, master bedroom and guest bedroom. install new recessed lighting in kitchen, celing and add new power outlets in mas kitchen. lighting to comply with",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722278&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=25B",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

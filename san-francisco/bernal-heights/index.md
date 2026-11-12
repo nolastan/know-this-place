@@ -8,6 +8,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.
 - [Bennington Street](bennington-street/) — 1 building, built 1904.
+- [Bocana Street](bocana-street/) — 1 building, built 1910.
 - [Bonview Street](bonview-street/) — 1 building, built 1958.
 - [Bradford Street](bradford-street/) — 1 building, built 1912.
 - [Brewster Street](brewster-street/) — 1 building, built 1999.
@@ -26,12 +27,14 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Genebern Way](genebern-way/) — 1 building, built 1925.
 - [Gladys Street](gladys-street/) — 1 building, built 1907.
 - [Highland Avenue](highland-avenue/) — 1 building, built 1915.
+- [Joy Street](joy-street/) — 1 building, built 1987.
 - [Justin Drive](justin-drive/) — 1 building; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Lundys Lane](lundys-lane/) — 1 building, built 1909.
 - [Manchester Street](manchester-street/) — 1 building, built 1981.
 - [Mirabel Avenue](mirabel-avenue/) — 1 building, built 1924.
 - [Mission Street](mission-street/) — 2 buildings, built 1916–1918.
 - [Montcalm Street](montcalm-street/) — 1 building, built 1900.
+- [Montezuma Street](montezuma-street/) — 1 building, built 1955.
 - [Mullen Avenue](mullen-avenue/) — A 1,000 sq ft house of 1906, recorded as Carlos Santana's home during high school.
 - [Murray Street](murray-street/) — 2 buildings, built 1925.
 - [Nevada Street](nevada-street/) — 1 building.
@@ -45,10 +48,13 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Richland Avenue](richland-avenue/) — 1 building, built 1907.
 - [Ripley Street](ripley-street/) — 2 buildings, built 1917–1940.
 - [Rutledge Street](rutledge-street/) — 1 building, built 1973.
+- [Samoset Street](samoset-street/) — 1 building, built 1949.
+- [Santa Marina Street](santa-marina-street/) — 1 building, built 1914.
 - [Shotwell Street](shotwell-street/) — 1 building.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.
 - [Winfield Street](winfield-street/) — 1 building, built 1909.
 - [Wool Street](wool-street/) — 1 building, built 1906.
+- [Wright Street](wright-street/) — 1 building, built 1992.
 
 ## Parks and public spaces
 

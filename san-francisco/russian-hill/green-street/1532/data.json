@@ -1,0 +1,103 @@
+{
+  "address": "1532–1536 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/russian-hill/green-street/1532/",
+  "apn": "0546007",
+  "block": "0546",
+  "lot": "007",
+  "eas_baseid": "284872",
+  "coordinates": {
+    "lat": 37.79781,
+    "lng": -122.424548
+  },
+  "address_range": "1532–1536",
+  "street_numbers_on_parcel": [
+    "1532",
+    "1534",
+    "1536"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 3,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 3,
+    "lot_area_sqft": 3781,
+    "building_area_sqft": 4650,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1536 1532 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 99988,
+    "assessed_improvement_value": 124248
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200201177174",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-17",
+      "status_date": "2002-01-30",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=1532",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0546007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0546&lot=007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0546007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1976-09-08",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 8 September 1976",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1976sanf/page/n174/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1976-09-08",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 1532-1536 Green Street, on condition that a guard rail be installed in the area off the attic level.",
+      "source": "sf-board-of-permit-appeals-minutes-1976-09-08"
+    }
+  ]
+}

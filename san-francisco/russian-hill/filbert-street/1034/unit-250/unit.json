@@ -1,0 +1,68 @@
+{
+  "address": "1034 Filbert Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/filbert-street/1034/unit-250/",
+  "unit": "250",
+  "apn": "0093063",
+  "block": "0093",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 2318,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1283148,
+    "assessed_improvement_value": 1430530,
+    "last_sale_date": "2003-11-20"
+  },
+  "permits": [
+    {
+      "number": "201508063521",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-06",
+      "status_date": "2016-06-21",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "#250 - kitchen remodel - replace cabinets & appliances, replace (e) can lights. bath & master bath remodel - replace (e) finishes, new vanities, replace (e) lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507212094",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-07-21",
+      "status_date": "2015-08-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201410169133. replacement windows change to fixed from operable.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410169133",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-16",
+      "status_date": "2016-09-21",
+      "estimated_cost": 20000,
+      "revised_cost": 25000,
+      "description": "remodel existing study, add a bathroom, replace existing property-line windows in lightwell.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0093063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0093&unit=250",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

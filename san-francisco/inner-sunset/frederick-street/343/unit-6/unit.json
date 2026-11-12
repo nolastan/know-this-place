@@ -1,0 +1,40 @@
+{
+  "address": "343 Frederick Street, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/frederick-street/343/unit-6/",
+  "unit": "6",
+  "apn": "1268070",
+  "block": "1268",
+  "lot": "070",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 293806,
+    "assessed_improvement_value": 195868
+  },
+  "permits": [
+    {
+      "number": "201707131810",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-13",
+      "status_date": "2017-07-13",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "replace door and siding due to dryrot - siding bottom one unit'x7' approx. bock of bldg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1268070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1268&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

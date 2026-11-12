@@ -1,0 +1,134 @@
+{
+  "address": "531 Jessie Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/jessie-street/531/",
+  "apn": "3703025",
+  "block": "3703",
+  "lot": "025",
+  "eas_baseid": "364692",
+  "coordinates": {
+    "lat": 37.780865,
+    "lng": -122.40964
+  },
+  "parcel": {
+    "year_built": 1923,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 2,
+    "lot_area_sqft": 2343,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "RSD",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0531 JESSIE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55406,
+    "assessed_improvement_value": 49722
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507150814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-15",
+      "status_date": "2025-11-19",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "removal of unpermitted mezzanine and kitchen. restore to approved floor plan per bpa 201201252854. no structural or exterior changes proposed. building remains vacant",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202503142312",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2025-03-14",
+      "status_date": "2025-05-19",
+      "estimated_cost": 30000,
+      "description": "comply with dcp enf no.2024-009508enf: removal of unpermitted mezzanine, legalization of kitchen, change of occupany, establish community facility use (institutional use). no structural or exterior changes proposed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201201252854",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-01-25",
+      "status_date": "2012-08-27",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "structural strengthening per plans, bathroom remodel, interior concrete slab. electrical upgrades, front bldg sheer wall.plmbg upgrade, new front entry door. front roll up door. replace sidewalk, infill warehouse front of building (concrete)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303890",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-05-05",
+      "status_date": "1983-12-13",
+      "estimated_cost": 4000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8302802",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-04-05",
+      "status_date": "1983-05-03",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JESSIE&street_type=ST&address_number=531",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3703025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3703&lot=025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3703025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1988-01-20",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 20 January 1988",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19871988s/page/n98/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1988-01-20",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Health and denied the permit to operate a rice storage warehouse at 531 Jessie Street, staying action on the order in Appeal No. 87-350 until July 31, 1988.",
+      "source": "sf-board-of-permit-appeals-minutes-1988-01-20"
+    }
+  ]
+}

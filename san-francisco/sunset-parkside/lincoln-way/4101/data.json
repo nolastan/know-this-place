@@ -1,0 +1,145 @@
+{
+  "address": "4101 Lincoln Way, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/lincoln-way/4101/",
+  "apn": "1708001",
+  "block": "1708",
+  "lot": "001",
+  "eas_baseid": "314428",
+  "coordinates": {
+    "lat": 37.764085,
+    "lng": -122.502087
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 13,
+    "stories": 3,
+    "rooms": 36,
+    "bathrooms": 13,
+    "lot_area_sqft": 4748,
+    "building_area_sqft": 10950,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 4101 LINCOLN             WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1094862,
+    "assessed_improvement_value": 557365
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201712126290",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2017-12-12",
+      "status_date": "2019-09-11",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709138047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-13",
+      "status_date": "2019-04-05",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "seismic retrofit of soft story comply with sfebc chpater 4d, mandatory seismic retrofit epr 2016 cebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403180992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-18",
+      "status_date": "2015-04-30",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "comply w/nov 201452951 reframe post in kind under supervision. scope of work: repair damage framing, (n) stucco & footing, new steel moment frame due to auto.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313979",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-16",
+      "status_date": "1995-02-15",
+      "estimated_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002485",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-07",
+      "status_date": "1990-06-12",
+      "estimated_cost": 3000,
+      "description": "siding litewell",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1990–2018",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINCOLN&street_type=WAY&address_number=4101",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1708001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1708&lot=001",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1708001",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-02-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 February 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf/page/n48/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-02-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 4101 Lincoln Way, with stipulations on the electrical service box, outlets, wiring, and fuses.",
+      "source": "sf-board-of-permit-appeals-minutes-1977-02-16"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "address": "2535 38th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/38th-avenue/2535/",
+  "apn": "2439006",
+  "block": "2439",
+  "lot": "006",
+  "eas_baseid": "339161",
+  "coordinates": {
+    "lat": 37.739579,
+    "lng": -122.496199
+  },
+  "parcel": {
+    "year_built": 1944,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1648,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2535 38TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 32512,
+    "assessed_improvement_value": 130374
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1944",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909131603",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-13",
+      "status_date": "2020-06-18",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "add a family room, a bedroom and a full bathroom on the 1st fl. install new foundation relocate furnace, water heater, washer and dryer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200505263478",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-05-26",
+      "status_date": "2005-05-26",
+      "estimated_cost": 6300,
+      "revised_cost": 6300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9809063",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-19",
+      "status_date": "1999-02-16",
+      "estimated_cost": 1500,
+      "description": "redo cracked stucco to original in front of the house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418969",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-11-17",
+      "status_date": "1995-10-26",
+      "estimated_cost": 500,
+      "revised_cost": 10000,
+      "description": "change in-law unit to a storage space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8910470",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-06-16",
+      "status_date": "1993-10-29",
+      "estimated_cost": 4500,
+      "description": "legalize 1 bedrm 1 living rm 1 bathrm on garage level",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=38TH&street_type=AVE&address_number=2535",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2439006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2439&lot=006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2439006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1993-04-07",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 7 April 1993",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n52/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1993-04-07",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and granted the permit to alter the building at 2535 - 38th Avenue, with the condition that a Notice of Special Restrictions be recorded to insure single family use only.",
+      "source": "sf-board-of-permit-appeals-minutes-1993-04-07"
+    }
+  ]
+}

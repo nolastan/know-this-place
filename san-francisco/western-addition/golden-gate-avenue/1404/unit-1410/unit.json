@@ -1,0 +1,46 @@
+{
+  "address": "1410 Golden Gate Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/golden-gate-avenue/1404/unit-1410/",
+  "apn": "0754034",
+  "block": "0754",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 1787,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 568722,
+    "assessed_improvement_value": 568722,
+    "last_sale_date": "2006-11-17"
+  },
+  "permits": [
+    {
+      "number": "200807247603",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-24",
+      "status_date": "2008-08-22",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "wood deteriorating at the rear exterior stairway. replace the tile that are deteriorated. total replacement, less than 50%.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0754034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0754&street_number=1410",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

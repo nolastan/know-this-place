@@ -1,0 +1,129 @@
+{
+  "address": "167 Mendosa Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/mendosa-avenue/167/",
+  "apn": "2206090",
+  "block": "2206",
+  "lot": "090",
+  "eas_baseid": "485055",
+  "coordinates": {
+    "lat": 37.748229,
+    "lng": -122.467793
+  },
+  "parcel": {
+    "year_built": 1980,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 4014,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0167 MENDOSA             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 600500,
+    "assessed_improvement_value": 576103,
+    "last_sale_date": "1988-07-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1980",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202110130331",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-13",
+      "status_date": "2022-01-14",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607075984",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-07",
+      "status_date": "2006-10-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace 30 new double glass vinyl windows with existing windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904167",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-04",
+      "status_date": "2000-05-18",
+      "estimated_cost": 4000,
+      "description": "couer fiber cement siding on the left right & back side",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811203",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-08-08",
+      "status_date": "1988-12-16",
+      "estimated_cost": 30000,
+      "description": "interior renovation to include removal to (e) partition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MENDOSA&street_type=AVE&address_number=167",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2206090&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2206&lot=090",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2206090",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-05-23",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 23 May 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n128/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-05-23",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the permit to erect a structure at 167 Mendosa, concurring in the granting of the permit.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-05-23"
+    }
+  ]
+}

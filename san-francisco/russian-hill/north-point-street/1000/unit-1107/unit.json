@@ -1,0 +1,57 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-1107/",
+  "unit": "1107",
+  "apn": "0451117",
+  "block": "0451",
+  "lot": "117",
+  "parcel": {
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 720720,
+    "assessed_improvement_value": 557339,
+    "last_sale_date": "2016-12-14"
+  },
+  "permits": [
+    {
+      "number": "202603268308",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-26",
+      "status_date": "2026-03-26",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "#1107: replacement in kind of kitchen cabinetry and counters, replacement of fixtures replacement in kind of bathroom vanity and fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802080814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-08",
+      "status_date": "2019-06-17",
+      "estimated_cost": 32500,
+      "revised_cost": 50000,
+      "description": "interior remodel: remove a 14' partition wall, upgrade kitchen & nath cabinets & fixtures. upgrade heating & plm and fixtures, upgrade ele panel, outlets & light fixyures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451117&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1107",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

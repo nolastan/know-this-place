@@ -1,0 +1,83 @@
+{
+  "address": "136 Locust Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/locust-street/134/unit-136/",
+  "apn": "0986027",
+  "block": "0986",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 2320,
+    "rooms": 6,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1578297,
+    "assessed_improvement_value": 1578297,
+    "last_sale_date": "2013-10-30"
+  },
+  "permits": [
+    {
+      "number": "9307101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-29",
+      "status_date": "1993-08-17",
+      "estimated_cost": 4600,
+      "description": "dry rot repair at stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404801",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-05-03",
+      "status_date": "1985-10-17",
+      "estimated_cost": 1,
+      "description": "this application is for final inspection of work completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307661",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-08-05",
+      "status_date": "1984-06-15",
+      "estimated_cost": 11000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303181",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-04-15",
+      "status_date": "1984-02-01",
+      "estimated_cost": 400,
+      "description": "construct 2nd exist from 4th floor,etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8205995",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-07-22",
+      "status_date": "1983-12-14",
+      "estimated_cost": 7500,
+      "description": "bldg use: apts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0986027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0986&street_number=136",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "address": "1515 Waller Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/waller-street/1501/unit-1515/",
+  "apn": "1253094",
+  "block": "1253",
+  "lot": "094",
+  "parcel": {
+    "building_area_sqft": 763,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 403193,
+    "assessed_improvement_value": 268796,
+    "last_sale_date": "2022-10-20"
+  },
+  "permits": [
+    {
+      "number": "202401164001",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-16",
+      "status_date": "2025-01-08",
+      "estimated_cost": 1,
+      "revised_cost": 18000,
+      "description": "prop h: change of use of (e) 1st fl commercial space from dry cleaner to yoga studio. add new wet bar. correct all restroom accessibility issues. remove (e) stair and door to non-complying storage.add mechanical closet below existing stair. install power door operator and actuators at bldg entrance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201206279",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-20",
+      "status_date": "2022-09-28",
+      "estimated_cost": 40000,
+      "revised_cost": 50000,
+      "description": "voluntary soft story retrofit & building repair. replace electrical & plumbing in-kind under slab. core and shell upgrade - ada compliant.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1253094&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1253&street_number=1515",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

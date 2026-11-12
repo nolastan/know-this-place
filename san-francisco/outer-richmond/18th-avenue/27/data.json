@@ -1,0 +1,130 @@
+{
+  "address": "27 18th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/18th-avenue/27/",
+  "apn": "1340004",
+  "block": "1340",
+  "lot": "004",
+  "eas_baseid": "300686",
+  "coordinates": {
+    "lat": 37.78649,
+    "lng": -122.478002
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3001,
+    "building_area_sqft": 2410,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0027 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2249100,
+    "assessed_improvement_value": 963900,
+    "last_sale_date": "2023-12-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202402155983",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-15",
+      "status_date": "2024-04-26",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "replace (3) windows and (1) door to be fiberglass windows to be wood clad. not street visible. u-factor =0.30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202402135815",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-02-13",
+      "status_date": "2024-03-01",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202401194313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-19",
+      "status_date": "2024-05-22",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "rot repair and replacement at siding and railing in back. (4) piers to be poured at back deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002076",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-01-31",
+      "status_date": "1990-08-24",
+      "estimated_cost": 2860,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=27",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1340004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1340&lot=004",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1340004",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-10-17",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 17 October 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n274/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-10-17",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the permit to alter the building at 27 - 18th Avenue, with stipulations about conferring with City Planning staff and the chimney construction.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-10-17"
+    }
+  ]
+}

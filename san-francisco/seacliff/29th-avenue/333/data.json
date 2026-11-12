@@ -1,0 +1,121 @@
+{
+  "address": "333 29th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/29th-avenue/333/",
+  "apn": "1404009",
+  "block": "1404",
+  "lot": "009",
+  "eas_baseid": "302448",
+  "coordinates": {
+    "lat": 37.782979,
+    "lng": -122.489571
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1700,
+    "basement_area_sqft": 360,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0333 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 450920,
+    "assessed_improvement_value": 784615,
+    "last_sale_date": "1990-10-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201802010131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-01",
+      "status_date": "2018-06-05",
+      "estimated_cost": 13800,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608104692",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-10",
+      "status_date": "2016-11-15",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replace (19) windows and (1) door. eight are marvin all wood material-visible. (11) windows and (1) door integrity fiberglass in the rear. existing are wood, no size change, ufactor <.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904013",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-03-15",
+      "status_date": "1990-07-10",
+      "estimated_cost": 150000,
+      "description": "vertical & horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=333",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1404009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1404&lot=009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1404009",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-12-14",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 14 December 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf/page/n322/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-12-14",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 333 - 29th Avenue, with stipulations that the appellant record a Notice of Special Restriction provided by the City Planning Department attesting that the ground floor area will not be utilized as a separate dwelling unit, one-hour fire resistive sheet rock be installed throughout the area of the social room, toilet facilities, wet bar, and passage leading from the social area to the exterior, the passageway be sprinklered with three sprinkler heads in the garage and two sprinkler heads in the social room using domestic water supply, and no interior stairway is required.",
+      "source": "sf-board-of-permit-appeals-minutes-1977-12-14"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "address": "527 Arch Street, San Francisco, CA 94132",
+  "path": "/san-francisco/ingleside-terraces/arch-street/527/",
+  "apn": "6994016",
+  "block": "6994",
+  "lot": "016",
+  "eas_baseid": "411101",
+  "coordinates": {
+    "lat": 37.720181,
+    "lng": -122.467436
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 3746,
+    "building_area_sqft": 1532,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0527 ARCH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 567550,
+    "assessed_improvement_value": 267857,
+    "last_sale_date": "1999-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201310290477",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-10-29",
+      "status_date": "2013-10-29",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "to comply with notice of violation# 201331963- kitchen remodel with new cabinets, countertops & floor tile, replace 3 windows in kind at front left entrance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922206",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-15",
+      "status_date": "1990-04-18",
+      "estimated_cost": 1600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920635",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1989-11-01",
+      "status_date": "1991-04-22",
+      "estimated_cost": 8000,
+      "revised_cost": 9000,
+      "description": "add one bathroom in 2/f",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ARCH&street_type=ST&address_number=527",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6994016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6994&lot=016",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6994016",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-04-23",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 23 April 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1980sanf/page/n76/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-04-23",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 527 Arch Street to stand.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-04-23"
+    }
+  ]
+}

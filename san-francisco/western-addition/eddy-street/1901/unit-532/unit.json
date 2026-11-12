@@ -1,0 +1,47 @@
+{
+  "address": "1909 Eddy Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/eddy-street/1901/unit-532/",
+  "unit": "532",
+  "apn": "1129066",
+  "block": "1129",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 1536,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 925478,
+    "assessed_improvement_value": 616985,
+    "last_sale_date": "2020-10-30"
+  },
+  "permits": [
+    {
+      "number": "202601083472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-08",
+      "status_date": "2026-02-27",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit: remodel two bathrooms, 1 tub to shower conversion.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1129066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1129&unit=532",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

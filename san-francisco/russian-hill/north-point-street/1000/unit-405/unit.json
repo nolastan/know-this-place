@@ -1,0 +1,57 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-405/",
+  "unit": "405",
+  "apn": "0451069",
+  "block": "0451",
+  "lot": "069",
+  "parcel": {
+    "building_area_sqft": 354,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 409156,
+    "assessed_improvement_value": 272770,
+    "last_sale_date": "2021-06-09"
+  },
+  "permits": [
+    {
+      "number": "201304194951",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-19",
+      "status_date": "2013-08-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodel, no structural work, remove & replace cabinets & appliances, rough plumbing to remain, remove drywall as necessary, instlal new lighting, outlets, countertops to code, move hydronic heating, upgrade electrical panel - electrical & heating permits will be taken separately.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603166806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-03-16",
+      "status_date": "2006-05-05",
+      "estimated_cost": 6900,
+      "revised_cost": 6900,
+      "description": "refurbish studio apt paint, new carpet, ktichennette, and new toilet, shower door-work in unit no. 405 only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=405",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

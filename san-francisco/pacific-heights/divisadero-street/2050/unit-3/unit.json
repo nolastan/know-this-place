@@ -1,0 +1,58 @@
+{
+  "address": "2050 Divisadero Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/divisadero-street/2050/unit-3/",
+  "unit": "3",
+  "apn": "1026046",
+  "block": "1026",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 1589,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 961953,
+    "assessed_improvement_value": 641299,
+    "last_sale_date": "2008-07-08"
+  },
+  "permits": [
+    {
+      "number": "202010297697",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-29",
+      "status_date": "2021-02-02",
+      "estimated_cost": 11600,
+      "revised_cost": 11600,
+      "description": "replace 5 windows and 1 door, the same size & opening & style. aluminum to vinyl w/ double glass. all work are non street visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809050893",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2008-09-05",
+      "status_date": "2015-02-02",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "dryrot repair at living room ceiling low voltage recessed lighting at bedrooms, mall and living room, sheetrock removed as needed for repairs and light installations approx 20%. new 5/8 type a sheetrock installed, tape & finish. all work within unit. lighting shall comply with title 24.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1026046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1026&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

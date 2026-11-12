@@ -4,15 +4,22 @@ The city's Visitacion Valley analysis neighborhood, in the south-eastern corner 
 
 ## Streets documented so far
 
+- [Alberta Street](alberta-street/) — 1 building, built 1989.
 - [Arleta Avenue](arleta-avenue/) — 1 building, built 1912.
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 2 buildings, built 1930–1955.
+- [Blanken Avenue](blanken-avenue/) — 2 buildings, built 1932–1993; 1 in the Little Hollywood Historic District.
 - [Campbell Avenue](campbell-avenue/) — 1 building, built 2008.
+- [Ervine Street](ervine-street/) — 1 building, built 1989.
+- [Hahn Street](hahn-street/) — 1 building.
 - [Lathrop Avenue](lathrop-avenue/) — 1 building, built 1943; 1 in the Little Hollywood Historic District.
 - [Leland Avenue](leland-avenue/) — 1 building.
 - [Raymond Avenue](raymond-avenue/) — 1 building, built 1940.
+- [Rutland Street](rutland-street/) — 1 building, built 1940.
 - [Schwerin Street](schwerin-street/) — 1 building, built 1939.
+- [Sunnydale Avenue](sunnydale-avenue/) — 2 buildings, built 1904–1947.
 - [Teddy Avenue](teddy-avenue/) — 1 building, built 2009.
 - [Tocoloma Avenue](tocoloma-avenue/) — 1 building, built 1936; 1 in the Little Hollywood Historic District.
+- [Tucker Avenue](tucker-avenue/) — 1 building, built 1927.
 - [Tunnel Avenue](tunnel-avenue/) — 1 building.
 - [Visitacion Avenue](visitacion-avenue/) — 1 building, built 1934.
 

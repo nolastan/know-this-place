@@ -1,0 +1,64 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-801/",
+  "unit": "801",
+  "apn": "0627A057",
+  "block": "0627A",
+  "lot": "057",
+  "parcel": {
+    "building_area_sqft": 952,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1141174,
+    "assessed_improvement_value": 760781,
+    "last_sale_date": "2019-02-15"
+  },
+  "permits": [
+    {
+      "number": "201704053278",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-05",
+      "status_date": "2017-11-21",
+      "estimated_cost": 95000,
+      "revised_cost": 95000,
+      "description": "new flooring and paint throughout, new kitchen, cabinets, counter tops & appliances. new bathroom finishes & fixtures. 1 kitchen & 1 bathroom. high efficacy lighting througout - maintain fire rating at recessed fixtures. no structural work. new kitchen and bathroom exhaust fan to connect to existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110056226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-05",
+      "status_date": "2011-11-18",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "existing tile & tub to be removed. shower pan & tile to replace existing tub. lighting to comply with cec 150(k). no changes to walls, window, doors.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2011–2017",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=801",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

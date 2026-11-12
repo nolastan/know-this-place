@@ -1,0 +1,58 @@
+{
+  "address": "955 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/green-street/955/unit-3/",
+  "unit": "3",
+  "apn": "0127150",
+  "block": "0127",
+  "lot": "150",
+  "parcel": {
+    "building_area_sqft": 3215,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2062500,
+    "assessed_improvement_value": 2062500,
+    "last_sale_date": "2017-02-15"
+  },
+  "permits": [
+    {
+      "number": "201704254816",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-04-25",
+      "status_date": "2017-04-25",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "one unit: bathroom remodel, re-arrange tub, paint, and electric upgrades. refinish hardwood floors in unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501075120",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-07",
+      "status_date": "2015-06-08",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "#3: minor remodel: replace cabinets and appliances, remove one half of non bearing wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0127150&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0127&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

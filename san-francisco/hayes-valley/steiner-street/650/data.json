@@ -1,0 +1,140 @@
+{
+  "address": "650 Steiner Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/steiner-street/650/",
+  "block": "0822",
+  "eas_baseid": "288892",
+  "coordinates": {
+    "lat": 37.775501,
+    "lng": -122.432512
+  },
+  "parcel": {
+    "year_built": 1979,
+    "units": 8,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH3RM1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Alamo Square",
+    "analysis_neighborhood": "Hayes Valley"
+  },
+  "condominium": {
+    "lots": [
+      "037",
+      "038",
+      "039",
+      "040",
+      "041",
+      "042",
+      "043",
+      "044"
+    ],
+    "method": "Proposed from the 2025 roll for block 0822: every condominium parcel the roll files under 650 STEINER ST, and the unbroken run of lots beside parcel 0822037 on the same street with the same year built (1979). 8 lots, 037–044."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1979",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alamo Square Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1890–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201310219778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-21",
+      "status_date": "2014-01-16",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "repair extg wood staircase in common area at side of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803036045",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-03-03",
+      "status_date": "2008-03-03",
+      "estimated_cost": 2087,
+      "revised_cost": 2087,
+      "description": "replacement of fire alarm control panel on an emergency replacement basis",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410126424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-12",
+      "status_date": "2005-01-13",
+      "estimated_cost": 15150,
+      "revised_cost": 15150,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2013",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STEINER&street_type=ST&address_number=650",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0822)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0822&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0822",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0822037",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43251198758401%2037.77550129657946)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-05-19",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 19 May 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n106/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-05-19",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' granting of a permit to erect a structure at 650 Steiner Street, over a protest against the issuance, following a site inspection.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-05-19"
+    }
+  ]
+}

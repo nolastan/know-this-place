@@ -1,0 +1,33 @@
+{
+  "address": "2310 Hyde Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/hyde-street/2310/unit-3/",
+  "unit": "3",
+  "apn": "0068027",
+  "block": "0068",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 4435,
+    "rooms": 8,
+    "bathrooms": 4
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 106018,
+    "assessed_improvement_value": 886704
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0068027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0068&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

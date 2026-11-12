@@ -1,0 +1,63 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-1207b/",
+  "unit": "1207B",
+  "apn": "0451230",
+  "block": "0451",
+  "lot": "230",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 747550,
+    "assessed_improvement_value": 498367,
+    "last_sale_date": "2017-08-25"
+  },
+  "permits": [
+    {
+      "number": "201801309952",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-30",
+      "status_date": "2018-09-25",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "kitchen remodel: no sturctural wok, replace in kind. replace cabinets, coutertops, appliances, plumbing locations to remain, exisitng applainace elecrical outlets same location. bathroom remodel: replace vanity w/ new in same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908044080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-04",
+      "status_date": "2010-06-24",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "12th floor update existing kitchen: new cabients, countertop & applicances & bathroom: new tile, vanity & toilet. no wall removal, no exterior work, adding washer/dryer - ductless.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904277090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-27",
+      "status_date": "2009-05-07",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace single pane slider glass door/window in bedroom and living room with same size double pane insulated slider fleetwood window & door-norwood series 3000.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451230&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1207B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

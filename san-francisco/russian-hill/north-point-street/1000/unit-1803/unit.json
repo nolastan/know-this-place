@@ -1,0 +1,52 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-1803/",
+  "unit": "1803",
+  "apn": "0451132",
+  "block": "0451",
+  "lot": "132",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1860000,
+    "assessed_improvement_value": 1240000,
+    "last_sale_date": "2024-08-30"
+  },
+  "permits": [
+    {
+      "number": "202106041690",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-06-04",
+      "status_date": "2022-06-01",
+      "estimated_cost": 36000,
+      "revised_cost": 36000,
+      "description": "one bathroom remodeling like for like; plumbing fixtures, lights, fan, one kitchen remodeling like for like replace plumbing fixtures replace appliances hood replace, lights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009224731",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-09-22",
+      "status_date": "2023-07-28",
+      "estimated_cost": 13707,
+      "revised_cost": 0,
+      "description": "relocate 3 existing relay modules. add 6 relays module for elevator recall. add 3 smoke detectors in elevator lobby.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451132&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1803",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

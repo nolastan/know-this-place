@@ -1,0 +1,58 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-602/",
+  "unit": "602",
+  "apn": "0451170",
+  "block": "0451",
+  "lot": "170",
+  "parcel": {
+    "building_area_sqft": 1008,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 583689,
+    "assessed_improvement_value": 389124,
+    "last_sale_date": "2013-03-19"
+  },
+  "permits": [
+    {
+      "number": "201007206982",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-20",
+      "status_date": "2011-10-24",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "modifications to closet walls, cut back partition wall. revision to 201006245230.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006245230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-24",
+      "status_date": "2011-10-24",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "new appliances- remove & replace, new washer and dryer hook-up, plumbing and electrical, new counger tops in kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451170&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=602",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

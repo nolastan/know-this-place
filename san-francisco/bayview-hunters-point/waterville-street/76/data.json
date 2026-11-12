@@ -1,0 +1,119 @@
+{
+  "address": "76 Waterville Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/waterville-street/76/",
+  "apn": "5378022",
+  "block": "5378",
+  "lot": "022",
+  "eas_baseid": "377149",
+  "coordinates": {
+    "lat": 37.734964,
+    "lng": -122.403011
+  },
+  "parcel": {
+    "year_built": 1939,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2007,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0076 WATERVILLE          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191343,
+    "assessed_improvement_value": 277233,
+    "last_sale_date": "1988-06-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1939",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200410136625",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-10-13",
+      "status_date": "2007-03-07",
+      "estimated_cost": 80000,
+      "revised_cost": 145000,
+      "description": "proposed horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409560",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-09-04",
+      "status_date": "1986-03-04",
+      "estimated_cost": 2000,
+      "description": "install family room and to comply with d22961",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403079",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-03-22",
+      "status_date": "1984-09-17",
+      "estimated_cost": 20000,
+      "description": "the room will stay as is with few minor modificactions.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WATERVILLE&street_type=ST&address_number=76",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5378022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5378&lot=022",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5378022",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1984-08-29",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 29 August 1984",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1984sanf/page/n190/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1984-08-29",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and denied the permit to alter the building at 76 Waterville Street, which had a second dwelling unit built without permit in a zone for one-family dwellings only.",
+      "source": "sf-board-of-permit-appeals-minutes-1984-08-29"
+    }
+  ]
+}

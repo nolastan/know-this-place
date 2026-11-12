@@ -1,0 +1,165 @@
+{
+  "address": "348 Point Lobos Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/point-lobos-avenue/348/",
+  "apn": "1482011",
+  "block": "1482",
+  "lot": "011",
+  "eas_baseid": "305401",
+  "coordinates": {
+    "lat": 37.780272,
+    "lng": -122.50707
+  },
+  "parcel": {
+    "year_built": 1942,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 5,
+    "bedrooms": 5,
+    "lot_area_sqft": 2556,
+    "building_area_sqft": 3102,
+    "basement_area_sqft": 429,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0348 POINT LOBOS         AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 525240,
+    "assessed_improvement_value": 480018
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505015652",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-05-01",
+      "status_date": "2025-05-01",
+      "estimated_cost": 10000,
+      "revised_cost": 25000,
+      "description": "revise pa#2024-1105-4380 to remove existing counter and sink, construct non bearing walls, convert (e) family room to a 2 bedrooms with eero windows along with associated lighting and electrical switches.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411054380",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-11-05",
+      "status_date": "2024-11-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 202105190623 and 202104158612. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105190623",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2021-05-19",
+      "status_date": "2024-10-29",
+      "estimated_cost": 20888,
+      "revised_cost": 60000,
+      "description": "comply with nov 202175146. remove illegal room @ backyard and remodel family bedroom and family room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104158612",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2021-04-15",
+      "status_date": "2024-10-29",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209109299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-10",
+      "status_date": "2013-01-17",
+      "estimated_cost": 20000,
+      "revised_cost": 30000,
+      "description": "grndflr.:convert illegal guestrm. to (n) playrm. remove kitchen cabinets, counter, sink & gas line. legalize (e) full bathrm. 2nd.flr.: remove kitchen cabinets, counter, sink, gas line. convert illegal kit. to (n) fam.rm. convert (e) one bedrm. to study rm. per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208157461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-08-15",
+      "status_date": "2012-08-30",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "provide proper ventilation to dryer, gfi electrical outlet to the top floor front bathroom to comply with housing nov #20125222. electical permit is required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108025176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-02",
+      "status_date": "2001-10-22",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "construct two bedroom and one study rm in (e) family room on 2nd floor of (e) bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=POINT%20LOBOS&street_type=AVE&address_number=348",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1482011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1482&lot=011",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1482011",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1978-03-01",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 1 March 1978",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1978sanf/page/n56/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-03-01",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the granting of the permit to alter the building at 348 Point Lobos, requiring adequate clean-outs for the drain tiles.",
+      "source": "sf-board-of-permit-appeals-minutes-1978-03-01"
+    }
+  ]
+}

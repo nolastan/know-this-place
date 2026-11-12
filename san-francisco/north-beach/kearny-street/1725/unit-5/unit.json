@@ -1,0 +1,47 @@
+{
+  "address": "1725 Kearny Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/kearny-street/1725/unit-5/",
+  "unit": "5",
+  "apn": "0061044",
+  "block": "0061",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 1127,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1802013,
+    "assessed_improvement_value": 1491486,
+    "last_sale_date": "2014-06-20"
+  },
+  "permits": [
+    {
+      "number": "201712075775",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-07",
+      "status_date": "2018-03-13",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "common area- dry rot repair reference soft story permit 201706209802",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0061044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0061&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

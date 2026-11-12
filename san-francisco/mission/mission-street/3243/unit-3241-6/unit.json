@@ -1,0 +1,35 @@
+{
+  "address": "3241 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/3243/unit-3241-6/",
+  "unit": "6",
+  "apn": "5615095",
+  "block": "5615",
+  "lot": "095",
+  "parcel": {
+    "building_area_sqft": 1149,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 119724,
+    "assessed_improvement_value": 196370,
+    "last_sale_date": "1998-04-24"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5615095&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5615&unit=6",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

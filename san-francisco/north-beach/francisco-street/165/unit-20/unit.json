@@ -1,0 +1,79 @@
+{
+  "address": "175 Francisco Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/francisco-street/165/unit-20/",
+  "unit": "20",
+  "apn": "0055020",
+  "block": "0055",
+  "lot": "020",
+  "parcel": {
+    "building_area_sqft": 5851,
+    "bedrooms": 6,
+    "bathrooms": 6
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2640331,
+    "assessed_improvement_value": 3036338,
+    "last_sale_date": "2017-04-20"
+  },
+  "permits": [
+    {
+      "number": "201807194985",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-19",
+      "status_date": "2018-11-30",
+      "estimated_cost": 500,
+      "revised_cost": 800,
+      "description": "extend (4) pendent fire sprinkler heads to new ceiling height from the existing fire sprinkler system, for remodel master bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711154027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-15",
+      "status_date": "2019-05-03",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "remodeling of kitchen, remodeling of bathrooms. remodeling of existing stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708094361",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-08-09",
+      "status_date": "2026-01-09",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "#20: remodel (e) two bathrooms and kitchen on top 2 floors, 3rd and 4th .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708013492",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-08-01",
+      "status_date": "2026-01-09",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "demo existing 3/f & 4/f (e) kitchen & (e) bathrooms.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0055020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0055&unit=20",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

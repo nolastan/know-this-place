@@ -1,0 +1,68 @@
+{
+  "address": "650 2nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/2nd-street/650/unit-401/",
+  "unit": "401",
+  "apn": "3788059",
+  "block": "3788",
+  "lot": "059",
+  "parcel": {
+    "building_area_sqft": 1576,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1006660,
+    "assessed_improvement_value": 671106,
+    "last_sale_date": "2021-05-03"
+  },
+  "permits": [
+    {
+      "number": "201205049803",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-04",
+      "status_date": "2012-05-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for documentation only per cfc 201108243122 which reflects 23 units, two units were merged per pa#201101148416 & pa#201101148412. this permit correctly shows the accurate unit count of 22 units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101148416",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-01-14",
+      "status_date": "2012-11-09",
+      "estimated_cost": 10000,
+      "revised_cost": 1,
+      "description": "work @ one unit only. to comply with nov# 201076086 to merge one unit & one unit into one unit.for documentation only.no construction under this permit. all work approved under pa#201002226890.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812118353",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2008-12-11",
+      "status_date": "2009-01-15",
+      "estimated_cost": 1000,
+      "description": "merging (2) live/work units to (1). remove non-bearing wall. remove (e) kitchen stove.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3788059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3788&unit=401",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

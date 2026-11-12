@@ -1,0 +1,91 @@
+{
+  "address": "188 Minna Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/3rd-street/125/unit-38a/",
+  "unit": "38A",
+  "apn": "3722353",
+  "block": "3722",
+  "lot": "353",
+  "parcel": {
+    "building_area_sqft": 3207,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 6079577,
+    "assessed_improvement_value": 7703225,
+    "last_sale_date": "2018-10-04"
+  },
+  "permits": [
+    {
+      "number": "202007079755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-07-07",
+      "status_date": "2021-04-27",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "fire sprinkler: relocate (10) & remove (1) f/s per tenant improvements.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903215854",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-21",
+      "status_date": "2021-05-07",
+      "estimated_cost": 750000,
+      "revised_cost": 750000,
+      "description": "#38a demo bath 2 & reconfigure walls for (n) master closet various changes to plumbing, electrical, lighting. (n) millwork & finishes, fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205180779",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-18",
+      "status_date": "2012-06-07",
+      "estimated_cost": 2748,
+      "revised_cost": 2748,
+      "description": "relocate 1 and replace 1 residential sprinkler with modified soffit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204198647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-19",
+      "status_date": "2012-06-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "renovation of master suite in one unit. work includes demo of finish ceilings, replacement of light fixtures with 3 new lights, replace fabric wrapped wall covering with new flame treated covering, reconfirgure sprinkler layout. no work outside master suite. revision to 200510135508",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200603035936",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-03-03",
+      "status_date": "2006-03-03",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "revision to approved t.i. permit 200510135508 changes area minor revisions including different doors, soffit, wall unit, window sill, lighting, no construction work. fire protection under separate permit, no exterior or structural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3722353&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3722&unit=38A",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

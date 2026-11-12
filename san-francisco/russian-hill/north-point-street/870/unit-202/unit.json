@@ -1,0 +1,69 @@
+{
+  "address": "870 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/870/unit-202/",
+  "unit": "202",
+  "apn": "0025035",
+  "block": "0025",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 1511,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1229052,
+    "assessed_improvement_value": 1229052,
+    "last_sale_date": "2017-03-02"
+  },
+  "permits": [
+    {
+      "number": "200202229818",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-22",
+      "status_date": "2002-06-22",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "#202- replace glass only, not frames w/clear 60 min.fire rated at 5 openings, not visible fm street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104247616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-24",
+      "status_date": "2002-03-07",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "remodel kitchen & (2) bathrooms -remove & replace cabs, appliances & fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006051796",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-05",
+      "status_date": "2001-07-10",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace 123 sprinkler heads in kind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0025035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0025&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

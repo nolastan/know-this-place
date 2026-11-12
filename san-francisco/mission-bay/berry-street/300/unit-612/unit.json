@@ -1,0 +1,35 @@
+{
+  "address": "300 Berry Street, San Francisco, CA 94158",
+  "path": "/san-francisco/mission-bay/berry-street/300/unit-612/",
+  "unit": "612",
+  "apn": "8704107",
+  "block": "8704",
+  "lot": "107",
+  "parcel": {
+    "building_area_sqft": 1156,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 594000,
+    "assessed_improvement_value": 396000,
+    "last_sale_date": "2018-12-07"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=8704107&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=8704&unit=612",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

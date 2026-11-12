@@ -1,0 +1,105 @@
+{
+  "address": "1404 Golden Gate Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/golden-gate-avenue/1404/",
+  "block": "0754",
+  "eas_baseid": "288192",
+  "coordinates": {
+    "lat": 37.779449,
+    "lng": -122.433938
+  },
+  "parcel": {
+    "year_built": 1885,
+    "units": 7,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Western Addition",
+    "analysis_neighborhood": "Western Addition"
+  },
+  "condominium": {
+    "lots": [
+      "029",
+      "030",
+      "031",
+      "032",
+      "033",
+      "034",
+      "035"
+    ],
+    "method": "Proposed from the 2025 roll for block 0754: every condominium parcel the roll files under 1404 GOLDEN GATE AV, and the unbroken run of lots beside parcel 0754031 on the same street with the same year built (1885) — street numbers 1400, 1402, 1404, 1406, 1408, 1410, 1412. 7 lots, 029–035."
+  },
+  "historic_district": {
+    "name": "Alamo Square Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1890–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "8602309",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-02-28",
+      "status_date": "1987-01-22",
+      "estimated_cost": 1,
+      "description": "to delete the 1-hr construction and fire alarm requirments",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509760",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-09-10",
+      "status_date": "1987-01-22",
+      "estimated_cost": 10000,
+      "description": "we want to convert a storage room into a bedroom bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOLDEN%20GATE&street_type=AVE&address_number=1404",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0754)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0754&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0754",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43393770244543%2037.779449286909546)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-04-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 April 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n78/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1986-04-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works and granted the permit to alter the building at 1404 Golden Gate Avenue, with a condition.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-04-16"
+    }
+  ]
+}

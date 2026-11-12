@@ -1,0 +1,114 @@
+{
+  "address": "1843–1849 Bush Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/bush-street/1843/",
+  "apn": "0674017",
+  "block": "0674",
+  "lot": "017",
+  "eas_baseid": "435406",
+  "coordinates": {
+    "lat": 37.787478,
+    "lng": -122.427601
+  },
+  "address_range": "1843–1849",
+  "street_numbers_on_parcel": [
+    "1843",
+    "1845",
+    "1847",
+    "1849"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 4,
+    "stories": 3,
+    "rooms": 27,
+    "bathrooms": 4,
+    "lot_area_sqft": 5153,
+    "building_area_sqft": 8313,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "1849 1843 BUSH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 127045,
+    "assessed_improvement_value": 101162
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200705302472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-05-30",
+      "status_date": "2007-06-01",
+      "estimated_cost": 21700,
+      "revised_cost": 21700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612032",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-09-29",
+      "status_date": "1987-03-13",
+      "estimated_cost": 9000,
+      "description": "horizontal extension, deck addition at rear",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=1843",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0674017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0674&lot=017",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0674017",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-01-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 January 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1980sanf/page/n16/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-01-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 1843-1849 Bush Street, with a condition for a handrail.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-01-16"
+    }
+  ]
+}

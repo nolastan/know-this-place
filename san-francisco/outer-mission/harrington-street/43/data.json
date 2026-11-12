@@ -1,0 +1,127 @@
+{
+  "address": "43 Harrington Street, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/harrington-street/43/",
+  "apn": "3148032",
+  "block": "3148",
+  "lot": "032",
+  "eas_baseid": "355330",
+  "coordinates": {
+    "lat": 37.725323,
+    "lng": -122.435237
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1475,
+    "basement_area_sqft": 400,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0043 HARRINGTON          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 575914,
+    "assessed_improvement_value": 308274,
+    "last_sale_date": "2016-04-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201607142373",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-07-14",
+      "status_date": "2016-07-18",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "add rear deck to existing building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605318776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-31",
+      "status_date": "2017-02-10",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "interior remodeling: 2nd floor. add bathroom and closet. remodel kitchen in same location. add 2 skylights not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9517894",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-24",
+      "status_date": "1995-12-18",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1995–2016",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRINGTON&street_type=ST&address_number=43",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3148032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3148&lot=032",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3148032",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-01-20",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 20 January 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n14/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-01-20",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator's disapproval of an application for a permit to alter the building at 43 Harrington Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-01-20"
+    }
+  ]
+}

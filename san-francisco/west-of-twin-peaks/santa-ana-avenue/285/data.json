@@ -1,0 +1,177 @@
+{
+  "address": "285 Santa Ana Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/santa-ana-avenue/285/",
+  "apn": "3254012",
+  "block": "3254",
+  "lot": "012",
+  "eas_baseid": "356860",
+  "coordinates": {
+    "lat": 37.732042,
+    "lng": -122.467549
+  },
+  "parcel": {
+    "year_built": 1921,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 4000,
+    "building_area_sqft": 1319,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Balboa Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0285 SANTA ANA           AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 861430,
+    "assessed_improvement_value": 574287,
+    "last_sale_date": "2004-11-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Balboa Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1921–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200411018237",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-01",
+      "status_date": "2004-11-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #9620248 for final inspec.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301245830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-24",
+      "status_date": "2003-02-19",
+      "estimated_cost": 12488,
+      "revised_cost": 12488,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9925942",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1999-12-09",
+      "status_date": "2000-06-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "rebuild existing stair to lower level and floor level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824286",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-11-24",
+      "status_date": "1999-03-24",
+      "estimated_cost": 1,
+      "description": "renew pa#9620248 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620248",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-21",
+      "status_date": "1997-04-21",
+      "estimated_cost": 10000,
+      "description": "kitchen and bathroom remodeling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123724",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-12-16",
+      "status_date": "1992-11-10",
+      "estimated_cost": 5000,
+      "revised_cost": 6000,
+      "description": "remove wetbar counter",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012358",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-06-22",
+      "status_date": "1992-08-18",
+      "estimated_cost": 8000,
+      "description": "revert illegal unit to basement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANTA%20ANA&street_type=AVE&address_number=285",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3254012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3254&lot=012",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3254012",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46754933690872%2037.73204202439306)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-10-09",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 9 October 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n260/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-10-09",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and denied the permit to alter the building at 285 Santa Ana Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-10-09"
+    }
+  ]
+}

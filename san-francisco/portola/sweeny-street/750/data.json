@@ -1,0 +1,148 @@
+{
+  "address": "750 Sweeny Street, San Francisco, CA 94134",
+  "path": "/san-francisco/portola/sweeny-street/750/",
+  "apn": "5900037",
+  "block": "5900",
+  "lot": "037",
+  "eas_baseid": "386433",
+  "coordinates": {
+    "lat": 37.730576,
+    "lng": -122.418251
+  },
+  "parcel": {
+    "year_built": 1944,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2949,
+    "building_area_sqft": 1390,
+    "basement_area_sqft": 300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "0000 0750 SWEENY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 27824,
+    "assessed_improvement_value": 53568
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1944",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9320139",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-11-19",
+      "status_date": "1994-09-16",
+      "estimated_cost": 850,
+      "description": "repair damage stucco in front wall 6'x2' sf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9209545",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-06-10",
+      "status_date": "1992-09-16",
+      "estimated_cost": 100,
+      "description": "final inspection pa #8304507. comply w/notice of violation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9209546",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1992-06-10",
+      "status_date": "1992-11-06",
+      "estimated_cost": 750,
+      "description": "legalize grnd flr. remove partition. family room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508872",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-08-15",
+      "status_date": "1985-12-17",
+      "estimated_cost": 500,
+      "description": "continue work under permit appl #8304507",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409732",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "1984-09-07",
+      "status_date": "1999-12-28",
+      "estimated_cost": 2000,
+      "description": "hand rail on deck & bed rm. bld p appl #8304507",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304507",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-05-26",
+      "status_date": "1984-05-03",
+      "estimated_cost": 7500,
+      "description": "addition of bathroom, new family room, new dining area",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SWEENY&street_type=ST&address_number=750",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5900037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5900&lot=037",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5900037",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1983-07-13",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 13 July 1983",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1983sanf/page/n164/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1983-07-13",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 750 Sweeny Street to stand.",
+      "source": "sf-board-of-permit-appeals-minutes-1983-07-13"
+    }
+  ]
+}

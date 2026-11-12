@@ -1,0 +1,32 @@
+{
+  "address": "135A 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/135/unit-135a/",
+  "apn": "1369063",
+  "block": "1369",
+  "lot": "063",
+  "parcel": {
+    "building_area_sqft": 428,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 136797,
+    "assessed_improvement_value": 92822
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1369063&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1369&street_number=135a",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

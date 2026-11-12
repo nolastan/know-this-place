@@ -29,6 +29,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Alvarado Street](alvarado-street/) — 17 buildings, built 1880–1983.
 - [Ames Street](ames-street/) — 1 building, built 1902.
 - [Balmy Street](balmy-street/) — 4 buildings, built 1900–1950; 3 in the South Mission Avenues and Alleys Historic District.
+- [Banks Street](banks-street/) — 1 building, built 1991.
 - [Bartlett Street](bartlett-street/) — 73 buildings, built 1880–1986.
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 1 building, built 1948.
 - [Bernice Street](bernice-street/) — 3 buildings, built 1907–1997; 2 in the Western SOMA Light Industrial and Residential Historic District.
@@ -43,6 +44,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Camp Street](camp-street/) — 7 buildings, built 1907–1932; 6 in the 16th and Valencia Streets Post-Fire Historic District.
 - [Capp Street](capp-street/) — 187 buildings, built 1870–2019; 11 in the Von Schroeder-Welsh Block Historic District.
 - [Cesar Chavez Street](cesar-chavez-street/) — 46 buildings, built 1900–1993.
+- [Chapman Street](chapman-street/) — 1 building, built 1986.
 - [Chattanooga Street](chattanooga-street/) — 1 building, built 1912.
 - [Clarion Alley](clarion-alley/) — 4 buildings, built 1908–2006; 1 in the Mission Miracle Mile at 17th Street Historic District.
 - [Clinton Park](clinton-park/) — 29 buildings, built 1885–1980; 4 in the Guerrero Street Fire Line Historic District.
@@ -87,7 +89,9 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Lexington Street](lexington-street/) — 85 buildings, built 1876–1990; 30 in the Liberty Hill Historic District.
 - [Liberty Street](liberty-street/) — 45 buildings, built 1880–1965; 40 in the Liberty Hill Historic District.
 - [Lilac Street](lilac-street/) — 3 buildings, built 1890–1914.
+- [Lincoln Court](lincoln-court/) — 1 building, built 1984.
 - [Linda Street](linda-street/) — 29 buildings, built 1900–1949; 17 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
+- [Lowell Street](lowell-street/) — 1 building, built 1908.
 - [Lucky Street](lucky-street/) — 17 buildings, built 1890–1998; 13 in the South Mission Avenues and Alleys Historic District.
 - [Mariposa Street](mariposa-street/) — 11 buildings, built 1908–1991.
 - [Market Street](market-street/) — 1 building, built 1979.
@@ -95,6 +99,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Minna Street](minna-street/) — 17 buildings, built 1906–1938; 6 in the Western SOMA Light Industrial and Residential Historic District.
 - [Mission Street](mission-street/) — 77 buildings, built 1885–2023; 7 in the Mission Miracle Mile at 17th Street Historic District.
 - [Missouri Street](missouri-street/) — 1 building, built 1922.
+- [Morse Street](morse-street/) — 1 building, built 1915.
 - [Natoma Street](natoma-street/) — 25 buildings, built 1906–1990; 7 in the Western SOMA Light Industrial and Residential Historic District.
 - [Oakwood Street](oakwood-street/) — 20 buildings, built 1900–1988; 1 in the Inner Mission Boulevards and Alleys Reconstruction Historic District.
 - [Ocean Avenue](ocean-avenue/) — 1 building, built 1922.
@@ -110,6 +115,7 @@ A large, dense district around the old Mission Dolores, mixing Victorian and Edw
 - [Ringold Street](ringold-street/) — 1 building, built 1909; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Rondel Place](rondel-place/) — 12 buildings, built 1904–1925.
 - [Rosemont Place](rosemont-place/) — 5 buildings, built 1906–1976.
+- [Sala Terrace](sala-terrace/) — 1 building, built 1926.
 - [San Bruno Avenue](san-bruno-avenue/) — 55 buildings, built 1895–1938.
 - [San Carlos Street](san-carlos-street/) — 80 buildings, built 1880–1986; 22 in the Liberty Hill Historic District.
 - [San Jose Avenue](san-jose-avenue/) — 66 buildings, built 1865–2017; 5 in the Horner's Addition East Historic District.

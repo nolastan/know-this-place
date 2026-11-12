@@ -1,0 +1,56 @@
+{
+  "address": "156 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-156/",
+  "apn": "7381029",
+  "block": "7381",
+  "lot": "029",
+  "parcel": {
+    "building_area_sqft": 2062,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 506111,
+    "assessed_improvement_value": 337405,
+    "last_sale_date": "2013-04-11"
+  },
+  "permits": [
+    {
+      "number": "201305247847",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-24",
+      "status_date": "2013-12-18",
+      "estimated_cost": 18000,
+      "revised_cost": 27000,
+      "description": "remodeling existing kitchen (1) and bathrooms (2) change electrical service",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220262",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-19",
+      "status_date": "1993-01-22",
+      "estimated_cost": 1600,
+      "description": "repl decking & 2x8 joists with same size presre trtd materia",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=156",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

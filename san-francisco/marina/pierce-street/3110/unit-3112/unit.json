@@ -1,0 +1,101 @@
+{
+  "address": "3112 Pierce Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/pierce-street/3110/unit-3112/",
+  "apn": "0511041",
+  "block": "0511",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 1713,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1199520,
+    "assessed_improvement_value": 799680,
+    "last_sale_date": "2024-04-17"
+  },
+  "permits": [
+    {
+      "number": "201707030943",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-03",
+      "status_date": "2017-07-03",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodel, cabinet & counter top replacement , basic switch, repalcement sink repalcement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902202536",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-02-20",
+      "status_date": "2009-02-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew for final 200608230287. all work completed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608230287",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-08-23",
+      "status_date": "2007-12-31",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "new stair/new bath at lower level, new window at lower, relocated bath/washer & dryer at mid level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508049444",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-04",
+      "status_date": "2005-10-24",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "istall new cabinets, floor, electrical, install hood over stove. (1) kitchen remodel. & washroom .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506225807",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-22",
+      "status_date": "2005-10-24",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "rear garage wall for storage.add 2 drs for access to storage (20min fire dr)add7x6' closet fr garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108145973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-14",
+      "status_date": "2001-10-04",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "stair repair, repair & replace all dryrot damage to exterior leading fm kitchen to garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0511041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0511&street_number=3112",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

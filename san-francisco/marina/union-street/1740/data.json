@@ -1,0 +1,120 @@
+{
+  "address": "1740–1744 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/1740/",
+  "apn": "0529006",
+  "block": "0529",
+  "lot": "006",
+  "eas_baseid": "434299",
+  "coordinates": {
+    "lat": 37.79825,
+    "lng": -122.428053
+  },
+  "address_range": "1740–1744",
+  "street_numbers_on_parcel": [
+    "1740",
+    "1742",
+    "1744"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 3,
+    "stories": 3,
+    "rooms": 19,
+    "bathrooms": 4,
+    "lot_area_sqft": 2156,
+    "building_area_sqft": 4933,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "UNION",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1744 1740 UNION               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 10594,
+    "assessed_improvement_value": 122420
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606170217",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-17",
+      "status_date": "2016-06-17",
+      "estimated_cost": 18250,
+      "revised_cost": 18250,
+      "description": "replace 5 windows in-kind visible from street. no structural changes, max u-factor 0.32 marvin wood ultra.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201102029536",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-02",
+      "status_date": "2011-05-09",
+      "estimated_cost": 19100,
+      "revised_cost": 19100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2011–2019",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=1740",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0529006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0529&lot=006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0529006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1981-05-27",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 27 May 1981",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1981sanf/page/n74/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1981-05-27",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 1740/42/44 Union Street to stand.",
+      "source": "sf-board-of-permit-appeals-minutes-1981-05-27"
+    }
+  ]
+}

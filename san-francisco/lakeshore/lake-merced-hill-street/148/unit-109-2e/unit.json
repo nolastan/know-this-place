@@ -1,0 +1,35 @@
+{
+  "address": "109 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-109-2e/",
+  "unit": "2E",
+  "apn": "7381147",
+  "block": "7381",
+  "lot": "147",
+  "parcel": {
+    "building_area_sqft": 1242,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 443922,
+    "assessed_improvement_value": 443922,
+    "last_sale_date": "2016-04-06"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381147&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&unit=2E",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

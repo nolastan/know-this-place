@@ -6083,3 +6083,45 @@ extracted and must not be. Nothing else on the form is a private individual.
   the context statement had already mined the designer lists, and the
   replacement-building scan was blind to pages not yet seeded — fixed in
   `check.py`.)
+- **Verified:** 2026-11-10 (#556, the findings the old condominium rule held
+  back, re-resolved now that a condominium is paged as a building; nothing
+  new was read). The resolver would now place 543 of this source's unresolved
+  findings. This pass takes the **220 that publish as dated timeline
+  entries** and leaves the rest unresolved. Of the 220, 182 move to resolved:
+  **117 published on 107 pages, 72 of them seeded** as condominium buildings,
+  and 65 declined — 26 bare "Built as an apartment building" rows whose year
+  is the assessor's, 24 about an earlier building on a parcel with no page,
+  8 about a building the roll shows is gone, 4 the statement itself records
+  as demolished, 2 undated credits and 1 duplicate. **The predecessor rule
+  from the minutes is wrong for a survey:** a survey of 2008–2011 recorded
+  buildings that were standing, and the roll dates a loft conversion to the
+  year it was converted (580 Howard, 720 York, 2301 Harrison, 650 Second), so
+  a construction or design fact is declined as a predecessor only when the
+  roll's year is later than the survey. An occupant of 1925 at a building the
+  roll dates 1980 still is one. 38 of the 220 are left unresolved: 14 whose
+  page is one parcel of a multi-parcel map lot and not yet a building page
+  (685 Castro, 4052 18th, 701 Frederick, 439 Greenwich, 1925 Jackson, 55
+  Mason, 1 Taylor, 845 and 801 Market, 270 King, 500 Francisco, 1040 Geary,
+  292 Ivy), 17 where the parcel is a redeveloped campus or the roll gives no
+  year to judge by (55 Laguna and 215 Haight, 1500 Mission, 150 Eureka, 101
+  Stockton and 170 O'Farrell, 501 Bay, 900 North Point, 1351 42nd Avenue, 690
+  Texas, 460 Filbert, 2765 16th), 5 the seeder cannot page (15 Mallorca and
+  2267 Francisco, whose lot proposal runs on into the neighbour; 374
+  Chestnut; 1601 Mariposa and 685 Natoma, whose lots are not on the 2025
+  roll), and 2 whose existing page does not hold the parcel (300 Spear, 810
+  Van Ness). **The 216 that publish as a `historic_survey` block** were taken
+  second, on Stan's rule that a survey row alone does not seed a page: 198
+  move to resolved, **38 published on 31 existing condominium building
+  pages** (umb-survey-ratings 10, modern-postmodern-styles 8, soma-survey 5,
+  showplace-square-survey 5, umb-survey 3, transit-center-district-survey 3,
+  modernistic-styles 2, soma-district-records 1, market-octavia-survey-forms
+  1) and 160 declined — 139 because the building has no page, 15 unreinforced
+  masonry rows on a parcel the roll dates after the 1990 survey, and 6 that
+  repeat the page or describe a building that is gone. 18 stay unresolved
+  because their page is one parcel of a multi-parcel map lot. **Still
+  unresolved and not taken:** 66 that were never
+  condominium-blocked; 31 where the resolver's answer may be the lot next
+  door; 10 on parcels with no roll row. **Lots:** every target page was
+  compared with the sf-parcels `mapblklot` of the finding's own parcel; 17
+  seeded lot lists were corrected with `seed_pages.py condo --lots`.
+

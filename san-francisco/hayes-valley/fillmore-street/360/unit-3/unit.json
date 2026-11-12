@@ -1,0 +1,41 @@
+{
+  "address": "360 Fillmore Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fillmore-street/360/unit-3/",
+  "unit": "3",
+  "apn": "0849056",
+  "block": "0849",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 741,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 444600,
+    "assessed_improvement_value": 296400,
+    "last_sale_date": "2018-10-30"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2019",
+    "shown_on_page": 0,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0849056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0849&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

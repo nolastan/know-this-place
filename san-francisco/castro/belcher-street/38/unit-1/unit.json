@@ -1,0 +1,73 @@
+{
+  "address": "38 Belcher Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/belcher-street/38/unit-1/",
+  "unit": "1",
+  "apn": "3537125",
+  "block": "3537",
+  "lot": "125",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 223922,
+    "assessed_improvement_value": 223922
+  },
+  "permits": [
+    {
+      "number": "202512242611",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-24",
+      "status_date": "2026-04-21",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace (e) fire escape in kind from roof to light courtyard",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408239314",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-23",
+      "status_date": "2024-10-15",
+      "estimated_cost": 12879,
+      "revised_cost": 12879,
+      "description": "one unit: small dry rot repair on front wall of the building (replace in-kind: king stud, header, rim joist). approximately 100 sq.ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202403077314",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-07",
+      "status_date": "2024-10-15",
+      "estimated_cost": 17945,
+      "revised_cost": 17945,
+      "description": "one unit: replace facade windows, (6 windows), cut stucco, remove old windows and install new one. replacement windows in the back (in kind). existing aluminium - new aluminum.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607212953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-21",
+      "status_date": "2017-07-11",
+      "estimated_cost": 22600,
+      "revised_cost": 22600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3537125&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3537&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

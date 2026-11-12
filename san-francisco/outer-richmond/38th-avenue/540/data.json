@@ -1,0 +1,140 @@
+{
+  "address": "540 38th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/38th-avenue/540/",
+  "apn": "1507029",
+  "block": "1507",
+  "lot": "029",
+  "eas_baseid": "306063",
+  "coordinates": {
+    "lat": 37.77872,
+    "lng": -122.498279
+  },
+  "parcel": {
+    "year_built": 1981,
+    "units": 2,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 6,
+    "bedrooms": 8,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 4757,
+    "basement_area_sqft": 843,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0540 38TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 767822,
+    "assessed_improvement_value": 642188
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1981",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809121512",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2008-09-12",
+      "status_date": "2008-12-05",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "work on#540 (upper unit) 38th ave. new 2 patio door. not visibel from street. u factor less than 0.67.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200809121515",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-12",
+      "status_date": "2008-11-25",
+      "estimated_cost": 5900,
+      "revised_cost": 5900,
+      "description": "work on #540 38th ave (lower)install 4 vinyl window & 3 patio doors. not visibel from street. u factor less than 0.67.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913719",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-07-07",
+      "status_date": "2000-01-07",
+      "estimated_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208998",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-11-01",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1000,
+      "description": "bldg use: dwgs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203791",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1982-05-14",
+      "status_date": "1984-02-16",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=38TH&street_type=AVE&address_number=540",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1507029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1507&lot=029",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1507029",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-10-27",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 27 October 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n208/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-10-27",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's denial of a request for a rear yard variance at 540 38th Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-10-27"
+    }
+  ]
+}

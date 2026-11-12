@@ -1,0 +1,58 @@
+{
+  "address": "1070 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1070/unit-502/",
+  "unit": "502",
+  "apn": "0121A014",
+  "block": "0121A",
+  "lot": "014",
+  "parcel": {
+    "building_area_sqft": 1660,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 407167,
+    "assessed_improvement_value": 366444,
+    "last_sale_date": "1997-02-28"
+  },
+  "permits": [
+    {
+      "number": "202303314788",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-31",
+      "status_date": "2024-01-23",
+      "estimated_cost": 78000,
+      "revised_cost": 78000,
+      "description": "kitchen: new cabinets, counters, fixtures and finishes to replace (e) in same location bath 1&2: new cabinets counters, fixtures and finishes to replace (e) in same location, replace (e) window in kind at side elevation (not visible from street) w/(n) window to match building standard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806182183",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-18",
+      "status_date": "2019-03-25",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace glazing in (e) steel window frames. new glazing is low energy glass. all work in one unit. replace glazing only, no structural change.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121A014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121A&unit=502",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

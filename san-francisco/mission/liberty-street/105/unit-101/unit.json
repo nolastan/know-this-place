@@ -1,0 +1,78 @@
+{
+  "address": "101 Liberty Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/liberty-street/105/unit-101/",
+  "apn": "3607079",
+  "block": "3607",
+  "lot": "079",
+  "parcel": {
+    "building_area_sqft": 2485,
+    "rooms": 9,
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2100000,
+    "assessed_improvement_value": 1400000,
+    "last_sale_date": "2022-02-16"
+  },
+  "permits": [
+    {
+      "number": "202503252942",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-03-25",
+      "status_date": "2025-03-25",
+      "estimated_cost": 7500,
+      "revised_cost": 0,
+      "description": "replace existing siding at east property line wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206085919",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-08",
+      "status_date": "2025-01-16",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "remodel all (e) bathrooms. new windows & doors. repair (e) siding in-kind. relocate (e) wood shear wall at penthouse level. widen (e) roof deck at penthouse level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910154544",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-15",
+      "status_date": "2019-10-29",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "small greenhouse on existing deck was removed by advice; inspector back in 2012 and reverse it back to original condition to comply with nov 201233281.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207205392",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2012-07-20",
+      "status_date": "2012-07-20",
+      "estimated_cost": 5000,
+      "description": "to comply w/ nov #201233281. construct a \"greenhouse\" on (e) rear deck redwood framing w/ corrigated polycarbonate clear sheating. 2x6 redwood frame roof w/ clear polycarb sheating. rain gutters & downspouts to (e) drains. provide additonal weather proof electrical outlet for fan.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3607079&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3607&street_number=101",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

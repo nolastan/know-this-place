@@ -1,0 +1,128 @@
+{
+  "address": "435 19th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/19th-avenue/435/",
+  "apn": "1525006",
+  "block": "1525",
+  "lot": "006",
+  "eas_baseid": "306787",
+  "coordinates": {
+    "lat": 37.779616,
+    "lng": -122.478577
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0435 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 87069,
+    "assessed_improvement_value": 89614
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201605137351",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-05-13",
+      "status_date": "2016-05-13",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "panel upgrade to 200 amp, rewire house, install earthquake shut off valve, install shut off water for house, sheetrock work kitchen, install (1) new cabinet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007145192",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-14",
+      "status_date": "2000-09-19",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace existing deck boards, new one pressure threated boards, replace 2 joists and repalce 2 wi nd",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704728",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-03-14",
+      "status_date": "1998-12-18",
+      "estimated_cost": 7590,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016929",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-08-24",
+      "status_date": "1990-11-06",
+      "estimated_cost": 8000,
+      "description": "anchor bolt repair foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=435",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1525006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1525&lot=006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1525006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-04-21",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 21 April 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n90/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-04-21",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator's denial of a variance on the property at 435 - 19th Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-04-21"
+    }
+  ]
+}

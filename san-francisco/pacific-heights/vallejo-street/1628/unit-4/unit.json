@@ -1,0 +1,64 @@
+{
+  "address": "1628 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/vallejo-street/1628/unit-4/",
+  "unit": "4",
+  "apn": "0551028",
+  "block": "0551",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 1800,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1883431,
+    "assessed_improvement_value": 1255621,
+    "last_sale_date": "2020-10-14"
+  },
+  "permits": [
+    {
+      "number": "201404032386",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-03",
+      "status_date": "2014-10-03",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit: remove and replace kitchen cabinets, sink, countertop, remove and replace bathroom fixtures in location master bathroom and guest bathroom. replace 32 4\" recessed can lights to led. also ex. painting of front bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403271803",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-27",
+      "status_date": "2014-05-16",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "one unit: replace 19 windows in which 12 front windows street facing from aluminum to vinyl to match other exsiting windows. same window pattern. u<0.4",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2014",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0551028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0551&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

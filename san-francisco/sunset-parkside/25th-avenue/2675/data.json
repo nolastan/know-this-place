@@ -1,0 +1,139 @@
+{
+  "address": "2675 25th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/25th-avenue/2675/",
+  "apn": "2471057",
+  "block": "2471",
+  "lot": "057",
+  "eas_baseid": "340367",
+  "coordinates": {
+    "lat": 37.737658,
+    "lng": -122.481986
+  },
+  "parcel": {
+    "year_built": 1995,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2766,
+    "building_area_sqft": 2443,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2675 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 335929,
+    "assessed_improvement_value": 268742,
+    "last_sale_date": "1995-04-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1995",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201501125528",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-12",
+      "status_date": "2015-01-12",
+      "estimated_cost": 12800,
+      "revised_cost": 12800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9418457",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-11-08",
+      "status_date": "1995-04-25",
+      "estimated_cost": 1,
+      "description": "revision to pa#9109308s/1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9109308S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1991-05-29",
+      "status_date": "1995-04-27",
+      "estimated_cost": 130000,
+      "revised_cost": 203600,
+      "description": "erect single family, two story bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8700229",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "1987-01-08",
+      "status_date": "1987-11-30",
+      "estimated_cost": 80000,
+      "description": "two story single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512994",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "1985-11-18",
+      "status_date": "1987-03-11",
+      "estimated_cost": 90000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=2675",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2471057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2471&lot=057",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2471057",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1994-01-05",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 5 January 1994",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n186/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1994-01-05",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and granted the permit to erect a one-family home at 2675 - 25th Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1994-01-05"
+    }
+  ]
+}

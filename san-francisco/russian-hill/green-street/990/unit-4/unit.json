@@ -1,0 +1,35 @@
+{
+  "address": "990 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/990/unit-4/",
+  "unit": "4",
+  "apn": "0120048",
+  "block": "0120",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1925,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 921495,
+    "assessed_improvement_value": 921495,
+    "last_sale_date": "2003-01-16"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0120048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0120&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "address": "3240 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/3240/unit-b/",
+  "unit": "B",
+  "apn": "1007034",
+  "block": "1007",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 2115,
+    "rooms": 8,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 342012,
+    "assessed_improvement_value": 532574,
+    "last_sale_date": "1996-08-09"
+  },
+  "permits": [
+    {
+      "number": "202503031443",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-03",
+      "status_date": "2025-11-03",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "remodel of 2 bathrooms, replace all fixtures in kind. bathroom 1 has toilet, tub & single vanity. bathroom 2 has toilet, shower and double vanity. no wall removal other than partition in bathroom 1 (between w.c. and lavatory)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202401254594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-25",
+      "status_date": "2025-01-17",
+      "estimated_cost": 310000,
+      "revised_cost": 310000,
+      "description": "demo (e) kitchen cabinets, countertops, appliances, drywall and replace in kind. (n) can lights @ kitchen and bfreakfast room. (n) h.w. floor @ kitchen, hallway, living and media room. replace (e) toilet @ powder room, (n) gas line for insert @ livingroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201712217151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-12-21",
+      "status_date": "2018-07-09",
+      "estimated_cost": 29099,
+      "revised_cost": 29099,
+      "description": "one unit: install new window inkind. remove and replace siding and drywall as necessary to install new window. one unit: install new window and sliding glass door. remove and replace siding and drywall as necessary to install new window and door.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1007034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1007&unit=B",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "272 Parnassus Avenue, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/parnassus-avenue/270/unit-272/",
+  "apn": "1274055",
+  "block": "1274",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1076,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 697069,
+    "assessed_improvement_value": 697069,
+    "last_sale_date": "2015-06-01"
+  },
+  "permits": [
+    {
+      "number": "201109265461",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-09-26",
+      "status_date": "2014-04-02",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "open existing wall/door that was sheet rocked in and add new door to install new stcked washer dryer",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104154179",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2011-04-15",
+      "status_date": "2014-05-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "new stairs to roof. new roof deck. new washer dryer in kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1274055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1274&street_number=272",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

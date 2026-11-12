@@ -1,0 +1,58 @@
+{
+  "address": "2990 Clay Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/clay-street/2990/unit-4/",
+  "unit": "4",
+  "apn": "1001059",
+  "block": "1001",
+  "lot": "059",
+  "parcel": {
+    "building_area_sqft": 1200,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 867000,
+    "assessed_improvement_value": 578000,
+    "last_sale_date": "2018-11-09"
+  },
+  "permits": [
+    {
+      "number": "202305016769",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-01",
+      "status_date": "2023-05-04",
+      "estimated_cost": 6820,
+      "revised_cost": 6820,
+      "description": "one unit: replace 10 feet of steel ductwork with 10 feet of new ductwork in common mechanical room in garage (furnace replacement under separate permit)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201512145039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-12-14",
+      "status_date": "2016-07-11",
+      "estimated_cost": 60000,
+      "revised_cost": 80000,
+      "description": "one unit, remodel (e) kitchen & 2 bathrooms. vault living room ceiling & relocate an (e) skyklight. provide new interior door to (e) den & a \"bar niche\"/counterspace in dining area. new fixtrues & finishes throughoug",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1001059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1001&unit=4",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

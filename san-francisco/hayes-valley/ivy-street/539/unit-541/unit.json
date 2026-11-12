@@ -1,0 +1,46 @@
+{
+  "address": "541 Ivy Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/ivy-street/539/unit-541/",
+  "apn": "0806050",
+  "block": "0806",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 893,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 473508,
+    "assessed_improvement_value": 473510,
+    "last_sale_date": "2014-02-21"
+  },
+  "permits": [
+    {
+      "number": "202309196925",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-19",
+      "status_date": "2023-10-06",
+      "estimated_cost": 8100,
+      "revised_cost": 8100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0806050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0806&street_number=541",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

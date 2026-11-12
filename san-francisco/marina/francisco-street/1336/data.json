@@ -1,0 +1,130 @@
+{
+  "address": "1336–1338 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/1336/",
+  "apn": "0473021",
+  "block": "0473",
+  "lot": "021",
+  "eas_baseid": "453491",
+  "coordinates": {
+    "lat": 37.803198,
+    "lng": -122.427296
+  },
+  "address_range": "1336–1338",
+  "street_numbers_on_parcel": [
+    "1336",
+    "1338"
+  ],
+  "parcel": {
+    "year_built": 1975,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 3438,
+    "building_area_sqft": 3835,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1338 1336 FRANCISCO           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 120109,
+    "assessed_improvement_value": 359245
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1975",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201409267447",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-26",
+      "status_date": "2015-08-31",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905188556",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-18",
+      "status_date": "2009-09-03",
+      "estimated_cost": 18050,
+      "revised_cost": 18050,
+      "description": "remove stucco on front of house above garage install 12 new alum windows to match existing in existing openings and restucco.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107582",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-05-02",
+      "status_date": "1991-05-22",
+      "estimated_cost": 4000,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1991–2014",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANCISCO&street_type=ST&address_number=1336",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0473021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0473&lot=021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0473021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-05-19",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 19 May 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n110/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-05-19",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 1336-38 Francisco Street, with the stipulation that a declaration be recorded limiting use of the basement area.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-05-19"
+    }
+  ]
+}

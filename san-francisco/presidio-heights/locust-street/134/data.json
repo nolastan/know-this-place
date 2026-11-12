@@ -1,0 +1,113 @@
+{
+  "address": "134–136 Locust Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/locust-street/134/",
+  "block": "0986",
+  "eas_baseid": "466252",
+  "coordinates": {
+    "lat": 37.789591,
+    "lng": -122.452222
+  },
+  "address_range": "134–136",
+  "street_numbers_on_parcel": [
+    "134",
+    "136"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 2,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights"
+  },
+  "condominium": {
+    "lots": [
+      "027",
+      "028"
+    ],
+    "method": "Proposed from the 2025 roll for block 0986: every condominium parcel the roll files under 136 LOCUST ST, and the unbroken run of lots beside parcel 0986027 on the same street with the same year built (1909) — street numbers 136, 146. 2 lots, 027–028."
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200404262190",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-26",
+      "status_date": "2004-12-10",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "removal of kitchen cabinets. replace kitchen cabinets. new electrical & plumbing in kitchen. no stru",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306237670",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-06-23",
+      "status_date": "2003-11-14",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "two bath remodel-new tile, cabinets, fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2003–2004",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LOCUST&street_type=ST&address_number=134",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0986)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0986&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0986",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4522215283761%2037.7895912429124)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-04-30",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 30 April 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1980sanf/page/n82/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-04-30",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 136 Locust Street, with a condition for hard wire smoke detectors.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-04-30"
+    }
+  ]
+}

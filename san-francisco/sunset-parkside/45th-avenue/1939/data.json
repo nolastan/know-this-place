@@ -1,0 +1,142 @@
+{
+  "address": "1939 45th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/45th-avenue/1939/",
+  "apn": "2089007",
+  "block": "2089",
+  "lot": "007",
+  "eas_baseid": "328556",
+  "coordinates": {
+    "lat": 37.750372,
+    "lng": -122.50448
+  },
+  "parcel": {
+    "year_built": 1946,
+    "units": 1,
+    "stories": 4,
+    "rooms": 10,
+    "bathrooms": 5,
+    "bedrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 5070,
+    "basement_area_sqft": 1300,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1939 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1209921,
+    "assessed_improvement_value": 518533,
+    "last_sale_date": "2014-01-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1946",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200011276596",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-11-27",
+      "status_date": "2001-04-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 200009190968: residential fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009190968",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-19",
+      "status_date": "2001-02-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "residential fire sprinkler system install revisions to 9901860",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921369",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-10-08",
+      "status_date": "2000-02-08",
+      "estimated_cost": 1,
+      "description": "demolition required for fire sprinklers work on 9906860",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906860",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-09",
+      "status_date": "2000-01-09",
+      "estimated_cost": 8000,
+      "description": "fire sprinkler per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9815732S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1998-08-12",
+      "status_date": "2001-11-03",
+      "estimated_cost": 150000,
+      "description": "add to front (east)portion of 3rd flr;extend front of house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=1939",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2089007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2089&lot=007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2089007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-06-25",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 25 June 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1980sanf/page/n120/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-06-25",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 1939 45th Avenue to stand, with a condition restricting remodeling and construction hours.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-06-25"
+    }
+  ]
+}

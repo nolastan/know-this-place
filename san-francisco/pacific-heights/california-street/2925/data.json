@@ -1,0 +1,108 @@
+{
+  "address": "2925 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2925/",
+  "block": "1029",
+  "eas_baseid": "293254",
+  "coordinates": {
+    "lat": 37.787424,
+    "lng": -122.443058
+  },
+  "parcel": {
+    "year_built": 1980,
+    "units": 6,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights"
+  },
+  "condominium": {
+    "lots": [
+      "075",
+      "076",
+      "077",
+      "078",
+      "079",
+      "080"
+    ],
+    "method": "Proposed from the 2025 roll for block 1029: every condominium parcel the roll files under 2925 CALIFORNIA ST, and the unbroken run of lots beside parcel 1029075 on the same street with the same year built (1980). 6 lots, 075–080."
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1980",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202510066790",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-10-06",
+      "status_date": "2026-01-29",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "replace fire alarm to meet sf/c codes and add lf horns inside units and add wireless radio monitor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=2925",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1029)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1029&closed_roll_year=2025",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1029",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1029075",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-11-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 November 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf/page/n304/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-11-30",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 30 November 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf/page/n308/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-11-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' denial of a permit to erect a structure at 2925 California Street, the appeal being denied for lack of the required four overrule votes, with a rehearing automatically granted for November 30, 1977 because the vote of the absent commissioner might have changed the result.",
+      "source": "sf-board-of-permit-appeals-minutes-1977-11-16"
+    },
+    {
+      "date": "1977-11-30",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to erect a structure at 2925 California Street on rehearing, with the intent that the appellant be granted a permit to build six dwelling units, and with stipulations that the appellant comply with all City code requirements and procedures necessary to perfect the permit, including the filing of an environmental evaluation report, and conform as closely as possible to the principles outlined in the study \"Change Without Loss: Residential Development and Preservation for San Francisco Neighborhoods\".",
+      "source": "sf-board-of-permit-appeals-minutes-1977-11-30"
+    }
+  ]
+}

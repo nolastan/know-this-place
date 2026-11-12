@@ -1,0 +1,52 @@
+{
+  "address": "143 Albion Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/albion-street/141/unit-143/",
+  "apn": "3568094",
+  "block": "3568",
+  "lot": "094",
+  "parcel": {
+    "building_area_sqft": 4153,
+    "rooms": 9,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 3847339,
+    "assessed_improvement_value": 3847339,
+    "last_sale_date": "2015-07-10"
+  },
+  "permits": [
+    {
+      "number": "201511132529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-13",
+      "status_date": "2016-04-14",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "remove some kitchen cabinets, add new counter top, refinish floors, add som electric, move some plumbing, install new shelving, install new cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015–2016",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3568094&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3568&street_number=143",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

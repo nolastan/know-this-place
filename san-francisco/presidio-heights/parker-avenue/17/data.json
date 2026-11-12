@@ -1,0 +1,180 @@
+{
+  "address": "17–19 Parker Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/parker-avenue/17/",
+  "apn": "1037003",
+  "block": "1037",
+  "lot": "003",
+  "eas_baseid": "456738",
+  "coordinates": {
+    "lat": 37.785718,
+    "lng": -122.455079
+  },
+  "address_range": "17–19",
+  "street_numbers_on_parcel": [
+    "17",
+    "19"
+  ],
+  "parcel": {
+    "year_built": 1991,
+    "units": 2,
+    "stories": 4,
+    "rooms": 16,
+    "bathrooms": 6,
+    "bedrooms": 5,
+    "lot_area_sqft": 3612.9,
+    "building_area_sqft": 6014,
+    "lot_depth_ft": 20.43,
+    "use": "Multi-Family Residential",
+    "property_class": "1 Flat & 1 Apt Bldg-1 Parcel",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0019 0017 PARKER              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 689922,
+    "assessed_improvement_value": 811672,
+    "last_sale_date": "1988-12-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1991",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202601073360",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-01-07",
+      "status_date": "2026-01-27",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing: remove all gravels from the roof and haul away. install overlay peel and stick smooth cap sheet and another layer of peel and stick modified bitumen (no torch) total 2000 sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714281",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-07-30",
+      "status_date": "1999-01-19",
+      "estimated_cost": 8500,
+      "description": "repair leak at rear elevation & front elevation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9710423",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-06-09",
+      "status_date": "1998-02-05",
+      "estimated_cost": 1400,
+      "description": "some slate demo on deck,stucco demo on walls,leaking damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104153",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1991-03-15",
+      "status_date": "1991-03-15",
+      "estimated_cost": 1,
+      "description": "metal railings & gate at front steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015716",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-08-09",
+      "status_date": "1991-04-09",
+      "estimated_cost": 1,
+      "description": "changes from the previously approved plans #8908987",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9002775",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-02-13",
+      "status_date": "1990-09-26",
+      "estimated_cost": 12600,
+      "description": "install a complete automatic sprinkler system for entire bld",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908987",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1989-05-25",
+      "status_date": "1991-04-04",
+      "estimated_cost": 350000,
+      "description": "erect a three story two family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PARKER&street_type=AVE&address_number=17",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1037003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1037&lot=003",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1037003",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45507914346841%2037.78571820614873)%27)",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-08-21",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 21 August 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n220/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-08-21",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's determination that Building Permit Application No. 9104153 be cancelled for alteration of the staircase and railings at the front of 17 - 19 Parker Avenue, and cancelled the permit.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-08-21"
+    }
+  ]
+}

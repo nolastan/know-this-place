@@ -1,0 +1,57 @@
+{
+  "address": "200 Francisco Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/francisco-street/200/unit-3/",
+  "unit": "3",
+  "apn": "0039108",
+  "block": "0039",
+  "lot": "108",
+  "parcel": {
+    "building_area_sqft": 989,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 711124,
+    "assessed_improvement_value": 711124,
+    "last_sale_date": "2003-02-11"
+  },
+  "permits": [
+    {
+      "number": "201103141987",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-14",
+      "status_date": "2011-04-07",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "one unit: replace approximately 200 sq. ft. of cedar shingles on top floor, north wall. replace galvanized gutters. no change wall, window or doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602235258",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-23",
+      "status_date": "2006-02-23",
+      "estimated_cost": 900,
+      "revised_cost": 900,
+      "description": "repair wood stairs. replace pme 4\"x4\"x6\"-0\" past. two 2\"x6\"x6\"-0\" jost and one 2\"x8\"x8'-0\" jost. less than 50% of structure.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0039108&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0039&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

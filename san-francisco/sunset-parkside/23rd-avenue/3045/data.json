@@ -1,0 +1,120 @@
+{
+  "address": "3045 23rd Avenue, San Francisco, CA 94132",
+  "path": "/san-francisco/sunset-parkside/23rd-avenue/3045/",
+  "apn": "7214002B",
+  "block": "7214",
+  "lot": "002B",
+  "eas_baseid": "418209",
+  "coordinates": {
+    "lat": 37.731934,
+    "lng": -122.479457
+  },
+  "parcel": {
+    "year_built": 1933,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3998,
+    "building_area_sqft": 2177,
+    "basement_area_sqft": 458,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Merced Manor",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 3045 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 332239,
+    "assessed_improvement_value": 274091,
+    "last_sale_date": "1995-09-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1933",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202111192846",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-11-19",
+      "status_date": "2021-11-19",
+      "estimated_cost": 21200,
+      "revised_cost": 21200,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515125",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-09-15",
+      "status_date": "1995-10-23",
+      "estimated_cost": 2500,
+      "description": "repair rotted wood at garage wall,bays at rear,cap foundatin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309167",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-06-03",
+      "status_date": "1994-06-01",
+      "estimated_cost": 2500,
+      "revised_cost": 18000,
+      "description": "add 1 sink w/cabinet 1 gas line 2 120 v 20 amp elect outlet",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=3045",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7214002B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7214&lot=002B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7214002B",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1993-04-07",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 7 April 1993",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting19931994s/page/n54/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1993-04-07",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Zoning Administrator's determination that approval of a ground floor accessory dental office in the residence at 3045 - 23rd Avenue requires removal of the existing ground floor side and rear doors, with conditions on special restrictions, signage, employees, and the doors.",
+      "source": "sf-board-of-permit-appeals-minutes-1993-04-07"
+    }
+  ]
+}

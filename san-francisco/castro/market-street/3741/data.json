@@ -1,0 +1,86 @@
+{
+  "address": "3741 Market Street, San Francisco, CA 94131",
+  "path": "/san-francisco/castro/market-street/3741/",
+  "apn": "2764008A",
+  "block": "2764",
+  "lot": "008A",
+  "eas_baseid": "345687",
+  "coordinates": {
+    "lat": 37.754102,
+    "lng": -122.441735
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2273,
+    "building_area_sqft": 1830,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Twin Peaks",
+    "property_location_raw": "0000 3741 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319342,
+    "assessed_improvement_value": 299380,
+    "last_sale_date": "1993-11-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=3741",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2764008A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2764&lot=008A",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2764008A",
+      "retrieved": "2026-11-11"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1980-11-19",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 19 November 1980",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/1minutesofmeeting1980sanf/page/n36/mode/1up",
+      "retrieved": "2026-11-11"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-11-19",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works' denial of a permit to alter the building at 3741 Market Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1980-11-19"
+    }
+  ]
+}

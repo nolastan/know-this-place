@@ -1,0 +1,72 @@
+{
+  "address": "343 Frederick Street, San Francisco, CA 94117",
+  "path": "/san-francisco/inner-sunset/frederick-street/343/unit-1/",
+  "unit": "1",
+  "apn": "1268066",
+  "block": "1268",
+  "lot": "066",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 357215,
+    "assessed_improvement_value": 238140
+  },
+  "permits": [
+    {
+      "number": "202412207230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-12-20",
+      "status_date": "2025-02-05",
+      "estimated_cost": 4200,
+      "revised_cost": 4200,
+      "description": "one unit: replace 3 windows in kind. not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508123992",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-12",
+      "status_date": "2016-01-05",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace foundation per structural engineer plan, stucco patch and paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501054905",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2015-01-05",
+      "status_date": "2015-01-05",
+      "revised_cost": 0,
+      "description": "replace attic windows with similar type replacements. 5 windows on back hall of bldg in attic space. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405216411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-21",
+      "status_date": "2014-07-03",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair dry rot at back stairs, replace 1 post, 2 threads, 1 ledger, 1 handrail, and 1 3x6 landing. less than 50% of stairs being replaced. no structural work. common area.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1268066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1268&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

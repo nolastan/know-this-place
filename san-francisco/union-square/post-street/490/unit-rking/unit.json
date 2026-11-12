@@ -1,0 +1,32 @@
+{
+  "address": "490 Post Street, San Francisco, CA 94102",
+  "path": "/san-francisco/union-square/post-street/490/unit-rking/",
+  "unit": "RKING",
+  "apn": "0296015",
+  "block": "0296",
+  "lot": "015",
+  "parcel": {
+    "building_area_sqft": 42539
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 7219435,
+    "assessed_improvement_value": 3094040,
+    "last_sale_date": "2011-06-17"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0296015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0296&unit=RKING",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

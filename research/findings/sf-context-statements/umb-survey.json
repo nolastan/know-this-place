@@ -518,12 +518,18 @@
     "text": "Inventory form: 1081 Pine Street; Parcel No. 275/7C; construction date 1915; architect William Gunnison"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "sf-eas-addresses has 1081 PINE ST but it does not join to one parcel. 1081 PINE ST's coordinates fall in 4 active parcels (0275038, 0275037, 0275039, 0275040), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 275 still places it on that city block."
+    "status": "resolved",
+    "apn": "0275037",
+    "path": "/san-francisco/nob-hill/pine-street/1081/",
+    "eas_address": "1081 PINE ST",
+    "method": "EAS exact match on 1081 PINE ST → parcel 0275037; sf-parcels has blklot 0275037 active, 1081–1081 PINE; the 2025 roll records it as single family residential, built 2003. Parcel 0275037 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1081 PINE ST's coordinates fall in 4 active parcels, one condominium map's units on the 2025 roll; 0275037 stands for the building. The record's assessor block 275 matches the parcel's block.",
+    "checked_on": "2026-11-10"
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "declined",
+    "note": "The 2025 roll dates the building on this parcel to 2003, after the 1990 survey; this row does not show whether the masonry building it listed is the one standing or has since been strengthened, so its frame and ratings are not published."
+   }
   },
   {
    "id": "umb-survey-0013",
@@ -1214,12 +1220,18 @@
     "text": "Inventory form: 1824 Jackson Street; Parcel No. 593/51; construction date 1917; architect C. A. Meussdorffer"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "EAS exact match on 1824 JACKSON ST → parcel 0593051; sf-parcels has blklot 0593051 active, 1824–1824 JACKSON; the 2025 roll records it as single family residential, built 1917. The record's assessor block 593 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "0593051",
+    "path": "/san-francisco/pacific-heights/jackson-street/1824/",
+    "eas_address": "1824 JACKSON ST",
+    "method": "EAS exact match on 1824 JACKSON ST → parcel 0593051; sf-parcels has blklot 0593051 active, 1824–1824 JACKSON; the 2025 roll records it as single family residential, built 1917. Parcel 0593051 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0000A of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 593 matches the parcel's block.",
+    "checked_on": "2026-11-10"
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
+   }
   },
   {
    "id": "umb-survey-0030",
@@ -1910,12 +1922,19 @@
     "text": "Inventory form: 1810 Polk Street; Parcel No. 597/16; construction date 1915; architect C. O. Clausen"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "sf-eas-addresses has 1810 POLK ST but it does not join to one parcel. 1810 POLK ST's coordinates fall in 13 active parcels (0597057, 0597064, 0597066, 0597065…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 597 still places it on that city block."
+    "status": "resolved",
+    "apn": "0597055",
+    "path": "/san-francisco/tenderloin/polk-street/1810/",
+    "eas_address": "1810 POLK ST",
+    "method": "EAS exact match on 1810 POLK ST → parcel 0597055; sf-parcels has blklot 0597055 active, 1810–1810 POLK; the 2025 roll records it as single family residential, built 2006. Parcel 0597055 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1810 POLK ST's coordinates fall in 13 active parcels, one condominium map's units on the 2025 roll; 0597055 stands for the building. The record's assessor block 597 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "declined",
+    "note": "No page, and a survey row on its own does not earn one."
+   }
   },
   {
    "id": "umb-survey-0047",
@@ -2073,12 +2092,19 @@
     "text": "Inventory form: 2001 Sacramento Street; Parcel No. 640/19; construction date 1920; architect Samuel C. Heiman"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "sf-eas-addresses has 2001 SACRAMENTO ST but it does not join to one parcel. 2001 SACRAMENTO ST's coordinates fall in 9 active parcels (0640026, 0640019, 0640023, 0640022…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 640 still places it on that city block."
+    "status": "resolved",
+    "apn": "0640019",
+    "path": "/san-francisco/pacific-heights/sacramento-street/2001/",
+    "eas_address": "2001 SACRAMENTO ST",
+    "method": "EAS exact match on 2001 SACRAMENTO ST → parcel 0640019; sf-parcels has blklot 0640019 active, 2001–2001 SACRAMENTO; the 2025 roll records it as single family residential, built 1900. Parcel 0640019 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2001 SACRAMENTO ST's coordinates fall in 9 active parcels, one condominium map's units on the 2025 roll; 0640019 stands for the building. The record's assessor block 640 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "declined",
+    "note": "No page, and a survey row on its own does not earn one."
+   }
   },
   {
    "id": "umb-survey-0051",
@@ -3337,12 +3363,18 @@
     "ocr_uncertain": true
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "sf-eas-addresses has 2101 BRYANT ST but it does not join to one parcel. 2101 BRYANT ST's coordinates fall in 20 active parcels (4080083, 4080103, 4080140, 4080122…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4080 still places it on that city block."
+    "status": "resolved",
+    "apn": "4080120",
+    "path": "/san-francisco/mission/bryant-street/2101/",
+    "eas_address": "2101 BRYANT ST",
+    "method": "EAS exact match on 2101 BRYANT ST → parcel 4080120; sf-parcels has blklot 4080120 active, 2101–2101 BRYANT; the 2025 roll records it as single family residential, built 1919. Parcel 4080120 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 2101 BRYANT ST's coordinates fall in 76 active parcels, one condominium map's units on the 2025 roll; 4080120 stands for the building. The record's assessor block 4080 matches the parcel's block.",
+    "checked_on": "2026-11-10"
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
+   }
   },
   {
    "id": "umb-survey-0082",
@@ -5002,12 +5034,18 @@
     "ocr_uncertain": true
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "EAS exact match on 323 29TH ST → parcel 6632063; sf-parcels has blklot 6632063 active, 323–323 29TH; the 2025 roll records it as single family residential. The record's assessor block 6632 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "6632063",
+    "path": "/san-francisco/noe-valley/29th-street/317/",
+    "eas_address": "317 29TH ST",
+    "method": "EAS exact match on 323 29TH ST → parcel 6632063; sf-parcels has blklot 6632063 active, 323–323 29TH; the 2025 roll records it as single family residential. EAS puts 317, 323 29TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 317. Parcel 6632063 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit C101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 6632 matches the parcel's block.",
+    "checked_on": "2026-11-10"
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "published",
+    "pr": "https://github.com/nolastan/know-this-place/pull/606"
+   }
   },
   {
    "id": "umb-survey-0123",
@@ -5982,12 +6020,19 @@
     "ocr_uncertain": true
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "sf-eas-addresses has 419 FULTON ST but it does not join to one parcel. 419 FULTON ST's coordinates fall in 7 active parcels (0793067, 0793066, 0793064, 0793065…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 793 still places it on that city block."
+    "status": "resolved",
+    "apn": "0793063",
+    "path": "/san-francisco/hayes-valley/fulton-street/419/",
+    "eas_address": "419 FULTON ST",
+    "method": "EAS exact match on 419 FULTON ST → parcel 0793063; sf-parcels has blklot 0793063 active, 419–419 FULTON; the 2025 roll records it as single family residential, built 2000. Parcel 0793063 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0201 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 419 FULTON ST's coordinates fall in 7 active parcels, one condominium map's units on the 2025 roll; 0793063 stands for the building. The record's assessor block 793 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "declined",
+    "note": "No page, and a survey row on its own does not earn one."
+   }
   },
   {
    "id": "umb-survey-0147",
@@ -6440,12 +6485,19 @@
     "text": "Inventory form: 250 Laurel Street; Parcel No. 996/31; construction date 1917; architect (none legible)"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "EAS exact match on 250 LAUREL ST → parcel 0996031; sf-parcels has blklot 0996031 active, 250–250 LAUREL; the 2025 roll records it as single family residential, built 1917. The record's assessor block 996 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "0996031",
+    "path": "/san-francisco/presidio-heights/laurel-street/250/",
+    "eas_address": "250 LAUREL ST",
+    "method": "EAS exact match on 250 LAUREL ST → parcel 0996031; sf-parcels has blklot 0996031 active, 250–250 LAUREL; the 2025 roll records it as single family residential, built 1917. Parcel 0996031 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 996 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "declined",
+    "note": "No page, and a survey row on its own does not earn one."
+   }
   },
   {
    "id": "umb-survey-0158",
@@ -6549,12 +6601,18 @@
     "text": "Inventory form: 900 Minnesota Street; Parcel No. 4106/1A; construction date 1911; architect Hemenway and Miller"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "sf-eas-addresses has 900 MINNESOTA ST but it does not join to one parcel. 900 MINNESOTA ST's coordinates fall in 20 active parcels (4106128, 4106076, 4106072, 4106137…), which is what a condominium looks like in sf-parcels: one parcel per unit, none of them the building.",
-    "note": "The address is a condominium today, and the directory contract in the root AGENTS.md defers those: each unit has its own parcel and none of them is the building the record names. The record's assessor block 4106 still places it on that city block."
+    "status": "resolved",
+    "apn": "4106038",
+    "path": "/san-francisco/potrero-hill/minnesota-street/900/",
+    "eas_address": "900 MINNESOTA ST",
+    "method": "EAS exact match on 900 MINNESOTA ST → parcel 4106038; sf-parcels has blklot 4106038 active, 900–900 MINNESOTA; the 2025 roll records it as single family residential, built 2009. The assessor files the parcel as 863 INDIANA ST. Parcel 4106038 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 900 MINNESOTA ST's coordinates fall in 147 active parcels, one condominium map's units on the 2025 roll; 4106038 stands for the building. The record's assessor block 4106 matches the parcel's block.",
+    "checked_on": "2026-11-10"
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "declined",
+    "note": "The 2025 roll dates the building on this parcel to 2009, after the 1990 survey; this row does not show whether the masonry building it listed is the one standing or has since been strengthened, so its frame and ratings are not published."
+   }
   },
   {
    "id": "umb-survey-0161",
@@ -7220,12 +7278,19 @@
     "text": "Inventory form: 1176 Potrero Avenue; Parcel No. 4211/14; construction date 1919; architect (none legible)"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "EAS exact match on 1176 POTRERO AVE → parcel 4211037; sf-parcels has blklot 4211037 active, 1176–1176 POTRERO; the 2025 roll records it as industrial, built 1920. The record's assessor block 4211 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "4211037",
+    "path": "/san-francisco/mission/potrero-avenue/1176/",
+    "eas_address": "1176 POTRERO AVE",
+    "method": "EAS exact match on 1176 POTRERO AVE → parcel 4211037; sf-parcels has blklot 4211037 active, 1176–1176 POTRERO; the 2025 roll records it as industrial, built 1920. Parcel 4211037 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 4211 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
    },
-   "street_type": "AVE"
+   "street_type": "AVE",
+   "publish": {
+    "status": "declined",
+    "note": "No page, and a survey row on its own does not earn one."
+   }
   },
   {
    "id": "umb-survey-0177",
@@ -7299,12 +7364,19 @@
     "ocr_uncertain": true
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "EAS exact match on 2299 SACRAMENTO ST → parcel 0638057; sf-parcels has blklot 0638057 active, 2299–2299 SACRAMENTO; the 2025 roll records it as single family residential, built 1913. The record's assessor block 638 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "0638057",
+    "path": "/san-francisco/pacific-heights/sacramento-street/2299/",
+    "eas_address": "2299 SACRAMENTO ST",
+    "method": "EAS exact match on 2299 SACRAMENTO ST → parcel 0638057; sf-parcels has blklot 0638057 active, 2299–2299 SACRAMENTO; the 2025 roll records it as single family residential, built 1913. Parcel 0638057 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The record's assessor block 638 matches the parcel's block.",
+    "checked_on": "2026-11-10",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "declined",
+    "note": "No page, and a survey row on its own does not earn one."
+   }
   },
   {
    "id": "umb-survey-0179",
@@ -7977,12 +8049,18 @@
     "text": "Inventory form: 302 Valley Street; Parcel No. 6613/8; construction date 1920; architect Shea and Lofquist"
    },
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-08-28",
-    "method": "EAS exact match on 302 VALLEY ST → parcel 6613052; sf-parcels has blklot 6613052 active, 302–302 VALLEY; the 2025 roll records it as single family residential, built 1999. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 6613052. The record's assessor block 6613 matches the parcel's block.",
-    "note": "Not placed: the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building — the root AGENTS.md directory contract defers these until the building's own parcels are established."
+    "status": "resolved",
+    "apn": "6613052",
+    "path": "/san-francisco/noe-valley/valley-street/302/",
+    "eas_address": "302 VALLEY ST",
+    "method": "EAS exact match on 302 VALLEY ST → parcel 6613052; sf-parcels has blklot 6613052 active, 302–302 VALLEY; the 2025 roll records it as single family residential, built 1999. Parcel 6613052 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0004 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The address carries no parcel number in EAS; the active parcel its coordinates fall in is 6613052. The record's assessor block 6613 matches the parcel's block.",
+    "checked_on": "2026-11-10"
    },
-   "street_type": "ST"
+   "street_type": "ST",
+   "publish": {
+    "status": "declined",
+    "note": "The 2025 roll dates the building on this parcel to 1999, after the 1990 survey; this row does not show whether the masonry building it listed is the one standing or has since been strengthened, so its frame and ratings are not published."
+   }
   },
   {
    "id": "umb-survey-0196",

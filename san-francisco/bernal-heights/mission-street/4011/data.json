@@ -1,0 +1,117 @@
+{
+  "address": "4011 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/bernal-heights/mission-street/4011/",
+  "apn": "5835056",
+  "block": "5835",
+  "lot": "056",
+  "eas_baseid": "384755",
+  "coordinates": {
+    "lat": 37.733282,
+    "lng": -122.426383
+  },
+  "parcel": {
+    "year_built": 1942,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 4011 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 32317,
+    "assessed_improvement_value": 39929
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1942",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200708079036",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-07",
+      "status_date": "2007-08-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew pa#7807762 for final only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119983",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-10-22",
+      "status_date": "1992-04-10",
+      "estimated_cost": 2600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106842",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-22",
+      "status_date": "1991-12-13",
+      "estimated_cost": 900,
+      "description": "remov old plaster, repl with sheetrock, repl bath door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=4011",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5835056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5835&lot=056",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5835056",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1975-11-24",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 24 November 1975",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1975sanf/page/n244/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1975-11-24",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator's determination regarding 4011 Mission, by a 3-2 vote.",
+      "source": "sf-board-of-permit-appeals-minutes-1975-11-24"
+    }
+  ]
+}

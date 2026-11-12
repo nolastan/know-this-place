@@ -1,0 +1,78 @@
+{
+  "address": "239 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-239/",
+  "apn": "7381080",
+  "block": "7381",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 2062,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 787420,
+    "assessed_improvement_value": 524944,
+    "last_sale_date": "2020-06-30"
+  },
+  "permits": [
+    {
+      "number": "202608106320",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-08-10",
+      "status_date": "2026-08-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final insepction for work approved under 202309136534. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309136534",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2023-09-13",
+      "status_date": "2026-08-11",
+      "estimated_cost": 30400,
+      "revised_cost": 30400,
+      "description": "replace 18 windows and 1 patio door, same size, location and style. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512099968",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-09",
+      "status_date": "2006-03-06",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen and bath remodel. non structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9710560",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-06-11",
+      "status_date": "1998-01-23",
+      "estimated_cost": 2000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=239",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

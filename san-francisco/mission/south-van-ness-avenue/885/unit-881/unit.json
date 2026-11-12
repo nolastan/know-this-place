@@ -1,0 +1,46 @@
+{
+  "address": "881 South Van Ness Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/south-van-ness-avenue/885/unit-881/",
+  "apn": "3594088",
+  "block": "3594",
+  "lot": "088",
+  "parcel": {
+    "building_area_sqft": 1369,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 582278,
+    "assessed_improvement_value": 582278,
+    "last_sale_date": "2013-09-12"
+  },
+  "permits": [
+    {
+      "number": "202208170771",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-08-17",
+      "status_date": "2022-12-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "requesting approval of an intermediate length occupancy w/in (e) legally permitted use & occupancy",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3594088&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3594&street_number=881",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

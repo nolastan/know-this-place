@@ -1,0 +1,77 @@
+{
+  "address": "524 Filbert Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/filbert-street/520/unit-524/",
+  "apn": "0088051",
+  "block": "0088",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 1214,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 630000,
+    "assessed_improvement_value": 420000,
+    "last_sale_date": "2022-06-30"
+  },
+  "permits": [
+    {
+      "number": "202502200684",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-02-20",
+      "status_date": "2025-07-11",
+      "estimated_cost": 28000,
+      "revised_cost": 32012,
+      "description": "alterations to existing bathroom. no exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305015875",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-01",
+      "status_date": "2013-09-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace 4 (e) bent windows at front with (n) bent wood sashes into (e) frames like for like replace (3) windows at front with (n) wood sashes into (e) frames like for like",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8706270",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-05-11",
+      "status_date": "1987-09-18",
+      "estimated_cost": 800,
+      "description": "install fireplace, replace gas heater/fireplace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614724",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-11-19",
+      "status_date": "1987-04-15",
+      "estimated_cost": 800,
+      "description": "install fireplace insert in existing heater/fireplace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0088051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0088&street_number=524",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -644,7 +644,8 @@ def twins(path: str, f: dict) -> list:
         other = os.path.join(folder, name)
         if not name.endswith(".json") or os.path.samefile(other, path):
             continue
-        for g in json.load(open(other)).get("findings", []):
+        doc = json.load(open(other))
+        for g in (doc.get("findings", []) if isinstance(doc, dict) else []):
             if (g.get("resolution") or {}).get("apn") == apn and g.get("date") == date:
                 st = (g.get("publish") or {}).get("status", "-")
                 out.append(f"{name} {g['id']} [{g['resolution'].get('status')}, {st}]")
@@ -662,7 +663,8 @@ def retest(path: str) -> int:
     (`3psu-pn9h`), which hold the real intersection node: for a corner, is the
     parcel's centroid in the quadrant the record names and does its outline
     come within 100 ft of the node; for a line, is it on the side of the
-    street the record names. An EAS-fitted centreline would be wrong on a street
+    street the record names, and does its frontage overlap the printed offset
+    (the offset alone where the record prints no side). An EAS-fitted centreline would be wrong on a street
     with addresses on one side only (Lincoln Way, along the park); this test
     uses no addresses at all. It prints each `DISAGREES` with the reason, then
     the counts, and returns 1 if any entry disagrees. A disagreement is a
@@ -753,6 +755,22 @@ def retest(path: str) -> int:
                     verdict = "DISAGREES"
                     why = (f"frontage {lo:.0f}-{hi:.0f} ft from the node, "
                            f"record's lot {off:g} ft {x['direction']} of {b}")
+        elif hit and not x.get("side") and x.get("offset_ft") is not None \
+                and x.get("direction"):
+            # "Eighth avenue, 75 feet south of Lake": an offset and no side.
+            # The side can't be tested, but the offset can, on whichever side
+            # the parcel is — the same window as a line entry's.
+            p, da, _ = hit
+            span = along(da, p, shapes[apn][1], x["direction"])
+            if span:
+                lo, hi = span
+                off = float(x["offset_ft"])
+                lot = x.get("lot_ft")
+                front = float((lot[0] if isinstance(lot, list) else lot) or 25)
+                bad_off = hi < off + 20 or lo > off + 65 + front
+                verdict = "DISAGREES" if bad_off else "ok"
+                why = (f"frontage {lo:.0f}-{hi:.0f} ft from the node, record's lot "
+                       f"{off:g} ft {x['direction']} of {b} (no side printed)") if bad_off else ""
         elif hit and not x.get("side") and x.get("offset_ft") is None:
             # "at Sixteenth and Valencia": two streets and no quadrant. All
             # that can be asked is whether the parcel is at that corner.

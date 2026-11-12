@@ -1,0 +1,46 @@
+{
+  "address": "2070 Jackson Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/jackson-street/2074/unit-2070/",
+  "apn": "0591025",
+  "block": "0591",
+  "lot": "025",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 52902,
+    "assessed_improvement_value": 65667,
+    "last_sale_date": "2024-02-21"
+  },
+  "permits": [
+    {
+      "number": "202505216998",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2025-05-21",
+      "status_date": "2025-05-27",
+      "estimated_cost": 83500,
+      "revised_cost": 83500,
+      "description": "remodel kitchen and 2 baths. replace in kind, no structual work. electrical and plumbing updates to current code under seperate permit. no removal of walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2016–2025",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0591025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0591&street_number=2070",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "address": "3359 21st Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/21st-street/3355/unit-3359/",
+  "apn": "3617088",
+  "block": "3617",
+  "lot": "088",
+  "parcel": {
+    "building_area_sqft": 1364
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 236925,
+    "assessed_improvement_value": 236925,
+    "last_sale_date": "2004-11-18"
+  },
+  "permits": [
+    {
+      "number": "202102164674",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-16",
+      "status_date": "2021-08-25",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "bathroom remodel inkind 52 sqft. floor 3 (n) tub/shower (n) vanity (n) fixtures. no layout changes, no structural changes",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3617088&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3617&street_number=3359",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

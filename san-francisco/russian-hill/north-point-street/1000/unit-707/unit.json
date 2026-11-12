@@ -1,0 +1,52 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-707/",
+  "unit": "707",
+  "apn": "0451109",
+  "block": "0451",
+  "lot": "109",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 66824,
+    "assessed_improvement_value": 490179,
+    "last_sale_date": "1992-06-22"
+  },
+  "permits": [
+    {
+      "number": "202203018921",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-01",
+      "status_date": "2022-07-01",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove and replace backsplash tile to allow drying after water leak from upper level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911030437",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-03",
+      "status_date": "2010-04-01",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "kitchen & bathroom remodel. new cabinets, new counter & appliances. new tub, vanity & tiles, new faucets & toilet. add lights in living room & bedroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451109&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=707",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

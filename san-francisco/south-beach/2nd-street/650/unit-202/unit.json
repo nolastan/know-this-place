@@ -1,0 +1,56 @@
+{
+  "address": "650 2nd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-beach/2nd-street/650/unit-202/",
+  "unit": "202",
+  "apn": "3788050",
+  "block": "3788",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1378,
+    "rooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162856,
+    "assessed_improvement_value": 243475,
+    "last_sale_date": "1997-01-16"
+  },
+  "permits": [
+    {
+      "number": "200904287271",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-28",
+      "status_date": "2009-05-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa#20004137192. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004137192",
+      "type": "wall or painted sign",
+      "status": "expired",
+      "filed": "2000-04-13",
+      "status_date": "2003-09-26",
+      "revised_cost": 1500,
+      "description": "sign",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3788050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3788&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

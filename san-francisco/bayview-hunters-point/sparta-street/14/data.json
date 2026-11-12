@@ -1,0 +1,134 @@
+{
+  "address": "14 Sparta Street, San Francisco, CA 94134",
+  "path": "/san-francisco/bayview-hunters-point/sparta-street/14/",
+  "apn": "6168006",
+  "block": "6168",
+  "lot": "006",
+  "eas_baseid": "392761",
+  "coordinates": {
+    "lat": 37.718039,
+    "lng": -122.403828
+  },
+  "parcel": {
+    "year_built": 1971,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2188,
+    "basement_area_sqft": 690,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Visitacion Valley",
+    "property_location_raw": "0000 0014 SPARTA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 17183,
+    "assessed_improvement_value": 132675
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1971",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506309834",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-30",
+      "status_date": "2025-07-15",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201304265581",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2013-04-26",
+      "status_date": "2026-01-09",
+      "estimated_cost": 20000,
+      "revised_cost": 36000,
+      "description": "install elevator from 1st floor to 2nd floor. install 2 skylights in kitchen & bedroom. modify (e) garage door & install garage door opener. install new door into garage from entry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121059",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-07",
+      "status_date": "1993-06-03",
+      "estimated_cost": 49380,
+      "revised_cost": 63000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SPARTA&street_type=ST&address_number=14",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6168006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6168&lot=006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6168006",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-05-22",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 22 May 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n148/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1991-06-26",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 26 June 1991",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1991sanf/page/n174/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-05-22",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator and sustained the denial of the Rear Yard Variance sought for the property at 14 Sparta Street, the 3-2 vote to overrule and grant the variance falling short of the four votes needed.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-05-22"
+    },
+    {
+      "date": "1991-06-26",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals, on rehearing, overruled the Zoning Administrator and granted the Rear Yard Variance for the property at 14 Sparta Street, on the conditions that the addition be no more than 16 feet deep, a 20-foot yard be retained, and the wall protruding into the back yard be painted a light color.",
+      "source": "sf-board-of-permit-appeals-minutes-1991-06-26"
+    }
+  ]
+}

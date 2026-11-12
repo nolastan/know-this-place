@@ -1,0 +1,94 @@
+{
+  "address": "73 Anderson Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/anderson-street/73/",
+  "apn": "5624021",
+  "block": "5624",
+  "lot": "021",
+  "eas_baseid": "381022",
+  "coordinates": {
+    "lat": 37.741951,
+    "lng": -122.41485
+  },
+  "parcel": {
+    "year_built": 1967,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2187.5,
+    "building_area_sqft": 1833,
+    "basement_area_sqft": 686,
+    "lot_depth_ft": 70,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0073 ANDERSON            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45275,
+    "assessed_improvement_value": 135876
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1967",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANDERSON&street_type=ST&address_number=73",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5624021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5624&lot=021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5624021",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1979-02-14",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 14 February 1979",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1979sanf/page/n36/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1979-02-14",
+      "kind": "occupancy",
+      "description": "Progress Foundation was at 73 Anderson Street.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-02-14"
+    },
+    {
+      "date": "1979-02-14",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the permit to alter the building at 73 Anderson Street, concurring in the granting of the permit in view of the agreement reached.",
+      "source": "sf-board-of-permit-appeals-minutes-1979-02-14"
+    }
+  ]
+}

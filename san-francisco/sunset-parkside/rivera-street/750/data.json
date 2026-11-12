@@ -1,0 +1,128 @@
+{
+  "address": "750 Rivera Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/rivera-street/750/",
+  "apn": "2200007",
+  "block": "2200",
+  "lot": "007",
+  "eas_baseid": "332805",
+  "coordinates": {
+    "lat": 37.74708,
+    "lng": -122.474714
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 3952,
+    "building_area_sqft": 2710,
+    "lot_depth_ft": 98.8,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0750 RIVERA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 39684,
+    "assessed_improvement_value": 122580
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200406227080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-06-22",
+      "status_date": "2004-09-09",
+      "estimated_cost": 6400,
+      "revised_cost": 6400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400713",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-01-14",
+      "status_date": "1994-01-21",
+      "estimated_cost": 1,
+      "description": "renew expired permit appn. #7912439",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1994–2007",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RIVERA&street_type=ST&address_number=750",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2200007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2200&lot=007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2200007",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1985-10-23",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 23 October 1985",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1985sanf/page/n240/mode/1up",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-04-09",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 9 April 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n66/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1985-10-23",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator and sustained the order to cease violation of the Planning Code for property at 750 Rivera Street, with a condition.",
+      "source": "sf-board-of-permit-appeals-minutes-1985-10-23"
+    },
+    {
+      "date": "1986-04-09",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Zoning Administrator and sustained the order to cease violation of the Planning Code at 750 Rivera Street, staying the order for 18 months.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-04-09"
+    }
+  ]
+}

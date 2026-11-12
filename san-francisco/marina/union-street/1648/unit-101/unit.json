@@ -1,0 +1,144 @@
+{
+  "address": "1648 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/1648/unit-101/",
+  "unit": "101",
+  "apn": "0528027",
+  "block": "0528",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 1685,
+    "rooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 480737,
+    "assessed_improvement_value": 240367,
+    "last_sale_date": "2014-07-14"
+  },
+  "permits": [
+    {
+      "number": "9604455",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-03-18",
+      "status_date": "1996-10-30",
+      "estimated_cost": 1,
+      "description": "reenew 9508403",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508403",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-06-05",
+      "status_date": "1996-10-30",
+      "estimated_cost": 12000,
+      "description": "stucco & flashing repairs on ext wall at varios locations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707998",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-06-10",
+      "status_date": "1988-02-08",
+      "estimated_cost": 1500,
+      "description": "complete fixed awning over front door, over window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8707426",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-05-29",
+      "status_date": "1989-06-08",
+      "estimated_cost": 8000,
+      "description": "patio sun room on exist deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8616124",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-12-19",
+      "status_date": "1987-02-26",
+      "estimated_cost": 15000,
+      "description": "tennant improvements; add non bearing partitions",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8511431",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-10-09",
+      "status_date": "2002-05-17",
+      "estimated_cost": 5000,
+      "revised_cost": 8000,
+      "description": "new interior stub walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509768",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-09-06",
+      "status_date": "1985-11-20",
+      "estimated_cost": 1500,
+      "description": "build partion walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401769",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-16",
+      "status_date": "1984-12-24",
+      "estimated_cost": 5000,
+      "description": "add fire sprinkle",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307032",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "1983-07-25",
+      "status_date": "1993-05-05",
+      "description": "demo",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109118S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1981-10-20",
+      "status_date": "1984-03-21",
+      "estimated_cost": 650000,
+      "description": "bldg use: 3 apts/coml",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109119",
+      "type": "demolitions",
+      "status": "expired",
+      "filed": "1981-10-20",
+      "status_date": "1983-04-25",
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0528027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0528&unit=101",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

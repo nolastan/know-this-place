@@ -1,0 +1,68 @@
+{
+  "address": "1408 Golden Gate Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/golden-gate-avenue/1404/unit-1408/",
+  "apn": "0754033",
+  "block": "0754",
+  "lot": "033",
+  "parcel": {
+    "building_area_sqft": 1787,
+    "rooms": 8,
+    "bedrooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 439606,
+    "assessed_improvement_value": 439606,
+    "last_sale_date": "2012-01-18"
+  },
+  "permits": [
+    {
+      "number": "202607305819",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-07-30",
+      "status_date": "2026-11-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 202410092614. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202410092614",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2024-10-09",
+      "status_date": "2026-11-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision permit pa#: 202209122282 to reflect reduced scope of structure, work and reduced openings at living and dining area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209122282",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-12",
+      "status_date": "2026-11-04",
+      "estimated_cost": 75000,
+      "revised_cost": 255000,
+      "description": "renovation of kitchen, enlarging opening @ living & dining room @ 1/f, reconfiguration of primary bedroom/bath, addition of 2/d bath @ 3/f; new skylight.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0754033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0754&street_number=1408",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

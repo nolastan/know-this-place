@@ -1,0 +1,35 @@
+{
+  "address": "1220 Jones Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/jones-street/1220/unit-402/",
+  "unit": "402",
+  "apn": "0221139",
+  "block": "0221",
+  "lot": "139",
+  "parcel": {
+    "building_area_sqft": 1300,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 752686,
+    "assessed_improvement_value": 752686,
+    "last_sale_date": "2011-05-06"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0221139&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0221&unit=402",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

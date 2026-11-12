@@ -1,0 +1,55 @@
+{
+  "address": "228 Francisco Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/francisco-street/226/unit-228/",
+  "apn": "0039112",
+  "block": "0039",
+  "lot": "112",
+  "parcel": {
+    "building_area_sqft": 1217,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 176282,
+    "assessed_improvement_value": 176282
+  },
+  "permits": [
+    {
+      "number": "201104134005",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-13",
+      "status_date": "2012-02-13",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "remove & replace all dryrot deck board on the roof. replace guard to conform new code of 42\", no structural changes, less than 50% repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104053503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-05",
+      "status_date": "2012-02-13",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "tear off and apply two layers of modified bitumen one ply torch down roof system. flat roof < 2:12.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0039112&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0039&street_number=228",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

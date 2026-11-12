@@ -1,0 +1,68 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-1008/",
+  "unit": "1008",
+  "apn": "0627A080",
+  "block": "0627A",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 950,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 800423,
+    "assessed_improvement_value": 800423,
+    "last_sale_date": "2013-06-14"
+  },
+  "permits": [
+    {
+      "number": "200712140564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-12-14",
+      "status_date": "2008-01-28",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "to renew pa# 2007/06/05/3037 to complete work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706053037",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-05",
+      "status_date": "2008-01-28",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "one unit- retile 2 showers, replace shower doors, replace vanity",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411239968",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-11-23",
+      "status_date": "2005-02-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace kitchen cabs & appliances, add 2 electrical receptacles, add new light fixture where existin",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=1008",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

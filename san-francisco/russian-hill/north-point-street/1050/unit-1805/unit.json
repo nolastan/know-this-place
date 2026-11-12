@@ -1,0 +1,41 @@
+{
+  "address": "1050 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1050/unit-1805/",
+  "unit": "1805",
+  "apn": "0451266",
+  "block": "0451",
+  "lot": "266",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 518129,
+    "assessed_improvement_value": 458723,
+    "last_sale_date": "2009-09-01"
+  },
+  "permits": [
+    {
+      "number": "201304184852",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-18",
+      "status_date": "2013-10-03",
+      "estimated_cost": 65000,
+      "revised_cost": 22250,
+      "description": "one unit - remodel kitchen & bath, floors (hardwood & carpet)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451266&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=1805",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

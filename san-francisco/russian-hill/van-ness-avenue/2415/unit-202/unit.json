@@ -1,0 +1,46 @@
+{
+  "address": "2415 Van Ness Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/van-ness-avenue/2415/unit-202/",
+  "unit": "202",
+  "apn": "0546021",
+  "block": "0546",
+  "lot": "021",
+  "parcel": {
+    "building_area_sqft": 566,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 299880,
+    "assessed_improvement_value": 199920,
+    "last_sale_date": "2024-03-07"
+  },
+  "permits": [
+    {
+      "number": "202209072003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-07",
+      "status_date": "2023-04-26",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "kitchen and bath remodel in kind. change walk-in close to home office.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0546021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0546&unit=202",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

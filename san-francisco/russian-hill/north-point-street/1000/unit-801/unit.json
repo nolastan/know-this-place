@@ -1,0 +1,46 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-801/",
+  "unit": "801",
+  "apn": "0451013",
+  "block": "0451",
+  "lot": "013",
+  "parcel": {
+    "building_area_sqft": 1200,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 12863,
+    "assessed_improvement_value": 94501
+  },
+  "permits": [
+    {
+      "number": "200507157747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-15",
+      "status_date": "2006-12-27",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "remove wall betw m/bedrm, light install modified hot water heatings, olumbing fixture also.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=801",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

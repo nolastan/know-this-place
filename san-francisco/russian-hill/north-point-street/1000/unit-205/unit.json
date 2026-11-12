@@ -1,0 +1,45 @@
+{
+  "address": "1000 North Point Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/north-point-street/1000/unit-205/",
+  "unit": "205",
+  "apn": "0451067",
+  "block": "0451",
+  "lot": "067",
+  "parcel": {
+    "building_area_sqft": 354,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4150,
+    "assessed_improvement_value": 30584
+  },
+  "permits": [
+    {
+      "number": "202008242479",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-08-24",
+      "status_date": "2021-11-24",
+      "estimated_cost": 39000,
+      "revised_cost": 39000,
+      "description": "kitchen & bath remodel.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0451067&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0451&unit=205",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

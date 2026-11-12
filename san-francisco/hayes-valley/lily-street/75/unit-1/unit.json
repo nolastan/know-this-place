@@ -1,0 +1,51 @@
+{
+  "address": "75 Lily Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/lily-street/75/unit-1/",
+  "unit": "1",
+  "apn": "0837081",
+  "block": "0837",
+  "lot": "081",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 288309,
+    "assessed_improvement_value": 288309
+  },
+  "permits": [
+    {
+      "number": "201901039586",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-01-03",
+      "status_date": "2019-01-03",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remvoe kitchen cabinets and counters, install new kitchen cabinets and counters. same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201705176908",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-17",
+      "status_date": "2018-01-09",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replacement of windows on front of building. 4 windows on 1st story, 1 on upper story bay. new windows to match existing windows in size, configuration, and material (wood). u factor 0.32 max",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0837081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0837&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

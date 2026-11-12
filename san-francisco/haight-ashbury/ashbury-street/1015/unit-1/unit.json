@@ -1,0 +1,102 @@
+{
+  "address": "1015 Ashbury Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/ashbury-street/1015/unit-1/",
+  "unit": "1",
+  "apn": "1269212",
+  "block": "1269",
+  "lot": "212",
+  "parcel": {
+    "building_area_sqft": 1884,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1220507,
+    "assessed_improvement_value": 813670,
+    "last_sale_date": "2020-03-12"
+  },
+  "permits": [
+    {
+      "number": "202509094928",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-09",
+      "status_date": "2026-03-17",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "replace back siding with james hardie lap siding. 2010 sq ft located and visible from downey st. repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611011609",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-01",
+      "status_date": "2017-02-15",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "one unit. remodel guest bathroom, no structural alterations, minor electrical, no new circuits, new fixtures/tiles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406198913",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-19",
+      "status_date": "2014-07-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit: revision to 201301077385. remove toilet at ground floor laundry room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301077385",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-07",
+      "status_date": "2014-07-07",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "remodel of kitchen, master bath and master bedroom,powder room and laundry at 1st fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209079200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-07",
+      "status_date": "2012-09-20",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace/repair damaged dryrot & insect damage. floor joists (over crawl space. & other framing. work to be in common area only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200905057766",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-05-05",
+      "status_date": "2009-09-14",
+      "estimated_cost": 2000,
+      "revised_cost": 4000,
+      "description": "new egress window, new door & new partition wall. change from (e) storage to new bedroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1269212&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1269&unit=1",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

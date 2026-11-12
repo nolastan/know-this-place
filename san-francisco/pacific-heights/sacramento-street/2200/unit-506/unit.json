@@ -1,0 +1,57 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-506/",
+  "unit": "506",
+  "apn": "0627A038",
+  "block": "0627A",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 969,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 735512,
+    "assessed_improvement_value": 490338,
+    "last_sale_date": "2014-04-08"
+  },
+  "permits": [
+    {
+      "number": "201504022660",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-02",
+      "status_date": "2015-04-06",
+      "estimated_cost": 77000,
+      "revised_cost": 77000,
+      "description": "#506: remove existing glass wall. new heavy commercial framing and glass keeping same lines of building. (14) windows in kind, replacement. max u factor is 0.36 fiexed window, 0.45 glazed window.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503100441",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-10",
+      "status_date": "2015-10-29",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "kitchen & 2 baths remodeling, replace hardwood floor, cabinet, sink, toilet, tub, faucets, new shower pan, washer, dryer, patch & paint. in same area of the unit, lighting & control per cec 150(k). n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=506",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

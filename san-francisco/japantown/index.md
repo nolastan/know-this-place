@@ -9,6 +9,7 @@ The city's Japantown analysis neighborhood, the blocks around Post and Buchanan 
 - [Fillmore Street](fillmore-street/) — 1 building, built 1880.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1969.
 - [Gough Street](gough-street/) — 1 building, built 1966.
+- [Hemlock Street](hemlock-street/) — 1 building.
 - [Laguna Street](laguna-street/) — 1 building, built 1960.
 - [Post Street](post-street/) — 5 buildings, built 1967–2009.
 - [Scott Street](scott-street/) — 1 building, built 1900.

@@ -1,0 +1,68 @@
+{
+  "address": "615 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/615/unit-3/",
+  "unit": "3",
+  "apn": "3601108",
+  "block": "3601",
+  "lot": "108",
+  "parcel": {
+    "building_area_sqft": 1419,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 486710,
+    "assessed_improvement_value": 510130,
+    "last_sale_date": "2011-07-08"
+  },
+  "permits": [
+    {
+      "number": "202509044555",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-04",
+      "status_date": "2025-10-29",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "re roofing: no hot works. flat roof.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201803093359",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-09",
+      "status_date": "2018-07-31",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "bathroom remodel. shower stall to be created in (e) bathtub location, rotate toilet, relocate sink, no structural changes, no chage on walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205079875",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-07",
+      "status_date": "2012-07-11",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "kitchen remodel - replace cabinets, counters, add under cabinet lighting, receptacles, additional pot lights in ceiling, re-position sink 5' over on same wall, add gas line for range (there is an existing gas pipe capped off behind range, not sure if still active).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3601108&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3601&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

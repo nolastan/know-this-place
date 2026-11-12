@@ -1,0 +1,119 @@
+{
+  "address": "447 Quintara Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/quintara-street/447/",
+  "apn": "2204053",
+  "block": "2204",
+  "lot": "053",
+  "eas_baseid": "332997",
+  "coordinates": {
+    "lat": 37.748651,
+    "lng": -122.47034
+  },
+  "parcel": {
+    "year_built": 1987,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2667,
+    "building_area_sqft": 4305,
+    "basement_area_sqft": 961,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Golden Gate Heights",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0447 QUINTARA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 234266,
+    "assessed_improvement_value": 683331,
+    "last_sale_date": "1987-05-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1987",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202403157942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-15",
+      "status_date": "2025-01-21",
+      "estimated_cost": 21800,
+      "revised_cost": 21800,
+      "description": "re-roofing: tear off; 28#; modified bitumen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615089",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-11-28",
+      "status_date": "1987-03-05",
+      "estimated_cost": 6000,
+      "description": "put in bathroom & bedroom ong round floor of exist. bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607133",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1986-06-18",
+      "status_date": "1987-03-05",
+      "estimated_cost": 275000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=QUINTARA&street_type=ST&address_number=447",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2204053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2204&lot=053",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2204053",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1986-09-10",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 10 September 1986",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n158/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1986-09-10",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to erect a structure at 447 Quintara Street to stand, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1986-09-10"
+    }
+  ]
+}

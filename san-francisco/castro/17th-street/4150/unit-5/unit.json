@@ -1,0 +1,47 @@
+{
+  "address": "4150 17th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/17th-street/4150/unit-5/",
+  "unit": "5",
+  "apn": "2623172",
+  "block": "2623",
+  "lot": "172",
+  "parcel": {
+    "building_area_sqft": 1868,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1462200,
+    "assessed_improvement_value": 626656,
+    "last_sale_date": "2019-12-06"
+  },
+  "permits": [
+    {
+      "number": "202104208893",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-20",
+      "status_date": "2022-04-11",
+      "estimated_cost": 29000,
+      "revised_cost": 29000,
+      "description": "remodel 2 bathrooms in-kind (1 on 2/f & 1 on g/f). no structural. no changes to walls or openings. new curbed shower, toilet, double vanity. all new fixtures, finsiehs, wall to floor tile.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2623172&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2623&unit=5",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

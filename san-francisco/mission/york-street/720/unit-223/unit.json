@@ -1,0 +1,44 @@
+{
+  "address": "720 York Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/york-street/720/unit-223/",
+  "unit": "223",
+  "apn": "4080049",
+  "block": "4080",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 781
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 294340,
+    "assessed_improvement_value": 294340,
+    "last_sale_date": "2002-05-22"
+  },
+  "permits": [
+    {
+      "number": "201103242763",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-24",
+      "status_date": "2011-09-29",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replacement of tub and tiles (walls), heater/fan, gfci & switch. (n) lighting comply with cec 150(k), no moving or adding walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4080049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4080&unit=223",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

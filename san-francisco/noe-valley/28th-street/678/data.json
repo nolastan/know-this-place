@@ -1,0 +1,138 @@
+{
+  "address": "678 28th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/28th-street/678/",
+  "apn": "6605013",
+  "block": "6605",
+  "lot": "013",
+  "eas_baseid": "403687",
+  "coordinates": {
+    "lat": 37.744907,
+    "lng": -122.437379
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1075,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0678 28TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1142400,
+    "assessed_improvement_value": 489600,
+    "last_sale_date": "2024-02-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511240306",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-11-24",
+      "status_date": "2025-11-24",
+      "estimated_cost": 2000,
+      "revised_cost": 0,
+      "description": "remove and relocate gutter.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405293189",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2024-07-18",
+      "status_date": "2025-12-02",
+      "estimated_cost": 250000,
+      "revised_cost": 503776,
+      "description": "100% foundation replacement. remodel of (e) lower level and infill under deck to add 24sf of living space w/ 2(n) bedrooms and 2 (n) baths. dormer (e) attic to add berdroom and bathroom. add laundry room behind garage wall. reconfigure main level kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507066950",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2005-07-06",
+      "status_date": "2011-09-30",
+      "description": "demolish 2 stories, single family dwelling building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507066952",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2005-07-06",
+      "status_date": "2010-07-13",
+      "estimated_cost": 400000,
+      "revised_cost": 633820,
+      "description": "erect 3 stories 1 single family dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203359",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-04-30",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=28TH&street_type=ST&address_number=678",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6605013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6605&lot=013",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6605013",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-05-12",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 12 May 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n86/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-05-12",
+      "kind": "occupancy",
+      "description": "The building at 678 28th Street was a home.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-05-12"
+    }
+  ]
+}

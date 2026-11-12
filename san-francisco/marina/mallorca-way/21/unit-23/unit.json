@@ -1,0 +1,55 @@
+{
+  "address": "23 Mallorca Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/mallorca-way/21/unit-23/",
+  "apn": "0486A053",
+  "block": "0486A",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1326,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 218777,
+    "assessed_improvement_value": 310666
+  },
+  "permits": [
+    {
+      "number": "202210043723",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-04",
+      "status_date": "2023-09-06",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "replace front 11 windows with sierra pacific wood windows wood interior and wood exterior, all windows with colonial 7/8 sdl, all windows replacement same size same location. replace 12 back windows with wood clad winodws fierce pacific product.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200311251104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-11-25",
+      "status_date": "2004-10-27",
+      "estimated_cost": 58000,
+      "revised_cost": 58000,
+      "description": "remodel (e)kitchen/bath/w.c./front closet.non-structural alterations to (e)partitions.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0486A053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-09"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0486A&street_number=23",
+      "retrieved": "2026-11-09"
+    }
+  ]
+}

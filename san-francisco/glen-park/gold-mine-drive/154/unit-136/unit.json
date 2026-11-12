@@ -1,0 +1,53 @@
+{
+  "address": "136 Gold Mine Drive, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/gold-mine-drive/154/unit-136/",
+  "apn": "7522038",
+  "block": "7522",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 1387,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 235478,
+    "assessed_improvement_value": 182259
+  },
+  "permits": [
+    {
+      "number": "9712803",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-07-11",
+      "status_date": "1997-08-22",
+      "estimated_cost": 5900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003538",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-22",
+      "status_date": "1990-07-02",
+      "estimated_cost": 2400,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7522038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7522&street_number=136",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "address": "2854 Bush Street, San Francisco, CA 94115",
+  "path": "/san-francisco/presidio-heights/bush-street/2850/unit-2854/",
+  "apn": "1047043",
+  "block": "1047",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 540,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159665,
+    "assessed_improvement_value": 79824,
+    "last_sale_date": "1998-03-27"
+  },
+  "permits": [
+    {
+      "number": "202111122234",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-12",
+      "status_date": "2022-07-21",
+      "estimated_cost": 12000,
+      "revised_cost": 13000,
+      "description": "bathroom remodel, replace tile, bath tub, shower valve floor tile, toilet, vanity. no lay out changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105229776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-22",
+      "status_date": "2002-02-04",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "remove kitchen cabinets/counter replace w/ new cabinets & counter. remove old backdoor & install ne",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8304893",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-06-03",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1500,
+      "description": "comply to codes",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1047043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1047&street_number=2854",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

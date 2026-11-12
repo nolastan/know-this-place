@@ -2871,6 +2871,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `corner.py A B --along DIR` prints every outline's span from the node, so
   the block line and the lot at the printed offset can be read off directly.
   ([sources/loc-newspapers.md](sources/loc-newspapers.md))
+- **An offset has two block faces, and the finding can record the wrong one.**
+  "NW line of Madrid, 125 NE of Persia" was placed on 523 Madrid, whose own
+  `cross_street` read "PERSIA (block face to RUSSIA)" — the face SW of Persia,
+  on the opposite side: diagonally across the intersection, with a lot of the
+  right size at the right offset, because every lot there is 25 by 100.
+  *Check the block face against the record's direction before measuring
+  along it, and the number's parity against its side;* `--retest` caught it
+  only once the record's side was written down as a field. And a note that
+  calls a placement "the one corner parcel" is a claim to measure: 4117 18th
+  was three lots in. (1910 permits re-test, 2026-11-10;
+  [sources/loc-newspapers.md](sources/loc-newspapers.md))
 - **A bulk crawl of a walled host costs the one route that was open.** Mapping
   Chronicling America's reel folders one listing each (about 900 requests in
   a few minutes) drew a host-wide Cloudflare challenge, and the tarball
@@ -3145,3 +3156,30 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   nowhere on that map lot. *Read that list before `apply` or `manifest`; a
   parcel whose own range is the recorded address decides it.* (2026-11-09,
   #557)
+
+- **An external reader told "no names" still writes them, and a
+  capitalised-word filter can't find them.** Meta Muse's permit-appeals run
+  kept private names out of its descriptions but put them in reader notes
+  and quotations ("recorded as X dba Y", "Letter from X for the …").
+  Flagging every capitalised pair caught O'Farrell, Sansome and Bureau of
+  Building Inspection and was useless. What worked: harvest the people the
+  source itself prints — after Mr./Mrs./Esq., in the appellant lines, after
+  "represented by" — drop any token the source also uses in lower case or in
+  a business name, and scrub only those full names (or a harvested first name
+  before a harvested surname). Then drop any note sentence that lost a name.
+  *Run it over every field that is committed, not only the description.*
+  (2026-11-10, sf-board-of-permit-appeals-minutes)
+
+- **Minutes printed in two columns lose their votes in the OCR.** From
+  October 1980 the Board of Permit Appeals typed each appeal on the left and
+  its vote in an ACTION column on the right; the hOCR search text strings the
+  appeals together and dumps the votes in a heap after them, sometimes split
+  across items, so pairing by order guesses wrong wherever an appeal has no
+  vote or two lines of one. Fetch the page image
+  (`https://archive.org/download/<item>/page/n<N>_w1100.jpg`) for every page
+  with an ACTION column and pair each vote by eye; it cost sixteen images for
+  a 60-page volume and is the only reading that holds. A permit protest that
+  the Board *upholds* leaves the permit standing; an appeal against a
+  *denial* that it upholds keeps the denial — write the description from
+  the decision appealed, not the verb. (2026-11-11,
+  sf-board-of-permit-appeals-minutes)

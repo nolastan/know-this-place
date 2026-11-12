@@ -1,0 +1,47 @@
+{
+  "address": "3622 Broderick Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/broderick-street/3622/unit-3/",
+  "unit": "3",
+  "apn": "0914032",
+  "block": "0914",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 1294,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 963000,
+    "assessed_improvement_value": 642000,
+    "last_sale_date": "2024-10-23"
+  },
+  "permits": [
+    {
+      "number": "202410293986",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-29",
+      "status_date": "2025-06-06",
+      "estimated_cost": 80000,
+      "revised_cost": 94875,
+      "description": "kitchen and 2 full bathrooms remodel like for like. no moving walls. fixtures to remain in the same location. kitchen approx. 180 sq ft. each bathroom approx. 40 sq ft.no moving wall fixtures to remain in same locatioin.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0914032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0914&unit=3",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

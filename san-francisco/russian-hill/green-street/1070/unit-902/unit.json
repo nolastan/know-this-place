@@ -1,0 +1,55 @@
+{
+  "address": "1070 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/green-street/1070/unit-902/",
+  "unit": "902",
+  "apn": "0121A026",
+  "block": "0121A",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 1660,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1281174,
+    "assessed_improvement_value": 864790,
+    "last_sale_date": "2010-12-29"
+  },
+  "permits": [
+    {
+      "number": "M22131",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-04",
+      "status_date": "2002-11-04",
+      "revised_cost": 100000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207222003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-22",
+      "status_date": "2003-05-08",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121A026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121A&unit=902",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

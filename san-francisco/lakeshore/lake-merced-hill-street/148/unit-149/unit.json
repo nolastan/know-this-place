@@ -1,0 +1,67 @@
+{
+  "address": "149 Lake Merced Hill Street, San Francisco, CA 94132",
+  "path": "/san-francisco/lakeshore/lake-merced-hill-street/148/unit-149/",
+  "apn": "7381038",
+  "block": "7381",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 1904,
+    "rooms": 7,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 772612,
+    "assessed_improvement_value": 515074,
+    "last_sale_date": "2018-11-20"
+  },
+  "permits": [
+    {
+      "number": "201906062683",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-06",
+      "status_date": "2019-06-06",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "replace 10 windows and 2 patio doors with same size and style. windows are not visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901251295",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-25",
+      "status_date": "2019-06-14",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "remodel two bathrooms and 1 powder room: new plumbing fixtures, new tile.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807114222",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-11",
+      "status_date": "2019-02-25",
+      "estimated_cost": 35000,
+      "revised_cost": 3500,
+      "description": "repair of 2nd floor rear deck (less than 50% to be replaced)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7381038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7381&street_number=149",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "2200 Sacramento Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/sacramento-street/2200/unit-1206/",
+  "unit": "1206",
+  "apn": "0627A094",
+  "block": "0627A",
+  "lot": "094",
+  "parcel": {
+    "building_area_sqft": 969,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 996009,
+    "assessed_improvement_value": 996009,
+    "last_sale_date": "2013-09-25"
+  },
+  "permits": [
+    {
+      "number": "202203089432",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-08",
+      "status_date": "2023-05-03",
+      "estimated_cost": 450000,
+      "revised_cost": 450000,
+      "description": "#1206. removal of flooring, kitchen cabinets, bathroom tile and counter tops. new finishes. installed and apartment painted. install new sound barrier under new wood floor and replace sheetrock in bathrooms and kitches. removal of flooring. no layout changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201211194535",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-11-19",
+      "status_date": "2012-11-19",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "one unit-partial remodel of 2 baths & bedroom closet door replacement, retile baths (perm installed lights in baths shall be high eff or controlled by manual on occ sensors), replace vanity & countertop in 1 of 2 baths, skim & refinish walls of bath, replace shower pan & surround for 1. no change",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0627A094&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0627A&unit=1206",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

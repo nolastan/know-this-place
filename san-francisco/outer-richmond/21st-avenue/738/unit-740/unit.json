@@ -1,0 +1,27 @@
+{
+  "address": "740 21st Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/21st-avenue/738/unit-740/",
+  "apn": "1663036",
+  "block": "1663",
+  "lot": "036",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 798510,
+    "assessed_improvement_value": 342217
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1663036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1663&street_number=740",
+      "retrieved": "2026-11-10"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "address": "1215–1217 Geneva Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/geneva-avenue/1215/",
+  "apn": "6404015",
+  "block": "6404",
+  "lot": "015",
+  "eas_baseid": "397457",
+  "coordinates": {
+    "lat": 37.714269,
+    "lng": -122.435676
+  },
+  "address_range": "1215–1217",
+  "street_numbers_on_parcel": [
+    "1215",
+    "1217"
+  ],
+  "parcel": {
+    "year_built": 1978,
+    "units": 5,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 5,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 4120,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 1215 GENEVA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470304,
+    "assessed_improvement_value": 462464,
+    "last_sale_date": "1999-04-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1978",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202303244364",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-03-24",
+      "status_date": "2026-01-23",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "no change in use. interior upgrade to includesl all existing finishes, new hood, kitchen appliance, add sink fixtures. voluteer ada bathroom upgrade. add all other finishes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201301248623",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-01-24",
+      "status_date": "2014-03-24",
+      "estimated_cost": 1,
+      "revised_cost": 562,
+      "description": "change of use from grocery/ice cream retail to coffee shop-limited restaurant.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105169365",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-16",
+      "status_date": "2001-09-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one-stop:addendum info for health dept. refer to 200101089422, remodel into icecream & cand",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101089422",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-08",
+      "status_date": "2001-04-04",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remodel vacant store into an ice cream & candy shop",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GENEVA&street_type=AVE&address_number=1215",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6404015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6404&lot=015",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6404015",
+      "retrieved": "2026-11-10"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1982-06-16",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 16 June 1982",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1982sanf/page/n118/mode/1up",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-06-16",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Police Department and granted a permit for mechanical amusement devices at 1217 Geneva Avenue, with conditions.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-06-16"
+    },
+    {
+      "date": "1982-06-16",
+      "kind": "occupancy",
+      "description": "Beit Hanina Social Club, a social club with mechanical amusement devices, was at 1217 Geneva Avenue.",
+      "source": "sf-board-of-permit-appeals-minutes-1982-06-16"
+    }
+  ]
+}
