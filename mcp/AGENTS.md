@@ -37,21 +37,30 @@ already holds: each page's `data.json` or `place.json`, `corpus.jsonl`, and
 
 Run it from a clone of this repository. It needs Python 3.9 or later, so the `python3` that ships with macOS works.
 
-**Claude Code:**
+Each client needs the server's **full path**. Print it from the root of your
+clone with `echo "$(pwd)/mcp/server.py"`. A path starting `/mcp/` is wrong.
+
+**Claude Code:** run this from the root of the clone, then start `claude` in
+the same folder. `/mcp` there should list `know-this-place` as connected. The
+server exists only in the terminal Claude Code, not in the Claude app.
 
 ```bash
-claude mcp add know-this-place -- python3 /path/to/know-this-place/mcp/server.py
+claude mcp add know-this-place -- python3 "$(pwd)/mcp/server.py"
 ```
 
-**Claude Desktop:** Settings → Developer → Edit Config, then add this to
-`claude_desktop_config.json` and restart the app:
+**Claude Desktop** (the app, which is what most chats run in): Settings →
+Developer → Edit Config, then add this to `claude_desktop_config.json`, put
+your clone's full path in `args`, and quit and reopen the app. The tools
+appear under the chat box's tools menu. If the server doesn't start, use
+`/usr/bin/python3` as the command, because the app doesn't read your shell's
+`PATH`.
 
 ```json
 {
   "mcpServers": {
     "know-this-place": {
       "command": "python3",
-      "args": ["/path/to/know-this-place/mcp/server.py"]
+      "args": ["/Users/you/Repos/know-this-place/mcp/server.py"]
     }
   }
 }
