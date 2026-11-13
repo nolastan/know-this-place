@@ -1,0 +1,179 @@
+{
+  "address": "914 Lake Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/lake-street/914/",
+  "apn": "1348003",
+  "block": "1348",
+  "lot": "003",
+  "eas_baseid": "300788",
+  "coordinates": {
+    "lat": 37.786674,
+    "lng": -122.469335
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1944,
+    "building_area_sqft": 2605,
+    "basement_area_sqft": 125,
+    "lot_depth_ft": 72,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0914 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 290049,
+    "assessed_improvement_value": 380708
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201306078907",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-07",
+      "status_date": "2014-03-21",
+      "estimated_cost": 4000,
+      "revised_cost": 9037,
+      "description": "bathroom remodel, replace floor & wall finishes, replace plumbing fixtures in existing locations. new cabinet & lighting no wall alterations, no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012036042",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-03",
+      "status_date": "2011-01-12",
+      "estimated_cost": 3100,
+      "revised_cost": 3100,
+      "description": "install new 1/2 exterior grade plywood sheathing on main roof & rear addition over skip sheating.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012036044",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-03",
+      "status_date": "2011-01-12",
+      "estimated_cost": 17615,
+      "revised_cost": 17615,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709182903",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-09-18",
+      "status_date": "2009-01-05",
+      "estimated_cost": 4200,
+      "revised_cost": 5000,
+      "description": "replacement of ex. cracked and crumbling wood and terrazzo stairs. replacement stairs will have the same number of treads and risers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M18793",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-02-05",
+      "status_date": "2002-02-05",
+      "revised_cost": 70000,
+      "description": "sidewalk repair & street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101311098",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-01-31",
+      "status_date": "2002-12-13",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "horizontal addition/add study rm at rear at basement level kitchen at 1/f & bathrm at 2/f add 375 sf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711333",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-08-10",
+      "status_date": "1987-12-15",
+      "estimated_cost": 12000,
+      "description": "kitchen remodel, install yard fence,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312972",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-12-21",
+      "status_date": "1984-09-17",
+      "estimated_cost": 28000,
+      "description": "curb cut & install ramp down to basement for garage &etc.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1983–2013",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=914",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1348003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1348&lot=003",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1348003",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1907-03-02",
+      "name": "The San Francisco Call, 2 March 1907, p. 13",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-03-02/ed-1/seq-13/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-03-02",
+      "kind": "building contract",
+      "description": "L. Padgett & Co. contracted for all work except tinting on a two-storey and basement frame residence, at $3,975.",
+      "source": "loc-sf-call-1907-03-02"
+    }
+  ]
+}

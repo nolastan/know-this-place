@@ -1,0 +1,83 @@
+{
+  "address": "246 Mission Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/mission-street/246/",
+  "apn": "3711009",
+  "block": "3711",
+  "lot": "009",
+  "eas_baseid": "364865",
+  "coordinates": {
+    "lat": 37.791752,
+    "lng": -122.39558
+  },
+  "parcel": {
+    "year_built": 1907,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 3,
+    "lot_area_sqft": 6298,
+    "use": "Commercial Office",
+    "property_class": "Office",
+    "construction_type_code": "C",
+    "zoning": "C3O",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0256 0246 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 8020185,
+    "assessed_improvement_value": 85592512,
+    "last_sale_date": "2021-09-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=246",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3711009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3711&lot=009",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3711009",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1906-11-27",
+      "name": "The San Francisco Call, 27 November 1906, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1906-11-27/ed-1/seq-15/",
+      "retrieved": "2026-10-05"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906-11-27",
+      "kind": "building contract",
+      "description": "G. P. W. Jensen contracted to put up a three-storey building, at $26,710.",
+      "source": "loc-sf-call-1906-11-27"
+    }
+  ]
+}
