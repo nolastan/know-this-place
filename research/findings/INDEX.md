@@ -243,7 +243,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-planning-commission-minutes/minutes-1970.json` | 455 | 847 KB | 1854–1970 | 270 | 240 | `mission`, `pacific-heights`, `outer-richmond` +30 |
 | `sf-planning-commission-minutes/minutes-1971.json` | 323 | 587 KB | 1876–1971 | 171 | 144 | `castro`, `pacific-heights`, `bayview-hunters-point` +27 |
 | `sf-planning-commission-minutes/minutes-1972.json` | 382 | 705 KB | 1860–1972 | 145 | 105 | `mission`, `russian-hill`, `bayview-hunters-point` +20 |
-| `sf-planning-commission-minutes/minutes-1973.json` | 457 | 834 KB | 1805–1973 | 211 | 178 | `pacific-heights`, `bayview-hunters-point`, `haight-ashbury` +26 |
+| `sf-planning-commission-minutes/minutes-1973.json` | 457 | 833 KB | 1805–1973 | 211 | 178 | `pacific-heights`, `bayview-hunters-point`, `haight-ashbury` +26 |
 | `sf-planning-commission-minutes/minutes-1974.json` | 424 | 776 KB | 1852–1974 | 232 | 200 | `pacific-heights`, `mission`, `bayview-hunters-point` +23 |
 | `sf-planning-commission-minutes/minutes-1975.json` | 102 | 203 KB | 1868–1975 | 66 | 64 | `pacific-heights`, `financial-district`, `castro` +13 |
 | `sf-planning-commission-minutes/minutes-1976-h1.json` | 114 | 215 KB | 1911–1976 | 78 | 72 | `nob-hill`, `presidio-heights`, `pacific-heights` +20 |
@@ -259,7 +259,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-planning-commission-minutes/minutes-1996.json` | 229 | 461 KB | 1996 | 210 | 206 | `mission`, `sunset-parkside`, `castro` +35 |
 | `sf-planning-commission-minutes/minutes-1997-h1.json` | 128 | 255 KB | 1997 | 113 | 109 | `castro`, `mission`, `north-beach` +32 |
 | `sf-planning-commission-minutes/minutes-1997-h2.json` | 142 | 291 KB | 1997 | 126 | 125 | `castro`, `mission`, `south-of-market` +31 |
-| `sf-planning-commission-minutes/minutes-1998.json` | 246 | 492 KB | 1912–1998 | 216 | 210 | `mission`, `south-of-market`, `sunset-parkside` +32 |
+| `sf-planning-commission-minutes/minutes-1998.json` | 246 | 491 KB | 1912–1998 | 216 | 210 | `mission`, `south-of-market`, `sunset-parkside` +32 |
 | `sf-planning-commission-minutes/minutes-1999.json` | 417 | 839 KB | 1999 | 313 | 290 | `mission`, `castro`, `south-of-market` +33 |
 | `sf-planning-commission-minutes/minutes-2000.json` | 604 | 1.2 MB | 2000 | 450 | 404 | `mission`, `castro`, `east-cut` +35 |
 | `sf-planning-commission-minutes/minutes-2001.json` | 592 | 1.2 MB | 2001 | 557 | 548 | `mission`, `castro`, `pacific-heights` +32 |
