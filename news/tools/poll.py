@@ -957,21 +957,42 @@ def page_index() -> dict[str, str]:
     before the endpoints were registered they contributed no name at all to
     `street_vocabulary` below — the screen read a story about Cole Street as a
     story about a street the site has never heard of.
+
+    The index is a build artefact and gitignored, so a fresh clone — every
+    scheduled run, every cloud session — has none. Returning nothing then
+    screened the whole poll against an empty street vocabulary and had
+    `read.py` report every address "(no page)", the Transamerica Pyramid
+    included, without a word of warning. It is built here instead: the map
+    index alone takes about three seconds and writes what `build_site.py`
+    would.
     """
     if not GEOJSON.exists():
-        return {}
+        import subprocess
+        print(f"{GEOJSON.relative_to(REPO)} is missing — building it "
+              "(scripts/build_map_index.py)", file=sys.stderr)
+        subprocess.run([sys.executable, str(REPO / "scripts" / "build_map_index.py")],
+                       check=False, stdout=subprocess.DEVNULL)
+    if not GEOJSON.exists():
+        sys.exit(f"{GEOJSON.relative_to(REPO)} could not be built; run "
+                 "`python3 scripts/build_site.py` before screening or reading")
     data = json.loads(GEOJSON.read_text(encoding="utf-8"))
     titles, endpoints = {}, {}
     for f in data.get("features", []):
         props = f.get("properties")
         if not props:
             continue
-        title = props["t"].lower()
-        titles[title] = props["p"]
-        m = re.match(r"^(\d+[a-z]?)[\u2013-](\d+[a-z]?)\s+(.*)$", title)
-        if m:
-            for number in (m.group(1), m.group(2)):
-                endpoints.setdefault(f"{number} {m.group(3)}", props["p"])
+        # A named building is titled by its name ("Transamerica Pyramid") and
+        # carries its street address in `s`; reading `t` alone made every
+        # named building — the ones the news writes about — look page-less.
+        for title in {props["t"].lower(), (props.get("s") or "").lower()} - {""}:
+            if not re.match(r"^\d", title):
+                titles.setdefault(title, props["p"])
+                continue
+            titles[title] = props["p"]
+            m = re.match(r"^(\d+[a-z]?)[\u2013-](\d+[a-z]?)\s+(.*)$", title)
+            if m:
+                for number in (m.group(1), m.group(2)):
+                    endpoints.setdefault(f"{number} {m.group(3)}", props["p"])
     return {**endpoints, **titles}
 
 
