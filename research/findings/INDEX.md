@@ -232,7 +232,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-environmental-review/area-plan-tables.json` | 320 | 617 KB | 1865–1988 | 292 | 260 | `bayview-hunters-point`, `golden-gate-park`, `south-of-market` +6 |
 | `sf-environmental-review/area-plans.json` | 288 | 590 KB | 1830–2010 | 195 | 155 | `financial-district`, `south-of-market`, `east-cut` +14 |
 | `sf-environmental-review/downtown-1975-1982.json` | 120 | 233 KB | 1851–1983 | 97 | 80 | `financial-district`, `union-square`, `east-cut` +3 |
-| `sf-environmental-review/downtown-1983-1991.json` | 110 | 224 KB | 1854–1991 | 82 | 62 | `east-cut`, `financial-district`, `chinatown` +5 |
+| `sf-environmental-review/downtown-1983-1991.json` | 110 | 223 KB | 1854–1991 | 82 | 62 | `east-cut`, `financial-district`, `chinatown` +5 |
 | `sf-environmental-review/downtown-1995-2011.json` | 147 | 295 KB | 1850–2005 | 120 | 84 | `east-cut`, `south-of-market`, `financial-district` +10 |
 | `sf-environmental-review/institutional-campuses.json` | 169 | 298 KB | 1850–2007 | 142 | 132 | `tenderloin`, `nob-hill`, `golden-gate-park` +12 |
 | `sf-environmental-review/named-sites-1974-1982.json` | 59 | 114 KB | 1849–1982 | 45 | 39 | `financial-district`, `chinatown`, `south-beach` +6 |
