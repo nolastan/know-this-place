@@ -137,22 +137,6 @@ under the evidence bar, the text does not get committed or reproduced. Note the
 register already lists Bay Area Reporter under `local-news` as a browse-only
 reference; mining the archive is a different activity and wants its own id.
 
-***East/West: The Chinese-American Journal.*** 1,125 issues on the Internet
-Archive under collection `eastwestnews`, **1967–1989**, contributed through
-SFPL, with OCR text on each. Chinatown, the Richmond and the Sunset in a
-weekly that no address query will ever return. **Density is thin and it is
-mostly commercial:** five issues sampled across the run (1967, 1972, 1978,
-1984, 1989) carried roughly 5–15 numbered addresses each — 758 Commercial
-Street, 900 and 857 Grant Avenue, 724 Pacific Avenue, 777 Stockton Street, 1119
-Clement Street, 1127 Market Street. Over 1,125 issues that is a few thousand
-mentions, which is a real harvest at this module's usual rate. **Three
-cautions.** The OCR is mixed Chinese and English and the Latin text is mangled
-(commas render as `，`, and `838 Grant Avenue` recurs across years as an
-advertiser, not a fact). The masthead address (863 Stockton Street) will top
-any frequency count. And the issues carry an explicit "Copyright 1967 by
-EAST/WEST Publishing Company" — facts extract freely, the text does not get
-committed.
-
 **Crocker-Langley city directories.** 41 volumes on the Internet Archive with
 full OCR. **The privacy limit removes most of the book.** A sampled slice of the
 1900 volume is almost entirely residents, marked with `r.` for residence — all

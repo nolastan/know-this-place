@@ -3223,3 +3223,21 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   reviewer given only the clip reports owner firms and prices as "not in the
   print". *Tell a reviewer what was cut, or give them the page text.*
   (2026-11-12)
+- **An Internet Archive `_djvu.txt` has no page breaks, so it cannot give a
+  finding its page.** The East/West run located each finding by searching an
+  anchor phrase in `<id>_hocr_searchtext.txt.gz` and mapping the character
+  offset through `<id>_hocr_pageindex.json.gz` (one range per zero-based
+  leaf), then reading the printed page from `<id>_page_numbers.json`, which is
+  blank on most front pages (use leaf + 1 there). Pick an anchor that is a
+  proper name rather than an address: the OCR mangles digits, and a number the
+  djvu text gives may not match the search text byte for byte.
+- **`address_note_as_recorded` must be a bare address.** The resolver parses
+  it as an address, so a sentence put there ("the 1971 issue gives 950
+  Stockton") is read as a street name and the finding falls through. Put the
+  bare number and street in that key and the explanation in a separate key
+  such as `address_note_source`.
+- **Newspaper OCR mangles house numbers in repeatable ways.** In East/West a
+  leading `6` became `0` or vanished, a `9` was inserted before a `0` or `6`,
+  and `½` read as `12`. Group the mentions by street and look for a clean
+  print of the same institution in another issue before resolving a number;
+  the dossier lists the patterns.
