@@ -1,0 +1,47 @@
+{
+  "address": "825 La Playa, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/la-playa/825/unit-126/",
+  "unit": "126",
+  "apn": "1692126",
+  "block": "1692",
+  "lot": "126",
+  "parcel": {
+    "building_area_sqft": 705,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442522,
+    "assessed_improvement_value": 295015,
+    "last_sale_date": "2022-03-23"
+  },
+  "permits": [
+    {
+      "number": "202204202651",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-20",
+      "status_date": "2023-02-03",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit: (1) kitchen and (1) bathroom like for like, kitchen replacing all appliances plumbing & fixtures up to code, bathroom replacing all plumbing fixtures, replacing tub toilet and 1 sink,1 fan, 1 vanity add 6 recessed lights update elec and plumbing mech up to code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1692126&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1692&unit=126",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

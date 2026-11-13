@@ -1,0 +1,197 @@
+{
+  "address": "2321 19th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/mission/19th-street/2321/",
+  "apn": "4076014",
+  "block": "4076",
+  "lot": "014",
+  "eas_baseid": "475044",
+  "coordinates": {
+    "lat": 37.760341,
+    "lng": -122.405675
+  },
+  "parcel": {
+    "year_built": 2005,
+    "stories": 3,
+    "rooms": 6,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2526,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "NA",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0705 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1231984,
+    "assessed_improvement_value": 821318,
+    "last_sale_date": "2013-11-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "2005",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M117527",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-25",
+      "status_date": "2008-04-25",
+      "revised_cost": 1,
+      "description": "remove address 705 utah st. & replace by 2321-19th st. (due to construction of highway, there is no more entrance on the side of utah (the easement is between #2311 & 2331 19th street)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M34814",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-12",
+      "status_date": "2005-10-12",
+      "revised_cost": 0,
+      "description": "verification of house number permit block 4076 lot 014",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510044748",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-04",
+      "status_date": "2005-10-04",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "to change 3/4 hr. rated door to not rated.to increase value cost of appl#200002172203",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510034538",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-10-03",
+      "status_date": "2005-10-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app #2004/08/30/2901 to install windows on property line with sprinkler model ws revise fire escape and revise storage laundry layout on lower level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200509294200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-09-29",
+      "status_date": "2005-10-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to renew for final 200401143973, 200309094269, 2s00002172203",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408302901",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-30",
+      "status_date": "2005-10-05",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "renew expired permit applications. 2000/02/17/2203 s' (erect new 3 story single family).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401143973",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2004-01-14",
+      "status_date": "2006-12-26",
+      "estimated_cost": 5000,
+      "revised_cost": 10800,
+      "description": "install residental fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200309094269",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2003-09-09",
+      "status_date": "2003-11-04",
+      "estimated_cost": 3000,
+      "revised_cost": 4000,
+      "description": "rev. appl#200002172203 change in foundation, framing as per attached plan. interior changes only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002172203",
+      "type": "new construction wood frame",
+      "status": "reinstated",
+      "filed": "2000-02-17",
+      "status_date": "2003-02-12",
+      "estimated_cost": 250000,
+      "revised_cost": 250000,
+      "description": "erect anew3 story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=ST&address_number=2321",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4076014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4076&lot=014",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4076014",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-04-12",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 12 April 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/50minutesofsanfran2001san/page/n359/mode/1up",
+      "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2001-05-24",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 24 May 2001",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/51minutesofsanfran2001san/page/n55/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-04-12",
+      "kind": "site history",
+      "description": "The site was a vacant lot. The present building dates from 2005.",
+      "source": "sf-planning-commission-minutes-2001-04-12"
+    },
+    {
+      "date": "2001-05-24",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved a one-unit building not to exceed 20 feet in height, 4-1.",
+      "source": "sf-planning-commission-minutes-2001-05-24"
+    }
+  ]
+}

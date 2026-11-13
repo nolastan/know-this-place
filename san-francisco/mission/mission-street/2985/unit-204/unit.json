@@ -1,0 +1,77 @@
+{
+  "address": "2987 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2985/unit-204/",
+  "unit": "204",
+  "apn": "6528040",
+  "block": "6528",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 842,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 503330,
+    "assessed_improvement_value": 335553,
+    "last_sale_date": "2021-03-17"
+  },
+  "permits": [
+    {
+      "number": "201906123237",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-12",
+      "status_date": "2019-06-12",
+      "estimated_cost": 58000,
+      "revised_cost": 58000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200312031477",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-12-03",
+      "status_date": "2004-06-01",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "kitchen remodel related electrical & plumbing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9801056",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-01-21",
+      "status_date": "2001-12-26",
+      "estimated_cost": 3000,
+      "description": "enclose porch by installing windows,add gypsum board at ceil",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907974",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-05-10",
+      "status_date": "1989-09-12",
+      "estimated_cost": 900,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6528040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6528&unit=204",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

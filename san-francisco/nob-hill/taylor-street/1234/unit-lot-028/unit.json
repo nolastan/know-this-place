@@ -1,0 +1,32 @@
+{
+  "address": "1234 Taylor Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/taylor-street/1234/unit-lot-028/",
+  "apn": "0213028",
+  "block": "0213",
+  "lot": "028",
+  "parcel": {
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 642951,
+    "assessed_improvement_value": 403317
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0213028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0213&street_number=1234",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

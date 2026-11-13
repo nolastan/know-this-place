@@ -1,0 +1,46 @@
+{
+  "address": "755 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/755/unit-10/",
+  "unit": "10",
+  "apn": "4044027",
+  "block": "4044",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 1383,
+    "rooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 814146,
+    "assessed_improvement_value": 814146,
+    "last_sale_date": "2017-05-19"
+  },
+  "permits": [
+    {
+      "number": "201001255243",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-01-25",
+      "status_date": "2010-03-02",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "construction of the non-load bearing wall installation of 30\" flat panel solid core door, construction & installation of custom closet cabinets in a newly form entry.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4044027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4044&unit=10",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

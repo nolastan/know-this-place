@@ -1,0 +1,85 @@
+{
+  "address": "1193 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/25th-street/4094/unit-1193/",
+  "apn": "6537049",
+  "block": "6537",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 1560,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 435589,
+    "assessed_improvement_value": 479089,
+    "last_sale_date": "2004-07-02"
+  },
+  "permits": [
+    {
+      "number": "202603187852",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-18",
+      "status_date": "2026-04-24",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "addition of 8x8 dormer @ n/e corner of roof complying w/ 2ab #3. dormer adds approx. 64 sf of living area converting a portion of deeded storage to a new full bath. new access to deeded storage provided in primary bedroom. cosmetic remodel of (e) bathroom; replace laundry window + door; new closet..",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205315299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-31",
+      "status_date": "2022-07-05",
+      "estimated_cost": 6820,
+      "revised_cost": 6820,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712120272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-12-12",
+      "status_date": "2008-03-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to application # 200711057358. remove closets from original plans. on 3rd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711057358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-05",
+      "status_date": "2008-03-04",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "2nd & 3rd floor: add bath in (e) closet on third floor. remove partition at (e) bath on second floor, interior remodel, no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2007–2026",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6537049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6537&street_number=1193",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

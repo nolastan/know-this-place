@@ -1,0 +1,46 @@
+{
+  "address": "1518 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1516/unit-1518/",
+  "apn": "6615071",
+  "block": "6615",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1005,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 759866,
+    "assessed_improvement_value": 506577,
+    "last_sale_date": "2020-08-24"
+  },
+  "permits": [
+    {
+      "number": "202011108577",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-11-10",
+      "status_date": "2020-11-19",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6615071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6615&street_number=1518",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

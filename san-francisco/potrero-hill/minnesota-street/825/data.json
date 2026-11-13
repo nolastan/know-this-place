@@ -1,0 +1,133 @@
+{
+  "address": "825 Minnesota Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/minnesota-street/825/",
+  "block": "4107",
+  "eas_baseid": "462930",
+  "coordinates": {
+    "lat": 37.759969,
+    "lng": -122.390245
+  },
+  "parcel": {
+    "year_built": 1999,
+    "units": 10,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill"
+  },
+  "condominium": {
+    "lots": [
+      "048",
+      "049",
+      "050",
+      "051",
+      "052",
+      "053",
+      "054",
+      "055",
+      "056",
+      "057"
+    ],
+    "method": "Proposed from the 2025 roll for block 4107: every condominium parcel the roll files under 825 MINNESOTA ST, and the unbroken run of lots beside parcel 4107048 on the same street with the same year built (1999). 10 lots, 048–057."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1999",
+    "survey_name": "Dogpatch Historic District",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Dogpatch Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1945",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9915392",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-07-28",
+      "status_date": "2000-03-07",
+      "estimated_cost": 11000,
+      "description": "install fire alarm system to include smoke detector,horn,str",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9911588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-11",
+      "status_date": "1999-12-06",
+      "estimated_cost": 35000,
+      "description": "install new fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9703704",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1997-08-06",
+      "status_date": "1999-12-06",
+      "revised_cost": 1000000,
+      "description": "erect 3 story 10 livework dwelling units & 1 comm office",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MINNESOTA&street_type=ST&address_number=825",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 4107)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=4107&closed_roll_year=2025",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4107",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4107048",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39024460958386%2037.75996864258295)%27)",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1997-05-22",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 22 May 1997",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/43minutesofsanfran1997san/page/n324/mode/1up",
+      "retrieved": "2026-10-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1997-05-22",
+      "kind": "planning decision",
+      "description": "On discretionary review, the City Planning Commission approved, 4-3, ten live/work units with ten parking spaces in a building about 49 feet tall on the vacant 50-by-50-foot lot, with $1,000 a unit paid to an open-space fund.",
+      "source": "sf-planning-commission-minutes-1997-05-22"
+    }
+  ]
+}

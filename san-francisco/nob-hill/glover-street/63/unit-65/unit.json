@@ -1,0 +1,46 @@
+{
+  "address": "65 Glover Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/glover-street/63/unit-65/",
+  "apn": "0151095",
+  "block": "0151",
+  "lot": "095",
+  "parcel": {
+    "building_area_sqft": 707,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 574800,
+    "assessed_improvement_value": 383200,
+    "last_sale_date": "2020-12-11"
+  },
+  "permits": [
+    {
+      "number": "202009083647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-08",
+      "status_date": "2020-11-09",
+      "estimated_cost": 5200,
+      "revised_cost": 5200,
+      "description": "replace tile of shower in same place. replace shower pan.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0151095&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0151&street_number=65",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

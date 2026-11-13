@@ -1,0 +1,31 @@
+{
+  "address": "655 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/655/unit-108/",
+  "unit": "108",
+  "apn": "3995080",
+  "block": "3995",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 840
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 38426,
+    "assessed_improvement_value": 140114
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3995080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3995&unit=108",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

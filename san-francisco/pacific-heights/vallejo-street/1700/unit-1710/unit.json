@@ -1,0 +1,76 @@
+{
+  "address": "1710 Vallejo Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/vallejo-street/1700/unit-1710/",
+  "apn": "0552037",
+  "block": "0552",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 2264,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1407600,
+    "assessed_improvement_value": 938400,
+    "last_sale_date": "2023-10-04"
+  },
+  "permits": [
+    {
+      "number": "201305036046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-03",
+      "status_date": "2013-09-16",
+      "estimated_cost": 52000,
+      "revised_cost": 52000,
+      "description": "remodel 2 bathrooms. paint and flooring.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000128469",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-01-28",
+      "status_date": "2000-09-01",
+      "revised_cost": 1,
+      "description": "renewal of application 9912552, 9912941 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9912941",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-28",
+      "status_date": "2000-01-28",
+      "estimated_cost": 2000,
+      "description": "addendum to pa 9912552, install two skylights in kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9912552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-06-23",
+      "status_date": "2000-01-28",
+      "estimated_cost": 13000,
+      "description": "remodel kchn/rplc cbnts/cntr/upgrade elec/chng wndw to grdn",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0552037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0552&street_number=1710",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

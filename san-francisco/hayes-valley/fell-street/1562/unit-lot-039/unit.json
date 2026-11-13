@@ -1,0 +1,32 @@
+{
+  "address": "1562 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fell-street/1562/unit-lot-039/",
+  "apn": "1207039",
+  "block": "1207",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 2593,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 533812,
+    "assessed_improvement_value": 533812,
+    "last_sale_date": "2011-08-26"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1207039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1207&street_number=1562",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "address": "7909 Geary Boulevard, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/geary-boulevard/7909/unit-lot-061/",
+  "apn": "1501061",
+  "block": "1501",
+  "lot": "061",
+  "parcel": {
+    "building_area_sqft": 1150,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 401699,
+    "assessed_improvement_value": 401699
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1501061&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1501&street_number=7909",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

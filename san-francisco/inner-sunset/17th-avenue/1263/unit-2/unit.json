@@ -1,0 +1,48 @@
+{
+  "address": "1263 17th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/17th-avenue/1263/unit-2/",
+  "unit": "2",
+  "apn": "1733056",
+  "block": "1733",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 1394,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "basement_area_sqft": 449
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162856,
+    "assessed_improvement_value": 350156,
+    "last_sale_date": "1997-06-27"
+  },
+  "permits": [
+    {
+      "number": "202201105622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-10",
+      "status_date": "2022-06-06",
+      "estimated_cost": 24850,
+      "revised_cost": 24850,
+      "description": "one unit: replacing 4 windows and 2 patio doors. windows are street visible,patio door and in rear of home. same size, location, operation, style and confiuration. propsed: wood composite less than 0.30 u factor. #2",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1733056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1733&unit=2",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

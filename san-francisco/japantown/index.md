@@ -11,6 +11,7 @@ The city's Japantown analysis neighborhood, the blocks around Post and Buchanan 
 - [Gough Street](gough-street/) — 1 building, built 1966.
 - [Hemlock Street](hemlock-street/) — 1 building.
 - [Laguna Street](laguna-street/) — 1 building, built 1960.
+- [Myrtle Street](myrtle-street/) — 1 building, built 1900.
 - [Post Street](post-street/) — 5 buildings, built 1967–2009.
 - [Scott Street](scott-street/) — 1 building, built 1900.
 - [Steiner Street](steiner-street/) — 1 building, built 1964.

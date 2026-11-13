@@ -1,0 +1,35 @@
+{
+  "address": "825 La Playa, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/la-playa/825/unit-329/",
+  "unit": "329",
+  "apn": "1692138",
+  "block": "1692",
+  "lot": "138",
+  "parcel": {
+    "building_area_sqft": 1005,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 183963,
+    "assessed_improvement_value": 198681,
+    "last_sale_date": "1990-06-13"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1692138&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1692&unit=329",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

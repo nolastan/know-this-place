@@ -1,0 +1,55 @@
+{
+  "address": "130 Scott Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/scott-street/124/unit-130/",
+  "apn": "0862046",
+  "block": "0862",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 955,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 563491,
+    "assessed_improvement_value": 375657,
+    "last_sale_date": "2008-05-15"
+  },
+  "permits": [
+    {
+      "number": "200609111954",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-11",
+      "status_date": "2006-11-30",
+      "estimated_cost": 7200,
+      "revised_cost": 7200,
+      "description": "remodeling bathroom, replace sink, toilet, shower and faucet. install tile, light and painting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814392",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-09-22",
+      "status_date": "1989-01-31",
+      "estimated_cost": 850,
+      "description": "install fire place in the living room.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0862046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0862&street_number=130",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "1438 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1438/unit-3a/",
+  "unit": "3A",
+  "apn": "0547031",
+  "block": "0547",
+  "lot": "031",
+  "parcel": {
+    "building_area_sqft": 1206,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 842724,
+    "assessed_improvement_value": 561816,
+    "last_sale_date": "2008-04-29"
+  },
+  "permits": [
+    {
+      "number": "202608056104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-08-05",
+      "status_date": "2026-10-29",
+      "estimated_cost": 44000,
+      "revised_cost": 55429,
+      "description": "1st bathroom: in kind bathroom remodel shower surround, remove tile at tub area. replace bathtub, prep shower surrounding walls with denshield. install tile around tub area and floor. new shower valve. new elec. 2nd bathroom: in kind remodel new shower pan new drain, new shower valve, waterproof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0547031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0547&unit=3A",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "address": "925 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-101/",
+  "unit": "101",
+  "apn": "2808027",
+  "block": "2808",
+  "lot": "027",
+  "parcel": {
+    "building_area_sqft": 1279,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56597,
+    "assessed_improvement_value": 226482
+  },
+  "permits": [
+    {
+      "number": "202507251676",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-25",
+      "status_date": "2025-09-15",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace 480 sq ft of cedar shingles (not roof) in kind and paint front south wall. street visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303203975",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-03-20",
+      "status_date": "2023-10-03",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201912058777",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-12-05",
+      "status_date": "2020-01-08",
+      "estimated_cost": 30045,
+      "revised_cost": 30000,
+      "description": "perform repairs per termite report 83679 item # 3a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709138011",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-13",
+      "status_date": "2017-09-26",
+      "estimated_cost": 96000,
+      "revised_cost": 96000,
+      "description": "cost revision to bpa#201704275032; original cost of estimate $68,000, additional work cost $94,000, total job cost as of 9/13/2017 $162,000; additional single repair & plywood sheathing, dry rot remediation to exterior common areas of 925-945 corbett avenue.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709117473",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-11",
+      "status_date": "2017-09-27",
+      "estimated_cost": 2800,
+      "revised_cost": 8000,
+      "description": "replace in kind 8 windows at 925 - 945 corbett ave - 2 visible form the street from aluminum to fiberglass",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201704275032",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-04-27",
+      "status_date": "2017-09-26",
+      "estimated_cost": 68000,
+      "revised_cost": 68000,
+      "description": "replace weather beaten shingles and paint wood to be replaced in kind with wood cedar shingle - replace windows at the rear - replace water damaged sheet rock - replace shear wall plywood on one exterior wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2017–2025",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=101",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

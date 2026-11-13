@@ -1,0 +1,33 @@
+{
+  "address": "127 Park Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/park-street/127/unit-lot-059/",
+  "apn": "5718059",
+  "block": "5718",
+  "lot": "059",
+  "parcel": {
+    "building_area_sqft": 869,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 238637,
+    "assessed_improvement_value": 180926
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5718059&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5718&street_number=127",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

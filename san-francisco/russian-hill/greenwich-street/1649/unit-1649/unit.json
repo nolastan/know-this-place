@@ -1,0 +1,41 @@
+{
+  "address": "1649 Greenwich Street, San Francisco, CA 94123",
+  "path": "/san-francisco/russian-hill/greenwich-street/1649/unit-1649/",
+  "unit": "1649",
+  "apn": "0521040",
+  "block": "0521",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 746,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 610776,
+    "assessed_improvement_value": 407184,
+    "last_sale_date": "2024-06-28"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2012",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0521040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0521&unit=1649",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

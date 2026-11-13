@@ -1,0 +1,33 @@
+{
+  "address": "193 Lower Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/lower-terrace/191/unit-193/",
+  "apn": "2627070",
+  "block": "2627",
+  "lot": "070",
+  "parcel": {
+    "building_area_sqft": 1493,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 705803,
+    "assessed_improvement_value": 302484
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2627070&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2627&street_number=193",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

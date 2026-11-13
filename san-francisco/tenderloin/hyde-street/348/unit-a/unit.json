@@ -1,0 +1,62 @@
+{
+  "address": "348 Hyde Street, San Francisco, CA 94109",
+  "path": "/san-francisco/tenderloin/hyde-street/348/unit-a/",
+  "unit": "A",
+  "apn": "0334032",
+  "block": "0334",
+  "lot": "032",
+  "parcel": {
+    "building_area_sqft": 408,
+    "rooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 18021,
+    "assessed_improvement_value": 105282
+  },
+  "permits": [
+    {
+      "number": "202405131986",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-13",
+      "status_date": "2025-03-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "addition of existing fire alarm system to comply with sffd 1103.7.6.1. install new rps, new lf sounders in all units potential sleeping areas to comply with sffd 1103.7.6.1. ref permit 200403037616 and 200305295792 original facu installation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909091084",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-09",
+      "status_date": "2019-09-17",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove plywood siding at south side (above adjacent building) replace with hardi siding at south side only. building constructed ca. 2004. no changes to front.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2016–2024",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0334032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0334&unit=A",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

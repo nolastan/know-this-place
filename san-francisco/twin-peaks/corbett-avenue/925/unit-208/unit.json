@@ -1,0 +1,68 @@
+{
+  "address": "945 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-208/",
+  "unit": "208",
+  "apn": "2808042",
+  "block": "2808",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 1279,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 353480,
+    "assessed_improvement_value": 242048,
+    "last_sale_date": "1999-10-22"
+  },
+  "permits": [
+    {
+      "number": "201709138014",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-13",
+      "status_date": "2017-09-26",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "one unit: interior sheetrock repair around (2) windows caused by water intrusion.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706088857",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-08",
+      "status_date": "2018-09-21",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "2 bathroom remodeling no moving of walls, doors or windows, everything in the same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405276778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-27",
+      "status_date": "2014-08-21",
+      "estimated_cost": 9895,
+      "revised_cost": 9895,
+      "description": "kitchen remodeling like per like. only at one unit. lighting and control per ceg 150 k",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=208",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

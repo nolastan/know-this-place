@@ -1,0 +1,58 @@
+{
+  "address": "525 Gough Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/gough-street/515/unit-407/",
+  "unit": "407",
+  "apn": "0793099",
+  "block": "0793",
+  "lot": "099",
+  "parcel": {
+    "building_area_sqft": 1713,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 703783,
+    "assessed_improvement_value": 703783,
+    "last_sale_date": "2005-07-28"
+  },
+  "permits": [
+    {
+      "number": "201405165952",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-16",
+      "status_date": "2014-06-06",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "install in kind 2 ea. 35-1/2(w) x 71-1/2(h) fleetwood fire rated windows in guest bedroom, max u factor 0.4. install in kind 1 ea. 35-1/2(w) x 35-1/2(h) fleetwood fire rated window in kitchen above sink at courtyard. not visable from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303293386",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-29",
+      "status_date": "2013-07-26",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit-remove & replace deck waterproofing & sheet metal flashing @one unit deck. install sheetrock (80 sq ft) where removed @units",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0793099&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0793&unit=407",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

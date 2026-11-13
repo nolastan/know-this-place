@@ -1,0 +1,49 @@
+{
+  "address": "997 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/989/unit-997/",
+  "apn": "3540120",
+  "block": "3540",
+  "lot": "120",
+  "parcel": {
+    "building_area_sqft": 480
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 278771,
+    "assessed_improvement_value": 278771,
+    "last_sale_date": "2004-10-12"
+  },
+  "permits": [
+    {
+      "number": "200810234957",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-10-23",
+      "status_date": "2009-03-16",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replace 7 non-egress windows @ rear of bldg & replace 2 doors. remove & relace rotted siding in kind 100 sqft redwood lap siding. repair dry rot as necessary.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2008–2009",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3540120&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3540&street_number=997",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

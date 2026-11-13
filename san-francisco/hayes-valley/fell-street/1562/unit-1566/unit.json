@@ -1,0 +1,44 @@
+{
+  "address": "1566 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fell-street/1562/unit-1566/",
+  "apn": "1207041",
+  "block": "1207",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 1154,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 877052,
+    "assessed_improvement_value": 584700,
+    "last_sale_date": "2023-06-05"
+  },
+  "permits": [
+    {
+      "number": "202401184167",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-18",
+      "status_date": "2025-03-03",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace (2) 2-story rear deck support posts and strengthen attachment to (e) deck and re-anchor posts to (e) concrete foundations.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1207041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1207&street_number=1566",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

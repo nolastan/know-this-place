@@ -1,0 +1,154 @@
+{
+  "address": "2998 22nd Avenue, San Francisco, CA 94132",
+  "path": "/san-francisco/sunset-parkside/22nd-avenue/2998/",
+  "apn": "7205007",
+  "block": "7205",
+  "lot": "007",
+  "eas_baseid": "418002",
+  "coordinates": {
+    "lat": 37.732787,
+    "lng": -122.477581
+  },
+  "parcel": {
+    "year_built": 1941,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 4203,
+    "building_area_sqft": 4177,
+    "basement_area_sqft": 1052,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Merced Manor",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2998 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 775575,
+    "assessed_improvement_value": 926197,
+    "last_sale_date": "2001-08-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200703125969",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-03-12",
+      "status_date": "2007-07-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#200608240484 for final inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608240484",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-08-24",
+      "status_date": "2007-07-13",
+      "estimated_cost": 5100,
+      "revised_cost": 5100,
+      "description": "renew pa#200110090234s.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110090234",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-10-09",
+      "status_date": "2007-07-13",
+      "estimated_cost": 260000,
+      "revised_cost": 260000,
+      "description": "interior modification (e) bldg., rear addition to 11' long, vertical addition of 3rd story",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105229741",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-22",
+      "status_date": "2001-09-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa#9411583 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503789",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-03-17",
+      "status_date": "1995-07-07",
+      "estimated_cost": 10000,
+      "revised_cost": 18000,
+      "description": "install n/partition walls/ext. doors for master bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411583",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-07-21",
+      "status_date": "1995-01-23",
+      "estimated_cost": 6000,
+      "description": "remove & replace kitchen cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=2998",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7205007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7205&lot=007",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7205007",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-04-25",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 25 April 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n176/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-04-25",
+      "kind": "occupancy",
+      "description": "The property held an existing single-family dwelling.",
+      "source": "sf-planning-commission-minutes-2002-04-25"
+    }
+  ]
+}

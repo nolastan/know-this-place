@@ -1,0 +1,57 @@
+{
+  "address": "1119 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/1115/unit-1119/",
+  "apn": "6508053",
+  "block": "6508",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1035,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 463312,
+    "assessed_improvement_value": 621710,
+    "last_sale_date": "2013-05-08"
+  },
+  "permits": [
+    {
+      "number": "201810102806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-10",
+      "status_date": "2019-02-04",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "interior remodel . create new bathroom, move kitchen, reverse living and sleeping areas, no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609299186",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-29",
+      "status_date": "2017-02-02",
+      "estimated_cost": 8803,
+      "revised_cost": 8800,
+      "description": "replace 3 existing double hungs with alike kind. jeldwen wood clad exterior aluminum interior pine. retrofit inserts installation replace 3 back existing single hung with alike kind sh or dh vinyl amerimax retrofit insert.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6508053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6508&street_number=1119",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

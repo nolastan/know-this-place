@@ -1,0 +1,47 @@
+{
+  "address": "2001 Mcallister Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/fulton-street/1750/unit-112/",
+  "unit": "112",
+  "apn": "1175048",
+  "block": "1175",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1040,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 512396,
+    "assessed_improvement_value": 512396,
+    "last_sale_date": "2011-06-22"
+  },
+  "permits": [
+    {
+      "number": "202604290351",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-29",
+      "status_date": "2026-04-29",
+      "estimated_cost": 20000,
+      "revised_cost": 35000,
+      "description": "one unit: kitchen remodel, new cabinets and counter tops.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1175048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1175&unit=112",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

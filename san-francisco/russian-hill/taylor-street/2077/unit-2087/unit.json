@@ -1,0 +1,27 @@
+{
+  "address": "2087 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/taylor-street/2077/unit-2087/",
+  "apn": "0092050",
+  "block": "0092",
+  "lot": "050",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60667,
+    "assessed_improvement_value": 39858
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0092050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0092&street_number=2087",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

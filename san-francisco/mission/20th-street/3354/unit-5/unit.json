@@ -1,0 +1,47 @@
+{
+  "address": "3354 20th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/20th-street/3354/unit-5/",
+  "unit": "5",
+  "apn": "3594106",
+  "block": "3594",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 2658,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1375594,
+    "assessed_improvement_value": 1375594,
+    "last_sale_date": "2016-05-11"
+  },
+  "permits": [
+    {
+      "number": "201708296276",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-29",
+      "status_date": "2018-08-23",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "one unit: kitchen: remove and replace with same: cabinets, countertops. new: undercabinet led lights; 3 circuits; add steam oven, add warming drawer; add dimmer switch for undercab led lighting. remove island sink & cap off.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3594106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3594&unit=5",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}
