@@ -7,7 +7,7 @@
 > - **Kind:** meeting minutes (scanned volumes) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** all 52 volumes read (July 1968 – December 1980, and
->   1994 – 2005): 15,638 pages, 8,545 findings, 5,660 resolved, 5,451 published.
+>   1994 – 2005): 15,638 pages, 8,545 findings, 6,400 resolved, 6,036 published.
 >   **The source is read end to end.** Volumes 46–58 (1999 – 2005) were read
 >   by Meta Muse, an external reader, and converted here; its claim on 54–58
 >   lifted when it finished on 2026-11-09. July–December 1975 is in no
@@ -523,6 +523,22 @@
   findings, 153 on pages). Size by text pages: volume 40 was 199 text pages
   (486,000 characters) and one nightly run for a single reader with time to
   spare; a later volume of up to about 400 text pages should also fit.
+- **Verified:** 2026-11-13 (retired addresses: the 782 rows left unresolved
+  because the number is gone from the directory or split across parcels).
+  Each was traced by hand through the printed lot, `sf-parcels` retired rows,
+  the roll and the permits: 511 to one parcel, 194 to several, 77 to none.
+  349 are now resolved (131 by the patched resolver, the rest by hand with
+  the evidence in `resolution.method`); 266 facts are published on 162 pages,
+  51 of them as site history on a parcel rebuilt since, and 83 are declined
+  (a predecessor with no page, a building whose standing could not be shown,
+  care-home uses, one duplicate). 125 pages were seeded. Left unresolved on
+  purpose: 187 that name several parcels, the 77 with no tie, 106
+  one-parcel traces held because the tie is geometry or inference alone, 52
+  whose condominium page does not match its map lot (large phased complexes
+  and existing pages on one unit of a building), and 11 the resolver would
+  have placed on one half of a split lot, now marked `by_hand`. The traps
+  are in [../LESSONS.md](../LESSONS.md) under "An address the directory no
+  longer has".
 - **Verified:** 2026-11-10 (#556, the findings the old condominium rule held
   back, re-resolved now that a condominium is paged as a building; nothing
   new was read). 391 findings move from unresolved to resolved: **319

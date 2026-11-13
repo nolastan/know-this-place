@@ -1,0 +1,58 @@
+{
+  "address": "1488 Harrison Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/harrison-street/1488/unit-305/",
+  "unit": "305",
+  "apn": "3520074",
+  "block": "3520",
+  "lot": "074",
+  "parcel": {
+    "building_area_sqft": 1166,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 722854,
+    "assessed_improvement_value": 481903,
+    "last_sale_date": "2019-02-14"
+  },
+  "permits": [
+    {
+      "number": "202002134476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-13",
+      "status_date": "2020-12-02",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "one unit - bathroom remodel \"in-kind\".",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308063563",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-06",
+      "status_date": "2013-09-03",
+      "estimated_cost": 635,
+      "revised_cost": 635,
+      "description": "install 1 vinyl window in kind into existing frames. no change in size or location. window does not face the street. if applicable, bedroom window will comply with section cbc1026 for rescue. all windows will be double pane and have a u factor of .30",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3520074&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3520&unit=305",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

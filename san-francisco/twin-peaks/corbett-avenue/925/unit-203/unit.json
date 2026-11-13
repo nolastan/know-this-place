@@ -1,0 +1,45 @@
+{
+  "address": "925 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-203/",
+  "unit": "203",
+  "apn": "2808037",
+  "block": "2808",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 956,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 97941,
+    "assessed_improvement_value": 239467
+  },
+  "permits": [
+    {
+      "number": "202308235054",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-08-23",
+      "status_date": "2023-08-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "tub, shower valve vanity sink and faucet replacement. relocate sub panel from closet to hallway require by code as other units in the building. hallway tile installation.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=203",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

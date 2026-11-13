@@ -1,0 +1,46 @@
+{
+  "address": "240 Myrtle Street, San Francisco, CA 94109",
+  "path": "/san-francisco/japantown/myrtle-street/234/unit-240/",
+  "apn": "0714023",
+  "block": "0714",
+  "lot": "023",
+  "parcel": {
+    "building_area_sqft": 1014,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 514998,
+    "assessed_improvement_value": 343332,
+    "last_sale_date": "2023-02-03"
+  },
+  "permits": [
+    {
+      "number": "9204094",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-03-16",
+      "status_date": "1998-02-11",
+      "estimated_cost": 2000,
+      "revised_cost": 500,
+      "description": "revert back to last legal use comply with code also",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0714023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0714&street_number=240",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

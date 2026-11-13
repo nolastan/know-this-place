@@ -1,0 +1,74 @@
+{
+  "address": "1153 Leavenworth Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/leavenworth-street/1143/unit-1153/",
+  "apn": "0248071",
+  "block": "0248",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 811,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 603996,
+    "assessed_improvement_value": 402663,
+    "last_sale_date": "2020-08-21"
+  },
+  "permits": [
+    {
+      "number": "201703282594",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-28",
+      "status_date": "2017-10-11",
+      "estimated_cost": 25000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfbc chapter 4d engineering criteria 2012 iebc appendix a-4. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307111544",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-11",
+      "status_date": "2013-08-12",
+      "estimated_cost": 8000,
+      "revised_cost": 18000,
+      "description": "update kitchen with new cabinets, new couner top & new floor, update bathroom with new shower, new toilet, new vanity",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710256503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-25",
+      "status_date": "2008-03-24",
+      "estimated_cost": 15100,
+      "revised_cost": 15100,
+      "description": "work on 3 three units. 2 bottom units to be changed from aluminum to wood clad to match permit #1128951 date 08/10/07. 2 front window in each apt. one back window (e) filing fee receip no#356609. total 11 windows. no change w shape or size (e) app#200706042892.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2007–2017",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0248071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0248&street_number=1153",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

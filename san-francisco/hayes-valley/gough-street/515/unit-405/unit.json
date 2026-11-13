@@ -1,0 +1,47 @@
+{
+  "address": "525 Gough Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/gough-street/515/unit-405/",
+  "unit": "405",
+  "apn": "0793097",
+  "block": "0793",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 1732,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1082432,
+    "assessed_improvement_value": 721621,
+    "last_sale_date": "2021-12-06"
+  },
+  "permits": [
+    {
+      "number": "201404284307",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-28",
+      "status_date": "2014-07-08",
+      "estimated_cost": 68000,
+      "revised_cost": 68000,
+      "description": "deck repairs at #405&406, total 320 sq ft \"rear decks\". remove existing pavers & water proofing membrane. install new 3/4\" t&g playwood with gaco waterproofing. install new 20\"x20\"x2\" concrete pavers, slope to existing drains.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0793097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0793&unit=405",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

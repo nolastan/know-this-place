@@ -1,0 +1,57 @@
+{
+  "address": "270 Cumberland Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/cumberland-street/266/unit-270/",
+  "apn": "3600106",
+  "block": "3600",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 1428,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 596999,
+    "assessed_improvement_value": 596999,
+    "last_sale_date": "2010-05-25"
+  },
+  "permits": [
+    {
+      "number": "201912129450",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-12-12",
+      "status_date": "2019-12-12",
+      "estimated_cost": 35625,
+      "revised_cost": 35625,
+      "description": "remodel 2 bathrooms, like for like, no layout changes. upgrade 200amp electrical subpanelboard.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406118121",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-11",
+      "status_date": "2014-09-18",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "kitchen remodel- replace in kind (8) new can lights kitchen; (6) new can lights living room ; to comply with cec150(k) 8",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3600106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3600&street_number=270",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "address": "700 3rd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/illinois-street/700/unit-3/",
+  "unit": "3",
+  "apn": "4045010",
+  "block": "4045",
+  "lot": "010",
+  "parcel": {
+    "building_area_sqft": 723,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 499104,
+    "assessed_improvement_value": 332734,
+    "last_sale_date": "2014-01-14"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4045010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4045&unit=3",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

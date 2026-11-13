@@ -1,0 +1,68 @@
+{
+  "address": "2676 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2676/unit-2676/",
+  "unit": "2676",
+  "apn": "0946036",
+  "block": "0946",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 692,
+    "rooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 530604,
+    "assessed_improvement_value": 353736,
+    "last_sale_date": "2022-10-21"
+  },
+  "permits": [
+    {
+      "number": "202104218996",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-04-21",
+      "status_date": "2021-04-21",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "remove 2 side by side windows and replce with door. no structural work - header stays the same. replacement within (e) opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801082070",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-08",
+      "status_date": "2008-01-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew appl#200609293795 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609293795",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-09-29",
+      "status_date": "2008-01-07",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "one unit only - replace 1 kitchen & 1 bath appliances/fixtures & finish floors. add new electrical outlets (grd fault at kit/bath) & lighting fixtures. install cabinetry at living room & kitchen. install new pass-thru to kitchen. remove 48\" of wall between kitchen & living room. (non bearing).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0946036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0946&unit=2676",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

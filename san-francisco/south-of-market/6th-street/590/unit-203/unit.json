@@ -1,0 +1,47 @@
+{
+  "address": "590 Brannan Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/6th-street/590/unit-203/",
+  "unit": "203",
+  "apn": "3779204",
+  "block": "3779",
+  "lot": "204",
+  "parcel": {
+    "building_area_sqft": 1502,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 697060,
+    "assessed_improvement_value": 697060,
+    "last_sale_date": "2014-09-30"
+  },
+  "permits": [
+    {
+      "number": "202408198943",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-08-19",
+      "status_date": "2024-08-19",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "bathroom remodel to include replace shower surround tile walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3779204&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3779&unit=203",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

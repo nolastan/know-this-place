@@ -1,0 +1,54 @@
+{
+  "address": "1123 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/noe-street/1115/unit-1123/",
+  "apn": "6508055",
+  "block": "6508",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1000,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 189850,
+    "assessed_improvement_value": 216975
+  },
+  "permits": [
+    {
+      "number": "201610119956",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-10-11",
+      "status_date": "2016-10-31",
+      "estimated_cost": 3600,
+      "revised_cost": 3600,
+      "description": "replace 3 existing double hung windows with alike kind wood clad ex alum/int pine. retrofit insert. replace 3 back e single hung with alike vinlyl sing hung. installation retrofit insert",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609137603",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2016-09-13",
+      "status_date": "2016-09-13",
+      "description": "inkind replacement of 3 front dh windows with aluminum-clad wood windows with ogee lugs; vinyl oka on elevations not visible to public row",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6508055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6508&street_number=1123",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "address": "628 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/618/unit-628/",
+  "apn": "6598005",
+  "block": "6598",
+  "lot": "005",
+  "parcel": {
+    "building_area_sqft": 2349,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "basement_area_sqft": 119
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1061208,
+    "assessed_improvement_value": 707472,
+    "last_sale_date": "2022-12-30"
+  },
+  "permits": [
+    {
+      "number": "201707111454",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-11",
+      "status_date": "2017-10-26",
+      "estimated_cost": 12237,
+      "revised_cost": 12237,
+      "description": "remove and replace 2 doors (glass sliders) same size and location replaceing vinyl with fibrex (paintable) both doors street visible; u-factor .32",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015–2017",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6598005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6598&street_number=628",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

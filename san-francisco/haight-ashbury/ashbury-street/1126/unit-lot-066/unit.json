@@ -1,0 +1,31 @@
+{
+  "address": "1126 Ashbury Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/ashbury-street/1126/unit-lot-066/",
+  "apn": "2629066",
+  "block": "2629",
+  "lot": "066",
+  "parcel": {
+    "building_area_sqft": 1095
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602897,
+    "assessed_improvement_value": 401928,
+    "last_sale_date": "2008-02-27"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2629066&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2629&street_number=1126",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

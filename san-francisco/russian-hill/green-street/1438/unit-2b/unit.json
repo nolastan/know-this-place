@@ -1,0 +1,58 @@
+{
+  "address": "1438 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1438/unit-2b/",
+  "unit": "2B",
+  "apn": "0547026",
+  "block": "0547",
+  "lot": "026",
+  "parcel": {
+    "building_area_sqft": 974,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 544543,
+    "assessed_improvement_value": 544543,
+    "last_sale_date": "2016-05-06"
+  },
+  "permits": [
+    {
+      "number": "202501138224",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-13",
+      "status_date": "2025-06-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove and replace hardwood floor all unit remove and replace bathroom floor and laundry room paint unit, replace front door 2nd floor, all work is to repair water damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801178806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-17",
+      "status_date": "2018-03-15",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "one unit kitchen & bathroom cabinet & replace fixtures in place, upgrade bathroom replace tub , vanity , sink & toilet. all same location plus tiling tub walls & floor, no walls moved, removed added or infilled all (e) layout to remain unchanged",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0547026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0547&unit=2B",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "2001 Mcallister Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/fulton-street/1750/unit-223/",
+  "unit": "223",
+  "apn": "1175108",
+  "block": "1175",
+  "lot": "108",
+  "parcel": {
+    "building_area_sqft": 1021,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 610800,
+    "assessed_improvement_value": 407200,
+    "last_sale_date": "2019-06-28"
+  },
+  "permits": [
+    {
+      "number": "201710252149",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-10-25",
+      "status_date": "2017-10-25",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "replace kitchen counter and sink. replace master bath shower tile and door, counter and two sinks. add (4) ceiling lights(cans) to living room, (4) to master bed and (4) t0 2nd bed. maher n/a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1175108&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1175&unit=223",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

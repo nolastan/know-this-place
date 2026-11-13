@@ -1,0 +1,76 @@
+{
+  "address": "23 Graystone Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/graystone-terrace/19/unit-23/",
+  "apn": "2661055",
+  "block": "2661",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 1829,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 886834,
+    "assessed_improvement_value": 591223,
+    "last_sale_date": "2018-11-16"
+  },
+  "permits": [
+    {
+      "number": "201702179693",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-02-17",
+      "status_date": "2017-04-10",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "kitchen remodel: update electrical panel, new cabinets, counters & lighting, like for like. no new wall & no existing wall relocation. lighting shall comply with cec 150.0(k)3. provide 5/8\" type x gyp bd where sheetrock is damaged.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610190705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-19",
+      "status_date": "2016-12-02",
+      "estimated_cost": 9900,
+      "revised_cost": 9900,
+      "description": "replace (5) fibrex windows, not visible, no size change, u-factor < 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020900",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-10-12",
+      "status_date": "1990-12-21",
+      "estimated_cost": 7000,
+      "description": "remove & replace tarrazzo steps reinforced terrazo treads",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512692",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-11-07",
+      "status_date": "1986-01-14",
+      "estimated_cost": 2000,
+      "description": "remove windows & replace area w/ 6' french doors",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2661055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2661&street_number=23",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

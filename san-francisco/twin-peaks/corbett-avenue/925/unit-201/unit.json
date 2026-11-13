@@ -1,0 +1,58 @@
+{
+  "address": "925 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-201/",
+  "unit": "201",
+  "apn": "2808035",
+  "block": "2808",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 1279,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 836637,
+    "assessed_improvement_value": 557756,
+    "last_sale_date": "2019-03-29"
+  },
+  "permits": [
+    {
+      "number": "201905170940",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-05-17",
+      "status_date": "2019-05-21",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace 7 windows and 1 patio door like-for-like aluminum. no structural changes, windows visible from street. bronze aluminum frames to match balance of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812218998",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-21",
+      "status_date": "2019-02-28",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "one unit. remodel of 2 full bathrooms and kitchen, no alterations to walls or ceilings. replacing shower valve trims, tile, kitchen cabinets, faucets, lighting. bathroom 1: 40 sqft. bathroom 2: 40 sqft. kitchen: 100 sqft.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=201",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

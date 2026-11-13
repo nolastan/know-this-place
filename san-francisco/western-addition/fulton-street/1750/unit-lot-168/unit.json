@@ -1,0 +1,32 @@
+{
+  "address": "1750 Fulton Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/fulton-street/1750/unit-lot-168/",
+  "apn": "1175168",
+  "block": "1175",
+  "lot": "168",
+  "parcel": {
+    "building_area_sqft": 58110
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 10932564,
+    "assessed_improvement_value": 21865129,
+    "assessed_fixtures_value": 357895,
+    "last_sale_date": "2020-11-20"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1175168&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1175&street_number=1750",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

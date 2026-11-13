@@ -1,0 +1,55 @@
+{
+  "address": "945 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-hoa/",
+  "unit": "HOA",
+  "apn": "2808025",
+  "block": "2808",
+  "lot": "025",
+  "parcel": {
+    "building_area_sqft": 752,
+    "rooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 27824,
+    "assessed_improvement_value": 10159
+  },
+  "permits": [
+    {
+      "number": "202303173926",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-17",
+      "status_date": "2023-08-01",
+      "estimated_cost": 19830,
+      "revised_cost": 19830,
+      "description": "replace 5 exterior windows for one unit/207/306/307, not street facing with fiberglass. all work to be in-kind for like king, size for size. all work on 945 corbett st only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301270881",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-27",
+      "status_date": "2023-08-01",
+      "estimated_cost": 116851,
+      "revised_cost": 115851,
+      "description": "replace wood shingle siding in-kind. visible from market st (back of building). all work will be on building 945 only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=HOA",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

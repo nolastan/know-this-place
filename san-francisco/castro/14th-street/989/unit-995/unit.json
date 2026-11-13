@@ -1,0 +1,54 @@
+{
+  "address": "995 14th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/14th-street/989/unit-995/",
+  "apn": "3540119",
+  "block": "3540",
+  "lot": "119",
+  "parcel": {
+    "building_area_sqft": 478
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 198686,
+    "assessed_improvement_value": 198686,
+    "last_sale_date": "2002-01-11"
+  },
+  "permits": [
+    {
+      "number": "202302021214",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-02-02",
+      "status_date": "2023-02-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 2022-1212-8062; delete security fence inside lobby",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212128062",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-12",
+      "status_date": "2023-02-14",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "to comply w/bid nov#200704454 dated 5/18/2007 for code comppliant gate @ front of property, new in-swing gate @ 2(e) lower units, remove (e) gate @ 4(e) upper units, new security fence inside lobby",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3540119&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3540&street_number=995",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

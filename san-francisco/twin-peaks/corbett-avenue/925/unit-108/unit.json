@@ -1,0 +1,46 @@
+{
+  "address": "945 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-108/",
+  "unit": "108",
+  "apn": "2808034",
+  "block": "2808",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 1279,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 376547,
+    "assessed_improvement_value": 376547,
+    "last_sale_date": "2000-06-16"
+  },
+  "permits": [
+    {
+      "number": "202210053761",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-05",
+      "status_date": "2022-10-26",
+      "estimated_cost": 34174,
+      "revised_cost": 34174,
+      "description": "remove window, repair water damage to framing, sheetrock, stucco, siding as needed. reinstall window replace lath, stucco, siding, sheetrock, paint. visible from street",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=108",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

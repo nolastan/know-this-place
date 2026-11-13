@@ -1,0 +1,43 @@
+{
+  "address": "3455 Geary Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/geary-boulevard/3435/unit-3455/",
+  "apn": "1085044",
+  "block": "1085",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 7129
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2952840,
+    "assessed_improvement_value": 2952840,
+    "assessed_fixtures_value": 13926,
+    "last_sale_date": "2020-02-28"
+  },
+  "permits": [
+    {
+      "number": "202107073928",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2021-07-07",
+      "status_date": "2024-10-09",
+      "estimated_cost": 1,
+      "description": "adminstrative permit for planning dept review. proposal to modify conditions on pa 200006304172 & discretionary review case no. 2000.732d to extend hours of operation for (e) use for online ordering & delivery only. not proposal to extend in-store hours of operation.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1085044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1085&street_number=3455",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

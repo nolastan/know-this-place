@@ -1,0 +1,34 @@
+{
+  "address": "44 Hancock Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/hancock-street/44/unit-lot-106/",
+  "apn": "3585106",
+  "block": "3585",
+  "lot": "106",
+  "parcel": {
+    "building_area_sqft": 1020,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 951470,
+    "assessed_improvement_value": 634312,
+    "last_sale_date": "2019-11-15"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3585106&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3585&street_number=44",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

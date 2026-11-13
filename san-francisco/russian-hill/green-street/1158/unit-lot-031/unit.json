@@ -1,0 +1,32 @@
+{
+  "address": "1158 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1158/unit-lot-031/",
+  "apn": "0122031",
+  "block": "0122",
+  "lot": "031",
+  "parcel": {
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 107741,
+    "assessed_improvement_value": 251431
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0122031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0122&street_number=1158",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

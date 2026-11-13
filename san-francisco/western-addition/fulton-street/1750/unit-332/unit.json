@@ -1,0 +1,47 @@
+{
+  "address": "2001 Mcallister Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/fulton-street/1750/unit-332/",
+  "unit": "332",
+  "apn": "1175162",
+  "block": "1175",
+  "lot": "162",
+  "parcel": {
+    "building_area_sqft": 947,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 809864,
+    "assessed_improvement_value": 539908,
+    "last_sale_date": "2018-08-17"
+  },
+  "permits": [
+    {
+      "number": "201711143962",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-11-14",
+      "status_date": "2017-12-08",
+      "estimated_cost": 15000,
+      "revised_cost": 28638,
+      "description": "one unit: replace tile in 2 bathrooms in condo, tile on floor and shower walls. new shower pan. no change of layout.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1175162&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1175&unit=332",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "address": "1720 Fulton Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/fulton-street/1750/unit-1720/",
+  "apn": "1175166",
+  "block": "1175",
+  "lot": "166",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 790109,
+    "assessed_improvement_value": 526739,
+    "last_sale_date": "2016-07-27"
+  },
+  "permits": [
+    {
+      "number": "202511129344",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "2025-11-12",
+      "status_date": "2026-02-11",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "install 1 illuminated single faced wall sign \"club o pilates\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202509034450",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-03",
+      "status_date": "2025-11-20",
+      "estimated_cost": 65000,
+      "revised_cost": 136301,
+      "description": "change of use from bank to gym. tenant improvement. new interior partitions, finishes, millwork. restroom alteration for ada. electrical lighting. sprinkler under separate permit. (no juice bar & hot tub)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909217264",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-21",
+      "status_date": "2010-05-05",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revision to permit 2009/05047576. this includes revised flr. layout & furniture plan; reflected clg. plan has bee revised to accomodate changes & revised number of teller station to include 1-addition. no exterior changes to this application; work limited to 1st. flr.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1175166&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1175&street_number=1720",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

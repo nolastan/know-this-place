@@ -1,0 +1,89 @@
+{
+  "address": "950 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/harrison-street/950/unit-216/",
+  "unit": "216",
+  "apn": "3753279",
+  "block": "3753",
+  "lot": "279",
+  "parcel": {
+    "building_area_sqft": 1046,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 284369,
+    "assessed_improvement_value": 284369,
+    "last_sale_date": "2001-08-15"
+  },
+  "permits": [
+    {
+      "number": "201902284116",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-28",
+      "status_date": "2019-03-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal of bpa# 201609218398 for final inspection. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802262240",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-26",
+      "status_date": "2019-03-04",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "renewal 201612286071 for remainder of work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703292665",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-29",
+      "status_date": "2019-03-11",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "install 2 new sidewall head under e catwalk per nfpa 13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612286071",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2016-12-28",
+      "status_date": "2018-01-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "complying with nov 201646423, 201645334, 201623530. installing catwalk. sprinkler under separate permit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609218398",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2016-09-21",
+      "status_date": "2018-01-02",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "change spiral case to regular stair case. n/a ordinance #155-13",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753279&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&unit=216",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

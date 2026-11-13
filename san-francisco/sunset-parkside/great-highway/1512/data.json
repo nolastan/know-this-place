@@ -1,0 +1,127 @@
+{
+  "address": "1512 Great Highway, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/great-highway/1512/",
+  "apn": "1894039A",
+  "block": "1894",
+  "lot": "039A",
+  "eas_baseid": "484990",
+  "coordinates": {
+    "lat": 37.758107,
+    "lng": -122.508807
+  },
+  "parcel": {
+    "year_built": 1948,
+    "units": 1,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 5,
+    "bedrooms": 6,
+    "lot_area_sqft": 2983,
+    "building_area_sqft": 3505,
+    "basement_area_sqft": 693,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1512 GREAT               HW0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 66591,
+    "assessed_improvement_value": 515048
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1948",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200303270871",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-27",
+      "status_date": "2003-07-25",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "minor change to fire sprinkler service from combination & add 3\" fdc on riser org permit#20030114518",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301145181",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-01-14",
+      "status_date": "2003-07-25",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "installation new fire sprinkler system throughout the building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200111284105",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-11-28",
+      "status_date": "2003-07-25",
+      "estimated_cost": 180000,
+      "revised_cost": 180000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREAT&street_type=HWY&address_number=1512",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1894039A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1894&lot=039A",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1894039A",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-2002-06-13",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 13 June 2002",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/52minutesofsanfran2002san/page/n294/mode/1up",
+      "retrieved": "2026-11-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2002-06-13",
+      "kind": "planning decision",
+      "description": "The City Planning Commission took discretionary review and approved with modifications the vertical and horizontal extensions and the addition of a 3rd dwelling unit to the existing 2-unit building, keeping the building at 56 feet in length and eliminating the 12-foot ground-floor pop-out.",
+      "source": "sf-planning-commission-minutes-2002-06-13"
+    },
+    {
+      "date": "2002-06-13",
+      "kind": "occupancy",
+      "description": "The property held an existing 2-unit building.",
+      "source": "sf-planning-commission-minutes-2002-06-13"
+    }
+  ]
+}

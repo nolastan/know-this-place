@@ -1,0 +1,45 @@
+{
+  "address": "950 Harrison Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/harrison-street/950/unit-215/",
+  "unit": "215",
+  "apn": "3753278",
+  "block": "3753",
+  "lot": "278",
+  "parcel": {
+    "building_area_sqft": 1005,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 427049,
+    "assessed_improvement_value": 427049,
+    "last_sale_date": "2006-03-15"
+  },
+  "permits": [
+    {
+      "number": "202608247071",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-08-24",
+      "status_date": "2026-08-26",
+      "estimated_cost": 35000,
+      "revised_cost": 33449,
+      "description": "one unit: kitchen in-kind remodel, replace cabinets and countertops. no wall or fixture changes. no change to occupancy, etc.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3753278&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3753&unit=215",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

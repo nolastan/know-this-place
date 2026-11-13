@@ -1,0 +1,58 @@
+{
+  "address": "945 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-307/",
+  "unit": "307",
+  "apn": "2808049",
+  "block": "2808",
+  "lot": "049",
+  "parcel": {
+    "building_area_sqft": 956,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 584458,
+    "assessed_improvement_value": 389638,
+    "last_sale_date": "2024-04-08"
+  },
+  "permits": [
+    {
+      "number": "202403218347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-21",
+      "status_date": "2024-03-29",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit: demolition area = 2' 1/4' sheet rock; 1.5'/ .5' cabinet. demolition to inspect/access gas line behind stand alone gas range; modify counter cabinet to accomdate an accessible emergency shut off in cabinet adjacent to stand along stove.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510270957",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-27",
+      "status_date": "2017-10-04",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "bathroom remodel: remove 2 layers of floor tile, remove tub and wall tile, move toilet approx 12\". install walkin shower. reconfigure plmg for 2 shower heads and hand held.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808049&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=307",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}
