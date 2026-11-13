@@ -6,6 +6,13 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-13 (records that print no usable lot size but whose
+  starting line is a lot line today, a grade that named the same parcel as
+  222 of 222 earlier hand placements. The 134 on existing pages were each
+  read by a second reader: **80 published on 62 pages** (55 as facts about
+  the standing building, 25 as `site history`), 54 held. Bare named corners
+  agreed only 60 times in 69 and stay unplaced. Not yet done: the 185 rows
+  of this grade whose parcel has no page.)
 > - **Verified:** 2026-11-13 (the strict-grade rows on single-lot parcels with
   no page: 178 parcels drafted from `manifests/loc-newspapers-lot-geometry.json`,
   196 contracts read by a second reader against the roll and each draft's
