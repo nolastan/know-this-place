@@ -1,0 +1,57 @@
+{
+  "address": "5149 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5143/unit-5149/",
+  "apn": "7501136",
+  "block": "7501",
+  "lot": "136",
+  "parcel": {
+    "building_area_sqft": 2173,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 236149,
+    "assessed_improvement_value": 363188,
+    "last_sale_date": "1996-08-09"
+  },
+  "permits": [
+    {
+      "number": "201209048873",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-04",
+      "status_date": "2012-11-26",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "demo 4'0\" wide x 8'0\" length of non-structural concret topping @ garage door to expose (e) waterproof membrane. repair waterproof membrane, install sheet metal as needed. replace non-structural concrete topping in kind. 2' strip @ interior & 2' strip @ exterior.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107214229",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-21",
+      "status_date": "2002-01-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "break out concrete drivewy remove and replace all damaged wood framing put back new plywd membrane",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7501136&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7501&street_number=5149",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

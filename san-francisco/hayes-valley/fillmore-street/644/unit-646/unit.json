@@ -1,0 +1,83 @@
+{
+  "address": "646 Fillmore Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fillmore-street/644/unit-646/",
+  "apn": "0821069",
+  "block": "0821",
+  "lot": "069",
+  "parcel": {
+    "building_area_sqft": 2190,
+    "rooms": 7,
+    "bedrooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 443181,
+    "assessed_improvement_value": 443181,
+    "last_sale_date": "2002-05-03"
+  },
+  "permits": [
+    {
+      "number": "200911030459",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-03",
+      "status_date": "2010-01-29",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "kitchen remodel - area 10ft x 10ft , sheet rock, new electrical, new plumbing, cabinets, countertop sink appliances",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105229729",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-05-22",
+      "status_date": "2002-12-30",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "remove & replace structurally damaged framing at the right side sec. stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005222",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-03-19",
+      "status_date": "1990-08-31",
+      "estimated_cost": 500,
+      "description": "comply w/dahi complaints to 646 new deadbolts on front door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815182",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-10-04",
+      "status_date": "1989-04-04",
+      "estimated_cost": 6000,
+      "description": "perform all required termite work to the bldg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1988–2014",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0821069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0821&street_number=646",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

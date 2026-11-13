@@ -1,0 +1,32 @@
+{
+  "address": "95 Scott Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/scott-street/95/unit-lot-080/",
+  "apn": "1260080",
+  "block": "1260",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 3265,
+    "rooms": 6,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 153404,
+    "assessed_improvement_value": 167394
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1260080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1260&street_number=95",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

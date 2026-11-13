@@ -1,0 +1,33 @@
+{
+  "address": "972A Greenwich Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/greenwich-street/970/unit-972a/",
+  "apn": "0073036",
+  "block": "0073",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 1432,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 82392,
+    "assessed_improvement_value": 181719
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0073036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0073&street_number=972a",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

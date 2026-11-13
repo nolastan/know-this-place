@@ -1,0 +1,107 @@
+{
+  "address": "2560 California Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/california-street/2558/unit-2560/",
+  "apn": "0634036",
+  "block": "0634",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 2355,
+    "rooms": 7,
+    "bedrooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 851938,
+    "assessed_improvement_value": 649945,
+    "last_sale_date": "2010-02-25"
+  },
+  "permits": [
+    {
+      "number": "201011185258",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-18",
+      "status_date": "2010-12-16",
+      "estimated_cost": 10790,
+      "revised_cost": 10790,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010183234",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-18",
+      "status_date": "2010-12-02",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "fire repair of property line walls at 1st, 2nd, 3rd stories and roof. revision to 201006184821",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008259547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-25",
+      "status_date": "2011-06-21",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to pa# 2010.06.18.4821. demo (e0 plaster and framings as req'd tp remove dryrot at front, side and rear of the house. add 2 new skylights",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006184821",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-18",
+      "status_date": "2011-06-21",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "connection of 1st floor level to 2nd floor front unit. new master bedrm, bath and fam.rm at 1st fl. expansion of 2nd fl to accomodate stair to 1st fl. modify front/south windows at 1st fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403027552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-03-02",
+      "status_date": "2004-04-16",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "revise 200401204390 for under pi exist south foundation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401204390",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-20",
+      "status_date": "2004-04-16",
+      "estimated_cost": 18500,
+      "revised_cost": 18500,
+      "description": "complying w/nov.#199811433 for restoring of ground floor level to art studio use & construction of",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2004–2010",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0634036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0634&street_number=2560",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

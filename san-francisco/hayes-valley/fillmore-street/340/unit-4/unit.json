@@ -1,0 +1,44 @@
+{
+  "address": "340 Fillmore Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fillmore-street/340/unit-4/",
+  "unit": "4",
+  "apn": "0849044",
+  "block": "0849",
+  "lot": "044",
+  "parcel": {
+    "building_area_sqft": 753
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 226690,
+    "assessed_improvement_value": 226690,
+    "last_sale_date": "2000-04-28"
+  },
+  "permits": [
+    {
+      "number": "202607155096",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-07-15",
+      "status_date": "2026-09-22",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "removal of siding and install new hardie panel reinforced cement siding, repair framing and install insulation. work is street facing. approximately 426sf 7/15/26 az",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0849044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0849&unit=4",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "address": "326 Noriega Street, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/noriega-street/324/unit-326/",
+  "apn": "2039053",
+  "block": "2039",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 2137,
+    "rooms": 6,
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1009800,
+    "assessed_improvement_value": 673200,
+    "last_sale_date": "2024-03-12"
+  },
+  "permits": [
+    {
+      "number": "201409237023",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-09-23",
+      "status_date": "2014-09-24",
+      "estimated_cost": 22808,
+      "revised_cost": 22808,
+      "description": "replace 2 slider doors like for like with andersen wood-clad not visible from street. u factor .32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200803288300",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-03-28",
+      "status_date": "2008-03-28",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "put crown molding in all rooms & paint it.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2039053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2039&street_number=326",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

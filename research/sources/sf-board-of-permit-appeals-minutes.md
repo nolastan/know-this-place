@@ -89,6 +89,17 @@
   about 150 not confirmed against the OCR (quote or street number not
   found), duplicates and facts about a predecessor building — and 1,402
   stayed unresolved, most of them an address EAS no longer holds.
+- **Verified:** 2026-11-13 (retired-address pass over the 528 unresolved
+  rows whose number EAS no longer holds or splits across parcels: 205
+  resolved, 96 by the resolver and 109 by hand; 162 published on 131 pages,
+  86 of them seeded, 10 as a decision about a building since replaced; 43
+  declined, 23 because city data does not show whether the building of the
+  record still stands, 18 about a predecessor with no page, 2 already on the
+  page. 323 stay unresolved and are listed with what the trace found in
+  `research/findings/sf-board-of-permit-appeals-minutes/retired-addresses-unresolved.md`.
+  **What it learned:** these minutes print no block and lot, so the tie is a
+  permit, an address range or EAS neighbours, never geometry alone
+  (LESSONS.md, "Minutes that print no block and lot").)
 - **Verified:** 2026-11-11 (`1minutesofmeeting1980sanf`, read here whole:
   9 meetings / 60 pages, 90 numbered-address appeal items → 85 findings,
   70 resolved, 44 published on 44 pages, 19 seeded; 26 declined — 11

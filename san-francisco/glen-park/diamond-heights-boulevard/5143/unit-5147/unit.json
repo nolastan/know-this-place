@@ -1,0 +1,76 @@
+{
+  "address": "5147 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5143/unit-5147/",
+  "apn": "7501135",
+  "block": "7501",
+  "lot": "135",
+  "parcel": {
+    "building_area_sqft": 2173,
+    "rooms": 7,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 568752,
+    "assessed_improvement_value": 568752,
+    "last_sale_date": "2002-05-23"
+  },
+  "permits": [
+    {
+      "number": "201809079438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-09-07",
+      "status_date": "2018-10-30",
+      "estimated_cost": 10000,
+      "revised_cost": 16454,
+      "description": "bathroom remodel, replace bathtub, shower valve, install tile throughout, new gfci and light/fan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108176321",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-17",
+      "status_date": "2002-02-17",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "brench out concrete on driveway, replace damaged framming, put new plywood & new concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303543",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-04",
+      "status_date": "1994-04-24",
+      "estimated_cost": 5000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8810336",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-07-25",
+      "status_date": "1989-01-10",
+      "estimated_cost": 5800,
+      "description": "install 4 aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7501135&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7501&street_number=5147",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}
