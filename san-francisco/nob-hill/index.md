@@ -14,10 +14,12 @@ that neighborhood.
 - [Clay Street](clay-street/) — 1 building, built 1914.
 - [Commercial Street](commercial-street/) — 1 building, built 1985; 1 in the Commercial-Leidesdorff Conservation District.
 - [Cosmo Place](cosmo-place/) — 1 building, built 1921; 1 in the Kearny-Market-Mason-Sutter Conservation District.
+- [Delgado Place](delgado-place/) — 1 building, built 1911.
 - [Fella Place](fella-place/) — 1 building, built 1912.
 - [Florence Street](florence-street/) — 2 buildings, built 1913; 2 in the Russian Hill-Vallejo Street Crest Historic District.
 - [Glover Street](glover-street/) — 1 building, built 1981.
 - [Green Street](green-street/) — 1 building, built 1900; 1 in the Russian Hill-Paris Block Architectural Historic District.
+- [Helen Street](helen-street/) — 1 building, built 1980.
 - [Hyde Street](hyde-street/) — 1 building, built 1911.
 - [Jackson Street](jackson-street/) — 1 building, built 1916.
 - [Joice Street](joice-street/) — 1 building, built 1907.

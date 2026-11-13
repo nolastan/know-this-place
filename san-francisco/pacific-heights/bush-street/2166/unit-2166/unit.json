@@ -1,0 +1,47 @@
+{
+  "address": "2166 Bush Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/bush-street/2166/unit-2166/",
+  "unit": "2166",
+  "apn": "0660051",
+  "block": "0660",
+  "lot": "051",
+  "parcel": {
+    "building_area_sqft": 1187,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 416453,
+    "assessed_improvement_value": 178470,
+    "last_sale_date": "1999-05-21"
+  },
+  "permits": [
+    {
+      "number": "201412022843",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-02",
+      "status_date": "2015-08-26",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "rebuild topmost stair at building entry.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0660051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0660&unit=2166",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

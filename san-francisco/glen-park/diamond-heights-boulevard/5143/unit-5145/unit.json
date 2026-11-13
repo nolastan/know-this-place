@@ -1,0 +1,66 @@
+{
+  "address": "5145 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5143/unit-5145/",
+  "apn": "7501134",
+  "block": "7501",
+  "lot": "134",
+  "parcel": {
+    "building_area_sqft": 2160,
+    "rooms": 7,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 344866,
+    "assessed_improvement_value": 470288,
+    "last_sale_date": "1998-09-01"
+  },
+  "permits": [
+    {
+      "number": "201209048877",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-04",
+      "status_date": "2012-11-26",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "demo 5'6\" wide x 8'0\" length of non-structural concret topping @ garage door to expose (e) waterproof membrane. repair waterproof membrane, install sheet metal as needed. replace non-structural concrete topping in kind. 42\" strip @ interior & 24\" strip @ exterior.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108176325",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-17",
+      "status_date": "2002-02-17",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "breach out concrete on driveway, remove & replace damaged wood framing, put new membrance,pour new c",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102292",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-02-12",
+      "status_date": "1991-11-27",
+      "estimated_cost": 15000,
+      "description": "remodel bathrooms lower and upper.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7501134&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7501&street_number=5145",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

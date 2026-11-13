@@ -1,0 +1,56 @@
+{
+  "address": "515 Clayton Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/clayton-street/511/unit-515/",
+  "apn": "1230036",
+  "block": "1230",
+  "lot": "036",
+  "parcel": {
+    "building_area_sqft": 1640,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 921640,
+    "assessed_improvement_value": 641765,
+    "last_sale_date": "2017-12-19"
+  },
+  "permits": [
+    {
+      "number": "201909181988",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-18",
+      "status_date": "2020-06-11",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "int remodel for unit on 2nd flr - remoidel (e) bathroom and add full bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705783",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-31",
+      "status_date": "1997-05-21",
+      "estimated_cost": 8000,
+      "description": "remodel partial kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1230036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1230&street_number=515",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

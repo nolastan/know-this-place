@@ -1,0 +1,63 @@
+{
+  "address": "102 Walnut Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/walnut-street/100/unit-102/",
+  "apn": "0984031",
+  "block": "0984",
+  "lot": "031",
+  "parcel": {
+    "building_area_sqft": 3200,
+    "rooms": 11,
+    "bedrooms": 4,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2283508,
+    "assessed_improvement_value": 2283508,
+    "last_sale_date": "2015-05-01"
+  },
+  "permits": [
+    {
+      "number": "202405021246",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2024-05-02",
+      "status_date": "2024-05-02",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "interior remodel of bathroom only. new hydronic radiant warmboard floor heating",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508033146",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-08-03",
+      "status_date": "2016-02-12",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "alteration to extg condo at 102 walnut street. add new skylight (flat) 48x48 facing jackson street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2015–2024",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0984031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0984&street_number=102",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

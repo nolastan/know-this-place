@@ -1,0 +1,44 @@
+{
+  "address": "340 Fillmore Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/fillmore-street/340/unit-2/",
+  "unit": "2",
+  "apn": "0849042",
+  "block": "0849",
+  "lot": "042",
+  "parcel": {
+    "building_area_sqft": 740
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 304141,
+    "assessed_improvement_value": 304141,
+    "last_sale_date": "2002-07-12"
+  },
+  "permits": [
+    {
+      "number": "200502024605",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-02-02",
+      "status_date": "2005-02-02",
+      "estimated_cost": 7200,
+      "revised_cost": 7200,
+      "description": "remove existing bath fixtures including tub and tiles install new bath fixtures install new tiles no",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0849042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0849&unit=2",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

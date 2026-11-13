@@ -34,6 +34,7 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Lombard Street](lombard-street/) — 1 building, built 1926.
 - [Mason Street](mason-street/) — 5 buildings, built 1906–1911.
 - [Medau Place](medau-place/) — 1 building, built 1909; 1 in the Upper Grant Avenue Historic District.
+- [Midway Street](midway-street/) — 1 building, built 1979.
 - [Montague Place](montague-place/) — 1 building, built 1906.
 - [Montgomery Street](montgomery-street/) — 3 buildings, built 1907–1912; 1 in the Southeast Telegraph Hill Historic District.
 - [Napier Lane](napier-lane/) — 1 building, built 1979; 1 in the Telegraph Hill Historic District.

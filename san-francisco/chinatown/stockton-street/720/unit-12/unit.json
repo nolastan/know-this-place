@@ -1,0 +1,64 @@
+{
+  "address": "720 Stockton Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/stockton-street/720/unit-12/",
+  "unit": "12",
+  "apn": "0242068",
+  "block": "0242",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 844,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2,
+    "assessed_improvement_value": 1149998,
+    "last_sale_date": "2018-01-24"
+  },
+  "permits": [
+    {
+      "number": "201904258889",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-25",
+      "status_date": "2019-07-08",
+      "estimated_cost": 10620,
+      "revised_cost": 10620,
+      "description": "add & relocate sprinklers in area of work to accomodate new wall layout area of work consists of two new closets that require sprinkler per ccsffd standards",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201812198706",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-12-19",
+      "status_date": "2020-09-01",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "ti of an existing residential unit to include the remodel of 2 existing bathrooms & 1 powder room w/new plumbing fixtures in current locations. also new exhaust hood, gas fireplace, windows and exterior door in kind replacement. new finishes, cabinetry and lighting",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2017–2020",
+    "shown_on_page": 2,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0242068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0242&unit=12",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

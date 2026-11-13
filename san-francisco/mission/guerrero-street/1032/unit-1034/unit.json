@@ -1,0 +1,64 @@
+{
+  "address": "1034 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/guerrero-street/1032/unit-1034/",
+  "apn": "3632050",
+  "block": "3632",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 2333,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "basement_area_sqft": 34
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 691830,
+    "assessed_improvement_value": 753338,
+    "last_sale_date": "2010-11-18"
+  },
+  "permits": [
+    {
+      "number": "201703020511",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-02",
+      "status_date": "2017-03-08",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611142529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-14",
+      "status_date": "2017-06-26",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "remodel two bathrooms in kind w/out moving any finish fixtures.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2016–2017",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3632050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3632&street_number=1034",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}
