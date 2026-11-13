@@ -532,7 +532,7 @@
   51 of them as site history on a parcel rebuilt since, and 83 are declined
   (a predecessor with no page, a building whose standing could not be shown,
   care-home uses, one duplicate). 125 pages were seeded. Left unresolved on
-  purpose: the 194 that name several parcels, the 77 with no tie, 99
+  purpose: 187 that name several parcels, the 77 with no tie, 106
   one-parcel traces held because the tie is geometry or inference alone, 52
   whose condominium page does not match its map lot (large phased complexes
   and existing pages on one unit of a building), and 11 the resolver would
