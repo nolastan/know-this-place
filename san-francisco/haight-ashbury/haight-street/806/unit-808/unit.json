@@ -1,0 +1,101 @@
+{
+  "address": "808 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/haight-street/806/unit-808/",
+  "apn": "1238047",
+  "block": "1238",
+  "lot": "047",
+  "parcel": {
+    "building_area_sqft": 1515,
+    "rooms": 6,
+    "bedrooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 710571,
+    "assessed_improvement_value": 710571,
+    "last_sale_date": "2017-12-11"
+  },
+  "permits": [
+    {
+      "number": "202608076246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-08-07",
+      "status_date": "2026-10-06",
+      "estimated_cost": 48000,
+      "revised_cost": 48000,
+      "description": "repairs for violation # 202652155: stud wall repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202602236341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-02-23",
+      "status_date": "2026-10-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 202403117537. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202403117537",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2024-03-11",
+      "status_date": "2026-02-26",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "kitchen remodel like for like. install new cabinet, relocate range hood stove & relocate sink. replace plumbing fixtures. bring outlets up to code. new sub panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601066433",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-06",
+      "status_date": "2016-03-10",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "remodel to 201510159750. remodel bathroom - shower, sink, toilet, fan upgrade room @ rear property. no change to 3 bedrooms & laundry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201510159750",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-15",
+      "status_date": "2016-03-10",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel bathroom shower & upgrade electrical 3 bedrooms & laundry room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201506017599",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-06-01",
+      "status_date": "2015-08-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel bathroom, in-kind, shower/tub, toilet, sink, fan & lighting.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1238047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1238&street_number=808",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

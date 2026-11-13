@@ -1,0 +1,56 @@
+{
+  "address": "123 4th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/4th-avenue/121/unit-123/",
+  "apn": "1364053",
+  "block": "1364",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1886,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1113600,
+    "assessed_improvement_value": 742400,
+    "last_sale_date": "2021-11-05"
+  },
+  "permits": [
+    {
+      "number": "202102265506",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-02-26",
+      "status_date": "2024-03-27",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replacement of deck guardrail and deck tiles.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804126137",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2018-04-12",
+      "status_date": "2019-02-11",
+      "estimated_cost": 80000,
+      "description": "horizonal addition to enclose 15'x12' roof deck into living space @ 3rd fl & retrofit down to the foundation. replace (e) siding w/ like & kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1364053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1364&street_number=123",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "address": "4098 25th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/25th-street/4094/unit-4098/",
+  "apn": "6537052",
+  "block": "6537",
+  "lot": "052",
+  "parcel": {
+    "building_area_sqft": 1206,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 397154,
+    "assessed_improvement_value": 397154,
+    "last_sale_date": "2010-08-20"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6537052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6537&street_number=4098",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

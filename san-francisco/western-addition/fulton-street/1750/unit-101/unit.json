@@ -1,0 +1,35 @@
+{
+  "address": "2001 Mcallister Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/fulton-street/1750/unit-101/",
+  "unit": "101",
+  "apn": "1175037",
+  "block": "1175",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1003,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 601200,
+    "assessed_improvement_value": 400800,
+    "last_sale_date": "2020-03-06"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1175037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1175&unit=101",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

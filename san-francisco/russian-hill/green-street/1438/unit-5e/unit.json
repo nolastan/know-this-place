@@ -1,0 +1,58 @@
+{
+  "address": "1438 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1438/unit-5e/",
+  "unit": "5E",
+  "apn": "0547041",
+  "block": "0547",
+  "lot": "041",
+  "parcel": {
+    "building_area_sqft": 2398,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1288942,
+    "assessed_improvement_value": 1316026,
+    "last_sale_date": "2002-02-26"
+  },
+  "permits": [
+    {
+      "number": "201206253353",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-25",
+      "status_date": "2012-08-27",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#5e- int. remodel of studio a on 2nd floor. work includes new paneling, cabinets, flooring, wet bar. no exterior work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200612260529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-26",
+      "status_date": "2007-08-30",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "work in one unit, replace 2 closets with n double doors, n door to utilities, other work all finishes,flooring and woodwork. no change to walls, mech, or lighting, no exterior work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0547041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0547&unit=5E",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

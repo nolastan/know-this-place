@@ -3183,3 +3183,50 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *denial* that it upholds keeps the denial — write the description from
   the decision appealed, not the verb. (2026-11-11,
   sf-board-of-permit-appeals-minutes)
+- **An address the directory no longer has is a tracing job with six traps,
+  and four in five rows survive it.** Of 782 Planning Commission rows whose
+  number is gone from EAS or split across parcels, 511 traced to one parcel,
+  194 named several, 77 could not be tied. The chain is: the record's printed
+  block and lot, then `sf-parcels` (`acdm-wktn`) including `active=false` rows
+  and their `date_map_drop`, then the active parcel under the retired
+  centroid, then the roll's `property_location` and DBI permits for the old
+  number. The traps, each of which put a row on the wrong parcel at least
+  once: (1) **`sf-parcels` does not keep every retired lot**, so "absent"
+  is not "never existed"; a permit carrying the old lot is the only bridge.
+  (2) **A split lot hides behind the centroid.** The retired lot's centroid
+  falls in one successor; the others are found only by the retired shape or
+  by `date_map_add` equal to the drop date. (3) **A record that prints two or
+  more lots is about all of them**; the resolver now declines to pick one
+  (`spans_more`). (4) **Minutes drop block letters and misread blocks**
+  ("7031" for 7031A), and the same lot number on the plain block is a
+  different parcel; take a printed lot only when its roll or parcel range
+  carries a number the record gives. (5) **EAS files live addresses under
+  retired lots**, condominiums above all, so a parcel lookup by APN returns
+  nothing for a building that stands; go by `mapblklot` and the roll. (6)
+  **Street types collide**: a number gone from the Street can still be
+  live on the Avenue or Terrace of the same name, so match the type on the
+  roll row before taking a permit as a bridge. Two dates also
+  mislead: a permit's completed date is often its filed date, and the roll's
+  year built can be a conversion or major alteration, so "built after the
+  record" is evidence of replacement only with a demolition or new
+  construction permit beside it. A roll range such as "0000 to 0099" is a
+  catch-all and proves no address. Scripts and per-row verdicts are in the
+  project files under `retired-addresses/`. (2026-11-13,
+  sf-planning-commission-minutes)
+- **A fact about what stood before goes on the page as `site history`, and
+  says the present building is later.** 51 rows described a garage, a
+  theatre or a vacant lot on a parcel whose building was put up afterwards.
+  Each was published as `site history` (or kept as `planning decision`) with
+  a closing sentence giving the present building's year, so the row cannot
+  be read as a description of today's building. A predecessor fact with no
+  page to land on was declined, never used to seed one. (2026-11-13,
+  sf-planning-commission-minutes)
+- **Check the lots after seeding, and expect a fifth of condominium pages to
+  be wrong.** After seeding 129 pages for retired addresses, 24 seeded
+  condominium pages had lots that did not equal the active roll parcels of
+  the finding's map lot: plain pages on one unit, a run that joined two
+  neighbouring condominiums, a run that stopped short. Twenty were corrected
+  with `seed_pages.py condo --lots`; four were phases of large complexes
+  (339, 346, 152 and 132 units on one map lot) and were removed with their
+  rows held. Rows landing on an existing page with the same fault were held,
+  not published. (2026-11-13, sf-planning-commission-minutes)

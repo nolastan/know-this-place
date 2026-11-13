@@ -1,0 +1,102 @@
+{
+  "address": "1263 17th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/17th-avenue/1263/",
+  "block": "1733",
+  "eas_baseid": "446033",
+  "coordinates": {
+    "lat": 37.764336,
+    "lng": -122.475361
+  },
+  "parcel": {
+    "year_built": 1997,
+    "units": 3,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset"
+  },
+  "condominium": {
+    "lots": [
+      "055",
+      "056",
+      "057"
+    ],
+    "method": "Proposed from the 2025 roll for block 1733: every condominium parcel the roll files under 1263 17TH AV, and the unbroken run of lots beside parcel 1733055 on the same street with the same year built (1997). 3 lots, 055–057."
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Not 45 years or older",
+    "yearbuilt": "1997",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200705211791",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-05-21",
+      "status_date": "2007-05-21",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29175",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-10",
+      "status_date": "2004-09-10",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=AVE&address_number=1263",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1733)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1733&closed_roll_year=2025",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1733",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1733055",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning-commission-minutes-1996-01-18",
+      "name": "San Francisco City Planning Commission, minutes of the meeting of 18 January 1996",
+      "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/42minutesofsanfran1996san/page/n20/mode/1up",
+      "retrieved": "2026-10-26"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1996-01-18",
+      "kind": "planning decision",
+      "description": "With no opposition filed, the City Planning Commission approved, 7-0, a new two-storey-over-garage building of three units.",
+      "source": "sf-planning-commission-minutes-1996-01-18"
+    }
+  ]
+}

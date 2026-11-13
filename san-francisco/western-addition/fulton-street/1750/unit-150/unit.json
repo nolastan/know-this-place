@@ -1,0 +1,58 @@
+{
+  "address": "2001 Mcallister Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/fulton-street/1750/unit-150/",
+  "unit": "150",
+  "apn": "1175081",
+  "block": "1175",
+  "lot": "081",
+  "parcel": {
+    "building_area_sqft": 991,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 594600,
+    "assessed_improvement_value": 396400,
+    "last_sale_date": "2021-03-24"
+  },
+  "permits": [
+    {
+      "number": "202104128302",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-04-12",
+      "status_date": "2022-01-06",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "master bathroom: replace toilet, vanity top only, shower wall tile, light and fan. hallway bath: replace toilet, vanity top, tub, tub wall tile, light and fan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703060762",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-03-06",
+      "status_date": "2017-03-06",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "waterproof 2 (e) windows, replace 190 sq ft of shingle siding, 44 lf of trim, prime & paint to match (e). not visible for street. like for like. n/a for maher.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1175081&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1175&unit=150",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

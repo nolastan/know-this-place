@@ -1,0 +1,87 @@
+{
+  "address": "521 Gough Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/gough-street/515/unit-521/",
+  "apn": "0793080",
+  "block": "0793",
+  "lot": "080",
+  "parcel": {
+    "building_area_sqft": 2909
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1678295,
+    "assessed_improvement_value": 1701259,
+    "last_sale_date": "2018-04-23"
+  },
+  "permits": [
+    {
+      "number": "202503122110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-03-12",
+      "status_date": "2025-05-12",
+      "estimated_cost": 4800,
+      "revised_cost": 4800,
+      "description": "install sound barrier on corner office walls. includes insulation mass loaded and 2 layers of drywall . entry door will be changed. not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202302131850",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-02-13",
+      "status_date": "2023-02-13",
+      "estimated_cost": 1100,
+      "revised_cost": 4800,
+      "description": "metal scissor security gate to be installed in front of office entrance doors 2 windows sliding scissor gates are attached to a frame on a steel box track",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206075817",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2022-06-07",
+      "status_date": "2026-01-23",
+      "estimated_cost": 1100,
+      "revised_cost": 0,
+      "description": "install metal scissor security gate in front entrance doors and windows. 1/f front of 521 gough st. 120sf. sliding scissor gate are attached to a frame on a steel box track. the frame is attached to the floor, walls and ceiling of entryway (concrete).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908219504",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2019-08-21",
+      "status_date": "2026-01-09",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "installation of new hvac split system into existing office.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806202486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-20",
+      "status_date": "2020-01-27",
+      "estimated_cost": 6000,
+      "revised_cost": 31684,
+      "description": "1st fl- restroom remodel, converting shower room to restroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0793080&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0793&street_number=521",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

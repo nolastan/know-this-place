@@ -1,0 +1,65 @@
+{
+  "address": "638 San Jose Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/san-jose-avenue/618/unit-638/",
+  "apn": "6598004",
+  "block": "6598",
+  "lot": "004",
+  "parcel": {
+    "building_area_sqft": 2558
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 539257,
+    "assessed_improvement_value": 539257,
+    "last_sale_date": "2006-12-07"
+  },
+  "permits": [
+    {
+      "number": "202409170950",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-09-17",
+      "status_date": "2024-09-17",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "3rd floor pony wall has some issues- water is dripping down to the 2nd floor. remove stucoo and re-waterproof with new stucco coats. repair in kind less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202209202747",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-09-20",
+      "status_date": "2022-09-20",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replacement of leaky window mounting. current window material is vinyl. stucco and waterproofing to be removed and replaced. dimensions of window opening will be unchanged. (visible from street)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201905281767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-28",
+      "status_date": "2019-07-09",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace existing window on side elevation to match existing vinyl window material, size and design. approved otc.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6598004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6598&street_number=638",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

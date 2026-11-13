@@ -1,0 +1,46 @@
+{
+  "address": "945 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-308/",
+  "unit": "308",
+  "apn": "2808050",
+  "block": "2808",
+  "lot": "050",
+  "parcel": {
+    "building_area_sqft": 1279,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 496468,
+    "assessed_improvement_value": 496468,
+    "last_sale_date": "2014-05-29"
+  },
+  "permits": [
+    {
+      "number": "201709299998",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-09-29",
+      "status_date": "2017-09-29",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "common area- re-roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=308",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

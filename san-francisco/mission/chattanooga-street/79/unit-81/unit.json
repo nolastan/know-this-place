@@ -1,0 +1,35 @@
+{
+  "address": "81 Chattanooga Street, San Francisco, CA 94114",
+  "path": "/san-francisco/mission/chattanooga-street/79/unit-81/",
+  "apn": "3619126",
+  "block": "3619",
+  "lot": "126",
+  "parcel": {
+    "building_area_sqft": 1916,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "basement_area_sqft": 767
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1640458,
+    "assessed_improvement_value": 1093636,
+    "last_sale_date": "2019-11-19"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3619126&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3619&street_number=81",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

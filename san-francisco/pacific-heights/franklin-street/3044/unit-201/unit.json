@@ -1,0 +1,34 @@
+{
+  "address": "3044 Franklin Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/franklin-street/3044/unit-201/",
+  "unit": "201",
+  "apn": "0479018",
+  "block": "0479",
+  "lot": "018",
+  "parcel": {
+    "building_area_sqft": 1498,
+    "rooms": 5,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 961459,
+    "assessed_improvement_value": 961459,
+    "last_sale_date": "2017-07-21"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0479018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0479&unit=201",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

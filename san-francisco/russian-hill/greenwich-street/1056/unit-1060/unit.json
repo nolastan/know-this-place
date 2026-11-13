@@ -1,0 +1,45 @@
+{
+  "address": "1060 Greenwich Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/greenwich-street/1056/unit-1060/",
+  "apn": "0072073",
+  "block": "0072",
+  "lot": "073",
+  "parcel": {
+    "building_area_sqft": 2400,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 331408,
+    "assessed_improvement_value": 372158
+  },
+  "permits": [
+    {
+      "number": "201102160344",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-02-16",
+      "status_date": "2011-11-23",
+      "estimated_cost": 10000,
+      "revised_cost": 13000,
+      "description": "enclose portion of lightwell on third floor. new skylight in (e) third floor kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0072073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0072&street_number=1060",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

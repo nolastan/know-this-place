@@ -1,0 +1,58 @@
+{
+  "address": "3044 Franklin Street, San Francisco, CA 94123",
+  "path": "/san-francisco/pacific-heights/franklin-street/3044/unit-302/",
+  "unit": "302",
+  "apn": "0479021",
+  "block": "0479",
+  "lot": "021",
+  "parcel": {
+    "building_area_sqft": 1503,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1194718,
+    "assessed_improvement_value": 796478,
+    "last_sale_date": "2017-11-17"
+  },
+  "permits": [
+    {
+      "number": "201011225416",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-22",
+      "status_date": "2011-07-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit on 3rd floor. reconfigure kitchen. revise existing cabinetry. emove 4 ft section of int.wall. sink is on mew location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308121859",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-12",
+      "status_date": "2003-12-22",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "kitchen and bath remodel, new cabinets, ceramic tile, plumbing and electrical fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0479021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0479&unit=302",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

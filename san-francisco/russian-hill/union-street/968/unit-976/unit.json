@@ -1,0 +1,32 @@
+{
+  "address": "976 Union Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/union-street/968/unit-976/",
+  "apn": "0099038",
+  "block": "0099",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 1269,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 837369,
+    "assessed_improvement_value": 837369,
+    "last_sale_date": "2013-04-16"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0099038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0099&street_number=976",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

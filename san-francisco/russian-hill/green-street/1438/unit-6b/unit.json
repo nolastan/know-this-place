@@ -1,0 +1,58 @@
+{
+  "address": "1438 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1438/unit-6b/",
+  "unit": "6B",
+  "apn": "0547043",
+  "block": "0547",
+  "lot": "043",
+  "parcel": {
+    "building_area_sqft": 974,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 606931,
+    "assessed_improvement_value": 606931,
+    "last_sale_date": "2015-03-24"
+  },
+  "permits": [
+    {
+      "number": "202606294090",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-29",
+      "status_date": "2026-08-07",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "administrative permit to correct to 6th floor, ref pa# 202606253883.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202606253883",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-25",
+      "status_date": "2026-08-07",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "in-kind remodeling of 1 kitchen(s) in 5th fl and in-kind remodeling of 1 bathroom(s) in 5th fl with 0 shower pan(s).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0547043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0547&unit=6B",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

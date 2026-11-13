@@ -1,0 +1,55 @@
+{
+  "address": "2600 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/2600/unit-1/",
+  "unit": "1",
+  "apn": "4015009",
+  "block": "4015",
+  "lot": "009",
+  "parcel": {
+    "building_area_sqft": 1598
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 494048,
+    "assessed_improvement_value": 494048,
+    "last_sale_date": "2010-06-17"
+  },
+  "permits": [
+    {
+      "number": "202506037807",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-03",
+      "status_date": "2026-01-08",
+      "estimated_cost": 5000,
+      "revised_cost": 27200,
+      "description": "one unit: remodel bathroom for like kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110076385",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-07",
+      "status_date": "2012-02-27",
+      "estimated_cost": 200000,
+      "revised_cost": 200000,
+      "description": "remove stucco and siding from front of building, not more than 30% of stucco, replace in kind. repair leaks, waterproof front of building, replace 1 damaged beam in kind, reinstall stucco & siding. paint.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4015009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4015&unit=1",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

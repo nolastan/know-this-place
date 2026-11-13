@@ -1,0 +1,42 @@
+{
+  "address": "1005 Lombard Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/lombard-street/1001/unit-1005/",
+  "apn": "0071097",
+  "block": "0071",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 1112
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 195389,
+    "assessed_improvement_value": 165325
+  },
+  "permits": [
+    {
+      "number": "201411050800",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-11-05",
+      "status_date": "2014-11-05",
+      "estimated_cost": 4913,
+      "revised_cost": 5000,
+      "description": "replace 4 windows in-kind with wood clad windows (visible from the street).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0071097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0071&street_number=1005",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

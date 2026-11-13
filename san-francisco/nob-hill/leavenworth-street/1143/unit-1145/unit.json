@@ -1,0 +1,55 @@
+{
+  "address": "1145 Leavenworth Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/leavenworth-street/1143/unit-1145/",
+  "apn": "0248072",
+  "block": "0248",
+  "lot": "072",
+  "parcel": {
+    "building_area_sqft": 868,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 115582,
+    "assessed_improvement_value": 149275
+  },
+  "permits": [
+    {
+      "number": "202409181039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-18",
+      "status_date": "2025-06-02",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "kitchen remodel: cabinets same configuration, countertop, flooring, vinyl planks, paint, no wall demoliton or construction.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202210124173",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-12",
+      "status_date": "2023-04-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "in kind bath remodel. framing repair due to dry rot.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0248072&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0248&street_number=1145",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

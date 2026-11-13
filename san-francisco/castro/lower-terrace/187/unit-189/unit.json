@@ -1,0 +1,56 @@
+{
+  "address": "189 Lower Terrace, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/lower-terrace/187/unit-189/",
+  "apn": "2627064",
+  "block": "2627",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 2037,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1111706,
+    "assessed_improvement_value": 1111706,
+    "last_sale_date": "2015-05-05"
+  },
+  "permits": [
+    {
+      "number": "201510089253",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-08",
+      "status_date": "2016-01-06",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "remove tile at rear deck, slope and waterproof deck, replace tile, less than 50% of deck will be altered. work incompases replacement of finish surface tile. no structural work - repair only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M182966",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-28",
+      "status_date": "2009-10-28",
+      "revised_cost": 0,
+      "description": "to verify the address for block 2627 lot 064:the address is #189 lower terrace",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2627064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2627&street_number=189",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

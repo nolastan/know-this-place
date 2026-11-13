@@ -1,0 +1,46 @@
+{
+  "address": "925 Corbett Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/twin-peaks/corbett-avenue/925/unit-102/",
+  "unit": "102",
+  "apn": "2808028",
+  "block": "2808",
+  "lot": "028",
+  "parcel": {
+    "building_area_sqft": 956,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313916,
+    "assessed_improvement_value": 313916,
+    "last_sale_date": "2002-05-31"
+  },
+  "permits": [
+    {
+      "number": "201709138012",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-13",
+      "status_date": "2017-10-02",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "one unit: interior sheetrock repair around (1) window cuased by water intrusion",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2808028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2808&unit=102",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "address": "2600 Hampshire Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/18th-street/2600/unit-18/",
+  "unit": "18",
+  "apn": "4015025",
+  "block": "4015",
+  "lot": "025",
+  "parcel": {
+    "building_area_sqft": 1636,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1129862,
+    "assessed_improvement_value": 753239,
+    "last_sale_date": "2018-02-23"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4015025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4015&unit=18",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

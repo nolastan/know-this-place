@@ -1,0 +1,62 @@
+{
+  "address": "1164 Green Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/green-street/1158/unit-1164/",
+  "apn": "0122030",
+  "block": "0122",
+  "lot": "030",
+  "parcel": {
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 526766,
+    "assessed_improvement_value": 526766,
+    "last_sale_date": "2004-04-16"
+  },
+  "permits": [
+    {
+      "number": "201905231520",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-23",
+      "status_date": "2019-05-29",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "rev to pa201709148106 - structural/framing; for mandatory soft-story retrofit for soft story mandate using iebc ch.a4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200411240138",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-11-24",
+      "status_date": "2004-11-24",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "kitchen remodel. replace (e) kitchen cabinets & appliance with new one. no location change.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2000–2019",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0122030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0122&street_number=1164",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

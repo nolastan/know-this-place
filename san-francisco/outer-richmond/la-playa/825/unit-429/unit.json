@@ -1,0 +1,46 @@
+{
+  "address": "825 La Playa, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/la-playa/825/unit-429/",
+  "unit": "429",
+  "apn": "1692148",
+  "block": "1692",
+  "lot": "148",
+  "parcel": {
+    "building_area_sqft": 1443,
+    "rooms": 5,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 204985,
+    "assessed_improvement_value": 253796
+  },
+  "permits": [
+    {
+      "number": "202410102721",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-10",
+      "status_date": "2025-01-29",
+      "estimated_cost": 7363,
+      "revised_cost": 7363,
+      "description": "replacing existing shower/tub with new walk in jetled tub, with 20 amp dedicated circuit - reverse plumbing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1692148&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1692&unit=429",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

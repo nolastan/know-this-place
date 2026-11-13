@@ -1,0 +1,46 @@
+{
+  "address": "95 6th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/6th-avenue/91/unit-95/",
+  "apn": "1352035",
+  "block": "1352",
+  "lot": "035",
+  "parcel": {
+    "building_area_sqft": 1795,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1103715,
+    "assessed_improvement_value": 1103715,
+    "last_sale_date": "2017-06-20"
+  },
+  "permits": [
+    {
+      "number": "201503201454",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-20",
+      "status_date": "2016-05-24",
+      "estimated_cost": 30000,
+      "revised_cost": 59000,
+      "description": "3/f: remodel (e) bath #1 & #2, (e) mud room, (e) kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1352035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1352&street_number=95",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

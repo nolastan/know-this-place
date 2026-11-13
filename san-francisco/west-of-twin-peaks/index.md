@@ -91,6 +91,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.
 - [Terrace Drive](terrace-drive/) — 1 building, built 1937; 1 in the St. Francis Wood Historic District.
 - [Ulloa Street](ulloa-street/) — 1 building, built 1938.
+- [Upland Drive](upland-drive/) — 1 building.
 - [Vasquez Avenue](vasquez-avenue/) — 1 building, built 1917.
 - [West Portal Avenue](west-portal-avenue/) — 2 buildings, built 1935–1992.
 - [Westwood Drive](westwood-drive/) — 2 buildings, built 1917–1922.

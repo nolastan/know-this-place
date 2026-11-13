@@ -1,0 +1,87 @@
+{
+  "address": "1263 17th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/17th-avenue/1263/unit-1/",
+  "unit": "1",
+  "apn": "1733055",
+  "block": "1733",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 835,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 223756,
+    "assessed_improvement_value": 223756,
+    "last_sale_date": "2000-11-01"
+  },
+  "permits": [
+    {
+      "number": "201206293869",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-29",
+      "status_date": "2012-10-22",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace existing windows @ front (26 windows), stucco removal, framing repair, new building parer installation, new 3 coats stucco system application at front (3 stories). max ufactor 0.40. work on common area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9708345",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-08",
+      "status_date": "1997-05-20",
+      "estimated_cost": 2100,
+      "description": "install fire alarm control panel w/horn strobes &pull stns",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-18",
+      "status_date": "1997-05-20",
+      "estimated_cost": 7800,
+      "description": "install fire sprinkler system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520054",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1995-11-28",
+      "status_date": "1997-01-09",
+      "description": "demo 1 single fam residence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520055S",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1995-11-28",
+      "status_date": "1997-05-27",
+      "estimated_cost": 300000,
+      "revised_cost": 428000,
+      "description": "erect a three story three unit residential bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1733055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1733&unit=1",
+      "retrieved": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "address": "317 Harriet Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/6th-street/520/unit-14/",
+  "unit": "14",
+  "apn": "3779190",
+  "block": "3779",
+  "lot": "190",
+  "parcel": {
+    "building_area_sqft": 1565,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 724145,
+    "assessed_improvement_value": 482763,
+    "last_sale_date": "2021-04-01"
+  },
+  "permits": [
+    {
+      "number": "200506084543",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-08",
+      "status_date": "2005-06-23",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "constructi no bearing int. wa.. 5'long 8'high w/ provacy door within unit , no electic,no plumb.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3779190&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3779&unit=14",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

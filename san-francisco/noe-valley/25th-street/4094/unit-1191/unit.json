@@ -1,0 +1,56 @@
+{
+  "address": "1191 Noe Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/25th-street/4094/unit-1191/",
+  "apn": "6537048",
+  "block": "6537",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 983,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 444271,
+    "assessed_improvement_value": 296176,
+    "last_sale_date": "2008-08-28"
+  },
+  "permits": [
+    {
+      "number": "202605141264",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-14",
+      "status_date": "2026-05-14",
+      "estimated_cost": 30000,
+      "revised_cost": 20000,
+      "description": "remodel existing kitchen pantry to creat a new 1/2 bath and landry. existing door to swing out, new doorway created in non load bearing wall. install new toilet, sink, stackable electric laundry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601126843",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-12",
+      "status_date": "2016-05-06",
+      "estimated_cost": 21200,
+      "revised_cost": 21200,
+      "description": "demo (e) laundry room floor and exterior door, demo bathroom and remove (2) windows. install (n) tile flooring & nu heat system in laundry and bathroom. replace exterior door and (2) windows in bathroom (like for like). install new tub, toilet, sink and faucet as well as new ceiling fan, lights",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6537048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6537&street_number=1191",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}
