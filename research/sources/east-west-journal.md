@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1967–1972 read (286 of 1,125 issues); resume at the first 1973 issue. See the `Verified:` line.
+> - **Coverage:** 1967–1978 read (586 of 1,125 issues); resume at the first 1979 issue. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/east-west-journal/`
 
 - **What:** *East/West: The Chinese-American Journal* (at first "The
@@ -77,6 +77,8 @@
   - **Adler Place is now Jack Kerouac Alley.** The Chinese Historical Society
     of America's 1969 address, 17 Adler Place, has no EAS record; the article
     gives 1140 Grant Avenue as the frontage.
+  - **Feature retrospectives carry the best facts and several dates.** The 1974 American Asian Bank story dates the Canton Bank's 1907 founding, its 1917 headquarters at 500 Montgomery and its 1926 failure; split such a story into one finding per dated event (set `extra.record_date` to the issue year) rather than one entry carrying four years.
+  - **Kong Chow's 1977 temple prints no number.** The dedication notice gives the corner of Clay and Stockton and the post office on its street floor is 867 Stockton, which EAS does not hold; both findings are left unresolved rather than placed on a guessed number.
   - **Calendar listings repeat for weeks.** One event appears in three or four
     consecutive issues; cite the first.
   - **Copyright.** Each issue carries "Copyright 1967 by EAST/WEST Publishing
@@ -94,5 +96,5 @@
   (D Month YYYY), p. N" — e.g. "East/West: The Chinese-American Journal,
   vol. 4, no. 50 (23 December 1970), p. 1". The finding's `citation.url` points
   at the leaf.
-- **Coverage:** 1967–1969 (136 issues, 2,045 mentions, 256 windows read by hand) and 1970–1972 (150 issues, 2,294 mentions, 360 windows): 91 findings, 70 resolved, 63 published on 54 pages (14 seeded), 7 declined, 21 unresolved. 1973–1989 (839 issues) not yet read; the djvu text for every issue is already in the local corpus.
-- **Verified:** 2026-11-13 (1967–1972 read through the mention pass; every resolved finding checked against its page with `check.py --overlap` before and after seeding; PR #615). The extractor and filter scripts are kept in `/mnt/project-files/east-west-journal/`.
+- **Coverage:** 1967–1969 (136 issues, 2,045 mentions, 256 windows read by hand) and 1970–1972 (150 issues, 2,294 mentions, 360 windows): 91 findings, 70 resolved, 63 published on 54 pages (14 seeded), 7 declined, 21 unresolved. 1973–1975 (150 issues, 3,296 mentions, 415 windows) and 1976–1978 (150 issues, 3,370 mentions, 438 windows): 49 findings, 38 resolved, 35 published on 30 pages (4 seeded), 3 declined, 11 unresolved. 1979–1989 (539 issues) not yet read. The corpus is gitignored and lost with each container: only the issues a run reads need downloading (the 1973–1978 run fetched 300 issues in about ten minutes with six parallel `curl`s).
+- **Verified:** 2026-11-13 (1973–1978 read through the same mention pass and published in one run; the 1975–1978 issues carry more school-district bid notices and out-of-town calendar items, which the filter keeps and the reader drops. Earlier: 1967–1972 read through the mention pass; every resolved finding checked against its page with `check.py --overlap` before and after seeding; PR #615). The extractor and filter scripts are kept in `/mnt/project-files/east-west-journal/`.

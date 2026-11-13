@@ -3230,7 +3230,13 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   leaf), then reading the printed page from `<id>_page_numbers.json`, which is
   blank on most front pages (use leaf + 1 there). Pick an anchor that is a
   proper name rather than an address: the OCR mangles digits, and a number the
-  djvu text gives may not match the search text byte for byte.
+  djvu text gives may not match the search text byte for byte. The search
+  text also keeps the column's line-end hyphens ("Restau- rant", "Eul- crum")
+  that the djvu text has joined, so an anchor that spans a hyphenated word
+  finds nothing and the finding loses its page; anchor on a headline or a
+  short phrase, and re-run any anchor that comes back unlocated. Check, too,
+  that the anchor's first hit is the article you mean: a tong's name on the
+  front page matched before its continuation on page 7. (2026-11-13)
 - **`address_note_as_recorded` must be a bare address.** The resolver parses
   it as an address, so a sentence put there ("the 1971 issue gives 950
   Stockton") is read as a street name and the finding falls through. Put the
