@@ -3294,3 +3294,20 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   (339, 346, 152 and 132 units on one map lot) and were removed with their
   rows held. Rows landing on an existing page with the same fault were held,
   not published. (2026-11-13, sf-planning-commission-minutes)
+- **Minutes that print no block and lot leave three ties, and geometry alone
+  is not one of them.** The Board of Permit Appeals minutes give a street
+  number and nothing else, so of 528 rows whose number EAS no longer holds
+  only 3 could start from a printed lot. 312 traced to one parcel: 173 by a
+  DBI permit filed at the old number that names the lot, 60 by an
+  `sf-parcels` or roll address range that contains the number, 25 by EAS
+  numbers either side of it on one parcel, 51 by parcel geometry only. The
+  geometry-only rows ("the frontage north of 522 is all one lot") were held,
+  with 38 more whose trace called its own tie an inference and 14 where two
+  readings of the same site disagreed: 205 were written, 184 found no tie
+  and 32 name several parcels. A permit is the strongest bridge and still
+  needs two checks: the lot it names must sit on the record's side of the
+  street (odd and even), and the permit's street type must be the record's,
+  since these minutes print "Innes Street" for Innes Avenue and a permit at
+  "687 29th" can be the Avenue. Permit data starts in 1981, so a building
+  that went before then usually has no bridge at all. (2026-11-13,
+  sf-board-of-permit-appeals-minutes)

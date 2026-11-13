@@ -1,0 +1,46 @@
+{
+  "address": "5153 Diamond Heights Boulevard, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/diamond-heights-boulevard/5143/unit-5153/",
+  "apn": "7501138",
+  "block": "7501",
+  "lot": "138",
+  "parcel": {
+    "building_area_sqft": 2173,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 195221,
+    "assessed_improvement_value": 370940,
+    "last_sale_date": "1987-03-13"
+  },
+  "permits": [
+    {
+      "number": "200106232246",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-06-23",
+      "status_date": "2001-12-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "break out concrete driveway,remove *& repl all damaged wood framing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7501138&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7501&street_number=5153",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

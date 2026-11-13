@@ -1,0 +1,102 @@
+{
+  "address": "3C Helen Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/helen-street/3/unit-103/",
+  "unit": "103",
+  "apn": "0251039",
+  "block": "0251",
+  "lot": "039",
+  "parcel": {
+    "building_area_sqft": 2085,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 853889,
+    "assessed_improvement_value": 760173,
+    "last_sale_date": "2011-10-06"
+  },
+  "permits": [
+    {
+      "number": "201910255639",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-25",
+      "status_date": "2021-08-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision 201806071262. glass guardrail to be lowered to 42\". guardrail located at rear roof deck area. see plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806071262",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-06-07",
+      "status_date": "2021-08-09",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "horizontal addition @ 4th fl. total of 67 sq ft **maher n/a**",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411202145",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-20",
+      "status_date": "2015-04-20",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replace deck, existing with new decking no change in size, only update support for deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307242662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-24",
+      "status_date": "2014-05-23",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace staircase landing at bottom of stairs in kind, 50% back of building, exterior staircase",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010193315",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-19",
+      "status_date": "2012-09-20",
+      "estimated_cost": 500,
+      "revised_cost": 4000,
+      "description": "replacing wood siding at front of building due to dry rot found when painting to comply with nov #201071788. replace in-kind, approx. 500 sq.ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200907152626",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-07-15",
+      "status_date": "2009-07-15",
+      "estimated_cost": 6410,
+      "revised_cost": 6410,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0251039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0251&unit=103",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "address": "147 2nd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/2nd-avenue/143/unit-147/",
+  "apn": "1362057",
+  "block": "1362",
+  "lot": "057",
+  "parcel": {
+    "building_area_sqft": 1999,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 275545,
+    "assessed_improvement_value": 334994
+  },
+  "permits": [
+    {
+      "number": "202411195260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-19",
+      "status_date": "2024-12-16",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "reroofing layer modified bitmen. hot works permit 1229669.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611102476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-10",
+      "status_date": "2017-08-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace (2) properhyline windows in kind, replace exterior trim & siding as necessary not visible from street; windows are @ the side of building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1362057&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1362&street_number=147",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

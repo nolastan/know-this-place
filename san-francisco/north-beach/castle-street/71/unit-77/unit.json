@@ -1,0 +1,34 @@
+{
+  "address": "77 Castle Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/castle-street/71/unit-77/",
+  "apn": "0114077",
+  "block": "0114",
+  "lot": "077",
+  "parcel": {
+    "building_area_sqft": 737,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 487946,
+    "assessed_improvement_value": 487946,
+    "last_sale_date": "2023-03-31"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0114077&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0114&street_number=77",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

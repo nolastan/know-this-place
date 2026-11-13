@@ -1,0 +1,46 @@
+{
+  "address": "2168 Bush Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/bush-street/2166/unit-2168/",
+  "apn": "0660052",
+  "block": "0660",
+  "lot": "052",
+  "parcel": {
+    "building_area_sqft": 1068,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1001385,
+    "assessed_improvement_value": 429165,
+    "last_sale_date": "2023-03-22"
+  },
+  "permits": [
+    {
+      "number": "201105125932",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-12",
+      "status_date": "2011-12-23",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "kitchen remodel in place - new cabinets, counters, appliances; bath remodel in place - new tub, tile, fixtures. new high efficacy lighting in kitchen occupancy sensor in bath. selective window repalcement (rear). remove nonbearing partition.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0660052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0660&street_number=2168",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

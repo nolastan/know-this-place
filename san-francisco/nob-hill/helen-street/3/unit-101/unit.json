@@ -1,0 +1,99 @@
+{
+  "address": "3 Helen Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/helen-street/3/unit-101/",
+  "unit": "101",
+  "apn": "0251037",
+  "block": "0251",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 2097,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1041041,
+    "assessed_improvement_value": 769486,
+    "last_sale_date": "2016-10-18"
+  },
+  "permits": [
+    {
+      "number": "201910023327",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-02",
+      "status_date": "2020-04-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "one unit; rev to pa# 201507282609; glass guardrail to be lower to 42\" guardrail is located at rear roof deck area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507282609",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-07-28",
+      "status_date": "2020-04-23",
+      "estimated_cost": 250000,
+      "revised_cost": 75000,
+      "description": "67 sf horizontal expansion of (e) partial top floor onto (e) roof deck toward rear of building. n/a for maher ordinance.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004301463",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-04-30",
+      "status_date": "2010-05-04",
+      "estimated_cost": 22610,
+      "revised_cost": 22610,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9520921",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-12-13",
+      "status_date": "1996-06-12",
+      "estimated_cost": 20000,
+      "description": "kitch remodel/remove non-bearing wall/2 new windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313110",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-08-11",
+      "status_date": "1994-03-03",
+      "estimated_cost": 1800,
+      "description": "new window to be added to existing bay in living room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8710702",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-07-31",
+      "status_date": "1987-10-09",
+      "estimated_cost": 3000,
+      "description": "add rear deck & stair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0251037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0251&unit=101",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

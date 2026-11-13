@@ -1,0 +1,96 @@
+{
+  "address": "276 Page Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/page-street/274/unit-276/",
+  "apn": "0839040",
+  "block": "0839",
+  "lot": "040",
+  "parcel": {
+    "building_area_sqft": 1605,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 749500,
+    "assessed_improvement_value": 749500,
+    "last_sale_date": "2016-08-22"
+  },
+  "permits": [
+    {
+      "number": "201105166131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-16",
+      "status_date": "2011-05-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 200011216388. all work is completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105166132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-16",
+      "status_date": "2011-05-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 200203191793. all work is completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200606093684",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-09",
+      "status_date": "2006-09-25",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "voluntary brick foundation replacement-274, 276, 278 page street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203191793",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-19",
+      "status_date": "2002-09-19",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "install wood double glazed tempered glass french doors in place or 3/4hrs fire rated door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011216388",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-11-21",
+      "status_date": "2002-05-28",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replacement of exist rear stair with new design, addition of rear decks, new doors & windows at rear",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2000–2018",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0839040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0839&street_number=276",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "address": "278 Page Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/page-street/274/unit-278/",
+  "apn": "0839041",
+  "block": "0839",
+  "lot": "041",
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 176884,
+    "assessed_improvement_value": 88434
+  },
+  "permits": [
+    {
+      "number": "202210285415",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-28",
+      "status_date": "2026-06-11",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "new laundry and guest bedroom suite in g/f annex.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107342",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-29",
+      "status_date": "1991-10-23",
+      "estimated_cost": 2784,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812944",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-08-31",
+      "status_date": "1988-11-09",
+      "estimated_cost": 2600,
+      "revised_cost": 0,
+      "description": "remove old redwoodc doors & replace with larger folding door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0839041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0839&street_number=278",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

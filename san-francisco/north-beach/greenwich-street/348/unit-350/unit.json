@@ -1,0 +1,66 @@
+{
+  "address": "350 Greenwich Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/greenwich-street/348/unit-350/",
+  "apn": "0079011",
+  "block": "0079",
+  "lot": "011",
+  "parcel": {
+    "building_area_sqft": 1688,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1350000,
+    "assessed_improvement_value": 1350000,
+    "last_sale_date": "2013-07-02"
+  },
+  "permits": [
+    {
+      "number": "201311202446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-20",
+      "status_date": "2014-05-29",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "demo pantry over abandoned unit entry stair. fill-in area w/new flooring and capture space to the extents of the exterior wall. install new window.. replace (e) railings. revise ceiling heights at kitchen & pantry to be one plane.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505538",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1985-05-29",
+      "status_date": "1985-10-01",
+      "estimated_cost": 6000,
+      "description": "demolition of non-structural walls & remove cabinetry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505440",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-05-28",
+      "status_date": "1985-07-25",
+      "estimated_cost": 10000,
+      "description": "replace non-structural wall and cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0079011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0079&street_number=350",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

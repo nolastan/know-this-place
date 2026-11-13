@@ -1,0 +1,44 @@
+{
+  "address": "720 Stockton Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/stockton-street/720/unit-2/",
+  "unit": "2",
+  "apn": "0242058",
+  "block": "0242",
+  "lot": "058",
+  "parcel": {
+    "building_area_sqft": 821
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 541678,
+    "assessed_improvement_value": 361109,
+    "last_sale_date": "2003-10-03"
+  },
+  "permits": [
+    {
+      "number": "202404301081",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-30",
+      "status_date": "2024-11-12",
+      "estimated_cost": 98500,
+      "revised_cost": 98500,
+      "description": "kitchen and bathroom remodel. (flood repair).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0242058&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0242&unit=2",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}
