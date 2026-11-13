@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** COVERAGE_LINE
+> - **Coverage:** 1967–1972 read (286 of 1,125 issues); resume at the first 1973 issue. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/east-west-journal/`
 
 - **What:** *East/West: The Chinese-American Journal* (at first "The
@@ -94,5 +94,5 @@
   (D Month YYYY), p. N" — e.g. "East/West: The Chinese-American Journal,
   vol. 4, no. 50 (23 December 1970), p. 1". The finding's `citation.url` points
   at the leaf.
-- **Coverage:** COVERAGE_DETAIL
-- **Verified:** VERIFIED_LINE
+- **Coverage:** 1967–1969 (136 issues, 2,045 mentions, 256 windows read by hand) and 1970–1972 (150 issues, 2,294 mentions, 360 windows): 91 findings, 70 resolved, 63 published on 54 pages (14 seeded), 7 declined, 21 unresolved. 1973–1989 (839 issues) not yet read; the djvu text for every issue is already in the local corpus.
+- **Verified:** 2026-11-13 (1967–1972 read through the mention pass; every resolved finding checked against its page with `check.py --overlap` before and after seeding; PR #615). The extractor and filter scripts are kept in `/mnt/project-files/east-west-journal/`.
