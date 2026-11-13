@@ -1,0 +1,108 @@
+{
+  "address": "759–761 11th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/11th-avenue/759/",
+  "apn": "1654012",
+  "block": "1654",
+  "lot": "012",
+  "eas_baseid": "470422",
+  "coordinates": {
+    "lat": 37.774007,
+    "lng": -122.469476
+  },
+  "address_range": "759–761",
+  "street_numbers_on_parcel": [
+    "759",
+    "761"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3142,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0761 0759 11TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339910,
+    "assessed_improvement_value": 254918,
+    "last_sale_date": "1994-02-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200307088961",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-08",
+      "status_date": "2003-08-15",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2003–2017",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=11TH&street_type=AVE&address_number=759",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1654012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1654&lot=012",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1654012",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1912-10-29",
+      "name": "The San Francisco Call, 29 October 1912, p. 18",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-10-29/ed-1/seq-18/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-10-29",
+      "kind": "building contract",
+      "description": "Minister & Bornholdt contracted for all work except plumbing, painting, electric work, gravel roof, parlor mantels, gas fixtures on two-storey frame flats, at $4,400.",
+      "source": "loc-sf-call-1912-10-29"
+    }
+  ]
+}

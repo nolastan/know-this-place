@@ -1,0 +1,102 @@
+{
+  "address": "1405 Sanchez Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/sanchez-street/1405/",
+  "apn": "6592032",
+  "block": "6592",
+  "lot": "032",
+  "eas_baseid": "403190",
+  "coordinates": {
+    "lat": 37.746574,
+    "lng": -122.428893
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1934,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "1407 1405 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1263156,
+    "assessed_improvement_value": 541352
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M29023",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-01",
+      "status_date": "2004-09-01",
+      "revised_cost": 0,
+      "description": "street sapce permit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2004–2012",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=1405",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6592032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6592&lot=032",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6592032",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1912-11-28",
+      "name": "The San Francisco Call, 28 November 1912, p. 17",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-11-28/ed-1/seq-17/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-11-28",
+      "kind": "alteration",
+      "description": "E. Helms contracted for all work except mantels, shades and gas fixtures on alterations and additions turning a one-storey frame building into a two-storey frame building of two dwellings, at $2,850.",
+      "source": "loc-sf-call-1912-11-28"
+    }
+  ]
+}

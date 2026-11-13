@@ -1,0 +1,118 @@
+{
+  "address": "688 4th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/4th-avenue/688/",
+  "apn": "1641028",
+  "block": "1641",
+  "lot": "028",
+  "eas_baseid": "311843",
+  "coordinates": {
+    "lat": 37.775715,
+    "lng": -122.461465
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2660,
+    "building_area_sqft": 2920,
+    "lot_depth_ft": 95,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0690 0688 04TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 666273,
+    "assessed_improvement_value": 478145,
+    "last_sale_date": "1999-04-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201505156509",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-15",
+      "status_date": "2015-05-22",
+      "estimated_cost": 2450,
+      "revised_cost": 2450,
+      "description": "perform repairs per associated termit report #66550 item # 5b. repair in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9915142",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-07-26",
+      "status_date": "2000-02-03",
+      "estimated_cost": 4260,
+      "description": "repairs per report-2197674v-1c, fungus damdage at base-termi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621016",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-10-30",
+      "status_date": "1997-12-18",
+      "estimated_cost": 7280,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=04TH&street_type=AVE&address_number=688",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1641028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1641&lot=028",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1641028",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1911-03-18",
+      "name": "The San Francisco Call, 18 March 1911, p. 23",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-03-18/ed-1/seq-23/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-03-18",
+      "kind": "building contract",
+      "description": "James Gleeson contracted to put up a two-storey frame building.",
+      "source": "loc-sf-call-1911-03-18"
+    }
+  ]
+}

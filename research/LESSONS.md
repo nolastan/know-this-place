@@ -3223,6 +3223,19 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   reviewer given only the clip reports owner firms and prices as "not in the
   print". *Tell a reviewer what was cut, or give them the page text.*
   (2026-11-12)
+- **Seed the drafts first, then review, then delete the drafts that earned
+  nothing.** For 196 exact-lot contracts on parcels with no page, the draft
+  pages gave the second readers what the roll alone could not: the permit
+  history (a filed demolition, a 2007 permit raising a cottage two levels, a
+  parcel that is now a park) and the survey status. 135 contracts kept 119
+  pages; 59 drafts went. The roll counts a raised basement or an attic as a
+  storey in about a third of these, so a one-storey gap with the year exact
+  is recorded in `unknowns`, not held. `resolve_eas.py` files a new page under
+  the nearest published page on the same street, which put 234 Stockton Street
+  in `chinatown`; *read the area of every new page before committing.* And
+  *a record with no lot is safe only where its starting line is a lot line
+  today*: against earlier hand placements that grade agreed 222 times in 222,
+  a bare named corner 60 in 69. (2026-11-13)
 - **An Internet Archive `_djvu.txt` has no page breaks, so it cannot give a
   finding its page.** The East/West run located each finding by searching an
   anchor phrase in `<id>_hocr_searchtext.txt.gz` and mapping the character

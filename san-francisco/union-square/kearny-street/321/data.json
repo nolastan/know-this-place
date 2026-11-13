@@ -1,0 +1,169 @@
+{
+  "address": "321–323 Kearny Street, San Francisco, CA 94108",
+  "path": "/san-francisco/union-square/kearny-street/321/",
+  "apn": "0270004",
+  "block": "0270",
+  "lot": "004",
+  "eas_baseid": "280851",
+  "coordinates": {
+    "lat": 37.791064,
+    "lng": -122.404313
+  },
+  "address_range": "321–323",
+  "street_numbers_on_parcel": [
+    "321",
+    "323"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 4,
+    "lot_area_sqft": 1206,
+    "building_area_sqft": 5371,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C3O",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0321 KEARNY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 192662,
+    "assessed_improvement_value": 371255
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 11 Conservation District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Kearny-Market-Mason-Sutter Conservation District",
+    "california_register_status": "Not listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 11 conservation district",
+    "local_landmark_protection": true,
+    "period_of_significance": "N/A",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201904107617",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-10",
+      "status_date": "2019-09-18",
+      "estimated_cost": 15000,
+      "revised_cost": 30000,
+      "description": "painting, replace kitchen sink, bathroom sink, kitchen cabinet, tile in bathroom, wood floor in bedroom and living room. replacle lighting, replace shower head, faucets, demo to remove old cabinets. no structural work, no wall/framing modification.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305217569",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-21",
+      "status_date": "2013-07-29",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "comply nov# 201301162-correct violation for work without permit, need to demo work performed with permits. demo consists of 1 shower. no other work need to be done. convert area back to break room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203266854",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2012-03-26",
+      "status_date": "2026-01-09",
+      "estimated_cost": 8500,
+      "revised_cost": 0,
+      "description": "new office and employee/ break room area. replace extg shampoo station with shower area. new ceiling in shower area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006073988",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-06-07",
+      "status_date": "2010-06-07",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "install fire supression system to protect hood, duct, plenum and cooking equipment under the hood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905024",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-03",
+      "status_date": "1989-05-26",
+      "estimated_cost": 1500,
+      "description": "install auto fire suppression system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818265",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-11-17",
+      "status_date": "1989-05-26",
+      "estimated_cost": 20000,
+      "description": "remodel kitchen for fast-food service",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KEARNY&street_type=ST&address_number=321",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0270004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0270&lot=004",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0270004",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40431279191282%2037.79106400034977)%27)",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1912-01-11",
+      "name": "The San Francisco Call, 11 January 1912, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-01-11/ed-1/seq-15/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-01-11",
+      "kind": "building contract",
+      "description": "G. P. W. Jensen contracted with the Union Trust Company for all work except plumbing and wiring on a three-storey and basement class C building, at $8,674.",
+      "source": "loc-sf-call-1912-01-11"
+    }
+  ]
+}
