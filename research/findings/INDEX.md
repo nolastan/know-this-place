@@ -159,7 +159,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-board-of-permit-appeals-minutes/appeals-1976.json` | 407 | 857 KB | 1976 | 290 | 134 | `inner-sunset`, `russian-hill`, `north-beach` +30 |
 | `sf-board-of-permit-appeals-minutes/appeals-1977.json` | 460 | 966 KB | 1977 | 357 | 201 | `mission`, `pacific-heights`, `marina` +32 |
 | `sf-board-of-permit-appeals-minutes/appeals-1978.json` | 542 | 1.1 MB | 1978 | 395 | 212 | `mission`, `castro`, `inner-richmond` +34 |
-| `sf-board-of-permit-appeals-minutes/appeals-1979.json` | 488 | 985 KB | 1979 | 403 | 233 | `mission`, `castro`, `pacific-heights` +32 |
+| `sf-board-of-permit-appeals-minutes/appeals-1979.json` | 488 | 984 KB | 1979 | 403 | 233 | `mission`, `castro`, `pacific-heights` +32 |
 | `sf-board-of-permit-appeals-minutes/appeals-1980.json` | 270 | 567 KB | 1980 | 239 | 139 | `castro`, `pacific-heights`, `russian-hill` +28 |
 | `sf-board-of-permit-appeals-minutes/appeals-1980b.json` | 85 | 151 KB | 1980 | 72 | 45 | `tenderloin`, `marina`, `castro` +20 |
 | `sf-board-of-permit-appeals-minutes/appeals-1981.json` | 378 | 803 KB | 1981 | 338 | 178 | `mission`, `castro`, `inner-sunset` +32 |
