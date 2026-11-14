@@ -1,0 +1,129 @@
+{
+  "address": "181 Divisadero Street, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/divisadero-street/181/",
+  "apn": "1259003",
+  "block": "1259",
+  "lot": "003",
+  "eas_baseid": "298761",
+  "coordinates": {
+    "lat": 37.770007,
+    "lng": -122.437105
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2700,
+    "building_area_sqft": 2250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Buena Vista Park/Ashbury Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0181 DIVISADERO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1352147,
+    "assessed_improvement_value": 579487,
+    "last_sale_date": "2008-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200606214662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-21",
+      "status_date": "2006-11-01",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remove existing drywall, fixtures, tile & replace in kind @ second floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010032189",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-10-03",
+      "status_date": "2000-12-21",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "demo of extg closets & construct new gull bthrm with new plmg/elec.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9817029",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-26",
+      "status_date": "1999-12-31",
+      "estimated_cost": 9800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8801524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-02-08",
+      "status_date": "1988-06-22",
+      "estimated_cost": 3465,
+      "description": "reset existing steps and replace landing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=181",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1259003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1259&lot=003",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1259003",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "loc-sf-call-1912-05-03",
+      "name": "The San Francisco Call, 3 May 1912, p. 19",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-05-03/ed-1/seq-19/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-05-03",
+      "kind": "building contract",
+      "description": "G. G. Gillespie contracted to put up a two-storey and basement frame residence, at $5,300.",
+      "source": "loc-sf-call-1912-05-03"
+    }
+  ]
+}

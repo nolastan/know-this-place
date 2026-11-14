@@ -1,0 +1,96 @@
+{
+  "address": "367 29th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/29th-avenue/367/",
+  "apn": "1404017",
+  "block": "1404",
+  "lot": "017",
+  "eas_baseid": "302456",
+  "coordinates": {
+    "lat": 37.782431,
+    "lng": -122.489531
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1430,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0367 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 248605,
+    "assessed_improvement_value": 70416
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9818749",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-17",
+      "status_date": "2001-01-17",
+      "estimated_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=367",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1404017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1404&lot=017",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1404017",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "loc-sf-call-1912-05-16",
+      "name": "The San Francisco Call, 16 May 1912, p. 6",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-05-16/ed-1/seq-6/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-05-16",
+      "kind": "building contract",
+      "description": "B. J. Hooper contracted to put up a house.",
+      "source": "loc-sf-call-1912-05-16"
+    }
+  ]
+}

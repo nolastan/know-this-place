@@ -3236,6 +3236,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   *a record with no lot is safe only where its starting line is a lot line
   today*: against earlier hand placements that grade agreed 222 times in 222,
   a bare named corner 60 in 69. (2026-11-13)
+- **`seed-list` caches its fetches under the manifest's name, so a manifest
+  you append to is not fetched again.** Adding 132 parcels to
+  `loc-newspapers-lot-geometry.json` and re-running reported "no 2025 roll
+  row" for every one and created nothing: the roll, permit and historic
+  files in `.cache/` were the first run's. *Move `.cache/*__<manifest>.json`
+  aside before re-running a grown manifest.* And expect a lower keep rate
+  where the record prints no lot: 45 of 141 against 135 of 196, because with
+  no lot size to match the reader has only the roll year and storeys, and a
+  description that merges two buildings into one (1028 Clay) or one house
+  out of three (2543 Vallejo) is caught only by reading the clip.
+  (2026-11-14)
 - **An Internet Archive `_djvu.txt` has no page breaks, so it cannot give a
   finding its page.** The East/West run located each finding by searching an
   anchor phrase in `<id>_hocr_searchtext.txt.gz` and mapping the character

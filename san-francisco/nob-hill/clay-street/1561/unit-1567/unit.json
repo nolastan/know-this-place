@@ -1,0 +1,95 @@
+{
+  "address": "1567 Clay Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/clay-street/1561/unit-1567/",
+  "apn": "0218030",
+  "block": "0218",
+  "lot": "030",
+  "parcel": {
+    "building_area_sqft": 1968,
+    "rooms": 7,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1074600,
+    "assessed_improvement_value": 716400,
+    "last_sale_date": "2019-09-23"
+  },
+  "permits": [
+    {
+      "number": "201505085874",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-08",
+      "status_date": "2016-04-29",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "revision to permit 201404244020 patch walls from electrical work in living room with 5/8 type x drywall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504032747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-03",
+      "status_date": "2016-04-29",
+      "estimated_cost": 4295,
+      "revised_cost": 4295,
+      "description": "install 5 vinly windows inkind into existing openings, no change in size or location. windows do not face the street. if applicable, bedroom windows will comly with section 1029 for rescue. all windows will be double pane and have a u-factor of .30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404244020",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-24",
+      "status_date": "2016-04-29",
+      "estimated_cost": 43000,
+      "revised_cost": 70000,
+      "description": "remove non-bearing int. walls. remodel kitchen and one bath. remove 1/2 bath. install new furnace. n/a for the maher ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306207387",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-06-20",
+      "status_date": "2003-07-30",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "remove wall between living room & front bedroom to enlarge living space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9814079",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-23",
+      "status_date": "1998-08-05",
+      "estimated_cost": 12500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1998–2015",
+    "shown_on_page": 5,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0218030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0218&street_number=1567",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

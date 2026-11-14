@@ -6,6 +6,15 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-14 (the no-lot-size rows whose parcel had no page:
+  132 parcels drafted from `manifests/loc-newspapers-lot-geometry.json`, 141
+  contracts read by a second reader against each draft's roll and permits.
+  **45 published on 41 pages, 39 of them new**; 96 held, most because the
+  roll year sits outside the contract's window, the storeys differ, or the
+  building was replaced, and their 93 drafts deleted. Not yet done: 42
+  parcels of this grade with no address row in EAS, strict-grade rows on
+  condominium parcels with no page (84), and the entries the OCR cannot
+  place.)
 > - **Verified:** 2026-11-13 (records that print no usable lot size but whose
   starting line is a lot line today, a grade that named the same parcel as
   222 of 222 earlier hand placements. The 134 on existing pages were each

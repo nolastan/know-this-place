@@ -1,0 +1,130 @@
+{
+  "address": "84 Harrington Street, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/harrington-street/84/",
+  "apn": "3147016",
+  "block": "3147",
+  "lot": "016",
+  "eas_baseid": "355275",
+  "coordinates": {
+    "lat": 37.726064,
+    "lng": -122.435782
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1389,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0084 HARRINGTON          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 450000,
+    "assessed_improvement_value": 1050000,
+    "last_sale_date": "2002-12-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405061495",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-06",
+      "status_date": "2025-09-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to pa# 2018-0209-0879: to record as-built configuration of rear yard stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208160577",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-16",
+      "status_date": "2022-09-23",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "installation of a new sprinkler monitorng system new ifp-75 fire alarm control panel starline wireless alarm radio communicator one smoke detector one pull station 3 monitor modules ref pa# 2018-0209-0879 ref sprinkler pa# 2021-0325-7341",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103257341",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-03-25",
+      "status_date": "2021-04-30",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "install (17) sprinklers throughout ground floor per nfpa# 13-r. underground per nfpa #24. b.a.# 2018-0209-0879",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802090879",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-02-09",
+      "status_date": "2025-09-03",
+      "estimated_cost": 175000,
+      "revised_cost": 400000,
+      "description": "interior remodel of (e) 2-story residence. (n) baths & bedrooms @1st flr. (n) renovated kitchen, bathrm & finishes @2nd flr & proposed 3rd flr addition. (n) windows & exit doors @2nd & 3rd flrs @rear of house. (n) stucco coat. rear exit stair relocated.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HARRINGTON&street_type=ST&address_number=84",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3147016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3147&lot=016",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3147016",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "loc-sf-call-1911-12-10",
+      "name": "The San Francisco Call, 10 December 1911, p. 59",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1911-12-10/ed-1/seq-59/",
+      "retrieved": "2026-09-28"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-12-10",
+      "kind": "building contract",
+      "description": "A builder contracted to put up a one-storey and basement frame building, at $1,500.",
+      "source": "loc-sf-call-1911-12-10"
+    }
+  ]
+}

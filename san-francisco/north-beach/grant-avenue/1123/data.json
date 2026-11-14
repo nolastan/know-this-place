@@ -1,0 +1,179 @@
+{
+  "address": "1123–1125 Grant Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/grant-avenue/1123/",
+  "apn": "0161003",
+  "block": "0161",
+  "lot": "003",
+  "eas_baseid": "434741",
+  "coordinates": {
+    "lat": 37.797176,
+    "lng": -122.407115
+  },
+  "address_range": "1123–1125",
+  "street_numbers_on_parcel": [
+    "1123",
+    "1125"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 1742,
+    "building_area_sqft": 4864,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "C",
+    "zoning": "CRNC",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Financial District North",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "1125 1123 GRANT               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143634,
+    "assessed_improvement_value": 173599
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Chinatown Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1930/1938",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202303304715",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-03-30",
+      "status_date": "2024-01-23",
+      "estimated_cost": 17552,
+      "revised_cost": 27837,
+      "description": "new installation: installation of a new automatic fire alarm system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712261331",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-12-26",
+      "status_date": "2008-05-02",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove non permitted deck. provide stair to the roof, to comply with nov# 200732441",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116062",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-30",
+      "status_date": "1991-10-23",
+      "estimated_cost": 9000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604444",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-17",
+      "status_date": "1986-06-30",
+      "estimated_cost": 1250,
+      "description": "install @ new awning",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604170",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-04-11",
+      "status_date": "1987-02-09",
+      "estimated_cost": 6000,
+      "description": "new storefront to comply",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207947",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-09-28",
+      "status_date": "1983-08-12",
+      "estimated_cost": 9600,
+      "description": "bldg use: house/retail",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1982–2023",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRANT&street_type=AVE&address_number=1123",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0161003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0161&lot=003",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0161003",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40711453303967%2037.79717618541347)%27)",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "loc-sf-call-1912-11-09",
+      "name": "The San Francisco Call, 9 November 1912, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-11-09/ed-1/seq-15/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-11-09",
+      "kind": "building contract",
+      "description": "A builder contracted for sidewalk lights, an iron door, carpenter, plumbing, plastering, painting, glazing and electrical work on a three-storey concrete building, at $5,350.",
+      "source": "loc-sf-call-1912-11-09"
+    },
+    {
+      "date": "1912-11-09",
+      "kind": "building contract",
+      "description": "A builder contracted for concrete work on a three-storey concrete building, at $2,610.",
+      "source": "loc-sf-call-1912-11-09"
+    }
+  ]
+}

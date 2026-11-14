@@ -21,6 +21,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Ellert Street](ellert-street/) — 1 building, built 1900.
 - [Ellsworth Street](ellsworth-street/) — 1 building, built 1956.
 - [Elsie Street](elsie-street/) — 1 building, built 2011.
+- [Fair Avenue](fair-avenue/) — 1 building, built 1911.
 - [Faith Street](faith-street/) — 1 building, built 1998.
 - [Franconia Street](franconia-street/) — 2 buildings, built 1964–1965.
 - [Gates Street](gates-street/) — 1 building.
