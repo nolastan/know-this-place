@@ -291,6 +291,22 @@ copy.**
   out](#rules-that-catch-publishers-out). `--only-pages` narrows a read when you are
   triaging a long backlog by hand; it is not the default and it is not the
   order to work in.
+- **Cite who did the reporting, not who relayed it.** A story that opens
+  "according to a report published by Hoodline" and links it is a rewrite of
+  someone else's reporting, and What Now does this often. Follow the link and
+  make the original the entry: its headline, its outlet, its date and URL, and
+  its citation in the items file, filed under the original outlet's items
+  directory (`news/items/<its feed id>/`). Note the relaying story in the
+  finding's `extra` so the next reader sees how it was found. The original's
+  earlier date usually drops the entry below the homepage's twelve; that is
+  the grid rule being followed, not a reason to cite the copy. If the original
+  can't be reached, or its headline is unusable (it names a private
+  individual), cite the relay and say why in `publish.note`. A roundup is
+  fine as the original when its headline names this building's business or
+  address, as Hoodline's "Castro Business Briefs: … Agile Physical Therapy
+  Moves …" does; a roundup headline that doesn't name it is still declined.
+  If the original is already on the page from its own feed, the relay is a
+  second account: decline it under "One event, one entry".
 - **The duplicate is usually already on the page, not elsewhere in the queue.**
   "One event, one entry" reads like a rule about two outlets in one morning, and
   that is its easy case. The expensive case is a filing covered again a week
