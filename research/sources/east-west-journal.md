@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1967–1978 read (586 of 1,125 issues); resume at the first 1979 issue. See the `Verified:` line.
+> - **Coverage:** 1967–1984 read (886 of 1,125 issues); resume at the first 1985 issue. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/east-west-journal/`
 
 - **What:** *East/West: The Chinese-American Journal* (at first "The
@@ -32,14 +32,18 @@
   ranges per leaf) and `<id>_page_numbers.json` (printed page per leaf, often
   blank on the front page, where leaf + 1 is the page). Volume and number come
   from `https://archive.org/metadata/<id>/metadata` (`volume`, `issue`).
-  The run's scripts: the mention extractor matches a number followed by a
-  street name in the EAS street list (`3mea-di5p`, grouped by
-  `street_name, street_type`) and keeps a 600-character window; a filter drops
-  windows naming another city just after the address, residences ("lives at",
-  "son of", "Mr. and Mrs."), windows with no event or institution word, and
-  windows that read as advertisements (phone numbers, ZIP codes, hours); and
-  every address appearing in six or more issues is set aside as an advertiser.
-  What survives is read by hand.
+  The mention pass is `research/tools/ocr_mentions.py extract` (committed in
+  2026-11; the 1967–1978 runs' copy lived in a scratch directory and was lost
+  with its container): a number followed by a street name in the EAS street
+  list (`3mea-di5p`, via `resolve_eas.street_names()`), typed — or untyped
+  only for the downtown, Chinatown and avenue streets the paper prints bare —
+  with a 600-character window. The filter drops windows naming another city
+  just after the address, residences ("lives at", "son of", "Mr. and Mrs."),
+  windows with no event or institution word, and windows that read as
+  advertisements (phone numbers, ZIP codes, hours); every address appearing in
+  six or more issues of a run is set aside as an advertiser. What survives is
+  read by hand. `items.tsv` (identifier, date, volume, issue) comes from the
+  advancedsearch query above with `fl[]=volume&fl[]=issue` added.
 - **What is actually usable:** news items and the community calendar
   ("Diversions"), for three kinds of fact. **Dated events at a building**:
   fires (818–820 Washington, 20 December 1970), demolitions (the Kong Chow
@@ -79,6 +83,10 @@
     gives 1140 Grant Avenue as the frontage.
   - **Feature retrospectives carry the best facts and several dates.** The 1974 American Asian Bank story dates the Canton Bank's 1907 founding, its 1917 headquarters at 500 Montgomery and its 1926 failure; split such a story into one finding per dated event (set `extra.record_date` to the issue year) rather than one entry carrying four years.
   - **Kong Chow's 1977 temple prints no number.** The dedication notice gives the corner of Clay and Stockton and the post office on its street floor is 867 Stockton, which EAS does not hold; both findings are left unresolved rather than placed on a guessed number.
+  - **The 1979–1984 issues are mostly calendar.** From 1979 the paper carries a long community calendar and far more display advertising (the filter dropped 8,828 of 10,637 mentions as ads in 1982–1984 alone). The calendar names the same churches, schools, theatres and halls week after week as venues for one-off events; a venue listing is not taken, only an institution stated to be based at the address. Bare presence of a shop, restaurant or bank branch is not taken either, nor restaurant health-permit actions.
+  - **Untyped common words were a third of the 1979–1984 windows.** "90 DAY", "5 MILES", "12 PAGE", "50 STATES", "3 YOUNG" all matched EAS street names; `ocr_mentions.py` now accepts an untyped street only from its `UNTYPED_OK` list.
+  - **A new building's own number goes OCR'd too.** The Tower hotel printed "13$25 Grant" (1527 in a clean 1983 item), the Montgomery Washington Tower "6$53" (655 in the same issue's calendar), the Chinese Historical Society "753S0 Kearny" (750); each resolved by hand on the clean print, never otherwise. "353 Montgomery" for the Bank of Canton's headquarters is probably 555 by the same 3-for-5 slip, and was placed on 555 Montgomery by the article's description of the site, not the number.
+  - **The Bank of Canton tower absorbed three addresses.** 621 Clay (a residential hotel, demolished), the bank's headquarters and the Subtreasury at 608 Commercial all lie under 555 Montgomery (parcel 0227048); none has an EAS record, and the 1982 story says the tower rose on all three.
   - **Calendar listings repeat for weeks.** One event appears in three or four
     consecutive issues; cite the first.
   - **Copyright.** Each issue carries "Copyright 1967 by EAST/WEST Publishing
@@ -96,5 +104,5 @@
   (D Month YYYY), p. N" — e.g. "East/West: The Chinese-American Journal,
   vol. 4, no. 50 (23 December 1970), p. 1". The finding's `citation.url` points
   at the leaf.
-- **Coverage:** 1967–1969 (136 issues, 2,045 mentions, 256 windows read by hand) and 1970–1972 (150 issues, 2,294 mentions, 360 windows): 91 findings, 70 resolved, 63 published on 54 pages (14 seeded), 7 declined, 21 unresolved. 1973–1975 (150 issues, 3,296 mentions, 415 windows) and 1976–1978 (150 issues, 3,370 mentions, 438 windows): 49 findings, 38 resolved, 35 published on 30 pages (4 seeded), 3 declined, 11 unresolved. 1979–1989 (539 issues) not yet read. The corpus is gitignored and lost with each container: only the issues a run reads need downloading (the 1973–1978 run fetched 300 issues in about ten minutes with six parallel `curl`s).
-- **Verified:** 2026-11-13 (1973–1978 read through the same mention pass and published in one run; the 1975–1978 issues carry more school-district bid notices and out-of-town calendar items, which the filter keeps and the reader drops. Earlier: 1967–1972 read through the mention pass; every resolved finding checked against its page with `check.py --overlap` before and after seeding; PR #615). The extractor and filter scripts are kept in `/mnt/project-files/east-west-journal/`.
+- **Coverage:** 1967–1969 (136 issues, 2,045 mentions, 256 windows read by hand) and 1970–1972 (150 issues, 2,294 mentions, 360 windows): 91 findings, 70 resolved, 63 published on 54 pages (14 seeded), 7 declined, 21 unresolved. 1973–1975 (150 issues, 3,296 mentions, 415 windows) and 1976–1978 (150 issues, 3,370 mentions, 438 windows): 49 findings, 38 resolved, 35 published on 30 pages (4 seeded), 3 declined, 11 unresolved. 1979–1981 (150 issues, 6,335 mentions, 364 windows): 96 findings, 73 resolved, 57 published, 16 declined, 23 unresolved. 1982–1984 (150 issues, 10,637 mentions, 282 windows): 71 findings, 60 resolved, 53 published, 7 declined, 11 unresolved. Together 110 entries on 84 pages, 22 seeded. 1985–1989 (239 issues) not yet read. The corpus is gitignored and lost with each container: only the issues a run reads need downloading (the 1973–1978 run fetched 300 issues in about ten minutes with six parallel `curl`s).
+- **Verified:** 2026-11-14 (1979–1984 read in one run: the mention pass rebuilt as `research/tools/ocr_mentions.py`, the 646 surviving windows read in four parallel slices against a written brief and every candidate re-checked here — 345 candidates cut to 167 findings, mostly by dropping calendar venues and bare shop presence; 23 resolved findings declined, 15 because the page already named the occupant. Earlier: 2026-11-13 (1973–1978 read through the same mention pass and published in one run; the 1975–1978 issues carry more school-district bid notices and out-of-town calendar items, which the filter keeps and the reader drops. Earlier: 1967–1972 read through the mention pass; every resolved finding checked against its page with `check.py --overlap` before and after seeding; PR #615). The extractor and filter are `research/tools/ocr_mentions.py`.
