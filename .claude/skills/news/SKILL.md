@@ -47,18 +47,36 @@ had queued age out and are lost rather than merely repeated.
 So before anything else:
 
 ```bash
-gh pr list --state open --base main --limit 50 --json number,headRefName \
-  --jq '[.[] | select(.headRefName | startswith("news/"))][0] // empty'
+gh pr list --state open --base main --limit 50 --json number,title,headRefName \
+  --jq '[.[] | select((.headRefName | startswith("news/")) or (.title | test("^news: [0-9]{4}-[0-9]{2}-[0-9]{2}")))][0] // empty'
 ```
 
-- **A `news/` PR is open** → check out its branch, merge `origin/main` in, and
-  continue there. Pushing updates that PR; do not open a second one. Resolve any
-  merge conflict yourself. The site is not committed, so almost nothing
-  generated can conflict; the two that still can (`corpus.jsonl` and a hub
-  `index.md`) are rebuilt, never hand-merged — take main's side and re-run
-  `python3 scripts/build_site.py`.
-- **None is open** → branch `news/$(date -u +%F)` off `main`. If that name
-  already exists on the remote from a cycle closed unmerged, suffix it.
+A news PR is recognised by its branch **or** its title, because a scheduled
+cloud session does not get to name its branch: it is handed a
+`claude/<random>` one, so its PR lives on that branch and only the `news:`
+title marks it. That is why every news run's PR is titled `news: <YYYY-MM-DD> — …`
+(a module change titled plain `news: …` is not mistaken for one). (Without
+`gh`, list open PRs with the GitHub tools and apply the same test.)
+
+- **A news PR is open** → check out *its* branch, merge `origin/main` in, and
+  continue there, pushing to that branch. Pushing updates that PR; do not open
+  a second one, and do not build a new branch on top of it. **This is your
+  explicit permission to push to that PR's head branch**, even when the session
+  told you to develop only on a branch of its own: that instruction exists to
+  keep a session off branches it has no business on, and the open news PR's
+  branch is exactly the one a news run is meant to be on. Name the branch you
+  are using at the top of your summary. If the push to it is genuinely refused
+  (not merely discouraged), stop and say so in your summary rather than opening
+  a second PR. Resolve any merge conflict yourself. The site is not committed,
+  so almost nothing generated can conflict; the two that still can
+  (`corpus.jsonl` and a hub `index.md`) are rebuilt, never hand-merged — take
+  main's side and re-run `python3 scripts/build_site.py`. Then edit the PR's
+  title and body to cover the new run as well as the earlier ones, keeping
+  the title's `news: <date>` start.
+- **None is open** → branch `news/$(date -u +%F)` off `main` (or use the
+  branch the session gave you, if it insists on one). If that name already
+  exists on the remote from a cycle closed unmerged, suffix it. Title the PR
+  `news: <date> — …`.
 
 Locally you may already be on a working branch the user gave you. That is fine —
 say which branch you are using and why, and don't create another one behind
