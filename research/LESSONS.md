@@ -3335,3 +3335,21 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   "687 29th" can be the Avenue. Permit data starts in 1981, so a building
   that went before then usually has no bridge at all. (2026-11-13,
   sf-board-of-permit-appeals-minutes)
+- **An environmental report describes what was on the site before the
+  project, so a recovered address there is usually a predecessor, and the
+  finding's sentence cannot go on the page as written.** Of 461 rows whose
+  address is gone, 308 traced to one parcel, 115 of those were held (66 on
+  geometry alone) and 169 were written; on more than half of them the roll
+  dates today's building after the fact. Each published row (91, 53 of them site
+  history) was reworded by hand to say "then on this site, at <old
+  address>" and closes with the present building's year. Declined at that
+  stage: 19 bare survey ratings or list entries, which say only that a
+  building was surveyed; 9 rows another document had already told (a site's
+  own report and the downtown study repeat each other); 4 names the scan
+  garbled ("Erandenstein Bldg"); 3 rows about "the building" on a site that
+  held two. A demolished building's rating was dropped, its description
+  kept. One trap: the roll gives a merged lot the year of the newest building
+  on it (the Williams Building stands on a lot the roll dates 2005, the
+  year of the hotel tower beside it), so "replaced" needs a demolition
+  permit, not only a later roll year. (2026-11-13,
+  sf-environmental-review)

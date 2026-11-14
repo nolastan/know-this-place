@@ -687,6 +687,19 @@
   existed: the Van Ness Avenue Plan DEIR counts 47 significant buildings but
   does not print the list, which is in the Heritage survey it cites.
 
+- **Verified:** 2026-11-13 (retired-address pass over the 461 unresolved
+  rows whose number EAS no longer holds or splits across parcels: 169
+  resolved, 18 by the resolver and 151 by hand; 91 published on 51 pages, 7
+  of them seeded, 53 as site history with page text reworded per row; 78
+  declined, among them 19 bare survey ratings, 19 where city data does not
+  show whether the building still stands, 11 undated, 10 about a predecessor
+  with no page and 9 told twice. 292 stay unresolved and are listed with
+  what the trace found in
+  `research/findings/sf-environmental-review/retired-addresses-unresolved.md`;
+  the resolved rows are in `retired-addresses-resolved.md` beside it.
+  **What it learned:** these reports describe the site before the project,
+  so most recovered rows are predecessors (LESSONS.md, "An environmental
+  report describes what was on the site before the project").)
 - **Verified:** 2026-11-10 (#556, the findings the old condominium rule held
   back, re-resolved now that a condominium is paged as a building; nothing
   new was read). 108 findings move from unresolved to resolved: **41 published
