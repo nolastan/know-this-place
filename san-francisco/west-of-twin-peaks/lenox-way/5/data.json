@@ -1,0 +1,93 @@
+{
+  "address": "5 Lenox Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/lenox-way/5/",
+  "apn": "2979014",
+  "block": "2979",
+  "lot": "014",
+  "eas_baseid": "453534",
+  "coordinates": {
+    "lat": 37.743376,
+    "lng": -122.464636
+  },
+  "parcel": {
+    "lot_area_sqft": 122320,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "West Portal",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0005 LENOX               WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9109145",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-05-24",
+      "status_date": "1991-08-29",
+      "estimated_cost": 41000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1991–2003",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LENOX&street_type=WAY&address_number=5",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2979014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2979&lot=014",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2979014",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "east-west-journal-1984-04-18-p4",
+      "name": "East/West: The Chinese-American Journal, vol. 18, no. 16 (18 April 1984), p. 4",
+      "label": "East/West: The Chinese-American Journal, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/eastwest18east_14/page/n3/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1984-04-18",
+      "kind": "occupancy",
+      "description": "West Portal Elementary School, here, was chosen by the school district for new Chinese immersion classes.",
+      "source": "east-west-journal-1984-04-18-p4"
+    }
+  ]
+}

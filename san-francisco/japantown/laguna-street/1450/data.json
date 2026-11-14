@@ -1,0 +1,94 @@
+{
+  "address": "1450 Laguna Street, San Francisco, CA 94115",
+  "path": "/san-francisco/japantown/laguna-street/1450/",
+  "apn": "0711012",
+  "block": "0711",
+  "lot": "012",
+  "eas_baseid": "287851",
+  "coordinates": {
+    "lat": 37.784607,
+    "lng": -122.427632
+  },
+  "parcel": {
+    "year_built": 1936,
+    "stories": 3,
+    "rooms": 55,
+    "bathrooms": 16,
+    "lot_area_sqft": 12523.5,
+    "lot_depth_ft": 91.08,
+    "use": "Commercial Retail",
+    "property_class": "Consulate",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Western Addition",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 1450 LAGUNA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1936",
+    "survey_name": "JAPANESE SALVATION ARMY BLDG",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9123659",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-12-13",
+      "status_date": "1992-05-05",
+      "estimated_cost": 5000,
+      "description": "reinforce two section of brick walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAGUNA&street_type=ST&address_number=1450",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0711012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0711&lot=012",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0711012",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "east-west-journal-1980-06-25-p12",
+      "name": "East/West: The Chinese-American Journal, vol. 14, no. 26 (25 June 1980), p. 12",
+      "label": "East/West: The Chinese-American Journal, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/eastwest14east_23/page/n11/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-06-23",
+      "kind": "opening",
+      "description": "The Consulate General of the People's Republic of China opened its new offices here, moving from temporary quarters at the St. Francis Hotel.",
+      "source": "east-west-journal-1980-06-25-p12"
+    }
+  ]
+}

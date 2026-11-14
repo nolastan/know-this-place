@@ -3271,6 +3271,25 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   and `½` read as `12`. Group the mentions by street and look for a clean
   print of the same institution in another issue before resolving a number;
   the dossier lists the patterns.
+- **A run's extraction script belongs in `research/tools/`, not a scratch
+  directory.** The East/West mention extractor was kept outside the repo and
+  lost with its container; the next run spent its first hour rebuilding it.
+  `research/tools/ocr_mentions.py` is now the newspaper mention pass for any
+  djvu-text corpus (`extract <corpus> --items items.tsv --from --to`), and its
+  stderr line is the coverage note's counts. (2026-11-14)
+- **Parallel readers over-collect, so re-read every candidate yourself.** Four
+  readers given a written brief returned 345 candidates from 646 East/West
+  windows; 167 survived. What they took that a finding should not be: a
+  venue named in a calendar listing ("X hosted a luncheon") written up as
+  occupancy, the bare presence of a shop or bank branch, a restaurant's
+  health-permit action, a printed date silently corrected (1960 → 1906), and
+  a private death. Put "a venue listing is not occupancy" in the brief, and
+  ask for an anchor phrase without digits so the leaf can be found. (2026-11-14)
+- **A bare occupancy line is a duplicate when the page already names the
+  occupant.** `check.py --overlap` scores "The Guadalupe Church was here" at
+  100% against a page that says the church was built in 1912, and it is right
+  to: decline it rather than add a weaker line beside a better one. Fifteen of
+  the 1979–1981 East/West declines were this. (2026-11-14)
 - **An address the directory no longer has is a tracing job with six traps,
   and four in five rows survive it.** Of 782 Planning Commission rows whose
   number is gone from EAS or split across parcels, 511 traced to one parcel,

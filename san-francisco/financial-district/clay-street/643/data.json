@@ -4,7 +4,7 @@
   "apn": "0227044",
   "block": "0227",
   "lot": "044",
-  "eas_baseid": "421599",
+  "eas_baseid": "455721",
   "coordinates": {
     "lat": 37.794422,
     "lng": -122.403868
@@ -319,31 +319,38 @@
       "id": "sf-eas-addresses",
       "name": "SF Enterprise Addressing System via DataSF",
       "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLAY&street_type=ST&address_number=643",
-      "retrieved": "2026-11-13"
+      "retrieved": "2026-11-14"
     },
     {
       "id": "sf-assessor-roll",
       "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
       "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0227044&$order=closed_roll_year%20DESC&$limit=1",
-      "retrieved": "2026-11-13"
+      "retrieved": "2026-11-14"
     },
     {
       "id": "sf-building-permits",
       "name": "SF Dept. of Building Inspection via DataSF",
       "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0227&lot=044",
-      "retrieved": "2026-11-13"
+      "retrieved": "2026-11-14"
     },
     {
       "id": "sf-planning",
       "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
       "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0227044",
-      "retrieved": "2026-11-13"
+      "retrieved": "2026-11-14"
     },
     {
       "id": "sf-historic-districts",
       "name": "SF Planning Department — Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40386758961036%2037.794421827051046)%27)",
-      "retrieved": "2026-11-13"
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "east-west-journal-1982-12-22-p2",
+      "name": "East/West: The Chinese-American Journal, vol. 16, no. 50 (22 December 1982), p. 2",
+      "label": "East/West: The Chinese-American Journal, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/eastwest16east_48/page/n1/mode/1up",
+      "retrieved": "2026-11-14"
     },
     {
       "id": "loc-sf-call-1912-06-29",
@@ -358,6 +365,12 @@
       "kind": "building contract",
       "description": "Carnahan & Mulford contracted to put up a three-storey brick building.",
       "source": "loc-sf-call-1912-06-29"
+    },
+    {
+      "date": "1982-12",
+      "kind": "protest",
+      "description": "A plan to convert this residential hotel, home to 16 elderly tenants, into offices threatened them with eviction.",
+      "source": "east-west-journal-1982-12-22-p2"
     }
   ]
 }
