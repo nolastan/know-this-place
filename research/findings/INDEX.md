@@ -116,8 +116,8 @@ sit in — the three it touched most, and how many in all.
 | `east-west-journal/1970-1972.json` | 40 | 64 KB | 1912–1972 | 31 | 30 | `chinatown`, `north-beach`, `financial-district` +3 |
 | `east-west-journal/1973-1975.json` | 31 | 54 KB | 1917–1975 | 25 | 23 | `chinatown`, `financial-district`, `inner-richmond` +8 |
 | `east-west-journal/1976-1978.json` | 18 | 31 KB | 1857–1978 | 13 | 12 | `chinatown`, `inner-richmond`, `castro` +5 |
-| `east-west-journal/1979-1981.json` | 96 | 137 KB | 1854–1981 | 73 | 57 | `chinatown`, `north-beach`, `financial-district` +15 |
-| `east-west-journal/1982-1984.json` | 71 | 107 KB | 1854–1984 | 60 | 53 | `chinatown`, `financial-district`, `north-beach` +15 |
+| `east-west-journal/1979-1981.json` | 96 | 138 KB | 1854–1981 | 73 | 57 | `chinatown`, `north-beach`, `financial-district` +15 |
+| `east-west-journal/1982-1984.json` | 71 | 108 KB | 1854–1984 | 60 | 53 | `chinatown`, `financial-district`, `north-beach` +15 |
 | `hittell-1878/full-text.json` | 14 | 23 KB | 1837–1878 | 3 | 2 | `financial-district` |
 | `loc-newspapers/sn85066387-1906-03-25-real-estate.json` | 26 | 47 KB | 1906 | 4 | 4 | `tenderloin`, `hayes-valley`, `mission` |
 | `loc-newspapers/sn85066387-1906-building-contracts.json` | 1,259 | 2.4 MB | 1906 | 231 | 185 | `mission`, `financial-district`, `chinatown` +17 |
