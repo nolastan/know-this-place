@@ -111,7 +111,8 @@ Two invariants the stages rest on, both detailed in
 - **An item is considered once**, and considered means a verdict was recorded —
   read *or* skipped — not that anything was published. That memory is the
   cursor, and **a cursor is only true on the branch it was advanced on**, which
-  is why a run continues on the open `news/` PR rather than starting fresh. A
+  is why a run continues on the open news PR (branch `news/…` or title
+  `news:`) rather than starting fresh. A
   backfill remembers a walked *window* rather than a list of ids, for the reason
   PIPELINE.md gives; both halves of that memory bind both routes.
 - **The screen is deliberately asymmetric**: it skips only on a clear signal
