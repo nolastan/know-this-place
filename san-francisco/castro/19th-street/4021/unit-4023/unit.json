@@ -1,0 +1,63 @@
+{
+  "address": "4023 19th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/19th-street/4021/unit-4023/",
+  "apn": "3602097",
+  "block": "3602",
+  "lot": "097",
+  "parcel": {
+    "building_area_sqft": 1127,
+    "rooms": 5,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 159665,
+    "assessed_improvement_value": 179442
+  },
+  "permits": [
+    {
+      "number": "9507709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-05-23",
+      "status_date": "1995-07-24",
+      "estimated_cost": 5000,
+      "description": "bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503256",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-03-07",
+      "status_date": "1995-07-24",
+      "estimated_cost": 27000,
+      "description": "kitchen remodel incl converting utility porch to sunroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500582",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-01-17",
+      "status_date": "1995-05-17",
+      "estimated_cost": 3200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3602097&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3602&street_number=4023",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "address": "114 21st Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/21st-avenue/114/",
+  "apn": "1380032",
+  "block": "1380",
+  "lot": "032",
+  "eas_baseid": "301890",
+  "coordinates": {
+    "lat": 37.785592,
+    "lng": -122.480571
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 1962,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0114 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 948194,
+    "assessed_improvement_value": 406364,
+    "last_sale_date": "2013-04-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200704098383",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-04-09",
+      "status_date": "2008-03-06",
+      "estimated_cost": 47000,
+      "revised_cost": 47000,
+      "description": "replace 23 wood windows with wood composite size for size. replace 2 french doors with anderson doors. u-value 0.39",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413757",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-08-26",
+      "status_date": "1995-08-11",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-07-22",
+      "status_date": "1995-05-31",
+      "estimated_cost": 35000,
+      "description": "replace (e) cabinets fixtures and appliance at kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001476",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-23",
+      "status_date": "1990-01-30",
+      "estimated_cost": 1300,
+      "description": "install 5/8\" x 8 1/2 (min 7\" into concrete)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-08-04",
+      "status_date": "1988-11-01",
+      "estimated_cost": 1000,
+      "description": "remove windows & fill in void w/cement stucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=114",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1380032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1380&lot=032",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1380032",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "loc-sf-call-1913-07-20",
+      "name": "The San Francisco Call, 20 July 1913, p. 79",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1913-07-20/ed-1/seq-79/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-07-20",
+      "kind": "building contract",
+      "description": "William F. Yates contracted for all work on a two-storey residence, at $4,500.",
+      "source": "loc-sf-call-1913-07-20"
+    }
+  ]
+}
