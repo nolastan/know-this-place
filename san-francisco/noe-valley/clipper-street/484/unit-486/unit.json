@@ -1,0 +1,57 @@
+{
+  "address": "486 Clipper Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/clipper-street/484/unit-486/",
+  "apn": "6546046",
+  "block": "6546",
+  "lot": "046",
+  "parcel": {
+    "building_area_sqft": 2285,
+    "rooms": 8,
+    "bedrooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1087629,
+    "assessed_improvement_value": 725085,
+    "last_sale_date": "2018-11-30"
+  },
+  "permits": [
+    {
+      "number": "202109037806",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-03",
+      "status_date": "2022-07-15",
+      "estimated_cost": 27645,
+      "revised_cost": 27645,
+      "description": "remove and replace 4 windows at 2nd flr and 3rd flrs with aluminum-clad wood slider windows at front facade. replace 4 windows and 3 doors at rear facade with aluminum-clad wood. u-factor less than or equal 0.30 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404262180",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-26",
+      "status_date": "2004-04-26",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6546046&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6546&street_number=486",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

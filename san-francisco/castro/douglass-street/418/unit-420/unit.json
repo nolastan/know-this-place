@@ -1,0 +1,67 @@
+{
+  "address": "420 Douglass Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/douglass-street/418/unit-420/",
+  "apn": "2748045",
+  "block": "2748",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 1494,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 78072,
+    "assessed_improvement_value": 195221
+  },
+  "permits": [
+    {
+      "number": "202607175199",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-17",
+      "status_date": "2026-09-17",
+      "estimated_cost": 12000,
+      "revised_cost": 28192,
+      "description": "remodel existing full bath in kind: replace recess led lights, replace bath door to sliding door; install electric underfloor heating, relocate light switch and heat vent. tub to shower. approximately 40 sf.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207054093",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-05",
+      "status_date": "2012-10-18",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "install vinyl siding to left side wall, visable from street, no structural changes, t/o existing siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006285405",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-06-28",
+      "status_date": "2010-06-28",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repl 8 windows, and 1 entry door in rear of house, not isible from the street, no structural changes, max u factor .40",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2748045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2748&street_number=420",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

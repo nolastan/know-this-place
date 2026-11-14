@@ -3223,6 +3223,19 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   reviewer given only the clip reports owner firms and prices as "not in the
   print". *Tell a reviewer what was cut, or give them the page text.*
   (2026-11-12)
+- **Seed the drafts first, then review, then delete the drafts that earned
+  nothing.** For 196 exact-lot contracts on parcels with no page, the draft
+  pages gave the second readers what the roll alone could not: the permit
+  history (a filed demolition, a 2007 permit raising a cottage two levels, a
+  parcel that is now a park) and the survey status. 135 contracts kept 119
+  pages; 59 drafts went. The roll counts a raised basement or an attic as a
+  storey in about a third of these, so a one-storey gap with the year exact
+  is recorded in `unknowns`, not held. `resolve_eas.py` files a new page under
+  the nearest published page on the same street, which put 234 Stockton Street
+  in `chinatown`; *read the area of every new page before committing.* And
+  *a record with no lot is safe only where its starting line is a lot line
+  today*: against earlier hand placements that grade agreed 222 times in 222,
+  a bare named corner 60 in 69. (2026-11-13)
 - **An Internet Archive `_djvu.txt` has no page breaks, so it cannot give a
   finding its page.** The East/West run located each finding by searching an
   anchor phrase in `<id>_hocr_searchtext.txt.gz` and mapping the character
@@ -3294,3 +3307,38 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   (339, 346, 152 and 132 units on one map lot) and were removed with their
   rows held. Rows landing on an existing page with the same fault were held,
   not published. (2026-11-13, sf-planning-commission-minutes)
+- **Minutes that print no block and lot leave three ties, and geometry alone
+  is not one of them.** The Board of Permit Appeals minutes give a street
+  number and nothing else, so of 528 rows whose number EAS no longer holds
+  only 3 could start from a printed lot. 312 traced to one parcel: 173 by a
+  DBI permit filed at the old number that names the lot, 60 by an
+  `sf-parcels` or roll address range that contains the number, 25 by EAS
+  numbers either side of it on one parcel, 51 by parcel geometry only. The
+  geometry-only rows ("the frontage north of 522 is all one lot") were held,
+  with 38 more whose trace called its own tie an inference and 14 where two
+  readings of the same site disagreed: 205 were written, 184 found no tie
+  and 32 name several parcels. A permit is the strongest bridge and still
+  needs two checks: the lot it names must sit on the record's side of the
+  street (odd and even), and the permit's street type must be the record's,
+  since these minutes print "Innes Street" for Innes Avenue and a permit at
+  "687 29th" can be the Avenue. Permit data starts in 1981, so a building
+  that went before then usually has no bridge at all. (2026-11-13,
+  sf-board-of-permit-appeals-minutes)
+- **An environmental report describes what was on the site before the
+  project, so a recovered address there is usually a predecessor, and the
+  finding's sentence cannot go on the page as written.** Of 461 rows whose
+  address is gone, 308 traced to one parcel, 115 of those were held (66 on
+  geometry alone) and 169 were written; on more than half of them the roll
+  dates today's building after the fact. Each published row (91, 53 of them site
+  history) was reworded by hand to say "then on this site, at <old
+  address>" and closes with the present building's year. Declined at that
+  stage: 19 bare survey ratings or list entries, which say only that a
+  building was surveyed; 9 rows another document had already told (a site's
+  own report and the downtown study repeat each other); 4 names the scan
+  garbled ("Erandenstein Bldg"); 3 rows about "the building" on a site that
+  held two. A demolished building's rating was dropped, its description
+  kept. One trap: the roll gives a merged lot the year of the newest building
+  on it (the Williams Building stands on a lot the roll dates 2005, the
+  year of the hotel tower beside it), so "replaced" needs a demolition
+  permit, not only a later roll year. (2026-11-13,
+  sf-environmental-review)

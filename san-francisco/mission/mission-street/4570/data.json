@@ -1,0 +1,142 @@
+{
+  "address": "4570 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/mission/mission-street/4570/",
+  "apn": "3148003",
+  "block": "3148",
+  "lot": "003",
+  "eas_baseid": "355297",
+  "coordinates": {
+    "lat": 37.724981,
+    "lng": -122.43494
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2353,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 4570 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1045628,
+    "assessed_improvement_value": 448125,
+    "last_sale_date": "2020-12-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202112275058",
+      "type": "demolitions",
+      "status": "filed",
+      "filed": "2021-12-27",
+      "status_date": "2021-12-27",
+      "estimated_cost": 50000,
+      "description": "demo 1-story commercial building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919802",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-17",
+      "status_date": "1990-08-03",
+      "estimated_cost": 12625,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8313061",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1983-12-23",
+      "status_date": "1984-03-30",
+      "estimated_cost": 2300,
+      "description": "electrical sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8313062",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1983-12-23",
+      "status_date": "1984-03-30",
+      "estimated_cost": 1200,
+      "description": "electrical sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8311349",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-11-07",
+      "status_date": "1984-04-02",
+      "estimated_cost": 75000,
+      "description": "demolition,atteration",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1983–2021",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=4570",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3148003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3148&lot=003",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3148003",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1912-09-15",
+      "name": "The San Francisco Call, 15 September 1912, p. 74",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-09-15/ed-1/seq-74/",
+      "retrieved": "2026-10-02"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-09-15",
+      "kind": "building contract",
+      "description": "Joseph Blahnik contracted for all work except electric wiring, gas piping and light fixtures on a one-storey store.",
+      "source": "loc-sf-call-1912-09-15"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "address": "1035 Broadway, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/broadway/1033/unit-1035/",
+  "apn": "0157068",
+  "block": "0157",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1561,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 38306,
+    "assessed_improvement_value": 92116
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0157068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0157&street_number=1035",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

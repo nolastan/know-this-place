@@ -1,0 +1,164 @@
+{
+  "address": "2130–2134 Mason Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/mason-street/2130/",
+  "apn": "0064021A",
+  "block": "0064",
+  "lot": "021A",
+  "eas_baseid": "276462",
+  "coordinates": {
+    "lat": 37.803293,
+    "lng": -122.412892
+  },
+  "address_range": "2130–2134",
+  "street_numbers_on_parcel": [
+    "2130",
+    "2132",
+    "2134"
+  ],
+  "parcel": {
+    "year_built": 1909,
+    "units": 3,
+    "stories": 3,
+    "rooms": 14,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 1603,
+    "building_area_sqft": 3786,
+    "lot_depth_ft": 70,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "2134 2130 MASON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1556391,
+    "assessed_improvement_value": 896952,
+    "last_sale_date": "2015-01-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708023690",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2017-08-02",
+      "status_date": "2018-05-18",
+      "estimated_cost": 150000,
+      "description": "adu per ordinance# 162-16. convert (e) 1247 sf basement to a 1180 sf for addition unit including single bedroom, 2 baths with kitchen, laundry. upgrade fire sprinkler, upgrade water main. add new central heating system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706290719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-29",
+      "status_date": "2018-04-30",
+      "estimated_cost": 60000,
+      "revised_cost": 80000,
+      "description": "1st floor - proposes the removal of two walls & expansion of 78 sf (e) laundry to conditioned space @ kitchen, remodel bathroom, add bathroom, electrical upgrade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504103375",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-10",
+      "status_date": "2016-02-25",
+      "estimated_cost": 40000,
+      "revised_cost": 54000,
+      "description": "2nd flr: add 1 bathroom, remodel 2nd bathroom. add 75 sf (e) porch to kitchen remodel, upgrade ele, remove 2 walls @ kitchen and add beams at 2nd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501297047",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-29",
+      "status_date": "2015-03-11",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "repair of wood stairs @ rear of property, repair in-kind, rot damage to joists & decking, less than 50% repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201308225007",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-08-22",
+      "status_date": "2013-11-20",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to comply with nov dated 8/15/13, complaint #201316971. *wood rot (2) stairs, fix stringer - repairs. *patch, plaster, repair, paint cracks (repair in kind) in dining area. *replace linoleum on kitchen floor. *wash mildew. * repair refrig door handle.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9117399",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-09-18",
+      "status_date": "1992-03-24",
+      "estimated_cost": 5000,
+      "description": "repair rear stair and paint .",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 13,
+    "range": "1991–2017",
+    "shown_on_page": 6,
+    "note": "7 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASON&street_type=ST&address_number=2130",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0064021A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0064&lot=021A",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0064021A",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1909-10-15",
+      "name": "The San Francisco Call, 15 October 1909, p. 15",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1909-10-15/ed-1/seq-15/",
+      "retrieved": "2026-10-03"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1909-10-15",
+      "kind": "building contract",
+      "description": "Demartini & Chiappa contracted for all work except shades and fixtures on three-storey and basement frame flats.",
+      "source": "loc-sf-call-1909-10-15"
+    }
+  ]
+}

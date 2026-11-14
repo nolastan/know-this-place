@@ -1,0 +1,126 @@
+{
+  "address": "274–276 Page Street, San Francisco, CA 94102",
+  "path": "/san-francisco/hayes-valley/page-street/274/",
+  "block": "0839",
+  "eas_baseid": "434516",
+  "coordinates": {
+    "lat": 37.773979,
+    "lng": -122.425304
+  },
+  "address_range": "274–276",
+  "street_numbers_on_parcel": [
+    "274",
+    "276"
+  ],
+  "parcel": {
+    "year_built": 1895,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "units": 3
+  },
+  "condominium": {
+    "lots": [
+      "039",
+      "040",
+      "041"
+    ],
+    "method": "Every active parcel of sf-parcels map lot 0839039 with a row on the 2025 roll: 3 lots, 039 to 041."
+  },
+  "historic_district": {
+    "name": "Hayes Valley Residential Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1860–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200004187489",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-04-18",
+      "status_date": "2002-02-08",
+      "estimated_cost": 4900,
+      "revised_cost": 4900,
+      "description": "install 16 vinyl windows in kind into existing frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9820600",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-09",
+      "status_date": "1999-02-09",
+      "estimated_cost": 400,
+      "description": "repair stairs & deck,install handrail",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8703238",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-03-12",
+      "status_date": "1987-04-28",
+      "estimated_cost": 3000,
+      "description": "vinyl siding (alside) to back",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506700",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1985-06-26",
+      "status_date": "1986-01-24",
+      "estimated_cost": 7900,
+      "description": "remove damage from left wall and raise foundation right",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PAGE&street_type=ST&address_number=274",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0839)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0839&closed_roll_year=2025",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0839",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.42530444664173%2037.77397904949663)%27)",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-board-of-permit-appeals-minutes-1977-08-31",
+      "name": "San Francisco Board of Permit Appeals, minutes of the meeting of 31 August 1977",
+      "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofmeeting1977sanf",
+      "retrieved": "2026-11-10"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-08-31",
+      "kind": "permit appeal",
+      "description": "The Board of Permit Appeals overruled the Department of Public Works' denial of a permit to alter the building at 274-278 Page Street, with stipulations that 5/8-inch sheet rock be installed on the walls and ceiling of the entire lower unit, and that battery-operated smoke detectors be provided for all three dwelling units.",
+      "source": "sf-board-of-permit-appeals-minutes-1977-08-31"
+    }
+  ]
+}

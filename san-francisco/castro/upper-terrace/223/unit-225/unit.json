@@ -1,0 +1,68 @@
+{
+  "address": "225 Upper Terrace, San Francisco, CA 94117",
+  "path": "/san-francisco/castro/upper-terrace/223/unit-225/",
+  "apn": "2628112",
+  "block": "2628",
+  "lot": "112",
+  "parcel": {
+    "building_area_sqft": 1005,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 926434,
+    "assessed_improvement_value": 617622,
+    "last_sale_date": "2021-09-30"
+  },
+  "permits": [
+    {
+      "number": "202405283059",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-05-28",
+      "status_date": "2024-06-27",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "rev 202207299556- remove north side of the proposed rooftop deck from the scope of work and the deck edge is pushed away from the (e) skylight. the perforated metal screen is extended to cover the entire east face of the existing stair penthouse. the guardrail post attachment and waterpro",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202207299556",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-07-29",
+      "status_date": "2023-07-19",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "construct a new roof top deck no modifications to (e) stair penthouse",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111092105",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-09",
+      "status_date": "2022-05-12",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "remodel 2 bathrooms and 1 kitchen, in-kind, same layount. no wall modifications.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2628112&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2628&street_number=225",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

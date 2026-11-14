@@ -1,0 +1,68 @@
+{
+  "address": "2771 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2769/unit-2771/",
+  "apn": "0950052",
+  "block": "0950",
+  "lot": "052",
+  "parcel": {
+    "building_area_sqft": 2800,
+    "rooms": 7,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1616400,
+    "assessed_improvement_value": 1077600,
+    "last_sale_date": "2022-05-09"
+  },
+  "permits": [
+    {
+      "number": "201305308227",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-30",
+      "status_date": "2013-09-12",
+      "estimated_cost": 18500,
+      "revised_cost": 18500,
+      "description": "remove & replace tile floor & tub surround, vanity cabinet. install new sheetrock and minor electrical changes. all work in upstairs master bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402257126",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-02-25",
+      "status_date": "2009-01-12",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "remove (e) hitchen cabinets , remove (e0 book shelves change out kit. shik, new conter tops, hard*",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101180132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-01-18",
+      "status_date": "2001-02-23",
+      "estimated_cost": 24500,
+      "revised_cost": 24500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0950052&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0950&street_number=2771",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

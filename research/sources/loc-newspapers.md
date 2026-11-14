@@ -6,6 +6,21 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-13 (records that print no usable lot size but whose
+  starting line is a lot line today, a grade that named the same parcel as
+  222 of 222 earlier hand placements. The 134 on existing pages were each
+  read by a second reader: **80 published on 62 pages** (55 as facts about
+  the standing building, 25 as `site history`), 54 held. Bare named corners
+  agreed only 60 times in 69 and stay unplaced. Not yet done: the 185 rows
+  of this grade whose parcel has no page.)
+> - **Verified:** 2026-11-13 (the strict-grade rows on single-lot parcels with
+  no page: 178 parcels drafted from `manifests/loc-newspapers-lot-geometry.json`,
+  196 contracts read by a second reader against the roll and each draft's
+  permits. **135 published on 119 pages, 118 of them new**; 61 held, mostly
+  where the storeys contradict or only a bucket year dates the building, and
+  their drafts deleted. Not yet done: strict-grade rows on condominium
+  parcels with no page (84), records with no lot size whose starting line is
+  a lot line today (319), and the entries the OCR cannot place.)
 > - **Verified:** 2026-11-12 (the unresolved entries re-placed by lot
   geometry instead of roll year. Of 10,495 unresolved, 5,374 give a
   measurable line or corner; the record's lot drawn on the parcel shapes

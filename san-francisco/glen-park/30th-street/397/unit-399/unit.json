@@ -1,0 +1,32 @@
+{
+  "address": "399 30th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/30th-street/397/unit-399/",
+  "apn": "6654065",
+  "block": "6654",
+  "lot": "065",
+  "parcel": {
+    "building_area_sqft": 1282,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 50705,
+    "assessed_improvement_value": 121728
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6654065&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6654&street_number=399",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

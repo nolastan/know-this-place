@@ -1,0 +1,112 @@
+{
+  "address": "35–37 Lake Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/lake-street/35/",
+  "apn": "1361041",
+  "block": "1361",
+  "lot": "041",
+  "eas_baseid": "301026",
+  "coordinates": {
+    "lat": 37.786638,
+    "lng": -122.459946
+  },
+  "address_range": "35–37",
+  "street_numbers_on_parcel": [
+    "35",
+    "37"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2552,
+    "building_area_sqft": 3110,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0037 0035 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 72055,
+    "assessed_improvement_value": 156153
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201609127406",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-12",
+      "status_date": "2016-09-29",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "voluntary bolt house to foundation 5/8 all thead 8\" deep/ epoxy, 3\"x3\"x1/4\" square washer & nut @48\" max o.c.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205231081",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-23",
+      "status_date": "2012-07-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "comply with complaint #201226421 & 201226661-remodel (e) kitchen & bathroom inside one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=35",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1361041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1361&lot=041",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1361041",
+      "retrieved": "2026-11-12"
+    },
+    {
+      "id": "loc-sf-call-1907-03-17",
+      "name": "The San Francisco Call, 17 March 1907, p. 51",
+      "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1907-03-17/ed-1/seq-51/",
+      "retrieved": "2026-10-04"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1907-03-17",
+      "kind": "building contract",
+      "description": "C. C. Holt contracted to put up two-storey frame flats, at $7,525.",
+      "source": "loc-sf-call-1907-03-17"
+    }
+  ]
+}
