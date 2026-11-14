@@ -1,0 +1,121 @@
+{
+  "address": "2359 35th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/35th-avenue/2359/",
+  "apn": "2364013",
+  "block": "2364",
+  "lot": "013",
+  "eas_baseid": "335818",
+  "coordinates": {
+    "lat": 37.743042,
+    "lng": -122.493218
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1410,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2359 35TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 442292,
+    "assessed_improvement_value": 294860,
+    "last_sale_date": "2001-07-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9122769",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-12-02",
+      "status_date": "1991-12-31",
+      "estimated_cost": 2700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812582",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-08-25",
+      "status_date": "1988-12-14",
+      "estimated_cost": 300,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805461",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-04-28",
+      "status_date": "1988-10-20",
+      "estimated_cost": 3000,
+      "description": "legalize bedroom, bathroom, furniture room at garage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=35TH&street_type=AVE&address_number=2359",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2364013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2364&lot=013",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2364013",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-02-27-n354",
+      "name": "Building and Engineering News, 27 February 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n354/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-02-27",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. Chas. F. Strothoff was named as architect.",
+      "source": "building-engineering-news-1926-02-27-n354"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

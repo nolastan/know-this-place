@@ -14,6 +14,7 @@ A hillside residential district in the city's south-east, between McLaren Park a
 - [Gambier Street](gambier-street/) — 1 building, built 1941.
 - [Gaven Street](gaven-street/) — 1 building, built 1960.
 - [Girard Street](girard-street/) — 1 building.
+- [Hale Street](hale-street/) — 1 building, built 1925.
 - [Hamilton Street](hamilton-street/) — 1 building, built 1915.
 - [Holyoke Street](holyoke-street/) — 1 building, built 1908.
 - [Madison Street](madison-street/) — 1 building, built 1914.

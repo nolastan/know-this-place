@@ -1,0 +1,136 @@
+{
+  "address": "2171 O'Farrell Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/ofarrell-street/2171/",
+  "apn": "1101021",
+  "block": "1101",
+  "lot": "021",
+  "eas_baseid": "294863",
+  "coordinates": {
+    "lat": 37.782031,
+    "lng": -122.440389
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 8,
+    "stories": 2,
+    "rooms": 24,
+    "bathrooms": 8,
+    "lot_area_sqft": 5156.25,
+    "building_area_sqft": 6900,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Anza Vista",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 2171 O'FARRELL           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 917290,
+    "assessed_improvement_value": 554110,
+    "last_sale_date": "1990-02-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201603091605",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-09",
+      "status_date": "2017-01-03",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "soft story retrofit per sfbc chapter 34b, 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621045",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1996-10-30",
+      "status_date": "1998-02-05",
+      "estimated_cost": 10000,
+      "description": "repair fire damaged,windows,siding,kitchen",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217166",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-10-08",
+      "status_date": "1993-11-29",
+      "estimated_cost": 850,
+      "revised_cost": 1500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120371",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-10-28",
+      "status_date": "1992-04-28",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1991–2016",
+    "shown_on_page": 4,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OFARRELL&street_type=ST&address_number=2171",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1101021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1101&lot=021",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1101021",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-02-06-n229",
+      "name": "Building and Engineering News, 6 February 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n229/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-02-06",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of eight flats with a basement, estimated at $12,000.",
+      "source": "building-engineering-news-1926-02-06-n229"
+    }
+  ]
+}

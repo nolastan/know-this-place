@@ -11,6 +11,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Brookdale Avenue](brookdale-avenue/) — 1 building, built 1946.
 - [Byron Court](byron-court/) — 1 building, built 1978.
 - [Carter Street](carter-street/) — 1 building, built 2004.
+- [Cordova Street](cordova-street/) — 1 building, built 1925.
 - [Dublin Street](dublin-street/) — 1 building, built 1953.
 - [Excelsior Avenue](excelsior-avenue/) — 1 building, built 1910.
 - [France Avenue](france-avenue/) — 1 building, built 1906.
@@ -28,6 +29,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Munich Street](munich-street/) — 2 buildings, built 1920–1927.
 - [Naples Street](naples-street/) — 1 building, built 1910.
 - [Ney Street](ney-street/) — 2 buildings, built 1900–1965.
+- [Oxford Street](oxford-street/) — 1 building, built 1927.
 - [Paris Street](paris-street/) — 1 building, built 1915.
 - [Persia Avenue](persia-avenue/) — 1 building, built 1919.
 - [Peru Avenue](peru-avenue/) — 1 building, built 1914.

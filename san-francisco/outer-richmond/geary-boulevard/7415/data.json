@@ -1,0 +1,176 @@
+{
+  "address": "7415 Geary Boulevard, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/geary-boulevard/7415/",
+  "apn": "1506001A",
+  "block": "1506",
+  "lot": "001A",
+  "eas_baseid": "305979",
+  "coordinates": {
+    "lat": 37.779127,
+    "lng": -122.499
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4090,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 7415 GEARY               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1098484,
+    "assessed_improvement_value": 637423,
+    "assessed_fixtures_value": 224,
+    "last_sale_date": "2015-02-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209142404",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-14",
+      "status_date": "2022-12-23",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "install new sprinkler monitoring system. ref to 2021 0519 0637",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105190637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-19",
+      "status_date": "2022-12-23",
+      "estimated_cost": 13650,
+      "revised_cost": 31500,
+      "description": "installl new fire sprinkler system throughout ground floor and stair case per nfpa 13 including 2\" dedicated fire service (total sprinklers 39) ref #2016-1207-4363",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612074363",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-12-07",
+      "status_date": "2022-12-30",
+      "estimated_cost": 85000,
+      "revised_cost": 140000,
+      "description": "1st flr: addition of dwelling unit per ordinance no. 162-16. add 2 bdrms, 1 bath, 1 kitchen, 1 living & 1 dining room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501274109",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-01-27",
+      "status_date": "2007-06-26",
+      "estimated_cost": 6300,
+      "revised_cost": 6300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618164",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-24",
+      "status_date": "1997-03-24",
+      "estimated_cost": 6600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220349",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-11-20",
+      "status_date": "1993-04-22",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8925086",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-21",
+      "status_date": "1990-05-26",
+      "estimated_cost": 20000,
+      "description": "replacement of ext. plaster and brick sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8209101",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-11-04",
+      "status_date": "1986-06-04",
+      "estimated_cost": 2800,
+      "description": "created during job card conversion on: 03/07/86",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GEARY&street_type=BLVD&address_number=7415",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1506001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1506&lot=001A",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1506001A",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-02-06-n228",
+      "name": "Building and Engineering News, 6 February 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n228/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-02-06",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, estimated at $9,000. J. C. Hladik was named as architect. The owner was the California Real Estate & Finance Corp.",
+      "source": "building-engineering-news-1926-02-06-n228"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

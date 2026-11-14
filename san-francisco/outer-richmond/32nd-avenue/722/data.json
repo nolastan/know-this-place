@@ -1,0 +1,137 @@
+{
+  "address": "722 32nd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/32nd-avenue/722/",
+  "apn": "1613005J",
+  "block": "1613",
+  "lot": "005J",
+  "eas_baseid": "310545",
+  "coordinates": {
+    "lat": 37.775487,
+    "lng": -122.491596
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2376,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0722 32ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 653209,
+    "assessed_improvement_value": 521396,
+    "last_sale_date": "1999-11-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010206973",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-20",
+      "status_date": "2021-06-18",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel bathroom to create 2 bathrooms on 2/f. amend to pa202009023234.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009023234",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-02",
+      "status_date": "2021-06-18",
+      "estimated_cost": 10000,
+      "revised_cost": 14800,
+      "description": "bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203166231",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-16",
+      "status_date": "2012-11-27",
+      "estimated_cost": 7500,
+      "revised_cost": 9500,
+      "description": "remodel (e) bathroom in 2nd floor. replace (e) (4) front windows in 2nd floor into wood clad and similar in design & (4) vinyl windows at rear. no change on walls and openings.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006263615",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-06-26",
+      "status_date": "2000-10-26",
+      "estimated_cost": 4715,
+      "revised_cost": 4715,
+      "description": "install 12 vinyl windows in kind front of house and visible from street",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=32ND&street_type=AVE&address_number=722",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1613005J&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1613&lot=005J",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1613005J",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-01-30-n187",
+      "name": "Building and Engineering News, 30 January 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n187/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-01-30",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of four on adjoining lots, estimated at $5,000 each. Andrew H. Knoll was named as architect and P. J. Feerick as contractor.",
+      "source": "building-engineering-news-1926-01-30-n187"
+    }
+  ],
+  "building": {
+    "architect": "Andrew H. Knoll",
+    "builder": "P. J. Feerick"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "address": "309 San Fernando Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/san-fernando-way/309/",
+  "apn": "3257029",
+  "block": "3257",
+  "lot": "029",
+  "eas_baseid": "356892",
+  "coordinates": {
+    "lat": 37.731653,
+    "lng": -122.469367
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 3798,
+    "building_area_sqft": 2760,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Balboa Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0309 SAN FERNANDO        WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48719,
+    "assessed_improvement_value": 152722
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Balboa Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1921–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202205033446",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-03",
+      "status_date": "2022-06-07",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace 1 fixed wooden sash. 20 true divided lights w/ 1/4 laminated glass. street facing. replace to match existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412103497",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-12-10",
+      "status_date": "2014-12-10",
+      "estimated_cost": 5292,
+      "revised_cost": 5292,
+      "description": "replacement of (6) vinyl retorfit windows. all face front. ufact <.32. no size change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112060165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-06",
+      "status_date": "2012-05-23",
+      "estimated_cost": 3200,
+      "revised_cost": 3200,
+      "description": "dry rot repair on north side (left side) of building, not facing the street. remove and replace damaged framing & sheathing of approx. 4'x20' area and 3 stud bays. patch stucco to match existing at damaged locations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9311202",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-07-02",
+      "status_date": "1993-12-27",
+      "estimated_cost": 7575,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9207450",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-05-07",
+      "status_date": "1992-10-27",
+      "estimated_cost": 500,
+      "description": "indoor sht rck, right rear bedrm-outdr stucco replacement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20FERNANDO&street_type=WAY&address_number=309",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3257029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3257&lot=029",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3257029",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46936741312607%2037.731652870115454)%27)",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-04-10-n602",
+      "name": "Building and Engineering News, 10 April 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n602/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-04-10",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $5,000 each. Harold G. Stoner was named as architect and Walter C. Zwieg as contractor.",
+      "source": "building-engineering-news-1926-04-10-n602"
+    }
+  ],
+  "building": {
+    "architect": "Harold G. Stoner",
+    "builder": "Walter C. Zwieg"
+  }
+}

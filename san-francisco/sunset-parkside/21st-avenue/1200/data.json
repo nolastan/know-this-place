@@ -1,0 +1,108 @@
+{
+  "address": "1200 21st Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/21st-avenue/1200/",
+  "apn": "1730042A",
+  "block": "1730",
+  "lot": "042A",
+  "eas_baseid": "315464",
+  "coordinates": {
+    "lat": 37.765203,
+    "lng": -122.479112
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 3400,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1202 1200 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313522,
+    "assessed_improvement_value": 470288,
+    "last_sale_date": "1998-10-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8110143",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-11-30",
+      "status_date": "1982-03-18",
+      "estimated_cost": 2800,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8109836",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1981-11-17",
+      "status_date": "1981-12-08",
+      "estimated_cost": 1800,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=1200",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1730042A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1730&lot=042A",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1730042A",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-04-17-n645",
+      "name": "Building and Engineering News, 17 April 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n645/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-04-17",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of four on adjoining lots, estimated at $6,000 each. Thos. Hamill was named as contractor.",
+      "source": "building-engineering-news-1926-04-17-n645"
+    }
+  ],
+  "building": {
+    "builder": "Thos. Hamill"
+  }
+}

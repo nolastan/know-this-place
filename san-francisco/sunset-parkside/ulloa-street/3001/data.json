@@ -1,0 +1,121 @@
+{
+  "address": "3001 Ulloa Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/ulloa-street/3001/",
+  "apn": "2432001",
+  "block": "2432",
+  "lot": "001",
+  "eas_baseid": "338841",
+  "coordinates": {
+    "lat": 37.740362,
+    "lng": -122.488567
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2696,
+    "building_area_sqft": 1470,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 3001 ULLOA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 40862,
+    "assessed_improvement_value": 72670
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200801283393",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-28",
+      "status_date": "2008-03-27",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "1 bathroom remodel. tear out (e) tile, plaster, install new copper water supplies, new dectric outlet per code. install new plumbing fixtures. tile, drywall. all fixtures (toilet, tub & sink) stay in (e) location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405254787",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-05-25",
+      "status_date": "2004-05-25",
+      "estimated_cost": 3900,
+      "revised_cost": 3900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301679",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-03-01",
+      "status_date": "1983-06-16",
+      "estimated_cost": 1800,
+      "description": "replace toilet, install new sink",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ULLOA&street_type=ST&address_number=3001",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2432001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2432&lot=001",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2432001",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-02-06-n228",
+      "name": "Building and Engineering News, 6 February 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n228/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-02-06",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of four on adjoining lots, estimated at $4,000 each. Wm. J. Mooney was named as architect.",
+      "source": "building-engineering-news-1926-02-06-n228"
+    }
+  ],
+  "building": {
+    "architect": "Wm. J. Mooney"
+  }
+}

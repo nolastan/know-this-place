@@ -1,0 +1,138 @@
+{
+  "address": "2336 Bay Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/bay-street/2336/",
+  "apn": "0923012",
+  "block": "0923",
+  "lot": "012",
+  "eas_baseid": "290456",
+  "coordinates": {
+    "lat": 37.801825,
+    "lng": -122.445601
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 1475,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2336 BAY                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2201125,
+    "assessed_improvement_value": 943338,
+    "last_sale_date": "2021-04-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9703639",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-28",
+      "status_date": "1997-04-29",
+      "estimated_cost": 10950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017458",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-30",
+      "status_date": "1990-09-12",
+      "estimated_cost": 1500,
+      "description": "install anchor bolts to accessible abasement breaking walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901155",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-01-24",
+      "status_date": "1989-06-21",
+      "estimated_cost": 14000,
+      "description": "renovation of exist bathrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8900501",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-11",
+      "status_date": "1989-06-21",
+      "estimated_cost": 14000,
+      "description": "kitchen remodel replace cabinets and fixtures only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1989–2012",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAY&street_type=ST&address_number=2336",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0923012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0923&lot=012",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0923012",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-06-26-n1065",
+      "name": "Building and Engineering News, 26 June 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n1065/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-06-26",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $3,000 each. Pring & Lesswing were named as architects and the Schultz Construction Co. as contractor.",
+      "source": "building-engineering-news-1926-06-26-n1065"
+    }
+  ],
+  "building": {
+    "architect": "Pring & Lesswing",
+    "builder": "Schultz Construction Co."
+  }
+}

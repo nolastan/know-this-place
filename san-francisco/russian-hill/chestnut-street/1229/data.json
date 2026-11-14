@@ -1,0 +1,136 @@
+{
+  "address": "1229 Chestnut Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/chestnut-street/1229/",
+  "apn": "0499001H",
+  "block": "0499",
+  "lot": "001H",
+  "eas_baseid": "283522",
+  "coordinates": {
+    "lat": 37.802138,
+    "lng": -122.423584
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 24,
+    "stories": 3,
+    "rooms": 50,
+    "bathrooms": 24,
+    "lot_area_sqft": 7562,
+    "building_area_sqft": 15654,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1229 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162374,
+    "assessed_improvement_value": 450722
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201608316452",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-31",
+      "status_date": "2017-05-09",
+      "estimated_cost": 20000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfbc chapter 34b 2012iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209179872",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-09-17",
+      "status_date": "2013-01-18",
+      "estimated_cost": 16500,
+      "revised_cost": 24100,
+      "description": "replacing old kitchen cabinets w/ new tile floor in kitchen & bath. no structural work. lighting must comply w/ cec 150 (k). kitchen 8'x 8', bath 5'x7'",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504049062",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-04-04",
+      "status_date": "2005-04-08",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "patch ceiling and wall due to pipe leak",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103164501",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-16",
+      "status_date": "2001-09-16",
+      "estimated_cost": 7600,
+      "revised_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2001–2017",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=1229",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0499001H&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0499&lot=001H",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0499001H",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-01-23-n146",
+      "name": "Building and Engineering News, 23 January 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n146/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-01-23",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of 24 apartments with a basement, estimated at $27,000.",
+      "source": "building-engineering-news-1926-01-23-n146"
+    }
+  ]
+}

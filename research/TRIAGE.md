@@ -106,27 +106,18 @@ documents sampled are large and text-bearing (LM271, 75pp; LM300, 235pp), but
 LM11 and LM200 are image-only and would need OCR. Same publisher as
 `sf-context-statements` but an entirely separate corpus.
 
-**Period trade journals.** Two runs, mined identically, so they are one lead.
-***Architect and Engineer of California***: 214 issues on the Internet Archive
-under `usmodernist-AECA-*`. ***Building & Engineering News***: 35 volumes under
-`buildingengineer*`, digitized with SFPL funding, roughly 9 MB of OCR text per
-volume. Both are dense with architects, contractors, costs and dates, and both
-carry the weekly contract-award column — a sampled 1928 entry gives a
-three-storey 69-room apartment building, $80,000, with the owner, the heating
-contractor and the architect's firm all named and addressed.
-
-**The catch is the same one `loc-newspapers` already documents, twice over.**
-First, the contract notices identify buildings by corner, not by number: the
-1912 *Architect and Engineer* award for the Sharon building places it "on the
-northeast corner of New Montgomery and Jessie streets" with a $375,000 price and
-the architect named, and no street number anywhere. Second, the numbered
-addresses that *are* dense in the text are mostly advertisers' and architects'
-own offices — in one *Building & Engineering News* volume the 5,427 numbered
-street tokens are topped by 354 Hobart (125 times) and 251 Kearny (102), which
-are firms' addresses, not building facts. The usable material is in the long
-tail. Expect a low resolve rate and a resolver-heavy pass, and note that a
-sampled volume ran heavily to Oakland and the wider Bay Area, so a filtering
-step for San Francisco comes before anything else.
+**Period trade journals.** ***Architect and Engineer of California***: 214
+issues on the Internet Archive under `usmodernist-AECA-*`, dense with
+architects, contractors, costs and dates. Its contract notices identify
+buildings by corner, not by number: the 1912 award for the Sharon building
+places it "on the northeast corner of New Montgomery and Jessie streets" with a
+$375,000 price and the architect named, and no street number anywhere. The
+numbered addresses that are dense in the text are mostly advertisers' and
+architects' own offices. Its sister weekly, *Building & Engineering News*, was
+promoted on 2026-11-14 as
+[`building-engineering-news`](sources/building-engineering-news.md); that
+dossier's lot-geometry method (a side of a street and a distance from a corner,
+placed on today's parcel shapes) is the way into this one too.
 
 **Bay Area Reporter archive.** 1,529 issues on the Internet Archive under
 collection `bayareareporter`, contributed by the GLBT Historical Society,

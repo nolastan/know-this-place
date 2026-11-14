@@ -1,0 +1,144 @@
+{
+  "address": "3434 California Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/california-street/3434/",
+  "apn": "1019010",
+  "block": "1019",
+  "lot": "010",
+  "eas_baseid": "293002",
+  "coordinates": {
+    "lat": 37.78705,
+    "lng": -122.45081
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 3646.23,
+    "building_area_sqft": 3200,
+    "lot_depth_ft": 32.59,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3434 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 858896,
+    "assessed_improvement_value": 572594,
+    "last_sale_date": "2001-05-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201503302165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-30",
+      "status_date": "2015-04-16",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove & replace rotten or deteriorated wood cedar singles with same. add flashing & building paper as needed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108176335",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-08-17",
+      "status_date": "2002-02-17",
+      "estimated_cost": 8700,
+      "revised_cost": 8700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712099",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-08-24",
+      "status_date": "1987-11-19",
+      "estimated_cost": 2000,
+      "description": "repair dry rotted, new framing at exist bay window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8709679",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-07-10",
+      "status_date": "1987-11-19",
+      "estimated_cost": 2000,
+      "description": "repair stucco in front of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705275",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-04-22",
+      "status_date": "1987-11-19",
+      "estimated_cost": 7000,
+      "description": "dryrot & termite repair & restucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=3434",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1019010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1019&lot=010",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1019010",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-02-06-n227",
+      "name": "Building and Engineering News, 6 February 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n227/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-02-06",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, estimated at $10,000. S. Rosen & Son were named as architects and contractors.",
+      "source": "building-engineering-news-1926-02-06-n227"
+    }
+  ],
+  "building": {
+    "architect": "S. Rosen & Son",
+    "builder": "S. Rosen & Son"
+  }
+}

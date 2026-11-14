@@ -1,0 +1,148 @@
+{
+  "address": "718 32nd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/32nd-avenue/718/",
+  "apn": "1613005K",
+  "block": "1613",
+  "lot": "005K",
+  "eas_baseid": "310546",
+  "coordinates": {
+    "lat": 37.775555,
+    "lng": -122.491601
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2376,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0718 32ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1688039,
+    "assessed_improvement_value": 786204,
+    "last_sale_date": "2019-08-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210124191",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-12",
+      "status_date": "2022-11-04",
+      "estimated_cost": 8333,
+      "revised_cost": 8333,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909232369",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-23",
+      "status_date": "2020-01-14",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remodel (e) bathroom to create 2 bathrooms @ 2nd floor of existing resident. all work interior",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201909030489",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-03",
+      "status_date": "2020-01-14",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "upgrade elctrical main power to 200 amps. installing new washer and dryer in garage. adding new outlets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201904047086",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-04",
+      "status_date": "2019-07-16",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "demo (e) kitchen and replace, demo tile @ bathroom and replace, new main electrical panel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810294396",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-29",
+      "status_date": "2018-11-06",
+      "estimated_cost": 1400,
+      "revised_cost": 1400,
+      "description": "perform repairs per termite report#81781 item#3a only.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=32ND&street_type=AVE&address_number=718",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1613005K&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1613&lot=005K",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1613005K",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-01-30-n187",
+      "name": "Building and Engineering News, 30 January 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n187/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-01-30",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of four on adjoining lots, estimated at $5,000 each. Andrew H. Knoll was named as architect and P. J. Feerick as contractor.",
+      "source": "building-engineering-news-1926-01-30-n187"
+    }
+  ],
+  "building": {
+    "architect": "Andrew H. Knoll",
+    "builder": "P. J. Feerick"
+  }
+}

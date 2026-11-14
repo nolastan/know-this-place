@@ -9,6 +9,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 ## Streets documented so far
 
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 2002.
+- [Arch Street](arch-street/) — 2 buildings, built 1926.
 - [Ashton Avenue](ashton-avenue/) — 1 building, built 1923.
 - [Belle Avenue](belle-avenue/) — 1 building, built 1947.
 - [Bepler Street](bepler-street/) — 1 building, built 1986.

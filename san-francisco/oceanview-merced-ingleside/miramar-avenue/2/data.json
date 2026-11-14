@@ -1,0 +1,187 @@
+{
+  "address": "2 Miramar Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/miramar-avenue/2/",
+  "apn": "7016026",
+  "block": "7016",
+  "lot": "026",
+  "eas_baseid": "412083",
+  "coordinates": {
+    "lat": 37.718436,
+    "lng": -122.458021
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2450,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0002 MIRAMAR             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 132608,
+    "assessed_improvement_value": 480334,
+    "last_sale_date": "1992-05-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201605117173",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-05-11",
+      "status_date": "2016-06-07",
+      "estimated_cost": 135000,
+      "revised_cost": 135000,
+      "description": "remove existing stuco, dry rot repair if needed, insulation, apply new stucco replace with in-kind. replace/repair existing shear wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204208768",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-20",
+      "status_date": "2012-07-25",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201204057698 foundation work only water proofing. replace foundation at retaining wall, south wall and southwest wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204057698",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-05",
+      "status_date": "2012-07-25",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "water proofing & reinforce foundation wouth wall & south west wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508180620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-18",
+      "status_date": "2006-01-17",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "convert 4'-6\" crawl space into storage room at rear of building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007256054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-25",
+      "status_date": "2000-09-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renewal of application 9722023, 9904631",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9904631",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-03-10",
+      "status_date": "2000-02-28",
+      "estimated_cost": 14990,
+      "description": "remove non-structural walls in storage area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722023",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-31",
+      "status_date": "1998-05-29",
+      "estimated_cost": 3500,
+      "description": "remove stucco only around entrance way,repair wood damaged",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017934",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-09-06",
+      "status_date": "1991-03-08",
+      "estimated_cost": 3530,
+      "description": "remove illegally built walls and utility",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9011202",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-06-06",
+      "status_date": "1990-12-06",
+      "estimated_cost": 5250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MIRAMAR&street_type=AVE&address_number=2",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7016026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7016&lot=026",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7016026",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-04-10-n603",
+      "name": "Building and Engineering News, 10 April 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n603/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-04-10",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $5,850. J. C. Hladik was named as architect and Milton Bros. as contractor.",
+      "source": "building-engineering-news-1926-04-10-n603"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik",
+    "builder": "Milton Bros."
+  }
+}

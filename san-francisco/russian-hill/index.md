@@ -11,6 +11,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Bret Harte Terrace](bret-harte-terrace/) — 3 buildings, built 1940–1988.
 - [Broadway](broadway/) — 3 buildings, built 1912.
 - [Chestnut Street](chestnut-street/) — 1 building, built 1926.
+- [Clay Street](clay-street/) — 1 building, built 1910.
 - [Columbus Avenue](columbus-avenue/) — 1 building, built 1931.
 - [Filbert Street](filbert-street/) — 1 building, built 1909.
 - [Francisco Street](francisco-street/) — A 1914 corner house beside the Powell–Hyde cable car line; tied to Nicolas Cage.

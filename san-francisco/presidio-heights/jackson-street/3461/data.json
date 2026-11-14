@@ -1,0 +1,148 @@
+{
+  "address": "3461 Jackson Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/jackson-street/3461/",
+  "apn": "0986019",
+  "block": "0986",
+  "lot": "019",
+  "eas_baseid": "292049",
+  "coordinates": {
+    "lat": 37.790004,
+    "lng": -122.45178
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 4396.32,
+    "building_area_sqft": 3620,
+    "lot_depth_ft": 27.8,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3461 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 679959,
+    "assessed_improvement_value": 618981
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200103214842",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-21",
+      "status_date": "2001-04-18",
+      "estimated_cost": 4900,
+      "revised_cost": 4900,
+      "description": "repair dryrot as per lingrven report#34015 items #1b.4a,9a,9b,9c,11b",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9703112",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-21",
+      "status_date": "1997-03-26",
+      "estimated_cost": 11800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8702261",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-02-20",
+      "status_date": "1988-01-28",
+      "estimated_cost": 80000,
+      "description": "master bath & bedroom remodel on top",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8403628",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-04-06",
+      "status_date": "1986-01-07",
+      "estimated_cost": 25000,
+      "description": "repair deck railing, replace stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=3461",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0986019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0986&lot=019",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0986019",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45178024972813%2037.79000381390794)%27)",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-05-29-n898",
+      "name": "Building and Engineering News, 29 May 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n898/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-05-29",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, one of two on adjoining lots, estimated at $15,000 each. Hyman & Appleton were named as architects and Barrett & Hilp as contractors.",
+      "source": "building-engineering-news-1926-05-29-n898"
+    }
+  ],
+  "building": {
+    "architect": "Hyman & Appleton",
+    "builder": "Barrett & Hilp"
+  }
+}

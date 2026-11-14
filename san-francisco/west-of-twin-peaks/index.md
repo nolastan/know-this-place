@@ -5,6 +5,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 ## Streets documented so far
 
 - [12th Avenue](12th-avenue/) — 3 buildings, built 1990.
+- [14th Avenue](14th-avenue/) — 1 building, built 1926.
 - [15th Avenue](15th-avenue/) — 1 building, built 1945.
 - [16th Avenue](16th-avenue/) — 1 building, built 1947.
 - [17th Avenue](17th-avenue/) — 2 buildings, built 1950–2020.
@@ -20,6 +21,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Cecilia Avenue](cecilia-avenue/) — 1 building, built 1927.
 - [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
+- [Colon Avenue](colon-avenue/) — 1 building, built 1926.
 - [Cresta Vista Drive](cresta-vista-drive/) — 7 buildings, built 1989–1990.
 - [Dalewood Way](dalewood-way/) — 1 building, built 1967.
 - [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.
@@ -86,6 +88,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Sequoia Way](sequoia-way/) — 1 building, built 1931.
 - [Sotelo Avenue](sotelo-avenue/) — 1 building, built 1914; 1 in the Forest Hill Historic District.
 - [Stanford Heights Avenue](stanford-heights-avenue/) — 1 building, built 1960.
+- [Staples Avenue](staples-avenue/) — 1 building, built 1925.
 - [Stonecrest Drive](stonecrest-drive/) — 2 buildings, built 1939–1941.
 - [Taraval Street](taraval-street/) — 3 buildings, built 1950.
 - [Teresita Boulevard](teresita-boulevard/) — 1 building, built 1951.
