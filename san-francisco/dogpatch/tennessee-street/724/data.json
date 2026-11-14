@@ -1,0 +1,154 @@
+{
+  "address": "724 Tennessee Street, San Francisco, CA 94107",
+  "path": "/san-francisco/dogpatch/tennessee-street/724/",
+  "block": "4043",
+  "eas_baseid": "367701",
+  "coordinates": {
+    "lat": 37.762573,
+    "lng": -122.390003
+  },
+  "parcel": {
+    "year_built": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Central Waterfront/Dogpatch",
+    "analysis_neighborhood": "Potrero Hill",
+    "units": 2
+  },
+  "condominium": {
+    "lots": [
+      "061",
+      "062"
+    ],
+    "method": "Proposed from the 2025 roll for block 4043: every condominium parcel the roll files under 724 TENNESSEE ST, and the unbroken run of lots beside parcel 4043061 on the same street with the same year built (1900) — street numbers 724, 726. 2 lots, 061–062."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Dogpatch Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1867–1945",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201211083836",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-11-08",
+      "status_date": "2013-01-09",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "bathroom remodel, new tub, vanity, sink, plumbing and electrical updates, new tile, no removal of any wall ; lighting must comply with cec 150(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205140424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-14",
+      "status_date": "2012-07-12",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "repairs for physical inspection report #cc-7088-repair front stairs & build landing for rear yard, less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105136009",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-13",
+      "status_date": "2011-10-06",
+      "estimated_cost": 8000,
+      "revised_cost": 16000,
+      "description": "replacement of existing rear deck and stairs, in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805142027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-05-14",
+      "status_date": "2008-06-10",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "replace 2 sliding patio doors on the rear of each unit in kind with vynel 95x80.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009291891",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-29",
+      "status_date": "2000-11-20",
+      "estimated_cost": 4035,
+      "revised_cost": 4035,
+      "description": "dry rot and termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003148",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-15",
+      "status_date": "1990-03-30",
+      "estimated_cost": 8100,
+      "description": "replace the deteriorated ground level rear concrete deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8917198",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-15",
+      "status_date": "1989-09-29",
+      "estimated_cost": 1400,
+      "description": "termite damage repair as per attached report",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TENNESSEE&street_type=ST&address_number=724",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 4043)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=4043&closed_roll_year=2025",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4043",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4043061",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.39000267515839%2037.76257253554336)%27)",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

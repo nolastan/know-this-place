@@ -1,0 +1,77 @@
+{
+  "address": "485–487 6th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/6th-avenue/485/",
+  "apn": "1538013",
+  "block": "1538",
+  "lot": "013",
+  "eas_baseid": "307327",
+  "coordinates": {
+    "lat": 37.779416,
+    "lng": -122.464346
+  },
+  "address_range": "485–487",
+  "street_numbers_on_parcel": [
+    "485",
+    "487"
+  ],
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 1263,
+    "building_area_sqft": 1490,
+    "basement_area_sqft": 450,
+    "use": "Multi-Family Residential",
+    "property_class": "Dwellings - Apt 4 units or less",
+    "construction_type_code": "WOO",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0487 0485 06TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 487861,
+    "assessed_improvement_value": 348469
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=06TH&street_type=AVE&address_number=485",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1538013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1538&lot=013",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1538013",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}
