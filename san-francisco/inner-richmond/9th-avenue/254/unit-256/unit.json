@@ -1,0 +1,57 @@
+{
+  "address": "256 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/254/unit-256/",
+  "apn": "1425071",
+  "block": "1425",
+  "lot": "071",
+  "parcel": {
+    "building_area_sqft": 1394,
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 793200,
+    "assessed_improvement_value": 528800,
+    "last_sale_date": "2018-04-20"
+  },
+  "permits": [
+    {
+      "number": "201809139987",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-09-13",
+      "status_date": "2018-09-13",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "remove and replace front windows with marvin wood double hung windows. lower unit, 3 windows. with ogee lugs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808167491",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-08-16",
+      "status_date": "2018-09-13",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replacement of 13 windows with same size windows. replacement of 1 window with smaller window. all work not visible from the street. (none of these window face the street.)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1425071&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-13"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1425&street_number=256",
+      "retrieved": "2026-11-13"
+    }
+  ]
+}

@@ -98,20 +98,20 @@ sit in — the three it touched most, and how many in all.
 | `corbett-heights-neighbors/vol-viii-no-9.json` | 22 | 38 KB | 1876–1982 | 12 | 11 | `castro`, `noe-valley` |
 | `digitalsf/no-citation-field.json` | 0 | 4 KB | — | 0 | 0 | — |
 | `digitalsf/sfh-3.json` | 3 | 9 KB | — | 3 | 0 | `tenderloin`, `pacific-heights` |
-| `digitalsf/sfh-371.json` | 421 | 812 KB | 1873–1996 | 120 | 118 | `tenderloin`, `japantown`, `pacific-heights` +11 |
-| `digitalsf/sfp-103.json` | 7 | 16 KB | 1964 | 3 | 0 | `western-addition` |
-| `digitalsf/sfp-125.json` | 36 | 79 KB | 1970–1971 | 11 | 11 | `south-of-market`, `tenderloin`, `south-beach` +1 |
+| `digitalsf/sfh-371.json` | 421 | 815 KB | 1873–1996 | 125 | 121 | `tenderloin`, `japantown`, `pacific-heights` +11 |
+| `digitalsf/sfp-103.json` | 7 | 18 KB | 1964 | 5 | 0 | `western-addition`, `pacific-heights`, `japantown` |
+| `digitalsf/sfp-125.json` | 36 | 80 KB | 1970–1971 | 13 | 11 | `south-of-market`, `tenderloin`, `south-beach` +1 |
 | `digitalsf/sfp-136.json` | 10 | 16 KB | 1915–1959 | 2 | 2 | `tenderloin`, `pacific-heights` |
-| `digitalsf/sfp-162.json` | 1,186 | 2.2 MB | 1865–1989 | 679 | 554 | `financial-district`, `pacific-heights`, `mission` +36 |
-| `digitalsf/sfp-169.json` | 39 | 79 KB | 1966–1968 | 21 | 21 | `marina`, `south-of-market`, `castro` +8 |
+| `digitalsf/sfp-162.json` | 1,186 | 2.2 MB | 1865–1989 | 737 | 586 | `financial-district`, `pacific-heights`, `mission` +36 |
+| `digitalsf/sfp-169.json` | 39 | 80 KB | 1966–1968 | 24 | 24 | `south-of-market`, `marina`, `castro` +9 |
 | `digitalsf/sfp-179.json` | 29 | 60 KB | 2014 | 25 | 25 | `tenderloin`, `nob-hill` |
-| `digitalsf/sfp-22.json` | 80 | 155 KB | 1911–1912 | 72 | 60 | `ingleside-terraces`, `presidio-heights`, `inner-richmond` |
+| `digitalsf/sfp-22.json` | 80 | 157 KB | 1911–1912 | 73 | 61 | `ingleside-terraces`, `presidio-heights`, `inner-richmond` |
 | `digitalsf/sfp-23.json` | 1,122 | 2.0 MB | 1945–1991 | 960 | 944 | `mission`, `sunset-parkside`, `inner-sunset` +33 |
 | `digitalsf/sfp-26.json` | 17 | 36 KB | 1935–1942 | 11 | 6 | `lone-mountain`, `dogpatch`, `glen-park` +3 |
 | `digitalsf/sfp-42.json` | 58 | 104 KB | 1953–1994 | 56 | 56 | `mission`, `pacific-heights`, `inner-richmond` +14 |
 | `digitalsf/sfp-84.json` | 13 | 26 KB | 1889–1914 | 1 | 1 | `financial-district` |
 | `digitalsf/sfp-90.json` | 14 | 29 KB | 1976–1984 | 11 | 11 | `tenderloin`, `bernal-heights`, `pacific-heights` +6 |
-| `digitalsf/tail.json` | 137 | 247 KB | 1900–2022 | 78 | 48 | `castro`, `north-beach`, `mission` +18 |
+| `digitalsf/tail.json` | 137 | 247 KB | 1900–2022 | 80 | 50 | `castro`, `north-beach`, `mission` +19 |
 | `east-west-journal/1967-1969.json` | 51 | 98 KB | 1937–1969 | 39 | 33 | `chinatown`, `north-beach`, `nob-hill` +5 |
 | `east-west-journal/1970-1972.json` | 40 | 64 KB | 1912–1972 | 31 | 30 | `chinatown`, `north-beach`, `financial-district` +3 |
 | `east-west-journal/1973-1975.json` | 31 | 54 KB | 1917–1975 | 25 | 23 | `chinatown`, `financial-district`, `inner-richmond` +8 |
@@ -352,6 +352,7 @@ are listed so their size is visible before anyone opens one.
 | `corbett-heights-context-statement-architects.json` | 9 | 4 KB | `nob-hill`, `chinatown`, `tenderloin` +3 |
 | `corbett-heights-context-statement.json` | 88 | 34 KB | `corbett-heights`, `castro` |
 | `counterculture-hcs.json` | 0 | 1 KB | — |
+| `digitalsf-retired-addresses.json` | 8 | 3 KB | `mission`, `inner-richmond`, `marina` +4 |
 | `digitalsf-sfp-179.json` | 9 | 3 KB | `tenderloin`, `nob-hill` |
 | `digitalsf-sfp-23.json` | 723 | 302 KB | `sunset-parkside`, `inner-sunset`, `mission` +33 |
 | `districts.json` | 76 | 27 KB | `nob-hill`, `tenderloin`, `financial-district` +5 |
@@ -480,6 +481,8 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-11-07.json` | 1 | 1 KB | `financial-district` |
 | `news-2026-11-10-airspace.json` | 4 | 2 KB | `tenderloin`, `south-of-market`, `nob-hill` +1 |
 | `news-2026-11-11.json` | 2 | 1 KB | `union-square`, `tenderloin` |
+| `news-2026-11-13.json` | 1 | 1 KB | `russian-hill` |
+| `news-2026-11-14.json` | 1 | 1 KB | `hayes-valley` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
 | `news-condo-446.json` | 2 | 1 KB | `castro`, `east-cut` |
 | `north-beach-hcs.json` | 0 | 1 KB | — |

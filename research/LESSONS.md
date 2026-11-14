@@ -3372,3 +3372,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   year of the hotel tower beside it), so "replaced" needs a demolition
   permit, not only a later roll year. (2026-11-13,
   sf-environmental-review)
+- **A photograph caption is the weakest address there is: two rows in three
+  with a retired number found no tie at all.** Of 497 digitalsf rows whose
+  number EAS no longer holds, 338 could not be tied to a parcel, 149 traced
+  to one and 64 of those were held (45 on geometry alone); 73 were written
+  and 41 published. A caption carries no block and lot, most photographs
+  predate permit data (1981), and the number in the catalogue's title is
+  often not a street number: an engine-company number, a bus line, the tail
+  of a fraction ("2062 1/2 Pine St" filed as "2 Pine St"). Read the raw
+  caption before tracing the title's number. A photograph of a building
+  since replaced is published as "then on this site at <old address>" with
+  the present building's year; one with no usable date was declined, since
+  nothing shows which building it is. (2026-11-13, digitalsf)

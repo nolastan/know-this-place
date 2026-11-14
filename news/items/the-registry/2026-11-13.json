@@ -1,0 +1,107 @@
+{
+  "source_id": "the-registry",
+  "batch": "2026-11-13",
+  "read_on": "2026-11-13",
+  "notes": "Run of 2026-11-13. Five Registry stories read, all paywalled after the lede. 150 California (a listing), 555 California (an earnings-call rent figure) and 989 Post (a duplicate) are declined. The Tracy logistics sale is outside the city; the Colliers inventory story names addresses only in its sidebar.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 5,
+    "mentions": 3,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-13-rg-0001",
+      "date": "2026-11-13",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "150 California Street",
+      "street_number": "150",
+      "street_type": "ST",
+      "street_name": "CALIFORNIA",
+      "description": "Morgan Stanley's Prime Property Fund is marketing 150 California Street, a 249,960 sq ft, 24-story Financial District tower completed in 2000.",
+      "citation": {
+        "label": "The Registry, “Morgan Stanley’s Prime Property Fund Puts 250,000 SQFT 150 California Street on the Market in San Francisco,” 13 November 2026",
+        "url": "https://news.theregistrysf.com/morgan-stanleys-prime-property-fund-puts-250000-sqft-150-california-street-on-the-market-in-san-francisco/"
+      },
+      "raw": {
+        "text": "Morgan Stanley's Prime Property Fund is marketing 150 California Street, a 249,960-square-foot, 24-story Financial District tower completed in 2000"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a listing is not an event at the building (the same call as 2120 Washington Street, hoodline 2026-11-11-hl-0004, and 736 Mission Street's prospective buyer). The sale, when it closes, is the entry."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0236019",
+        "path": "/san-francisco/financial-district/california-street/150/",
+        "eas_address": "150 CALIFORNIA ST",
+        "method": "EAS exact match on 150 CALIFORNIA ST → parcel 0236019; sf-parcels has blklot 0236019 active, 150–150 CALIFORNIA; the 2025 roll records it as commercial office, built 2000.",
+        "checked_on": "2026-11-13"
+      }
+    },
+    {
+      "id": "2026-11-13-rg-0002",
+      "date": "2026-11-12",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "555 California Street",
+      "street_number": "555",
+      "street_type": "ST",
+      "street_name": "CALIFORNIA",
+      "description": "Vornado told investors its 555 California Street complex signed 55,000 sq ft of leases at an average starting rent of $163 per sq ft, the highest in the property's history.",
+      "citation": {
+        "label": "The Registry, “Vornado’s 555 California Street Hits Record $163 Rents as AI Demand Lifts San Francisco Office Market,” 12 November 2026",
+        "url": "https://news.theregistrysf.com/vornados-555-california-street-hits-record-163-rents-as-ai-demand-lifts-san-francisco-office-market/"
+      },
+      "raw": {
+        "text": "its Financial District complex signed 55,000 square feet of leases at an average starting rent of $163 per square foot, the highest in the property's history"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Fails the ten-year test: an average rent from a quarterly earnings call is a market statistic, not something that happened to the building, and it is reported for a multi-building complex without naming a tenant or a building."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0259026",
+        "path": "/san-francisco/financial-district/california-street/555/",
+        "eas_address": "555 CALIFORNIA ST",
+        "method": "EAS exact match on 555 CALIFORNIA ST → parcel 0259026; sf-parcels has blklot 0259026 active, 555–555 CALIFORNIA; the 2025 roll records it as commercial office, built 1969.",
+        "checked_on": "2026-11-13"
+      }
+    },
+    {
+      "id": "2026-11-13-rg-0003",
+      "date": "2026-11-11",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "989 Post Street",
+      "street_number": "989",
+      "street_type": "ST",
+      "street_name": "POST",
+      "description": "Recreation and Park Department files to turn the 8,000 sq ft site at 989 Post Street into a park.",
+      "citation": {
+        "label": "The Registry, “Rec and Park Files to Turn 8,000 SQFT 989 Post Street Site Into New Tenderloin-Area Park,” 11 November 2026",
+        "url": "https://news.theregistrysf.com/rec-and-park-files-to-turn-8000-sqft-989-post-street-site-into-new-tenderloin-area-park/"
+      },
+      "raw": {
+        "text": "Rec and Park Files to Turn 8,000 SQFT 989 Post Street Site Into New Tenderloin-Area Park"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "One event, one entry: /san-francisco/tenderloin/post-street/989/ already carries this filing from San Francisco YIMBY, “Public Park Proposed For 989 Post Street in Tenderloin, San Francisco,” 11 November 2026 (sfyimby 2026-11-11-yb-0001)."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0302019",
+        "path": "/san-francisco/tenderloin/post-street/989/",
+        "eas_address": "989 POST ST",
+        "method": "EAS exact match on 989 POST ST → parcel 0302019; sf-parcels has blklot 0302019 active, 989–989 POST; the 2025 roll records it as commercial retail, built 1920.",
+        "checked_on": "2026-11-13"
+      }
+    }
+  ]
+}

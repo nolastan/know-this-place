@@ -3301,9 +3301,10 @@
       "confidence": "medium",
       "resolution": {
         "status": "unresolved",
-        "checked_on": "2026-09-02",
-        "method": "the recorded range 245-247 on 08TH AVE spans more than one parcel in sf-eas-addresses today: 1425051 (245), 1425052 (247).",
-        "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+        "by_hand": true,
+        "checked_on": "2026-11-13",
+        "method": "Checked by hand against sf-parcels, the permits and the roll. Permits at 245 8th Ave name lot 1425051 (2, 1983-84) and at 247 name lot 1425052 (3, 1984-2019); sf-parcels gives both unit lots the same map lot 1425051 with ranges 245 and 247 08TH AVE, and the 2025 roll files them at 245 and 247 8th Ave, built 1909.",
+        "note": "The numbers the record gives are on different parcels now: the tie to one parcel is not documented, so the address lookup's single parcel is not taken."
       },
       "publish": {
         "status": "pending"
@@ -3398,13 +3399,17 @@
       },
       "confidence": "medium",
       "resolution": {
-        "status": "unresolved",
-        "checked_on": "2026-09-02",
-        "method": "the recorded range 254-256 on 09TH AVE spans more than one parcel in sf-eas-addresses today: 1425070 (254), 1425071 (256).",
-        "note": "The numbers the record gives are on different parcels now, so the record cannot be placed on one page without deciding which — which the record does not say."
+        "status": "resolved",
+        "apn": "1425070",
+        "path": "/san-francisco/inner-richmond/9th-avenue/254/",
+        "eas_address": "254 09TH AVE",
+        "method": "Recorded range 254-256 09TH AVE; EAS matches 254, 256 on this street → parcel 1425070; sf-parcels has blklot 1425070 active, 254–254 09TH; the 2025 roll records it as single family residential, built 1910. EAS puts 254, 256 09TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 254. Parcel 1425070 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). The recorded numbers are on 2 parcels today (1425070 (254), 1425071 (256)); sf-parcels files all of them under one map lot, 1425070, and the roll classes them as condominiums, so they are the units of one building and the range is that building's. EAS files the address under parcel 1425032, which sf-parcels reports retired; the active parcel its coordinates fall in is 1425070. EAS files the address under parcel 1425032, which sf-parcels reports retired; the active parcel its coordinates fall in is 1425071.",
+        "checked_on": "2026-11-13",
+        "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
       },
       "publish": {
-        "status": "pending"
+        "status": "published",
+        "pr": "624"
       }
     },
     {

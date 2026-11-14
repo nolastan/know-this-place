@@ -87,6 +87,17 @@ their stories are about somewhere else.
   it from nowhere else, because every page on those streets is a ranged address,
   so the screen had been reading stories about Cole, Clipper and Davis Streets
   as stories about streets the site does not cover.
+- **A named building is titled by its name, not its address.** The map's index
+  carries "Transamerica Pyramid" in `t` and "600 Montgomery Street" in `s`;
+  `page_index` read only `t`, so every named building — the buildings the news
+  writes about most — looked page-less, and 15 street names reached the screen
+  from nowhere else. Both are registered now.
+- **The map's index is a build artefact, and a fresh clone has none.** Every
+  scheduled run and every cloud session starts without
+  `shared/addresses.geojson`; `page_index` used to return nothing then, so the
+  poll screened against an empty street vocabulary and `read.py` called every
+  address "(no page)" without a word. It now builds the index itself
+  (`scripts/build_map_index.py`, about three seconds) and stops if it cannot.
 - A story on a **bay-area** feed that names an address but not the city is
   queued anyway, with the doubt written into the reason. Confirming the city is
   the reader's first job.
@@ -280,6 +291,22 @@ copy.**
   out](#rules-that-catch-publishers-out). `--only-pages` narrows a read when you are
   triaging a long backlog by hand; it is not the default and it is not the
   order to work in.
+- **Cite who did the reporting, not who relayed it.** A story that opens
+  "according to a report published by Hoodline" and links it is a rewrite of
+  someone else's reporting, and What Now does this often. Follow the link and
+  make the original the entry: its headline, its outlet, its date and URL, and
+  its citation in the items file, filed under the original outlet's items
+  directory (`news/items/<its feed id>/`). Note the relaying story in the
+  finding's `extra` so the next reader sees how it was found. The original's
+  earlier date usually drops the entry below the homepage's twelve; that is
+  the grid rule being followed, not a reason to cite the copy. If the original
+  can't be reached, or its headline is unusable (it names a private
+  individual), cite the relay and say why in `publish.note`. A roundup is
+  fine as the original when its headline names this building's business or
+  address, as Hoodline's "Castro Business Briefs: … Agile Physical Therapy
+  Moves …" does; a roundup headline that doesn't name it is still declined.
+  If the original is already on the page from its own feed, the relay is a
+  second account: decline it under "One event, one entry".
 - **The duplicate is usually already on the page, not elsewhere in the queue.**
   "One event, one entry" reads like a rule about two outlets in one morning, and
   that is its easy case. The expensive case is a filing covered again a week
