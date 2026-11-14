@@ -755,6 +755,17 @@ records carry one; exactly one of those also carries a street number.
   `citation_of()` does this, and refuses a record that names neither rather
   than citing "the archive".
 
+- **Verified:** 2026-11-13 (retired-address pass over the 497 unresolved
+  photographs whose number EAS no longer holds or splits across parcels: 73
+  resolved, 3 by the resolver and 70 by hand; 41 published on 36 pages, 8 of
+  them seeded, 15 as a photograph of a building since replaced; 32 declined,
+  15 where city data does not show whether the building still stands, 10
+  about a predecessor with no page, 7 undated. 424 stay unresolved, 338 of
+  them with no tie found, and are listed in
+  `research/findings/digitalsf/retired-addresses-unresolved.md`; the
+  resolved rows are in `retired-addresses-resolved.md` beside it. **What it
+  learned:** a caption's number is often not a street number (LESSONS.md, "A
+  photograph caption is the weakest address there is").)
 - **Verified:** 2026-11-10 (#556, the photographs the old condominium rule
   held back, re-resolved now that a condominium is paged as a building. 64
   findings move from unresolved to resolved: SFP 23 27 published and 12
