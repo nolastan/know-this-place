@@ -32,6 +32,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Dorantes Avenue](dorantes-avenue/) — 2 buildings, built 1927–1987; 2 in the Forest Hill Historic District.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [Edna Street](edna-street/) — 1 building, built 1927.
+- [El Plazuela Way](el-plazuela-way/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.
 - [El Verano Way](el-verano-way/) — 1 building, built 1926.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1918.
 - [Fernwood Drive](fernwood-drive/) — 1 building, built 1932.

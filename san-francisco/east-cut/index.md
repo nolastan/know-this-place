@@ -17,6 +17,7 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 - [Howard Street](howard-street/) — 6 buildings, built 1987–2019.
 - [Jack London Alley](jack-london-alley/) — 2 buildings, built 1923–1929; 1 in the South End Historic District.
 - [Jessie Street](jessie-street/) — 1 building, built 1982.
+- [Kearny Street](kearny-street/) — 1 building, built 1910; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Lansing Street](lansing-street/) — 1 building, built 2016.
 - [Main Street](main-street/) — 1 building, built 1929.
 - [Market Street](market-street/) — 5 buildings, built 1964–1981.

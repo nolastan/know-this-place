@@ -1,0 +1,136 @@
+{
+  "address": "302 Ellis Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/ellis-street/302/",
+  "apn": "0324026",
+  "block": "0324",
+  "lot": "026",
+  "eas_baseid": "446728",
+  "coordinates": {
+    "lat": 37.785154,
+    "lng": -122.411428
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 10,
+    "lot_area_sqft": 5667.47,
+    "building_area_sqft": 19662,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "A",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0320 0302 ELLIS               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2703025,
+    "assessed_improvement_value": 1158437
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Individual Landmark Work Program, National Register Individual, National Register Historic District, California Register Historic District",
+    "yearbuilt": "1930",
+    "survey_name": "GLIDE MEMORIAL CHURCH PARKING LOT",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Uptown Tenderloin Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1957",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202306260821",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-06-26",
+      "status_date": "2023-08-18",
+      "estimated_cost": 57427,
+      "revised_cost": 57427,
+      "description": "sidewalk replacement and waterproofing over sub-sidewalk basement adjustment of elevator frame to new sidewalk upgrade",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2018–2023",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ELLIS&street_type=ST&address_number=302",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0324026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0324&lot=026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0324026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41142796054949%2037.78515435350458)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-05-03-n593",
+      "name": "Building and Engineering News, 3 May 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3030cont/page/n593/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-05-17-n660",
+      "name": "Building and Engineering News, 17 May 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3030cont/page/n660/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-05-03",
+      "kind": "construction",
+      "description": "A permit was sought for a six-storey steel frame and concrete church and hotel with a basement. J. W. Plachek of Berkeley was named as architect and Monson Bros. as contractors. The owner was the Glide Foundation.",
+      "source": "building-engineering-news-1930-05-03-n593"
+    },
+    {
+      "date": "1930-05-17",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work on a church, store, hotel and apartment building, at $304,860. J. W. Plachek was named as architect and Monson Bros. as contractors. The owner was the Glide Foundation.",
+      "source": "building-engineering-news-1930-05-17-n660"
+    }
+  ],
+  "building": {
+    "architect": "J. W. Plachek of Berkeley",
+    "builder": "Monson Bros."
+  }
+}

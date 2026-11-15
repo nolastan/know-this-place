@@ -1,0 +1,110 @@
+{
+  "address": "675 Joost Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/joost-avenue/675/",
+  "apn": "3094034",
+  "block": "3094",
+  "lot": "034",
+  "eas_baseid": "353978",
+  "coordinates": {
+    "lat": 37.732085,
+    "lng": -122.450573
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1332,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0675 JOOST               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 73993,
+    "assessed_improvement_value": 62001
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201909030461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-09-03",
+      "status_date": "2019-09-06",
+      "estimated_cost": 9900,
+      "revised_cost": 9900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400464",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-01-11",
+      "status_date": "1994-01-24",
+      "estimated_cost": 2150,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JOOST&street_type=AVE&address_number=675",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3094034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3094&lot=034",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3094034",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-01-04-n19",
+      "name": "Building and Engineering News, 4 January 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3030cont/page/n19/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-01-04",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. C. F. Strothoff was named as architect. The owner was Stoneson Bros. & Thorinson.",
+      "source": "building-engineering-news-1930-01-04-n19"
+    }
+  ],
+  "building": {
+    "architect": "C. F. Strothoff"
+  }
+}
