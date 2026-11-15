@@ -1,0 +1,148 @@
+{
+  "address": "3333 Broderick Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/broderick-street/3333/",
+  "apn": "0926005",
+  "block": "0926",
+  "lot": "005",
+  "eas_baseid": "290519",
+  "coordinates": {
+    "lat": 37.801086,
+    "lng": -122.445109
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 18,
+    "stories": 3,
+    "rooms": 45,
+    "bathrooms": 18,
+    "lot_area_sqft": 5937,
+    "building_area_sqft": 13950,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3333 BRODERICK           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4681800,
+    "assessed_improvement_value": 3381300
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506279663",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-08-12",
+      "status_date": "2026-06-05",
+      "estimated_cost": 10000,
+      "revised_cost": 60550,
+      "description": "upgrade (e) fire alarm system with a new wireless fire alarm system a like-for-like basis. install low frequency sounders in all sleeping areas to comply with sffc 1103.7.6.1 and sffd ab #3.08 section 5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801249382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-24",
+      "status_date": "2018-08-10",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4. n/a for maher. garage level only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201708215382",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-21",
+      "status_date": "2018-03-07",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace side lgihtwell stair (second means of egress) in -kind per plan. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016805",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-08-23",
+      "status_date": "1991-01-22",
+      "estimated_cost": 5000,
+      "description": "sheet rock garage 5/8\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920799",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-31",
+      "status_date": "1991-04-03",
+      "estimated_cost": 300,
+      "description": "e.m.o.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1989–2025",
+    "shown_on_page": 5,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRODERICK&street_type=ST&address_number=3333",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0926005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0926&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0926005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-05-07-n732",
+      "name": "Building and Engineering News, 7 May 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n732/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-05-07",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of 18 apartments with a basement, estimated at $31,500. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1927-05-07-n732"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "address": "1925 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/1925/",
+  "apn": "0492022",
+  "block": "0492",
+  "lot": "022",
+  "eas_baseid": "283338",
+  "coordinates": {
+    "lat": 37.800759,
+    "lng": -122.43499
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 12,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 12,
+    "lot_area_sqft": 4375,
+    "building_area_sqft": 10401,
+    "lot_depth_ft": 87.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1925 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1222009,
+    "assessed_improvement_value": 1062664
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410072394",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-07",
+      "status_date": "2024-10-22",
+      "estimated_cost": 42702,
+      "revised_cost": 42702,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709087322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-08",
+      "status_date": "2021-03-22",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "soft story retrofit per sfebc chapter 4d national design method.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9215834",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-09-14",
+      "status_date": "1993-03-23",
+      "estimated_cost": 9600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=1925",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0492022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0492&lot=022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0492022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-02-12-n238",
+      "name": "Building and Engineering News, 12 February 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n238/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-02-12",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of twelve apartments with a basement, estimated at $21,000. Albert H. Larsen was named as architect and Stock, Maas and Sauer as contractors.",
+      "source": "building-engineering-news-1927-02-12-n238"
+    }
+  ],
+  "building": {
+    "architect": "Albert H. Larsen",
+    "builder": "Stock, Maas and Sauer"
+  }
+}

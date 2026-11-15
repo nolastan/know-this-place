@@ -1,0 +1,113 @@
+{
+  "address": "4033–4035 Cesar Chavez Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/cesar-chavez-street/4033/",
+  "apn": "6580037",
+  "block": "6580",
+  "lot": "037",
+  "eas_baseid": "480587",
+  "coordinates": {
+    "lat": 37.747271,
+    "lng": -122.430053
+  },
+  "address_range": "4033–4035",
+  "street_numbers_on_parcel": [
+    "4033",
+    "4035"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2904,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "4035 4033 CESAR CHAVEZ        ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 64851,
+    "assessed_improvement_value": 105835
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201805310653",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-31",
+      "status_date": "2019-03-27",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401156302",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-15",
+      "status_date": "2014-04-15",
+      "estimated_cost": 96000,
+      "revised_cost": 96000,
+      "description": "remove existing siding on rear and light well, remove existing windows install new insulation \"1/2\" plywood. new vinyl windows new membrane hardie trim & siding smooth \"8 1/4 and paint. not visable from street.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CESAR%20CHAVEZ&street_type=ST&address_number=4033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6580037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6580&lot=037",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6580037",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-03-26-n482",
+      "name": "Building and Engineering News, 26 March 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n482/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-03-26",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000.",
+      "source": "building-engineering-news-1927-03-26-n482"
+    }
+  ]
+}

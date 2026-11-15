@@ -1,0 +1,118 @@
+{
+  "address": "66 Retiro Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/retiro-way/66/",
+  "apn": "0438A028",
+  "block": "0438A",
+  "lot": "028",
+  "eas_baseid": "282312",
+  "coordinates": {
+    "lat": 37.805143,
+    "lng": -122.437939
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 4,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3116,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0066 RETIRO              WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 555613,
+    "assessed_improvement_value": 919898,
+    "last_sale_date": "1989-07-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201603081446",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2016-03-08",
+      "status_date": "2016-03-08",
+      "estimated_cost": 26000,
+      "description": "1) remove structural unsound brick cladding, mortar and anchors to extg wall sheathing. 2)install new veneer brick to simulate orig. brickwork. 3)reinstall decorative balcony. n/a for maher.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015–2016",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RETIRO&street_type=WAY&address_number=66",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0438A028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0438A&lot=028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0438A028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43793886458894%2037.805143363936814)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-02-19-n278",
+      "name": "Building and Engineering News, 19 February 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n278/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-02-19",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, estimated at $10,000.",
+      "source": "building-engineering-news-1927-02-19-n278"
+    }
+  ]
+}

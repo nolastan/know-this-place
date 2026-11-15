@@ -1,0 +1,114 @@
+{
+  "address": "5455 Anza Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/anza-street/5455/",
+  "apn": "1588001J",
+  "block": "1588",
+  "lot": "001J",
+  "eas_baseid": "309548",
+  "coordinates": {
+    "lat": 37.776913,
+    "lng": -122.506908
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2696,
+    "building_area_sqft": 2727,
+    "basement_area_sqft": 387,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 5455 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1363490,
+    "assessed_improvement_value": 584347,
+    "last_sale_date": "2009-10-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202404220500",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-04-22",
+      "status_date": "2025-01-21",
+      "estimated_cost": 50000,
+      "revised_cost": 70000,
+      "description": "revision to 202401294840. demolish (e) wall at level 1 with associated structural work. remove e level 1 kitchen. repair/replace in kind (e) water damaged finishes at east side property line wall. replace in kind damaged entrance stair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202401294840",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-29",
+      "status_date": "2025-01-21",
+      "estimated_cost": 350000,
+      "revised_cost": 350000,
+      "description": "remodel e family room at 2nd fl to be new kitchen location, remodel e kitchen to be sunroom, associated elec/plumbing. replace extg skylights with new thermally brocken dble paine units. in kind window replacement with new wood clad dble pane windows, not visable from street",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=5455",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1588001J&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1588&lot=001J",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1588001J",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-05-14-n776",
+      "name": "Building and Engineering News, 14 May 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n776/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-05-14",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $21,746, and the building contract was recorded at the same figure. Julia Morgan was named as architect and Chas. Stockholm & Sons as contractors.",
+      "source": "building-engineering-news-1927-05-14-n776"
+    }
+  ],
+  "building": {
+    "architect": "Julia Morgan",
+    "builder": "Chas. Stockholm & Sons"
+  }
+}

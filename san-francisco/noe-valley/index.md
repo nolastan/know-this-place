@@ -25,6 +25,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Clipper Terrace](clipper-terrace/) — 1 building, built 1996.
 - [Day Street](day-street/) — 1 building, built 1938.
 - [Diamond Street](diamond-street/) — 2 buildings, built 1893–1900; 1 in the Diamond & Elizabeth Streets Historic District.
+- [Dolores Street](dolores-street/) — 3 buildings, built 1900–1927.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
 - [Harper Street](harper-street/) — 1 building, built 1900.

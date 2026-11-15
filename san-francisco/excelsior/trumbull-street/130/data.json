@@ -1,0 +1,137 @@
+{
+  "address": "130 Trumbull Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/trumbull-street/130/",
+  "apn": "5870031A",
+  "block": "5870",
+  "lot": "031A",
+  "eas_baseid": "385345",
+  "coordinates": {
+    "lat": 37.730579,
+    "lng": -122.427636
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2750,
+    "building_area_sqft": 1100,
+    "lot_depth_ft": 10,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0130 TRUMBULL            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 677001,
+    "assessed_improvement_value": 290141,
+    "last_sale_date": "2017-08-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410163083",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-16",
+      "status_date": "2025-09-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa#202406104104. bathroom, laundry, & closet change locations.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202409160816",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-09-16",
+      "status_date": "2025-09-11",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "revision to pa# 2024-0610-4104: change 2 front windows and 3 back windows 5 windows total, within the same opening. aluminium clad windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202406104104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-10",
+      "status_date": "2025-09-11",
+      "estimated_cost": 105000,
+      "revised_cost": 105000,
+      "description": "full interior remodel including new floors, new kitchen and bath (remodel) new windows, new exterior doors. no work to the front facade in this case.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200511178418",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-11-17",
+      "status_date": "2005-11-17",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TRUMBULL&street_type=ST&address_number=130",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5870031A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5870&lot=031A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5870031A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-06-25-n1012",
+      "name": "Building and Engineering News, 25 June 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n1012/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-06-25",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $2,500. M. F. Schwartz was named as architect and J. A. Smith as contractor.",
+      "source": "building-engineering-news-1927-06-25-n1012"
+    }
+  ],
+  "building": {
+    "architect": "M. F. Schwartz",
+    "builder": "J. A. Smith"
+  }
+}

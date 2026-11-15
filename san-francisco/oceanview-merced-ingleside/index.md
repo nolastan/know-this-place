@@ -39,6 +39,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Miramar Avenue](miramar-avenue/) — 2 buildings, built 1905–1917.
 - [Mission Street](mission-street/) — 1 building, built 1924.
 - [Montana Street](montana-street/) — 1 building, built 1907.
+- [Monticello Street](monticello-street/) — 4 buildings, built 1927.
 - [Ocean Avenue](ocean-avenue/) — 2 buildings, built 1900–1909; 2 in the Ocean Avenue Neighborhood Commercial District.
 - [Orizaba Avenue](orizaba-avenue/) — 1 building.
 - [Panama Street](panama-street/) — 1 building, built 2005.

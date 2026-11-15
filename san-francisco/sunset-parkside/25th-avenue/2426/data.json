@@ -1,0 +1,134 @@
+{
+  "address": "2426 25th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/25th-avenue/2426/",
+  "apn": "2401033",
+  "block": "2401",
+  "lot": "033",
+  "eas_baseid": "337566",
+  "coordinates": {
+    "lat": 37.742224,
+    "lng": -122.481753
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1532,
+    "basement_area_sqft": 57,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2426 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 139375,
+    "assessed_improvement_value": 230723
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202210194727",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-10-19",
+      "status_date": "2022-12-27",
+      "estimated_cost": 23200,
+      "revised_cost": 23200,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201902203348",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-02-20",
+      "status_date": "2019-11-13",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "renovation to add full bathroom at garage level, new plumbing and electrical, new furnace and ducts serving main level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9700829",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-01-15",
+      "status_date": "1997-07-16",
+      "estimated_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9320841",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-11-24",
+      "status_date": "1994-02-14",
+      "estimated_cost": 8000,
+      "description": "bath remodel,new lavy,tub,tile & lighting",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=2426",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2401033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2401&lot=033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2401033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-01-22-n111",
+      "name": "Building and Engineering News, 22 January 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n111/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-01-22",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. B. K. Dobkowitz was named as architect.",
+      "source": "building-engineering-news-1927-01-22-n111"
+    }
+  ],
+  "building": {
+    "architect": "B. K. Dobkowitz"
+  }
+}

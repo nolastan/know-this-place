@@ -8,6 +8,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Capistrano Avenue](capistrano-avenue/) — 1 building, built 1925.
 - [Cayuga Avenue](cayuga-avenue/) — 1 building, built 1880.
 - [Delano Avenue](delano-avenue/) — 1 building, built 1913.
+- [Francis Street](francis-street/) — 1 building, built 1908.
 - [Harrington Street](harrington-street/) — A 1908 house recorded as Jerry Garcia's home with his grandparents after 1947.
 - [Lawrence Avenue](lawrence-avenue/) — 1 building, built 1900.
 - [Mission Street](mission-street/) — 1 building, built 1963.
@@ -17,6 +18,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Otsego Avenue](otsego-avenue/) — 1 building, built 1912.
 - [Ottawa Avenue](ottawa-avenue/) — 1 building, built 1940.
 - [Regent Street](regent-street/) — 1 building, built 2008.
+- [Rhine Street](rhine-street/) — 1 building, built 1927.
 - [Rousseau Street](rousseau-street/) — 1 building.
 - [San Gabriel Avenue](san-gabriel-avenue/) — 2 buildings, built 1913.
 - [San Jose Avenue](san-jose-avenue/) — The San Francisco and San Mateo Railway's 1901 Geneva car barn, a San Francisco landmark since 1985.

@@ -1,0 +1,176 @@
+{
+  "address": "766 33rd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/33rd-avenue/766/",
+  "apn": "1612017I",
+  "block": "1612",
+  "lot": "017I",
+  "eas_baseid": "310510",
+  "coordinates": {
+    "lat": 37.774684,
+    "lng": -122.492615
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2410,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0766 33RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2091110,
+    "assessed_improvement_value": 896189,
+    "last_sale_date": "2022-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "S20251202369",
+      "status": "complete",
+      "filed": "2025-12-03",
+      "status_date": "2026-04-20",
+      "estimated_cost": 43497,
+      "revised_cost": 43497,
+      "description": "solar permit: installing 16 solar pv modules, 410 watts per module, total no. of rating 6.56 kw. mounted: roof, ballasted: y, including 1 energy storage unit, with 13.5 kwh each in capacity, ess units will not be closer than 3 feet | sfr roof mounted pv system with es",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202510056753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-05",
+      "status_date": "2025-10-23",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304256377",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-25",
+      "status_date": "2023-12-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa# 202211156505, minor shearwall revisions",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301230596",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-23",
+      "status_date": "2023-12-05",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "replace street facing windows with like-kind replacement. no framing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202211156505",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-11-15",
+      "status_date": "2023-12-05",
+      "estimated_cost": 386000,
+      "revised_cost": 175000,
+      "description": "new habitable space (596sf) in garage. to include 2 bedrooms and new bath. remodel e kitchen and master bedroom suite.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-13",
+      "status_date": "1991-01-15",
+      "estimated_cost": 900,
+      "description": "bolt down mudsill to foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8903765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-03-09",
+      "status_date": "1989-04-20",
+      "estimated_cost": 2300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8901605",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-30",
+      "status_date": "1989-04-20",
+      "estimated_cost": 3000,
+      "description": "replace kitchen cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=33RD&street_type=AVE&address_number=766",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1612017I&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1612&lot=017I",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1612017I",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-01-08-n29",
+      "name": "Building and Engineering News, 8 January 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n29/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-01-08",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $6,500 each. W. R. Lindeman was named as architect.",
+      "source": "building-engineering-news-1927-01-08-n29"
+    }
+  ],
+  "building": {
+    "architect": "W. R. Lindeman"
+  }
+}

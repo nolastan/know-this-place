@@ -1,0 +1,127 @@
+{
+  "address": "21 Concord Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/concord-street/21/",
+  "apn": "6461022",
+  "block": "6461",
+  "lot": "022",
+  "eas_baseid": "398788",
+  "coordinates": {
+    "lat": 37.713593,
+    "lng": -122.442901
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2909,
+    "building_area_sqft": 1881,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0021 CONCORD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 331146,
+    "assessed_improvement_value": 308155,
+    "last_sale_date": "1989-10-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8815986",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-10-26",
+      "status_date": "1992-11-12",
+      "estimated_cost": 1500,
+      "description": "deck at the back house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806401",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-20",
+      "status_date": "1988-09-21",
+      "estimated_cost": 4500,
+      "description": "move illegal toilet, shower, stove, add bathrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8412018",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-11-09",
+      "status_date": "1989-09-24",
+      "estimated_cost": 2500,
+      "description": "install aluminum windows in existing frames.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1984–2012",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CONCORD&street_type=ST&address_number=21",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6461022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6461&lot=022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6461022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-01-29-n153",
+      "name": "Building and Engineering News, 29 January 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n153/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-01-29",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. J. C. Hladik was named as architect and A. R. Larson as contractor.",
+      "source": "building-engineering-news-1927-01-29-n153"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik",
+    "builder": "A. R. Larson"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "address": "1375 27th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/27th-avenue/1375/",
+  "apn": "1782012B",
+  "block": "1782",
+  "lot": "012B",
+  "eas_baseid": "317319",
+  "coordinates": {
+    "lat": 37.761792,
+    "lng": -122.485931
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 5,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 5,
+    "bedrooms": 6,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 4573,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1375 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1357884,
+    "assessed_improvement_value": 1087974,
+    "last_sale_date": "2017-05-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201711204341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-20",
+      "status_date": "2019-05-02",
+      "estimated_cost": 163800,
+      "revised_cost": 163800,
+      "description": "interior alterations to (e) ground or dwelling and laundry, storage areas to include (n) bedroom, kitchen, laundry/storage areas. no change in occ. no changes to street facade, no change in # of units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709148249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-14",
+      "status_date": "2018-06-29",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101289276",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-01-28",
+      "status_date": "2011-01-28",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201096597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-09",
+      "status_date": "2002-01-28",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "repair dry rot at back stairs comply with n.o.v. 2001/23/144.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=1375",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1782012B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1782&lot=012B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1782012B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-06-25-n1011",
+      "name": "Building and Engineering News, 25 June 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n1011/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-06-25",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, estimated at $10,000. Thomas Bros. were named as architects and Hannah & Kohlwes as contractors.",
+      "source": "building-engineering-news-1927-06-25-n1011"
+    }
+  ],
+  "building": {
+    "architect": "Thomas Bros.",
+    "builder": "Hannah & Kohlwes"
+  }
+}

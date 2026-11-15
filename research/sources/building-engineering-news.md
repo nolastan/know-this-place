@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 2 of 34 half-year volumes read (vol. 26 pts. 1 and 2, January–December 1926): 658 facts on 627 page writes (428 pages seeded). Resume at vol. 27 pt. 1 (`buildingengineer227cont`). See the `Verified:` line.
+> - **Coverage:** 3 of 34 half-year volumes read (vol. 26 pts. 1 and 2 and vol. 27 pt. 1, January 1926 – June 1927): 1,003 facts on 963 page writes (668 pages seeded). Resume at vol. 27 pt. 2 (`buildingengineer2127cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, and the 968 placed-and-held rows of vol. 26 (543 in pt. 1, 425 in pt. 2), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
+> - **Claimed:** every unread volume, and the 1,417 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -99,7 +99,23 @@
   186 of them seeded. Unfinished: 425 placed single houses held for the same
   page-count decision, 586 rows with a nearest parcel not accepted, 946 not
   placed. Unread: the other 32 volumes.
-- **Verified:** 2026-11-15 (vol. 26 pt. 2: read 3,765 entries, found 2,264
+- **Coverage, vol. 27 pt. 1** (`buildingengineer227cont`, 8 January – 25 June
+  1927): 3,479 numbered entries; 2,165 San Francisco rows; 1,343 placed on a
+  parcel; 358 picked and read against the image; 345 published on 336 pages,
+  240 of them seeded. Unfinished: 449 placed single houses held for the same
+  page-count decision, 536 rows with a nearest parcel not accepted, 822 not
+  placed. Unread: the other 31 volumes.
+- **Verified:** 2026-11-15 (vol. 27 pt. 1: read 3,479 entries, found 2,165
+  San Francisco rows, resolved 345, published 345 on 336 pages. Learned: a lot
+  can carry a permit in each of two volumes, and the later one is usually the
+  plan that was built, so read the earlier volume's entry and its credit
+  again before adding a second (163 Avila: the 1926 two-storey scheme's
+  architect was uncredited once the 1927 one-storey permit and the roll
+  agreed); a later volume can also settle an earlier doubt (1840 Sacramento:
+  the 1927 permit names the architect the page already credited); condominium
+  building pages are not keyed by the lot's parcel number, so look for the
+  page by address before deciding a parcel has none.)
+- **Verified (earlier):** 2026-11-15 (vol. 26 pt. 2: read 3,765 entries, found 2,264
   San Francisco rows, resolved 290, published 290 on 282 pages. Learned: the issue date
   must be read from every running-head form ("Saturday, October 30th, 1926",
   "September 18, 1926" with no weekday, and the Friday issues of 24 and 31

@@ -1,0 +1,127 @@
+{
+  "address": "1629 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/haight-street/1629/",
+  "apn": "1246028",
+  "block": "1246",
+  "lot": "028",
+  "eas_baseid": "298325",
+  "coordinates": {
+    "lat": 37.769485,
+    "lng": -122.44919
+  },
+  "parcel": {
+    "year_built": 1900,
+    "stories": 1,
+    "rooms": 2,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1962,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "HAIGHT",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "1631 1629 HAIGHT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 61174,
+    "assessed_improvement_value": 32294
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Haight Ashbury Counterculture Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1966–1975",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200306227571",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-06-22",
+      "status_date": "2003-06-22",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012230",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-06-21",
+      "status_date": "1990-12-19",
+      "estimated_cost": 7000,
+      "description": "remove (e) partition wall non bearing remove (e) office",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1990–2003",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAIGHT&street_type=ST&address_number=1629",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1246028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1246&lot=028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1246028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44919042925811%2037.76948457279463)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-04-30-n691",
+      "name": "Building and Engineering News, 30 April 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n691/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-04-30",
+      "kind": "alteration",
+      "description": "A permit was sought for a cement plaster front and remodelling the interior for a creamery, with a tile floor, estimated at $1,700. P. Righetti was named as architect.",
+      "source": "building-engineering-news-1927-04-30-n691"
+    }
+  ]
+}

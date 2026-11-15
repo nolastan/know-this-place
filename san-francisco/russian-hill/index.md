@@ -5,6 +5,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 ## Streets documented so far
 
 - [Aladdin Terrace](aladdin-terrace/) — 1 building, built 1939.
+- [Allen Street](allen-street/) — 1 building, built 1927.
 - [Bay Street](bay-street/) — 2 buildings, built 1906–1950.
 - [Beach Street](beach-street/) — 1 building; 1 in the Aquatic Park Historic District.
 - [Bernard Street](bernard-street/) — 1 building, built 1907.

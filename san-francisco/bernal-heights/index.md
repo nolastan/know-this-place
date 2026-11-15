@@ -9,6 +9,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Andover Street](andover-street/) — 1 building, built 1907.
 - [Banks Street](banks-street/) — 1 building, built 1926.
 - [Bennington Street](bennington-street/) — 1 building, built 1904.
+- [Benton Avenue](benton-avenue/) — 1 building, built 1927.
 - [Bocana Street](bocana-street/) — 1 building, built 1910.
 - [Bonview Street](bonview-street/) — 1 building, built 1958.
 - [Bradford Street](bradford-street/) — 1 building, built 1912.

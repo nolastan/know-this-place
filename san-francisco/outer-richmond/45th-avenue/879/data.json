@@ -1,0 +1,143 @@
+{
+  "address": "879 45th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/45th-avenue/879/",
+  "apn": "1688017",
+  "block": "1688",
+  "lot": "017",
+  "eas_baseid": "313989",
+  "coordinates": {
+    "lat": 37.771994,
+    "lng": -122.505984
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1360,
+    "basement_area_sqft": 150,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0879 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 474646,
+    "assessed_improvement_value": 316428,
+    "last_sale_date": "2001-06-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201511162718",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-16",
+      "status_date": "2015-12-02",
+      "estimated_cost": 5924,
+      "revised_cost": 5924,
+      "description": "(3) fibrex retrofit rep. windows - non-visable. u-factor < 0.32. no size change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508204850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-20",
+      "status_date": "2015-12-02",
+      "estimated_cost": 28782,
+      "revised_cost": 28782,
+      "description": "(9) wood with aluminum clad replacement windows - in-kind - [5 are visible from street]/casements & fixed at front. no size change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618309",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-25",
+      "status_date": "1998-05-11",
+      "estimated_cost": 2250,
+      "description": "install windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9307130",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-30",
+      "status_date": "1993-07-01",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8910334",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-06-14",
+      "status_date": "1989-07-12",
+      "estimated_cost": 1530,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=879",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1688017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1688&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1688017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-04-23-n647",
+      "name": "Building and Engineering News, 23 April 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n647/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-04-23",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $3,900 each. Henry S. Nelson was named as contractor.",
+      "source": "building-engineering-news-1927-04-23-n647"
+    }
+  ],
+  "building": {
+    "builder": "Henry S. Nelson"
+  }
+}

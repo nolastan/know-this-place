@@ -11,6 +11,8 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Brookdale Avenue](brookdale-avenue/) — 1 building, built 1946.
 - [Byron Court](byron-court/) — 1 building, built 1978.
 - [Carter Street](carter-street/) — 1 building, built 2004.
+- [Concord Street](concord-street/) — 1 building, built 1926.
+- [Congdon Street](congdon-street/) — 1 building, built 1928.
 - [Cordova Street](cordova-street/) — 1 building, built 1925.
 - [Dublin Street](dublin-street/) — 1 building, built 1953.
 - [Edinburgh Street](edinburgh-street/) — 1 building, built 1926.
