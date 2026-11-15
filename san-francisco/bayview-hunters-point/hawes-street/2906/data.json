@@ -1,0 +1,115 @@
+{
+  "address": "2906–2908 Hawes Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/hawes-street/2906/",
+  "apn": "4971002",
+  "block": "4971",
+  "lot": "002",
+  "eas_baseid": "460067",
+  "coordinates": {
+    "lat": 37.717975,
+    "lng": -122.391481
+  },
+  "address_range": "2906–2908",
+  "street_numbers_on_parcel": [
+    "2906",
+    "2908"
+  ],
+  "parcel": {
+    "year_built": 1917,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 1746,
+    "building_area_sqft": 1950,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "2908 2906 HAWES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 605165,
+    "assessed_improvement_value": 259354,
+    "last_sale_date": "2019-01-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200808088780",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-08-08",
+      "status_date": "2009-01-22",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "repair & replace (e) kitchen cabinets. re-tile, painting in the units & ext carpets in both units. no structural. 50% of wattage of lighting to be fluorescant.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011165917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-16",
+      "status_date": "2001-02-12",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair loose handrails, paint near stair case nail steps.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAWES&street_type=ST&address_number=2906",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4971002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4971&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4971002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1916-01-19-n113",
+      "name": "Building and Engineering News, 19 January 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1616cont/page/n113/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916-01-19",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of two flats, estimated at $2,000.",
+      "source": "building-engineering-news-1916-01-19-n113"
+    }
+  ]
+}
