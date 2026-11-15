@@ -37,6 +37,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Hill Street](hill-street/) — 1 building, built 1965.
 - [Hoffman Avenue](hoffman-avenue/) — 1 building.
 - [Homestead Street](homestead-street/) — 1 building, built 1909; 1 in the Diamond & Elizabeth Streets Historic District.
+- [Jersey Street](jersey-street/) — 1 building, built 1915.
 - [Kronquist Court](kronquist-court/) — 2 buildings, built 1949.
 - [Newburg Street](newburg-street/) — 1 building, built 1944.
 - [Noe Street](noe-street/) — 1 building, built 1900.

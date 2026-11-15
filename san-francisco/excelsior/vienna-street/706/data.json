@@ -1,0 +1,161 @@
+{
+  "address": "706 Vienna Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/vienna-street/706/",
+  "apn": "6340002",
+  "block": "6340",
+  "lot": "002",
+  "eas_baseid": "396467",
+  "coordinates": {
+    "lat": 37.717323,
+    "lng": -122.433125
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1475,
+    "basement_area_sqft": 335,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0706 VIENNA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 473023,
+    "assessed_improvement_value": 234181,
+    "last_sale_date": "2011-11-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201112019855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-01",
+      "status_date": "2012-03-08",
+      "estimated_cost": 28500,
+      "revised_cost": 28500,
+      "description": "legalize family room, 2 bedrooms and full bath on 1st floor (ground). new painting on both floors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103172281",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-03-17",
+      "status_date": "2011-03-24",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work apporved under pa #200708220585. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201012227209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-22",
+      "status_date": "2011-02-04",
+      "estimated_cost": 7000,
+      "revised_cost": 10000,
+      "description": "one bathroom remodeling, 1 window replacement in kind in bathroom, lightin to comply with cec 150(k), no change to walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201004120082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-04-12",
+      "status_date": "2010-09-09",
+      "estimated_cost": 4165,
+      "revised_cost": 4165,
+      "description": "replace rear stairs in-kind; not visible from street. kuhel design",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708220585",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-08-22",
+      "status_date": "2008-10-07",
+      "estimated_cost": 17500,
+      "revised_cost": 17500,
+      "description": "replace ceiling joist, 3 windows in front, repair dry rot in kitchen, dining, and bathrm, replace bathrom light.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VIENNA&street_type=ST&address_number=706",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6340002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6340&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6340002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-08-30-n392",
+      "name": "Building and Engineering News, 30 August 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n392/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-09-06-n434",
+      "name": "Building and Engineering News, 6 September 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n434/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-08-30",
+      "kind": "building contract",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,150. Williams and Brouchoud were named as architects and Carlo Bellanca as contractor.",
+      "source": "building-engineering-news-1924-08-30-n392"
+    },
+    {
+      "date": "1924-09-06",
+      "kind": "building contract",
+      "description": "A building contract was recorded for carpentry and concrete work, etc., on a one-storey frame dwelling with a basement, at $4,150. Williams & Brouchoud were named as architects and Ellis Cozza as contractor.",
+      "source": "building-engineering-news-1924-09-06-n434"
+    }
+  ],
+  "building": {
+    "architect": "Williams and Brouchoud",
+    "builder": "Carlo Bellanca"
+  }
+}

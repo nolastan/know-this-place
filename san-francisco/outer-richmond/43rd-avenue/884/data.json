@@ -1,0 +1,147 @@
+{
+  "address": "884 43rd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/43rd-avenue/884/",
+  "apn": "1685007I",
+  "block": "1685",
+  "lot": "007I",
+  "eas_baseid": "313851",
+  "coordinates": {
+    "lat": 37.772016,
+    "lng": -122.503211
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 1295,
+    "basement_area_sqft": 300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0884 43RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1233122,
+    "assessed_improvement_value": 528481,
+    "last_sale_date": "2022-01-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202205254998",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-05-25",
+      "status_date": "2024-10-29",
+      "estimated_cost": 5000,
+      "revised_cost": 5880,
+      "description": "construct new 1 level deck @ rear yard. modify existing rear window to sliding door to deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204011391",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-01",
+      "status_date": "2024-12-17",
+      "estimated_cost": 75000,
+      "revised_cost": 110000,
+      "description": "1st floor:new bathroom, new bedroom, and laundry room. at 2nd floor: remodel, relocated kitchen and bedroonm. new bathroom and 1 level deck at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009020101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-02",
+      "status_date": "2010-10-07",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove & replace 5 wood windows to front of house in kind. no structural changes. remove & replace 7 vinyl windows to rear of house in kind. no structural changes, not visible from street. supply & install vinyl siding to rear of house in kind. no structural change, not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008279744",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-27",
+      "status_date": "2010-08-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200003295728",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-03-29",
+      "status_date": "2000-09-29",
+      "estimated_cost": 5860,
+      "revised_cost": 5860,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=43RD&street_type=AVE&address_number=884",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1685007I&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1685&lot=007I",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1685007I",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-12-27-n1091",
+      "name": "Building and Engineering News, 27 December 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n1091/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-12-27",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,500. Earle B. Bertz was named as architect.",
+      "source": "building-engineering-news-1924-12-27-n1091"
+    }
+  ],
+  "building": {
+    "architect": "Earle B. Bertz"
+  }
+}

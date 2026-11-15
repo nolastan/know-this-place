@@ -1,0 +1,126 @@
+{
+  "address": "1362 29th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/29th-avenue/1362/",
+  "apn": "1783024",
+  "block": "1783",
+  "lot": "024",
+  "eas_baseid": "317389",
+  "coordinates": {
+    "lat": 37.761932,
+    "lng": -122.487428
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2418,
+    "basement_area_sqft": 818,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1362 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 54262,
+    "assessed_improvement_value": 341847,
+    "last_sale_date": "2008-05-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200807247552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-24",
+      "status_date": "2008-10-21",
+      "estimated_cost": 800,
+      "revised_cost": 800,
+      "description": "revision under permit #200804240511. relocate bath room at ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200806204996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-06-20",
+      "status_date": "2008-10-21",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove/replace (e) stucco in front of bldg. wall (approx. 120 sq.ft.) in kind replacement only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804240511",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-24",
+      "status_date": "2008-10-21",
+      "estimated_cost": 78000,
+      "revised_cost": 78000,
+      "description": "remodel and relocate kitchen/bath room and convert extg sun room to new bath room. all work at 2nd floor. 2) construct family room,1 bedrooms, 2 full bath room and laundry room all work at ground floor. infill extg space underneth extg sunroom on the 2nd floor at rear into a new bedrm w/n foundation",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=1362",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1783024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1783&lot=024",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1783024",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-07-12-n75",
+      "name": "Building and Engineering News, 12 July 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n75/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-07-12",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling, estimated at $5,000. Gustave Stahlberg was named as architect and the Bernhardt Building Co. as contractor.",
+      "source": "building-engineering-news-1924-07-12-n75"
+    }
+  ],
+  "building": {
+    "architect": "Gustave Stahlberg",
+    "builder": "Bernhardt Building Co."
+  }
+}

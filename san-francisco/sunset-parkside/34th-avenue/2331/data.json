@@ -1,0 +1,110 @@
+{
+  "address": "2331 34th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/34th-avenue/2331/",
+  "apn": "2363003",
+  "block": "2363",
+  "lot": "003",
+  "eas_baseid": "335763",
+  "coordinates": {
+    "lat": 37.743599,
+    "lng": -122.492191
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 5475,
+    "building_area_sqft": 1353,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2331 34TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 265237,
+    "assessed_improvement_value": 106086
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201009150975",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-15",
+      "status_date": "2010-12-23",
+      "estimated_cost": 5400,
+      "revised_cost": 5400,
+      "description": "window replacement, 6 total, no change in rough openings, u-value .29 wood to vinyl, no windows face the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718693",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-23",
+      "status_date": "1998-01-27",
+      "estimated_cost": 2900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=34TH&street_type=AVE&address_number=2331",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2363003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2363&lot=003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2363003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-08-16-n308",
+      "name": "Building and Engineering News, 16 August 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n308/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-08-16",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. Chas. F. Strothoff was named as architect. The owner was the Parkside Realty Co.",
+      "source": "building-engineering-news-1924-08-16-n308"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

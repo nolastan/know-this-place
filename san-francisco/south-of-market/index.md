@@ -40,6 +40,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Lusk Street](lusk-street/) — 3 buildings, built 1917–1995; 3 in the Clyde and Crooks Historic District.
 - [Market Street](market-street/) — 1 building, built 2006; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Mary Street](mary-street/) — 1 building, built 1910.
+- [Mclea Court](mclea-court/) — 1 building, built 1924.
 - [Merlin Street](merlin-street/) — 2 buildings, built 1943–1968.
 - [Minna Street](minna-street/) — 8 buildings, built 1900–1980.
 - [Mint Plaza](mint-plaza/) — 2 buildings, built 1907–1919; 2 in the Mint-Mission Conservation District.

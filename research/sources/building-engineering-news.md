@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 14 of 34 half-year volumes read (vol. 25 to vol. 31, January 1925 – January 1932, the end of the run): 3,219 facts on 3,057 page writes (1,918 pages seeded). Resume backwards at vol. 24 pt. 2 (July–December 1924, `buildingengineer24219cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 15 of 34 half-year volumes read (vol. 24 pt. 2 to vol. 31, July 1924 – January 1932, the end of the run): 3,447 facts on 3,269 page writes (2,040 pages seeded). Resume backwards at vol. 24 pt. 1 (January–June 1924, `buildingengineer244cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 4,851 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists the 83 whose parcel already has a page; those are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 5,238 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists the 83 whose parcel already has a page; those are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -162,6 +162,21 @@
   on 446 pages, 292 of them seeded. Unfinished: 670 placed single houses held until the parcel gets a page (63 are row-of-houses permits), 756 rows
   with a nearest parcel not accepted, 960 not placed. Unread: the 20 volumes
   before 1925.
+- **Coverage, vol. 24 pt. 2** (`buildingengineer24219cont`, 5 July – 27
+  December 1924): 3,858 numbered entries; 1,969 San Francisco rows; 1,073
+  placed on a parcel; 269 picked and read against the image; 228 published
+  on 212 pages, 122 of them seeded. Unfinished: 387 placed single houses held
+  until the parcel gets a page (32 are row-of-houses permits), 424 rows with
+  a nearest parcel not accepted, 896 not placed. Unread: the 19 volumes
+  before July 1924.
+- **Verified:** 2026-11-15 (vol. 24 pt. 2: read 3,858 entries, found 1,969
+  San Francisco rows, resolved 228, published 228 on 212 pages. Learned: the
+  Owner field survives extract.py wherever the OCR mangles the word
+  ("Owne';'^-", "OwiuT —"), in unresolved findings as much as resolved ones,
+  so run scrub_owner.py over the whole source after every publish; in 1924
+  an architect is named on many plain houses, and when that architect is the
+  owner the house has nothing left to publish and joins the held rows
+  (`held for a page` in the fixes file).)
 - **Verified:** 2026-11-15 (vol. 25 pt. 1: read 5,484 entries, found 2,891
   San Francisco rows, resolved 467, published 467 on 446 pages. Learned: the
   largest volume of the run; the raw text is now brought into line with the

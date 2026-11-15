@@ -1,0 +1,145 @@
+{
+  "address": "160 Avila Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/avila-street/160/",
+  "apn": "0464A023",
+  "block": "0464A",
+  "lot": "023",
+  "eas_baseid": "282723",
+  "coordinates": {
+    "lat": 37.80214,
+    "lng": -122.44044
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1740,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0160 AVILA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 74368,
+    "assessed_improvement_value": 79904
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202506259407",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-06-25",
+      "status_date": "2025-06-25",
+      "estimated_cost": 10000,
+      "revised_cost": 12000,
+      "description": "1st fl: remove (e) posts. provide new strong wall (ssd). 2nd fl: replace windows like for like. remove & closed window in master bedroom. remove & close kitchen window. new window in kitchen/ replace ceiling joist in master bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504033689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-03",
+      "status_date": "2025-11-03",
+      "estimated_cost": 50000,
+      "revised_cost": 79000,
+      "description": "1 kitchen, 1 bathroom, and 1 powder room like for like remodel. no alteration of wall, window or door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201111169033",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-11-16",
+      "status_date": "2011-12-06",
+      "estimated_cost": 12350,
+      "revised_cost": 12350,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200207050747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-07-05",
+      "status_date": "2002-07-23",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "replace 300 sq ft of concrete floor garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=AVILA&street_type=ST&address_number=160",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0464A023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0464A&lot=023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0464A023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44043976379982%2037.802140091306754)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-10-25-n729",
+      "name": "Building and Engineering News, 25 October 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n729/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-10-25",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,500. The Lang Realty Co. was named as designer.",
+      "source": "building-engineering-news-1924-10-25-n729"
+    }
+  ]
+}

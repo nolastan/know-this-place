@@ -5,6 +5,7 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 ## Streets documented so far
 
 - [Anza Street](anza-street/) — 1 building, built 1906.
+- [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1900.
 - [Baker Street](baker-street/) — 1 building, built 1904; 1 in the NOPA Historic District.
 - [Balboa Street](balboa-street/) — 1 building, built 1984.
 - [Barcelona Avenue](barcelona-avenue/) — 1 building, built 1948.
