@@ -1,0 +1,123 @@
+{
+  "address": "2026 Balboa Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/balboa-street/2026/",
+  "apn": "1564021",
+  "block": "1564",
+  "lot": "021",
+  "eas_baseid": "308491",
+  "coordinates": {
+    "lat": 37.776718,
+    "lng": -122.480724
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 2026 BALBOA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 526354,
+    "assessed_improvement_value": 226964,
+    "last_sale_date": "1988-04-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201204108039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-10",
+      "status_date": "2012-11-27",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "increase construction value per correction notice of work additional $75,000.00. ref. bldng applic. #201204037461.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204037461",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-03",
+      "status_date": "2012-11-27",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "remodel kitchen on 2/f, no structural work, (n) lighting com0ply wiht cec150(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608109167",
+      "type": "additions alterations or repairs",
+      "status": "disapproved",
+      "filed": "2006-08-10",
+      "status_date": "2009-03-11",
+      "estimated_cost": 500000,
+      "description": "vertical and horizontal addition to e building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BALBOA&street_type=ST&address_number=2026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1564021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1564&lot=021",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1564021",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1916-10-25-n562",
+      "name": "Building and Engineering News, 25 October 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer16916cont/page/n562/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916-10-25",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey and basement frame residence, estimated at $2,000. H. D. Mitchell was named as architect.",
+      "source": "building-engineering-news-1916-10-25-n562"
+    }
+  ],
+  "building": {
+    "architect": "H. D. Mitchell"
+  }
+}
