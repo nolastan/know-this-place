@@ -1,0 +1,136 @@
+{
+  "address": "1089–1091 Market Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/market-street/1089/",
+  "apn": "3703060",
+  "block": "3703",
+  "lot": "060",
+  "eas_baseid": "364703",
+  "coordinates": {
+    "lat": 37.780601,
+    "lng": -122.412029
+  },
+  "address_range": "1089–1091",
+  "street_numbers_on_parcel": [
+    "1089",
+    "1091"
+  ],
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 8,
+    "lot_area_sqft": 8250,
+    "building_area_sqft": 8000,
+    "basement_area_sqft": 5000,
+    "lot_depth_ft": 65,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C3G",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "1093 1089 MARKET              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4683794,
+    "assessed_improvement_value": 71943
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Market Street Theatre and Loft Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1889–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202106081920",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-06-08",
+      "status_date": "2021-06-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "frontwindow replacement in-kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARKET&street_type=ST&address_number=1089",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3703060&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3703&lot=060",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3703060",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41202888798784%2037.7806008814438)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-09-08-n244",
+      "name": "Building and Engineering News, 8 September 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2010cont/page/n244/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-04-18-n721",
+      "name": "Building and Engineering News, 18 April 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n721/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-09-08",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey brick store building with a basement, estimated at $40,000. Reid Bros. were named as architects and MacDonald & Kahn as contractors.",
+      "source": "building-engineering-news-1920-09-08-n244"
+    },
+    {
+      "date": "1925-04-18",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: rearranging show windows, a tile vestibule and painting, estimated at $1,000. Allen L. Stone was named as contractor.",
+      "source": "building-engineering-news-1925-04-18-n721"
+    }
+  ],
+  "building": {
+    "architect": "Reid Bros.",
+    "builder": "MacDonald & Kahn"
+  }
+}

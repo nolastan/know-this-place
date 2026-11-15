@@ -105,6 +105,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Santiago Street](santiago-street/) — 1 building, built 1931.
 - [Sequoia Way](sequoia-way/) — 1 building, built 1931.
 - [Sotelo Avenue](sotelo-avenue/) — 1 building, built 1914; 1 in the Forest Hill Historic District.
+- [Southwood Drive](southwood-drive/) — 1 building, built 1920.
 - [Stanford Heights Avenue](stanford-heights-avenue/) — 1 building, built 1960.
 - [Staples Avenue](staples-avenue/) — 1 building, built 1925.
 - [Stonecrest Drive](stonecrest-drive/) — 2 buildings, built 1939–1941.

@@ -1,0 +1,127 @@
+{
+  "address": "675 8th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/8th-avenue/675/",
+  "apn": "1636004D",
+  "block": "1636",
+  "lot": "004D",
+  "eas_baseid": "311602",
+  "coordinates": {
+    "lat": 37.775744,
+    "lng": -122.466378
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0677 0675 08TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55164,
+    "assessed_improvement_value": 96752
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201707242709",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-07-24",
+      "status_date": "2017-07-24",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209045588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-09-04",
+      "status_date": "2002-09-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace existing garage level girder with steel girder w/new concrete footings. replace slab on grad",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415544",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-26",
+      "status_date": "1995-08-15",
+      "estimated_cost": 5078,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1994–2017",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=08TH&street_type=AVE&address_number=675",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1636004D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1636&lot=004D",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1636004D",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-07-28-n90",
+      "name": "Building and Engineering News, 28 July 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2010cont/page/n90/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-07-28",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $9,500. Gustave Stahlberg was named as architect.",
+      "source": "building-engineering-news-1920-07-28-n90"
+    }
+  ],
+  "building": {
+    "architect": "Gustave Stahlberg"
+  }
+}
