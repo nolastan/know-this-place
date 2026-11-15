@@ -15,6 +15,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [9th Avenue](9th-avenue/) — 1 building, built 1954; 1 in the Forest Hill Historic District.
 - [Agua Way](agua-way/) — 1 building, built 1928.
 - [Allston Way](allston-way/) — 1 building, built 1916.
+- [Aptos Avenue](aptos-avenue/) — 3 buildings, built 1927; 3 in the Balboa Terrace Historic District.
 - [Bella Vista Way](bella-vista-way/) — 2 buildings, built 1941–1959.
 - [Brentwood Avenue](brentwood-avenue/) — 1 building, built 1938.
 - [Burlwood Drive](burlwood-drive/) — 1 building, built 1979.
@@ -55,6 +56,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Los Palmos Drive](los-palmos-drive/) — 1 building, built 1948.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
 - [Marietta Drive](marietta-drive/) — 2 buildings, built 1943–1959.
+- [Marston Avenue](marston-avenue/) — 8 buildings, built 1927.
 - [Maywood Drive](maywood-drive/) — 1 building, built 1927.
 - [Melrose Avenue](melrose-avenue/) — 2 buildings, built 1948–1990.
 - [Mendosa Avenue](mendosa-avenue/) — 1 building, built 1956; 1 in the Forest Hill Historic District.

@@ -1,0 +1,135 @@
+{
+  "address": "1142 Hyde Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/hyde-street/1142/",
+  "apn": "0248019",
+  "block": "0248",
+  "lot": "019",
+  "eas_baseid": "280559",
+  "coordinates": {
+    "lat": 37.791702,
+    "lng": -122.417263
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2404,
+    "building_area_sqft": 4668,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1142 HYDE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 87304,
+    "assessed_improvement_value": 157770
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411255679",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-11-25",
+      "status_date": "2024-11-25",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "reroofing torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202307132105",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-13",
+      "status_date": "2026-02-10",
+      "estimated_cost": 23860,
+      "revised_cost": 29700,
+      "description": "fire alarm upgrade - provide & install (n) facp w/built-in communicator; provide & install 1 systems record documentation box; provide & insall 1 heat detector in garage; provide & install manual pull stations @ exists & facp; provide & install audible/visual notification as req'd by code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306237664",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-06-23",
+      "status_date": "2007-08-27",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replaced existing bath tub with a new bath tub relocate exist. kitchen sink to in front of the",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512218",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-03",
+      "status_date": "1996-08-05",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1995–2024",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HYDE&street_type=ST&address_number=1142",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0248019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0248&lot=019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0248019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-07-23-n152",
+      "name": "Building and Engineering News, 23 July 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n152/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-07-23",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: repair fire damage to apartments, estimated at $2,000. John Diestel was named as contractor.",
+      "source": "building-engineering-news-1927-07-23-n152"
+    }
+  ]
+}

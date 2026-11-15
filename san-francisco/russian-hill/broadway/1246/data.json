@@ -1,0 +1,105 @@
+{
+  "address": "1246 Broadway, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/broadway/1246/",
+  "apn": "0152013",
+  "block": "0152",
+  "lot": "013",
+  "eas_baseid": "278742",
+  "coordinates": {
+    "lat": 37.796789,
+    "lng": -122.417677
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3127,
+    "building_area_sqft": 2812,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1248 1246 BROADWAY              0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 69516,
+    "assessed_improvement_value": 114325
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9512092",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-02",
+      "status_date": "1996-01-04",
+      "estimated_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1995–2014",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROADWAY&street_type=&address_number=1246",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0152013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0152&lot=013",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0152013",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-11-05-n680",
+      "name": "Building and Engineering News, 5 November 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n680/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-11-05",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $5,500. Henry Shermund was named as architect.",
+      "source": "building-engineering-news-1927-11-05-n680"
+    }
+  ],
+  "building": {
+    "architect": "Henry Shermund"
+  }
+}

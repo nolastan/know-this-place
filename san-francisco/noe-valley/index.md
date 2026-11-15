@@ -28,6 +28,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Dolores Street](dolores-street/) — 3 buildings, built 1900–1927.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
+- [Elizabeth Street](elizabeth-street/) — 1 building, built 1927.
 - [Harper Street](harper-street/) — 1 building, built 1900.
 - [Hill Street](hill-street/) — 1 building, built 1965.
 - [Hoffman Avenue](hoffman-avenue/) — 1 building.

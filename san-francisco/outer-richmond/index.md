@@ -44,6 +44,7 @@ The city's Outer Richmond analysis neighborhood, running west from Park Presidio
 - [Cabrillo Street](cabrillo-street/) — 5 buildings, built 1922–1950.
 - [California Street](california-street/) — 1 building, built 1967.
 - [Clement Street](clement-street/) — 2 buildings, built 1921–2017.
+- [El Camino Del Mar](el-camino-del-mar/) — 1 building, built 1916.
 - [Fulton Street](fulton-street/) — 1 building, built 1938.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1919.
 - [La Playa](la-playa/) — 1 building, built 1984.

@@ -4,6 +4,7 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 
 ## Streets documented so far
 
+- [Baker Street](baker-street/) — 1 building, built 1893; 1 in the NOPA Historic District.
 - [Beideman Street](beideman-street/) — 1 building, built 1900.
 - [Birch Street](birch-street/) — 1 building, built 1904; 1 in the Hayes Valley Residential Historic District.
 - [Broderick Street](broderick-street/) — 1 building, built 1913.

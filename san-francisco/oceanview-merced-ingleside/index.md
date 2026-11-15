@@ -16,7 +16,9 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Beverly Street](beverly-street/) — 1 building, built 1914.
 - [Bright Street](bright-street/) — 1 building, built 1996.
 - [Broad Street](broad-street/) — 4 buildings, built 1896–1946.
+- [Bruce Avenue](bruce-avenue/) — 1 building, built 1927.
 - [Capitol Avenue](capitol-avenue/) — 1 building.
+- [Chester Avenue](chester-avenue/) — 1 building, built 1927.
 - [Crystal Street](crystal-street/) — 1 building, built 1944.
 - [De Montfort Avenue](de-montfort-avenue/) — 1 building, built 1939.
 - [Ellington Avenue](ellington-avenue/) — 1 building, built 1917.

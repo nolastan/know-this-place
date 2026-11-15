@@ -1,0 +1,135 @@
+{
+  "address": "642 30th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/30th-avenue/642/",
+  "apn": "1572016F",
+  "block": "1572",
+  "lot": "016F",
+  "eas_baseid": "308898",
+  "coordinates": {
+    "lat": 37.77711,
+    "lng": -122.48956
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1800,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0642 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1249500,
+    "assessed_improvement_value": 535500,
+    "last_sale_date": "2023-10-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606032467",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-03",
+      "status_date": "2026-09-11",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "deck repair and steps dry rot repair on code compliance, all railing garden side, at back of the house, back yard. not more than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405021283",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-02",
+      "status_date": "2024-05-13",
+      "estimated_cost": 6000,
+      "revised_cost": 8000,
+      "description": "replace (13) windows with the same size and style. all windows on the back and not visible from the street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201204269147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-04-26",
+      "status_date": "2012-08-16",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace front stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203272423",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-27",
+      "status_date": "2002-04-11",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=642",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1572016F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1572&lot=016F",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1572016F",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-11-12-n715",
+      "name": "Building and Engineering News, 12 November 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n715/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-11-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of seven on adjoining lots, estimated at $6,000 each. Chas. F. Strothoff was named as architect and Thomas Hamill as contractor.",
+      "source": "building-engineering-news-1927-11-12-n715"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff",
+    "builder": "Thomas Hamill"
+  }
+}

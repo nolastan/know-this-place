@@ -1,0 +1,101 @@
+{
+  "address": "38 Marston Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/west-of-twin-peaks/marston-avenue/38/",
+  "apn": "3182013",
+  "block": "3182",
+  "lot": "013",
+  "eas_baseid": "356147",
+  "coordinates": {
+    "lat": 37.727717,
+    "lng": -122.445456
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 770,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0038 MARSTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169955,
+    "assessed_improvement_value": 152954,
+    "last_sale_date": "1994-04-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508274015",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-08-27",
+      "status_date": "2025-08-27",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "remove approximately 2'x2' of dry wall to access plumbing piping in the bedroom. replace drywall after plumbing inspection",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARSTON&street_type=AVE&address_number=38",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3182013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3182&lot=013",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3182013",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-08-06-n232",
+      "name": "Building and Engineering News, 6 August 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n232/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-08-06",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of four on adjoining lots, estimated at $3,000 each. Donnell E. Jaekle was named as architect.",
+      "source": "building-engineering-news-1927-08-06-n232"
+    }
+  ],
+  "building": {
+    "architect": "Donnell E. Jaekle"
+  }
+}

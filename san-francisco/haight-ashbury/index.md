@@ -35,6 +35,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Shrader Street](shrader-street/) — 1 building, built 1928.
 - [Stanyan Street](stanyan-street/) — 1 building, built 1911; 1 in the Panhandle Historic District.
 - [Steiner Street](steiner-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
+- [Upper Terrace](upper-terrace/) — 1 building, built 1928.
 - [Waller Street](waller-street/) — 1 building, built 1904.
 
 ## Historic districts here

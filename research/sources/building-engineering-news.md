@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 3 of 34 half-year volumes read (vol. 26 pts. 1 and 2 and vol. 27 pt. 1, January 1926 – June 1927): 1,003 facts on 963 page writes (668 pages seeded). Resume at vol. 27 pt. 2 (`buildingengineer2127cont`). See the `Verified:` line.
+> - **Coverage:** 4 of 34 half-year volumes read (vols. 26 and 27, January 1926 – December 1927): 1,307 facts on 1,247 page writes (869 pages seeded). Resume at vol. 28 pt. 1 (January–June 1928). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, and the 1,417 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
+> - **Claimed:** every unread volume, and the 1,838 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1, 421 in pt. 2), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -105,7 +105,21 @@
   240 of them seeded. Unfinished: 449 placed single houses held for the same
   page-count decision, 536 rows with a nearest parcel not accepted, 822 not
   placed. Unread: the other 31 volumes.
-- **Verified:** 2026-11-15 (vol. 27 pt. 1: read 3,479 entries, found 2,165
+- **Coverage, vol. 27 pt. 2** (`buildingengineer2127cont`, 2 July – 31
+  December 1927): 2,777 numbered entries; 1,858 San Francisco rows; 1,336
+  placed on a parcel; 318 picked and read against the image; 304 published on
+  284 pages, 201 of them seeded. Unfinished: 421 placed single houses held for
+  the same page-count decision, 597 rows with a nearest parcel not accepted,
+  522 not placed. Unread: the other 30 volumes.
+- **Verified:** 2026-11-15 (vol. 27 pt. 2: read 2,777 entries, found 1,858
+  San Francisco rows, resolved 304, published 304 on 284 pages. Learned: the
+  listing often names the owner again as contractor or architect (same
+  surname at the owner's address), and that name has to be cut with the
+  owner; the seeder keeps a cache per manifest file name, so a temporary
+  manifest reused under the same name skips every parcel until its
+  `.cache/*<name>*` files are removed; a later permit marked "previous
+  application withdrawn" explains two schemes on one corner (2299 Pacific).)
+- **Verified (earlier):** 2026-11-15 (vol. 27 pt. 1: read 3,479 entries, found 2,165
   San Francisco rows, resolved 345, published 345 on 336 pages. Learned: a lot
   can carry a permit in each of two volumes, and the later one is usually the
   plan that was built, so read the earlier volume's entry and its credit

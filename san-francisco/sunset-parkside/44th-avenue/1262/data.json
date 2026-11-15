@@ -1,0 +1,136 @@
+{
+  "address": "1262–1264 44th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/44th-avenue/1262/",
+  "apn": "1707031",
+  "block": "1707",
+  "lot": "031",
+  "eas_baseid": "486408",
+  "coordinates": {
+    "lat": 37.763084,
+    "lng": -122.503641
+  },
+  "address_range": "1262–1264",
+  "street_numbers_on_parcel": [
+    "1262",
+    "1264"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2070,
+    "use": "Multi-Family Residential",
+    "property_class": "TIC Bldg 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1264 1262 44TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 978977,
+    "assessed_improvement_value": 617779,
+    "last_sale_date": "2000-11-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602119435",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-11",
+      "status_date": "2016-09-20",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "to comply with physical inspection report #cc7312",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410209352",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2014-10-20",
+      "status_date": "2019-09-11",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove and replace stucco on front facade only. repair dry rot discovered during re-stuccoing process. retain rectangular recessed above 5 center windows. all back to original finish.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403191170",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2014-03-19",
+      "status_date": "2015-09-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "(n) rear deck addition, (n) french door at rear wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200608098989",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-08-09",
+      "status_date": "2006-12-01",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "remodel kitchen, flowrescent light. at one unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=44TH&street_type=AVE&address_number=1262",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1707031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1707&lot=031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1707031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-12-10-n848",
+      "name": "Building and Engineering News, 10 December 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n848/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-12-10",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame building of two flats with a basement, estimated at $5,000.",
+      "source": "building-engineering-news-1927-12-10-n848"
+    }
+  ]
+}

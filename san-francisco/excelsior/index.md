@@ -18,6 +18,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Edinburgh Street](edinburgh-street/) — 1 building, built 1926.
 - [Excelsior Avenue](excelsior-avenue/) — 1 building, built 1910.
 - [France Avenue](france-avenue/) — 1 building, built 1906.
+- [Gambier Street](gambier-street/) — 2 buildings, built 1927.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
 - [Gladstone Drive](gladstone-drive/) — 1 building, built 1942.
 - [Guttenberg Street](guttenberg-street/) — 1 building, built 1992.

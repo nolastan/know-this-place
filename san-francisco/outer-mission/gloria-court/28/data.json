@@ -1,0 +1,112 @@
+{
+  "address": "28 Gloria Court, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/gloria-court/28/",
+  "apn": "6969007D",
+  "block": "6969",
+  "lot": "007D",
+  "eas_baseid": "410025",
+  "coordinates": {
+    "lat": 37.717721,
+    "lng": -122.44136
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2321,
+    "building_area_sqft": 2012,
+    "basement_area_sqft": 662,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0028 GLORIA              CT0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 345156,
+    "assessed_improvement_value": 273762,
+    "last_sale_date": "2000-08-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200007276360",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-27",
+      "status_date": "2000-11-21",
+      "revised_cost": 13500,
+      "description": "new playrm/bedrm,storagerm, & bathrm,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8612580",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-08",
+      "status_date": "1986-11-17",
+      "estimated_cost": 7641,
+      "description": "vinyl siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GLORIA&street_type=CT&address_number=28",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6969007D&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6969&lot=007D",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6969007D",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-12-03-n819",
+      "name": "Building and Engineering News, 3 December 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n819/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-12-03",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $4,500 each. D. E. Jaekle was named as architect.",
+      "source": "building-engineering-news-1927-12-03-n819"
+    }
+  ],
+  "building": {
+    "architect": "D. E. Jaekle"
+  }
+}
