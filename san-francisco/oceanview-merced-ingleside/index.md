@@ -53,6 +53,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Sadowa Street](sadowa-street/) — 1 building, built 1910.
 - [Sagamore Street](sagamore-street/) — 1 building, built 1890.
 - [Sargent Street](sargent-street/) — 1 building, built 1928.
+- [Shields Street](shields-street/) — 1 building, built 1930.
 - [Summit Street](summit-street/) — 1 building, built 1936.
 - [Thrift Street](thrift-street/) — 1 building, built 1949.
 - [Vernon Street](vernon-street/) — 1 building, built 1927.

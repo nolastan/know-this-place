@@ -1,0 +1,170 @@
+{
+  "address": "136 Mallorca Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/mallorca-way/136/",
+  "apn": "0467A041",
+  "block": "0467A",
+  "lot": "041",
+  "eas_baseid": "282828",
+  "coordinates": {
+    "lat": 37.802143,
+    "lng": -122.437331
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2900,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0138 0136 MALLORCA            WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 251944,
+    "assessed_improvement_value": 292713
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202605292204",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-05-29",
+      "status_date": "2026-07-02",
+      "estimated_cost": 11800,
+      "revised_cost": 11800,
+      "description": "reroofing tear off, install modified bitumen by torch down",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202603197879",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-03-19",
+      "status_date": "2026-05-21",
+      "estimated_cost": 28000,
+      "revised_cost": 64000,
+      "description": "bathroom remodel in kind like for like (no change tub to shower), 1 kitchen remodel in kind like for like, update electrical, upgrade plumbing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202508213679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-21",
+      "status_date": "2025-10-03",
+      "estimated_cost": 11000,
+      "revised_cost": 32776,
+      "description": "one unit: bathroom remodel in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316699",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-09-27",
+      "status_date": "1995-02-08",
+      "estimated_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8925193",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-22",
+      "status_date": "1989-12-29",
+      "estimated_cost": 1250,
+      "description": "install anchor bolts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-07-28",
+      "status_date": "1989-09-27",
+      "estimated_cost": 1500,
+      "description": "dry rot repair to front of bldg & replace- right side garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1989–2026",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MALLORCA&street_type=WAY&address_number=136",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0467A041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0467A&lot=041",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0467A041",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4373312075345%2037.8021426694658)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-01-12-n60",
+      "name": "Building and Engineering News, 12 January 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2929cont/page/n60/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-01-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame and stucco building of two flats with a basement, estimated at $8,000.",
+      "source": "building-engineering-news-1929-01-12-n60"
+    }
+  ]
+}

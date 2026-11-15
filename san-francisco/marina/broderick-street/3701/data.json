@@ -1,0 +1,119 @@
+{
+  "address": "3701 Broderick Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/broderick-street/3701/",
+  "apn": "0910007",
+  "block": "0910",
+  "lot": "007",
+  "eas_baseid": "290124",
+  "coordinates": {
+    "lat": 37.804546,
+    "lng": -122.445718
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 2652,
+    "building_area_sqft": 2247,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3701 BRODERICK           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 84511,
+    "assessed_improvement_value": 159827
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9104129",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-03-15",
+      "status_date": "1991-07-29",
+      "estimated_cost": 4600,
+      "description": "new r/l slab on grade & grade beams and plywood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022522",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-11-01",
+      "status_date": "1991-06-12",
+      "estimated_cost": 8000,
+      "description": "install new steel column under (e) steel beam @ garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8504220",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-04-24",
+      "status_date": "1985-09-25",
+      "estimated_cost": 4700,
+      "description": "remove 8 ft. of stucco fence with arch gate",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRODERICK&street_type=ST&address_number=3701",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0910007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0910&lot=007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0910007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-05-04-n640",
+      "name": "Building and Engineering News, 4 May 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2929cont/page/n640/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-05-04",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $6,000. Risdon Bros. were named as architects.",
+      "source": "building-engineering-news-1929-05-04-n640"
+    }
+  ],
+  "building": {
+    "architect": "Risdon Bros."
+  }
+}

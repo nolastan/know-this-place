@@ -1,0 +1,172 @@
+{
+  "address": "4010 25th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/25th-street/4010/",
+  "apn": "6537007",
+  "block": "6537",
+  "lot": "007",
+  "eas_baseid": "401626",
+  "coordinates": {
+    "lat": 37.750111,
+    "lng": -122.42989
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1525,
+    "building_area_sqft": 1781,
+    "lot_depth_ft": 61,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4010 25TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1818485,
+    "assessed_improvement_value": 779350,
+    "last_sale_date": "2020-10-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201610261179",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-10-26",
+      "status_date": "2016-10-26",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511041724",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-11-04",
+      "status_date": "2017-03-31",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "horizontal addition @ rear of 3rd fl over 2nd fl roof area to add a (n) bathroom.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201101037768",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-01-03",
+      "status_date": "2011-01-03",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair to existing wood windows, like kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201011195374",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-11-19",
+      "status_date": "2011-01-10",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove stucco and minor dry rotted wood sheathing, replace stucco (approx 10 sq.ft.) no other work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009867",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-21",
+      "status_date": "1990-05-30",
+      "estimated_cost": 980,
+      "description": "install anchor bolts at perimeter, add plywood shear panels",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805017",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-04-19",
+      "status_date": "1988-07-05",
+      "estimated_cost": 7000,
+      "description": "remove lathe & plaster, insulate exterior wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8614719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-11-19",
+      "status_date": "1987-06-18",
+      "estimated_cost": 6700,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1986–2016",
+    "shown_on_page": 7,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=4010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6537007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6537&lot=007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6537007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-02-02-n168",
+      "name": "Building and Engineering News, 2 February 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2929cont/page/n168/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-02-02",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $4,500. Pring & Lesswing were named as architects.",
+      "source": "building-engineering-news-1929-02-02-n168"
+    }
+  ],
+  "building": {
+    "architect": "Pring & Lesswing"
+  }
+}

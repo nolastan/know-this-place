@@ -1,0 +1,134 @@
+{
+  "address": "50 Beverly Street, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/beverly-street/50/",
+  "apn": "7079034",
+  "block": "7079",
+  "lot": "034",
+  "eas_baseid": "414860",
+  "coordinates": {
+    "lat": 37.717022,
+    "lng": -122.471348
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1915,
+    "basement_area_sqft": 430,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0050 BEVERLY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 496935,
+    "assessed_improvement_value": 270580,
+    "last_sale_date": "2012-07-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201805159090",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-05-15",
+      "status_date": "2018-05-15",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305026027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-02",
+      "status_date": "2013-08-28",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "1 new bedroom, 1 family room, 1 bathroom to be constructed at ground floor per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900203",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-05",
+      "status_date": "1999-05-05",
+      "estimated_cost": 1700,
+      "description": "install 5 replacement windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204855",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-03-26",
+      "status_date": "1992-09-24",
+      "estimated_cost": 6880,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BEVERLY&street_type=ST&address_number=50",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7079034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7079&lot=034",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7079034",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-03-30-n456",
+      "name": "Building and Engineering News, 30 March 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2929cont/page/n456/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-03-30",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. D. E. Jaekle was named as architect.",
+      "source": "building-engineering-news-1929-03-30-n456"
+    }
+  ],
+  "building": {
+    "architect": "D. E. Jaekle"
+  }
+}

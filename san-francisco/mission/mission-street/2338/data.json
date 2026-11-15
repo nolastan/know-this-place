@@ -1,0 +1,186 @@
+{
+  "address": "2338 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2338/",
+  "apn": "3596008",
+  "block": "3596",
+  "lot": "008",
+  "eas_baseid": "361458",
+  "coordinates": {
+    "lat": 37.759558,
+    "lng": -122.419444
+  },
+  "parcel": {
+    "year_built": 1929,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 2000,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 2338 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 63390,
+    "assessed_improvement_value": 117755
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Mission Miracle Mile 19th to 20th Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1927; 1925–1960",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202606012256",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-06-01",
+      "status_date": "2026-06-01",
+      "estimated_cost": 5500,
+      "revised_cost": 0,
+      "description": "new awning (tikal restaurant y panaderia)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202512222410",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-22",
+      "status_date": "2026-04-03",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "tenant improvement, update walkin cooler, replace 3 comp. sinks, preap sink and counters, install espresso equipment, bread display, update upstairs office and storage, remove door opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105120262",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-12",
+      "status_date": "2021-05-14",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "comply with abe accessible business entrance program ord 51-16. install entry door actuator.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714603",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-04",
+      "status_date": "1999-02-24",
+      "estimated_cost": 14200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601996",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-02-20",
+      "status_date": "1986-04-25",
+      "estimated_cost": 1800,
+      "description": "fabricate & install awning",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601810",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-02-18",
+      "status_date": "1986-04-01",
+      "estimated_cost": 4000,
+      "description": "install grease hood, duct and blower",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513893",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-12-09",
+      "status_date": "1986-04-01",
+      "estimated_cost": 20000,
+      "description": "partitions, electrical & plumming for restaurants",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8507002",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-07-03",
+      "status_date": "1986-01-31",
+      "estimated_cost": 13380,
+      "description": "install new front doors etc",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2338",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3596008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3596&lot=008",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3596008",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41944408929554%2037.759557770134855)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-03-09-n345",
+      "name": "Building and Engineering News, 9 March 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2929cont/page/n345/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-03-09",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey reinforced concrete store building, estimated at $8,000. C. Heller was named as architect.",
+      "source": "building-engineering-news-1929-03-09-n345"
+    }
+  ],
+  "building": {
+    "architect": "C. Heller"
+  }
+}
