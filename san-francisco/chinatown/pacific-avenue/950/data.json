@@ -1,0 +1,118 @@
+{
+  "address": "950–952 Pacific Avenue, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/pacific-avenue/950/",
+  "apn": "0159015",
+  "block": "0159",
+  "lot": "015",
+  "eas_baseid": "279045",
+  "coordinates": {
+    "lat": 37.796534,
+    "lng": -122.411015
+  },
+  "address_range": "950–952",
+  "street_numbers_on_parcel": [
+    "950",
+    "952"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 1750,
+    "building_area_sqft": 4629,
+    "lot_depth_ft": 62.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RC-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0952 0950 PACIFIC             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 709078,
+    "assessed_improvement_value": 472710,
+    "last_sale_date": "2001-11-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200304071549",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-04-07",
+      "status_date": "2008-01-16",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8809710",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-07-14",
+      "status_date": "1989-01-03",
+      "estimated_cost": 4000,
+      "description": "remove and replace exterior stucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACIFIC&street_type=AVE&address_number=950",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0159015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0159&lot=015",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0159015",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-09-01-n324",
+      "name": "Building and Engineering News, 1 September 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n324/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-09-01",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats, estimated at $9,000. H. E. Harris was named as architect and J. Bourdieu as contractor.",
+      "source": "building-engineering-news-1928-09-01-n324"
+    }
+  ],
+  "building": {
+    "architect": "H. E. Harris",
+    "builder": "J. Bourdieu"
+  }
+}

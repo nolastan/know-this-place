@@ -55,6 +55,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Lopez Avenue](lopez-avenue/) — 1 building, built 1928; 1 in the Forest Hill Historic District.
 - [Los Palmos Drive](los-palmos-drive/) — 1 building, built 1948.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
+- [Mangels Avenue](mangels-avenue/) — 2 buildings, built 1928–1930.
 - [Marietta Drive](marietta-drive/) — 2 buildings, built 1943–1959.
 - [Marston Avenue](marston-avenue/) — 8 buildings, built 1927.
 - [Maywood Drive](maywood-drive/) — 1 building, built 1927.
@@ -68,6 +69,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Myra Way](myra-way/) — 1 building, built 1950.
 - [Ocean Avenue](ocean-avenue/) — 1 building, built 1922; 1 in the Ingleside Terrace Historic District.
 - [Pacheco Street](pacheco-street/) — 1 building, built 1917; 1 in the Forest Hill Historic District.
+- [Pinehurst Way](pinehurst-way/) — 2 buildings, built 1928.
 - [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1918.
 - [Portola Drive](portola-drive/) — 1 building, built 1955.
 - [Rivera Street](rivera-street/) — 2 buildings, built 1927–1928.
@@ -104,6 +106,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Upland Drive](upland-drive/) — 1 building.
 - [Urbano Drive](urbano-drive/) — 1 building, built 1922; 1 in the Ingleside Terrace Historic District.
 - [Vasquez Avenue](vasquez-avenue/) — 1 building, built 1917.
+- [Vicente Street](vicente-street/) — 1 building, built 1928.
 - [West Portal Avenue](west-portal-avenue/) — 2 buildings, built 1935–1992.
 - [Westwood Drive](westwood-drive/) — 2 buildings, built 1917–1922.
 - [Winston Drive](winston-drive/) — 1 building, built 1900.

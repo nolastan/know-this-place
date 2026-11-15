@@ -1,0 +1,121 @@
+{
+  "address": "454 Vernon Street, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/vernon-street/454/",
+  "apn": "6994036",
+  "block": "6994",
+  "lot": "036",
+  "eas_baseid": "411121",
+  "coordinates": {
+    "lat": 37.720676,
+    "lng": -122.467787
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0454 VERNON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 166113,
+    "assessed_improvement_value": 249177,
+    "last_sale_date": "1996-05-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910215035",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-21",
+      "status_date": "2019-11-18",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609547",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-31",
+      "status_date": "1996-09-30",
+      "estimated_cost": 3900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8610047",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-08-15",
+      "status_date": "1987-02-06",
+      "estimated_cost": 25000,
+      "description": "division of existing grnd. floor room into 2.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VERNON&street_type=ST&address_number=454",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6994036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6994&lot=036",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6994036",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-09-01-n324",
+      "name": "Building and Engineering News, 1 September 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n324/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-09-01",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. E. J. Hargrave was named as architect.",
+      "source": "building-engineering-news-1928-09-01-n324"
+    }
+  ],
+  "building": {
+    "architect": "E. J. Hargrave"
+  }
+}

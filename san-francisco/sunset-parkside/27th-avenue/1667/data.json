@@ -1,0 +1,103 @@
+{
+  "address": "1667 27th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/27th-avenue/1667/",
+  "apn": "1916004B",
+  "block": "1916",
+  "lot": "004B",
+  "eas_baseid": "323542",
+  "coordinates": {
+    "lat": 37.756341,
+    "lng": -122.485548
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1855,
+    "basement_area_sqft": 425,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1667 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1247847,
+    "assessed_improvement_value": 534791,
+    "last_sale_date": "2020-05-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202001232636",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-01-23",
+      "status_date": "2026-01-09",
+      "estimated_cost": 88000,
+      "revised_cost": 0,
+      "description": "1st fl - add media, 2 bedrooms & 2 full baths; 2nd fl - remodel bedrooms & kitchen. add home office and 1 full bath. lightwell modification to match adjacent property. relocate interior staircase. new deck at rear",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=1667",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1916004B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1916&lot=004B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1916004B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-07-07-n29",
+      "name": "Building and Engineering News, 7 July 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n29/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-07-07",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. L. E. Hansberry was named as architect.",
+      "source": "building-engineering-news-1928-07-07-n29"
+    }
+  ],
+  "building": {
+    "architect": "L. E. Hansberry"
+  }
+}

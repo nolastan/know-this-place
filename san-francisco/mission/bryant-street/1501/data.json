@@ -1,0 +1,112 @@
+{
+  "address": "1501 Bryant Street, San Francisco, CA 94103",
+  "path": "/san-francisco/mission/bryant-street/1501/",
+  "apn": "3922A001",
+  "block": "3922A",
+  "lot": "001",
+  "eas_baseid": "366700",
+  "coordinates": {
+    "lat": 37.767974,
+    "lng": -122.410312
+  },
+  "parcel": {
+    "year_built": 1928,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 5,
+    "lot_area_sqft": 14997,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "B",
+    "zoning": "M1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "0000 1501 BRYANT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1503237,
+    "assessed_improvement_value": 1373371
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Showplace Square Heavy Timber and Steel-frame Brick Warehouse and Factory Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1893–1929",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9312002",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-07-19",
+      "status_date": "1993-11-12",
+      "estimated_cost": 18000,
+      "description": "seismic upgrade of parapet walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRYANT&street_type=ST&address_number=1501",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3922A001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3922A&lot=001",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3922A001",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41031236766523%2037.767973744518855)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-07-14-n60",
+      "name": "Building and Engineering News, 14 July 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n60/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-07-14",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey Class B bakery, estimated at $100,000. Bliss & Fairweather were named as architects. The owner was the Continental Baking Co.",
+      "source": "building-engineering-news-1928-07-14-n60"
+    }
+  ],
+  "building": {
+    "architect": "Bliss & Fairweather"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "address": "58 Main Street, San Francisco, CA 94105",
+  "path": "/san-francisco/east-cut/main-street/58/",
+  "apn": "3711005",
+  "block": "3711",
+  "lot": "005",
+  "eas_baseid": "364862",
+  "coordinates": {
+    "lat": 37.792109,
+    "lng": -122.395804
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 2,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 6,
+    "lot_area_sqft": 6298,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C3O",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "Financial District South",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0062 0058 MAIN                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 8020185,
+    "last_sale_date": "2021-09-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2015",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MAIN&street_type=ST&address_number=58",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3711005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3711&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3711005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-11-03-n632",
+      "name": "Building and Engineering News, 3 November 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n632/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-11-03",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey and mezzanine concrete office and loft building, estimated at $20,000. A. H. Larsen was named as architect.",
+      "source": "building-engineering-news-1928-11-03-n632"
+    }
+  ],
+  "building": {
+    "architect": "A. H. Larsen"
+  }
+}

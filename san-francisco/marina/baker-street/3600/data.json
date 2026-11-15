@@ -1,0 +1,132 @@
+{
+  "address": "3600 Baker Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/baker-street/3600/",
+  "apn": "0910022",
+  "block": "0910",
+  "lot": "022",
+  "eas_baseid": "290145",
+  "coordinates": {
+    "lat": 37.804463,
+    "lng": -122.446905
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "bedrooms": 6,
+    "lot_area_sqft": 6015.63,
+    "building_area_sqft": 5419,
+    "lot_depth_ft": 68.75,
+    "use": "Commercial Retail",
+    "property_class": "Consulate",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3600 BAKER               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Baker Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1926–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202410102763",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-10-10",
+      "status_date": "2024-10-10",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "change garage door (in -kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9510530",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-07-13",
+      "status_date": "1997-09-22",
+      "estimated_cost": 8700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1995–2024",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAKER&street_type=ST&address_number=3600",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0910022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0910&lot=022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0910022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44690524031815%2037.804463119044335)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-12-01-n768",
+      "name": "Building and Engineering News, 1 December 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n768/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-12-01",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $22,500. Albert Farr and J. F. Ward were named as architects and J. Del Favero as contractor.",
+      "source": "building-engineering-news-1928-12-01-n768"
+    }
+  ],
+  "building": {
+    "architect": "Albert Farr and J. F. Ward",
+    "builder": "J. Del Favero"
+  }
+}

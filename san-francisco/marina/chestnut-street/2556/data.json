@@ -1,0 +1,131 @@
+{
+  "address": "2556–2558 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/2556/",
+  "apn": "0931014A",
+  "block": "0931",
+  "lot": "014A",
+  "eas_baseid": "455319",
+  "coordinates": {
+    "lat": 37.799931,
+    "lng": -122.445483
+  },
+  "address_range": "2556–2558",
+  "street_numbers_on_parcel": [
+    "2556",
+    "2558"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 3781,
+    "building_area_sqft": 3740,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "2558 2556 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 100479,
+    "assessed_improvement_value": 139519
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606223684",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-06-22",
+      "status_date": "2026-06-22",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "rebuid the fire egress stairs in the light well due to dryrot damage. no fire wall construction.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611775",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-01",
+      "status_date": "1997-08-06",
+      "estimated_cost": 2000,
+      "description": "voluntary seismic work. install anchor bolts per engnr plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9404875",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-03-25",
+      "status_date": "1995-02-08",
+      "estimated_cost": 6800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1994–2026",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=2556",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0931014A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0931&lot=014A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0931014A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-10-06-n494",
+      "name": "Building and Engineering News, 6 October 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n494/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-10-06",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $9,000. Haley Bros. were named as contractors.",
+      "source": "building-engineering-news-1928-10-06-n494"
+    }
+  ],
+  "building": {
+    "builder": "Haley Bros."
+  }
+}

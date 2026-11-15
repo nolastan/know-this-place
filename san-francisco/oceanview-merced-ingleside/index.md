@@ -55,6 +55,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Sargent Street](sargent-street/) — 1 building, built 1928.
 - [Summit Street](summit-street/) — 1 building, built 1936.
 - [Thrift Street](thrift-street/) — 1 building, built 1949.
+- [Vernon Street](vernon-street/) — 1 building, built 1927.
 - [Victoria Street](victoria-street/) — 2 buildings, built 1926.
 - [Whittier Street](whittier-street/) — 1 building, built 1905.
 
