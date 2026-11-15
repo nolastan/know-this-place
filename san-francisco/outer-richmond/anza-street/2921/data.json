@@ -1,0 +1,137 @@
+{
+  "address": "2921–2923 Anza Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/anza-street/2921/",
+  "apn": "1563044A",
+  "block": "1563",
+  "lot": "044A",
+  "eas_baseid": "461336",
+  "coordinates": {
+    "lat": 37.77814,
+    "lng": -122.47967
+  },
+  "address_range": "2921–2923",
+  "street_numbers_on_parcel": [
+    "2921",
+    "2923"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "2923 2921 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 551930,
+    "assessed_improvement_value": 373464,
+    "last_sale_date": "1990-06-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200110291911",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-29",
+      "status_date": "2001-12-13",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace exist plaster wall w/ sheetrock, upgrade electrical & plumbing at kitchen only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9613664",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-07-29",
+      "status_date": "1998-02-04",
+      "estimated_cost": 8050,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611538",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-27",
+      "status_date": "1997-01-14",
+      "estimated_cost": 2000,
+      "description": "repl 4 windows same size/same style",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921305",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-06",
+      "status_date": "1989-11-29",
+      "estimated_cost": 10000,
+      "description": "replace 30' x 25' dry rotted area at front of bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=2921",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1563044A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1563&lot=044A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1563044A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-03-31-n530",
+      "name": "Building and Engineering News, 31 March 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n530/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-03-31",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of two flats, estimated at $4,000. E. E. Young was named as architect.",
+      "source": "building-engineering-news-1915-03-31-n530"
+    }
+  ],
+  "building": {
+    "architect": "E. E. Young"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "address": "730 40th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/40th-avenue/730/",
+  "apn": "1605035",
+  "block": "1605",
+  "lot": "035",
+  "eas_baseid": "310190",
+  "coordinates": {
+    "lat": 37.774953,
+    "lng": -122.500152
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 3420,
+    "building_area_sqft": 1750,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0730 40TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45714,
+    "assessed_improvement_value": 44791
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200410045823",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-10-04",
+      "status_date": "2004-11-22",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair stucco & joist rotten approx 3 sq yd.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305631",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-07",
+      "status_date": "1993-07-14",
+      "estimated_cost": 950,
+      "description": "lay 4\" concrete on driveway,repair & patch floor on basement",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=40TH&street_type=AVE&address_number=730",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1605035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1605&lot=035",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1605035",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-05-05-n739",
+      "name": "Building and Engineering News, 5 May 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n739/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-05-05",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey and basement frame residence, all work, at $2,757. Falch & Knoll were named as architects and J. J. Heaphy as contractor.",
+      "source": "building-engineering-news-1915-05-05-n739"
+    }
+  ],
+  "building": {
+    "architect": "Falch & Knoll",
+    "builder": "J. J. Heaphy"
+  }
+}

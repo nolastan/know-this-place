@@ -1,0 +1,157 @@
+{
+  "address": "804 Euclid Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/euclid-avenue/804/",
+  "apn": "1040017",
+  "block": "1040",
+  "lot": "017",
+  "eas_baseid": "293518",
+  "coordinates": {
+    "lat": 37.784021,
+    "lng": -122.458234
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 4,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 4,
+    "lot_area_sqft": 3162,
+    "building_area_sqft": 3900,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0804 EUCLID              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 734950,
+    "assessed_improvement_value": 734950,
+    "last_sale_date": "2001-07-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201606200412",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-06-20",
+      "status_date": "2016-06-20",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202068579",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-06",
+      "status_date": "2002-08-06",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "remove existing damage & cracked plaster @ceiling hallway & kitchen area.no structural work.replace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718920",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-25",
+      "status_date": "1999-01-11",
+      "estimated_cost": 7465,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8915276",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-22",
+      "status_date": "1989-10-17",
+      "estimated_cost": 5000,
+      "description": "install new pressure treated mud sill",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8914691",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-08-14",
+      "status_date": "1989-10-04",
+      "estimated_cost": 6000,
+      "description": "remove & replaced stucco at e & s side, replace sheating",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUCLID&street_type=AVE&address_number=804",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1040017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1040&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1040017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45823369997439%2037.78402103754003)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-01-27-n156",
+      "name": "Building and Engineering News, 27 January 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n156/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-01-27",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of four flats, estimated at $9,000. E. E. Young was named as architect.",
+      "source": "building-engineering-news-1915-01-27-n156"
+    }
+  ],
+  "building": {
+    "architect": "E. E. Young"
+  }
+}

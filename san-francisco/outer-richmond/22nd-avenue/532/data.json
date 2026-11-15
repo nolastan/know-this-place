@@ -1,0 +1,136 @@
+{
+  "address": "532 22nd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/22nd-avenue/532/",
+  "apn": "1564036",
+  "block": "1564",
+  "lot": "036",
+  "eas_baseid": "308508",
+  "coordinates": {
+    "lat": 37.777632,
+    "lng": -122.480999
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1660,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0532 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 319342,
+    "assessed_improvement_value": 247485,
+    "last_sale_date": "1998-04-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505196808",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-19",
+      "status_date": "2025-07-30",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "re-roofing no torch down.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504073828",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-04-07",
+      "status_date": "2026-03-27",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to comply with nov 202534497. repair and replace stucco and any dry rot as needed in the front of the building. replace (5) front windows, in kind. replace garage door in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610266071",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-26",
+      "status_date": "2006-10-31",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "replace 2 windows visible from street, also associated dryrot at sill & sheetrack in vicinity of window. aluminum to vinyl. 0.67 u factor min.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9909449",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-13",
+      "status_date": "2000-01-19",
+      "estimated_cost": 8500,
+      "description": "remove wood shingles and asphalt/install new",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=532",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1564036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1564&lot=036",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1564036",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-02-10-n236",
+      "name": "Building and Engineering News, 10 February 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n236/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-02-10",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame dwelling, estimated at $2,500. W. E. Jones was named as architect and Jones & Perry as contractors.",
+      "source": "building-engineering-news-1915-02-10-n236"
+    }
+  ],
+  "building": {
+    "architect": "W. E. Jones",
+    "builder": "Jones & Perry"
+  }
+}

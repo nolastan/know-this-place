@@ -1,0 +1,134 @@
+{
+  "address": "205 10th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/10th-avenue/205/",
+  "apn": "1423002",
+  "block": "1423",
+  "lot": "002",
+  "eas_baseid": "303254",
+  "coordinates": {
+    "lat": 37.784391,
+    "lng": -122.469085
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 2260,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0207 0205 10TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 985010,
+    "assessed_improvement_value": 422146
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202508082662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-08-08",
+      "status_date": "2026-01-29",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "two units: remove and add new partition walls, renew bath and add laundry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505156519",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-15",
+      "status_date": "2026-01-29",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "both units (205 & 207) - remove (e) bath fixtures; replace tub with shower; renew electrical, lighting, and venting. replace (e) kitchen cabinets, renew electrical and plumbing, add lighting. same work to be performed in both identical units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M1098308",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-06-20",
+      "status_date": "2019-06-20",
+      "revised_cost": 0,
+      "description": "street sprace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-04-03",
+      "status_date": "1989-08-16",
+      "estimated_cost": 2500,
+      "description": "dry rot or termite repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1989–2025",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=10TH&street_type=AVE&address_number=205",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1423002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1423&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1423002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-01-06-n29",
+      "name": "Building and Engineering News, 6 January 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n29/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-01-06",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of two flats, estimated at $4,000.",
+      "source": "building-engineering-news-1915-01-06-n29"
+    }
+  ]
+}
