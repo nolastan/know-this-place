@@ -22,6 +22,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Cameo Way](cameo-way/) — 1 building, built 1968; 1 in the Diamond Heights Historic District.
 - [Castro Street](castro-street/) — 1 building, built 1973.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1966.
+- [Chattanooga Street](chattanooga-street/) — 1 building, built 1880.
 - [Church Street](church-street/) — 1 building, built 1914.
 - [Clipper Street](clipper-street/) — 3 buildings, built 1883–1916.
 - [Clipper Terrace](clipper-terrace/) — 1 building, built 1996.
@@ -31,6 +32,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
 - [Elizabeth Street](elizabeth-street/) — 1 building, built 1927.
+- [Guerrero Street](guerrero-street/) — 1 building, built 1925.
 - [Harper Street](harper-street/) — 1 building, built 1900.
 - [Hill Street](hill-street/) — 1 building, built 1965.
 - [Hoffman Avenue](hoffman-avenue/) — 1 building.

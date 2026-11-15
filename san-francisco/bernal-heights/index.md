@@ -59,6 +59,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Samoset Street](samoset-street/) — 1 building, built 1949.
 - [Santa Marina Street](santa-marina-street/) — 1 building, built 1914.
 - [Shotwell Street](shotwell-street/) — 1 building.
+- [Stoneman Street](stoneman-street/) — 1 building, built 1925.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.
 - [Winfield Street](winfield-street/) — 1 building, built 1909.
 - [Wool Street](wool-street/) — 1 building, built 1906.

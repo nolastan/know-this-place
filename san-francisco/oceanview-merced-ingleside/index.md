@@ -18,6 +18,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Broad Street](broad-street/) — 4 buildings, built 1896–1946.
 - [Bruce Avenue](bruce-avenue/) — 1 building, built 1927.
 - [Byxbee Street](byxbee-street/) — 3 buildings, built 1928.
+- [Caine Avenue](caine-avenue/) — 1 building, built 1925.
 - [Capitol Avenue](capitol-avenue/) — 1 building.
 - [Chester Avenue](chester-avenue/) — 1 building, built 1927.
 - [Crystal Street](crystal-street/) — 1 building, built 1944.

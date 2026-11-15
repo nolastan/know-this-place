@@ -1,0 +1,135 @@
+{
+  "address": "78 Concord Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/concord-street/78/",
+  "apn": "6468008",
+  "block": "6468",
+  "lot": "008",
+  "eas_baseid": "399103",
+  "coordinates": {
+    "lat": 37.712441,
+    "lng": -122.44298
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2696,
+    "building_area_sqft": 965,
+    "basement_area_sqft": 331,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0078 CONCORD             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191600,
+    "assessed_improvement_value": 156758,
+    "last_sale_date": "1997-10-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709158568",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-15",
+      "status_date": "2018-08-24",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "all work not visible to street: putting stucco on the left and back sides of the house. dry rottedw wood siding will be removed before stucco is put on. two windows will be replaced - size unchanged. sheating willl be install where siding is removed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412151454",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-15",
+      "status_date": "2005-03-22",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "to add 2 bedroom/1 full bthrm/1 storage/laundry room on extg ground floor per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9802213",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-02-10",
+      "status_date": "1998-06-10",
+      "estimated_cost": 200,
+      "description": "renew permit#9800015-incorrectly stated work on side of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9800015",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-01-02",
+      "status_date": "1999-03-08",
+      "estimated_cost": 500,
+      "description": "repair garage slab",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CONCORD&street_type=ST&address_number=78",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6468008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6468&lot=008",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6468008",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-08-29-n386",
+      "name": "Building and Engineering News, 29 August 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n386/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-08-29",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. W. E. Lampert and O. H. Pattons were named as architects and contractors.",
+      "source": "building-engineering-news-1925-08-29-n386"
+    }
+  ],
+  "building": {
+    "architect": "W. E. Lampert and O. H. Pattons",
+    "builder": "W. E. Lampert and O. H. Pattons"
+  }
+}

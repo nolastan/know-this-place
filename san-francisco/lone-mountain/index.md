@@ -10,6 +10,7 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 - [Barcelona Avenue](barcelona-avenue/) — 1 building, built 1948.
 - [Beaumont Avenue](beaumont-avenue/) — 1 building, built 1936.
 - [Blake Street](blake-street/) — 1 building, built 2000.
+- [Cole Street](cole-street/) — 1 building, built 1926.
 - [Collins Street](collins-street/) — 1 building, built 1976.
 - [Cook Street](cook-street/) — 2 buildings, built 1901–1926.
 - [Fell Street](fell-street/) — 1 building, built 1905; 1 in the Panhandle Historic District.

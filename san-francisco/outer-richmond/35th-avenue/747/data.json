@@ -1,0 +1,138 @@
+{
+  "address": "747 35th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/35th-avenue/747/",
+  "apn": "1609009A",
+  "block": "1609",
+  "lot": "009A",
+  "eas_baseid": "310340",
+  "coordinates": {
+    "lat": 37.774882,
+    "lng": -122.495439
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 4,
+    "bedrooms": 2,
+    "lot_area_sqft": 3240,
+    "building_area_sqft": 2935,
+    "basement_area_sqft": 223,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0747 35TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 912426,
+    "assessed_improvement_value": 643312,
+    "last_sale_date": "2003-04-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512222449",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-12-22",
+      "status_date": "2026-02-26",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "comply with nov 202543934: residential infill to existing 4 story building located on 1st level, rear. using existing structure and alining with the existing walls above. scope includes new walls, floor finishes. new windows and door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202507181164",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-18",
+      "status_date": "2025-07-18",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "3 window replacement back of home. not street visible. in sunroom from wood to fiberglass.u<=0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604184977",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-04-18",
+      "status_date": "2026-01-09",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "infill existing porch openings with sliding glass doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105317101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-31",
+      "status_date": "2011-09-15",
+      "estimated_cost": 8000,
+      "revised_cost": 25800,
+      "description": "garage level-add play room, 1 bathroom, & laundry.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=35TH&street_type=AVE&address_number=747",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1609009A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1609&lot=009A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1609009A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-10-10-n625",
+      "name": "Building and Engineering News, 10 October 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n625/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-10-10",
+      "kind": "construction",
+      "description": "A permit was sought for a part two- and three-storey frame dwelling with a basement, estimated at $9,000. Theo. W. Lenzen was named as architect and John Casty & Son as contractors.",
+      "source": "building-engineering-news-1925-10-10-n625"
+    }
+  ],
+  "building": {
+    "architect": "Theo. W. Lenzen",
+    "builder": "John Casty & Son"
+  }
+}

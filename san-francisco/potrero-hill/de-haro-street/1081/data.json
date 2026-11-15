@@ -1,0 +1,134 @@
+{
+  "address": "1081 De Haro Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/de-haro-street/1081/",
+  "apn": "4160051",
+  "block": "4160",
+  "lot": "051",
+  "eas_baseid": "369860",
+  "coordinates": {
+    "lat": 37.756117,
+    "lng": -122.400456
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1979,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 1081 DE HARO             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 741984,
+    "assessed_improvement_value": 494652,
+    "last_sale_date": "2005-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201602189994",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-18",
+      "status_date": "2016-08-08",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace (e) concrete step, landing and steel railing at front stairs. visible from street. less thn 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601207400",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-01-20",
+      "status_date": "2016-08-23",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace 1 window and install hardie siding to back wall not visible to street. no structural changes. max u-factor 0.32 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508180582",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-08-18",
+      "status_date": "2007-02-08",
+      "estimated_cost": 10551,
+      "revised_cost": 10551,
+      "description": "replace 10 windows 3 visible from the street window trim detail to remain as is. no structural chan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200502044825",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-02-04",
+      "status_date": "2005-03-11",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "nov complaint 200556842 items no 2,3,4,5,6,8,9,10,12. repair of rear stairs less than 50% of structu",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DE%20HARO&street_type=ST&address_number=1081",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4160051&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4160&lot=051",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4160051",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-08-29-n386",
+      "name": "Building and Engineering News, 29 August 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n386/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-08-29",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. E. Anderson was named as architect.",
+      "source": "building-engineering-news-1925-08-29-n386"
+    }
+  ],
+  "building": {
+    "architect": "E. Anderson"
+  }
+}
