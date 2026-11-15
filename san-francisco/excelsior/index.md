@@ -8,6 +8,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Amazon Avenue](amazon-avenue/) — A 1930 house recorded as Jerry Garcia's first home.
 - [Athens Street](athens-street/) — 1 building, built 1925.
 - [Avalon Avenue](avalon-avenue/) — 1 building, built 1910.
+- [Brazil Avenue](brazil-avenue/) — 1 building, built 1915.
 - [Brookdale Avenue](brookdale-avenue/) — 1 building, built 1946.
 - [Byron Court](byron-court/) — 1 building, built 1978.
 - [Carter Street](carter-street/) — 1 building, built 2004.

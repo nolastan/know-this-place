@@ -1,0 +1,150 @@
+{
+  "address": "2557 22nd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/22nd-avenue/2557/",
+  "apn": "2423012",
+  "block": "2423",
+  "lot": "012",
+  "eas_baseid": "338442",
+  "coordinates": {
+    "lat": 37.739971,
+    "lng": -122.479029
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 1555,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2557 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 944193,
+    "assessed_improvement_value": 478170,
+    "last_sale_date": "2006-03-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203029035",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-02",
+      "status_date": "2022-05-31",
+      "estimated_cost": 25240,
+      "revised_cost": 25240,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901231067",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-23",
+      "status_date": "2019-11-06",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "rot repair, remove and replace rotten wood siding at the rear of the subject building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604179129",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-04-17",
+      "status_date": "2008-01-08",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "3'x9' landing stairs to be repaired and private gate to be repaired less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509625",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-06-23",
+      "status_date": "1995-12-21",
+      "estimated_cost": 7500,
+      "description": "remove/replace 10 windows and 1 door w/new vinyl trim",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512815",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1985-11-12",
+      "status_date": "1986-04-29",
+      "estimated_cost": 2000,
+      "description": "remodeling of kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512253",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-10-28",
+      "status_date": "1986-07-24",
+      "estimated_cost": 6000,
+      "description": "horiontal extension - new bathroom on the main floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=2557",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2423012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2423&lot=012",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2423012",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-08-02-n169",
+      "name": "Building and Engineering News, 2 August 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer30230cont/page/n169/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-08-02",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work on a one-storey frame residence with a basement.",
+      "source": "building-engineering-news-1930-08-02-n169"
+    }
+  ]
+}

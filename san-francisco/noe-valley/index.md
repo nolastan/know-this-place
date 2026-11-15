@@ -9,6 +9,7 @@ that study area, as an example of the Second Bay Tradition.
 ## Streets documented so far
 
 - [21st Street](21st-street/) — 1 building, built 1958.
+- [22nd Street](22nd-street/) — 1 building, built 1930.
 - [23rd Street](23rd-street/) — 1 building, built 1910; 1 in the Diamond & Elizabeth Streets Historic District.
 - [24th Street](24th-street/) — 1 building, built 1900; 1 in the Diamond & Elizabeth Streets Historic District.
 - [25th Street](25th-street/) — 1 building, built 1900.
