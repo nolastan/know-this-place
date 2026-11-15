@@ -1,0 +1,157 @@
+{
+  "address": "2264–2266 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/2264/",
+  "apn": "0928017",
+  "block": "0928",
+  "lot": "017",
+  "eas_baseid": "290600",
+  "coordinates": {
+    "lat": 37.801266,
+    "lng": -122.44248
+  },
+  "address_range": "2264–2266",
+  "street_numbers_on_parcel": [
+    "2264",
+    "2266"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 3136,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2264 FRANCISCO           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 217536,
+    "assessed_improvement_value": 459500
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202509175496",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-09-17",
+      "status_date": "2025-09-17",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "re-roofing (no hot works)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509288197",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-28",
+      "status_date": "2015-12-18",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remodel kitchen, new plumbing, electric, and sheet rock walls. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200808048307",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-08-04",
+      "status_date": "2008-08-04",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "remove and replace 2 4x4 posts at first floor.replace treads as needed at various locations. all work at side stairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110019581",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-01",
+      "status_date": "2001-12-07",
+      "estimated_cost": 4978,
+      "revised_cost": 4978,
+      "description": "7 windows to be replaced size for size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511990",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-01",
+      "status_date": "1995-12-01",
+      "estimated_cost": 4600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118933",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-10-10",
+      "status_date": "1992-09-21",
+      "estimated_cost": 20000,
+      "description": "replace (e) foundation, install plywood shear walls",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANCISCO&street_type=ST&address_number=2264",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0928017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0928&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0928017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-01-31-n192",
+      "name": "Building and Engineering News, 31 January 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n192/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-01-31",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of three flats with a basement, estimated at $8,000.",
+      "source": "building-engineering-news-1925-01-31-n192"
+    }
+  ]
+}

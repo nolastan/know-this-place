@@ -1,0 +1,125 @@
+{
+  "address": "1267 23rd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/23rd-avenue/1267/",
+  "apn": "1727014",
+  "block": "1727",
+  "lot": "014",
+  "eas_baseid": "315293",
+  "coordinates": {
+    "lat": 37.763985,
+    "lng": -122.481782
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1264,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1267 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 342339,
+    "assessed_improvement_value": 177652
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206176622",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-17",
+      "status_date": "2022-08-29",
+      "estimated_cost": 23500,
+      "revised_cost": 23500,
+      "description": "repair the front stairs. like for like, less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205234774",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-23",
+      "status_date": "2022-06-02",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200412151526",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-12-15",
+      "status_date": "2005-01-21",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "replace 7 windows, dual pane, vinyl frame, none on front",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2022",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=1267",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1727014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1727&lot=014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1727014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-01-03-n28",
+      "name": "Building and Engineering News, 3 January 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n28/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-01-03",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000.",
+      "source": "building-engineering-news-1925-01-03-n28"
+    }
+  ]
+}

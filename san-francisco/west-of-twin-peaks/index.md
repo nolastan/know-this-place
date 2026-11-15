@@ -22,6 +22,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Cecilia Avenue](cecilia-avenue/) — 1 building, built 1927.
+- [Cedro Avenue](cedro-avenue/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.
 - [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
 - [Colon Avenue](colon-avenue/) — 1 building, built 1926.
 - [Congo Street](congo-street/) — 2 buildings, built 1927.

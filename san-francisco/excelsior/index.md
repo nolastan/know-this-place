@@ -10,6 +10,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Avalon Avenue](avalon-avenue/) — 1 building, built 1910.
 - [Brazil Avenue](brazil-avenue/) — 1 building, built 1915.
 - [Brookdale Avenue](brookdale-avenue/) — 1 building, built 1946.
+- [Brunswick Street](brunswick-street/) — 1 building, built 1925.
 - [Byron Court](byron-court/) — 1 building, built 1978.
 - [Carter Street](carter-street/) — 1 building, built 2004.
 - [Cassandra Court](cassandra-court/) — 1 building, built 1925.

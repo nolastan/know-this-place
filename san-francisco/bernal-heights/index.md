@@ -57,6 +57,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Ripley Street](ripley-street/) — 2 buildings, built 1917–1940.
 - [Rutledge Street](rutledge-street/) — 1 building, built 1973.
 - [Samoset Street](samoset-street/) — 1 building, built 1949.
+- [San Jose Avenue](san-jose-avenue/) — 1 building, built 1908.
 - [Santa Marina Street](santa-marina-street/) — 1 building, built 1914.
 - [Shotwell Street](shotwell-street/) — 1 building.
 - [Stoneman Street](stoneman-street/) — 1 building, built 1925.

@@ -31,6 +31,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Seneca Avenue](seneca-avenue/) — 1 building, built 1997.
 - [Sergeant John V Young Street](sergeant-john-v-young-street/) — The Ingleside police station, built 1909-1910 on land ceded from Balboa Park.
 - [Sickles Avenue](sickles-avenue/) — 1 building, built 1922.
+- [Wilson Street](wilson-street/) — 1 building, built 1925.
 
 ## Parks and public spaces
 

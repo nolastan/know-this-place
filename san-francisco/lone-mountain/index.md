@@ -10,6 +10,8 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 - [Barcelona Avenue](barcelona-avenue/) — 1 building, built 1948.
 - [Beaumont Avenue](beaumont-avenue/) — 1 building, built 1936.
 - [Blake Street](blake-street/) — 1 building, built 2000.
+- [Central Avenue](central-avenue/) — 1 building, built 1925; 1 in the NOPA Historic District.
+- [Clayton Street](clayton-street/) — 6 buildings, built 1924–1925.
 - [Cole Street](cole-street/) — 1 building, built 1926.
 - [Collins Street](collins-street/) — 1 building, built 1976.
 - [Cook Street](cook-street/) — 2 buildings, built 1901–1926.

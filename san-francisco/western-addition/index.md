@@ -33,6 +33,7 @@ A large central district west of Van Ness that largely survived the 1906 fire, m
 - [Sutter Street](sutter-street/) — 1 building, built 1910.
 - [Turk Street](turk-street/) — 1 building, built 1977.
 - [Van Ness Avenue](van-ness-avenue/) — 10 buildings, built 1900–2019.
+- [Webster Street](webster-street/) — 5 buildings, built 1925–1926.
 - [Willow Street](willow-street/) — 1 building, built 1931.
 
 ## Parks and public spaces

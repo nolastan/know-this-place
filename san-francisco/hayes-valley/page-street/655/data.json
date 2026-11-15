@@ -1,0 +1,179 @@
+{
+  "address": "655 Page Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/page-street/655/",
+  "apn": "0848002F",
+  "block": "0848",
+  "lot": "002F",
+  "eas_baseid": "289487",
+  "coordinates": {
+    "lat": 37.772702,
+    "lng": -122.431432
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 10,
+    "stories": 2,
+    "rooms": 20,
+    "bathrooms": 10,
+    "bedrooms": 10,
+    "lot_area_sqft": 3713.46,
+    "building_area_sqft": 4970,
+    "lot_depth_ft": 98.92,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0655 PAGE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 161583,
+    "assessed_improvement_value": 501384
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202204061730",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-04-06",
+      "status_date": "2022-08-09",
+      "estimated_cost": 12000,
+      "revised_cost": 35000,
+      "description": "one unit: replace kitchen countertop & cabinet. replace bathroom tile. no structural work - no wall/framing modificaiton.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101283528",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-01-28",
+      "status_date": "2021-01-28",
+      "estimated_cost": 9000,
+      "revised_cost": 30000,
+      "description": "one unit: replace bathroom tile & kitchen cabinets. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911207803",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-20",
+      "status_date": "2020-01-15",
+      "estimated_cost": 8000,
+      "revised_cost": 14000,
+      "description": "one unit: replace bathroom tile & kitchen cabinets. no structural changes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201910295813",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-10-29",
+      "status_date": "2020-01-15",
+      "estimated_cost": 6000,
+      "revised_cost": 18600,
+      "description": "one unit: replace kitchen countertop & bathroom tile (floor & wall). no structural changes. (not a full kitchen & bathroom remodel).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709077301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-07",
+      "status_date": "2017-10-26",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "#2- replace kitchen floor, no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608266092",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2016-08-26",
+      "status_date": "2016-11-17",
+      "estimated_cost": 4000,
+      "revised_cost": 13000,
+      "description": "one unit: replace kitchen cabinets & counter tops.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201511092179",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-11-09",
+      "status_date": "2015-12-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202209597",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-02-20",
+      "status_date": "2002-08-20",
+      "estimated_cost": 18473,
+      "revised_cost": 18473,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PAGE&street_type=ST&address_number=655",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0848002F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0848&lot=002F",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0848002F",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-05-02-n805",
+      "name": "Building and Engineering News, 2 May 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n805/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-05-02",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of ten apartments with a basement, estimated at $10,000. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1925-05-02-n805"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

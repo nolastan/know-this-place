@@ -38,6 +38,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Trenton Street](trenton-street/) — 4 buildings, built 1907–1913.
 - [Union Street](union-street/) — 9 buildings, built 1907–1924; 2 in the Washington Square Historic District.
 - [Vallejo Street](vallejo-street/) — 4 buildings, built 1906–1932.
+- [Washington Street](washington-street/) — 1 building, built 1925; 1 in the Chinatown Historic District.
 - [Waverly Place](waverly-place/) — 3 buildings, built 1907–1911; 3 in the Chinatown Historic District.
 - [Winter Place](winter-place/) — 1 building, built 1912.
 
