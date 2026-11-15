@@ -1,0 +1,46 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-11-15",
+  "read_on": "2026-11-15",
+  "notes": "Run of 2026-11-15. Two Mission Local stories queued: the Francisco Rosas mural piece names no street address; the Polk Street power-outage story is declined.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 1,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-15-ml-0001",
+      "date": "2026-11-14",
+      "date_precision": "day",
+      "kind": "event",
+      "address_as_written": "2141 Polk Street",
+      "street_number": "2141",
+      "street_type": "ST",
+      "street_name": "POLK",
+      "description": "Declined: a two-week power outage at a restaurant is a passing utility problem, not a building fact that passes the ten-year test; the story is largely about the restaurant's owner.",
+      "extra": {},
+      "citation": {
+        "label": "Mission Local, “Martinis in the dark: Russian Hill restaurant is 2 weeks into ‘endless’ power outage,” 14 November 2026",
+        "url": "https://missionlocal.org/2026/11/martinis-in-the-dark/"
+      },
+      "raw": {
+        "text": "Martinis in the dark: Russian Hill restaurant is 2 weeks into ‘endless’ power outage"
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "Declined on the ten-year test: an outage, however long, is not something to read on the building's page in a decade. The owner, a private individual, is recorded nowhere."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0571003",
+        "path": "/san-francisco/pacific-heights/polk-street/2139/",
+        "eas_address": "2139 POLK ST",
+        "method": "EAS exact match on 2141 POLK ST → parcel 0571003; sf-parcels has blklot 0571003 active, 2139–2141 POLK; the 2025 roll records it as commercial retail, built 1933. EAS puts 2139, 2141 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2139.",
+        "checked_on": "2026-11-15"
+      }
+    }
+  ]
+}
