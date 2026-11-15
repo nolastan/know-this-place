@@ -1,0 +1,109 @@
+{
+  "address": "455 11th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/11th-avenue/455/",
+  "apn": "1533011",
+  "block": "1533",
+  "lot": "011",
+  "eas_baseid": "307113",
+  "coordinates": {
+    "lat": 37.779666,
+    "lng": -122.469881
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2670,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0457 0455 11TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55116,
+    "assessed_improvement_value": 72224
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200009089976",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-08",
+      "status_date": "2001-03-08",
+      "estimated_cost": 7940,
+      "revised_cost": 7940,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2000–2013",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=11TH&street_type=AVE&address_number=455",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1533011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1533&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1533011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1922-07-08-n62",
+      "name": "Building and Engineering News, 8 July 1922",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2222cont/page/n62/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922-07-08",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a two-storey frame building with a basement. Paul F. De Martini was named as architect and G. W. Urban as contractor.",
+      "source": "building-engineering-news-1922-07-08-n62"
+    }
+  ],
+  "building": {
+    "architect": "Paul F. De Martini",
+    "builder": "G. W. Urban"
+  }
+}

@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 18 of 34 half-year volumes read (vol. 23 to vol. 31, January 1923 – January 1932, the end of the run): 4,364 facts on 4,086 page writes (2,578 pages seeded). Resume backwards at vol. 22 pt. 2 (July–December 1922, `buildingengineer2222cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 19 of 34 half-year volumes read (vol. 22 pt. 2 to vol. 31, July 1922 – January 1932, the end of the run): 4,538 facts on 4,245 page writes (2,667 pages seeded). Resume backwards at vol. 22 pt. 1 (January–June 1922, `buildingengineer222cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 6,414 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 6,624 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -180,6 +180,21 @@
   until the parcel gets a page (39 are row-of-houses permits), 481 rows with
   a nearest parcel not accepted, 793 not placed. Unread: the 17 volumes
   before July 1923.
+- **Coverage, vol. 22 pt. 2** (`buildingengineer2222cont`, 1 July – 30
+  December 1922): 2,782 numbered entries; 1,519 San Francisco rows; 733
+  placed on a parcel; 211 picked and read against the image; 174 published
+  on 159 pages, 89 of them seeded. Unfinished: 210 placed single houses held
+  until the parcel gets a page (22 are row-of-houses permits), 317 rows with
+  a nearest parcel not accepted, 786 not placed. Unread: the 15 volumes
+  before July 1922.
+- **Verified:** 2026-11-15 (vol. 22 pt. 2: read 2,782 entries, found 1,519
+  San Francisco rows, resolved 174, published 174 on 159 pages. Learned:
+  the same contract can be printed again two issues later, so before taking
+  up a held contract compare it with what the page already carries; a
+  permit and a later contract can name different builders (3120 Jackson:
+  the page keeps the permit's); a fact for a whole building is not put on a
+  condominium unit page when the building has no page of its own; five held
+  facts were taken up when this volume seeded their pages.)
 - **Coverage, vol. 23 pt. 1** (`buildingengineer233cont`, 6 January – 30
   June 1923): 4,231 numbered entries; 2,260 San Francisco rows; 1,238
   placed on a parcel; 355 picked and read against the image; 272 published

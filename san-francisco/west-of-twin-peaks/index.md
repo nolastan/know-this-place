@@ -44,6 +44,8 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
 - [Gennessee Street](gennessee-street/) — 1 building, built 1915.
 - [Granville Way](granville-way/) — 1 building, built 1923.
+- [Greenwood Avenue](greenwood-avenue/) — 1 building, built 1922.
+- [Hazelwood Avenue](hazelwood-avenue/) — 2 buildings, built 1922.
 - [Hearst Avenue](hearst-avenue/) — 1 building, built 1908.
 - [Idora Avenue](idora-avenue/) — 1 building, built 1947.
 - [Joost Avenue](joost-avenue/) — 1 building, built 1927.
@@ -111,6 +113,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Ulloa Street](ulloa-street/) — 1 building, built 1938.
 - [Upland Drive](upland-drive/) — 1 building.
 - [Urbano Drive](urbano-drive/) — 1 building, built 1922; 1 in the Ingleside Terrace Historic District.
+- [Valdez Avenue](valdez-avenue/) — 1 building, built 1923.
 - [Vasquez Avenue](vasquez-avenue/) — 1 building, built 1917.
 - [Vicente Street](vicente-street/) — 1 building, built 1928.
 - [West Portal Avenue](west-portal-avenue/) — 2 buildings, built 1935–1992.
