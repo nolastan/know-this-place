@@ -4,9 +4,9 @@
 > [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `east-west-journal`.
 >
-> - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
+> - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** done
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1967–1984 read (886 of 1,125 issues); resume at the first 1985 issue. See the `Verified:` line.
+> - **Coverage:** every issue read, 1967–1989 (all 1,125 in the collection, the last vol. 23 no. 36 of 7 September 1989). Exhausted. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/east-west-journal/`
 
 - **What:** *East/West: The Chinese-American Journal* (at first "The
@@ -26,12 +26,17 @@
   `https://archive.org/advancedsearch.php?q=collection:eastwestnews&fl[]=identifier&fl[]=date&rows=2000&output=json`.
 - **How to get at it:** `https://archive.org/download/<id>/<id>_djvu.txt` per
   issue (about 100 KB each, 110 MB for the run). Four parallel `curl`s took
-  about 45 minutes for all 1,125; one at a time is several times slower. The
+  about 45 minutes for all 1,125; one at a time is several times slower (the
+  1985–1989 run fetched its 239 with six in a few minutes). The
   djvu text has **no page breaks**, so a finding's page comes from
   `<id>_hocr_searchtext.txt.gz` plus `<id>_hocr_pageindex.json.gz` (character
   ranges per leaf) and `<id>_page_numbers.json` (printed page per leaf, often
   blank on the front page, where leaf + 1 is the page). Volume and number come
   from `https://archive.org/metadata/<id>/metadata` (`volume`, `issue`).
+  `research/tools/ocr_mentions.py leaf <corpus> <id> "<phrase>"` does that
+  lookup and caches the three files. The advancedsearch `volume` and `issue`
+  fields come back as "vol. 19" and "no. 1"; strip the words before writing
+  `items.tsv`, or the citation label doubles them.
   The mention pass is `research/tools/ocr_mentions.py extract` (committed in
   2026-11; the 1967–1978 runs' copy lived in a scratch directory and was lost
   with its container): a number followed by a street name in the EAS street
@@ -87,6 +92,11 @@
   - **Untyped common words were a third of the 1979–1984 windows.** "90 DAY", "5 MILES", "12 PAGE", "50 STATES", "3 YOUNG" all matched EAS street names; `ocr_mentions.py` now accepts an untyped street only from its `UNTYPED_OK` list.
   - **A new building's own number goes OCR'd too.** The Tower hotel printed "13$25 Grant" (1527 in a clean 1983 item), the Montgomery Washington Tower "6$53" (655 in the same issue's calendar), the Chinese Historical Society "753S0 Kearny" (750); each resolved by hand on the clean print, never otherwise. "353 Montgomery" for the Bank of Canton's headquarters is probably 555 by the same 3-for-5 slip, and was placed on 555 Montgomery by the article's description of the site, not the number.
   - **The Bank of Canton tower absorbed three addresses.** 621 Clay (a residential hotel, demolished), the bank's headquarters and the Subtreasury at 608 Commercial all lie under 555 Montgomery (parcel 0227048); none has an EAS record, and the 1982 story says the tower rose on all three.
+  - **The paper's own masthead OCRs to the wrong block.** In 1986 the office is "838 Grant Avenue, Suite 302" in one issue and "1838 Grant Ave" in the postal statement of another; 1838 Grant is in North Beach and is the OCR, not a move. Not taken.
+  - **The Forbidden City's 363 Sutter has no EAS record.** Charlie Low's 1989 obituary dates his lease of the Club Trouville site at 363 Sutter to 1938; EAS holds 359, 361 and 369 on parcel 0294017, which the roll files as 355–369 Sutter and Planning's survey names "FORBIDDEN CITY NIGHT CLUB". Placed there by hand on that range and record; the page already carried the club from the LGBTQ context statement.
+  - **The Clayton Hotel is 651–657 Clay, and its number never prints cleanly.** "6357 Clay" (1985) and "057 Clay" (1987) are the Chinese Community Housing Corporation's hotel whose page already records its 1981 purchase and 1983 reopening; left unresolved rather than repeated. 650 Commercial Street, the Chinese Historical Society's museum from June 1989, is the back of the same parcel.
+  - **Sale and lease notices name owners, and they are left.** The Gee How Oak Tin association's 1985 invitation to bid on a lease of 836 Washington and the Chinese Hospital's 1989 notices offering six Chinatown properties for sale (20–30 Wentworth, 842–848 Washington, 603–609 and 716–722 Jackson, 506–510 Grant, 734 Bush, 734 Grant) are ownership records; under the People rule above they were not taken. The 1988 sale of the Chinese Times and its building at 686 Sacramento to an employee-majority group was taken, since it names no owner.
+  - **Cathay Mortuary is 1213 Powell.** The 1986 eminent-domain item OCRs the number to "0D"; the 1987 item prints it cleanly, and the 1986 finding was resolved by hand on it.
   - **Calendar listings repeat for weeks.** One event appears in three or four
     consecutive issues; cite the first.
   - **Copyright.** Each issue carries "Copyright 1967 by EAST/WEST Publishing
@@ -104,5 +114,5 @@
   (D Month YYYY), p. N" — e.g. "East/West: The Chinese-American Journal,
   vol. 4, no. 50 (23 December 1970), p. 1". The finding's `citation.url` points
   at the leaf.
-- **Coverage:** 1967–1969 (136 issues, 2,045 mentions, 256 windows read by hand) and 1970–1972 (150 issues, 2,294 mentions, 360 windows): 91 findings, 70 resolved, 63 published on 54 pages (14 seeded), 7 declined, 21 unresolved. 1973–1975 (150 issues, 3,296 mentions, 415 windows) and 1976–1978 (150 issues, 3,370 mentions, 438 windows): 49 findings, 38 resolved, 35 published on 30 pages (4 seeded), 3 declined, 11 unresolved. 1979–1981 (150 issues, 6,335 mentions, 364 windows): 96 findings, 73 resolved, 57 published, 16 declined, 23 unresolved. 1982–1984 (150 issues, 10,637 mentions, 282 windows): 71 findings, 60 resolved, 53 published, 7 declined, 11 unresolved. Together 110 entries on 84 pages, 22 seeded. 1985–1989 (239 issues) not yet read. The corpus is gitignored and lost with each container: only the issues a run reads need downloading (the 1973–1978 run fetched 300 issues in about ten minutes with six parallel `curl`s).
-- **Verified:** 2026-11-14 (1979–1984 read in one run: the mention pass rebuilt as `research/tools/ocr_mentions.py`, the 646 surviving windows read in four parallel slices against a written brief and every candidate re-checked here — 345 candidates cut to 167 findings, mostly by dropping calendar venues and bare shop presence; 23 resolved findings declined, 15 because the page already named the occupant. Earlier: 2026-11-13 (1973–1978 read through the same mention pass and published in one run; the 1975–1978 issues carry more school-district bid notices and out-of-town calendar items, which the filter keeps and the reader drops. Earlier: 1967–1972 read through the mention pass; every resolved finding checked against its page with `check.py --overlap` before and after seeding; PR #615). The extractor and filter are `research/tools/ocr_mentions.py`.
+- **Coverage:** 1967–1969 (136 issues, 2,045 mentions, 256 windows read by hand) and 1970–1972 (150 issues, 2,294 mentions, 360 windows): 91 findings, 70 resolved, 63 published on 54 pages (14 seeded), 7 declined, 21 unresolved. 1973–1975 (150 issues, 3,296 mentions, 415 windows) and 1976–1978 (150 issues, 3,370 mentions, 438 windows): 49 findings, 38 resolved, 35 published on 30 pages (4 seeded), 3 declined, 11 unresolved. 1979–1981 (150 issues, 6,335 mentions, 364 windows): 96 findings, 73 resolved, 57 published, 16 declined, 23 unresolved. 1982–1984 (150 issues, 10,637 mentions, 282 windows): 71 findings, 60 resolved, 53 published, 7 declined, 11 unresolved. Together 110 entries on 84 pages, 22 seeded. 1985–1989 (239 issues, 11,760 mentions, 308 windows): 59 findings, 51 resolved, 44 published on 38 pages (2 seeded: 686 Sacramento, the Chinese Times building, and 942 Pacific), 7 declined, 8 unresolved. The source is exhausted. The corpus is gitignored and lost with each container: only the issues a run reads need downloading (the 1973–1978 run fetched 300 issues in about ten minutes with six parallel `curl`s).
+- **Verified:** 2026-11-15 (1985–1989 read in one run, closing the source: the 308 surviving windows read here in full and each candidate re-read in its whole article before it was written, 59 findings from about 60 candidates; 7 resolved findings declined — 5 as repeats of the page, 2 because the parcel the address reaches may not hold the building. The paper's last years carry more legal notices (bulk transfers, fictitious business names, name changes) and more out-of-town copy (Vallejo's Chinese history, Boston, New York, Oakland's AC Transit cuts) than any earlier run, all of it dropped by hand; the filter keeps them because a notice names a business at a number. Earlier: 2026-11-14 (1979–1984 read in one run: the mention pass rebuilt as `research/tools/ocr_mentions.py`, the 646 surviving windows read in four parallel slices against a written brief and every candidate re-checked here — 345 candidates cut to 167 findings, mostly by dropping calendar venues and bare shop presence; 23 resolved findings declined, 15 because the page already named the occupant. Earlier: 2026-11-13 (1973–1978 read through the same mention pass and published in one run; the 1975–1978 issues carry more school-district bid notices and out-of-town calendar items, which the filter keeps and the reader drops. Earlier: 1967–1972 read through the mention pass; every resolved finding checked against its page with `check.py --overlap` before and after seeding; PR #615). The extractor and filter are `research/tools/ocr_mentions.py`.
