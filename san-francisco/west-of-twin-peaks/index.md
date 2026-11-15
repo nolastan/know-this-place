@@ -96,6 +96,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Santa Monica Way](santa-monica-way/) — 1 building, built 1918; 1 in the St. Francis Wood Historic District.
 - [Santa Paula Avenue](santa-paula-avenue/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
 - [Santa Rita Avenue](santa-rita-avenue/) — 1 building, built 1935; 1 in the Forest Hill Historic District.
+- [Santiago Street](santiago-street/) — 1 building, built 1931.
 - [Sequoia Way](sequoia-way/) — 1 building, built 1931.
 - [Sotelo Avenue](sotelo-avenue/) — 1 building, built 1914; 1 in the Forest Hill Historic District.
 - [Stanford Heights Avenue](stanford-heights-avenue/) — 1 building, built 1960.

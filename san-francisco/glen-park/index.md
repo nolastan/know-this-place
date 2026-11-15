@@ -30,6 +30,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Diamond Heights Boulevard](diamond-heights-boulevard/) — 1 building, built 1964.
 - [Diamond Street](diamond-street/) — 5 buildings, built 1916–1951; 2 in the Glen Park Center Historic District.
 - [Digby Street](digby-street/) — 1 building.
+- [Dolores Street](dolores-street/) — 1 building, built 1931.
 - [Edna Street](edna-street/) — 1 building, built 1925.
 - [Elk Street](elk-street/) — 1 building.
 - [Everson Street](everson-street/) — 1 building, built 1963.

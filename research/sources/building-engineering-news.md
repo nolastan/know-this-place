@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 10 of 34 half-year volumes read (vols. 26 to 30, January 1926 – December 1930): 2,246 facts on 2,130 page writes (1,347 pages seeded). Resume at vol. 31 pt. 1 (January–June 1931, `buildingengineer3131cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 11 of 34 half-year volumes read (vols. 26 to 30 and 31 pt. 1, January 1926 – June 1931): 2,329 facts on 2,209 page writes (1,381 pages seeded). Resume at vol. 31 pt. 2 (July 1931–January 1932, `buildingengineer31232cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, and the 3,196 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1, 421 in pt. 2, 376 in vol. 28 pt. 1, 284 in pt. 2, 203 in vol. 29 pt. 1, 155 in pt. 2, 184 in vol. 30 pt. 1, 156 in pt. 2), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
+> - **Claimed:** every unread volume, and the 3,414 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1, 421 in pt. 2, 376 in vol. 28 pt. 1, 284 in pt. 2, 203 in vol. 29 pt. 1, 155 in pt. 2, 184 in vol. 30 pt. 1, 156 in pt. 2, 218 in vol. 31 pt. 1), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -147,6 +147,21 @@
   pages, 44 of them seeded. Unfinished: 156 placed single houses held for the
   same page-count decision, 234 rows with a nearest parcel not accepted, 491
   not placed. Unread: the other 24 volumes.
+- **Coverage, vol. 31 pt. 1** (`buildingengineer3131cont`, 3 January – 27
+  June 1931): 1,610 numbered entries; 1,033 San Francisco rows; 571 placed
+  on a parcel; 122 picked and read against the image; 83 published on 79
+  pages, 34 of them seeded. Unfinished: 218 placed single houses held for the
+  same page-count decision, 35 row-of-houses permits held at the image, 231
+  rows with a nearest parcel not accepted, 462 not placed. Unread: the other
+  23 volumes.
+- **Verified:** 2026-11-15 (vol. 31 pt. 1: read 1,610 entries, found 1,033
+  San Francisco rows, resolved 83, published 83 on 79 pages. Learned: by 1931
+  a third of the picked permits are for rows of two to eight houses by
+  owner-builders ("two 1-story and basement frame dwellings ... each $4000");
+  the parser reads them as one dwelling, so select.py should skip a heading
+  that counts dwellings; one issue (30 May) had no readable running head and
+  was dated from its cover; publish.py does not undo a page write when a
+  finding is dropped after the first run, so restore that page with git.)
 - **Verified:** 2026-11-15 (vol. 30 pt. 2: read 1,529 entries, found 991
   San Francisco rows, resolved 99, published 99 on 96 pages. Learned: the
   cover-line reader missed two of the 26 covers, so the issue starts were
