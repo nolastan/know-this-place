@@ -1,0 +1,146 @@
+{
+  "address": "2173 Grove Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/grove-street/2173/",
+  "apn": "1193027B",
+  "block": "1193",
+  "lot": "027B",
+  "eas_baseid": "296864",
+  "coordinates": {
+    "lat": 37.773882,
+    "lng": -122.452353
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 2750,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "2175 2173 GROVE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 419144,
+    "assessed_improvement_value": 467119,
+    "last_sale_date": "1997-11-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201304043753",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-04-04",
+      "status_date": "2013-07-01",
+      "estimated_cost": 4000,
+      "revised_cost": 12859,
+      "description": "remodel bathroom (size 42 sq ft) -replace tub with shower, add frameless glass surround, replace wall-mount sink wiht pedestal & linoleum with tile floor, add recessed storage cabinet, lighting must comply cec 150 (k).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303212773",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-21",
+      "status_date": "2013-07-01",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "structural strengthening - add 1/2 plywood to front wakk if garage & hold downs at edges; add 1/2 plywood to rear wall of garage & hold downs at edges; replace 2 damaged posts (6 x6) with straps at base.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510034615",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-10-03",
+      "status_date": "2008-09-26",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302056800",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2003-02-05",
+      "status_date": "2004-05-27",
+      "estimated_cost": 125000,
+      "revised_cost": 125000,
+      "description": "addition (1 storey) to rear of (e) structure remodel (e) basement area (n) interior staircase with",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GROVE&street_type=ST&address_number=2173",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1193027B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1193&lot=027B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1193027B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45235307834099%2037.77388188070414)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-09-19-n302",
+      "name": "Building and Engineering News, 19 September 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1727cont/page/n302/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-09-19",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $4,000.",
+      "source": "building-engineering-news-1917-09-19-n302"
+    }
+  ]
+}

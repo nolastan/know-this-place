@@ -1,0 +1,110 @@
+{
+  "address": "775 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/775/",
+  "apn": "1652010H",
+  "block": "1652",
+  "lot": "010H",
+  "eas_baseid": "312263",
+  "coordinates": {
+    "lat": 37.77383,
+    "lng": -122.467315
+  },
+  "parcel": {
+    "year_built": 1918,
+    "units": 5,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 5,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 4000,
+    "basement_area_sqft": 550,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0775 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1574447,
+    "assessed_improvement_value": 674760,
+    "last_sale_date": "2016-01-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1918",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201603172362",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-17",
+      "status_date": "2016-03-28",
+      "estimated_cost": 8700,
+      "revised_cost": 8700,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201602240428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-02-24",
+      "status_date": "2016-05-31",
+      "estimated_cost": 40000,
+      "revised_cost": 62320,
+      "description": "two units: remodel kitchen & bathroom with exhaust fan & rangehood, comply with table cmc403.7, cbc 714.4 & 717.6; 3 ft from p.l. & openings. all led lights.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=775",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1652010H&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1652&lot=010H",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1652010H",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-12-05-n580",
+      "name": "Building and Engineering News, 5 December 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1727cont/page/n580/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-12-05",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of four three-room apartments, estimated at $4,950.",
+      "source": "building-engineering-news-1917-12-05-n580"
+    }
+  ]
+}

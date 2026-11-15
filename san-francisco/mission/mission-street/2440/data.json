@@ -1,0 +1,117 @@
+{
+  "address": "2440–2442 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2440/",
+  "apn": "3609006A",
+  "block": "3609",
+  "lot": "006A",
+  "eas_baseid": "451704",
+  "coordinates": {
+    "lat": 37.757865,
+    "lng": -122.419278
+  },
+  "address_range": "2440–2442",
+  "street_numbers_on_parcel": [
+    "2440",
+    "2442"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 2,
+    "stories": 2,
+    "rooms": 2,
+    "bathrooms": 2,
+    "lot_area_sqft": 3149,
+    "building_area_sqft": 2275,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2442 2440 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 160311,
+    "assessed_improvement_value": 30232
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200509304403",
+      "type": "sign - erect",
+      "status": "issued",
+      "filed": "2005-09-30",
+      "status_date": "2005-09-30",
+      "revised_cost": 1000,
+      "description": "erect new: wall, non-illuminated replacement w/street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8811452",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-08-10",
+      "status_date": "1989-03-06",
+      "estimated_cost": 5000,
+      "description": "rollawery door on front of building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1988–2007",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2440",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3609006A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3609&lot=006A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3609006A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-08-01-n123",
+      "name": "Building and Engineering News, 1 August 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1727cont/page/n123/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-08-01",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: a new store front, estimated at $900. A. W. Burnett was named as contractor.",
+      "source": "building-engineering-news-1917-08-01-n123"
+    }
+  ]
+}

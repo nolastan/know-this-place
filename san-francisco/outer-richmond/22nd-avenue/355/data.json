@@ -1,0 +1,129 @@
+{
+  "address": "355–357 22nd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/22nd-avenue/355/",
+  "apn": "1454011",
+  "block": "1454",
+  "lot": "011",
+  "eas_baseid": "304473",
+  "coordinates": {
+    "lat": 37.781117,
+    "lng": -122.481911
+  },
+  "address_range": "355–357",
+  "street_numbers_on_parcel": [
+    "355",
+    "357"
+  ],
+  "parcel": {
+    "year_built": 1917,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 5,
+    "bedrooms": 7,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3543,
+    "basement_area_sqft": 361,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0357 0355 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1138814,
+    "assessed_improvement_value": 431394,
+    "last_sale_date": "2006-07-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200406146333",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2004-06-14",
+      "status_date": "2007-05-30",
+      "estimated_cost": 170000,
+      "revised_cost": 170000,
+      "description": "rear horizontal addition. side yard fill-in at garage level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005311392",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-05-31",
+      "status_date": "2001-02-07",
+      "estimated_cost": 10850,
+      "revised_cost": 10850,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611266",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-06-24",
+      "status_date": "1998-03-11",
+      "estimated_cost": 3000,
+      "description": "repair exterior side stair -dryrot repairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=355",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1454011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1454&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1454011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-12-19-n631",
+      "name": "Building and Engineering News, 19 December 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1727cont/page/n631/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-12-19",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey building of two frame flats with a basement, estimated at $4,900. Gus. E. Thunberg was named as contractor.",
+      "source": "building-engineering-news-1917-12-19-n631"
+    }
+  ],
+  "building": {
+    "builder": "Gus. E. Thunberg"
+  }
+}
