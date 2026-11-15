@@ -1,0 +1,140 @@
+{
+  "address": "51 Cole Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/cole-street/51/",
+  "apn": "1190001I",
+  "block": "1190",
+  "lot": "001I",
+  "eas_baseid": "296825",
+  "coordinates": {
+    "lat": 37.774453,
+    "lng": -122.451471
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2031.25,
+    "building_area_sqft": 3354,
+    "lot_depth_ft": 81.25,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0053 0051 COLE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 179611,
+    "assessed_improvement_value": 232443
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201403170881",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-17",
+      "status_date": "2014-03-28",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123239",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-12-09",
+      "status_date": "1992-06-09",
+      "estimated_cost": 15000,
+      "description": "vinyl siding-repair steps and deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004678",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-03-12",
+      "status_date": "1990-08-24",
+      "estimated_cost": 5000,
+      "description": "convert (e) sunroom to master bathroom changing windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8306432",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-07-07",
+      "status_date": "1984-01-09",
+      "estimated_cost": 3000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303295",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-04-20",
+      "status_date": "1983-12-16",
+      "estimated_cost": 950,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLE&street_type=ST&address_number=51",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1190001I&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1190&lot=001I",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1190001I",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-08-15-n292",
+      "name": "Building and Engineering News, 15 August 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n292/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-08-15",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work on a two-storey frame flat building, at $10,500. Thos. McCormick was named as architect and contractor.",
+      "source": "building-engineering-news-1925-08-15-n292"
+    }
+  ],
+  "building": {
+    "architect": "Thos. McCormick",
+    "builder": "Thos. McCormick"
+  }
+}

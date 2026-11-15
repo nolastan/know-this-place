@@ -1,0 +1,122 @@
+{
+  "address": "3124 Turk Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/lone-mountain/turk-boulevard/3124/",
+  "apn": "1141010",
+  "block": "1141",
+  "lot": "010",
+  "eas_baseid": "295509",
+  "coordinates": {
+    "lat": 37.777617,
+    "lng": -122.457422
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 3000,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lone Mountain",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "3126 3124 TURK                BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 470304,
+    "assessed_improvement_value": 603567,
+    "last_sale_date": "1998-11-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201609309282",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-30",
+      "status_date": "2016-10-12",
+      "estimated_cost": 14200,
+      "revised_cost": 14200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9514210",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-09-01",
+      "status_date": "1996-01-01",
+      "estimated_cost": 5000,
+      "description": "foundation bolts & dryrot damaged,set embedment into concret",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9507592",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-05-22",
+      "status_date": "1995-06-02",
+      "estimated_cost": 900,
+      "description": "repair stairs and landing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TURK&street_type=BLVD&address_number=3124",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1141010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1141&lot=010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1141010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-02-28-n346",
+      "name": "Building and Engineering News, 28 February 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n346/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-02-28",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $6,000. Chas. E. Ells was named as contractor.",
+      "source": "building-engineering-news-1925-02-28-n346"
+    }
+  ],
+  "building": {
+    "builder": "Chas. E. Ells"
+  }
+}

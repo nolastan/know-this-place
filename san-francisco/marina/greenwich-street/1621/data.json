@@ -1,0 +1,122 @@
+{
+  "address": "1621 Greenwich Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/greenwich-street/1621/",
+  "apn": "0521001C",
+  "block": "0521",
+  "lot": "001C",
+  "eas_baseid": "284154",
+  "coordinates": {
+    "lat": 37.799934,
+    "lng": -122.426361
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2448,
+    "building_area_sqft": 2292,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1621 GREENWICH           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 67201,
+    "assessed_improvement_value": 83146
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201610311535",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-10-31",
+      "status_date": "2016-10-31",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201411131353",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-11-13",
+      "status_date": "2014-11-13",
+      "estimated_cost": 4960,
+      "revised_cost": 4960,
+      "description": "replace 3 windows like for like with anderson woodclad, not visible. bedrooms to comply with egress, u factor less than or equal to 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9816118",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-08-17",
+      "status_date": "1998-12-15",
+      "estimated_cost": 1870,
+      "description": "install 1 vinyl windows in kind into existing frames on stru",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREENWICH&street_type=ST&address_number=1621",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0521001C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0521&lot=001C",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0521001C",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-09-05-n428",
+      "name": "Building and Engineering News, 5 September 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n428/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-09-05",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work on a one-storey frame residence with a basement, at $7,743. Fabre & Hildebrand were named as architects and Louis Cereghino & Son as contractors.",
+      "source": "building-engineering-news-1925-09-05-n428"
+    }
+  ],
+  "building": {
+    "architect": "Fabre & Hildebrand",
+    "builder": "Louis Cereghino & Son"
+  }
+}

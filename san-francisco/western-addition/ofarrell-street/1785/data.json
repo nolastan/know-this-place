@@ -1,0 +1,124 @@
+{
+  "address": "1785 O'Farrell Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/ofarrell-street/1785/",
+  "apn": "0726014B",
+  "block": "0726",
+  "lot": "014B",
+  "eas_baseid": "287941",
+  "coordinates": {
+    "lat": 37.782898,
+    "lng": -122.43396
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 11,
+    "stories": 3,
+    "rooms": 26,
+    "bathrooms": 11,
+    "bedrooms": 11,
+    "lot_area_sqft": 3750,
+    "building_area_sqft": 7605,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Western Addition",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 1785 O'FARRELL           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1229572,
+    "assessed_improvement_value": 1114298,
+    "last_sale_date": "2000-05-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307252882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-25",
+      "status_date": "2023-09-20",
+      "estimated_cost": 20000,
+      "revised_cost": 21018,
+      "description": "upgrade fire alarm system and replace like for like alarm device. install sounders in sleeping area to comply w/sffc 1103.7.6.1, install new control panel and wireless alarm radio communicator 6 smoke, 4 pull stations, 1 modules, 4 wall horn strobe 15 sounders.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201509116770",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-11",
+      "status_date": "2016-05-24",
+      "estimated_cost": 18500,
+      "revised_cost": 18500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9403843",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-03-09",
+      "status_date": "1994-03-17",
+      "estimated_cost": 8600,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OFARRELL&street_type=ST&address_number=1785",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0726014B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0726&lot=014B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0726014B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-11-21-n879",
+      "name": "Building and Engineering News, 21 November 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n879/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-11-21",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a three-storey frame building with a basement, at $28,025. J. C. Hladik was named as architect and Stoneson Bros. as contractors.",
+      "source": "building-engineering-news-1925-11-21-n879"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik",
+    "builder": "Stoneson Bros."
+  }
+}

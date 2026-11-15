@@ -8,12 +8,16 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Amazon Avenue](amazon-avenue/) — A 1930 house recorded as Jerry Garcia's first home.
 - [Athens Street](athens-street/) — 1 building, built 1925.
 - [Avalon Avenue](avalon-avenue/) — 1 building, built 1910.
+- [Brazil Avenue](brazil-avenue/) — 1 building, built 1915.
 - [Brookdale Avenue](brookdale-avenue/) — 1 building, built 1946.
+- [Brunswick Street](brunswick-street/) — 1 building, built 1925.
 - [Byron Court](byron-court/) — 1 building, built 1978.
 - [Carter Street](carter-street/) — 1 building, built 2004.
+- [Cassandra Court](cassandra-court/) — 1 building, built 1925.
 - [Concord Street](concord-street/) — 1 building, built 1926.
 - [Congdon Street](congdon-street/) — 1 building, built 1928.
 - [Cordova Street](cordova-street/) — 1 building, built 1925.
+- [Curtis Street](curtis-street/) — 1 building, built 1925.
 - [Dublin Street](dublin-street/) — 1 building, built 1953.
 - [Edinburgh Street](edinburgh-street/) — 1 building, built 1926.
 - [Excelsior Avenue](excelsior-avenue/) — 1 building, built 1910.

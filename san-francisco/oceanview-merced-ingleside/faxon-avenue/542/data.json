@@ -1,0 +1,154 @@
+{
+  "address": "542 Faxon Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/faxon-avenue/542/",
+  "apn": "6935016",
+  "block": "6935",
+  "lot": "016",
+  "eas_baseid": "408953",
+  "coordinates": {
+    "lat": 37.724247,
+    "lng": -122.459939
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1500,
+    "basement_area_sqft": 325,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0542 FAXON               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 459984,
+    "assessed_improvement_value": 390462,
+    "last_sale_date": "2005-05-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202109098084",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-09-09",
+      "status_date": "2021-09-16",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "2/f: new bathroom (without toilet) at kitchen area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701111478",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-11",
+      "status_date": "2007-05-17",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "two bedroom, full bathoom & laundry room to be added at ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9922546",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2002-05-17",
+      "status_date": "2002-05-17",
+      "estimated_cost": 20000,
+      "description": "fire damage repair no sturctl, sheetrock repair, carpet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000128510",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-01-28",
+      "status_date": "2000-03-29",
+      "revised_cost": 500,
+      "description": "closet fill in of wall & replace woodwindows to vinyl, in existing openings-correction notice",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917359",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-08-20",
+      "status_date": "2001-05-21",
+      "estimated_cost": 20000,
+      "description": "repair fire damage to sheetrock carpet and paint in lvg rm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504735",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-04-04",
+      "status_date": "1995-04-17",
+      "estimated_cost": 6200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FAXON&street_type=AVE&address_number=542",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6935016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6935&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6935016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-04-11-n678",
+      "name": "Building and Engineering News, 11 April 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n678/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-04-11",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. Thomas Bros. were named as architects.",
+      "source": "building-engineering-news-1925-04-11-n678"
+    }
+  ],
+  "building": {
+    "architect": "Thomas Bros."
+  }
+}

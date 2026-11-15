@@ -1,0 +1,185 @@
+{
+  "address": "55 Retiro Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/retiro-way/55/",
+  "apn": "0418A015",
+  "block": "0418A",
+  "lot": "015",
+  "eas_baseid": "282108",
+  "coordinates": {
+    "lat": 37.805053,
+    "lng": -122.438321
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2874,
+    "building_area_sqft": 2593,
+    "basement_area_sqft": 647,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0055 RETIRO              WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2225350,
+    "assessed_improvement_value": 1483566,
+    "last_sale_date": "2021-12-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District, Historic Resource Evaluation Response, Historic Resource Review",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200706154025",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-06-15",
+      "status_date": "2007-06-15",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006203194",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-06-20",
+      "status_date": "2001-01-26",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "conversion of laundry room to bthrm/install french doors/nw wndw",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906081",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-30",
+      "status_date": "1999-04-19",
+      "estimated_cost": 6350,
+      "description": "see attached termite report#99241, repair base of curtain wl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319890",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-11-17",
+      "status_date": "1995-05-18",
+      "estimated_cost": 4000,
+      "description": "additions revisions to app #9314008",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314008",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-08-20",
+      "status_date": "1995-05-22",
+      "estimated_cost": 25000,
+      "description": "55 retiro wy",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924312",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-11",
+      "status_date": "1990-06-13",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1989–2017",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RETIRO&street_type=WAY&address_number=55",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0418A015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0418A&lot=015",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0418A015",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4383211710957%2037.80505302484447)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-02-15-n223",
+      "name": "Building and Engineering News, 15 February 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3030cont/page/n223/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-02-15-n222",
+      "name": "Building and Engineering News, 15 February 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3030cont/page/n222/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-02-15",
+      "kind": "alteration",
+      "description": "A building contract was recorded for alterations: a new front entrance, porch and steps, at $1,035. B. C. Corbett was named as architect and Moore and Madsen as contractors.",
+      "source": "building-engineering-news-1930-02-15-n223"
+    },
+    {
+      "date": "1930-02-15",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: alterations and additions to the dwelling.",
+      "source": "building-engineering-news-1930-02-15-n222"
+    }
+  ]
+}

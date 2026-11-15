@@ -1,0 +1,120 @@
+{
+  "address": "450 Mangels Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/mangels-avenue/450/",
+  "apn": "3064014",
+  "block": "3064",
+  "lot": "014",
+  "eas_baseid": "353094",
+  "coordinates": {
+    "lat": 37.733306,
+    "lng": -122.447778
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1659,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0450 MANGELS             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 20763,
+    "assessed_improvement_value": 46181
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200112135168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-13",
+      "status_date": "2001-12-20",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9806458",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-04-14",
+      "status_date": "1998-04-17",
+      "estimated_cost": 1,
+      "description": "renew pa#9716431 (instal double pipe exhaust) for final insp",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9716431",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-08-27",
+      "status_date": "1998-04-17",
+      "estimated_cost": 500,
+      "description": "kitchen remodel/counter/cabinets/floor patching/sheet rock.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MANGELS&street_type=AVE&address_number=450",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3064014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3064&lot=014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3064014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-05-10-n626",
+      "name": "Building and Engineering News, 10 May 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3030cont/page/n626/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-05-10",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. B. K. Dobkowitz was named as architect.",
+      "source": "building-engineering-news-1930-05-10-n626"
+    }
+  ],
+  "building": {
+    "architect": "B. K. Dobkowitz"
+  }
+}

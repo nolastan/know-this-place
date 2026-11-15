@@ -1,0 +1,118 @@
+{
+  "address": "1499 Thomas Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/thomas-avenue/1499/",
+  "apn": "4809017",
+  "block": "4809",
+  "lot": "017",
+  "eas_baseid": "372764",
+  "coordinates": {
+    "lat": 37.729102,
+    "lng": -122.389436
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2587,
+    "use": "Multi-Family Residential",
+    "property_class": "1 Flat & 1 Apt Bldg-1 Parcel",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 1499 THOMAS              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 579312,
+    "assessed_improvement_value": 144802,
+    "last_sale_date": "2003-03-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200612210366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-12-21",
+      "status_date": "2007-03-13",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "to comply with n.o.v. #200684697 - repair dry rot & replace stucco in kind, no increase in size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200512130232",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-12-13",
+      "status_date": "2006-01-27",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "to upgrade stairway and add handrails to both side of stair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518705",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-11-06",
+      "status_date": "1996-05-06",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=THOMAS&street_type=AVE&address_number=1499",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4809017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4809&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4809017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1931-06-13-n809",
+      "name": "Building and Engineering News, 13 June 1931",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3131cont/page/n809/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1931-06-13",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations to a store for a flat, estimated at $3,000.",
+      "source": "building-engineering-news-1931-06-13-n809"
+    }
+  ]
+}

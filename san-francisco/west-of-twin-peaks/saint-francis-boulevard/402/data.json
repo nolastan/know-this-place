@@ -1,0 +1,136 @@
+{
+  "address": "402 Saint Francis Boulevard, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/saint-francis-boulevard/402/",
+  "apn": "3103023",
+  "block": "3103",
+  "lot": "023",
+  "eas_baseid": "484375",
+  "coordinates": {
+    "lat": 37.734698,
+    "lng": -122.466876
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 5410,
+    "building_area_sqft": 3601,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "St. Francis Wood",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0402 SAINT FRANCIS       BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1603126,
+    "assessed_improvement_value": 1068744,
+    "last_sale_date": "2010-10-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "St. Francis Wood Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1954",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "8915621",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-24",
+      "status_date": "1990-09-28",
+      "estimated_cost": 82500,
+      "description": "kitchen and bathroom remodeling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8914980",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-17",
+      "status_date": "1990-02-01",
+      "estimated_cost": 8660,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502009",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-02-27",
+      "status_date": "1985-07-30",
+      "estimated_cost": 4000,
+      "description": "repair termite & dryrot damage, replace damaged wood",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAINT%20FRANCIS&street_type=BLVD&address_number=402",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3103023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3103&lot=023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3103023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46687599510435%2037.73469787749301)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-12-19-n1040",
+      "name": "Building and Engineering News, 19 December 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n1040/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-12-19",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $8,000. Gottschalk & Rist were named as architects.",
+      "source": "building-engineering-news-1925-12-19-n1040"
+    }
+  ],
+  "building": {
+    "architect": "Gottschalk & Rist"
+  }
+}

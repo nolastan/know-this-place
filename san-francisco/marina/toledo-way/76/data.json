@@ -1,0 +1,169 @@
+{
+  "address": "76–78 Toledo Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/toledo-way/76/",
+  "apn": "0466A024",
+  "block": "0466A",
+  "lot": "024",
+  "eas_baseid": "282778",
+  "coordinates": {
+    "lat": 37.801269,
+    "lng": -122.439118
+  },
+  "address_range": "76–78",
+  "street_numbers_on_parcel": [
+    "76",
+    "78"
+  ],
+  "parcel": {
+    "year_built": 1925,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 3200,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0078 0076 TOLEDO              WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 479006,
+    "assessed_improvement_value": 862230,
+    "last_sale_date": "1997-10-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201706169640",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-16",
+      "status_date": "2017-08-09",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "bathroom remodel. no removal of wall or structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9023234",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-11-08",
+      "status_date": "1990-11-19",
+      "estimated_cost": 4200,
+      "description": "install foundation bolt on existing foundation, & drill.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-24",
+      "status_date": "1990-07-19",
+      "estimated_cost": 5300,
+      "description": "restucco from bottom to the bay window on front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8702205",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-02-19",
+      "status_date": "1988-02-10",
+      "estimated_cost": 7000,
+      "description": "enlarge (by expanding into garage area) bathroom & install",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8616192",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-12-24",
+      "status_date": "1988-12-08",
+      "estimated_cost": 1200,
+      "description": "to bring into code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8405677",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1984-05-29",
+      "status_date": "1984-12-18",
+      "estimated_cost": 1500,
+      "revised_cost": 15000,
+      "description": "kitchen remodeling removal of small wall batween kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TOLEDO&street_type=WAY&address_number=76",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0466A024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0466A&lot=024",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0466A024",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43911794204242%2037.8012687905992)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-04-18-n720",
+      "name": "Building and Engineering News, 18 April 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n720/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-04-18",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000. G. T. Murray was named as designer.",
+      "source": "building-engineering-news-1925-04-18-n720"
+    }
+  ]
+}

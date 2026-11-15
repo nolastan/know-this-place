@@ -7,6 +7,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [17th Street](17th-street/) — 1 building, built 1912.
 - [Ashbury Street](ashbury-street/) — Two buildings — the house guides give the Grateful Dead, and one of three Janis Joplin addresses.
 - [Ashbury Terrace](ashbury-terrace/) — 1 building, built 1912.
+- [Baker Street](baker-street/) — 2 buildings, built 1924–1925; 2 in the Buena Vista North Historic District.
 - [Belvedere Street](belvedere-street/) — 2 buildings, built 1906–1908.
 - [Beulah Street](beulah-street/) — 1 building, built 1900.
 - [Broderick Street](broderick-street/) — 1 building, built 1900; 1 in the Buena Vista North Historic District.
@@ -27,6 +28,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 - [Masonic Avenue](masonic-avenue/) — 2 buildings, built 1903–1906; 2 in the Ashbury Heights Historic District.
 - [Oak Street](oak-street/) — 1 building, built 1900.
 - [Page Street](page-street/) — 1 building, built 1900; 1 in the Buena Vista North Historic District.
+- [Parnassus Avenue](parnassus-avenue/) — 1 building, built 1925; 1 in the Cole Valley Historic District.
 - [Piedmont Street](piedmont-street/) — 1 building, built 1909.
 - [Potomac Street](potomac-street/) — 1 building, built 1900; 1 in the Duboce Park Historic District.
 - [Rivoli Street](rivoli-street/) — 1 building, built 1911; 1 in the Cole Valley Historic District.

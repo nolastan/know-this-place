@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 7 of 34 half-year volumes read (vols. 26, 27, 28 and 29 pt. 1, January 1926 – June 1929): 1,913 facts on 1,812 page writes (1,206 pages seeded). Resume at vol. 29 pt. 2 (July–December 1929, `buildingengineer29229cont`). See the `Verified:` line.
+> - **Coverage:** 15 of 34 half-year volumes read (vol. 24 pt. 2 to vol. 31, July 1924 – January 1932, the end of the run): 3,514 facts on 3,291 page writes (2,040 pages seeded). Resume backwards at vol. 24 pt. 1 (January–June 1924, `buildingengineer244cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, and the 2,701 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1, 421 in pt. 2, 376 in vol. 28 pt. 1, 284 in pt. 2, 203 in vol. 29 pt. 1), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 5,171 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -80,7 +80,11 @@
   published. **Owners are private individuals and are never published**, and
   are cut from `raw.text`; a firm or institution named as owner (a company, a
   church, a club) is kept. Sureties are private individuals and are cut. An
-  owner-builder printed under Contractor is given as the contractor.
+  owner printed again as contractor, architect or designer (the same person,
+  or the same surname at the owner's address) is cut with the owner; a firm
+  is kept. The first volumes read (1926 and early 1927) had kept those names
+  and were brought into line on 2026-11-15: 32 names cut, with the credits
+  that rested on them (`cut_owner_trade.py` in the pipeline folder).
 - **Citation label:** "Building and Engineering News, 23 January 1926", with
   the page link. Page source ids are
   `building-engineering-news-<issue date>-n<index>`.
@@ -89,47 +93,156 @@
   placed on a parcel; 385 picked (page exists, or an architect is named, or
   the building is flats, apartments or commercial) and read against the image;
   368 published on 345 pages, 242 of them seeded. Unread: the other 33
-  volumes. Unfinished in this volume: 543 placed single houses held for a
-  page-count decision, 682 rows with a nearest parcel not accepted, 794 not
+  volumes. Unfinished in this volume: 543 placed single houses held until the parcel gets a page, 682 rows with a nearest parcel not accepted, 794 not
   placed (354 unparsed location lines, 245 street pairs that do not cross
   under the names read, 160 street numbers with no EAS row).
 - **Coverage, vol. 26 pt. 2** (`buildingengineer226cont`, 3 July – 31 December
   1926): 3,765 numbered entries; 2,264 San Francisco rows; 1,318 placed on a
   parcel; 306 picked and read against the image; 290 published on 282 pages,
-  186 of them seeded. Unfinished: 425 placed single houses held for the same
-  page-count decision, 586 rows with a nearest parcel not accepted, 946 not
+  186 of them seeded. Unfinished: 425 placed single houses held until the parcel gets a page, 586 rows with a nearest parcel not accepted, 946 not
   placed. Unread: the other 32 volumes.
 - **Coverage, vol. 27 pt. 1** (`buildingengineer227cont`, 8 January – 25 June
   1927): 3,479 numbered entries; 2,165 San Francisco rows; 1,343 placed on a
   parcel; 358 picked and read against the image; 345 published on 336 pages,
-  240 of them seeded. Unfinished: 449 placed single houses held for the same
-  page-count decision, 536 rows with a nearest parcel not accepted, 822 not
+  240 of them seeded. Unfinished: 449 placed single houses held until the parcel gets a page, 536 rows with a nearest parcel not accepted, 822 not
   placed. Unread: the other 31 volumes.
 - **Coverage, vol. 27 pt. 2** (`buildingengineer2127cont`, 2 July – 31
   December 1927): 2,777 numbered entries; 1,858 San Francisco rows; 1,336
   placed on a parcel; 318 picked and read against the image; 304 published on
-  284 pages, 201 of them seeded. Unfinished: 421 placed single houses held for
-  the same page-count decision, 597 rows with a nearest parcel not accepted,
+  284 pages, 201 of them seeded. Unfinished: 421 placed single houses held until the parcel gets a page, 597 rows with a nearest parcel not accepted,
   522 not placed. Unread: the other 30 volumes.
 - **Coverage, vol. 28 pt. 1** (`buildingengineer2828cont`, 7 January – 30 June
   1928): 2,542 numbered entries; 1,741 San Francisco rows; 1,098 placed on a
   parcel; 276 picked and read against the image; 269 published on 247 pages,
-  166 of them seeded. Unfinished: 376 placed single houses held for the same
-  page-count decision, 446 rows with a nearest parcel not accepted, 643 not
+  166 of them seeded. Unfinished: 376 placed single houses held until the parcel gets a page, 446 rows with a nearest parcel not accepted, 643 not
   placed. Unread: the other 29 volumes.
 - **Coverage, vol. 28 pt. 2** (`buildingengineer28128cont`, 7 July – 29
   December 1928): 2,133 numbered entries; 1,335 San Francisco rows; 821 placed
   on a parcel; 200 picked and read against the image; 186 published on 171
-  pages, 94 of them seeded. Unfinished: 284 placed single houses held for the
-  same page-count decision, 337 rows with a nearest parcel not accepted, 514
+  pages, 94 of them seeded. Unfinished: 284 placed single houses held until the parcel gets a page, 337 rows with a nearest parcel not accepted, 514
   not placed. Unread: the other 28 volumes.
 - **Coverage, vol. 29 pt. 1** (`buildingengineer2929cont`, 5 January – 29
   June 1929): 1,935 numbered entries; 1,086 San Francisco rows; 627 placed on
   a parcel; 160 picked and read against the image; 151 published on 147
-  pages, 77 of them seeded. Unfinished: 203 placed single houses held for the
-  same page-count decision, 264 rows with a nearest parcel not accepted, 459
+  pages, 77 of them seeded. Unfinished: 203 placed single houses held until the parcel gets a page, 264 rows with a nearest parcel not accepted, 459
   not placed. Unread: the other 27 volumes.
-- **Verified:** 2026-11-15 (vol. 29 pt. 1: read 1,935 entries, found 1,086
+- **Coverage, vol. 29 pt. 2** (`buildingengineer29229cont`, 6 July – 28
+  December 1929): 1,653 numbered entries; 944 San Francisco rows; 561 placed
+  on a parcel; 135 picked and read against the image; 122 published on 118
+  pages, 54 of them seeded. Unfinished: 155 placed single houses held until the parcel gets a page, 271 rows with a nearest parcel not accepted, 383
+  not placed. Unread: the other 26 volumes.
+- **Coverage, vol. 30 pt. 1** (`buildingengineer3030cont`, 4 January – 28
+  June 1930): 1,776 numbered entries; 980 San Francisco rows; 569 placed on a
+  parcel; 121 picked and read against the image; 112 published on 104 pages,
+  43 of them seeded. Unfinished: 184 placed single houses held until the parcel gets a page, 264 rows with a nearest parcel not accepted, 411 not
+  placed. Unread: the other 25 volumes.
+- **Coverage, vol. 30 pt. 2** (`buildingengineer30230cont`, 5 July – 27
+  December 1930): 1,529 numbered entries; 991 San Francisco rows; 500 placed
+  on a parcel; 110 picked and read against the image; 99 published on 96
+  pages, 44 of them seeded. Unfinished: 156 placed single houses held until the parcel gets a page, 234 rows with a nearest parcel not accepted, 491
+  not placed. Unread: the other 24 volumes.
+- **Coverage, vol. 31 pt. 1** (`buildingengineer3131cont`, 3 January – 27
+  June 1931): 1,610 numbered entries; 1,033 San Francisco rows; 571 placed
+  on a parcel; 122 picked and read against the image; 83 published on 79
+  pages, 34 of them seeded. Unfinished: 218 placed single houses held until the parcel gets a page, 35 row-of-houses permits held at the image, 231
+  rows with a nearest parcel not accepted, 462 not placed. Unread: the other
+  23 volumes.
+- **Coverage, vol. 31 pt. 2** (`buildingengineer31232cont`, 4 July 1931 – 9
+  January 1932, the last issue held): 1,542 numbered entries; 1,054 San
+  Francisco rows; 561 placed on a parcel; 100 picked and read against the
+  image; 92 published on 90 pages, 42 of them seeded. Unfinished: 216 placed
+  single houses held until the parcel gets a page (15 are row-of-houses
+  permits), 245 rows with a nearest parcel not accepted, 493 not placed.
+  Unread: the 22 volumes before 1926.
+- **Coverage, vol. 25 pt. 2** (`buildingengineer2525cont`, 4 July – 26
+  December 1925): 4,526 numbered entries; 2,382 San Francisco rows; 1,480
+  placed on a parcel; 360 picked and read against the image; 331 published
+  on 312 pages, 203 of them seeded. Unfinished: 551 placed single houses held until the parcel gets a page (35 are row-of-houses permits), 569 rows
+  with a nearest parcel not accepted, 902 not placed. Unread: the 21 volumes
+  before July 1925.
+- **Coverage, vol. 25 pt. 1** (`buildingengineer255cont`, 3 January – 27
+  June 1925): 5,484 numbered entries; 2,891 San Francisco rows; 1,931
+  placed on a parcel; 505 picked and read against the image; 467 published
+  on 446 pages, 292 of them seeded. Unfinished: 670 placed single houses held until the parcel gets a page (63 are row-of-houses permits), 756 rows
+  with a nearest parcel not accepted, 960 not placed. Unread: the 20 volumes
+  before 1925.
+- **Coverage, vol. 24 pt. 2** (`buildingengineer24219cont`, 5 July – 27
+  December 1924): 3,858 numbered entries; 1,969 San Francisco rows; 1,073
+  placed on a parcel; 269 picked and read against the image; 228 published
+  on 212 pages, 122 of them seeded. Unfinished: 387 placed single houses held
+  until the parcel gets a page (32 are row-of-houses permits), 424 rows with
+  a nearest parcel not accepted, 896 not placed. Unread: the 19 volumes
+  before July 1924.
+- **Verified:** 2026-11-15 (vol. 24 pt. 2: read 3,858 entries, found 1,969
+  San Francisco rows, resolved 228, published 228 on 212 pages. Learned: the
+  Owner field survives extract.py wherever the OCR mangles the word
+  ("Owne';'^-", "OwiuT —"), in unresolved findings as much as resolved ones,
+  so run scrub_owner.py over the whole source after every publish; in 1924
+  an architect is named on many plain houses, and when that architect is the
+  owner the house has nothing left to publish and joins the held rows
+  (`held for a page` in the fixes file).)
+- **Verified:** 2026-11-15 (vol. 25 pt. 1: read 5,484 entries, found 2,891
+  San Francisco rows, resolved 467, published 467 on 446 pages. Learned: the
+  largest volume of the run; the raw text is now brought into line with the
+  image-checked description by rule (post255.py: a name or cost the
+  description does not carry is cut from the raw text), which replaces the
+  hand lists of earlier volumes; the same lot can carry two permits months
+  apart for different buildings (1624 8th Avenue, 1485 Waller), and the
+  later one is not always the one built, so leave both on the timeline and
+  flag the credit.)
+- **Verified:** 2026-11-15 (vol. 25 pt. 2: read 4,526 entries, found 2,382
+  San Francisco rows, resolved 331, published 331 on 312 pages. Learned: 1925
+  is the peak of the run, three times the entries of a 1931 volume and two
+  thirds of the picked rows flats or apartments; the two-column crop often
+  pulls the next entry's contractor and cost into a permit, so a permit that
+  ends "Architect - None" with a contractor after it needs the image; a
+  whole-building credit from a permit that starts "a " can come from a small
+  structure (a roof garden, a tank enclosure), so after publish list the
+  credits whose sentence names anything but a building.)
+- **Verified:** 2026-11-15 (vol. 31 pt. 2: read 1,542 entries, found 1,054
+  San Francisco rows, resolved 92, published 92 on 90 pages. Learned: the
+  volume holds 28 issues and runs into 1932, so redate.py (one year) folds
+  the January issues into December and the covers must be listed by hand;
+  unpicking rows whose heading says "dwellings" before the crops saved 15
+  image checks; a contract's metes-and-bounds line can place on the lot next
+  to its own permit, so read same-week pairs together.)
+- **Verified:** 2026-11-15 (vol. 31 pt. 1: read 1,610 entries, found 1,033
+  San Francisco rows, resolved 83, published 83 on 79 pages. Learned: by 1931
+  a third of the picked permits are for rows of two to eight houses by
+  owner-builders ("two 1-story and basement frame dwellings ... each $4000");
+  the parser reads them as one dwelling, so select.py should skip a heading
+  that counts dwellings; one issue (30 May) had no readable running head and
+  was dated from its cover; publish.py does not undo a page write when a
+  finding is dropped after the first run, so restore that page with git.)
+- **Verified:** 2026-11-15 (vol. 30 pt. 2: read 1,529 entries, found 991
+  San Francisco rows, resolved 99, published 99 on 96 pages. Learned: the
+  cover-line reader missed two of the 26 covers, so the issue starts were
+  listed by hand and dated weekly from 5 July; a permit for a row of houses
+  ("ten 1-story dwellings") places on the first lot only and is held unless
+  the page says which lot it is; a permit and its same-issue contract can
+  give different distances from the corner, and the roll's use decides which
+  lot the building stands on.)
+- **Verified:** 2026-11-15 (vol. 30 pt. 1: read 1,776 entries, found 980
+  San Francisco rows, resolved 112, published 112 on 104 pages. Learned: this
+  scan's running heads and cover lines both date all 26 issues and agree; a
+  crop that ends at a column or page break shows only the heading, and then
+  only the heading is published (the cost and names in the OCR belong to the
+  continuation and were not read); a permit filed under the contracts column
+  by the parser is caught at the image and worded as a permit; a contract
+  worded "all work for decorating" is a trade contract and is phrased so the
+  publish step sets no builder.)
+- **Verified (earlier):** 2026-11-15 (vol. 29 pt. 2: read 1,653 entries, found 944
+  San Francisco rows, resolved 122, published 122 on 118 pages. Learned:
+  neither dater works alone on this scan (running heads date 82 of 897
+  leaves, and the cover-line dater misses the 20 July cover, printed
+  "Twenty. ninth Year"), so the 26 issue starts were listed by hand from both;
+  an owner sometimes gives the contractor's office as his own address, so a
+  shared address with a different surname is not proof of an owner-builder
+  (R. Harms, 1217 Stanyan, appears for three unrelated owners); a permit and
+  its contract can print different street numbers for one job (1031 and 1032
+  Broadway), and the one that matches the roll is published; a ten-flat
+  contract at a corner was five two-flat buildings on a tract and was held.)
+- **Verified (earlier):** 2026-11-15 (vol. 29 pt. 1: read 1,935 entries, found 1,086
   San Francisco rows, resolved 151, published 151 on 147 pages. Learned: the
   cover-line dater misses a cover whose date line is garbled (1 June 1929)
   and shifts every later issue, so check its issue starts against the

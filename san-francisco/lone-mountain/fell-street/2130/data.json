@@ -1,0 +1,154 @@
+{
+  "address": "2130 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/fell-street/2130/",
+  "apn": "1213002B",
+  "block": "1213",
+  "lot": "002B",
+  "eas_baseid": "297411",
+  "coordinates": {
+    "lat": 37.772391,
+    "lng": -122.453016
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 12,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 12,
+    "lot_area_sqft": 5153,
+    "building_area_sqft": 9000,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 2130 FELL                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 312752,
+    "assessed_improvement_value": 348288
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202308184754",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-18",
+      "status_date": "2023-09-29",
+      "estimated_cost": 23400,
+      "revised_cost": 23400,
+      "description": "upgrade existing f/a system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505287336",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-28",
+      "status_date": "2016-09-23",
+      "estimated_cost": 40000,
+      "revised_cost": 84000,
+      "description": "soft story retrofit to strengthen bldg to conform to sfbc ab 107. part b fema p-807. n/a for maher.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507258535",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-07-25",
+      "status_date": "2008-10-21",
+      "estimated_cost": 19200,
+      "revised_cost": 19200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200306046217",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-06-04",
+      "status_date": "2003-06-09",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "repair & replace stairs & landings @ rear as necessary on extng stairway less than 50% replacement.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "2003–2023",
+    "shown_on_page": 4,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FELL&street_type=ST&address_number=2130",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1213002B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1213&lot=002B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1213002B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45301609863967%2037.77239148047141)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-01-03-n30",
+      "name": "Building and Engineering News, 3 January 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n30/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-01-03",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of twelve apartments with a basement, estimated at $18,000. Baumann & Jose were named as architects.",
+      "source": "building-engineering-news-1925-01-03-n30"
+    }
+  ],
+  "building": {
+    "architect": "Baumann & Jose"
+  }
+}

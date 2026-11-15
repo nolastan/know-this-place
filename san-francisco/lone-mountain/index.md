@@ -5,13 +5,18 @@ A district on the rise between the Richmond and the Panhandle, around the Univer
 ## Streets documented so far
 
 - [Anza Street](anza-street/) — 1 building, built 1906.
+- [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1900.
 - [Baker Street](baker-street/) — 1 building, built 1904; 1 in the NOPA Historic District.
 - [Balboa Street](balboa-street/) — 1 building, built 1984.
 - [Barcelona Avenue](barcelona-avenue/) — 1 building, built 1948.
 - [Beaumont Avenue](beaumont-avenue/) — 1 building, built 1936.
 - [Blake Street](blake-street/) — 1 building, built 2000.
+- [Central Avenue](central-avenue/) — 1 building, built 1925; 1 in the NOPA Historic District.
+- [Clayton Street](clayton-street/) — 6 buildings, built 1924–1925.
+- [Cole Street](cole-street/) — 1 building, built 1926.
 - [Collins Street](collins-street/) — 1 building, built 1976.
 - [Cook Street](cook-street/) — 2 buildings, built 1901–1926.
+- [Fell Street](fell-street/) — 1 building, built 1905; 1 in the Panhandle Historic District.
 - [Fulton Street](fulton-street/) — A nineteen-room 1904 house facing Golden Gate Park, bought by Jefferson Airplane in 1968.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1999.
 - [Golden Gate Avenue](golden-gate-avenue/) — First A.M.E. Zion Church, built in 1960, whose landmark designation the city initiated in 2026.

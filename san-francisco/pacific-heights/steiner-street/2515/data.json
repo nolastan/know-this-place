@@ -1,0 +1,132 @@
+{
+  "address": "2515 Steiner Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/steiner-street/2515/",
+  "apn": "0586002",
+  "block": "0586",
+  "lot": "002",
+  "eas_baseid": "285798",
+  "coordinates": {
+    "lat": 37.792624,
+    "lng": -122.436529
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 4,
+    "lot_area_sqft": 2625,
+    "building_area_sqft": 3349,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2515 STEINER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 120109,
+    "assessed_improvement_value": 207209
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202607235456",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-07-23",
+      "status_date": "2026-07-23",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair dryrot at roof deck, less than 50% repair.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604275844",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-27",
+      "status_date": "2016-06-06",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "work to be performed in general conferance with the california extg bldg code (cebc) appendix chapter a3(sfbc ab-108). 5/8\" 0 anchor bolts, 4\" min embed at 6' on center with epox",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16606",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-10",
+      "status_date": "2001-11-10",
+      "revised_cost": 800,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8108449",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1981-09-28",
+      "status_date": "1983-03-04",
+      "estimated_cost": 10000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STEINER&street_type=ST&address_number=2515",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0586002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0586&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0586002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-02-08-n187",
+      "name": "Building and Engineering News, 8 February 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3030cont/page/n187/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-02-08",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $12,500. A. Schroepfer was named as architect and G. Petterson & Son as contractors.",
+      "source": "building-engineering-news-1930-02-08-n187"
+    }
+  ],
+  "building": {
+    "architect": "A. Schroepfer",
+    "builder": "G. Petterson & Son"
+  }
+}

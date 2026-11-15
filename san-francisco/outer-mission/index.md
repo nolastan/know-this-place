@@ -16,6 +16,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Lawrence Avenue](lawrence-avenue/) — 1 building, built 1900.
 - [Mission Street](mission-street/) — 1 building, built 1963.
 - [Norton Street](norton-street/) — 1 building, built 1906.
+- [Ocean Avenue](ocean-avenue/) — 1 building, built 1916.
 - [Oneida Avenue](oneida-avenue/) — 1 building.
 - [Onondaga Avenue](onondaga-avenue/) — 1 building, built 1979.
 - [Otsego Avenue](otsego-avenue/) — 1 building, built 1912.
@@ -29,6 +30,8 @@ A residential district south of the Mission proper, built up in the first decade
 - [Santa Ynez Avenue](santa-ynez-avenue/) — 1 building, built 1926.
 - [Seneca Avenue](seneca-avenue/) — 1 building, built 1997.
 - [Sergeant John V Young Street](sergeant-john-v-young-street/) — The Ingleside police station, built 1909-1910 on land ceded from Balboa Park.
+- [Sickles Avenue](sickles-avenue/) — 1 building, built 1922.
+- [Wilson Street](wilson-street/) — 1 building, built 1925.
 
 ## Parks and public spaces
 

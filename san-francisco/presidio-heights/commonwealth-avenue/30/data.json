@@ -1,0 +1,135 @@
+{
+  "address": "30 Commonwealth Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/commonwealth-avenue/30/",
+  "apn": "1037033",
+  "block": "1037",
+  "lot": "033",
+  "eas_baseid": "293409",
+  "coordinates": {
+    "lat": 37.785426,
+    "lng": -122.455475
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 4011,
+    "building_area_sqft": 2768,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0030 COMMONWEALTH        AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2607500,
+    "assessed_improvement_value": 1117500,
+    "last_sale_date": "2024-07-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202511189828",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-12-10",
+      "status_date": "2026-06-11",
+      "estimated_cost": 462000,
+      "revised_cost": 988000,
+      "description": "interior remodel & rear yard addition of (e) single family home includes structural & shoring work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011064990",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-06",
+      "status_date": "2001-01-31",
+      "estimated_cost": 6160,
+      "revised_cost": 6160,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012928",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-06-29",
+      "status_date": "1991-11-05",
+      "estimated_cost": 2000,
+      "revised_cost": 0,
+      "description": "repair wood rot under stucco at front of building..",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COMMONWEALTH&street_type=AVE&address_number=30",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1037033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1037&lot=033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1037033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45547450863607%2037.78542626952908)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-03-07-n385",
+      "name": "Building and Engineering News, 7 March 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n385/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-03-07",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: remodel for private garage and maid's room (residence), estimated at $2,900. Arthur S. Bugbee was named as architect and Fontanella & Teza as contractors.",
+      "source": "building-engineering-news-1925-03-07-n385"
+    }
+  ]
+}

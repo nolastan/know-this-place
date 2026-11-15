@@ -1,0 +1,120 @@
+{
+  "address": "2380 Washington Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/washington-street/2380/",
+  "apn": "0604019",
+  "block": "0604",
+  "lot": "019",
+  "eas_baseid": "286157",
+  "coordinates": {
+    "lat": 37.792074,
+    "lng": -122.432445
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 3101,
+    "building_area_sqft": 6930,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2380 WASHINGTON          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1865382,
+    "assessed_improvement_value": 799445,
+    "last_sale_date": "2006-02-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201710121089",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2017-10-12",
+      "status_date": "2022-11-14",
+      "estimated_cost": 50000,
+      "description": "retrofit upgrade. mandatory soft story per sfebc ch 4d. criterium fema p-807.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512077",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-08-01",
+      "status_date": "1997-08-20",
+      "estimated_cost": 11500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613337",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-10-23",
+      "status_date": "1987-02-23",
+      "estimated_cost": 700,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WASHINGTON&street_type=ST&address_number=2380",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0604019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0604&lot=019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0604019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-06-06-n1022",
+      "name": "Building and Engineering News, 6 June 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n1022/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-06-06",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of six apartments with a basement, estimated at $20,000. Baumann & Jose were named as architects.",
+      "source": "building-engineering-news-1925-06-06-n1022"
+    }
+  ],
+  "building": {
+    "architect": "Baumann & Jose"
+  }
+}

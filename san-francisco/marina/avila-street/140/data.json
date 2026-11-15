@@ -1,0 +1,181 @@
+{
+  "address": "140 Avila Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/avila-street/140/",
+  "apn": "0464A020",
+  "block": "0464A",
+  "lot": "020",
+  "eas_baseid": "282720",
+  "coordinates": {
+    "lat": 37.80193,
+    "lng": -122.440397
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2105,
+    "basement_area_sqft": 680,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0140 AVILA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 74368,
+    "assessed_improvement_value": 114068
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201705106268",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-10",
+      "status_date": "2017-11-08",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace in kind 5 windows at front of building into existing openings, with marvin clad ultimate push out windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508019157",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-01",
+      "status_date": "2005-08-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew 200410277805 for final",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503117279",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-11",
+      "status_date": "2005-03-11",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revise toilet location. revision to pa# 2004/10/27/7805.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410277805",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-10-27",
+      "status_date": "2006-06-13",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "remodel grd fl-add a new bathrm, repl rear windows,& a new furnace per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102846",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "1991-02-21",
+      "status_date": "1991-02-21",
+      "estimated_cost": 5000,
+      "description": "voluntary seismic upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9021895",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-10-24",
+      "status_date": "1991-07-16",
+      "estimated_cost": 8000,
+      "description": "replace (e) damaged footing w/new at front & n/side of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9018296",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "1990-09-12",
+      "status_date": "1990-11-08",
+      "estimated_cost": 7000,
+      "description": "replace (e) damaged footing at front & side with n/footings",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=AVILA&street_type=ST&address_number=140",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0464A020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0464A&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0464A020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44039684000079%2037.80192999244069)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-07-26-n159",
+      "name": "Building and Engineering News, 26 July 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n159/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-07-26",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $5,000. The Lang Realty Co. was named as architect and H. E. Gray as contractor.",
+      "source": "building-engineering-news-1924-07-26-n159"
+    }
+  ],
+  "building": {
+    "architect": "Lang Realty Co.",
+    "builder": "H. E. Gray"
+  }
+}

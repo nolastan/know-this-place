@@ -93,6 +93,23 @@ no "the archive shows…" sentences.
   bulk.
 - **GitHub issues** — the queue between runs and between agents and humans.
 
+## Facts held for a page
+
+Some facts are placed on a parcel with confidence and still do not earn a page
+on their own: a permit for a plain house with no architect named, on a parcel
+that has no page. They are logged, not published. In the findings file they
+are `unresolved`, carry the parcel in `extra.placed_apn`, and say why in
+`resolution.note`. They wait until some other fact gives the parcel a page.
+
+**If you seed a page for any reason, take the held facts up with it.** Before
+`seed-list`, run `python3 research/tools/check.py --held <manifest>` (or
+`--held <apn> ...`). For each fact it lists: verify it the way its source's
+dossier says (for `building-engineering-news`, read it against the page
+image), then resolve and publish it in its own findings file alongside your
+own facts, or leave it held and say why. Never seed a page only to publish a
+held fact. `--held pages` lists held facts whose parcel has since got a page;
+those are overdue and anyone working that source should take them up.
+
 ## Never read a findings file whole
 
 These files are the module's accumulated output, and they long ago outgrew

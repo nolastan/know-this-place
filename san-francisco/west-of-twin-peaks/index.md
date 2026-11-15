@@ -22,6 +22,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Casitas Avenue](casitas-avenue/) — 1 building, built 1953.
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Cecilia Avenue](cecilia-avenue/) — 1 building, built 1927.
+- [Cedro Avenue](cedro-avenue/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.
 - [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
 - [Colon Avenue](colon-avenue/) — 1 building, built 1926.
 - [Congo Street](congo-street/) — 2 buildings, built 1927.
@@ -32,6 +33,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Dorantes Avenue](dorantes-avenue/) — 2 buildings, built 1927–1987; 2 in the Forest Hill Historic District.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [Edna Street](edna-street/) — 1 building, built 1927.
+- [El Plazuela Way](el-plazuela-way/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.
 - [El Verano Way](el-verano-way/) — 1 building, built 1926.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1918.
 - [Fernwood Drive](fernwood-drive/) — 1 building, built 1932.
@@ -56,6 +58,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Los Palmos Drive](los-palmos-drive/) — 1 building, built 1948.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
 - [Mangels Avenue](mangels-avenue/) — 2 buildings, built 1928–1930.
+- [Manor Drive](manor-drive/) — 1 building, built 1929.
 - [Marietta Drive](marietta-drive/) — 2 buildings, built 1943–1959.
 - [Marston Avenue](marston-avenue/) — 8 buildings, built 1927.
 - [Maywood Drive](maywood-drive/) — 1 building, built 1927.
@@ -80,6 +83,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Rosewood Drive](rosewood-drive/) — 1 building, built 1937.
 - [Saint Elmo Way](saint-elmo-way/) — 1 building, built 1926.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
+- [San Aleso Avenue](san-aleso-avenue/) — 1 building, built 1933; 1 in the Balboa Terrace Historic District.
 - [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
 - [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.
 - [San Benito Way](san-benito-way/) — 1 building, built 2001; 1 in the St. Francis Wood Historic District.
@@ -94,6 +98,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Santa Monica Way](santa-monica-way/) — 1 building, built 1918; 1 in the St. Francis Wood Historic District.
 - [Santa Paula Avenue](santa-paula-avenue/) — 1 building, built 1923; 1 in the St. Francis Wood Historic District.
 - [Santa Rita Avenue](santa-rita-avenue/) — 1 building, built 1935; 1 in the Forest Hill Historic District.
+- [Santiago Street](santiago-street/) — 1 building, built 1931.
 - [Sequoia Way](sequoia-way/) — 1 building, built 1931.
 - [Sotelo Avenue](sotelo-avenue/) — 1 building, built 1914; 1 in the Forest Hill Historic District.
 - [Stanford Heights Avenue](stanford-heights-avenue/) — 1 building, built 1960.

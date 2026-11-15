@@ -4,6 +4,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 
 ## Streets documented so far
 
+- [Agnon Avenue](agnon-avenue/) — 1 building, built 1929.
 - [Alabama Street](alabama-street/) — 1 building, built 1998.
 - [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.
@@ -56,8 +57,10 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Ripley Street](ripley-street/) — 2 buildings, built 1917–1940.
 - [Rutledge Street](rutledge-street/) — 1 building, built 1973.
 - [Samoset Street](samoset-street/) — 1 building, built 1949.
+- [San Jose Avenue](san-jose-avenue/) — 1 building, built 1908.
 - [Santa Marina Street](santa-marina-street/) — 1 building, built 1914.
 - [Shotwell Street](shotwell-street/) — 1 building.
+- [Stoneman Street](stoneman-street/) — 1 building, built 1925.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.
 - [Winfield Street](winfield-street/) — 1 building, built 1909.
 - [Wool Street](wool-street/) — 1 building, built 1906.

@@ -1,0 +1,109 @@
+{
+  "address": "2362 18th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/18th-avenue/2362/",
+  "apn": "2346023",
+  "block": "2346",
+  "lot": "023",
+  "eas_baseid": "335096",
+  "coordinates": {
+    "lat": 37.743806,
+    "lng": -122.474344
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3275,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "2364 2362 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43865,
+    "assessed_improvement_value": 68814
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9221455",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-12-11",
+      "status_date": "1993-02-18",
+      "estimated_cost": 4850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8808122",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-06-16",
+      "status_date": "1989-01-09",
+      "estimated_cost": 5900,
+      "description": "side back wall vinly",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=2362",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2346023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2346&lot=023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2346023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-10-24-n710",
+      "name": "Building and Engineering News, 24 October 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n710/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-10-24",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $5,000. Edward A. Johnson was named as contractor.",
+      "source": "building-engineering-news-1925-10-24-n710"
+    }
+  ],
+  "building": {
+    "builder": "Edward A. Johnson"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "address": "1462 Church Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/church-street/1462/",
+  "apn": "6579003",
+  "block": "6579",
+  "lot": "003",
+  "eas_baseid": "402805",
+  "coordinates": {
+    "lat": 37.747344,
+    "lng": -122.427296
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 3160,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "1464 1462 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 43635,
+    "assessed_improvement_value": 64888
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9803871",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-09",
+      "status_date": "1999-03-02",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=1462",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6579003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6579&lot=003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6579003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-10-19-n551",
+      "name": "Building and Engineering News, 19 October 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer29229cont/page/n551/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-10-19",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement. H. B. Strong was named as contractor.",
+      "source": "building-engineering-news-1929-10-19-n551"
+    }
+  ],
+  "building": {
+    "builder": "H. B. Strong"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "address": "1846–1848 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/taylor-street/1846/",
+  "apn": "0119030",
+  "block": "0119",
+  "lot": "030",
+  "eas_baseid": "447977",
+  "coordinates": {
+    "lat": 37.799521,
+    "lng": -122.413844
+  },
+  "address_range": "1846–1848",
+  "street_numbers_on_parcel": [
+    "1846",
+    "1848"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "lot_area_sqft": 1372,
+    "building_area_sqft": 2340,
+    "basement_area_sqft": 392,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1848 1846 TAYLOR              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1471133,
+    "assessed_improvement_value": 696612,
+    "last_sale_date": "2007-10-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809111283",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-11",
+      "status_date": "2009-02-18",
+      "estimated_cost": 46000,
+      "revised_cost": 46000,
+      "description": "1) remodel (e) kitchen/bath room, convert (e) laundry room to new bath room. rewire electrical & lighting at 2nd floor. replace seven windows in kind. 2)construct a game room and a toilet room at ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802013791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-01",
+      "status_date": "2008-09-23",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "comply to nov #200838456. all work on 3rd floor only. change kitchen & bathroom fixtures, cabinets, equipments. paint interior walls and ceiling. change all windows with vinyl windows in kind. (total 17 windows.)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TAYLOR&street_type=ST&address_number=1846",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0119030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0119&lot=030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0119030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-08-30-n393",
+      "name": "Building and Engineering News, 30 August 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n393/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-08-30",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work on a two-storey frame building with a basement, at $9,500. L. Traverso was named as architect and G. Ghezzi as contractor.",
+      "source": "building-engineering-news-1924-08-30-n393"
+    }
+  ],
+  "building": {
+    "architect": "L. Traverso",
+    "builder": "G. Ghezzi"
+  }
+}

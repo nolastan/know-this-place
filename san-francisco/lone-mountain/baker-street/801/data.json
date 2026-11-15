@@ -1,0 +1,151 @@
+{
+  "address": "801 Baker Street, San Francisco, CA 94115",
+  "path": "/san-francisco/lone-mountain/baker-street/801/",
+  "apn": "1151007",
+  "block": "1151",
+  "lot": "007",
+  "eas_baseid": "295737",
+  "coordinates": {
+    "lat": 37.778498,
+    "lng": -122.442169
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 18,
+    "stories": 3,
+    "rooms": 42,
+    "bathrooms": 18,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 13050,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 0801 BAKER               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 71816,
+    "assessed_improvement_value": 334754
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "NOPA Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870s–1910s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202104138428",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-04-13",
+      "status_date": "2021-05-24",
+      "estimated_cost": 26826,
+      "revised_cost": 26825,
+      "description": "20voluntary fire alarm system replacement + lf horns upgrade to meet sffc 2019 sec 1103.7.6.1 in a non-sprinklered building. replace of existing facp, pull station, smoke detector, audible appliance bell, install new power supply and low frequency sounders.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201606029017",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-02",
+      "status_date": "2016-07-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa#201604225507, relocate steel frame @ grid line \"b\", revise shear wall length & plywood nailing @ grid line \"a\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201604225507",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-22",
+      "status_date": "2016-07-22",
+      "estimated_cost": 100000,
+      "revised_cost": 121500,
+      "description": "soft story retrofit per sfbc chapter 34b engineering criteria, 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105105699",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-10",
+      "status_date": "2011-06-16",
+      "estimated_cost": 4500,
+      "revised_cost": 9100,
+      "description": "one unit: replace all kitchen cabinet, install new linoleum flooring, paint the apartment, new countertop, new sink & faucet. no lighting work, no change to exhaust system.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2008–2021",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAKER&street_type=ST&address_number=801",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1151007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1151&lot=007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1151007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44216856812535%2037.77849769536438)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-12-26-n1078",
+      "name": "Building and Engineering News, 26 December 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n1078/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-12-26",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of eighteen apartments with a basement, estimated at $22,500.",
+      "source": "building-engineering-news-1925-12-26-n1078"
+    }
+  ]
+}

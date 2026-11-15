@@ -1,0 +1,116 @@
+{
+  "address": "750 39th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/39th-avenue/750/",
+  "apn": "1606035",
+  "block": "1606",
+  "lot": "035",
+  "eas_baseid": "310226",
+  "coordinates": {
+    "lat": 37.774683,
+    "lng": -122.499058
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3092,
+    "building_area_sqft": 2910,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0752 0750 39TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 97368,
+    "assessed_improvement_value": 197035
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9618362",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-26",
+      "status_date": "1997-01-02",
+      "estimated_cost": 5000,
+      "description": "replace stucco/chg windows/nail plywood/work at front of hse",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113344",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-29",
+      "status_date": "1991-09-09",
+      "estimated_cost": 17650,
+      "description": "foundation bolting. patch stucco cracks.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9017393",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1990-08-31",
+      "status_date": "1991-04-03",
+      "estimated_cost": 100000,
+      "description": "garage level seismic upgrade earthquake repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=39TH&street_type=AVE&address_number=750",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1606035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1606&lot=035",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1606035",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-07-25-n162",
+      "name": "Building and Engineering News, 25 July 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n162/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-07-25",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of two on adjoining lots, estimated at $6,000 each.",
+      "source": "building-engineering-news-1925-07-25-n162"
+    }
+  ]
+}

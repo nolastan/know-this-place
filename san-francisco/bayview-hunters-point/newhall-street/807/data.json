@@ -1,0 +1,115 @@
+{
+  "address": "807 Newhall Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/newhall-street/807/",
+  "apn": "5273015A",
+  "block": "5273",
+  "lot": "015A",
+  "eas_baseid": "374752",
+  "coordinates": {
+    "lat": 37.739112,
+    "lng": -122.38876
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2704,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0809 0807 NEWHALL             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 564038,
+    "assessed_improvement_value": 376022,
+    "last_sale_date": "2017-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9310401",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-21",
+      "status_date": "1993-12-29",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NEWHALL&street_type=ST&address_number=807",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5273015A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5273&lot=015A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5273015A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1931-09-26-n423",
+      "name": "Building and Engineering News, 26 September 1931",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer31232cont/page/n423/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1931-09-05-n327",
+      "name": "Building and Engineering News, 5 September 1931",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer31232cont/page/n327/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1931-09-26",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work on a frame dwelling, at $3,850. A. R. Williams was named as architect and the Bayview Realty Co. as contractor.",
+      "source": "building-engineering-news-1931-09-26-n423"
+    },
+    {
+      "date": "1931-09-05",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. A. R. Sanchez was named as contractor.",
+      "source": "building-engineering-news-1931-09-05-n327"
+    }
+  ],
+  "building": {
+    "architect": "A. R. Williams",
+    "builder": "Bayview Realty Co."
+  }
+}

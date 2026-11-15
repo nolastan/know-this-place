@@ -1,0 +1,136 @@
+{
+  "address": "918 Sacramento Street, San Francisco, CA 94108",
+  "path": "/san-francisco/chinatown/sacramento-street/918/",
+  "apn": "0224007",
+  "block": "0224",
+  "lot": "007",
+  "eas_baseid": "280286",
+  "coordinates": {
+    "lat": 37.793284,
+    "lng": -122.408197
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 10,
+    "stories": 4,
+    "rooms": 26,
+    "bathrooms": 10,
+    "lot_area_sqft": 2230,
+    "building_area_sqft": 4410,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "C",
+    "zoning": "RM-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0000 0918 SACRAMENTO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 151997,
+    "assessed_improvement_value": 95156
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202606022320",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-06-02",
+      "status_date": "2026-06-02",
+      "estimated_cost": 40000,
+      "revised_cost": 120000,
+      "description": "two units: (2) kitchen and (2) bathroom remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008319898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-08-31",
+      "status_date": "2010-10-18",
+      "estimated_cost": 20500,
+      "revised_cost": 20500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8510439",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-09-24",
+      "status_date": "1986-03-04",
+      "estimated_cost": 900,
+      "description": "bring into compliance as required by dahi",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8202870",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-04-14",
+      "status_date": "1989-09-24",
+      "estimated_cost": 200,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1982–2026",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SACRAMENTO&street_type=ST&address_number=918",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0224007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0224&lot=007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0224007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-11-21-n878",
+      "name": "Building and Engineering News, 21 November 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n878/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-11-21",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work on a three-storey concrete building with a basement, at $20,000. Herman Hogreve was named as architect.",
+      "source": "building-engineering-news-1925-11-21-n878"
+    }
+  ],
+  "building": {
+    "architect": "Herman Hogreve"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "address": "2034 Grove Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/grove-street/2034/",
+  "apn": "1189002F",
+  "block": "1189",
+  "lot": "002F",
+  "eas_baseid": "296794",
+  "coordinates": {
+    "lat": 37.774661,
+    "lng": -122.450183
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "bedrooms": 6,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 3430,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "2036 2034 GROVE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1476327,
+    "assessed_improvement_value": 984218,
+    "last_sale_date": "2023-03-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304075326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-07",
+      "status_date": "2023-06-07",
+      "estimated_cost": 5000,
+      "revised_cost": 65000,
+      "description": "work performed at upper floor- top floor of duplex - official address 2034. in kind kitchen remodel - 180 sf. in kind bathroom remodel 39 sf, 42 sf. no expansion, no use change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103086076",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-08",
+      "status_date": "2021-03-09",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200012157999",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-12-15",
+      "status_date": "2001-04-05",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "reconst after fire, el, minor plumb, sheatrock, door & painting",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GROVE&street_type=ST&address_number=2034",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1189002F&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1189&lot=002F",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1189002F",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-06-20-n1105",
+      "name": "Building and Engineering News, 20 June 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n1105/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-06-20",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of two listed together, estimated at $6,000 each.",
+      "source": "building-engineering-news-1925-06-20-n1105"
+    }
+  ]
+}

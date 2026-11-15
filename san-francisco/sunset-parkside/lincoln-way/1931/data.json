@@ -1,0 +1,143 @@
+{
+  "address": "1931–1933 Lincoln Way, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/lincoln-way/1931/",
+  "apn": "1730044",
+  "block": "1730",
+  "lot": "044",
+  "eas_baseid": "315465",
+  "coordinates": {
+    "lat": 37.765109,
+    "lng": -122.478907
+  },
+  "address_range": "1931–1933",
+  "street_numbers_on_parcel": [
+    "1931",
+    "1933"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1931 LINCOLN             WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1096743,
+    "assessed_improvement_value": 470028,
+    "last_sale_date": "2017-05-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202102245245",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-02-24",
+      "status_date": "2021-08-24",
+      "estimated_cost": 7000,
+      "revised_cost": 20000,
+      "description": "replace kitchen cabinetry & countertop. replace bathroom floor tiles, vanity, toilet. remove fireplace at the top floor. no removing the walls or adding walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9119601",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-16",
+      "status_date": "1991-12-12",
+      "estimated_cost": 2950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8500210",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-01-07",
+      "status_date": "1985-09-06",
+      "estimated_cost": 500,
+      "description": "kitchen to be moved, wall cabinets, sink in bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8410661",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-10-03",
+      "status_date": "1986-06-12",
+      "estimated_cost": 5000,
+      "description": "shutroch under side of stairs, patch holes in ceiling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8203309",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-04-28",
+      "status_date": "1983-03-04",
+      "estimated_cost": 300,
+      "description": "bldg use: flats",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LINCOLN&street_type=WAY&address_number=1931",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1730044&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1730&lot=044",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1730044",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-08-23-n344",
+      "name": "Building and Engineering News, 23 August 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n344/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-08-23",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of two listed together.",
+      "source": "building-engineering-news-1924-08-23-n344"
+    }
+  ]
+}

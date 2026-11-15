@@ -1,0 +1,156 @@
+{
+  "address": "1458 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/1458/",
+  "apn": "0472017",
+  "block": "0472",
+  "lot": "017",
+  "eas_baseid": "282869",
+  "coordinates": {
+    "lat": 37.802951,
+    "lng": -122.42924
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 4,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 3874,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1458 FRANCISCO           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2264502,
+    "assessed_improvement_value": 970499,
+    "last_sale_date": "2019-05-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202201286850",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-28",
+      "status_date": "2022-04-14",
+      "estimated_cost": 40425,
+      "revised_cost": 40425,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003017308",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-01",
+      "status_date": "2010-05-28",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit - kitchen remodel-replace 6ft of floor cabinets with new in kind cabinets & replace 4 4ft wall cabinet with in kind cabinet, no lighting, no sturctural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107113421",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-11",
+      "status_date": "2002-01-11",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8925552",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-29",
+      "status_date": "1990-01-19",
+      "estimated_cost": 800,
+      "revised_cost": 0,
+      "description": "stucco repair at front of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803614",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1988-03-22",
+      "status_date": "1988-09-28",
+      "estimated_cost": 60000,
+      "description": "convert 2 upper units into 1 unit, new stair to roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705885",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-05-06",
+      "status_date": "1987-09-21",
+      "estimated_cost": 5,
+      "revised_cost": 450,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANCISCO&street_type=ST&address_number=1458",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0472017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0472&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0472017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-11-22-n894",
+      "name": "Building and Engineering News, 22 November 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer24219cont/page/n894/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-11-22",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey frame building of four apartments with a basement. H. O. Lindeman was named as contractor.",
+      "source": "building-engineering-news-1924-11-22-n894"
+    }
+  ],
+  "building": {
+    "builder": "H. O. Lindeman"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "address": "3035 Gough Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/gough-street/3035/",
+  "apn": "0496001A",
+  "block": "0496",
+  "lot": "001A",
+  "eas_baseid": "283427",
+  "coordinates": {
+    "lat": 37.801405,
+    "lng": -122.42828
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 12,
+    "stories": 3,
+    "rooms": 30,
+    "bathrooms": 12,
+    "lot_area_sqft": 4917,
+    "building_area_sqft": 9771,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3035 GOUGH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 142241,
+    "assessed_improvement_value": 421581
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202506068148",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-06-06",
+      "status_date": "2025-06-16",
+      "estimated_cost": 36900,
+      "revised_cost": 36900,
+      "description": "re-roofing no hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202111243118",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-11-24",
+      "status_date": "2022-03-10",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "upgrade e fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903125029",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-12",
+      "status_date": "2020-02-26",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "add new concrete retaining wall and tie beams in the first floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709138041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-13",
+      "status_date": "2020-02-26",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200701051034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-01-05",
+      "status_date": "2008-02-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove & replace existing retaining wall @ side yard (south) walkway and add conc. grade beam @ southern side hallway & portion of existing garage area.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "2007–2025",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOUGH&street_type=ST&address_number=3035",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0496001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0496&lot=001A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0496001A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-03-14-n428",
+      "name": "Building and Engineering News, 14 March 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n428/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-03-14",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of twelve apartments with a basement, estimated at $24,000. The owner was Christiansen Bros.",
+      "source": "building-engineering-news-1925-03-14-n428"
+    }
+  ]
+}

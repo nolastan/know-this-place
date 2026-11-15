@@ -1,0 +1,166 @@
+{
+  "address": "1519 22nd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/22nd-avenue/1519/",
+  "apn": "1868002",
+  "block": "1868",
+  "lot": "002",
+  "eas_baseid": "321268",
+  "coordinates": {
+    "lat": 37.75926,
+    "lng": -122.480375
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1275,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1519 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 255466,
+    "assessed_improvement_value": 465628
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305026859",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-02",
+      "status_date": "2023-05-04",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208150493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-15",
+      "status_date": "2023-01-04",
+      "estimated_cost": 5200,
+      "revised_cost": 8000,
+      "description": "install new sprinkler monitoring sytem pr nfpa 72-2016 section 23.8.5.5.1 with 1 fire alarm control unit, 1 wireless commercial fire communicator, 1 smoke det ector above facu, 1 manual pull station",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202205023386",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-02",
+      "status_date": "2022-06-28",
+      "estimated_cost": 1890,
+      "revised_cost": 1890,
+      "description": "garage door replacement: install new garage door and door opener- (e) wood -(n) steel sectional traditional style sectional. door replaced in (e) opening. min 200 in ventilation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203230722",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-23",
+      "status_date": "2023-05-16",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "structural revision to pa 201807124417. sister new joists above garage area. new footing at tradesman",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202112073851",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-12-07",
+      "status_date": "2023-01-06",
+      "estimated_cost": 21000,
+      "revised_cost": 23489,
+      "description": "install new fire sprinkler system per nfpa13r for the residence buiding through. including 2in dedicated fire service nfpa24. 43 total heads. ref pa201807124417.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807124417",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-07-12",
+      "status_date": "2023-05-16",
+      "estimated_cost": 80000,
+      "revised_cost": 230000,
+      "description": "two story rear addition & raise 2nd fl roof to match adjacent neighbor. addition of dwelling unit on ground fl per ordiance no. 95-17 section 207(1)(6) & comply with info sht g-23. 1st fl (adu) add 1 bed,1 bath, 1 media, 1 living, kitchen & laundry. 2nd fl add 1 study and 1 bath, new deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108051852",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-05",
+      "status_date": "2012-02-24",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=1519",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1868002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1868&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1868002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-06-27-n1149",
+      "name": "Building and Engineering News, 27 June 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n1149/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-06-27",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,500. R. R. Irvine was named as architect.",
+      "source": "building-engineering-news-1925-06-27-n1149"
+    }
+  ],
+  "building": {
+    "architect": "R. R. Irvine"
+  }
+}

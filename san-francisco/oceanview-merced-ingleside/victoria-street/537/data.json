@@ -1,0 +1,141 @@
+{
+  "address": "537 Victoria Street, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/victoria-street/537/",
+  "apn": "6992014",
+  "block": "6992",
+  "lot": "014",
+  "eas_baseid": "411001",
+  "coordinates": {
+    "lat": 37.720418,
+    "lng": -122.465642
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1596,
+    "basement_area_sqft": 596,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0537 VICTORIA            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 550950,
+    "assessed_improvement_value": 356425,
+    "last_sale_date": "2008-11-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200812088054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-08",
+      "status_date": "2009-04-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel and new kitchen. two bathroom & full baths. remodel install sink, cabinets, stove etc. new lighting in kitchen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811217091",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-21",
+      "status_date": "2009-04-08",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "add 2 bedrooms, 2 full bathrooms & 1 storage on (e) ground floor per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9913637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-07-06",
+      "status_date": "1999-08-30",
+      "estimated_cost": 8000,
+      "description": "not a lateral force upgrde, install foundation-calcs nt prov",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9905627",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-03-24",
+      "status_date": "1999-03-30",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9900769",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-01-13",
+      "status_date": "1999-07-23",
+      "estimated_cost": 25000,
+      "description": "kitchen cabs,roof,windows,flooring, concrete,painting",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VICTORIA&street_type=ST&address_number=537",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6992014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6992&lot=014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6992014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-01-03-n27",
+      "name": "Building and Engineering News, 3 January 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n27/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-01-03",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $2,300.",
+      "source": "building-engineering-news-1925-01-03-n27"
+    }
+  ]
+}

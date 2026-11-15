@@ -1,0 +1,118 @@
+{
+  "address": "2471 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/2471/",
+  "apn": "0935011",
+  "block": "0935",
+  "lot": "011",
+  "eas_baseid": "290800",
+  "coordinates": {
+    "lat": 37.799583,
+    "lng": -122.443986
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 3,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 3,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 3222,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "2473 2471 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 735914,
+    "assessed_improvement_value": 478342,
+    "last_sale_date": "1989-07-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308154432",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-08-15",
+      "status_date": "2023-08-15",
+      "estimated_cost": 12400,
+      "revised_cost": 12400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419932",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-12-05",
+      "status_date": "1994-12-14",
+      "estimated_cost": 690,
+      "description": "termite repair-per report 1445-11/22/94-items 1 & 2 only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-16",
+      "status_date": "1990-06-15",
+      "estimated_cost": 9950,
+      "description": "termite repair.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=2471",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0935011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0935&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0935011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-05-03-n594",
+      "name": "Building and Engineering News, 3 May 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer3030cont/page/n594/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-05-03",
+      "kind": "building contract",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,500.",
+      "source": "building-engineering-news-1930-05-03-n594"
+    }
+  ]
+}

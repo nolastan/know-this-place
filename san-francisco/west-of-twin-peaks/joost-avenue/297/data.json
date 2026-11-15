@@ -1,0 +1,154 @@
+{
+  "address": "297 Joost Avenue, San Francisco, CA 94131",
+  "path": "/san-francisco/west-of-twin-peaks/joost-avenue/297/",
+  "apn": "6770030",
+  "block": "6770",
+  "lot": "030",
+  "eas_baseid": "407166",
+  "coordinates": {
+    "lat": 37.732157,
+    "lng": -122.441881
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 895,
+    "lot_depth_ft": 75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0297 JOOST               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 635050,
+    "assessed_improvement_value": 423364,
+    "last_sale_date": "2007-03-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200812299255",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2008-12-29",
+      "status_date": "2026-01-27",
+      "estimated_cost": 3000,
+      "revised_cost": 0,
+      "description": "replacing (e) fence on the side & the back. the house is a corner house and the fence around the back yard facing street & neighbor's driveway is going to be replaced",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707176931",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-17",
+      "status_date": "2007-10-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace kitchen cabinets, countertop, add floor tile. no lighting change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011216319",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-21",
+      "status_date": "2001-02-13",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "remove & replace existing concrete walkway and driveway with new concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702588",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-12",
+      "status_date": "1997-04-30",
+      "estimated_cost": 2850,
+      "description": "replace rear stairs handrailings and landings",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9402726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-02-18",
+      "status_date": "1994-03-04",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208534",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-10-18",
+      "status_date": "1983-03-04",
+      "estimated_cost": 5500,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JOOST&street_type=AVE&address_number=297",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6770030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6770&lot=030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6770030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-06-20-n1105",
+      "name": "Building and Engineering News, 20 June 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n1105/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-06-20",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. Carl Lindberg was named as architect.",
+      "source": "building-engineering-news-1925-06-20-n1105"
+    }
+  ],
+  "building": {
+    "architect": "Carl Lindberg"
+  }
+}

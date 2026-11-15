@@ -1,0 +1,119 @@
+{
+  "address": "696 Monterey Boulevard, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/monterey-boulevard/696/",
+  "apn": "3094028",
+  "block": "3094",
+  "lot": "028",
+  "eas_baseid": "353972",
+  "coordinates": {
+    "lat": 37.731809,
+    "lng": -122.450984
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 4,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 3545,
+    "building_area_sqft": 3696,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0698 0696 MONTEREY            BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 710890,
+    "assessed_improvement_value": 568711,
+    "last_sale_date": "2004-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203018976",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-03-01",
+      "status_date": "2022-03-01",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "re-roofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103265252",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-03-26",
+      "status_date": "2001-09-26",
+      "estimated_cost": 18710,
+      "revised_cost": 18710,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923964",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-12-07",
+      "status_date": "1990-08-03",
+      "estimated_cost": 1200,
+      "description": "construct an awning in front of the ..restaurant.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONTEREY&street_type=BLVD&address_number=696",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3094028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3094&lot=028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3094028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-06-20-n1108",
+      "name": "Building and Engineering News, 20 June 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n1108/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-06-20",
+      "kind": "building contract",
+      "description": "A permit was sought for alterations: raise and add one storey for two stores, estimated at $3,500. C. Nelson was named as architect.",
+      "source": "building-engineering-news-1925-06-20-n1108"
+    }
+  ]
+}

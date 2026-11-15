@@ -1,0 +1,174 @@
+{
+  "address": "50 Walnut Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/walnut-street/50/",
+  "apn": "0973015",
+  "block": "0973",
+  "lot": "015",
+  "eas_baseid": "291706",
+  "coordinates": {
+    "lat": 37.790844,
+    "lng": -122.449069
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 2475,
+    "building_area_sqft": 3000,
+    "lot_depth_ft": 90,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0050 WALNUT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 4125388,
+    "assessed_improvement_value": 1768021,
+    "last_sale_date": "2010-12-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202606294108",
+      "type": "additions alterations or repairs",
+      "status": "approved",
+      "filed": "2026-07-09",
+      "status_date": "2026-11-10",
+      "estimated_cost": 1095000,
+      "revised_cost": 1390717,
+      "description": "excavate lowest level & (n) foundation, replace all windows, exterior doors, replace in-kind stucco facades/soffits. new elevated deck at rear yard, bathrooms, kitchen & kitchenette, washer/dryer, radiant floor heating, skylights, tankless wh, heat/cool system, & fs throughout house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9504173",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-03-24",
+      "status_date": "1995-08-08",
+      "estimated_cost": 1500,
+      "description": "install 1/2 drywood panels onto garage walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9501438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-02-02",
+      "status_date": "1995-08-24",
+      "estimated_cost": 42000,
+      "description": "remodel kitchen & master bath,utility room interior work onl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309157",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-06-02",
+      "status_date": "1993-07-22",
+      "estimated_cost": 3000,
+      "description": "repr dry rot s/w corner of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708874",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-06-25",
+      "status_date": "1987-12-21",
+      "estimated_cost": 2400,
+      "description": "termite inspection.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-04-17",
+      "status_date": "1986-07-24",
+      "estimated_cost": 340,
+      "description": "repair dryrot at rear bay and left rear corner",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1986–2026",
+    "shown_on_page": 6,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WALNUT&street_type=ST&address_number=50",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0973015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0973&lot=015",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0973015",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44906861920178%2037.79084428609571)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-11-30-n757",
+      "name": "Building and Engineering News, 30 November 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer29229cont/page/n757/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-11-30",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $10,000. E. J. Osborne was named as architect and Ed. Zinkand & Son as contractors.",
+      "source": "building-engineering-news-1929-11-30-n757"
+    }
+  ],
+  "building": {
+    "architect": "E. J. Osborne",
+    "builder": "Ed. Zinkand & Son"
+  }
+}

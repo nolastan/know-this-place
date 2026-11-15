@@ -1,0 +1,120 @@
+{
+  "address": "3925 Kirkham Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/kirkham-street/3925/",
+  "apn": "1889024",
+  "block": "1889",
+  "lot": "024",
+  "eas_baseid": "322272",
+  "coordinates": {
+    "lat": 37.758433,
+    "lng": -122.503049
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1265,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 3925 KIRKHAM             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 62566,
+    "assessed_improvement_value": 57712
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107144338",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-14",
+      "status_date": "2021-07-22",
+      "estimated_cost": 14800,
+      "revised_cost": 14800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9419285",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-11-22",
+      "status_date": "1996-02-20",
+      "estimated_cost": 4965,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713967",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-09-29",
+      "status_date": "1988-02-09",
+      "estimated_cost": 600,
+      "description": "replace dry rotted sheathing with plywood",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KIRKHAM&street_type=ST&address_number=3925",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1889024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1889&lot=024",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1889024",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1930-09-13-n373",
+      "name": "Building and Engineering News, 13 September 1930",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer30230cont/page/n373/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1930-09-13",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of four listed together. C. F. Strothoff was named as architect. The owner was the San Francisco Home Building Co.",
+      "source": "building-engineering-news-1930-09-13-n373"
+    }
+  ],
+  "building": {
+    "architect": "C. F. Strothoff"
+  }
+}

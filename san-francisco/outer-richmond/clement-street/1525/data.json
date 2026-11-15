@@ -1,0 +1,157 @@
+{
+  "address": "1525 Clement Street, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/clement-street/1525/",
+  "apn": "1448042",
+  "block": "1448",
+  "lot": "042",
+  "eas_baseid": "304254",
+  "coordinates": {
+    "lat": 37.782191,
+    "lng": -122.475667
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 5,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3837,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 1525 CLEMENT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 741580,
+    "assessed_improvement_value": 300849
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307262986",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-26",
+      "status_date": "2025-06-17",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as-builts existing system is local fire alarm system, ref pa# 202203210410",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202203210410",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-21",
+      "status_date": "2025-06-18",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "upgrade (e) fire alarm system to comply w/sffd section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408063199",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-06",
+      "status_date": "2015-11-02",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "soft story retrofit(mandatory) install new shearwall. new grade beams. 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405285121",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-05-28",
+      "status_date": "2004-10-01",
+      "estimated_cost": 200,
+      "revised_cost": 200,
+      "description": "replace stair stringer in back stairs. replace bannister post (less than 50 percent of the stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310076698",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-10-07",
+      "status_date": "2004-12-28",
+      "estimated_cost": 21470,
+      "revised_cost": 21470,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9319599",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-11-05",
+      "status_date": "1994-05-05",
+      "estimated_cost": 6170,
+      "description": "rer00fing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1993–2023",
+    "shown_on_page": 6,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CLEMENT&street_type=ST&address_number=1525",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1448042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1448&lot=042",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1448042",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-12-26-n1079",
+      "name": "Building and Engineering News, 26 December 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n1079/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-12-26",
+      "kind": "construction",
+      "description": "A permit was sought for a frame building of four flats with a basement, estimated at $10,000.",
+      "source": "building-engineering-news-1925-12-26-n1079"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "address": "2334 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/2334/",
+  "apn": "0927012",
+  "block": "0927",
+  "lot": "012",
+  "eas_baseid": "290562",
+  "coordinates": {
+    "lat": 37.801102,
+    "lng": -122.443767
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 2990,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "2336 2334 FRANCISCO           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2372112,
+    "assessed_improvement_value": 593028,
+    "last_sale_date": "2022-09-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603137578",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2026-03-13",
+      "status_date": "2026-03-13",
+      "estimated_cost": 1000,
+      "revised_cost": 7000,
+      "description": "revision to approved pa# 202505206859. 1/f, reconfigure kitchen layout per plan. 2/f: reconfigure wetbar, bath, laundry and master bath per plan. 3/f: reconfigure bedroom layout and relocate kitchen and dining, relocate skylights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505206859",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-06-09",
+      "status_date": "2025-12-08",
+      "estimated_cost": 535000,
+      "revised_cost": 1074125,
+      "description": "full remodel with new kitchens and bathrooms. remodel (e) 1/f to new living space for 2/f unit with new interior stairs. 1-story rear addition for 2/f unit and turn new roof to roof deck. new cantilever deck for 3/f unit as open space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107183957",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-18",
+      "status_date": "2001-08-13",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "install 50 5/8\"x12\" foundation anchor bolts w/ 2\" washers & epoxy,4'oc as access allows,minimum emba",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823286",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-11-12",
+      "status_date": "2001-05-22",
+      "estimated_cost": 1900,
+      "description": "correct nov,remove walls to provide parking space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9801351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-01-26",
+      "status_date": "1998-02-25",
+      "estimated_cost": 4423,
+      "description": "repair stairs and landing (dry rot) left side of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000240",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-04",
+      "status_date": "1990-08-07",
+      "estimated_cost": 1720,
+      "description": "install aluminum windows in frames",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309118",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-09-14",
+      "status_date": "1984-05-10",
+      "estimated_cost": 500,
+      "description": "/3/8 inch-1hr solio core door 21 foot-1hr stud wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANCISCO&street_type=ST&address_number=2334",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0927012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0927&lot=012",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0927012",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-01-24-n152",
+      "name": "Building and Engineering News, 24 January 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n152/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-01-24",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of two listed together, estimated at $8,000 each.",
+      "source": "building-engineering-news-1925-01-24-n152"
+    }
+  ]
+}

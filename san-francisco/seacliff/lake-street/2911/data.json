@@ -1,0 +1,140 @@
+{
+  "address": "2911 Lake Street, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/lake-street/2911/",
+  "apn": "1327009G",
+  "block": "1327",
+  "lot": "009G",
+  "eas_baseid": "300349",
+  "coordinates": {
+    "lat": 37.784901,
+    "lng": -122.490894
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 6473,
+    "building_area_sqft": 3654,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 2911 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2709137,
+    "assessed_improvement_value": 1268366,
+    "last_sale_date": "2012-11-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sea Cliff Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201301107728",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-10",
+      "status_date": "2013-09-25",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remodel powder room in grnd flr in kind, new sheetrock, fixtures, plumbing and electrical, revision to permit 201212206668",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212206668",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-12-20",
+      "status_date": "2013-09-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "removal of baseboard, crown modling, patching holes in walls and paint and new baseboard & crown throughout the house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203055342",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-05",
+      "status_date": "2012-07-27",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "to comply with complaint # 201200102. remodel (e) kitchen / new subpanel (elec. permit sep.) upgrade plumbing supply lines (plumbing permit sep.) / new kitchen cabinets/replace furnace (hvac permit sep.) lighting to comply with cec 150 (k)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=2911",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1327009G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1327&lot=009G",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1327009G",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.49089371014199%2037.78490083065328)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-10-12-n517",
+      "name": "Building and Engineering News, 12 October 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer29229cont/page/n517/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-10-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, one of two listed together, estimated at $16,000 each. Hyman & Appleton were named as architects and D. B. Gladstone as contractor. The owner was Allen & Co.",
+      "source": "building-engineering-news-1929-10-12-n517"
+    }
+  ],
+  "building": {
+    "architect": "Hyman & Appleton",
+    "builder": "D. B. Gladstone"
+  }
+}

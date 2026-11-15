@@ -9,6 +9,7 @@ that study area, as an example of the Second Bay Tradition.
 ## Streets documented so far
 
 - [21st Street](21st-street/) — 1 building, built 1958.
+- [22nd Street](22nd-street/) — 1 building, built 1930.
 - [23rd Street](23rd-street/) — 1 building, built 1910; 1 in the Diamond & Elizabeth Streets Historic District.
 - [24th Street](24th-street/) — 1 building, built 1900; 1 in the Diamond & Elizabeth Streets Historic District.
 - [25th Street](25th-street/) — 1 building, built 1900.
@@ -21,6 +22,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Cameo Way](cameo-way/) — 1 building, built 1968; 1 in the Diamond Heights Historic District.
 - [Castro Street](castro-street/) — 1 building, built 1973.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1966.
+- [Chattanooga Street](chattanooga-street/) — 1 building, built 1880.
 - [Church Street](church-street/) — 1 building, built 1914.
 - [Clipper Street](clipper-street/) — 3 buildings, built 1883–1916.
 - [Clipper Terrace](clipper-terrace/) — 1 building, built 1996.
@@ -30,10 +32,12 @@ that study area, as an example of the Second Bay Tradition.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
 - [Elizabeth Street](elizabeth-street/) — 1 building, built 1927.
+- [Guerrero Street](guerrero-street/) — 1 building, built 1925.
 - [Harper Street](harper-street/) — 1 building, built 1900.
 - [Hill Street](hill-street/) — 1 building, built 1965.
 - [Hoffman Avenue](hoffman-avenue/) — 1 building.
 - [Homestead Street](homestead-street/) — 1 building, built 1909; 1 in the Diamond & Elizabeth Streets Historic District.
+- [Jersey Street](jersey-street/) — 1 building, built 1915.
 - [Kronquist Court](kronquist-court/) — 2 buildings, built 1949.
 - [Newburg Street](newburg-street/) — 1 building, built 1944.
 - [Noe Street](noe-street/) — 1 building, built 1900.

@@ -1,0 +1,150 @@
+{
+  "address": "2660 Green Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/green-street/2660/",
+  "apn": "0951014",
+  "block": "0951",
+  "lot": "014",
+  "eas_baseid": "291286",
+  "coordinates": {
+    "lat": 37.79547,
+    "lng": -122.442981
+  },
+  "parcel": {
+    "year_built": 1908,
+    "units": 1,
+    "stories": 3,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 4726,
+    "building_area_sqft": 4025,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2660 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 131888,
+    "assessed_improvement_value": 310952
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1908",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cow Hollow First Bay Tradition Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201903155326",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-03-15",
+      "status_date": "2019-03-15",
+      "estimated_cost": 13734,
+      "revised_cost": 13734,
+      "description": "not visible from street, replace (5) windows into (e) frames-fibrex, same size/location, u-factor: 0.32",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806141841",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-06-14",
+      "status_date": "2018-06-14",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "install and provide central station monitoring of an automatic fire sprinkler system; n/a maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M14874",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-31",
+      "status_date": "2001-10-31",
+      "revised_cost": 30000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010173189",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-17",
+      "status_date": "2002-08-19",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "kitchen bath bedroom rmdl repair ex deck at rear same size member same config,sam material",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2000–2019",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=2660",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0951014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0951&lot=014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0951014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44298087716453%2037.795470187352706)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-08-22-n343",
+      "name": "Building and Engineering News, 22 August 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n343/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-08-22",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations and additions to a dwelling, estimated at $4,580. A. H. Knoll was named as architect and Ira W. Coburn as contractor.",
+      "source": "building-engineering-news-1925-08-22-n343"
+    }
+  ]
+}

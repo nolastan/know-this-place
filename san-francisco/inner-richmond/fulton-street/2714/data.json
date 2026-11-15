@@ -1,0 +1,138 @@
+{
+  "address": "2714 Fulton Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/fulton-street/2714/",
+  "apn": "1646014",
+  "block": "1646",
+  "lot": "014",
+  "eas_baseid": "312034",
+  "coordinates": {
+    "lat": 37.774199,
+    "lng": -122.460957
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 4904,
+    "building_area_sqft": 4506,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 2714 FULTON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 571782,
+    "assessed_improvement_value": 381180,
+    "last_sale_date": "2003-03-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Resource Review",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201105246669",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-05-24",
+      "status_date": "2011-05-24",
+      "estimated_cost": 11300,
+      "revised_cost": 11300,
+      "description": "renovate existing bathroom, new plumbing/electrical on 2nd floor only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301064610",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-06",
+      "status_date": "2003-01-15",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712492",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1987-08-31",
+      "status_date": "1988-02-03",
+      "estimated_cost": 7800,
+      "description": "install stairway chair lifts",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303874",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-05-05",
+      "status_date": "1983-08-01",
+      "estimated_cost": 7938,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1983–2011",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FULTON&street_type=ST&address_number=2714",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1646014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1646&lot=014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1646014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-06-27-n1150",
+      "name": "Building and Engineering News, 27 June 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n1150/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-06-27",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $15,000. Bernard J. Joseph was named as architect.",
+      "source": "building-engineering-news-1925-06-27-n1150"
+    }
+  ],
+  "building": {
+    "architect": "Bernard J. Joseph"
+  }
+}

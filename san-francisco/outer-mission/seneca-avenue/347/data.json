@@ -1,0 +1,145 @@
+{
+  "address": "347 Seneca Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/seneca-avenue/347/",
+  "apn": "6964028",
+  "block": "6964",
+  "lot": "028",
+  "eas_baseid": "409820",
+  "coordinates": {
+    "lat": 37.721243,
+    "lng": -122.445423
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 1996,
+    "building_area_sqft": 2277,
+    "basement_area_sqft": 602,
+    "lot_frontage_ft": 27,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0347 SENECA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 651456,
+    "assessed_improvement_value": 365617,
+    "last_sale_date": "2007-12-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201108162550",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-16",
+      "status_date": "2011-08-29",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "1) comply with complaint #200999224. 2) remove illigal kitchen at ground floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108021531",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-02",
+      "status_date": "2011-08-25",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200804048844",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-04",
+      "status_date": "2008-06-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to appl #200712311654 - existing door which is missing on the previous approved plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801071931",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-07",
+      "status_date": "2008-06-20",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revision to pa# 200712311654-add a bar area room (2ftx8ft) on 2nd floor. keep the (e) window near deck in rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200712311654",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-12-31",
+      "status_date": "2008-06-20",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "new guest room,bedroom, bathroom and laundry room at garage level.infill under overhang at garage level",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SENECA&street_type=AVE&address_number=347",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6964028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6964&lot=028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6964028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1931-10-17-n519",
+      "name": "Building and Engineering News, 17 October 1931",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer31232cont/page/n519/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1931-10-17",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: an addition to a dwelling, estimated at $1,666. E. A. Neumarkel was named as architect and C. J. Koenig & Sons as contractors.",
+      "source": "building-engineering-news-1931-10-17-n519"
+    }
+  ]
+}

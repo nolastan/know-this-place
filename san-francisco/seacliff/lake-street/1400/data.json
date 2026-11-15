@@ -1,0 +1,140 @@
+{
+  "address": "1400 Lake Street, San Francisco, CA 94118",
+  "path": "/san-francisco/seacliff/lake-street/1400/",
+  "apn": "1343003",
+  "block": "1343",
+  "lot": "003",
+  "eas_baseid": "300736",
+  "coordinates": {
+    "lat": 37.786402,
+    "lng": -122.474631
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 3371,
+    "building_area_sqft": 3473,
+    "basement_area_sqft": 160,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 1400 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2911663,
+    "assessed_improvement_value": 1247855,
+    "last_sale_date": "2023-03-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202608076273",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-08-07",
+      "status_date": "2026-08-07",
+      "estimated_cost": 58000,
+      "revised_cost": 58000,
+      "description": "full demo of (e) kitchen. install new cabinets, countertop, sinks, fixtures, etc in-kind, same location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202301270942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-01-27",
+      "status_date": "2023-03-02",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921301",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-11-07",
+      "status_date": "1990-03-26",
+      "estimated_cost": 1200,
+      "description": "revision permit #625907 app #8920294 demo 1 wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920294",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-25",
+      "status_date": "1990-03-26",
+      "estimated_cost": 32500,
+      "description": "kitchen remodel- new cars, floor & fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1989–2026",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=1400",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1343003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1343&lot=003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1343003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-05-23-n936",
+      "name": "Building and Engineering News, 23 May 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer255cont/page/n936/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-05-23",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey Class C brick residence, estimated at $7,500. Edward E. Young was named as architect and contractor.",
+      "source": "building-engineering-news-1925-05-23-n936"
+    }
+  ],
+  "building": {
+    "architect": "Edward E. Young",
+    "builder": "Edward E. Young"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "address": "106 Delano Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/delano-avenue/106/",
+  "apn": "3202003",
+  "block": "3202",
+  "lot": "003",
+  "eas_baseid": "356343",
+  "coordinates": {
+    "lat": 37.726428,
+    "lng": -122.440902
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 3197,
+    "building_area_sqft": 1730,
+    "basement_area_sqft": 490,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0106 DELANO              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 444638,
+    "assessed_improvement_value": 525126,
+    "last_sale_date": "2011-08-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201506300367",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-06-30",
+      "status_date": "2015-07-01",
+      "estimated_cost": 1000,
+      "revised_cost": 1,
+      "description": "revision to pa #2015.0422.4348 - add details for inspection, add new footing under the garage hallway wall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504224348",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-22",
+      "status_date": "2018-03-12",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "1st floor: add 490 sf liv sp w/connecting stair, add fam rm w/bar sink, new bath, new fire rated exit corridor, repalce new rear windows, excavate, new slab, underpin footing. 2nd fl: new stair to 1st fl, infill lightwell in kitchen, remodel kitchen, remove (e)stair, infill floor,remodel laundry rm.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112120486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-12-12",
+      "status_date": "2012-01-20",
+      "estimated_cost": 7000,
+      "revised_cost": 9000,
+      "description": "bathroom, tile, fan, faucet, floor tile, remodel bathroom, no change on walls and opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110317918",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-31",
+      "status_date": "2012-01-10",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109144562",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-14",
+      "status_date": "2011-09-20",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "bolt down the foundation: install 5/8\" galvanized bolt at 4 feet intervals on perimeter wall. 7 inch embed use hy 150 epoxy and 3 inch plate washer to secure the bolts. install metal fasteners on 6 post and beam connections in the garage area. install 5 - ply plyood panels on the shear walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401010",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-01-26",
+      "status_date": "1984-03-15",
+      "estimated_cost": 1700,
+      "description": "installation of fourth aluminum wiindows in the bedrooms.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DELANO&street_type=AVE&address_number=106",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3202003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3202&lot=003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3202003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1925-10-24-n711",
+      "name": "Building and Engineering News, 24 October 1925",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2525cont/page/n711/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1925-10-24",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. Chas. F. Strothoff was named as architect.",
+      "source": "building-engineering-news-1925-10-24-n711"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

@@ -17,6 +17,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [21st Avenue](21st-avenue/) — 1 building, built 1929.
 - [23rd Avenue](23rd-avenue/) — 2 buildings, built 1924–1950.
 - [24th Avenue](24th-avenue/) — 4 buildings, built 1911–1950.
+- [2nd Avenue](2nd-avenue/) — 4 buildings, built 1908–1923.
 - [4th Avenue](4th-avenue/) — 5 buildings, built 1904–1910.
 - [Aloha Avenue](aloha-avenue/) — 1 building, built 1971.
 - [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1913.
@@ -50,7 +51,6 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Ortega Street](ortega-street/) — 1 building, built 1914.
 - [Pacheco Street](pacheco-street/) — 1 building, built 1958.
 - [Parnassus Avenue](parnassus-avenue/) — 2 buildings, built 1912–1925.
-- [Second Avenue](2nd-avenue/) — 4 buildings, built 1908–1923.
 - [Seventh Avenue](7th-avenue/) — 13 buildings, built 1900–1925.
 - [Shrader Street](shrader-street/) — 4 buildings, built 1907–1911.
 - [Sixth Avenue](6th-avenue/) — 28 buildings, built 1900–1916.

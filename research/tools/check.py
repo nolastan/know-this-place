@@ -9,6 +9,7 @@
     python3 research/tools/check.py --index                    # rebuild findings/INDEX.md
     python3 research/tools/check.py --peek   <findings-file>   # what a batch is, without reading it
     python3 research/tools/check.py --find "1377 Fulton"       # entries matching words, corpus-wide
+    python3 research/tools/check.py --held <apn|manifest> ...  # facts waiting for these parcels' pages
 
 What it checks:
   * every dossier in research/sources/ has a row in research/SOURCES.md, and
@@ -43,6 +44,14 @@ regenerates findings/INDEX.md, which says what every batch covers; a default run
 fails while it is stale, the same contract the sitemap has on the website side.
 --peek prints one batch's header, coverage and a spread sample of its entries;
 --find matches words across every findings file at once and prints a line each.
+
+--held lists the facts that are placed on a parcel but kept off the site
+because the parcel has no page and the fact alone does not earn one (a plain
+1920s house permit, say). They are `unresolved` findings carrying
+`extra.placed_apn`. Whoever seeds a page for any other reason runs --held on
+the parcels (or the seed manifest) first and takes those facts up with their
+own; `--held pages` lists the ones whose parcel has since got a page: research/AGENTS.md, "Facts held for a page". With no argument it prints
+the count per source.
 
 --overlap answers the question step 4 has to ask before it writes anything:
 does the page already say this? Two statements routinely cover the same
@@ -1511,6 +1520,62 @@ def peek(path: Path, sample: int) -> None:
         print("Everything else: --find, or jq. See research/findings/INDEX.md.")
 
 
+def held(wanted: list[str]) -> None:
+    """Unresolved findings carrying extra.placed_apn, for the given parcels.
+
+    Each argument is an APN, a seed manifest (a JSON list of parcels, or of
+    objects with an `apn`/`blklot` key), or the word `pages` for every parcel
+    that already has a page. No argument: the count per source.
+    """
+    apns: set[str] = set()
+    for w in wanted:
+        if w == "pages":
+            # every parcel that has a page now: the held facts that are overdue
+            apns |= {str(a).upper() for a in pages_by_apn()}
+        elif w.endswith(".json"):
+            try:
+                doc = json.loads(Path(w).read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError) as exc:
+                print(f"--held could not read {w}: {exc}")
+                return
+            rows = doc.get("parcels") or doc.get("entries") or [] if isinstance(doc, dict) else doc
+            for r in rows:
+                if isinstance(r, dict):
+                    r = r.get("apn") or r.get("blklot") or r.get("parcel")
+                if r:
+                    apns.add(str(r).upper())
+        else:
+            apns.add(w.upper())
+
+    counts: dict[str, int] = {}
+    hits = []
+    for path in findings_files():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for f in data.get("findings") or []:
+            apn = str((f.get("extra") or {}).get("placed_apn") or "").upper()
+            if not apn or (f.get("resolution") or {}).get("status") != "unresolved":
+                continue
+            counts[path.parent.name] = counts.get(path.parent.name, 0) + 1
+            if apn in apns:
+                hits.append((apn, path, f))
+
+    if not wanted:
+        total = sum(counts.values())
+        print(f"{_thousands(total)} fact(s) held for a page:")
+        for src, n in sorted(counts.items(), key=lambda kv: -kv[1]):
+            print(f"  {_thousands(n):>7}  {src}")
+        return
+    print(f"{len(hits)} held fact(s) on {len({a for a, _, _ in hits})} of "
+          f"{len(apns)} parcel(s).")
+    for apn, path, f in sorted(hits, key=lambda h: (h[0], str(h[2].get("date")))):
+        print(f"{apn}  {path.parent.name}/{path.stem}  {f.get('id')}  "
+              f"{f.get('date') or '—'}  {f.get('address_as_written')}")
+        print(f"    {f.get('description') or ''}")
+
+
 def find(text: str, only: Path | None, limit: int) -> None:
     """Entries matching every word of `text`, one line each.
 
@@ -1580,6 +1645,8 @@ def main() -> int:
                     help="rebuild research/findings/INDEX.md")
     ap.add_argument("--peek", type=Path, metavar="FINDINGS",
                     help="a file's header, coverage and a sample of its entries")
+    ap.add_argument("--held", nargs="*", metavar="APN|MANIFEST", default=None,
+                    help="facts placed on a parcel and waiting for its page")
     ap.add_argument("--find", metavar="WORDS",
                     help="entries matching every word, one line each")
     ap.add_argument("--in", dest="within", type=Path, metavar="FINDINGS",
@@ -1597,6 +1664,9 @@ def main() -> int:
         if path is None:
             return 1
         peek(path, 3 if args.n is None else args.n)
+        return 0
+    if args.held is not None:
+        held(args.held)
         return 0
     if args.find:
         within = None
