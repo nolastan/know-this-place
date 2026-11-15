@@ -1,0 +1,130 @@
+{
+  "address": "3245 Octavia Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/octavia-street/3245/",
+  "apn": "0482003",
+  "block": "0482",
+  "lot": "003",
+  "eas_baseid": "283133",
+  "coordinates": {
+    "lat": 37.802216,
+    "lng": -122.430093
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2812.5,
+    "building_area_sqft": 3550,
+    "lot_depth_ft": 12.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3245 OCTAVIA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 497793,
+    "assessed_improvement_value": 298643
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200804169814",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-04-16",
+      "status_date": "2008-06-24",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8408271",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-07-31",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1800,
+      "description": "replace doors four units to comply with dahi reort",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1984–2012",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OCTAVIA&street_type=ST&address_number=3245",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0482003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0482&lot=003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0482003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-03-n777",
+      "name": "Building and Engineering News, 3 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n777/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-31-n953",
+      "name": "Building and Engineering News, 31 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n953/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-05-03",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four apartments with a basement, estimated at $9,000.",
+      "source": "building-engineering-news-1924-05-03-n777"
+    },
+    {
+      "date": "1924-05-31",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a two-storey frame apartment building with a basement, at $13,350. H. O. Lindeman was named as contractor.",
+      "source": "building-engineering-news-1924-05-31-n953"
+    }
+  ],
+  "building": {
+    "builder": "H. O. Lindeman"
+  }
+}

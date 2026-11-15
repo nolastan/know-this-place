@@ -23,6 +23,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Castenada Avenue](castenada-avenue/) — 1 building, built 1929; 1 in the Forest Hill Historic District.
 - [Cecilia Avenue](cecilia-avenue/) — 1 building, built 1927.
 - [Cedro Avenue](cedro-avenue/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.
+- [Cerritos Avenue](cerritos-avenue/) — 1 building, built 1924; 1 in the Ingleside Terrace Historic District.
 - [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
 - [Colon Avenue](colon-avenue/) — 1 building, built 1926.
 - [Congo Street](congo-street/) — 2 buildings, built 1927.
@@ -30,7 +31,9 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Dalewood Way](dalewood-way/) — 1 building, built 1967.
 - [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.
 - [Del Vale Avenue](del-vale-avenue/) — 1 building, built 1946.
+- [Dewey Boulevard](dewey-boulevard/) — 1 building, built 1921; 1 in the Forest Hill Historic District.
 - [Dorantes Avenue](dorantes-avenue/) — 2 buildings, built 1927–1987; 2 in the Forest Hill Historic District.
+- [Eastwood Drive](eastwood-drive/) — 1 building, built 1919.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [Edna Street](edna-street/) — 1 building, built 1927.
 - [El Plazuela Way](el-plazuela-way/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.
@@ -43,6 +46,8 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Funston Avenue](funston-avenue/) — 1 building, built 1936.
 - [Gennessee Street](gennessee-street/) — 1 building, built 1915.
 - [Granville Way](granville-way/) — 1 building, built 1923.
+- [Greenwood Avenue](greenwood-avenue/) — 1 building, built 1922.
+- [Hazelwood Avenue](hazelwood-avenue/) — 2 buildings, built 1922.
 - [Hearst Avenue](hearst-avenue/) — 1 building, built 1908.
 - [Idora Avenue](idora-avenue/) — 1 building, built 1947.
 - [Joost Avenue](joost-avenue/) — 1 building, built 1927.
@@ -101,6 +106,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Santiago Street](santiago-street/) — 1 building, built 1931.
 - [Sequoia Way](sequoia-way/) — 1 building, built 1931.
 - [Sotelo Avenue](sotelo-avenue/) — 1 building, built 1914; 1 in the Forest Hill Historic District.
+- [Southwood Drive](southwood-drive/) — 1 building, built 1920.
 - [Stanford Heights Avenue](stanford-heights-avenue/) — 1 building, built 1960.
 - [Staples Avenue](staples-avenue/) — 1 building, built 1925.
 - [Stonecrest Drive](stonecrest-drive/) — 2 buildings, built 1939–1941.
@@ -110,6 +116,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Ulloa Street](ulloa-street/) — 1 building, built 1938.
 - [Upland Drive](upland-drive/) — 1 building.
 - [Urbano Drive](urbano-drive/) — 1 building, built 1922; 1 in the Ingleside Terrace Historic District.
+- [Valdez Avenue](valdez-avenue/) — 1 building, built 1923.
 - [Vasquez Avenue](vasquez-avenue/) — 1 building, built 1917.
 - [Vicente Street](vicente-street/) — 1 building, built 1928.
 - [West Portal Avenue](west-portal-avenue/) — 2 buildings, built 1935–1992.

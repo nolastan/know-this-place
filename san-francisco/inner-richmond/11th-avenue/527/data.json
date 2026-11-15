@@ -1,0 +1,184 @@
+{
+  "address": "527 11th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/11th-avenue/527/",
+  "apn": "1554005",
+  "block": "1554",
+  "lot": "005",
+  "eas_baseid": "308013",
+  "coordinates": {
+    "lat": 37.778286,
+    "lng": -122.469784
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2735,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0527 11TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 313534,
+    "assessed_improvement_value": 655194,
+    "last_sale_date": "1998-11-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201406188760",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-18",
+      "status_date": "2014-07-07",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200904216701",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-21",
+      "status_date": "2009-10-08",
+      "estimated_cost": 12000,
+      "revised_cost": 40000,
+      "description": "remodel of storage space @ first floor to conditioned space. remodel laundry room. garage habitable space separation. revised mechanical system at remodel area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004036209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-04-03",
+      "status_date": "2000-04-06",
+      "revised_cost": 1,
+      "description": "renew expired appl #9825761, 9901518, 9920606, 9920607",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920606",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-30",
+      "status_date": "2000-01-31",
+      "estimated_cost": 2000,
+      "description": "renew expired appl #9825761",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9920607",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-30",
+      "status_date": "2000-01-31",
+      "estimated_cost": 1,
+      "description": "renew expired appl #9901518",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9901518",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-25",
+      "status_date": "2000-01-19",
+      "estimated_cost": 10000,
+      "description": "interior remodeling kitchen & bathrm (ref. 9825761)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9825761",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-12-17",
+      "status_date": "2000-01-19",
+      "estimated_cost": 15000,
+      "description": "interior remodeling including kichn & bthrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516936",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-11",
+      "status_date": "1996-04-12",
+      "estimated_cost": 5995,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-11-02",
+      "status_date": "1984-12-05",
+      "estimated_cost": 2000,
+      "description": "15# felt & mineral siding on rear of building only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=11TH&street_type=AVE&address_number=527",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1554005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1554&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1554005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1916-09-13-n363",
+      "name": "Building and Engineering News, 13 September 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer16916cont/page/n363/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916-09-13",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey and basement frame residence, all work, at $4,400. Sidney B. and Noble Newsom were named as architects and Brandt & Stevens as contractors.",
+      "source": "building-engineering-news-1916-09-13-n363"
+    }
+  ],
+  "building": {
+    "architect": "Sidney B. and Noble Newsom",
+    "builder": "Brandt & Stevens"
+  }
+}

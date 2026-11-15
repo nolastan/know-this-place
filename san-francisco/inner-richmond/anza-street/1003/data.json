@@ -1,0 +1,138 @@
+{
+  "address": "1003–1011 Anza Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/anza-street/1003/",
+  "apn": "1544001",
+  "block": "1544",
+  "lot": "001",
+  "eas_baseid": "425653",
+  "coordinates": {
+    "lat": 37.779188,
+    "lng": -122.459146
+  },
+  "address_range": "1003–1011",
+  "street_numbers_on_parcel": [
+    "1003",
+    "1005",
+    "1007",
+    "1009",
+    "1011"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 5,
+    "stories": 2,
+    "rooms": 20,
+    "bathrooms": 5,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 5150,
+    "basement_area_sqft": 900,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "1011 1003 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1591812,
+    "assessed_improvement_value": 1591812
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202610199606",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-10-19",
+      "status_date": "2026-10-19",
+      "estimated_cost": 35000,
+      "revised_cost": 60000,
+      "description": "rehabilitate e kitchen. no structural demo. rehab e bathroom. add washer dryer electric.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801259540",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-25",
+      "status_date": "2018-08-02",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering critereia 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203266862",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-03-26",
+      "status_date": "2012-04-11",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9006099",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-29",
+      "status_date": "1990-08-17",
+      "estimated_cost": 10480,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=1003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1544001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1544&lot=001",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1544001",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1916-03-01-n307",
+      "name": "Building and Engineering News, 1 March 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1616cont/page/n307/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916-03-01",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of four flats, estimated at $4,000.",
+      "source": "building-engineering-news-1916-03-01-n307"
+    }
+  ]
+}

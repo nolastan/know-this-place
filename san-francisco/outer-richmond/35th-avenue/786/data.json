@@ -1,0 +1,177 @@
+{
+  "address": "786 35th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/35th-avenue/786/",
+  "apn": "1610017B",
+  "block": "1610",
+  "lot": "017B",
+  "eas_baseid": "310394",
+  "coordinates": {
+    "lat": 37.774226,
+    "lng": -122.494795
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2062.5,
+    "building_area_sqft": 1800,
+    "lot_depth_ft": 82.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0786 35TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 350156,
+    "assessed_improvement_value": 154710,
+    "last_sale_date": "1996-12-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202207088037",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-07-08",
+      "status_date": "2023-01-25",
+      "estimated_cost": 26843,
+      "revised_cost": 26843,
+      "description": "replace (13) (e) windows, replace aluminum w/clad over wood, street visible, retrofit install, u-factor < 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107164503",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-16",
+      "status_date": "2021-10-25",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "1st level, bakyard exterior staircase, dryrot repair less than 50%. no visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202107013579",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-01",
+      "status_date": "2021-10-25",
+      "estimated_cost": 63000,
+      "revised_cost": 63000,
+      "description": "siding remove (e) wood siding & replace (n) james hardie composit siding. 1200 sq ft, 70 linear ft at rear of house. replace 17 vinyl windows and two fiberglass doors back of house. doors & windows retrofit kind for kind. no change in opening size.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201508184619",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-18",
+      "status_date": "2015-09-09",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401093666",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-09",
+      "status_date": "2004-04-12",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "install sun tunnel over stairwell (skylight)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401093668",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-09",
+      "status_date": "2004-05-05",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace rear staircase in kind - to satisfy n.o.v.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623537",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-12-06",
+      "status_date": "1997-06-03",
+      "estimated_cost": 8000,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907305",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-05-01",
+      "status_date": "1989-08-18",
+      "estimated_cost": 3500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=35TH&street_type=AVE&address_number=786",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1610017B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1610&lot=017B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1610017B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-06-07-n990",
+      "name": "Building and Engineering News, 7 June 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n990/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-06-07",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $4,000 each. Chas. F. Strothoff was named as architect.",
+      "source": "building-engineering-news-1924-06-07-n990"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

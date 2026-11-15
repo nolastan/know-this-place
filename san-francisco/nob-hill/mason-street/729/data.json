@@ -1,0 +1,151 @@
+{
+  "address": "729 Mason Street, San Francisco, CA 94108",
+  "path": "/san-francisco/nob-hill/mason-street/729/",
+  "apn": "0274002",
+  "block": "0274",
+  "lot": "002",
+  "eas_baseid": "280923",
+  "coordinates": {
+    "lat": 37.790338,
+    "lng": -122.410792
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 24,
+    "stories": 5,
+    "rooms": 48,
+    "bathrooms": 24,
+    "lot_area_sqft": 2722,
+    "building_area_sqft": 10125,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "C",
+    "zoning": "RM-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 0729 MASON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1883558,
+    "assessed_improvement_value": 1356158,
+    "assessed_fixtures_value": 1613,
+    "last_sale_date": "2000-08-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Lower Nob Hill Apartment Hotel Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202603167646",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-16",
+      "status_date": "2026-03-16",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "three units: providing openings and carpentry repair for the installations of two gas lines done by others, restoration after install of gas lines, perform ext concrete patch repairs where crumbling, work not visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201303122046",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-03-12",
+      "status_date": "2013-03-12",
+      "estimated_cost": 300,
+      "revised_cost": 500,
+      "description": "comply with nov 201157647; fix wood frame around window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9925916",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-12-09",
+      "status_date": "2000-06-02",
+      "estimated_cost": 28000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8505672",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-05-31",
+      "status_date": "1986-07-18",
+      "estimated_cost": 2200,
+      "description": "bring into compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1985–2026",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASON&street_type=ST&address_number=729",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0274002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0274&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0274002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41079177406132%2037.79033841725482)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1919-10-29-n410",
+      "name": "Building and Engineering News, 29 October 1919",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengine1921919cont/page/n410/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1919-10-29",
+      "kind": "building contract",
+      "description": "A permit was sought for a five-storey concrete building of 24 apartments, estimated at $40,000.",
+      "source": "building-engineering-news-1919-10-29-n410"
+    }
+  ]
+}

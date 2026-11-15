@@ -19,6 +19,7 @@ An affluent residential enclave on the bluffs above the Golden Gate, laid out fr
 - [30th Avenue](30th-avenue/) — 1 building, built 1910.
 - [31st Avenue](31st-avenue/) — 1 building, built 1992.
 - [32nd Avenue](32nd-avenue/) — 1 building, built 1924.
+- [California Street](california-street/) — 1 building, built 1922.
 - [El Camino Del Mar](el-camino-del-mar/) — An eighteen-room 1926 house above the Golden Gate; a part-time Robin Williams residence.
 - [Lake Street](lake-street/) — 1 building, built 1913.
 - [Mclaren Avenue](mclaren-avenue/) — 1 building, built 1924; 1 in the Sea Cliff Historic District.

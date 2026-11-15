@@ -1,0 +1,125 @@
+{
+  "address": "431 Arguello Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/arguello-boulevard/431/",
+  "apn": "1433005",
+  "block": "1433",
+  "lot": "005",
+  "eas_baseid": "303700",
+  "coordinates": {
+    "lat": 37.782549,
+    "lng": -122.459347
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3650,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0431 ARGUELLO            BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 78519,
+    "assessed_improvement_value": 93080
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809151668",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-09-15",
+      "status_date": "2008-09-15",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106321",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-16",
+      "status_date": "1991-10-23",
+      "estimated_cost": 3500,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9026045",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-12-24",
+      "status_date": "1991-01-11",
+      "estimated_cost": 1200,
+      "revised_cost": 0,
+      "description": "repair stucco",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1990–2012",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ARGUELLO&street_type=BLVD&address_number=431",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1433005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1433&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1433005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-02-16-n285",
+      "name": "Building and Engineering News, 16 February 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n285/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-02-16",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a two-storey frame building of four apartments with a basement, at $14,000.",
+      "source": "building-engineering-news-1924-02-16-n285"
+    }
+  ]
+}

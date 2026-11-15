@@ -1,0 +1,88 @@
+{
+  "address": "4571 Mission Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/mission-street/4571/",
+  "apn": "6014030",
+  "block": "6014",
+  "lot": "030",
+  "eas_baseid": "389468",
+  "coordinates": {
+    "lat": 37.725019,
+    "lng": -122.43421
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 4,
+    "lot_area_sqft": 2087.5,
+    "lot_depth_ft": 83.5,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "4573 4571 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 101543,
+    "assessed_improvement_value": 203110
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=4571",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6014030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6014&lot=030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6014030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-03-24-n414",
+      "name": "Building and Engineering News, 24 March 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n414/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-03-24",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame building of three stores, estimated at $7,000. John Casty was named as contractor.",
+      "source": "building-engineering-news-1923-03-24-n414"
+    }
+  ],
+  "building": {
+    "builder": "John Casty"
+  }
+}

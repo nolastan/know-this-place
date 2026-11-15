@@ -1,0 +1,104 @@
+{
+  "address": "2138 23rd Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/23rd-street/2138/",
+  "apn": "4159038",
+  "block": "4159",
+  "lot": "038",
+  "eas_baseid": "369776",
+  "coordinates": {
+    "lat": 37.754814,
+    "lng": -122.401346
+  },
+  "parcel": {
+    "year_built": 1909,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1780,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 2138 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 531820,
+    "assessed_improvement_value": 354539,
+    "last_sale_date": "2002-06-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1909",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8403684",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1984-04-09",
+      "status_date": "1992-05-19",
+      "estimated_cost": 60000,
+      "description": "alterations for compliance to bbi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1984–2013",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=2138",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4159038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4159&lot=038",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4159038",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-07-14-n75",
+      "name": "Building and Engineering News, 14 July 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n75/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-07-14",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: remodelling a store into two rooms, with concrete work, estimated at $2,000. D. Scanlan was named as contractor.",
+      "source": "building-engineering-news-1923-07-14-n75"
+    }
+  ]
+}

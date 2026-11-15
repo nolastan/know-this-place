@@ -1,0 +1,125 @@
+{
+  "address": "433–437 Brazil Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/brazil-avenue/433/",
+  "apn": "6018020",
+  "block": "6018",
+  "lot": "020",
+  "eas_baseid": "389645",
+  "coordinates": {
+    "lat": 37.723116,
+    "lng": -122.430975
+  },
+  "address_range": "433–437",
+  "street_numbers_on_parcel": [
+    "433",
+    "435",
+    "437"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3600,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0437 0433 BRAZIL              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 777866,
+    "assessed_improvement_value": 333366,
+    "last_sale_date": "2013-07-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200607267626",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-26",
+      "status_date": "2006-12-07",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace existing damaged rear stairs (2nd egress) in kind per plan.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9513411",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1995-08-22",
+      "status_date": "1996-06-07",
+      "estimated_cost": 10000,
+      "revised_cost": 5000,
+      "description": "to comply with housing notice of 6-27-95 legalize garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1995–2013",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRAZIL&street_type=AVE&address_number=433",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6018020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6018&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6018020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1916-01-19-n113",
+      "name": "Building and Engineering News, 19 January 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1616cont/page/n113/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916-01-19",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a three-storey and basement frame building of a store and flats, all work except the foundation and concrete work, at $5,400. Chas. Fantoni was named as architect and Luigi Dioguardi as contractor.",
+      "source": "building-engineering-news-1916-01-19-n113"
+    }
+  ],
+  "building": {
+    "architect": "Chas. Fantoni",
+    "builder": "Luigi Dioguardi"
+  }
+}

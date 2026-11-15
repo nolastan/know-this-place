@@ -1,0 +1,115 @@
+{
+  "address": "1933–1935 Fulton Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/fulton-street/1933/",
+  "apn": "1188014B",
+  "block": "1188",
+  "lot": "014B",
+  "eas_baseid": "296776",
+  "coordinates": {
+    "lat": 37.775242,
+    "lng": -122.448615
+  },
+  "address_range": "1933–1935",
+  "street_numbers_on_parcel": [
+    "1933",
+    "1935"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 2800,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 1935 FULTON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37842,
+    "assessed_improvement_value": 49393
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200507298926",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-29",
+      "status_date": "2006-01-13",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "repair to building damaged by smoke. non structural repair. repair kitchen cabinet, broken (20)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807505",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-04-29",
+      "status_date": "1999-01-11",
+      "estimated_cost": 4000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FULTON&street_type=ST&address_number=1933",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1188014B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1188&lot=014B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1188014B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-12-22-n1043",
+      "name": "Building and Engineering News, 22 December 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n1043/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-12-22",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of two on adjoining lots, estimated at $6,000 each. B. Jones was named as contractor.",
+      "source": "building-engineering-news-1923-12-22-n1043"
+    }
+  ],
+  "building": {
+    "builder": "B. Jones"
+  }
+}

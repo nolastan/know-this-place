@@ -1,0 +1,114 @@
+{
+  "address": "5033–5035 California Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/california-street/5033/",
+  "apn": "1421032",
+  "block": "1421",
+  "lot": "032",
+  "eas_baseid": "466348",
+  "coordinates": {
+    "lat": 37.784251,
+    "lng": -122.471586
+  },
+  "address_range": "5033–5035",
+  "street_numbers_on_parcel": [
+    "5033",
+    "5035"
+  ],
+  "parcel": {
+    "year_built": 1922,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2714,
+    "basement_area_sqft": 264,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "WOO",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "5035 5033 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 910762,
+    "assessed_improvement_value": 661816,
+    "last_sale_date": "2005-02-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508241076",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-24",
+      "status_date": "2005-12-05",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "bedroom, storage room, laundry room and 1/2 bathroom to be added at g/f and repair replace (e)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2005–2016",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=5033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1421032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1421&lot=032",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1421032",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1922-06-03-n761",
+      "name": "Building and Engineering News, 3 June 1922",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer222cont/page/n761/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922-06-03",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $5,000. G. E. Watson was named as contractor.",
+      "source": "building-engineering-news-1922-06-03-n761"
+    }
+  ],
+  "building": {
+    "builder": "G. E. Watson"
+  }
+}

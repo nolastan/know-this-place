@@ -1,0 +1,133 @@
+{
+  "address": "107–109 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/107/",
+  "apn": "1369001A",
+  "block": "1369",
+  "lot": "001A",
+  "eas_baseid": "301361",
+  "coordinates": {
+    "lat": 37.786303,
+    "lng": -122.468171
+  },
+  "address_range": "107–109",
+  "street_numbers_on_parcel": [
+    "107",
+    "109"
+  ],
+  "parcel": {
+    "year_built": 1916,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 3280,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0109 0107 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 57034,
+    "assessed_improvement_value": 107724
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201604265725",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-04-26",
+      "status_date": "2016-08-18",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair and or replace rotted sections of the lightwell staircase as built staicase is not visible from the street, lightwell mid building, less than 5%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006142670",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-14",
+      "status_date": "2001-03-30",
+      "estimated_cost": 8500,
+      "revised_cost": 8500,
+      "description": "upgrade kitchens, new plumbing and electrical, sheetrock, cabinets coaunter tops, flooring paint",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-08-24",
+      "status_date": "2001-03-30",
+      "estimated_cost": 1,
+      "description": "revision to application #9824654",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9824654",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-12-02",
+      "status_date": "2001-03-30",
+      "estimated_cost": 100000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=107",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1369001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1369&lot=001A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1369001A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1916-01-12-n71",
+      "name": "Building and Engineering News, 12 January 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1616cont/page/n71/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916-01-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of two flats, estimated at $5,000.",
+      "source": "building-engineering-news-1916-01-12-n71"
+    }
+  ]
+}

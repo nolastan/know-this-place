@@ -1,0 +1,129 @@
+{
+  "address": "2233–2235 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/2233/",
+  "apn": "0489035",
+  "block": "0489",
+  "lot": "035",
+  "eas_baseid": "283277",
+  "coordinates": {
+    "lat": 37.80004,
+    "lng": -122.440108
+  },
+  "address_range": "2233–2235",
+  "street_numbers_on_parcel": [
+    "2233",
+    "2235"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 4,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 3781,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "2237 2233 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 151537,
+    "assessed_improvement_value": 72743
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9612555",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-07-12",
+      "status_date": "1996-07-23",
+      "estimated_cost": 600,
+      "description": "remove broken tile panelss, replace w/wood panells",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309039",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-01",
+      "status_date": "1995-02-08",
+      "estimated_cost": 7190,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715459",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-10-27",
+      "status_date": "1988-04-14",
+      "estimated_cost": 15300,
+      "description": "replace ceiling lamps, elec/telephone outlets, switches",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1987–2007",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=2233",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0489035&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0489&lot=035",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0489035",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-03-10-n336",
+      "name": "Building and Engineering News, 10 March 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n336/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-03-10",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work except lighting fixtures, shades and finish hardware for a one-storey frame building with a basement, at $6,150. Paul F. De Martini was named as architect and contractor.",
+      "source": "building-engineering-news-1923-03-10-n336"
+    }
+  ],
+  "building": {
+    "architect": "Paul F. De Martini"
+  }
+}

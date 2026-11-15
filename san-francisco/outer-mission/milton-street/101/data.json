@@ -1,0 +1,168 @@
+{
+  "address": "101–115 Milton Street, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/milton-street/101/",
+  "apn": "6750037",
+  "block": "6750",
+  "lot": "037",
+  "eas_baseid": "406611",
+  "coordinates": {
+    "lat": 37.733187,
+    "lng": -122.42926
+  },
+  "address_range": "101–115",
+  "street_numbers_on_parcel": [
+    "101",
+    "103",
+    "105",
+    "107",
+    "115"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 5,
+    "stories": 2,
+    "rooms": 19,
+    "bathrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3910,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0115 0101 MILTON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 75286,
+    "assessed_improvement_value": 147375
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201102180620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-02-18",
+      "status_date": "2011-04-26",
+      "estimated_cost": 300,
+      "revised_cost": 500,
+      "description": "install two handrails at outside rear stair, not visible from street. handrail shall have an outside diamater of 1 1/4\" to 2\", handrail shall be 1 1/2\" clear from railing and post, locate handrail at 34\" to 38\" height above stair nosing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201003299188",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-03-29",
+      "status_date": "2010-07-30",
+      "estimated_cost": 1000,
+      "revised_cost": 1500,
+      "description": "minor repair of rear stairs (less than 50%)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200205025542",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-05-02",
+      "status_date": "2005-02-11",
+      "estimated_cost": 12700,
+      "revised_cost": 12700,
+      "description": "replace 34 windows, size for size, wood to vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204305250",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-30",
+      "status_date": "2002-11-22",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "minor fire damage repair 2 floor joist, subflooring, floor furnace. electrical circuit and gas line",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9605960",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-08",
+      "status_date": "1997-06-20",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9509452",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-06-20",
+      "status_date": "1995-10-20",
+      "estimated_cost": 2300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8406982",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-06-26",
+      "status_date": "1986-03-04",
+      "estimated_cost": 5,
+      "description": "to bring building into full compliance.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MILTON&street_type=ST&address_number=101",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6750037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6750&lot=037",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6750037",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-11-17-n832",
+      "name": "Building and Engineering News, 17 November 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n832/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-11-17",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four apartments with a basement, estimated at $10,000.",
+      "source": "building-engineering-news-1923-11-17-n832"
+    }
+  ]
+}

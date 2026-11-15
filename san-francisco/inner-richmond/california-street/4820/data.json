@@ -1,0 +1,119 @@
+{
+  "address": "4820–4822 California Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/california-street/4820/",
+  "apn": "1370023A",
+  "block": "1370",
+  "lot": "023A",
+  "eas_baseid": "475197",
+  "coordinates": {
+    "lat": 37.784844,
+    "lng": -122.469302
+  },
+  "address_range": "4820–4822",
+  "street_numbers_on_parcel": [
+    "4820",
+    "4822"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3280,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "4822 4820 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 656366,
+    "assessed_improvement_value": 471840
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202604209706",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-04-20",
+      "status_date": "2026-04-20",
+      "estimated_cost": 5000,
+      "revised_cost": 10000,
+      "description": "removed and replaced existing kitchen countertops in the same location and footprint. removed and replaced (e) kitchen sink in-kind. installed new dishwasher in-kind connected to existing plumbing and electrical without modification. maintained some square footage of (e) counter space approx 22 sf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805282989",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-28",
+      "status_date": "2008-05-28",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008–2026",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=4820",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1370023A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1370&lot=023A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1370023A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-08-25-n331",
+      "name": "Building and Engineering News, 25 August 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n331/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-08-25",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000.",
+      "source": "building-engineering-news-1923-08-25-n331"
+    }
+  ]
+}

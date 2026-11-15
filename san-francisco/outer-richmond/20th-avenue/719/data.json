@@ -1,0 +1,123 @@
+{
+  "address": "719 20th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/20th-avenue/719/",
+  "apn": "1663002",
+  "block": "1663",
+  "lot": "002",
+  "eas_baseid": "312743",
+  "coordinates": {
+    "lat": 37.774248,
+    "lng": -122.479267
+  },
+  "parcel": {
+    "year_built": 1921,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1482,
+    "basement_area_sqft": 162,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0719 20TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45222,
+    "assessed_improvement_value": 47766
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810092547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-10-09",
+      "status_date": "2018-10-15",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9603016",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-02-23",
+      "status_date": "1996-06-23",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9211726",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-07-16",
+      "status_date": "1992-08-07",
+      "estimated_cost": 6550,
+      "revised_cost": 0,
+      "description": "no change struct. change 4 peirs w/24'x24\" below grade",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=20TH&street_type=AVE&address_number=719",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1663002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1663&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1663002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1921-10-01-n425",
+      "name": "Building and Engineering News, 1 October 1921",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2921cont/page/n425/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1921-10-01",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame residence with a basement, estimated at $3,750. H. C. Baumann was named as architect.",
+      "source": "building-engineering-news-1921-10-01-n425"
+    }
+  ],
+  "building": {
+    "architect": "H. C. Baumann"
+  }
+}

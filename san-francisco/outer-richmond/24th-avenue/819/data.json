@@ -1,0 +1,149 @@
+{
+  "address": "819 24th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/24th-avenue/819/",
+  "apn": "1667005",
+  "block": "1667",
+  "lot": "005",
+  "eas_baseid": "312940",
+  "coordinates": {
+    "lat": 37.774052,
+    "lng": -122.483553
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2240,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0819 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45245,
+    "assessed_improvement_value": 264077
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911127003",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-12",
+      "status_date": "2020-07-31",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "remove extg alum. windows at front elevation. replace with new alum. clad wood windows.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908290165",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-29",
+      "status_date": "2020-07-31",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "remodel/relocate 2nd fl kitchen & powder room. remodel 3rd fl. bath, add hallway, add bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207195285",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-07-19",
+      "status_date": "2012-07-19",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409719",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-09-07",
+      "status_date": "1984-10-05",
+      "estimated_cost": 1700,
+      "description": "install 13 aluminum windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409620",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-09-05",
+      "status_date": "1984-10-04",
+      "estimated_cost": 4300,
+      "description": "alcoa siding to exterior",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1984–2020",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=819",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1667005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1667&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1667005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-02-24-n260",
+      "name": "Building and Engineering News, 24 February 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n260/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-02-24",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. Andrew H. Knoll was named as architect.",
+      "source": "building-engineering-news-1923-02-24-n260"
+    }
+  ],
+  "building": {
+    "architect": "Andrew H. Knoll"
+  }
+}

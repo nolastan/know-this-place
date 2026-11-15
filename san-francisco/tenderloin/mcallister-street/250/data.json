@@ -1,0 +1,148 @@
+{
+  "address": "250 Mcallister Street, San Francisco, CA 94102",
+  "path": "/san-francisco/tenderloin/mcallister-street/250/",
+  "apn": "0347006",
+  "block": "0347",
+  "lot": "006",
+  "eas_baseid": "282001",
+  "coordinates": {
+    "lat": 37.780885,
+    "lng": -122.416276
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 34,
+    "stories": 5,
+    "rooms": 71,
+    "bathrooms": 35,
+    "lot_area_sqft": 4120,
+    "building_area_sqft": 18635,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "C",
+    "zoning": "RC-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Tenderloin",
+    "analysis_neighborhood": "Tenderloin",
+    "property_location_raw": "0000 0250 MCALLISTER          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 503901,
+    "assessed_improvement_value": 877640,
+    "last_sale_date": "1994-12-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202002265506",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-02-26",
+      "status_date": "2020-05-22",
+      "estimated_cost": 70000,
+      "revised_cost": 70000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901301643",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-30",
+      "status_date": "2019-03-11",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "new fire alarm system power supply smokes, pull stations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9704777",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-03-14",
+      "status_date": "1997-11-19",
+      "estimated_cost": 40000,
+      "description": "fire alarm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9606576",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-04-17",
+      "status_date": "1998-04-23",
+      "estimated_cost": 1250000,
+      "description": "rehabilitate bldg ext/int/renovation of kitch/bathrms/roofin",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8711800",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-08-18",
+      "status_date": "1988-02-10",
+      "estimated_cost": 8000,
+      "description": "repair fire damage to one unit, door & windows, no structural",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1987–2020",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MCALLISTER&street_type=ST&address_number=250",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0347006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0347&lot=006",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0347006",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-04-07-n491",
+      "name": "Building and Engineering News, 7 April 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n491/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-04-07",
+      "kind": "construction",
+      "description": "A permit was sought for a five-storey Class C reinforced concrete building of 34 apartments, estimated at $60,000. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1923-04-07-n491"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

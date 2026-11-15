@@ -1,0 +1,129 @@
+{
+  "address": "1169–1171 Bay Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/bay-street/1169/",
+  "apn": "0474017",
+  "block": "0474",
+  "lot": "017",
+  "eas_baseid": "470912",
+  "coordinates": {
+    "lat": 37.80371,
+    "lng": -122.426281
+  },
+  "address_range": "1169–1171",
+  "street_numbers_on_parcel": [
+    "1169",
+    "1171"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 3537,
+    "building_area_sqft": 3480,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1171 1169 BAY                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 98622,
+    "assessed_improvement_value": 92620
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200606073438",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-06-07",
+      "status_date": "2006-09-14",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "replacing old sinks, kitchen counters & cabinets at kitchen. non-structural.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9912870",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-06-28",
+      "status_date": "1999-10-28",
+      "estimated_cost": 4300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAY&street_type=ST&address_number=1169",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0474017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0474&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0474017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-04-05-n591",
+      "name": "Building and Engineering News, 5 April 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n591/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-17-n867",
+      "name": "Building and Engineering News, 17 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n867/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-04-05",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $6,000. Wm. Costello was named as contractor.",
+      "source": "building-engineering-news-1924-04-05-n591"
+    },
+    {
+      "date": "1924-05-17",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a two-storey frame building of flats with a basement, at $11,500. O. L. Baumbaugh was named as architect and Wm. Costello as contractor.",
+      "source": "building-engineering-news-1924-05-17-n867"
+    }
+  ],
+  "building": {
+    "builder": "Wm. Costello",
+    "architect": "O. L. Baumbaugh"
+  }
+}

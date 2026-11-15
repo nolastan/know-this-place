@@ -5,15 +5,18 @@ A residential district south of the Mission proper, built up in the first decade
 ## Streets documented so far
 
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 1938.
+- [Bosworth Street](bosworth-street/) — 1 building, built 1924.
 - [Capistrano Avenue](capistrano-avenue/) — 1 building, built 1925.
 - [Cayuga Avenue](cayuga-avenue/) — 1 building, built 1880.
 - [Danton Street](danton-street/) — 2 buildings, built 1928.
 - [Delano Avenue](delano-avenue/) — 1 building, built 1913.
+- [Ellington Avenue](ellington-avenue/) — 1 building, built 1924.
 - [Francis Street](francis-street/) — 1 building, built 1908.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1929.
 - [Gloria Court](gloria-court/) — 2 buildings, built 1927.
 - [Harrington Street](harrington-street/) — A 1908 house recorded as Jerry Garcia's home with his grandparents after 1947.
 - [Lawrence Avenue](lawrence-avenue/) — 1 building, built 1900.
+- [Milton Street](milton-street/) — 1 building, built 1923.
 - [Mission Street](mission-street/) — 1 building, built 1963.
 - [Norton Street](norton-street/) — 1 building, built 1906.
 - [Ocean Avenue](ocean-avenue/) — 1 building, built 1916.
@@ -31,6 +34,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Seneca Avenue](seneca-avenue/) — 1 building, built 1997.
 - [Sergeant John V Young Street](sergeant-john-v-young-street/) — The Ingleside police station, built 1909-1910 on land ceded from Balboa Park.
 - [Sickles Avenue](sickles-avenue/) — 1 building, built 1922.
+- [Wanda Street](wanda-street/) — 1 building, built 1923.
 - [Wilson Street](wilson-street/) — 1 building, built 1925.
 
 ## Parks and public spaces

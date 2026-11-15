@@ -1,0 +1,136 @@
+{
+  "address": "1430 Funston Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/funston-avenue/1430/",
+  "apn": "1841028",
+  "block": "1841",
+  "lot": "028",
+  "eas_baseid": "320174",
+  "coordinates": {
+    "lat": 37.761378,
+    "lng": -122.470093
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3311,
+    "basement_area_sqft": 711,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "1432 1430 FUNSTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 300242,
+    "assessed_improvement_value": 338021
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202109309525",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-30",
+      "status_date": "2021-11-12",
+      "estimated_cost": 9400,
+      "revised_cost": 9400,
+      "description": "reroofing. remove entire old roof and install new modified bitumen.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010163157",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2000-10-16",
+      "status_date": "2001-09-17",
+      "estimated_cost": 12500,
+      "revised_cost": 70000,
+      "description": "add stair to ground floor. finish with with new 2 bedrooms, game room & bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601098",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-01-29",
+      "status_date": "1986-03-19",
+      "estimated_cost": 190,
+      "description": "install one aluminum window in existing frame residence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8204227",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-05-27",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2130,
+      "revised_cost": 0,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1982–2021",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FUNSTON&street_type=AVE&address_number=1430",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1841028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1841&lot=028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1841028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-04-26-n732",
+      "name": "Building and Engineering News, 26 April 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n732/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-04-26",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of four on adjoining lots, estimated at $8,000 each. The owner was Dahlberg & Peterson.",
+      "source": "building-engineering-news-1924-04-26-n732"
+    }
+  ]
+}

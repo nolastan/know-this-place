@@ -1,0 +1,121 @@
+{
+  "address": "3822 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/folsom-street/3822/",
+  "apn": "5683002",
+  "block": "5683",
+  "lot": "002",
+  "eas_baseid": "382494",
+  "coordinates": {
+    "lat": 37.738632,
+    "lng": -122.413525
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 1751,
+    "building_area_sqft": 2405,
+    "basement_area_sqft": 655,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "WOO",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 3822 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 24454,
+    "assessed_improvement_value": 197942
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200212314393",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-12-31",
+      "status_date": "2004-12-03",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew app #200108105769",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108105769",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2001-08-10",
+      "status_date": "2001-12-22",
+      "estimated_cost": 1,
+      "revised_cost": 1500,
+      "description": "revision to approved appn. 9925781s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9925781S",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-12-08",
+      "status_date": "2002-05-04",
+      "estimated_cost": 50000,
+      "revised_cost": 90000,
+      "description": "vertical extension:convert 3rd fl roof to flat roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=3822",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5683002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5683&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5683002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-11-10-n788",
+      "name": "Building and Engineering News, 10 November 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n788/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-11-10",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: raising the dwelling for a private garage and constructing a two-room addition, estimated at $2,000. A. W. Richardson was named as architect and Joe Costello as contractor.",
+      "source": "building-engineering-news-1923-11-10-n788"
+    }
+  ]
+}

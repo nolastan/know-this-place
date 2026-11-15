@@ -1,0 +1,135 @@
+{
+  "address": "290 30th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/30th-avenue/290/",
+  "apn": "1389016",
+  "block": "1389",
+  "lot": "016",
+  "eas_baseid": "302258",
+  "coordinates": {
+    "lat": 37.7838,
+    "lng": -122.490045
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3300,
+    "building_area_sqft": 2440,
+    "basement_area_sqft": 240,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0290 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 537632,
+    "assessed_improvement_value": 371508
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202512151827",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-12-15",
+      "status_date": "2026-03-31",
+      "estimated_cost": 59081,
+      "revised_cost": 59081,
+      "description": "replacing 29 (e) aluminum windows w/ milgard c650 fiber glass. no change to original size, opening, or sytle. some windows st visible.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609026688",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-09-02",
+      "status_date": "2016-09-02",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 201208278264. all work is complete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201208278264",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-08-27",
+      "status_date": "2017-02-14",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "home remodel - kitchen, bath, structural upgrades per plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118161",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-27",
+      "status_date": "1991-12-05",
+      "estimated_cost": 9125,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=290",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1389016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1389&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1389016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-08-04-n116",
+      "name": "Building and Engineering News, 4 August 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2010cont/page/n116/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-08-04",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $8,000. Earle B. Bertz was named as architect. The owner was Allen & Co.",
+      "source": "building-engineering-news-1920-08-04-n116"
+    }
+  ],
+  "building": {
+    "architect": "Earle B. Bertz"
+  }
+}

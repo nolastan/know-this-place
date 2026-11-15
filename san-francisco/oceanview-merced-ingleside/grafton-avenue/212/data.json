@@ -1,0 +1,121 @@
+{
+  "address": "212 Grafton Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/grafton-avenue/212/",
+  "apn": "6981020",
+  "block": "6981",
+  "lot": "020",
+  "eas_baseid": "410507",
+  "coordinates": {
+    "lat": 37.720255,
+    "lng": -122.455451
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1166,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0212 GRAFTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 72491,
+    "assessed_improvement_value": 130506
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201409267423",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-26",
+      "status_date": "2015-08-28",
+      "estimated_cost": 200,
+      "revised_cost": 300,
+      "description": "replacing lathe plaster wall with sheetrock and install insulation as well (back room) whre back entry door was installed approx 200 sq.ft., revision to permit 201408295082.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408295082",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-29",
+      "status_date": "2015-08-28",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace existing 2 front entry door - 2nd floor and two rear entry door - 1st floor (garage)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8912346",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-07-14",
+      "status_date": "1990-08-17",
+      "estimated_cost": 16441,
+      "description": "vinyl siding (alside) to back & sides",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GRAFTON&street_type=AVE&address_number=212",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6981020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6981&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6981020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-03-17-n376",
+      "name": "Building and Engineering News, 17 March 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n376/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-03-17",
+      "kind": "construction",
+      "description": "A permit was sought for a one-and-a-half-storey frame dwelling with a basement, estimated at $4,000. Irwin Reichel was named as architect.",
+      "source": "building-engineering-news-1923-03-17-n376"
+    }
+  ],
+  "building": {
+    "architect": "Irwin Reichel"
+  }
+}

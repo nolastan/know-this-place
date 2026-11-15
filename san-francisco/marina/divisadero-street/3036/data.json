@@ -1,0 +1,135 @@
+{
+  "address": "3036 Divisadero Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/divisadero-street/3036/",
+  "apn": "0944016",
+  "block": "0944",
+  "lot": "016",
+  "eas_baseid": "291062",
+  "coordinates": {
+    "lat": 37.797766,
+    "lng": -122.442
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 5301,
+    "building_area_sqft": 4440,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "3038 3036 DIVISADERO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2327500,
+    "assessed_improvement_value": 997500,
+    "last_sale_date": "2024-09-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9707975",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-05-02",
+      "status_date": "1997-06-26",
+      "estimated_cost": 9800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9202935",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-02-26",
+      "status_date": "1992-07-31",
+      "estimated_cost": 423,
+      "revised_cost": 423,
+      "description": "alterations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9124161",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-12-24",
+      "status_date": "1993-02-18",
+      "estimated_cost": 44000,
+      "description": "install new stucco and brick facade on street facade of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9123712",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-12-16",
+      "status_date": "1992-02-05",
+      "estimated_cost": 4000,
+      "description": "removal of brick facade to eliminate safety hazard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1991–2020",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DIVISADERO&street_type=ST&address_number=3036",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0944016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0944&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0944016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-03-n775",
+      "name": "Building and Engineering News, 3 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n775/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-05-03",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $16,000.",
+      "source": "building-engineering-news-1924-05-03-n775"
+    }
+  ]
+}

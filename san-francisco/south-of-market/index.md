@@ -28,6 +28,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Folsom Street](folsom-street/) — 35 buildings, built 1906–1988; 4 in the SoMa LGBTQ Historic District.
 - [Fourth Street](4th-street/) — 26 buildings, built 1907–2023; 1 in the SoMa LGBTQ Historic District.
 - [Freelon Street](freelon-street/) — 13 buildings, built 1907–1988.
+- [Gilbert Street](gilbert-street/) — 1 building, built 1919.
 - [Grace Street](grace-street/) — 1 building, built 1900; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Hallam Street](hallam-street/) — 3 buildings, built 1989–1991.
 - [Harriet Street](harriet-street/) — 1 building, built 1921; 1 in the SoMa LGBTQ Historic District.

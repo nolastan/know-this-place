@@ -1,0 +1,140 @@
+{
+  "address": "1221 Mission Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/mission-street/1221/",
+  "apn": "3728082",
+  "block": "3728",
+  "lot": "082",
+  "eas_baseid": "365243",
+  "coordinates": {
+    "lat": 37.776946,
+    "lng": -122.413397
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2000,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 1221 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 507182,
+    "assessed_improvement_value": 105992,
+    "last_sale_date": "1999-12-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200003104080",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-03-10",
+      "status_date": "2000-07-05",
+      "revised_cost": 10000,
+      "description": "new hvac system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002071273",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-07",
+      "status_date": "2000-07-05",
+      "revised_cost": 100000,
+      "description": "interior demo; new interior partitions & walls; new accessible restrooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015242",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-08-01",
+      "status_date": "1990-11-07",
+      "estimated_cost": 900,
+      "description": "parapet corrective (parapet braces)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8312615",
+      "type": "sign - erect",
+      "status": "complete",
+      "filed": "1983-12-12",
+      "status_date": "1984-03-29",
+      "estimated_cost": 1400,
+      "description": "erect sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8301932",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-03-09",
+      "status_date": "1983-12-02",
+      "estimated_cost": 55000,
+      "description": "change garage into deli",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=1221",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3728082&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3728&lot=082",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3728082",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-02-25-n187",
+      "name": "Building and Engineering News, 25 February 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2020cont/page/n187/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-02-25",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey concrete machine shop, estimated at $6,000. Edward E. Young was named as architect.",
+      "source": "building-engineering-news-1920-02-25-n187"
+    }
+  ],
+  "building": {
+    "architect": "Edward E. Young"
+  }
+}

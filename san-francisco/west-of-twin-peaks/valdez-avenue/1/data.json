@@ -1,0 +1,188 @@
+{
+  "address": "1 Valdez Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/west-of-twin-peaks/valdez-avenue/1/",
+  "apn": "3136010",
+  "block": "3136",
+  "lot": "010",
+  "eas_baseid": "354807",
+  "coordinates": {
+    "lat": 37.728957,
+    "lng": -122.45503
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 4382,
+    "building_area_sqft": 1310,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Westwood Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0001 VALDEZ              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 674940,
+    "assessed_improvement_value": 349437,
+    "last_sale_date": "2012-11-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202405152170",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-15",
+      "status_date": "2024-05-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201808177724 rename ground fl bedroom to office. ref renewal 202401244524",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202403137747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-13",
+      "status_date": "2024-04-17",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202401244524",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-24",
+      "status_date": "2024-05-20",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 2019-0128-1375 & 2018-0817-7724. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901281375",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2019-01-28",
+      "status_date": "2023-06-29",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 201808177724. revision to footing details referenced on sheet a2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808177724",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2018-08-17",
+      "status_date": "2023-06-29",
+      "estimated_cost": 38000,
+      "revised_cost": 70000,
+      "description": "add a family foom, a bedroom, and a full bath on 1st floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201212075727",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-12-07",
+      "status_date": "2013-01-04",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "existing bathroom remodeling, new bath tub, new sink, new toilet, and new electric. install sub -panel 80 amps, 7 ft x 8 ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308081618",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-08-08",
+      "status_date": "2003-08-08",
+      "estimated_cost": 13710,
+      "revised_cost": 13710,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307169649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-07-16",
+      "status_date": "2003-12-30",
+      "estimated_cost": 24000,
+      "revised_cost": 24000,
+      "description": "repair dryrot as. report #41078 items 4a only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8409953",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-09-14",
+      "status_date": "1984-12-26",
+      "estimated_cost": 1950,
+      "description": "remove sunporch enclose and repair windows.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VALDEZ&street_type=AVE&address_number=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3136010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3136&lot=010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3136010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1922-12-23-n850",
+      "name": "Building and Engineering News, 23 December 1922",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2222cont/page/n850/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922-12-23",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. Chas. F. Strothoff was named as architect. The owner was Nelson Bros.",
+      "source": "building-engineering-news-1922-12-23-n850"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

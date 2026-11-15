@@ -1,0 +1,111 @@
+{
+  "address": "2736 Ulloa Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/ulloa-street/2736/",
+  "apn": "2397021",
+  "block": "2397",
+  "lot": "021",
+  "eas_baseid": "337359",
+  "coordinates": {
+    "lat": 37.740975,
+    "lng": -122.485919
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 3333,
+    "building_area_sqft": 2005,
+    "basement_area_sqft": 705,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2736 ULLOA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 268701,
+    "assessed_improvement_value": 230061,
+    "last_sale_date": "1994-07-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9503504",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-03-13",
+      "status_date": "1995-07-13",
+      "estimated_cost": 450,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9416708",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-10-17",
+      "status_date": "1995-02-23",
+      "estimated_cost": 25000,
+      "description": "grd flr remodel, termite repair, kitchen bath remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ULLOA&street_type=ST&address_number=2736",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2397021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2397&lot=021",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2397021",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-03-29-n550",
+      "name": "Building and Engineering News, 29 March 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n550/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-03-29",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $4,000 each. Chas. F. Strothoff was named as architect. The owner was the Parkside Realty Co.",
+      "source": "building-engineering-news-1924-03-29-n550"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

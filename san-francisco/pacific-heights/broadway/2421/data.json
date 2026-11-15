@@ -1,0 +1,124 @@
+{
+  "address": "2421 Broadway, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/broadway/2421/",
+  "apn": "0583018",
+  "block": "0583",
+  "lot": "018",
+  "eas_baseid": "285742",
+  "coordinates": {
+    "lat": 37.793664,
+    "lng": -122.437272
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 4125,
+    "building_area_sqft": 2000,
+    "lot_depth_ft": 37.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 2421 BROADWAY              0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 640353,
+    "assessed_improvement_value": 582848
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202408279517",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-27",
+      "status_date": "2024-10-16",
+      "estimated_cost": 31007,
+      "revised_cost": 31007,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201108172678",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-17",
+      "status_date": "2012-01-11",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "repair front deck & leaking front doors, repair to front deck is less than 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9415642S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-09-27",
+      "status_date": "1996-03-28",
+      "estimated_cost": 180000,
+      "description": "vertical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BROADWAY&street_type=&address_number=2421",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0583018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0583&lot=018",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0583018",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-10-02-n325",
+      "name": "Building and Engineering News, 2 October 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2010cont/page/n325/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-10-02",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $13,542. Lewis P. Hobart was named as architect and Chas. Stockholm & Sons as contractors.",
+      "source": "building-engineering-news-1920-10-02-n325"
+    }
+  ],
+  "building": {
+    "architect": "Lewis P. Hobart",
+    "builder": "Chas. Stockholm & Sons"
+  }
+}

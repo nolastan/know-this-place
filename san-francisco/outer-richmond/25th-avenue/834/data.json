@@ -1,0 +1,140 @@
+{
+  "address": "834 25th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/25th-avenue/834/",
+  "apn": "1667041",
+  "block": "1667",
+  "lot": "041",
+  "eas_baseid": "312976",
+  "coordinates": {
+    "lat": 37.773759,
+    "lng": -122.483948
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2240,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0834 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1559975,
+    "assessed_improvement_value": 668561,
+    "last_sale_date": "2022-05-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202303224137",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-22",
+      "status_date": "2023-03-27",
+      "estimated_cost": 9500,
+      "revised_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202208241138",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-24",
+      "status_date": "2024-05-14",
+      "estimated_cost": 150000,
+      "revised_cost": 180000,
+      "description": "ground floor: add media room & replace garage door; 2/f: reconfigure & remodel ktichen, convert full bath to half bath, add deck & stairs are rear; 3/f: add primary bath & walk-in closet, reconfigure & remodel bath 2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201010223610",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-10-22",
+      "status_date": "2010-12-09",
+      "estimated_cost": 5000,
+      "revised_cost": 8500,
+      "description": "replacing 17 vinyl windows in front of building & rear of building. original windows were wood. u value less than .40.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706042941",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-06-04",
+      "status_date": "2007-06-04",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2007–2023",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=834",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1667041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1667&lot=041",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1667041",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-06-02-n847",
+      "name": "Building and Engineering News, 2 June 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n847/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-06-02",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $4,000. Andrew H. Knoll was named as architect.",
+      "source": "building-engineering-news-1923-06-02-n847"
+    }
+  ],
+  "building": {
+    "architect": "Andrew H. Knoll"
+  }
+}

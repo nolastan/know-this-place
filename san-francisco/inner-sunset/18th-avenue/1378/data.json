@@ -1,0 +1,101 @@
+{
+  "address": "1378 18th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/18th-avenue/1378/",
+  "apn": "1772005O",
+  "block": "1772",
+  "lot": "005O",
+  "eas_baseid": "316905",
+  "coordinates": {
+    "lat": 37.762206,
+    "lng": -122.475627
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1450,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1378 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 251944,
+    "assessed_improvement_value": 226740,
+    "last_sale_date": "1995-04-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200107183926",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-18",
+      "status_date": "2001-09-11",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "repair front stucco wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=1378",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1772005O&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1772&lot=005O",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1772005O",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1916-04-12-n518",
+      "name": "Building and Engineering News, 12 April 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1616cont/page/n518/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916-04-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame residence. L. E. Peyser was named as architect.",
+      "source": "building-engineering-news-1916-04-12-n518"
+    }
+  ],
+  "building": {
+    "architect": "L. E. Peyser"
+  }
+}

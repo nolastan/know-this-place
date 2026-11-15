@@ -1,0 +1,117 @@
+{
+  "address": "932 Geneva Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/geneva-avenue/932/",
+  "apn": "6411026",
+  "block": "6411",
+  "lot": "026",
+  "eas_baseid": "397634",
+  "coordinates": {
+    "lat": 37.715931,
+    "lng": -122.440715
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1392,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0934 0932 GENEVA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 124290,
+    "assessed_improvement_value": 124290
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305157747",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-15",
+      "status_date": "2023-11-02",
+      "estimated_cost": 800,
+      "revised_cost": 1500,
+      "description": "accessible business entrrance program per ord 51-16 abe 201912109592. addition new 10\" ss kick, hold open device, req'd signage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8609480",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-08-06",
+      "status_date": "1986-09-10",
+      "estimated_cost": 10500,
+      "description": "provide a 12' canopy hood to replace existing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1986–2023",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GENEVA&street_type=AVE&address_number=932",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6411026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6411&lot=026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6411026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-09-29-n538",
+      "name": "Building and Engineering News, 29 September 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n538/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-09-29",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame building of stores, estimated at $4,000. C. O. Clausen was named as architect and A. A. Wesendunk as contractor.",
+      "source": "building-engineering-news-1923-09-29-n538"
+    }
+  ],
+  "building": {
+    "architect": "C. O. Clausen",
+    "builder": "A. A. Wesendunk"
+  }
+}

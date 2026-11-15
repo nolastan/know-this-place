@@ -1,0 +1,178 @@
+{
+  "address": "550 Euclid Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/euclid-avenue/550/",
+  "apn": "1037021",
+  "block": "1037",
+  "lot": "021",
+  "eas_baseid": "293400",
+  "coordinates": {
+    "lat": 37.784179,
+    "lng": -122.455422
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 5222,
+    "building_area_sqft": 2965,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Jordan Park/Laurel Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 0550 EUCLID              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1905718,
+    "assessed_improvement_value": 1321033,
+    "last_sale_date": "2001-07-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Jordan Park Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1920",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202209152548",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-15",
+      "status_date": "2022-10-04",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611213232",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-21",
+      "status_date": "2017-03-13",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "inkind replacement of 2 wood windows (arched top and bottom); (1) arched fixed sash & (1) fixed sash; replace w/wood sash x2 windows on porch at front of building facing street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707278042",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-27",
+      "status_date": "2007-12-21",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "interior remodel of kitchen area including converting a bedroom to a family room on second floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121438",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-11-12",
+      "status_date": "1995-02-06",
+      "estimated_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601421",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-02-06",
+      "status_date": "1987-09-03",
+      "estimated_cost": 1350,
+      "description": "close in existing deck",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1986–2022",
+    "shown_on_page": 5,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EUCLID&street_type=AVE&address_number=550",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1037021&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1037&lot=021",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1037021",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45542194824553%2037.7841793765312)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1922-09-02-n327",
+      "name": "Building and Engineering News, 2 September 1922",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2222cont/page/n327/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1922-09-09-n358",
+      "name": "Building and Engineering News, 9 September 1922",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2222cont/page/n358/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922-09-02",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $15,000. Erle J. Osborne was named as architect and Ed. Zinkand & Son as contractors.",
+      "source": "building-engineering-news-1922-09-02-n327"
+    },
+    {
+      "date": "1922-09-09",
+      "kind": "construction",
+      "description": "A building contract was recorded for all work except plumbing, heating, painting, electric fixtures, mantel and wall bed for a two-storey residence with a basement. Erle J. Osborne was named as architect.",
+      "source": "building-engineering-news-1922-09-09-n358"
+    }
+  ],
+  "building": {
+    "architect": "Erle J. Osborne",
+    "builder": "Ed. Zinkand & Son"
+  }
+}

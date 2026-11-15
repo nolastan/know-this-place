@@ -1,0 +1,136 @@
+{
+  "address": "466–468 18th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/18th-avenue/466/",
+  "apn": "1527031",
+  "block": "1527",
+  "lot": "031",
+  "eas_baseid": "306903",
+  "coordinates": {
+    "lat": 37.779146,
+    "lng": -122.476816
+  },
+  "address_range": "466–468",
+  "street_numbers_on_parcel": [
+    "466",
+    "468"
+  ],
+  "parcel": {
+    "year_built": 1921,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 6,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2450,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0468 0466 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 655730,
+    "assessed_improvement_value": 535062
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202206156436",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-06-15",
+      "status_date": "2023-09-26",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "1)replace 5 living room windows with new custom wood framed windows that match the original windows as are present in the 2nd story. 2) replace the entry door with a custom wood and glass door match extg. 3) replace window in the southern light well. comply with 202289216.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903276410",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-27",
+      "status_date": "2025-10-09",
+      "estimated_cost": 30000,
+      "revised_cost": 120000,
+      "description": "3/f: reconfigure (e) floor layout: covert (e) 2 bedroom apt to a 3 bedroom: relocate kitchen, covert (e) kitchen to bedroom. new non-loading partitions. add 2 full bathroom. infill rear windows. no exterior work visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611283571",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-28",
+      "status_date": "2016-12-30",
+      "estimated_cost": 10045,
+      "revised_cost": 10045,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8408233",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-07-30",
+      "status_date": "1984-12-12",
+      "estimated_cost": 3900,
+      "description": "all work to conform with s.f. building code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=466",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1527031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1527&lot=031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1527031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1921-06-25-n762",
+      "name": "Building and Engineering News, 25 June 1921",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer21119cont/page/n762/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1921-06-25",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of two on adjoining lots, estimated at $7,000 each.",
+      "source": "building-engineering-news-1921-06-25-n762"
+    }
+  ]
+}

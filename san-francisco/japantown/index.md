@@ -4,6 +4,7 @@ The city's Japantown analysis neighborhood, the blocks around Post and Buchanan 
 
 ## Streets documented so far
 
+- [Baker Street](baker-street/) — 1 building, built 1923.
 - [Buchanan Street](buchanan-street/) — 1 building, built 1959.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1948.
 - [Fillmore Street](fillmore-street/) — 1 building, built 1880.

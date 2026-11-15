@@ -1,0 +1,129 @@
+{
+  "address": "6839–6841 California Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/california-street/6839/",
+  "apn": "1403033",
+  "block": "1403",
+  "lot": "033",
+  "eas_baseid": "459264",
+  "coordinates": {
+    "lat": 37.783362,
+    "lng": -122.491054
+  },
+  "address_range": "6839–6841",
+  "street_numbers_on_parcel": [
+    "6839",
+    "6841"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2800,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "6841 6839 CALIFORNIA          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53571,
+    "assessed_improvement_value": 83603
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200107244347",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-07-24",
+      "status_date": "2002-02-21",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remodel 1 kitchen all new cabinets appliances/finishes no structural changes in wall / opening layou",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005301301",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-05-30",
+      "status_date": "2000-09-19",
+      "estimated_cost": 7788,
+      "revised_cost": 7788,
+      "description": "replace 13 windows, size for size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002081332",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-02-08",
+      "status_date": "2000-06-08",
+      "revised_cost": 1200,
+      "description": "install foundation bolts 5/8\" x 12\"",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2000–2015",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CALIFORNIA&street_type=ST&address_number=6839",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1403033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1403&lot=033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1403033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-10-n818",
+      "name": "Building and Engineering News, 10 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n818/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-05-10",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $8,000.",
+      "source": "building-engineering-news-1924-05-10-n818"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "address": "80 San Fernando Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/san-fernando-way/80/",
+  "apn": "3069006",
+  "block": "3069",
+  "lot": "006",
+  "eas_baseid": "353203",
+  "coordinates": {
+    "lat": 37.735044,
+    "lng": -122.470008
+  },
+  "parcel": {
+    "year_built": 1920,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 4,
+    "lot_area_sqft": 11979,
+    "building_area_sqft": 3536,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "St. Francis Wood",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0080 SAN FERNANDO        WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2985651,
+    "assessed_improvement_value": 1279564,
+    "last_sale_date": "2019-07-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "St. Francis Wood Historic District",
+    "california_register_status": "Listed",
+    "national_register_status": "Listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1912–1954",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202511109280",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2026-02-12",
+      "status_date": "2026-02-12",
+      "estimated_cost": 750000,
+      "revised_cost": 928896,
+      "description": "new basement excavation & replace (e) foundation walls. rebuild main level sunroom, trellis & chemney in same location (like for like). re-frame & strenhthen roof framing. replace garage door. new exterior windows, doors in (e) locations, new exterior paint. new partitions. interior finishes,",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202108055844",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-08-05",
+      "status_date": "2021-08-24",
+      "estimated_cost": 42000,
+      "revised_cost": 42000,
+      "description": "16 windows replcaement. back of te house. (kid office guest) room: all casement wo=indows.place in kind. marvin ultimate serie. aluminun clad wood windows, tiltle 24. no structural work. same size. same location u=factor. 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202001232563",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-01-23",
+      "status_date": "2020-02-18",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "install new flexible ductwork in attic and crawl space. to replace existing ducting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614104",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-02",
+      "status_date": "1997-02-02",
+      "estimated_cost": 14250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20FERNANDO&street_type=WAY&address_number=80",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3069006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3069&lot=006",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3069006",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.47000761133113%2037.735044086922166)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-06-30-n647",
+      "name": "Building and Engineering News, 30 June 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2020cont/page/n647/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-06-30",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence and garage with a basement, estimated at $19,000. Henry H. Gutterson was named as architect and John Morton as contractor.",
+      "source": "building-engineering-news-1920-06-30-n647"
+    }
+  ],
+  "building": {
+    "architect": "Henry H. Gutterson",
+    "builder": "John Morton"
+  }
+}

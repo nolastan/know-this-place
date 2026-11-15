@@ -1,0 +1,95 @@
+{
+  "address": "333 4th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/4th-avenue/333/",
+  "apn": "1436005",
+  "block": "1436",
+  "lot": "005",
+  "eas_baseid": "303813",
+  "coordinates": {
+    "lat": 37.782407,
+    "lng": -122.462564
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 5,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 5,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 4190,
+    "basement_area_sqft": 600,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0333 04TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 97879,
+    "assessed_improvement_value": 154487
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2007–2019",
+    "shown_on_page": 0,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=04TH&street_type=AVE&address_number=333",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1436005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1436&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1436005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-02-17-n221",
+      "name": "Building and Engineering News, 17 February 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n221/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-02-17",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four apartments with a basement, estimated at $9,000. C. O. Clausen was named as architect.",
+      "source": "building-engineering-news-1923-02-17-n221"
+    }
+  ],
+  "building": {
+    "architect": "C. O. Clausen"
+  }
+}

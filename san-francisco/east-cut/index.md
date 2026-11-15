@@ -5,9 +5,12 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 ## Streets documented so far
 
 - [1st Street](1st-street/) — 1 building, built 1988.
+- [Battery Street](battery-street/) — 1 building, built 1918.
 - [Beale Street](beale-street/) — 2 buildings, built 1967.
 - [Brannan Street](brannan-street/) — 9 buildings, built 1908–1959; 4 in the South End Historic District.
 - [Bryant Street](bryant-street/) — 28 buildings, built 1906–2015.
+- [Drumm Street](drumm-street/) — 1 building, built 1923.
+- [Ellis Street](ellis-street/) — 1 building, built 1910; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Federal Street](federal-street/) — 2 buildings, built 1912–1923; 2 in the South End Historic District.
 - [Folsom Street](folsom-street/) — 1 building.
 - [Fremont Street](fremont-street/) — 3 buildings, built 1928–2018.
@@ -23,12 +26,16 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 - [Market Street](market-street/) — 5 buildings, built 1964–1981.
 - [Minna Street](minna-street/) — 2 buildings, built 1910–1999; 1 in the New Montgomery-Mission-Second Street Conservation District.
 - [Mission Street](mission-street/) — 6 buildings, built 1981–2015.
+- [Montgomery Street](montgomery-street/) — 1 building, built 1921.
 - [Natoma Street](natoma-street/) — 7 buildings, built 1907–1971; 6 in the New Montgomery-Mission-Second Street Conservation District.
 - [New Montgomery Street](new-montgomery-street/) — 10 buildings, built 1901–1988; 10 in the New Montgomery-Mission-Second Street Conservation District.
 - [Perry Street](perry-street/) — 6 buildings, built 1900–2020.
+- [Pine Street](pine-street/) — 1 building, built 1917; 1 in the Pine-Sansome Conservation District.
+- [Post Street](post-street/) — 1 building, built 1923; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Second Street](2nd-street/) — 6 buildings, built 1900–2016; 1 in the New Montgomery-Mission-Second Street Conservation District.
 - [Shaw Alley](shaw-alley/) — 1 building, built 1906.
 - [South Park](south-park/) — 1 building, built 1907; 1 in the South Park Historic District.
+- [Spear Street](spear-street/) — 1 building, built 1918.
 - [Stevenson Street](stevenson-street/) — 2 buildings, built 1986–1989.
 - [Stillman Street](stillman-street/) — 8 buildings, built 1906–1944.
 - [Sutter Street](sutter-street/) — 2 buildings, built 1907–1922.

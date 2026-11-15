@@ -9,8 +9,10 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Armstrong Avenue](armstrong-avenue/) — 1 building, built 1925.
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 1 building, built 1927.
 - [Bishop Street](bishop-street/) — 1 building, built 1922.
+- [Boutwell Street](boutwell-street/) — 1 building, built 1924.
 - [Bridgeview Drive](bridgeview-drive/) — 1 building, built 1942.
 - [Brussels Street](brussels-street/) — 1 building, built 1900.
+- [Carr Street](carr-street/) — 1 building, built 1916.
 - [Carroll Avenue](carroll-avenue/) — 1 building, built 2016.
 - [Cashmere Street](cashmere-street/) — 1 building.
 - [Cesar Chavez Street](cesar-chavez-street/) — 1 building, built 1900.

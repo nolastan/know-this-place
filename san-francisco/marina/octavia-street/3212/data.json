@@ -1,0 +1,103 @@
+{
+  "address": "3212 Octavia Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/octavia-street/3212/",
+  "apn": "0481022",
+  "block": "0481",
+  "lot": "022",
+  "eas_baseid": "283111",
+  "coordinates": {
+    "lat": 37.801947,
+    "lng": -122.429474
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1875,
+    "building_area_sqft": 2500,
+    "lot_depth_ft": 75,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "3214 3212 OCTAVIA             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 115428,
+    "assessed_improvement_value": 159568
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9714147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-07-29",
+      "status_date": "1997-08-07",
+      "estimated_cost": 11920,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1997–2018",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OCTAVIA&street_type=ST&address_number=3212",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0481022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0481&lot=022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0481022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-01-05-n36",
+      "name": "Building and Engineering News, 5 January 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n36/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-01-05",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of six on adjoining lots, estimated at $8,000 each.",
+      "source": "building-engineering-news-1924-01-05-n36"
+    }
+  ]
+}

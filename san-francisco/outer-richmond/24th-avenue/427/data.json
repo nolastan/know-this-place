@@ -1,0 +1,118 @@
+{
+  "address": "427–429 24th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/24th-avenue/427/",
+  "apn": "1456004",
+  "block": "1456",
+  "lot": "004",
+  "eas_baseid": "455688",
+  "coordinates": {
+    "lat": 37.781499,
+    "lng": -122.484093
+  },
+  "address_range": "427–429",
+  "street_numbers_on_parcel": [
+    "427",
+    "429"
+  ],
+  "parcel": {
+    "year_built": 1917,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2800,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0429 0427 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 403118,
+    "assessed_improvement_value": 256833,
+    "last_sale_date": "1995-03-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200609111920",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-11",
+      "status_date": "2007-01-03",
+      "estimated_cost": 48000,
+      "revised_cost": 55000,
+      "description": "redplacement of (e) aluminum windows w/wood windows at front & vinyl , fill in 4 jwinddows openings at rear south wall. at rear, repair e( exterior rear stair landings, add 1 study rm, 1 master bath & 3 skylights on upper unit.relocateion of existing kitchen on upper unit , install of gypsom board",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503104",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-03-03",
+      "status_date": "1995-08-18",
+      "estimated_cost": 7300,
+      "description": "repair water damage to dry wall/replace 21 single glass wind",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=427",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1456004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1456&lot=004",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1456004",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-05-09-n580",
+      "name": "Building and Engineering News, 9 May 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1717cont/page/n580/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-05-09",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $4,200. Alfred Johnson was named as contractor.",
+      "source": "building-engineering-news-1917-05-09-n580"
+    }
+  ],
+  "building": {
+    "builder": "Alfred Johnson"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "address": "590 Monterey Boulevard, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/monterey-boulevard/590/",
+  "apn": "3093019",
+  "block": "3093",
+  "lot": "019",
+  "eas_baseid": "353937",
+  "coordinates": {
+    "lat": 37.73182,
+    "lng": -122.448633
+  },
+  "parcel": {
+    "year_built": 1923,
+    "stories": 1,
+    "rooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2500,
+    "use": "Commercial Misc",
+    "property_class": "Garages (Commercial)",
+    "construction_type_code": "C",
+    "zoning": "NC-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0590 MONTEREY            BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46130,
+    "assessed_improvement_value": 33659
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200511228844",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-11-22",
+      "status_date": "2005-11-30",
+      "estimated_cost": 14500,
+      "revised_cost": 14500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408202089",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-20",
+      "status_date": "2004-11-01",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "dyno pit installation and toilet room improvements phase ii",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200408101076",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-08-10",
+      "status_date": "2004-11-01",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "phase i. install foundation pads for xl-9 and sp-7 x lifts at the existing auto repair shop. partial",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2004–2009",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONTEREY&street_type=BLVD&address_number=590",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3093019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3093&lot=019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3093019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-11-17-n833",
+      "name": "Building and Engineering News, 17 November 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n833/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-11-17",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey reinforced concrete public garage, estimated at $2,500. Baumann & Jose were named as architects and J. K. Anderson as contractor.",
+      "source": "building-engineering-news-1923-11-17-n833"
+    }
+  ],
+  "building": {
+    "architect": "Baumann & Jose",
+    "builder": "J. K. Anderson"
+  }
+}

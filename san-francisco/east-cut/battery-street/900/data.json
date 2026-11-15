@@ -1,0 +1,153 @@
+{
+  "address": "900 Battery Street, San Francisco, CA 94111",
+  "path": "/san-francisco/east-cut/battery-street/900/",
+  "apn": "0136004",
+  "block": "0136",
+  "lot": "004",
+  "eas_baseid": "278434",
+  "coordinates": {
+    "lat": 37.799847,
+    "lng": -122.400945
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 5,
+    "lot_area_sqft": 17967.13,
+    "building_area_sqft": 71772,
+    "lot_depth_ft": 30.67,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "C",
+    "zoning": "C2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Waterfront",
+    "analysis_neighborhood": "Financial District/South Beach",
+    "property_location_raw": "0000 0900 BATTERY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 709279,
+    "assessed_improvement_value": 704662
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1917",
+    "survey_name": "BUSVAN STORAGE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Northeast Waterfront Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "[Unofficial] 1848–1960s",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201308275339",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2013-08-27",
+      "status_date": "2015-07-23",
+      "estimated_cost": 1,
+      "description": "change in use for the (e) vacant 3 story (plus 1 basement) building from s-1 warehouse to b office space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808942",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-18",
+      "status_date": "1999-05-26",
+      "estimated_cost": 25000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9321897",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-12-14",
+      "status_date": "1995-01-11",
+      "estimated_cost": 27000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103755",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-03-08",
+      "status_date": "1992-03-30",
+      "estimated_cost": 14000,
+      "description": "parapet strengthening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8401662",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-02-14",
+      "status_date": "1984-07-12",
+      "estimated_cost": 1470,
+      "description": "add 9 sprinklers to new offices on third floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BATTERY&street_type=ST&address_number=900",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0136004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0136&lot=004",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0136004",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40094510305609%2037.79984659674074)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-03-28-n373",
+      "name": "Building and Engineering News, 28 March 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1717cont/page/n373/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-03-28",
+      "kind": "building contract",
+      "description": "A building contract was recorded for electrical work for a two-storey and basement concrete warehouse, at $1,250.",
+      "source": "building-engineering-news-1917-03-28-n373"
+    }
+  ]
+}

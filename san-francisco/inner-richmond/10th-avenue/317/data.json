@@ -1,0 +1,145 @@
+{
+  "address": "317–319 10th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/10th-avenue/317/",
+  "apn": "1442004",
+  "block": "1442",
+  "lot": "004",
+  "eas_baseid": "304002",
+  "coordinates": {
+    "lat": 37.782318,
+    "lng": -122.469
+  },
+  "address_range": "317–319",
+  "street_numbers_on_parcel": [
+    "317",
+    "319"
+  ],
+  "parcel": {
+    "year_built": 1921,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3250,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0319 0317 10TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1056006,
+    "assessed_improvement_value": 452574,
+    "last_sale_date": "2023-03-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200607176691",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-17",
+      "status_date": "2006-07-17",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200308061305",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-08-06",
+      "status_date": "2004-03-17",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "dryrot repair in front of bldg. approx. 100 s.f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305053754",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-05-05",
+      "status_date": "2004-03-17",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "replace stucco at front left side corner. remove & replace 100 sqf of stucco \"in kind\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8812336",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-08-22",
+      "status_date": "1988-11-07",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1988–2015",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=10TH&street_type=AVE&address_number=317",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1442004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1442&lot=004",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1442004",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1922-01-14-n60",
+      "name": "Building and Engineering News, 14 January 1922",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer222cont/page/n60/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922-01-14",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $8,000. Meyer Bros. were named as contractors.",
+      "source": "building-engineering-news-1922-01-14-n60"
+    }
+  ],
+  "building": {
+    "builder": "Meyer Bros."
+  }
+}

@@ -47,6 +47,7 @@ and the upper reaches of Grant Avenue, which was formerly Dupont Street.
 - [Romolo Place](romolo-place/) — 1 building, built 1912.
 - [Ross Alley](ross-alley/) — 1 building, built 1906; 1 in the Chinatown Historic District.
 - [Sansome Street](sansome-street/) — 2 buildings, built 1922–1983; 2 in the Jackson Square Historic District Extension.
+- [Sonoma Street](sonoma-street/) — 1 building, built 1909.
 - [Spofford Street](spofford-street/) — 3 buildings, built 1907–1908; 3 in the Chinatown Historic District.
 - [Stockton Street](stockton-street/) — 13 buildings, built 1900–1958; 4 in the Washington Square Historic District.
 - [Telegraph Hill Boulevard](telegraph-hill-boulevard/) — 3 buildings, built 1936–1940; 3 in the Gardner Dailey/Telegraph Hill Historic District.

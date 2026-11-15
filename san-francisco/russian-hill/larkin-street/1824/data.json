@@ -1,0 +1,105 @@
+{
+  "address": "1824 Larkin Street, San Francisco, CA 94109",
+  "path": "/san-francisco/russian-hill/larkin-street/1824/",
+  "apn": "0185022",
+  "block": "0185",
+  "lot": "022",
+  "eas_baseid": "279534",
+  "coordinates": {
+    "lat": 37.794739,
+    "lng": -122.41947
+  },
+  "parcel": {
+    "year_built": 1906,
+    "units": 7,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 7,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 5325,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "0000 1824 LARKIN              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 469140,
+    "assessed_improvement_value": 694331,
+    "last_sale_date": "1988-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1906",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202307121939",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-07-12",
+      "status_date": "2023-09-29",
+      "estimated_cost": 26600,
+      "revised_cost": 27121,
+      "description": "upgrade existing local fire alarm to comply with sffc section 1106.7.6.1",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2011–2023",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LARKIN&street_type=ST&address_number=1824",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0185022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0185&lot=022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0185022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-10-03-n355",
+      "name": "Building and Engineering News, 3 October 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1727cont/page/n355/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-10-03",
+      "kind": "alteration",
+      "description": "A building contract was recorded for alterations: a two-storey flat building altered into three-storey apartments, all work except wall beds, electric fixtures and shades, at $9,100. Rousseau & Rousseau were named as architects and Theo. Hoin as contractor.",
+      "source": "building-engineering-news-1917-10-03-n355"
+    }
+  ]
+}

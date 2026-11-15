@@ -1,0 +1,135 @@
+{
+  "address": "479–481 17th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/17th-avenue/479/",
+  "apn": "1527020",
+  "block": "1527",
+  "lot": "020",
+  "eas_baseid": "473674",
+  "coordinates": {
+    "lat": 37.778959,
+    "lng": -122.476386
+  },
+  "address_range": "479–481",
+  "street_numbers_on_parcel": [
+    "479",
+    "481"
+  ],
+  "parcel": {
+    "year_built": 1921,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3156,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0481 0479 17TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 869786,
+    "assessed_improvement_value": 579854,
+    "last_sale_date": "2005-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200809121488",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-09-12",
+      "status_date": "2010-03-09",
+      "estimated_cost": 15300,
+      "revised_cost": 15300,
+      "description": "replace kitchen cabinets, kitchen sink and appliances. replace 11 windows at backside of house. replace main water line. not visible from street. comp 200870197-bid.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506134959",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-06-13",
+      "status_date": "2017-07-05",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 200503248330. reduce scope of work. not removing old plaster in 5 rooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M32690",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-05-31",
+      "status_date": "2005-05-31",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503248330",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-03-24",
+      "status_date": "2017-06-16",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "remove old plaster in 5 rooms/insulate exterior walls/install sheet rock top unit/remodel kchn/bthrm",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=AVE&address_number=479",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1527020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1527&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1527020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1921-07-16-n91",
+      "name": "Building and Engineering News, 16 July 1921",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2921cont/page/n91/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1921-07-16",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000.",
+      "source": "building-engineering-news-1921-07-16-n91"
+    }
+  ]
+}

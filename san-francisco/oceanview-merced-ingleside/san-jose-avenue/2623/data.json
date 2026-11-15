@@ -1,0 +1,141 @@
+{
+  "address": "2623 San Jose Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/oceanview-merced-ingleside/san-jose-avenue/2623/",
+  "apn": "7063027",
+  "block": "7063",
+  "lot": "027",
+  "eas_baseid": "414123",
+  "coordinates": {
+    "lat": 37.716079,
+    "lng": -122.450038
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3275,
+    "building_area_sqft": 1125,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Oceanview",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 2623 SAN JOSE            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 504766,
+    "assessed_improvement_value": 216321,
+    "last_sale_date": "2014-10-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201505146332",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-05-14",
+      "status_date": "2015-05-20",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "revision to pa 2015 0109 5381. remove plumbing fixtures in bathroom on 1st floor change to storage room. n/a maher ordinance",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501095381",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2015-01-09",
+      "status_date": "2015-01-14",
+      "estimated_cost": 3000,
+      "revised_cost": 12000,
+      "description": "remove some non-bearing walls in 1st floor only. legalize bathroom in 1st floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812037679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-03",
+      "status_date": "2008-12-04",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019249",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-20",
+      "status_date": "1991-01-07",
+      "estimated_cost": 12000,
+      "revised_cost": 0,
+      "description": "remodel kitchen/remodel bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8508881",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-08-15",
+      "status_date": "1986-01-29",
+      "estimated_cost": 3500,
+      "description": "repair wall damaged",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20JOSE&street_type=AVE&address_number=2623",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7063027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7063&lot=027",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7063027",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-04-14-n367",
+      "name": "Building and Engineering News, 14 April 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2020cont/page/n367/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-04-14",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: moving the residence to the rear, with underpinning, an enclosure and steps, estimated at $1,091. Lewis M. Gardner was named as architect and H. C. Matthies as contractor.",
+      "source": "building-engineering-news-1920-04-14-n367"
+    }
+  ]
+}

@@ -54,6 +54,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Randolph Street](randolph-street/) — 1 building, built 1907.
 - [Sadowa Street](sadowa-street/) — 1 building, built 1910.
 - [Sagamore Street](sagamore-street/) — 1 building, built 1890.
+- [San Jose Avenue](san-jose-avenue/) — 1 building, built 1912.
 - [Sargent Street](sargent-street/) — 1 building, built 1928.
 - [Shields Street](shields-street/) — 1 building, built 1930.
 - [Summit Street](summit-street/) — 1 building, built 1936.

@@ -1,4 +1,4 @@
-# Seventh Avenue
+# 7th Avenue
 
 The parcels on Seventh Avenue documented here so far, from the city's address, assessor and permit records.
 

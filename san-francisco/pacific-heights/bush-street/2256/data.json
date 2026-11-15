@@ -1,0 +1,178 @@
+{
+  "address": "2256–2258 Bush Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/bush-street/2256/",
+  "apn": "0659012",
+  "block": "0659",
+  "lot": "012",
+  "eas_baseid": "287186",
+  "coordinates": {
+    "lat": 37.787091,
+    "lng": -122.434449
+  },
+  "address_range": "2256–2258",
+  "street_numbers_on_parcel": [
+    "2256",
+    "2258"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 1812.5,
+    "building_area_sqft": 2080,
+    "lot_depth_ft": 72.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "2258 2256 BUSH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1630386,
+    "assessed_improvement_value": 698732,
+    "last_sale_date": "2013-08-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200505182722",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-05-18",
+      "status_date": "2006-04-18",
+      "estimated_cost": 6460,
+      "revised_cost": 6460,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404232061",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-23",
+      "status_date": "2004-07-06",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair existing rotted d.f. rear stairs/with redwood material (to be as per original) approx 49% not",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404151352",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-04-15",
+      "status_date": "2004-04-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew#200301155228 for final inspection only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301155228",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2003-01-15",
+      "status_date": "2004-04-27",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "removal of rear shed,rebuild extg deck,kchn,bth remodel,new windows & door at garage/basement level",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200103224956",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-03-22",
+      "status_date": "2002-08-27",
+      "estimated_cost": 41000,
+      "revised_cost": 41000,
+      "description": "reinforceing foundation per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010304354",
+      "type": "additions alterations or repairs",
+      "status": "withdrawn",
+      "filed": "2000-10-30",
+      "status_date": "2001-09-25",
+      "estimated_cost": 3000,
+      "description": "merge 2/unit into 1/unit,remodel kitchen,replace 2frontdoor/1frontdoor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9306180",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-15",
+      "status_date": "1993-05-04",
+      "estimated_cost": 800,
+      "description": "replace brick post piers with concrete piers",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208062",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-10-01",
+      "status_date": "1983-03-04",
+      "estimated_cost": 2500,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BUSH&street_type=ST&address_number=2256",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0659012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0659&lot=012",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0659012",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-10-24-n434",
+      "name": "Building and Engineering News, 24 October 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1727cont/page/n434/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-10-24",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations to the flats, estimated at $420. J. Edwards was named as contractor.",
+      "source": "building-engineering-news-1917-10-24-n434"
+    }
+  ]
+}

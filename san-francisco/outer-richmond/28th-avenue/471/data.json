@@ -1,0 +1,136 @@
+{
+  "address": "471–473 28th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/28th-avenue/471/",
+  "apn": "1460001N",
+  "block": "1460",
+  "lot": "001N",
+  "eas_baseid": "467178",
+  "coordinates": {
+    "lat": 37.780542,
+    "lng": -122.488284
+  },
+  "address_range": "471–473",
+  "street_numbers_on_parcel": [
+    "471",
+    "473"
+  ],
+  "parcel": {
+    "year_built": 1917,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2510.25,
+    "building_area_sqft": 2600,
+    "lot_depth_ft": 0.41,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0473 0471 28TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53571,
+    "assessed_improvement_value": 73667
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201709259466",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-25",
+      "status_date": "2018-02-15",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "to comply nov# 201797371, replace damaged exterior staircase with (n) footings, frame at the back of bldg.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200402095897",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-02-09",
+      "status_date": "2004-03-30",
+      "estimated_cost": 2175,
+      "revised_cost": 2175,
+      "description": "replace 4 (e)double hung wood windows w/4 new same size style & location double hung vinyl @ back of",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006072059",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-07",
+      "status_date": "2000-06-20",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "repair minor dryrot at rear stair area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713021",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-10",
+      "status_date": "1987-10-20",
+      "estimated_cost": 1600,
+      "description": "repair rear stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=28TH&street_type=AVE&address_number=471",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1460001N&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1460&lot=001N",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1460001N",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-12-05-n579",
+      "name": "Building and Engineering News, 5 December 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1727cont/page/n579/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-12-05",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of flats, estimated at $4,000.",
+      "source": "building-engineering-news-1917-12-05-n579"
+    }
+  ]
+}

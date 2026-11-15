@@ -1,0 +1,120 @@
+{
+  "address": "731–733 18th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/18th-avenue/731/",
+  "apn": "1661004B",
+  "block": "1661",
+  "lot": "004B",
+  "eas_baseid": "455437",
+  "coordinates": {
+    "lat": 37.774142,
+    "lng": -122.47711
+  },
+  "address_range": "731–733",
+  "street_numbers_on_parcel": [
+    "731",
+    "733"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3709,
+    "basement_area_sqft": 489,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0733 0731 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55184,
+    "assessed_improvement_value": 132698
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200707126559",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-12",
+      "status_date": "2008-05-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "legalize rooms @ ground floor. living room, study, half bath w/ closet, and hallway. 2 windows @ rear not visible from st. work for one unit.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9412111",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-07-29",
+      "status_date": "1995-08-11",
+      "estimated_cost": 7700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1994–2009",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=731",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1661004B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1661&lot=004B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1661004B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-06-23-n978",
+      "name": "Building and Engineering News, 23 June 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n978/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-06-23",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $9,000.",
+      "source": "building-engineering-news-1923-06-23-n978"
+    }
+  ]
+}

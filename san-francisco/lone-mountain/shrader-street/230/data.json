@@ -1,0 +1,165 @@
+{
+  "address": "230 Shrader Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/shrader-street/230/",
+  "apn": "1212017A",
+  "block": "1212",
+  "lot": "017A",
+  "eas_baseid": "297400",
+  "coordinates": {
+    "lat": 37.772681,
+    "lng": -122.452242
+  },
+  "parcel": {
+    "year_built": 1916,
+    "units": 5,
+    "stories": 3,
+    "rooms": 20,
+    "bathrooms": 5,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 4670,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 0230 SHRADER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1224646,
+    "assessed_improvement_value": 659416,
+    "last_sale_date": "1999-06-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1916",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201809180602",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-09-18",
+      "status_date": "2026-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to bpa #201709016729 to relocate shear walls: 1, 4, 5 & 9.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711295017",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2017-11-29",
+      "status_date": "2025-02-20",
+      "estimated_cost": 50000,
+      "revised_cost": 56000,
+      "description": "per ordinance# 162-16, addition of 1 new dwelling unit on 1st floor . ref pa# 2017/09/01/6729. ** maher: n/a **",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709016729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-01",
+      "status_date": "2019-04-05",
+      "estimated_cost": 30000,
+      "revised_cost": 80000,
+      "description": "soft story retrofit per sfebc chapter 4d per engineering creteria 2016 cebc appendix a-4. maher n/a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9004711",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-09",
+      "status_date": "1990-08-24",
+      "estimated_cost": 6850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8308326",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-08-24",
+      "status_date": "1984-02-23",
+      "estimated_cost": 50,
+      "description": "metal coer roof door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1983–2018",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SHRADER&street_type=ST&address_number=230",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1212017A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1212&lot=017A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1212017A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45224179618894%2037.7726813702394)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1916-03-29-n450",
+      "name": "Building and Engineering News, 29 March 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1616cont/page/n450/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1916-03-29",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey and basement frame building of a store and flats, all work except plastering, wall beds, wall paper and gas heaters, at $7,160. Edw. E. Young was named as architect and Schroder Bros. as contractors.",
+      "source": "building-engineering-news-1916-03-29-n450"
+    }
+  ],
+  "building": {
+    "architect": "Edw. E. Young",
+    "builder": "Schroder Bros."
+  }
+}

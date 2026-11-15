@@ -1,0 +1,132 @@
+{
+  "address": "2729–2731 Union Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/union-street/2729/",
+  "apn": "0950034",
+  "block": "0950",
+  "lot": "034",
+  "eas_baseid": "291259",
+  "coordinates": {
+    "lat": 37.795689,
+    "lng": -122.444255
+  },
+  "address_range": "2729–2731",
+  "street_numbers_on_parcel": [
+    "2729",
+    "2731"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 2844,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "2731 2729 UNION               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81756,
+    "assessed_improvement_value": 127273
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cow Hollow First Bay Tradition Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1888–1914",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201507070844",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2015-07-07",
+      "status_date": "2017-05-10",
+      "estimated_cost": 457319,
+      "revised_cost": 647300,
+      "description": "demo of existing wall, window, door, finishes & fixtures, const of rear addition all floors & roof deck at rear of 2nd fl. exterior work new windows, door and finishes. building to be equiped w/ full automatic sprinkler system.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102132028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-13",
+      "status_date": "2001-03-14",
+      "estimated_cost": 5700,
+      "revised_cost": 5700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=2729",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0950034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0950&lot=034",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0950034",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44425498532196%2037.795688653404994)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-05-12-n669",
+      "name": "Building and Engineering News, 12 May 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n669/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-05-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $8,000. John H. Powers and John H. Ahnden were named as architects and Wm. L. Terry as contractor.",
+      "source": "building-engineering-news-1923-05-12-n669"
+    }
+  ],
+  "building": {
+    "architect": "John H. Powers and John H. Ahnden",
+    "builder": "Wm. L. Terry"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "address": "1574 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/noe-valley/dolores-street/1574/",
+  "apn": "6618005",
+  "block": "6618",
+  "lot": "005",
+  "eas_baseid": "404023",
+  "coordinates": {
+    "lat": 37.744214,
+    "lng": -122.424803
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1020,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 1574 DOLORES             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 848640,
+    "assessed_improvement_value": 565756,
+    "last_sale_date": "2006-03-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308073845",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-07",
+      "status_date": "2023-09-07",
+      "estimated_cost": 29800,
+      "revised_cost": 29800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604179144",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-04-17",
+      "status_date": "2006-04-17",
+      "estimated_cost": 8000,
+      "revised_cost": 10500,
+      "description": "interior bathrm, re-tiling, change interior crown molding, resurface kitchen cabinets, interior floors, change kitchen counter tops, upgrade & fix interior closet doors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9604456",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-03-18",
+      "status_date": "1996-04-04",
+      "estimated_cost": 4000,
+      "description": "repr dry rot under stucco @ grg door-install new stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8613710",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-10-30",
+      "status_date": "1987-03-10",
+      "estimated_cost": 5925,
+      "description": "repair wood supports",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411247",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-10-24",
+      "status_date": "1985-11-25",
+      "estimated_cost": 4000,
+      "description": "replace rear stairs and landing as finish laundry",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DOLORES&street_type=ST&address_number=1574",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6618005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6618&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6618005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-03-08-n419",
+      "name": "Building and Engineering News, 8 March 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n419/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-03-08",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: two front rooms enlarged, a new vestibule and the front remodelled, estimated at $1,000. George Knabenshuh was named as contractor.",
+      "source": "building-engineering-news-1924-03-08-n419"
+    }
+  ]
+}

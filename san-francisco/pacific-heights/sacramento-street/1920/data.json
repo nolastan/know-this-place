@@ -1,0 +1,121 @@
+{
+  "address": "1920 Sacramento Street, San Francisco, CA 94109",
+  "path": "/san-francisco/pacific-heights/sacramento-street/1920/",
+  "apn": "0624003A",
+  "block": "0624",
+  "lot": "003A",
+  "eas_baseid": "286466",
+  "coordinates": {
+    "lat": 37.791297,
+    "lng": -122.424618
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 14,
+    "stories": 4,
+    "rooms": 56,
+    "bathrooms": 14,
+    "lot_area_sqft": 5998,
+    "building_area_sqft": 18480,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "C",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 1920 SACRAMENTO          ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1579317,
+    "assessed_improvement_value": 2368986,
+    "last_sale_date": "1998-11-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9723941",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-11-26",
+      "status_date": "1998-05-26",
+      "estimated_cost": 14700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8913830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-08-01",
+      "status_date": "1989-10-12",
+      "estimated_cost": 6800,
+      "description": "remodel 1 kitchen & bath. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705033",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-04-16",
+      "status_date": "1987-08-29",
+      "estimated_cost": 5,
+      "revised_cost": 2000,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SACRAMENTO&street_type=ST&address_number=1920",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0624003A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0624&lot=003A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0624003A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-17-n868",
+      "name": "Building and Engineering News, 17 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n868/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-05-17",
+      "kind": "construction",
+      "description": "A permit was sought for a four-storey Class C concrete building of sixteen apartments with a basement, estimated at $70,000. Baumann & Jose were named as architects.",
+      "source": "building-engineering-news-1924-05-17-n868"
+    }
+  ],
+  "building": {
+    "architect": "Baumann & Jose"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "address": "1489 23rd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/23rd-avenue/1489/",
+  "apn": "1830022",
+  "block": "1830",
+  "lot": "022",
+  "eas_baseid": "319621",
+  "coordinates": {
+    "lat": 37.759875,
+    "lng": -122.481459
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1669,
+    "basement_area_sqft": 494,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1489 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1374264,
+    "assessed_improvement_value": 588970,
+    "last_sale_date": "2021-09-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202009043532",
+      "type": "additions alterations or repairs",
+      "status": "filed",
+      "filed": "2020-09-04",
+      "status_date": "2020-09-04",
+      "estimated_cost": 30000,
+      "description": "create a new adu per ordinance 162-16 in an existing two story single family home by adding a new kitchen downstairs.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200903134132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-03-13",
+      "status_date": "2009-09-08",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "comply with nov 200886048, 200855650. demolish deck at rear of house. demolish kitchen behind the garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200503228058",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-22",
+      "status_date": "2005-03-22",
+      "estimated_cost": 720,
+      "revised_cost": 720,
+      "description": "new tile on 2 bathroom floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9305459",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-04-05",
+      "status_date": "1993-05-27",
+      "estimated_cost": 2000,
+      "description": "termite report #53645 1-21-93 #1,3,5,6",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303377",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-03",
+      "status_date": "1993-06-04",
+      "estimated_cost": 9000,
+      "revised_cost": 21000,
+      "description": "const family room bath & 2 bedrooms at rear of garage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=1489",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1830022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1830&lot=022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1830022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-04-12-n640",
+      "name": "Building and Engineering News, 12 April 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n640/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-04-12",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey trame dwelling with a basement, estimated at $4,000. Carl O. Lindberg was named as architect.",
+      "source": "building-engineering-news-1924-04-12-n640"
+    }
+  ],
+  "building": {
+    "architect": "Carl O. Lindberg"
+  }
+}
