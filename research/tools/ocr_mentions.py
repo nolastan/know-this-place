@@ -23,6 +23,16 @@ around it, and the filter drops, in order:
 
 What survives is printed one window per JSON line, for reading by hand. The
 filter's counts go to stderr and belong in the findings file's coverage note.
+
+    python3 research/tools/ocr_mentions.py leaf <corpus-dir> <identifier> "<phrase>"
+
+gives the scan leaf and printed page a phrase sits on, for a finding's
+citation: the djvu text has no page breaks, so it fetches the Internet
+Archive's hOCR search text, page index and page numbers for the issue (cached
+in <corpus-dir>/hocr/) and finds the phrase whitespace-insensitively. Prints
+`<leaf>\t<printed page>`; the citation URL is
+https://archive.org/details/<identifier>/page/n<leaf>/mode/1up. (Each East/West
+run rewrote this lookup in a scratch directory until 2026-11-15.)
 Stdlib only; the EAS street list comes from resolve_eas's cache.
 """
 from __future__ import annotations
@@ -198,6 +208,32 @@ def extract(args) -> None:
           file=sys.stderr)
 
 
+def leaf(args) -> None:
+    import gzip
+    import urllib.request
+    cache = Path(args.corpus) / "hocr"
+    cache.mkdir(parents=True, exist_ok=True)
+    ident = args.identifier
+    files = {}
+    for suffix in ("_hocr_searchtext.txt.gz", "_hocr_pageindex.json.gz", "_page_numbers.json"):
+        path = cache / f"{ident}{suffix}"
+        if not path.exists() or not path.stat().st_size:
+            req = urllib.request.Request(f"https://archive.org/download/{ident}/{ident}{suffix}",
+                                         headers={"User-Agent": "know-this-place-research"})
+            path.write_bytes(urllib.request.urlopen(req, timeout=90).read())
+        files[suffix] = path
+    text = gzip.open(files["_hocr_searchtext.txt.gz"], "rt", errors="replace").read()
+    index = json.load(gzip.open(files["_hocr_pageindex.json.gz"]))
+    pages = json.load(open(files["_page_numbers.json"]))["pages"]
+    pattern = r"\s*".join(re.escape(c) for c in args.phrase.replace(" ", ""))
+    m = re.search(pattern, text, re.I)
+    if not m:
+        sys.exit(f"leaf: {args.phrase!r} not found in {ident}")
+    n = next(i for i, r in enumerate(index) if r[0] <= m.start() < r[1])
+    printed = (pages[n].get("pageNumber") if n < len(pages) else "") or str(n + 1)
+    print(f"{n}\t{printed}")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -211,8 +247,12 @@ def main() -> int:
     e.add_argument("--after", type=int, default=300)
     e.add_argument("--advertiser", type=int, default=6)
     e.add_argument("--keep-ads", action="store_true")
+    lf = sub.add_parser("leaf")
+    lf.add_argument("corpus")
+    lf.add_argument("identifier")
+    lf.add_argument("phrase")
     args = ap.parse_args()
-    extract(args)
+    {"extract": extract, "leaf": leaf}[args.cmd](args)
     return 0
 
 

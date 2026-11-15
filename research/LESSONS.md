@@ -3016,6 +3016,11 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   ft lot whose building the roll dates 1974, where the record measured a
   19,011 sq ft parking lot still open in 1976.
   ([sources/sf-planning-commission-minutes.md](sources/sf-planning-commission-minutes.md))
+  Where the record gives no lot size, a named building is the other check:
+  the Forbidden City's 363 Sutter is in no EAS row, the roll files parcel
+  0294017 as `0369 0355 SUTTER`, and Planning's historic-resource record for
+  that parcel is titled "FORBIDDEN CITY NIGHT CLUB" — range and name agree,
+  so it was placed by hand. (2026-11-15, east-west-journal)
 - **DataSF's `data.sfgov.org` now answers with an HTML redirect to
   `data.sf.gov`.** The repo's tools follow it, but an ad hoc `curl` without
   `-L` gets a meta-refresh page and a JSON parser fails on it, which reads
