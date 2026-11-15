@@ -90,7 +90,7 @@ sit in — the three it touched most, and how many in all.
 | `article-10-landmarks/batch-5-lm251-lm300.json` | 819 | 1.6 MB | 1847–2022 | 718 | 643 | `castro`, `mission`, `pacific-heights` +27 |
 | `article-10-landmarks/batch-6-lm301-lm336.json` | 667 | 1.1 MB | 1849–2026 | 612 | 565 | `mission`, `marina`, `hayes-valley` +25 |
 | `building-engineering-news/v26-pt1-1926-jan-jun.json` | 2,404 | 3.8 MB | 1926 | 368 | 368 | `marina`, `sunset-parkside`, `mission` +31 |
-| `building-engineering-news/v26-pt2-1926-jul-dec.json` | 2,264 | 3.5 MB | 1926 | 289 | 289 | `marina`, `mission`, `sunset-parkside` +30 |
+| `building-engineering-news/v26-pt2-1926-jul-dec.json` | 2,264 | 3.5 MB | 1926 | 290 | 290 | `marina`, `mission`, `outer-richmond` +30 |
 | `celebrity-residence-guides/sftourismtips.json` | 31 | 48 KB | 1876–1996 | 29 | 25 | `haight-ashbury`, `pacific-heights`, `seacliff` +11 |
 | `corbett-heights-neighbors/archive-page-2.json` | 22 | 38 KB | 1885–2016 | 19 | 9 | `castro` |
 | `corbett-heights-neighbors/archive-page-3.json` | 36 | 66 KB | 1889–2025 | 33 | 32 | `castro`, `mission`, `haight-ashbury` +2 |
