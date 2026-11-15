@@ -1,0 +1,125 @@
+{
+  "address": "454 Lisbon Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/lisbon-street/454/",
+  "apn": "6086010A",
+  "block": "6086",
+  "lot": "010A",
+  "eas_baseid": "391182",
+  "coordinates": {
+    "lat": 37.721256,
+    "lng": -122.434513
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1760,
+    "basement_area_sqft": 460,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0454 LISBON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 397384,
+    "assessed_improvement_value": 288005,
+    "last_sale_date": "2002-04-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605181414",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2026-05-18",
+      "status_date": "2026-10-27",
+      "estimated_cost": 500,
+      "revised_cost": 10000,
+      "description": "interior residential alteration: install kitchenette inside (e) single family residence, install 2 burner cooktop, counter sink and refrigerator. no structural changes, no walls moved, no full size stove.relocate laundry and add sink.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301286116",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-28",
+      "status_date": "2003-06-11",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "add 2 bedrooms,1 bathroom, 1 laundry room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200206048150",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-06-04",
+      "status_date": "2002-10-04",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LISBON&street_type=ST&address_number=454",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6086010A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6086&lot=010A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6086010A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-03-03-n298",
+      "name": "Building and Engineering News, 3 March 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n298/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-03-03",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,750. H. C. Baumann was named as architect and Buschke & Brown as contractors.",
+      "source": "building-engineering-news-1923-03-03-n298"
+    }
+  ],
+  "building": {
+    "architect": "H. C. Baumann",
+    "builder": "Buschke & Brown"
+  }
+}

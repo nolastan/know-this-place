@@ -1,0 +1,120 @@
+{
+  "address": "1815 Jones Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/jones-street/1815/",
+  "apn": "0126005",
+  "block": "0126",
+  "lot": "005",
+  "eas_baseid": "278164",
+  "coordinates": {
+    "lat": 37.797992,
+    "lng": -122.415747
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 3023,
+    "building_area_sqft": 4490,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1815 JONES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1152897,
+    "assessed_improvement_value": 715975,
+    "last_sale_date": "2000-01-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9909542",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-05-14",
+      "status_date": "2000-01-05",
+      "estimated_cost": 11200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1999–2016",
+    "shown_on_page": 1,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JONES&street_type=ST&address_number=1815",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0126005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0126&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0126005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-05-12-n673",
+      "name": "Building and Engineering News, 12 May 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n673/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-06-02-n847",
+      "name": "Building and Engineering News, 2 June 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n847/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-05-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four apartments with a basement, estimated at $14,000. Erle J. Osborne was named as architect and Ed. Zinkand & Son as contractors.",
+      "source": "building-engineering-news-1923-05-12-n673"
+    },
+    {
+      "date": "1923-06-02",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work except window shades, water heaters, electric fixtures and wall paper for a two-storey frame apartment building. Erle J. Osborne was named as architect and Ed. Zinkand & Son as contractors.",
+      "source": "building-engineering-news-1923-06-02-n847"
+    }
+  ],
+  "building": {
+    "architect": "Erle J. Osborne",
+    "builder": "Ed. Zinkand & Son"
+  }
+}

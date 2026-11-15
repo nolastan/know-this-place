@@ -8,6 +8,8 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 - [Beale Street](beale-street/) — 2 buildings, built 1967.
 - [Brannan Street](brannan-street/) — 9 buildings, built 1908–1959; 4 in the South End Historic District.
 - [Bryant Street](bryant-street/) — 28 buildings, built 1906–2015.
+- [Drumm Street](drumm-street/) — 1 building, built 1923.
+- [Ellis Street](ellis-street/) — 1 building, built 1910; 1 in the Kearny-Market-Mason-Sutter Conservation District.
 - [Federal Street](federal-street/) — 2 buildings, built 1912–1923; 2 in the South End Historic District.
 - [Folsom Street](folsom-street/) — 1 building.
 - [Fremont Street](fremont-street/) — 3 buildings, built 1928–2018.

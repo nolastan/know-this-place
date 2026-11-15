@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 17 of 34 half-year volumes read (vol. 23 pt. 2 to vol. 31, July 1923 – January 1932, the end of the run): 4,091 facts on 3,832 page writes (2,403 pages seeded). Resume backwards at vol. 23 pt. 1 (January–June 1923, `buildingengineer233cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 18 of 34 half-year volumes read (vol. 23 to vol. 31, January 1923 – January 1932, the end of the run): 4,364 facts on 4,086 page writes (2,578 pages seeded). Resume backwards at vol. 22 pt. 2 (July–December 1922, `buildingengineer2222cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 6,051 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 6,414 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -180,6 +180,21 @@
   until the parcel gets a page (39 are row-of-houses permits), 481 rows with
   a nearest parcel not accepted, 793 not placed. Unread: the 17 volumes
   before July 1923.
+- **Coverage, vol. 23 pt. 1** (`buildingengineer233cont`, 6 January – 30
+  June 1923): 4,231 numbered entries; 2,260 San Francisco rows; 1,238
+  placed on a parcel; 355 picked and read against the image; 272 published
+  on 254 pages, 175 of them seeded. Unfinished: 364 placed single houses held
+  until the parcel gets a page (54 are row-of-houses permits), 532 rows with
+  a nearest parcel not accepted, 1,022 not placed. Unread: the 16 volumes
+  before 1923.
+- **Verified:** 2026-11-15 (vol. 23 pt. 1: read 4,231 entries, found 2,260
+  San Francisco rows, resolved 272, published 272 on 254 pages. Learned:
+  select.py's row-of-houses test misses headings that spell 'dwlgs' or put
+  the count on a second line, so check for them on the sheets; an owner's
+  address printed in one volume can show that a contractor in another is the
+  owner's own firm (Kiernan & O'Brien was cut from a July 1923 permit on
+  that evidence); one held fact (650 34th Avenue, July 1923) was taken up
+  when this volume seeded its page.)
 - **Verified:** 2026-11-15 (vol. 23 pt. 2: read 3,875 entries, found 1,982
   San Francisco rows, resolved 269, published 269 on 252 pages. Learned: an
   alteration listed by lot line rather than street number is held unless the

@@ -1,0 +1,103 @@
+{
+  "address": "455 21st Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/21st-avenue/455/",
+  "apn": "1523011",
+  "block": "1523",
+  "lot": "011",
+  "eas_baseid": "306702",
+  "coordinates": {
+    "lat": 37.779176,
+    "lng": -122.480699
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 5,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 4390,
+    "basement_area_sqft": 200,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0455 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 602686,
+    "assessed_improvement_value": 486666,
+    "last_sale_date": "2001-04-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202308043764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-04",
+      "status_date": "2023-08-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=455",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1523011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1523&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1523011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-03-17-n374",
+      "name": "Building and Engineering News, 17 March 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer233cont/page/n374/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-03-17",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four apartments with a basement, estimated at $12,000. K. Adler was named as contractor.",
+      "source": "building-engineering-news-1923-03-17-n374"
+    }
+  ],
+  "building": {
+    "builder": "K. Adler"
+  }
+}
