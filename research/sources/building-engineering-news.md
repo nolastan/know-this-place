@@ -190,8 +190,10 @@
 - **Verified:** 2026-11-15 (vol. 20 pt. 1: read 2,017 entries, found 1,282
   San Francisco rows, resolved 116, published 116 on 106 pages. Learned:
   before 17 March 1920 the pages carry no dated running head, so the issue
-  dates come from the cover dates, kept as `issues.json` in the corpus
-  folder (first leaf of each issue; extract.py and redate.py read it); a
+  dates come from the 26 cover dates, every Wednesday from 7 January to
+  30 June (an `issues.json` in the corpus folder maps the first leaf of
+  each issue to its date; the corpus is not committed, so rebuild it from
+  the covers); a
   permit reissued at a lower height (Golden Gate Avenue and Leavenworth
   Street, two storeys in May, one storey two weeks later) is settled by
   the roll; three held facts of this volume were taken up on pages that
