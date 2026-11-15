@@ -1,0 +1,103 @@
+{
+  "address": "793–799 15th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/15th-avenue/793/",
+  "apn": "1658013",
+  "block": "1658",
+  "lot": "013",
+  "eas_baseid": "442239",
+  "coordinates": {
+    "lat": 37.773303,
+    "lng": -122.473614
+  },
+  "address_range": "793–799",
+  "street_numbers_on_parcel": [
+    "793",
+    "795",
+    "797",
+    "799"
+  ],
+  "parcel": {
+    "year_built": 1920,
+    "units": 4,
+    "stories": 2,
+    "rooms": 20,
+    "bathrooms": 4,
+    "lot_area_sqft": 2748,
+    "building_area_sqft": 4950,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0799 0793 15TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 876604,
+    "assessed_improvement_value": 653131
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1920",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8308734",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-09-02",
+      "status_date": "1986-03-04",
+      "estimated_cost": 900,
+      "description": "to bring building into full compliance with the provisions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=AVE&address_number=793",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1658013&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1658&lot=013",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1658013",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-04-14-n363",
+      "name": "Building and Engineering News, 14 April 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2020cont/page/n363/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-04-14",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, estimated at $12,000.",
+      "source": "building-engineering-news-1920-04-14-n363"
+    }
+  ]
+}

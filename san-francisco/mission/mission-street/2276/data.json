@@ -1,0 +1,142 @@
+{
+  "address": "2276–2278 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/2276/",
+  "apn": "3589014",
+  "block": "3589",
+  "lot": "014",
+  "eas_baseid": "361177",
+  "coordinates": {
+    "lat": 37.760643,
+    "lng": -122.41953
+  },
+  "address_range": "2276–2278",
+  "street_numbers_on_parcel": [
+    "2276",
+    "2278"
+  ],
+  "parcel": {
+    "year_built": 1904,
+    "units": 2,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2000,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "2278 2276 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 90073,
+    "assessed_improvement_value": 50331
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1904",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200802134662",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-02-13",
+      "status_date": "2008-03-10",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M29106",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-09-07",
+      "status_date": "2004-09-07",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9405983",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-04-15",
+      "status_date": "1994-08-15",
+      "estimated_cost": 3800,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8601347",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-02-04",
+      "status_date": "1986-07-11",
+      "estimated_cost": 9500,
+      "description": "install new fish market at existing vacant flower shop",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8500766",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-01-24",
+      "status_date": "1985-12-11",
+      "estimated_cost": 500,
+      "description": "add some more storage of spares.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=2276",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3589014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3589&lot=014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3589014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1920-04-14-n363",
+      "name": "Building and Engineering News, 14 April 1920",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2020cont/page/n363/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1920-04-14",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: a balcony in the store, with show cases and windows, estimated at $900. M. G. Burnside was named as contractor. The owner was the Mon Hing Co.",
+      "source": "building-engineering-news-1920-04-14-n363"
+    }
+  ]
+}
