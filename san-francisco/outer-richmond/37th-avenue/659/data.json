@@ -1,0 +1,131 @@
+{
+  "address": "659 37th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/37th-avenue/659/",
+  "apn": "1580003G",
+  "block": "1580",
+  "lot": "003G",
+  "eas_baseid": "309172",
+  "coordinates": {
+    "lat": 37.776448,
+    "lng": -122.497707
+  },
+  "parcel": {
+    "year_built": 1931,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3052.8,
+    "building_area_sqft": 1811,
+    "basement_area_sqft": 336,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0659 37TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1077252,
+    "assessed_improvement_value": 461679,
+    "last_sale_date": "2015-10-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200207161509",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-07-16",
+      "status_date": "2007-05-23",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to correct mistake on orig application 200002121778- correcting from 2 units to 1 single family dwel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200002121778",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-12",
+      "status_date": "2000-03-14",
+      "revised_cost": 1,
+      "description": "renewal per app # 9917720 for final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9917720",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-08-25",
+      "status_date": "2000-02-17",
+      "estimated_cost": 4000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9814556",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1998-07-29",
+      "status_date": "2003-02-05",
+      "estimated_cost": 3000,
+      "description": "construct rear yard redwood deck per attached plans",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=37TH&street_type=AVE&address_number=659",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1580003G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1580&lot=003G",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1580003G",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1931-10-17-n518",
+      "name": "Building and Engineering News, 17 October 1931",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer31232cont/page/n518/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1931-10-17",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000, to plans by F. K. Perry.",
+      "source": "building-engineering-news-1931-10-17-n518"
+    }
+  ]
+}

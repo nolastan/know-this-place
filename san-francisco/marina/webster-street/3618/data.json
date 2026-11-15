@@ -1,0 +1,143 @@
+{
+  "address": "3618–3620 Webster Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/webster-street/3618/",
+  "apn": "0445A016",
+  "block": "0445A",
+  "lot": "016",
+  "eas_baseid": "282543",
+  "coordinates": {
+    "lat": 37.804193,
+    "lng": -122.434944
+  },
+  "address_range": "3618–3620",
+  "street_numbers_on_parcel": [
+    "3618",
+    "3620"
+  ],
+  "parcel": {
+    "year_built": 1931,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 2562.5,
+    "building_area_sqft": 3991,
+    "lot_depth_ft": 2.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "3620 3618 WEBSTER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 167178,
+    "assessed_improvement_value": 111439
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1931",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1930–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202012019959",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-12-01",
+      "status_date": "2021-09-09",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "small kitchen remodel 200 sq ft. demolish one non-load bearing partition. replace interior finishes & plumbing fixtures.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201706209831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-06-20",
+      "status_date": "2017-10-24",
+      "estimated_cost": 13615,
+      "revised_cost": 13615,
+      "description": "remove & replace tile shower & enlcosure replace with acrylic pan & enclosure. remove & replace shower valves.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204113702",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-11",
+      "status_date": "2002-06-07",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WEBSTER&street_type=ST&address_number=3618",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0445A016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0445A&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0445A016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43494360816004%2037.80419314555529)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1931-11-28-n712",
+      "name": "Building and Engineering News, 28 November 1931",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer31232cont/page/n712/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1931-11-28",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey building of two flats with a basement, estimated at $8,000. R. R. Irvine was named as architect.",
+      "source": "building-engineering-news-1931-11-28-n712"
+    }
+  ],
+  "building": {
+    "architect": "R. R. Irvine"
+  }
+}

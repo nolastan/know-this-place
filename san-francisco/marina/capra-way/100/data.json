@@ -1,0 +1,179 @@
+{
+  "address": "100 Capra Way, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/capra-way/100/",
+  "apn": "0441B014",
+  "block": "0441B",
+  "lot": "014",
+  "eas_baseid": "282449",
+  "coordinates": {
+    "lat": 37.802814,
+    "lng": -122.440225
+  },
+  "parcel": {
+    "year_built": 1932,
+    "units": 9,
+    "stories": 3,
+    "rooms": 36,
+    "bathrooms": 9,
+    "lot_area_sqft": 4996,
+    "building_area_sqft": 10560,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0100 CAPRA               WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 239304,
+    "assessed_improvement_value": 377002
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202310138608",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-13",
+      "status_date": "2024-07-25",
+      "estimated_cost": 7508,
+      "revised_cost": 22525,
+      "description": "install low frequency horns in the sleeping units to comply with 1103.7.6.1. to comply w/ (n) panel radio, horn strobes, smoke and pull stations",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202212017469",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-12-01",
+      "status_date": "2023-02-01",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit: one kitchen remodel. replace countertops and backsplash and add a dishwasher. no replacement appliances. no new cabinetry.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802090906",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-09",
+      "status_date": "2018-03-07",
+      "estimated_cost": 2800,
+      "revised_cost": 2800,
+      "description": "like for like fire system replacement with new control panel, smoke det and pull station at same location tie in exi cells to new panel. local alarm syastem. comply with sffc by 2021",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9924500",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-11-18",
+      "status_date": "2000-05-18",
+      "estimated_cost": 10000,
+      "description": "remodel kitchen & bathroom new cabinets,faucets, etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621173",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-11-05",
+      "status_date": "1997-09-22",
+      "estimated_cost": 18950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107125",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-25",
+      "status_date": "1991-05-22",
+      "estimated_cost": 7500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506242",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-17",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1200,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1985–2023",
+    "shown_on_page": 7,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAPRA&street_type=WAY&address_number=100",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0441B014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0441B&lot=014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0441B014",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4402251330523%2037.80281363809565)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1931-10-10-n486",
+      "name": "Building and Engineering News, 10 October 1931",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer31232cont/page/n486/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1931-10-10",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame apartment building with a basement, estimated at $20,000. The owner was A. T. Morris & Sons.",
+      "source": "building-engineering-news-1931-10-10-n486"
+    }
+  ]
+}

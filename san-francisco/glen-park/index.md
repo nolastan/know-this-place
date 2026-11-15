@@ -25,6 +25,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Brompton Avenue](brompton-avenue/) — 10 buildings, built 1908–1963.
 - [Chenery Street](chenery-street/) — 16 buildings, built 1900–1951; 5 in the Glen Park Center Historic District.
 - [Chilton Avenue](chilton-avenue/) — 1 building, built 1909.
+- [Church Street](church-street/) — 1 building, built 1910.
 - [Congo Street](congo-street/) — 1 building, built 1917.
 - [Detroit Street](detroit-street/) — 1 building, built 1947.
 - [Diamond Heights Boulevard](diamond-heights-boulevard/) — 1 building, built 1964.

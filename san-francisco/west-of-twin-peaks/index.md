@@ -82,6 +82,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Rosewood Drive](rosewood-drive/) — 1 building, built 1937.
 - [Saint Elmo Way](saint-elmo-way/) — 1 building, built 1926.
 - [Saint Francis Boulevard](saint-francis-boulevard/) — 1 building, built 1948; 1 in the St. Francis Wood Historic District.
+- [San Aleso Avenue](san-aleso-avenue/) — 1 building, built 1933; 1 in the Balboa Terrace Historic District.
 - [San Andreas Way](san-andreas-way/) — 1 building, built 1941; 1 in the St. Francis Wood Historic District.
 - [San Anselmo Avenue](san-anselmo-avenue/) — 1 building, built 1942; 1 in the St. Francis Wood Historic District.
 - [San Benito Way](san-benito-way/) — 1 building, built 2001; 1 in the St. Francis Wood Historic District.
