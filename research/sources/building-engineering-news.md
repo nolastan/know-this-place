@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 19 of 34 half-year volumes read (vol. 22 pt. 2 to vol. 31, July 1922 – January 1932, the end of the run): 4,538 facts on 4,245 page writes (2,667 pages seeded). Resume backwards at vol. 22 pt. 1 (January–June 1922, `buildingengineer222cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 20 of 34 half-year volumes read (vol. 22 to vol. 31, January 1922 – January 1932, the end of the run): 4,696 facts on 4,397 page writes (2,762 pages seeded). Resume backwards at vol. 21 pt. 2 (July–December 1921, `buildingengineer2921cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 6,624 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 6,796 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -180,6 +180,19 @@
   until the parcel gets a page (39 are row-of-houses permits), 481 rows with
   a nearest parcel not accepted, 793 not placed. Unread: the 17 volumes
   before July 1923.
+- **Coverage, vol. 22 pt. 1** (`buildingengineer222cont`, 7 January – 24
+  June 1922): 2,677 numbered entries; 1,596 San Francisco rows; 614
+  placed on a parcel; 201 picked and read against the image; 158 published
+  on 152 pages, 95 of them seeded. Unfinished: 172 placed single houses held
+  until the parcel gets a page (9 are row-of-houses permits), 249 rows with
+  a nearest parcel not accepted, 982 not placed. Unread: the 14 volumes
+  before 1922.
+- **Verified:** 2026-11-15 (vol. 22 pt. 1: read 2,677 entries, found 1,596
+  San Francisco rows, resolved 158, published 158 on 152 pages. Learned:
+  the OCR item number can be a thousand off (3136 for 2136), so check it
+  against its neighbours; a permit can name a second architect the page
+  does not carry (300 Page Street: Julia Morgan and Dorothy Wormser); three
+  held facts were taken up on pages that already existed.)
 - **Coverage, vol. 22 pt. 2** (`buildingengineer2222cont`, 1 July – 30
   December 1922): 2,782 numbered entries; 1,519 San Francisco rows; 733
   placed on a parcel; 211 picked and read against the image; 174 published

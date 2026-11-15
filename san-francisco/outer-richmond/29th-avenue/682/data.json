@@ -1,0 +1,132 @@
+{
+  "address": "682 29th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/29th-avenue/682/",
+  "apn": "1571005C",
+  "block": "1571",
+  "lot": "005C",
+  "eas_baseid": "308834",
+  "coordinates": {
+    "lat": 37.776465,
+    "lng": -122.488502
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 1125,
+    "basement_area_sqft": 100,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0682 29TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 93974,
+    "assessed_improvement_value": 89437
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201410078331",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-10-07",
+      "status_date": "2014-10-07",
+      "estimated_cost": 8600,
+      "revised_cost": 8600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9622684",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-11-22",
+      "status_date": "1997-03-22",
+      "estimated_cost": 2023,
+      "description": "install 2 vinyl windows in (e) frames in residence",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9614461",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-08-07",
+      "status_date": "1996-12-07",
+      "estimated_cost": 2970,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118762",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1991-10-07",
+      "status_date": "1992-11-16",
+      "estimated_cost": 9000,
+      "description": "horizontal addition.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=29TH&street_type=AVE&address_number=682",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1571005C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1571&lot=005C",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1571005C",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1922-05-27-n731",
+      "name": "Building and Engineering News, 27 May 1922",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer222cont/page/n731/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922-05-27",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a one-storey residence with a basement. O'Brien Bros., Inc. were named as architects and Fred Warden as contractor.",
+      "source": "building-engineering-news-1922-05-27-n731"
+    }
+  ],
+  "building": {
+    "architect": "O'Brien Bros., Inc.",
+    "builder": "Fred Warden"
+  }
+}

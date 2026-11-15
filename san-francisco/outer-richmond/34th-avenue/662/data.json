@@ -1,0 +1,100 @@
+{
+  "address": "662 34th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/34th-avenue/662/",
+  "apn": "1576015B",
+  "block": "1576",
+  "lot": "015B",
+  "eas_baseid": "309013",
+  "coordinates": {
+    "lat": 37.776566,
+    "lng": -122.493826
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1380,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0662 34TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 753952,
+    "assessed_improvement_value": 323119,
+    "last_sale_date": "2008-06-20"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9618665",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-01",
+      "status_date": "1997-02-01",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=34TH&street_type=AVE&address_number=662",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1576015B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1576&lot=015B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1576015B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1922-02-11-n190",
+      "name": "Building and Engineering News, 11 February 1922",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer222cont/page/n190/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1922-02-11",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. Chas. F. Strothoff was named as architect. The owner was the Parkside Realty Co.",
+      "source": "building-engineering-news-1922-02-11-n190"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}
