@@ -1,0 +1,150 @@
+{
+  "address": "1522 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/1522/",
+  "apn": "0481011",
+  "block": "0481",
+  "lot": "011",
+  "eas_baseid": "283100",
+  "coordinates": {
+    "lat": 37.802016,
+    "lng": -122.428524
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2186,
+    "building_area_sqft": 3600,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1522 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 81063,
+    "assessed_improvement_value": 289652
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202605191543",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-05-19",
+      "status_date": "2026-05-19",
+      "estimated_cost": 9500,
+      "revised_cost": 57439,
+      "description": "kitchen and bath remodel. kitchen: remove e drywall to repalace in kind. remove and replace existing fixtures. bath: replace existing fixtures and finishes in kind. no wall changes or relocation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703282566",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-28",
+      "status_date": "2017-08-22",
+      "estimated_cost": 27000,
+      "revised_cost": 27000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201107180442",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-18",
+      "status_date": "2012-01-09",
+      "estimated_cost": 105000,
+      "revised_cost": 105000,
+      "description": "update bathroom and kitchen on 3 units. remove non bearing wall in kitchen area. three units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201106178397",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-06-17",
+      "status_date": "2012-01-09",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace 57 windows - like for like wood in front vinyl on sides and back",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922152",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-15",
+      "status_date": "1990-08-16",
+      "estimated_cost": 3000,
+      "description": "front of bldg to be repair. loby crack walls.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1989–2026",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=1522",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0481011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0481&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0481011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-09-28-n449",
+      "name": "Building and Engineering News, 28 September 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer29229cont/page/n449/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-09-28",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four apartments with a basement, estimated at $9,000, and the building contract for all work was recorded the same week at $13,520. Irvine & Ebbets were named as architects and G. O. Bendon as contractor.",
+      "source": "building-engineering-news-1929-09-28-n449"
+    }
+  ],
+  "building": {
+    "architect": "Irvine & Ebbets",
+    "builder": "G. O. Bendon"
+  }
+}

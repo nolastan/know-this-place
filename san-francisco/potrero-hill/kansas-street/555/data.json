@@ -1,0 +1,139 @@
+{
+  "address": "555 Kansas Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/kansas-street/555/",
+  "apn": "4009008G",
+  "block": "4009",
+  "lot": "008G",
+  "eas_baseid": "367223",
+  "coordinates": {
+    "lat": 37.762725,
+    "lng": -122.403033
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1725,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0555 KANSAS              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1002964,
+    "assessed_improvement_value": 444254,
+    "last_sale_date": "2009-07-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201207316114",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-07-31",
+      "status_date": "2014-07-11",
+      "estimated_cost": 2500,
+      "revised_cost": 5900,
+      "description": "comply of notice of violation #200928014. to legalize rear deck. deck size 14'4x8'3' 10 feet max from grade.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200404201786",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-04-20",
+      "status_date": "2004-04-20",
+      "estimated_cost": 400,
+      "revised_cost": 400,
+      "description": "install 1 vinyl window in kind into (e)frame,no change in size/location.window not visible from stre",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721557",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-27",
+      "status_date": "1999-08-25",
+      "estimated_cost": 4040,
+      "description": "instal 13 vinyl windows not visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317881",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-10-13",
+      "status_date": "1994-08-25",
+      "estimated_cost": 2400,
+      "description": "install six windows in existing frames in residence.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802225",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-02-24",
+      "status_date": "1989-01-25",
+      "estimated_cost": 8675,
+      "description": "vinyl siding (alside) to front, side & back",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KANSAS&street_type=ST&address_number=555",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4009008G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4009&lot=008G",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4009008G",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-10-26-n585",
+      "name": "Building and Engineering News, 26 October 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer29229cont/page/n585/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-10-26",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two listed together.",
+      "source": "building-engineering-news-1929-10-26-n585"
+    }
+  ]
+}

@@ -56,6 +56,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Los Palmos Drive](los-palmos-drive/) — 1 building, built 1948.
 - [Magellan Avenue](magellan-avenue/) — 1 building, built 1926; 1 in the Forest Hill Historic District.
 - [Mangels Avenue](mangels-avenue/) — 2 buildings, built 1928–1930.
+- [Manor Drive](manor-drive/) — 1 building, built 1929.
 - [Marietta Drive](marietta-drive/) — 2 buildings, built 1943–1959.
 - [Marston Avenue](marston-avenue/) — 8 buildings, built 1927.
 - [Maywood Drive](maywood-drive/) — 1 building, built 1927.

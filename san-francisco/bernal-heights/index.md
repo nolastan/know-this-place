@@ -4,6 +4,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 
 ## Streets documented so far
 
+- [Agnon Avenue](agnon-avenue/) — 1 building, built 1929.
 - [Alabama Street](alabama-street/) — 1 building, built 1998.
 - [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.

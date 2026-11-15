@@ -1,0 +1,176 @@
+{
+  "address": "3636 Scott Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/scott-street/3636/",
+  "apn": "0441A023",
+  "block": "0441A",
+  "lot": "023",
+  "eas_baseid": "282437",
+  "coordinates": {
+    "lat": 37.803621,
+    "lng": -122.441583
+  },
+  "parcel": {
+    "year_built": 1930,
+    "units": 12,
+    "stories": 3,
+    "rooms": 51,
+    "bathrooms": 12,
+    "lot_area_sqft": 5013,
+    "building_area_sqft": 11874,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3636 SCOTT               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 729955,
+    "assessed_improvement_value": 1213513
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1930",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202511210149",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2025-11-21",
+      "status_date": "2025-11-21",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "installl new exterior door. install new interior partion (lobby area)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202112023601",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2021-12-02",
+      "status_date": "2022-06-02",
+      "estimated_cost": 36000,
+      "revised_cost": 36000,
+      "description": "install low frequecny sounders to meet 75 db at the pillow per sffc section 1103.7.6.1 and replace the existing fire alarm control panel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710246352",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-10-24",
+      "status_date": "2007-11-16",
+      "estimated_cost": 29242,
+      "revised_cost": 29242,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201298007",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-01-29",
+      "status_date": "2002-07-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to delete work from previously apprvd permit app 2000/10/13/3019-per request of field inspector pat",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M17272",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2001-09-25",
+      "status_date": "2001-09-25",
+      "revised_cost": 350000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M16338",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2001-06-05",
+      "status_date": "2001-06-05",
+      "revised_cost": 350000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010133019",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2000-10-13",
+      "status_date": "2007-03-01",
+      "estimated_cost": 350000,
+      "revised_cost": 350000,
+      "description": "umb seismic strengtening @ exist ground & 2nd floor, remove & replace exist exterior stucco &windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SCOTT&street_type=ST&address_number=3636",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0441A023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0441A&lot=023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0441A023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44158305050249%2037.80362122754757)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-08-17-n245",
+      "name": "Building and Engineering News, 17 August 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer29229cont/page/n245/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-08-17",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of twelve apartments with a basement.",
+      "source": "building-engineering-news-1929-08-17-n245"
+    }
+  ]
+}

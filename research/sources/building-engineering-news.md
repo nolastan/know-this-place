@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 7 of 34 half-year volumes read (vols. 26, 27, 28 and 29 pt. 1, January 1926 – June 1929): 1,913 facts on 1,812 page writes (1,206 pages seeded). Resume at vol. 29 pt. 2 (July–December 1929, `buildingengineer29229cont`). See the `Verified:` line.
+> - **Coverage:** 8 of 34 half-year volumes read (vols. 26, 27, 28 and 29, January 1926 – December 1929): 2,035 facts on 1,930 page writes (1,260 pages seeded). Resume at vol. 30 pt. 1 (January–June 1930, `buildingengineer3030cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, and the 2,701 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1, 421 in pt. 2, 376 in vol. 28 pt. 1, 284 in pt. 2, 203 in vol. 29 pt. 1), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
+> - **Claimed:** every unread volume, and the 2,856 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1, 421 in pt. 2, 376 in vol. 28 pt. 1, 284 in pt. 2, 203 in vol. 29 pt. 1, 155 in pt. 2), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -129,7 +129,24 @@
   pages, 77 of them seeded. Unfinished: 203 placed single houses held for the
   same page-count decision, 264 rows with a nearest parcel not accepted, 459
   not placed. Unread: the other 27 volumes.
-- **Verified:** 2026-11-15 (vol. 29 pt. 1: read 1,935 entries, found 1,086
+- **Coverage, vol. 29 pt. 2** (`buildingengineer29229cont`, 6 July – 28
+  December 1929): 1,653 numbered entries; 944 San Francisco rows; 561 placed
+  on a parcel; 135 picked and read against the image; 122 published on 118
+  pages, 54 of them seeded. Unfinished: 155 placed single houses held for the
+  same page-count decision, 271 rows with a nearest parcel not accepted, 383
+  not placed. Unread: the other 26 volumes.
+- **Verified:** 2026-11-15 (vol. 29 pt. 2: read 1,653 entries, found 944
+  San Francisco rows, resolved 122, published 122 on 118 pages. Learned:
+  neither dater works alone on this scan (running heads date 82 of 897
+  leaves, and the cover-line dater misses the 20 July cover, printed
+  "Twenty. ninth Year"), so the 26 issue starts were listed by hand from both;
+  an owner sometimes gives the contractor's office as his own address, so a
+  shared address with a different surname is not proof of an owner-builder
+  (R. Harms, 1217 Stanyan, appears for three unrelated owners); a permit and
+  its contract can print different street numbers for one job (1031 and 1032
+  Broadway), and the one that matches the roll is published; a ten-flat
+  contract at a corner was five two-flat buildings on a tract and was held.)
+- **Verified (earlier):** 2026-11-15 (vol. 29 pt. 1: read 1,935 entries, found 1,086
   San Francisco rows, resolved 151, published 151 on 147 pages. Learned: the
   cover-line dater misses a cover whose date line is garbled (1 June 1929)
   and shifts every later issue, so check its issue starts against the
