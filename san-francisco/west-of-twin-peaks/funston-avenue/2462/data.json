@@ -1,0 +1,101 @@
+{
+  "address": "2462 Funston Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/funston-avenue/2462/",
+  "apn": "2413011",
+  "block": "2413",
+  "lot": "011",
+  "eas_baseid": "338054",
+  "coordinates": {
+    "lat": 37.74218,
+    "lng": -122.46885
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2038,
+    "building_area_sqft": 2340,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "West Portal",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2462 FUNSTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 50102,
+    "assessed_improvement_value": 84295
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202304266480",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-26",
+      "status_date": "2024-02-27",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FUNSTON&street_type=AVE&address_number=2462",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2413011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2413&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2413011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-09-11-n440",
+      "name": "Building and Engineering News, 11 September 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n440/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-09-11",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $4,000, and the building contract was recorded at $7,340. J. C. Hladik was named as architect and C. Ingerman as contractor.",
+      "source": "building-engineering-news-1926-09-11-n440"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik",
+    "builder": "C. Ingerman"
+  }
+}

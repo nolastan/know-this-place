@@ -1,0 +1,175 @@
+{
+  "address": "517 36th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/36th-avenue/517/",
+  "apn": "1508002",
+  "block": "1508",
+  "lot": "002",
+  "eas_baseid": "306077",
+  "coordinates": {
+    "lat": 37.779029,
+    "lng": -122.496816
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 12,
+    "stories": 3,
+    "rooms": 36,
+    "bathrooms": 12,
+    "lot_area_sqft": 5998,
+    "building_area_sqft": 11070,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0517 36TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2642407,
+    "assessed_improvement_value": 1761605,
+    "last_sale_date": "2021-10-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501289207",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-28",
+      "status_date": "2025-12-22",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as-built in ref to pa# 202304045011: changed 1 smoke to wireless, update pull stations locations, add permitted annunciator to riser diagram, & revised device addresses.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202304045011",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-04-04",
+      "status_date": "2025-12-17",
+      "estimated_cost": 40390,
+      "revised_cost": 44530,
+      "description": "replacing fire alarm system in kind to meet code 1103.7.61 to add low frequency sounders to all sleeping areas adding smokes, pulls and notification to common areas",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202206216718",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2022-06-21",
+      "status_date": "2023-07-28",
+      "estimated_cost": 290000,
+      "revised_cost": 494240,
+      "description": "addition of three adu units at the first floor of an existing 12-unit building for a total of 15 units per the state adu program.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612296146",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-29",
+      "status_date": "2021-09-24",
+      "estimated_cost": 80000,
+      "revised_cost": 100000,
+      "description": "soft story compliance: method of compliance 2012 iebc appendix a4 mandatory seismic retrofit per sfbc chapter 34b building reinforcement on ground floor, add shear walls, anchor sill bolting to foundation as shown on plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201404042433",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2014-04-04",
+      "status_date": "2016-11-07",
+      "estimated_cost": 2200,
+      "revised_cost": 2200,
+      "description": "install 5 vinyl windows in kind into existing frames. no change in size or location. windows do not face the street. if applicable, bedroom windows will comply with section cbc 1029 for rescue. all windows will be double pane and have a u-factor of .30. one unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005041666",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2010-05-04",
+      "status_date": "2026-01-09",
+      "estimated_cost": 17500,
+      "revised_cost": 0,
+      "description": "change-out 50-old aluminum windows with (n) double-pane winyl windows. 24-visable from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407098358",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-07-09",
+      "status_date": "2004-07-09",
+      "estimated_cost": 12650,
+      "revised_cost": 12650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208073427",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-08-07",
+      "status_date": "2003-12-11",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "install underpinning at south wall of (e) bldg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=36TH&street_type=AVE&address_number=517",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1508002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1508&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1508002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-02-02-n168",
+      "name": "Building and Engineering News, 2 February 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2929cont/page/n168/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-02-02",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of twelve apartments with a basement, estimated at $25,000.",
+      "source": "building-engineering-news-1929-02-02-n168"
+    }
+  ]
+}

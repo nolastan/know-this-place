@@ -6,6 +6,7 @@ The city's Presidio Heights analysis neighborhood, on the ridge between the Pres
 
 - [Arguello Boulevard](arguello-boulevard/) — 2 buildings, built 1926–1972; 1 in the Presidio Heights Historic District.
 - [Baker Street](baker-street/) — 3 buildings, built 1900–1907.
+- [Blake Street](blake-street/) — 1 building, built 1926.
 - [Bush Street](bush-street/) — 2 buildings, built 1900.
 - [California Street](california-street/) — 2 buildings, built 1950–1972; 1 in the California Street Neighborhood Commercial Shopping Center Historic District.
 - [Cherry Street](cherry-street/) — 1 building, built 1914; 1 in the Presidio Heights Historic District.
@@ -31,6 +32,7 @@ The city's Presidio Heights analysis neighborhood, on the ridge between the Pres
 - [Presidio Avenue](presidio-avenue/) — 2 buildings, built 1900–1930.
 - [Sacramento Street](sacramento-street/) — 1 building, built 1910.
 - [Spruce Street](spruce-street/) — 2 buildings, built 1900–1931.
+- [Sutter Street](sutter-street/) — 1 building, built 1928.
 - [Walnut Street](walnut-street/) — 1 building, built 1906; 1 in the Presidio Heights Historic District.
 - [Washington Street](washington-street/) — 3 buildings, built 1906–1950; 3 in the Presidio Heights Historic District.
 - [Wood Street](wood-street/) — 1 building, built 1952.

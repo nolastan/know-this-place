@@ -1,0 +1,164 @@
+{
+  "address": "2199 16th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/16th-avenue/2199/",
+  "apn": "2201002",
+  "block": "2201",
+  "lot": "002",
+  "eas_baseid": "503978",
+  "coordinates": {
+    "lat": 37.747124,
+    "lng": -122.472895
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2295.04,
+    "building_area_sqft": 2005,
+    "basement_area_sqft": 610,
+    "lot_depth_ft": 71.72,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0600 RIVERA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143697,
+    "assessed_improvement_value": 103600
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202209112216",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-11",
+      "status_date": "2022-09-15",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201911056477",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-05",
+      "status_date": "2020-02-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace kitchen cabinets due to water damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808278411",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-27",
+      "status_date": "2018-10-24",
+      "estimated_cost": 10100,
+      "revised_cost": 10100,
+      "description": "replace 5 windows with fibrex inserts. one picture window at front. 4 double hung windows at side. 1:1 proportion. rba fibrex determined appropriate.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805108791",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-10",
+      "status_date": "2018-08-01",
+      "estimated_cost": 19260,
+      "revised_cost": 19260,
+      "description": "like for like replacement of (7) street-facing windows as inserts with grille patterns to match existing. full frame replacement of window on second story addition, like for like. renewal by andersen fibrex determined appropriate. u-factor 0.32 max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200908255501",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-08-25",
+      "status_date": "2009-09-22",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "remove brick stairs and landing and repair dry rot less than 45%. replace in kind including water proofing substrate support & stucco, patching walls next to steps.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302046671",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-04",
+      "status_date": "2003-02-11",
+      "estimated_cost": 9380,
+      "revised_cost": 9380,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714829S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-08-11",
+      "status_date": "1997-11-26",
+      "estimated_cost": 20000,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=2199",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2201002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2201&lot=002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2201002",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-12-24-n918",
+      "name": "Building and Engineering News, 24 December 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n918/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-12-24",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame building of two flats with a basement.",
+      "source": "building-engineering-news-1927-12-24-n918"
+    }
+  ]
+}

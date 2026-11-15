@@ -1,0 +1,147 @@
+{
+  "address": "111 Genebern Way, San Francisco, CA 94112",
+  "path": "/san-francisco/bernal-heights/genebern-way/111/",
+  "apn": "5836016",
+  "block": "5836",
+  "lot": "016",
+  "eas_baseid": "384781",
+  "coordinates": {
+    "lat": 37.733321,
+    "lng": -122.424798
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 3296.88,
+    "building_area_sqft": 1350,
+    "lot_depth_ft": 91.58,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0111 GENEBERN            WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 900000,
+    "assessed_improvement_value": 600000,
+    "last_sale_date": "2022-03-18"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202403268606",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2024-03-26",
+      "status_date": "2024-03-29",
+      "estimated_cost": 8000,
+      "revised_cost": 25000,
+      "description": "legalization of previous bathroom remodel & associated electricial panel work prior to new ownership. owner needs \"code check\" for \"meter release\" & bath work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202201196223",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-19",
+      "status_date": "2022-03-09",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201007297779",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-07-29",
+      "status_date": "2010-12-08",
+      "estimated_cost": 3800,
+      "revised_cost": 8000,
+      "description": "change 16 windows at side and rear elevations only. no work at front windows, same size replacement, u- factor 0.40 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200911201767",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-11-20",
+      "status_date": "2010-12-14",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "remove & replace kitchen cabinets including sheetrock & insulation replacement & interior walls. non-structural / in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611658",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-06-28",
+      "status_date": "1996-07-02",
+      "estimated_cost": 2900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GENEBERN&street_type=WAY&address_number=111",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5836016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5836&lot=016",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5836016",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-03-13-n434",
+      "name": "Building and Engineering News, 13 March 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n434/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-03-13",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. Chas. F. Strothoff was named as architect and P. M. McDonald as contractor.",
+      "source": "building-engineering-news-1926-03-13-n434"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff",
+    "builder": "P. M. McDonald"
+  }
+}

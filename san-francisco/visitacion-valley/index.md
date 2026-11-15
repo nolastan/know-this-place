@@ -10,6 +10,7 @@ The city's Visitacion Valley analysis neighborhood, in the south-eastern corner 
 - [Blanken Avenue](blanken-avenue/) — 2 buildings, built 1932–1993; 1 in the Little Hollywood Historic District.
 - [Campbell Avenue](campbell-avenue/) — 1 building, built 2008.
 - [Ervine Street](ervine-street/) — 1 building, built 1989.
+- [Girard Street](girard-street/) — 1 building, built 1928.
 - [Hahn Street](hahn-street/) — 1 building.
 - [Lathrop Avenue](lathrop-avenue/) — 1 building, built 1943; 1 in the Little Hollywood Historic District.
 - [Leland Avenue](leland-avenue/) — 1 building.
@@ -18,6 +19,7 @@ The city's Visitacion Valley analysis neighborhood, in the south-eastern corner 
 - [Schwerin Street](schwerin-street/) — 1 building, built 1939.
 - [Sunnydale Avenue](sunnydale-avenue/) — 2 buildings, built 1904–1947.
 - [Teddy Avenue](teddy-avenue/) — 1 building, built 2009.
+- [Tioga Avenue](tioga-avenue/) — 1 building, built 1926.
 - [Tocoloma Avenue](tocoloma-avenue/) — 1 building, built 1936; 1 in the Little Hollywood Historic District.
 - [Tucker Avenue](tucker-avenue/) — 1 building, built 1927.
 - [Tunnel Avenue](tunnel-avenue/) — 1 building.

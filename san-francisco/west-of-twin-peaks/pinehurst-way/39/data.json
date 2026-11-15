@@ -1,0 +1,133 @@
+{
+  "address": "39 Pinehurst Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/pinehurst-way/39/",
+  "apn": "3270008",
+  "block": "3270",
+  "lot": "008",
+  "eas_baseid": "357141",
+  "coordinates": {
+    "lat": 37.72751,
+    "lng": -122.465634
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3210,
+    "building_area_sqft": 1768,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Mount Davidson Manor",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0039 PINEHURST           WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 373686,
+    "assessed_improvement_value": 191378,
+    "last_sale_date": "1987-06-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208110393",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-11",
+      "status_date": "2022-12-02",
+      "estimated_cost": 3000,
+      "revised_cost": 5000,
+      "description": "replace 5 windows on side and back of bldg. termite dryrot repair. same size same location. u=0.3max",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201601046300",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2016-01-04",
+      "status_date": "2016-01-04",
+      "estimated_cost": 18597,
+      "revised_cost": 18597,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106121357",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-12",
+      "status_date": "2001-09-18",
+      "estimated_cost": 4200,
+      "revised_cost": 4200,
+      "description": "replace exterior stair tiles. replace about 25 s.f. stucco around the stairs. replace some day dry r",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8708431",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-06-17",
+      "status_date": "1987-11-25",
+      "estimated_cost": 870,
+      "description": "install redwood at base of wall. cut off stairs & repair.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PINEHURST&street_type=WAY&address_number=39",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3270008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3270&lot=008",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3270008",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-10-27-n597",
+      "name": "Building and Engineering News, 27 October 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n597/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-10-27",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $5,000 each. W. A. Doctor was named as architect.",
+      "source": "building-engineering-news-1928-10-27-n597"
+    }
+  ],
+  "building": {
+    "architect": "W. A. Doctor"
+  }
+}

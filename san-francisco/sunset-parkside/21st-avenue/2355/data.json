@@ -1,0 +1,136 @@
+{
+  "address": "2355–2357 21st Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/21st-avenue/2355/",
+  "apn": "2350010",
+  "block": "2350",
+  "lot": "010",
+  "eas_baseid": "461724",
+  "coordinates": {
+    "lat": 37.743771,
+    "lng": -122.478221
+  },
+  "address_range": "2355–2357",
+  "street_numbers_on_parcel": [
+    "2355",
+    "2357"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2850,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "2357 2355 21ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1366506,
+    "assessed_improvement_value": 612410,
+    "last_sale_date": "2018-10-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201811135718",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-11-13",
+      "status_date": "2019-02-21",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodle kitchen and bathroom. new electrical, all plumbing fixture stay as existing same location. replace kitchen cabinet, sink, hood and washer/dryer. replace bathroom tub, sink and toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201810264254",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-10-26",
+      "status_date": "2018-10-26",
+      "estimated_cost": 3000,
+      "revised_cost": 30551,
+      "description": "kitchen: the cabinets and counter top will be replaced. size 9ft x 6ft. in kind replacement. bathroom: sink cabinets and shower will be replaced. size 7x6 ft be replaced. tile wall will be replaced. in place.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203070796",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-07",
+      "status_date": "2002-04-01",
+      "estimated_cost": 3228,
+      "revised_cost": 3228,
+      "description": "6 windows to be replaced size for size (rear windows)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9723125",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-11-17",
+      "status_date": "1998-03-24",
+      "estimated_cost": 11520,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=21ST&street_type=AVE&address_number=2355",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2350010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2350&lot=010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2350010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-03-19-n439",
+      "name": "Building and Engineering News, 19 March 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n439/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-03-19",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of two on adjoining lots, estimated at $8,000 each.",
+      "source": "building-engineering-news-1927-03-19-n439"
+    }
+  ]
+}

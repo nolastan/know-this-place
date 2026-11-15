@@ -1,0 +1,183 @@
+{
+  "address": "3200 Baker Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/baker-street/3200/",
+  "apn": "0926020",
+  "block": "0926",
+  "lot": "020",
+  "eas_baseid": "290531",
+  "coordinates": {
+    "lat": 37.800649,
+    "lng": -122.446233
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2343.75,
+    "building_area_sqft": 3088,
+    "basement_area_sqft": 1765,
+    "lot_depth_ft": 93.75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3200 BAKER               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 758457,
+    "assessed_improvement_value": 567155,
+    "last_sale_date": "1997-11-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010015642",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-10-01",
+      "status_date": "2020-10-01",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202003056286",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-03-05",
+      "status_date": "2021-10-14",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "revision to drawimgs for permit #201901100002, changes to ground floor to move door position & increase closet space. add storage space. 2nd level: remove pantry. change to storage and doors on gorund fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201901100002",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-10",
+      "status_date": "2021-10-14",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "kitchen and laundry renovation, service stair infill, no exterior work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200601263147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-01-26",
+      "status_date": "2006-10-25",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "replace interior wall surfaces of bedrm, bathrm, storage area, bath shower, fixtures, doors, move partition wall in bedrm. wood floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906459",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-04-05",
+      "status_date": "2001-10-03",
+      "estimated_cost": 3000,
+      "description": "complete baseboard, final trim and finish work on 9805683",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805483",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-03-31",
+      "status_date": "1998-09-30",
+      "estimated_cost": 15000,
+      "description": "enlare bdrm /bathroom/remove extg bthrm/remove cieling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314415",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-23",
+      "status_date": "1995-02-08",
+      "estimated_cost": 4800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8309336",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-09-21",
+      "status_date": "1983-12-23",
+      "estimated_cost": 8000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "1983–2020",
+    "shown_on_page": 8,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAKER&street_type=ST&address_number=3200",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0926020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0926&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0926020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-10-16-n652",
+      "name": "Building and Engineering News, 16 October 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n652/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-10-16",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $7,000. J. A. Porporato was named as architect and S. Montani as contractor.",
+      "source": "building-engineering-news-1926-10-16-n652"
+    }
+  ],
+  "building": {
+    "architect": "J. A. Porporato",
+    "builder": "S. Montani"
+  }
+}

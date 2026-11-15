@@ -1,0 +1,153 @@
+{
+  "address": "1457 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/1457/",
+  "apn": "0497009B",
+  "block": "0497",
+  "lot": "009B",
+  "eas_baseid": "283484",
+  "coordinates": {
+    "lat": 37.801669,
+    "lng": -122.427293
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 13,
+    "stories": 3,
+    "rooms": 39,
+    "bathrooms": 13,
+    "lot_area_sqft": 6875,
+    "building_area_sqft": 12865,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1457 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 748433,
+    "assessed_improvement_value": 1803641,
+    "last_sale_date": "1991-04-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202403208265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-03-20",
+      "status_date": "2024-07-08",
+      "estimated_cost": 45500,
+      "revised_cost": 45500,
+      "description": "upgrade existing fire alarm system to comply with sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201605278637",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-27",
+      "status_date": "2017-07-31",
+      "estimated_cost": 68000,
+      "revised_cost": 129000,
+      "description": "soft story retrofit to comply with sfbc 34b mandatory seismic retrofit iebc a4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9121582",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-11-14",
+      "status_date": "1992-09-22",
+      "estimated_cost": 10000,
+      "description": "propose alteration @ g/f by enlarged (e) garage door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8908144",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-05-12",
+      "status_date": "1989-08-09",
+      "estimated_cost": 1,
+      "description": "refer to expired appln. #8805740",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904327",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-03-20",
+      "status_date": "1989-09-24",
+      "estimated_cost": 8000,
+      "description": "take off existing roof layers,install plies of fiberglass",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805740",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1988-05-03",
+      "status_date": "1989-01-27",
+      "estimated_cost": 4750,
+      "description": "tear out existing bathroom exterior including rotted floor",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=1457",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0497009B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0497&lot=009B",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0497009B",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-01-16-n101",
+      "name": "Building and Engineering News, 16 January 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n101/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-01-16",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of twelve apartments with a basement, estimated at $26,000. H. C. Baumann was named as architect.",
+      "source": "building-engineering-news-1926-01-16-n101"
+    }
+  ],
+  "building": {
+    "architect": "H. C. Baumann"
+  }
+}

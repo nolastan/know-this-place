@@ -1,0 +1,123 @@
+{
+  "address": "1206 40th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/40th-avenue/1206/",
+  "apn": "1711026",
+  "block": "1711",
+  "lot": "026",
+  "eas_baseid": "314623",
+  "coordinates": {
+    "lat": 37.764232,
+    "lng": -122.49948
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 1545,
+    "basement_area_sqft": 300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1206 40TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1027695,
+    "assessed_improvement_value": 440438,
+    "last_sale_date": "2016-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201704123807",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2017-04-12",
+      "status_date": "2026-01-09",
+      "estimated_cost": 15000,
+      "revised_cost": 0,
+      "description": "to replace an existing perimeter footing and slab at a rear bedroom; replace (e) windows at rear bedrrom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110056173",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-05",
+      "status_date": "2012-02-28",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "replace kitchen cabinets. 2 new skylights on roof. remodel bath on lower floor. increase head room at existing stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8407822",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1984-07-19",
+      "status_date": "1984-12-05",
+      "estimated_cost": 1700,
+      "description": "installation of 5 aluminum windowns in the livingroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=40TH&street_type=AVE&address_number=1206",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1711026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1711&lot=026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1711026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-11-20-n859",
+      "name": "Building and Engineering News, 20 November 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n859/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-11-20",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1926-11-20-n859"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

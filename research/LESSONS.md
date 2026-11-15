@@ -3384,3 +3384,24 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   since replaced is published as "then on this site at <old address>" with
   the present building's year; one with no usable date was declined, since
   nothing shows which building it is. (2026-11-13, digitalsf)
+- **A trade weekly's permit listing places a lot by a distance from a corner,
+  and that location survives OCR far better than the rest of the entry.** In
+  one half-year volume of *Building and Engineering News* the parsed location
+  was right on 384 of 385 rows read against the page image; about 160 of the
+  same rows needed a cost, a name or the description corrected (a digit
+  dropped or added, two entries run together at a column break). Place by
+  geometry, then read the image for everything else before publishing, and
+  check a contract's total against its payment schedule. (2026-11-14,
+  building-engineering-news)
+- **The Internet Archive reader's `/page/n<index>` counts displayed pages,
+  not scan leaves.** Where scandata marks leaf 0 as deleted, `n144` shows
+  `<id>_0145.jp2`, and the zero-based page index of `_djvu.xml` is the reader
+  index. Ask `BookReaderJSIA.php` which leaf an index shows before writing
+  376 citation links. (2026-11-14, building-engineering-news)
+- **Check a seeded batch's directories against the neighborhood each parcel
+  is in, after seeding.** The resolver's nearest-page rule filed 44 of 242
+  new pages under a neighbouring directory (Marina parcels under Russian
+  Hill, Sunset avenues under Inner Sunset). Comparing each new page's
+  `parcel.analysis_neighborhood` with the directory most of the city's pages
+  for that neighborhood use finds them in one pass. (2026-11-14,
+  building-engineering-news)

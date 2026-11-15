@@ -1,0 +1,135 @@
+{
+  "address": "1275 34th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/34th-avenue/1275/",
+  "apn": "1716016",
+  "block": "1716",
+  "lot": "016",
+  "eas_baseid": "314808",
+  "coordinates": {
+    "lat": 37.763326,
+    "lng": -122.493562
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2486,
+    "basement_area_sqft": 936,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1275 34TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37163,
+    "assessed_improvement_value": 280999
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200804099265",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-04-09",
+      "status_date": "2008-04-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "add new bathroom, kitchen remodel to include cabinets and counter. interior remodeling interior parition @ rear bedrooms.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200802255535",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-25",
+      "status_date": "2008-02-25",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "new foundation, railing, decorative trellis for rear terrace patio addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710094830",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-09",
+      "status_date": "2007-10-17",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "alteration of existing first floor to create 2 bedrooms, 2 bathrooms and 1 family room",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8909172",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-05-26",
+      "status_date": "1989-09-24",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=34TH&street_type=AVE&address_number=1275",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1716016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1716&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1716016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-12-01-n768",
+      "name": "Building and Engineering News, 1 December 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n768/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-12-01",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $4,000 each. Chas. F. Strothoff was named as architect.",
+      "source": "building-engineering-news-1928-12-01-n768"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

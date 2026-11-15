@@ -22,6 +22,7 @@ The city's Inner Richmond analysis neighborhood, between Golden Gate Park and th
 - [California Street](california-street/) — 2 buildings, built 1911–1950.
 - [Clement Street](clement-street/) — 1 building, built 1904.
 - [Cornwall Street](cornwall-street/) — 1 building, built 1902.
+- [Fulton Street](fulton-street/) — 2 buildings, built 1926.
 - [Funston Avenue](funston-avenue/) — 2 buildings, built 1900–1912.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1921.
 - [Lake Street](lake-street/) — 1 building, built 1981.

@@ -1,0 +1,160 @@
+{
+  "address": "3217 Baker Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/baker-street/3217/",
+  "apn": "0925011",
+  "block": "0925",
+  "lot": "011",
+  "eas_baseid": "290491",
+  "coordinates": {
+    "lat": 37.800742,
+    "lng": -122.446678
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2417,
+    "building_area_sqft": 2030,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3217 BAKER               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2205000,
+    "assessed_improvement_value": 945000,
+    "last_sale_date": "2024-07-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Baker Street Period Revival Bungalows Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1927–1928",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202601143799",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-01-14",
+      "status_date": "2026-01-14",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair & replace dry rotted wood siging at rear yard (not visible).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202509115083",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2025-10-01",
+      "status_date": "2026-02-27",
+      "estimated_cost": 250655,
+      "revised_cost": 250655,
+      "description": "horizontal addition to barhroom on 3/f.replace window in kind at front facade. enclose (e) lightwell. new hallway & renovation of (e) family room on 1/f. renovation of (e) kitchen & bathrooms on 2/f.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207195188",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-19",
+      "status_date": "2012-08-08",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201205110270",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-05-11",
+      "status_date": "2012-08-30",
+      "estimated_cost": 170000,
+      "revised_cost": 170000,
+      "description": "repair water damages, mostly cosmetic, including replace dry wall at hallway, living room, kitchen, and garage below, also replace insulation where neededl new water heater and furnace including ducting, electrical code upgrades. no structural modifiactions.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8703801",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-03-24",
+      "status_date": "1987-06-04",
+      "estimated_cost": 7800,
+      "description": "change bathroom fixture, new tile work in bathrooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAKER&street_type=ST&address_number=3217",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0925011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0925&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0925011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44667810886277%2037.80074206081219)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-04-21-n546",
+      "name": "Building and Engineering News, 21 April 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n546/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-04-21",
+      "kind": "construction",
+      "description": "A permit was sought for a one-and-a-half-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $5,000 each. Chas. F. Strothoff was named as architect and William L. Terry as contractor.",
+      "source": "building-engineering-news-1928-04-21-n546"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff",
+    "builder": "William L. Terry"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "address": "1735 Kirkham Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/kirkham-street/1735/",
+  "apn": "1867043",
+  "block": "1867",
+  "lot": "043",
+  "eas_baseid": "321263",
+  "coordinates": {
+    "lat": 37.759468,
+    "lng": -122.479609
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1735 KIRKHAM             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 162476,
+    "assessed_improvement_value": 243727
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201206263485",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-26",
+      "status_date": "2012-08-15",
+      "estimated_cost": 7050,
+      "revised_cost": 7050,
+      "description": "replace 5 windows, size for size, visable from street with marvin wood clad windows, casements \"u\" value =0.40",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200504210564",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-04-21",
+      "status_date": "2005-04-21",
+      "estimated_cost": 2561,
+      "revised_cost": 2561,
+      "description": "replace (e) sliding patio door from dining room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410207361",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-10-20",
+      "status_date": "2004-10-20",
+      "estimated_cost": 2405,
+      "revised_cost": 2405,
+      "description": "install 6 replacement windows. not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200303079074",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-03-07",
+      "status_date": "2003-03-28",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "change out 3 windows in computer room, (i.e. bedroom) back of house",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KIRKHAM&street_type=ST&address_number=1735",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1867043&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1867&lot=043",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1867043",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-04-24-n688",
+      "name": "Building and Engineering News, 24 April 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n688/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-04-24",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $4,000 each. H. C. Baumann was named as architect and Meyer Bros. as contractor. The owner was the San Francisco Home Bldg. Co.",
+      "source": "building-engineering-news-1926-04-24-n688"
+    }
+  ],
+  "building": {
+    "architect": "H. C. Baumann",
+    "builder": "Meyer Bros."
+  }
+}

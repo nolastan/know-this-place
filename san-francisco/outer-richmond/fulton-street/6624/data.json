@@ -1,0 +1,114 @@
+{
+  "address": "6624–6626 Fulton Street, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/fulton-street/6624/",
+  "apn": "1685006S",
+  "block": "1685",
+  "lot": "006S",
+  "eas_baseid": "313841",
+  "coordinates": {
+    "lat": 37.771968,
+    "lng": -122.502907
+  },
+  "address_range": "6624–6626",
+  "street_numbers_on_parcel": [
+    "6624",
+    "6626"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2800,
+    "building_area_sqft": 3412,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "6626 6624 FULTON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 655900,
+    "assessed_improvement_value": 437260,
+    "last_sale_date": "2002-01-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201510260750",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-10-26",
+      "status_date": "2015-11-10",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202199427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-19",
+      "status_date": "2002-04-18",
+      "estimated_cost": 16500,
+      "revised_cost": 16500,
+      "description": "partial bath remodel replace failed shower, sheetrock, and paint work to be done on 6626 fulton st.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FULTON&street_type=ST&address_number=6624",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1685006S&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1685&lot=006S",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1685006S",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-12-24-n1040",
+      "name": "Building and Engineering News, 24 December 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n1040/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-12-24",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of flats with a basement, estimated at $7,000.",
+      "source": "building-engineering-news-1926-12-24-n1040"
+    }
+  ]
+}

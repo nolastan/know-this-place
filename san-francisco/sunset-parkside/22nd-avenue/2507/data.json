@@ -1,0 +1,182 @@
+{
+  "address": "2507 22nd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/22nd-avenue/2507/",
+  "apn": "2423002",
+  "block": "2423",
+  "lot": "002",
+  "eas_baseid": "338432",
+  "coordinates": {
+    "lat": 37.740794,
+    "lng": -122.479086
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 2015,
+    "basement_area_sqft": 540,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2507 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325726,
+    "assessed_improvement_value": 254066,
+    "last_sale_date": "1997-02-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200602154648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-02-15",
+      "status_date": "2006-03-20",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "remove cabinets & sink installed @ g/f.note: room were created with permit under appl#9411439",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506235891",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-23",
+      "status_date": "2005-08-08",
+      "estimated_cost": 3297,
+      "revised_cost": 3297,
+      "description": "install 8 windows in kind into (e)frame,windows are in rear.no change in size/location.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805016",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-03-24",
+      "status_date": "1998-03-30",
+      "estimated_cost": 1,
+      "description": "renew app #9707448",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9718016",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-09-15",
+      "status_date": "1997-10-06",
+      "estimated_cost": 1,
+      "description": "building under const pa 9707448 close proposed window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707448",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-04-24",
+      "status_date": "1998-03-30",
+      "estimated_cost": 12000,
+      "revised_cost": 16000,
+      "description": "proposed remodeling (e)building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9411439",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1994-07-19",
+      "status_date": "1994-12-07",
+      "estimated_cost": 2000,
+      "revised_cost": 18900,
+      "description": "legalize (e) rooms and bathroom at (e) g/f",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8202251",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-03-25",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1500,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201112",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-02-16",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3000,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8005695",
+      "type": "additions alterations or repairs",
+      "status": "filing",
+      "filed": "1980-06-26",
+      "status_date": "1980-06-26",
+      "estimated_cost": 4000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=2507",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2423002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2423&lot=002",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2423002",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-06-05-n941",
+      "name": "Building and Engineering News, 5 June 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n941/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-06-05",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. Chas. F. Strothoff was named as architect.",
+      "source": "building-engineering-news-1926-06-05-n941"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "address": "140 Chester Avenue, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/chester-avenue/140/",
+  "apn": "7124004A",
+  "block": "7124",
+  "lot": "004A",
+  "eas_baseid": "416715",
+  "coordinates": {
+    "lat": 37.713601,
+    "lng": -122.470707
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3201,
+    "building_area_sqft": 1600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0140 CHESTER             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 337752,
+    "assessed_improvement_value": 165100,
+    "last_sale_date": "1988-10-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9200503",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-01-10",
+      "status_date": "1992-10-20",
+      "estimated_cost": 200,
+      "revised_cost": 9000,
+      "description": "legalize family,social & study rooms",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTER&street_type=AVE&address_number=140",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7124004A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7124&lot=004A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7124004A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-10-06-n494",
+      "name": "Building and Engineering News, 6 October 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n494/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-10-06",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. H. G. Stoner was named as architect. The owner was the Lang Realty Co.",
+      "source": "building-engineering-news-1928-10-06-n494"
+    }
+  ],
+  "building": {
+    "architect": "H. G. Stoner"
+  }
+}

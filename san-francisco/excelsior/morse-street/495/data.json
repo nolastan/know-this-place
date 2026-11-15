@@ -1,0 +1,110 @@
+{
+  "address": "495 Morse Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/morse-street/495/",
+  "apn": "6478031",
+  "block": "6478",
+  "lot": "031",
+  "eas_baseid": "399521",
+  "coordinates": {
+    "lat": 37.71205,
+    "lng": -122.442239
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 600,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Croker Amazon",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0495 MORSE               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 581895,
+    "assessed_improvement_value": 249383,
+    "last_sale_date": "2023-02-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200707096216",
+      "type": "new construction wood frame",
+      "status": "withdrawn",
+      "filed": "2007-07-09",
+      "status_date": "2010-03-31",
+      "estimated_cost": 300000,
+      "revised_cost": 427280,
+      "description": "erect a 3 story one family dwelling unit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707096219",
+      "type": "demolitions",
+      "status": "issued",
+      "filed": "2007-07-09",
+      "status_date": "2009-05-15",
+      "description": "demolish 1 story single family dwelling",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MORSE&street_type=ST&address_number=495",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6478031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6478&lot=031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6478031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-08-14-n285",
+      "name": "Building and Engineering News, 14 August 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n285/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-08-14",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. Geo. M. Cantrell was named as architect.",
+      "source": "building-engineering-news-1926-08-14-n285"
+    }
+  ],
+  "building": {
+    "architect": "Geo. M. Cantrell"
+  }
+}

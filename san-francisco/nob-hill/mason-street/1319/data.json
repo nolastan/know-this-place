@@ -1,0 +1,175 @@
+{
+  "address": "1319–1323 Mason Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/mason-street/1319/",
+  "apn": "0181005A",
+  "block": "0181",
+  "lot": "005A",
+  "eas_baseid": "279367",
+  "coordinates": {
+    "lat": 37.795661,
+    "lng": -122.41195
+  },
+  "address_range": "1319–1323",
+  "street_numbers_on_parcel": [
+    "1319",
+    "1323"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 12,
+    "stories": 4,
+    "rooms": 27,
+    "bathrooms": 10,
+    "lot_area_sqft": 4312,
+    "building_area_sqft": 10075,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RC-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1323 MASON               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 258972,
+    "assessed_improvement_value": 362569
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310198972",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2023-10-19",
+      "status_date": "2024-08-07",
+      "estimated_cost": 27000,
+      "revised_cost": 30714,
+      "description": "upgrade to (e) fire alarm devices to be replaced to include manual pull stations & smoke detectors. (e) bells to be replace w/ horn strobes & strobes. units to have 520 hz low-frequency audibles installed. fire alarm control panel be monitores w/ starlink 24v cell gsm-sole communication",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809140346",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-09-14",
+      "status_date": "2026-01-23",
+      "estimated_cost": 60000,
+      "revised_cost": 0,
+      "description": "residential soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4. commercial pa #201809140347.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201809140347",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2018-09-14",
+      "status_date": "2026-01-23",
+      "estimated_cost": 30000,
+      "revised_cost": 0,
+      "description": "commercial soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4. residential pa #201809140346.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611173064",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-17",
+      "status_date": "2016-12-08",
+      "estimated_cost": 24700,
+      "revised_cost": 25000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304641",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-03-22",
+      "status_date": "1993-09-28",
+      "estimated_cost": 2000,
+      "description": "remove exist column/alt office area done under ap 9214135",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9221752",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-12-17",
+      "status_date": "1993-09-28",
+      "estimated_cost": 1,
+      "description": "rev #9214135-relocate stair to mezz due to obstruction.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214135",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-08-21",
+      "status_date": "1993-10-01",
+      "estimated_cost": 35000,
+      "revised_cost": 34100,
+      "description": "add mezz & new toilet. partitions & exterior storefront revi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1992–2023",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MASON&street_type=ST&address_number=1319",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0181005A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0181&lot=005A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0181005A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-09-24-n478",
+      "name": "Building and Engineering News, 24 September 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n478/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-09-24",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for two apartment houses of 24 apartments. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1927-09-24-n478"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

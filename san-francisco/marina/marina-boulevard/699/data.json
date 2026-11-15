@@ -1,0 +1,166 @@
+{
+  "address": "699 Marina Boulevard, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/marina-boulevard/699/",
+  "apn": "0911018",
+  "block": "0911",
+  "lot": "018",
+  "eas_baseid": "290165",
+  "coordinates": {
+    "lat": 37.805225,
+    "lng": -122.445418
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 3445.5,
+    "building_area_sqft": 3000,
+    "lot_depth_ft": 91.88,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 0699 MARINA              BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 136975,
+    "assessed_improvement_value": 319733
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Baker Street Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1926–1940",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201808288517",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-28",
+      "status_date": "2019-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1000,
+      "description": "revision to app#2018-0828-8517. redesign shear wall to be installed on the exterior wall at line b. n/a for maher",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201808026265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-08-02",
+      "status_date": "2019-02-04",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "grout soil for voluntary seismic upgrade. grouting to extend 3' beyond footing perimeter within property line. ref pa# 2018-05-31-0580. maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805310580",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-31",
+      "status_date": "2019-02-04",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa #201507010473, structural revision only to voluntary seismic strengthening by addition of 2 moment frames and plywood shearwall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201507010473",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-07-01",
+      "status_date": "2019-02-04",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "voluntary structural strengthening of foundation & vertical diaphragm. install new holdowns, collectors, shearwall & steel moment frame only (as-built plan only). n/a for maher ordinance. maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203010407",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-01",
+      "status_date": "2002-03-28",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "add hdsa voluntary upgrade at all footing location",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "2000–2018",
+    "shown_on_page": 5,
+    "note": "5 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARINA&street_type=BLVD&address_number=699",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0911018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0911&lot=018",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0911018",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44541800962007%2037.80522505448338)%27)",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-05-22-n855",
+      "name": "Building and Engineering News, 22 May 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n855/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-05-22",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame residence with a basement, estimated at $25,000. Morris M. Bruce was named as architect.",
+      "source": "building-engineering-news-1926-05-22-n855"
+    }
+  ],
+  "building": {
+    "architect": "Morris M. Bruce"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "address": "754 30th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/30th-avenue/754/",
+  "apn": "1615013K",
+  "block": "1615",
+  "lot": "013K",
+  "eas_baseid": "310658",
+  "coordinates": {
+    "lat": 37.775043,
+    "lng": -122.489412
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2540,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0754 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45245,
+    "assessed_improvement_value": 55184
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202608056093",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-08-05",
+      "status_date": "2026-08-05",
+      "estimated_cost": 52000,
+      "revised_cost": 56904,
+      "description": "kitchen remodel like for like, update laundry room and update plumbing and electrical, same connections, update power room, new vanity, new toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202411134913",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-13",
+      "status_date": "2025-01-30",
+      "estimated_cost": 15100,
+      "revised_cost": 15100,
+      "description": "reroofing- overlay- no torch work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-09-09",
+      "status_date": "1987-12-04",
+      "estimated_cost": 8500,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=754",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1615013K&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1615&lot=013K",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1615013K",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-04-16-n606",
+      "name": "Building and Engineering News, 16 April 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n606/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-04-16",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $5,000 each. Andrew H. Knoll was named as architect.",
+      "source": "building-engineering-news-1927-04-16-n606"
+    }
+  ],
+  "building": {
+    "architect": "Andrew H. Knoll"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "address": "4301 Geary Boulevard, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/geary-boulevard/4301/",
+  "apn": "1537001",
+  "block": "1537",
+  "lot": "001",
+  "eas_baseid": "307273",
+  "coordinates": {
+    "lat": 37.780651,
+    "lng": -122.465593
+  },
+  "parcel": {
+    "year_built": 1927,
+    "stories": 2,
+    "rooms": 15,
+    "bathrooms": 2,
+    "lot_area_sqft": 8071,
+    "building_area_sqft": 12733,
+    "basement_area_sqft": 2760,
+    "use": "Commercial Misc",
+    "property_class": "Churches,Convents,Rectories",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 4301 GEARY               BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 245100,
+    "assessed_improvement_value": 459746
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200901270893",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-27",
+      "status_date": "2009-02-17",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9611024",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-06-20",
+      "status_date": "1997-08-04",
+      "estimated_cost": 1,
+      "description": "renew expired appl #9420602",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9508263",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-06-02",
+      "status_date": "1996-02-15",
+      "estimated_cost": 11650,
+      "revised_cost": 17400,
+      "description": "revision to 9420602 litwell area/rear wall of 1st story, etc",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9420602",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-12-15",
+      "status_date": "1996-02-22",
+      "estimated_cost": 25012,
+      "description": "work on bsmt flr,fire exit door,floor drain at fire exit dr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8905167",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-03",
+      "status_date": "1990-10-18",
+      "estimated_cost": 15000,
+      "description": "upgrading men's toilet rm @ 2nd fl, new elec light fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8710611",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-07-28",
+      "status_date": "1988-02-10",
+      "estimated_cost": 15000,
+      "description": "exist door modifications, toilet rm improvements",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607688",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-06-30",
+      "status_date": "1987-07-09",
+      "estimated_cost": 30000,
+      "description": "rehabilitation of existing kitchen & install new toilet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606780",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-06-10",
+      "status_date": "1986-11-06",
+      "estimated_cost": 1000,
+      "description": "to complete work & obtain final inspection",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8509160",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1985-08-22",
+      "status_date": "1986-04-17",
+      "estimated_cost": 10000,
+      "description": "remodel existing kitchen in basement of the church",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GEARY&street_type=BLVD&address_number=4301",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1537001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1537&lot=001",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1537001",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-02-05-n194",
+      "name": "Building and Engineering News, 5 February 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n194/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-02-05",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame church with a basement, estimated at $19,300. Rollin S. Tuttle was named as architect and Thos. A. Cuthbertson as contractor. The owner was the Asbury Methodist Episcopal Church.",
+      "source": "building-engineering-news-1927-02-05-n194"
+    }
+  ],
+  "building": {
+    "architect": "Rollin S. Tuttle",
+    "builder": "Thos. A. Cuthbertson"
+  }
+}

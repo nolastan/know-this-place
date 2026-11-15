@@ -1,0 +1,142 @@
+{
+  "address": "177 28th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/28th-street/177/",
+  "apn": "6615030",
+  "block": "6615",
+  "lot": "030",
+  "eas_baseid": "403924",
+  "coordinates": {
+    "lat": 37.74509,
+    "lng": -122.426183
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2850,
+    "building_area_sqft": 3046,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0177 28TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 260576,
+    "assessed_improvement_value": 364556,
+    "last_sale_date": "1996-07-02"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201406198831",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-19",
+      "status_date": "2014-08-20",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "provide new interior stair to ground floor; provide new bathroom @ ground floor; provide (n) side windows @ ground floor; build new closets @ ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403100371",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-03-10",
+      "status_date": "2014-03-10",
+      "estimated_cost": 11680,
+      "revised_cost": 11680,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200605020414",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-05-02",
+      "status_date": "2006-06-27",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace front facade ( north side) windows with wood casements, thermal pane windows ( 10 windows)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200104237427",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-04-23",
+      "status_date": "2001-06-22",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remove (e)cabinets,remodel kitchen;install new plumbing,elec & cabinets",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921529",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-14",
+      "status_date": "1990-04-17",
+      "estimated_cost": 5000,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=28TH&street_type=ST&address_number=177",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6615030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6615&lot=030",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6615030",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-04-24-n688",
+      "name": "Building and Engineering News, 24 April 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n688/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-04-24",
+      "kind": "alteration",
+      "description": "A permit was sought for remodelling the residence and a one-room addition, estimated at $5,000. Smith & Glass were named as architects and W. J. Stevens as contractor.",
+      "source": "building-engineering-news-1926-04-24-n688"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "address": "3330 Broderick Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/broderick-street/3330/",
+  "apn": "0927023",
+  "block": "0927",
+  "lot": "023",
+  "eas_baseid": "290572",
+  "coordinates": {
+    "lat": 37.801201,
+    "lng": -122.444478
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2966,
+    "building_area_sqft": 5220,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3330 BRODERICK           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 89614,
+    "assessed_improvement_value": 204676
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202012211392",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-12-21",
+      "status_date": "2020-12-21",
+      "estimated_cost": 23000,
+      "revised_cost": 23000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201410209369",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-10-20",
+      "status_date": "2015-04-06",
+      "estimated_cost": 25000,
+      "revised_cost": 70470,
+      "description": "seismic retrofit on 1st floor only per sfbc chapter 34b, 2012 iebc appendix a-4; maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922877",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "1989-11-22",
+      "status_date": "1989-11-22",
+      "estimated_cost": 2500,
+      "description": "ewo-ns",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8705781",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1987-05-01",
+      "status_date": "1987-09-08",
+      "estimated_cost": 5,
+      "revised_cost": 1100,
+      "description": "bring bldg into code",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRODERICK&street_type=ST&address_number=3330",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0927023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0927&lot=023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0927023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-04-09-n567",
+      "name": "Building and Engineering News, 9 April 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n567/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-04-09",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of six apartments with a basement, estimated at $16,000. Edw. E. Young was named as architect.",
+      "source": "building-engineering-news-1927-04-09-n567"
+    }
+  ],
+  "building": {
+    "architect": "Edw. E. Young"
+  }
+}

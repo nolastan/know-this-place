@@ -1,0 +1,144 @@
+{
+  "address": "66 Danton Street, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/danton-street/66/",
+  "apn": "6785005",
+  "block": "6785",
+  "lot": "005",
+  "eas_baseid": "407582",
+  "coordinates": {
+    "lat": 37.731274,
+    "lng": -122.432711
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1431,
+    "basement_area_sqft": 231,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0066 DANTON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1106838,
+    "assessed_improvement_value": 474358,
+    "last_sale_date": "2021-11-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202010076093",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-07",
+      "status_date": "2020-10-26",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108035260",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-03",
+      "status_date": "2001-09-05",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "remove & replace tile,lath, plaster, wall board around tub & sink area only. replace shower valve.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807854",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-05-04",
+      "status_date": "1999-05-21",
+      "estimated_cost": 10000,
+      "description": "replace kitchen cabients countertops sink oven diswahser",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9618038",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-23",
+      "status_date": "1996-10-18",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8904997",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-04-03",
+      "status_date": "1990-12-07",
+      "estimated_cost": 10000,
+      "description": "add 1/2 bath & office @ bsmnt lvl, add window @ rear wall",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DANTON&street_type=ST&address_number=66",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6785005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6785&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6785005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-05-19-n699",
+      "name": "Building and Engineering News, 19 May 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n699/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-05-19",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two, estimated at $3,500 each. Thomas Bros. were named as architects and Frank J. Callero as contractor.",
+      "source": "building-engineering-news-1928-05-19-n699"
+    }
+  ],
+  "building": {
+    "architect": "Thomas Bros.",
+    "builder": "Frank J. Callero"
+  }
+}

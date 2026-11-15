@@ -1,0 +1,128 @@
+{
+  "address": "2635 Franklin Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/franklin-street/2635/",
+  "apn": "0528001A",
+  "block": "0528",
+  "lot": "001A",
+  "eas_baseid": "284335",
+  "coordinates": {
+    "lat": 37.798777,
+    "lng": -122.426017
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "bedrooms": 6,
+    "lot_area_sqft": 2622,
+    "building_area_sqft": 6300,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2635 FRANKLIN            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1015380,
+    "assessed_improvement_value": 494228
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103045812",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2021-03-04",
+      "status_date": "2021-04-15",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "one unit - rehabilitate existing kitchen & bathroom. no removal of walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301296164",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-01-29",
+      "status_date": "2007-01-31",
+      "estimated_cost": 16875,
+      "revised_cost": 16875,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103769",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-08",
+      "status_date": "1991-05-28",
+      "estimated_cost": 2800,
+      "description": "replace n/s hollow wall btwn garage & passage in furnace rm",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1991–2021",
+    "shown_on_page": 3,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANKLIN&street_type=ST&address_number=2635",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0528001A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0528&lot=001A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0528001A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-01-29-n154",
+      "name": "Building and Engineering News, 29 January 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n154/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-01-29",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of six apartments with a basement, estimated at $14,000. H. C. Baumann was named as architect.",
+      "source": "building-engineering-news-1927-01-29-n154"
+    }
+  ],
+  "building": {
+    "architect": "H. C. Baumann"
+  }
+}

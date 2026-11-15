@@ -4,7 +4,9 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 
 ## Streets documented so far
 
+- [Baker Street](baker-street/) — 1 building, built 1926; 1 in the NOPA Historic District.
 - [Birch Street](birch-street/) — 6 buildings, built 1900–1912; 6 in the Hayes Valley Residential Historic District.
+- [Broderick Street](broderick-street/) — 1 building, built 1927; 1 in the NOPA Historic District.
 - [Buchanan Street](buchanan-street/) — 1 building, built 1878; 1 in the Hayes Valley Residential Historic District.
 - [Church Street](church-street/) — 1 building, built 1905.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1900.
@@ -30,6 +32,7 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 - [Octavia Street](octavia-street/) — 3 buildings, built 1946; 3 in the Hayes Valley Residential Historic District.
 - [Page Street](page-street/) — 3 buildings, built 1900–1924; 3 in the Hayes Valley Residential Historic District.
 - [Rose Street](rose-street/) — 2 buildings, built 1900–1952; 2 in the Hayes Valley Residential Historic District.
+- [Scott Street](scott-street/) — 1 building, built 1928; 1 in the Alamo Square Historic District.
 - [Steiner Street](steiner-street/) — One of the Alamo Square Painted Ladies of Postcard Row; Alice Walker's home until 1996.
 - [Van Ness Avenue](van-ness-avenue/) — 2 buildings, built 1900–1911; 1 in the Civic Center Historic District.
 - [Waller Street](waller-street/) — 1 building, built 1931; 1 in the Hayes Valley Residential Historic District.

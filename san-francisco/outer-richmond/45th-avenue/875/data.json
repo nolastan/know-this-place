@@ -1,0 +1,131 @@
+{
+  "address": "875 45th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/45th-avenue/875/",
+  "apn": "1688016",
+  "block": "1688",
+  "lot": "016",
+  "eas_baseid": "313988",
+  "coordinates": {
+    "lat": 37.772063,
+    "lng": -122.505989
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 3123,
+    "building_area_sqft": 1210,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0875 45TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 304141,
+    "assessed_improvement_value": 202754,
+    "last_sale_date": "2003-03-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9817497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-01",
+      "status_date": "1998-12-09",
+      "estimated_cost": 7500,
+      "description": "extension to pa#9708787",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9810039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-06-02",
+      "status_date": "1998-11-24",
+      "estimated_cost": 3000,
+      "description": "remove one column(e)&add a new steel beam & footing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9708787",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1997-05-14",
+      "status_date": "1998-08-28",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "add one bedrm,game & full bath @g/f; repl (e)window @rear",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9707149",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-04-21",
+      "status_date": "1997-08-21",
+      "estimated_cost": 4000,
+      "description": "replace existing front windows and dry rot repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=45TH&street_type=AVE&address_number=875",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1688016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1688&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1688016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-04-23-n647",
+      "name": "Building and Engineering News, 23 April 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n647/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-04-23",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $3,900 each. Henry S. Nelson was named as contractor.",
+      "source": "building-engineering-news-1927-04-23-n647"
+    }
+  ],
+  "building": {
+    "builder": "Henry S. Nelson"
+  }
+}

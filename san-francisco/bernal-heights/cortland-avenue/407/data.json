@@ -1,0 +1,119 @@
+{
+  "address": "407–409 Cortland Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/cortland-avenue/407/",
+  "apn": "5666017",
+  "block": "5666",
+  "lot": "017",
+  "eas_baseid": "382080",
+  "coordinates": {
+    "lat": 37.739358,
+    "lng": -122.417522
+  },
+  "address_range": "407–409",
+  "street_numbers_on_parcel": [
+    "407",
+    "409"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2492,
+    "building_area_sqft": 2750,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0409 0407 CORTLAND            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 568711,
+    "assessed_improvement_value": 681931,
+    "last_sale_date": "2003-10-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201404082707",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-04-08",
+      "status_date": "2014-12-11",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "remodel kitchen and one bathroom and 1/2 bath, install door and rear of house, same location",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9600316",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-01-08",
+      "status_date": "1996-11-20",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1996–2015",
+    "shown_on_page": 2,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CORTLAND&street_type=AVE&address_number=407",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5666017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5666&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5666017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-06-16-n843",
+      "name": "Building and Engineering News, 16 June 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n843/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-06-16",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame store and flat building with a basement, estimated at $7,000.",
+      "source": "building-engineering-news-1928-06-16-n843"
+    }
+  ]
+}

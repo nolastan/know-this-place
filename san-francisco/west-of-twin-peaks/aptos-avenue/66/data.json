@@ -1,0 +1,165 @@
+{
+  "address": "66 Aptos Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/aptos-avenue/66/",
+  "apn": "3261009",
+  "block": "3261",
+  "lot": "009",
+  "eas_baseid": "356999",
+  "coordinates": {
+    "lat": 37.730828,
+    "lng": -122.466401
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 4064,
+    "building_area_sqft": 2131,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Balboa Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0066 APTOS               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48719,
+    "assessed_improvement_value": 56801
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Balboa Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1921–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9119595",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-10-17",
+      "status_date": "1991-11-05",
+      "estimated_cost": 600,
+      "description": "additional 3 windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9116161",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-09-03",
+      "status_date": "1991-11-05",
+      "estimated_cost": 530,
+      "description": "repair front door,repair 3 steps in front only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9115614",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-08-28",
+      "status_date": "1991-11-05",
+      "estimated_cost": 300,
+      "description": "repair termite damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9108740",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-05-20",
+      "status_date": "1991-08-28",
+      "estimated_cost": 2800,
+      "description": "repair stucco termite damage repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9107506",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1991-05-03",
+      "status_date": "1991-11-05",
+      "estimated_cost": 6000,
+      "description": "voluntary seismic upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8918390",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-09-26",
+      "status_date": "1990-01-12",
+      "estimated_cost": 3900,
+      "description": "installation of aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=APTOS&street_type=AVE&address_number=66",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3261009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3261&lot=009",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3261009",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46640138728439%2037.730827981396644)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-07-09-n72",
+      "name": "Building and Engineering News, 9 July 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n72/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-07-09",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of five on adjoining lots, estimated at $5,000 each. Harold G. Stoner was named as architect and Walter Zweig as contractor.",
+      "source": "building-engineering-news-1927-07-09-n72"
+    }
+  ],
+  "building": {
+    "architect": "Harold G. Stoner",
+    "builder": "Walter Zweig"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "address": "935 Holloway Avenue, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/holloway-avenue/935/",
+  "apn": "6989047",
+  "block": "6989",
+  "lot": "047",
+  "eas_baseid": "410893",
+  "coordinates": {
+    "lat": 37.721448,
+    "lng": -122.463216
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 5749,
+    "building_area_sqft": 2110,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Merced Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0935 HOLLOWAY            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 475577,
+    "assessed_improvement_value": 288844,
+    "last_sale_date": "1994-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200802195031",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-19",
+      "status_date": "2008-02-19",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOLLOWAY&street_type=AVE&address_number=935",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6989047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6989&lot=047",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6989047",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-03-03-n298",
+      "name": "Building and Engineering News, 3 March 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n298/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-03-03",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $4,500. W. A. Doctor was named as architect.",
+      "source": "building-engineering-news-1928-03-03-n298"
+    }
+  ],
+  "building": {
+    "architect": "W. A. Doctor"
+  }
+}

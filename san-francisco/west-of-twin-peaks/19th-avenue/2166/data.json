@@ -1,0 +1,109 @@
+{
+  "address": "2166 19th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/19th-avenue/2166/",
+  "apn": "2199011A",
+  "block": "2199",
+  "lot": "011A",
+  "eas_baseid": "332766",
+  "coordinates": {
+    "lat": 37.747423,
+    "lng": -122.475632
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 2144,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2166 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 741816,
+    "assessed_improvement_value": 556686,
+    "last_sale_date": "2019-05-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201905211198",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-05-21",
+      "status_date": "2022-04-15",
+      "estimated_cost": 12000,
+      "revised_cost": 124000,
+      "description": "install 2 bedroom, 1 storage room and 2 bathroom in the garage, install 1 new bathroom and remoel 1 (e) bathroom on the 2nd fl., 3rd fl convert the (e) washing room to the toilet room, replace some (e) windows per plans, repair roof and front stucco. remodel kitchen.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2019",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=2166",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2199011A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2199&lot=011A",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2199011A",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-04-17-n646",
+      "name": "Building and Engineering News, 17 April 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n646/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-04-17",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,500. John F. Beuttler was named as architect and Gregory Padilla as contractor.",
+      "source": "building-engineering-news-1926-04-17-n646"
+    }
+  ],
+  "building": {
+    "architect": "John F. Beuttler",
+    "builder": "Gregory Padilla"
+  }
+}

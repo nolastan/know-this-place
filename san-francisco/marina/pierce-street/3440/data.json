@@ -1,0 +1,185 @@
+{
+  "address": "3440 Pierce Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/pierce-street/3440/",
+  "apn": "0463A020",
+  "block": "0463A",
+  "lot": "020",
+  "eas_baseid": "282692",
+  "coordinates": {
+    "lat": 37.802131,
+    "lng": -122.439526
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 5,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 5,
+    "lot_area_sqft": 2988,
+    "building_area_sqft": 4300,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3440 PIERCE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 101162,
+    "assessed_improvement_value": 183653,
+    "assessed_fixtures_value": 625
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202305248484",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2023-05-24",
+      "status_date": "2023-05-24",
+      "estimated_cost": 10000,
+      "revised_cost": 0,
+      "description": "mandatory fire alarm upgrade to comply with california state fire marshal code #12-001 (7-23-2012) bulletin (9-4-2008) replace fire alarm panel and add lf horns in units & wireless radio communicator",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609016598",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2016-09-01",
+      "status_date": "2019-06-25",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "weak story seismic retrofit work scope includes the installation of 2 steel moment resisting frames and foundations per asce 41-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501166010",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-16",
+      "status_date": "2015-01-23",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201207175028",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-07-17",
+      "status_date": "2012-10-17",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "#3- kitchen update: new cabinets & dishwasher, area is 89\"x93\". lighting must comply with cec 150(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9515345",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-09-19",
+      "status_date": "1997-08-20",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014907",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-07-27",
+      "status_date": "1991-04-04",
+      "estimated_cost": 14500,
+      "description": "new 4\"slab on grade in garage; new 3/4\" anchor bolts & 1/2\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8202867",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-04-14",
+      "status_date": "1983-03-04",
+      "estimated_cost": 4800,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 13,
+    "range": "1982–2023",
+    "shown_on_page": 7,
+    "note": "6 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PIERCE&street_type=ST&address_number=3440",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0463A020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0463A&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0463A020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43952568412196%2037.8021311884449)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-12-03-n819",
+      "name": "Building and Engineering News, 3 December 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n819/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-12-03",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of five apartments with a basement, estimated at $11,000. Pring & Lesswing were named as architects and H. B. McKenney as contractor.",
+      "source": "building-engineering-news-1927-12-03-n819"
+    }
+  ],
+  "building": {
+    "architect": "Pring & Lesswing",
+    "builder": "H. B. McKenney"
+  }
+}

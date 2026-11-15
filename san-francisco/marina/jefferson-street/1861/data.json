@@ -1,0 +1,136 @@
+{
+  "address": "1861–1863 Jefferson Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/jefferson-street/1861/",
+  "apn": "0913030",
+  "block": "0913",
+  "lot": "030",
+  "eas_baseid": "290232",
+  "coordinates": {
+    "lat": 37.804444,
+    "lng": -122.443058
+  },
+  "address_range": "1861–1863",
+  "street_numbers_on_parcel": [
+    "1861",
+    "1863"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 2315,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1863 1861 JEFFERSON           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 84755,
+    "assessed_improvement_value": 103706
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9901029",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-01-19",
+      "status_date": "1999-05-19",
+      "estimated_cost": 4275,
+      "description": "install vinyl siding i c b o#3985",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009648",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-17",
+      "status_date": "1990-07-23",
+      "estimated_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924607",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-14",
+      "status_date": "1990-02-12",
+      "estimated_cost": 2000,
+      "description": "repair cracks in front stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513311",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-11-21",
+      "status_date": "1986-01-08",
+      "estimated_cost": 975,
+      "description": "install 6 alarm windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JEFFERSON&street_type=ST&address_number=1861",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0913030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0913&lot=030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0913030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-04-16-n607",
+      "name": "Building and Engineering News, 16 April 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n607/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-04-16",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000. Pring & Lesswing were named as architects and the Schultz Construction Co. as contractor.",
+      "source": "building-engineering-news-1927-04-16-n607"
+    }
+  ],
+  "building": {
+    "architect": "Pring & Lesswing",
+    "builder": "Schultz Construction Co."
+  }
+}

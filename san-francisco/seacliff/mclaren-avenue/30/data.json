@@ -1,0 +1,166 @@
+{
+  "address": "30 Mclaren Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/mclaren-avenue/30/",
+  "apn": "1326009",
+  "block": "1326",
+  "lot": "009",
+  "eas_baseid": "300322",
+  "coordinates": {
+    "lat": 37.78657,
+    "lng": -122.488925
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 5,
+    "lot_area_sqft": 5919,
+    "building_area_sqft": 3268,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Sea Cliff",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0030 MCLAREN             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1075386,
+    "assessed_improvement_value": 333554
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Sea Cliff Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1913–1935",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202606183493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-06-18",
+      "status_date": "2026-07-10",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "detatched garage back of home: reroofing with hot works.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507187905",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-18",
+      "status_date": "2005-08-11",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "fixed leak in plumbing of bathroom & required retiling. now want to put in new fixtures. no structur",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "20000201725",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-02-01",
+      "status_date": "2000-03-28",
+      "revised_cost": 3900,
+      "description": "retile existing patio at existing entry",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9910616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-05-28",
+      "status_date": "1999-07-26",
+      "estimated_cost": 750,
+      "description": "correct wood declay at existingsill area at master bedroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9309152",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-06-02",
+      "status_date": "1994-10-04",
+      "estimated_cost": 35000,
+      "description": "retile bthrms-refnsh hrdwd flrs-chg plmg fixs,bthrm",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9025325",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1990-12-12",
+      "status_date": "1991-11-12",
+      "estimated_cost": 1700,
+      "description": "proposed attic improvement and closet improvements",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MCLAREN&street_type=AVE&address_number=30",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1326009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1326&lot=009",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1326009",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.48892516809009%2037.78657009535972)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-05-07-n733",
+      "name": "Building and Engineering News, 7 May 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n733/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-05-07",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement, estimated at $15,000. F. H. Allen, Inc. was named as architect.",
+      "source": "building-engineering-news-1927-05-07-n733"
+    }
+  ],
+  "building": {
+    "architect": "F. H. Allen, Inc."
+  }
+}

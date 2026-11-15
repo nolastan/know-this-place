@@ -1,0 +1,126 @@
+{
+  "address": "221 Benton Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/bernal-heights/benton-avenue/221/",
+  "apn": "5837011",
+  "block": "5837",
+  "lot": "011",
+  "eas_baseid": "384797",
+  "coordinates": {
+    "lat": 37.733148,
+    "lng": -122.423071
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3371,
+    "building_area_sqft": 2095,
+    "basement_area_sqft": 870,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0221 BENTON              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1840603,
+    "assessed_improvement_value": 1227068,
+    "last_sale_date": "2019-04-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807205126",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-20",
+      "status_date": "2019-01-03",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "in kind repair of stucco of front (southern side) and left (western side) wall, in-kind repair and finish to match existing. work limited to stucco repair around window openings at front wall and entire left wall, no other work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201805088561",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-05-08",
+      "status_date": "2019-01-03",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "1st flr - add 2 bedrooms, 2 bath. family rm, relocate w/d. 2nd flr - remodel bath, bedrm. relocate kitchen & interios stair w/open visual connection btw flrs. replace 4 windows visuble from street w/clad wood, add one bathroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200703216810",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-03-21",
+      "status_date": "2008-01-11",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair/replace in kind. dry rot repair of stairs and foyer at front.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BENTON&street_type=AVE&address_number=221",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5837011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5837&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5837011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-06-18-n969",
+      "name": "Building and Engineering News, 18 June 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n969/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-06-18",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,500. Chas. F. Strothoff was named as architect and Soracco Bros. as contractor.",
+      "source": "building-engineering-news-1927-06-18-n969"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff",
+    "builder": "Soracco Bros."
+  }
+}

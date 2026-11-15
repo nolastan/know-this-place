@@ -1,0 +1,129 @@
+{
+  "address": "2616 24th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/24th-avenue/2616/",
+  "apn": "2473040",
+  "block": "2473",
+  "lot": "040",
+  "eas_baseid": "340464",
+  "coordinates": {
+    "lat": 37.738708,
+    "lng": -122.480438
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 3114,
+    "building_area_sqft": 2469,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2616 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1659367,
+    "assessed_improvement_value": 711156,
+    "last_sale_date": "2020-10-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201907186318",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2019-07-18",
+      "status_date": "2020-09-22",
+      "estimated_cost": 100000,
+      "revised_cost": 100000,
+      "description": "rev to pa# 201503201525; 1st fl. eliminate 1 bedroom & 1 bath, relocate (e) bed rm & family rm to rear, reconfigure (e) 2 baths, 2nd fl. replace (e) windows in-kind, reconfigure (e) kitchen & (e) bath, exterior replace (e) stucco fnish at front side in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503201525",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2015-03-20",
+      "status_date": "2020-09-22",
+      "estimated_cost": 100000,
+      "revised_cost": 256000,
+      "description": "new 2 stories horizontal rear addition. new 2 bedrooms, family room & 2 bathrooms @ 1st floor. new 2 master bedrooms & bathrooms @ 2nd floor.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406300159",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2014-06-30",
+      "status_date": "2015-03-20",
+      "revised_cost": 0,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2014–2020",
+    "shown_on_page": 3,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=2616",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2473040&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2473&lot=040",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2473040",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-01-15-n70",
+      "name": "Building and Engineering News, 15 January 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n70/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-01-15",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,500. Geo. M. Cantrell was named as architect and H. P. Hoyt as contractor. The owner was the Lesser Realty & Investment Co.",
+      "source": "building-engineering-news-1927-01-15-n70"
+    }
+  ],
+  "building": {
+    "architect": "Geo. M. Cantrell",
+    "builder": "H. P. Hoyt"
+  }
+}

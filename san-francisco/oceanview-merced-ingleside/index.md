@@ -9,13 +9,17 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 ## Streets documented so far
 
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 2002.
+- [Arch Street](arch-street/) — 2 buildings, built 1926.
 - [Ashton Avenue](ashton-avenue/) — 1 building, built 1923.
 - [Belle Avenue](belle-avenue/) — 1 building, built 1947.
 - [Bepler Street](bepler-street/) — 1 building, built 1986.
 - [Beverly Street](beverly-street/) — 1 building, built 1914.
 - [Bright Street](bright-street/) — 1 building, built 1996.
 - [Broad Street](broad-street/) — 4 buildings, built 1896–1946.
+- [Bruce Avenue](bruce-avenue/) — 1 building, built 1927.
+- [Byxbee Street](byxbee-street/) — 3 buildings, built 1928.
 - [Capitol Avenue](capitol-avenue/) — 1 building.
+- [Chester Avenue](chester-avenue/) — 1 building, built 1927.
 - [Crystal Street](crystal-street/) — 1 building, built 1944.
 - [De Montfort Avenue](de-montfort-avenue/) — 1 building, built 1939.
 - [Ellington Avenue](ellington-avenue/) — 1 building, built 1917.
@@ -23,6 +27,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1930.
 - [Grafton Avenue](grafton-avenue/) — 1 building, built 1915.
 - [Granada Avenue](granada-avenue/) — 1 building, built 1989.
+- [Head Street](head-street/) — 1 building, built 1926.
 - [Holloway Avenue](holloway-avenue/) — 1 building, built 1985.
 - [Howth Street](howth-street/) — 1 building, built 1908.
 - [Huron Avenue](huron-avenue/) — 1 building, built 1928.
@@ -37,16 +42,22 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Miramar Avenue](miramar-avenue/) — 2 buildings, built 1905–1917.
 - [Mission Street](mission-street/) — 1 building, built 1924.
 - [Montana Street](montana-street/) — 1 building, built 1907.
+- [Monticello Street](monticello-street/) — 4 buildings, built 1927.
 - [Ocean Avenue](ocean-avenue/) — 2 buildings, built 1900–1909; 2 in the Ocean Avenue Neighborhood Commercial District.
 - [Orizaba Avenue](orizaba-avenue/) — 1 building.
 - [Panama Street](panama-street/) — 1 building, built 2005.
 - [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1904.
 - [Rae Avenue](rae-avenue/) — 1 building, built 1910.
+- [Ralston Street](ralston-street/) — 5 buildings, built 1928.
 - [Randolph Street](randolph-street/) — 1 building, built 1907.
 - [Sadowa Street](sadowa-street/) — 1 building, built 1910.
 - [Sagamore Street](sagamore-street/) — 1 building, built 1890.
+- [Sargent Street](sargent-street/) — 1 building, built 1928.
+- [Shields Street](shields-street/) — 1 building, built 1930.
 - [Summit Street](summit-street/) — 1 building, built 1936.
 - [Thrift Street](thrift-street/) — 1 building, built 1949.
+- [Vernon Street](vernon-street/) — 1 building, built 1927.
+- [Victoria Street](victoria-street/) — 2 buildings, built 1926.
 - [Whittier Street](whittier-street/) — 1 building, built 1905.
 
 ## Parks and public spaces

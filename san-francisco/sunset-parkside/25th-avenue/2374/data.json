@@ -1,0 +1,127 @@
+{
+  "address": "2374–2376 25th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/25th-avenue/2374/",
+  "apn": "2353016",
+  "block": "2353",
+  "lot": "016",
+  "eas_baseid": "461681",
+  "coordinates": {
+    "lat": 37.743268,
+    "lng": -122.481827
+  },
+  "address_range": "2374–2376",
+  "street_numbers_on_parcel": [
+    "2374",
+    "2376"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3600,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "2376 2374 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 67176,
+    "assessed_improvement_value": 100906
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200203040493",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-03-04",
+      "status_date": "2002-03-20",
+      "estimated_cost": 2900,
+      "revised_cost": 2900,
+      "description": "repair additional dry rot at side stairs wall frame. existing permit#2002/02/20/9513 .",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202209513",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-20",
+      "status_date": "2002-03-20",
+      "estimated_cost": 10400,
+      "revised_cost": 10400,
+      "description": "repair dryrot as per report dated 10/25/01 item 4a,4b,10a, 10b only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8208746",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1982-10-22",
+      "status_date": "1983-03-16",
+      "estimated_cost": 85,
+      "description": "bldg use: flats",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=2374",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2353016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2353&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2353016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-08-04-n179",
+      "name": "Building and Engineering News, 4 August 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer28128cont/page/n179/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-08-04",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,500. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1928-08-04-n179"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

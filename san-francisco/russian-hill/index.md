@@ -5,19 +5,23 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 ## Streets documented so far
 
 - [Aladdin Terrace](aladdin-terrace/) — 1 building, built 1939.
+- [Allen Street](allen-street/) — 1 building, built 1927.
 - [Bay Street](bay-street/) — 2 buildings, built 1906–1950.
 - [Beach Street](beach-street/) — 1 building; 1 in the Aquatic Park Historic District.
 - [Bernard Street](bernard-street/) — 1 building, built 1907.
 - [Bret Harte Terrace](bret-harte-terrace/) — 3 buildings, built 1940–1988.
 - [Broadway](broadway/) — 3 buildings, built 1912.
 - [Chestnut Street](chestnut-street/) — 1 building, built 1926.
+- [Clay Street](clay-street/) — 1 building, built 1910.
 - [Columbus Avenue](columbus-avenue/) — 1 building, built 1931.
+- [Culebra Terrace](culebra-terrace/) — 1 building, built 1914.
 - [Filbert Street](filbert-street/) — 1 building, built 1909.
 - [Francisco Street](francisco-street/) — A 1914 corner house beside the Powell–Hyde cable car line; tied to Nicolas Cage.
 - [Green Street](green-street/) — 1 building, built 1950.
 - [Greenwich Street](greenwich-street/) — 1 building, built 1912.
 - [Hyde Street](hyde-street/) — 1 building, built 1908.
 - [Jackson Street](jackson-street/) — 1 building, built 1914.
+- [Jansen Street](jansen-street/) — 1 building, built 1926.
 - [Jefferson Street](jefferson-street/) — 1 building.
 - [Jones Street](jones-street/) — 1 building, built 1908; 1 in the Russian Hill-Macondray Lane Historic District.
 - [Larkin Street](larkin-street/) — 2 buildings, built 1907–1914.

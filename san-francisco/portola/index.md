@@ -14,12 +14,15 @@ A hillside residential district in the city's south-east, between McLaren Park a
 - [Gambier Street](gambier-street/) — 1 building, built 1941.
 - [Gaven Street](gaven-street/) — 1 building, built 1960.
 - [Girard Street](girard-street/) — 1 building.
+- [Hale Street](hale-street/) — 1 building, built 1925.
 - [Hamilton Street](hamilton-street/) — 1 building, built 1915.
 - [Holyoke Street](holyoke-street/) — 1 building, built 1908.
 - [Madison Street](madison-street/) — 1 building, built 1914.
 - [Oxford Street](oxford-street/) — 1 building, built 2003.
+- [San Bruno Avenue](san-bruno-avenue/) — 1 building, built 1927; 1 in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous).
 - [Silliman Street](silliman-street/) — 1 building, built 1992.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1927.
+- [Somerset Street](somerset-street/) — 1 building, built 1928.
 - [Sweeny Street](sweeny-street/) — 1 building, built 1944.
 - [University Street](university-street/) — 1 building, built 1932.
 - [Valmar Terrace](valmar-terrace/) — 1 building, built 1950.

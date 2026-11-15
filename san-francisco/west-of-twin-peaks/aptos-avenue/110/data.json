@@ -1,0 +1,162 @@
+{
+  "address": "110 Aptos Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/aptos-avenue/110/",
+  "apn": "3267003",
+  "block": "3267",
+  "lot": "003",
+  "eas_baseid": "357091",
+  "coordinates": {
+    "lat": 37.730046,
+    "lng": -122.466629
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 4064,
+    "building_area_sqft": 2706,
+    "basement_area_sqft": 1130,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Balboa Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0110 APTOS               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2075598,
+    "assessed_improvement_value": 889542,
+    "last_sale_date": "2023-03-21"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Balboa Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1921–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202202027209",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-02",
+      "status_date": "2022-10-31",
+      "estimated_cost": 135000,
+      "revised_cost": 270000,
+      "description": "1/f floor: add 2 bedrooms, 2 full bath and family room. 2nd fl: remodel kitchen, bedrooms and bath, add 2 full bath. relocate interior staircase. replace all front windows with in kind wood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802070709",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-07",
+      "status_date": "2019-02-25",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "replacing same windows for two rooms in \"rear house\"",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802070710",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-07",
+      "status_date": "2019-02-25",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "install on landing/soil, unattached to building/house \"guard and handrails\" for front porch (unbolted to the building/house)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200602084075",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-08",
+      "status_date": "2006-02-08",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "replacement of downspouts per n.o.v #200666241.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9914830",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-07-21",
+      "status_date": "2000-01-21",
+      "estimated_cost": 8900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=APTOS&street_type=AVE&address_number=110",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3267003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3267&lot=003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3267003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46662865872398%2037.73004607396884)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-10-29-n648",
+      "name": "Building and Engineering News, 29 October 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n648/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-10-29",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $5,000 each. Harold G. Stoner was named as architect and Walter C. Zweig as contractor.",
+      "source": "building-engineering-news-1927-10-29-n648"
+    }
+  ],
+  "building": {
+    "architect": "Harold G. Stoner",
+    "builder": "Walter C. Zweig"
+  }
+}

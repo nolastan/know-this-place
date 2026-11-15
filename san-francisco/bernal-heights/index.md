@@ -7,7 +7,10 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Alabama Street](alabama-street/) — 1 building, built 1998.
 - [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.
+- [Bache Street](bache-street/) — 1 building, built 1929.
+- [Banks Street](banks-street/) — 1 building, built 1926.
 - [Bennington Street](bennington-street/) — 1 building, built 1904.
+- [Benton Avenue](benton-avenue/) — 1 building, built 1927.
 - [Bocana Street](bocana-street/) — 1 building, built 1910.
 - [Bonview Street](bonview-street/) — 1 building, built 1958.
 - [Bradford Street](bradford-street/) — 1 building, built 1912.
@@ -23,6 +26,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Elsie Street](elsie-street/) — 1 building, built 2011.
 - [Fair Avenue](fair-avenue/) — 1 building, built 1911.
 - [Faith Street](faith-street/) — 1 building, built 1998.
+- [Folsom Street](folsom-street/) — 1 building, built 1925.
 - [Franconia Street](franconia-street/) — 2 buildings, built 1964–1965.
 - [Gates Street](gates-street/) — 1 building.
 - [Genebern Way](genebern-way/) — 1 building, built 1925.
@@ -36,6 +40,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Mission Street](mission-street/) — 2 buildings, built 1916–1918.
 - [Montcalm Street](montcalm-street/) — 1 building, built 1900.
 - [Montezuma Street](montezuma-street/) — 1 building, built 1955.
+- [Moultrie Street](moultrie-street/) — 1 building, built 1926.
 - [Mullen Avenue](mullen-avenue/) — A 1,000 sq ft house of 1906, recorded as Carlos Santana's home during high school.
 - [Murray Street](murray-street/) — 2 buildings, built 1925.
 - [Nevada Street](nevada-street/) — 1 building.
@@ -46,6 +51,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Precita Avenue](precita-avenue/) — Four units of 1905 at the foot of the hill, a 1974 Patty Hearst address.
 - [Prentiss Street](prentiss-street/) — 1 building, built 1999.
 - [Prospect Avenue](prospect-avenue/) — 1 building, built 1979.
+- [Putnam Street](putnam-street/) — 1 building, built 1928.
 - [Richland Avenue](richland-avenue/) — 1 building, built 1907.
 - [Ripley Street](ripley-street/) — 2 buildings, built 1917–1940.
 - [Rutledge Street](rutledge-street/) — 1 building, built 1973.

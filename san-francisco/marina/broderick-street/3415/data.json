@@ -1,0 +1,151 @@
+{
+  "address": "3415 Broderick Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/broderick-street/3415/",
+  "apn": "0923008",
+  "block": "0923",
+  "lot": "008",
+  "eas_baseid": "290452",
+  "coordinates": {
+    "lat": 37.801857,
+    "lng": -122.445224
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "bedrooms": 8,
+    "lot_area_sqft": 2343.75,
+    "building_area_sqft": 3400,
+    "lot_depth_ft": 93.75,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3415 BRODERICK           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 160044,
+    "assessed_improvement_value": 426850
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9722108",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-10-31",
+      "status_date": "2001-01-09",
+      "estimated_cost": 8180,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9005962",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-03-28",
+      "status_date": "1990-06-14",
+      "estimated_cost": 2500,
+      "description": "restucco front of bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924695",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-12-15",
+      "status_date": "1991-03-11",
+      "estimated_cost": 5000,
+      "description": "ewo-s",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8512574",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1985-11-05",
+      "status_date": "1986-03-31",
+      "estimated_cost": 1597,
+      "description": "install thermal windows in existing opening",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1985–2014",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRODERICK&street_type=ST&address_number=3415",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0923008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0923&lot=008",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0923008",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-01-08-n29",
+      "name": "Building and Engineering News, 8 January 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n29/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-08-06-n232",
+      "name": "Building and Engineering News, 6 August 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n232/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-01-08",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, one of three on adjoining lots, estimated at $9,000 each. M. C. Haley was named as architect and Haley Bros. as contractors.",
+      "source": "building-engineering-news-1927-01-08-n29"
+    },
+    {
+      "date": "1927-08-06",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, one of two on adjoining lots, estimated at $9,000 each. The owner was Haley Bros.",
+      "source": "building-engineering-news-1927-08-06-n232"
+    }
+  ],
+  "building": {
+    "architect": "M. C. Haley",
+    "builder": "Haley Bros."
+  }
+}

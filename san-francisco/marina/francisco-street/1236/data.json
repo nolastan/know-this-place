@@ -1,0 +1,150 @@
+{
+  "address": "1236 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/1236/",
+  "apn": "0474007",
+  "block": "0474",
+  "lot": "007",
+  "eas_baseid": "282924",
+  "coordinates": {
+    "lat": 37.803395,
+    "lng": -122.425748
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 4,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 4,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 4520,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1236 FRANCISCO           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117803,
+    "assessed_improvement_value": 270987
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201908229573",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-22",
+      "status_date": "2019-12-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "one unit - new kitchen cabinet, new tile floor, new electrical boxes",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201807305926",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-30",
+      "status_date": "2018-09-21",
+      "estimated_cost": 8875,
+      "revised_cost": 8875,
+      "description": "1/f: convert (e) storage closet to laundry use for tenant. add (n) gas line, connect drain to (e) sewer, water supply, new electrical line from panel for 20a,tile. no other work in common areas, no work or modifications to fire alarm or fire sprinkler. maher n/a.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200910229525",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-10-22",
+      "status_date": "2009-10-22",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106161",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-04-12",
+      "status_date": "1991-09-17",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9022070",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-10-24",
+      "status_date": "1991-03-04",
+      "estimated_cost": 5000,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1990–2019",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANCISCO&street_type=ST&address_number=1236",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0474007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0474&lot=007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0474007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-04-30-n692",
+      "name": "Building and Engineering News, 30 April 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n692/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-04-30",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, estimated at $12,000. Edward E. Young was named as architect and P. A. Nelson as contractor.",
+      "source": "building-engineering-news-1927-04-30-n692"
+    }
+  ],
+  "building": {
+    "architect": "Edward E. Young",
+    "builder": "P. A. Nelson"
+  }
+}

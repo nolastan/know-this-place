@@ -1,0 +1,133 @@
+{
+  "address": "62 Marston Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/west-of-twin-peaks/marston-avenue/62/",
+  "apn": "3182019",
+  "block": "3182",
+  "lot": "019",
+  "eas_baseid": "356153",
+  "coordinates": {
+    "lat": 37.727716,
+    "lng": -122.445975
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "lot_area_sqft": 2809,
+    "building_area_sqft": 805,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0062 MARSTON             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 325744,
+    "assessed_improvement_value": 63522,
+    "last_sale_date": "1997-06-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201810153166",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-10-15",
+      "status_date": "2018-10-15",
+      "estimated_cost": 8900,
+      "revised_cost": 8900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200307149349",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-07-14",
+      "status_date": "2004-05-24",
+      "estimated_cost": 10580,
+      "revised_cost": 10580,
+      "description": "remove & replace a dryrot mudsill w/ 2x6 p.t. to a top of concrete on extng footing max 25ft.remove",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200007145198",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-07-14",
+      "status_date": "2000-09-21",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "remove & replace existing alum. windows, with vinyl block in front house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9601140",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-01-23",
+      "status_date": "1996-02-05",
+      "estimated_cost": 3200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MARSTON&street_type=AVE&address_number=62",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3182019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3182&lot=019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3182019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-07-30-n196",
+      "name": "Building and Engineering News, 30 July 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n196/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-07-30",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of four on adjoining lots, estimated at $3,000 each. Donnell E. Jaekle was named as architect.",
+      "source": "building-engineering-news-1927-07-30-n196"
+    }
+  ],
+  "building": {
+    "architect": "Donnell E. Jaekle"
+  }
+}

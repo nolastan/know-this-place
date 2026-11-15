@@ -1,0 +1,166 @@
+{
+  "address": "2366 Bay Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/bay-street/2366/",
+  "apn": "0923017",
+  "block": "0923",
+  "lot": "017",
+  "eas_baseid": "290460",
+  "coordinates": {
+    "lat": 37.80177,
+    "lng": -122.446028
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 3437.5,
+    "building_area_sqft": 1860,
+    "basement_area_sqft": 300,
+    "lot_depth_ft": 37.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2366 BAY                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 80699,
+    "assessed_improvement_value": 82942
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200407300205",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-07-30",
+      "status_date": "2004-07-30",
+      "estimated_cost": 3100,
+      "revised_cost": 3100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200310298812",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-10-29",
+      "status_date": "2007-01-08",
+      "estimated_cost": 5600,
+      "revised_cost": 5600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305164824",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2003-05-16",
+      "status_date": "2007-09-26",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "build fence at roof/revise 200301245828",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301245828",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-01-24",
+      "status_date": "2004-09-21",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "erect 8ft high by 22 ft long temp iron fence w spokes 5' oc fence shall be secured to roof parppit",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9020026",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-10-01",
+      "status_date": "1990-11-13",
+      "estimated_cost": 3600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8804800",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-04-14",
+      "status_date": "1988-11-08",
+      "estimated_cost": 6000,
+      "description": "new cabinets, remodel ( no structural changes)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8200658",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-01-28",
+      "status_date": "1983-03-11",
+      "estimated_cost": 6500,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BAY&street_type=ST&address_number=2366",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0923017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0923&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0923017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-11-27-n897",
+      "name": "Building and Engineering News, 27 November 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n897/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-11-27",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. Vincent Buckley was named as architect and A. Halsen as contractor.",
+      "source": "building-engineering-news-1926-11-27-n897"
+    }
+  ],
+  "building": {
+    "architect": "Vincent Buckley",
+    "builder": "A. Halsen"
+  }
+}

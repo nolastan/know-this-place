@@ -1,0 +1,142 @@
+{
+  "address": "627 Page Street, San Francisco, CA 94117",
+  "path": "/san-francisco/hayes-valley/page-street/627/",
+  "apn": "0848002G",
+  "block": "0848",
+  "lot": "002G",
+  "eas_baseid": "289488",
+  "coordinates": {
+    "lat": 37.77271,
+    "lng": -122.431106
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 8,
+    "stories": 2,
+    "rooms": 18,
+    "bathrooms": 8,
+    "lot_area_sqft": 3110,
+    "building_area_sqft": 5150,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Hayes Valley",
+    "property_location_raw": "0000 0627 PAGE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 29770,
+    "assessed_improvement_value": 94700
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201606220646",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-06-22",
+      "status_date": "2016-09-20",
+      "estimated_cost": 90000,
+      "revised_cost": 98000,
+      "description": "seismic upgrade for soft story as per sfbc, chapter 34b, 2012 iebc appendix a-4.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200604270046",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-04-27",
+      "status_date": "2006-04-27",
+      "estimated_cost": 11000,
+      "revised_cost": 11000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501133161",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-01-13",
+      "status_date": "2005-01-24",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "correct violation. complaint 200456196. repair to stairs < 50% of structure. same for same.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9012602",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-06-26",
+      "status_date": "1990-12-19",
+      "estimated_cost": 4400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8503039",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-03-27",
+      "status_date": "1986-03-04",
+      "estimated_cost": 2500,
+      "description": "to bring building into full compliance with the provisions",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PAGE&street_type=ST&address_number=627",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0848002G&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0848&lot=002G",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0848002G",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-02-20-n315",
+      "name": "Building and Engineering News, 20 February 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n315/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-02-20",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of eight flats with a basement, estimated at $12,500. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1926-02-20-n315"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "address": "582 6th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/6th-street/582/",
+  "apn": "3779010",
+  "block": "3779",
+  "lot": "010",
+  "eas_baseid": "366391",
+  "coordinates": {
+    "lat": 37.774942,
+    "lng": -122.401736
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 4,
+    "lot_area_sqft": 6799,
+    "building_area_sqft": 8000,
+    "use": "Industrial",
+    "property_class": "Industrial",
+    "construction_type_code": "C",
+    "zoning": "SLI",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0582 06TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 101831,
+    "assessed_improvement_value": 102531
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201110066265",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-10-06",
+      "status_date": "2011-12-13",
+      "estimated_cost": 62000,
+      "revised_cost": 62000,
+      "description": "interior remodel thoughout: upgrade two bathrooms to ada compliancy; one (n) bathroom; (n) partition wall (1-hour); minor interior non-bearing partitions; remodel breakroom area and kitchenette.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200710236221",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-10-23",
+      "status_date": "2007-10-23",
+      "estimated_cost": 35000,
+      "revised_cost": 35000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511573",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-25",
+      "status_date": "1995-09-11",
+      "estimated_cost": 39964,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214734",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-08-31",
+      "status_date": "1993-03-12",
+      "estimated_cost": 2000,
+      "revised_cost": 6500,
+      "description": "bracing of exist parapet walls as per notice",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1992–2015",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=06TH&street_type=ST&address_number=582",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3779010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3779&lot=010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3779010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-11-12-n716",
+      "name": "Building and Engineering News, 12 November 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n716/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-11-12",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey reinforced concrete warehouse with a mezzanine, estimated at $12,000. E. Eames was named as architect and Barrett & Hilp as contractors. The owner was the Western Alloy & Tool Steel Co.",
+      "source": "building-engineering-news-1927-11-12-n716"
+    }
+  ],
+  "building": {
+    "architect": "E. Eames",
+    "builder": "Barrett & Hilp"
+  }
+}

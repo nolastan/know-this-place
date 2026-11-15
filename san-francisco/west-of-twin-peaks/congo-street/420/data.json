@@ -1,0 +1,155 @@
+{
+  "address": "420 Congo Street, San Francisco, CA 94131",
+  "path": "/san-francisco/west-of-twin-peaks/congo-street/420/",
+  "apn": "6765029",
+  "block": "6765",
+  "lot": "029",
+  "eas_baseid": "406980",
+  "coordinates": {
+    "lat": 37.732693,
+    "lng": -122.441751
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1135,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0420 CONGO               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 229673,
+    "assessed_improvement_value": 180865,
+    "last_sale_date": "1987-09-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202511250392",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-11-25",
+      "status_date": "2025-12-02",
+      "estimated_cost": 13500,
+      "revised_cost": 13500,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200912113117",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2009-12-11",
+      "status_date": "2011-04-01",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "to comply with nov# 200927219. replace in kind (e) exterior wood stair. construct (n) 1 hr fire rated prop.line wall",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200112054616",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-12-05",
+      "status_date": "2001-12-12",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to 200108236755 (to delete weephole draiange pipe on the new retaining wall)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200108236755",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-08-23",
+      "status_date": "2001-12-12",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "build new retaining wall in back yard from prop line to adj dwelling on south side",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9102417",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-02-14",
+      "status_date": "1991-08-15",
+      "estimated_cost": 8500,
+      "description": "vertical & horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715132",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-10-21",
+      "status_date": "1988-04-22",
+      "estimated_cost": 8500,
+      "revised_cost": 0,
+      "description": "termite report.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CONGO&street_type=ST&address_number=420",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6765029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6765&lot=029",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6765029",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-03-12-n399",
+      "name": "Building and Engineering News, 12 March 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n399/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-03-12",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $4,000 each. E. A. Nickels was named as architect.",
+      "source": "building-engineering-news-1927-03-12-n399"
+    }
+  ],
+  "building": {
+    "architect": "E. A. Nickels"
+  }
+}

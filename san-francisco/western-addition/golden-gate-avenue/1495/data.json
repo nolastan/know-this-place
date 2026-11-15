@@ -1,0 +1,157 @@
+{
+  "address": "1495 Golden Gate Avenue, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/golden-gate-avenue/1495/",
+  "apn": "0775019B",
+  "block": "0775",
+  "lot": "019B",
+  "eas_baseid": "288278",
+  "coordinates": {
+    "lat": 37.779005,
+    "lng": -122.434938
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 22,
+    "stories": 3,
+    "rooms": 51,
+    "bathrooms": 22,
+    "lot_area_sqft": 5092,
+    "building_area_sqft": 13389,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Alamo Square",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 1495 GOLDEN GATE         AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 115494,
+    "assessed_improvement_value": 693107
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alamo Square Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1890–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202510097121",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-09",
+      "status_date": "2025-10-14",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "replace 35 ft long fence. street visible. total height 3 ft pony wall and 4 ft fence.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202504295444",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-04-29",
+      "status_date": "2026-01-27",
+      "estimated_cost": 38000,
+      "revised_cost": 56600,
+      "description": "replacement of fire alarm system to meet sf/ca code interprtation 1106.3.71 + add lf horns in all units & wireless radio moniter.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201609076900",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-09-07",
+      "status_date": "2017-08-28",
+      "estimated_cost": 40000,
+      "revised_cost": 110000,
+      "description": "soft story retrofit per iebc appx chapter a4. no structural work. maher na",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9503829",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-03-17",
+      "status_date": "1995-04-19",
+      "estimated_cost": 2000,
+      "description": "replace 2 rotted support durders",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9413369",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1994-08-19",
+      "status_date": "1995-06-27",
+      "estimated_cost": 20500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOLDEN%20GATE&street_type=AVE&address_number=1495",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0775019B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0775&lot=019B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0775019B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43493795566701%2037.77900456609029)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-01-22-n110",
+      "name": "Building and Engineering News, 22 January 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n110/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-01-22",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of 21 apartments with a basement, estimated at $30,000. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1927-01-22-n110"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

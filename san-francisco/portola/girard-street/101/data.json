@@ -1,0 +1,117 @@
+{
+  "address": "101 Girard Street, San Francisco, CA 94134",
+  "path": "/san-francisco/portola/girard-street/101/",
+  "apn": "5925029A",
+  "block": "5925",
+  "lot": "029A",
+  "eas_baseid": "386993",
+  "coordinates": {
+    "lat": 37.730929,
+    "lng": -122.405796
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 2205,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "0000 0101 GIRARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60037,
+    "assessed_improvement_value": 112024
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807245313",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-24",
+      "status_date": "2018-12-11",
+      "estimated_cost": 7877,
+      "revised_cost": 7877,
+      "description": "replace 5 aluminum sliding windows on front elevation with new wood double-hung windows. approved otc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200004247972",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-04-24",
+      "status_date": "2000-05-08",
+      "estimated_cost": 7900,
+      "revised_cost": 7900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2000–2018",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GIRARD&street_type=ST&address_number=101",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5925029A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5925&lot=029A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5925029A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-02-23-n269",
+      "name": "Building and Engineering News, 23 February 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2929cont/page/n269/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-02-23",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. E. O'Connor was named as designer and J. Blum as contractor.",
+      "source": "building-engineering-news-1929-02-23-n269"
+    }
+  ],
+  "building": {
+    "builder": "J. Blum"
+  }
+}

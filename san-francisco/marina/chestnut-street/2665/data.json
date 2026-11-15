@@ -1,0 +1,122 @@
+{
+  "address": "2665 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/2665/",
+  "apn": "0933024",
+  "block": "0933",
+  "lot": "024",
+  "eas_baseid": "290750",
+  "coordinates": {
+    "lat": 37.799302,
+    "lng": -122.447135
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 12,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 12,
+    "lot_area_sqft": 2265,
+    "building_area_sqft": 5991,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Cow Hollow",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 2665 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1358492,
+    "assessed_improvement_value": 1145926,
+    "last_sale_date": "1993-10-26"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201610210935",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-21",
+      "status_date": "2017-10-12",
+      "estimated_cost": 53500,
+      "revised_cost": 59000,
+      "description": "soft story retrofit per sfbc chapter 34b 2012 iebc appendix a-4. maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608054363",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-05",
+      "status_date": "2016-08-11",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "repair dryrot damaged treads, stringers and support framing for exterior stairs in breezway of property. repairs to remain under 50% of stairs system. repair are all in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9805914",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-04-07",
+      "status_date": "1998-07-02",
+      "estimated_cost": 3000,
+      "description": "repl 6 alum windows w/5 new dble hung alum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=2665",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0933024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0933&lot=024",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0933024",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-07-02-n37",
+      "name": "Building and Engineering News, 2 July 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n37/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-07-02",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a frame apartment building. L. A. Blecher was named as contractor.",
+      "source": "building-engineering-news-1927-07-02-n37"
+    }
+  ],
+  "building": {
+    "builder": "L. A. Blecher"
+  }
+}

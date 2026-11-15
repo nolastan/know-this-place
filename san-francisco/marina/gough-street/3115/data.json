@@ -1,0 +1,186 @@
+{
+  "address": "3115 Gough Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/gough-street/3115/",
+  "apn": "0481007",
+  "block": "0481",
+  "lot": "007",
+  "eas_baseid": "283098",
+  "coordinates": {
+    "lat": 37.80216,
+    "lng": -122.428381
+  },
+  "parcel": {
+    "year_built": 1929,
+    "units": 1,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "lot_area_sqft": 7813,
+    "building_area_sqft": 4026,
+    "basement_area_sqft": 814,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3115 GOUGH               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 458905,
+    "assessed_improvement_value": 849842,
+    "last_sale_date": "1993-07-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200706154098",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-15",
+      "status_date": "2008-04-18",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision to 200507197996 1 (n) skylight, relocate (2) skylights, half bath, water heater closet, change garage door opening to windows. change double french doors to single door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706042891",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-06-04",
+      "status_date": "2008-04-18",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "renew 200507197996.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507197996",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-07-19",
+      "status_date": "2006-01-18",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "add 1/2 bath,2 windows&2 skylites to carriage house, not for habitable use.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208023072",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2002-08-02",
+      "status_date": "2003-09-25",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "enclose patio for stairway to roof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608472",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-15",
+      "status_date": "1996-08-13",
+      "estimated_cost": 1,
+      "description": "tim yu",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9608528",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-05-15",
+      "status_date": "1996-08-13",
+      "estimated_cost": 1,
+      "description": "revised application to show trellis arch",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9401089",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1994-01-25",
+      "status_date": "1996-05-14",
+      "estimated_cost": 7500,
+      "revised_cost": 25000,
+      "description": "horizontal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9314020",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-16",
+      "status_date": "1994-02-16",
+      "estimated_cost": 16000,
+      "description": "kitchen remodeling 2nd floor, bedroom 3rd floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9015854",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-08-09",
+      "status_date": "1990-12-21",
+      "estimated_cost": 12300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GOUGH&street_type=ST&address_number=3115",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0481007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0481&lot=007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0481007",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1929-04-27-n605",
+      "name": "Building and Engineering News, 27 April 1929",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2929cont/page/n605/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1929-04-27",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence with a basement. A. Traschina was named as architect.",
+      "source": "building-engineering-news-1929-04-27-n605"
+    }
+  ],
+  "building": {
+    "architect": "A. Traschina"
+  }
+}

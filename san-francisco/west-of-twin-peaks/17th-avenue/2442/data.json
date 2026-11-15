@@ -1,0 +1,144 @@
+{
+  "address": "2442 17th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/17th-avenue/2442/",
+  "apn": "2409029",
+  "block": "2409",
+  "lot": "029",
+  "eas_baseid": "337907",
+  "coordinates": {
+    "lat": 37.742328,
+    "lng": -122.473167
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1675,
+    "basement_area_sqft": 475,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2442 17TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 37163,
+    "assessed_improvement_value": 98436
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201108102154",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-08-10",
+      "status_date": "2012-02-23",
+      "estimated_cost": 20000,
+      "revised_cost": 83064,
+      "description": "close in rear open porch (15ftx12ft), install bathroom at rear of garage area. remodel 1st floor (18ftx20ft) at rear of garage. electrical & plumbing under seperate permits. excavate to create (n) fnd to create 7'-6\" headroom..",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200709122474",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-09-12",
+      "status_date": "2007-10-23",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "install13 replacement windows. 5 visible from street u-value .38-.52",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200203252191",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-03-25",
+      "status_date": "2002-09-25",
+      "estimated_cost": 7345,
+      "revised_cost": 7345,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8924776",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1989-12-19",
+      "status_date": "1990-06-01",
+      "estimated_cost": 1000,
+      "description": "replace cracked foundation for rear room on posts only",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=AVE&address_number=2442",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2409029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2409&lot=029",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2409029",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-08-28-n365",
+      "name": "Building and Engineering News, 28 August 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n365/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-04-16-n606",
+      "name": "Building and Engineering News, 16 April 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n606/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-08-28",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of four on adjoining lots, estimated at $3,500 each.",
+      "source": "building-engineering-news-1926-08-28-n365"
+    },
+    {
+      "date": "1927-04-16",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $4,000 each.",
+      "source": "building-engineering-news-1927-04-16-n606"
+    }
+  ]
+}

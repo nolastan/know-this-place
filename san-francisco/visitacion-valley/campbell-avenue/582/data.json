@@ -1,0 +1,110 @@
+{
+  "address": "582 Campbell Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/visitacion-valley/campbell-avenue/582/",
+  "apn": "6202022",
+  "block": "6202",
+  "lot": "022",
+  "eas_baseid": "393595",
+  "coordinates": {
+    "lat": 37.71594,
+    "lng": -122.407848
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1141,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "Visitacion Valley",
+    "property_location_raw": "0000 0582 CAMPBELL            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 444909,
+    "assessed_improvement_value": 267143
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200506286198",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-06-28",
+      "status_date": "2005-06-28",
+      "estimated_cost": 4450,
+      "revised_cost": 4450,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9009291",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-05-14",
+      "status_date": "1990-07-23",
+      "estimated_cost": 2400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAMPBELL&street_type=AVE&address_number=582",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6202022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6202&lot=022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6202022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-11-26-n784",
+      "name": "Building and Engineering News, 26 November 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n784/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-11-26",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $2,500. Creston H. Jensen was named as architect.",
+      "source": "building-engineering-news-1927-11-26-n784"
+    }
+  ],
+  "building": {
+    "architect": "Creston H. Jensen"
+  }
+}

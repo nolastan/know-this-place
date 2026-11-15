@@ -13,6 +13,7 @@ that study area, as an example of the Second Bay Tradition.
 - [24th Street](24th-street/) — 1 building, built 1900; 1 in the Diamond & Elizabeth Streets Historic District.
 - [25th Street](25th-street/) — 1 building, built 1900.
 - [26th Street](26th-street/) — 1 building, built 1958; 1 in the San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous).
+- [27th Street](27th-street/) — 1 building, built 1927.
 - [28th Street](28th-street/) — 2 buildings, built 1900–1910.
 - [29th Street](29th-street/) — 1 building, built 1916.
 - [Alvarado Street](alvarado-street/) — 1 building, built 1900.
@@ -25,8 +26,10 @@ that study area, as an example of the Second Bay Tradition.
 - [Clipper Terrace](clipper-terrace/) — 1 building, built 1996.
 - [Day Street](day-street/) — 1 building, built 1938.
 - [Diamond Street](diamond-street/) — 2 buildings, built 1893–1900; 1 in the Diamond & Elizabeth Streets Historic District.
+- [Dolores Street](dolores-street/) — 3 buildings, built 1900–1927.
 - [Douglass Street](douglass-street/) — 1 building, built 1900.
 - [Duncan Street](duncan-street/) — 1 building, built 1908.
+- [Elizabeth Street](elizabeth-street/) — 1 building, built 1927.
 - [Harper Street](harper-street/) — 1 building, built 1900.
 - [Hill Street](hill-street/) — 1 building, built 1965.
 - [Hoffman Avenue](hoffman-avenue/) — 1 building.

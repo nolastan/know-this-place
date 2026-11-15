@@ -1,0 +1,115 @@
+{
+  "address": "315 Naples Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/naples-street/315/",
+  "apn": "6020032",
+  "block": "6020",
+  "lot": "032",
+  "eas_baseid": "389752",
+  "coordinates": {
+    "lat": 37.723565,
+    "lng": -122.428809
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1674,
+    "basement_area_sqft": 549,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0315 NAPLES              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 474080,
+    "assessed_improvement_value": 259268,
+    "last_sale_date": "2012-09-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201301117809",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-11",
+      "status_date": "2013-05-20",
+      "estimated_cost": 25000,
+      "revised_cost": 50000,
+      "description": "add 1 bedroom, 1 home office, 1 bath and family room at ground floor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209280840",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2012-09-28",
+      "status_date": "2017-02-06",
+      "estimated_cost": 850,
+      "revised_cost": 850,
+      "description": "repair holes in drywall, repair 4 interior doors, repair flooring in hallway.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NAPLES&street_type=ST&address_number=315",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6020032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6020&lot=032",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6020032",
+      "retrieved": "2026-11-14"
+    },
+    {
+      "id": "building-engineering-news-1926-04-24-n687",
+      "name": "Building and Engineering News, 24 April 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2616cont/page/n687/mode/1up",
+      "retrieved": "2026-11-14"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-04-24",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of eight on adjoining lots, estimated at $4,000 each. Benj. Schreyer was named as architect and I. M. Sommer & Co. as contractors.",
+      "source": "building-engineering-news-1926-04-24-n687"
+    }
+  ],
+  "building": {
+    "architect": "Benj. Schreyer",
+    "builder": "I. M. Sommer & Co."
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "address": "3476–3478 Pierce Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/pierce-street/3476/",
+  "apn": "0463A026",
+  "block": "0463A",
+  "lot": "026",
+  "eas_baseid": "282696",
+  "coordinates": {
+    "lat": 37.802532,
+    "lng": -122.439642
+  },
+  "address_range": "3476–3478",
+  "street_numbers_on_parcel": [
+    "3476",
+    "3478"
+  ],
+  "parcel": {
+    "year_built": 1927,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3050,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "3478 3476 PIERCE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 100448,
+    "assessed_improvement_value": 108538
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Marina Corporation Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1922–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202010055889",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-05",
+      "status_date": "2020-12-09",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "in kind bathroom remodel. new shower valve, tub, shower walls, vanity, toilet. upgradce elec with dedicated 20 amp panel, in kind kitchen remodel change gountertops and appliances",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010015625",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2020-10-01",
+      "status_date": "2026-01-09",
+      "estimated_cost": 11550,
+      "revised_cost": 11550,
+      "description": "furnish and install 10 casement wood windows to front 2 flats. removing aluminum windows. restore to original like and in kind. st facing. no change to openings. pella wood windows solid wood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607106032",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-07-10",
+      "status_date": "2006-07-10",
+      "estimated_cost": 7410,
+      "revised_cost": 7410,
+      "description": "install 18 vinyl windows in kind into (e) frames. no change in size or location. windows do not face the street. if applicable, bedroom windows will comply with section 310.4 for rescue. all windows will be double pane and have a u-0 factor of .30.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9001733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-25",
+      "status_date": "1990-06-15",
+      "estimated_cost": 6200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8923125",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-28",
+      "status_date": "1991-04-26",
+      "estimated_cost": 6000,
+      "description": "ewo(s)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8920217",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-24",
+      "status_date": "1991-04-26",
+      "estimated_cost": 1000,
+      "description": "ewo",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PIERCE&street_type=ST&address_number=3476",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0463A026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0463A&lot=026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0463A026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4396423535198%2037.80253249578549)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-09-17-n446",
+      "name": "Building and Engineering News, 17 September 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n446/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-09-17",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, one of two on adjoining lots. J. Moore was named as architect. The owner was the Miller Moore Co.",
+      "source": "building-engineering-news-1927-09-17-n446"
+    }
+  ],
+  "building": {
+    "architect": "J. Moore"
+  }
+}

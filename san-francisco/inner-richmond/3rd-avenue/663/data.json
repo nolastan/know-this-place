@@ -1,0 +1,125 @@
+{
+  "address": "663 3rd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/3rd-avenue/663/",
+  "apn": "1641016",
+  "block": "1641",
+  "lot": "016",
+  "eas_baseid": "311832",
+  "coordinates": {
+    "lat": 37.776193,
+    "lng": -122.461039
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3506,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0665 0663 03RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55124,
+    "assessed_improvement_value": 87014
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202501218697",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-21",
+      "status_date": "2025-02-25",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609392",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-29",
+      "status_date": "1996-11-29",
+      "estimated_cost": 5580,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201560",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-03-02",
+      "status_date": "1983-03-04",
+      "estimated_cost": 3250,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1982–2025",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=AVE&address_number=663",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1641016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1641&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1641016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-05-26-n734",
+      "name": "Building and Engineering News, 26 May 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n734/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-05-26",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey building of two flats with a basement, estimated at $7,000. C. Olson was named as contractor.",
+      "source": "building-engineering-news-1928-05-26-n734"
+    }
+  ],
+  "building": {
+    "builder": "C. Olson"
+  }
+}

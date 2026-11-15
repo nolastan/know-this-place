@@ -8,11 +8,13 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Battery Street](battery-street/) — 1 building, built 1989.
 - [Beckett Street](beckett-street/) — 2 buildings, built 1908–1922; 2 in the Chinatown Historic District.
 - [Broadway](broadway/) — 4 buildings, built 1907; 4 in the Jackson Square Historic District Extension.
+- [Brooklyn Place](brooklyn-place/) — 1 building, built 1928; 1 in the Chinatown Historic District.
 - [California Street](california-street/) — 1 building, built 1908.
 - [Clay Street](clay-street/) — 1 building, built 1900.
 - [Columbus Avenue](columbus-avenue/) — 17 buildings, built 1907–1915; 2 in the Jackson Square Historic District.
 - [Commercial Street](commercial-street/) — 1 building, built 1923; 1 in the Chinatown Historic District.
 - [Cooper Alley](cooper-alley/) — 1 building, built 1908; 1 in the Chinatown Historic District.
+- [Emery Lane](emery-lane/) — 1 building, built 1906.
 - [Filbert Street](filbert-street/) — 2 buildings, built 1907–1982.
 - [Front Street](front-street/) — 1 building, built 1910.
 - [Gold Street](gold-street/) — 1 building, built 1900; 1 in the Jackson Square Historic District.
@@ -20,6 +22,7 @@ The oldest Chinese community in North America, on the slopes above Portsmouth Sq
 - [Green Street](green-street/) — 4 buildings, built 1907–1920.
 - [Hotaling Place](hotaling-place/) — 1 building, built 1900; 1 in the Jackson Square Historic District.
 - [Jackson Street](jackson-street/) — The Presidio & Ferries Railroad's horse car barn, in the Jackson Square Historic District.
+- [John Street](john-street/) — 1 building, built 1929.
 - [Joice Street](joice-street/) — 2 buildings, built 1908–1910.
 - [Kearny Street](kearny-street/) — 1 building, built 1905.
 - [Mason Street](mason-street/) — 4 buildings, built 1907–1911.

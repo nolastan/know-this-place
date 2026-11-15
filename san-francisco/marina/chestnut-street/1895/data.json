@@ -1,0 +1,148 @@
+{
+  "address": "1895 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/1895/",
+  "apn": "0493016E",
+  "block": "0493",
+  "lot": "016E",
+  "eas_baseid": "283370",
+  "coordinates": {
+    "lat": 37.80088,
+    "lng": -122.434345
+  },
+  "parcel": {
+    "year_built": 1927,
+    "units": 15,
+    "stories": 3,
+    "rooms": 32,
+    "bathrooms": 15,
+    "lot_area_sqft": 3659,
+    "building_area_sqft": 9576,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1895 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1738002,
+    "assessed_improvement_value": 1738002,
+    "last_sale_date": "2002-12-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1927",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202411195298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-11-19",
+      "status_date": "2025-03-05",
+      "estimated_cost": 25000,
+      "revised_cost": 65000,
+      "description": "small kitchen & bath remodel: one unit on 3rd floor. replace cabinets, counter tops, fixtures, appliances & upgrade electrical & plumbing. replace shower surround & vanity. no structural work, no wall demolition or construction.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202306301351",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-30",
+      "status_date": "2023-08-14",
+      "estimated_cost": 26700,
+      "revised_cost": 26700,
+      "description": "ab 3.08 upgrade of (e) fire alarm system to add 19 low frequency sounders to all sleeping areas of the building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405236679",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-23",
+      "status_date": "2015-01-23",
+      "estimated_cost": 140000,
+      "revised_cost": 150000,
+      "description": "strengthen the garage level per sfbc soft story retrofit (requirements). remove four posts at garage & add a beams. 2012 iebc appendix a-4. n/a maher ordinance 155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200302046647",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-04",
+      "status_date": "2003-04-01",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "per district instpection request of job card dated 1/21/03, increase value of app 200301024431 by",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200301024431",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-01-02",
+      "status_date": "2003-04-01",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "remodeling of small kitchens: replace cabinets, countertops, fixtures, appliances, & upgrade elctric",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "2003–2024",
+    "shown_on_page": 5,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=1895",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0493016E&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0493&lot=016E",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0493016E",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-07-17-n116",
+      "name": "Building and Engineering News, 17 July 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n116/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-07-17",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of fifteen apartments with a basement, estimated at $22,000.",
+      "source": "building-engineering-news-1926-07-17-n116"
+    }
+  ]
+}

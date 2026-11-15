@@ -1,0 +1,139 @@
+{
+  "address": "9 Presidio Terrace, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/presidio-terrace/9/",
+  "apn": "1355042",
+  "block": "1355",
+  "lot": "042",
+  "eas_baseid": "300979",
+  "coordinates": {
+    "lat": 37.788906,
+    "lng": -122.461113
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 6,
+    "lot_area_sqft": 8712,
+    "building_area_sqft": 8015,
+    "basement_area_sqft": 2250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0009 PRESIDIO            TE0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 138589,
+    "assessed_improvement_value": 462062
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1905–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202507251603",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-25",
+      "status_date": "2026-02-11",
+      "estimated_cost": 19000,
+      "revised_cost": 19000,
+      "description": "replace 1 set of french casement sashes into existing frames. wood for wood. true divided lite. 6 visible from street.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303073131",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-07",
+      "status_date": "2023-12-13",
+      "estimated_cost": 25000,
+      "revised_cost": 38000,
+      "description": "remodel 2 bedrooms and one bathroom. update electrical and bring up to code- led recess lights. plumbing: replace (e) toilet, sink, shower w/ new ones. remove old plaster and install insulation and sheetrock. prime and paint.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906110256",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-06-11",
+      "status_date": "2009-06-17",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "elevator hoistway & elevator (residential) at rear of property & wheel chair lift between garage & den (inside).",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PRESIDIO&street_type=TER&address_number=9",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1355042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1355&lot=042",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1355042",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46111262599834%2037.78890582660082)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-12-03-n819",
+      "name": "Building and Engineering News, 3 December 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n819/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-12-03",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work on a frame dwelling and garage, at $34,690. Albert Farr and J. Francis Ward were named as architects and Mattock & Feasey as contractors.",
+      "source": "building-engineering-news-1927-12-03-n819"
+    }
+  ],
+  "building": {
+    "architect": "Albert Farr and J. Francis Ward",
+    "builder": "Mattock & Feasey"
+  }
+}

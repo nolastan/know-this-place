@@ -11,23 +11,32 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Brookdale Avenue](brookdale-avenue/) — 1 building, built 1946.
 - [Byron Court](byron-court/) — 1 building, built 1978.
 - [Carter Street](carter-street/) — 1 building, built 2004.
+- [Concord Street](concord-street/) — 1 building, built 1926.
+- [Congdon Street](congdon-street/) — 1 building, built 1928.
+- [Cordova Street](cordova-street/) — 1 building, built 1925.
 - [Dublin Street](dublin-street/) — 1 building, built 1953.
+- [Edinburgh Street](edinburgh-street/) — 1 building, built 1926.
 - [Excelsior Avenue](excelsior-avenue/) — 1 building, built 1910.
 - [France Avenue](france-avenue/) — 1 building, built 1906.
+- [Gambier Street](gambier-street/) — 2 buildings, built 1927.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
 - [Gladstone Drive](gladstone-drive/) — 1 building, built 1942.
 - [Guttenberg Street](guttenberg-street/) — 1 building, built 1992.
+- [Harvard Street](harvard-street/) — 1 building, built 1928.
 - [Italy Avenue](italy-avenue/) — 1 building, built 1926.
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
 - [Lisbon Street](lisbon-street/) — 1 building, built 1906.
 - [London Street](london-street/) — 1 building, built 1905.
+- [Lowell Street](lowell-street/) — 2 buildings, built 1926.
 - [Madrid Street](madrid-street/) — 1 building, built 1911.
 - [Maynard Street](maynard-street/) — 2 buildings, built 2009.
 - [Mission Street](mission-street/) — 1 building, built 1982.
+- [Morse Street](morse-street/) — 1 building, built 1926.
 - [Moscow Street](moscow-street/) — 1 building.
 - [Munich Street](munich-street/) — 2 buildings, built 1920–1927.
 - [Naples Street](naples-street/) — 1 building, built 1910.
 - [Ney Street](ney-street/) — 2 buildings, built 1900–1965.
+- [Oxford Street](oxford-street/) — 1 building, built 1927.
 - [Paris Street](paris-street/) — 1 building, built 1915.
 - [Persia Avenue](persia-avenue/) — 1 building, built 1919.
 - [Peru Avenue](peru-avenue/) — 1 building, built 1914.

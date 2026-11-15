@@ -1,0 +1,102 @@
+{
+  "address": "1450 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/1450/",
+  "apn": "0480003C",
+  "block": "0480",
+  "lot": "003C",
+  "eas_baseid": "283074",
+  "coordinates": {
+    "lat": 37.80225,
+    "lng": -122.427235
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 22,
+    "stories": 3,
+    "rooms": 51,
+    "bathrooms": 21,
+    "bedrooms": 9,
+    "lot_area_sqft": 6875,
+    "building_area_sqft": 15102,
+    "lot_depth_ft": 37.5,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 15 Units or more",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1450 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 396312,
+    "assessed_improvement_value": 1914145
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200303119342",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-03-11",
+      "status_date": "2006-12-28",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=1450",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0480003C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0480&lot=003C",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0480003C",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-02-05-n195",
+      "name": "Building and Engineering News, 5 February 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer227cont/page/n195/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-02-05",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of 18 apartments with a basement, estimated at $27,000. J. C. Hladik was named as architect.",
+      "source": "building-engineering-news-1927-02-05-n195"
+    }
+  ],
+  "building": {
+    "architect": "J. C. Hladik"
+  }
+}

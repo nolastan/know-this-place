@@ -1,0 +1,148 @@
+{
+  "address": "347 San Benito Way, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/san-benito-way/347/",
+  "apn": "3267030",
+  "block": "3267",
+  "lot": "030",
+  "eas_baseid": "357120",
+  "coordinates": {
+    "lat": 37.730241,
+    "lng": -122.467072
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 4042,
+    "building_area_sqft": 2581,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Balboa Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0347 SAN BENITO          WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 48719,
+    "assessed_improvement_value": 58187
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Balboa Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1921–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202509105025",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-10",
+      "status_date": "2026-03-24",
+      "estimated_cost": 22000,
+      "revised_cost": 29720,
+      "description": "bathroom remodel in kind. approx 48 sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010227120",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2020-10-22",
+      "status_date": "2020-10-22",
+      "estimated_cost": 11000,
+      "revised_cost": 14000,
+      "description": "remodel shower, change tile, relocate shower valve and floor drain. replace shower pan membrane",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801239287",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-23",
+      "status_date": "2018-11-30",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "remodel kitchen in-kind insulate driwall, paint, new cabinets, (e) window, no visible from street, replace in-kind window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8805684",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1988-05-02",
+      "status_date": "1988-09-14",
+      "estimated_cost": 4800,
+      "description": "bathroom remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SAN%20BENITO&street_type=WAY&address_number=347",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3267030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3267&lot=030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3267030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.4670723806486%2037.730240705987754)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1927-12-03-n818",
+      "name": "Building and Engineering News, 3 December 1927",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2127cont/page/n818/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1927-12-03",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $6,000 each. Harold G. Stoner was named as architect and Walter C. Zweig as contractor.",
+      "source": "building-engineering-news-1927-12-03-n818"
+    }
+  ],
+  "building": {
+    "architect": "Harold G. Stoner",
+    "builder": "Walter C. Zweig"
+  }
+}
