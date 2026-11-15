@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 15 of 34 half-year volumes read (vol. 24 pt. 2 to vol. 31, July 1924 – January 1932, the end of the run): 3,447 facts on 3,269 page writes (2,040 pages seeded). Resume backwards at vol. 24 pt. 1 (January–June 1924, `buildingengineer244cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 15 of 34 half-year volumes read (vol. 24 pt. 2 to vol. 31, July 1924 – January 1932, the end of the run): 3,514 facts on 3,291 page writes (2,040 pages seeded). Resume backwards at vol. 24 pt. 1 (January–June 1924, `buildingengineer244cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 5,238 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists the 83 whose parcel already has a page; those are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 5,171 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -80,7 +80,11 @@
   published. **Owners are private individuals and are never published**, and
   are cut from `raw.text`; a firm or institution named as owner (a company, a
   church, a club) is kept. Sureties are private individuals and are cut. An
-  owner-builder printed under Contractor is given as the contractor.
+  owner printed again as contractor, architect or designer (the same person,
+  or the same surname at the owner's address) is cut with the owner; a firm
+  is kept. The first volumes read (1926 and early 1927) had kept those names
+  and were brought into line on 2026-11-15: 32 names cut, with the credits
+  that rested on them (`cut_owner_trade.py` in the pipeline folder).
 - **Citation label:** "Building and Engineering News, 23 January 1926", with
   the page link. Page source ids are
   `building-engineering-news-<issue date>-n<index>`.
