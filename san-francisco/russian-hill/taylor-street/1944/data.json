@@ -1,0 +1,139 @@
+{
+  "address": "1944 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/taylor-street/1944/",
+  "apn": "0100027A",
+  "block": "0100",
+  "lot": "027A",
+  "eas_baseid": "277402",
+  "coordinates": {
+    "lat": 37.800492,
+    "lng": -122.414022
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1755,
+    "building_area_sqft": 2850,
+    "lot_depth_ft": 65,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1946 1944 TAYLOR              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 199100,
+    "assessed_improvement_value": 174040
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201105105772",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-10",
+      "status_date": "2011-05-12",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104254758",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-04-25",
+      "status_date": "2012-07-25",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "supply and install vinyle siding to 2 sides of bldg in kind no structural changes. not visible from the street at rear.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9708025",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-05-05",
+      "status_date": "1997-11-24",
+      "estimated_cost": 3950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8906501",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-04-19",
+      "status_date": "1989-06-09",
+      "estimated_cost": 7900,
+      "revised_cost": 0,
+      "description": "install 34 aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1989–2012",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TAYLOR&street_type=ST&address_number=1944",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0100027A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0100&lot=027A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0100027A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-07-10-n77",
+      "name": "Building and Engineering News, 10 July 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n77/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-07-10",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $12,400. G. Moriconi was named as contractor.",
+      "source": "building-engineering-news-1926-07-10-n77"
+    }
+  ],
+  "building": {
+    "builder": "G. Moriconi"
+  }
+}

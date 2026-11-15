@@ -4,6 +4,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 
 ## Streets documented so far
 
+- [10th Avenue](10th-avenue/) — 3 buildings, built 1926.
 - [12th Avenue](12th-avenue/) — 3 buildings, built 1990.
 - [14th Avenue](14th-avenue/) — 1 building, built 1926.
 - [15th Avenue](15th-avenue/) — 1 building, built 1945.
@@ -22,6 +23,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Cecilia Avenue](cecilia-avenue/) — 1 building, built 1927.
 - [Claremont Boulevard](claremont-boulevard/) — 1 building, built 1929.
 - [Colon Avenue](colon-avenue/) — 1 building, built 1926.
+- [Congo Street](congo-street/) — 2 buildings, built 1927.
 - [Cresta Vista Drive](cresta-vista-drive/) — 7 buildings, built 1989–1990.
 - [Dalewood Way](dalewood-way/) — 1 building, built 1967.
 - [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.

@@ -4,7 +4,9 @@ A central district west of Civic Center, taking in the eastern edge of Alamo Squ
 
 ## Streets documented so far
 
+- [Baker Street](baker-street/) — 1 building, built 1926; 1 in the NOPA Historic District.
 - [Birch Street](birch-street/) — 6 buildings, built 1900–1912; 6 in the Hayes Valley Residential Historic District.
+- [Broderick Street](broderick-street/) — 1 building, built 1927; 1 in the NOPA Historic District.
 - [Buchanan Street](buchanan-street/) — 1 building, built 1878; 1 in the Hayes Valley Residential Historic District.
 - [Church Street](church-street/) — 1 building, built 1905.
 - [Divisadero Street](divisadero-street/) — 1 building, built 1900.

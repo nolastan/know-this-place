@@ -19,6 +19,7 @@ A hillside residential district in the city's south-east, between McLaren Park a
 - [Holyoke Street](holyoke-street/) — 1 building, built 1908.
 - [Madison Street](madison-street/) — 1 building, built 1914.
 - [Oxford Street](oxford-street/) — 1 building, built 2003.
+- [San Bruno Avenue](san-bruno-avenue/) — 1 building, built 1927; 1 in the San Francisco Neighborhood Movie Theater Historic District (Discontiguous).
 - [Silliman Street](silliman-street/) — 1 building, built 1992.
 - [Silver Avenue](silver-avenue/) — 1 building, built 1927.
 - [Sweeny Street](sweeny-street/) — 1 building, built 1944.

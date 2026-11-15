@@ -1,0 +1,134 @@
+{
+  "address": "2462 31st Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/31st-avenue/2462/",
+  "apn": "2395029",
+  "block": "2395",
+  "lot": "029",
+  "eas_baseid": "337265",
+  "coordinates": {
+    "lat": 37.741327,
+    "lng": -122.488137
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 1455,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2462 31ST                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 145007,
+    "assessed_improvement_value": 145007
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410012101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-01",
+      "status_date": "2024-12-03",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "voluntary foundation repair: approx. 20 feet on left side, 8 feet on rear. 4 feet front right side.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805192342",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-19",
+      "status_date": "2008-05-19",
+      "estimated_cost": 6500,
+      "revised_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202128983",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-02-12",
+      "status_date": "2002-03-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew expired appn. 2001-02202532",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102202532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-02-20",
+      "status_date": "2002-03-01",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "repair deck repair dryrot. relocate plumbing fixtures in existing bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=31ST&street_type=AVE&address_number=2462",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2395029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2395&lot=029",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2395029",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-10-09-n604",
+      "name": "Building and Engineering News, 9 October 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n604/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-10-09",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,500. Jos. Scoma was named as designer and Edward Staff as contractor.",
+      "source": "building-engineering-news-1926-10-09-n604"
+    }
+  ],
+  "building": {
+    "builder": "Edward Staff"
+  }
+}

@@ -51,6 +51,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Poppy Lane](poppy-lane/) — 1 building, built 2008.
 - [Portola Drive](portola-drive/) — 1 building.
 - [Randall Street](randall-street/) — 1 building, built 1903.
+- [Sanchez Street](sanchez-street/) — 1 building, built 1927.
 - [Staples Avenue](staples-avenue/) — 1 building, built 1923.
 - [Sunview Drive](sunview-drive/) — 1 building, built 1957.
 - [Surrey Street](surrey-street/) — 1 building, built 2007.

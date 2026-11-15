@@ -13,6 +13,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Carter Street](carter-street/) — 1 building, built 2004.
 - [Cordova Street](cordova-street/) — 1 building, built 1925.
 - [Dublin Street](dublin-street/) — 1 building, built 1953.
+- [Edinburgh Street](edinburgh-street/) — 1 building, built 1926.
 - [Excelsior Avenue](excelsior-avenue/) — 1 building, built 1910.
 - [France Avenue](france-avenue/) — 1 building, built 1906.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
@@ -22,9 +23,11 @@ A working-class residential district in the city's south-east, laid out in the e
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
 - [Lisbon Street](lisbon-street/) — 1 building, built 1906.
 - [London Street](london-street/) — 1 building, built 1905.
+- [Lowell Street](lowell-street/) — 2 buildings, built 1926.
 - [Madrid Street](madrid-street/) — 1 building, built 1911.
 - [Maynard Street](maynard-street/) — 2 buildings, built 2009.
 - [Mission Street](mission-street/) — 1 building, built 1982.
+- [Morse Street](morse-street/) — 1 building, built 1926.
 - [Moscow Street](moscow-street/) — 1 building.
 - [Munich Street](munich-street/) — 2 buildings, built 1920–1927.
 - [Naples Street](naples-street/) — 1 building, built 1910.

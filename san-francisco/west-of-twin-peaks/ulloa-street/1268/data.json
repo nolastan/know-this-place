@@ -1,0 +1,113 @@
+{
+  "address": "1268 Ulloa Street, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/ulloa-street/1268/",
+  "apn": "2412020A",
+  "block": "2412",
+  "lot": "020A",
+  "eas_baseid": "338026",
+  "coordinates": {
+    "lat": 37.741558,
+    "lng": -122.469941
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2409,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "West Portal",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 1268 ULLOA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 249177,
+    "assessed_improvement_value": 332239,
+    "last_sale_date": "1996-04-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201210262881",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-26",
+      "status_date": "2013-04-26",
+      "estimated_cost": 14534,
+      "revised_cost": 15000,
+      "description": "change window sashes in kind wood in wood out 12 visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607451",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-04-30",
+      "status_date": "1996-10-31",
+      "estimated_cost": 6500,
+      "description": "termite work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ULLOA&street_type=ST&address_number=1268",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2412020A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2412&lot=020A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2412020A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-07-31-n202",
+      "name": "Building and Engineering News, 31 July 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n202/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-07-31",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a seven-room bungalow, at $10,250. Harold G. Stoner was named as architect and the Lang Realty Co. as contractor.",
+      "source": "building-engineering-news-1926-07-31-n202"
+    }
+  ],
+  "building": {
+    "architect": "Harold G. Stoner",
+    "builder": "Lang Realty Co."
+  }
+}

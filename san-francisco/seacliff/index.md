@@ -6,6 +6,7 @@ An affluent residential enclave on the bluffs above the Golden Gate, laid out fr
 
 - [16th Avenue](16th-avenue/) — 1 building, built 1916.
 - [17th Avenue](17th-avenue/) — 1 building, built 1913.
+- [18th Avenue](18th-avenue/) — 1 building, built 1926.
 - [19th Avenue](19th-avenue/) — 1 building, built 1910.
 - [22nd Avenue](22nd-avenue/) — 3 buildings, built 1910–1950.
 - [23rd Avenue](23rd-avenue/) — 1 building, built 1908.

@@ -1,0 +1,132 @@
+{
+  "address": "1227 16th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/16th-avenue/1227/",
+  "apn": "1734004",
+  "block": "1734",
+  "lot": "004",
+  "eas_baseid": "315585",
+  "coordinates": {
+    "lat": 37.765002,
+    "lng": -122.474334
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 3096,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "1229 1227 16TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 191998,
+    "assessed_improvement_value": 191422
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201804186689",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-18",
+      "status_date": "2018-06-06",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "to comply nov#201853671. repair stairs in-kind less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401065597",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-06",
+      "status_date": "2014-01-08",
+      "estimated_cost": 200,
+      "revised_cost": 500,
+      "description": "to comply with complaint #201445791. repair side step (stair) 11 (steps). repair stair first floor less 50%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9100413",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-01-10",
+      "status_date": "1991-05-10",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8300109",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1983-01-05",
+      "status_date": "1986-03-04",
+      "estimated_cost": 3000,
+      "description": "basement remodeling to rumpus room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=1227",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1734004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1734&lot=004",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1734004",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-10-09-n605",
+      "name": "Building and Engineering News, 9 October 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n605/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-10-09",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $11,050, and the building contract was recorded at $11,050. Gustav Spirz was named as contractor.",
+      "source": "building-engineering-news-1926-10-09-n605"
+    }
+  ],
+  "building": {
+    "builder": "Gustav Spirz"
+  }
+}

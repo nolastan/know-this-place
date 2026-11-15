@@ -24,6 +24,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Faxon Avenue](faxon-avenue/) — 1 building, built 1930.
 - [Grafton Avenue](grafton-avenue/) — 1 building, built 1915.
 - [Granada Avenue](granada-avenue/) — 1 building, built 1989.
+- [Head Street](head-street/) — 1 building, built 1926.
 - [Holloway Avenue](holloway-avenue/) — 1 building, built 1985.
 - [Howth Street](howth-street/) — 1 building, built 1908.
 - [Huron Avenue](huron-avenue/) — 1 building, built 1928.
@@ -48,6 +49,7 @@ Merced Heights, the ridge between them, was mostly built after World War II.
 - [Sagamore Street](sagamore-street/) — 1 building, built 1890.
 - [Summit Street](summit-street/) — 1 building, built 1936.
 - [Thrift Street](thrift-street/) — 1 building, built 1949.
+- [Victoria Street](victoria-street/) — 2 buildings, built 1926.
 - [Whittier Street](whittier-street/) — 1 building, built 1905.
 
 ## Parks and public spaces

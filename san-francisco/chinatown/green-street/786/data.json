@@ -1,0 +1,126 @@
+{
+  "address": "786–788 Green Street, San Francisco, CA 94133",
+  "path": "/san-francisco/chinatown/green-street/786/",
+  "apn": "0118025",
+  "block": "0118",
+  "lot": "025",
+  "eas_baseid": "447951",
+  "coordinates": {
+    "lat": 37.799355,
+    "lng": -122.412087
+  },
+  "address_range": "786–788",
+  "street_numbers_on_parcel": [
+    "786",
+    "788"
+  ],
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2443,
+    "building_area_sqft": 3558,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "North Beach",
+    "analysis_neighborhood": "Chinatown",
+    "property_location_raw": "0788 0786 GREEN               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 64403,
+    "assessed_improvement_value": 165834
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201711012898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-01",
+      "status_date": "2018-03-12",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "bathroom remodel. replace shower pan in-kind. replace 1 exhaust fan in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201608185406",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2016-08-18",
+      "status_date": "2020-11-28",
+      "estimated_cost": 20000,
+      "revised_cost": 135000,
+      "description": "legalize a 2nd dwelling unit at the ground floor of an (e) 2-family 2-story dwelling (per sec 207.3 ord 43-14).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8603215",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-03-20",
+      "status_date": "1986-04-29",
+      "estimated_cost": 3200,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GREEN&street_type=ST&address_number=786",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0118025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0118&lot=025",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0118025",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-07-17-n115",
+      "name": "Building and Engineering News, 17 July 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n115/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-07-17",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $10,000. P. F. DeMartini was named as architect.",
+      "source": "building-engineering-news-1926-07-17-n115"
+    }
+  ],
+  "building": {
+    "architect": "P. F. DeMartini"
+  }
+}

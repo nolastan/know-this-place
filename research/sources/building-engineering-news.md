@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1 of 34 half-year volumes read (vol. 26 pt. 1, January–June 1926): 368 facts on 345 pages. Resume at vol. 26 pt. 2. See the `Verified:` line.
+> - **Coverage:** 2 of 34 half-year volumes read (vol. 26 pts. 1 and 2, January–December 1926): 657 facts on 627 page writes (428 pages seeded). Resume at vol. 27 pt. 1 (`buildingengineer227cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, and the 543 placed-and-held rows of vol. 26 pt. 1, by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
+> - **Claimed:** every unread volume, and the 968 placed-and-held rows of vol. 26 (543 in pt. 1, 425 in pt. 2), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -93,7 +93,20 @@
   page-count decision, 682 rows with a nearest parcel not accepted, 794 not
   placed (354 unparsed location lines, 245 street pairs that do not cross
   under the names read, 160 street numbers with no EAS row).
-- **Verified:** 2026-11-14 (vol. 26 pt. 1: read 4,373 entries, found 2,404
+- **Coverage, vol. 26 pt. 2** (`buildingengineer226cont`, 3 July – 25 December
+  1926): 3,765 numbered entries; 2,264 San Francisco rows; 1,318 placed on a
+  parcel; 306 picked and read against the image; 289 published on 282 pages,
+  186 of them seeded. Unfinished: 425 placed single houses held for the same
+  page-count decision, 586 rows with a nearest parcel not accepted, 946 not
+  placed. Unread: the other 32 volumes.
+- **Verified:** 2026-11-15 (vol. 26 pt. 2: read 3,765 entries, found 2,264
+  San Francisco rows, resolved 289, published 289 on 282 pages. Learned: the
+  reader index and the scan leaf drift apart inside an item, so fetch the
+  item's leaf map before cropping; a page-writing script must strip only its
+  own volume's entries on a re-run, or it deletes the earlier volume's; where
+  two volumes put different plans on one lot, the roll's storey count says
+  which was built.)
+- **Verified (earlier):** 2026-11-14 (vol. 26 pt. 1: read 4,373 entries, found 2,404
   San Francisco rows, resolved 368, published 368 on 345 pages. Nine existing
   pages already credited the same architect from a survey, which is the
   independent check on the placements. Learned: the reader's page index is

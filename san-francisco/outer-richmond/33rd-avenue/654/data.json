@@ -1,0 +1,131 @@
+{
+  "address": "654–656 33rd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/33rd-avenue/654/",
+  "apn": "1575023",
+  "block": "1575",
+  "lot": "023",
+  "eas_baseid": "308955",
+  "coordinates": {
+    "lat": 37.776752,
+    "lng": -122.492764
+  },
+  "address_range": "654–656",
+  "street_numbers_on_parcel": [
+    "654",
+    "656"
+  ],
+  "parcel": {
+    "year_built": 1926,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3350,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0656 0654 33RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1489416,
+    "assessed_improvement_value": 690329,
+    "last_sale_date": "2017-09-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201901140343",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-01-14",
+      "status_date": "2019-02-21",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to pa 2017-1128-4940 layout change 2nd fl - doorway in kitchen, laundry room wall; 3rd fl - closet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711284940",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-28",
+      "status_date": "2019-02-21",
+      "estimated_cost": 68000,
+      "revised_cost": 68000,
+      "description": "3rd flr: add bathroom, move washer/dryer. 2nd flr: reconfigure (e) bathrrom garage: no work. remodel 2 kitchens no structural work",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201504204095",
+      "type": "additions alterations or repairs",
+      "status": "reinstated",
+      "filed": "2015-04-20",
+      "status_date": "2016-11-22",
+      "estimated_cost": 380000,
+      "revised_cost": 380000,
+      "description": "horizontal & vertical addition, interior remodel. add 2 bed & 2 bath @ ground floor, new spiral stair, new bath @ 2nd floor, new bath @ 3rd floor, new 4th floor addition of 2 bed, bath, family room, office & new roof decks.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2015–2019",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=33RD&street_type=AVE&address_number=654",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1575023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1575&lot=023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1575023",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-09-25-n521",
+      "name": "Building and Engineering News, 25 September 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n521/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-09-25",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000.",
+      "source": "building-engineering-news-1926-09-25-n521"
+    }
+  ]
+}

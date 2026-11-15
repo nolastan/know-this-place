@@ -1,0 +1,167 @@
+{
+  "address": "1875 Oak Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/oak-street/1875/",
+  "apn": "1225030",
+  "block": "1225",
+  "lot": "030",
+  "eas_baseid": "297742",
+  "coordinates": {
+    "lat": 37.771279,
+    "lng": -122.450114
+  },
+  "parcel": {
+    "year_built": 1926,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "bedrooms": 6,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 5010,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 1875 OAK                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1893591,
+    "assessed_improvement_value": 811537,
+    "last_sale_date": "2019-03-12"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1926",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202311140776",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-11-14",
+      "status_date": "2023-11-21",
+      "estimated_cost": 19500,
+      "revised_cost": 19500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908138607",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-13",
+      "status_date": "2019-09-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to app#201707252875 for soft story 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201707252875",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-07-25",
+      "status_date": "2019-09-19",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "soft story retrofit per sfebc chapter 4 d, 2016 cebc appendix a-4. 2 ome steel frames; hardy frame; plywood shearwalls & (n) reinforced councrete grade beams.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9310072",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-06-15",
+      "status_date": "1994-09-15",
+      "estimated_cost": 14000,
+      "description": "water damaged ceilings/flrs/replace w/sheet rock/carpet",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308025",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1993-05-13",
+      "status_date": "1994-03-25",
+      "estimated_cost": 23000,
+      "description": "remove lath & plaster repalce w/sheetrock 5 rooms",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8513663",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-12-03",
+      "status_date": "1986-03-20",
+      "estimated_cost": 5995,
+      "revised_cost": 0,
+      "description": "repair 5 posts, base of wall, garage door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAK&street_type=ST&address_number=1875",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1225030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1225&lot=030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1225030",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.450113978158%2037.77127897867531)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1926-12-18-n1040",
+      "name": "Building and Engineering News, 18 December 1926",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer226cont/page/n1040/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1926-12-18",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of six apartments with a basement, estimated at $15,000.",
+      "source": "building-engineering-news-1926-12-18-n1040"
+    }
+  ]
+}
