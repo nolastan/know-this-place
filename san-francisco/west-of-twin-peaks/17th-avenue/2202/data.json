@@ -1,0 +1,124 @@
+{
+  "address": "2202 17th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/west-of-twin-peaks/17th-avenue/2202/",
+  "apn": "2333A038",
+  "block": "2333A",
+  "lot": "038",
+  "eas_baseid": "334644",
+  "coordinates": {
+    "lat": 37.746655,
+    "lng": -122.473505
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1949,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Parkside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 2202 17TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1473487,
+    "assessed_improvement_value": 631494,
+    "last_sale_date": "2017-10-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201505115883",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-11",
+      "status_date": "2015-07-07",
+      "estimated_cost": 20000,
+      "revised_cost": 34656,
+      "description": "to comply with complaint #201545571: (legalize permits for kitchen & bathroom remodel on main floor). kitchen approx 12x12 & bathroom 6x5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201502259250",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-02-25",
+      "status_date": "2015-07-07",
+      "estimated_cost": 700,
+      "revised_cost": 9037,
+      "description": "remodel (e) master bathroom (there is only a sink and toilet currently); install new shower and bathtub. to comply with cec150.0(k)3 & 5; existing room without change of walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201408264693",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-08-26",
+      "status_date": "2015-05-27",
+      "estimated_cost": 9000,
+      "revised_cost": 10000,
+      "description": "repair in kind damaged wood in staircase, remove and install new concrete steps and landing. all construction to be replaced in-kind.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=AVE&address_number=2202",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2333A038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2333A&lot=038",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2333A038",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-04-28-n695",
+      "name": "Building and Engineering News, 28 April 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n695/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-04-28",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling, estimated at $3,200. Arthur J. Scholz was named as architect.",
+      "source": "building-engineering-news-1915-04-28-n695"
+    }
+  ],
+  "building": {
+    "architect": "Arthur J. Scholz"
+  }
+}

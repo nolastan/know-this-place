@@ -1,0 +1,133 @@
+{
+  "address": "166 17th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/17th-avenue/166/",
+  "apn": "1376031",
+  "block": "1376",
+  "lot": "031",
+  "eas_baseid": "301698",
+  "coordinates": {
+    "lat": 37.784909,
+    "lng": -122.476156
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 3140,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0168 0166 17TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58790,
+    "assessed_improvement_value": 75880
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201012146653",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-12-14",
+      "status_date": "2011-07-21",
+      "estimated_cost": 55000,
+      "revised_cost": 55000,
+      "description": "remodel kitchen & bath, remove all kitchen cab and replace, remove all bath fixtures & replace, install addition lighting, no structural walls remove",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9721880",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-29",
+      "status_date": "1997-11-17",
+      "estimated_cost": 500,
+      "description": "dryrot repair of existing exterior rear stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720738",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-10-16",
+      "status_date": "1997-11-17",
+      "estimated_cost": 600,
+      "description": "repair footing under (e) sunroom",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000994",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-16",
+      "status_date": "1990-04-27",
+      "estimated_cost": 3000,
+      "description": "repair exterior stucco, rear stair way, anchor bolts.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1990–2012",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=17TH&street_type=AVE&address_number=166",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1376031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1376&lot=031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1376031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-06-16-n990",
+      "name": "Building and Engineering News, 16 June 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n990/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-06-16",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of flats, estimated at $4,900.",
+      "source": "building-engineering-news-1915-06-16-n990"
+    }
+  ]
+}

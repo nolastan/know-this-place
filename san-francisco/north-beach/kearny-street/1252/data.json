@@ -1,0 +1,116 @@
+{
+  "address": "1252–1256 Kearny Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/kearny-street/1252/",
+  "apn": "0133027",
+  "block": "0133",
+  "lot": "027",
+  "eas_baseid": "424271",
+  "coordinates": {
+    "lat": 37.799703,
+    "lng": -122.405686
+  },
+  "address_range": "1252–1256",
+  "street_numbers_on_parcel": [
+    "1252",
+    "1254",
+    "1256"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 3,
+    "stories": 3,
+    "rooms": 16,
+    "bathrooms": 3,
+    "lot_area_sqft": 1365,
+    "building_area_sqft": 3003,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "1256 1252 KEARNY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 530494,
+    "assessed_improvement_value": 376650,
+    "last_sale_date": "1992-05-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201402118243",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-11",
+      "status_date": "2014-07-24",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair exterior stair case at rear of building, repair in-kind; to comply with his nov #201101361 dated 3/23/2011. less than 50%.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311222581",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-22",
+      "status_date": "2013-12-19",
+      "estimated_cost": 7880,
+      "revised_cost": 7880,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KEARNY&street_type=ST&address_number=1252",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0133027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0133&lot=027",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0133027",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-05-19-n822",
+      "name": "Building and Engineering News, 19 May 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n822/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-05-19",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a three-storey and basement frame building of flats, all work except gas and electric fixtures, finish hardware and window shades, at $6,200.",
+      "source": "building-engineering-news-1915-05-19-n822"
+    }
+  ]
+}

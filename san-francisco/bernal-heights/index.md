@@ -61,6 +61,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Santa Marina Street](santa-marina-street/) — 1 building, built 1914.
 - [Shotwell Street](shotwell-street/) — 1 building.
 - [Stoneman Street](stoneman-street/) — 1 building, built 1925.
+- [Treat Avenue](treat-avenue/) — 1 building, built 1900; 1 in the Bernal Heights North Historic District.
 - [Virginia Avenue](virginia-avenue/) — 1 building, built 1910.
 - [Winfield Street](winfield-street/) — 1 building, built 1909.
 - [Wool Street](wool-street/) — 1 building, built 1906.

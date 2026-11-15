@@ -1,0 +1,157 @@
+{
+  "address": "3785 Jackson Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/jackson-street/3785/",
+  "apn": "0989017",
+  "block": "0989",
+  "lot": "017",
+  "eas_baseid": "292103",
+  "coordinates": {
+    "lat": 37.789489,
+    "lng": -122.457074
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 5,
+    "bedrooms": 5,
+    "lot_area_sqft": 3790.37,
+    "building_area_sqft": 4980,
+    "lot_depth_ft": 17.75,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3785 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1171446,
+    "assessed_improvement_value": 1269070
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200006162820",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-16",
+      "status_date": "2000-06-30",
+      "estimated_cost": 39640,
+      "revised_cost": 39640,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9000557",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-01-09",
+      "status_date": "1990-04-06",
+      "estimated_cost": 3100,
+      "description": "repair wood siding & exterior stucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606833",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-06-11",
+      "status_date": "1987-01-07",
+      "estimated_cost": 25000,
+      "description": "construction of raised brick planter walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8307040",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-07-25",
+      "status_date": "1984-07-27",
+      "estimated_cost": 25000,
+      "description": "bathroon remodel glass root installed over lightwell",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8303893",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1983-05-05",
+      "status_date": "1983-10-13",
+      "estimated_cost": 17000,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=3785",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0989017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0989&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0989017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45707367013915%2037.78948853670902)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-06-16-n993",
+      "name": "Building and Engineering News, 16 June 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n993/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-06-16",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey and basement brick, frame and plaster residence, all work, at $20,500. Macdonald & Macdonald were named as architects and Williams Bros. & Henderson as contractors.",
+      "source": "building-engineering-news-1915-06-16-n993"
+    }
+  ],
+  "building": {
+    "architect": "Macdonald & Macdonald",
+    "builder": "Williams Bros. & Henderson"
+  }
+}

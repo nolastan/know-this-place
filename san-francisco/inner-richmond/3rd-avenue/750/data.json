@@ -1,0 +1,122 @@
+{
+  "address": "750 3rd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/3rd-avenue/750/",
+  "apn": "1645023A",
+  "block": "1645",
+  "lot": "023A",
+  "eas_baseid": "312009",
+  "coordinates": {
+    "lat": 37.774811,
+    "lng": -122.46028
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2210,
+    "basement_area_sqft": 270,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0750 03RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1106873,
+    "assessed_improvement_value": 474370,
+    "last_sale_date": "2009-11-06"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202509034482",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-09-03",
+      "status_date": "2025-12-11",
+      "estimated_cost": 12000,
+      "revised_cost": 20000,
+      "description": "remodel (1) shower room and bathroom in kind. no structural work.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200305073989",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-05-07",
+      "status_date": "2003-10-29",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "install pjoto system on roof, connect output to breaker in electrical panel.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2003–2025",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=AVE&address_number=750",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1645023A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1645&lot=023A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1645023A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1915-03-24-n489",
+      "name": "Building and Engineering News, 24 March 1915",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1515cont/page/n489/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1915-03-24",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey and basement frame residence, all work, at $3,000. G. E. McCrea was named as architect and C. M. Moore and G. E. Watson as contractors.",
+      "source": "building-engineering-news-1915-03-24-n489"
+    }
+  ],
+  "building": {
+    "architect": "G. E. McCrea",
+    "builder": "C. M. Moore and G. E. Watson"
+  }
+}
