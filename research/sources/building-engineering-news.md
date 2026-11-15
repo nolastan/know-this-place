@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 26 of 34 half-year volumes read (vol. 19 pt. 1 to vol. 31, January 1919 – January 1932, the end of the run): 5,421 facts on 5,068 page writes (3,046 pages seeded). Resume backwards at the second 1918 volume (`buildingengineer1828cont`, July to December 1918; the July to December 1919 item is `buildingengine1921919cont`, whose id breaks the pattern; find item ids with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 27 of 34 half-year volumes read (vol. 18 pt. 2 to vol. 31, July 1918 – January 1932, the end of the run): 5,457 facts on 5,102 page writes (3,057 pages seeded). Resume backwards at the first 1918 volume (`buildingengineer1818cont`, January to June 1918; the July to December 1919 item is `buildingengine1921919cont`, whose id breaks the pattern; find item ids with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 7,589 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 94 found on 2026-11-15 were each read against the page image: 68 were published and 26 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 7,620 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 96 found on 2026-11-15 were each read against the page image: 68 were published and 28 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -180,6 +180,13 @@
   until the parcel gets a page (39 are row-of-houses permits), 481 rows with
   a nearest parcel not accepted, 793 not placed. Unread: the 17 volumes
   before July 1923.
+- **Coverage, vol. 18 pt. 2** (`buildingengineer1828cont`, 3 July – 25
+  December 1918): 1,264 numbered entries; 561 San Francisco rows; 216
+  placed on a parcel; 53 picked and read against the image; 36 published
+  on 34 pages, 11 of them seeded. Unfinished: 31 placed single houses held
+  until the parcel gets a page, 133 rows with a nearest parcel not
+  accepted, 345 not placed, one contract on a parcel with no address row.
+  Unread: the 7 volumes before July 1918.
 - **Coverage, vol. 19 pt. 1** (`buildingengineer1919cont`, 1 January – 25
   June 1919): 1,992 numbered entries; 1,115 San Francisco rows; 535
   placed on a parcel; 134 picked and read against the image; 98 published
@@ -201,21 +208,22 @@
   until the parcel gets a page (14 are row-of-houses permits), 331 rows with
   a nearest parcel not accepted, 681 not placed. Unread: the 10 volumes
   before 1920.
-- **Verified:** 2026-11-15 (vol. 19 pt. 1: read 1,992 entries, found 1,115
-  San Francisco rows, resolved 98, published 98 on 90 pages. Learned:
-  until late April 1919 the paper printed each label with a row of leader
-  dots ("Owner........") where later issues print a dash, and the OCR
-  drops the dots, so `extract.py` now also takes a label at the start of
-  a line with no dash after it (980 entries before the change, 1,992
-  after; every earlier volume uses the dotted layout); the pages carry no
-  dated running head, so the issue dates come from the cover dates, every
-  Wednesday from 1 January to 25 June (`issues.py` rebuilds `issues.json`
-  from the covers and fills a cover the OCR missed a week after the one
-  before); item numbers run on from 1918 until the issue of 15 January;
-  the seed caches in `.cache/` are keyed by manifest name, so delete
+- **Verified:** 2026-11-15 (vol. 18 pt. 2: read 1,264 entries, found 561
+  San Francisco rows, resolved 36, published 36 on 34 pages. Learned:
+  building was slow in the last months of the war, so the volume is half
+  the size of 1919; the dated running heads in this volume are stale
+  type (one says 6 November on six issues), so the issue dates come from
+  the cover dates, every Wednesday from 3 July to 25 December, and
+  `redate.py`'s "running head disagrees" lines are to be ignored;
+  `issues.py` missed four covers whose line the OCR garbled, set by hand
+  from the masthead ("Issued Weekly ... San Francisco, Cal. <date>") two
+  or four leaves after the cover; labels are printed with leader dots
+  ("Owner........"), read by `extract.py` since vol. 19 pt. 1; the seed
+  caches in `.cache/` are keyed by manifest name, so delete
   `.cache/*__<manifest>.json` before seeding a manifest a second time;
-  1919 listings are terse ("Alter flats"), so more alterations fail the
-  street-number check.)
+  `takeup.py` builds the item id as `buildingengineer<vol>cont`, so for
+  the July to December 1919 item set `item` in its gen file to
+  `buildingengineer19192cont`.)
 - **Coverage, vol. 20 pt. 2** (`buildingengineer2010cont`, 7 July – 25
   December 1920): 2,156 numbered entries; 1,064 San Francisco rows; 535
   placed on a parcel; 119 picked and read against the image; 88 published

@@ -5,6 +5,7 @@ The neighborhood at the east end of Golden Gate Park, at the centre of San Franc
 ## Streets documented so far
 
 - [17th Street](17th-street/) — 1 building, built 1912.
+- [Alma Street](alma-street/) — 1 building, built 1911; 1 in the Cole Valley Historic District.
 - [Ashbury Street](ashbury-street/) — Two buildings — the house guides give the Grateful Dead, and one of three Janis Joplin addresses.
 - [Ashbury Terrace](ashbury-terrace/) — 1 building, built 1912.
 - [Baker Street](baker-street/) — 2 buildings, built 1924–1925; 2 in the Buena Vista North Historic District.
