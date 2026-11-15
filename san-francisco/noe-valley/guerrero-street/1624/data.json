@@ -1,0 +1,102 @@
+{
+  "address": "1624–1626 Guerrero Street, San Francisco, CA 94110",
+  "path": "/san-francisco/noe-valley/guerrero-street/1624/",
+  "apn": "6616005",
+  "block": "6616",
+  "lot": "005",
+  "eas_baseid": "468242",
+  "coordinates": {
+    "lat": 37.745154,
+    "lng": -122.422566
+  },
+  "address_range": "1624–1626",
+  "street_numbers_on_parcel": [
+    "1624",
+    "1626"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2173,
+    "building_area_sqft": 2000,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "1626 1624 GUERRERO            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 40862,
+    "assessed_improvement_value": 48252
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200704209326",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2007-04-20",
+      "status_date": "2007-04-20",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "in front of house: replace extg cemment siding in new wood approx. 400 sq ft siding . install 7 new wood double hung wndw in front of bldg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=GUERRERO&street_type=ST&address_number=1624",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6616005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6616&lot=005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6616005",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1919-05-28-n357",
+      "name": "Building and Engineering News, 28 May 1919",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1919cont/page/n357/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1919-05-28",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: altering the flats, estimated at $2,100.",
+      "source": "building-engineering-news-1919-05-28-n357"
+    }
+  ]
+}
