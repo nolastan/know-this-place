@@ -1,0 +1,131 @@
+{
+  "address": "2543–2549 Anza Street, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/anza-street/2543/",
+  "apn": "1559041",
+  "block": "1559",
+  "lot": "041",
+  "eas_baseid": "425782",
+  "coordinates": {
+    "lat": 37.77844,
+    "lng": -122.475657
+  },
+  "address_range": "2543–2549",
+  "street_numbers_on_parcel": [
+    "2543",
+    "2545",
+    "2547",
+    "2549"
+  ],
+  "parcel": {
+    "year_built": 1921,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 2352,
+    "building_area_sqft": 4250,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "2549 2543 ANZA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 78519,
+    "assessed_improvement_value": 99313
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200910169174",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-10-16",
+      "status_date": "2009-11-19",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304164",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-12",
+      "status_date": "1993-08-06",
+      "estimated_cost": 2600,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9303072",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1993-02-25",
+      "status_date": "1993-09-17",
+      "estimated_cost": 4000,
+      "revised_cost": 7500,
+      "description": "replace rotten wood stair by new redwood stair same config.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1993–2010",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ANZA&street_type=ST&address_number=2543",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1559041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1559&lot=041",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1559041",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1921-12-17-n780",
+      "name": "Building and Engineering News, 17 December 1921",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2921cont/page/n780/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1921-12-17",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four flats with a basement, estimated at $8,000.",
+      "source": "building-engineering-news-1921-12-17-n780"
+    }
+  ]
+}

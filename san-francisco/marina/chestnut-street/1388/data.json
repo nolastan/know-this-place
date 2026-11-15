@@ -1,0 +1,175 @@
+{
+  "address": "1388 Chestnut Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/chestnut-street/1388/",
+  "apn": "0479009C",
+  "block": "0479",
+  "lot": "009C",
+  "eas_baseid": "283051",
+  "coordinates": {
+    "lat": 37.80235,
+    "lng": -122.426143
+  },
+  "parcel": {
+    "year_built": 1921,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3079,
+    "building_area_sqft": 2432,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 1388 CHESTNUT            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1390072,
+    "assessed_improvement_value": 826222,
+    "last_sale_date": "2011-03-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202110281326",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-10-28",
+      "status_date": "2022-01-06",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "replace and kind less than 50% dry rot repair at back stairs of building. all work in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105105769",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-05-10",
+      "status_date": "2011-05-20",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201105095584",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2011-05-09",
+      "status_date": "2012-02-03",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "new deck @ rear of existing home w/ exterior overhead gas heater @ deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201103212448",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-03-21",
+      "status_date": "2015-06-01",
+      "estimated_cost": 30000,
+      "revised_cost": 44498,
+      "description": "add bathroom,renovate extg bathroom, convert 1/2 bath to laundry room, rplce 11 single pane windows with dual pane, rplce 1 single pane wndw with dual pane french door.(none on front facade). voluntary strengthening to include add'l anchor bolts and plywood sheating at garage, upgrade plmg & elec",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201006235176",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-06-23",
+      "status_date": "2010-06-28",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew permit app #200405113603. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200405113603",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-05-11",
+      "status_date": "2006-05-01",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "anchor bolt structure - voluntary seismic upgrade",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209267572",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-09-26",
+      "status_date": "2002-11-05",
+      "estimated_cost": 11500,
+      "revised_cost": 11500,
+      "description": "replace 13 windows in kind, wood to wood. visible from stree.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220021",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-16",
+      "status_date": "1993-03-23",
+      "estimated_cost": 4600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHESTNUT&street_type=ST&address_number=1388",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0479009C&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0479&lot=009C",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0479009C",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1921-10-01-n425",
+      "name": "Building and Engineering News, 1 October 1921",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2921cont/page/n425/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1921-10-01",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey frame dwelling with a basement, all work except painting, plumbing, wiring, glazing, heating, roofing, hardware and fixtures, at $6,000. O. R. Thayer was named as architect and Emil Nelson as contractor.",
+      "source": "building-engineering-news-1921-10-01-n425"
+    }
+  ]
+}
