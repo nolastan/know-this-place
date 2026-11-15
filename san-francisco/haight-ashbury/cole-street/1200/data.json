@@ -1,0 +1,176 @@
+{
+  "address": "1200 Cole Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/cole-street/1200/",
+  "apn": "1285020",
+  "block": "1285",
+  "lot": "020",
+  "eas_baseid": "299850",
+  "coordinates": {
+    "lat": 37.763126,
+    "lng": -122.449122
+  },
+  "parcel": {
+    "year_built": 1917,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 3125,
+    "building_area_sqft": 1550,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Cole Valley/Parnassus Heights",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 1200 COLE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 103576,
+    "assessed_improvement_value": 16549
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Cole Valley Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1900–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202304175865",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-04-17",
+      "status_date": "2023-07-14",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "abe#202203310115. ext low-voltage door dell, accessible sign w/ isa \"ring door bell for assistance, accessible foor hardware on (e) front door, paint yellow stripe at (e) front concrete landing edge",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M25402",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2003-10-30",
+      "status_date": "2003-10-30",
+      "revised_cost": 0,
+      "description": "side walk repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120003",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-10-22",
+      "status_date": "1992-05-13",
+      "estimated_cost": 5000,
+      "description": "install boiler",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9105982",
+      "type": "sign - erect",
+      "status": "cancelled",
+      "filed": "1991-04-11",
+      "status_date": "1995-07-18",
+      "estimated_cost": 1000,
+      "description": "electric sign",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9104615",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1991-03-21",
+      "status_date": "1991-10-22",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016297",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-08-15",
+      "status_date": "1991-01-15",
+      "estimated_cost": 8000,
+      "description": "repair damage to exterior caused by water damage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8305613",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1983-08-17",
+      "status_date": "1983-12-23",
+      "estimated_cost": 35800,
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1983–2023",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLE&street_type=ST&address_number=1200",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1285020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1285&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1285020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44912245436481%2037.76312556645347)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-01-10-n45",
+      "name": "Building and Engineering News, 10 January 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1717cont/page/n45/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-01-10",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame store.",
+      "source": "building-engineering-news-1917-01-10-n45"
+    }
+  ]
+}

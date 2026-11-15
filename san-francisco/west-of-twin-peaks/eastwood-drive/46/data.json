@@ -1,0 +1,133 @@
+{
+  "address": "46 Eastwood Drive, San Francisco, CA 94112",
+  "path": "/san-francisco/west-of-twin-peaks/eastwood-drive/46/",
+  "apn": "3177020",
+  "block": "3177",
+  "lot": "020",
+  "eas_baseid": "356084",
+  "coordinates": {
+    "lat": 37.726305,
+    "lng": -122.457042
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 3628,
+    "building_area_sqft": 1325,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Westwood Park",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0046 EASTWOOD            DR0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1001385,
+    "assessed_improvement_value": 429165
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202401103723",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-10",
+      "status_date": "2024-07-22",
+      "estimated_cost": 58000,
+      "revised_cost": 64000,
+      "description": "fully remodel existing kitchen like for like, install new tub and wall tile in bathroom, build new half bathroom in existing bedroom closet, and new closet space in bedroom, repair back stairs and landing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202103116372",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-03-11",
+      "status_date": "2021-05-26",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "replace rotted front pergola post. repair rotted boards at front and replace about 80 sqft of stucco. rebuilding to match existing post.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802070667",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-02-07",
+      "status_date": "2018-02-07",
+      "estimated_cost": 16600,
+      "revised_cost": 16600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9316358",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-09-21",
+      "status_date": "1994-01-24",
+      "estimated_cost": 7250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=EASTWOOD&street_type=DR&address_number=46",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3177020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3177&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3177020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-05-16-n602",
+      "name": "Building and Engineering News, 16 May 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1717cont/page/n602/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-05-16",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey and basement frame dwelling, estimated at $2,700. A. W. Smith was named as architect.",
+      "source": "building-engineering-news-1917-05-16-n602"
+    }
+  ],
+  "building": {
+    "architect": "A. W. Smith"
+  }
+}

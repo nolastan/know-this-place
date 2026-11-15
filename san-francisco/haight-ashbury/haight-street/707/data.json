@@ -1,0 +1,117 @@
+{
+  "address": "707 Haight Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/haight-street/707/",
+  "apn": "0862029",
+  "block": "0862",
+  "lot": "029",
+  "eas_baseid": "289802",
+  "coordinates": {
+    "lat": 37.771544,
+    "lng": -122.433967
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 6,
+    "stories": 3,
+    "rooms": 18,
+    "bathrooms": 6,
+    "lot_area_sqft": 2404,
+    "building_area_sqft": 4425,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0707 HAIGHT              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 83146,
+    "assessed_improvement_value": 194037
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202305167827",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-05-16",
+      "status_date": "2023-06-28",
+      "estimated_cost": 16000,
+      "revised_cost": 22183,
+      "description": "upgrade fire alarm to comply with sffc 1103.7.6.1 replace like for like alarm devices. install sounder in sleeping area. new fire alarm control panel.wireless radio communicator, 4 smoke detector 5 pull stations, 3 monditor modules. 3 wall mount horn. 13 low frequency sounder",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201612155102",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-12-15",
+      "status_date": "2020-07-23",
+      "estimated_cost": 39400,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfbc chapter 34b per 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2006–2023",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAIGHT&street_type=ST&address_number=707",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0862029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0862&lot=029",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0862029",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1917-04-04-n407",
+      "name": "Building and Engineering News, 4 April 1917",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer1717cont/page/n407/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1917-04-04",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of six flats with a basement, estimated at $11,000. E. E. Young was named as architect.",
+      "source": "building-engineering-news-1917-04-04-n407"
+    }
+  ],
+  "building": {
+    "architect": "E. E. Young"
+  }
+}

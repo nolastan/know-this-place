@@ -11,6 +11,7 @@ The city's Presidio Heights analysis neighborhood, on the ridge between the Pres
 - [California Street](california-street/) — 2 buildings, built 1950–1972; 1 in the California Street Neighborhood Commercial Shopping Center Historic District.
 - [Cherry Street](cherry-street/) — 1 building, built 1914; 1 in the Presidio Heights Historic District.
 - [Clay Street](clay-street/) — 2 buildings, built 1900–1904; 2 in the Presidio Heights Historic District.
+- [Collins Street](collins-street/) — 1 building, built 1917.
 - [Commonwealth Avenue](commonwealth-avenue/) — 1 building, built 1939; 1 in the Jordan Park Historic District.
 - [Euclid Avenue](euclid-avenue/) — 2 buildings, built 1911; 1 in the Jordan Park Historic District.
 - [Geary Boulevard](geary-boulevard/) — 1 building, built 1923.
