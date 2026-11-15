@@ -5,6 +5,7 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 ## Streets documented so far
 
 - [1st Street](1st-street/) — 1 building, built 1988.
+- [Battery Street](battery-street/) — 1 building, built 1918.
 - [Beale Street](beale-street/) — 2 buildings, built 1967.
 - [Brannan Street](brannan-street/) — 9 buildings, built 1908–1959; 4 in the South End Historic District.
 - [Bryant Street](bryant-street/) — 28 buildings, built 1906–2015.
@@ -33,6 +34,7 @@ The blocks between Market and Folsom around First, Second and Fremont Streets �
 - [Second Street](2nd-street/) — 6 buildings, built 1900–2016; 1 in the New Montgomery-Mission-Second Street Conservation District.
 - [Shaw Alley](shaw-alley/) — 1 building, built 1906.
 - [South Park](south-park/) — 1 building, built 1907; 1 in the South Park Historic District.
+- [Spear Street](spear-street/) — 1 building, built 1918.
 - [Stevenson Street](stevenson-street/) — 2 buildings, built 1986–1989.
 - [Stillman Street](stillman-street/) — 8 buildings, built 1906–1944.
 - [Sutter Street](sutter-street/) — 2 buildings, built 1907–1922.
