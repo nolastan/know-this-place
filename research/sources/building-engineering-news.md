@@ -6,7 +6,7 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 24 of 34 half-year volumes read (vol. 20 to vol. 31, January 1920 – January 1932, the end of the run): 5,201 facts on 4,863 page writes (2,971 pages seeded). Resume backwards at the last 1919 volume (`buildingengineer1919cont`; check its dates; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 24 of 34 half-year volumes read (vol. 20 to vol. 31, January 1920 – January 1932, the end of the run): 5,201 facts on 4,863 page writes (2,971 pages seeded). Resume backwards at the last 1919 volume (`buildingengine1921919cont`, July to December 1919, whose id breaks the pattern; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
 > - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 7,329 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
