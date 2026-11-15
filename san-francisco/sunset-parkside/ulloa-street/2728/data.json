@@ -1,0 +1,135 @@
+{
+  "address": "2728 Ulloa Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/ulloa-street/2728/",
+  "apn": "2397020",
+  "block": "2397",
+  "lot": "020",
+  "eas_baseid": "337358",
+  "coordinates": {
+    "lat": 37.740981,
+    "lng": -122.485804
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 10,
+    "bathrooms": 7,
+    "bedrooms": 6,
+    "lot_area_sqft": 3332,
+    "building_area_sqft": 2073,
+    "basement_area_sqft": 773,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2728 ULLOA               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 706736,
+    "assessed_improvement_value": 624136,
+    "last_sale_date": "2014-04-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708114608",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2017-08-11",
+      "status_date": "2018-05-01",
+      "estimated_cost": 500,
+      "revised_cost": 0,
+      "description": "add sink at garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201409055586",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-05",
+      "status_date": "2014-09-30",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "comply with complaint 201490484. as built floor plans to approved app 201405125458. add non bearing interior partiton wall at 2nd fl per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201405125458",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-12",
+      "status_date": "2014-09-30",
+      "estimated_cost": 95000,
+      "revised_cost": 167405,
+      "description": "remodel kitchen and 2 bathrooms, add 1 bathroom, add partition wall on 2/f, add 3 bedrooms, 1 exercise room and 4 bathrooms on 1/f, new furnace and new water heater.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9016938",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-08-23",
+      "status_date": "1990-11-20",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ULLOA&street_type=ST&address_number=2728",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2397020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2397&lot=020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2397020",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-03-29-n550",
+      "name": "Building and Engineering News, 29 March 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n550/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-03-29",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $4,000 each. Chas. F. Strothoff was named as architect. The owner was the Parkside Realty Co.",
+      "source": "building-engineering-news-1924-03-29-n550"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

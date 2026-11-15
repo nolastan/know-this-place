@@ -1,0 +1,127 @@
+{
+  "address": "726–728 27th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/27th-avenue/726/",
+  "apn": "1618011",
+  "block": "1618",
+  "lot": "011",
+  "eas_baseid": "444868",
+  "coordinates": {
+    "lat": 37.775638,
+    "lng": -122.486267
+  },
+  "address_range": "726–728",
+  "street_numbers_on_parcel": [
+    "726",
+    "728"
+  ],
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3050,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0728 0726 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 834887,
+    "assessed_improvement_value": 357798,
+    "last_sale_date": "2010-02-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200904176531",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-04-17",
+      "status_date": "2009-12-07",
+      "estimated_cost": 45000,
+      "revised_cost": 45000,
+      "description": "revision to pa 200901210555- finish kitchen and bath remodel, misc plywood, insulation, drywall (patch ony),replace stairs permitted (entire stairs in kind), isc siding at stairs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901210555",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-21",
+      "status_date": "2009-12-07",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "repair wooden stairs in lightwell. repair less than 50%. retrofit windows, exact duplicate to repair rot in frames. not visible from street. repair misc trim, wood. 23 windows in rear & lightwell only. u factor 0.67 max.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9622691",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-22",
+      "status_date": "1997-01-08",
+      "estimated_cost": 4000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=726",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1618011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1618&lot=011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1618011",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-03-n776",
+      "name": "Building and Engineering News, 3 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n776/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-05-03",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000. C. T. Magill was named as contractor.",
+      "source": "building-engineering-news-1924-05-03-n776"
+    }
+  ],
+  "building": {
+    "builder": "C. T. Magill"
+  }
+}

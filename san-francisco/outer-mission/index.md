@@ -5,6 +5,7 @@ A residential district south of the Mission proper, built up in the first decade
 ## Streets documented so far
 
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 1938.
+- [Bosworth Street](bosworth-street/) — 1 building, built 1924.
 - [Capistrano Avenue](capistrano-avenue/) — 1 building, built 1925.
 - [Cayuga Avenue](cayuga-avenue/) — 1 building, built 1880.
 - [Danton Street](danton-street/) — 2 buildings, built 1928.

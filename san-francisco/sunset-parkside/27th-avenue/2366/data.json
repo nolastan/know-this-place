@@ -1,0 +1,133 @@
+{
+  "address": "2366 27th Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/27th-avenue/2366/",
+  "apn": "2355017",
+  "block": "2355",
+  "lot": "017",
+  "eas_baseid": "335412",
+  "coordinates": {
+    "lat": 37.743311,
+    "lng": -122.483979
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1838,
+    "basement_area_sqft": 588,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2366 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 538088,
+    "assessed_improvement_value": 427260,
+    "last_sale_date": "2010-09-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201911127056",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-11-12",
+      "status_date": "2020-03-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair siding and nail hardieplack siding @ rear of building. 650 sq.ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201009171101",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-09-17",
+      "status_date": "2011-04-13",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "construct one new bedrm, new full bath common area and storage rm on (e) ground fl. construct new bearing wall w/ footing. remodel kitch and bath, dining on 2nd fl. replace (e) water heater and furnace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9921764",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-10-14",
+      "status_date": "2000-11-01",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9623054",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-11-27",
+      "status_date": "1997-03-13",
+      "estimated_cost": 3900,
+      "description": "repair stair ramp from street to front door hot mao ramp",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=2366",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2355017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2355&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2355017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-31-n950",
+      "name": "Building and Engineering News, 31 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n950/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-05-31",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $4,000 each. Chas. F. Strothoff was named as architect. The owner was the Parkside Realty Co.",
+      "source": "building-engineering-news-1924-05-31-n950"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

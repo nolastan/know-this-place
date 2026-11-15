@@ -1,0 +1,149 @@
+{
+  "address": "435 15th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/15th-avenue/435/",
+  "apn": "1529003",
+  "block": "1529",
+  "lot": "003",
+  "eas_baseid": "306973",
+  "coordinates": {
+    "lat": 37.779794,
+    "lng": -122.474273
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 6,
+    "stories": 3,
+    "rooms": 28,
+    "bathrooms": 6,
+    "lot_area_sqft": 4068,
+    "building_area_sqft": 3195,
+    "basement_area_sqft": 300,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0435 15TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 117568,
+    "assessed_improvement_value": 249959
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201608316497",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-08-31",
+      "status_date": "2016-11-16",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "repair dry rot found during seismic work (bpa 201505015173 ) ; does not authorize the repair of building skin; visible from street. scope of work is limited to the dry rot rim joist and stud around the garage door opening, in-kind repair work amnd finished to match existing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505015173",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-01",
+      "status_date": "2017-05-30",
+      "estimated_cost": 30000,
+      "revised_cost": 45000,
+      "description": "soft story retrofit per sfbc chapter 34b, 2012 iebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818181",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-16",
+      "status_date": "1988-12-22",
+      "estimated_cost": 500,
+      "description": "termite repair",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8411406",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1984-10-23",
+      "status_date": "1986-03-04",
+      "estimated_cost": 1800,
+      "description": "to bring building code",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207254",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1982-09-01",
+      "status_date": "1983-03-23",
+      "estimated_cost": 1200,
+      "description": "bldg use: apts",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1982–2016",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=AVE&address_number=435",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1529003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1529&lot=003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1529003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-03-22-n511",
+      "name": "Building and Engineering News, 22 March 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n511/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-03-22",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a two-storey frame apartment building with a basement, at $20,890. F. G. Munk, Jr. was named as architect and Mangels Bros. as contractors.",
+      "source": "building-engineering-news-1924-03-22-n511"
+    }
+  ],
+  "building": {
+    "architect": "F. G. Munk, Jr.",
+    "builder": "Mangels Bros."
+  }
+}

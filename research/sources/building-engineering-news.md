@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 15 of 34 half-year volumes read (vol. 24 pt. 2 to vol. 31, July 1924 – January 1932, the end of the run): 3,514 facts on 3,291 page writes (2,040 pages seeded). Resume backwards at vol. 24 pt. 1 (January–June 1924, `buildingengineer244cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 16 of 34 half-year volumes read (vol. 24 to vol. 31, January 1924 – January 1932, the end of the run): 3,821 facts on 3,580 page writes (2,235 pages seeded). Resume backwards at vol. 23 pt. 2 (July–December 1923, `buildingengineer2193cont`; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 5,171 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 5,693 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -166,6 +166,21 @@
   on 446 pages, 292 of them seeded. Unfinished: 670 placed single houses held until the parcel gets a page (63 are row-of-houses permits), 756 rows
   with a nearest parcel not accepted, 960 not placed. Unread: the 20 volumes
   before 1925.
+- **Coverage, vol. 24 pt. 1** (`buildingengineer244cont`, 5 January – 28
+  June 1924): 4,505 numbered entries; 2,513 San Francisco rows; 1,479
+  placed on a parcel; 368 picked and read against the image; 306 published
+  on 288 pages, 195 of them seeded. Unfinished: 523 placed single houses held
+  until the parcel gets a page (46 are row-of-houses permits), 599 rows with
+  a nearest parcel not accepted, 1,034 not placed. Unread: the 18 volumes
+  before 1924.
+- **Verified:** 2026-11-15 (vol. 24 pt. 1: read 4,505 entries, found 2,513
+  San Francisco rows, resolved 306, published 306 on 288 pages. Learned: Stan
+  confirmed on 2026-11-15 that an owner printed again as architect or
+  contractor stays off the page, tradesmen and speculative builders included,
+  and a two-name partnership or family firm at the owner's own address is
+  treated the same way; a permit for a foundation or an excavation sets no
+  builder credit; one held fact (431 Gennessee Street, 1931) was taken up
+  when this volume seeded its page.)
 - **Coverage, vol. 24 pt. 2** (`buildingengineer24219cont`, 5 July – 27
   December 1924): 3,858 numbered entries; 1,969 San Francisco rows; 1,073
   placed on a parcel; 269 picked and read against the image; 228 published

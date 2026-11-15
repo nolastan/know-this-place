@@ -1,0 +1,108 @@
+{
+  "address": "1740 Waller Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/waller-street/1740/",
+  "apn": "1249010A",
+  "block": "1249",
+  "lot": "010A",
+  "eas_baseid": "298376",
+  "coordinates": {
+    "lat": 37.768561,
+    "lng": -122.45245
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2334,
+    "building_area_sqft": 2710,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Haight Ashbury",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "1742 1740 WALLER              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 499508,
+    "assessed_improvement_value": 499508,
+    "last_sale_date": "2000-01-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202410233548",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-10-23",
+      "status_date": "2024-12-30",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel existing one kitchen. add one subpanel.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9312430",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-07-22",
+      "status_date": "1994-04-15",
+      "estimated_cost": 2800,
+      "description": "remove existing wall to new stucco wall.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WALLER&street_type=ST&address_number=1740",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1249010A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1249&lot=010A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1249010A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-01-26-n164",
+      "name": "Building and Engineering News, 26 January 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n164/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-01-26",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000.",
+      "source": "building-engineering-news-1924-01-26-n164"
+    }
+  ]
+}

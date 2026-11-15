@@ -1,0 +1,134 @@
+{
+  "address": "326 30th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/30th-avenue/326/",
+  "apn": "1404039",
+  "block": "1404",
+  "lot": "039",
+  "eas_baseid": "302483",
+  "coordinates": {
+    "lat": 37.783097,
+    "lng": -122.489998
+  },
+  "parcel": {
+    "year_built": 1924,
+    "units": 2,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 2,
+    "bedrooms": 4,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3484,
+    "basement_area_sqft": 144,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0328 0326 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 530474,
+    "assessed_improvement_value": 477426,
+    "last_sale_date": "1991-08-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1924",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310048054",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-10-04",
+      "status_date": "2023-10-04",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroofing. no resheathing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506030",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-04-26",
+      "status_date": "1995-05-31",
+      "estimated_cost": 3300,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919368",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-10-13",
+      "status_date": "1990-12-14",
+      "estimated_cost": 14000,
+      "description": "ground floor renovation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8607284",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-06-20",
+      "status_date": "1986-12-01",
+      "estimated_cost": 3000,
+      "description": "build exercise & study rooms / bathroom",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=326",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1404039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1404&lot=039",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1404039",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-05-03-n776",
+      "name": "Building and Engineering News, 3 May 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n776/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-05-03",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000. Thos. Hamill was named as contractor.",
+      "source": "building-engineering-news-1924-05-03-n776"
+    }
+  ],
+  "building": {
+    "builder": "Thos. Hamill"
+  }
+}

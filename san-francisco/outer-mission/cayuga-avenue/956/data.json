@@ -1,0 +1,129 @@
+{
+  "address": "956 Cayuga Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/cayuga-avenue/956/",
+  "apn": "6953009",
+  "block": "6953",
+  "lot": "009",
+  "eas_baseid": "409503",
+  "coordinates": {
+    "lat": 37.722767,
+    "lng": -122.439638
+  },
+  "parcel": {
+    "year_built": 1925,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 4,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1634,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Mission Terrace",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0956 CAYUGA              AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 329894,
+    "assessed_improvement_value": 300852,
+    "last_sale_date": "2012-12-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1925",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201907115642",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-07-11",
+      "status_date": "2019-12-06",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to approved 201903084804. reconfiguration interior layout at 1st flr per plan",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201903084804",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-08",
+      "status_date": "2019-12-06",
+      "estimated_cost": 57500,
+      "revised_cost": 57500,
+      "description": "add 2 bedrooms, 2 bathrooms, media room, storage & laundry at 1st fl. replace five windows at the 2nd floor to be double hung, alum. clad wood.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9500553",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-01-17",
+      "status_date": "1995-01-31",
+      "estimated_cost": 3000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1995–2019",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAYUGA&street_type=AVE&address_number=956",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6953009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6953&lot=009",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6953009",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-02-09-n244",
+      "name": "Building and Engineering News, 9 February 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n244/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-02-09",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. Gustave Stahlberg was named as architect.",
+      "source": "building-engineering-news-1924-02-09-n244"
+    }
+  ],
+  "building": {
+    "architect": "Gustave Stahlberg"
+  }
+}

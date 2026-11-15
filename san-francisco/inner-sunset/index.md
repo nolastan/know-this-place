@@ -19,6 +19,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [24th Avenue](24th-avenue/) — 4 buildings, built 1911–1950.
 - [2nd Avenue](2nd-avenue/) — 4 buildings, built 1908–1923.
 - [4th Avenue](4th-avenue/) — 5 buildings, built 1904–1910.
+- [7th Avenue](7th-avenue/) — 13 buildings, built 1900–1925.
 - [Aloha Avenue](aloha-avenue/) — 1 building, built 1971.
 - [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1913.
 - [Belgrave Avenue](belgrave-avenue/) — 1 building, built 1972.
@@ -27,6 +28,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Christopher Drive](christopher-drive/) — 2 buildings, built 1959.
 - [Clarendon Avenue](clarendon-avenue/) — 1 building, built 1956.
 - [Clayton Street](clayton-street/) — 1 building, built 1927.
+- [Cole Street](cole-street/) — 1 building, built 1924.
 - [Cragmont Avenue](cragmont-avenue/) — 1 building, built 1934.
 - [Dellbrook Avenue](dellbrook-avenue/) — 1 building, built 1958.
 - [Edgewood Avenue](edgewood-avenue/) — 1 building, built 1986.
@@ -51,7 +53,6 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Ortega Street](ortega-street/) — 1 building, built 1914.
 - [Pacheco Street](pacheco-street/) — 1 building, built 1958.
 - [Parnassus Avenue](parnassus-avenue/) — 2 buildings, built 1912–1925.
-- [Seventh Avenue](7th-avenue/) — 13 buildings, built 1900–1925.
 - [Shrader Street](shrader-street/) — 4 buildings, built 1907–1911.
 - [Sixth Avenue](6th-avenue/) — 28 buildings, built 1900–1916.
 - [Stanyan Street](stanyan-street/) — 1 building; 1 in the San Francisco 1952 Firehouse Bond Act Thematic District (Discontiguous).

@@ -1,0 +1,102 @@
+{
+  "address": "44–46 Danvers Street, San Francisco, CA 94114",
+  "path": "/san-francisco/castro/danvers-street/44/",
+  "apn": "2659006",
+  "block": "2659",
+  "lot": "006",
+  "eas_baseid": "466499",
+  "coordinates": {
+    "lat": 37.760693,
+    "lng": -122.443879
+  },
+  "address_range": "44–46",
+  "street_numbers_on_parcel": [
+    "44",
+    "46"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 1886,
+    "building_area_sqft": 1650,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Corona Heights",
+    "analysis_neighborhood": "Castro/Upper Market",
+    "property_location_raw": "0046 0044 DANVERS             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 46640,
+    "assessed_improvement_value": 49415
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200308182322",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-08-18",
+      "status_date": "2003-09-04",
+      "estimated_cost": 7250,
+      "revised_cost": 7250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=DANVERS&street_type=ST&address_number=44",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2659006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2659&lot=006",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2659006",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1924-06-14-n1033",
+      "name": "Building and Engineering News, 14 June 1924",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer244cont/page/n1033/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1924-06-14",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations: a two-room addition to the residence, estimated at $1,000. Andrew H. Knoll was named as architect and Ed. Higginson as contractor.",
+      "source": "building-engineering-news-1924-06-14-n1033"
+    }
+  ]
+}
