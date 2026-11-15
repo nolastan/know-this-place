@@ -33,6 +33,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Del Vale Avenue](del-vale-avenue/) — 1 building, built 1946.
 - [Dewey Boulevard](dewey-boulevard/) — 1 building, built 1921; 1 in the Forest Hill Historic District.
 - [Dorantes Avenue](dorantes-avenue/) — 2 buildings, built 1927–1987; 2 in the Forest Hill Historic District.
+- [Eastwood Drive](eastwood-drive/) — 1 building, built 1919.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [Edna Street](edna-street/) — 1 building, built 1927.
 - [El Plazuela Way](el-plazuela-way/) — 1 building, built 1927; 1 in the Ingleside Terrace Historic District.

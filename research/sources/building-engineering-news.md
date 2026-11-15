@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 24 of 34 half-year volumes read (vol. 20 to vol. 31, January 1920 – January 1932, the end of the run): 5,201 facts on 4,863 page writes (2,971 pages seeded). Resume backwards at the last 1919 volume (`buildingengine1921919cont`, July to December 1919, whose id breaks the pattern; find the item id with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
+> - **Coverage:** 25 of 34 half-year volumes read (vol. 19 pt. 2 to vol. 31, July 1919 – January 1932, the end of the run): 5,323 facts on 4,978 page writes (3,019 pages seeded). Resume backwards at the first 1919 volume (`buildingengineer1919cont`, January to June 1919; the July to December 1919 item is `buildingengine1921919cont`, whose id breaks the pattern; find item ids with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 7,329 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 7,480 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 91 found on 2026-11-15 were each read against the page image: 67 were published and 24 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record); any others it lists are overdue.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -180,6 +180,13 @@
   until the parcel gets a page (39 are row-of-houses permits), 481 rows with
   a nearest parcel not accepted, 793 not placed. Unread: the 17 volumes
   before July 1923.
+- **Coverage, vol. 19 pt. 2** (`buildingengine1921919cont`, 2 July – 31
+  December 1919): 2,706 numbered entries; 1,475 San Francisco rows; 802
+  placed on a parcel; 195 picked and read against the image; 119 published
+  on 112 pages, 48 of them seeded. Unfinished: 154 placed single houses held
+  until the parcel gets a page (7 are row-of-houses permits), 455 rows with
+  a nearest parcel not accepted, 673 not placed. Unread: the 9 volumes
+  before July 1919.
 - **Coverage, vol. 20 pt. 1** (`buildingengineer2020cont`, 7 January – 30
   June 1920): 2,017 numbered entries; 1,282 San Francisco rows; 601
   placed on a parcel; 148 picked and read against the image; 116 published
@@ -187,17 +194,20 @@
   until the parcel gets a page (14 are row-of-houses permits), 331 rows with
   a nearest parcel not accepted, 681 not placed. Unread: the 10 volumes
   before 1920.
-- **Verified:** 2026-11-15 (vol. 20 pt. 1: read 2,017 entries, found 1,282
-  San Francisco rows, resolved 116, published 116 on 106 pages. Learned:
-  before 17 March 1920 the pages carry no dated running head, so the issue
-  dates come from the 26 cover dates, every Wednesday from 7 January to
-  30 June (an `issues.json` in the corpus folder maps the first leaf of
-  each issue to its date; the corpus is not committed, so rebuild it from
-  the covers); a
-  permit reissued at a lower height (Golden Gate Avenue and Leavenworth
-  Street, two storeys in May, one storey two weeks later) is settled by
-  the roll; three held facts of this volume were taken up on pages that
-  already existed.)
+- **Verified:** 2026-11-15 (vol. 19 pt. 2: read 2,706 entries, found 1,475
+  San Francisco rows, resolved 119, published 119 on 112 pages. Learned:
+  the 1919 pages carry no dated running head at all, so the issue dates
+  come from the cover dates, every Wednesday from 2 July to 31 December
+  (an `issues.json` in the corpus folder maps the first leaf of each
+  issue to its date; the corpus is not committed, so rebuild it from the
+  covers with `issues.py`, which fills a cover the OCR missed a week after
+  the one before); 1919 listings are terse ("Alter flats"), so more
+  alterations fail the street-number check; a building listed lower than
+  it stands (the twelve-storey office building at California and Sansome
+  streets, sixteen storeys on the roll) is kept only where the owner,
+  architect and corner are named in several listings, and then once, from
+  its permit; three held facts of later volumes were taken up on pages
+  this volume seeded.)
 - **Coverage, vol. 20 pt. 2** (`buildingengineer2010cont`, 7 July – 25
   December 1920): 2,156 numbered entries; 1,064 San Francisco rows; 535
   placed on a parcel; 119 picked and read against the image; 88 published
