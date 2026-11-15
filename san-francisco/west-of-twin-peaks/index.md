@@ -31,6 +31,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Dalewood Way](dalewood-way/) — 1 building, built 1967.
 - [Darien Way](darien-way/) — 1 building; 1 in the Balboa Terrace Historic District.
 - [Del Vale Avenue](del-vale-avenue/) — 1 building, built 1946.
+- [Dewey Boulevard](dewey-boulevard/) — 1 building, built 1921; 1 in the Forest Hill Historic District.
 - [Dorantes Avenue](dorantes-avenue/) — 2 buildings, built 1927–1987; 2 in the Forest Hill Historic District.
 - [Edgehill Way](edgehill-way/) — 1 building, built 1970.
 - [Edna Street](edna-street/) — 1 building, built 1927.

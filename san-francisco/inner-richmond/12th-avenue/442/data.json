@@ -1,0 +1,124 @@
+{
+  "address": "442–444 12th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/12th-avenue/442/",
+  "apn": "1533033",
+  "block": "1533",
+  "lot": "033",
+  "eas_baseid": "307135",
+  "coordinates": {
+    "lat": 37.779853,
+    "lng": -122.470312
+  },
+  "address_range": "442–444",
+  "street_numbers_on_parcel": [
+    "442",
+    "444"
+  ],
+  "parcel": {
+    "year_built": 1921,
+    "units": 2,
+    "stories": 2,
+    "rooms": 14,
+    "bathrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3120,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0442 12TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 664764,
+    "assessed_improvement_value": 443166,
+    "last_sale_date": "2002-06-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1921",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201302069560",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-02-06",
+      "status_date": "2014-02-12",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove illegal unit at garage level. remove kitchen & bath & cap all utlities at source. convert to storage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110317973",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-10-31",
+      "status_date": "2011-10-31",
+      "estimated_cost": 7900,
+      "revised_cost": 7900,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2011–2016",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=12TH&street_type=AVE&address_number=442",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1533033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1533&lot=033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1533033",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1921-04-30-n506",
+      "name": "Building and Engineering News, 30 April 1921",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer21119cont/page/n506/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1921-04-30",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $8,000. Chas. E. Ells was named as contractor.",
+      "source": "building-engineering-news-1921-04-30-n506"
+    }
+  ],
+  "building": {
+    "builder": "Chas. E. Ells"
+  }
+}
