@@ -1,0 +1,147 @@
+{
+  "address": "1418–1420 25th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/25th-avenue/1418/",
+  "apn": "1829041",
+  "block": "1829",
+  "lot": "041",
+  "eas_baseid": "456392",
+  "coordinates": {
+    "lat": 37.761014,
+    "lng": -122.483066
+  },
+  "address_range": "1418–1420",
+  "street_numbers_on_parcel": [
+    "1418",
+    "1420"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "bedrooms": 5,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3500,
+    "basement_area_sqft": 580,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1420 1418 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 944639,
+    "assessed_improvement_value": 823180,
+    "last_sale_date": "2014-09-23"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201708286169",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-08-28",
+      "status_date": "2017-09-05",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "to comply with physical inspection report cc-8169.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201611173027",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-11-17",
+      "status_date": "2017-08-16",
+      "revised_cost": 95000,
+      "description": "remodel two kitchens and two full bathrooms and 2 1/2 bathrooms in both units. upgrade service, electrical & panels to 200amp for both units. no changes to wall locations or addition of walls.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006283884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-28",
+      "status_date": "2001-02-02",
+      "estimated_cost": 8620,
+      "revised_cost": 8620,
+      "description": "install vinyl siding to back of house only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9615935",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-08-26",
+      "status_date": "1996-11-25",
+      "estimated_cost": 16000,
+      "description": "construct bedroom, playarea, 1/2 bath, etc.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9607755",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-05-06",
+      "status_date": "1996-09-26",
+      "estimated_cost": 2000,
+      "description": "replace bathroom tiles on both unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=1418",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1829041&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1829&lot=041",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1829041",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-03-24-n402",
+      "name": "Building and Engineering News, 24 March 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n402/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-03-24",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,000.",
+      "source": "building-engineering-news-1928-03-24-n402"
+    }
+  ]
+}

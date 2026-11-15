@@ -1,0 +1,101 @@
+{
+  "address": "3245 Broderick Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/broderick-street/3245/",
+  "apn": "0931003",
+  "block": "0931",
+  "lot": "003",
+  "eas_baseid": "290683",
+  "coordinates": {
+    "lat": 37.800325,
+    "lng": -122.444955
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2966,
+    "building_area_sqft": 2700,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "0000 3245 BRODERICK           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 77830,
+    "assessed_improvement_value": 123116
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200707308212",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-07-30",
+      "status_date": "2007-08-10",
+      "estimated_cost": 10500,
+      "revised_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BRODERICK&street_type=ST&address_number=3245",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0931003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0931&lot=003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0931003",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-05-12-n658",
+      "name": "Building and Engineering News, 12 May 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n658/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-05-12",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work except lighting fixtures, shades, finish hardware and wall paper for a two-storey frame building with a basement. Paul F. De Martini was named as architect and Peter Sartorio as contractor.",
+      "source": "building-engineering-news-1928-05-12-n658"
+    }
+  ],
+  "building": {
+    "architect": "Paul F. De Martini",
+    "builder": "Peter Sartorio"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "address": "2501 22nd Avenue, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/22nd-avenue/2501/",
+  "apn": "2423001",
+  "block": "2423",
+  "lot": "001",
+  "eas_baseid": "338431",
+  "coordinates": {
+    "lat": 37.740876,
+    "lng": -122.479092
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 3598,
+    "building_area_sqft": 1700,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 2501 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 359684,
+    "assessed_improvement_value": 189021
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202608186805",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2026-08-18",
+      "status_date": "2026-09-09",
+      "estimated_cost": 2500,
+      "revised_cost": 20552,
+      "description": "6x5 ft of new tiles in bathroom floor. bathroom remodel in kind, replace toilet, vanity, replace patio door back of property, non street facing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202408289605",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-08-28",
+      "status_date": "2025-01-09",
+      "estimated_cost": 34540,
+      "revised_cost": 34540,
+      "description": "re-roofing: remove and replace roofing material / existing roofing material (in-kind)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2017–2026",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=2501",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2423001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2423&lot=001",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2423001",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-04-21-n545",
+      "name": "Building and Engineering News, 21 April 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n545/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-04-21",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $4,000. Chas. F. Strothoff was named as architect.",
+      "source": "building-engineering-news-1928-04-21-n545"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff"
+  }
+}

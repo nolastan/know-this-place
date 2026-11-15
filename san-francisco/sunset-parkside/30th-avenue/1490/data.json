@@ -1,0 +1,135 @@
+{
+  "address": "1490 30th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/30th-avenue/1490/",
+  "apn": "1824026",
+  "block": "1824",
+  "lot": "026",
+  "eas_baseid": "319306",
+  "coordinates": {
+    "lat": 37.759542,
+    "lng": -122.4884
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 2,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 1499,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1490 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1060782,
+    "assessed_improvement_value": 527449,
+    "last_sale_date": "2020-07-24"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202203170275",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-03-17",
+      "status_date": "2024-01-02",
+      "estimated_cost": 3500,
+      "revised_cost": 3500,
+      "description": "revision to approved bpa 202101062188, convert wet bar to kitchenette.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101062188",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-01-06",
+      "status_date": "2024-01-02",
+      "estimated_cost": 110000,
+      "revised_cost": 110000,
+      "description": "2/f:in-fill light well, reconfigure kitchen, bathroomm, inteiror stairs & entry. add 1 bedroom & 1 full bathroom. 1/f: in-fill space under (e) sunroom, add office, entertainment room, bathroom, wet bar. remodel fmaily room. relocated washer/dryer.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201908199189",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-08-19",
+      "status_date": "2019-12-03",
+      "estimated_cost": 6483,
+      "revised_cost": 6500,
+      "description": "400 sf vinyl siding, install over existing at rear of house. change out 16 side windows & door wraps like for like.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200508311784",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2005-08-31",
+      "status_date": "2009-02-12",
+      "estimated_cost": 6480,
+      "revised_cost": 6480,
+      "description": "replacement of 11 windows size like size/5 of 11 front of the house/visible from the street",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=1490",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1824026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1824&lot=026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1824026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-05-05-n616",
+      "name": "Building and Engineering News, 5 May 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n616/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-05-05",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $4,000 each. R. R. Irvine was named as architect.",
+      "source": "building-engineering-news-1928-05-05-n616"
+    }
+  ],
+  "building": {
+    "architect": "R. R. Irvine"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "address": "1683 27th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/27th-avenue/1683/",
+  "apn": "1916006",
+  "block": "1916",
+  "lot": "006",
+  "eas_baseid": "323545",
+  "coordinates": {
+    "lat": 37.75607,
+    "lng": -122.485464
+  },
+  "parcel": {
+    "year_built": 1929,
+    "stories": 1,
+    "rooms": 9,
+    "bathrooms": 4,
+    "bedrooms": 5,
+    "lot_area_sqft": 2060,
+    "building_area_sqft": 2266,
+    "basement_area_sqft": 822,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1683 27TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 772286,
+    "assessed_improvement_value": 330976,
+    "last_sale_date": "2013-08-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1929",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200610033981",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-03",
+      "status_date": "2006-10-30",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "remodel (e) kitchen & baths on 2nd floor. repair minor holes in plaster wall approx 30 sq. ft. on 2nd floor. no lighting change. complaint# 200675016. comply with pa# 2006/09/22/3055.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609283630",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-28",
+      "status_date": "2007-01-04",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "2 bedroom,2 bath room, laundry room & play room to be added at ground floor. under 500 s.f. habitable.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609223055",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-22",
+      "status_date": "2006-09-27",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove (e) illegal toilet room & play room at ground floor. (e) beams # posts to remain comply with nov# 20067970, 200675016.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8500267",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-01-09",
+      "status_date": "1985-09-26",
+      "estimated_cost": 1700,
+      "description": "install aluminum windows in existing frames",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=27TH&street_type=AVE&address_number=1683",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1916006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1916&lot=006",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1916006",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-05-12-n657",
+      "name": "Building and Engineering News, 12 May 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n657/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-05-12",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of three on adjoining lots, estimated at $4,000 each.",
+      "source": "building-engineering-news-1928-05-12-n657"
+    }
+  ]
+}

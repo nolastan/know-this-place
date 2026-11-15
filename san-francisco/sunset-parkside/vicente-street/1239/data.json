@@ -1,0 +1,127 @@
+{
+  "address": "1239–1243 Vicente Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/vicente-street/1239/",
+  "apn": "2473042A",
+  "block": "2473",
+  "lot": "042A",
+  "eas_baseid": "340467",
+  "coordinates": {
+    "lat": 37.738872,
+    "lng": -122.480407
+  },
+  "address_range": "1239–1243",
+  "street_numbers_on_parcel": [
+    "1239",
+    "1241",
+    "1243"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 2675,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1243 1239 VICENTE             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 459313,
+    "assessed_improvement_value": 306177,
+    "last_sale_date": "1987-07-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202208039771",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-03",
+      "status_date": "2023-02-02",
+      "estimated_cost": 28000,
+      "revised_cost": 28000,
+      "description": "upgrade (e) front door & toilet room to ada req'd. install automatic push button for front door. all work on g/f (1241 vicente st.)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8803995",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-03-29",
+      "status_date": "1988-08-09",
+      "estimated_cost": 1300,
+      "description": "install 2 1/2 gallon range guard 'wet' fire suppress system",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8715171",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-10-22",
+      "status_date": "1988-11-01",
+      "estimated_cost": 7000,
+      "description": "kitchen remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VICENTE&street_type=ST&address_number=1239",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2473042A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2473&lot=042A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2473042A",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-01-28-n131",
+      "name": "Building and Engineering News, 28 January 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n131/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-01-28",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame and stucco building, one of two on adjoining lots (one a store, one a dwelling), estimated at $6,000 each. G. M. Cantrell was named as architect.",
+      "source": "building-engineering-news-1928-01-28-n131"
+    }
+  ],
+  "building": {
+    "architect": "G. M. Cantrell"
+  }
+}

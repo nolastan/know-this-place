@@ -14,6 +14,7 @@ A steep district above North Beach and the waterfront, known for its cable-car g
 - [Chestnut Street](chestnut-street/) — 1 building, built 1926.
 - [Clay Street](clay-street/) — 1 building, built 1910.
 - [Columbus Avenue](columbus-avenue/) — 1 building, built 1931.
+- [Culebra Terrace](culebra-terrace/) — 1 building, built 1914.
 - [Filbert Street](filbert-street/) — 1 building, built 1909.
 - [Francisco Street](francisco-street/) — A 1914 corner house beside the Powell–Hyde cable car line; tied to Nicolas Cage.
 - [Green Street](green-street/) — 1 building, built 1950.

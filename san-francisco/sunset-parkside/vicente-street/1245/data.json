@@ -1,0 +1,107 @@
+{
+  "address": "1245–1249 Vicente Street, San Francisco, CA 94116",
+  "path": "/san-francisco/sunset-parkside/vicente-street/1245/",
+  "apn": "2473042",
+  "block": "2473",
+  "lot": "042",
+  "eas_baseid": "450502",
+  "coordinates": {
+    "lat": 37.738868,
+    "lng": -122.480494
+  },
+  "address_range": "1245–1249",
+  "street_numbers_on_parcel": [
+    "1245",
+    "1247",
+    "1249"
+  ],
+  "parcel": {
+    "year_built": 1928,
+    "units": 4,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2250,
+    "building_area_sqft": 2560,
+    "lot_depth_ft": 90,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Parkside",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "1249 1245 VICENTE             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1076862,
+    "assessed_improvement_value": 136646,
+    "last_sale_date": "2005-10-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8603471",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1986-03-26",
+      "status_date": "1987-11-12",
+      "estimated_cost": 50000,
+      "description": "remodel exist. shop to rest./rear storage to chinese kitchen",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=VICENTE&street_type=ST&address_number=1245",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=2473042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=2473&lot=042",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2473042",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-01-28-n131",
+      "name": "Building and Engineering News, 28 January 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n131/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-01-28",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame and stucco building, one of two on adjoining lots (one a store, one a dwelling), estimated at $6,000 each. G. M. Cantrell was named as architect.",
+      "source": "building-engineering-news-1928-01-28-n131"
+    }
+  ],
+  "building": {
+    "architect": "G. M. Cantrell"
+  }
+}

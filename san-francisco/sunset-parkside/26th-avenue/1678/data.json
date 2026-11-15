@@ -1,0 +1,110 @@
+{
+  "address": "1678 26th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/26th-avenue/1678/",
+  "apn": "1918028",
+  "block": "1918",
+  "lot": "028",
+  "eas_baseid": "323658",
+  "coordinates": {
+    "lat": 37.756212,
+    "lng": -122.483804
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1820,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1678 26TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 254937,
+    "assessed_improvement_value": 388328,
+    "last_sale_date": "1994-02-10"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9816959",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-08-26",
+      "status_date": "1998-12-26",
+      "estimated_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714896",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-08-07",
+      "status_date": "1998-05-28",
+      "estimated_cost": 15000,
+      "description": "remodel basement,family room,exercise area, lndry rm/bthrm",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=AVE&address_number=1678",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1918028&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1918&lot=028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1918028",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-03-31-n437",
+      "name": "Building and Engineering News, 31 March 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n437/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-03-31",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $5,000. L. Hansberry was named as architect.",
+      "source": "building-engineering-news-1928-03-31-n437"
+    }
+  ],
+  "building": {
+    "architect": "L. Hansberry"
+  }
+}

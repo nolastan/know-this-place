@@ -1,0 +1,161 @@
+{
+  "address": "65 Aptos Avenue, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/aptos-avenue/65/",
+  "apn": "3262019",
+  "block": "3262",
+  "lot": "019",
+  "eas_baseid": "357031",
+  "coordinates": {
+    "lat": 37.730925,
+    "lng": -122.465868
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 4739,
+    "building_area_sqft": 3535,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1(D)",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Balboa Terrace",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0000 0065 APTOS               AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1081060,
+    "assessed_improvement_value": 463307,
+    "last_sale_date": "2015-04-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Balboa Terrace Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1921–1939",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201703161655",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-16",
+      "status_date": "2018-06-26",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace dryrot in front porch and steps. replace with new pt framing where re and new hot mop membraine and retile area. 300sf approx. less than 50%. remove all tile and rpelace with same terra cotta type.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201505015149",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-05-01",
+      "status_date": "2016-01-22",
+      "estimated_cost": 85000,
+      "revised_cost": 85000,
+      "description": "remove & replace existn 3 bathrooms & remove & replace existing kitchen, upgrade plumbing & electrical outlets thruout home. insulate sheetrock, install cabinets, tile, paint. all work in-kind, lighting to comply with cec 150 (k).",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305167168",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-16",
+      "status_date": "2013-06-24",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200706083420",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-06-08",
+      "status_date": "2007-08-01",
+      "estimated_cost": 26822,
+      "revised_cost": 26822,
+      "description": "replace 18 windows in back & sides of house. no windows face front of house.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9003796",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-02-27",
+      "status_date": "1990-04-11",
+      "estimated_cost": 4800,
+      "description": "re roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=APTOS&street_type=AVE&address_number=65",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3262019&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3262&lot=019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3262019",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46586765094204%2037.73092479175344)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-05-12-n656",
+      "name": "Building and Engineering News, 12 May 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n656/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-05-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling with a basement, estimated at $7,000. H. G. Stoner was named as architect and Walter C. Zweig as contractor.",
+      "source": "building-engineering-news-1928-05-12-n656"
+    }
+  ],
+  "building": {
+    "architect": "H. G. Stoner",
+    "builder": "Walter C. Zweig"
+  }
+}

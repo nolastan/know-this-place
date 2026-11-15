@@ -6,9 +6,9 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 4 of 34 half-year volumes read (vols. 26 and 27, January 1926 – December 1927): 1,307 facts on 1,247 page writes (869 pages seeded). Resume at vol. 28 pt. 1 (January–June 1928). See the `Verified:` line.
+> - **Coverage:** 5 of 34 half-year volumes read (vols. 26 and 27 and vol. 28 pt. 1, January 1926 – June 1928): 1,576 facts on 1,494 page writes (1,035 pages seeded). Resume at vol. 28 pt. 2 (July–December 1928, `buildingengineer28128cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, and the 1,838 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1, 421 in pt. 2), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
+> - **Claimed:** every unread volume, and the 2,214 placed-and-held rows (543 in vol. 26 pt. 1, 425 in pt. 2, 449 in vol. 27 pt. 1, 421 in pt. 2, 376 in vol. 28 pt. 1), by the project run that opened this source (Stan, since 2026-11-14). The held rows wait on his decision about how many pages to seed.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -111,7 +111,24 @@
   284 pages, 201 of them seeded. Unfinished: 421 placed single houses held for
   the same page-count decision, 597 rows with a nearest parcel not accepted,
   522 not placed. Unread: the other 30 volumes.
-- **Verified:** 2026-11-15 (vol. 27 pt. 2: read 2,777 entries, found 1,858
+- **Coverage, vol. 28 pt. 1** (`buildingengineer2828cont`, 7 January – 30 June
+  1928): 2,542 numbered entries; 1,741 San Francisco rows; 1,098 placed on a
+  parcel; 276 picked and read against the image; 269 published on 247 pages,
+  166 of them seeded. Unfinished: 376 placed single houses held for the same
+  page-count decision, 446 rows with a nearest parcel not accepted, 643 not
+  placed. Unread: the other 29 volumes.
+- **Verified:** 2026-11-15 (vol. 28 pt. 1: read 2,542 entries, found 1,741
+  San Francisco rows, resolved 269, published 269 on 247 pages. Learned: this
+  volume's running heads are too garbled to date the issues, and the cover
+  line of each issue ("SAN FRANCISCO, CALIF., <date>") dates them instead; a
+  big building's sub-trade contracts (steel, marble, lathing, refrigeration,
+  painting for the hotel at Powell and Sutter) come one a month and none of
+  them names the builder, so they must not set `building.builder`; a
+  condominium building page with unit sub-pages takes the fact, the unit lot
+  does not; where a later permit by another owner falls on a lot credited
+  from an earlier tract listing, the credit comes off until the roll says
+  which was built (1759 18th Avenue, 1201 Laguna).)
+- **Verified (earlier):** 2026-11-15 (vol. 27 pt. 2: read 2,777 entries, found 1,858
   San Francisco rows, resolved 304, published 304 on 284 pages. Learned: the
   listing often names the owner again as contractor or architect (same
   surname at the owner's address), and that name has to be cut with the

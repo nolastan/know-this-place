@@ -7,6 +7,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 1938.
 - [Capistrano Avenue](capistrano-avenue/) — 1 building, built 1925.
 - [Cayuga Avenue](cayuga-avenue/) — 1 building, built 1880.
+- [Danton Street](danton-street/) — 2 buildings, built 1928.
 - [Delano Avenue](delano-avenue/) — 1 building, built 1913.
 - [Francis Street](francis-street/) — 1 building, built 1908.
 - [Gloria Court](gloria-court/) — 2 buildings, built 1927.

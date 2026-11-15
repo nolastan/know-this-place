@@ -1,0 +1,130 @@
+{
+  "address": "966 Key Avenue, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/key-avenue/966/",
+  "apn": "4993017",
+  "block": "4993",
+  "lot": "017",
+  "eas_baseid": "373874",
+  "coordinates": {
+    "lat": 37.718755,
+    "lng": -122.395192
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1040,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Bayview Heights",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0966 KEY                 AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 17525,
+    "assessed_improvement_value": 35773
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201411141540",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-11-14",
+      "status_date": "2014-12-01",
+      "estimated_cost": 4500,
+      "revised_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9019609",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-09-25",
+      "status_date": "1990-11-29",
+      "estimated_cost": 1800,
+      "description": "remove front wood window",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9014229",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-07-18",
+      "status_date": "1990-09-11",
+      "estimated_cost": 1000,
+      "description": "removeal of plaster, sheetrock and foundation",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8615222",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1986-12-02",
+      "status_date": "1987-04-10",
+      "estimated_cost": 3965,
+      "description": "replace main electrical panel, repair wall & back stairs.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KEY&street_type=AVE&address_number=966",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4993017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4993&lot=017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4993017",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-02-25-n268",
+      "name": "Building and Engineering News, 25 February 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n268/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-02-25",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $3,000. G. Ferroni & Sons were named as contractors.",
+      "source": "building-engineering-news-1928-02-25-n268"
+    }
+  ],
+  "building": {
+    "builder": "G. Ferroni & Sons"
+  }
+}

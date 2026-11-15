@@ -1,0 +1,122 @@
+{
+  "address": "166 Byxbee Street, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/byxbee-street/166/",
+  "apn": "7077038",
+  "block": "7077",
+  "lot": "038",
+  "eas_baseid": "414785",
+  "coordinates": {
+    "lat": 37.717307,
+    "lng": -122.469555
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1325,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0166 BYXBEE              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 406841,
+    "assessed_improvement_value": 271220,
+    "last_sale_date": "2002-03-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201110197191",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-10-19",
+      "status_date": "2013-09-16",
+      "estimated_cost": 20000,
+      "revised_cost": 28000,
+      "description": "remodel 2/f: kitchen & 2 bathrooms, 3 bedrooms and dining room. dining room h.e. lights per cec150(k)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9723207",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-11-17",
+      "status_date": "1999-01-06",
+      "estimated_cost": 3500,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1982-08-26",
+      "status_date": "1983-03-04",
+      "estimated_cost": 1189,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BYXBEE&street_type=ST&address_number=166",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7077038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7077&lot=038",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7077038",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-03-17-n369",
+      "name": "Building and Engineering News, 17 March 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n369/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-03-17",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $4,000 each. Pring & Lesswing were named as architects and H. H. Putman as contractor.",
+      "source": "building-engineering-news-1928-03-17-n369"
+    }
+  ],
+  "building": {
+    "architect": "Pring & Lesswing",
+    "builder": "H. H. Putman"
+  }
+}

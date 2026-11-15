@@ -80,6 +80,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 - [Venus Street](venus-street/) — 1 building, built 1941.
 - [Wallace Avenue](wallace-avenue/) — 1 building, built 1958.
 - [Waterville Street](waterville-street/) — 1 building, built 1939.
+- [Wheat Street](wheat-street/) — 1 building, built 1927.
 - [Whitney Young Circle](whitney-young-circle/) — 1 building.
 - [Yosemite Avenue](yosemite-avenue/) — 1 building, built 1915.
 

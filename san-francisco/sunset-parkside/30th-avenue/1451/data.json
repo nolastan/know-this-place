@@ -1,0 +1,152 @@
+{
+  "address": "1451 30th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/30th-avenue/1451/",
+  "apn": "1823010",
+  "block": "1823",
+  "lot": "010",
+  "eas_baseid": "319240",
+  "coordinates": {
+    "lat": 37.760201,
+    "lng": -122.489041
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1715,
+    "basement_area_sqft": 300,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1451 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 33036,
+    "assessed_improvement_value": 110484
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201108253310",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-25",
+      "status_date": "2011-08-25",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "roof dry rot repair. 8x10' around skylight.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008077087",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-07",
+      "status_date": "2001-01-16",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "convert (e)breakfast rm into study rm, rmve front closet walls on upper flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008016696",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-08-01",
+      "status_date": "2001-01-16",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "dry rot repair for the front",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9609150",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1996-05-24",
+      "status_date": "1996-12-19",
+      "estimated_cost": 2000,
+      "revised_cost": 6000,
+      "description": "legalize existing bath and storage rooms at rear portion gar",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518692",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-11-06",
+      "status_date": "1997-03-07",
+      "estimated_cost": 1000,
+      "description": "repair damaged concrete floor slab at rear portion of garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9315603",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-09-10",
+      "status_date": "1995-02-15",
+      "estimated_cost": 2600,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=1451",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1823010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1823&lot=010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1823010",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-01-28-n131",
+      "name": "Building and Engineering News, 28 January 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n131/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-01-28",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling with a basement, one of two on adjoining lots, estimated at $4,000 each. J. A. Pereira was named as designer.",
+      "source": "building-engineering-news-1928-01-28-n131"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "address": "618 30th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/30th-avenue/618/",
+  "apn": "1572016L",
+  "block": "1572",
+  "lot": "016L",
+  "eas_baseid": "308904",
+  "coordinates": {
+    "lat": 37.777513,
+    "lng": -122.489604
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 5,
+    "lot_area_sqft": 2260,
+    "building_area_sqft": 2960,
+    "lot_depth_ft": 13,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0620 0618 30TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1123031,
+    "assessed_improvement_value": 481294,
+    "last_sale_date": "2017-08-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200302258254",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2003-02-25",
+      "status_date": "2003-07-08",
+      "estimated_cost": 3720,
+      "revised_cost": 3720,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=30TH&street_type=AVE&address_number=618",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1572016L&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1572&lot=016L",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1572016L",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-03-31-n436",
+      "name": "Building and Engineering News, 31 March 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n436/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-03-31",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement.",
+      "source": "building-engineering-news-1928-03-31-n436"
+    }
+  ]
+}

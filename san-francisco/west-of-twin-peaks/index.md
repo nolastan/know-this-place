@@ -70,6 +70,7 @@ The city's West of Twin Peaks analysis neighborhood, the residence parks and tra
 - [Pacheco Street](pacheco-street/) — 1 building, built 1917; 1 in the Forest Hill Historic District.
 - [Plymouth Avenue](plymouth-avenue/) — 1 building, built 1918.
 - [Portola Drive](portola-drive/) — 1 building, built 1955.
+- [Rivera Street](rivera-street/) — 2 buildings, built 1927–1928.
 - [Robinhood Drive](robinhood-drive/) — 1 building, built 1955.
 - [Rockaway Avenue](rockaway-avenue/) — 1 building, built 1941.
 - [Rockdale Drive](rockdale-drive/) — 1 building, built 1930.

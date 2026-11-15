@@ -22,6 +22,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1922.
 - [Gladstone Drive](gladstone-drive/) — 1 building, built 1942.
 - [Guttenberg Street](guttenberg-street/) — 1 building, built 1992.
+- [Harvard Street](harvard-street/) — 1 building, built 1928.
 - [Italy Avenue](italy-avenue/) — 1 building, built 1926.
 - [La Grande Avenue](la-grande-avenue/) — 1 building, built 1957.
 - [Lisbon Street](lisbon-street/) — 1 building, built 1906.

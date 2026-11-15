@@ -1,0 +1,151 @@
+{
+  "address": "1595 Noe Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/noe-street/1595/",
+  "apn": "6620026",
+  "block": "6620",
+  "lot": "026",
+  "eas_baseid": "404113",
+  "coordinates": {
+    "lat": 37.743668,
+    "lng": -122.430955
+  },
+  "parcel": {
+    "year_built": 1928,
+    "units": 9,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 9,
+    "bedrooms": 4,
+    "lot_area_sqft": 3044,
+    "building_area_sqft": 7290,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 1595 NOE                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 2621808,
+    "assessed_improvement_value": 1123632,
+    "last_sale_date": "1999-10-07"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1928",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201801088062",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-08",
+      "status_date": "2018-03-09",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709148253",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-09-14",
+      "status_date": "2019-10-21",
+      "estimated_cost": 75000,
+      "revised_cost": 75000,
+      "description": "soft story retrofit per sfebc chapter 4d: 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200812249192",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-12-24",
+      "status_date": "2009-11-02",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "provide fire alarm system for an existing apartment.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010304419",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-30",
+      "status_date": "2001-04-30",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "install steel 5 ft diam-in existing clos of one unit, for access to storage area below-& n kitcn cabs",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9714812",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-08-06",
+      "status_date": "1997-11-24",
+      "estimated_cost": 1000,
+      "description": "remove stucco, install vent, replaster, vent under bay",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 7,
+    "range": "1997–2019",
+    "shown_on_page": 5,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NOE&street_type=ST&address_number=1595",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6620026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6620&lot=026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6620026",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1928-05-05-n617",
+      "name": "Building and Engineering News, 5 May 1928",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2828cont/page/n617/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1928-05-05",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a three-storey frame apartment building with a basement. George T. Moore was named as contractor.",
+      "source": "building-engineering-news-1928-05-05-n617"
+    }
+  ],
+  "building": {
+    "builder": "George T. Moore"
+  }
+}
