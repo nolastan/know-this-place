@@ -1,0 +1,139 @@
+{
+  "address": "1534–1536 Balboa Street, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/balboa-street/1534/",
+  "apn": "1559022",
+  "block": "1559",
+  "lot": "022",
+  "eas_baseid": "308232",
+  "coordinates": {
+    "lat": 37.776958,
+    "lng": -122.475461
+  },
+  "address_range": "1534–1536",
+  "street_numbers_on_parcel": [
+    "1534",
+    "1536"
+  ],
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 3500,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "1536 1534 BALBOA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53571,
+    "assessed_improvement_value": 93301
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201509025874",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-09-02",
+      "status_date": "2015-09-16",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200611036807",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-11-03",
+      "status_date": "2006-12-06",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "new blocking around tub. cover walls with green board. new wonderboard around board.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011276547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-27",
+      "status_date": "2001-04-12",
+      "revised_cost": 20000,
+      "description": "construct newe fire walls t oseperate playrm/social rm, bathrm & storage rm, from garage on grnd fl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9113363",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-07-29",
+      "status_date": "1991-09-10",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1991–2015",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BALBOA&street_type=ST&address_number=1534",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1559022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1559&lot=022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1559022",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-10-06-n578",
+      "name": "Building and Engineering News, 6 October 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n578/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-10-06",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, estimated at $7,850.",
+      "source": "building-engineering-news-1923-10-06-n578"
+    }
+  ]
+}

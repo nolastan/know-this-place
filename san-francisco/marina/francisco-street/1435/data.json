@@ -1,0 +1,114 @@
+{
+  "address": "1435 Francisco Street, San Francisco, CA 94123",
+  "path": "/san-francisco/marina/francisco-street/1435/",
+  "apn": "0481037",
+  "block": "0481",
+  "lot": "037",
+  "eas_baseid": "283122",
+  "coordinates": {
+    "lat": 37.802435,
+    "lng": -122.428784
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3436,
+    "building_area_sqft": 2650,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Marina",
+    "analysis_neighborhood": "Marina",
+    "property_location_raw": "1437 1435 FRANCISCO           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 95618,
+    "assessed_improvement_value": 116411
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201301309151",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-01-30",
+      "status_date": "2013-04-23",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove existing deteriorated siding, install new siding to match existing at rear elevation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200801092166",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-01-09",
+      "status_date": "2008-05-08",
+      "estimated_cost": 7600,
+      "revised_cost": 7600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008–2019",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FRANCISCO&street_type=ST&address_number=1435",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0481037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0481&lot=037",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0481037",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-10-20-n665",
+      "name": "Building and Engineering News, 20 October 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n665/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-10-20",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of two flats with a basement, one of three on adjoining lots, estimated at $8,000 each.",
+      "source": "building-engineering-news-1923-10-20-n665"
+    }
+  ]
+}

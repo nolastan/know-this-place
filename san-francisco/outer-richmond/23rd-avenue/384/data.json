@@ -1,0 +1,111 @@
+{
+  "address": "384 23rd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/23rd-avenue/384/",
+  "apn": "1454022B",
+  "block": "1454",
+  "lot": "022B",
+  "eas_baseid": "304485",
+  "coordinates": {
+    "lat": 37.780601,
+    "lng": -122.482344
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 4,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 3750,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-3",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0384 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 78519,
+    "assessed_improvement_value": 105327
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306089581",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-06-08",
+      "status_date": "2023-06-27",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to verify existing sound levels in sleeping areas, complying sffc section 1103.7.6.1",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906059815",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-06-05",
+      "status_date": "2009-06-05",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=384",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1454022B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1454&lot=022B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1454022B",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-09-22-n496",
+      "name": "Building and Engineering News, 22 September 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n496/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-09-22",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of four apartments with a basement, estimated at $10,000. H. C. Baumann and Edw. Jose were named as architects.",
+      "source": "building-engineering-news-1923-09-22-n496"
+    }
+  ],
+  "building": {
+    "architect": "H. C. Baumann and Edw. Jose"
+  }
+}

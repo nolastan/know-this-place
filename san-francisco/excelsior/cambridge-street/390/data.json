@@ -1,0 +1,119 @@
+{
+  "address": "390 Cambridge Street, San Francisco, CA 94134",
+  "path": "/san-francisco/excelsior/cambridge-street/390/",
+  "apn": "5939031",
+  "block": "5939",
+  "lot": "031",
+  "eas_baseid": "387420",
+  "coordinates": {
+    "lat": 37.726535,
+    "lng": -122.41858
+  },
+  "parcel": {
+    "year_built": 1923,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 1,
+    "bedrooms": 3,
+    "lot_area_sqft": 3500,
+    "building_area_sqft": 1600,
+    "lot_depth_ft": 70,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0390 CAMBRIDGE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 300584,
+    "assessed_improvement_value": 176796,
+    "last_sale_date": "1992-06-04"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1923",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8902147",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-02-07",
+      "status_date": "1989-02-21",
+      "estimated_cost": 4668,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-09-10",
+      "status_date": "1987-12-15",
+      "estimated_cost": 11575,
+      "description": "termite damage repair",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1987–2010",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAMBRIDGE&street_type=ST&address_number=390",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5939031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5939&lot=031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5939031",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "building-engineering-news-1923-08-18-n292",
+      "name": "Building and Engineering News, 18 August 1923",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer2193cont/page/n292/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1923-08-18",
+      "kind": "building contract",
+      "description": "A building contract was recorded for all work for a one-storey frame residence with a basement, at $7,375. Chas. F. Strothoff was named as architect and Ernest Swanson as contractor.",
+      "source": "building-engineering-news-1923-08-18-n292"
+    }
+  ],
+  "building": {
+    "architect": "Chas. F. Strothoff",
+    "builder": "Ernest Swanson"
+  }
+}

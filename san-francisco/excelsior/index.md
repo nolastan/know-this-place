@@ -12,6 +12,7 @@ A working-class residential district in the city's south-east, laid out in the e
 - [Brookdale Avenue](brookdale-avenue/) — 1 building, built 1946.
 - [Brunswick Street](brunswick-street/) — 1 building, built 1925.
 - [Byron Court](byron-court/) — 1 building, built 1978.
+- [Cambridge Street](cambridge-street/) — 1 building, built 1923.
 - [Carter Street](carter-street/) — 1 building, built 2004.
 - [Cassandra Court](cassandra-court/) — 1 building, built 1925.
 - [Concord Street](concord-street/) — 1 building, built 1926.
