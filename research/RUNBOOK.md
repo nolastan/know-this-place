@@ -631,7 +631,8 @@ lots from the node for the re-read. One the re-read confirms comes off the page:
 `resolution.status` back to `unresolved` with the reason in its `note`, and
 `publish` to `declined` with "Removed from the page on <date>".
 It tests only entries carrying `street_name` and `extra.cross_street_name`
-(plus `extra.corner_quad` or `extra.side` for more than reach); anything else
+(plus `extra.corner_quad` or `extra.side` for more than reach, or
+`extra.to_street_name` for a block face, "between Post and Sutter"); anything else
 it counts as `no fields`.
 **Fill those from the record before reading a re-test as a pass**, and write
 them at placement time so the next re-test needs no filling.
