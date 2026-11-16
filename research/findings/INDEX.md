@@ -557,6 +557,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-11-13.json` | 1 | 1 KB | `russian-hill` |
 | `news-2026-11-14.json` | 1 | 1 KB | `hayes-valley` |
 | `news-2026-11-15.json` | 1 | 1 KB | `inner-richmond` |
+| `news-2026-11-16.json` | 1 | 1 KB | `bernal-heights` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
 | `news-condo-446.json` | 2 | 1 KB | `castro`, `east-cut` |
 | `north-beach-hcs.json` | 0 | 1 KB | — |

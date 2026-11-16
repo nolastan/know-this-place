@@ -1,0 +1,109 @@
+{
+  "address": "3595 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/mission-street/3595/",
+  "apn": "5712023",
+  "block": "5712",
+  "lot": "023",
+  "eas_baseid": "383206",
+  "coordinates": {
+    "lat": 37.739017,
+    "lng": -122.423604
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 1,
+    "rooms": 4,
+    "bathrooms": 1,
+    "bedrooms": 1,
+    "lot_area_sqft": 3084,
+    "building_area_sqft": 750,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 3595 MISSION             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 816390,
+    "assessed_improvement_value": 349880,
+    "last_sale_date": "2018-06-05"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202104269347",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2021-04-26",
+      "status_date": "2025-02-11",
+      "estimated_cost": 1221600,
+      "description": "to erect 4 story, r3, type va, 2 residential dwelling over garage. 0 basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202104269353",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2021-04-26",
+      "status_date": "2025-02-11",
+      "estimated_cost": 175000,
+      "description": "renovation of existing structure to include dig out of ground level storage area to create habitable space, addition of a dormer and skylights at attic level to create habitable space.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=3595",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5712023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5712&lot=023",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5712023",
+      "retrieved": "2026-11-16"
+    },
+    {
+      "id": "sfyimby-2026-11-16",
+      "name": "San Francisco YIMBY, “Updated Plans Filed For 3595 Mission Street, San Francisco,” 16 November 2026",
+      "query": "https://sfyimby.com/2026/11/updated-plans-filed-for-3595-mission-street-san-francisco.html",
+      "retrieved": "2026-11-16"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2026-11-16",
+      "kind": "development",
+      "headline": "Updated Plans Filed For 3595 Mission Street, San Francisco",
+      "outlet": "San Francisco YIMBY",
+      "url": "https://sfyimby.com/2026/11/updated-plans-filed-for-3595-mission-street-san-francisco.html",
+      "source": "sfyimby-2026-11-16"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+ "source_id": "sf-chronicle",
+ "batch": "2026-11-16",
+ "read_on": "2026-11-16",
+ "notes": "Run of 2026-11-16. Two items queued. The Tacos Oscar wire-fraud story names no address. The Databricks headquarters story is about One Sansome, though read.py surfaced only 160 Spear St., the company's first San Francisco office, mentioned in passing.",
+ "coverage": {
+  "unit": "articles",
+  "examined": 2,
+  "mentions": 2,
+  "remaining": "none"
+ },
+ "findings": [
+  {
+   "id": "2026-11-16-sc-0001",
+   "date": "2026-11-11",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "One Sansome",
+   "street_number": "1",
+   "street_type": "ST",
+   "street_name": "SANSOME",
+   "description": "Databricks officially moved its San Francisco headquarters into One Sansome, taking 10 floors and more than 200,000 sq ft, more than a year after it signed a long-term lease there; it plans to add space in the building by next fall.",
+   "extra": {
+    "tenant": "Databricks",
+    "floors": "10",
+    "area": "more than 200,000 sq ft",
+    "date_note": "The article (dated 11 November 2026, a Wednesday) says the company 'officially moved into its new office Thursday' without a date; the publication date is used rather than guessing which Thursday."
+   },
+   "citation": {
+    "label": "San Francisco Chronicle, “Databricks opens huge new S.F. headquarters as AI fuels an office market comeback,” 11 November 2026",
+    "url": "https://www.sfchronicle.com/realestate/article/databricks-san-francisco-headquarters-ai-office-22525207.php"
+   },
+   "raw": {
+    "text": "The artificial intelligence start-up officially moved into its new office Thursday, spanning 10 floors and more than 200,000 square feet at One Sansome."
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0289003",
+    "path": "/san-francisco/financial-district/sansome-street/1/",
+    "eas_address": "1 SANSOME ST",
+    "method": "EAS exact match on 1 SANSOME ST → parcel 0289003; sf-parcels has blklot 0289003 active, 1–1 SANSOME; the 2025 roll records it as commercial office, built 1983.",
+    "checked_on": "2026-11-16"
+   },
+   "publish": {
+    "status": "published",
+    "note": "Entry on /san-francisco/financial-district/sansome-street/1/ and card on the homepage grid. Dated by publication: the article says only 'Thursday'. The tenant is a company, so it is named in the headline as published; nothing goes in building, which already holds the tower's architect and completion."
+   }
+  },
+  {
+   "id": "2026-11-16-sc-0002",
+   "date": "2015",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "160 Spear St.",
+   "street_number": "160",
+   "street_type": "ST",
+   "street_name": "SPEAR",
+   "description": "Databricks initially occupied space at 160 Spear St. when it moved from Berkeley to San Francisco in 2015.",
+   "citation": {
+    "label": "San Francisco Chronicle, “Databricks opens huge new S.F. headquarters as AI fuels an office market comeback,” 11 November 2026",
+    "url": "https://www.sfchronicle.com/realestate/article/databricks-san-francisco-headquarters-ai-office-22525207.php"
+   },
+   "raw": {
+    "text": "Databricks moved from Berkeley to San Francisco in 2015, initially occupying space at 160 Spear St."
+   },
+   "confidence": "high",
+   "publish": {
+    "status": "declined",
+    "note": "A passing mention: the headline is about One Sansome (2026-11-16-sc-0001), so carrying it onto 160 Spear's timeline would misdescribe what happened there, and the entry is the headline or nothing."
+   },
+   "resolution": {
+    "status": "resolved",
+    "apn": "3717005",
+    "path": "/san-francisco/south-beach/spear-street/160/",
+    "eas_address": "160 SPEAR ST",
+    "method": "EAS exact match on 160 SPEAR ST → parcel 3717005; sf-parcels has blklot 3717005 active, 160–160 SPEAR; the 2025 roll records it as commercial office, built 1985.",
+    "checked_on": "2026-11-16"
+   }
+  }
+ ]
+}
