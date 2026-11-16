@@ -37,6 +37,18 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   prose alone: the prose says what the last pass meant to publish, and only the
   source says whether it supports what shipped.*
 
+- **In a redevelopment area a surviving street number is not a surviving
+  building.** The Redevelopment Agency cleared lots in the Western Addition and
+  then moved Victorians onto them in the 1970s, so an address with an EAS
+  record and a roll year of 1900 can hold a different house from the one a
+  1925 permit or a 1962 survey describes there: 45 Beideman holds a house from
+  848 Octavia, 1840 Eddy one from 751 Turk, 1712 Fillmore one from 1690 Post.
+  The resolver cannot see this; its "re-lotted" lines are the nearest warning.
+  *Before publishing a pre-1975 fact on a re-lotted parcel in project areas A-1
+  or A-2, look for a move: the page's own record, the National Register
+  nomination, or the captions in
+  [sources/sfra-property-summaries.md](sources/sfra-property-summaries.md).*
+
 - **A book-length source is small enough to scan programmatically for every
   numbered address in one pass, instead of sampling sections by title.**
   `hittell-1878` (245 numbered sections, ~930 KB of OCR text) had only 6

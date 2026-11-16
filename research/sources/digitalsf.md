@@ -483,14 +483,13 @@ so a collection is one batch until that number passes about fifteen hundred.
   children…` keeps `View from` inside `address_as_written`. Don't adopt a
   re-run's address fields wholesale for this collection — take the names.
 
-- **This overlaps the *SF Redevelopment Agency property summaries* lead — check
-  before extracting.** That lead is in the leads table of
-  [../SOURCES.md](../SOURCES.md); it has no source id yet because it has not
-  been promoted. DigitalSF holds 866 San Francisco Redevelopment Agency Records
+- **This overlaps [`sfra-property-summaries`](sfra-property-summaries.md) — check
+  before extracting.** That source's seven Property Summary items were read on
+  2026-11-15. DigitalSF holds 866 San Francisco Redevelopment Agency Records
   (SFH 371) records in the sample alone, and the same SFH 371 collection is on
   the Internet Archive as `sanfranciscoredevelopmentagencyrecords`. They are two
   digitizations of one archive: DigitalSF has the catalogued photographs, the
-  Internet Archive has the OCR'd paper forms. Neither supersedes the other, but
+  Internet Archive has the paper forms. Neither supersedes the other, but
   a fact found in both is one fact, not two.
 
 ### Resolving an address from this source

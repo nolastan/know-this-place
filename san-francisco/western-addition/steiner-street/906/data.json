@@ -1,0 +1,174 @@
+{
+  "address": "906 Steiner Street, San Francisco, CA 94117",
+  "path": "/san-francisco/western-addition/steiner-street/906/",
+  "apn": "0779016",
+  "block": "0779",
+  "lot": "016",
+  "eas_baseid": "288360",
+  "coordinates": {
+    "lat": 37.777893,
+    "lng": -122.43299
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 4,
+    "lot_area_sqft": 2709,
+    "building_area_sqft": 3390,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-4",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Western Addition",
+    "analysis_neighborhood": "Western Addition",
+    "property_location_raw": "0000 0906 STEINER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 143725,
+    "assessed_improvement_value": 372799
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Alamo Square Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "period_of_significance": "1890–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201806051029",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-05",
+      "status_date": "2018-07-10",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair rot damage on rear staircase. less thant 50%. repair/replace rotted structural members and non structural pieces in kind. also comply with nov 201839441.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201801108304",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-01-10",
+      "status_date": "2018-03-19",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "repair leaks & rot on various areas of building in conjuction with complete painting of exterior. repair of roof in couple leaking areas, reapir of 7'x7' deck/roof at 2nd level that has rotted siding and leaking, new gutters at rear sides, siding in various areas that's rotted.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201703222088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-03-22",
+      "status_date": "2018-03-19",
+      "estimated_cost": 22633,
+      "revised_cost": 22633,
+      "description": "(a). replace (4) windows & (2) doors (faces rear) w/paintable wood comp. no size change/u-factor < 0.32.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8802238",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-02-25",
+      "status_date": "1988-06-16",
+      "estimated_cost": 30000,
+      "description": "complete work under #8604989",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8604989",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1986-04-30",
+      "status_date": "1987-12-10",
+      "estimated_cost": 16000,
+      "revised_cost": 180000,
+      "description": "the existing building is to be rehabilitated",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "1986–2018",
+    "shown_on_page": 5,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=STEINER&street_type=ST&address_number=906",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0779016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0779&lot=016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0779016",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43298969254525%2037.7778933293721)%27)",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sfra-property-summaries-5052-p61",
+      "name": "Western Addition Area 2 property summary file, block 779 lot 16, 906 Steiner Street. San Francisco Redevelopment Agency Records (SFH 371), San Francisco History Center, San Francisco Public Library.",
+      "label": "Redevelopment Agency Records (SFH 371), San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/SFH371-5052/page/n60/mode/1up",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sfra-property-summaries-5052-p63",
+      "name": "Western Addition Area 2 property summary file, block 779 lot 16, 906 Steiner Street. San Francisco Redevelopment Agency Records (SFH 371), San Francisco History Center, San Francisco Public Library.",
+      "label": "Redevelopment Agency Records (SFH 371), San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/SFH371-5052/page/n62/mode/1up",
+      "retrieved": "2026-11-15"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1962",
+      "kind": "inspection",
+      "description": "Redevelopment Agency inspectors recorded five apartments. The exterior was in good condition and the interior poor.",
+      "source": "sfra-property-summaries-5052-p61"
+    },
+    {
+      "date": "1988-01-05",
+      "kind": "redevelopment",
+      "description": "The Redevelopment Commission was due to consider an action on the development of the property, agency parcel 779-K.",
+      "source": "sfra-property-summaries-5052-p63"
+    }
+  ]
+}
