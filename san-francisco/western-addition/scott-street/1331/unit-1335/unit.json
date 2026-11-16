@@ -1,0 +1,66 @@
+{
+  "address": "1335 Scott Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/scott-street/1331/unit-1335/",
+  "apn": "1100122",
+  "block": "1100",
+  "lot": "122",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1061208,
+    "assessed_improvement_value": 707472,
+    "last_sale_date": "2022-08-22"
+  },
+  "permits": [
+    {
+      "number": "202305308790",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2023-05-30",
+      "status_date": "2023-05-30",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "siding replacement, back side of building. replace siding like for like, left side overlay with cedar siding plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200006021673",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-06-02",
+      "status_date": "2000-10-12",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "renew expired appl #9919509",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9919509",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-09-16",
+      "status_date": "2000-10-12",
+      "estimated_cost": 20000,
+      "description": "remodel kitchen, bath add 1/2 bath",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1100122&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1100&street_number=1335",
+      "retrieved": "2026-11-15"
+    }
+  ]
+}

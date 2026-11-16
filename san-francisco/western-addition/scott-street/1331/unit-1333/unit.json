@@ -1,0 +1,32 @@
+{
+  "address": "1333 Scott Street, San Francisco, CA 94115",
+  "path": "/san-francisco/western-addition/scott-street/1331/unit-1333/",
+  "apn": "1100121",
+  "block": "1100",
+  "lot": "121",
+  "parcel": {
+    "rooms": 6,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 67698,
+    "assessed_improvement_value": 246589
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1100121&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1100&street_number=1333",
+      "retrieved": "2026-11-15"
+    }
+  ]
+}

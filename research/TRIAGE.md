@@ -61,28 +61,6 @@ and donors — the privacy limits bite harder here than anywhere else in the
 register. Marina Times and Westside Observer, both named in the original lead,
 are **not** in this collection.
 
-**SF Redevelopment Agency property summaries.** 106 items on the Internet
-Archive under `sanfranciscoredevelopmentagencyrecords`, from SFPL's SFH 371,
-covering Western Addition A-1 and A-2 and Yerba Buena. **Public domain, CC0
-marked**, with a requested credit line: "From the San Francisco History Center,
-San Francisco Public Library." The payload is a per-parcel SFRA survey form
-(FORM P-10, dated 8/10/62) carrying block and lot, parcel dimensions, number and
-type of improvements, assessed land and improvement value, zoning, an exterior
-and interior condition survey with dates, and a **recommendation for disposition
-— retain, rehabilitate, move, or demolish**. For the neighborhoods the
-redevelopment program erased, this is the record of what stood there, and it is
-keyed to block and lot, which is the resolver's answer handed over directly.
-**Sampled:** item `SFH371-5054_0`, "Western Addition Property Summary", blocks
-1126 to 1130. **Two hard cautions.** The forms are handwritten on printed
-stock and the OCR of them is close to unusable — dimensions come through as
-`25! x [Ob` — so extraction here means a vision pass over page images, not a
-text scan. And the collection includes items titled "Western Addition.
-Community: Identified People" and "Identified people relocated" — files about
-displaced residents by name. Those are exactly what the root
-[AGENTS.md](../AGENTS.md) privacy limits forbid, the displacement makes them
-more sensitive rather than less, and no amount of public-domain status changes
-it. Take the buildings. Leave the people.
-
 **HABS/HAER documentation.** 384 San Francisco items, 104 with a street number
 in the title. 126 are military installations (Presidio, Treasure Island,
 Alcatraz, Fort Mason), whose addresses will mostly not exist in EAS, and the
