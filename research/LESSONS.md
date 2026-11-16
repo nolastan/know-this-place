@@ -2294,6 +2294,24 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   frontage measurement and the same area; the block number, not the address
   parity, is the quick way to pick the side the record names.
 
+- **`corner.py --batch` in corner-only mode dropped the corner lot itself.** A
+  record with a quadrant and no lot or offset lists only the parcels its EAS
+  crossing estimate puts in that quadrant, and downtown that estimate sits a
+  lot's width off: at Geary and Jones the lot addressed on both streets (552
+  Jones / 595 Geary) was filtered out as the wrong side, leaving the next lot
+  (585 Geary) as the only fit for a 1913 record. The batch now keeps any lot
+  addressed on both streets and marks it `WRONG SIDE` for you to read. *Before
+  accepting a corner-only placement, run the corner unfiltered
+  (`corner.py A B --year Y`) and look for the lot on both streets.* And a
+  corner with no lot is placed only on a second check — the storey count the
+  record prints, a Planning building name, or a credit the page already has:
+  the roll year alone fits two or three parcels on most downtown corners.
+  ([sources/architect-engineer-california.md](sources/architect-engineer-california.md))
+- **`corner.py --retest` tested a block face as a corner.** "Montgomery,
+  between Post and Sutter" with no quadrant fell through to the reach test and
+  came back `DISAGREES` for a lot mid-block whose area matched to the foot.
+  Write the far street into `extra.to_street_name` and the re-test now asks
+  whether the parcel lies between the two crossings instead.
 - **Corner lookups miss the middle of the block, and offsets were being
   thrown away.** The 1911 batch's "south side of California between Hyde and
   Leavenworth" and "147 feet east of Polk" were out of `corner.py`'s 60 m

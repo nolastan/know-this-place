@@ -518,7 +518,12 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
                 side = on_side(axes[0], ix, here, e["side"])
             elif here and e.get("quad"):
                 side = in_quadrant(list(axes), ix, here, e["quad"])
-            if corner_only and side is False:
+            if corner_only and side is False and apn not in both:
+                # A lot addressed on both streets is the corner lot whatever
+                # its centroid says: the EAS crossing estimate sits a lot's
+                # width off downtown, and dropping it here once left the real
+                # corner (552 Jones / 595 Geary) out of a Geary & Jones list
+                # and put the next lot in as the only fit.
                 continue
             # The second test, against each street's own centred line: a corner
             # needs both streets' sides and an outline within 65 ft of both
@@ -664,7 +669,9 @@ def retest(path: str) -> int:
     parcel's centroid in the quadrant the record names and does its outline
     come within 100 ft of the node; for a line, is it on the side of the
     street the record names, and does its frontage overlap the printed offset
-    (the offset alone where the record prints no side). An EAS-fitted centreline would be wrong on a street
+    (the offset alone where the record prints no side); for a block face
+    (`extra.to_street_name`, "between Post and Sutter"), does its centroid lie
+    between the two crossings. An EAS-fitted centreline would be wrong on a street
     with addresses on one side only (Lincoln Way, along the park); this test
     uses no addresses at all. It prints each `DISAGREES` with the reason, then
     the counts, and returns 1 if any entry disagrees. A disagreement is a
@@ -681,7 +688,8 @@ def retest(path: str) -> int:
     for f in rows:
         x = f.get("extra") or {}
         for st in (name(f.get("street_name"), f.get("street_type")),
-                   name(x.get("cross_street_name"), x.get("cross_street_type"))):
+                   name(x.get("cross_street_name"), x.get("cross_street_type")),
+                   name(x.get("to_street_name"), x.get("to_street_type"))):
             if st and st not in streets:
                 streets[st] = street_segments(st)
     apns = sorted({f["resolution"]["apn"] for f in rows if f["resolution"].get("apn")})
@@ -771,6 +779,21 @@ def retest(path: str) -> int:
                 verdict = "DISAGREES" if bad_off else "ok"
                 why = (f"frontage {lo:.0f}-{hi:.0f} ft from the node, record's lot "
                        f"{off:g} ft {x['direction']} of {b} (no side printed)") if bad_off else ""
+        elif hit and x.get("to_street_name") and x.get("offset_ft") is None:
+            # "Montgomery, between Post and Sutter": a block face. The reach
+            # test below would fail any lot mid-block, so ask instead whether
+            # the parcel lies between the two crossings on street A.
+            to = name(x.get("to_street_name"), x.get("to_street_type"))
+            hit2 = network_corner(streets.get(a) or [], streets.get(to) or [], here)
+            if hit2:
+                p1, p2 = hit[0], hit2[0]
+                k = math.cos(math.radians(p1[0]))
+                ft = lambda u, v: math.hypot((u[1] - v[1]) * k, u[0] - v[0]) * 364000
+                block = ft(p1, p2)
+                d1, d2 = ft(p1, here), ft(p2, here)
+                verdict = "ok" if max(d1, d2) <= block + 50 else "DISAGREES"
+                why = (f"centroid {d1:.0f} / {d2:.0f} ft from the {b} / {to} "
+                       f"crossings, block {block:.0f} ft") if verdict != "ok" else ""
         elif hit and not x.get("side") and x.get("offset_ft") is None:
             # "at Sixteenth and Valencia": two streets and no quadrant. All
             # that can be asked is whether the parcel is at that corner.
