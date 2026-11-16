@@ -3422,3 +3422,16 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   `parcel.analysis_neighborhood` with the directory most of the city's pages
   for that neighborhood use finds them in one pass. (2026-11-14,
   building-engineering-news)
+- **In a trade journal, a numbered address is almost always an office.** In
+  *The Architect and Engineer of California* about 67,000 number-plus-street
+  mentions over 54 years gave 149 findings: architects', contractors' and
+  suppliers' offices, repeated in every issue's advertisements and
+  directories, are nearly all the rest. Screen for a verb of building work in
+  the same sentence before reading anything by hand. (2026-11-15,
+  architect-engineer-california)
+- **A list of plates can put the name after the title.** The journal's plate
+  lists print "Residence, 611 Jones Street ... Masten and Hurd" with the
+  architect following the building, and the OCR breaks the line so the name
+  lands beside the next entry. Reading down the column put four 1935
+  remodelings on the wrong architects; read each entry across, against the
+  page image. (2026-11-15, architect-engineer-california)

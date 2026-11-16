@@ -84,19 +84,6 @@ documents sampled are large and text-bearing (LM271, 75pp; LM300, 235pp), but
 LM11 and LM200 are image-only and would need OCR. Same publisher as
 `sf-context-statements` but an entirely separate corpus.
 
-**Period trade journals.** ***Architect and Engineer of California***: 214
-issues on the Internet Archive under `usmodernist-AECA-*`, dense with
-architects, contractors, costs and dates. Its contract notices identify
-buildings by corner, not by number: the 1912 award for the Sharon building
-places it "on the northeast corner of New Montgomery and Jessie streets" with a
-$375,000 price and the architect named, and no street number anywhere. The
-numbered addresses that are dense in the text are mostly advertisers' and
-architects' own offices. Its sister weekly, *Building & Engineering News*, was
-promoted on 2026-11-14 as
-[`building-engineering-news`](sources/building-engineering-news.md); that
-dossier's lot-geometry method (a side of a street and a distance from a corner,
-placed on today's parcel shapes) is the way into this one too.
-
 **Bay Area Reporter archive.** 1,529 issues on the Internet Archive under
 collection `bayareareporter`, contributed by the GLBT Historical Society,
 identifiers of the form `BAR_YYYYMMDD`, each with OCR text. This is a much
