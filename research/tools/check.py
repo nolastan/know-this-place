@@ -3,7 +3,7 @@
 
     python3 research/tools/check.py            # check everything
     python3 research/tools/check.py --stats    # ...and print the yield so far
-    python3 research/tools/check.py --report <findings-file>   # the PR body's table
+    python3 research/tools/check.py --report <findings-file> --pr N   # the PR body's counts and preview links
     python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
     python3 research/tools/check.py --landed  <findings-file>  # published entries that changed nothing
     python3 research/tools/check.py --index                    # rebuild findings/INDEX.md
@@ -32,10 +32,10 @@ What it checks:
 --stats is the module's dashboard. Its `open` column counts resolved findings
 with no publish decision — work already paid for and not yet on a page.
 
---report prints one batch broken down by neighborhood directory, in the Markdown
-a run's PR body carries (RUNBOOK.md, "Close the books"). Only findings that
-reached a parcel appear in it, because the parcel is what carries a
-neighborhood; the unresolved and rejected ones are counted underneath it.
+--report prints one batch's counts and a handful of representative pages as
+links on the PR's Netlify deploy preview (--pr N fills in the number), in the
+Markdown a run's PR body carries (RUNBOOK.md, "The PR body"). It picks across
+neighborhoods, new pages first; it never lists every page.
 
 --index, --peek and --find exist so that nobody opens a findings file. The
 directory is ~30 MB and its largest file is past what a context window holds,
@@ -574,19 +574,20 @@ def _page_before_batch(rel: str, batch_commits: set[str]) -> dict:
         return {}
 
 
-def report(path: Path) -> None:
-    """One batch by neighborhood directory, in the PR body's Markdown.
+def report(path: Path, pr: int | None = None, limit: int = 6) -> None:
+    """One batch's counts and a few deploy-preview links, for the PR body.
 
-    A neighborhood is a property of the *parcel*, so only findings that reached
-    one can be grouped at all. Unresolved and rejected findings have no parcel
-    and therefore no row — they are counted below the table instead, which is
-    the honest shape rather than a "unknown" bucket that invites guessing.
+    It replaced a per-neighborhood table, which Stan dropped from PR bodies
+    (2026-11-16): the counts go in one line, and a few links let a reviewer
+    look at the pages themselves. A neighborhood is a property of the *parcel*,
+    so only findings that reached one can have a page; unresolved and rejected
+    findings are counted in a line underneath.
 
     Pages created versus edited is read from git: a page this batch created is
     one whose data.json was added by a commit that also touched this findings
     file — which is the batch's own commits, since a run marks its findings in
     the same commit that edits the pages. Uncommitted pages count as created,
-    so the table is right when run before the commit as well as after. A page
+    so the counts are right when run before the commit as well as after. A page
     this batch's commits never touched at all — a fact published earlier and
     only now written down in a findings file, as a retroactive documentation
     pass does — is neither: counting it as "edited" would claim a page change
@@ -602,6 +603,8 @@ def report(path: Path) -> None:
     facts = collections.Counter(); declined = collections.Counter()
     conflicts = collections.Counter(); dates = collections.Counter()
     pages: dict[str, str] = {}
+    per_page = collections.Counter()
+    kinds: dict[str, str] = {}
     unplaced = collections.Counter()
 
     for f in data.get("findings", []):
@@ -616,6 +619,7 @@ def report(path: Path) -> None:
         elif pub == "published":
             facts[area] += 1
             pages.setdefault(res["path"], area)
+            per_page[res["path"]] += 1
 
     batch_commits = set(subprocess.run(
         ["git", "log", "--format=%H", "--", str(path)],
@@ -634,8 +638,10 @@ def report(path: Path) -> None:
         is_new = not added or added[-1] in batch_commits
         if is_new:
             created[area] += 1
+            kinds[page_path] = "created"
         elif touching & batch_commits:
             edited[area] += 1
+            kinds[page_path] = "edited"
         else:
             # A published finding whose page was neither created nor ever
             # touched by one of this batch's own commits — the fact was
@@ -664,36 +670,49 @@ def report(path: Path) -> None:
         now_dates = 1 if (page.get("building") or {}).get("completed_conflict") else 0
         dates[area] += max(0, now_dates - before_dates)
 
-    areas = sorted(set(created) | set(edited) | set(facts) | set(declined),
-                   key=lambda a: (-(created[a] + edited[a]), a))
-    # The last column counts findings that reached a parcel and were then
-    # declined — a duplicate, an undated claim, a fact a better source already
-    # carries. It was headed "Resolved, no page", which named a different thing
-    # (a parcel that cannot carry a page) and was never what it counted.
-    cols = ("Pages created", "Pages edited", "Facts published",
-            "Conflicts stated", "Dates disputed", "Declined")
-    print(f"| Neighborhood | {' | '.join(cols)} |")
-    print("|---" + "|---:" * len(cols) + "|")
-    counters = (created, edited, facts, conflicts, dates, declined)
-    for a in areas:
-        cells = " | ".join(str(c[a]) if c[a] else ("0" if c is not declined else "—")
-                           for c in counters)
-        print(f"| `{a}` | {cells} |")
-    totals = " | ".join(f"**{sum(c.values())}**" for c in counters)
-    print(f"| **Total** | {totals} |")
+    n_created, n_edited = sum(created.values()), sum(edited.values())
+    print(f"**{n_created} page(s) created, {n_edited} edited, "
+          f"{sum(facts.values())} fact(s) published**, "
+          f"{sum(conflicts.values())} conflict(s) stated, "
+          f"{sum(dates.values())} date(s) disputed, "
+          f"{sum(declined.values())} declined.")
+
+    # A handful of pages on the PR's deploy preview, not all of them: a reviewer
+    # opens three or four, and a list of sixty is one nobody clicks. Pick across
+    # neighborhoods, created pages before edited ones, and within each the page
+    # that took the most facts, so the sample shows the batch's range.
+    by_area: dict[str, list[str]] = collections.defaultdict(list)
+    for page_path in sorted(kinds, key=lambda p: (kinds[p] != "created", -per_page[p], p)):
+        by_area[pages[page_path]].append(page_path)
+    order = sorted(by_area, key=lambda a: (-(created[a] + edited[a]), a))
+    picked: list[str] = []
+    while len(picked) < limit and any(by_area[a] for a in order):
+        for a in order:
+            if by_area[a] and len(picked) < limit:
+                picked.append(by_area[a].pop(0))
+    if picked:
+        base = f"https://deploy-preview-{pr or '<PR>'}--knowthisplace.netlify.app"
+        print()
+        print("Preview:")
+        for page_path in picked:
+            found = page_file(page_path)
+            label = page_path.strip("/").split("/")[-1]
+            try:
+                label = json.loads(found.read_text(encoding="utf-8")).get("address", label).split(",")[0]
+            except (AttributeError, OSError, json.JSONDecodeError):
+                pass
+            print(f"- [{label}]({base}{page_path}) ({kinds[page_path]})")
 
     if unplaced:
         rest = ", ".join(f"{n} {s}" for s, n in sorted(unplaced.items()))
         print()
-        print(f"{sum(unplaced.values())} finding(s) never reached a parcel ({rest}) "
-              f"and cannot be grouped by neighborhood.")
+        print(f"{sum(unplaced.values())} finding(s) never reached a parcel ({rest}).")
 
     if already:
         print()
         print(f"{sum(already.values())} finding(s) record a fact already on its page from "
               f"an earlier publish — this batch's commits never touched that page, so it's "
-              f"not in the table above as created or edited.")
-
+              f"not counted as created or edited.")
 
 
 STOPWORDS = set("""about after also been before being between both came could described
@@ -1636,7 +1655,9 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--stats", action="store_true", help="print the yield so far")
     ap.add_argument("--report", type=Path, metavar="FINDINGS",
-                    help="print one batch by neighborhood, as the PR body's table")
+                    help="print one batch's counts and a few deploy-preview links, for the PR body")
+    ap.add_argument("--pr", type=int, metavar="N",
+                    help="with --report: the PR number, for the deploy-preview links")
     ap.add_argument("--overlap", type=Path, metavar="FINDINGS",
                     help="report findings whose target page already says the same thing")
     ap.add_argument("--landed", type=Path, metavar="FINDINGS",
@@ -1708,7 +1729,7 @@ def main() -> int:
         print()
 
     if args.report:
-        report(args.report)
+        report(args.report, pr=args.pr)
         print()
 
     if args.overlap:

@@ -92,7 +92,9 @@ jobs:
             6. Create branch feedback/issue-${{ github.event.issue.number }},
                commit, push, and open a PR. The PR body must summarize what
                changed and why, quote the relevant feedback, list sources
-               consulted, and end with
+               consulted, link the changed page on the deploy preview
+               (https://deploy-preview-<PR number>--knowthisplace.netlify.app<page path>,
+               editing the body after the PR exists), and end with
                "Closes #${{ github.event.issue.number }}".
             7. If the feedback is spam, out of scope, or unusable: change
                nothing, comment on the issue explaining why, and add the

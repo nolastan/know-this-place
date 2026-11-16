@@ -352,7 +352,12 @@ full schema, with the rules for `permits` / `permit_summary`, `hook`,
   `git log --oneline HEAD..origin/main`. If the branch is behind `origin/main`,
   rebase (`git rebase origin/main`) before editing. Working on a stale branch
   can mean missing build scripts, workflow changes, or `.gitignore` migrations.
-- Commits and PRs describe the change in plain language. PR bodies list every
-  page touched and every source consulted. Feedback PRs include
-  `Closes #<issue number>`.
+- Commits and PRs describe the change in plain language. PR bodies name every
+  source consulted. Feedback PRs include `Closes #<issue number>`.
+- **A PR that creates or updates address pages links a few of them on its
+  deploy preview**, `https://deploy-preview-<N>--knowthisplace.netlify.app<page path>`
+  with `<N>` the PR number and the page path from `data.json`'s `path`. Three
+  to six pages representative of the change, not every page. Open the PR, then
+  edit its body to add them. No table of pages created, edited or published at
+  the top of the body; the counts fit in a sentence.
 - One concern per PR. Never push to `main` directly.

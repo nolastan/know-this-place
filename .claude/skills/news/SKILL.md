@@ -257,7 +257,10 @@ that changes what a page looks like**.
   `python3 research/tools/check.py --index`.
 - `git diff` read through, and every change is a real fact about a building.
 - The homepage grid holds twelve cards and the newest are the twelve.
-- The PR lists every page touched and seeded, every story used, and the run's
-  counts: **considered / queued / read / found / seeded / published / pending**.
+- The PR lists every story used and the run's counts: **considered / queued /
+  read / found / seeded / published / pending**. It links three to six of the
+  pages it touched or seeded on its deploy preview,
+  `https://deploy-preview-<N>--knowthisplace.netlify.app<page path>`, not every
+  page, and has no table of pages at the top.
 
 Report the same way: counts, plainly, including what you left pending and why.

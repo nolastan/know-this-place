@@ -112,7 +112,7 @@ second deliverable of every run, alongside the facts. See
 
 ```bash
 python3 research/tools/check.py [--stats]           # run before every commit
-python3 research/tools/check.py --report <findings-file>   # the PR body's table
+python3 research/tools/check.py --report <findings-file> --pr N   # the PR body's counts and preview links
 python3 research/tools/check.py --overlap <findings-file>  # facts the pages already carry
 python3 research/tools/check.py --landed <findings-file>   # published entries that changed nothing
 python3 research/tools/check.py --index             # rebuild findings/INDEX.md (derived)
@@ -147,19 +147,19 @@ and what was learned, the register says the truth in counts, `check.py` and
 `validate.py` are clean, and the PR body carries the run's counts: read N, found
 M, resolved K, published J.
 
-**The PR body opens with the per-neighborhood table**, which
-`check.py --report <findings-file>` prints ready to paste:
+**The PR body opens with the counts and a few deploy-preview links**, which
+`check.py --report <findings-file> --pr <N>` prints ready to paste:
 
 ```bash
-python3 research/tools/check.py --report research/findings/<id>/<batch>.json
+python3 research/tools/check.py --report research/findings/<id>/<batch>.json --pr <N>
 ```
 
-Pages created and edited per neighborhood is what a reader wants first, and it
-is what a 150-file diff hides. Only findings that reached a parcel can be in it
-— the neighborhood belongs to the parcel, not the street — so unresolved
-findings are counted in one line below it rather than guessed into a row.
+No per-neighborhood table. Link three to six representative pages on
+`https://deploy-preview-<N>--knowthisplace.netlify.app<page path>`, never every
+page: a reviewer opens a few, and they show what the batch did better than a
+150-file diff.
 
-**Most of the body is about what was added and updated.** Below the table, name
+**Most of the body is about what was added and updated.** Below the links, name
 the buildings and what each page gained: new pages, credits, dated events,
 notable past residents, corrected dates, stated conflicts. What didn't land gets
 one line: the counts and their largest reason. The per-reason detail belongs in
