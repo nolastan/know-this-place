@@ -672,34 +672,27 @@ findings, reported honestly with its coverage recorded, is a completed run.
 
 ### The PR body
 
-The one-line counts say how much a run found. They do not say **where it
-landed**, which is the first thing a reader of the diff wants and the thing a
-150-file diff hides. So a PR body opens with the headline counts and then a
-table, one row per neighborhood directory:
+A PR body opens with the run's headline counts in one line, then a handful of
+links to representative pages on the PR's Netlify deploy preview, so a reviewer
+can look at what changed instead of reading a 150-file diff. **No table** of
+pages created, edited or published per neighborhood: the counts go in the
+headline line.
 
 ```bash
-python3 research/tools/check.py --report research/findings/<id>/<batch>.json
+python3 research/tools/check.py --report research/findings/<id>/<batch>.json --pr <N>
 ```
 
-That prints the table ready to paste. Its columns:
+That prints the counts and up to six preview links, picked across
+neighborhoods with new pages first, ready to paste. Open the PR first so you
+have its number, then edit the body. **Link a few pages, never all of them**:
+three to six that show the range of the batch (a new page, an architect credit,
+a dated event, a stated conflict). Swap in a better example by hand when the
+tool's pick is dull. The link shape is
+`https://deploy-preview-<N>--knowthisplace.netlify.app<page path>`, where the
+page path is the one in `data.json`'s `path`, such as
+`/san-francisco/japantown/post-street/2100/`.
 
-| column | what it counts |
-|---|---|
-| **Pages created** | pages this batch's own commits added |
-| **Pages edited** | pages that already existed and gained a fact |
-| **Facts published** | findings that reached a page; more than one can land on the same page |
-| **Conflicts stated** | sentences written to a page's `unknowns` — the source disagreeing with itself or the assessor, left unadjudicated |
-| **Dates disputed** | pages where the source's construction year disagrees with the assessor's, in `building.completed_conflict` |
-| **Declined** | resolved to a parcel and then not published — a duplicate of what the page already carries, an undated claim with no component to hold it, a fact a better source states first |
-
-**Only findings that reached a parcel can be in it**, because the neighborhood
-is a property of the parcel and nothing else. Unresolved and rejected findings
-have no row and no column; the tool counts them in one line underneath, which is
-the honest shape. Do not invent a neighborhood for them from the street name —
-a street runs through several, which is the same mistake `--area-from-nhood`
-exists to prevent.
-
-**Below the table, say what was added and updated** — most of the body belongs
+**Below the links, say what was added and updated** — most of the body belongs
 here. Name the buildings, and what each page gained: a new page, an architect
 or builder credit, a dated event, a notable past resident, a corrected date, a
 stated conflict. Lead with the facts a reader would stop for. "The 1977 Section
