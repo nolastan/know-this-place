@@ -1,0 +1,51 @@
+{
+  "source_id": "sfyimby",
+  "batch": "2026-11-17",
+  "read_on": "2026-11-17",
+  "notes": "Run of 2026-11-17. One SF YIMBY story queued: preliminary permits for a seven-story, 44-unit building replacing four one-story commercial structures at 3123-3141 Clement Street. The other addresses read.py found are related-article links already carried on their pages.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 1,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-17-yb-0001",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "3123-3141 Clement Street",
+      "street_number": "3141",
+      "street_type": "ST",
+      "street_name": "CLEMENT",
+      "description": "Preliminary permits filed for a seven-story mixed-use building with 44 apartments and ground-floor retail, replacing four single-story commercial structures at 3123-3141 Clement Street; plans by RKD Consulting; SB 330 and Housing Choice SF.",
+      "extra": {
+        "designer_proposed": "RKD Consulting",
+        "units": 44,
+        "stories": 7,
+        "replaces": "four single-story commercial structures"
+      },
+      "citation": {
+        "label": "San Francisco YIMBY, “Preliminary Permits For 3123-3141 Clement Street, Outer Richmond, San Francisco,” 17 November 2026",
+        "url": "https://sfyimby.com/2026/11/preliminary-permits-for-3123-3141-clement-street-outer-richmond-san-francisco.html"
+      },
+      "raw": {
+        "text": "Preliminary permits have been filed for a residential infill at 3123-3141 Clement Street"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1464029",
+        "path": "/san-francisco/outer-richmond/clement-street/3131/",
+        "eas_address": "3131 CLEMENT ST",
+        "method": "EAS exact match on 3141 CLEMENT ST → parcel 1464029; sf-parcels has blklot 1464029 active, 3131–3141 CLEMENT; the 2025 roll records it as commercial retail, built 1909. EAS puts 3131, 3141 CLEMENT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3131.",
+        "checked_on": "2026-11-17"
+      },
+      "publish": {
+        "status": "pending",
+        "note": "Blocked: the resolver will not join the address. The project's four structures sit on at least three separate active parcels today — 3123 (1464025), 3129 (1464024A) and 3131–3141 (1464029) — and the record does not say which one the fact belongs on; the resolution above reached 1464029 only because the range's last number was given. Same rule as 1354/1356 York (backfill-2026-01-0009) and 641/645 48th Avenue (backfill-2026-01-0017). Worth retrying once the lots are merged."
+      }
+    }
+  ]
+}
