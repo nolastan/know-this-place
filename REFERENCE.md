@@ -254,6 +254,28 @@ ids that list the same business, each also in `sources`.
 - Where the entries come from, and how a directory is refreshed, is
   [merchants/AGENTS.md](merchants/AGENTS.md).
 
+### `businesses`
+
+**The storefront's businesses, past and present**, from the city's register
+of business locations ([DATA-SOURCES.md → sf-registered-businesses](DATA-SOURCES.md#sf-registered-businesses--registered-business-locations)).
+One entry per trading name at a door: `name`, `kind` ("Dry cleaner"; its
+glyph is `KIND_ICON`'s, the way a building type's is `TYPE_ICON`'s), `address`
+(the business's own door, on the page's spelling of the street), `opened`,
+`ownership_changed` (a list of dates), `closed`, and `source`. The vocabulary
+is closed (`seed_pages.BUSINESS_KEYS`): there is nowhere to put an owner.
+
+- **An entry with no `closed` is trading today**, and heads the page in a panel
+  under the heading — "At this address", or "At 4548 18th Street" on a page
+  spanning several numbers — with its name in the tab title ahead of the
+  address. A reader who arrives from the business's map listing came for the
+  business.
+- **Every opening and change of ownership is a timeline item**, with the
+  kind's glyph, dated to the month. A closing is not: the register closes a
+  registration at a sale or a renaming as readily as at a closure.
+- **Not `occupants`.** `occupants` is today's listing in a merchant directory,
+  with hours and an offer, replaced wholesale on every read. `businesses` is
+  the register's history, dated. A business can be in both.
+
 ### `photo`
 
 **An openly licensed photograph of the building, shown in Street View's

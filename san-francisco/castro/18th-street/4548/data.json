@@ -1,5 +1,5 @@
 {
- "address": "4548\u20134554 18th Street, San Francisco, CA 94114",
+ "address": "4548–4554 18th Street, San Francisco, CA 94114",
  "path": "/san-francisco/castro/18th-street/4548/",
  "apn": "2657011",
  "block": "2657",
@@ -9,7 +9,7 @@
   "lat": 37.760681,
   "lng": -122.440154
  },
- "address_range": "4548\u20134554",
+ "address_range": "4548–4554",
  "street_numbers_on_parcel": [
   "4548",
   "4550",
@@ -135,7 +135,7 @@
   },
   {
    "id": "sf-planning",
-   "name": "SF Planning Department \u2014 Historic Resource Status by Parcel via DataSF",
+   "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
    "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=2657011",
    "retrieved": "2026-07-28"
   },
@@ -167,6 +167,14 @@
    "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
    "query": "https://archive.org/details/16minutesofsanfran1971sa/page/n134/mode/1up",
    "retrieved": "2026-10-10"
+  },
+  {
+   "id": "sf-registered-businesses",
+   "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+   "label": "SF Treasurer & Tax Collector, business registrations",
+   "query": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%274548%2018TH%20ST%25%27",
+   "supports": "Businesses",
+   "retrieved": "2026-11-17"
   }
  ],
  "historic_survey": {
@@ -195,6 +203,15 @@
    "kind": "planning decision",
    "description": "By 4 February 1971, the Board of Supervisors had upheld on appeal the City Planning Commission's disapproval of reclassifying the property from R-3 to R-4.",
    "source": "sf-planning-commission-minutes-1971-02-04"
+  }
+ ],
+ "businesses": [
+  {
+   "name": "C-H Cleaners",
+   "kind": "Dry cleaner",
+   "opened": "1988-03-01",
+   "address": "4548 18th Street",
+   "source": "sf-registered-businesses"
   }
  ]
 }

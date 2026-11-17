@@ -868,6 +868,26 @@
       "name": "SF Planning Department — Historic Districts via DataSF",
       "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43154410939954%2037.765191542343146)%27)",
       "retrieved": "2026-07-28"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%272233%20MARKET%20ST%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-17"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "One Hour Cleaners",
+      "kind": "Dry cleaner",
+      "opened": "2006-09-10",
+      "ownership_changed": [
+        "2024-09-03"
+      ],
+      "address": "2233 Market Street",
+      "source": "sf-registered-businesses"
     }
   ]
 }

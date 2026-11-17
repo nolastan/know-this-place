@@ -287,6 +287,18 @@ def check_address_dir(page_dir: Path, on_disk: str) -> None:
                 f"`historical_record`'s), or a new key the renderer needs to "
                 f"learn (add it there once it renders something)")
 
+    # `businesses` names trading names and nothing else: a closed vocabulary
+    # keeps an owner's name from arriving under a key nobody reviewed, and each
+    # entry cites a source the page lists.
+    source_ids = {s.get("id") for s in data.get("sources") or []}
+    for b in data.get("businesses") or []:
+        unknown = sorted(set(b) - seed_pages.BUSINESS_KEYS)
+        if unknown:
+            err(data_path, f'unrecognised "businesses" key(s): {", ".join(unknown)}')
+        if b.get("source") not in source_ids:
+            err(data_path, f'business {b.get("name")!r} cites {b.get("source")!r}, '
+                           "which is not in sources")
+
     check_photo(data_path, data)
 
     if not data.get("address"):

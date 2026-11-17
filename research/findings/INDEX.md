@@ -580,6 +580,7 @@ are listed so their size is visible before anyone opens one.
 | `russian-hill-paris-block-district.json` | 8 | 3 KB | `nob-hill`, `russian-hill` |
 | `russian-hill-vallejo-street-crest-district.json` | 22 | 8 KB | `nob-hill` |
 | `sexual-identity-subcultures.json` | 0 | 1 KB | — |
+| `sf-registered-businesses-2026-11-17.json` | 5 | 2 KB | `mission`, `outer-richmond`, `inner-sunset` |
 | `sfh-371.json` | 2 | 1 KB | `north-beach`, `financial-district` |
 | `sfp-125.json` | 3 | 1 KB | `south-of-market`, `south-beach` |
 | `sfp-162.json` | 2 | 1 KB | `financial-district` |

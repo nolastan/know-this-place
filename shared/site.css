@@ -598,6 +598,25 @@ main > .panel + .panel { margin-top: 1.25rem; }
   text-transform: uppercase;
   color: var(--muted);
 }
+/* The businesses trading here today, under the hero's heading (`businesses`).
+   The label is the occupant panel's; the name is a serif headline led by its
+   kind's glyph, and what it is and how long it has been here are one muted
+   line, at the weight of a fact rather than a claim. */
+.hero .panel-business { margin: 0 0 1.1rem; max-width: 30rem; }
+.panel-business > .business-label {
+  margin: 0 0 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.business + .business { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--rule); }
+.business > h2 { margin: 0; font-family: var(--serif); font-size: 1.45rem; line-height: 1.2; font-weight: 650; color: var(--ink); }
+.business > h2 .type-icon { color: var(--accent); font-size: 0.85em; margin-right: 0.3em; vertical-align: -0.05em; }
+.vtl-desc .type-icon { color: var(--accent); margin-right: 0.3em; vertical-align: -0.08em; }
+.business-meta { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); }
 .occupant + .occupant { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
 .occupant > h3 {
   margin: 0;

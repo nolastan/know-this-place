@@ -692,6 +692,27 @@ control into the markup.
 </p>
 ```
 
+### Businesses here — `.panel-business`
+The businesses trading from the building today (`businesses` entries with no
+`closed`), as a panel **inside the hero, under the `.sub` line** and above the
+tags: a reader from a business's map listing finds it before the parcel. The
+label is the occupant panel's eyebrow, "At this address" or, on a page whose
+heading is a range, the business's own door. Each business is an `<h2>` led by
+its kind's glyph in the accent, then one muted line, what it is and the year
+it opened here. No buttons: the panel says what is here, and the timeline says
+what was.
+```html
+<section class="panel panel-business" aria-label="At 4548 18th Street">
+  <p class="business-label">At 4548 18th Street</p>
+  <div class="business">
+    <h2><i class="hgi-stroke hgi-hanger type-icon" role="img" aria-label="Dry cleaner" title="Dry cleaner"></i>C-H Cleaners</h2>
+    <p class="business-meta">Dry cleaner · since 1988</p>
+  </div>
+</section>
+```
+On the timeline, each opening and change of ownership leads with the same
+glyph (`.vtl-desc .type-icon`).
+
 ### Notes — `.community-note`
 `.community-note` wraps clearly-attributed unverified contributions (auto-
 labeled by CSS).

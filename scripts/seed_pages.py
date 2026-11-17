@@ -95,7 +95,7 @@ ADDRESS_TOP_LEVEL_KEYS = frozenset({
     "permits", "permit_summary", "permits_omitted", "historical_record",
     "historic_survey", "historic_district", "also_in_districts", "building",
     "survey_name", "notable_residents", "narrative", "unknowns", "occupants",
-    "hook",
+    "businesses", "hook",
     # Address and parcel shape a page needs only sometimes.
     "address_range", "street_numbers_on_parcel", "also_addressed",
     "additional_parcels",
@@ -111,6 +111,13 @@ ADDRESS_TOP_LEVEL_KEYS = frozenset({
     "photo",
     # The `seed_pages.py render` opt-out (see `renders`).
     "rendered",
+})
+
+# One `businesses` entry's keys (see `business_card_html`). A business is the
+# trading name at a door, never the people behind it, so there is no key here
+# that could hold an owner.
+BUSINESS_KEYS = frozenset({
+    "name", "kind", "address", "opened", "closed", "ownership_changed", "source",
 })
 
 # The same closed vocabulary, one level down. `ADDRESS_TOP_LEVEL_KEYS` checked
@@ -2297,7 +2304,7 @@ def timeline_html(rec: dict, indent: str) -> str:
     """
     built = built_item(rec, indent) + completed_item(rec, indent)
     permits, disclosure = permit_items(rec, indent)
-    earlier = historical_items(rec, indent)
+    earlier = historical_items(rec, indent) + business_items(rec, indent)
     # `sorted` is stable and `built` leads the list, so the building's own year
     # comes before anything else the same year — a permit filed in the month it
     # was finished, a photograph dated to the year.
@@ -2341,6 +2348,120 @@ def timeline_html(rec: dict, indent: str) -> str:
         return tail
     return (f'{indent}<ol class="vtl" aria-label="Timeline">\n' + "\n".join(items)
             + f"\n{indent}</ol>\n" + tail)
+
+
+# --------------------------------------------------------------------------
+# Businesses — who has traded from the building's storefront, and since when
+# --------------------------------------------------------------------------
+# `businesses` is the storefront's history read off the city's register of
+# business locations (DATA-SOURCES.md → sf-registered-businesses): one entry
+# per trading name at a door, with the date it opened there, the dates it
+# changed ownership, and — once it has gone — the date it closed. The ones with
+# no `closed` are trading today, and head the page in a panel under the
+# heading, because a reader who arrives from a business's map listing has come
+# for the business and should not have to scroll past the parcel to find it.
+# Everything else about the business is a dated fact, so it goes on the one
+# timeline with the permits.
+#
+# `occupants` is a different thing, read from merchant directories: today's
+# hours and a referral offer, replaced wholesale on every refresh. A business
+# can be in both.
+
+# The HugeIcons glyph for a business's `kind`, the way `TYPE_ICON` gives one
+# for a building type.
+KIND_ICON = {
+    "Dry cleaner": "hgi-hanger",
+    "Laundry": "hgi-hanger",
+}
+
+
+def kind_icon(kind: str | None) -> str:
+    return KIND_ICON.get((kind or "").split(" · ")[0], "hgi-store-01")
+
+
+def kind_glyph(kind: str | None) -> str:
+    """A business kind's glyph, labelled for a screen reader."""
+    label = esca(kind or "Business")
+    return (f'<i class="hgi-stroke {kind_icon(kind)} type-icon" role="img" '
+            f'aria-label="{label}" title="{label}"></i>')
+
+
+def current_businesses(rec: dict) -> list:
+    """The `businesses` entries still trading: those with no `closed` date."""
+    return [b for b in rec.get("businesses") or []
+            if b.get("name") and not b.get("closed")]
+
+
+def business_when(iso: str) -> str:
+    """A register date, to the month. The register stamps a day, but the day a
+    registration took effect is paperwork; the month is what a reader can use,
+    and a bare year (a register date of 1 January) stays a year."""
+    if re.fullmatch(r"\d{4}-\d{2}(-\d{2})?", iso or ""):
+        return MONTHS_LONG[int(iso[5:7]) - 1] + " " + iso[:4]
+    return iso or ""
+
+
+def business_items(rec: dict, indent: str) -> list:
+    """`businesses` as `(date_key, html)` items on the timeline: each opening
+    and each change of ownership. A closing is not an item — the register
+    closes a registration for a sale or a renaming as readily as for a shop
+    shutting — so a business simply stops appearing."""
+    labels = {s["id"]: s.get("label") or s.get("name", s["id"])
+              for s in rec.get("sources", [])}
+    items = []
+    for b in rec.get("businesses") or []:
+        if not b.get("name"):
+            continue
+        meta = labels.get(b.get("source"), "")
+        # Every mention of a business on the rail carries its kind's glyph, as
+        # the panel's heading does, so a storefront's run of businesses reads
+        # as one thread through the building's other dates.
+        glyph = kind_glyph(b.get("kind"))
+        events = []
+        if b.get("opened"):
+            events.append((b["opened"], f"{glyph}{esc(b['name'])} opened here."))
+        for when in b.get("ownership_changed") or []:
+            events.append((when, f"{glyph}{esc(b['name'])} changed ownership."))
+        for when, text in events:
+            items.append((date_key(when),
+                f'{indent}  <li class="vtl-item">\n'
+                f'{indent}    <div class="vtl-date">{esc(business_when(when))}</div>\n'
+                f'{indent}    <p class="vtl-desc">{text}</p>\n'
+                + (f'{indent}    <div class="vtl-meta">\n{indent}      <span>{esc(meta)}</span>\n'
+                   f'{indent}    </div>\n' if meta else "")
+                + f'{indent}  </li>'))
+    return items
+
+
+def business_card_html(rec: dict, indent: str) -> str:
+    """The businesses trading here today, in a panel under the heading.
+
+    Labelled "At this address" — or, on a page spanning several numbers, at the
+    business's own door ("At 4548 18th Street"), since the range in the heading
+    does not say which door it is. Each business is its kind's glyph, its name,
+    and a muted line: what it is and the year it opened here.
+    """
+    rows = current_businesses(rec)
+    if not rows:
+        return ""
+    title = page_title(rec)
+    ranged = "–" in title.split(" ", 1)[0]
+    doors = {b.get("address") for b in rows}
+    label = ("At " + rows[0]["address"] if ranged and len(doors) == 1 and rows[0].get("address")
+             else "At this address")
+    out = [f'{indent}<section class="panel panel-business" aria-label="{esca(label)}">\n'
+           f'{indent}  <p class="business-label">{esc(label)}</p>\n']
+    for b in rows:
+        kind = b.get("kind")
+        glyph = kind_glyph(kind)
+        meta = " · ".join(x for x in (
+            kind or "", f"since {str(b['opened'])[:4]}" if b.get("opened") else "") if x)
+        out.append(f'{indent}  <div class="business">\n'
+                   f'{indent}    <h2>{glyph}{esc(b["name"])}</h2>\n'
+                   + (f'{indent}    <p class="business-meta">{esc(meta)}</p>\n' if meta else "")
+                   + f'{indent}  </div>\n')
+    out.append(f'{indent}</section>\n')
+    return "".join(out)
 
 
 # The three parts of the roll's secured value, in the order the pie draws them
@@ -4133,6 +4254,11 @@ def render_html(rec: dict) -> str:
     # BreadcrumbList name.
     crumb_number = range_label(rec.get("address_range")) or number
     street_addr_plain = title.replace("–", "-")
+    # A reader arriving from a business's map listing searched for the
+    # business, so the tab names it first ("C-H Cleaners, 4548–4554 18th
+    # Street").
+    trading = [b["name"] for b in current_businesses(rec)]
+    tab_title = ", ".join(trading + [heading])
 
     # Panels belong beside the main column whenever there is a main column for
     # them to sit beside — the empty column a split risks is the left one, and a
@@ -4212,7 +4338,7 @@ def render_html(rec: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(heading)} — Know This Place</title>
+  <title>{esc(tab_title)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
 {data_link(rec['path'], 'data.json')}
@@ -4250,7 +4376,7 @@ def render_html(rec: dict) -> str:
     <div>
       {heading_html(rec, heading)}
       <p class="sub">{esc(sub_text)}</p>
-      <ul class="tags">
+{business_card_html(rec, "      ")}      <ul class="tags">
 {tags_html(rec)}
       </ul>
 {value_figure_html(rec, "      ")}    </div>
