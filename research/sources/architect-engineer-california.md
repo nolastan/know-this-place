@@ -4,9 +4,9 @@
 > [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `architect-engineer-california`.
 >
-> - **Kind:** journal OCR · **Tier:** primary · **Status:** open
+> - **Kind:** journal OCR · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** all 116 Internet Archive volumes (1905–1959) read for numbered San Francisco addresses in building news, plate captions and text; corner-only and lot-line items read for 1905–1920. See the `Verified:` line.
+> - **Coverage:** all 116 Internet Archive volumes (1905–1959) read for numbered San Francisco addresses in building news, plate captions and text, and for corner-only and lot-line items (1905–1920 and 1921–1959). Exhausted. See the `Verified:` lines.
 > - **Local corpus:** `research/corpora/architect-engineer-california/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -49,6 +49,14 @@
     and Jones, where the corner lot (552 Jones / 595 Geary, 1913, seven storeys) and its neighbour (585 Geary, 1912, six
     storeys, credited to Hladik and Thayer by the National Register) both fit; left unresolved.
   - OCR is fair; hyphenated line breaks come through as "word- word" and need joining before matching.
+  - **After 1920 a corner item gives storeys, not a lot.** Give `corner.py --batch` the record's `"stories"`; without
+    it a line with no lot and no quadrant matches nothing. And from 1915 the pages these buildings land on usually
+    already carry the *Building and Engineering News* permit for the same job, so most placements are repeats: of 57
+    placed on pages in the 1921–1959 batch, 24 repeated the page. What is new is the earlier plan, a second
+    architect's scheme for the same corner, the contractor or engineer the permit leaves out, a building's first use,
+    and later remodelings (1949–1954).
+  - Later volumes (1940s–1950s) report permits and announcements by corner with no side or quadrant ("at the corner of
+    Pine and Mason"); only a named building or an exact storey count places those.
 - **People:** the journal names architects, engineers and contractors, all fine to credit. It also names owners and
   clients, usually private people; leave them off unless independently notable or the building bears their name.
   Firms trading from a building may be named.
@@ -57,8 +65,7 @@
 - **Coverage:** 1905–1959, all 116 items: every number-plus-street mention in building news, plate captions and the list
   of plates screened by script and read by hand; 149 findings, 84 resolved, 73 published on 70 pages (10 seeded), 11
   declined as repeats of the page, 65 unresolved (offices with no building job, numbers that no longer exist, roll
-  years after the fact, or parcels holding a later building). Corner and lot-line items, 1905–1920: read (`aeca-1905-1920-corners`, below). **Not yet read:** corner and
-  lot-line items after 1920; the building news from then on gives street numbers far more often, so expect few. The
+  years after the fact, or parcels holding a later building). Corner and lot-line items, 1905–1920: read (`aeca-1905-1920-corners`) and 1921–1959: read (`aeca-1921-1959-corners`). **Nothing left to read.** The
   corpus is gitignored and lost with each container.
 - **Verified:** 2026-11-15 (first run, the whole journal read for numbered addresses; 73 facts published, 10 pages
   seeded, and 3 held Building and Engineering News permits taken up by the seeded pages after reading them against the page
@@ -76,3 +83,15 @@
   items are plans: 256 of 422 jobs were "plans prepared", and most corners have been rebuilt since. Building news
   is dated by the issue's month from the running heads; where a volume's heads skip months the finding is dated to
   the year.)
+- **Verified:** 2026-11-17 (third run, corner and lot-line items 1921–1959: 65 items, 539,072 OCR sentences screened
+  for a corner, side, line, block face or offset beside a word of building work (306 survivors), plus a phrase-only
+  recall pass for "corner of", "cor." and "side/line of" near "San Francisco" (152 more); the 458 read by hand into
+  238 San Francisco jobs, all through `corner.py --batch` with year and storeys. 66 placed on a parcel: 57 on pages
+  (2 seeded — 555 Post, the Union League Club's building of 1922 by T. Paterson Ross, and 1005 Sansome, the Sunset
+  Press building of 1926), 9 held with no page; 32 published on 32 pages, 25 declined (24 repeats of the page, 1
+  repeat of a published sibling), 181 unresolved. **What it learned:** the batch tool matched nothing without a lot
+  until it learned to filter on storeys (now in `corner.py`); the sentence screen missed a quarter of the items, so a
+  recall pass is part of the method; and one placement that fitted on year, storeys and side (1950 Sacramento) was
+  withdrawn because the page's permit names a different architect. Two corners disagree with themselves — the Fuller
+  residence at Broadway and Broderick is NE in the plans and NW in the contract, and the parcels that fit are on the
+  south side — and stay unresolved.)
