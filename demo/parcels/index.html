@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo — Lots instead of dots</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/shared/site.css">
+  <style>
+    main { max-width: 46rem; }
+    .demo-list { padding-left: 1.2rem; }
+    .demo-list li { margin-bottom: 1.1rem; }
+    .demo-list li a:first-child { font-weight: 600; }
+    table { border-collapse: collapse; width: 100%; font: .88rem/1.4 var(--sans); margin: 1rem 0 2rem; }
+    th, td { text-align: left; vertical-align: top; padding: .45rem .5rem; border-bottom: 1px solid var(--rule); }
+    th { color: var(--muted); font-weight: 600; }
+    .note { color: var(--muted); font: .85rem/1.45 var(--sans); }
+    @media (max-width: 720px) { table { font-size: .8rem; } th, td { padding: .35rem .3rem; } }
+  </style>
+</head>
+<body>
+<header class="site-header"><a class="wordmark" href="/">Know This Place</a></header>
+<main>
+  <h1>Lots instead of dots</h1>
+  <p>Three working prototypes of drawing each building as its actual lot, from the
+  city's parcel outlines (DataSF <code>acdm-wktn</code>, 227,968 active parcels,
+  which collapse to 154,972 lots once condo units share their building's lot).
+  26,426 of our pages matched a lot: 25,190 by APN, 1,236 by their point, 49 not
+  placed.</p>
+
+  <ol class="demo-list">
+    <li><a href="basemap/">A. Lots over a basemap</a> — the homepage map as it is,
+      but past zoom 15 each dot cross-fades into its lot outline. Shown over a keyless
+      OpenFreeMap basemap because the Mapbox token only works on knowthis.place and
+      localhost:8517; the layers are the same code in Mapbox GL JS.
+      <a href="basemap/#-122.4302,37.7673,16.6">Jump to the Castro</a>.</li>
+    <li><a href="no-basemap/">B. Lots without a basemap</a> — no tile server. The map
+      is drawn from four files we build ourselves: the city's land, every lot (fetched
+      about 1 km at a time as you pan), street centrelines, and street names on them.
+      Where lots meet, the gap between blocks is the street, so the grid draws itself.
+      <a href="no-basemap/#-122.4028,37.7952,16.5">Jump to Jackson Square</a>.</li>
+    <li>C. A locator band with no JavaScript — the strip at the top of an address page,
+      drawn at build time as inline SVG instead of a Mapbox static image. The building's
+      lot is filled; every documented neighbour is a plain link to its page.
+      <a href="locator/18th-street-4548/">4548 18th St</a> ·
+      <a href="locator/montgomery-street-600/">600 Montgomery</a> ·
+      <a href="locator/green-street-999/">999 Green</a> ·
+      <a href="locator/boynton-court-3/">3 Boynton Ct</a> ·
+      <a href="locator/valencia-street-1000/">1000 Valencia</a></li>
+  </ol>
+
+  <h2>Trade-offs</h2>
+  <table>
+    <thead><tr><th></th><th>Today (dots)</th><th>A. Over a basemap</th><th>B. No basemap</th><th>C. SVG locator</th></tr></thead>
+    <tbody>
+      <tr><th>Data on first view</th><td>addresses 5.5 MB, 0.46 MB gzipped</td>
+        <td>same, plus page lots 9 MB (1.5 MB gzipped) the first time you zoom in</td>
+        <td>as A, plus lots for the view: ~25 KB gzipped per 1 km cell; 1–4 cells at street zoom, ~35 at zoom 14</td>
+        <td>10–30 KB of SVG inside the page; no requests</td></tr>
+      <tr><th>JavaScript</th><td>Mapbox GL</td><td>Mapbox GL or MapLibre</td><td>MapLibre (open source)</td><td>none</td></tr>
+      <tr><th>Third parties</th><td>Mapbox tiles + static images</td><td>tile provider</td><td>label font only (could be self-hosted)</td><td>none</td></tr>
+      <tr><th>Context you lose</th><td>—</td><td>nothing</td><td>water names, parks by name, transit, freeways as roads, hills; streets are only lot gaps plus names</td><td>same as B, at one zoom</td></tr>
+      <tr><th>Repo / build</th><td>—</td><td>page lots built from a DataSF fetch</td><td>all lots: 33 MB as files, or generated at deploy time</td><td>the build needs the lots on hand</td></tr>
+    </tbody>
+  </table>
+  <p class="note">Built by <code>demo/parcels/build.py</code> (stdlib only) from DataSF
+  parcels, streets and Analysis Neighborhoods, retrieved 2026-11-17. Demo only: nothing
+  here touches the site's pages or the build.</p>
+</main>
+</body>
+</html>
