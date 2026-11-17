@@ -91,6 +91,16 @@ and its odd numbers; on a corner it also needs the lot's outline within 65 ft of
 centrelines, or EAS addresses on both streets (`on_both_streets`). Where
 `side_ok` and `centreline_ok` disagree, the placement is refused.
 
+**Neither `lot` nor `offset`, on any other line** — a block face, a
+direction, or a corner with no `quad`, which is most of a journal's building
+news after 1920 ("a six-story apartment house on the south side of Bush west
+of Leavenworth"): it lists the parcels on that line whose roll year fits, and
+an entry's `"stories": 6` keeps only those whose roll storey count is within
+one of the record's, marked `<-- storeys` when it is exact. Without either an
+area or an offset the year and the storeys are the whole test, so read the
+candidates against a Planning name or a credit already on the page before
+placing one.
+
 **`built_by`** instead of `year` — for an alteration, which is work on a
 building already standing: `"built_by": 1908` passes every parcel whose roll
 year is 1908 or earlier wherever the ±2-year test would otherwise apply (the
@@ -460,6 +470,11 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
         offset = e.get("offset") if not want else None
         corner_only = not want and offset is None and e.get("quad") and not e.get("to") \
             and not e.get("dir")
+        # No lot and no offset, on any other line (a block face, a direction, a
+        # corner with no quadrant): the roll year must fit, and the record's
+        # storey count, where it gives one, must be within one of the roll's.
+        year_only = not want and offset is None and not corner_only
+        storeys = e.get("stories")
         head = f"{e['id']}: {e['a']} & {e['b']}" + (f" to {e['to']}" if e.get("to") else "") \
             + (f" going {e['dir']}" if e.get("dir") and not e.get("to") else "")
         if want:
@@ -467,9 +482,10 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
         elif offset is not None:
             head += f"  offset {offset} ft from {e['b']}, year {e.get('year', '?')}  (no lot)"
         elif corner_only:
-            head += f"  {e['quad']} corner, year {e.get('year', '?')}  (no lot)"
+            head += f"  {e['quad']} corner, year {e.get('year', e.get('built_by', '?'))}  (no lot)"
         else:
-            head += "  (no lot)"
+            head += f"  year {e.get('year', e.get('built_by', '?'))}" \
+                + (f", {storeys} storeys" if storeys else "") + "  (no lot)"
         res = {"id": e["id"], "error": err, "candidates": []}
         results.append(res)
         if not as_json:
@@ -505,13 +521,22 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
                 # record's — the offset alone repeats every 25 feet.
                 if span is None or abs(span[0] - offset) > 4 or not year_ok:
                     continue
-            elif corner_only:
+            elif corner_only or year_only:
                 # No lot and no offset: a corner's parcels are many, so only a
                 # roll year that fits, in the corner the record names, is shown.
                 if not year_ok:
                     continue
             else:
                 continue
+            st = ro.get("number_of_stories") or ""
+            storeys_ok = None
+            if storeys and not want and offset is None:
+                try:
+                    storeys_ok = abs(float(st) - float(storeys)) < 0.5
+                    if abs(float(st) - float(storeys)) > 1:
+                        continue
+                except ValueError:
+                    pass
             here = centroid(apn, shapes, pts.get(apn))
             side = None
             if here and e.get("side") and axes[0]:
@@ -539,7 +564,7 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
                 touches = apn in both or all(d is not None and d <= 65 for d in dists)
                 centre_ok = (all(vs) if vs else None) if touches else False
             n += 1
-            mark = "  <-- year" if year_ok else ""
+            mark = ("  <-- year" if year_ok else "") + ("  <-- storeys" if storeys_ok else "")
             d = ""
             offset_ok = None
             if span:
@@ -558,7 +583,7 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
                 "apn": apn, "year": yr or None, "stories": ro.get("number_of_stories"),
                 "lot_area": area, "roll_year": ro.get("closed_roll_year"),
                 "front": [round(span[0], 1), round(span[1], 1)] if span else None,
-                "year_ok": year_ok, "offset_ok": offset_ok, "side_ok": side,
+                "year_ok": year_ok, "storeys_ok": storeys_ok, "offset_ok": offset_ok, "side_ok": side,
                 "centreline_ok": centre_ok, "on_both_streets": apn in both,
                 "crossing_ft": round(math.hypot(
                     (here[1] - ix[1]) * math.cos(math.radians(ix[0])), here[0] - ix[0]) * 364000)
@@ -574,7 +599,8 @@ def batch(path: str, tol: float = 0.04, as_json: bool = False) -> int:
         if not n and not as_json:
             what = ("within 4 ft of the offset and roll year" if offset is not None
                     else f"in the {e.get('quad')} corner with the roll year" if corner_only
-                    else f"within {tol:.0%} of the lot")
+                    else "with the roll year" + (" and storeys" if storeys else "")
+                    if year_only else f"within {tol:.0%} of the lot")
             print(f"    no parcel of {len(near)} {what}")
     if as_json:
         json.dump(results, sys.stdout, indent=1)
