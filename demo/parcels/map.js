@@ -99,6 +99,9 @@ const map = new maplibregl.Map({
   maxBounds: [[-122.70, 37.62], [-122.25, 37.92]],
   attributionControl: { compact: true },
 });
+/* The shell's size can settle after the map is made (late stylesheet, a phone's
+   toolbar showing or hiding), so follow it rather than the window. */
+new ResizeObserver(() => map.resize()).observe(shell);
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
 
 /* ---- the documented pages: dots, then lots ------------------------------ */
