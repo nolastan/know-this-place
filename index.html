@@ -969,7 +969,7 @@ async function init() {
     map.setFilter("veil", slug ? ["!=", ["get", "slug"], slug] : ["==", ["get", "slug"], ""]);
     map.setFilter("area-labels", slug ? ["!=", ["get", "slug"], slug] : null);
   };
-  async function pick(a) {
+  async function pick(a, how = "push") {
     if (picked) map.setFeatureState({ source: "areas", id: picked.slug }, { picked: false });
     picked = a;
     map.setFeatureState({ source: "areas", id: a.slug }, { picked: true });
@@ -978,6 +978,7 @@ async function init() {
     map.getSource("pages").setData(EMPTY);
     popup.remove();
     showChip(a);
+    showHub(a, how);
     // Keep the boundary clear of the chip, which sits under the map on a phone
     // and over its bottom-right corner on a wider screen.
     const bb = bounds(base.areas.features.find((f) => f.properties.slug === a.slug));
@@ -991,7 +992,7 @@ async function init() {
     map.getSource("lots").setData(data.lots);
     map.getSource("pages").setData(data.pages);
   }
-  function unpick() {
+  function unpick(how = "push") {
     if (!picked) return;
     map.setFeatureState({ source: "areas", id: picked.slug }, { picked: false });
     picked = null;
@@ -1000,8 +1001,64 @@ async function init() {
     map.getSource("pages").setData(EMPTY);
     popup.remove();
     showChip(null);
+    showHub(null, how);
     map.fitBounds(HOME, { padding: 24, duration: 900 });
   }
+
+  /* ---- the picked neighborhood's hub, below the map --------------------- */
+  /* Picking a neighborhood swaps the news below the map for that
+     neighborhood's hub, and the address bar takes the hub's URL. The hub is
+     still its own static page, the one a crawler or a reload gets; here its
+     <main> is fetched and moved in, with every link resolved against the
+     hub's own URL so its relative links still land. Back and forward walk the
+     picks; a neighborhood with no hub of its own keeps the news. */
+  const below = document.querySelector("main#news");
+  const cue = document.querySelector(".map-cue");
+  const home = { title: document.title, label: cue?.firstChild?.textContent ?? "",
+                 nodes: below ? [...below.childNodes] : [] };
+  history.replaceState({ area: null }, "");
+  const hubs = new Map();     // hub URL → Promise of { title, label, nodes }
+  const resolve = (node, attr, at) => {
+    for (const n of node.querySelectorAll(`[${attr}]`)) {
+      const u = new URL(n.getAttribute(attr), at);
+      n.setAttribute(attr, u.origin === location.origin ? u.pathname + u.search + u.hash : u.href);
+    }
+  };
+  const fetchHub = (url) => {
+    if (!hubs.has(url)) {
+      hubs.set(url, fetch(url).then((r) => (r.ok ? r.text() : Promise.reject(r.status))).then((html) => {
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        const main = doc.querySelector("main");
+        if (!main) throw new Error("no <main>");
+        const at = new URL(url, location.href);
+        resolve(main, "href", at);
+        resolve(main, "src", at);
+        return { title: doc.title, label: main.querySelector("h1")?.textContent ?? "",
+                 nodes: [...main.childNodes] };
+      }).catch((err) => { hubs.delete(url); throw err; }));
+    }
+    return hubs.get(url);
+  };
+  const put = (view) => {
+    if (!below) return;
+    below.replaceChildren(...view.nodes);
+    document.title = view.title;
+    if (cue?.firstChild) cue.firstChild.textContent = view.label;
+  };
+  async function showHub(a, how) {
+    if (how) history[`${how}State`]({ area: a?.slug ?? null }, "", a?.hub ?? "/");
+    if (!a?.hub) { put(home); return; }
+    try {
+      const view = await fetchHub(a.hub);
+      if (picked?.slug === a.slug) put(view);
+    } catch { if (picked?.slug === a.slug) put(home); }
+  }
+  addEventListener("popstate", (e) => {
+    if (!e.state || !("area" in e.state)) return;     // a jump to #news, say
+    const f = e.state.area && base.areas.features.find((x) => x.properties.slug === e.state.area);
+    if (f) { if (f.properties.slug !== picked?.slug) pick(f.properties, null); }
+    else unpick(null);
+  });
   /* A scheme change rebuilds the style empty; put the pick back on it. */
   function restorePick() {
     if (!picked || !map.getSource("areas")) return;
