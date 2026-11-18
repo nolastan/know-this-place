@@ -53,6 +53,8 @@ import html
 import json
 import math
 import re
+import os
+import posixpath
 import sys
 import time
 import urllib.parse
@@ -1733,7 +1735,7 @@ def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
     lat, lng = rec["coordinates"]["lat"], rec["coordinates"]["lng"]
     photo = page_photo(rec)
     if photo:
-        src = rec["path"] + photo["file"]
+        src = posixpath.normpath(rec["path"] + photo["file"])
         size = (f' width="{int(photo["width"])}" height="{int(photo["height"])}"'
                 if photo.get("width") and photo.get("height") else "")
         # The hero's photo is the first thing on the page, so only a card's
@@ -4110,7 +4112,35 @@ def collection_ld(path: str, name: str, desc: str, items: list) -> dict:
     }
 
 
+FORWARD_MARK = '<meta name="robots" content="noindex">'
+
+
+def forward_html(rec: dict, target: str, name: str) -> str:
+    """The address page of a parcel that is wholly one place (`parcel_place`):
+    a stub that sends the reader on to the place's page, which carries the
+    parcel's record too. Rendered from data.json like any address page, so
+    render parity still holds, and kept out of the sitemap and the map."""
+    url = esca(target)
+    return (f"<!doctype html>\n<html lang=\"en\">\n<head>\n"
+            f"  <meta charset=\"utf-8\">\n"
+            f"  <title>{esc(name)} — Know This Place</title>\n"
+            f"  <link rel=\"canonical\" href=\"{SITE}{url}\">\n"
+            f"  {FORWARD_MARK}\n"
+            f"  <meta http-equiv=\"refresh\" content=\"0; url={url}\">\n"
+            f"</head>\n<body>\n"
+            f"  <p>{esc(page_title(rec))} is <a href=\"{url}\">{esc(name)}</a>.</p>\n"
+            f"</body>\n</html>\n")
+
+
+def forwards(rec: dict) -> bool:
+    """Whether this address page forwards to a place page (`forward_html`)."""
+    return parcel_place(rec) is not None
+
+
 def render_html(rec: dict) -> str:
+    own = parcel_place(rec)
+    if own:
+        return forward_html(rec, own[0], own[1])
     # A condominium building is the sum of its units' parcels; the view adds
     # the totals and the timeline it reads off them (see `condo_view`).
     if rec.get("condominium"):
@@ -4311,7 +4341,9 @@ def render_html(rec: dict) -> str:
 # Department's two inventories (DATA-SOURCES.md → sf-rpd-properties,
 # sf-rpd-facilities), plus the parcels it sits on and, for a place the city's
 # address register gives a number, that address. What the page says about the
-# parcel is the parcel page's to say: the place page links to it.
+# parcel is the parcel page's to say: the place page links to it — except
+# where the parcel is wholly the place, and the place page says it instead
+# (`parcel_place`, `forwarding_parcel`).
 PLACE_FILE = "place.json"
 
 # The closed vocabulary, as `ADDRESS_TOP_LEVEL_KEYS` is for an address page.
@@ -4407,17 +4439,6 @@ def place_panel_html(rec: dict, indent: str) -> str:
     places = places_on_parcel(rec.get("apn"))
     if not places:
         return ""
-    # A page headed by its place still needs the door to the place's own page:
-    # its facilities, its area and the Rec & Park record live there.
-    own = parcel_place(rec)
-    if own:
-        return (f'{indent}<section class="panel">\n'
-                f'{indent}  <h3>Recreation and Park record</h3>\n'
-                f'{indent}  <dl class="speclist">\n'
-                f'{indent}    <div class="spec"><span class="ic ic-pin"></span>'
-                f'<span class="spec-k"><a href="{esca(own[0])}">{esc(own[1])}</a></span>'
-                f'<span class="spec-v">Facilities and area</span></div>\n'
-                f'{indent}  </dl>\n{indent}</section>\n')
     rows = "\n".join(
         f'{indent}    <div class="spec"><span class="ic ic-pin"></span>'
         f'<span class="spec-k"><a href="{esca(path)}">{esc(name)}</a></span>'
@@ -4510,6 +4531,8 @@ def place_parcels_panel_html(rec: dict, indent: str) -> str:
     for apn in apns:
         label = f"Block {apn[:4]}, Lot {apn[4:]}"
         path = paged.get(apn)
+        if path and forwarding_parcel(rec):
+            path = None  # its address page forwards here
         val = (f'<a href="{esca(path)}">{esc(label)}</a>' if path else esc(label))
         rows.append(f'{indent}    <div class="spec"><span class="ic ic-lot"></span>'
                     f'<span class="spec-k">Assessor\'s block and lot</span>'
@@ -4556,7 +4579,55 @@ def place_facilities_html(rec: dict, indent: str) -> str:
             f'{indent}</section>\n')
 
 
+def forwarding_parcel(rec: dict) -> dict | None:
+    """The data.json of the one parcel whose address page forwards to this
+    place (`parcel_place`), else None. Its record — permits, the dated
+    history, the survey and district findings, zoning — renders here, since
+    the parcel no longer has a page of its own."""
+    apns = rec.get("parcels") or []
+    if len(apns) != 1:
+        return None
+    path = pages_by_apn().get(apns[0])
+    if not path:
+        return None
+    f = ROOT / path.strip("/") / "data.json"
+    try:
+        parcel = json.loads(f.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    own = parcel_place(parcel)
+    return parcel if own and own[0] == rec.get("path") else None
+
+
+def merged_sources(*recs) -> list:
+    """Every source the records cite, once each, in order."""
+    out, seen = [], set()
+    for r in recs:
+        for src in r.get("sources") or []:
+            key = (src.get("id"), src.get("query"))
+            if key not in seen:
+                seen.add(key)
+                out.append(src)
+    return out
+
+
 def render_place_html(rec: dict) -> str:
+    parcel = forwarding_parcel(rec)
+    if parcel:
+        # The park's page is the parcel's page too: its dated history joins
+        # the park's, and what the assessor, Planning and DBI say about the
+        # land renders here as it would have on the address page.
+        parcel = dict(parcel, historical_record=(
+            (parcel.get("historical_record") or [])
+            + (rec.get("historical_record") or [])))
+        if not rec.get("photo") and page_photo(parcel):
+            # The file stays beside the address page it was committed to;
+            # the park's page reaches it relatively.
+            photo = parcel["photo"]
+            rel = os.path.relpath(parcel["path"].strip("/") + "/" + photo["file"],
+                                  rec["path"].strip("/"))
+            rec = dict(rec, photo=dict(photo, file=rel))
+        rec = dict(rec, sources=merged_sources(rec, parcel))
     name = rec["name"]
     lat, lng = rec["coordinates"]["lat"], rec["coordinates"]["lng"]
     city_slug, area_slug, _slug = rec["path"].strip("/").split("/")
@@ -4583,16 +4654,31 @@ def render_place_html(rec: dict) -> str:
             f'<span class="stat-label">{esc(l)}</span></div>' for i, v, l in tiles)
             + '\n  </div>\n')
 
-    timeline = timeline_html(rec, "      ") if rec.get("historical_record") else ""
-    lead_html, sections = narrative_html(rec, "      ")
-    main_col = "\n".join(x for x in (timeline, sections) if x)
+    if parcel:
+        timeline = timeline_html(parcel, "      ")
+        lead_html, sections = narrative_html(
+            rec if rec.get("narrative") else parcel, "      ")
+        art = public_art_html(parcel, "      ")
+    else:
+        timeline = timeline_html(rec, "      ") if rec.get("historical_record") else ""
+        lead_html, sections = narrative_html(rec, "      ")
+        art = ""
+    main_col = "\n".join(x for x in (art, timeline, sections) if x)
     panels_ind = "      " if main_col else "  "
     # A park's calendar is most of what a visitor opens its page for, so the
     # announced events head the aside, as they do on an address page.
     panels = (events_panel_html(rec, panels_ind)
               + place_record_panel_html(rec, panels_ind)
-              + place_facilities_html(rec, panels_ind)
-              + place_parcels_panel_html(rec, panels_ind))
+              + place_facilities_html(rec, panels_ind))
+    if parcel:
+        panels += (open_space_panel_html(parcel, panels_ind)
+                   + addresses_panel_html(parcel, panels_ind)
+                   + glance_panel_html(parcel, panels_ind)
+                   + survey_panel_html(parcel, panels_ind)
+                   + district_panel_html(parcel, panels_ind))
+    panels += place_parcels_panel_html(rec, panels_ind)
+    tags = (f'      <ul class="tags">\n{tags_html(parcel)}\n      </ul>\n'
+            if parcel and tags_html(parcel).strip() else "")
     if main_col:
         body = ('  <div class="cols">\n    <div class="main">\n' + main_col
                 + '    </div>\n\n    <aside class="aside">\n' + panels
@@ -4658,7 +4744,7 @@ def render_place_html(rec: dict) -> str:
     <div>
       <h1>{esc(name)}</h1>
       <p class="sub">{esc(sub_text)}</p>
-    </div>
+{tags}    </div>
 {facade_media(rec, name, "media media-lift", "    ", note=STREETVIEW_NOTE)}
   </section>
 
