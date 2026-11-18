@@ -37,6 +37,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   prose alone: the prose says what the last pass meant to publish, and only the
   source says whether it supports what shipped.*
 
+- **An acquisition file describes what was cleared; ask the roll what survives
+  before reading it.** The Redevelopment Agency's 1955 Parcel Appraisal Reports
+  (sfra-property-summaries) are 1,388 pages of typed, dated building
+  descriptions, and not one of the buildings stands: the Agency appraised what
+  it was buying, and what it bought it cleared. Thirty minutes of OCR and a
+  regex pass found that out; one query would have. *For any file about
+  acquisition, condemnation or clearance, first list the parcels on its blocks
+  whose roll year predates the file (`wv5m-vpq2`, `starts_with(parcel_number,
+  '<block>')`), then search the corpus for those parcels' EAS numbers only. If
+  none is there, record a zero batch with that reason and move on.*
+
 - **In a redevelopment area a surviving street number is not a surviving
   building.** The Redevelopment Agency cleared lots in the Western Addition and
   then moved Victorians onto them in the 1970s, so an address with an EAS

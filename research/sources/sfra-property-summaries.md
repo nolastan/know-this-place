@@ -7,7 +7,7 @@
 >
 > - **Kind:** scanned survey forms and file papers, read from page images · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — hand-filled forms whose OCR is noise; nothing in them is findable by address.
-> - **Coverage:** all 7 Property Summary items read whole, 724 PDF pages; the rest of the collection unread.
+> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388) and 15 Yerba Buena subject files (306) read whole; the rest of the collection unread.
 > - **Local corpus:** `research/corpora/sfra-property-summaries/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -32,6 +32,10 @@
   The Property Summary items are `SFH371-5049` (blocks 672-678, 144 PDF pages),
   `-5050` (683-697, 118), `-5051` (701-749, 160), `-5052` (754-795, 98),
   `-5053` (806, 14), `-5054` (1100-1125, 100) and `-5054_0` (1126-1130, 90).
+  The House Moves items are `SFH371-5087` (Buchanan Street, 8 PDF pages),
+  `-5088` (Octavia, 14), `-5089` (Turk, 18), `-5090` (Webster, 26), `-5091` and
+  `-5092` (Victorian Square, 32 and 146) and `-5093` to `-5095`
+  ("Unidentified", 24, 106 and 64): 438 pages, all dated 1974 by the library.
   A page cites `https://archive.org/details/<item>/page/n<pdf page - 1>/mode/1up`.
 - **How to get at it:** `https://archive.org/download/<item>/<item>.pdf`, then
   `pdftoppm -r 100 -jpeg` to one image per page; the IA per-page JPEG endpoint
@@ -78,6 +82,35 @@
   - One lot can hold several buildings with one rating each ("743 - No. 3
     Poor; 751 - No. 1 Good"); `build.py` leaves a split rating out, and the
     by-hand findings restate it per building.
+- **The House Moves items are photographs, not files.** Nearly every one of
+  their 438 pages is a print of a house on dollies, or a contact sheet, whose
+  back carries only a photographer's stamp and a negative or roll-and-frame
+  number. Four captions name an address (5087 p. 4, 5089 pp. 9-13, 5090 p. 17,
+  5094 p. 88), in the same "block/lot - address before move to block/lot -
+  address" form as the Property Summary captions. Read them as a contact sheet
+  of 24 pages at a time and zoom only the backs with writing; a full-size read
+  of every page costs ten times as much and finds nothing more. Fourteen backs
+  in 5094 (pp. 60-86) carry a 1970s block and lot alone (766/4 to 766/31,
+  767/5 to 767/18) with no street number and no direction of move: below the
+  evidence bar, and recorded in the findings file's coverage note, not as
+  findings. A caption that names a resident "at time of move" names the
+  1970s buyer, not a historic occupant; it is not transcribed.
+- **The 1955 Parcel Appraisal Reports describe only what was cleared.** They
+  are the Agency's appraisals of the A-1 parcels it meant to buy (blocks 713 to
+  737, 754 to 756, 1078, 1097 to 1099): typed sheets with the address, a
+  building description, sometimes the year built, a rent schedule, a photograph
+  and, in the fuller reports, the deed history and owner. The Internet Archive
+  text layer misses most sheets; Tesseract at 300 dpi reads them well (1,388
+  pages in about 30 minutes with four workers). But no appraised property
+  stands today: the 44 parcels on those blocks with a pre-1956 building are the
+  ones the Agency did not buy. Run any further acquisition file
+  resolution-first — ask the roll which parcels on its blocks still hold an old
+  building, then look only for those (see LESSONS).
+- **The Yerba Buena block files are undated photographs.** Prints labelled
+  with a 1960s block and lot (red or pencil on the back, or typed on a
+  1970s-80s colour mount), a few with an address or a building's name, none
+  with a date except the Hotels item (1961, by the library). An undated print
+  is below the evidence bar however good its address.
 - **People:** Every form names the owner of record, with a home address and
   often a telephone number, and says whether the owner lives there. **None of
   that is transcribed**: read.jsonl has no owner field, so nothing downstream
@@ -96,17 +129,32 @@
   parcel "was surveyed".
 - **Overlap:** [`digitalsf`](digitalsf.md) holds the catalogued photographs of
   the same SFH 371 archive. A fact in both is one fact.
-- **Coverage:** Read: the seven Property Summary items, every page. Not read,
-  same collection: Parcel Appraisal Reports (SFH371-5039 to 5048), which are
-  the likeliest next batch; House Moves (5087 to 5095), which should date the
-  moves the captions here leave undated; the 50-building conservation study
-  (5000), whose sample numbers the forms cite; appraisal and comparable-sales
-  volumes (5001 to 5038); Yerba Buena Phase 1 block files (5055 to 5078).
+- **Coverage:** Read: the seven Property Summary items, every page
+  (`western-addition-a2-1962`); the nine House Moves items, 5087 to 5095
+  (`house-moves-1974-1979`, 2026-11-18); the ten Parcel Appraisal Reports, 5039
+  to 5048 (`parcel-appraisals-1955`, zero findings); and the Yerba Buena Phase 1
+  Hotels, Breen's and block files, 5061, 5063 and 5064 to 5076
+  (`yerba-buena-subject-files`). Not read, same collection: the 50-building
+  conservation study (5000), whose sample numbers the forms cite; the appraisal
+  and comparable-sales volumes (5001 to 5038); and the Yerba Buena Blight,
+  Photos, Contact Sheets, New Start Center and Demolition items (5055 to 5060,
+  5077, 5078). Expect little from any of them: the three batches after the
+  Property Summaries read 2,132 pages for one published fact. The only
+  untried lever is a date for the Yerba Buena block files, whose block-lot
+  prints include many buildings that still stand.
   Held for a page: 66 facts (`check.py --held`). Left out as findings: two
   1957 appraisal sheets with no street number (block 702 lot 23, block 733
   lots 1 and 1A), an undated service-station appraisal at 1301 Golden Gate
   Avenue, and five 1957 acquisition dividers for the cleared 1700 block of
   Geary.
+- **Verified:** 2026-11-18 (House Moves, Parcel Appraisal Reports and Yerba
+  Buena subject files read: 2,132 PDF pages, 12 findings, 4 resolved, 1
+  published — 1737 Webster Street's `building.relocated_from` from the Turk
+  Street move caption — and 2 declined as repeats; the appraisal batch is a
+  recorded zero. Learned: in a redevelopment collection, the files about
+  acquisition describe what was cleared, so ask the roll what survives before
+  reading; and most of this archive's prints carry a negative number or a
+  block and lot, not a caption.)
 - **Verified:** 2026-11-15 (all seven items read from page images: 724 pages,
   211 forms, 205 findings, 80 resolved, 50 published on 37 pages, 7 of them
   seeded, 30 declined, 66 held, 59 unplaced, 52 of them with no surviving
