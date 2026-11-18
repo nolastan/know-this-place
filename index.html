@@ -16,9 +16,8 @@
   <!-- The homepage is a map, and the only page on the site that carries its
        own script, style and third-party dependency. Content pages stay static
        and crawlable; see shared/AGENTS.md. -->
-  <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
-  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.28.0/mapbox-gl.css">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.28.0/mapbox-gl.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" defer></script>
   <style>
     /* Full-bleed: the map is the first thing on the page and owns the whole
        viewport. This page has no .site-header — the wordmark rides on the map
@@ -76,22 +75,22 @@
       html { scroll-behavior: smooth; }
     }
 
-    /* Mapbox's own chrome, wearing the site's tokens. */
-    .mapboxgl-popup-content {
+    /* MapLibre's own chrome, wearing the site's tokens. */
+    .maplibregl-popup-content {
       background: var(--panel); color: var(--ink);
       font-family: var(--sans); font-size: 0.85rem; font-weight: 600;
       padding: 0.35rem 0.6rem; border: 1px solid var(--rule);
       border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
     }
-    .mapboxgl-popup-tip { display: none; }
-    .mapboxgl-ctrl-group { background: var(--panel); border: 1px solid var(--rule); }
-    .mapboxgl-ctrl-group button + button { border-top: 1px solid var(--rule); }
-    /* On a phone mapbox-gl folds its attribution behind an "i" in a solid
+    .maplibregl-popup-tip { display: none; }
+    .maplibregl-ctrl-group { background: var(--panel); border: 1px solid var(--rule); }
+    .maplibregl-ctrl-group button + button { border-top: 1px solid var(--rule); }
+    /* On a phone maplibre-gl folds its attribution behind an "i" in a solid
        white disc, which read as a button asking to be pressed. Folded, it
        goes translucent like the address page's credit; opened, it is
-       mapbox-gl's own strip. The wordmark is left exactly as Mapbox draws it. */
-    .mapboxgl-ctrl-attrib.mapboxgl-compact:not(.mapboxgl-compact-show) { background: #ffffff80; }
-    .mapboxgl-ctrl-attrib.mapboxgl-compact:not(.mapboxgl-compact-show) .mapboxgl-ctrl-attrib-button { opacity: 0.6; }
+       maplibre-gl's own strip. The wordmark is left exactly as MapLibre draws it. */
+    .maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) { background: #ffffff80; }
+    .maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) .maplibregl-ctrl-attrib-button { opacity: 0.6; }
     /* The card a dot opens on click — a chip grown into a small version of the
        page it leads to: the Street View still, then the page's own <h1> and
        .sub, then, on a news or event dot, the story or the listing, and last
@@ -99,7 +98,7 @@
        long enough to be clicked through, and so a touchscreen gets it too. */
     /* Above the wordmark and the news cue, which the card may open under. */
     .map-cardpop { z-index: 3; }
-    .map-cardpop .mapboxgl-popup-content { padding: 0; font-weight: 400; overflow: hidden; }
+    .map-cardpop .maplibregl-popup-content { padding: 0; font-weight: 400; overflow: hidden; }
     .map-card { width: min(17rem, 75vw); }
     .map-card .media { margin: 0; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; }
     .map-card .media img, .map-card .media-empty { aspect-ratio: 16 / 9; }
@@ -141,12 +140,12 @@
     .map-card-links a:first-child:focus-visible { background: var(--accent); opacity: 0.88; }
     .map-card-links .ic { font-size: 0.85em; }
     /* The close button rides on the photo, so it wears the chip too. */
-    .map-cardpop .mapboxgl-popup-close-button {
+    .map-cardpop .maplibregl-popup-close-button {
       top: 0.4rem; right: 0.4rem; width: 1.6rem; height: 1.6rem;
       font-size: 1.1rem; line-height: 1; color: var(--ink);
       background: var(--panel); border: 1px solid var(--rule); border-radius: 50%;
     }
-    .map-cardpop .mapboxgl-popup-close-button:hover { color: var(--accent); background: var(--panel); }
+    .map-cardpop .maplibregl-popup-close-button:hover { color: var(--accent); background: var(--panel); }
 
     /* The news is the page's subject now, so its heading is the page's <h1>.
        It sits in the ordinary .section-head band at h2's size: the rank is
@@ -206,19 +205,33 @@
        chevron between neighborhood and street recedes and the two links read
        as the pair they are. */
     .place-hubs span { color: var(--muted); padding: 0 0.15rem; }
+
+    /* The picked neighborhood, as the address page's map chip: where you are,
+       how much is documented there, and the way back to the whole city. On
+       the homepage it stays over the map at every width, above the cue. */
+    .map-shell .map-id { bottom: 4.5rem; }
+    .map-id-back {
+      font: inherit; color: var(--cool); background: none; border: 0; padding: 0;
+      text-decoration: underline 1px; text-underline-offset: 2px; cursor: pointer;
+    }
+    .map-id-back:hover { color: var(--cool-hover); }
+    @media (max-width: 720px) {
+      .map-shell .map-id { position: absolute; left: 1rem; right: 1rem; margin: 0; }
+    }
   </style>
 </head>
 <body>
 <div class="map-shell">
-  <!-- #map stays empty: Mapbox wants sole ownership of its container, so the
+  <!-- #map stays empty: MapLibre wants sole ownership of its container, so the
        fallback is a sibling laid over it and removed once tiles are up. -->
-  <div id="map" role="region" aria-label="Map of documented addresses in San Francisco, with the addresses in the news and upcoming events marked"></div>
+  <div id="map" role="region" aria-label="Map of San Francisco's neighborhoods, with the addresses in the news and upcoming events marked; pick a neighborhood to see its lots"></div>
   <div class="media-empty">
     <span class="ic ic-pin ic-lg"></span>
     <span class="map-loading">Loading map...</span>
     <small>Every address is reachable through the links below.</small>
   </div>
   <p class="map-brand">Know This Place</p>
+  <div class="map-id" hidden></div>
   <a class="map-cue" href="#news">In the news<span aria-hidden="true">↓</span></a>
 </div>
 
@@ -392,21 +405,25 @@
 </footer>
 
 <script type="module">
-/* The homepage map. Every documented address as one dot, click to open its
-   card. The dots come from shared/addresses.geojson, built by
-   scripts/build_map_index.py from the same data.json files that render the
-   pages themselves. On top of them sit two pulsing layers, each adding
-   its story to the card: the news layer — the dozen addresses in the grid below, in the
-   cool data hue — and the events layer, the next six days of public-space
-   events in the violet --event hue, read from shared/events.geojson.
+/* The homepage map. San Francisco drawn from its own lines, with no basemap
+   service: the land, the street centrelines and their names, and the city's
+   41 Analysis Neighborhoods, from the lot cache seed_pages.py commits under
+   shared/map/. The city opens with only the news and events on it — the
+   news layer, the dozen addresses in the grid below, in the cool data hue,
+   and the events layer, the next six days of public-space events in the
+   violet --event hue, read from shared/events.geojson. A click on a
+   neighborhood flies to its boundary, veils the rest of the city, and fetches
+   that one neighborhood's lots (shared/map/lots/<slug>.json) and which of
+   them have a page (shared/map/pages/<slug>.json, from build_map_index.py);
+   a documented lot opens its card. A click on water, or anywhere outside
+   every neighborhood, puts the city back.
 
-   If anything here fails — no token, blocked CDN, no WebGL — the placeholder
-   in #map stands and the links below it still reach every page. */
+   If anything here fails — blocked CDN, no WebGL — the placeholder in #map
+   stands and the links below it still reach every page. */
 const shell = document.getElementById("map");
 const placeholder = document.querySelector(".map-shell .media-empty");
-
-const styleFor = (dark) =>
-  dark ? "mapbox://styles/mapbox/dark-v11" : "mapbox://styles/mapbox/light-v11";
+const MAP = "/shared/map/";
+const HOME = [[-122.5105, 37.7395], [-122.3937, 37.8095]];
 
 /* A page the research module has published a finding onto ("r" in the index)
    wears the site's brick hue; the rest, pages that are permit history and
@@ -416,42 +433,157 @@ const cssVar = (name) =>
   getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 
 /* A dot under the pointer, or the one whose card is open, draws larger, fully
-   opaque and ringed, so the reader can see which dot a click will open. Mapbox
+   opaque and ringed, so the reader can see which dot a click will open. MapLibre
    only accepts ["zoom"] at the top level of an interpolate, so the state is
    read inside each stop rather than wrapped around the curve. */
 const LIT = ["any", ["boolean", ["feature-state", "hover"], false],
                     ["boolean", ["feature-state", "active"], false]];
 const lit = (on, off) => ["case", LIT, on, off];
 
-const dotLayer = () => ({
-  id: "addresses",
-  type: "circle",
-  source: "addresses",
-  // Researched dots draw above the grey ones, so a block of plain permit
-  // pages never buries the one building with a story.
-  layout: { "circle-sort-key": ["case", ["has", "r"], 1, 0] },
-  paint: {
-    "circle-color": ["case", ["has", "r"], cssVar("--warm"), cssVar("--muted")],
-    // Small and semi-transparent at city zoom so overlapping dots build up
-    // into shading rather than one flat mass — the Mission and the Castro
-    // should read as denser than the scattered downtown parcels. Grows to a
-    // comfortable click target once you're down at street level.
-    "circle-radius": ["interpolate", ["linear"], ["zoom"],
-      ...[[10, 0.8], [12, 1.4], [14, 3], [16, 6], [18, 9]]
-        .flatMap(([z, r]) => [z, lit(r * 1.5 + 2.5, r)])],
-    // The grey dots at a third to a half the strength: --muted is lighter than
-    // the brick in dark mode, and at full opacity a district of permit-only
-    // pages would outshine the researched ones it is meant to sit behind.
-    "circle-opacity": ["interpolate", ["linear"], ["zoom"],
-      10, lit(1, ["case", ["has", "r"], 0.45, 0.15]),
-      13, lit(1, ["case", ["has", "r"], 0.7, 0.22]),
-      15, lit(1, ["case", ["has", "r"], 0.95, 0.5])],
-    "circle-stroke-color": cssVar("--paper"),
-    "circle-stroke-width": ["interpolate", ["linear"], ["zoom"],
-      12, lit(1.5, 0), 15, lit(2, 0), 17, lit(2.5, 1.5)],
-  },
-});
+/* ---- the basemap: ours, so it wears the site's own tokens ---------------- */
 
+/* Packed coordinates (seed_pages.py → "The homepage map's lot cache"): whole
+   microdegrees, a ring's first point off the file's origin and then the step
+   to each next point, closing point dropped. */
+const unpack = (flat, [ox, oy], close) => {
+  let x = flat[0] + ox, y = flat[1] + oy;
+  const pts = [[x / 1e6, y / 1e6]];
+  for (let i = 2; i < flat.length; i += 2) {
+    x += flat[i]; y += flat[i + 1];
+    pts.push([x / 1e6, y / 1e6]);
+  }
+  if (close) pts.push(pts[0]);
+  return pts;
+};
+const polygons = (packed, o) =>
+  ({ type: "MultiPolygon", coordinates: packed.map((p) => p.map((r) => unpack(r, o, true))) });
+const collection = (features) => ({ type: "FeatureCollection", features });
+const EMPTY = collection([]);
+
+/* Colours the site has no token for — the street, the water, parkland, the
+   veil over the city a reader has stepped past — mixed from the tokens it has,
+   so a scheme change carries them along. Mixed here in sRGB rather than with
+   CSS color-mix(), whose computed value (oklab) the map can't read. */
+const rgbOf = (() => {
+  const probe = document.createElement("span");
+  return (name) => {
+    probe.style.color = `var(${name})`;
+    document.body.append(probe);
+    const m = getComputedStyle(probe).color.match(/[\d.]+/g).map(Number);
+    probe.remove();
+    return m.slice(0, 3);
+  };
+})();
+const mix = (a, b, pct) =>
+  `rgb(${a.map((v, i) => Math.round((v * pct + b[i] * (100 - pct)) / 100)).join(",")})`;
+const palette = () => {
+  const [paper, ink, rule, cool, muted, ok] =
+    ["--paper", "--ink", "--rule", "--cool", "--muted", "--ok"].map(rgbOf);
+  return {
+    water: mix(cool, paper, 16),
+    ground: mix(rule, paper, 55),
+    street: mix(paper, rule, 75),
+    lot: mix(paper, paper, 100),
+    lotLine: mix(rule, ink, 85),
+    park: mix(ok, paper, 16),
+    area: mix(rule, paper, 90),
+    veil: mix(paper, paper, 100),
+    label: mix(muted, muted, 100),
+    halo: mix(paper, paper, 100),
+    warm: cssVar("--warm"), muted: cssVar("--muted"),
+  };
+};
+/* Self-hosted glyphs (shared/map/fonts/, Noto Sans, OFL), so the map reaches
+   nothing but this site. */
+const FONT = ["Noto Sans Regular"];
+
+const ownStyle = (data) => {
+  const P = palette();
+  const picked = ["boolean", ["feature-state", "picked"], false];
+  const hover = ["boolean", ["feature-state", "hover"], false];
+  return {
+    version: 8,
+    glyphs: location.origin + MAP + "fonts/{fontstack}/{range}.pbf",
+    sources: {
+      land: { type: "geojson", data: data.land },
+      streets: { type: "geojson", data: data.streets, tolerance: 0.3 },
+      areas: { type: "geojson", data: data.areas, promoteId: "slug" },
+      lots: { type: "geojson", data: EMPTY, tolerance: 0.2 },
+      pages: { type: "geojson", data: EMPTY, promoteId: "p", tolerance: 0.2 },
+    },
+    layers: [
+      { id: "water", type: "background", paint: { "background-color": P.water } },
+      { id: "land", type: "fill", source: "land", paint: { "fill-color": P.ground } },
+      { id: "street-lines", type: "line", source: "streets",
+        layout: { "line-cap": "round", "line-join": "round" },
+        paint: { "line-color": P.street,
+          "line-width": ["interpolate", ["linear"], ["zoom"],
+            10, ["match", ["get", "c"], [1, 2], 1.6, 3, 1, 0.3],
+            13, ["match", ["get", "c"], [1, 2], 4, 3, 2.5, 1],
+            16, ["match", ["get", "c"], [1, 2], 10, 3, 8, 5]] } },
+      // A neighborhood tints under the pointer: the invitation to click it.
+      { id: "area-fill", type: "fill", source: "areas",
+        paint: { "fill-color": P.area, "fill-opacity": ["case", hover, 0.8, 0] } },
+      // The picked neighborhood's lots. Where lots meet, the gap between
+      // blocks is the street, so the grid draws itself at street level.
+      { id: "lots", type: "fill", source: "lots",
+        paint: { "fill-color": ["case", ["==", ["get", "z"], 1], P.park, P.lot] } },
+      { id: "lot-lines", type: "line", source: "lots",
+        paint: { "line-color": P.lotLine,
+          "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.15, 15, 0.4, 18, 1] } },
+      // A lot with a page wears the map's two data hues: brick where research
+      // has published onto it, grey for permit history and little else.
+      { id: "page-fill", type: "fill", source: "pages",
+        paint: { "fill-color": ["case", ["has", "r"], P.warm, P.muted],
+          "fill-opacity": ["case", hover, 0.9, ["has", "r"], 0.6, 0.3] } },
+      { id: "page-line", type: "line", source: "pages",
+        paint: { "line-color": ["case", ["has", "r"], P.warm, P.muted],
+          "line-width": ["interpolate", ["linear"], ["zoom"], 13, 0.3, 16, ["case", hover, 2.5, 1]],
+          "line-opacity": 0.9 } },
+      // Once one is picked, the rest of the city steps back behind a veil.
+      { id: "veil", type: "fill", source: "areas", filter: ["==", ["get", "slug"], ""],
+        paint: { "fill-color": P.veil, "fill-opacity": 0.72 } },
+      { id: "area-line", type: "line", source: "areas",
+        paint: { "line-color": P.label,
+          "line-width": ["case", picked, 2.5, hover, 1.5, 0.6],
+          "line-opacity": ["case", picked, 0.9, 0.55] } },
+      { id: "street-labels", type: "symbol", source: "streets", minzoom: 14,
+        filter: ["any", ["<=", ["get", "c"], 3], [">=", ["zoom"], 15.5]],
+        layout: { "text-field": ["get", "n"], "text-font": FONT, "symbol-placement": "line",
+                  "symbol-spacing": 400,
+                  "text-size": ["interpolate", ["linear"], ["zoom"], 14, 10, 18, 13] },
+        paint: { "text-color": P.label, "text-halo-color": P.halo, "text-halo-width": 1.5 } },
+      { id: "area-labels", type: "symbol", source: "areas", maxzoom: 14,
+        layout: { "text-field": ["get", "name"], "text-font": FONT, "text-size": 11,
+                  "text-transform": "uppercase", "text-letter-spacing": 0.08,
+                  "text-max-width": 7 },
+        paint: { "text-color": P.label, "text-halo-color": P.halo, "text-halo-width": 1.2 } },
+    ],
+  };
+};
+
+/* The basemap's three files, read once and kept: a scheme change rebuilds the
+   style from them without fetching again. "no-cache" revalidates (one 304 on
+   a repeat visit) so a refreshed cache is never served stale. */
+const getJSON = async (url) => (await fetch(url, { cache: "no-cache" })).json();
+async function loadBase() {
+  const [areas, index, streets] = await Promise.all(
+    ["areas.json", "index.json", "streets.json"].map((f) => getJSON(MAP + f)));
+  const about = new Map(index.map((a) => [a.slug, a]));
+  const areaFeatures = areas.areas.map((a) => ({
+    type: "Feature", geometry: polygons(a.g, areas.o),
+    properties: { slug: a.slug, name: a.name, ...(about.get(a.slug) ?? {}) },
+  }));
+  return {
+    areas: collection(areaFeatures),
+    // The land is the neighborhoods themselves: together they are the city.
+    land: collection(areaFeatures.map((f) => ({ ...f, properties: {} }))),
+    streets: collection(streets.s.map(([n, c, flat]) => ({
+      type: "Feature", geometry: { type: "LineString", coordinates: unpack(flat, streets.o) },
+      properties: { n: streets.names[n], c },
+    }))),
+  };
+}
 /* The addresses in the news, read out of the grid below rather than from a
    second data file. The cards are already the list of what the news module
    published, so taking the map's news layer from the same markup means the two
@@ -492,9 +624,9 @@ const REDUCED_MOTION = matchMedia("(prefers-reduced-motion: reduce)").matches;
    city zoom. Event dots take the third data hue (--event violet): a color a
    reader can tell apart from both brick and blue even without hue vision. */
 /* scale may be a number or a data expression; either way it sits inside the
-   stops, where Mapbox allows it. */
+   stops, where MapLibre allows it. */
 const newsRadius = (scale) => ["interpolate", ["linear"], ["zoom"],
-  // Scaled stop by stop: Mapbox only accepts ["zoom"] at the top level of an
+  // Scaled stop by stop: MapLibre only accepts ["zoom"] at the top level of an
   // interpolate, so ["*", scale, interpolate] is rejected and the layer is lost.
   ...[[10, 2.6], [12, 3.4], [14, 5], [16, 8], [18, 11]].flatMap(([z, r]) => [z, ["*", r, scale]])];
 
@@ -560,7 +692,7 @@ const eventFeatures = (collection) => {
 };
 
 /* One ring per dot every two seconds, each dot on its own beat, growing to four
-   times the dot and fading as it grows. Mapbox has no animated paint, so the halo is repainted per frame —
+   times the dot and fading as it grows. MapLibre has no animated paint, so the halo is repainted per frame —
    cheap at a dozen features, and parked whenever the map is off-screen or the
    tab is hidden rather than repainting the city under the fold. */
 function pulse(map) {
@@ -692,49 +824,37 @@ const eventStory = ({ t, d, tm, v, s }, place) => {
   return p;
 };
 
-/* The index is fetched here rather than handed to Mapbox as a URL so we can
-   set the cache policy. "no-cache" revalidates every load and reuses the
-   cached body on a 304 — costing one conditional request, not another 107 KB.
-   Left to the default policy the browser serves Mapbox a stale copy and the
-   map silently lags the site: newly documented addresses are simply missing,
-   with nothing to indicate it. site.js reads site-config.json the same way,
-   for the same reason. */
-let addresses, events, byPath;
-async function addAddresses(map) {
-  addresses ??= await (await fetch("/shared/addresses.geojson", { cache: "no-cache" })).json();
-  byPath ??= new Map(addresses.features.map((f) => [f.properties.p, f]));
-  /* generateId gives every dot an id, which is what feature state — the hover
-     and the open card — is keyed on. */
-  if (!map.getSource("addresses")) {
-    map.addSource("addresses", { type: "geojson", data: addresses, generateId: true });
-  }
-  if (!map.getLayer("addresses")) map.addLayer(dotLayer());
 
-  /* The news goes on last so it sits above the eight thousand, with the
-     events above it — a dot the reader can act on today outranks a story
-     already told. This runs again on every style load — a light/dark switch
-     throws the layers away — which is also how the dots pick up the other
-     scheme's hues. */
+/* The addresses index is the cards' source for a page's heading, line and
+   photo. Only a card needs it, so it is fetched the first time one opens. */
+let byPath;
+const places = async () => {
+  if (!byPath) {
+    const all = await getJSON("/shared/addresses.geojson");
+    byPath = new Map(all.features.map((f) => [f.properties.p, f]));
+  }
+  return byPath;
+};
+
+/* News and events go on above everything, on every style load — a light/dark
+   switch throws the layers away — which is also how the dots pick up the other
+   scheme's hues. A dot the reader can act on today outranks a story already
+   told, so events draw over news. */
+let events;
+async function addOverlays(map) {
   if (!map.getSource("news")) {
-    map.addSource("news", {
-      type: "geojson", generateId: true,
-      data: { type: "FeatureCollection", features: newsFeatures() },
-    });
+    map.addSource("news", { type: "geojson", generateId: true,
+      data: collection(newsFeatures()) });
   }
   for (const layer of pulseLayers("news", "--cool")) {
     if (!map.getLayer(layer.id)) map.addLayer(layer);
   }
-
   /* A missing or stale events index is not an error worth a broken map over —
      the dots just don't draw. */
-  try {
-    events ??= await (await fetch("/shared/events.geojson", { cache: "no-cache" })).json();
-  } catch { /* no events layer this load */ }
+  try { events ??= await getJSON("/shared/events.geojson"); } catch { /* none this load */ }
   if (events && !map.getSource("events")) {
-    map.addSource("events", {
-      type: "geojson", generateId: true,
-      data: { type: "FeatureCollection", features: eventFeatures(events) },
-    });
+    map.addSource("events", { type: "geojson", generateId: true,
+      data: collection(eventFeatures(events)) });
   }
   if (events) {
     for (const layer of pulseLayers("events", "--event")) {
@@ -744,75 +864,164 @@ async function addAddresses(map) {
 }
 
 async function init() {
-  const res = await fetch("/shared/site-config.json", { cache: "no-store" });
-  const { mapbox_token: token } = res.ok ? await res.json() : {};
-  if (!token || !window.mapboxgl) return;   // keep the placeholder
-
-  mapboxgl.accessToken = token;
+  if (!window.maplibregl) return;   // keep the placeholder
   const dark = matchMedia("(prefers-color-scheme: dark)");
+  const base = await loadBase();
 
   /* The opening frame is four landmarks, not a zoom number: Fisherman's Wharf
      at the north, the Great Highway at the west, the Ferry Building at the
-     east, Bernal Heights at the south. Mapbox picks the tightest zoom that
+     east, Bernal Heights at the south. The map picks the tightest zoom that
      keeps all four inside whatever viewport it was handed, so the guarantee
-     holds at any window size. A fixed center and zoom held it only at the one
-     size it was tuned for — the map is 100svh full-bleed, so a narrower window
-     crops inward from the edges and below roughly 1024px wide the Outer Sunset
-     slid off the left. The box's aspect is 1.32, wider than it is tall, so a
-     desktop window binds on height and buys east-west margin for free, while a
-     phone binds on width and buys north-south. */
-  const home = [[-122.5105, 37.7395], [-122.3937, 37.8095]];
-
-  const map = new mapboxgl.Map({
+     holds at any window size. The box's aspect is 1.32, wider than it is tall,
+     so a desktop window binds on height and buys east-west margin for free,
+     while a phone binds on width and buys north-south. */
+  const map = new maplibregl.Map({
     container: shell,
-    style: styleFor(dark.matches),
-    bounds: home,
+    style: ownStyle(base),
+    bounds: HOME,
     fitBoundsOptions: { padding: 24 },
-    minZoom: 10,
+    minZoom: 10, maxZoom: 19,
+    attributionControl: { compact: true, customAttribution:
+      'Lots, streets and neighborhoods: <a href="https://data.sf.gov/">DataSF</a>' },
   });
+  /* The shell's size can settle after the map is made (a late stylesheet, a
+     phone's toolbar showing or hiding), so follow it rather than the window. */
+  new ResizeObserver(() => map.resize()).observe(shell);
 
   /* Panning is fenced to San Francisco, but the fence has to contain the
-     opening frame or Mapbox quietly clamps the camera and the fit never
-     happens — on a phone the frame reaches latitude 37.66..37.89, which busts
-     the city box at both ends, and the failure looks like nothing at all: no
-     error, the camera simply isn't where it was asked to be. So rather than
-     guess a box wide enough for every viewport shape, fence to the frame the
-     reader was actually given, widened to the whole city. Read off the canvas
-     corners rather than getBounds(), which reports the frame inside the
-     fitBounds padding while the clamp is applied to the full canvas. */
+     opening frame or the camera is quietly clamped and the fit never happens —
+     on a phone the frame reaches latitude 37.66..37.89, which busts the city
+     box at both ends. So fence to the frame the reader was actually given,
+     widened to the whole city. Read off the canvas corners rather than
+     getBounds(), which reports the frame inside the fitBounds padding while
+     the clamp is applied to the full canvas. */
   const canvas = map.getCanvas();
-  const frame = new mapboxgl.LngLatBounds(
+  const frame = new maplibregl.LngLatBounds(
     map.unproject([0, canvas.clientHeight]), map.unproject([canvas.clientWidth, 0]));
   map.setMaxBounds(frame.extend([[-122.60, 37.68], [-122.30, 37.88]]));   // San Francisco
 
-  map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
-  map.on("style.load", () => addAddresses(map));
+  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+  map.on("style.load", () => { addOverlays(map); restorePick(); });
   /* The pulse starts only once the map has loaded: it repaints every frame, and
      a map that is always repainting never fires "load" — which is what takes
      the placeholder down. */
-  map.on("load", () => { placeholder?.remove(); pulse(map); });
+  map.on("load", () => {
+    placeholder?.remove();
+    pulse(map);
+    // The compact credit opens itself on load; on a phone it then covers the
+    // cue. Start it folded, as an "i" the reader can open.
+    shell.querySelector(".maplibregl-ctrl-attrib.maplibregl-compact")
+      ?.classList.remove("maplibregl-compact-show");
+  });
 
   /* The wheel zooms the map — no modifier key. That only works because the map
      hands the wheel back once the reader has scrolled past it: otherwise
-     scrolling back up would zoom instead of returning to the top, and the
-     reader would be stuck in the copy below. */
+     scrolling back up would zoom instead of returning to the top. */
   const syncScrollZoom = () =>
     scrollY < 4 ? map.scrollZoom.enable() : map.scrollZoom.disable();
   addEventListener("scroll", syncScrollZoom, { passive: true });
   syncScrollZoom();
-  dark.addEventListener("change", (e) => map.setStyle(styleFor(e.matches)));
+  dark.addEventListener("change", () => map.setStyle(ownStyle(base)));
 
-  const popup = new mapboxgl.Popup({
+  const popup = new maplibregl.Popup({
     closeButton: true, closeOnClick: false, offset: 12,
     className: "map-cardpop", maxWidth: "none",
   });
 
-  /* Which dot is under a point. An event dot sits over the news dot, which
-     sits over the plain dot for the same address, so the layers are asked in
-     that order and the top one answers: it says everything the one beneath
-     does and then more. A few pixels of slack make a dot at city zoom — a
-     pixel or two across — something a finger can hit. */
-  const DOTS = ["events-dot", "news-dot", "addresses"];
+  /* ---- picking a neighborhood ------------------------------------------ */
+  const chip = document.querySelector(".map-shell .map-id");
+  let picked = null;          // the picked neighborhood's feature properties
+  const loaded = new Map();   // slug → { lots, pages }, once fetched
+  const fetchArea = async (slug) => {
+    if (!loaded.has(slug)) {
+      const [lots, pages] = await Promise.all([
+        getJSON(`${MAP}lots/${slug}.json`), getJSON(`${MAP}pages/${slug}.json`)]);
+      const geom = new Map(lots.lots.map(([id, z, g]) => [id, [z, polygons(g, lots.o)]]));
+      loaded.set(slug, {
+        lots: collection(lots.lots.map(([id, z]) => ({ type: "Feature",
+          geometry: geom.get(id)[1], properties: { z } }))),
+        // One lot can carry two pages (a corner building, say); the first
+        // drawn takes the click, and both are on the neighborhood's page.
+        pages: collection(pages.filter((p) => geom.has(p.l)).map((p) => ({ type: "Feature",
+          geometry: geom.get(p.l)[1], properties: p }))),
+      });
+    }
+    return loaded.get(slug);
+  };
+  const showChip = (a) => {
+    if (!chip) return;
+    chip.replaceChildren();
+    if (!a) { chip.hidden = true; return; }
+    const nav = el("nav", "breadcrumb");
+    nav.setAttribute("aria-label", "Neighborhood");
+    nav.append(link("/san-francisco/", "San Francisco"), el("span", "crumb-sep", " › "),
+      a.hub ? link(a.hub, a.name) : el("span", "", a.name));
+    const back = el("button", "map-id-back", "All neighborhoods");
+    back.type = "button";
+    back.addEventListener("click", () => unpick());
+    const meta = el("p", "crumb-meta",
+      `${(a.pages ?? 0).toLocaleString()} documented buildings · `);
+    meta.append(back);
+    chip.append(nav, meta);
+    chip.hidden = false;
+  };
+  const setPicked = (slug) => {
+    map.setFilter("veil", slug ? ["!=", ["get", "slug"], slug] : ["==", ["get", "slug"], ""]);
+    map.setFilter("area-labels", slug ? ["!=", ["get", "slug"], slug] : null);
+  };
+  async function pick(a) {
+    if (picked) map.setFeatureState({ source: "areas", id: picked.slug }, { picked: false });
+    picked = a;
+    map.setFeatureState({ source: "areas", id: a.slug }, { picked: true });
+    setPicked(a.slug);
+    map.getSource("lots").setData(EMPTY);
+    map.getSource("pages").setData(EMPTY);
+    popup.remove();
+    showChip(a);
+    // Keep the boundary clear of the chip, which sits under the map on a phone
+    // and over its bottom-right corner on a wider screen.
+    const bb = bounds(base.areas.features.find((f) => f.properties.slug === a.slug));
+    const narrow = shell.clientWidth < 720;
+    const under = narrow && chip
+      ? shell.getBoundingClientRect().bottom - chip.getBoundingClientRect().top + 16 : 64;
+    map.fitBounds(bb, { padding: { top: 64, bottom: under, left: narrow ? 16 : 24,
+                                   right: narrow ? 16 : 24 }, duration: 900 });
+    const data = await fetchArea(a.slug);
+    if (picked?.slug !== a.slug) return;      // another click got there first
+    map.getSource("lots").setData(data.lots);
+    map.getSource("pages").setData(data.pages);
+  }
+  function unpick() {
+    if (!picked) return;
+    map.setFeatureState({ source: "areas", id: picked.slug }, { picked: false });
+    picked = null;
+    setPicked(null);
+    map.getSource("lots").setData(EMPTY);
+    map.getSource("pages").setData(EMPTY);
+    popup.remove();
+    showChip(null);
+    map.fitBounds(HOME, { padding: 24, duration: 900 });
+  }
+  /* A scheme change rebuilds the style empty; put the pick back on it. */
+  function restorePick() {
+    if (!picked || !map.getSource("areas")) return;
+    map.setFeatureState({ source: "areas", id: picked.slug }, { picked: true });
+    setPicked(picked.slug);
+    const data = loaded.get(picked.slug);
+    if (data) { map.getSource("lots").setData(data.lots); map.getSource("pages").setData(data.pages); }
+  }
+  const bounds = (f) => {
+    const b = new maplibregl.LngLatBounds();
+    for (const poly of f.geometry.coordinates) for (const p of poly[0]) b.extend(p);
+    return b;
+  };
+
+  /* ---- what is under the pointer ---------------------------------------- */
+  /* An event dot sits over a news dot for the same address, so the layers are
+     asked in that order and the top one answers. A few pixels of slack make a
+     small dot something a finger can hit. Below the dots, a documented lot in
+     the picked neighborhood; below that, a neighborhood. */
+  const DOTS = ["events-dot", "news-dot"];
   const SLACK = 4;
   const dotAt = (pt) => {
     const layers = DOTS.filter((id) => map.getLayer(id));
@@ -827,34 +1036,48 @@ async function init() {
     }
     return null;
   };
-  const same = (a, b) => a?.source === b?.source && a?.id === b?.id;
-  const mark = (f, state, on) =>
-    f && map.getSource(f.source) &&
-    map.setFeatureState({ source: f.source, id: f.id }, { [state]: on });
+  const lotAt = (pt) => (picked ? map.queryRenderedFeatures(pt, { layers: ["page-fill"] })[0] : null);
+  const areaAt = (pt) => map.queryRenderedFeatures(pt, { layers: ["area-fill"] })[0] ?? null;
+  const key = (f) => f && (f.source === "pages" ? f.properties.p
+    : f.source === "areas" ? f.properties.slug : f.id);
+  const mark = (f, state, on) => f && map.getSource(f.source) &&
+    map.setFeatureState({ source: f.source, id: key(f) }, { [state]: on });
 
   let hovered = null, active = null;
   const hover = (f) => {
-    if (same(f, hovered)) return;
+    if (f?.source === hovered?.source && key(f) === key(hovered)) return;
     mark(hovered, "hover", false);
     hovered = f;
     mark(hovered, "hover", true);
     map.getCanvas().style.cursor = f ? "pointer" : "";
   };
-  map.on("mousemove", (e) => hover(dotAt(e.point)));
+  map.on("mousemove", (e) => {
+    const area = areaAt(e.point);
+    hover(dotAt(e.point) ?? lotAt(e.point) ??
+      (area && area.properties.slug !== picked?.slug ? area : null));
+  });
   map.on("mouseout", () => hover(null));
   /* A style switch throws the sources away, and their feature state with them. */
   map.on("style.load", () => { hovered = null; popup.remove(); });
   popup.on("close", () => { mark(active, "active", false); active = null; });
 
-  /* Every card links to the page of the address or place the dot stands for;
-     a news dot also links the story, and an event dot the calendar's own
-     listing. A click off any dot closes the card, as Escape does. */
-  map.on("click", (e) => {
-    const f = dotAt(e.point);
-    if (!f) { popup.remove(); return; }
+  /* A dot opens its card; so does a documented lot. Every card links to the
+     page of the address or place; a news dot also links the story, and an
+     event dot the calendar's own listing. A click on another neighborhood
+     picks it; a click on water, or outside every neighborhood, puts the city
+     back. Escape closes a card. */
+  map.on("click", async (e) => {
+    const f = dotAt(e.point) ?? lotAt(e.point);
+    if (!f) {
+      popup.remove();
+      const area = areaAt(e.point);
+      if (area && area.properties.slug !== picked?.slug) pick(area.properties);
+      else if (!area) unpick();
+      return;
+    }
     const props = f.properties;
-    const place = byPath.get(props.p) ?? {
-      geometry: f.geometry, properties: { t: props.t, s: "" },
+    const place = (await places()).get(props.p) ?? {
+      geometry: { coordinates: [e.lngLat.lng, e.lngLat.lat] }, properties: { t: props.t, s: props.s ?? "" },
     };
     const here = link(props.p, "See this place");
     let content;
@@ -870,13 +1093,14 @@ async function init() {
     popup.remove();
     active = f;
     mark(active, "active", true);
-    popup.setLngLat(f.geometry.coordinates).setDOMContent(content).addTo(map);
+    const at = f.source === "pages" ? e.lngLat : f.geometry.coordinates;
+    popup.setLngLat(at).setDOMContent(content).addTo(map);
   });
   addEventListener("keydown", (e) => { if (e.key === "Escape") popup.remove(); });
 }
 
-/* mapbox-gl.js is deferred, so it may not have run yet. */
-if (window.mapboxgl) init().catch(() => {});
+/* maplibre-gl.js is deferred, so it may not have run yet. */
+if (window.maplibregl) init().catch(() => {});
 else addEventListener("DOMContentLoaded", () => init().catch(() => {}));
 </script>
 </body>

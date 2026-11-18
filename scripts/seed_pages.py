@@ -6576,6 +6576,262 @@ def cmd_city_map(args) -> int:
 
 
 # --------------------------------------------------------------------------
+# The homepage map's lot cache
+# --------------------------------------------------------------------------
+# The homepage map draws no third-party basemap. It is the city's own lines:
+# the 41 Analysis Neighborhoods, the street centrelines and every lot, all from
+# DataSF, fetched here once and committed under shared/map/ so a deploy never
+# depends on DataSF being up (the same terms as a hub's boundary in hub.json).
+# `build_map_index.py` then reads this cache to say which lots carry a page.
+#
+#   shared/map/areas.json       the neighborhoods, with name, slug and source
+#   shared/map/streets.json     centrelines, each with its name and class
+#   shared/map/lots/<slug>.json every lot in a neighborhood (a lot belongs to
+#                               the neighborhood its bounding box centres in)
+#
+# Coordinates are packed: whole numbers of a millionth of a degree (~0.1 m),
+# each ring as its first point less the file's origin and then the step from
+# one point to the next, closing point dropped. The homepage unpacks them;
+# the format is ~3x smaller than GeoJSON before gzip. Refresh with
+#   python3 scripts/seed_pages.py lots
+MAP_DIR = ROOT / "shared" / "map"
+DS_PARCELS = "acdm-wktn"
+DS_STREETS = "3psu-pn9h"
+LOT_TOLERANCE_M = 0.4       # Douglas–Peucker, metres: under a pixel at zoom 19
+STREET_TOLERANCE_M = 1.0
+AREA_TOLERANCE_M = 3.0
+# Street layers that are not streets a reader walks: unbuilt "paper" streets
+# and the pseudo-segments that close the network over water.
+STREET_SKIP_LAYERS = {"PAPER", "PAPER_FWYS", "PAPER_WATER", "PSEUDO"}
+_KX = 111320 * math.cos(math.radians(37.76))   # metres per degree, here
+_KY = 110540
+
+
+def _dp_m(points: list, eps: float) -> list:
+    """Douglas–Peucker on one ring or line, tolerance in metres."""
+    if len(points) < 3:
+        return points
+    keep = {0, len(points) - 1}
+    stack = [(0, len(points) - 1)]
+    while stack:
+        i, j = stack.pop()
+        ax, ay = points[i][0] * _KX, points[i][1] * _KY
+        bx, by = points[j][0] * _KX, points[j][1] * _KY
+        dx, dy = bx - ax, by - ay
+        L = dx * dx + dy * dy
+        far, far_d = None, eps
+        for q in range(i + 1, j):
+            px, py = points[q][0] * _KX, points[q][1] * _KY
+            t = 0 if L == 0 else max(0, min(1, ((px - ax) * dx + (py - ay) * dy) / L))
+            d = math.hypot(px - ax - t * dx, py - ay - t * dy)
+            if d > far_d:
+                far, far_d = q, d
+        if far is not None:
+            keep.add(far)
+            stack += [(i, far), (far, j)]
+    return [points[k] for k in sorted(keep)]
+
+
+def _pack(coords: list, origin: tuple) -> list:
+    """One ring or line as origin-relative, then delta, whole microdegrees."""
+    ox, oy = origin
+    out, px, py = [], None, None
+    for x, y in coords:
+        ix, iy = round(x * 1e6), round(y * 1e6)
+        if px is None:
+            out += [ix - ox, iy - oy]
+        elif (ix, iy) != (px, py):
+            out += [ix - px, iy - py]
+        px, py = ix, iy
+    return out
+
+
+def _unpack(flat: list, origin: tuple) -> list:
+    ox, oy = origin
+    x, y = flat[0] + ox, flat[1] + oy
+    pts = [(x / 1e6, y / 1e6)]
+    for i in range(2, len(flat), 2):
+        x += flat[i]
+        y += flat[i + 1]
+        pts.append((x / 1e6, y / 1e6))
+    return pts
+
+
+def unpack_polygons(packed: list, origin: tuple) -> list:
+    """[[ring, ring…], …] packed → GeoJSON MultiPolygon coordinates, closed."""
+    out = []
+    for poly in packed:
+        rings = []
+        for flat in poly:
+            r = _unpack(flat, origin)
+            rings.append(r + [r[0]])
+        out.append(rings)
+    return out
+
+
+def _pack_polygons(polys: list, origin: tuple, eps: float) -> list:
+    out = []
+    for poly in polys:
+        rings = []
+        for ring in poly:
+            r = _dp_m(ring, eps)
+            if r and r[0] == r[-1]:
+                r = r[:-1]
+            if len(r) >= 3:
+                rings.append(_pack(r, origin))
+        if rings:
+            out.append(rings)
+    return out
+
+
+def _bbox(polys: list) -> tuple:
+    xs = [p[0] for poly in polys for ring in poly for p in ring]
+    ys = [p[1] for poly in polys for ring in poly for p in ring]
+    return min(xs), min(ys), max(xs), max(ys)
+
+
+def _in_ring(x, y, ring) -> bool:
+    inside = False
+    for (x1, y1), (x2, y2) in zip(ring, ring[1:]):
+        if (y1 > y) != (y2 > y) and x < (x2 - x1) * (y - y1) / (y2 - y1) + x1:
+            inside = not inside
+    return inside
+
+
+def polygons_contain(polys: list, x: float, y: float) -> bool:
+    return any(_in_ring(x, y, p[0]) and not any(_in_ring(x, y, h) for h in p[1:])
+               for p in polys)
+
+
+def _fetch_all(dataset: str, select: str, where: str, page: int = 50000) -> list:
+    rows, offset = [], 0
+    while True:
+        chunk = api_get(dataset, {"$select": select, "$where": where, "$order": ":id",
+                                  "$limit": page, "$offset": offset}, budget=900)
+        rows += chunk
+        print(f"    {dataset}: {len(rows)} rows", flush=True)
+        if len(chunk) < page:
+            return rows
+        offset += page
+
+
+def _dump_compact(path: Path, obj) -> int:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    text = json.dumps(obj, separators=(",", ":"), ensure_ascii=False) + "\n"
+    path.write_text(text, encoding="utf-8")
+    return len(text.encode())
+
+
+def cmd_lots(args) -> int:
+    """Refresh shared/map/ — the homepage map's neighborhoods, streets and lots."""
+    retrieved = args.retrieved or date.today().isoformat()
+    origin = (-122520000, 37700000)
+    print("==> neighborhoods")
+    label, field, geom_key = BOUNDARY_DATASETS[DS_ANALYSIS_NEIGHBORHOODS]
+    nh = api_get(DS_ANALYSIS_NEIGHBORHOODS, {"$select": f"{field},{geom_key}", "$limit": 100})
+    areas = []
+    for r in sorted(nh, key=lambda r: r[field]):
+        g = r[geom_key]
+        polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
+        areas.append({"slug": slugify(r[field]), "name": r[field], "polys": polys,
+                      "bbox": _bbox(polys)})
+    print(f"    {len(areas)} {label}")
+
+    def area_of(x, y):
+        for a in areas:
+            b = a["bbox"]
+            if b[0] <= x <= b[2] and b[1] <= y <= b[3] and polygons_contain(a["polys"], x, y):
+                return a["slug"]
+        return None
+
+    print("==> lots")
+    parcels = _fetch_all(DS_PARCELS, "mapblklot,blklot,zoning_code,shape", "active=true")
+    lots, seen = {a["slug"]: [] for a in areas}, set()
+    public = {(r.get("mapblklot") or r["blklot"]) for r in parcels
+              if (r.get("zoning_code") or "").startswith("P")}
+    outside = 0
+    for r in sorted(parcels, key=lambda r: r.get("blklot") or ""):
+        m = r.get("mapblklot") or r.get("blklot")
+        if not m or m in seen or not r.get("shape"):
+            continue
+        seen.add(m)   # condo units share their building's map lot and outline
+        polys = r["shape"]["coordinates"] if r["shape"]["type"] == "MultiPolygon" \
+            else [r["shape"]["coordinates"]]
+        b = _bbox(polys)
+        a = area_of((b[0] + b[2]) / 2, (b[1] + b[3]) / 2)
+        # An L-shaped or sliver lot can centre in the street beside it; then
+        # the first of its corners that lands in a neighborhood decides.
+        for x, y in ([] if a else polys[0][0]):
+            a = area_of(x, y)
+            if a:
+                break
+        if not a:
+            outside += 1
+            continue
+        packed = _pack_polygons(polys, origin, LOT_TOLERANCE_M)
+        if packed:
+            lots[a].append([m, 1 if m in public else 0, packed])
+    total = 0
+    for slug, rows in lots.items():
+        total += _dump_compact(MAP_DIR / "lots" / f"{slug}.json", {"o": list(origin), "lots": rows})
+    print(f"    {len(seen)} lots, {outside} outside every neighborhood, {total / 1e6:.1f} MB")
+
+    print("==> streets")
+    rows = _fetch_all(DS_STREETS, "streetname,layer,classcode,line", "active=true")
+    names, idx, streets = [], {}, []
+    for r in rows:
+        if r.get("layer") in STREET_SKIP_LAYERS or not r.get("line"):
+            continue
+        g = r["line"]
+        name = re.sub(r"\b(\d+)(St|Nd|Rd|Th)\b", lambda m: m[1] + m[2].lower(),
+                      (r.get("streetname") or "").title())
+        if name not in idx:
+            idx[name] = len(names)
+            names.append(name)
+        for line in g["coordinates"] if g["type"] == "MultiLineString" else [g["coordinates"]]:
+            streets.append([idx[name], int(r.get("classcode") or 5),
+                            _pack(_dp_m(line, STREET_TOLERANCE_M), origin)])
+    n = _dump_compact(MAP_DIR / "streets.json", {"o": list(origin), "names": names, "s": streets})
+    print(f"    {len(streets)} segments, {n / 1e6:.1f} MB")
+
+    sources = {
+        "areas": {"dataset": label, "url": f"https://data.sf.gov/d/{DS_ANALYSIS_NEIGHBORHOODS}"},
+        "lots": {"dataset": "Parcels — Active and Retired", "url": f"https://data.sf.gov/d/{DS_PARCELS}",
+                 "query": f"https://data.sf.gov/resource/{DS_PARCELS}.json?$where=active=true"},
+        "streets": {"dataset": "Streets — Active and Retired", "url": f"https://data.sf.gov/d/{DS_STREETS}",
+                    "query": f"https://data.sf.gov/resource/{DS_STREETS}.json?$where=active=true"},
+    }
+    n = _dump_compact(MAP_DIR / "areas.json", {
+        "retrieved": retrieved, "sources": sources, "o": list(origin),
+        "areas": [{"slug": a["slug"], "name": a["name"],
+                   "g": _pack_polygons(a["polys"], origin, AREA_TOLERANCE_M)} for a in areas]})
+    print(f"==> areas.json {n / 1e3:.0f} KB, retrieved {retrieved}")
+    return 0
+
+
+def read_lot_cache() -> tuple[dict, dict]:
+    """(areas by slug, lots by id) from shared/map/, unpacked.
+
+    Each lot: {"area", "z", "polys", "bbox"}. Empty when there is no cache yet."""
+    path = MAP_DIR / "areas.json"
+    if not path.exists():
+        return {}, {}
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    areas, lots = {}, {}
+    for a in doc["areas"]:
+        polys = unpack_polygons(a["g"], tuple(doc["o"]))
+        areas[a["slug"]] = {**a, "polys": polys, "bbox": _bbox(polys)}
+        f = MAP_DIR / "lots" / f"{a['slug']}.json"
+        if not f.exists():
+            continue
+        lf = json.loads(f.read_text(encoding="utf-8"))
+        for m, z, packed in lf["lots"]:
+            polys = unpack_polygons(packed, tuple(lf["o"]))
+            lots[m] = {"area": a["slug"], "z": z, "polys": polys, "bbox": _bbox(polys)}
+    return areas, lots
+
+
+# --------------------------------------------------------------------------
 # Historic-district hubs
 # --------------------------------------------------------------------------
 # The fourth page type, and the only aggregation on this site that isn't the
@@ -8323,6 +8579,13 @@ def main() -> int:
     p.add_argument("--retrieved", default=None,
                    help="retrieval date to record (default: today)")
     p.set_defaults(fn=cmd_boundaries)
+
+    p = sub.add_parser("lots",
+                       help="refresh shared/map/ — the homepage map's neighborhoods, "
+                            "streets and lots, from DataSF")
+    p.add_argument("--retrieved", default=None,
+                   help="retrieval date to record (default: today)")
+    p.set_defaults(fn=cmd_lots)
 
     p = sub.add_parser("city-map",
                        help="write the map of every neighborhood's boundary into "

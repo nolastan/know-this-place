@@ -99,7 +99,7 @@ def check_html(html_path: Path, html: str, is_address: bool) -> None:
     # module and the JSON-LD data block. Guards the content-stays-in-HTML rule.
     #
     # The homepage is the one deliberate exception: it is a map, not a content
-    # page, so it carries Mapbox GL JS and its own init script. Nothing under
+    # page, so it carries MapLibre GL JS and its own init script. Nothing under
     # san-francisco/ may do this — a page whose facts render only in JS is
     # invisible to search, which is the whole point of the rule.
     if rel_dir != "/":
