@@ -1,18 +1,18 @@
-# Put deploy-preview links in the body of every Know This Photo PR.
+# Point the page link in every Know This Photo PR at the deploy preview.
 #
 # The app opens its PR before GitHub has given it a number, so the body it
 # writes can only link the page on knowthis.place, which still shows the old
 # photo (or Street View) until the PR is merged. Netlify builds every PR at a
 # predictable address, `https://deploy-preview-<N>--knowthisplace.netlify.app`
-# (netlify.toml), so once the number exists this workflow adds a "Preview"
-# section linking each page the PR changes, and its photo, on that preview.
+# (netlify.toml), so once the number exists this workflow swaps that link for
+# the same page on the preview. One link, nothing added: Stan asked for the
+# body to stay that simple.
 #
-# The section sits between two markers and is rewritten in place, so running
-# again (a new push, or the manual backfill below) never duplicates it. It
-# does not wait for Netlify: the links are right from the start and open as
-# soon as the preview has built, a few minutes after the push.
+# It does not wait for Netlify: the link is right from the start and opens
+# once the preview has built, a few minutes after the push. Running again
+# finds no production link left and changes nothing.
 #
-# Run it by hand (Actions → preview-links → Run workflow) to backfill every
+# Run it by hand (Actions → preview-links → Run workflow) to update every
 # open `photo/` PR, e.g. the ones opened before this workflow existed.
 name: preview-links
 
@@ -32,7 +32,7 @@ concurrency:
 jobs:
   links:
     # Only the app's branches. Agents add their own preview links (AGENTS.md
-    # → Git and PR conventions), choosing the pages worth looking at.
+    # → Git and PR conventions).
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (startsWith(github.head_ref, 'photo/') &&
@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Write the preview section
+      - name: Point the page link at the preview
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -51,71 +51,29 @@ jobs:
 
           REPO = os.environ["GH_REPO"]
           PREVIEW = "https://deploy-preview-{n}--knowthisplace.netlify.app"
-          START, END = "<!-- preview-links -->", "<!-- /preview-links -->"
+          # The app's page link, and the section an earlier version of this
+          # workflow added (removed so the body keeps the one link).
+          PAGE_LINK = re.compile(r"\]\(https://knowthis\.place(/[^)\s]*)\)")
+          OLD_SECTION = re.compile(
+              r"\n*<!-- preview-links -->.*?<!-- /preview-links -->\n*", re.S)
 
           def api(*args):
               out = subprocess.run(["gh", "api", *args], check=True,
                                    capture_output=True, text=True).stdout
               return json.loads(out) if out.strip() else None
 
-          def raw(path, ref):
-              return subprocess.run(
-                  ["gh", "api", "-H", "Accept: application/vnd.github.raw+json",
-                   f"repos/{REPO}/contents/{path}?ref={ref}"],
-                  check=True, capture_output=True, text=True).stdout
-
-          def section(n, head):
-              base = PREVIEW.format(n=n)
-              files = api("--paginate", f"repos/{REPO}/pulls/{n}/files?per_page=100")
-              names = {f["filename"] for f in files if f["status"] != "removed"}
-              lines = []
-              for name in sorted(names):
-                  directory, _, leaf = name.rpartition("/")
-                  if leaf not in ("data.json", "place.json"):
-                      continue
-                  try:
-                      page = json.loads(raw(name, head))
-                  except (subprocess.CalledProcessError, ValueError):
-                      continue
-                  path = page.get("path") or f"/{directory}/"
-                  title = page.get("name") or (page.get("address") or path).split(",")[0]
-                  line = f"- [{title}]({base}{path})"
-                  if f"{directory}/assets/photo.jpg" in names:
-                      line += f" · [photo]({base}/{directory}/assets/photo.jpg)"
-                  lines.append(line)
-              if not lines:
-                  return None
-              return "\n".join([
-                  START,
-                  f"**Preview:** see the change on [this PR's deploy preview]({base}/) "
-                  "before merging. It opens once Netlify has built it, a few "
-                  "minutes after each push.",
-                  "",
-                  *lines,
-                  END,
-              ])
-
           def update(pr):
               n, body = pr["number"], pr.get("body") or ""
-              new = section(n, pr["head"]["sha"])
-              if new is None:
-                  print(f"#{n}: no page changed; leaving the body alone")
-                  return
-              block = re.compile(re.escape(START) + r".*?" + re.escape(END), re.S)
-              if block.search(body):
-                  updated = block.sub(lambda _: new, body, count=1)
-              else:
-                  # After the opening paragraph ("Adds a photo of …"), so the
-                  # preview is the first thing a reviewer reaches.
-                  first, sep, rest = body.partition("\n\n")
-                  updated = f"{first}\n\n{new}\n\n{rest}" if sep else f"{body}\n\n{new}"
+              base = PREVIEW.format(n=n)
+              updated = OLD_SECTION.sub("\n\n", body)
+              updated = PAGE_LINK.sub(lambda m: f"]({base}{m.group(1)})", updated, count=1)
               if updated == body:
-                  print(f"#{n}: already current")
+                  print(f"#{n}: already links the preview")
                   return
               subprocess.run(["gh", "api", "-X", "PATCH", f"repos/{REPO}/pulls/{n}",
                               "-f", f"body={updated}"], check=True,
                              capture_output=True)
-              print(f"#{n}: preview links written")
+              print(f"#{n}: page link now points at the preview")
 
           if os.environ.get("PR"):
               update(api(f"repos/{REPO}/pulls/{os.environ['PR']}"))

@@ -359,7 +359,7 @@ full schema, with the rules for `permits` / `permit_summary`, `hook`,
   deploy preview**, `https://deploy-preview-<N>--knowthisplace.netlify.app<page path>`
   with `<N>` the PR number and the page path from `data.json`'s `path`. Three
   to six pages representative of the change, not every page. Open the PR, then
-  edit its body to add them. (Know This Photo PRs get theirs from
+  edit its body to add them. (Know This Photo PRs get their one link from
   `.github/workflows/preview-links.yml`.) No table of pages created, edited or published at
   the top of the body; the counts fit in a sentence.
 - One concern per PR. Never push to `main` directly.
