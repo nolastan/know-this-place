@@ -691,10 +691,26 @@ TYPE_ICON = {
 }
 
 
+def page_type(rec: dict) -> str:
+    """What the page is, for its hero, its hook and its glyph: the building
+    type off the assessor's class — or, on a parcel that is wholly one park or
+    plaza (`parcel_place`), what kind of place it is. The roll calls Alta Plaza
+    Park a vacant lot; the page says what a reader finds there."""
+    place = parcel_place(rec)
+    if place:
+        return place_type_label({"type": place[2]})
+    p = rec.get("parcel", {})
+    return building_type(p.get("property_class"), dwelling_units(p))
+
+
 def building_icon(btype: str) -> str:
     """The `TYPE_ICON` glyph for a `building_type` phrase."""
     if btype in TYPE_ICON:
         return TYPE_ICON[btype]
+    # A park-headed page (`page_type`) takes the vacant lot's tree: it is
+    # the same land, now called what it is.
+    if btype in {place_type_label({"type": t}) for _p, _n, t, _a in place_index()}:
+        return TYPE_ICON["Assessor class: vacant lot"]
     if "apartment building" in btype.lower():
         return "hgi-building-02"
     if "ground-floor store" in btype:
@@ -1765,7 +1781,8 @@ def building_name(rec: dict) -> str | None:
     "Garcia & Maggini Warehouse" is what the city calls 128 King Street.
     """
     name = ((rec.get("building") or {}).get("name")
-            or (rec.get("city_landmark") or {}).get("name") or "")
+            or (rec.get("city_landmark") or {}).get("name")
+            or (parcel_place(rec) or ("", ""))[1] or "")
     name = re.sub(r"\s+", " ", name).strip()
     return name if name and name.lower() != page_title(rec).lower() else None
 
@@ -1780,7 +1797,7 @@ def hero_lines(rec: dict) -> tuple[str, str]:
     if name:
         return name, title
     p = rec.get("parcel", {})
-    return title, building_type(p.get("property_class"), dwelling_units(p))
+    return title, page_type(rec)
 
 
 def meta_description(rec: dict) -> str:
@@ -1789,7 +1806,7 @@ def meta_description(rec: dict) -> str:
     where = f"{name} ({page_title(rec)})" if name else page_title(rec)
     bits = [f"{where}, San Francisco:"]
     year = p.get("year_built")
-    btype = building_type(p.get("property_class"), dwelling_units(p)).lower()
+    btype = page_type(rec).lower()
     article = article_for(year, btype)
     bits.append(f"{article} {year} {btype}" if year else f"{article} {btype}")
     dist = district_of(rec).get("name")
@@ -1807,7 +1824,7 @@ def heading_html(rec: dict, heading: str) -> str:
     if not building_name(rec):
         return f"<h1>{esc(heading)}</h1>"
     p = rec.get("parcel", {})
-    btype = building_type(p.get("property_class"), dwelling_units(p))
+    btype = page_type(rec)
     return (f'<h1 class="named"><i class="hgi-stroke {building_icon(btype)} type-icon" '
             f'role="img" aria-label="{esca(btype)}" title="{esca(btype)}"></i>'
             f'{esc(heading)}</h1>')
@@ -1819,7 +1836,7 @@ def named_icon(rec: dict) -> str:
     if not building_name(rec):
         return ""
     p = rec.get("parcel", {})
-    return building_icon(building_type(p.get("property_class"), dwelling_units(p)))
+    return building_icon(page_type(rec))
 
 
 def named_link_text(name: str | None, icon: str, address: str) -> str:
@@ -4359,6 +4376,27 @@ def places_on_parcel(apn: str) -> list:
             if apn and apn in parcels]
 
 
+def parcel_place(rec: dict) -> tuple | None:
+    """(path, name, type) of the one place a parcel *is*, else None.
+
+    A parcel the roll classes as a vacant lot, carrying exactly one place that
+    covers no other parcel, is that park or plaza and nothing else: 2501–2599
+    Jackson Street is Alta Plaza Park. Its address page is headed by the place
+    and typed as it (`building_name`, `page_type`), instead of reading as an
+    empty lot with the park in a panel. A parcel with a building on it — a
+    library, a clubhouse — or shared with other places keeps its own identity
+    and the "Public space on this parcel" panel.
+    """
+    if "vacant lot" not in (rec.get("parcel", {}).get("property_class") or "").lower():
+        return None
+    apn = (rec.get("apn") or "").replace("-", "")
+    hits = [(path, name, ptype, parcels) for path, name, ptype, parcels
+            in place_index() if apn and apn in parcels]
+    if len(hits) != 1 or len(hits[0][3]) != 1 or not hits[0][1]:
+        return None
+    return hits[0][:3]
+
+
 def place_panel_html(rec: dict, indent: str) -> str:
     """On an address page: the parks and public spaces on this parcel.
 
@@ -4369,6 +4407,17 @@ def place_panel_html(rec: dict, indent: str) -> str:
     places = places_on_parcel(rec.get("apn"))
     if not places:
         return ""
+    # A page headed by its place still needs the door to the place's own page:
+    # its facilities, its area and the Rec & Park record live there.
+    own = parcel_place(rec)
+    if own:
+        return (f'{indent}<section class="panel">\n'
+                f'{indent}  <h3>Recreation and Park record</h3>\n'
+                f'{indent}  <dl class="speclist">\n'
+                f'{indent}    <div class="spec"><span class="ic ic-pin"></span>'
+                f'<span class="spec-k"><a href="{esca(own[0])}">{esc(own[1])}</a></span>'
+                f'<span class="spec-v">Facilities and area</span></div>\n'
+                f'{indent}  </dl>\n{indent}</section>\n')
     rows = "\n".join(
         f'{indent}    <div class="spec"><span class="ic ic-pin"></span>'
         f'<span class="spec-k"><a href="{esca(path)}">{esc(name)}</a></span>'
@@ -5444,7 +5493,7 @@ def hook_for(rec: dict, with_district: bool = True) -> str:
         return rec["hook"]
     p = rec.get("parcel", {})
     year = p.get("year_built")
-    btype = building_type(p.get("property_class"), dwelling_units(p)).lower()
+    btype = page_type(rec).lower()
     article = article_for(year, btype).capitalize()
     head = f"{article} {year} {btype}" if year else f"{article} {btype}"
     dist = district_of(rec).get("name") if with_district else None

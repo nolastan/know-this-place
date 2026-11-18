@@ -491,7 +491,14 @@ public spaces" — generated, like its street list, in both `index.md` and
   keeps the assessor's and the permit office's record of the land; the place
   page is the park, and lists the parcels it covers. An address page whose
   parcel carries a place shows it in a "Public space on this parcel" panel, so
-  a reader who lands on 333 Post Street looking for Union Square finds it. A
+  a reader who lands on 333 Post Street looking for Union Square finds it.
+  **A parcel that is wholly one place is headed as that place**: when the roll
+  classes it a vacant lot and it carries exactly one place covering no other
+  parcel (2501–2599 Jackson Street is Alta Plaza Park), its address page takes
+  the place's name and type (`seed_pages.parcel_place`, `page_type`) instead
+  of reading "Assessor class: vacant lot", and the panel becomes a link to the
+  place's Recreation and Park record. A parcel with a building on it, or
+  shared by several places, keeps its own heading. A
   place that shares a parcel with another says so; the page never claims one
   park is part of another on the strength of a shared parcel alone.
 - **Golden Gate Park is a neighborhood directory, and its hub is the park.**
