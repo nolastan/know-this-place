@@ -6322,7 +6322,11 @@ def showcase_entries(recs: list) -> list:
     return named
 
 
-def overview_html(area_dir: Path, hub: dict, heading: str) -> str:
+def overview_html(area_dir: Path, hub: dict, heading: str, static_map: bool = True) -> str:
+    # `static_map` False is a hub that gets the homepage's live map laid over
+    # it (map_into): the SVG "Map" section would repeat it, and the numbers on
+    # the named buildings only key that section's marks, so both go.
+
     city_slug = area_dir.parent.name
     pages = overview_pages(city_slug)
     boundary = hub.get("boundary")
@@ -6355,7 +6359,7 @@ def overview_html(area_dir: Path, hub: dict, heading: str) -> str:
     named = showcase_entries(addresses)
     cards, rest = named[:SHOWCASE_CARDS], named[SHOWCASE_CARDS:]
 
-    if frame_pts:
+    if frame_pts and static_map:
         frame = area_frame(frame_pts)
         project = _projector(frame)
         w, h = frame["w"], frame["h"]
@@ -6415,8 +6419,8 @@ def overview_html(area_dir: Path, hub: dict, heading: str) -> str:
             items.append(
                 f'    <li>\n'
                 f'      <a href="{esca(e["path"])}">\n'
-                f'        <span class="showcase-num">{i}</span>\n'
-                f'{facade_media(rec, e["name"], cls="media", indent="        ", caption=False)}\n'
+                + (f'        <span class="showcase-num">{i}</span>\n' if static_map else '')
+                + f'{facade_media(rec, e["name"], cls="media", indent="        ", caption=False)}\n'
                 f'        <span class="showcase-name">{esc(e["name"])}</span>\n'
                 f'        <span class="showcase-sub">{esc(" · ".join(bits))}</span>\n'
                 f'      </a>\n'
@@ -6444,7 +6448,8 @@ def overview_into(text: str, area_dir: Path) -> str:
     """
     m = re.search(r"<h1>(.*?)</h1>", text, re.S)
     heading = html.unescape(m.group(1)) if m else area_dir.name
-    block = overview_html(area_dir, read_hub_json(area_dir), heading)
+    block = overview_html(area_dir, read_hub_json(area_dir), heading,
+                          static_map=live_map_slug(area_dir) is None)
     region = re.compile(rf"\n*[ \t]*{re.escape(OVERVIEW_START)}.*?{re.escape(OVERVIEW_END)}",
                         re.S)
     if region.search(text):
@@ -6481,6 +6486,12 @@ def _map_parts() -> tuple[dict, str, str]:
     return by_hub, region(MAP_HEAD), region(MAP_SHELL)
 
 
+def live_map_slug(area_dir: Path) -> str | None:
+    """The Analysis Neighborhood a hub is on the homepage map as, if any."""
+    rel = area_dir.resolve().relative_to(ROOT)
+    return _map_parts()[0].get(f"/{rel.as_posix()}/")
+
+
 def map_into(text: str, area_dir: Path) -> str:
     """`text`, a neighborhood hub's HTML, with the homepage map laid over it.
 
@@ -6493,9 +6504,8 @@ def map_into(text: str, area_dir: Path) -> str:
     hub that is one of the city's Analysis Neighborhoods has a place on the
     map; any other hub is returned untouched.
     """
-    by_hub, head, shell = _map_parts()
-    rel = area_dir.resolve().relative_to(ROOT)
-    slug = by_hub.get(f"/{rel.as_posix()}/")
+    _, head, shell = _map_parts()
+    slug = live_map_slug(area_dir)
     if not slug or MAP_SHELL[0] in text:
         return text
     m = re.search(r"<h1>(.*?)</h1>", text, re.S)
