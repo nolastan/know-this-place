@@ -580,28 +580,15 @@ main > .panel + .panel { margin-top: 1.25rem; }
   color: var(--muted);
 }
 
-/* ============================================================= current occupant
-   The business trading from the building today, as an infobox heading the
-   aside. It borrows the district panel's grammar — muted eyebrow, the name as
-   the serif headline, what it is on a muted line beneath — and a speclist for
-   the hours. A shared kitchen lists several brands at one door, so a panel may
-   hold several .occupant groups, split by a hairline. An offer or a read date
+/* ============================================================= businesses here
+   The businesses trading from the building today, from `businesses` and
+   `occupants` alike, as one panel under the hero's heading. Muted eyebrow; the
+   name as a serif headline led by its kind's glyph; what it is and how long it
+   has been here on one muted line; a speclist for the hours. Several
+   businesses are .business groups split by a hairline. An offer or a read date
    only one of several groups has earned sits inside that group, so neither is
    read as belonging to the business above it; one they all share, or a lone
    business's own, closes the panel instead. */
-.panel-occupant > .occupant-kind {
-  margin: 0 0 0.3rem;
-  font-family: var(--sans);
-  font-size: 0.69rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-/* The businesses trading here today, under the hero's heading (`businesses`).
-   The label is the occupant panel's; the name is a serif headline led by its
-   kind's glyph, and what it is and how long it has been here are one muted
-   line, at the weight of a fact rather than a claim. */
 .hero .panel-business { margin: 0 0 1.1rem; max-width: 30rem; }
 .panel-business > .business-label {
   margin: 0 0 0.3rem;
@@ -616,20 +603,10 @@ main > .panel + .panel { margin-top: 1.25rem; }
 .business > h2 { margin: 0; font-family: var(--serif); font-size: 1.45rem; line-height: 1.2; font-weight: 650; color: var(--ink); }
 .business > h2 .type-icon { color: var(--accent); font-size: 0.85em; margin-right: 0.3em; vertical-align: -0.05em; }
 .vtl-desc .type-icon { color: var(--accent); margin-right: 0.3em; vertical-align: -0.08em; }
+.business-at { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--ink); }
+.business > .speclist { margin: 0.8rem 0 0; }
+.business .spec-k, .business .spec-v span { white-space: nowrap; }
 .business-meta { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); }
-.occupant + .occupant { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
-.occupant > h3 {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 1.35rem;
-  line-height: 1.2;
-  font-weight: 650;
-  color: var(--ink);
-}
-.occupant-at { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--ink); }
-.occupant-kinds { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); }
-.occupant > .speclist { margin: 0.8rem 0 0; }
-.occupant .spec-k, .occupant .spec-v span { white-space: nowrap; }
 .occupant-updated { margin: 0.9rem 0 0; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
 /* The one call to action on an address page, so it gets the accent: a
    full-width outlined button, with the referral disclosure beneath it. An

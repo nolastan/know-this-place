@@ -215,7 +215,8 @@ own.
 ### `occupants`
 
 **The businesses trading from the building today**, one entry per merchant,
-rendered as one "Current occupant" panel heading the aside. `name`, `kinds`
+rendered in the one business panel under the page's heading, beside the
+register's `businesses` (see below; a business both name is one entry there). `name`, `kinds`
 (what the business is — "Yoga", "Fitness" — or `cuisines` where a food
 directory wrote them; both render as the muted line under the name),
 `opening_hours` (schema.org strings, as the directory publishes them — the
@@ -274,7 +275,10 @@ is closed (`seed_pages.BUSINESS_KEYS`): there is nowhere to put an owner.
   registration at a sale or a renaming as readily as at a closure.
 - **Not `occupants`.** `occupants` is today's listing in a merchant directory,
   with hours and an offer, replaced wholesale on every read. `businesses` is
-  the register's history, dated. A business can be in both.
+  the register's history, dated. Both render in the one panel, and a business
+  both name (letters and digits compared) is one group there: the register's
+  kind and year, the directory's hours and offer. Directory kinds get glyphs
+  from the same `KIND_ICON`; a food directory's cuisines get `CUISINE_ICON`.
 
 ### `photo`
 

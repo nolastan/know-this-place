@@ -2,7 +2,8 @@
 
 Putting the business that trades from a building today on that building's
 page — from ordering apps and merchant directories — as the page's
-`occupants`, rendered as the "Current occupant" panel at the top of the aside.
+`occupants`, rendered in the business panel under the page's heading
+(shared/BLOCKS.md → Businesses here), with the register's `businesses`.
 
 Read the root [AGENTS.md](../AGENTS.md) first; its privacy limits bind here
 unchanged. The key and its block are specified in

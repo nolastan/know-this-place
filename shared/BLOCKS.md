@@ -612,7 +612,15 @@ not. `<h3>` is the space's own name from the inventory; the rows are a plain
 The inventory's `year` is the year of the **requirement**, not an opening date —
 label that row "Required from", and never render it as when the space opened.
 
-### Current occupant — `.panel-occupant`
+### Current occupant — now part of `.panel-business`
+**This panel no longer stands alone.** Since PR #640 a directory's
+`occupants` render inside the business panel under the heading (Businesses
+here, below), one `.business` group per merchant, and a business both the
+register and a directory name is one group. Everything below about hours, the
+read date and the offers still holds there; read `.occupant` as `.business`
+and the panel's eyebrow as `.business-label`. What follows is the rule set as
+first written for the aside panel.
+
 The businesses trading from the building today, from `occupants`, as an
 infobox at the **top** of the aside. **One panel per building, not per
 merchant**: a shared kitchen lists three brands at one door, and three panels
@@ -693,8 +701,9 @@ control into the markup.
 ```
 
 ### Businesses here — `.panel-business`
-The businesses trading from the building today (`businesses` entries with no
-`closed`), as a panel **inside the hero, under the `.sub` line** and above the
+The businesses trading from the building today — `businesses` entries with no
+`closed`, and every `occupants` entry a merchant directory lists, one group
+per business where both name it — as a panel **inside the hero, under the `.sub` line** and above the
 tags: a reader from a business's map listing finds it before the parcel. The
 label is the occupant panel's eyebrow, "At this address" or, on a page whose
 heading is a range, the business's own door. Each business is an `<h2>` led by

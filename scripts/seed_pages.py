@@ -2372,17 +2372,33 @@ def timeline_html(rec: dict, indent: str) -> str:
 KIND_ICON = {
     "Dry cleaner": "hgi-hanger",
     "Laundry": "hgi-hanger",
+    "Hotel": "hgi-hotel-bell",
+    "Luggage storage": "hgi-luggage-01",
+    "Luggage": "hgi-luggage-01",
+    "Fitness": "hgi-dumbbell-01",
+    "Gym": "hgi-dumbbell-01",
+    "Yoga": "hgi-yoga-mat",
+    "Coworking": "hgi-office",
+    "Office space": "hgi-office",
+    "Presale office": "hgi-office",
+    "Men's clothing": "hgi-shirt-01",
+    "Clothing": "hgi-shirt-01",
+    "Mattresses": "hgi-bed",
+    "Bedding": "hgi-bed",
 }
+# A food directory writes cuisines, not a kind, and every one of them is a
+# place to eat.
+CUISINE_ICON = "hgi-restaurant-01"
 
 
 def kind_icon(kind: str | None) -> str:
     return KIND_ICON.get((kind or "").split(" · ")[0], "hgi-store-01")
 
 
-def kind_glyph(kind: str | None) -> str:
+def kind_glyph(kind: str | None, icon: str | None = None) -> str:
     """A business kind's glyph, labelled for a screen reader."""
     label = esca(kind or "Business")
-    return (f'<i class="hgi-stroke {kind_icon(kind)} type-icon" role="img" '
+    return (f'<i class="hgi-stroke {icon or kind_icon(kind)} type-icon" role="img" '
             f'aria-label="{label}" title="{label}"></i>')
 
 
@@ -2433,35 +2449,124 @@ def business_items(rec: dict, indent: str) -> list:
     return items
 
 
-def business_card_html(rec: dict, indent: str) -> str:
-    """The businesses trading here today, in a panel under the heading.
+def name_key(name: str) -> str:
+    """A business name reduced to letters and digits, to tell whether the
+    register and a directory name the same business."""
+    return re.sub(r"[^a-z0-9]", "", (name or "").lower().replace("&", "and"))
 
-    Labelled "At this address" — or, on a page spanning several numbers, at the
-    business's own door ("At 4548 18th Street"), since the range in the heading
-    does not say which door it is. Each business is its kind's glyph, its name,
-    and a muted line: what it is and the year it opened here.
+
+def trading_rows(rec: dict) -> list:
+    """Everything trading here today, as one list: the register's open
+    `businesses`, then each `occupants` entry a directory lists. A business both
+    name is one row, with the register's kind and date and the directory's
+    hours and offer."""
+    occ = [o for o in (rec.get("occupants") or []) if o.get("name")]
+    by_key = {name_key(o["name"]): o for o in occ}
+    rows, used = [], set()
+    for b in current_businesses(rec):
+        o = by_key.get(name_key(b["name"]))
+        if o is not None:
+            used.add(id(o))
+        rows.append({"name": b["name"], "kind": b.get("kind"),
+                     "icon": kind_icon(b.get("kind")),
+                     "since": str(b["opened"])[:4] if b.get("opened") else None,
+                     "door": b.get("address"), "occ": o})
+    for o in occ:
+        if id(o) in used:
+            continue
+        kinds = o.get("kinds") or []
+        cuisines = o.get("cuisines") or []
+        kind = " · ".join(kinds or cuisines) or None
+        icon = (kind_icon(kinds[0]) if kinds else CUISINE_ICON if cuisines
+                else "hgi-store-01")
+        rows.append({"name": o["name"], "kind": kind, "icon": icon, "since": None,
+                     "door": o.get("listed_address"), "occ": o})
+    return rows
+
+
+def business_card_html(rec: dict, indent: str) -> str:
+    """The businesses trading here today, in one panel under the heading.
+
+    Two sources feed it and a reader sees one list: the register's open
+    `businesses` (what the business is and the year it opened here) and the
+    merchant directories' `occupants` (today's hours, and the directory's
+    referral offer). A reader who arrives from a business's map listing came
+    for the business, so it sits above the parcel's figures, not in the aside.
+
+    Labelled "At this address" — or, on a page spanning several numbers where
+    every business trades from one door, that door ("At 4548 18th Street"),
+    since the range in the heading does not say which. Where the businesses
+    use different doors, each says its own under its name, as long as it is
+    not the page's lead number.
+
+    The hours, the "Last updated" date and the offers keep the placement rules
+    the occupant panel worked out (see shared/BLOCKS.md): the date sits with
+    the hours it dates, and an offer only one business has earned sits under
+    that business, never under a neighbour's name.
     """
-    rows = current_businesses(rec)
+    rows = trading_rows(rec)
     if not rows:
         return ""
     title = page_title(rec)
+    here = {title, re.sub(r"^(\d+\w*)–\S+", r"\1", title)}
     ranged = "–" in title.split(" ", 1)[0]
-    doors = {b.get("address") for b in rows}
-    label = ("At " + rows[0]["address"] if ranged and len(doors) == 1 and rows[0].get("address")
-             else "At this address")
-    out = [f'{indent}<section class="panel panel-business" aria-label="{esca(label)}">\n'
-           f'{indent}  <p class="business-label">{esc(label)}</p>\n']
-    for b in rows:
-        kind = b.get("kind")
-        glyph = kind_glyph(kind)
-        meta = " · ".join(x for x in (
-            kind or "", f"since {str(b['opened'])[:4]}" if b.get("opened") else "") if x)
-        out.append(f'{indent}  <div class="business">\n'
-                   f'{indent}    <h2>{glyph}{esc(b["name"])}</h2>\n'
-                   + (f'{indent}    <p class="business-meta">{esc(meta)}</p>\n' if meta else "")
-                   + f'{indent}  </div>\n')
-    out.append(f'{indent}</section>\n')
-    return "".join(out)
+    doors = {r["door"] for r in rows}
+    one_door = len(doors) == 1 and rows[0]["door"]
+    label = f"At {rows[0]['door']}" if ranged and one_door else "At this address"
+    sources = {s["id"]: s for s in rec.get("sources") or []}
+    heads, dates, offers = [], [], {}
+    for r in rows:
+        o = r["occ"] or {}
+        door = r["door"]
+        if door in here or (ranged and one_door):
+            door = None
+        meta = " · ".join(x for x in (r["kind"] or "", f"since {r['since']}" if r["since"] else "") if x)
+        specs = []
+        if o.get("unit"):
+            specs.append(("ic-home", "Unit", esc(o["unit"])))
+        hours = hours_rows(o.get("opening_hours"))
+        specs += [("ic-clock", k, ", ".join(f"<span>{esc(x)}</span>" for x in v))
+                  for k, v in hours]
+        body = "".join(
+            f'{indent}      <div class="spec">{icon_html(i)}'
+            f'<span class="spec-k">{esc(k)}</span>'
+            f'<span class="spec-v">{v}</span></div>\n' for i, k, v in specs)
+        heads.append(
+            f'{indent}  <div class="business">\n'
+            f'{indent}    <h2>{kind_glyph(r["kind"], r["icon"])}{esc(r["name"])}</h2>\n'
+            + (f'{indent}    <p class="business-at">{esc(door)}</p>\n' if door else "")
+            + (f'{indent}    <p class="business-meta">{esc(meta)}</p>\n' if meta else "")
+            + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else ""))
+        src = sources.get(o.get("source")) or {}
+        dates.append(src["retrieved"] if (src.get("retrieved") and hours) else None)
+        for sid in [o.get("source"), *(o.get("also_listed_by") or [])]:
+            if sid in REFERRALS:
+                offers.setdefault(sid, []).append(o)
+    solo = ({sid for sid, listed in offers.items() if len(listed) == 1}
+            if len(rows) > 1 else set())
+    dated = [d for d in dates if d]
+    per_group = bool(dated) and len(rows) > 1 and (
+        len(dated) != len(rows) or len(set(dated)) > 1)
+    blocks = []
+    for r, head, when in zip(rows, heads, dates):
+        o = r["occ"] or {}
+        mine = [sid for sid in [o.get("source"), *(o.get("also_listed_by") or [])]
+                if sid in solo]
+        blocks.append(head
+                      + (f'{indent}    <p class="occupant-updated">Last updated '
+                         f'{esc(long_date(when))}</p>\n' if per_group and when else "")
+                      + "".join(offer_html(sid, offers[sid], indent + "    ") for sid in mine)
+                      + f'{indent}  </div>\n')
+    tail = ""
+    if dated and not per_group:
+        tail += (f'{indent}  <p class="occupant-updated">Last updated '
+                 f'{esc(long_date(max(dated)))}</p>\n')
+    for sid, listed in offers.items():
+        if sid not in solo:
+            tail += offer_html(sid, listed, indent + "  ")
+    return (f'{indent}<section class="panel panel-business" aria-label="{esca(label)}">\n'
+            f'{indent}  <p class="business-label">{esc(label)}</p>\n'
+            + "".join(blocks) + tail + f'{indent}</section>\n')
 
 
 # The three parts of the roll's secured value, in the order the pie draws them
@@ -3220,121 +3325,6 @@ def hours_rows(spec: list) -> list:
     if out and closed:
         out.append((days_label(closed), ["Closed"]))
     return out
-
-
-def occupant_panel_html(rec: dict, indent: str) -> str:
-    """`occupants` — the businesses trading from the building today.
-
-    One panel per building, not per merchant: a shared kitchen lists three
-    brands at one door, and three panels would repeat the same offer three
-    times. Each merchant is a name, its cuisines, and its hours; the panel
-    closes with the date the listing was read — but only where it published
-    hours, since that date is theirs and hours drift within days — and with
-    the referral offer when the source has one. An offer whose programme hands
-    out a code rather than a link that carries it puts the code where the
-    button would be, stating the offer over it, to copy.
-
-    One business is one entry even when two directories list it, so an entry
-    also carries `also_listed_by`: the other directories that list it, whose
-    offers belong on the panel beside its own. The entry's facts, and the date
-    under them, are `source`'s alone — the most recently read of them.
-    """
-    rows = [o for o in (rec.get("occupants") or []) if o.get("name")]
-    if not rows:
-        return ""
-    sources = {s["id"]: s for s in rec.get("sources") or []}
-    # A merchant at the page's own lead number needs no address row; one at
-    # 115 on the 111–117 New Montgomery page, or round the corner on another
-    # street, does — it says which door.
-    title = page_title(rec)
-    here = {title, re.sub(r"^(\d+\w*)–\S+", r"\1", title)}
-    heads, occ_dates, offers = [], [], {}
-    for o in rows:
-        specs = []
-        # The merchant's own door, where it isn't the page's: a plain line in
-        # ink under the name, since it says which door to walk up to.
-        listed = o.get("listed_address")
-        if listed in here:
-            listed = None
-        # A condominium building's page is the building's, so a merchant in one
-        # of its units says which.
-        if o.get("unit"):
-            specs.append(("ic-home", "Unit", esc(o["unit"])))
-        # Each shift is its own span so a narrow column breaks a split day
-        # between its shifts, never inside "11:30 am–3 pm".
-        hours = hours_rows(o.get("opening_hours"))
-        specs += [("ic-clock", k, ", ".join(f"<span>{esc(s)}</span>" for s in v))
-                  for k, v in hours]
-        body = "".join(
-            f'{indent}      <div class="spec">{icon_html(i)}'
-            f'<span class="spec-k">{esc(k)}</span>'
-            f'<span class="spec-v">{v}</span></div>\n' for i, k, v in specs)
-        # What the business is, on the muted line under its name. `kinds` is
-        # the general key — a yoga studio is not a cuisine — and `cuisines` is
-        # what the food directories write, kept as the fallback.
-        kinds = " · ".join(o.get("kinds") or o.get("cuisines") or [])
-        heads.append(
-            f'{indent}  <div class="occupant">\n'
-            f'{indent}    <h3>{esc(o["name"])}</h3>\n'
-            + (f'{indent}    <p class="occupant-at">{esc(listed)}</p>\n' if listed else "")
-            + (f'{indent}    <p class="occupant-kinds">{esc(kinds)}</p>\n' if kinds else "")
-            + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else ""))
-        src = sources.get(o.get("source")) or {}
-        # The date is the hours' — it is on the panel because hours drift. An
-        # entry with none omits it: "Last updated" over a name and an address
-        # would read as a claim about the tenancy, which it is not.
-        occ_dates.append(src["retrieved"] if (src.get("retrieved") and hours) else None)
-        # An offer belongs to a directory that lists the business, and a
-        # business listed by two directories has earned both buttons.
-        for sid in [o.get("source"), *(o.get("also_listed_by") or [])]:
-            if sid in REFERRALS:
-                offers.setdefault(sid, []).append(o)
-    kind = "Current occupant" if len(rows) == 1 else "Current occupants"
-    # An offer only one of the businesses has earned belongs under that
-    # business, not at the foot of the panel. Two merchants over one stack of
-    # buttons say nothing about which is whose, and a reader skimming takes the
-    # name directly above a button to be its owner — which put Ritual's
-    # gelateria offer under Hotel Triton on the 334–352 Grant Avenue page. An
-    # offer several of them share still closes the panel, because a shared
-    # kitchen trading as three brands must not print one directory's button
-    # three times.
-    # One business on the panel disambiguates itself, and moving its offer up
-    # into the group would only push "Last updated" — which dates the hours —
-    # below the button, where it would read as the offer's date instead.
-    solo = ({sid for sid, listed in offers.items() if len(listed) == 1}
-            if len(rows) > 1 else set())
-    # The date belongs to the hours it dates, so where it does not cover the
-    # whole panel it goes inside the group whose hours it describes. One
-    # "Last updated" closing a panel of two reads as the panel's own, and on
-    # the 334–352 Grant Avenue page it dated Amorino Gelato's hours while
-    # sitting under Hotel Triton, which publishes none at all. A date every
-    # business on the panel shares still closes it, so a shared kitchen's
-    # three brands do not print one read date three times.
-    dated = [d for d in occ_dates if d]
-    per_group = bool(dated) and len(rows) > 1 and (
-        len(dated) != len(rows) or len(set(dated)) > 1)
-    blocks = []
-    for o, head, when in zip(rows, heads, occ_dates):
-        mine = [sid for sid in [o.get("source"), *(o.get("also_listed_by") or [])]
-                if sid in solo]
-        blocks.append(head
-                      + (f'{indent}    <p class="occupant-updated">Last updated '
-                         f'{esc(long_date(when))}</p>\n'
-                         if per_group and when else "")
-                      + "".join(offer_html(sid, offers[sid], indent + "    ")
-                                for sid in mine)
-                      + f'{indent}  </div>\n')
-    tail = ""
-    if dated and not per_group:
-        tail += (f'{indent}  <p class="occupant-updated">Last updated '
-                 f'{esc(long_date(max(dated)))}</p>\n')
-    for sid, listed in offers.items():
-        if sid not in solo:
-            tail += offer_html(sid, listed, indent + "  ")
-    return (f'{indent}<section class="panel panel-occupant">\n'
-            f'{indent}  <p class="occupant-kind">{kind}</p>\n'
-            + "".join(blocks) + tail
-            + f'{indent}</section>\n')
 
 
 def offer_html(sid: str, listed: list, pad: str) -> str:
@@ -4257,8 +4247,11 @@ def render_html(rec: dict) -> str:
     # A reader arriving from a business's map listing searched for the
     # business, so the tab names it first ("C-H Cleaners, 4548–4554 18th
     # Street").
-    trading = [b["name"] for b in current_businesses(rec)]
-    tab_title = ", ".join(trading + [heading])
+    # Up to two names — a shared kitchen trading as three brands would bury
+    # the address — and never one the heading already says (Hotel Triton).
+    trading = [r["name"] for r in trading_rows(rec)
+               if name_key(r["name"]) not in name_key(heading)]
+    tab_title = ", ".join((trading if len(trading) <= 2 else trading[:2]) + [heading])
 
     # Panels belong beside the main column whenever there is a main column for
     # them to sit beside — the empty column a split risks is the left one, and a
@@ -4269,7 +4262,7 @@ def render_html(rec: dict) -> str:
                       or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
                       or survey_panel_html(rec, "") or residents_panel_html(rec, "")
-                      or occupant_panel_html(rec, "") or events_panel_html(rec, ""))
+                      or events_panel_html(rec, ""))
     # A rail holding nothing but the building's own year is not a column: it
     # would put one dot beside a full stack of panels. Those pages keep
     # stacking full width, as they did when the year was a tag in the hero.
@@ -4277,10 +4270,10 @@ def render_html(rec: dict) -> str:
                     or timeline_html(rec, "").count('<li class="vtl-item"') > 1)
     use_cols = has_panels and has_main
     ind = "      " if use_cols else "  "
-    # What trades from the building today heads the aside, like an infobox:
-    # it is the one panel a passer-by opening the page is most likely after.
-    # What is happening there next is its nearest relation, so events follow.
-    panels = (occupant_panel_html(rec, ind) + events_panel_html(rec, ind)
+    # What trades from the building today is not here: it heads the page,
+    # under the heading (`business_card_html`). What is happening there next
+    # heads the aside.
+    panels = (events_panel_html(rec, ind)
               + place_panel_html(rec, ind)
               + open_space_panel_html(rec, ind)
               + addresses_panel_html(rec, ind)
