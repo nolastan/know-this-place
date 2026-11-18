@@ -215,7 +215,7 @@ own.
 ### `occupants`
 
 **The businesses trading from the building today**, one entry per merchant,
-rendered in the one business panel under the page's heading, beside the
+rendered as business panels under the page's heading, one per business, beside the
 register's `businesses` (see below; a business both name is one entry there). `name`, `kinds`
 (what the business is — "Yoga", "Fitness" — or `cuisines` where a food
 directory wrote them; both render as the muted line under the name),
@@ -266,17 +266,16 @@ glyph is `KIND_ICON`'s, the way a building type's is `TYPE_ICON`'s), `address`
 is closed (`seed_pages.BUSINESS_KEYS`): there is nowhere to put an owner.
 
 - **An entry with no `closed` is trading today**, and heads the page in a panel
-  under the heading — "At this address", or "At 4548 18th Street" on a page
-  spanning several numbers — with its name in the tab title ahead of the
-  address. A reader who arrives from the business's map listing came for the
+  of its own under the heading, labelled with its door ("At 4548 18th
+  Street"), with its name in the tab title ahead of the address. A reader who arrives from the business's map listing came for the
   business.
 - **Every opening and change of ownership is a timeline item**, with the
   kind's glyph, dated to the month. A closing is not: the register closes a
   registration at a sale or a renaming as readily as at a closure.
 - **Not `occupants`.** `occupants` is today's listing in a merchant directory,
   with hours and an offer, replaced wholesale on every read. `businesses` is
-  the register's history, dated. Both render in the one panel, and a business
-  both name (letters and digits compared) is one group there: the register's
+  the register's history, dated. Both render as the same panels, and a business
+  both name (letters and digits compared) is one panel: the register's
   kind and year, the directory's hours and offer. Directory kinds get glyphs
   from the same `KIND_ICON`; a food directory's cuisines get `CUISINE_ICON`.
 

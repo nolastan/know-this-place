@@ -2485,41 +2485,31 @@ def trading_rows(rec: dict) -> list:
 
 
 def business_card_html(rec: dict, indent: str) -> str:
-    """The businesses trading here today, in one panel under the heading.
+    """The businesses trading here today, one panel each, under the heading.
 
-    Two sources feed it and a reader sees one list: the register's open
+    Two sources feed them and a reader sees one list: the register's open
     `businesses` (what the business is and the year it opened here) and the
     merchant directories' `occupants` (today's hours, and the directory's
     referral offer). A reader who arrives from a business's map listing came
     for the business, so it sits above the parcel's figures, not in the aside.
 
-    Labelled "At this address" — or, on a page spanning several numbers where
-    every business trades from one door, that door ("At 4548 18th Street"),
-    since the range in the heading does not say which. Where the businesses
-    use different doors, each says its own under its name, as long as it is
-    not the page's lead number.
-
-    The hours, the "Last updated" date and the offers keep the placement rules
-    the occupant panel worked out (see shared/BLOCKS.md): the date sits with
-    the hours it dates, and an offer only one business has earned sits under
-    that business, never under a neighbour's name.
+    Each panel is headed with the business's own door ("At 4548 18th Street"),
+    or the page's lead number where the source names none. "At this address"
+    read as unclear, and on a page spanning several numbers it did not say
+    which door. One business to a panel also settles whose an offer is: the
+    button and the "Last updated" date under a name can only be that
+    business's.
     """
     rows = trading_rows(rec)
     if not rows:
         return ""
     title = page_title(rec)
-    here = {title, re.sub(r"^(\d+\w*)–\S+", r"\1", title)}
-    ranged = "–" in title.split(" ", 1)[0]
-    doors = {r["door"] for r in rows}
-    one_door = len(doors) == 1 and rows[0]["door"]
-    label = f"At {rows[0]['door']}" if ranged and one_door else "At this address"
+    lead = re.sub(r"^(\d+\w*)–\S+", r"\1", title)
     sources = {s["id"]: s for s in rec.get("sources") or []}
-    heads, dates, offers = [], [], {}
+    out = []
     for r in rows:
         o = r["occ"] or {}
-        door = r["door"]
-        if door in here or (ranged and one_door):
-            door = None
+        label = f"At {r['door'] or lead}"
         meta = " · ".join(x for x in (r["kind"] or "", f"since {r['since']}" if r["since"] else "") if x)
         specs = []
         if o.get("unit"):
@@ -2528,45 +2518,26 @@ def business_card_html(rec: dict, indent: str) -> str:
         specs += [("ic-clock", k, ", ".join(f"<span>{esc(x)}</span>" for x in v))
                   for k, v in hours]
         body = "".join(
-            f'{indent}      <div class="spec">{icon_html(i)}'
+            f'{indent}    <div class="spec">{icon_html(i)}'
             f'<span class="spec-k">{esc(k)}</span>'
             f'<span class="spec-v">{v}</span></div>\n' for i, k, v in specs)
-        heads.append(
-            f'{indent}  <div class="business">\n'
-            f'{indent}    <h2>{kind_glyph(r["kind"], r["icon"])}{esc(r["name"])}</h2>\n'
-            + (f'{indent}    <p class="business-at">{esc(door)}</p>\n' if door else "")
-            + (f'{indent}    <p class="business-meta">{esc(meta)}</p>\n' if meta else "")
-            + (f'{indent}    <dl class="speclist">\n{body}{indent}    </dl>\n' if body else ""))
         src = sources.get(o.get("source")) or {}
-        dates.append(src["retrieved"] if (src.get("retrieved") and hours) else None)
-        for sid in [o.get("source"), *(o.get("also_listed_by") or [])]:
-            if sid in REFERRALS:
-                offers.setdefault(sid, []).append(o)
-    solo = ({sid for sid, listed in offers.items() if len(listed) == 1}
-            if len(rows) > 1 else set())
-    dated = [d for d in dates if d]
-    per_group = bool(dated) and len(rows) > 1 and (
-        len(dated) != len(rows) or len(set(dated)) > 1)
-    blocks = []
-    for r, head, when in zip(rows, heads, dates):
-        o = r["occ"] or {}
-        mine = [sid for sid in [o.get("source"), *(o.get("also_listed_by") or [])]
-                if sid in solo]
-        blocks.append(head
-                      + (f'{indent}    <p class="occupant-updated">Last updated '
-                         f'{esc(long_date(when))}</p>\n' if per_group and when else "")
-                      + "".join(offer_html(sid, offers[sid], indent + "    ") for sid in mine)
-                      + f'{indent}  </div>\n')
-    tail = ""
-    if dated and not per_group:
-        tail += (f'{indent}  <p class="occupant-updated">Last updated '
-                 f'{esc(long_date(max(dated)))}</p>\n')
-    for sid, listed in offers.items():
-        if sid not in solo:
-            tail += offer_html(sid, listed, indent + "  ")
-    return (f'{indent}<section class="panel panel-business" aria-label="{esca(label)}">\n'
+        # The date is the hours' — it is here because hours drift — so a
+        # business publishing none carries none.
+        when = src["retrieved"] if (src.get("retrieved") and hours) else None
+        offers = [sid for sid in [o.get("source"), *(o.get("also_listed_by") or [])]
+                  if sid in REFERRALS]
+        out.append(
+            f'{indent}<section class="panel panel-business" aria-label="{esca(r["name"])}">\n'
             f'{indent}  <p class="business-label">{esc(label)}</p>\n'
-            + "".join(blocks) + tail + f'{indent}</section>\n')
+            f'{indent}  <h2>{kind_glyph(r["kind"], r["icon"])}{esc(r["name"])}</h2>\n'
+            + (f'{indent}  <p class="business-meta">{esc(meta)}</p>\n' if meta else "")
+            + (f'{indent}  <dl class="speclist">\n{body}{indent}  </dl>\n' if body else "")
+            + (f'{indent}  <p class="occupant-updated">Last updated {esc(long_date(when))}</p>\n'
+               if when else "")
+            + "".join(offer_html(sid, [o], indent + "  ") for sid in offers)
+            + f'{indent}</section>\n')
+    return "".join(out)
 
 
 # The three parts of the roll's secured value, in the order the pie draws them

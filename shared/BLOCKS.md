@@ -614,11 +614,10 @@ label that row "Required from", and never render it as when the space opened.
 
 ### Current occupant — now part of `.panel-business`
 **This panel no longer stands alone.** Since PR #640 a directory's
-`occupants` render inside the business panel under the heading (Businesses
-here, below), one `.business` group per merchant, and a business both the
-register and a directory name is one group. Everything below about hours, the
-read date and the offers still holds there; read `.occupant` as `.business`
-and the panel's eyebrow as `.business-label`. What follows is the rule set as
+`occupants` render as business panels under the heading (Businesses here,
+below), one panel per merchant, and a business both the register and a
+directory name is one panel. With one business to a panel, the rules below
+about where an offer or a read date sits no longer arise. What follows is the rule set as
 first written for the aside panel.
 
 The businesses trading from the building today, from `occupants`, as an
@@ -701,22 +700,26 @@ control into the markup.
 ```
 
 ### Businesses here — `.panel-business`
-The businesses trading from the building today — `businesses` entries with no
-`closed`, and every `occupants` entry a merchant directory lists, one group
-per business where both name it — as a panel **inside the hero, under the `.sub` line** and above the
-tags: a reader from a business's map listing finds it before the parcel. The
-label is the occupant panel's eyebrow, "At this address" or, on a page whose
-heading is a range, the business's own door. Each business is an `<h2>` led by
-its kind's glyph in the accent, then one muted line, what it is and the year
-it opened here. No buttons: the panel says what is here, and the timeline says
-what was.
+Each business trading from the building today — `businesses` entries with no
+`closed`, and every `occupants` entry a merchant directory lists, one business
+where both name it — in **a panel of its own, inside the hero under the
+`.sub` line** and above the tags: a reader from a business's map listing finds
+it before the parcel. The eyebrow is the business's own door ("At 4548 18th
+Street"), or the page's lead number where the source names none; never "At
+this address", which read as unclear and on a ranged page did not say which
+door. Then an `<h2>` led by its kind's glyph in the accent, one muted line
+(what it is, and the year it opened here), the hours as a speclist, the
+"Last updated" date when there are hours, and the directory's offer.
+
+One business to a panel settles whose an offer and a date are, so the
+placement rules the occupant panel needed (below) reduce to this. A
+directory listing three brands at one door now prints its button in each
+brand's panel.
 ```html
-<section class="panel panel-business" aria-label="At 4548 18th Street">
+<section class="panel panel-business" aria-label="C-H Cleaners">
   <p class="business-label">At 4548 18th Street</p>
-  <div class="business">
-    <h2><i class="hgi-stroke hgi-hanger type-icon" role="img" aria-label="Dry cleaner" title="Dry cleaner"></i>C-H Cleaners</h2>
-    <p class="business-meta">Dry cleaner · since 1988</p>
-  </div>
+  <h2><i class="hgi-stroke hgi-hanger type-icon" role="img" aria-label="Dry cleaner" title="Dry cleaner"></i>C-H Cleaners</h2>
+  <p class="business-meta">Dry cleaner · since 1988</p>
 </section>
 ```
 On the timeline, each opening and change of ownership leads with the same
