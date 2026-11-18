@@ -114,7 +114,8 @@ san-francisco/                        city
                                       generator patches the street list into
                                       the page, it does not write the page
     hub.json + assets/photo.jpg       the hub's photo credit and official
-                                      boundary, read by `overviews`
+                                      boundary, read by the overview
+                                      `build_site.py` adds when it stages
     castro-street/                    street  (official name, lowercased,
       index.md                         street type spelled out: "19th-street",
       4127/                            "collingwood-street")
@@ -358,6 +359,7 @@ full schema, with the rules for `permits` / `permit_summary`, `hook`,
   deploy preview**, `https://deploy-preview-<N>--knowthisplace.netlify.app<page path>`
   with `<N>` the PR number and the page path from `data.json`'s `path`. Three
   to six pages representative of the change, not every page. Open the PR, then
-  edit its body to add them. No table of pages created, edited or published at
+  edit its body to add them. (Know This Photo PRs get their one link from
+  `.github/workflows/preview-links.yml`.) No table of pages created, edited or published at
   the top of the body; the counts fit in a sentence.
 - One concern per PR. Never push to `main` directly.

@@ -547,9 +547,12 @@ by hand, in `index.md` and `index.html` both. Neither section uses the
 `check_hub_sync` out of them — so the two files agreeing is on you.
 
 **A neighborhood hub opens with a generated overview** — its photo, a map
-of its official boundary, and its named buildings — written between the
-`<!-- overview … -->` comments after the lead by `seed_pages.py overviews`,
-which `build_site.py` runs after the hubs. Never edit inside those comments.
+of its official boundary, and its named buildings — put between
+`<!-- overview … -->` comments after the lead by `build_site.py`, in the
+published copy (`--stage`) and in what `--serve` sends. It is never in the
+committed `index.html`: it shows every named building's photo, so a committed
+copy would change with any page's photo, name or year, and fail `validate` on
+the branches that don't commit it (#652). Don't add it back by hand.
 Its inputs:
 
 - `hub.json` beside the hub's `index.md`: `photo` (the file under `assets/`,
