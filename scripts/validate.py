@@ -77,6 +77,11 @@ BACKLOG_PATH = seed_pages.RENDER_BACKLOG_PATH
 BACKLOG = seed_pages.load_render_backlog()
 
 
+def forwarding(html: str) -> bool:
+    """Whether an address page is a stub forwarding to a park's page."""
+    return seed_pages.FORWARD_MARK in html[:600]
+
+
 def check_html(html_path: Path, html: str, is_address: bool) -> None:
     rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
     if html_path.parent == ROOT:
@@ -955,6 +960,12 @@ def main() -> int:
     for html_path in html_pages:
         text = html_path.read_text(encoding="utf-8")
         is_address = bool(ADDRESS_DIR.match(html_path.parent.name))
+        # The address of a parcel that is wholly one park forwards to the
+        # park's page (`seed_pages.forward_html`): a stub, not a page, so it
+        # owes the page contract nothing — only render parity, below.
+        if is_address and forwarding(text):
+            check_address_dir(html_path.parent, text)
+            continue
         check_html(html_path, text, is_address)
         check_internal_links(html_path, text)
         if is_address:
@@ -1005,7 +1016,8 @@ def main() -> int:
             rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
             if html_path.parent == ROOT:
                 rel_dir = "/"
-            if rel_dir not in listed:
+            if rel_dir not in listed and not forwarding(
+                    html_path.read_text(encoding="utf-8")):
                 err(html_path, "not in the sitemap — run scripts/build_sitemap.py")
         # And nothing in the sitemap that has stopped existing: a submitted
         # URL that 404s is a crawl error Search Console reports against the
@@ -1036,7 +1048,8 @@ def main() -> int:
                         or (html_path.parent / seed_pages.PLACE_FILE).exists()):
                     continue
                 rel_dir = "/" + html_path.parent.relative_to(ROOT).as_posix() + "/"
-                if rel_dir not in mapped:
+                if rel_dir not in mapped and not forwarding(
+                        html_path.read_text(encoding="utf-8")):
                     err(html_path, "not in shared/addresses.geojson — "
                                    "run scripts/build_map_index.py")
 

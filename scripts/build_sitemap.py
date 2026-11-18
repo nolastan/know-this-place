@@ -42,11 +42,23 @@ DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 HUB_ITEM = re.compile(r'<li><a href="([^"]+)"')
 
 
+NOINDEX = '<meta name="robots" content="noindex">'
+
+
+def forwards(html_path: Path) -> bool:
+    """A forwarding page — the address of a parcel that is wholly one park,
+    sending the reader to the park's page (`seed_pages.forward_html`). It is
+    not a page to submit: its canonical is the park."""
+    with html_path.open(encoding="utf-8") as f:
+        return NOINDEX in f.read(600)
+
+
 def page_dirs() -> list:
     """Every directory that publishes an index.html, deepest last."""
     dirs = [ROOT] if (ROOT / "index.html").exists() else []
     if CONTENT.exists():
-        dirs += [p.parent for p in sorted(CONTENT.rglob("index.html"))]
+        dirs += [p.parent for p in sorted(CONTENT.rglob("index.html"))
+                 if not forwards(p)]
     return dirs
 
 
