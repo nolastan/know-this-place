@@ -268,8 +268,63 @@ def main() -> None:
     n = dump(OUT / "land.geojson", {"type": "FeatureCollection", "features": land})
     print(f"    {len(land)} neighborhoods, {n/1e6:.2f} MB")
 
+    print("==> neighborhoods (prototype D)")
+    by_neighborhood(lots, public, page_lots, feats, land)
+
     print("==> SVG locators")
     locators(lots, lots_near, page_lots, public, sfeats, land, feats)
+
+
+# --- prototype D: one file per neighborhood --------------------------------
+def by_neighborhood(lots, public, page_lots, page_feats, land):
+    """data/nhoods/index.geojson: the 41 Analysis Neighborhoods, each with its
+    slug, its hub page where the site has one, and how many pages it holds.
+    data/nhoods/<slug>.json: every lot in it, and its documented pages' lots,
+    so a click fetches one file. A lot belongs to the neighborhood its bbox
+    centre falls in."""
+    from seed_pages import BOUNDARY_SOURCE, DS_ANALYSIS_NEIGHBORHOODS
+    hub = {name: f"/san-francisco/{d}/" for d, (ds, name) in BOUNDARY_SOURCE.items()
+           if ds == DS_ANALYSIS_NEIGHBORHOODS}
+    areas = []
+    for f in land:
+        polys = f["geometry"]["coordinates"] if f["geometry"]["type"] == "MultiPolygon" \
+            else [f["geometry"]["coordinates"]]
+        name = f["properties"]["n"]
+        slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+        areas.append((slug, name, polys, bbox(polys)))
+
+    def area_of(x, y):
+        for slug, _, polys, bb in areas:
+            if bb[0] <= x <= bb[2] and bb[1] <= y <= bb[3] and contains(polys, x, y):
+                return slug
+        return None
+
+    where = {}
+    for m, (s, bb) in lots.items():
+        a = area_of((bb[0] + bb[2]) / 2, (bb[1] + bb[3]) / 2)
+        if a:
+            where[m] = a
+    out = {slug: {"lots": [], "pages": []} for slug, *_ in areas}
+    for m, a in where.items():
+        props = {k: 1 for k, v in (("z", m in public), ("pg", m in page_lots)) if v}
+        out[a]["lots"].append({"type": "Feature", "geometry": geom(lots[m][0]), "properties": props})
+    for f in page_feats:
+        a = where.get(f["properties"]["l"])
+        if a:
+            out[a]["pages"].append(f)
+    index, total = [], 0
+    for slug, name, polys, bb in areas:
+        o = out[slug]
+        total += dump(OUT / "nhoods" / f"{slug}.json", {
+            "lots": {"type": "FeatureCollection", "features": o["lots"]},
+            "pages": {"type": "FeatureCollection", "features": o["pages"]}})
+        props = {"n": name, "slug": slug, "pages": len(o["pages"]),
+                 "bbox": [round(v, 5) for v in bb]}
+        if name in hub:
+            props["hub"] = hub[name]
+        index.append({"type": "Feature", "geometry": geom(polys), "properties": props})
+    dump(OUT / "nhoods" / "index.geojson", {"type": "FeatureCollection", "features": index})
+    print(f"    {len(areas)} neighborhoods, {total/1e6:.1f} MB in all")
 
 
 # --- prototype C: inline SVG locator ---------------------------------------

@@ -29,6 +29,7 @@
   26,426 of our pages matched a lot: 25,190 by APN, 1,236 by their point, 49 not
   placed.</p>
 
+  <h2>The homepage map</h2>
   <ol class="demo-list">
     <li><a href="basemap/">A. Lots over a basemap</a> — the homepage map as it is,
       but past zoom 15 each dot cross-fades into its lot outline. Shown over a keyless
@@ -40,33 +41,39 @@
       about 1 km at a time as you pan), street centrelines, and street names on them.
       Where lots meet, the gap between blocks is the street, so the grid draws itself.
       <a href="no-basemap/#-122.4028,37.7952,16.5">Jump to Jackson Square</a>.</li>
-    <li>C. A locator band with no JavaScript — the strip at the top of an address page,
+    <li><a href="neighborhoods/">D. Pick a neighborhood</a> — B's basemap, opening on the
+      city's 41 neighborhoods with only the news and events dots on top. Tap one and the
+      map flies to its boundary, dims the rest of the city, and fetches that neighborhood's
+      lots in one file (about 100–400 KB). News and events stay above everything.</li>
+  </ol>
+
+  <h2>The address-page strip</h2>
+    <p><strong>C. The address-page strip, with no JavaScript.</strong> A separate question from the homepage map, and it goes with any of A, B or D: the strip at the top of an address page,
       drawn at build time as inline SVG instead of a Mapbox static image. The building's
-      lot is filled; every documented neighbour is a plain link to its page.
+      lot is filled; every documented neighbour is a plain link to its page. It adds 10–30 KB of SVG to each page and needs no request to Mapbox. Today the strip is a Mapbox static image with a dot, so dropping Mapbox on the homepage alone would still leave this.
       <a href="locator/18th-street-4548/">4548 18th St</a> ·
       <a href="locator/montgomery-street-600/">600 Montgomery</a> ·
       <a href="locator/green-street-999/">999 Green</a> ·
       <a href="locator/boynton-court-3/">3 Boynton Ct</a> ·
-      <a href="locator/valencia-street-1000/">1000 Valencia</a></li>
-  </ol>
+      <a href="locator/valencia-street-1000/">1000 Valencia</a></p>
 
-  <h2>Trade-offs</h2>
+  <h2>Trade-offs for the homepage map</h2>
   <p class="note">Sizes are what crosses the network (gzipped). Tile downloads for A and today aren't measured here.</p>
   <table>
-    <thead><tr><th></th><th>Today (dots)</th><th>A. Over a basemap</th><th>B. No basemap</th><th>C. SVG locator</th></tr></thead>
+    <thead><tr><th></th><th>Today (dots)</th><th>A. Over a basemap</th><th>B. No basemap</th><th>D. Pick a neighborhood</th></tr></thead>
     <tbody>
       <tr><th>Download, opening the map</th><td>dots 0.46 MB, plus Mapbox's tiles</td>
         <td>dots 0.46 MB, plus the tile provider's tiles</td>
         <td>dots 0.46 MB, streets 0.31 MB, land 0.04 MB; no tiles</td>
-        <td>nothing extra: 10–30 KB of SVG inside the page</td></tr>
+        <td>no address dots; streets 0.31 MB, land and neighborhoods 0.08 MB, news and events a few KB</td></tr>
       <tr><th>Download, zooming in</th><td>more tiles</td>
         <td>page lots 1.5 MB, once, the first time you zoom in; more tiles</td>
         <td>page lots 1.5 MB once, as A; then ~25 KB per 1 km square of lots you pan over (1–4 at street level, ~35 at zoom 14)</td>
-        <td>—</td></tr>
-      <tr><th>JavaScript</th><td>Mapbox GL</td><td>Mapbox GL or MapLibre</td><td>MapLibre (open source)</td><td>none</td></tr>
-      <tr><th>Third parties</th><td>Mapbox tiles + static images</td><td>tile provider</td><td>label font only (could be self-hosted)</td><td>none</td></tr>
-      <tr><th>Context you lose</th><td>—</td><td>nothing</td><td>water names, parks by name, transit, freeways as roads, hills; streets are only lot gaps plus names</td><td>same as B, at one zoom</td></tr>
-      <tr><th>Repo / build</th><td>—</td><td>page lots built from a DataSF fetch</td><td>all lots: 33 MB as files, or generated at deploy time</td><td>the build needs the lots on hand</td></tr>
+        <td>one file per neighborhood you pick: about 80 KB typical, 470 KB for the largest (Sunset/Parkside)</td></tr>
+      <tr><th>JavaScript</th><td>Mapbox GL</td><td>Mapbox GL or MapLibre</td><td>MapLibre (open source)</td><td>MapLibre</td></tr>
+      <tr><th>Third parties</th><td>Mapbox tiles + static images</td><td>tile provider</td><td>label font only (could be self-hosted)</td><td>label font only</td></tr>
+      <tr><th>Context you lose</th><td>—</td><td>nothing</td><td>water names, parks by name, transit, freeways as roads, hills; streets are only lot gaps plus names</td><td>as B, and the city view shows no buildings until you pick</td></tr>
+      <tr><th>Repo / build</th><td>—</td><td>page lots built from a DataSF fetch</td><td>all lots: 33 MB as files, or generated at deploy time</td><td>42 MB of neighborhood files, or generated at deploy time</td></tr>
     </tbody>
   </table>
   <p class="note">Built by <code>demo/parcels/build.py</code> (stdlib only) from DataSF

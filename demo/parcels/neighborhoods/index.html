@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo — Pick a neighborhood</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/shared/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/shared/site.css">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="/demo/parcels/demo.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" defer></script>
+  <script src="/demo/parcels/neighborhoods.js" defer></script>
+</head>
+<body>
+<div class="map-shell">
+  <div id="map" role="region" aria-label="Map of San Francisco neighborhoods; pick one to see its lots"></div>
+  <div class="media-empty"><span>Loading map…</span></div>
+  <a class="map-brand" href="/demo/parcels/">Know This Place</a>
+  <aside class="demo-note" id="panel" aria-live="polite"></aside>
+</div>
+</body>
+</html>
