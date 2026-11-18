@@ -6459,6 +6459,56 @@ def overview_into(text: str, area_dir: Path) -> str:
     raise SystemExit(f"{area_dir / 'index.html'}: no lead or <h1> to put the overview after")
 
 
+MAP_HEAD = ("<!-- map head:", "<!-- /map head -->")
+MAP_SHELL = ("<!-- map shell:", "<!-- /map shell -->")
+
+
+@functools.lru_cache(maxsize=1)
+def _map_parts() -> tuple[dict, str, str]:
+    """The homepage map's head and shell, and hub URL → Analysis Neighborhood."""
+    home = (ROOT / "index.html").read_text(encoding="utf-8")
+
+    def region(marks):
+        i = home.index(marks[0])
+        i = home.rindex("\n", 0, i) + 1
+        j = home.index(marks[1]) + len(marks[1])
+        return home[i:j] + "\n"
+    try:
+        index = json.loads((MAP_DIR / "index.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        index = []
+    by_hub = {a["hub"]: a["slug"] for a in index if a.get("hub")}
+    return by_hub, region(MAP_HEAD), region(MAP_SHELL)
+
+
+def map_into(text: str, area_dir: Path) -> str:
+    """`text`, a neighborhood hub's HTML, with the homepage map laid over it.
+
+    Picking a neighborhood on the homepage map swaps its hub in below the map
+    and takes the hub's URL, so the hub itself has to open the same way: on
+    the map, zoomed to its neighborhood, with the hub below. Like the
+    overview, it is put in on the way out (`build_site.py --stage` and
+    `--serve`) and never committed: the hub stays a static page whose content
+    is all in its HTML, and the map is an enhancement on top of it. Only a
+    hub that is one of the city's Analysis Neighborhoods has a place on the
+    map; any other hub is returned untouched.
+    """
+    by_hub, head, shell = _map_parts()
+    rel = area_dir.resolve().relative_to(ROOT)
+    slug = by_hub.get(f"/{rel.as_posix()}/")
+    if not slug or MAP_SHELL[0] in text:
+        return text
+    m = re.search(r"<h1>(.*?)</h1>", text, re.S)
+    label = m.group(1).strip() if m else area_dir.name
+    shell = shell.replace('<div class="map-shell">',
+                          f'<div class="map-shell" data-area="{esca(slug)}">', 1)
+    shell = re.sub(r'(<a class="map-cue"[^>]*>).*?(<span)', lambda x: x.group(1) + label + x.group(2),
+                   shell, count=1, flags=re.S)
+    text = text.replace("</head>", head + "</head>", 1)
+    text = text.replace("<body>\n", "<body>\n" + shell, 1)
+    return text.replace("<main>", '<main id="below">', 1)
+
+
 def strip_overview(text: str) -> str:
     """`text` without its overview region: the shape a hub is committed in."""
     return re.sub(rf"\n*[ \t]*{re.escape(OVERVIEW_START)}.*?{re.escape(OVERVIEW_END)}",

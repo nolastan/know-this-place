@@ -33,7 +33,9 @@ link (seed_pages.CSS_SOURCE_LINK) so a CSS change touches no tracked file but
 site.css itself; the published copy is the one that needs the cache-buster.
 
 It also puts each neighborhood hub's overview (photo, boundary map, named
-buildings) into the copy, and `--serve` does the same for each hub it sends.
+buildings) into the copy, and the homepage map over each hub that is one of
+the city's Analysis Neighborhoods (seed_pages.map_into); `--serve` does the
+same for each hub it sends.
 The hubs are committed, and the overview shows every named building's photo,
 so a committed overview went stale on any branch that touched a page — a
 Know This Photo PR failed `validate` for it (#652). The overview is built
@@ -111,7 +113,7 @@ def build() -> None:
 def stage(dest: Path) -> None:
     """Copy the built site to `dest`, the committed pages stamped with the CSS hash."""
     sys.path.insert(0, str(SCRIPTS))
-    from seed_pages import CSS_LINK, CSS_SOURCE_LINK, is_neighborhood_hub, overview_into
+    from seed_pages import CSS_LINK, CSS_SOURCE_LINK, is_neighborhood_hub, map_into, overview_into
 
     started = time.monotonic()
     dest = dest.resolve()
@@ -125,7 +127,7 @@ def stage(dest: Path) -> None:
         if src.endswith(".html"):
             text = original = Path(src).read_text(encoding="utf-8")
             if Path(src).name == "index.html" and is_neighborhood_hub(Path(src).parent):
-                text = overview_into(text, Path(src).parent)
+                text = map_into(overview_into(text, Path(src).parent), Path(src).parent)
                 overviews += 1
             if CSS_SOURCE_LINK in text:
                 text = text.replace(CSS_SOURCE_LINK, CSS_LINK)
@@ -188,7 +190,7 @@ def serve(port: int) -> None:
     import io
     import socketserver
     sys.path.insert(0, str(SCRIPTS))
-    from seed_pages import is_neighborhood_hub, overview_into
+    from seed_pages import is_neighborhood_hub, map_into, overview_into
 
     class Handler(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
@@ -201,8 +203,8 @@ def serve(port: int) -> None:
             page = path if path.is_dir() else path.parent
             if ((path.is_dir() and self.path.split("?")[0].endswith("/"))
                     or path.name == "index.html") and is_neighborhood_hub(page):
-                body = overview_into((page / "index.html").read_text(encoding="utf-8"),
-                                     page).encode("utf-8")
+                body = map_into(overview_into((page / "index.html").read_text(encoding="utf-8"),
+                                              page), page).encode("utf-8")
                 self.send_response(200)
                 self.send_header("Content-Type", "text/html; charset=utf-8")
                 self.send_header("Content-Length", str(len(body)))
