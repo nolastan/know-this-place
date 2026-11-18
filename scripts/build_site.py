@@ -10,7 +10,7 @@ the site, in Actions before a deploy and on a laptop before a look.
 It is the seven builders in the one order that works, and the order is the
 whole reason it exists:
 
-    districts → hubs → overviews → build_link_index → render → build_map_index
+    districts → hubs → city-map → build_link_index → render → build_map_index
               → build_events → build_sitemap → build_corpus_index
               → build_stats
 
@@ -31,6 +31,13 @@ working tree minus `.git` into a directory and stamps the stylesheet hash into
 the committed pages on the way. Those pages are committed with an unhashed
 link (seed_pages.CSS_SOURCE_LINK) so a CSS change touches no tracked file but
 site.css itself; the published copy is the one that needs the cache-buster.
+
+It also puts each neighborhood hub's overview (photo, boundary map, named
+buildings) into the copy, and `--serve` does the same for each hub it sends.
+The hubs are committed, and the overview shows every named building's photo,
+so a committed overview went stale on any branch that touched a page — a
+Know This Photo PR failed `validate` for it (#652). The overview is built
+where the page leaves the tree instead, never in the working tree.
 
 8517 is not arbitrary. The Mapbox token and the Google Maps embed key are
 URL-restricted to `knowthis.place` and `http://localhost:8517`, so the maps
@@ -85,10 +92,9 @@ def build() -> None:
     for area in neighborhoods():
         run(f"hubs — {area}", seed, "hubs", "--city", "san-francisco",
             "--area", area)
-    # Each hub's photo, boundary map and named buildings. One pass for every
-    # hub: the map of a boundary shows every page inside it, wherever that
-    # page is filed, so it reads the whole city once rather than per area.
-    run("neighborhood overviews", seed, "overviews", "--city", "san-francisco")
+    # The city page's map of every hub's boundary. Each hub's own overview is
+    # not built here: `stage` and `serve` add it on the way out (see above).
+    run("city neighborhoods map", seed, "city-map", "--city", "san-francisco")
 
     # Before the render: an address page prints its neighbors, and this is
     # where they come from.
@@ -105,24 +111,28 @@ def build() -> None:
 def stage(dest: Path) -> None:
     """Copy the built site to `dest`, the committed pages stamped with the CSS hash."""
     sys.path.insert(0, str(SCRIPTS))
-    from seed_pages import CSS_LINK, CSS_SOURCE_LINK
+    from seed_pages import CSS_LINK, CSS_SOURCE_LINK, is_neighborhood_hub, overview_into
 
     started = time.monotonic()
     dest = dest.resolve()
     print(f"==> stage → {dest}", flush=True)
     if dest.exists():
         shutil.rmtree(dest)
-    stamped = 0
+    stamped = overviews = 0
 
     def copy(src, dst):
-        nonlocal stamped
+        nonlocal stamped, overviews
         if src.endswith(".html"):
-            text = Path(src).read_text(encoding="utf-8")
+            text = original = Path(src).read_text(encoding="utf-8")
+            if Path(src).name == "index.html" and is_neighborhood_hub(Path(src).parent):
+                text = overview_into(text, Path(src).parent)
+                overviews += 1
             if CSS_SOURCE_LINK in text:
-                Path(dst).write_text(text.replace(CSS_SOURCE_LINK, CSS_LINK),
-                                     encoding="utf-8")
-                shutil.copystat(src, dst)
+                text = text.replace(CSS_SOURCE_LINK, CSS_LINK)
                 stamped += 1
+            if text != original:
+                Path(dst).write_text(text, encoding="utf-8")
+                shutil.copystat(src, dst)
                 return dst
         return shutil.copy2(src, dst)
 
@@ -134,6 +144,7 @@ def stage(dest: Path) -> None:
     shutil.copytree(ROOT, dest, ignore=skip, copy_function=copy, symlinks=True)
     moved = write_redirects(dest)
     print(f"    {stamped} committed pages stamped with the stylesheet hash, "
+          f"{overviews} neighborhood overview(s) added, "
           f"{moved} moved page(s) forwarded, "
           f"{time.monotonic() - started:.1f}s", flush=True)
 
@@ -174,11 +185,30 @@ def write_redirects(dest: Path) -> int:
 def serve(port: int) -> None:
     """Serve the built site the way a reader sees it."""
     import http.server
+    import io
     import socketserver
+    sys.path.insert(0, str(SCRIPTS))
+    from seed_pages import is_neighborhood_hub, overview_into
 
     class Handler(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
             super().__init__(*a, directory=str(ROOT), **kw)
+
+        # A neighborhood hub is served with its overview, as `stage` would
+        # publish it; the file on disk never carries one.
+        def send_head(self):
+            path = Path(self.translate_path(self.path))
+            page = path if path.is_dir() else path.parent
+            if ((path.is_dir() and self.path.split("?")[0].endswith("/"))
+                    or path.name == "index.html") and is_neighborhood_hub(page):
+                body = overview_into((page / "index.html").read_text(encoding="utf-8"),
+                                     page).encode("utf-8")
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                return io.BytesIO(body)
+            return super().send_head()
 
         # The committed pages link site.css without a hash (`stage` adds it
         # for the deploy), so tell the browser to recheck it on every load.
