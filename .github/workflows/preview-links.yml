@@ -1,0 +1,84 @@
+# Point the page link in every Know This Photo PR at the deploy preview.
+#
+# The app opens its PR before GitHub has given it a number, so the body it
+# writes can only link the page on knowthis.place, which still shows the old
+# photo (or Street View) until the PR is merged. Netlify builds every PR at a
+# predictable address, `https://deploy-preview-<N>--knowthisplace.netlify.app`
+# (netlify.toml), so once the number exists this workflow swaps that link for
+# the same page on the preview. One link, nothing added: Stan asked for the
+# body to stay that simple.
+#
+# It does not wait for Netlify: the link is right from the start and opens
+# once the preview has built, a few minutes after the push. Running again
+# finds no production link left and changes nothing.
+#
+# Run it by hand (Actions → preview-links → Run workflow) to update every
+# open `photo/` PR, e.g. the ones opened before this workflow existed.
+name: preview-links
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: preview-links-${{ github.event.pull_request.number || 'backfill' }}
+  cancel-in-progress: true
+
+jobs:
+  links:
+    # Only the app's branches. Agents add their own preview links (AGENTS.md
+    # → Git and PR conventions).
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (startsWith(github.head_ref, 'photo/') &&
+        github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Point the page link at the preview
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        shell: python3 {0}
+        run: |
+          import json, os, re, subprocess
+
+          REPO = os.environ["GH_REPO"]
+          PREVIEW = "https://deploy-preview-{n}--knowthisplace.netlify.app"
+          # The app's page link, and the section an earlier version of this
+          # workflow added (removed so the body keeps the one link).
+          PAGE_LINK = re.compile(r"\]\(https://knowthis\.place(/[^)\s]*)\)")
+          OLD_SECTION = re.compile(
+              r"\n*<!-- preview-links -->.*?<!-- /preview-links -->\n*", re.S)
+
+          def api(*args):
+              out = subprocess.run(["gh", "api", *args], check=True,
+                                   capture_output=True, text=True).stdout
+              return json.loads(out) if out.strip() else None
+
+          def update(pr):
+              n, body = pr["number"], pr.get("body") or ""
+              base = PREVIEW.format(n=n)
+              updated = OLD_SECTION.sub("\n\n", body)
+              updated = PAGE_LINK.sub(lambda m: f"]({base}{m.group(1)})", updated, count=1)
+              if updated == body:
+                  print(f"#{n}: already links the preview")
+                  return
+              subprocess.run(["gh", "api", "-X", "PATCH", f"repos/{REPO}/pulls/{n}",
+                              "-f", f"body={updated}"], check=True,
+                             capture_output=True)
+              print(f"#{n}: page link now points at the preview")
+
+          if os.environ.get("PR"):
+              update(api(f"repos/{REPO}/pulls/{os.environ['PR']}"))
+          else:
+              for pr in api("--paginate", f"repos/{REPO}/pulls?state=open&per_page=100"):
+                  if pr["head"]["ref"].startswith("photo/") and \
+                     pr["head"]["repo"] and pr["head"]["repo"]["full_name"] == REPO:
+                      update(pr)

@@ -53,6 +53,8 @@ import html
 import json
 import math
 import re
+import os
+import posixpath
 import sys
 import time
 import urllib.parse
@@ -691,10 +693,26 @@ TYPE_ICON = {
 }
 
 
+def page_type(rec: dict) -> str:
+    """What the page is, for its hero, its hook and its glyph: the building
+    type off the assessor's class — or, on a parcel that is wholly one park or
+    plaza (`parcel_place`), what kind of place it is. The roll calls Alta Plaza
+    Park a vacant lot; the page says what a reader finds there."""
+    place = parcel_place(rec)
+    if place:
+        return place_type_label({"type": place[2]})
+    p = rec.get("parcel", {})
+    return building_type(p.get("property_class"), dwelling_units(p))
+
+
 def building_icon(btype: str) -> str:
     """The `TYPE_ICON` glyph for a `building_type` phrase."""
     if btype in TYPE_ICON:
         return TYPE_ICON[btype]
+    # A park-headed page (`page_type`) takes the vacant lot's tree: it is
+    # the same land, now called what it is.
+    if btype in {place_type_label({"type": t}) for _p, _n, t, _a in place_index()}:
+        return TYPE_ICON["Assessor class: vacant lot"]
     if "apartment building" in btype.lower():
         return "hgi-building-02"
     if "ground-floor store" in btype:
@@ -1717,7 +1735,7 @@ def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
     lat, lng = rec["coordinates"]["lat"], rec["coordinates"]["lng"]
     photo = page_photo(rec)
     if photo:
-        src = rec["path"] + photo["file"]
+        src = posixpath.normpath(rec["path"] + photo["file"])
         size = (f' width="{int(photo["width"])}" height="{int(photo["height"])}"'
                 if photo.get("width") and photo.get("height") else "")
         # The hero's photo is the first thing on the page, so only a card's
@@ -1765,7 +1783,8 @@ def building_name(rec: dict) -> str | None:
     "Garcia & Maggini Warehouse" is what the city calls 128 King Street.
     """
     name = ((rec.get("building") or {}).get("name")
-            or (rec.get("city_landmark") or {}).get("name") or "")
+            or (rec.get("city_landmark") or {}).get("name")
+            or (parcel_place(rec) or ("", ""))[1] or "")
     name = re.sub(r"\s+", " ", name).strip()
     return name if name and name.lower() != page_title(rec).lower() else None
 
@@ -1780,7 +1799,7 @@ def hero_lines(rec: dict) -> tuple[str, str]:
     if name:
         return name, title
     p = rec.get("parcel", {})
-    return title, building_type(p.get("property_class"), dwelling_units(p))
+    return title, page_type(rec)
 
 
 def meta_description(rec: dict) -> str:
@@ -1789,7 +1808,7 @@ def meta_description(rec: dict) -> str:
     where = f"{name} ({page_title(rec)})" if name else page_title(rec)
     bits = [f"{where}, San Francisco:"]
     year = p.get("year_built")
-    btype = building_type(p.get("property_class"), dwelling_units(p)).lower()
+    btype = page_type(rec).lower()
     article = article_for(year, btype)
     bits.append(f"{article} {year} {btype}" if year else f"{article} {btype}")
     dist = district_of(rec).get("name")
@@ -1807,7 +1826,7 @@ def heading_html(rec: dict, heading: str) -> str:
     if not building_name(rec):
         return f"<h1>{esc(heading)}</h1>"
     p = rec.get("parcel", {})
-    btype = building_type(p.get("property_class"), dwelling_units(p))
+    btype = page_type(rec)
     return (f'<h1 class="named"><i class="hgi-stroke {building_icon(btype)} type-icon" '
             f'role="img" aria-label="{esca(btype)}" title="{esca(btype)}"></i>'
             f'{esc(heading)}</h1>')
@@ -1819,7 +1838,7 @@ def named_icon(rec: dict) -> str:
     if not building_name(rec):
         return ""
     p = rec.get("parcel", {})
-    return building_icon(building_type(p.get("property_class"), dwelling_units(p)))
+    return building_icon(page_type(rec))
 
 
 def named_link_text(name: str | None, icon: str, address: str) -> str:
@@ -4093,7 +4112,35 @@ def collection_ld(path: str, name: str, desc: str, items: list) -> dict:
     }
 
 
+FORWARD_MARK = '<meta name="robots" content="noindex">'
+
+
+def forward_html(rec: dict, target: str, name: str) -> str:
+    """The address page of a parcel that is wholly one place (`parcel_place`):
+    a stub that sends the reader on to the place's page, which carries the
+    parcel's record too. Rendered from data.json like any address page, so
+    render parity still holds, and kept out of the sitemap and the map."""
+    url = esca(target)
+    return (f"<!doctype html>\n<html lang=\"en\">\n<head>\n"
+            f"  <meta charset=\"utf-8\">\n"
+            f"  <title>{esc(name)} — Know This Place</title>\n"
+            f"  <link rel=\"canonical\" href=\"{SITE}{url}\">\n"
+            f"  {FORWARD_MARK}\n"
+            f"  <meta http-equiv=\"refresh\" content=\"0; url={url}\">\n"
+            f"</head>\n<body>\n"
+            f"  <p>{esc(page_title(rec))} is <a href=\"{url}\">{esc(name)}</a>.</p>\n"
+            f"</body>\n</html>\n")
+
+
+def forwards(rec: dict) -> bool:
+    """Whether this address page forwards to a place page (`forward_html`)."""
+    return parcel_place(rec) is not None
+
+
 def render_html(rec: dict) -> str:
+    own = parcel_place(rec)
+    if own:
+        return forward_html(rec, own[0], own[1])
     # A condominium building is the sum of its units' parcels; the view adds
     # the totals and the timeline it reads off them (see `condo_view`).
     if rec.get("condominium"):
@@ -4294,7 +4341,9 @@ def render_html(rec: dict) -> str:
 # Department's two inventories (DATA-SOURCES.md → sf-rpd-properties,
 # sf-rpd-facilities), plus the parcels it sits on and, for a place the city's
 # address register gives a number, that address. What the page says about the
-# parcel is the parcel page's to say: the place page links to it.
+# parcel is the parcel page's to say: the place page links to it — except
+# where the parcel is wholly the place, and the place page says it instead
+# (`parcel_place`, `forwarding_parcel`).
 PLACE_FILE = "place.json"
 
 # The closed vocabulary, as `ADDRESS_TOP_LEVEL_KEYS` is for an address page.
@@ -4357,6 +4406,27 @@ def places_on_parcel(apn: str) -> list:
     apn = (apn or "").replace("-", "")
     return [(path, name, ptype) for path, name, ptype, parcels in place_index()
             if apn and apn in parcels]
+
+
+def parcel_place(rec: dict) -> tuple | None:
+    """(path, name, type) of the one place a parcel *is*, else None.
+
+    A parcel the roll classes as a vacant lot, carrying exactly one place that
+    covers no other parcel, is that park or plaza and nothing else: 2501–2599
+    Jackson Street is Alta Plaza Park. Its address page is headed by the place
+    and typed as it (`building_name`, `page_type`), instead of reading as an
+    empty lot with the park in a panel. A parcel with a building on it — a
+    library, a clubhouse — or shared with other places keeps its own identity
+    and the "Public space on this parcel" panel.
+    """
+    if "vacant lot" not in (rec.get("parcel", {}).get("property_class") or "").lower():
+        return None
+    apn = (rec.get("apn") or "").replace("-", "")
+    hits = [(path, name, ptype, parcels) for path, name, ptype, parcels
+            in place_index() if apn and apn in parcels]
+    if len(hits) != 1 or len(hits[0][3]) != 1 or not hits[0][1]:
+        return None
+    return hits[0][:3]
 
 
 def place_panel_html(rec: dict, indent: str) -> str:
@@ -4461,6 +4531,8 @@ def place_parcels_panel_html(rec: dict, indent: str) -> str:
     for apn in apns:
         label = f"Block {apn[:4]}, Lot {apn[4:]}"
         path = paged.get(apn)
+        if path and forwarding_parcel(rec):
+            path = None  # its address page forwards here
         val = (f'<a href="{esca(path)}">{esc(label)}</a>' if path else esc(label))
         rows.append(f'{indent}    <div class="spec"><span class="ic ic-lot"></span>'
                     f'<span class="spec-k">Assessor\'s block and lot</span>'
@@ -4507,7 +4579,55 @@ def place_facilities_html(rec: dict, indent: str) -> str:
             f'{indent}</section>\n')
 
 
+def forwarding_parcel(rec: dict) -> dict | None:
+    """The data.json of the one parcel whose address page forwards to this
+    place (`parcel_place`), else None. Its record — permits, the dated
+    history, the survey and district findings, zoning — renders here, since
+    the parcel no longer has a page of its own."""
+    apns = rec.get("parcels") or []
+    if len(apns) != 1:
+        return None
+    path = pages_by_apn().get(apns[0])
+    if not path:
+        return None
+    f = ROOT / path.strip("/") / "data.json"
+    try:
+        parcel = json.loads(f.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    own = parcel_place(parcel)
+    return parcel if own and own[0] == rec.get("path") else None
+
+
+def merged_sources(*recs) -> list:
+    """Every source the records cite, once each, in order."""
+    out, seen = [], set()
+    for r in recs:
+        for src in r.get("sources") or []:
+            key = (src.get("id"), src.get("query"))
+            if key not in seen:
+                seen.add(key)
+                out.append(src)
+    return out
+
+
 def render_place_html(rec: dict) -> str:
+    parcel = forwarding_parcel(rec)
+    if parcel:
+        # The park's page is the parcel's page too: its dated history joins
+        # the park's, and what the assessor, Planning and DBI say about the
+        # land renders here as it would have on the address page.
+        parcel = dict(parcel, historical_record=(
+            (parcel.get("historical_record") or [])
+            + (rec.get("historical_record") or [])))
+        if not rec.get("photo") and page_photo(parcel):
+            # The file stays beside the address page it was committed to;
+            # the park's page reaches it relatively.
+            photo = parcel["photo"]
+            rel = os.path.relpath(parcel["path"].strip("/") + "/" + photo["file"],
+                                  rec["path"].strip("/"))
+            rec = dict(rec, photo=dict(photo, file=rel))
+        rec = dict(rec, sources=merged_sources(rec, parcel))
     name = rec["name"]
     lat, lng = rec["coordinates"]["lat"], rec["coordinates"]["lng"]
     city_slug, area_slug, _slug = rec["path"].strip("/").split("/")
@@ -4534,16 +4654,31 @@ def render_place_html(rec: dict) -> str:
             f'<span class="stat-label">{esc(l)}</span></div>' for i, v, l in tiles)
             + '\n  </div>\n')
 
-    timeline = timeline_html(rec, "      ") if rec.get("historical_record") else ""
-    lead_html, sections = narrative_html(rec, "      ")
-    main_col = "\n".join(x for x in (timeline, sections) if x)
+    if parcel:
+        timeline = timeline_html(parcel, "      ")
+        lead_html, sections = narrative_html(
+            rec if rec.get("narrative") else parcel, "      ")
+        art = public_art_html(parcel, "      ")
+    else:
+        timeline = timeline_html(rec, "      ") if rec.get("historical_record") else ""
+        lead_html, sections = narrative_html(rec, "      ")
+        art = ""
+    main_col = "\n".join(x for x in (art, timeline, sections) if x)
     panels_ind = "      " if main_col else "  "
     # A park's calendar is most of what a visitor opens its page for, so the
     # announced events head the aside, as they do on an address page.
     panels = (events_panel_html(rec, panels_ind)
               + place_record_panel_html(rec, panels_ind)
-              + place_facilities_html(rec, panels_ind)
-              + place_parcels_panel_html(rec, panels_ind))
+              + place_facilities_html(rec, panels_ind))
+    if parcel:
+        panels += (open_space_panel_html(parcel, panels_ind)
+                   + addresses_panel_html(parcel, panels_ind)
+                   + glance_panel_html(parcel, panels_ind)
+                   + survey_panel_html(parcel, panels_ind)
+                   + district_panel_html(parcel, panels_ind))
+    panels += place_parcels_panel_html(rec, panels_ind)
+    tags = (f'      <ul class="tags">\n{tags_html(parcel)}\n      </ul>\n'
+            if parcel and tags_html(parcel).strip() else "")
     if main_col:
         body = ('  <div class="cols">\n    <div class="main">\n' + main_col
                 + '    </div>\n\n    <aside class="aside">\n' + panels
@@ -4609,7 +4744,7 @@ def render_place_html(rec: dict) -> str:
     <div>
       <h1>{esc(name)}</h1>
       <p class="sub">{esc(sub_text)}</p>
-    </div>
+{tags}    </div>
 {facade_media(rec, name, "media media-lift", "    ", note=STREETVIEW_NOTE)}
   </section>
 
@@ -5444,7 +5579,7 @@ def hook_for(rec: dict, with_district: bool = True) -> str:
         return rec["hook"]
     p = rec.get("parcel", {})
     year = p.get("year_built")
-    btype = building_type(p.get("property_class"), dwelling_units(p)).lower()
+    btype = page_type(rec).lower()
     article = article_for(year, btype).capitalize()
     head = f"{article} {year} {btype}" if year else f"{article} {btype}"
     dist = district_of(rec).get("name") if with_district else None
@@ -6094,7 +6229,7 @@ BOUNDARY_SOURCE = {
 # city's polygons from thousands of vertices to a few hundred.
 BOUNDARY_TOLERANCE = 0.00003
 
-OVERVIEW_START = "<!-- overview: generated by seed_pages.py overviews; do not edit -->"
+OVERVIEW_START = "<!-- overview: added by build_site.py --stage / --serve; never committed -->"
 OVERVIEW_END = "<!-- /overview -->"
 
 # The map's frame, in the Mapbox Static Images API's logical pixels. 1280 is
@@ -6432,32 +6567,47 @@ def overview_html(area_dir: Path, hub: dict, heading: str) -> str:
     return (f"  {OVERVIEW_START}\n" + "\n\n".join(out) + f"\n  {OVERVIEW_END}") if out else ""
 
 
-def write_overview(area_dir: Path) -> bool:
-    """Put the overview region into a neighborhood hub, after its lead."""
-    html_path = area_dir / "index.html"
-    if not html_path.exists():
-        return False
-    text = html_path.read_text(encoding="utf-8")
+def overview_into(text: str, area_dir: Path) -> str:
+    """`text`, a neighborhood hub's HTML, with its overview region in place.
+
+    The overview is never committed. It shows every named building inside the
+    boundary with its photo, so any page's new photo, name or year changes it,
+    and a committed copy would go stale on every branch that touches a page
+    (#652: a Know This Photo PR failed `validate` on the South Beach hub). It
+    is put in where the page leaves the tree instead: `build_site.py --stage`
+    for the deploy and the previews, and `--serve` for a look on a laptop.
+    """
     m = re.search(r"<h1>(.*?)</h1>", text, re.S)
     heading = html.unescape(m.group(1)) if m else area_dir.name
     block = overview_html(area_dir, read_hub_json(area_dir), heading)
     region = re.compile(rf"\n*[ \t]*{re.escape(OVERVIEW_START)}.*?{re.escape(OVERVIEW_END)}",
                         re.S)
     if region.search(text):
-        new = region.sub(lambda _: "\n\n" + block if block else "", text, count=1)
-    elif block:
-        for anchor in (r'<p class="lead">.*?</p>', r"<h1>.*?</h1>"):
-            new, n = re.subn(f"({anchor})", lambda m: m.group(1) + "\n\n" + block,
-                             text, count=1, flags=re.S)
-            if n:
-                break
-        else:
-            raise SystemExit(f"{html_path}: no lead or <h1> to put the overview after")
-    else:
+        return region.sub(lambda _: "\n\n" + block if block else "", text, count=1)
+    if not block:
+        return text
+    for anchor in (r'<p class="lead">.*?</p>', r"<h1>.*?</h1>"):
+        new, n = re.subn(f"({anchor})", lambda m: m.group(1) + "\n\n" + block,
+                         text, count=1, flags=re.S)
+        if n:
+            return new
+    raise SystemExit(f"{area_dir / 'index.html'}: no lead or <h1> to put the overview after")
+
+
+def strip_overview(text: str) -> str:
+    """`text` without its overview region: the shape a hub is committed in."""
+    return re.sub(rf"\n*[ \t]*{re.escape(OVERVIEW_START)}.*?{re.escape(OVERVIEW_END)}",
+                  "", text, count=1, flags=re.S)
+
+
+def is_neighborhood_hub(page_dir: Path) -> bool:
+    """A neighborhood hub's directory: `<city>/<area>/` with an index.html."""
+    try:
+        rel = page_dir.resolve().relative_to(ROOT)
+    except ValueError:
         return False
-    if new != text:
-        html_path.write_text(new, encoding="utf-8")
-    return True
+    return (len(rel.parts) == 2 and rel.parts[1] != DISTRICTS_DIR
+            and (ROOT / rel / "index.html").exists() and (ROOT / rel / "index.md").exists())
 
 
 CITY_MAP_START = "<!-- city map: generated by seed_pages.py overviews; do not edit -->"
@@ -6554,14 +6704,8 @@ def write_city_map(city_dir: Path) -> bool:
     return True
 
 
-def cmd_overviews(args) -> int:
-    city_dir = ROOT / args.city
-    areas = args.area or sorted(d.name for d in city_dir.iterdir()
-                                if d.is_dir() and d.name != DISTRICTS_DIR
-                                and (d / "index.html").exists())
-    n = sum(1 for area in areas if write_overview(city_dir / area))
-    print(f"wrote the overview on {n} neighborhood hub(s)")
-    if write_city_map(city_dir):
+def cmd_city_map(args) -> int:
+    if write_city_map(ROOT / args.city):
         print(f"wrote the neighborhoods map on {args.city}/index.html")
     return 0
 
@@ -8315,13 +8459,12 @@ def main() -> int:
                    help="retrieval date to record (default: today)")
     p.set_defaults(fn=cmd_boundaries)
 
-    p = sub.add_parser("overviews",
-                       help="write the photo, boundary map and named buildings "
-                            "into the neighborhood hubs")
+    p = sub.add_parser("city-map",
+                       help="write the map of every neighborhood's boundary into "
+                            "the city page (the hubs' own overviews are added by "
+                            "build_site.py --stage and --serve, never committed)")
     p.add_argument("--city", default="san-francisco")
-    p.add_argument("--area", action="append",
-                   help="limit to a neighborhood directory (repeatable)")
-    p.set_defaults(fn=cmd_overviews)
+    p.set_defaults(fn=cmd_city_map)
 
     p = sub.add_parser("places",
                        help="write place pages (parks, plazas, places in a park) "

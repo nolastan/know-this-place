@@ -23,7 +23,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
-from seed_pages import hero_lines, page_photo, place_sub  # noqa: E402
+from seed_pages import forwarding_parcel, forwards, hero_lines, page_photo, place_sub  # noqa: E402
 
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")  # 123, 123a — same as validate.py
 
@@ -68,6 +68,11 @@ def main() -> None:
             skipped.append(f"{data_path.relative_to(ROOT)}: invalid JSON")
             continue
 
+        # A parcel that is wholly one park forwards to the park's page, and
+        # the park has its own dot.
+        if not is_place and forwards(data):
+            continue
+
         coords = data.get("coordinates") or {}
         lat, lng = coords.get("lat"), coords.get("lng")
         if not isinstance(lat, (int, float)) or not isinstance(lng, (int, float)):
@@ -85,9 +90,15 @@ def main() -> None:
         # file is fetched whole by every homepage visit.
         if path in researched:
             props["r"] = 1
-        photo = page_photo({**data, "path": path})
+        # A park whose parcel forwards to it shows the parcel's photo.
+        parcel = forwarding_parcel(data) if is_place else None
+        if parcel and not data.get("photo") and page_photo(parcel):
+            data, path_for_photo = parcel, parcel["path"]
+        else:
+            path_for_photo = path
+        photo = page_photo({**data, "path": path_for_photo})
         if photo:
-            props["ph"] = path + photo["file"]
+            props["ph"] = path_for_photo + photo["file"]
         if is_place:
             place_paths.add(path)
         features.append((path, {
