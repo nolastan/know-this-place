@@ -1,0 +1,79 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-11-17",
+  "read_on": "2026-11-17",
+  "notes": "Run of 2026-11-17. Three Hoodline stories queued. The Momo Noodle story relays The San Francisco Standard's report and is filed under sf-standard as the original; the 2401 Broadway story is a listing; the homeless-funds story names no address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-17-hl-0001",
+      "date": "2026-11-16",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "226 Kearny St.",
+      "street_number": "226",
+      "street_type": "ST",
+      "street_name": "KEARNY",
+      "description": "Relay of the Standard's report of Momo Noodle's second location at 226 Kearny St.",
+      "extra": {},
+      "citation": {
+        "label": "Hoodline, “Sichuan Noodle Favorite Momo Noodle Opens Second SF Spot in Union Square,” 16 November 2026",
+        "url": "https://hoodline.com/2026/11/sichuan-noodle-favorite-momo-noodle-opens-second-sf-spot-in-union-square/"
+      },
+      "raw": {
+        "text": "according to The San Francisco Standard"
+      },
+      "confidence": "low",
+      "publish": {
+        "status": "declined",
+        "note": "A relay: the story credits The San Francisco Standard, whose original is filed as news/items/sf-standard/2026-11-17.json, 2026-11-17-ss-0001, and carries the entry. Cite the reporting, not the relay."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0288029",
+        "path": "/san-francisco/union-square/kearny-street/222/",
+        "eas_address": "222 KEARNY ST",
+        "method": "EAS exact match on 226 KEARNY ST → parcel 0288029; sf-parcels has blklot 0288029 active, 222–226 KEARNY; the 2025 roll records it as commercial office, built 1987. EAS puts 222, 224, 226 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 222.",
+        "checked_on": "2026-11-17"
+      }
+    },
+    {
+      "id": "2026-11-17-hl-0002",
+      "date": "2026-11-16",
+      "date_precision": "day",
+      "kind": "other",
+      "address_as_written": "2401 Broadway St.",
+      "street_number": "2401",
+      "street_type": "ST",
+      "street_name": "BROADWAY",
+      "description": "A house listed for sale.",
+      "extra": {},
+      "citation": {
+        "label": "Hoodline, “Five-Bedroom Home at 2401 Broadway Lists for $6.5 Million,” 16 November 2026",
+        "url": "https://hoodline.com/2026/11/five-bedroom-home-at-2401-broadway-lists-for-6-5-million/"
+      },
+      "raw": {
+        "text": "2401 Broadway Lists for $6.5 Million"
+      },
+      "confidence": "low",
+      "publish": {
+        "status": "declined",
+        "note": "A listing is not an event at the building (precedent: news/items/hoodline/2026-11-11.json, 2026-10-24). Revisit if a sale closes."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0583001",
+        "path": "/san-francisco/pacific-heights/broadway/2401/",
+        "eas_address": "2401 BROADWAY",
+        "method": "EAS exact match on 2401 BROADWAY → parcel 0583001; sf-parcels has blklot 0583001 active, 2401–2401 BROADWAY; the 2025 roll records it as single family residential, built 1912. EAS files this street as BROADWAY with no street type, not ST.",
+        "checked_on": "2026-11-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}

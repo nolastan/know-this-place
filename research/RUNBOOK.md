@@ -331,7 +331,13 @@ corner whose roll year fits. **An alteration takes `"built_by"` in place of
 `"year"`** — the year before the record, `"built_by": 1908` for a 1909 list —
 and passes any roll year up to it: the offset-only and corner-only modes keep
 only parcels whose year fits, so an alteration given `year` there can never be
-placed on the building it altered. `--json` prints every entry's candidates with
+placed on the building it altered. **A line with neither `lot` nor `offset`** —
+a block face, a direction, a corner with no quadrant, which is most building
+news after 1920 — lists the parcels whose roll year fits; give the record's
+storey count as `"stories": 6` and only those within one storey of it are kept
+(`<-- storeys` marks an exact match). That is still only two checks, so place
+one only where a third agrees: the side of the street, a Planning name, or a
+credit already on the page. `--json` prints every entry's candidates with
 those checks, the roll year, storeys, lot area, frontage, addresses and page,
 for a placement script to apply the rule to instead of re-deriving the
 geometry; see [LESSONS.md](LESSONS.md) for why a corner record's lot is the

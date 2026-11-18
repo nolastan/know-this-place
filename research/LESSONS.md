@@ -3453,3 +3453,37 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   lands beside the next entry. Reading down the column put four 1935
   remodelings on the wrong architects; read each entry across, against the
   page image. (2026-11-15, architect-engineer-california)
+- **`corner.py --batch` used to print nothing for a line with no lot and no
+  offset, and after 1920 that is most building news.** The 1905–1920 corner
+  items gave lot sizes; the 1921–1959 ones give a storey count and a block face
+  ("a six-story apartment house on the south side of Bush, west of
+  Leavenworth"), and 179 of 237 entries came back with no candidate at all, most
+  of them "no parcel within 4% of the lot" — a non-answer that reads like a miss. The batch now lists, for any
+  line without a lot or offset, the parcels whose roll year fits, and keeps only
+  those within one storey of the record's `"stories"`; entries with any
+  candidate went from 58 to 136, and 37 of the batch's 66 placements came
+  through the new mode. *Give every entry its storey count, and
+  read "no parcel within 4% of the lot" as "you gave me nothing to match on".*
+  (2026-11-17, architect-engineer-california)
+- **EAS spells some streets without the punctuation and spaces they carry in
+  print, and `corner.py` then says the streets "do not meet".** `OFARRELL`,
+  `SEACLIFF`, `BUENA VISTA` (two words) — the crossing test fails on a name EAS
+  does not hold, and the message blames the geometry. Check a street name
+  against the EAS street list (`$select=street_name&$group=street_name`, about
+  2,000 rows) before a batch. (2026-11-17, architect-engineer-california)
+- **A sentence screen misses about one corner item in four; run a phrase-only
+  recall pass after it.** Splitting OCR into sentences and requiring a street
+  type beside the name dropped items whose sentence broke at a column, whose
+  street type was abbreviated, or whose "San Francisco" sat in the next
+  sentence. A second pass that took every "corner of", "cor." and "side/line
+  of" within 350 characters of "San Francisco" and not already read found 152
+  more contexts and about 70 more jobs — a third of the batch. (2026-11-17,
+  architect-engineer-california)
+- **When the page's permit names a different architect for the same building,
+  the placement is what failed.** A 1922 notice put Milton Latham's own
+  three-storey, six-apartment house on the north side of Sacramento between
+  Franklin and Gough; year, storeys and side all fitted 1950 Sacramento, whose
+  December 1922 permit names A. J. Horstmann for a three-storey, six-apartment
+  building. That is not a conflict to record on the page — it is evidence the
+  plans went unbuilt or the parcel is wrong. Leave it unresolved. (2026-11-17,
+  architect-engineer-california)
