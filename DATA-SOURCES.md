@@ -516,6 +516,42 @@ here is [Adding a source](#adding-a-source).
 - **Verified:** 2026-09-08 (bulk file, 18,399 rows; three schools at 555
   Portola Drive — CDS 38684783830072, 38684783830387, 38684780119958)
 
+## sf-registered-businesses — Registered Business Locations
+
+- **What:** The Treasurer & Tax Collector's register of every business location
+  in the city, open and closed, with the date each one started at its address
+  and, once it left, the date it ended. For a storefront this is the run of
+  businesses that traded from it, which no permit or roll entry records: C-H
+  Cleaners at 4548 18th Street since March 1988; Sunshine Launderette, then
+  Sunshine Cleaners, at 1500 Ninth Avenue. A page carries it as `businesses`
+  (REFERENCE.md → businesses).
+- **Endpoint:** `https://data.sf.gov/resource/g8m3-pdis.json` (the
+  `data.sfgov.org` host now redirects to `data.sf.gov`). One address:
+  `?$where=upper(full_business_address) like '4548 18TH ST%'`.
+- **Key fields:** `dba_name`, `full_business_address`, `location_start_date`,
+  `location_end_date`, `ownership_name`, `parcel_number` (mostly empty).
+- **Cautions:**
+  - **`ownership_name` names people — never copy it**, nor use it on a page
+    except to tell one registrant from the next: a later registration of the
+    same trading name under a different registrant is `ownership_changed`. A
+    registration re-filed under a corporation carrying the business's own
+    name is the same owner incorporating, not a change.
+  - **Leave out** building-rental registrations ("3690 Mission St Bldg",
+    "1500-1506 9th Av Apts" — the landlord), and any registration whose
+    trading name is a person's own name.
+  - **The register is per address, not per door.** A building's upper flats
+    share the street number, and a home business registered there would put
+    a resident on the page. Take only storefront businesses, on a parcel
+    with a store; a citywide read needs a rule for this before it runs.
+  - **A start date of 1 January is usually the register's, not the
+    business's.** Keep it as a bare year.
+  - An end date closes a registration, which happens at a sale or a renaming
+    as often as a closure, so the timeline never says a business closed.
+  - Registrations go stale: 1744 Clement Street still has 88 Laundromate &
+    Cleaners open beside New Shining Cleaners, registered in 2026.
+- **Citation label:** "SF Treasurer & Tax Collector, business registrations"
+- **Verified:** 2026-11-17 (eleven dry cleaners; `merchants/sf-registered-businesses/2026-11-17.json`)
+
 ## Research sources — cataloged in `research/`
 
 Newspapers, books, journals, newsletters, context statements and survey reports

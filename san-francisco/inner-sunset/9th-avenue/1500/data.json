@@ -152,6 +152,14 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "Inner Sunset Historic Context Statement, adopted 2024",
       "retrieved": "2026-08-15"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%271500%209TH%20AVE%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-17"
     }
   ],
   "historical_record": [
@@ -168,5 +176,25 @@
       "source": "inner-sunset-context-statement"
     }
   ],
-  "hook": "A building with no recorded construction year."
+  "hook": "A building with no recorded construction year.",
+  "businesses": [
+    {
+      "name": "Sunshine Launderette",
+      "kind": "Laundry",
+      "opened": "1986",
+      "closed": "2015-06-12",
+      "address": "1500 Ninth Avenue",
+      "source": "sf-registered-businesses"
+    },
+    {
+      "name": "Sunshine Cleaners",
+      "kind": "Dry cleaner",
+      "opened": "2015-06-12",
+      "ownership_changed": [
+        "2023-05-09"
+      ],
+      "address": "1500 Ninth Avenue",
+      "source": "sf-registered-businesses"
+    }
+  ]
 }

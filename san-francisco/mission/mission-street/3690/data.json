@@ -1,0 +1,159 @@
+{
+  "address": "3690 Mission Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/mission-street/3690/",
+  "apn": "6687008",
+  "block": "6687",
+  "lot": "008",
+  "eas_baseid": "478303",
+  "coordinates": {
+    "lat": 37.737453,
+    "lng": -122.424198
+  },
+  "parcel": {
+    "year_built": 1940,
+    "units": 5,
+    "stories": 2,
+    "rooms": 17,
+    "bathrooms": 5,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 4185,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 5 to 14 units",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0061 0055 HIGHLAND            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 203110,
+    "assessed_improvement_value": 299597
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201405155876",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-05-15",
+      "status_date": "2014-07-23",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "repair drywall after water damage 5/8\" sheetrock. repair in-kind. cosmetic work only. 500 sq ft of sheetrock to be replaced.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201403281996",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-03-28",
+      "status_date": "2014-07-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "repair water damage to (2) apt.s remove & replace (2) furnaces & hot water heaters to repair , drywall & flooring non rated assemblies only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311212541",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-11-21",
+      "status_date": "2014-01-14",
+      "estimated_cost": 3958,
+      "revised_cost": 3958,
+      "description": "replace 4 windows, retro-fit method. 3 tobe fiberglass (street side) 1 to be vinyl (rear side) kind for kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201005031586",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-05-03",
+      "status_date": "2010-05-18",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "to comply with nov # 201037862, dayed 3.22.10. replace stringers on rear exterior stairs. install fire existinguishers on each unit, provide vent cap for garbage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201002226917",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2010-02-22",
+      "status_date": "2010-04-28",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "shower replacement. to comply with nov #201032283",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9621899",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-11-12",
+      "status_date": "1997-07-28",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 10,
+    "range": "1996–2014",
+    "shown_on_page": 6,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSION&street_type=ST&address_number=3690",
+      "retrieved": "2026-11-17"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6687008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-17"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6687&lot=008",
+      "retrieved": "2026-11-17"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6687008",
+      "retrieved": "2026-11-17"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%273690%20MISSION%20ST%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-17"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "Flamingo Cleaners",
+      "kind": "Dry cleaner",
+      "opened": "1998-10-01",
+      "address": "3690 Mission Street",
+      "source": "sf-registered-businesses"
+    }
+  ]
+}
