@@ -596,12 +596,18 @@ main > .panel + .panel { margin-top: 1.25rem; }
   text-transform: uppercase;
   color: var(--muted);
 }
-.hero .panel-business + .panel-business { margin-top: -0.4rem; }
 .panel-business > h2 { margin: 0; font-family: var(--serif); font-size: 1.45rem; line-height: 1.2; font-weight: 650; color: var(--ink); }
-.panel-business > h2 .type-icon { color: var(--accent); font-size: 0.85em; margin-right: 0.3em; vertical-align: -0.05em; }
 .vtl-desc .type-icon { color: var(--accent); margin-right: 0.3em; vertical-align: -0.08em; }
-.panel-business > .speclist { margin: 0.8rem 0 0; }
-.panel-business .spec-k, .panel-business .spec-v span { white-space: nowrap; }
+.panel-business .speclist { margin: 0.8rem 0 0; }
+.panel-business .spec-k, .panel-business .spec-v span, .business-info .spec-k, .business-info .spec-v span { white-space: nowrap; }
+.business + .business { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.business > h3 { margin: 0; font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; font-weight: 650; color: var(--ink); }
+.business-at { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--ink); }
+/* One business on a one-address page: its name is the h1, and this is the
+   panel's content without the panel, between the .sub line and the tags. */
+.business-info { margin: -0.4rem 0 1.1rem; max-width: 30rem; }
+.business-info .speclist { margin: 0.7rem 0 0; }
+.business-info > .business-meta { margin: 0; }
 .business-meta { margin: 0.25rem 0 0; font-family: var(--sans); font-size: 0.88rem; color: var(--muted); }
 .occupant-updated { margin: 0.9rem 0 0; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
 /* The one call to action on an address page, so it gets the accent: a

@@ -614,10 +614,10 @@ label that row "Required from", and never render it as when the space opened.
 
 ### Current occupant — now part of `.panel-business`
 **This panel no longer stands alone.** Since PR #640 a directory's
-`occupants` render as business panels under the heading (Businesses here,
-below), one panel per merchant, and a business both the register and a
-directory name is one panel. With one business to a panel, the rules below
-about where an offer or a read date sits no longer arise. What follows is the rule set as
+`occupants` render under the heading (Businesses here, below), in one of
+three shapes by how many businesses there are; with several, they share one
+"Current occupants" panel, and the rules below for where an offer or a read
+date sits apply to it as written, reading `.occupant` as `.business`. What follows is the rule set as
 first written for the aside panel.
 
 The businesses trading from the building today, from `occupants`, as an
@@ -699,31 +699,40 @@ control into the markup.
 </p>
 ```
 
-### Businesses here — `.panel-business`
-Each business trading from the building today — `businesses` entries with no
-`closed`, and every `occupants` entry a merchant directory lists, one business
-where both name it — in **a panel of its own, inside the hero under the
-`.sub` line** and above the tags: a reader from a business's map listing finds
-it before the parcel. The eyebrow is the business's own door ("At 4548 18th
-Street"), or the page's lead number where the source names none; never "At
-this address", which read as unclear and on a ranged page did not say which
-door. Then an `<h2>` led by its kind's glyph in the accent, one muted line
-(what it is, and the year it opened here), the hours as a speclist, the
-"Last updated" date when there are hours, and the directory's offer.
+### Businesses here — by how many (`business_mode`)
+What trades from the building today — `businesses` entries with no `closed`,
+and every `occupants` entry a merchant directory lists, one business where both
+name it — sits **inside the hero, under the `.sub` line** and above the tags,
+so a reader from a business's map listing finds it before the parcel. Its shape
+depends on how many businesses and doors there are:
 
-One business to a panel settles whose an offer and a date are, so the
-placement rules the occupant panel needed (below) reduce to this. A
-directory listing three brands at one door now prints its button in each
-brand's panel.
+- **One business, one address** (the heading is a single number): the page is
+  as near to the business's own page as it gets. The business's name is the
+  `<h1>`, led by its kind's glyph the way a named building's type leads its
+  name; the `.sub` gives the address and neighborhood; and what its panel
+  would hold — the muted line, the hours, "Last updated", the offer — follows
+  as `.business-info`, with no box.
+- **One business, a page spanning several numbers**: the building keeps the
+  heading, and the business gets a `.panel-business` whose eyebrow is its door
+  ("At 4548 18th Street", or the page's lead number where the source names
+  none) over its name as an `<h2>`.
+- **Several businesses**: one `.panel-occupants`, eyebrow "Current occupants",
+  a `.business` group per business split by a hairline, each with its own door
+  under its name where that is not the page's lead number. The placement rules
+  for offers and read dates are the Current occupant panel's, below.
+
+**Kind glyphs go on page headings only**, never inside a panel; the timeline's
+business entries carry them too (`.vtl-desc .type-icon`).
 ```html
-<section class="panel panel-business" aria-label="C-H Cleaners">
-  <p class="business-label">At 4548 18th Street</p>
-  <h2><i class="hgi-stroke hgi-hanger type-icon" role="img" aria-label="Dry cleaner" title="Dry cleaner"></i>C-H Cleaners</h2>
-  <p class="business-meta">Dry cleaner · since 1988</p>
-</section>
+<h1 class="named"><i class="hgi-stroke hgi-restaurant-01 type-icon" role="img" aria-label="Cantonese · BBQ" title="Cantonese · BBQ"></i>Go Duck Yourself</h1>
+<p class="sub">439 Cortland Avenue · Bernal Heights</p>
+<div class="business-info">
+  <p class="business-meta">Cantonese · BBQ · Asian · Barbeque</p>
+  <dl class="speclist">…</dl>
+  <p class="occupant-updated">Last updated September 11, 2026</p>
+  <p class="occupant-offer">…</p>
+</div>
 ```
-On the timeline, each opening and change of ownership leads with the same
-glyph (`.vtl-desc .type-icon`).
 
 ### Notes — `.community-note`
 `.community-note` wraps clearly-attributed unverified contributions (auto-
