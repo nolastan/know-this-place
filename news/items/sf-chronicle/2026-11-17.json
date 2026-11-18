@@ -1,0 +1,47 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-11-17",
+  "read_on": "2026-11-17",
+  "notes": "Run of 2026-11-17. Two Chronicle posts queued. The 475 Sansome lease is declined because its headline names a person; the Muni upgrades story names no address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-17-sc-0001",
+      "date": "2026-11-16",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "475 Sansome St.",
+      "street_number": "475",
+      "street_type": "ST",
+      "street_name": "SANSOME",
+      "description": "OpenAI's hardware team leased a large office at 475 Sansome St.",
+      "extra": {},
+      "citation": {
+        "label": "San Francisco Chronicle, “Exclusive: OpenAI and Jony Ive’s secretive AI hardware team just leased a huge S.F. office,” 16 November 2026",
+        "url": "https://www.sfchronicle.com/realestate/article/openai-jony-ive-san-francisco-ai-hardware-office-22533657.php"
+      },
+      "raw": {
+        "text": "leased a huge S.F. office"
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "The headline names a person who is not an architect, builder, developer or firm (Jony Ive), and a headline may not be edited, so it cannot go on a page. The Registry's same-day account (2026-11-17-rg-0001) has the same problem. A big lease is otherwise the kind of fact this module publishes (precedent: 201 Mission, 2026-11-07-hl-0001); a later story on this lease with a usable headline would carry it."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0228038",
+        "path": "/san-francisco/chinatown/sansome-street/475/",
+        "eas_address": "475 SANSOME ST",
+        "method": "EAS exact match on 475 SANSOME ST → parcel 0228038; sf-parcels has blklot 0228038 active, 475–475 SANSOME; the 2025 roll records it as commercial office, built 1900.",
+        "checked_on": "2026-11-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    }
+  ]
+}
