@@ -51,13 +51,18 @@
   </ol>
 
   <h2>Trade-offs</h2>
+  <p class="note">Sizes are what crosses the network (gzipped). Tile downloads for A and today aren't measured here.</p>
   <table>
     <thead><tr><th></th><th>Today (dots)</th><th>A. Over a basemap</th><th>B. No basemap</th><th>C. SVG locator</th></tr></thead>
     <tbody>
-      <tr><th>Data on first view</th><td>addresses 5.5 MB, 0.46 MB gzipped</td>
-        <td>same, plus page lots 9 MB (1.5 MB gzipped) the first time you zoom in</td>
-        <td>as A, plus lots for the view: ~25 KB gzipped per 1 km cell; 1–4 cells at street zoom, ~35 at zoom 14</td>
-        <td>10–30 KB of SVG inside the page; no requests</td></tr>
+      <tr><th>Download, opening the map</th><td>dots 0.46 MB, plus Mapbox's tiles</td>
+        <td>dots 0.46 MB, plus the tile provider's tiles</td>
+        <td>dots 0.46 MB, streets 0.31 MB, land 0.04 MB; no tiles</td>
+        <td>nothing extra: 10–30 KB of SVG inside the page</td></tr>
+      <tr><th>Download, zooming in</th><td>more tiles</td>
+        <td>page lots 1.5 MB, once, the first time you zoom in; more tiles</td>
+        <td>page lots 1.5 MB once, as A; then ~25 KB per 1 km square of lots you pan over (1–4 at street level, ~35 at zoom 14)</td>
+        <td>—</td></tr>
       <tr><th>JavaScript</th><td>Mapbox GL</td><td>Mapbox GL or MapLibre</td><td>MapLibre (open source)</td><td>none</td></tr>
       <tr><th>Third parties</th><td>Mapbox tiles + static images</td><td>tile provider</td><td>label font only (could be self-hosted)</td><td>none</td></tr>
       <tr><th>Context you lose</th><td>—</td><td>nothing</td><td>water names, parks by name, transit, freeways as roads, hills; streets are only lot gaps plus names</td><td>same as B, at one zoom</td></tr>
