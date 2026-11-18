@@ -2540,8 +2540,9 @@ def business_offers(r: dict) -> list:
 
 
 def business_card_html(rec: dict, indent: str) -> str:
-    """What trades here today, under the heading, in the shape
-    `business_mode` picks. A reader who arrives from a business's map listing
+    """One business trading here today, under the heading, in the shape
+    `business_mode` picks ("heading" or "panel"; several go to the aside, in
+    `occupants_panel_html`). A reader who arrives from a business's map listing
     came for the business, so it sits above the parcel's figures, not in the
     aside.
 
@@ -2551,8 +2552,20 @@ def business_card_html(rec: dict, indent: str) -> str:
     referral offer). Kind glyphs go on page headings only, never in a panel.
     """
     mode = business_mode(rec)
-    if not mode:
+    if mode not in ("heading", "panel"):
         return ""
+    return business_html(rec, indent, mode)
+
+
+def occupants_panel_html(rec: dict, indent: str) -> str:
+    """Several businesses: the "Current occupants" panel, which heads the
+    aside beside the timeline rather than the hero (Stan, 2026-11-18)."""
+    if business_mode(rec) != "occupants":
+        return ""
+    return business_html(rec, indent, "occupants")
+
+
+def business_html(rec: dict, indent: str, mode: str) -> str:
     rows = trading_rows(rec)
     title = page_title(rec)
     lead = re.sub(r"^(\d+\w*)–\S+", r"\1", title)
@@ -4307,7 +4320,7 @@ def render_html(rec: dict) -> str:
     # them to sit beside — the empty column a split risks is the left one, and a
     # page with any timeline entry, art or prose at all has something to put
     # there. Only a page that is nothing but panels stacks them full width.
-    has_panels = bool(place_panel_html(rec, "")
+    has_panels = bool(occupants_panel_html(rec, "") or place_panel_html(rec, "")
                       or addresses_panel_html(rec, "")
                       or glance_panel_html(rec, "")
                       or district_panel_html(rec, "") or open_space_panel_html(rec, "")
@@ -4320,10 +4333,10 @@ def render_html(rec: dict) -> str:
                     or timeline_html(rec, "").count('<li class="vtl-item"') > 1)
     use_cols = has_panels and has_main
     ind = "      " if use_cols else "  "
-    # What trades from the building today is not here: it heads the page,
-    # under the heading (`business_card_html`). What is happening there next
-    # heads the aside.
-    panels = (events_panel_html(rec, ind)
+    # A lone business heads the page, under the heading
+    # (`business_card_html`); several head the aside, then what is happening
+    # there next.
+    panels = (occupants_panel_html(rec, ind) + events_panel_html(rec, ind)
               + place_panel_html(rec, ind)
               + open_space_panel_html(rec, ind)
               + addresses_panel_html(rec, ind)

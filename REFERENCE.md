@@ -268,7 +268,7 @@ is closed (`seed_pages.BUSINESS_KEYS`): there is nowhere to put an owner.
 - **An entry with no `closed` is trading today**, and is shown under the
   heading in the shape `business_mode` picks: on a one-address page with one
   business, the business is the heading; one business on a ranged page gets an
-  "At 4548 18th Street" panel; several share a "Current occupants" panel (see
+  "At 4548 18th Street" panel; several share a "Current occupants" panel at the top of the aside (see
   shared/BLOCKS.md → Businesses here). Its name leads the tab title. A reader who arrives from the business's map listing came for the
   business.
 - **Every opening and change of ownership is a timeline item**, with the

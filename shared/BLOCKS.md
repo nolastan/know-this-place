@@ -614,9 +614,9 @@ label that row "Required from", and never render it as when the space opened.
 
 ### Current occupant — now part of `.panel-business`
 **This panel no longer stands alone.** Since PR #640 a directory's
-`occupants` render under the heading (Businesses here, below), in one of
-three shapes by how many businesses there are; with several, they share one
-"Current occupants" panel, and the rules below for where an offer or a read
+`occupants` render in one of three shapes by how many businesses there are
+(Businesses here, below); with several, they share one "Current occupants"
+panel at the top of the aside, and the rules below for where an offer or a read
 date sits apply to it as written, reading `.occupant` as `.business`. What follows is the rule set as
 first written for the aside panel.
 
@@ -702,8 +702,9 @@ control into the markup.
 ### Businesses here — by how many (`business_mode`)
 What trades from the building today — `businesses` entries with no `closed`,
 and every `occupants` entry a merchant directory lists, one business where both
-name it — sits **inside the hero, under the `.sub` line** and above the tags,
-so a reader from a business's map listing finds it before the parcel. Its shape
+name it. A single business sits **inside the hero, under the `.sub` line** and
+above the tags, so a reader from a business's map listing finds it before the
+parcel; several go to the aside. Its shape
 depends on how many businesses and doors there are:
 
 - **One business, one address** (the heading is a single number): the page is
@@ -716,7 +717,8 @@ depends on how many businesses and doors there are:
   heading, and the business gets a `.panel-business` whose eyebrow is its door
   ("At 4548 18th Street", or the page's lead number where the source names
   none) over its name as an `<h2>`.
-- **Several businesses**: one `.panel-occupants`, eyebrow "Current occupants",
+- **Several businesses**: one `.panel-occupants` at the **top of the aside**,
+  beside the timeline, not in the hero (Stan, 2026-11-18). Eyebrow "Current occupants",
   a `.business` group per business split by a hairline, each with its own door
   under its name where that is not the page's lead number. The placement rules
   for offers and read dates are the Current occupant panel's, below.
