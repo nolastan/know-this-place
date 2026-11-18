@@ -1,0 +1,275 @@
+{
+  "source_id": "sf-standard",
+  "batch": "backfill-2026-07",
+  "read_on": "2026-11-18",
+  "notes": "Not a poll.py backfill: The San Francisco Standard's July 2026 archive was read by Meta Muse, an external reader Stan delegated it to, before he stopped that backfill. Muse returned seven findings and one coverage row. Each article was re-fetched on 2026-11-18 to check its <h1> headline, date and quoted text against the page before anything was written here; Muse's own wording was not used. No backfill window is recorded in state/cursors.json, because the screen did not run on this month.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 38,
+    "mentions": 7,
+    "remaining": "Muse reports listing 269 July 2026 Standard stories and reading 38; the other 231 were judged by Muse from their headlines and are not recorded per item. Muse skipped 31 read stories, nearly all paywalled with no street address in the readable part (Parkmerced, Marina and Fillmore Safeways, Jollibee, Ilna, Florecita, Fieldwork Brewing, Oasis, Shuggie's, Mellow and others); one, a coffee-shop story whose headline names a private person, was skipped outright. A poll.py backfill of this window would reach them again.",
+    "note": "Every Standard article read was paywalled after the lede or first section."
+  },
+  "findings": [
+    {
+      "id": "backfill-2026-07-0001",
+      "date": "2026-07-08",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "San Francisco Centre (865 Market Street)",
+      "street_number": "865",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "The distressed sale of the shuttered San Francisco Centre mall, agreed with the winning bidders in March, was called off after due diligence, putting the roughly 1.2 million-square-foot property back on the market. The article names the mall but prints no street number; the site files the mall at 865 Market Street, which already carries the later buyer selection (Chronicle, 22 Oct 2026) and the redevelopment loan (The Registry, 9 Nov 2026). This collapse in July is a separate, earlier event.",
+      "extra": {
+        "square_feet": 1200000,
+        "winning_bidders": "Presidio Bay and Prado Group",
+        "found_by": "Meta Muse (external reader) backfill file know-this-place-news-2026-07-sf-standard.jsonl, uploaded by Stan 2026-11-18"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “Dead mall back on market: Buyers walk away from distressed sale of San Francisco Centre,” 8 July 2026",
+        "url": "https://sfstandard.com/2026/07/08/san-francisco-centre-mall-falls-apart/"
+      },
+      "raw": {
+        "text": "A deal to rescue the shuttered San Francisco Centre Mall has been called off, ostensibly putting the 1.2 million-square-foot downtown property back on the market."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3705042",
+        "path": "/san-francisco/south-of-market/market-street/865/",
+        "eas_address": "865 MARKET ST",
+        "method": "EAS exact match on 865 MARKET ST → parcel 3705042; sf-parcels has blklot 3705042 active, 865–885 MARKET; the 2025 roll records it as commercial retail, built 1908. EAS puts 865, 885 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 865.",
+        "checked_on": "2026-11-18"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on /san-francisco/south-of-market/market-street/865/ as sf-standard-2026-07-08. No homepage card: a July entry sorts below the grid's twelve."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0002",
+      "date": "2026-07-21",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2139 Polk St.",
+      "street_number": "2139",
+      "street_name": "POLK",
+      "street_type": "ST",
+      "description": "A bakery, Lorella, a permanent home for a pastry pop-up, is to open in a former bagel shop at 2139 Polk Street; the space is getting a full gut renovation. The headline names no one. The chefs behind it are not recorded here.",
+      "extra": {
+        "business_name": "Lorella",
+        "use_before": "bagel shop",
+        "architect_of_fitout": "Seth Boor",
+        "found_by": "Meta Muse (external reader) backfill file know-this-place-news-2026-07-sf-standard.jsonl, uploaded by Stan 2026-11-18"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “One of SF’s best pastry chefs is opening a bakery in Russian Hill,” 21 July 2026",
+        "url": "https://sfstandard.com/2026/07/21/lorella-bakery-melissa-perello-russian-hill/"
+      },
+      "raw": {
+        "text": "will open a bakery at 2139 Polk St."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0571003",
+        "path": "/san-francisco/pacific-heights/polk-street/2139/",
+        "eas_address": "2139 POLK ST",
+        "method": "EAS exact match on 2139 POLK ST → parcel 0571003; sf-parcels has blklot 0571003 active, 2139–2141 POLK; the 2025 roll records it as commercial retail, built 1933. EAS puts 2139, 2141 POLK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2139.",
+        "checked_on": "2026-11-18"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on /san-francisco/pacific-heights/polk-street/2139/ as sf-standard-2026-07-21."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0003",
+      "date": "2026-07-28",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "100 Stockton",
+      "street_number": "100",
+      "street_name": "STOCKTON",
+      "street_type": "ST",
+      "description": "Permits filed with the city show the streetwear retailer Kith taking a ground-floor retail space at 100 Stockton, with an adjoining space for a possible restaurant; it would be the brand's first Northern California store. The article recalls the building as the former Macy's men's store (closed 2012), redeveloped into offices over shops by Blatteis & Schnur and reopened in 2023.",
+      "extra": {
+        "business_name": "Kith",
+        "project_status": "permits filed",
+        "redeveloper": "Blatteis & Schnur",
+        "redevelopment_opened": 2023,
+        "found_by": "Meta Muse (external reader) backfill file know-this-place-news-2026-07-sf-standard.jsonl, uploaded by Stan 2026-11-18"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “High-end streetwear company plots retail store and possible restaurant in Union Square,” 28 July 2026",
+        "url": "https://sfstandard.com/2026/07/28/kith-streetwear-union-square-sf/"
+      },
+      "raw": {
+        "text": "Clothing retailer Kith filed permits for a space on the ground floor of the 100 Stockton building."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0313017",
+        "path": "/san-francisco/chinatown/stockton-street/100/",
+        "eas_address": "100 STOCKTON ST",
+        "method": "EAS exact match on 100 STOCKTON ST → parcel 0313017; sf-parcels has blklot 0313017 active, 30–70 OFARRELL; the 2025 roll records it as commercial office, built 1974. EAS puts 100, 110, 120, 130 STOCKTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 100.",
+        "checked_on": "2026-11-18"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on /san-francisco/chinatown/stockton-street/100/ as sf-standard-2026-07-28."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0004",
+      "date": "2026-07-20",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "420 Cortland Ave.",
+      "street_number": "420",
+      "street_name": "CORTLAND",
+      "street_type": "AVE",
+      "description": "A pizza pop-up, Fatty Natty, plans a shop at 420 Cortland Avenue, a former bike shop, opening in 2027 after renovation. The story is mostly a profile of its two young founders.",
+      "extra": {
+        "business_name": "Fatty Natty",
+        "use_before": "bike shop",
+        "expected_opening": "2027",
+        "found_by": "Meta Muse (external reader) backfill file know-this-place-news-2026-07-sf-standard.jsonl, uploaded by Stan 2026-11-18"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “‘Pizza for the people’: Two Bernal Heights kids are opening their dream shop,” 20 July 2026",
+        "url": "https://sfstandard.com/2026/07/20/fatty-natty-pizza-bernal-heights/"
+      },
+      "raw": {
+        "text": "a brick-and-mortar set to open in 2027 at 420 Cortland Ave."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Not yet an event: the shop is not due to open until 2027 and the article is a profile of its founders (the same call as the Chronicle's wine bar, news/items/sf-chronicle/2026-09-22.json). The opening, when it happens, is the entry."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "5678027",
+        "path": "/san-francisco/bernal-heights/cortland-avenue/420/",
+        "eas_address": "420 CORTLAND AVE",
+        "method": "EAS exact match on 420 CORTLAND AVE → parcel 5678027; sf-parcels has blklot 5678027 active, 420–422 CORTLAND; the 2025 roll records it as commercial misc, built 2011.",
+        "checked_on": "2026-11-18",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0005",
+      "date": "2026-07-09",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "42 Calhoun Terrace",
+      "street_number": "42",
+      "street_name": "CALHOUN",
+      "street_type": "TER",
+      "description": "The hillside apartment complex on Calhoun Terrace, built into the Telegraph Hill cliff in 1938 by Ian and Rose Hoeffler, was listed for sale at $8 million. The article records Diego Rivera living at 42 Calhoun Terrace in 1940 and Frida Kahlo moving in with him there that year.",
+      "extra": {
+        "asking_price_usd": 8000000,
+        "found_by": "Meta Muse (external reader) backfill file know-this-place-news-2026-07-sf-standard.jsonl, uploaded by Stan 2026-11-18"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “The wildest new home listing in SF? An $8M cliffside complex where Frida Kahlo once lived,” 9 July 2026",
+        "url": "https://sfstandard.com/2026/07/09/frida-kahlo-apartment-building-telegraph-hill/"
+      },
+      "raw": {
+        "text": "Frida Kahlo lived at 42 Calhoun, about midway down the 1938-built hillside complex, while reconciling with Diego Rivera in 1940."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0113062",
+        "path": "/san-francisco/north-beach/calhoun-terrace/36/",
+        "eas_address": "36 CALHOUN TER",
+        "method": "EAS exact match on 42 CALHOUN TER → parcel 0113062; sf-parcels has blklot 0113062 active, 36–52 CALHOUN; the 2025 roll records it as multi-family residential. EAS puts 36, 38, 40, 42, 44, 46, 48, 50, 52 CALHOUN TER on that parcel, so per the directory contract the fact belongs on one page at the lowest, 36. EAS files the address under parcel 0113039, which sf-parcels reports retired; the active parcel its coordinates fall in is 0113062.",
+        "checked_on": "2026-11-18",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      },
+      "publish": {
+        "status": "published",
+        "note": "No timeline entry: an asking-price listing is not an event at the building (precedent: news/items/the-registry/2026-11-13.json, hoodline 2026-11-17); revisit when it sells. What the article establishes about the building went into its fields instead: built 1938 by Ian and Rose Hoeffler (building.builder, building.completed; the roll gives no year) and Diego Rivera and Frida Kahlo as notable past residents in 1940. Page seeded for it from research/manifests/news-backfill-2026-07-sf-standard.json (parcel 0113062, 36-52 Calhoun Terrace on one lot)."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0006",
+      "date": "2026-07-23",
+      "date_precision": "day",
+      "kind": "development",
+      "address_as_written": "230 Anza St.",
+      "street_number": "230",
+      "street_name": "ANZA",
+      "street_type": "ST",
+      "description": "The Planning Commission unanimously approved an eight-storey, 85-foot condominium building at 230 Anza Street on Thursday 23 July 2026, replacing a vacant structure to be demolished; the first project approved under the Family Zoning Plan. C.M. Wong Architecture designed it. The page already carries San Francisco YIMBY's plans (5 Mar), renderings ahead of this hearing (7 Jul) and building permits (18 Oct); the approval is a distinct event between them.",
+      "extra": {
+        "architect_of_proposal": "C.M. Wong Architecture",
+        "height_ft": 85,
+        "stories": 8,
+        "vote": "unanimous",
+        "found_by": "Meta Muse (external reader) backfill file know-this-place-news-2026-07-sf-standard.jsonl, uploaded by Stan 2026-11-18"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “‘This is the new San Francisco’: SF approves 85-foot condo tower in Inner Richmond,” 24 July 2026",
+        "url": "https://sfstandard.com/2026/07/24/first-family-zoning-plan-project-anza-street/"
+      },
+      "raw": {
+        "text": "A developer wants to demolish a vacant structure at 230 Anza St. and replace it with condos."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1091013",
+        "path": "/san-francisco/lone-mountain/anza-street/230/",
+        "eas_address": "230 ANZA ST",
+        "method": "EAS exact match on 230 ANZA ST → parcel 1091013; sf-parcels has blklot 1091013 active, 230–230 ANZA; the 2025 roll records it as multi-family residential, built 1900.",
+        "checked_on": "2026-11-18"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on /san-francisco/lone-mountain/anza-street/230/ as sf-standard-2026-07-24."
+      }
+    },
+    {
+      "id": "backfill-2026-07-0007",
+      "date": "2026-07-27",
+      "date_precision": "day",
+      "kind": "eviction",
+      "address_as_written": "907 Valencia St.",
+      "street_number": "907",
+      "street_name": "VALENCIA",
+      "street_type": "ST",
+      "description": "After a fire in the four-storey apartment building at 907 Valencia Street in February 2025, the landlord, a large rental company, moved to empty it for rehabilitation; the tenants refused to leave and have been on a rent strike since March 2026. An eviction fight is a building fact. No tenant is recorded here.",
+      "extra": {
+        "fire_date": "2025-02-05",
+        "stories": 4,
+        "rent_strike_since": "2026-03",
+        "found_by": "Meta Muse (external reader) backfill file know-this-place-news-2026-07-sf-standard.jsonl, uploaded by Stan 2026-11-18"
+      },
+      "citation": {
+        "label": "The San Francisco Standard, “The rent strikers: How a group of Mission tenants outfought one of SF’s biggest landlords,” 27 July 2026",
+        "url": "https://sfstandard.com/2026/07/27/rent-strike-valencia-mission-landlord/"
+      },
+      "raw": {
+        "text": "The residents of 907 Valencia St. refused to leave their homes, then refused to pay rent."
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3609042",
+        "path": "/san-francisco/mission/valencia-street/901/",
+        "eas_address": "901 VALENCIA ST",
+        "method": "EAS exact match on 907 VALENCIA ST → parcel 3609042; sf-parcels has blklot 3609042 active, 3591–3591 20TH; the 2025 roll records it as multi-family residential, built 1908. EAS puts 901, 903, 907, 909 VALENCIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 901.",
+        "checked_on": "2026-11-18"
+      },
+      "publish": {
+        "status": "published",
+        "note": "Entry on /san-francisco/mission/valencia-street/901/ as sf-standard-2026-07-27. The page already existed at the parcel's lowest number, 901 Valencia."
+      }
+    }
+  ]
+}
