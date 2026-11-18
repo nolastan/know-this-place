@@ -1,0 +1,327 @@
+{
+  "source_id": "sf-registered-businesses",
+  "batch": "2026-11-17",
+  "read_on": "2026-11-17",
+  "notes": "Eleven dry cleaners Stan listed on 2026-11-17 (businesses whose Google Maps listing has no website), read from the city's Registered Business Locations dataset (DataSF g8m3-pdis, served from data.sf.gov). Each page's `businesses` carries the storefront's history from the same read: trading names with their location start date as `opened`, a later registration of the same name under a different registrant as `ownership_changed`, and an end date as `closed`. Left out: `ownership_name` (people), building-rental registrations ('... Bldg', 'Apts'), and registrations whose trading name is a person's name. A registration re-filed under a corporation carrying the business's own name (Youngs Cleaners And Alterations Inc, La Post Cleaners) is not counted as a change of ownership. `kind` is read from the registered name ('Cleaners').",
+  "coverage": {
+    "unit": "business addresses",
+    "examined": 11,
+    "mentions": 11,
+    "remaining": "Only the eleven listed; no citywide read."
+  },
+  "findings": [
+    {
+      "id": "2026-11-17-0001",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "4548 18th St",
+      "street_number": "4548",
+      "street_name": "18TH",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists C-H Cleaners at this address, still open.",
+      "extra": {
+        "name": "C-H Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%274548%2018TH%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2657011",
+        "path": "/san-francisco/castro/18th-street/4548/",
+        "eas_address": "4548 18TH ST",
+        "method": "EAS exact match on 4548 18TH ST → parcel 2657011; sf-parcels has blklot 2657011 active, 4548–4554 18TH; the 2025 roll records it as multi-family residential, built 1880. The assessor files the parcel as 176 ORD ST. EAS puts 4548, 4550, 4554 18TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4548.",
+        "checked_on": "2026-11-17"
+      }
+    },
+    {
+      "id": "2026-11-17-0002",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2233 Market St",
+      "street_number": "2233",
+      "street_name": "MARKET",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists One Hour Cleaners at this address, still open.",
+      "extra": {
+        "name": "One Hour Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%272233%20MARKET%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3559002",
+        "path": "/san-francisco/castro/market-street/2213/",
+        "eas_address": "2213 MARKET ST",
+        "method": "EAS exact match on 2233 MARKET ST → parcel 3559002; sf-parcels has blklot 3559002 active, 2213–2241 MARKET; the 2025 roll records it as multi-family residential, built 1909. The assessor files the parcel as 230–240 SANCHEZ ST. EAS puts 2213, 2215, 2217, 2219, 2221, 2223, 2225, 2227, 2229, 2231, 2233, 2235, 2237, 2239, 2241 MARKET ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2213.",
+        "checked_on": "2026-11-17"
+      }
+    },
+    {
+      "id": "2026-11-17-0003",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "4107 19th St",
+      "street_number": "4107",
+      "street_name": "19TH",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists Castro Village Cleaners at this address, still open.",
+      "extra": {
+        "name": "Castro Village Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%274107%2019TH%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "2696001",
+        "path": "/san-francisco/castro/19th-street/4105/",
+        "eas_address": "4105 19TH ST",
+        "method": "EAS exact match on 4107 19TH ST → parcel 2696001; sf-parcels has blklot 2696001 active, 4105–4121 19TH; the 2025 roll records it as multi-family residential, built 1904. EAS puts 4105, 4107, 4115, 4119, 4121 19TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4105.",
+        "checked_on": "2026-11-17"
+      }
+    },
+    {
+      "id": "2026-11-17-0004",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "2162 Mission St",
+      "street_number": "2162",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists Young's Cleaners & Alterations at this address, still open.",
+      "extra": {
+        "name": "Young's Cleaners & Alterations"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%272162%20MISSION%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "3576021",
+        "path": "/san-francisco/mission/mission-street/2162/",
+        "eas_address": "2162 MISSION ST",
+        "method": "EAS exact match on 2162 MISSION ST → parcel 3576021; sf-parcels has blklot 3576021 active, 2162–2164 MISSION; the 2025 roll records it as commercial retail, built 1907. EAS puts 2162, 2164 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2162.",
+        "checked_on": "2026-11-17"
+      }
+    },
+    {
+      "id": "2026-11-17-0005",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3690 Mission St",
+      "street_number": "3690",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists Flamingo Cleaners at this address, still open.",
+      "extra": {
+        "name": "Flamingo Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%273690%20MISSION%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6687008",
+        "path": "/san-francisco/mission/mission-street/3690/",
+        "eas_address": "3690 MISSION ST",
+        "method": "EAS exact match on 3690 MISSION ST → parcel 6687008; sf-parcels has blklot 6687008 active, 55–61 HIGHLAND; the 2025 roll records it as multi-family residential, built 1940. The assessor files the parcel as 55–61 HIGHLAND AV.",
+        "checked_on": "2026-11-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-11-17-0006",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3151 Mission St",
+      "street_number": "3151",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists Nina's Cleaners at this address, still open.",
+      "extra": {
+        "name": "Nina's Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%273151%20MISSION%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "5518019",
+        "path": "/san-francisco/mission/mission-street/3151/",
+        "eas_address": "3151 MISSION ST",
+        "method": "EAS exact match on 3151 MISSION ST → parcel 5518019; sf-parcels has blklot 5518019 active, 3151–3155 MISSION; the 2025 roll records it as commercial office, built 1939. EAS puts 3151, 3155 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3151.",
+        "checked_on": "2026-11-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-11-17-0007",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3416 25th St",
+      "street_number": "3416",
+      "street_name": "25TH",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists 25th Street Dry Cleaners at this address, still open.",
+      "extra": {
+        "name": "25th Street Dry Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%273416%2025TH%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "6516009",
+        "path": "/san-francisco/mission/25th-street/3410/",
+        "eas_address": "3410 25TH ST",
+        "method": "EAS exact match on 3416 25TH ST → parcel 6516009; sf-parcels has blklot 6516009 active, 3410–3424 25TH; the 2025 roll records it as commercial hotel, built 1895. The assessor files the parcel as 2884–2890 MISSION ST. EAS puts 3410, 3412, 3414, 3416, 3418, 3420, 3422, 3424 25TH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3410.",
+        "checked_on": "2026-11-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-11-17-0008",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1500 9th Ave",
+      "street_number": "1500",
+      "street_name": "09TH",
+      "street_type": "AVE",
+      "description": "The city's register of business locations lists Sunshine Cleaners at this address, still open.",
+      "extra": {
+        "name": "Sunshine Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%271500%209TH%20AVE%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1854031",
+        "path": "/san-francisco/inner-sunset/9th-avenue/1500/",
+        "eas_address": "1500 09TH AVE",
+        "method": "EAS exact match on 1500 09TH AVE → parcel 1854031; sf-parcels has blklot 1854031 active, 1500–1506 09TH; the 2025 roll records it as multi-family residential, built 1912. EAS puts 1500, 1502, 1504, 1506 09TH AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1500.",
+        "checked_on": "2026-11-17"
+      }
+    },
+    {
+      "id": "2026-11-17-0009",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1952 Irving St",
+      "street_number": "1952",
+      "street_name": "IRVING",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists Sundown Cleaners at this address, still open.",
+      "extra": {
+        "name": "Sundown Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%271952%20IRVING%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1730022",
+        "path": "/san-francisco/inner-sunset/irving-street/1936/",
+        "eas_address": "1936 IRVING ST",
+        "method": "EAS exact match on 1952 IRVING ST → parcel 1730022; sf-parcels has blklot 1730022 active, 1936–1952 IRVING; the 2025 roll records it as commercial retail, built 1925. EAS puts 1936, 1940, 1952 IRVING ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1936.",
+        "checked_on": "2026-11-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-11-17-0010",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "1744 Clement St",
+      "street_number": "1744",
+      "street_name": "CLEMENT",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists New Shining Cleaners at this address, still open.",
+      "extra": {
+        "name": "New Shining Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%271744%20CLEMENT%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "1415030",
+        "path": "/san-francisco/outer-richmond/clement-street/1744/",
+        "eas_address": "1744 CLEMENT ST",
+        "method": "EAS exact match on 1744 CLEMENT ST → parcel 1415030; sf-parcels has blklot 1415030 active, 1744–1748 CLEMENT; the 2025 roll records it as commercial retail, built 1904. EAS puts 1744, 1748 CLEMENT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1744.",
+        "checked_on": "2026-11-17",
+        "note": "No page at this path yet; the parcel is the publisher's to seed."
+      }
+    },
+    {
+      "id": "2026-11-17-0011",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "625 Post St",
+      "street_number": "625",
+      "street_name": "POST",
+      "street_type": "ST",
+      "description": "The city's register of business locations lists La Post Cleaners at this address, still open.",
+      "extra": {
+        "name": "La Post Cleaners"
+      },
+      "citation": {
+        "label": "SF Treasurer & Tax Collector, Registered Business Locations via DataSF",
+        "url": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%27625%20POST%20ST%25%27",
+        "locator": "full_business_address"
+      },
+      "confidence": "high",
+      "resolution": {
+        "status": "resolved",
+        "apn": "0305032",
+        "path": "/san-francisco/tenderloin/post-street/625/",
+        "eas_address": "625 POST ST",
+        "method": "EAS exact match on 625 POST ST → parcel 0305032; sf-parcels has blklot 0305032 active, 625–633 POST; the 2025 roll records it as commercial hotel, built 1925. EAS puts 625, 627, 629, 633 POST ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 625.",
+        "checked_on": "2026-11-17"
+      }
+    }
+  ]
+}

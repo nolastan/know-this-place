@@ -612,7 +612,14 @@ not. `<h3>` is the space's own name from the inventory; the rows are a plain
 The inventory's `year` is the year of the **requirement**, not an opening date —
 label that row "Required from", and never render it as when the space opened.
 
-### Current occupant — `.panel-occupant`
+### Current occupant — now part of `.panel-business`
+**This panel no longer stands alone.** Since PR #640 a directory's
+`occupants` render in one of three shapes by how many businesses there are
+(Businesses here, below); with several, they share one "Current occupants"
+panel at the top of the aside, and the rules below for where an offer or a read
+date sits apply to it as written, reading `.occupant` as `.business`. What follows is the rule set as
+first written for the aside panel.
+
 The businesses trading from the building today, from `occupants`, as an
 infobox at the **top** of the aside. **One panel per building, not per
 merchant**: a shared kitchen lists three brands at one door, and three panels
@@ -690,6 +697,43 @@ control into the markup.
   <a href="…" rel="sponsored noopener"><span class="ic ic-link"></span>insomniacookies.com</a>
   <small>Referral code. Type it into the “Referral code (optional)” field when you create an Insomnia Cookies account.</small>
 </p>
+```
+
+### Businesses here — by how many (`business_mode`)
+What trades from the building today — `businesses` entries with no `closed`,
+and every `occupants` entry a merchant directory lists, one business where both
+name it. A single business sits **inside the hero, under the `.sub` line** and
+above the tags, so a reader from a business's map listing finds it before the
+parcel; several go to the aside. Its shape
+depends on how many businesses and doors there are:
+
+- **One business, one address** (the heading is a single number): the page is
+  as near to the business's own page as it gets. The business's name is the
+  `<h1>`, led by its kind's glyph the way a named building's type leads its
+  name; the `.sub` gives the address and neighborhood; and what its panel
+  would hold — the muted line, the hours, "Last updated", the offer — follows
+  as `.business-info`, with no box.
+- **One business, a page spanning several numbers**: the building keeps the
+  heading, and the business gets a `.panel-business` whose eyebrow is its door
+  ("At 4548 18th Street", or the page's lead number where the source names
+  none) over its name as an `<h2>`.
+- **Several businesses**: one `.panel-occupants` at the **top of the aside**,
+  beside the timeline, not in the hero (Stan, 2026-11-18). Eyebrow "Current occupants",
+  a `.business` group per business split by a hairline, each with its own door
+  under its name where that is not the page's lead number. The placement rules
+  for offers and read dates are the Current occupant panel's, below.
+
+**Kind glyphs go on page headings only**, never inside a panel; the timeline's
+business entries carry them too (`.vtl-desc .type-icon`).
+```html
+<h1 class="named"><i class="hgi-stroke hgi-restaurant-01 type-icon" role="img" aria-label="Cantonese · BBQ" title="Cantonese · BBQ"></i>Go Duck Yourself</h1>
+<p class="sub">439 Cortland Avenue · Bernal Heights</p>
+<div class="business-info">
+  <p class="business-meta">Cantonese · BBQ · Asian · Barbeque</p>
+  <dl class="speclist">…</dl>
+  <p class="occupant-updated">Last updated September 11, 2026</p>
+  <p class="occupant-offer">…</p>
+</div>
 ```
 
 ### Notes — `.community-note`

@@ -145,6 +145,14 @@
       "supports": "Current occupant",
       "query": "https://www.blackbird.xyz/",
       "retrieved": "2026-09-16"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?$where=upper(full_business_address)%20like%20%274107%2019TH%20ST%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-17"
     }
   ],
   "historic_survey": {
@@ -161,6 +169,19 @@
       ],
       "listed_address": "4117 19th Street",
       "source": "blackbird"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "Castro Village Cleaners",
+      "kind": "Dry cleaner",
+      "opened": "2012-08-10",
+      "ownership_changed": [
+        "2015-03-09",
+        "2026-08-27"
+      ],
+      "address": "4107 19th Street",
+      "source": "sf-registered-businesses"
     }
   ]
 }
