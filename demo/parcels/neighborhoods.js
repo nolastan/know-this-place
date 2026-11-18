@@ -98,7 +98,13 @@ const map = new maplibregl.Map({
   attributionControl: { compact: true },
 });
 new ResizeObserver(() => map.resize()).observe(shell);
+window.demoMap = map;   // for poking at it from the console
 map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
+/* As on the homepage: the wheel zooms the map only while it's in view, so
+   scrolling back up from the cards below returns to the top. */
+const syncScrollZoom = () => (scrollY < 4 ? map.scrollZoom.enable() : map.scrollZoom.disable());
+addEventListener("scroll", syncScrollZoom, { passive: true });
+syncScrollZoom();
 
 /* ---- news and events: the homepage's own sources ------------------------ */
 async function loadStories() {
@@ -156,7 +162,8 @@ async function pick(f) {
   popup.remove();
   // Keep the boundary clear of the panel, which covers the bottom on a phone.
   const narrow = shell.clientWidth < 720;
-  const under = narrow ? panel.offsetHeight + 24 : 40;
+  const under = narrow
+    ? shell.getBoundingClientRect().bottom - panel.getBoundingClientRect().top + 16 : 40;
   map.fitBounds([[bbox[0], bbox[1]], [bbox[2], bbox[3]]],
     { padding: { top: 64, bottom: under, left: narrow ? 16 : 40, right: narrow ? 16 : 40 }, duration: 900 });
   panel.innerHTML = `<strong>${esc(p.n)}</strong><p>Loading lots…</p>`;
@@ -235,6 +242,9 @@ map.on("click", (e) => {
   popup.remove();
   const area = at(e.point, ["area-fill"]);
   if (area && area.properties.slug !== picked) pick(area);
+  // Water, or land outside the city's neighborhoods (south of the line):
+  // nothing to pick, so it puts the city back.
+  else if (!area && picked) reset();
 });
 
 map.on("load", () => {

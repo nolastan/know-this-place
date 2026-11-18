@@ -271,6 +271,9 @@ def main() -> None:
     print("==> neighborhoods (prototype D)")
     by_neighborhood(lots, public, page_lots, feats, land)
 
+    print("==> prototype D page")
+    neighborhood_page()
+
     print("==> SVG locators")
     locators(lots, lots_near, page_lots, public, sfeats, land, feats)
 
@@ -325,6 +328,71 @@ def by_neighborhood(lots, public, page_lots, page_feats, land):
         index.append({"type": "Feature", "geometry": geom(polys), "properties": props})
     dump(OUT / "nhoods" / "index.geojson", {"type": "FeatureCollection", "features": index})
     print(f"    {len(areas)} neighborhoods, {total/1e6:.1f} MB in all")
+
+
+def neighborhood_page():
+    """demo/parcels/neighborhoods/index.html, made from the homepage itself so
+    the cards below the fold are the homepage's own: the map is swapped for D's,
+    and a Neighborhoods grid goes in above the news, one card per hub in the
+    city index's order, its photo from hub.json and its hook from the index."""
+    home = (ROOT / "index.html").read_text(encoding="utf-8")
+    city = (ROOT / "san-francisco" / "index.html").read_text(encoding="utf-8")
+    items = re.findall(r'<li><a href="([a-z0-9-]+)/">(.*?)</a><br>\s*<span class="hook">(.*?)</span></li>',
+                       city, flags=re.S)
+    cards = []
+    for slug, name, hook in items:
+        hub = ROOT / "san-francisco" / slug / "hub.json"
+        if not hub.exists():
+            continue
+        photo = json.loads(hub.read_text(encoding="utf-8")).get("photo")
+        if photo:
+            pic = (f'<img src="/san-francisco/{slug}/{photo["file"]}" width="{photo["width"]}" '
+                   f'height="{photo["height"]}" alt="{html.escape(photo.get("alt") or "")}" '
+                   f'loading="lazy" decoding="async">')
+        else:
+            pic = '<div class="media-empty"><span class="ic ic-pin"></span></div>'
+        cards.append(f"""    <li>
+      <a href="/san-francisco/{slug}/">
+        <figure class="media hub-card-media">{pic}</figure>
+        <span class="card-label">{name}</span>
+      </a>
+      <p class="card-news">{hook}</p></li>""")
+    section = ('<main id="neighborhoods">\n'
+               '  <div class="section-head"><span class="ic ic-pin"></span><h1>Neighborhoods</h1></div>\n'
+               '  <ul class="place-cards news-cards hub-cards">\n' + "\n".join(cards) + "\n  </ul>\n\n"
+               '  <div class="section-head" id="news"><span class="ic ic-permit"></span><h2>In the news</h2></div>')
+    page = home
+    # Head: MapLibre and D's script in place of Mapbox GL.
+    page = re.sub(r'  <link rel="preconnect" href="https://api.mapbox.com".*?defer></script>\n',
+                  '  <meta name="robots" content="noindex">\n'
+                  '  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">\n'
+                  '  <link rel="stylesheet" href="/demo/parcels/demo.css">\n'
+                  '  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" defer></script>\n'
+                  '  <script src="/demo/parcels/neighborhoods.js" defer></script>\n', page, count=1, flags=re.S)
+    page = re.sub(r"<title>.*?</title>", "<title>Demo — Pick a neighborhood</title>", page, count=1)
+    page = page.replace("</style>", """
+    /* DEMO: hub cards wear the news cards' frame at 3:2, the photos' own crop. */
+    .hub-cards .media { aspect-ratio: 3 / 2; overflow: hidden; }
+    .hub-cards .media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hub-cards .card-news { color: var(--muted); font-size: 0.9rem; }
+    .map-shell .demo-note { bottom: 4.5rem; }
+  </style>""", 1)
+    # The map: D's, with its panel; the cue now points at the neighborhoods.
+    page = re.sub(r'<div id="map" .*?></div>',
+                  '<div id="map" role="region" aria-label="Map of San Francisco neighborhoods; pick one to see its lots"></div>',
+                  page, count=1, flags=re.S)
+    page = page.replace('<p class="map-brand">Know This Place</p>',
+                        '<a class="map-brand" href="/demo/parcels/">Know This Place</a>\n'
+                        '  <aside class="demo-note" id="panel" aria-live="polite"></aside>', 1)
+    page = page.replace('<a class="map-cue" href="#news">In the news',
+                        '<a class="map-cue" href="#neighborhoods">Neighborhoods', 1)
+    page = page.replace('<main id="news">\n  <div class="section-head"><span class="ic ic-permit"></span><h1>In the news</h1></div>',
+                        section, 1)
+    # The homepage's own map script goes; D's replaces it.
+    page = re.sub(r'<script type="module">.*?</script>\s*(?=</body>)', "", page, count=1, flags=re.S)
+    out = HERE / "neighborhoods" / "index.html"
+    out.write_text(page, encoding="utf-8")
+    print(f"    {len(cards)} hub cards above the news")
 
 
 # --- prototype C: inline SVG locator ---------------------------------------
