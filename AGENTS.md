@@ -114,7 +114,8 @@ san-francisco/                        city
                                       generator patches the street list into
                                       the page, it does not write the page
     hub.json + assets/photo.jpg       the hub's photo credit and official
-                                      boundary, read by `overviews`
+                                      boundary, read by the overview
+                                      `build_site.py` adds when it stages
     castro-street/                    street  (official name, lowercased,
       index.md                         street type spelled out: "19th-street",
       4127/                            "collingwood-street")
