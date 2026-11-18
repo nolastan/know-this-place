@@ -1,0 +1,76 @@
+{
+  "source_id": "hoodline",
+  "batch": "2026-11-18",
+  "read_on": "2026-11-18",
+  "notes": "Run of 2026-11-18. Four Hoodline stories queued. None earns an entry: the Sierra / China Basin story's headline names an individual and the Standard's original reporting carries the event; the Tenderloin store case is a story about a person; the other two print no San Francisco address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 4,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-18-hl-0001",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "185 Berry St.",
+      "street_number": "185",
+      "street_name": "BERRY",
+      "street_type": "ST",
+      "description": "Sierra has become China Basin's largest tenant; Hoodline relays Bisnow and others.",
+      "citation": {
+        "label": "Hoodline, “Bret Taylor's Sierra Becomes China Basin's Biggest Tenant in AI Leasing Surge,” 17 November 2026",
+        "url": "https://hoodline.com/2026/11/bret-taylor-s-sierra-becomes-china-basin-s-biggest-tenant-in-ai-leasing-surge/"
+      },
+      "raw": {
+        "text": "has become the largest tenant at China Basin"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined twice over: the headline names a person who is not an architect, builder, developer or firm, and the event is carried by the Standard's own reporting the same day (news/items/sf-standard/2026-11-18.json 2026-11-18-ss-0001)."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3803005",
+        "path": "/san-francisco/mission-bay/berry-street/105/",
+        "eas_address": "105 BERRY ST",
+        "method": "EAS exact match on 185 BERRY ST → parcel 3803005; sf-parcels has blklot 3803005 active, 980–980 03RD; the 2025 roll records it as commercial office, built 1920. EAS puts 105, 185 BERRY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 105.",
+        "checked_on": "2026-11-18"
+      }
+    },
+    {
+      "id": "2026-11-18-hl-0002",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "eviction",
+      "address_as_written": "200 Leavenworth Street",
+      "street_number": "200",
+      "street_name": "LEAVENWORTH",
+      "street_type": "ST",
+      "description": "A court ruling and fine against a Tenderloin corner-store owner in a city nuisance suit.",
+      "citation": {
+        "label": "Hoodline, “Tenderloin Store Owner Hit With $151K Fine as SF Targets More Corner Shops,” 17 November 2026",
+        "url": "https://hoodline.com/2026/11/tenderloin-store-owner-hit-with-151k-fine-as-sf-targets-more-corner-shops/"
+      },
+      "raw": {
+        "text": "200 Leavenworth Street"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a legal case against a person, not a fact about the building; the page is not a crime blotter."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0338013",
+        "path": "/san-francisco/tenderloin/turk-street/294/",
+        "eas_address": "200 LEAVENWORTH ST",
+        "method": "EAS exact match on 200 LEAVENWORTH ST → parcel 0338013; sf-parcels has blklot 0338013 active, 200–200 LEAVENWORTH; the 2025 roll records it as commercial retail, built 1922.",
+        "checked_on": "2026-11-18"
+      }
+    }
+  ]
+}
