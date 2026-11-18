@@ -85,12 +85,6 @@
     .maplibregl-popup-tip { display: none; }
     .maplibregl-ctrl-group { background: var(--panel); border: 1px solid var(--rule); }
     .maplibregl-ctrl-group button + button { border-top: 1px solid var(--rule); }
-    /* On a phone maplibre-gl folds its attribution behind an "i" in a solid
-       white disc, which read as a button asking to be pressed. Folded, it
-       goes translucent like the address page's credit; opened, it is
-       maplibre-gl's own strip. The wordmark is left exactly as MapLibre draws it. */
-    .maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) { background: #ffffff80; }
-    .maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) .maplibregl-ctrl-attrib-button { opacity: 0.6; }
     /* The card a dot opens on click — a chip grown into a small version of the
        page it leads to: the Street View still, then the page's own <h1> and
        .sub, then, on a news or event dot, the story or the listing, and last
@@ -881,8 +875,9 @@ async function init() {
     bounds: HOME,
     fitBoundsOptions: { padding: 24 },
     minZoom: 10, maxZoom: 19,
-    attributionControl: { compact: true, customAttribution:
-      'Lots, streets and neighborhoods: <a href="https://data.sf.gov/">DataSF</a>' },
+    // No credit control: the lots, streets and neighborhoods are the city's
+    // own public records (DataSF), cited in DATA-SOURCES.md.
+    attributionControl: false,
   });
   /* The shell's size can settle after the map is made (a late stylesheet, a
      phone's toolbar showing or hiding), so follow it rather than the window. */
@@ -908,10 +903,6 @@ async function init() {
   map.on("load", () => {
     placeholder?.remove();
     pulse(map);
-    // The compact credit opens itself on load; on a phone it then covers the
-    // cue. Start it folded, as an "i" the reader can open.
-    shell.querySelector(".maplibregl-ctrl-attrib.maplibregl-compact")
-      ?.classList.remove("maplibregl-compact-show");
   });
 
   /* The wheel zooms the map — no modifier key. That only works because the map
