@@ -577,7 +577,10 @@ async function init() {
     showHub(a, how);
     const bb = bounds(base.areas.features.find((f) => f.properties.slug === a.slug));
     const narrow = shell.clientWidth < 720;
-    map.fitBounds(bb, { padding: { top: 64, bottom: 72, left: narrow ? 16 : 24,
+    // On a phone the news strip spans the foot of the map; keep clear of it.
+    const strip = narrow && newsBox
+      ? shell.getBoundingClientRect().bottom - newsBox.getBoundingClientRect().top + 12 : 72;
+    map.fitBounds(bb, { padding: { top: 64, bottom: strip, left: narrow ? 16 : 24,
                                    right: narrow ? 16 : 24 }, duration: instant ? 0 : 900 });
     const data = await fetchArea(a.slug);
     if (picked?.slug !== a.slug) return;      // another click got there first
@@ -778,6 +781,24 @@ async function init() {
      A pick elsewhere in the city is let go first, so its veil can't hide the
      building. On a phone the list folds back so the card has the room. */
   const newsBox = document.querySelector(".map-news");
+  const more = newsBox?.querySelector(".map-news-more");
+  const list = newsBox?.querySelector(".news-cards");
+  /* Folded, the strip is exactly the newest row tall, so the fold lands on
+     its border whatever the headline's length; measured again on resize. */
+  const fitFirst = () => {
+    const first = list?.firstElementChild;
+    if (first) list.style.setProperty("--first", `${first.offsetHeight}px`);
+  };
+  fitFirst();
+  new ResizeObserver(fitFirst).observe(shell);
+  const setOpen = (open) => {
+    if (!newsBox) return;
+    newsBox.classList.toggle("is-open", open);
+    more.setAttribute("aria-expanded", String(open));
+    more.textContent = open ? "Show less" : "Show more";
+    if (!open) list.scrollTop = 0;
+  };
+  more?.addEventListener("click", () => setOpen(!newsBox.classList.contains("is-open")));
   newsBox?.addEventListener("click", (e) => {
     const li = e.target.closest(".news-cards > li");
     const a = li?.querySelector("a:not(.card-outlet)");
@@ -791,7 +812,7 @@ async function init() {
       const area = base.areas.features.find((x) => x.properties.slug === picked.slug);
       if (!polygonsHold(area.geometry.coordinates, lng, lat)) unpick();
     }
-    if (shell.clientWidth < 720) newsBox.open = false;
+    if (shell.clientWidth < 720) setOpen(false);
     map.flyTo({ center: [lng, lat], zoom: Math.max(map.getZoom(), 14.5), duration: 900 });
     map.once("moveend", () => openCard({ source: "news", id: i, ...n }, [lng, lat]));
   });
