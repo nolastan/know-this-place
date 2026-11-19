@@ -190,8 +190,7 @@ main > .section-head:first-child { margin-top: 1.5rem; }
    grid still finds it here. */
 .map-news {
   position: absolute; z-index: 2; left: 1rem; bottom: 1.6rem;
-  width: min(21rem, calc(100% - 2rem)); max-height: calc(100% - 7rem);
-  display: flex; flex-direction: column;
+  width: min(21rem, calc(100% - 2rem));
   font-family: var(--sans);
   background: color-mix(in srgb, var(--panel) 72%, transparent);
   -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
@@ -205,22 +204,34 @@ main > .section-head:first-child { margin-top: 1.5rem; }
   font-size: 0.85rem; font-weight: 600; color: var(--ink); white-space: nowrap;
 }
 .map-news summary::-webkit-details-marker { display: none; }
-.map-news summary::after { content: "▴"; margin-left: auto; padding-left: 0.4rem; color: var(--muted); font-size: 0.75em; }
+.map-news summary::after {
+  content: "▴"; margin-left: auto; padding-left: 0.75rem;
+  color: var(--muted); font-size: 1.35rem; line-height: 1;
+}
 .map-news[open] summary::after { content: "▾"; }
 .map-news summary:hover { color: var(--accent); }
 .map-news .news-cards {
-  display: block; margin: 0; padding: 0 0.9rem 0.4rem; overflow-y: auto; list-style: none;
+  /* About a third of the map's height, then it scrolls. Set on the list, not
+     the <details>: Safari won't lay out a <details>'s content as a flex child,
+     so a cap on the box let the list run out past it. */
+  display: block; margin: 0; padding: 0 0.9rem 0.4rem; list-style: none;
+  max-height: 33svh; overflow-y: auto; overscroll-behavior: contain;
   border-top: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
 }
-.map-news .news-cards > li { padding: 0.55rem 0; }
+.map-news .news-cards > li { padding: 0.55rem 0; cursor: pointer; }
+/* The whole row opens the story on the map; the article's own link is on
+   the card that opens, so here the outlet is only a name. */
+.map-news .news-cards > li:hover .card-label,
+.map-news .news-cards > li:focus-within .card-label { color: var(--accent); }
+.map-news .news-cards .card-outlet { pointer-events: none; }
+.map-news .news-cards .card-outlet .card-ext { display: none; }
 .map-news .news-cards > li + li { border-top: 1px solid color-mix(in srgb, var(--rule) 55%, transparent); }
 .map-news .news-cards .media { display: none; }
 .map-news .news-cards .card-label { margin: 0; font-size: 0.8rem; color: var(--muted); }
 .map-news .news-cards .card-news { margin: 0.1rem 0 0; font-size: 0.85rem; line-height: 1.35; }
-.map-news .news-cards a:hover .card-label { color: var(--accent); }
 /* On a phone the cue moves right, so the folded strip and the cue sit side
    by side at the foot of the map. */
 @media (max-width: 720px) {
-  .map-news { left: 0.75rem; bottom: 1rem; max-height: calc(100% - 6rem); }
+  .map-news { left: 0.75rem; bottom: 1rem; }
   .map-cue { left: auto; right: 0.75rem; bottom: 1rem; transform: none; }
 }

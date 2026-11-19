@@ -779,9 +779,9 @@ async function init() {
      building. On a phone the list folds back so the card has the room. */
   const newsBox = document.querySelector(".map-news");
   newsBox?.addEventListener("click", (e) => {
-    const a = e.target.closest("a");
-    const li = a?.closest(".news-cards > li");
-    if (!li || a.classList.contains("card-outlet") || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    const li = e.target.closest(".news-cards > li");
+    const a = li?.querySelector("a:not(.card-outlet)");
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
     const i = news.findIndex((n) => n.properties.p === a.getAttribute("href"));
     if (i < 0) return;
     e.preventDefault();
@@ -792,7 +792,7 @@ async function init() {
       if (!polygonsHold(area.geometry.coordinates, lng, lat)) unpick();
     }
     if (shell.clientWidth < 720) newsBox.open = false;
-    map.flyTo({ center: [lng, lat], zoom: Math.max(map.getZoom(), 16), duration: 900 });
+    map.flyTo({ center: [lng, lat], zoom: Math.max(map.getZoom(), 14.5), duration: 900 });
     map.once("moveend", () => openCard({ source: "news", id: i, ...n }, [lng, lat]));
   });
   /* Escape closes an open card first; with none open it puts the city back. */
