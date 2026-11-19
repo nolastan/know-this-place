@@ -1,0 +1,82 @@
+{
+  "source_id": "sf-chronicle",
+  "batch": "2026-11-19",
+  "read_on": "2026-11-19",
+  "notes": "Run of 2026-11-19. Two Chronicle posts queued (Bluesky feed; headlines and URLs read off the articles). One earns an entry: Sutro Hall, a restaurant opening Dec. 7 in the former Mourad space of 140 New Montgomery (the Pacific Telephone Building). The other is a re-post of the Ling Nam story filed on 2026-11-18.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-19-sc-0001",
+      "date": "2026-11-17",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3349 Mission St.",
+      "street_number": "3349",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "Re-post of the Chronicle's Ling Nam story under a new shortlink; same article, same URL as the entry already published.",
+      "extra": {},
+      "citation": {
+        "label": "San Francisco Chronicle, “A beloved Bay Area Filipino bakery is coming to San Francisco,” 17 November 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/ling-nam-filipino-bakery-22536853.php"
+      },
+      "raw": {
+        "text": "Ling Nam plans to open its first San Francisco location"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Same article as 2026-11-18-sc-0001 (news/items/sf-chronicle/2026-11-18.json), already on the page; the feed re-posted it under a new bit.ly link, so the cursor saw it as new."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "5615080",
+        "path": "/san-francisco/mission/mission-street/3349/",
+        "eas_address": "3349 MISSION ST",
+        "method": "EAS exact match on 3349 MISSION ST → parcel 5615080; sf-parcels has blklot 5615080 active, 3349–3349 MISSION; the 2025 roll records it as commercial retail, built 1980.",
+        "checked_on": "2026-11-19"
+      }
+    },
+    {
+      "id": "2026-11-19-sc-0002",
+      "date": "2026-11-18",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "140 New Montgomery",
+      "street_number": "140",
+      "street_name": "NEW MONTGOMERY",
+      "street_type": "ST",
+      "description": "Sutro Hall, a new restaurant, opens Dec. 7 in one of the two ground-floor restaurant spaces of 140 New Montgomery, the 1925 Pacific Telephone Building, taking over the former Mourad space (2015–2024), empty for two years. Dated to publication since the opening is still ahead. No people recorded.",
+      "extra": {
+        "business_name": "Sutro Hall",
+        "opening": "2026-12-07",
+        "previous_occupant": "Mourad (2015–2024)"
+      },
+      "citation": {
+        "label": "San Francisco Chronicle, “An all-star team, a dessert cart and a historic building: Inside downtown S.F.’s newest restaurant,” 18 November 2026",
+        "url": "https://www.sfchronicle.com/food/restaurants/article/sutro-hall-san-francisco-22521326.php"
+      },
+      "raw": {
+        "text": "Sutro Hall is opening in the 140 New Montgomery building in San Francisco in December, taking over the former location of Mourad, which closed in 2024."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "published",
+        "note": "Entry on /san-francisco/east-cut/new-montgomery-street/140/ as sf-chronicle-2026-11-18; homepage card added. building block left alone: name, architect and completed are already filled and the story agrees with them."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3722080",
+        "path": "/san-francisco/east-cut/new-montgomery-street/140/",
+        "eas_address": "140 NEW MONTGOMERY ST",
+        "method": "EAS exact match on 140 NEW MONTGOMERY ST → parcel 3722080; sf-parcels has blklot 3722080 active, 140–140 NEW MONTGOMERY; the 2025 roll records it as commercial office, built 1925.",
+        "checked_on": "2026-11-19"
+      }
+    }
+  ]
+}
