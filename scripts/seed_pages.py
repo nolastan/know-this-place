@@ -6831,9 +6831,38 @@ def map_into(text: str, area_dir: Path) -> str:
                           f'<div class="map-shell" data-area="{esca(slug)}">', 1)
     shell = re.sub(r'(<a class="map-cue"[^>]*>).*?(<span)', lambda x: x.group(1) + label + x.group(2),
                    shell, count=1, flags=re.S)
+    shell = shell.replace('<a class="map-brand" href="/">Know This Place</a>',
+                          f'<a class="map-brand" href="/">{label}</a>', 1)
     text = text.replace("</head>", head + "</head>", 1)
     text = text.replace("<body>\n", "<body>\n" + shell, 1)
     return text.replace("<main>", '<main id="below">', 1)
+
+
+def home_into(text: str) -> str:
+    """`text`, the homepage, with the San Francisco hub's <main> below its map.
+
+    The homepage is the map at the city's scale, so what sits under it is the
+    city's hub, as a neighborhood's hub sits under the map zoomed to it. It is
+    copied in on the way out rather than committed, so it is never a second
+    copy to keep in step: the hub's links resolved against its own URL, and
+    its static city map dropped, since the live one is right above it.
+    """
+    from urllib.parse import urljoin
+    hub = (ROOT / "san-francisco" / "index.html").read_text(encoding="utf-8")
+    m = re.search(r"<main>\n(.*?)</main>", hub, re.S)
+    if not m:
+        return text
+    inner = re.sub(rf"\n*[ \t]*{re.escape(CITY_MAP_START)}.*?{re.escape(CITY_MAP_END)}",
+                   "", m.group(1), count=1, flags=re.S)
+
+    def resolve(x):
+        url = x.group(2)
+        if re.match(r"[a-z][a-z0-9+.-]*:|/|#", url):
+            return x.group(0)
+        return f'{x.group(1)}="{urljoin("/san-francisco/", url)}"'
+    inner = re.sub(r'\b(href|src)="([^"]*)"', resolve, inner)
+    return re.sub(r'(<main id="below">\n).*?(</main>)', lambda x: x.group(1) + inner + x.group(2),
+                  text, count=1, flags=re.S)
 
 
 def strip_overview(text: str) -> str:

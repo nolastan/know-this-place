@@ -219,10 +219,11 @@ out](PIPELINE.md#rules-that-catch-publishers-out).
 ## The homepage is the news
 
 A story that reaches a page reaches the homepage too. The root
-[index.html](../index.html) is a map and then **In the news** — the grid is the
-page's subject, under the `<h1>`, `.place-cards.news-cards`, holding the
-**twelve** most recent news entries on the site, newest first. Below it there is
-only a list of street hubs.
+[index.html](../index.html) is a map with **In the news** folded onto it — the
+`<details class="map-news">` list at the map's foot, `.place-cards.news-cards`,
+holding the **twelve** most recent news entries on the site, newest first. The
+same list rides on every neighborhood hub's map. Below the map is the San
+Francisco hub, put in at deploy.
 
 **An entry is not published until its card is in.** The pages this module writes
 are mostly pages nobody has a reason to visit yet, on streets the site had never

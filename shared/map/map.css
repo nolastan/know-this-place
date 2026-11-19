@@ -35,9 +35,9 @@
 /* Overlays. The logotype is site.css's .map-brand, the same mark every
    page wears; the cue wears the popup's chip treatment so it stays
    legible on either basemap. */
-.map-brand {
-  pointer-events: none;   /* never eat a click meant for a dot beneath it */
-}
+/* The wordmark names the picked neighborhood, and it is the way back to the
+   whole city. A long name wraps rather than running under the zoom buttons. */
+.map-shell .map-brand { max-width: calc(100% - 5rem); }
 .map-cue {
   position: absolute; z-index: 2;
   font-family: var(--sans); text-decoration: none; color: var(--ink);
@@ -182,15 +182,45 @@ main > .section-head:first-child { margin-top: 1.5rem; }
    as the pair they are. */
 .place-hubs span { color: var(--muted); padding: 0 0.15rem; }
 
-/* The picked neighborhood, as the address page's map chip: where you are,
-   how much is documented there, and the way back to the whole city. On
-   the homepage it stays over the map at every width, above the cue. */
-.map-shell .map-id { bottom: 4.5rem; }
-.map-id-back {
-  font: inherit; color: var(--cool); background: none; border: 0; padding: 0;
-  text-decoration: underline 1px; text-underline-offset: 2px; cursor: pointer;
+
+/* The news, folded into a strip of frosted glass at the map's foot, left of
+   the cue. Open, it is a short list: the address and the headline, the
+   outlet under them, no pictures; a story opens on the map (map.js). The
+   cards are the news module's homepage grid, so everything that reads that
+   grid still finds it here. */
+.map-news {
+  position: absolute; z-index: 2; left: 1rem; bottom: 1.6rem;
+  width: min(21rem, calc(100% - 2rem)); max-height: calc(100% - 7rem);
+  display: flex; flex-direction: column;
+  font-family: var(--sans);
+  background: color-mix(in srgb, var(--panel) 72%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  border: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+  border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
 }
-.map-id-back:hover { color: var(--cool-hover); }
+.map-news:not([open]) { width: auto; }
+.map-news summary {
+  display: flex; align-items: center; gap: 0.4rem;
+  padding: 0.45rem 0.9rem; cursor: pointer; list-style: none;
+  font-size: 0.85rem; font-weight: 600; color: var(--ink); white-space: nowrap;
+}
+.map-news summary::-webkit-details-marker { display: none; }
+.map-news summary::after { content: "▴"; margin-left: auto; padding-left: 0.4rem; color: var(--muted); font-size: 0.75em; }
+.map-news[open] summary::after { content: "▾"; }
+.map-news summary:hover { color: var(--accent); }
+.map-news .news-cards {
+  display: block; margin: 0; padding: 0 0.9rem 0.4rem; overflow-y: auto; list-style: none;
+  border-top: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+}
+.map-news .news-cards > li { padding: 0.55rem 0; }
+.map-news .news-cards > li + li { border-top: 1px solid color-mix(in srgb, var(--rule) 55%, transparent); }
+.map-news .news-cards .media { display: none; }
+.map-news .news-cards .card-label { margin: 0; font-size: 0.8rem; color: var(--muted); }
+.map-news .news-cards .card-news { margin: 0.1rem 0 0; font-size: 0.85rem; line-height: 1.35; }
+.map-news .news-cards a:hover .card-label { color: var(--accent); }
+/* On a phone the cue moves right, so the folded strip and the cue sit side
+   by side at the foot of the map. */
 @media (max-width: 720px) {
-  .map-shell .map-id { position: absolute; left: 1rem; right: 1rem; margin: 0; }
+  .map-news { left: 0.75rem; bottom: 1rem; max-height: calc(100% - 6rem); }
+  .map-cue { left: auto; right: 0.75rem; bottom: 1rem; transform: none; }
 }

@@ -35,176 +35,182 @@
     <span class="map-loading">Loading map...</span>
     <small>Every address is reachable through the links below.</small>
   </div>
-  <p class="map-brand">Know This Place</p>
-  <div class="map-id" hidden></div>
-  <a class="map-cue" href="#below">In the news<span aria-hidden="true">↓</span></a>
+  <a class="map-brand" href="/">Know This Place</a>
+  <details class="map-news">
+    <summary><span class="ic ic-permit" aria-hidden="true"></span>In the news</summary>
+    <!-- Fed by the news module, newest first. Every time a story lands on an
+         address page, its card goes on the top of this list and the oldest card
+         comes off — twelve of them; see news/AGENTS.md. The headline is quoted
+         verbatim and the outlet is named, which is what makes carrying it a
+         citation rather than a lift.
+
+         This list is also the map's data: the script at the foot of the page
+         reads these cards for the coordinates, the headline and the outlet, and
+         draws each one as a pulsing dot with the story on its card. There
+         is no second file to keep in step — edit the cards and the map follows. -->
+    <ul class="place-cards news-cards">
+      <li>
+        <a href="/san-francisco/mission/potrero-avenue/1189/">
+          <ktp-streetview location="37.753311,-122.406157" label="1189 Potrero Avenue">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7533, −122.4062</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">1189 Potrero Avenue</span>
+        </a>
+        <p class="card-news"><em>Shuttered Mission Walgreens to become San Francisco General Hospital child care center — a move nearly 40 years in the making</em><a class="card-outlet" href="https://missionlocal.org/2026/11/shuttered-walgreens-to-become-sf-general-child-care-center/">Mission Local<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/pacific-heights/california-street/2536/">
+          <ktp-streetview location="37.788888,-122.436228" label="2536–2542 California Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7889, −122.4362</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">2536–2542 California Street</span>
+        </a>
+        <p class="card-news"><em>Preliminary Permits Invoke HC-SF For 2536 California Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/preliminary-permits-invoke-hc-sf-for-2536-california-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/mission/mission-street/3349/">
+          <ktp-streetview location="37.743181,-122.421133" label="3349 Mission Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7432, −122.4211</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">3349 Mission Street</span>
+        </a>
+        <p class="card-news"><em>A beloved Bay Area Filipino bakery is coming to San Francisco</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/ling-nam-filipino-bakery-22536853.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/mission-bay/berry-street/105/">
+          <ktp-streetview location="37.776585,-122.39212" label="105–185 Berry Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7766, −122.3921</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">105–185 Berry Street</span>
+        </a>
+        <p class="card-news"><em>The pandemic forced a reinvention at China Basin. Then Sierra AI moved in</em><a class="card-outlet" href="https://sfstandard.com/2026/11/17/china-basin-mccarthy-cook-transformation-sierra/">The San Francisco Standard<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/union-square/kearny-street/222/">
+          <ktp-streetview location="37.790196,-122.403664" label="222–226 Kearny Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7902, −122.4037</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">222–226 Kearny Street</span>
+        </a>
+        <p class="card-news"><em>More bàn miàn downtown: A Sichuan noodle restaurant expands in Union Square</em><a class="card-outlet" href="https://sfstandard.com/2026/11/16/momo-noodle-new-location-kearny/">The San Francisco Standard<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/bernal-heights/mission-street/3595/">
+          <ktp-streetview location="37.739017,-122.423604" label="3595 Mission Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7390, −122.4236</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">3595 Mission Street</span>
+        </a>
+        <p class="card-news"><em>Updated Plans Filed For 3595 Mission Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/updated-plans-filed-for-3595-mission-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/inner-richmond/4th-avenue/228/">
+          <ktp-streetview location="37.784368,-122.462046" label="228–230 4th Avenue">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7844, −122.4620</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">228–230 4th Avenue</span>
+        </a>
+        <p class="card-news"><em>Minor Expansion For 228 4th Avenue in Inner Richmond, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/minor-expansion-for-228-4th-avenue-in-inner-richmond-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/south-beach/the-embarcadero/140/">
+          <ktp-streetview location="37.795387,-122.393681" label="140 The Embarcadero">
+            <figure class="media">
+              <img src="/san-francisco/south-beach/the-embarcadero/140/assets/photo.jpg" width="1280" height="960" alt="Photo of 140 The Embarcadero" loading="lazy" decoding="async">
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">140 The Embarcadero</span>
+        </a>
+        <p class="card-news"><em>After six years, one of the S.F. Ferry Building’s premier restaurant spaces is coming back to life</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/lucania-ferry-building-restaurant-san-francisco-22473665.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/hayes-valley/laguna-street/500/">
+          <ktp-streetview location="37.775807,-122.425964" label="500–528 Laguna Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7758, −122.4260</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">500–528 Laguna Street</span>
+        </a>
+        <p class="card-news"><em>Amélie To Open New Wine Bar In San Francisco’s Hayes Valley</em><a class="card-outlet" href="https://whatnow.com/san-francisco/restaurants/amelie-to-open-new-wine-bar-in-san-franciscos-hayes-valley/">What Now San Francisco<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/south-of-market/market-street/735/">
+          <ktp-streetview location="37.786773,-122.404247" label="735 Market Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7868, −122.4042</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">735 Market Street</span>
+        </a>
+        <p class="card-news"><em>The Museum of Illusions opens in San Francisco</em><a class="card-outlet" href="https://thevoicesf.org/the-museum-of-illusions-opens-in-san-francisco/">The Voice of San Francisco<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/chinatown/montgomery-street/600/">
+          <ktp-streetview location="37.795157,-122.402732" label="600 Montgomery Street">
+            <figure class="media">
+              <img src="/san-francisco/chinatown/montgomery-street/600/assets/photo.jpg" width="1280" height="960" alt="Photo of 600 Montgomery Street" loading="lazy" decoding="async">
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">600 Montgomery Street</span>
+        </a>
+        <p class="card-news"><em>Transamerica Pyramid Could Become SF Landmark, Benches and All</em><a class="card-outlet" href="https://hoodline.com/2026/11/transamerica-pyramid-could-become-sf-landmark-benches-and-all/">Hoodline<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/russian-hill/north-point-street/704/">
+          <ktp-streetview location="37.806017,-122.418903" label="704 North Point Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.8060, −122.4189</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">704 North Point Street</span>
+        </a>
+        <p class="card-news"><em>New Building Permits Filed For 704 North Point Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/new-building-permits-filed-for-704-north-point-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+    </ul>
+  </details>
+  <a class="map-cue" href="#below">San Francisco<span aria-hidden="true">↓</span></a>
 </div>
 <!-- /map shell -->
 
 <main id="below">
-  <div class="section-head"><span class="ic ic-permit"></span><h1>In the news</h1></div>
-  <!-- Fed by the news module, newest first. Every time a story lands on an
-       address page, its card goes on the top of this list and the oldest card
-       comes off — twelve of them; see news/AGENTS.md. The headline is quoted
-       verbatim and the outlet is named, which is what makes carrying it a
-       citation rather than a lift.
-
-       This list is also the map's data: the script at the foot of the page
-       reads these cards for the coordinates, the headline and the outlet, and
-       draws each one as a pulsing dot with the story on its card. There
-       is no second file to keep in step — edit the cards and the map follows. -->
-  <ul class="place-cards news-cards">
-    <li>
-      <a href="/san-francisco/mission/potrero-avenue/1189/">
-        <ktp-streetview location="37.753311,-122.406157" label="1189 Potrero Avenue">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7533, −122.4062</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">1189 Potrero Avenue</span>
-      </a>
-      <p class="card-news"><em>Shuttered Mission Walgreens to become San Francisco General Hospital child care center — a move nearly 40 years in the making</em><a class="card-outlet" href="https://missionlocal.org/2026/11/shuttered-walgreens-to-become-sf-general-child-care-center/">Mission Local<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/pacific-heights/california-street/2536/">
-        <ktp-streetview location="37.788888,-122.436228" label="2536–2542 California Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7889, −122.4362</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">2536–2542 California Street</span>
-      </a>
-      <p class="card-news"><em>Preliminary Permits Invoke HC-SF For 2536 California Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/preliminary-permits-invoke-hc-sf-for-2536-california-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/mission/mission-street/3349/">
-        <ktp-streetview location="37.743181,-122.421133" label="3349 Mission Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7432, −122.4211</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">3349 Mission Street</span>
-      </a>
-      <p class="card-news"><em>A beloved Bay Area Filipino bakery is coming to San Francisco</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/ling-nam-filipino-bakery-22536853.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/mission-bay/berry-street/105/">
-        <ktp-streetview location="37.776585,-122.39212" label="105–185 Berry Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7766, −122.3921</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">105–185 Berry Street</span>
-      </a>
-      <p class="card-news"><em>The pandemic forced a reinvention at China Basin. Then Sierra AI moved in</em><a class="card-outlet" href="https://sfstandard.com/2026/11/17/china-basin-mccarthy-cook-transformation-sierra/">The San Francisco Standard<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/union-square/kearny-street/222/">
-        <ktp-streetview location="37.790196,-122.403664" label="222–226 Kearny Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7902, −122.4037</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">222–226 Kearny Street</span>
-      </a>
-      <p class="card-news"><em>More bàn miàn downtown: A Sichuan noodle restaurant expands in Union Square</em><a class="card-outlet" href="https://sfstandard.com/2026/11/16/momo-noodle-new-location-kearny/">The San Francisco Standard<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/bernal-heights/mission-street/3595/">
-        <ktp-streetview location="37.739017,-122.423604" label="3595 Mission Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7390, −122.4236</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">3595 Mission Street</span>
-      </a>
-      <p class="card-news"><em>Updated Plans Filed For 3595 Mission Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/updated-plans-filed-for-3595-mission-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/inner-richmond/4th-avenue/228/">
-        <ktp-streetview location="37.784368,-122.462046" label="228–230 4th Avenue">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7844, −122.4620</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">228–230 4th Avenue</span>
-      </a>
-      <p class="card-news"><em>Minor Expansion For 228 4th Avenue in Inner Richmond, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/minor-expansion-for-228-4th-avenue-in-inner-richmond-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/south-beach/the-embarcadero/140/">
-        <ktp-streetview location="37.795387,-122.393681" label="140 The Embarcadero">
-          <figure class="media">
-            <img src="/san-francisco/south-beach/the-embarcadero/140/assets/photo.jpg" width="1280" height="960" alt="Photo of 140 The Embarcadero" loading="lazy" decoding="async">
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">140 The Embarcadero</span>
-      </a>
-      <p class="card-news"><em>After six years, one of the S.F. Ferry Building’s premier restaurant spaces is coming back to life</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/lucania-ferry-building-restaurant-san-francisco-22473665.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/hayes-valley/laguna-street/500/">
-        <ktp-streetview location="37.775807,-122.425964" label="500–528 Laguna Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7758, −122.4260</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">500–528 Laguna Street</span>
-      </a>
-      <p class="card-news"><em>Amélie To Open New Wine Bar In San Francisco’s Hayes Valley</em><a class="card-outlet" href="https://whatnow.com/san-francisco/restaurants/amelie-to-open-new-wine-bar-in-san-franciscos-hayes-valley/">What Now San Francisco<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/south-of-market/market-street/735/">
-        <ktp-streetview location="37.786773,-122.404247" label="735 Market Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7868, −122.4042</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">735 Market Street</span>
-      </a>
-      <p class="card-news"><em>The Museum of Illusions opens in San Francisco</em><a class="card-outlet" href="https://thevoicesf.org/the-museum-of-illusions-opens-in-san-francisco/">The Voice of San Francisco<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/chinatown/montgomery-street/600/">
-        <ktp-streetview location="37.795157,-122.402732" label="600 Montgomery Street">
-          <figure class="media">
-            <img src="/san-francisco/chinatown/montgomery-street/600/assets/photo.jpg" width="1280" height="960" alt="Photo of 600 Montgomery Street" loading="lazy" decoding="async">
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">600 Montgomery Street</span>
-      </a>
-      <p class="card-news"><em>Transamerica Pyramid Could Become SF Landmark, Benches and All</em><a class="card-outlet" href="https://hoodline.com/2026/11/transamerica-pyramid-could-become-sf-landmark-benches-and-all/">Hoodline<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/russian-hill/north-point-street/704/">
-        <ktp-streetview location="37.806017,-122.418903" label="704 North Point Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.8060, −122.4189</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">704 North Point Street</span>
-      </a>
-      <p class="card-news"><em>New Building Permits Filed For 704 North Point Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/new-building-permits-filed-for-704-north-point-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-  </ul>
+  <!-- below: the San Francisco hub's <main>, put in on the way out by
+       build_site.py --stage / --serve (seed_pages.home_into). This is what a
+       reader without it gets. -->
+  <h1>San Francisco</h1>
+  <p class="lead"><a href="/san-francisco/">Every documented neighborhood and street in San Francisco</a>.</p>
 
 </main>
 

@@ -487,11 +487,14 @@ nothing else; the markup here is what to expect, not what to type:
 ## The homepage grid
 
 A story that reaches a page reaches the homepage too. The root
-[index.html](../index.html) is a map and then **In the news** — the grid is the
-page's subject, under the `<h1>`, `.place-cards.news-cards`, holding the
-**twelve** most recent news entries on the site, newest first. Below it there is
-only a list of street hubs. The homepage used to open on a manifesto and a grid
-of featured addresses; both are gone, and this module's grid took the room.
+[index.html](../index.html) is a map, and the news rides on it: a folded,
+frosted **In the news** list at the map's foot (`<details class="map-news">`),
+holding `.place-cards.news-cards` — the **twelve** most recent news entries on
+the site, newest first. The list is copied onto every neighborhood hub's map
+too (`seed_pages.map_into`), and below the map the homepage carries the San
+Francisco hub. The cards keep their full markup, picture included, so
+everything that reads the grid still finds it; the overlay just hides the
+pictures.
 
 **An entry is not published until its card is in.** The pages this module writes
 are mostly pages nobody has a reason to visit yet, on streets the site had never

@@ -434,8 +434,7 @@ const places = async () => {
    scheme's hues. A dot the reader can act on today outranks a story already
    told, so events draw over news. */
 let events;
-/* Read off the homepage's news grid once, before a pick can swap it out; a
-   hub, which has no grid, reads the homepage's (see init). */
+/* Read off the news overlay's list, which every page with the map carries. */
 let news = newsFeatures();
 async function addOverlays(map) {
   if (!map.getSource("news")) {
@@ -522,7 +521,8 @@ async function init() {
   });
 
   /* ---- picking a neighborhood ------------------------------------------ */
-  const chip = document.querySelector(".map-shell .map-id");
+  const brand = document.querySelector(".map-shell .map-brand");
+  const HOME_BRAND = "Know This Place";
   let picked = null;          // the picked neighborhood's feature properties
   const loaded = new Map();   // slug → { lots, pages }, once fetched
   const fetchArea = async (slug) => {
@@ -541,23 +541,16 @@ async function init() {
     }
     return loaded.get(slug);
   };
-  const showChip = (a) => {
-    if (!chip) return;
-    chip.replaceChildren();
-    if (!a) { chip.hidden = true; return; }
-    const nav = el("nav", "breadcrumb");
-    nav.setAttribute("aria-label", "Neighborhood");
-    nav.append(link("/san-francisco/", "San Francisco"), el("span", "crumb-sep", " › "),
-      a.hub ? link(a.hub, a.name) : el("span", "", a.name));
-    const back = el("button", "map-id-back", "All neighborhoods");
-    back.type = "button";
-    back.addEventListener("click", () => unpick());
-    const meta = el("p", "crumb-meta",
-      `${(a.pages ?? 0).toLocaleString()} documented buildings · `);
-    meta.append(back);
-    chip.append(nav, meta);
-    chip.hidden = false;
-  };
+  /* The wordmark names where the reader is: the site at the city's scale,
+     the neighborhood once one is picked (its hub's own heading when the hub
+     arrives), and it is always the way back to the whole city. */
+  const setBrand = (text) => { if (brand) brand.textContent = text; };
+  brand?.addEventListener("click", (e) => {
+    if (!picked || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+    e.preventDefault();
+    unpick();
+    scrollTo({ top: 0 });
+  });
   /* Until the style has loaded there is nothing to set state or data on; a
      hub opens with its neighborhood already picked, and restorePick() puts
      the pick on the style once it is up. */
@@ -580,15 +573,11 @@ async function init() {
     setPicked(a.slug);
     setLots(null);
     popup.remove();
-    showChip(a);
+    if (!a.hub) setBrand(a.name);
     showHub(a, how);
-    // Keep the boundary clear of the chip, which sits under the map on a phone
-    // and over its bottom-right corner on a wider screen.
     const bb = bounds(base.areas.features.find((f) => f.properties.slug === a.slug));
     const narrow = shell.clientWidth < 720;
-    const under = narrow && chip
-      ? shell.getBoundingClientRect().bottom - chip.getBoundingClientRect().top + 16 : 64;
-    map.fitBounds(bb, { padding: { top: 64, bottom: under, left: narrow ? 16 : 24,
+    map.fitBounds(bb, { padding: { top: 64, bottom: 72, left: narrow ? 16 : 24,
                                    right: narrow ? 16 : 24 }, duration: instant ? 0 : 900 });
     const data = await fetchArea(a.slug);
     if (picked?.slug !== a.slug) return;      // another click got there first
@@ -601,7 +590,7 @@ async function init() {
     setPicked(null);
     setLots(null);
     popup.remove();
-    showChip(null);
+    setBrand(HOME_BRAND);
     showHub(null, how);
     map.fitBounds(HOME, { padding: 24, duration: 900 });
   }
@@ -654,6 +643,7 @@ async function init() {
     footer?.replaceChildren(...view.foot);
     document.title = view.title;
     if (cue?.firstChild) cue.firstChild.textContent = view.label;
+    setBrand(picked ? view.label : HOME_BRAND);
   };
   let showing = location.pathname;
   async function showHub(a, how) {
@@ -665,7 +655,7 @@ async function init() {
       if ((picked?.hub ?? "/") !== url) return;   // another pick got there first
       put(view);
       showing = url;
-    } catch { /* leave what is there; the chip still links the hub */ }
+    } catch { if (picked?.hub === url) setBrand(picked.name); }
   }
   addEventListener("popstate", (e) => {
     if (!e.state || !("area" in e.state)) return;     // a jump to #below, say
@@ -680,6 +670,17 @@ async function init() {
     setPicked(picked.slug);
     setLots(loaded.get(picked.slug));
   }
+  /* Even-odd ray casting over a MultiPolygon's rings, holes included. */
+  const polygonsHold = (polys, x, y) => {
+    let inside = false;
+    for (const poly of polys) for (const ring of poly) {
+      for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        const [xi, yi] = ring[i], [xj, yj] = ring[j];
+        if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+      }
+    }
+    return inside;
+  };
   const bounds = (f) => {
     const b = new maplibregl.LngLatBounds();
     for (const poly of f.geometry.coordinates) for (const p of poly[0]) b.extend(p);
@@ -745,9 +746,13 @@ async function init() {
       else if (!area) unpick();
       return;
     }
+    openCard(f, f.source === "pages" ? e.lngLat : f.geometry.coordinates);
+  });
+  async function openCard(f, at) {
     const props = f.properties;
+    const ll = maplibregl.LngLat.convert(at);
     const place = (await places()).get(props.p) ?? {
-      geometry: { coordinates: [e.lngLat.lng, e.lngLat.lat] }, properties: { t: props.t, s: props.s ?? "" },
+      geometry: { coordinates: [ll.lng, ll.lat] }, properties: { t: props.t, s: props.s ?? "" },
     };
     const here = link(props.p, "See this place");
     let content;
@@ -763,8 +768,32 @@ async function init() {
     popup.remove();
     active = f;
     mark(active, "active", true);
-    const at = f.source === "pages" ? e.lngLat : f.geometry.coordinates;
     popup.setLngLat(at).setDOMContent(content).addTo(map);
+  }
+
+  /* ---- the news overlay -------------------------------------------------- */
+  /* The news sits on the map, folded into a glassy strip at its foot. A story
+     picked from the list opens on the map, as its dot would: the camera goes
+     to the building and its card opens there, the page one more click away.
+     A pick elsewhere in the city is let go first, so its veil can't hide the
+     building. On a phone the list folds back so the card has the room. */
+  const newsBox = document.querySelector(".map-news");
+  newsBox?.addEventListener("click", (e) => {
+    const a = e.target.closest("a");
+    const li = a?.closest(".news-cards > li");
+    if (!li || a.classList.contains("card-outlet") || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    const i = news.findIndex((n) => n.properties.p === a.getAttribute("href"));
+    if (i < 0) return;
+    e.preventDefault();
+    const n = news[i];
+    const [lng, lat] = n.geometry.coordinates;
+    if (picked) {
+      const area = base.areas.features.find((x) => x.properties.slug === picked.slug);
+      if (!polygonsHold(area.geometry.coordinates, lng, lat)) unpick();
+    }
+    if (shell.clientWidth < 720) newsBox.open = false;
+    map.flyTo({ center: [lng, lat], zoom: Math.max(map.getZoom(), 16), duration: 900 });
+    map.once("moveend", () => openCard({ source: "news", id: i, ...n }, [lng, lat]));
   });
   /* Escape closes an open card first; with none open it puts the city back. */
   addEventListener("keydown", (e) => {
@@ -774,21 +803,14 @@ async function init() {
   });
 
   /* A hub opens on its own neighborhood, already picked, with no flight. Its
-     breadcrumb header gives way to the chip, which carries the same trail,
-     so the page is the one a pick on the homepage would have made. */
+     breadcrumb header gives way to the wordmark, which already names the
+     neighborhood, so the page is the one a pick on the homepage would have
+     made. */
   const opening = document.querySelector(".map-shell")?.dataset.area;
   const first = opening && base.areas.features.find((f) => f.properties.slug === opening);
   if (first) {
     document.querySelector("body > .site-header")?.remove();
     pick(first.properties, null, true);
-  }
-  if (!news.length) {
-    fetchView("/").then((view) => {
-      const grid = document.createElement("div");
-      grid.append(...view.main.map((n) => n.cloneNode(true)));
-      news = newsFeatures(grid);
-      map.getSource("news")?.setData(collection(news));
-    }).catch(() => {});
   }
   history.replaceState({ area: first ? opening : null }, "");
 }

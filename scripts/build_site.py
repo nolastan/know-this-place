@@ -113,7 +113,8 @@ def build() -> None:
 def stage(dest: Path) -> None:
     """Copy the built site to `dest`, the committed pages stamped with the CSS hash."""
     sys.path.insert(0, str(SCRIPTS))
-    from seed_pages import CSS_LINK, CSS_SOURCE_LINK, is_neighborhood_hub, map_into, overview_into
+    from seed_pages import (CSS_LINK, CSS_SOURCE_LINK, home_into, is_neighborhood_hub,
+                            map_into, overview_into)
 
     started = time.monotonic()
     dest = dest.resolve()
@@ -129,6 +130,8 @@ def stage(dest: Path) -> None:
             if Path(src).name == "index.html" and is_neighborhood_hub(Path(src).parent):
                 text = map_into(overview_into(text, Path(src).parent), Path(src).parent)
                 overviews += 1
+            elif Path(src).resolve() == ROOT / "index.html":
+                text = home_into(text)
             if CSS_SOURCE_LINK in text:
                 text = text.replace(CSS_SOURCE_LINK, CSS_LINK)
                 stamped += 1
@@ -190,21 +193,27 @@ def serve(port: int) -> None:
     import io
     import socketserver
     sys.path.insert(0, str(SCRIPTS))
-    from seed_pages import is_neighborhood_hub, map_into, overview_into
+    from seed_pages import home_into, is_neighborhood_hub, map_into, overview_into
 
     class Handler(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
             super().__init__(*a, directory=str(ROOT), **kw)
 
-        # A neighborhood hub is served with its overview, as `stage` would
-        # publish it; the file on disk never carries one.
+        # A neighborhood hub is served with its overview and the map, and the
+        # homepage with the city's hub, as `stage` would publish them; the
+        # files on disk never carry them.
         def send_head(self):
             path = Path(self.translate_path(self.path))
             page = path if path.is_dir() else path.parent
-            if ((path.is_dir() and self.path.split("?")[0].endswith("/"))
-                    or path.name == "index.html") and is_neighborhood_hub(page):
+            is_page = ((path.is_dir() and self.path.split("?")[0].endswith("/"))
+                       or path.name == "index.html")
+            body = None
+            if is_page and is_neighborhood_hub(page):
                 body = map_into(overview_into((page / "index.html").read_text(encoding="utf-8"),
                                               page), page).encode("utf-8")
+            elif is_page and page.resolve() == ROOT:
+                body = home_into((ROOT / "index.html").read_text(encoding="utf-8")).encode("utf-8")
+            if body is not None:
                 self.send_response(200)
                 self.send_header("Content-Type", "text/html; charset=utf-8")
                 self.send_header("Content-Length", str(len(body)))
