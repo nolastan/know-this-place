@@ -735,7 +735,7 @@ async function init() {
      page of the address or place; a news dot also links the story, and an
      event dot the calendar's own listing. A click on another neighborhood
      picks it; a click on water, or outside every neighborhood, puts the city
-     back. Escape closes a card. */
+     back. Escape closes a card, or with none open puts the city back. */
   map.on("click", async (e) => {
     const f = dotAt(e.point) ?? lotAt(e.point);
     if (!f) {
@@ -766,7 +766,12 @@ async function init() {
     const at = f.source === "pages" ? e.lngLat : f.geometry.coordinates;
     popup.setLngLat(at).setDOMContent(content).addTo(map);
   });
-  addEventListener("keydown", (e) => { if (e.key === "Escape") popup.remove(); });
+  /* Escape closes an open card first; with none open it puts the city back. */
+  addEventListener("keydown", (e) => {
+    if (e.key !== "Escape" || e.defaultPrevented) return;
+    if (popup.isOpen()) popup.remove();
+    else unpick();
+  });
 
   /* A hub opens on its own neighborhood, already picked, with no flight. Its
      breadcrumb header gives way to the chip, which carries the same trail,
