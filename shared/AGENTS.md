@@ -51,10 +51,20 @@ new CSS.
   add a fourth without a human's say-so, and never as a tag in `index.html`.
 - **The site's homepage (`/index.html`) is the one exception to the three rules
   above**, by explicit human decision: it is a map, not a content page, so it
-  carries its own `<style>`, its own `<script>`, and Mapbox GL JS. `validate.py`
+  carries its own stylesheet and script (`shared/map/map.css`, `map.js`) and
+  MapLibre GL JS (from unpkg, version-pinned). Its map draws no basemap service: the city's land,
+  streets, neighborhoods and lots come from the committed lot cache in
+  `shared/map/` (`seed_pages.py lots`), the page lots from
+  `build_map_index.py`, and the label font from `shared/map/fonts/`. `validate.py`
   skips the stray-script check for that one file. **This is not a precedent.**
-  Nothing under `san-francisco/` may do the same — a page whose facts render
-  only in JS is invisible to search, which is the whole point of the rules.
+  Nothing committed under `san-francisco/` may do the same — a page whose facts
+  render only in JS is invisible to search, which is the whole point of the
+  rules. The one carve-out: picking a neighborhood on the map opens its hub
+  below it at the hub's URL, so `build_site.py --stage`/`--serve` lay the same
+  map over each neighborhood hub that is an Analysis Neighborhood
+  (`seed_pages.map_into`, copied from the homepage's `map head` and
+  `map shell` regions). That is never committed; the hub's content stays
+  whole in its HTML, and without JS it reads as before.
 - Use the pre-validated data hues as documented — never introduce new colors.
 - **Text never wears a data color.** Bars and segments carry the hue; labels
   and values use normal ink. (Identity comes from the swatch beside the text.)

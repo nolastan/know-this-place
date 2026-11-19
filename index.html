@@ -11,381 +11,206 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/shared/site.webmanifest">
   <link rel="stylesheet" href="/shared/site.css">
-  <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
   <script type="module" src="/shared/site.js"></script>
+  <!-- map head: copied onto the neighborhood hubs by seed_pages.map_into -->
+  <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css">
   <!-- The homepage is a map, and the only page on the site that carries its
        own script, style and third-party dependency. Content pages stay static
-       and crawlable; see shared/AGENTS.md. -->
-  <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
-  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.28.0/mapbox-gl.css">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.28.0/mapbox-gl.js" defer></script>
-  <style>
-    /* Full-bleed: the map is the first thing on the page and owns the whole
-       viewport. This page has no .site-header — the wordmark rides on the map
-       instead, so nothing crops the city. */
-    .map-shell {
-      position: relative;
-      width: 100%;
-      height: 100svh;
-      min-height: 20rem;
-      background: var(--note-bg);
-      border-bottom: 1px solid var(--rule);
-    }
-    .map-shell #map { position: absolute; inset: 0; }
-    .map-shell .media-empty {
-      position: absolute; inset: 0;
-      display: flex; flex-direction: column; align-items: center;
-      justify-content: center; gap: 0.4rem; text-align: center; padding: 1.5rem;
-    }
-    .map-loading {
-      animation: pulse-text 1.5s ease-in-out infinite;
-    }
-    @keyframes pulse-text {
-      0%, 100% { opacity: 0.6; }
-      50% { opacity: 1; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .map-loading {
-        animation: none;
-        opacity: 1;
-      }
-    }
-
-    /* Overlays. The logotype is site.css's .map-brand, the same mark every
-       page wears; the cue wears the popup's chip treatment so it stays
-       legible on either basemap. */
-    .map-brand {
-      pointer-events: none;   /* never eat a click meant for a dot beneath it */
-    }
-    .map-cue {
-      position: absolute; z-index: 2;
-      font-family: var(--sans); text-decoration: none; color: var(--ink);
-      background: var(--panel); border: 1px solid var(--rule);
-      border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
-    }
-    /* The wheel belongs to the map, so this is how the reader gets past it —
-       on a touchscreen it is the only way. Keep it. */
-    .map-cue {
-      left: 50%; bottom: 1.6rem; transform: translateX(-50%);
-      padding: 0.45rem 0.9rem;
-      font-size: 0.85rem; font-weight: 600; white-space: nowrap;
-    }
-    .map-cue:hover { color: var(--accent); }
-    .map-cue span { margin-left: 0.4rem; color: var(--muted); }
-    @media (prefers-reduced-motion: no-preference) {
-      html { scroll-behavior: smooth; }
-    }
-
-    /* Mapbox's own chrome, wearing the site's tokens. */
-    .mapboxgl-popup-content {
-      background: var(--panel); color: var(--ink);
-      font-family: var(--sans); font-size: 0.85rem; font-weight: 600;
-      padding: 0.35rem 0.6rem; border: 1px solid var(--rule);
-      border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
-    }
-    .mapboxgl-popup-tip { display: none; }
-    .mapboxgl-ctrl-group { background: var(--panel); border: 1px solid var(--rule); }
-    .mapboxgl-ctrl-group button + button { border-top: 1px solid var(--rule); }
-    /* On a phone mapbox-gl folds its attribution behind an "i" in a solid
-       white disc, which read as a button asking to be pressed. Folded, it
-       goes translucent like the address page's credit; opened, it is
-       mapbox-gl's own strip. The wordmark is left exactly as Mapbox draws it. */
-    .mapboxgl-ctrl-attrib.mapboxgl-compact:not(.mapboxgl-compact-show) { background: #ffffff80; }
-    .mapboxgl-ctrl-attrib.mapboxgl-compact:not(.mapboxgl-compact-show) .mapboxgl-ctrl-attrib-button { opacity: 0.6; }
-    /* The card a dot opens on click — a chip grown into a small version of the
-       page it leads to: the Street View still, then the page's own <h1> and
-       .sub, then, on a news or event dot, the story or the listing, and last
-       the links. It opens on click rather than hover so that it holds still
-       long enough to be clicked through, and so a touchscreen gets it too. */
-    /* Above the wordmark and the news cue, which the card may open under. */
-    .map-cardpop { z-index: 3; }
-    .map-cardpop .mapboxgl-popup-content { padding: 0; font-weight: 400; overflow: hidden; }
-    .map-card { width: min(17rem, 75vw); }
-    .map-card .media { margin: 0; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; }
-    .map-card .media img, .map-card .media-empty { aspect-ratio: 16 / 9; }
-    .map-card .media-empty { padding: 0; }
-    .map-card-body { padding: 0.6rem 0.75rem 0.7rem; }
-    .map-card-title {
-      margin: 0; font-family: var(--serif); font-size: 1.1rem;
-      font-weight: 650; line-height: 1.25;
-    }
-    .map-card-sub {
-      margin: 0.15rem 0 0;
-      font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
-    }
-    .map-card-story {
-      margin: 0.55rem 0 0; padding-top: 0.5rem; border-top: 1px solid var(--rule);
-      font-family: var(--sans); font-size: 0.85rem;
-    }
-    .map-card-story > * { display: block; }
-    .map-card-story em { font-family: var(--serif); font-size: 0.95rem; line-height: 1.35; }
-    .map-card-story strong { font-weight: 600; }
-    .map-card-story span { margin-top: 0.15rem; }
-    .map-card-story small { margin-top: 0.2rem; color: var(--muted); font-size: 0.78rem; }
-    /* The links are the card's point, so they are buttons: the page itself
-       filled in the accent, the story or listing beside it outlined, the way
-       the occupant panel's offer button is drawn on an address page. */
-    .map-card-links {
-      display: flex; gap: 0.5rem; margin: 0.75rem 0 0;
-      font-family: var(--sans); font-size: 0.85rem; font-weight: 700;
-    }
-    .map-card-links a {
-      flex: 1 1 0; display: flex; align-items: center; justify-content: center;
-      padding: 0.5rem 0.6rem; white-space: nowrap; text-decoration: none;
-      border: 1px solid var(--accent); border-radius: var(--radius);
-      color: var(--accent);
-    }
-    .map-card-links a:hover, .map-card-links a:focus-visible { background: var(--note-bg); }
-    .map-card-links a:first-child { background: var(--accent); color: var(--paper); }
-    .map-card-links a:first-child:hover,
-    .map-card-links a:first-child:focus-visible { background: var(--accent); opacity: 0.88; }
-    .map-card-links .ic { font-size: 0.85em; }
-    /* The close button rides on the photo, so it wears the chip too. */
-    .map-cardpop .mapboxgl-popup-close-button {
-      top: 0.4rem; right: 0.4rem; width: 1.6rem; height: 1.6rem;
-      font-size: 1.1rem; line-height: 1; color: var(--ink);
-      background: var(--panel); border: 1px solid var(--rule); border-radius: 50%;
-    }
-    .map-cardpop .mapboxgl-popup-close-button:hover { color: var(--accent); background: var(--panel); }
-
-    /* The news is the page's subject now, so its heading is the page's <h1>.
-       It sits in the ordinary .section-head band at h2's size: the rank is
-       structural, for a crawler and a screen reader, and the map above it is
-       what carries the visual weight. */
-    .section-head h1 {
-      flex: 0 0 auto;
-      font-size: 1.3rem; margin: 0; letter-spacing: 0;
-    }
-    main > .section-head:first-child { margin-top: 1.5rem; }
-
-    /* The news, as a tiled grid of Street View cards. Reuses the
-       .media / .media-empty pair every address page already uses, so the
-       picture arrives the same way here as it does there and no new image
-       handling enters the system. */
-    .place-cards {
-      list-style: none; padding: 0; margin: 0 0 1.75rem;
-      display: grid; gap: 1rem;
-      /* 17rem lands the cards three across on a full-width page and two on a
-         tablet, rather than four and a stranded remainder. */
-      grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-    }
-    .place-cards a { display: block; text-decoration: none; color: var(--ink); }
-    .place-cards .media { margin: 0; }
-    .place-cards .card-label {
-      display: block; margin-top: 0.5rem;
-      font-family: var(--sans); font-weight: 600; font-size: 0.95rem;
-    }
-    .place-cards a:hover .card-label { color: var(--accent); }
-    .place-cards a:hover .media { border-color: var(--accent); }
-
-    /* The card itself: the picture and the address first, with the headline and
-       its outlet hung underneath, so it still answers "which building?" before
-       it says what happened there. The headline is italic rather than bold
-       because it is a quotation of somebody else's words. */
-    .news-cards .card-news {
-      margin: 0.2rem 0 0; font-size: 0.95rem; line-height: 1.4;
-    }
-    .news-cards .card-news em { display: block; }
-    /* The one link on the card that leaves the site is the outlet's name, not
-       the headline. The picture and the address are one link to the building's page,
-       and a third link that looked like them but went to another site was a
-       guess every time; a publication's name reads as a place to go. It is
-       sized to its text so the rest of the line isn't a hidden link. The icon
-       says it leaves: muted and a size down, an affordance rather than a mark.
-       .card-ext holds the space and the icon in a nowrap box with no whitespace
-       before it, so the icon cannot be stranded alone on a line of its own. */
-    .news-cards .card-outlet {
-      width: fit-content; margin-top: 0.15rem;
-      font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
-    }
-    .news-cards .card-outlet:hover { color: var(--accent); }
-    .news-cards .card-outlet .card-ext { white-space: nowrap; }
-    .news-cards .card-outlet .ic { font-size: 0.85em; }
-
-    /* Street hubs. One line each now that they carry no description, so the
-       chevron between neighborhood and street recedes and the two links read
-       as the pair they are. */
-    .place-hubs span { color: var(--muted); padding: 0 0.15rem; }
-  </style>
+       and crawlable; see shared/AGENTS.md. The neighborhood hubs get the same
+       map laid over them on the way out, as an enhancement. -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="/shared/map/map.css">
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" defer></script>
+  <script type="module" src="/shared/map/map.js"></script>
+  <!-- /map head -->
 </head>
 <body>
+<!-- map shell: copied onto the neighborhood hubs by seed_pages.map_into -->
 <div class="map-shell">
-  <!-- #map stays empty: Mapbox wants sole ownership of its container, so the
+  <!-- #map stays empty: MapLibre wants sole ownership of its container, so the
        fallback is a sibling laid over it and removed once tiles are up. -->
-  <div id="map" role="region" aria-label="Map of documented addresses in San Francisco, with the addresses in the news and upcoming events marked"></div>
+  <div id="map" role="region" aria-label="Map of San Francisco's neighborhoods, with the addresses in the news and upcoming events marked; pick a neighborhood to see its lots"></div>
   <div class="media-empty">
     <span class="ic ic-pin ic-lg"></span>
     <span class="map-loading">Loading map...</span>
     <small>Every address is reachable through the links below.</small>
   </div>
-  <p class="map-brand">Know This Place</p>
-  <a class="map-cue" href="#news">In the news<span aria-hidden="true">↓</span></a>
+  <a class="map-brand" href="/">Know This Place</a>
+  <section class="map-news" aria-label="In the news">
+    <!-- Fed by the news module, newest first. Every time a story lands on an
+         address page, its card goes on the top of this list and the oldest card
+         comes off — twelve of them; see news/AGENTS.md. The headline is quoted
+         verbatim and the outlet is named, which is what makes carrying it a
+         citation rather than a lift.
+
+         This list is also the map's data: the script at the foot of the page
+         reads these cards for the coordinates, the headline and the outlet, and
+         draws each one as a pulsing dot with the story on its card. There
+         is no second file to keep in step — edit the cards and the map follows. -->
+    <ul class="place-cards news-cards" id="map-news-list">
+      <li>
+        <a href="/san-francisco/mission/potrero-avenue/1189/">
+          <ktp-streetview location="37.753311,-122.406157" label="1189 Potrero Avenue">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7533, −122.4062</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">1189 Potrero Avenue</span>
+        </a>
+        <p class="card-news"><em>Shuttered Mission Walgreens to become San Francisco General Hospital child care center — a move nearly 40 years in the making</em><a class="card-outlet" href="https://missionlocal.org/2026/11/shuttered-walgreens-to-become-sf-general-child-care-center/">Mission Local<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/pacific-heights/california-street/2536/">
+          <ktp-streetview location="37.788888,-122.436228" label="2536–2542 California Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7889, −122.4362</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">2536–2542 California Street</span>
+        </a>
+        <p class="card-news"><em>Preliminary Permits Invoke HC-SF For 2536 California Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/preliminary-permits-invoke-hc-sf-for-2536-california-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/mission/mission-street/3349/">
+          <ktp-streetview location="37.743181,-122.421133" label="3349 Mission Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7432, −122.4211</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">3349 Mission Street</span>
+        </a>
+        <p class="card-news"><em>A beloved Bay Area Filipino bakery is coming to San Francisco</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/ling-nam-filipino-bakery-22536853.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/mission-bay/berry-street/105/">
+          <ktp-streetview location="37.776585,-122.39212" label="105–185 Berry Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7766, −122.3921</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">105–185 Berry Street</span>
+        </a>
+        <p class="card-news"><em>The pandemic forced a reinvention at China Basin. Then Sierra AI moved in</em><a class="card-outlet" href="https://sfstandard.com/2026/11/17/china-basin-mccarthy-cook-transformation-sierra/">The San Francisco Standard<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/union-square/kearny-street/222/">
+          <ktp-streetview location="37.790196,-122.403664" label="222–226 Kearny Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7902, −122.4037</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">222–226 Kearny Street</span>
+        </a>
+        <p class="card-news"><em>More bàn miàn downtown: A Sichuan noodle restaurant expands in Union Square</em><a class="card-outlet" href="https://sfstandard.com/2026/11/16/momo-noodle-new-location-kearny/">The San Francisco Standard<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/bernal-heights/mission-street/3595/">
+          <ktp-streetview location="37.739017,-122.423604" label="3595 Mission Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7390, −122.4236</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">3595 Mission Street</span>
+        </a>
+        <p class="card-news"><em>Updated Plans Filed For 3595 Mission Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/updated-plans-filed-for-3595-mission-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/inner-richmond/4th-avenue/228/">
+          <ktp-streetview location="37.784368,-122.462046" label="228–230 4th Avenue">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7844, −122.4620</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">228–230 4th Avenue</span>
+        </a>
+        <p class="card-news"><em>Minor Expansion For 228 4th Avenue in Inner Richmond, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/minor-expansion-for-228-4th-avenue-in-inner-richmond-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/south-beach/the-embarcadero/140/">
+          <ktp-streetview location="37.795387,-122.393681" label="140 The Embarcadero">
+            <figure class="media">
+              <img src="/san-francisco/south-beach/the-embarcadero/140/assets/photo.jpg" width="1280" height="960" alt="Photo of 140 The Embarcadero" loading="lazy" decoding="async">
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">140 The Embarcadero</span>
+        </a>
+        <p class="card-news"><em>After six years, one of the S.F. Ferry Building’s premier restaurant spaces is coming back to life</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/lucania-ferry-building-restaurant-san-francisco-22473665.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/hayes-valley/laguna-street/500/">
+          <ktp-streetview location="37.775807,-122.425964" label="500–528 Laguna Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7758, −122.4260</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">500–528 Laguna Street</span>
+        </a>
+        <p class="card-news"><em>Amélie To Open New Wine Bar In San Francisco’s Hayes Valley</em><a class="card-outlet" href="https://whatnow.com/san-francisco/restaurants/amelie-to-open-new-wine-bar-in-san-franciscos-hayes-valley/">What Now San Francisco<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/south-of-market/market-street/735/">
+          <ktp-streetview location="37.786773,-122.404247" label="735 Market Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.7868, −122.4042</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">735 Market Street</span>
+        </a>
+        <p class="card-news"><em>The Museum of Illusions opens in San Francisco</em><a class="card-outlet" href="https://thevoicesf.org/the-museum-of-illusions-opens-in-san-francisco/">The Voice of San Francisco<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/chinatown/montgomery-street/600/">
+          <ktp-streetview location="37.795157,-122.402732" label="600 Montgomery Street">
+            <figure class="media">
+              <img src="/san-francisco/chinatown/montgomery-street/600/assets/photo.jpg" width="1280" height="960" alt="Photo of 600 Montgomery Street" loading="lazy" decoding="async">
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">600 Montgomery Street</span>
+        </a>
+        <p class="card-news"><em>Transamerica Pyramid Could Become SF Landmark, Benches and All</em><a class="card-outlet" href="https://hoodline.com/2026/11/transamerica-pyramid-could-become-sf-landmark-benches-and-all/">Hoodline<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+      <li>
+        <a href="/san-francisco/russian-hill/north-point-street/704/">
+          <ktp-streetview location="37.806017,-122.418903" label="704 North Point Street">
+            <figure class="media">
+              <div class="media-empty">
+                <span class="ic ic-pin"></span>
+                <span>37.8060, −122.4189</span>
+              </div>
+            </figure>
+          </ktp-streetview>
+          <span class="card-label">704 North Point Street</span>
+        </a>
+        <p class="card-news"><em>New Building Permits Filed For 704 North Point Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/new-building-permits-filed-for-704-north-point-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
+    </ul>
+    <button type="button" class="map-news-more" aria-expanded="false" aria-controls="map-news-list">Show more</button>
+  </section>
+  <a class="map-cue" href="#below">San Francisco<span aria-hidden="true">↓</span></a>
 </div>
+<!-- /map shell -->
 
-<main id="news">
-  <div class="section-head"><span class="ic ic-permit"></span><h1>In the news</h1></div>
-  <!-- Fed by the news module, newest first. Every time a story lands on an
-       address page, its card goes on the top of this list and the oldest card
-       comes off — twelve of them; see news/AGENTS.md. The headline is quoted
-       verbatim and the outlet is named, which is what makes carrying it a
-       citation rather than a lift.
-
-       This list is also the map's data: the script at the foot of the page
-       reads these cards for the coordinates, the headline and the outlet, and
-       draws each one as a pulsing dot with the story on its card. There
-       is no second file to keep in step — edit the cards and the map follows. -->
-  <ul class="place-cards news-cards">
-    <li>
-      <a href="/san-francisco/mission/potrero-avenue/1189/">
-        <ktp-streetview location="37.753311,-122.406157" label="1189 Potrero Avenue">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7533, −122.4062</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">1189 Potrero Avenue</span>
-      </a>
-      <p class="card-news"><em>Shuttered Mission Walgreens to become San Francisco General Hospital child care center — a move nearly 40 years in the making</em><a class="card-outlet" href="https://missionlocal.org/2026/11/shuttered-walgreens-to-become-sf-general-child-care-center/">Mission Local<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/pacific-heights/california-street/2536/">
-        <ktp-streetview location="37.788888,-122.436228" label="2536–2542 California Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7889, −122.4362</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">2536–2542 California Street</span>
-      </a>
-      <p class="card-news"><em>Preliminary Permits Invoke HC-SF For 2536 California Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/preliminary-permits-invoke-hc-sf-for-2536-california-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/mission/mission-street/3349/">
-        <ktp-streetview location="37.743181,-122.421133" label="3349 Mission Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7432, −122.4211</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">3349 Mission Street</span>
-      </a>
-      <p class="card-news"><em>A beloved Bay Area Filipino bakery is coming to San Francisco</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/ling-nam-filipino-bakery-22536853.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/mission-bay/berry-street/105/">
-        <ktp-streetview location="37.776585,-122.39212" label="105–185 Berry Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7766, −122.3921</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">105–185 Berry Street</span>
-      </a>
-      <p class="card-news"><em>The pandemic forced a reinvention at China Basin. Then Sierra AI moved in</em><a class="card-outlet" href="https://sfstandard.com/2026/11/17/china-basin-mccarthy-cook-transformation-sierra/">The San Francisco Standard<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/union-square/kearny-street/222/">
-        <ktp-streetview location="37.790196,-122.403664" label="222–226 Kearny Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7902, −122.4037</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">222–226 Kearny Street</span>
-      </a>
-      <p class="card-news"><em>More bàn miàn downtown: A Sichuan noodle restaurant expands in Union Square</em><a class="card-outlet" href="https://sfstandard.com/2026/11/16/momo-noodle-new-location-kearny/">The San Francisco Standard<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/bernal-heights/mission-street/3595/">
-        <ktp-streetview location="37.739017,-122.423604" label="3595 Mission Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7390, −122.4236</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">3595 Mission Street</span>
-      </a>
-      <p class="card-news"><em>Updated Plans Filed For 3595 Mission Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/updated-plans-filed-for-3595-mission-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/inner-richmond/4th-avenue/228/">
-        <ktp-streetview location="37.784368,-122.462046" label="228–230 4th Avenue">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7844, −122.4620</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">228–230 4th Avenue</span>
-      </a>
-      <p class="card-news"><em>Minor Expansion For 228 4th Avenue in Inner Richmond, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/minor-expansion-for-228-4th-avenue-in-inner-richmond-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/south-beach/the-embarcadero/140/">
-        <ktp-streetview location="37.795387,-122.393681" label="140 The Embarcadero">
-          <figure class="media">
-            <img src="/san-francisco/south-beach/the-embarcadero/140/assets/photo.jpg" width="1280" height="960" alt="Photo of 140 The Embarcadero" loading="lazy" decoding="async">
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">140 The Embarcadero</span>
-      </a>
-      <p class="card-news"><em>After six years, one of the S.F. Ferry Building’s premier restaurant spaces is coming back to life</em><a class="card-outlet" href="https://www.sfchronicle.com/food/restaurants/article/lucania-ferry-building-restaurant-san-francisco-22473665.php">San Francisco Chronicle<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/hayes-valley/laguna-street/500/">
-        <ktp-streetview location="37.775807,-122.425964" label="500–528 Laguna Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7758, −122.4260</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">500–528 Laguna Street</span>
-      </a>
-      <p class="card-news"><em>Amélie To Open New Wine Bar In San Francisco’s Hayes Valley</em><a class="card-outlet" href="https://whatnow.com/san-francisco/restaurants/amelie-to-open-new-wine-bar-in-san-franciscos-hayes-valley/">What Now San Francisco<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/south-of-market/market-street/735/">
-        <ktp-streetview location="37.786773,-122.404247" label="735 Market Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.7868, −122.4042</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">735 Market Street</span>
-      </a>
-      <p class="card-news"><em>The Museum of Illusions opens in San Francisco</em><a class="card-outlet" href="https://thevoicesf.org/the-museum-of-illusions-opens-in-san-francisco/">The Voice of San Francisco<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/chinatown/montgomery-street/600/">
-        <ktp-streetview location="37.795157,-122.402732" label="600 Montgomery Street">
-          <figure class="media">
-            <img src="/san-francisco/chinatown/montgomery-street/600/assets/photo.jpg" width="1280" height="960" alt="Photo of 600 Montgomery Street" loading="lazy" decoding="async">
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">600 Montgomery Street</span>
-      </a>
-      <p class="card-news"><em>Transamerica Pyramid Could Become SF Landmark, Benches and All</em><a class="card-outlet" href="https://hoodline.com/2026/11/transamerica-pyramid-could-become-sf-landmark-benches-and-all/">Hoodline<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-    <li>
-      <a href="/san-francisco/russian-hill/north-point-street/704/">
-        <ktp-streetview location="37.806017,-122.418903" label="704 North Point Street">
-          <figure class="media">
-            <div class="media-empty">
-              <span class="ic ic-pin"></span>
-              <span>37.8060, −122.4189</span>
-            </div>
-          </figure>
-        </ktp-streetview>
-        <span class="card-label">704 North Point Street</span>
-      </a>
-      <p class="card-news"><em>New Building Permits Filed For 704 North Point Street, San Francisco</em><a class="card-outlet" href="https://sfyimby.com/2026/11/new-building-permits-filed-for-704-north-point-street-san-francisco.html">San Francisco YIMBY<span class="card-ext">&nbsp;<span class="ic ic-link" aria-hidden="true"></span></span></a></p></li>
-  </ul>
+<main id="below">
+  <!-- below: the San Francisco hub's <main>, put in on the way out by
+       build_site.py --stage / --serve (seed_pages.home_into). This is what a
+       reader without it gets. -->
+  <h1>San Francisco</h1>
+  <p class="lead"><a href="/san-francisco/">Every documented neighborhood and street in San Francisco</a>.</p>
 
 </main>
 
@@ -394,493 +219,5 @@
   <a href="https://github.com/nolastan/know-this-place">open source</a> project by <a href="https://stanfordrosenthal.com">Stanford Rosenthal</a>.</p>
 </footer>
 
-<script type="module">
-/* The homepage map. Every documented address as one dot, click to open its
-   card. The dots come from shared/addresses.geojson, built by
-   scripts/build_map_index.py from the same data.json files that render the
-   pages themselves. On top of them sit two pulsing layers, each adding
-   its story to the card: the news layer — the dozen addresses in the grid below, in the
-   cool data hue — and the events layer, the next six days of public-space
-   events in the violet --event hue, read from shared/events.geojson.
-
-   If anything here fails — no token, blocked CDN, no WebGL — the placeholder
-   in #map stands and the links below it still reach every page. */
-const shell = document.getElementById("map");
-const placeholder = document.querySelector(".map-shell .media-empty");
-
-const styleFor = (dark) =>
-  dark ? "mapbox://styles/mapbox/dark-v11" : "mapbox://styles/mapbox/light-v11";
-
-/* A page the research module has published a finding onto ("r" in the index)
-   wears the site's brick hue; the rest, pages that are permit history and
-   little else, wear the muted grey. Both are read live from site.css so light
-   and dark mode stay in step and no new color enters the system. */
-const cssVar = (name) =>
-  getComputedStyle(document.documentElement).getPropertyValue(name).trim();
-
-/* A dot under the pointer, or the one whose card is open, draws larger, fully
-   opaque and ringed, so the reader can see which dot a click will open. Mapbox
-   only accepts ["zoom"] at the top level of an interpolate, so the state is
-   read inside each stop rather than wrapped around the curve. */
-const LIT = ["any", ["boolean", ["feature-state", "hover"], false],
-                    ["boolean", ["feature-state", "active"], false]];
-const lit = (on, off) => ["case", LIT, on, off];
-
-const dotLayer = () => ({
-  id: "addresses",
-  type: "circle",
-  source: "addresses",
-  // Researched dots draw above the grey ones, so a block of plain permit
-  // pages never buries the one building with a story.
-  layout: { "circle-sort-key": ["case", ["has", "r"], 1, 0] },
-  paint: {
-    "circle-color": ["case", ["has", "r"], cssVar("--warm"), cssVar("--muted")],
-    // Small and semi-transparent at city zoom so overlapping dots build up
-    // into shading rather than one flat mass — the Mission and the Castro
-    // should read as denser than the scattered downtown parcels. Grows to a
-    // comfortable click target once you're down at street level.
-    "circle-radius": ["interpolate", ["linear"], ["zoom"],
-      ...[[10, 0.8], [12, 1.4], [14, 3], [16, 6], [18, 9]]
-        .flatMap(([z, r]) => [z, lit(r * 1.5 + 2.5, r)])],
-    // The grey dots at a third to a half the strength: --muted is lighter than
-    // the brick in dark mode, and at full opacity a district of permit-only
-    // pages would outshine the researched ones it is meant to sit behind.
-    "circle-opacity": ["interpolate", ["linear"], ["zoom"],
-      10, lit(1, ["case", ["has", "r"], 0.45, 0.15]),
-      13, lit(1, ["case", ["has", "r"], 0.7, 0.22]),
-      15, lit(1, ["case", ["has", "r"], 0.95, 0.5])],
-    "circle-stroke-color": cssVar("--paper"),
-    "circle-stroke-width": ["interpolate", ["linear"], ["zoom"],
-      12, lit(1.5, 0), 15, lit(2, 0), 17, lit(2.5, 1.5)],
-  },
-});
-
-/* The addresses in the news, read out of the grid below rather than from a
-   second data file. The cards are already the list of what the news module
-   published, so taking the map's news layer from the same markup means the two
-   cannot drift: a run that adds a card adds a dot, and one that drops a card
-   drops it. Everything the card adds is text that is already on the page.
-   Coordinates come off <ktp-streetview location="LAT,LNG">, which the card
-   copies verbatim from the page's own data.json. */
-const newsFeatures = () =>
-  [...document.querySelectorAll(".news-cards > li")].flatMap((li, i) => {
-    const sv = li.querySelector("ktp-streetview");
-    const [lat, lng] = (sv?.getAttribute("location") ?? "").split(",").map(Number);
-    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return [];
-    return [{
-      type: "Feature",
-      geometry: { type: "Point", coordinates: [lng, lat] },
-      properties: {
-        t: sv.getAttribute("label") ?? "",
-        p: li.querySelector(".card-label")?.closest("a")?.getAttribute("href") ?? "",
-        h: li.querySelector(".card-news em")?.textContent ?? "",
-        o: li.querySelector(".card-outlet")?.textContent.trim() ?? "",
-        u: li.querySelector(".card-outlet")?.getAttribute("href") ?? "",
-        // Where this dot sits in the pulse cycle, 0 → 1. Stepping by the golden
-        // ratio spreads any number of dots evenly with no two neighbours in the
-        // grid firing together, so the rings take turns instead of beating as one.
-        ph: (i * 0.618034) % 1,
-      },
-    }];
-  });
-
-const PULSE_MS = 2000;
-const PULSE_MAX = 4;
-const REDUCED_MOTION = matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-/* News dots are the cool half of the site's warm/cool data pair, against the
-   brick of every other address — two hues that are already validated together,
-   rather than a new color invented for the map. They are also drawn a size
-   larger, because color alone would not find a dozen dots in eight thousand at
-   city zoom. Event dots take the third data hue (--event violet): a color a
-   reader can tell apart from both brick and blue even without hue vision. */
-/* scale may be a number or a data expression; either way it sits inside the
-   stops, where Mapbox allows it. */
-const newsRadius = (scale) => ["interpolate", ["linear"], ["zoom"],
-  // Scaled stop by stop: Mapbox only accepts ["zoom"] at the top level of an
-  // interpolate, so ["*", scale, interpolate] is rejected and the layer is lost.
-  ...[[10, 2.6], [12, 3.4], [14, 5], [16, 8], [18, 11]].flatMap(([z, r]) => [z, ["*", r, scale]])];
-
-/* One pulsing layer pair per data hue — news and events share the geometry
-   and the animation, and differ only in the token they draw with. `prefix`
-   is both the GeoJSON source name and the layer prefix. */
-const pulseLayers = (prefix, color) => [
-  /* The halo. Its radius and opacity are driven frame by frame below; the
-     values here are the resting state, which is also what a reader who has
-     asked for reduced motion sees — a soft ring that never moves. */
-  {
-    id: `${prefix}-pulse`,
-    type: "circle",
-    source: prefix,
-    paint: {
-      "circle-color": cssVar(color),
-      "circle-radius": newsRadius(PULSE_MAX),
-      "circle-opacity": REDUCED_MOTION ? 0.14 : 0,
-    },
-  },
-  {
-    id: `${prefix}-dot`,
-    type: "circle",
-    source: prefix,
-    paint: {
-      "circle-color": cssVar(color),
-      "circle-radius": newsRadius(lit(1.4, 1)),
-      "circle-opacity": lit(1, 0.95),
-      "circle-stroke-color": cssVar("--paper"),
-      "circle-stroke-width": ["interpolate", ["linear"], ["zoom"],
-        12, lit(1.5, 0.6), 16, lit(2.5, 1.5)],
-    },
-  },
-];
-
-/* Events come from shared/events.geojson — the build's second file alongside
-   addresses.geojson, written by scripts/build_events.py out of the module's
-   committed events.json. Unlike the news layer this one can't read its data
-   off the page (there is no events grid), so the file carries the listing:
-   the title, the venue, the when, the calendar's name, and "p", the page of
-   the park, plaza or building it is at. An event with no page has no dot —
-   build_events.py leaves it out, and it lists on /events only. The six-day window is applied here, off "d", so a
-   stale build fades rather than being wrong. One dot per spot: a venue with
-   five events this week is still one place, so only the soonest listing at
-   each coordinate draws — the rest still list on /events. */
-const EVENT_DAYS = 6;
-const eventFeatures = (collection) => {
-  const today = new Date(); today.setHours(0, 0, 0, 0);
-  const horizon = today.getTime() + (EVENT_DAYS + 1) * 86400e3;
-  const bySpot = new Map();
-  for (const f of collection.features) {
-    const d = new Date(f.properties.d).getTime();
-    if (d < today.getTime() || d >= horizon) continue;
-    const key = f.geometry.coordinates.join(",");
-    const prev = bySpot.get(key);
-    if (!prev || f.properties.d < prev.properties.d) bySpot.set(key, f);
-  }
-  let i = 0;
-  return [...bySpot.values()].map((f) => ({
-    ...f,
-    properties: { ...f.properties, ph: (i++ * 0.618034) % 1 },
-  }));
-};
-
-/* One ring per dot every two seconds, each dot on its own beat, growing to four
-   times the dot and fading as it grows. Mapbox has no animated paint, so the halo is repainted per frame —
-   cheap at a dozen features, and parked whenever the map is off-screen or the
-   tab is hidden rather than repainting the city under the fold. */
-function pulse(map) {
-  if (REDUCED_MOTION) return;
-  let running = false, frame = 0;
-  const tick = (now) => {
-    if (!running) return;
-    for (const prefix of ["news", "events"]) {
-      if (!map.getLayer(`${prefix}-pulse`)) continue;
-      const t = (now % PULSE_MS) / PULSE_MS;          // 0 → 1, once a cycle
-      const k = ["%", ["+", t, ["get", "ph"]], 1];    // this dot's own place in it
-      map.setPaintProperty(`${prefix}-pulse`, "circle-radius",
-        newsRadius(["+", 1, ["*", PULSE_MAX - 1, k]]));
-      // Bright at the dot and fading as it grows, so the ring dissolves at its
-      // widest rather than snapping back — but slowly enough that it is still
-      // plainly visible halfway out, at city zoom among eight thousand dots.
-      map.setPaintProperty(`${prefix}-pulse`, "circle-opacity",
-        ["*", 0.6, ["^", ["-", 1, k], 1.1]]);
-    }
-    frame = requestAnimationFrame(tick);
-  };
-  const run = (on) => {
-    if (on === running) return;
-    running = on;
-    if (on) frame = requestAnimationFrame(tick);
-    else {
-      cancelAnimationFrame(frame);
-      for (const prefix of ["news", "events"]) {
-        if (map.getLayer(`${prefix}-pulse`))
-          map.setPaintProperty(`${prefix}-pulse`, "circle-opacity", 0);
-      }
-    }
-  };
-  let onScreen = true;
-  const sync = () => run(onScreen && !document.hidden);
-  new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; sync(); })
-    .observe(document.querySelector(".map-shell"));
-  document.addEventListener("visibilitychange", sync);
-  sync();
-}
-
-/* An event's day. It is worked out here, off "d", in
-   San Francisco's time zone — like the six-day window, so a build a day old
-   never calls yesterday "Today". The window never reaches the same weekday
-   twice, so a bare weekday ("Tuesday") is never ambiguous and needs no date. */
-const SF_TZ = "America/Los_Angeles";
-const sfDate = (t) => new Intl.DateTimeFormat("en-CA", { timeZone: SF_TZ }).format(t);
-const DAY_FMT = new Intl.DateTimeFormat("en-US", { weekday: "long", timeZone: SF_TZ });
-const eventDay = (iso) => {
-  const day = iso.slice(0, 10);
-  if (day === sfDate(Date.now())) return "Today";
-  if (day === sfDate(Date.now() + 86400e3)) return "Tomorrow";
-  return DAY_FMT.format(new Date(iso));
-};
-const el = (tag, cls, text) => {
-  const n = document.createElement(tag);
-  if (cls) n.className = cls;
-  if (text != null) n.textContent = text;
-  return n;
-};
-const link = (href, text, external) => {
-  const a = el("a", "", text);
-  a.href = href;
-  if (external) {
-    // The same nowrap pairing the news cards use, so the icon never strands.
-    const ext = el("span", "card-ext", "\u00a0");
-    const ic = el("span", "ic ic-link");
-    ic.setAttribute("aria-hidden", "true");
-    ext.append(ic);
-    a.append(ext);
-  }
-  return a;
-};
-
-/* The card. Built as nodes from text already in the page or its index —
-   never a string of HTML — so a headline with an ampersand or a quote in it
-   stays a headline. `place` is the page's own feature from addresses.geojson:
-   its heading and .sub, and the coordinates its Street View is taken from,
-   the same ones the page's own <ktp-streetview> uses. The Street View is that
-   element too, so it arrives exactly as it does on the page — the image when
-   a key is configured, the pin placeholder when there isn't one — unless the
-   page has its own photo ("ph"), which takes Street View's place here as it
-   does on the page. Its credit is on the page the card links to. */
-const card = (place, story, links) => {
-  const [lng, lat] = place.geometry.coordinates;
-  const { t, s, ph } = place.properties;
-  const root = el("article", "map-card");
-  const sv = el("ktp-streetview");
-  sv.setAttribute("location", `${lat},${lng}`);
-  sv.setAttribute("label", t);
-  const fig = el("figure", "media");
-  if (ph) {
-    const img = el("img");
-    img.src = ph;
-    img.alt = "Photo of " + t;
-    img.decoding = "async";
-    fig.append(img);
-  } else {
-    const empty = el("div", "media-empty");
-    empty.append(el("span", "ic ic-pin"));
-    fig.append(empty);
-  }
-  sv.append(fig);
-  const body = el("div", "map-card-body");
-  body.append(el("p", "map-card-title", t));
-  if (s) body.append(el("p", "map-card-sub", s));
-  if (story) body.append(story);
-  const row = el("p", "map-card-links");
-  row.append(...links);
-  body.append(row);
-  root.append(sv, body);
-  return root;
-};
-
-/* A news dot adds the headline and the outlet, in the order the grid's card
-   uses; an event dot adds the listing's own title, the when, and the calendar
-   that published it. The venue is named only when it is not the page itself. */
-const newsStory = ({ h, o }) => {
-  const p = el("p", "map-card-story");
-  p.append(el("em", "", h), el("small", "", o));
-  return p;
-};
-const eventStory = ({ t, d, tm, v, s }, place) => {
-  const p = el("p", "map-card-story");
-  const where = v && v !== place.properties.t ? v : "";
-  p.append(el("strong", "", t),
-           el("span", "", [`${eventDay(d)}, ${tm}`, where].filter(Boolean).join(" · ")),
-           el("small", "", s));
-  return p;
-};
-
-/* The index is fetched here rather than handed to Mapbox as a URL so we can
-   set the cache policy. "no-cache" revalidates every load and reuses the
-   cached body on a 304 — costing one conditional request, not another 107 KB.
-   Left to the default policy the browser serves Mapbox a stale copy and the
-   map silently lags the site: newly documented addresses are simply missing,
-   with nothing to indicate it. site.js reads site-config.json the same way,
-   for the same reason. */
-let addresses, events, byPath;
-async function addAddresses(map) {
-  addresses ??= await (await fetch("/shared/addresses.geojson", { cache: "no-cache" })).json();
-  byPath ??= new Map(addresses.features.map((f) => [f.properties.p, f]));
-  /* generateId gives every dot an id, which is what feature state — the hover
-     and the open card — is keyed on. */
-  if (!map.getSource("addresses")) {
-    map.addSource("addresses", { type: "geojson", data: addresses, generateId: true });
-  }
-  if (!map.getLayer("addresses")) map.addLayer(dotLayer());
-
-  /* The news goes on last so it sits above the eight thousand, with the
-     events above it — a dot the reader can act on today outranks a story
-     already told. This runs again on every style load — a light/dark switch
-     throws the layers away — which is also how the dots pick up the other
-     scheme's hues. */
-  if (!map.getSource("news")) {
-    map.addSource("news", {
-      type: "geojson", generateId: true,
-      data: { type: "FeatureCollection", features: newsFeatures() },
-    });
-  }
-  for (const layer of pulseLayers("news", "--cool")) {
-    if (!map.getLayer(layer.id)) map.addLayer(layer);
-  }
-
-  /* A missing or stale events index is not an error worth a broken map over —
-     the dots just don't draw. */
-  try {
-    events ??= await (await fetch("/shared/events.geojson", { cache: "no-cache" })).json();
-  } catch { /* no events layer this load */ }
-  if (events && !map.getSource("events")) {
-    map.addSource("events", {
-      type: "geojson", generateId: true,
-      data: { type: "FeatureCollection", features: eventFeatures(events) },
-    });
-  }
-  if (events) {
-    for (const layer of pulseLayers("events", "--event")) {
-      if (!map.getLayer(layer.id)) map.addLayer(layer);
-    }
-  }
-}
-
-async function init() {
-  const res = await fetch("/shared/site-config.json", { cache: "no-store" });
-  const { mapbox_token: token } = res.ok ? await res.json() : {};
-  if (!token || !window.mapboxgl) return;   // keep the placeholder
-
-  mapboxgl.accessToken = token;
-  const dark = matchMedia("(prefers-color-scheme: dark)");
-
-  /* The opening frame is four landmarks, not a zoom number: Fisherman's Wharf
-     at the north, the Great Highway at the west, the Ferry Building at the
-     east, Bernal Heights at the south. Mapbox picks the tightest zoom that
-     keeps all four inside whatever viewport it was handed, so the guarantee
-     holds at any window size. A fixed center and zoom held it only at the one
-     size it was tuned for — the map is 100svh full-bleed, so a narrower window
-     crops inward from the edges and below roughly 1024px wide the Outer Sunset
-     slid off the left. The box's aspect is 1.32, wider than it is tall, so a
-     desktop window binds on height and buys east-west margin for free, while a
-     phone binds on width and buys north-south. */
-  const home = [[-122.5105, 37.7395], [-122.3937, 37.8095]];
-
-  const map = new mapboxgl.Map({
-    container: shell,
-    style: styleFor(dark.matches),
-    bounds: home,
-    fitBoundsOptions: { padding: 24 },
-    minZoom: 10,
-  });
-
-  /* Panning is fenced to San Francisco, but the fence has to contain the
-     opening frame or Mapbox quietly clamps the camera and the fit never
-     happens — on a phone the frame reaches latitude 37.66..37.89, which busts
-     the city box at both ends, and the failure looks like nothing at all: no
-     error, the camera simply isn't where it was asked to be. So rather than
-     guess a box wide enough for every viewport shape, fence to the frame the
-     reader was actually given, widened to the whole city. Read off the canvas
-     corners rather than getBounds(), which reports the frame inside the
-     fitBounds padding while the clamp is applied to the full canvas. */
-  const canvas = map.getCanvas();
-  const frame = new mapboxgl.LngLatBounds(
-    map.unproject([0, canvas.clientHeight]), map.unproject([canvas.clientWidth, 0]));
-  map.setMaxBounds(frame.extend([[-122.60, 37.68], [-122.30, 37.88]]));   // San Francisco
-
-  map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), "top-right");
-  map.on("style.load", () => addAddresses(map));
-  /* The pulse starts only once the map has loaded: it repaints every frame, and
-     a map that is always repainting never fires "load" — which is what takes
-     the placeholder down. */
-  map.on("load", () => { placeholder?.remove(); pulse(map); });
-
-  /* The wheel zooms the map — no modifier key. That only works because the map
-     hands the wheel back once the reader has scrolled past it: otherwise
-     scrolling back up would zoom instead of returning to the top, and the
-     reader would be stuck in the copy below. */
-  const syncScrollZoom = () =>
-    scrollY < 4 ? map.scrollZoom.enable() : map.scrollZoom.disable();
-  addEventListener("scroll", syncScrollZoom, { passive: true });
-  syncScrollZoom();
-  dark.addEventListener("change", (e) => map.setStyle(styleFor(e.matches)));
-
-  const popup = new mapboxgl.Popup({
-    closeButton: true, closeOnClick: false, offset: 12,
-    className: "map-cardpop", maxWidth: "none",
-  });
-
-  /* Which dot is under a point. An event dot sits over the news dot, which
-     sits over the plain dot for the same address, so the layers are asked in
-     that order and the top one answers: it says everything the one beneath
-     does and then more. A few pixels of slack make a dot at city zoom — a
-     pixel or two across — something a finger can hit. */
-  const DOTS = ["events-dot", "news-dot", "addresses"];
-  const SLACK = 4;
-  const dotAt = (pt) => {
-    const layers = DOTS.filter((id) => map.getLayer(id));
-    if (!layers.length) return null;
-    const hits = map.queryRenderedFeatures(
-      [[pt.x - SLACK, pt.y - SLACK], [pt.x + SLACK, pt.y + SLACK]], { layers });
-    for (const id of layers) {
-      const near = hits.filter((f) => f.layer.id === id);
-      if (!near.length) continue;
-      const d = (f) => map.project(f.geometry.coordinates).dist(pt);
-      return near.reduce((a, b) => (d(b) < d(a) ? b : a));
-    }
-    return null;
-  };
-  const same = (a, b) => a?.source === b?.source && a?.id === b?.id;
-  const mark = (f, state, on) =>
-    f && map.getSource(f.source) &&
-    map.setFeatureState({ source: f.source, id: f.id }, { [state]: on });
-
-  let hovered = null, active = null;
-  const hover = (f) => {
-    if (same(f, hovered)) return;
-    mark(hovered, "hover", false);
-    hovered = f;
-    mark(hovered, "hover", true);
-    map.getCanvas().style.cursor = f ? "pointer" : "";
-  };
-  map.on("mousemove", (e) => hover(dotAt(e.point)));
-  map.on("mouseout", () => hover(null));
-  /* A style switch throws the sources away, and their feature state with them. */
-  map.on("style.load", () => { hovered = null; popup.remove(); });
-  popup.on("close", () => { mark(active, "active", false); active = null; });
-
-  /* Every card links to the page of the address or place the dot stands for;
-     a news dot also links the story, and an event dot the calendar's own
-     listing. A click off any dot closes the card, as Escape does. */
-  map.on("click", (e) => {
-    const f = dotAt(e.point);
-    if (!f) { popup.remove(); return; }
-    const props = f.properties;
-    const place = byPath.get(props.p) ?? {
-      geometry: f.geometry, properties: { t: props.t, s: "" },
-    };
-    const here = link(props.p, "See this place");
-    let content;
-    if (f.source === "news") {
-      content = card(place, newsStory(props),
-        [here, ...(props.u ? [link(props.u, "Read article", true)] : [])]);
-    } else if (f.source === "events") {
-      content = card(place, eventStory(props, place),
-        [here, ...(props.u ? [link(props.u, "See event", true)] : [])]);
-    } else {
-      content = card(place, null, [here]);
-    }
-    popup.remove();
-    active = f;
-    mark(active, "active", true);
-    popup.setLngLat(f.geometry.coordinates).setDOMContent(content).addTo(map);
-  });
-  addEventListener("keydown", (e) => { if (e.key === "Escape") popup.remove(); });
-}
-
-/* mapbox-gl.js is deferred, so it may not have run yet. */
-if (window.mapboxgl) init().catch(() => {});
-else addEventListener("DOMContentLoaded", () => init().catch(() => {}));
-</script>
 </body>
 </html>

@@ -1,0 +1,252 @@
+/* The homepage map, and the same map over each neighborhood hub that is one
+   of the city's Analysis Neighborhoods (build_site.py puts it there on the
+   way out; see seed_pages.map_into). */
+/* Full-bleed: the map is the first thing on the page and owns the whole
+   viewport. This page has no .site-header — the wordmark rides on the map
+   instead, so nothing crops the city. */
+.map-shell {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 20rem;
+  background: var(--note-bg);
+  border-bottom: 1px solid var(--rule);
+}
+.map-shell #map { position: absolute; inset: 0; }
+.map-shell .media-empty {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 0.4rem; text-align: center; padding: 1.5rem;
+}
+.map-loading {
+  animation: pulse-text 1.5s ease-in-out infinite;
+}
+@keyframes pulse-text {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-loading {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Overlays. The logotype is site.css's .map-brand, the same mark every
+   page wears; the cue wears the popup's chip treatment so it stays
+   legible on either basemap. */
+/* The wordmark names the picked neighborhood, and it is the way back to the
+   whole city. A long name wraps rather than running under the zoom buttons. */
+.map-shell .map-brand { max-width: calc(100% - 5rem); }
+.map-cue {
+  position: absolute; z-index: 2;
+  font-family: var(--sans); text-decoration: none; color: var(--ink);
+  background: var(--panel); border: 1px solid var(--rule);
+  border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
+}
+/* The wheel belongs to the map, so this is how the reader gets past it —
+   on a touchscreen it is the only way. Keep it. */
+.map-cue {
+  left: 50%; bottom: 1.6rem; transform: translateX(-50%);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem; font-weight: 600; white-space: nowrap;
+}
+.map-cue:hover { color: var(--accent); }
+.map-cue span { margin-left: 0.4rem; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* MapLibre's own chrome, wearing the site's tokens. */
+.maplibregl-popup-content {
+  background: var(--panel); color: var(--ink);
+  font-family: var(--sans); font-size: 0.85rem; font-weight: 600;
+  padding: 0.35rem 0.6rem; border: 1px solid var(--rule);
+  border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
+}
+.maplibregl-popup-tip { display: none; }
+.maplibregl-ctrl-group { background: var(--panel); border: 1px solid var(--rule); }
+.maplibregl-ctrl-group button + button { border-top: 1px solid var(--rule); }
+/* The card a dot opens on click — a chip grown into a small version of the
+   page it leads to: the Street View still, then the page's own <h1> and
+   .sub, then, on a news or event dot, the story or the listing, and last
+   the links. It opens on click rather than hover so that it holds still
+   long enough to be clicked through, and so a touchscreen gets it too. */
+/* Above the wordmark and the news cue, which the card may open under. */
+.map-cardpop { z-index: 3; }
+.map-cardpop .maplibregl-popup-content { padding: 0; font-weight: 400; overflow: hidden; }
+.map-card { width: min(17rem, 75vw); }
+.map-card .media { margin: 0; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; }
+.map-card .media img, .map-card .media-empty { aspect-ratio: 16 / 9; }
+.map-card .media-empty { padding: 0; }
+.map-card-body { padding: 0.6rem 0.75rem 0.7rem; }
+.map-card-title {
+  margin: 0; font-family: var(--serif); font-size: 1.1rem;
+  font-weight: 650; line-height: 1.25;
+}
+.map-card-sub {
+  margin: 0.15rem 0 0;
+  font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
+}
+.map-card-story {
+  margin: 0.55rem 0 0; padding-top: 0.5rem; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 0.85rem;
+}
+.map-card-story > * { display: block; }
+.map-card-story em { font-family: var(--serif); font-size: 0.95rem; line-height: 1.35; }
+.map-card-story strong { font-weight: 600; }
+.map-card-story span { margin-top: 0.15rem; }
+.map-card-story small { margin-top: 0.2rem; color: var(--muted); font-size: 0.78rem; }
+/* The links are the card's point, so they are buttons: the page itself
+   filled in the accent, the story or listing beside it outlined, the way
+   the occupant panel's offer button is drawn on an address page. */
+.map-card-links {
+  display: flex; gap: 0.5rem; margin: 0.75rem 0 0;
+  font-family: var(--sans); font-size: 0.85rem; font-weight: 700;
+}
+.map-card-links a {
+  flex: 1 1 0; display: flex; align-items: center; justify-content: center;
+  padding: 0.5rem 0.6rem; white-space: nowrap; text-decoration: none;
+  border: 1px solid var(--accent); border-radius: var(--radius);
+  color: var(--accent);
+}
+.map-card-links a:hover, .map-card-links a:focus-visible { background: var(--note-bg); }
+.map-card-links a:first-child { background: var(--accent); color: var(--paper); }
+.map-card-links a:first-child:hover,
+.map-card-links a:first-child:focus-visible { background: var(--accent); opacity: 0.88; }
+.map-card-links .ic { font-size: 0.85em; }
+/* The close button rides on the photo, so it wears the chip too. */
+.map-cardpop .maplibregl-popup-close-button {
+  top: 0.4rem; right: 0.4rem; width: 1.6rem; height: 1.6rem;
+  font-size: 1.1rem; line-height: 1; color: var(--ink);
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 50%;
+}
+.map-cardpop .maplibregl-popup-close-button:hover { color: var(--accent); background: var(--panel); }
+
+/* The news is the page's subject now, so its heading is the page's <h1>.
+   It sits in the ordinary .section-head band at h2's size: the rank is
+   structural, for a crawler and a screen reader, and the map above it is
+   what carries the visual weight. */
+.section-head h1 {
+  flex: 0 0 auto;
+  font-size: 1.3rem; margin: 0; letter-spacing: 0;
+}
+main > .section-head:first-child { margin-top: 1.5rem; }
+
+/* The news, as a tiled grid of Street View cards. Reuses the
+   .media / .media-empty pair every address page already uses, so the
+   picture arrives the same way here as it does there and no new image
+   handling enters the system. */
+.place-cards {
+  list-style: none; padding: 0; margin: 0 0 1.75rem;
+  display: grid; gap: 1rem;
+  /* 17rem lands the cards three across on a full-width page and two on a
+     tablet, rather than four and a stranded remainder. */
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+.place-cards a { display: block; text-decoration: none; color: var(--ink); }
+.place-cards .media { margin: 0; }
+.place-cards .card-label {
+  display: block; margin-top: 0.5rem;
+  font-family: var(--sans); font-weight: 600; font-size: 0.95rem;
+}
+.place-cards a:hover .card-label { color: var(--accent); }
+.place-cards a:hover .media { border-color: var(--accent); }
+
+/* The card itself: the picture and the address first, with the headline and
+   its outlet hung underneath, so it still answers "which building?" before
+   it says what happened there. The headline is italic rather than bold
+   because it is a quotation of somebody else's words. */
+.news-cards .card-news {
+  margin: 0.2rem 0 0; font-size: 0.95rem; line-height: 1.4;
+}
+.news-cards .card-news em { display: block; }
+/* The one link on the card that leaves the site is the outlet's name, not
+   the headline. The picture and the address are one link to the building's page,
+   and a third link that looked like them but went to another site was a
+   guess every time; a publication's name reads as a place to go. It is
+   sized to its text so the rest of the line isn't a hidden link. The icon
+   says it leaves: muted and a size down, an affordance rather than a mark.
+   .card-ext holds the space and the icon in a nowrap box with no whitespace
+   before it, so the icon cannot be stranded alone on a line of its own. */
+.news-cards .card-outlet {
+  width: fit-content; margin-top: 0.15rem;
+  font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
+}
+.news-cards .card-outlet:hover { color: var(--accent); }
+.news-cards .card-outlet .card-ext { white-space: nowrap; }
+.news-cards .card-outlet .ic { font-size: 0.85em; }
+
+/* Street hubs. One line each now that they carry no description, so the
+   chevron between neighborhood and street recedes and the two links read
+   as the pair they are. */
+.place-hubs span { color: var(--muted); padding: 0 0.15rem; }
+
+
+/* The news, a strip of frosted glass at the map's foot, left of the cue.
+   Folded, it shows the newest story; "Show more" opens the rest upward to
+   about a third of the map's height, where the list scrolls. Each row is
+   the address and the headline with the outlet under them, no pictures,
+   and the whole row opens the story on the map (map.js). The cards are the
+   news module's homepage grid, so everything that reads that grid still
+   finds it here. */
+.map-news {
+  position: absolute; z-index: 2; left: 1rem; bottom: 1.6rem;
+  width: min(21rem, calc(100% - 2rem));
+  font-family: var(--sans);
+  background: color-mix(in srgb, var(--panel) 72%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4);
+  border: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+  border-radius: var(--radius); box-shadow: 0 2px 10px rgb(0 0 0 / 0.12);
+}
+.map-news .news-cards {
+  display: block; margin: 0; padding: 0 0.9rem; list-style: none;
+  /* --first is the newest row's height, measured by map.js; the fallback
+     keeps roughly one row showing before it runs. */
+  max-height: var(--first, 5.5rem); overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.map-news.is-open .news-cards { max-height: 33svh; overflow-y: auto; overscroll-behavior: contain; }
+@keyframes news-open { from { max-height: 0; } }
+@media (prefers-reduced-motion: reduce) { .map-news .news-cards { transition: none; animation: none !important; } }
+.map-news .news-cards > li { padding: 0.6rem 0; cursor: pointer; }
+.map-news .news-cards > li + li { border-top: 1px solid color-mix(in srgb, var(--rule) 55%, transparent); }
+.map-news .news-cards .media { display: none; }
+.map-news .news-cards .card-label { margin: 0; font-size: 0.8rem; color: var(--muted); }
+.map-news .news-cards .card-news { margin: 0.1rem 0 0; font-size: 0.85rem; line-height: 1.35; }
+/* The whole row opens the story on the map; the article's own link is on
+   the card that opens, so here the outlet is only a name. */
+.map-news .news-cards > li:hover .card-label,
+.map-news .news-cards > li:focus-within .card-label { color: var(--accent); }
+.map-news .news-cards .card-outlet { pointer-events: none; }
+.map-news .news-cards .card-outlet .card-ext { display: none; }
+.map-news-more {
+  display: flex; align-items: center; justify-content: space-between; width: 100%;
+  padding: 0.5rem 0.9rem; cursor: pointer;
+  font: 600 0.85rem var(--sans); color: var(--ink); background: none; border: 0;
+  border-top: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+}
+.map-news-more::after {
+  content: "▴"; color: var(--muted); font-size: 1.35rem; line-height: 1;
+  transition: transform 0.3s ease;
+}
+.map-news.is-open .map-news-more::after { transform: rotate(180deg); }
+.map-news-more:hover { color: var(--accent); }
+/* On a phone the folded strip is only its button, "In the news", sitting
+   beside the cue at the foot of the map; opened, it takes the map's width
+   over the cue, which comes back when it folds. */
+@media (max-width: 720px) {
+  .map-news { left: 0.75rem; bottom: 1rem; width: auto; }
+  /* Out of the flow while folded, so the button sizes the strip; it opens
+     with its own grow, since there is no folded height to transition from. */
+  .map-news:not(.is-open) .news-cards { display: none; }
+  .map-news.is-open .news-cards { animation: news-open 0.3s ease; }
+  .map-news .map-news-more { border-top: 0; gap: 0.6rem; }
+  .map-news.is-open { right: 0.75rem; }
+  .map-news.is-open .news-cards { max-height: 33svh; }
+  .map-news.is-open .map-news-more {
+    border-top: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+  }
+  .map-cue { left: auto; right: 0.75rem; bottom: 1rem; transform: none; }
+  .map-shell:has(.map-news.is-open) .map-cue { visibility: hidden; }
+}

@@ -840,8 +840,9 @@ usually a stale `http.server` rooted in another worktree.
 
 ## The homepage
 
-The root `index.html` is hand-authored, and it is a map and then **In the
-news**: `.place-cards.news-cards`, the twelve newest news entries on the site,
+The root `index.html` is hand-authored, and it is a map with **In the news**
+folded onto it (`<details class="map-news">`, with the San Francisco hub below
+the map, put in at deploy): `.place-cards.news-cards`, the twelve newest news entries on the site,
 maintained by the news module and nothing else — see
 [news/PIPELINE.md → The homepage grid](news/PIPELINE.md#the-homepage-grid). The
 cards are also the map's data: each one is a pulsing dot on the map above.

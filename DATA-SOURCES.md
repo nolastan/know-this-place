@@ -226,6 +226,13 @@ here is [Adding a source](#adding-a-source).
     to page the building per REFERENCE.md → Condominium buildings when there
     isn't one. Units of one building share a `mapblklot`; parcels that only
     meet at the point do not.
+- **The homepage map** draws every active lot from this dataset, cached under
+  `shared/map/lots/` by `python3 scripts/seed_pages.py lots` (with the
+  centrelines of `3psu-pn9h`, Streets — Active and Retired, minus its paper
+  and pseudo layers, and the Analysis Neighborhoods). Condo units share their
+  building's `mapblklot` and outline, so the 227,968 active parcels are
+  155,028 lots. Rerun it when the city re-parcelizes; it is not part of the
+  build.
 - **Citation label:** "SF Parcels (active and retired) via DataSF"
 - **Verified:** 2026-08-06 (83 downtown parcels resolved; `acdm-wktn` agrees
   with the 2025 roll on all 83, where EAS's `parcel_number` did not on 22)

@@ -86,6 +86,9 @@ shared/
   site.js                     Enhancement layer (progressive web components)
   site-config.json            Site URL, repo URL, Maps embed key,
                               Mapbox token
+  map/                        The homepage map's lot cache: neighborhoods,
+                              streets, every lot (seed_pages.py lots), and
+                              the label font
 research/
   AGENTS.md                   Research rulebook: the run and its rules
   RUNBOOK.md                  The procedure for a run, step by step
@@ -175,8 +178,8 @@ key are URL-restricted to it, so the maps only render there.
 - [ ] Branch protection on `main`: require PR review (you)
 - [ ] Create a Google Maps **Embed API** key, referrer-locked to `knowthis.place`,
       and put it in `shared/site-config.json`
-- [ ] Create a Mapbox **public token** (`pk.…`) for the homepage map and the
-      per-page locator maps, URL-restricted to `knowthis.place` and
+- [ ] Create a Mapbox **public token** (`pk.…`) for the per-page locator
+      maps (the homepage map uses no Mapbox: it is drawn from `shared/map/`), URL-restricted to `knowthis.place` and
       `http://localhost:8517`, and put it in `shared/site-config.json` as
       `mapbox_token`. Address pages request one Static Images call per view, so
       watch the account's monthly request count as coverage grows
