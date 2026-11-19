@@ -207,7 +207,8 @@ main > .section-head:first-child { margin-top: 1.5rem; }
   transition: max-height 0.3s ease;
 }
 .map-news.is-open .news-cards { max-height: 33svh; overflow-y: auto; overscroll-behavior: contain; }
-@media (prefers-reduced-motion: reduce) { .map-news .news-cards { transition: none; } }
+@keyframes news-open { from { max-height: 0; } }
+@media (prefers-reduced-motion: reduce) { .map-news .news-cards { transition: none; animation: none !important; } }
 .map-news .news-cards > li { padding: 0.6rem 0; cursor: pointer; }
 .map-news .news-cards > li + li { border-top: 1px solid color-mix(in srgb, var(--rule) 55%, transparent); }
 .map-news .news-cards .media { display: none; }
@@ -231,9 +232,21 @@ main > .section-head:first-child { margin-top: 1.5rem; }
 }
 .map-news.is-open .map-news-more::after { transform: rotate(180deg); }
 .map-news-more:hover { color: var(--accent); }
-/* On a phone the strip takes the width of the map and sits just above the
-   cue, which keeps its place at the foot. */
+/* On a phone the folded strip is only its button, "In the news", sitting
+   beside the cue at the foot of the map; opened, it takes the map's width
+   over the cue, which comes back when it folds. */
 @media (max-width: 720px) {
-  .map-news { left: 0.75rem; right: 0.75rem; width: auto; bottom: 4.1rem; }
-  .map-news.is-open .news-cards { max-height: 28svh; }
+  .map-news { left: 0.75rem; bottom: 1rem; width: auto; }
+  /* Out of the flow while folded, so the button sizes the strip; it opens
+     with its own grow, since there is no folded height to transition from. */
+  .map-news:not(.is-open) .news-cards { display: none; }
+  .map-news.is-open .news-cards { animation: news-open 0.3s ease; }
+  .map-news .map-news-more { border-top: 0; gap: 0.6rem; }
+  .map-news.is-open { right: 0.75rem; }
+  .map-news.is-open .news-cards { max-height: 33svh; }
+  .map-news.is-open .map-news-more {
+    border-top: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+  }
+  .map-cue { left: auto; right: 0.75rem; bottom: 1rem; transform: none; }
+  .map-shell:has(.map-news.is-open) .map-cue { visibility: hidden; }
 }

@@ -791,13 +791,21 @@ async function init() {
   };
   fitFirst();
   new ResizeObserver(fitFirst).observe(shell);
+  /* On a phone the folded strip shows no story, only the button, so there it
+     says what it opens rather than "more". */
+  const phone = matchMedia("(max-width: 720px)");
+  const label = () => {
+    const open = newsBox.classList.contains("is-open");
+    more.textContent = open ? "Show less" : phone.matches ? "In the news" : "Show more";
+  };
   const setOpen = (open) => {
     if (!newsBox) return;
     newsBox.classList.toggle("is-open", open);
     more.setAttribute("aria-expanded", String(open));
-    more.textContent = open ? "Show less" : "Show more";
+    label();
     if (!open) list.scrollTop = 0;
   };
+  if (newsBox) { label(); phone.addEventListener("change", label); }
   more?.addEventListener("click", () => setOpen(!newsBox.classList.contains("is-open")));
   newsBox?.addEventListener("click", (e) => {
     const li = e.target.closest(".news-cards > li");
