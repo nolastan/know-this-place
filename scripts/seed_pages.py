@@ -6620,8 +6620,10 @@ def hub_photo_credit_html(photo: dict) -> str:
 
 
 def showcase_entries(recs: list) -> list:
-    """The named buildings in a boundary: city landmarks first, by number,
-    then the rest oldest first."""
+    """The named buildings in a boundary: those with a photograph of their
+    own first, so the cards a hub leads with show the building rather than
+    Street View, then within each group city landmarks first, by number, and
+    the rest oldest first."""
     named = []
     for lng, lat, path, rec in recs:
         name = building_name(rec)
@@ -6633,8 +6635,9 @@ def showcase_entries(recs: list) -> list:
         year = int(year) if str(year or "").isdigit() and int(year) > 0 else None
         named.append({"lng": lng, "lat": lat, "path": path, "rec": rec, "name": name,
                       "landmark": num if isinstance(num, int) else (0 if cl.get("name") else None),
-                      "year": year})
-    named.sort(key=lambda e: (e["landmark"] is None, e["landmark"] or 0,
+                      "year": year,
+                      "photo": page_photo(dict(rec, path=path)) is not None})
+    named.sort(key=lambda e: (not e["photo"], e["landmark"] is None, e["landmark"] or 0,
                               e["year"] is None, e["year"] or 0, e["name"]))
     return named
 
