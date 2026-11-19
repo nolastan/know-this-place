@@ -744,6 +744,10 @@ def retest(path: str) -> int:
     bad, counts = 0, {}
     for f in rows:
         x, res = f.get("extra") or {}, f["resolution"]
+        if not x.get("corner_quad") and x.get("corner"):
+            # The Dec 1912 – Jul 1913 batch wrote the quadrant as `corner`; read
+            # as absent, its 44 corners got only the reach test (2026-11-19).
+            x = {**x, "corner_quad": x["corner"]}
         a = name(f.get("street_name"), f.get("street_type"))
         b = name(x.get("cross_street_name"), x.get("cross_street_type"))
         apn = res.get("apn")

@@ -3498,3 +3498,29 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   building. That is not a conflict to record on the page — it is evidence the
   plans went unbuilt or the parcel is wrong. Leave it unresolved. (2026-11-17,
   architect-engineer-california)
+- **A field the test doesn't read is a test that didn't run.** The 1913
+  January–July batch stored its corners' quadrant as `extra.corner`, not
+  `corner_quad`. `--retest` passed all 44 on the reach test alone and never
+  asked which corner they were on. Its "ok" looked like every other "ok". One
+  of the 44 sat three lots from the corner. *Before trusting a re-test, check
+  that the batch uses the field names the test reads (`jq '[.findings[].extra
+  | keys[]] | unique'`)*; `--retest` now accepts `corner` too. The same pass
+  found the other way a placement can hide: the 1910 `offsets` file's
+  `address_as_written` had the side word in place of the direction ("Bush
+  street, 137 feet north of Sansome" for "north line of Bush street, 137 feet
+  east of Sansome"), so a parser fed that field would have tested the wrong
+  thing. Fill fields from `raw.text`. (2026-11-19, loc-newspapers)
+- **The lot-area trap is most of what a corner re-test finds.** Of 13
+  disagreements in 572 placements, 4 were a lot one to three lots from the
+  corner with the corner lot's area, on a block of same-size lots: 260
+  Mission, 2200 Clement, 1159 Clay, 5515 California. Twice the right lot was
+  the corner lot with the same area and year (2250 Clement, 1055 Mason). *A
+  corner placement needs the quadrant and the reach, not the area.* An area
+  match only picks between lots that are already at the corner. (2026-11-19,
+  loc-newspapers)
+- **A street's old name can be another street's current one.** The *Call*
+  of April 1910 prints "Montgomery avenue", which was Columbus Avenue until
+  1909. The placement went to Montgomery Street, 1109, on the other side of
+  Vallejo from the printed offset. *Before matching a pre-1915 "avenue" or
+  "street" to a current name, check the renamings in RUNBOOK's renumbering
+  traps.* (2026-11-19, loc-newspapers)
