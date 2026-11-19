@@ -1,0 +1,46 @@
+{
+  "source_id": "sf-standard",
+  "batch": "2026-11-19",
+  "read_on": "2026-11-19",
+  "notes": "Run of 2026-11-19. Three Standard stories queued. None earns an entry: the Anthropic share-price story names its headquarters in passing; the permitting-merger and hotel-cleaning stories print no address.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 3,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-19-ss-0001",
+      "date": "2026-11-18",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "500 Howard",
+      "street_number": "500",
+      "street_name": "HOWARD",
+      "street_type": "ST",
+      "description": "A story about a company's IPO pricing that mentions its headquarters building in passing.",
+      "extra": {},
+      "citation": {
+        "label": "The San Francisco Standard, “Anthropic unveils its price tag: $83 a share, a nearly $1.5 trillion valuation,” 18 November 2026",
+        "url": "https://sfstandard.com/2026/11/18/anthropic-stock-debut-san-francisco/"
+      },
+      "raw": {
+        "text": "500 Howard"
+      },
+      "confidence": "low",
+      "publish": {
+        "status": "declined",
+        "note": "An address in passing: the story is about a company's stock offering, not the building, and fails the ten-year test for 500 Howard."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "3721119",
+        "path": "/san-francisco/east-cut/howard-street/500/",
+        "eas_address": "500 HOWARD ST",
+        "method": "EAS exact match on 500 HOWARD ST → parcel 3721119; sf-parcels has blklot 3721119 active, 500–500 HOWARD; the 2025 roll records it as commercial office, built 2003. EAS files the address under parcel 3721011, which sf-parcels reports retired; the active parcel its coordinates fall in is 3721119.",
+        "checked_on": "2026-11-19"
+      }
+    }
+  ]
+}
