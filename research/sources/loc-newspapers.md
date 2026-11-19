@@ -6,6 +6,33 @@
 >
 > - **Kind:** newspaper OCR corpus · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
+> - **Verified:** 2026-11-19 (the rest of the re-test chain in one pass:
+  the 1910 `offsets` file and the 1911, 1912 and 1913 real-estate and
+  building-contract batches, whose 456 corner.py placements carried no corner
+  fields. 402 filled by parsing `address_as_written` ("S line of Pine street,
+  137:6 E of Jones street, 94:6x137:6"), 54 by hand from `raw.text`, keeping
+  out any side, offset or direction the OCR garbles. The 1913 January–July
+  batch's 44 corners wrote their quadrant as `corner`, so earlier re-tests ran
+  only the reach test on them; `--retest` now reads that field. Across 572
+  placements: **13 disagreeing**; flipping every side and quadrant made 396 of
+  the 1911–1913 contract placements disagree, so the test discriminates. 2
+  kept: the Ellsworth apartments (1580 Jackson, whose offset conflict the page
+  already states) and the Meyer & Liebes building at the Market–Sutter–Sansome
+  gore, placed by name. **2 re-placed:** Klenck & Muller's 1912 flat-and-store
+  contract from 2200 Clement to **2250 Clement**, the NE corner of 24th Avenue
+  (page seeded), and Christiansen & Smith's 1912 contract from 1159 Clay to
+  **1055 Mason / 1101 Clay**, the SW corner of Clay and Mason. The second is
+  the record's 49:6 by 58 to the square foot. **9 retracted** (8 off 8 pages,
+  1 already declined), among them 1109 Montgomery, whose record prints
+  "Montgomery avenue", Columbus Avenue's name until 1909. Four of the 13 (260
+  Mission, 2200 Clement, 1159 Clay, 5515 California) were the lot-area trap:
+  a lot on the same block with the corner lot's area, one to three lots away.
+  Also corrected: all 16 `address_as_written` values in the `offsets` file had
+  the record's side word in place of its direction ("Bush street, 137 feet
+  north of Sansome" for "north line of Bush street, 137 feet east of
+  Sansome"). Re-run: every placement in the seven files ok or untested, bar
+  the two kept. **Not yet done:** the 1907–1913 lists' refused single
+  candidates, and the `corner_quad`-less hand placements in any later batch.)
 > - **Verified:** 2026-11-14 (the no-lot-size rows whose parcel had no page:
   132 parcels drafted from `manifests/loc-newspapers-lot-geometry.json`, 141
   contracts read by a second reader against each draft's roll and permits.
@@ -1315,10 +1342,8 @@ December: 5,188 pages), on the 1907 method. January to March 1906 survives as on
   lists' corner placements are re-tested** (2026-11-06: 6 retracted, 2 re-placed, see the 1910 section). **The 1910 January–June real-estate
   batch's placements are re-tested** (2026-11-07: 35 ok, 6 by name, none off a page — once its fields were filled; see the 1910 section; re-tested again 2026-11-08 with the new offset and reach checks: 40 ok or kept). **The 1910 July–December real-estate batch's placements are re-tested** (2026-11-09: 35 ok, 2 retracted, 2 kept by name; see the second-half 1910 cautions), and 1908's 651 5th Avenue and 243 7th Avenue are re-read and retracted. **The 1910 permits
   batch's placements are re-tested** (2026-11-10: 41 ok after 1 retracted and 1 moved; see "The 1910
-  permits re-read"). **Next:** the same
-  `--retest` on the last 1910 file (`offsets`, whose `cross_street` is free text), then the 1911, 1912 and 1913 (Feb/Jul–Dec) batches,
-  one batch a run, each disagreement re-read before anything comes off a page — 1908's rate was 25
-  of 375 published, 1907's 9 of 242 retracted and 3 moved, 1909's 6 of 229 retracted and 1 moved; then the 1907–1913 lists'
+  permits re-read"). **The 1910 `offsets` file and the 1911, 1912 and 1913 batches are re-tested**
+  (2026-11-19: 572 placements, 9 retracted, 2 re-placed, 2 kept; see the Verified line). **Next:** the 1907–1913 lists'
   refused single candidates, re-read against the Sanborn sheets where a
   parcel was re-cut. The rest of the 1911, 1912 and 1913 paper —
   the fires and the building-permit lists — was sized on 2026-10-06 against

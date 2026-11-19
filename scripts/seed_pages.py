@@ -7093,7 +7093,7 @@ def _pack_polygons(polys: list, origin: tuple, eps: float) -> list:
     return out
 
 
-def _bbox(polys: list) -> tuple:
+def _polys_bbox(polys: list) -> tuple:
     xs = [p[0] for poly in polys for ring in poly for p in ring]
     ys = [p[1] for poly in polys for ring in poly for p in ring]
     return min(xs), min(ys), max(xs), max(ys)
@@ -7143,7 +7143,7 @@ def cmd_lots(args) -> int:
         g = r[geom_key]
         polys = g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]
         areas.append({"slug": slugify(r[field]), "name": r[field], "polys": polys,
-                      "bbox": _bbox(polys)})
+                      "bbox": _polys_bbox(polys)})
     print(f"    {len(areas)} {label}")
 
     def area_of(x, y):
@@ -7166,7 +7166,7 @@ def cmd_lots(args) -> int:
         seen.add(m)   # condo units share their building's map lot and outline
         polys = r["shape"]["coordinates"] if r["shape"]["type"] == "MultiPolygon" \
             else [r["shape"]["coordinates"]]
-        b = _bbox(polys)
+        b = _polys_bbox(polys)
         a = area_of((b[0] + b[2]) / 2, (b[1] + b[3]) / 2)
         # An L-shaped or sliver lot can centre in the street beside it; then
         # the first of its corners that lands in a neighborhood decides.
@@ -7229,14 +7229,14 @@ def read_lot_cache() -> tuple[dict, dict]:
     areas, lots = {}, {}
     for a in doc["areas"]:
         polys = unpack_polygons(a["g"], tuple(doc["o"]))
-        areas[a["slug"]] = {**a, "polys": polys, "bbox": _bbox(polys)}
+        areas[a["slug"]] = {**a, "polys": polys, "bbox": _polys_bbox(polys)}
         f = MAP_DIR / "lots" / f"{a['slug']}.json"
         if not f.exists():
             continue
         lf = json.loads(f.read_text(encoding="utf-8"))
         for m, z, packed in lf["lots"]:
             polys = unpack_polygons(packed, tuple(lf["o"]))
-            lots[m] = {"area": a["slug"], "z": z, "polys": polys, "bbox": _bbox(polys)}
+            lots[m] = {"area": a["slug"], "z": z, "polys": polys, "bbox": _polys_bbox(polys)}
     return areas, lots
 
 

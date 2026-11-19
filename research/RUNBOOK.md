@@ -405,7 +405,9 @@ page. The parcel page keeps only facts about the land as a whole.
   streets, or leave it unresolved. The table is in
   [sources/loc-newspapers.md](sources/loc-newspapers.md).
 - **Pure renames carry their numbers over:** Lexington Avenue → Lexington
-  Street, Army Street → Cesar Chavez, Clara → Ord, Dupont → Grant. **The number
+  Street, Army Street → Cesar Chavez, Clara → Ord, Dupont → Grant, H Street →
+  Lincoln Way, Montgomery Avenue → Columbus Avenue (1909; a 1910 "Montgomery
+  avenue" is Columbus, not Montgomery Street). **The number
   carrying over is not the building surviving.** Four 1903 Dupont Street
   addresses came back with no EAS record at all on Grant Avenue — the block
   faces kept their numbering and lost those particular lots, to the 1903 plague
@@ -641,7 +643,12 @@ It tests only entries carrying `street_name` and `extra.cross_street_name`
 `extra.to_street_name` for a block face, "between Post and Sutter"); anything else
 it counts as `no fields`.
 **Fill those from the record before reading a re-test as a pass**, and write
-them at placement time so the next re-test needs no filling.
+them at placement time so the next re-test needs no filling. `offset_ft` is a
+number in feet (137.5, not `"137:6"`: keep the print in `offset_as_printed`),
+`lot_ft` is `[frontage, depth]`, and street names and types are EAS's
+(`OFARRELL`, `02ND` `ST`). Re-read `address_as_written` against `raw.text`
+before parsing it: the 1910 `offsets` file had the side word in place of the
+direction in all 16 of its placements.
 
 Corrections are an ordinary site edit in the same PR.
 

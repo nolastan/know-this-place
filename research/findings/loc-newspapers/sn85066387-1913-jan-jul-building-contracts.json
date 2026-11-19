@@ -2679,18 +2679,19 @@
    },
    "confidence": "low",
    "resolution": {
-    "status": "resolved",
+    "status": "unresolved",
     "apn": "0688028",
     "path": "/san-francisco/pacific-heights/sutter-street/1527/",
     "eas_address": "1527 SUTTER ST",
     "method": "Placed by hand with research/tools/corner.py's geometry on the record's corner (no lot printed): Si: corner of Sutter and Octavla streets: the parcel 0688028 (1527 SUTTER ST); roll year 1900 (an alteration: a building standing by 1912), 2.0 storeys; on the side of the street or in the corner the record names, both by corner.py's test and against each street's own centreline. The only parcel the corner lot with a roll year that fits. The page path comes from resolve_eas on that parcel's EAS address: EAS exact match on 1527 SUTTER ST → parcel 0688028; sf-parcels has blklot 0688028 active, 1527–1527 SUTTER; the 2025 roll records it as single family residential, built 1900.",
-    "checked_on": "2026-10-05",
-    "by_hand": true
+    "checked_on": "2026-11-19",
+    "by_hand": true,
+    "note": "Retracted 2026-11-19: re-tested with corner.py --retest against the DPW street centrelines (3psu-pn9h), the placement on 0688028 (1527 SUTTER ST, /san-francisco/pacific-heights/sutter-street/1527/) disagrees — outline 107 ft from the corner. 1527 Sutter is the third lot from Octavia. The SE corner lot is 0688030 (1533 Sutter, roll 1889), but the record's quadrant is printed \"Si:\" (SE or SW), and its structured field was `corner`, not `corner_quad`, so earlier re-tests only checked the reach. No other parcel was taken in its place. The original placement used the crossing estimate from EAS points alone, before the centreline test existed."
    },
    "publish": {
-    "status": "published",
-    "pr": "463",
-    "note": "published as: A builder contracted for alterations to a frame residence, at $2,000."
+    "status": "declined",
+    "pr": "659",
+    "note": "Removed from the page on 2026-11-19: the placement failed the street-network re-test (see resolution.note). Originally published as: A builder contracted for alterations to a frame residence, at $2,000."
    }
   },
   {
