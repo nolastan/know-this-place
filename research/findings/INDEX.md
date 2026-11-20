@@ -566,6 +566,7 @@ are listed so their size is visible before anyone opens one.
 | `news-2026-11-15.json` | 1 | 1 KB | `inner-richmond` |
 | `news-2026-11-16.json` | 1 | 1 KB | `bernal-heights` |
 | `news-2026-11-18.json` | 2 | 1 KB | `pacific-heights`, `mission` |
+| `news-2026-11-20.json` | 1 | 1 KB | `sunset-parkside` |
 | `news-backfill-2026-07-sf-standard.json` | 1 | 1 KB | `north-beach` |
 | `news-backfill-2026-07.json` | 7 | 3 KB | `sunset-parkside`, `marina`, `noe-valley` +3 |
 | `news-condo-446.json` | 2 | 1 KB | `castro`, `east-cut` |
