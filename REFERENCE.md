@@ -284,7 +284,7 @@ is closed (`seed_pages.BUSINESS_KEYS`): there is nowhere to put an owner.
 ### `photo`
 
 **An openly licensed photograph of the building, shown in Street View's
-place** — in the hero, on the homepage map's card, on the news grid and on the
+place** — in the hero (with Street View after it, see below), on the homepage map's card, on the news grid and on the
 neighborhood hubs, because every one of them draws its picture through
 `seed_pages.facade_media`. On an address page's `data.json` or a place's
 `place.json`:
@@ -310,11 +310,25 @@ neighborhood hubs, because every one of them draws its picture through
   photos, which owe no credit, so their often paragraph-long archival titles
   stay off the page.
 - **One size, committed**: cut to 4:3 and scaled to 1280×960 — the hero's
-  640px-wide 4:3 card at 2x, the largest place the picture shows, and the frame
-  every place shows it in — never upscaled, re-encoded as a JPEG at quality 72
-  with its EXIF stripped. `"cropped": true` says the frame cut the original, and
-  the credit says so, as CC BY 4.0 asks. A
-  larger copy, when one is wanted, comes from `source_url`, not the repo.
+  640px-wide 4:3 card at 2x, the largest place the picture shows — never
+  upscaled, re-encoded as a JPEG at quality 72 with its EXIF stripped. A photo
+  from the Know This Photo app is the one exception to the shape: houses are
+  tall, so the app cuts **3:4 portrait at 960×1280** instead (photos sent
+  before that stay 4:3). `width` and `height` are the file's own, because the
+  frame is drawn from them: every place the photo shows, it shows in its own
+  shape, uncropped, with a portrait frame narrowed so it stands little taller
+  than a landscape one (`.media-portrait`). `validate.py` reads the JPEG and
+  fails a size that disagrees, or a shape that is neither 4:3 nor 3:4.
+  `"cropped": true` says the frame cut the original, and the credit says so,
+  as CC BY 4.0 asks. A larger copy, when one is wanted, comes from
+  `source_url`, not the repo.
+- **Street View stays one swipe away.** In an address or place page's hero
+  the photo is the first slide of a small carousel and Street View the last
+  (`facade_media(carousel=True)`): a scroll-snapped `.media-track`, with the
+  Street View slide `hidden` until `<ktp-streetview>` has an image for it, so
+  with no script or no Maps key the photo stands alone with its credit under
+  it. site.js adds the dots and arrows; nothing plays by itself. Cards show
+  the photo alone.
 - **Or taken for the site** — a contributed photo, sent from the
   [Know This Photo](https://github.com/nolastan/know-this-photo) iPhone app as
   a pull request on a `photo/<street>-<number>-<timestamp>` branch. The

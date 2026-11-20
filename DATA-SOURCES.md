@@ -434,7 +434,8 @@ here is [Adding a source](#adding-a-source).
 - **Endpoint:** `https://commons.wikimedia.org/w/api.php`
 - **On the page:** a page's `photo` (see
   [REFERENCE.md → `photo`](REFERENCE.md#photo)) takes Street View's place
-  everywhere the building is pictured. Stored once, cut to 4:3 at 1280×960,
+  everywhere the building is pictured. Stored once, cut to 4:3 at 1280×960 (or 3:4 at 960×1280 from the
+  Know This Photo app),
   in the page's `assets/photo.jpg`.
 - **Rate limits:** the API and `upload.wikimedia.org` answer 429 to a burst
   from a shared cloud address. Send a descriptive `User-Agent` naming the site,
