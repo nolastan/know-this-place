@@ -13,6 +13,20 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 ---
 
+- **A record written after 1909 gives a modern number for an old fact; say so
+  with `extra.record_date`.** The HABS reports (1958-2020) date buildings to the
+  1850s-1880s, and `resolve_eas.py` refused 20 of 145 findings under the
+  renumbering guard until each finding carried the report's year. Set it from
+  the document, never from the fact. The same run: a documentation report made
+  to mitigate a demolition describes a building that is gone, so its retired
+  address resolves through the record's own block and lot in `acdm-wktn` to the
+  replacement's parcel, as `site history`.
+- **The loc.gov JSON API is behind a Cloudflare challenge; the `tile.loc.gov`
+  files are not.** Space listing requests 20-25 seconds apart, save each good
+  page as it arrives (a retry loop overwrote one), and fetch PDFs from
+  `tile.loc.gov` directly. Do not route around the challenge through someone
+  else's machine.
+
 - **A source read live off the web can still end up with zero findings files,
   and that's a gap, not a valid skip.** `argonaut-sfhs`, `celebrity-residence-guides`
   and `spur-popos-guide` all reached pages with no `research/findings/<id>/`
