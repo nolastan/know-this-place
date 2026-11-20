@@ -279,7 +279,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-environmental-review/named-sites-1983-2005.json` | 141 | 291 KB | 1887–2003 | 116 | 102 | `north-beach`, `east-cut`, `outer-mission` +11 |
 | `sf-environmental-review/outside-downtown.json` | 61 | 124 KB | 1852–2005 | 46 | 42 | `mission`, `potrero-hill`, `north-beach` +9 |
 | `sf-environmental-review/unread-docs.json` | 1,100 | 2.2 MB | 1849–2012 | 579 | 413 | `east-cut`, `financial-district`, `south-of-market` +22 |
-| `sf-neighborhood-newspapers/grapevine-1986-2011.json` | 87 | 146 KB | 1906–2010 | 71 | 66 | `visitacion-valley`, `bayview-hunters-point`, `south-of-market` +9 |
+| `sf-neighborhood-newspapers/grapevine-1986-2011.json` | 87 | 147 KB | 1906–2010 | 71 | 66 | `visitacion-valley`, `bayview-hunters-point`, `south-of-market` +9 |
 | `sf-planning-commission-minutes/minutes-1968-1969.json` | 372 | 692 KB | 1968–1969 | 176 | 168 | `chinatown`, `bayview-hunters-point`, `pacific-heights` +26 |
 | `sf-planning-commission-minutes/minutes-1970.json` | 455 | 847 KB | 1854–1970 | 270 | 240 | `mission`, `pacific-heights`, `outer-richmond` +30 |
 | `sf-planning-commission-minutes/minutes-1971.json` | 323 | 587 KB | 1876–1971 | 171 | 144 | `castro`, `pacific-heights`, `bayview-hunters-point` +27 |
