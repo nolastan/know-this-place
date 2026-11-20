@@ -558,8 +558,31 @@ this block for every hero and card; where `data.json` has a `photo`, the
 figure holds the committed `<img>` and a `<figcaption class="photo-credit">`
 with the license credit in place of `.media-empty`, still inside
 `<ktp-streetview>` so `location` stays on the page. The element only replaces
-a `.media-empty`, so it leaves a photo alone. See
-[REFERENCE.md → `photo`](../REFERENCE.md#photo).
+a `.media-empty`, so it leaves a photo alone. The `<img>` carries the photo's
+`width` and `height` and the frame takes that shape — a 3:4 portrait adds
+`.media-portrait`, which narrows the frame so it isn't twice as tall. In the
+hero the photo is the first slide of a carousel, Street View the last:
+
+```html
+<ktp-streetview location="LAT,LNG" label="ADDRESS">
+  <figure class="media media-lift media-portrait media-carousel">
+    <div class="media-track">
+      <figure class="media-slide">
+        <img src="/…/assets/photo.jpg" width="960" height="1280" alt="Photo of ADDRESS" decoding="async">
+        <figcaption class="photo-credit">Photo by …, CC BY-SA 4.0</figcaption>
+      </figure>
+      <div class="media-slide media-slide-sv" hidden>
+        <div class="media-empty"><span class="ic ic-pin"></span></div>
+      </div>
+    </div>
+  </figure>
+</ktp-streetview>
+```
+The Street View slide stays `hidden` — so the photo shows alone, credit under
+it — until `<ktp-streetview>` has loaded an image into it, at the photo's
+shape. Then site.js shows it and adds `.media-dots` (top right) and, for a
+pointer that hovers, two `.media-step` arrows. The track scroll-snaps on its
+own; nothing autoplays. See [REFERENCE.md → `photo`](../REFERENCE.md#photo).
 
 **Never test or preview the Street View image.** `maps_embed_key` is
 restricted to the production domain, so it fails from localhost, from any

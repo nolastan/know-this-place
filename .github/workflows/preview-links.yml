@@ -1,33 +1,46 @@
-# Finish the body of every Know This Photo PR: point its page link at the
-# deploy preview, and set the new photo beside Google Street View.
+# Finish the body of every Know This Photo PR: point its page links at the
+# deploy preview, and set each new photo beside Google Street View.
 #
-# 1. The preview link. The app opens its PR before GitHub has given it a
-#    number, so the body it writes can only link the page on knowthis.place,
-#    which still shows the old photo (or Street View) until the PR is merged.
-#    Netlify builds every PR at a predictable address,
-#    `https://deploy-preview-<N>--knowthisplace.netlify.app` (netlify.toml),
-#    so once the number exists this swaps that link for the same page on the
-#    preview. One link, nothing added: Stan asked for the body to stay that
-#    simple. It does not wait for Netlify: the link is right from the start
-#    and opens once the preview has built, a few minutes after the push.
+# The app puts a whole day's photos in one PR (a `photo/session-<timestamp>`
+# branch, one commit per page). Each page has its own section of the body,
 #
-# 2. The Street View comparison. The app's one photo becomes a two-column
-#    table, the new photo beside the Street View image the page would
-#    otherwise show (same request as site.js's <ktp-streetview>: 640×480,
-#    outdoor panoramas, the camera turned to the page's coordinates), so a
-#    reviewer can tell at a glance that the photo is of the right building.
-#    The site's Maps key is restricted to knowthis.place, and GitHub fetches
-#    a body's images from its own servers with no referrer, so the image is
-#    fetched here with a server key (the STREET_VIEW_KEY secret: a key
-#    restricted to the Street View Static API, with no referrer restriction)
-#    and committed to the `pr-street-view` branch as `<N>.jpg`. That branch
-#    holds nothing else and is never merged; the image is deleted from it
-#    when the PR closes. With no secret, or no outdoor panorama at the
-#    coordinates, the body keeps its one photo.
+#   <!-- ktp-photo path="/…/" location="lat,lng" -->
+#   ### [Page title](https://knowthis.place/…/)
+#   …
+#   ![Photo of Page title](…)
+#   <!-- /ktp-photo -->
 #
-# Running again finds both done and changes nothing. Run it by hand
-# (Actions → preview-links → Run workflow) to update every open `photo/` PR,
-# e.g. the ones opened before this workflow existed.
+# added before the "_Sent from Know This Photo._" footer, and a retake of a
+# page replaces that page's section whole. PRs from before the batching hold
+# one photo and no markers; those keep working the same way, as one section.
+#
+# 1. Preview links. The app writes its body before it knows the PR number, so
+#    it can only link the pages on knowthis.place, which still show the old
+#    photo (or Street View) until the PR is merged. Netlify builds every PR at
+#    `https://deploy-preview-<N>--knowthisplace.netlify.app` (netlify.toml), so
+#    this swaps every page link for the same page on the preview. Nothing is
+#    added: Stan asked for the body to stay that simple. The link is right
+#    from the start and opens once the preview has built.
+#
+# 2. Street View. Each section's photo becomes a two-column table, the new
+#    photo beside the Street View image the page would otherwise show (the
+#    request site.js's <ktp-streetview> makes: 640×480, outdoor panoramas,
+#    the camera turned to the page's coordinates), so a reviewer can tell at
+#    a glance that each photo is of the right building. The site's Maps key
+#    is restricted to knowthis.place, and GitHub fetches a body's images from
+#    its own servers with no referrer, so the images are fetched here with a
+#    server key (the STREET_VIEW_KEY secret: restricted to the Street View
+#    Static API, with no referrer restriction) and committed to the
+#    `pr-street-view` branch, one per page: `<N>-<page slug>.jpg`, or `<N>.jpg`
+#    for a single-photo PR. That branch holds nothing else and is never
+#    merged; a PR's images are deleted from it when the PR closes. A section
+#    with no outdoor panorama keeps its one photo, as does every section when
+#    the secret is missing.
+#
+# The table sits inside the section, so a retake (which replaces the section)
+# drops it and the next run puts it back, reusing the image already on the
+# branch. Running again on a finished body changes nothing. Run it by hand
+# (Actions → preview-links → Run workflow) to update every open `photo/` PR.
 name: preview-links
 
 on:
@@ -54,7 +67,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Preview link and Street View comparison
+      - name: Preview links and Street View comparison
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
@@ -70,20 +83,21 @@ jobs:
           KEY = os.environ.get("STREET_VIEW_KEY", "")
           PREVIEW = "https://deploy-preview-{n}--knowthisplace.netlify.app"
           BRANCH = "pr-street-view"
-          # The app's page link, and the section an earlier version of this
-          # workflow added (removed so the body keeps the one link).
+          IMAGES = f"https://github.com/{REPO}/blob/{BRANCH}/{{name}}?raw=true"
+          # A page link, and the section an early version of this workflow
+          # added (removed so the body keeps only the app's links).
           PAGE_LINK = re.compile(r"\]\(https://knowthis\.place(/[^)\s]*)\)")
           OLD_SECTION = re.compile(
               r"\n*<!-- preview-links -->.*?<!-- /preview-links -->\n*", re.S)
+          # One page's section, as the app writes it.
+          SECTION = re.compile(
+              r'<!-- ktp-photo path="([^"]*)" location="([^"]*)" -->.*?<!-- /ktp-photo -->', re.S)
           # The app's photo, alone on its line.
           PHOTO = re.compile(r"^!\[Photo of ([^\]\n]*)\]\((\S+)\)[ \t]*$", re.M)
-          MARK = "<!-- street-view -->"
+          MARK, END = "<!-- street-view -->", "<!-- /street-view -->"
 
           class NotFound(Exception):
               pass
-
-          def api_text(path, method="GET", data=None, paginate=True):
-              return api(path, method, data, paginate, raw=True)
 
           def api(path, method="GET", data=None, paginate=False, raw=False):
               args = ["gh", "api", "-X", method, path]
@@ -103,7 +117,7 @@ jobs:
 
           def pages(path):
               """Every item of a paginated list (--paginate prints one array per page)."""
-              out, items, dec, i = api_text(path), [], json.JSONDecoder(), 0
+              out, items, dec, i = api(path, paginate=True, raw=True), [], json.JSONDecoder(), 0
               while i < len(out):
                   if out[i].isspace():
                       i += 1
@@ -112,20 +126,17 @@ jobs:
                   items += page
               return items
 
-          def set_body(n, body):
-              api(f"repos/{REPO}/pulls/{n}", "PATCH", {"body": body})
+          # --- 1. preview links ------------------------------------------
 
-          # --- 1. preview link -------------------------------------------
-
-          def preview_link(n, body):
+          def preview_links(n, body):
               base = PREVIEW.format(n=n)
               updated = OLD_SECTION.sub("\n\n", body)
-              return PAGE_LINK.sub(lambda m: f"]({base}{m.group(1)})", updated, count=1)
+              return PAGE_LINK.sub(lambda m: f"]({base}{m.group(1)})", updated)
 
           # --- 2. Street View --------------------------------------------
 
-          def coordinates(pr):
-              """lat,lng from the page JSON beside the PR's new photo."""
+          def single_photo_location(pr):
+              """lat,lng from the page JSON beside a single-photo PR's photo."""
               files = api(f"repos/{REPO}/pulls/{pr['number']}/files?per_page=100")
               for f in files:
                   name = f["filename"]
@@ -150,17 +161,29 @@ jobs:
               with urllib.request.urlopen(f"{base}/metadata?{q}", timeout=30) as r:
                   status = json.load(r).get("status")
               if status != "OK":
-                  print(f"  Street View: {status}")
+                  print(f"  Street View at {location}: {status}")
                   return None
               with urllib.request.urlopen(f"{base}?size=640x480&{q}", timeout=30) as r:
                   return r.read()
 
-          def ensure_branch():
+          def slug(path):
+              return re.sub(r"[^a-z0-9]+", "-", path.lower()).strip("-")
+
+          def owned(n, name):
+              """Whether a file on the branch is one of PR n's images."""
+              return re.fullmatch(rf"{n}(-[a-z0-9-]+)?\.jpg", name) is not None
+
+          def branch_files():
               try:
-                  api(f"repos/{REPO}/git/ref/heads/{BRANCH}")
-                  return
+                  sha = api(f"repos/{REPO}/git/ref/heads/{BRANCH}")["object"]["sha"]
               except NotFound:
-                  pass
+                  return None
+              tree = api(f"repos/{REPO}/git/trees/{sha}")
+              return {t["path"] for t in tree["tree"] if t["type"] == "blob"}
+
+          def ensure_branch():
+              if branch_files() is not None:
+                  return
               # An orphan branch: it shares no history with main and is never merged.
               readme = ("Street View images for the Know This Photo PR bodies, written and "
                         "deleted by .github/workflows/preview-links.yml. Never merge this branch.\n")
@@ -174,88 +197,117 @@ jobs:
               except RuntimeError:
                   pass  # another run made it first
 
-          def existing_sha(path):
-              try:
-                  return api(f"repos/{REPO}/contents/{path}?ref={BRANCH}")["sha"]
-              except NotFound:
-                  return None
-
-          def write_image(n, jpeg):
-              path = f"{n}.jpg"
-              for attempt in range(6):  # runs for other PRs move the branch too
-                  data = {"message": f"Street View for #{n}", "branch": BRANCH,
-                          "content": base64.b64encode(jpeg).decode()}
-                  sha = existing_sha(path)
-                  if sha:
-                      data["sha"] = sha
+          def commit_files(changes, message):
+              """One commit on the branch: {name: JPEG bytes, or None to delete}.
+              Runs for other PRs move the branch too, so a refused update retries."""
+              blobs = {name: api(f"repos/{REPO}/git/blobs", "POST", {
+                          "content": base64.b64encode(data).decode(), "encoding": "base64"})["sha"]
+                       for name, data in changes.items() if data is not None}
+              entries = [{"path": name, "mode": "100644", "type": "blob", "sha": blobs.get(name)}
+                         for name in changes]
+              for attempt in range(6):
+                  head = api(f"repos/{REPO}/git/ref/heads/{BRANCH}")["object"]["sha"]
+                  base = api(f"repos/{REPO}/git/commits/{head}")["tree"]["sha"]
+                  present = {t["path"] for t in api(f"repos/{REPO}/git/trees/{base}")["tree"]}
+                  # Deleting a file that is already gone is an error, so leave it out.
+                  todo = [e for e in entries if e["sha"] or e["path"] in present]
+                  if not todo:
+                      return
+                  tree = api(f"repos/{REPO}/git/trees", "POST", {"base_tree": base, "tree": todo})
+                  commit = api(f"repos/{REPO}/git/commits", "POST",
+                               {"message": message, "tree": tree["sha"], "parents": [head]})
                   try:
-                      api(f"repos/{REPO}/contents/{path}", "PUT", data)
-                      return f"https://github.com/{REPO}/blob/{BRANCH}/{path}?raw=true"
+                      api(f"repos/{REPO}/git/refs/heads/{BRANCH}", "PATCH",
+                          {"sha": commit["sha"], "force": False})
+                      return
                   except RuntimeError as e:
                       if attempt == 5:
                           raise
                       print(f"  retrying: {e}")
                       time.sleep(2 + attempt * 3)
 
-          def delete_image(n):
-              path = f"{n}.jpg"
-              for attempt in range(6):
-                  sha = existing_sha(path)
-                  if not sha:
-                      return
-                  try:
-                      api(f"repos/{REPO}/contents/{path}", "DELETE",
-                          {"message": f"#{n} closed", "branch": BRANCH, "sha": sha})
-                      print(f"#{n}: Street View image deleted")
-                      return
-                  except RuntimeError as e:
-                      if attempt == 5:
-                          raise
-                      time.sleep(2 + attempt * 3)
+          def delete_images(n):
+              files = branch_files() or set()
+              mine = sorted(f for f in files if owned(n, f))
+              if mine:
+                  commit_files({name: None for name in mine}, f"#{n} closed")
+                  print(f"#{n}: deleted {', '.join(mine)}")
+
+          def table(photo, url):
+              label = photo.group(1)
+              return (f"{MARK}\n\n"
+                      f"| New photo | Google Street View |\n"
+                      f"|---|---|\n"
+                      f"| ![Photo of {label}]({photo.group(2)}) | ![Street View of {label}]({url}) |\n\n"
+                      f"{END}")
+
+          def plan(pr, body):
+              """The photos still without Street View: [(photo match, image name,
+              location)], with location None for a single-photo PR, whose page
+              JSON has to be read for it."""
+              n, todo = pr["number"], []
+              sections = list(SECTION.finditer(body))
+              if sections:
+                  for s in sections:
+                      if MARK in s.group(0):
+                          continue
+                      photo = PHOTO.search(body, s.start(), s.end())
+                      if photo:
+                          todo.append((photo, f"{n}-{slug(s.group(1))}.jpg", s.group(2)))
+              elif MARK not in body:
+                  photo = PHOTO.search(body)
+                  if photo:
+                      todo.append((photo, f"{n}.jpg", None))
+              return todo
 
           def comparison(pr, body):
               n = pr["number"]
-              if MARK in body:
-                  return body
-              m = PHOTO.search(body)
-              if not m:
-                  print(f"#{n}: no photo line to set Street View beside")
+              todo = plan(pr, body)
+              if not todo:
                   return body
               if not KEY:
                   print(f"#{n}: no STREET_VIEW_KEY secret, so no Street View comparison")
                   return body
-              location = coordinates(pr)
-              if not location:
-                  print(f"#{n}: no coordinates beside the photo")
-                  return body
-              jpeg = street_view(location)
-              if not jpeg:
-                  return body
               ensure_branch()
-              url = write_image(n, jpeg)
-              label = m.group(1)
-              table = (f"{MARK}\n\n"
-                       f"| New photo | Google Street View |\n"
-                       f"|---|---|\n"
-                       f"| ![Photo of {label}]({m.group(2)}) | ![Street View of {label}]({url}) |\n\n"
-                       f"<!-- /street-view -->")
-              return body[: m.start()] + table + body[m.end():]
+              have = branch_files() or set()
+              new, ready = {}, []
+              for photo, name, location in todo:
+                  if name not in have:
+                      location = location or single_photo_location(pr)
+                      jpeg = street_view(location) if location else None
+                      if not jpeg:
+                          print(f"#{n}: no Street View for {name}")
+                          continue
+                      new[name] = jpeg
+                  ready.append((photo, name))
+              if new:
+                  commit_files(new, f"Street View for #{n}: {', '.join(sorted(new))}")
+              # Back to front, so the earlier matches' offsets still hold.
+              for photo, name in sorted(ready, key=lambda r: r[0].start(), reverse=True):
+                  body = (body[: photo.start()] + table(photo, IMAGES.format(name=name))
+                          + body[photo.end():])
+              return body
 
           # --- run -------------------------------------------------------
 
           def update(pr):
               n, body = pr["number"], pr.get("body") or ""
-              updated = comparison(pr, preview_link(n, body))
+              updated = comparison(pr, preview_links(n, body))
               if updated == body:
                   print(f"#{n}: nothing to change")
                   return
-              set_body(n, updated)
+              # Re-read just before writing: the app may have added a photo to
+              # the body since, and its push will run this again for that one.
+              if (api(f"repos/{REPO}/pulls/{n}").get("body") or "") != body:
+                  print(f"#{n}: body changed while this ran; the next run will finish it")
+                  return
+              api(f"repos/{REPO}/pulls/{n}", "PATCH", {"body": updated})
               print(f"#{n}: body updated")
 
           if os.environ.get("PR"):
               n = os.environ["PR"]
               if os.environ.get("ACTION") == "closed":
-                  delete_image(n)
+                  delete_images(n)
               else:
                   update(api(f"repos/{REPO}/pulls/{n}"))
           else:

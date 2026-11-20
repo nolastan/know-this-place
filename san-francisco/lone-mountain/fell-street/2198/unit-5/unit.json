@@ -1,0 +1,45 @@
+{
+  "address": "2198 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/fell-street/2198/unit-5/",
+  "unit": "5",
+  "apn": "1213037",
+  "block": "1213",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 1148,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 920754,
+    "assessed_improvement_value": 613836,
+    "last_sale_date": "2023-01-18"
+  },
+  "permits": [
+    {
+      "number": "202507070226",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-07",
+      "status_date": "2025-10-16",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "one unit: replacement of 23 windows and 1 sliding door. all windows and door replaced in kind in the same openings.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1213037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1213&unit=5",
+      "retrieved": "2026-11-20"
+    }
+  ]
+}

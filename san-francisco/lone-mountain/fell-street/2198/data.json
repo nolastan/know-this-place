@@ -1,0 +1,176 @@
+{
+  "address": "2198 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/fell-street/2198/",
+  "block": "1213",
+  "eas_baseid": "462535",
+  "coordinates": {
+    "lat": 37.772221,
+    "lng": -122.453945
+  },
+  "parcel": {
+    "year_built": 2000,
+    "units": 6,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF"
+  },
+  "condominium": {
+    "lots": [
+      "033",
+      "034",
+      "035",
+      "036",
+      "037",
+      "038"
+    ],
+    "method": "Proposed from the 2025 roll for block 1213: every condominium parcel the roll files under 2198 FELL ST, and the unbroken run of lots beside parcel 1213033 on the same street with the same year built (2000). 6 lots, 033–038."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "2000",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Panhandle Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1870–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201108192818",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-08-19",
+      "status_date": "2011-08-19",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9909884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-05-19",
+      "status_date": "1999-05-27",
+      "estimated_cost": 8500,
+      "description": "fire alarm system 1 pull station,1 tamper,11smoke detectors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819255",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-09-23",
+      "status_date": "1999-05-27",
+      "estimated_cost": 28500,
+      "description": "installation of new fire sprinkler system and dry stand pipe",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9720567",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1997-10-15",
+      "status_date": "1999-05-27",
+      "estimated_cost": 600000,
+      "revised_cost": 720000,
+      "description": "erect a four story six unit residential bldg",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9416116",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-02-14",
+      "status_date": "1995-03-08",
+      "estimated_cost": 600,
+      "description": "revise appln #9414577 cargo container will be 13' long",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9414577",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-09-09",
+      "status_date": "1995-09-09",
+      "estimated_cost": 9500,
+      "revised_cost": 59500,
+      "description": "install of fully enclose soil vapor estraction & treatment.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806260",
+      "type": "demolitions",
+      "status": "complete",
+      "filed": "1988-05-17",
+      "status_date": "1989-02-09",
+      "description": "demolish service station",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1988–2011",
+    "shown_on_page": 7,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FELL&street_type=ST&address_number=2198",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 1213)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=1213&closed_roll_year=2025",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1213",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1213033",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.45394515036106%2037.772220591063984)%27)",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-visitacionvalley75unse-n2",
+      "name": "Visitacion Valley Grapevine, October 1992, p. 3",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/visitacionvalley75unse/page/n2/mode/1up",
+      "retrieved": "2026-11-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1992-10",
+      "kind": "site history",
+      "description": "Before the present building, the site was a former Shell gas station, where a soil clean-up plan using vapor extraction had been halted.",
+      "source": "sf-neighborhood-newspapers-visitacionvalley75unse-n2"
+    }
+  ]
+}

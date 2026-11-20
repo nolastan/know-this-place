@@ -21,6 +21,10 @@ around it, and the filter drops, in order:
   - any address printed in --advertiser (default 6) or more issues of the run
     — advertisers and mastheads.
 
+A street the OCR misspells the same way every issue ("Leiand" for Leland)
+matches nothing until it is given as `--alias LEIAND=LELAND`; count the
+squashed spellings of the title's own main streets before extracting.
+
 What survives is printed one window per JSON line, for reading by hand. The
 filter's counts go to stderr and belong in the findings file's coverage note.
 
@@ -97,8 +101,12 @@ GOLDEN GATE MASONIC VAN NESS SOUTH VAN NESS STEINER SCOTT PIERCE""".split()) | {
 NUM = r"(?<![\d$.,/-])(\d{1,5}(?:[A-Z]|\s?1/2|½)?)"
 
 
-def street_table() -> tuple[dict, re.Pattern]:
-    """Squashed printed form -> set of EAS (name, type); and one regex of names."""
+def street_table(aliases: dict | None = None) -> tuple[dict, re.Pattern]:
+    """Squashed printed form -> set of EAS (name, type); and one regex of names.
+
+    `aliases` maps a printed form the OCR keeps producing to the EAS name it
+    stands for ({"LEIAND": "LELAND"}); see --alias.
+    """
     rows = resolve_eas.street_names()
     names = defaultdict(set)
     for r in rows:
@@ -120,6 +128,10 @@ def street_table() -> tuple[dict, re.Pattern]:
                        "VAN NESS": "VAN NESS"}.items():
         if eas in names:
             printed[alias] = eas
+    for alias, eas in (aliases or {}).items():
+        if eas not in names:
+            sys.exit(f"--alias {alias}={eas}: EAS has no street {eas}")
+        printed[alias] = eas
     alts = sorted(printed, key=len, reverse=True)
     pat = "|".join(re.escape(a).replace(r"\ ", r"\s+") for a in alts)
     rx = re.compile(NUM + r"\s+(" + pat + r")\b\.?(?:\s+(" + "|".join(TYPE_WORDS) + r")\b\.?)?",
@@ -139,7 +151,11 @@ def extract(args) -> None:
         parts = line.split("\t")
         if len(parts) >= 2 and args.date_from <= parts[1] <= args.date_to:
             items.append(parts + [""] * (4 - len(parts)))
-    table, rx = street_table()
+    aliases = {}
+    for a in args.alias or []:
+        printed, _, eas = a.upper().partition("=")
+        aliases[printed.strip()] = eas.strip()
+    table, rx = street_table(aliases)
     found = []
     for ident, date, vol, no in items:
         p = corpus / "raw" / f"{ident}.txt"
@@ -247,6 +263,9 @@ def main() -> int:
     e.add_argument("--after", type=int, default=300)
     e.add_argument("--advertiser", type=int, default=6)
     e.add_argument("--keep-ads", action="store_true")
+    e.add_argument("--alias", action="append", metavar="PRINTED=EAS",
+                   help="an OCR misspelling of a street to read as the EAS name "
+                        "(LEIAND=LELAND); repeatable")
     lf = sub.add_parser("leaf")
     lf.add_argument("corpus")
     lf.add_argument("identifier")

@@ -1,0 +1,32 @@
+{
+  "address": "2198 Fell Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/fell-street/2198/unit-2/",
+  "unit": "2",
+  "apn": "1213034",
+  "block": "1213",
+  "lot": "034",
+  "parcel": {
+    "building_area_sqft": 1559
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 529596,
+    "assessed_improvement_value": 529596,
+    "last_sale_date": "2003-10-27"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1213034&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1213&unit=2",
+      "retrieved": "2026-11-20"
+    }
+  ]
+}

@@ -80,7 +80,11 @@ loadAnalytics();
 
    A page with its own committed photo (seed_pages.facade_media) writes the
    <img> where the placeholder would be, so with no .media-empty to replace
-   the element leaves the photo alone. */
+   the element leaves the photo alone — on a card. In an address page's hero
+   the photo is the first slide of a .media-track, and the placeholder waits
+   in a second, `hidden` slide: there this fills it with Street View at the
+   photo's shape, shows the slide once the image has loaded (a failed load
+   leaves the photo alone, as with no key), and adds the dots and arrows. */
 customElements.define(
   "ktp-streetview",
   class extends HTMLElement {
@@ -93,21 +97,89 @@ customElements.define(
       if (!key) return; // no key yet → keep the placeholder as-is
 
       const label = this.getAttribute("label") || "this address";
+      const slide = empty.closest(".media-slide");
+      const photo = slide && this.querySelector(".media-slide img[width][height]");
+      let size = "640x480";
+      if (photo) {
+        // The Static API's longest side is 640; match the photo's shape so
+        // the slide doesn't crop a landscape still into a portrait frame.
+        const w = +photo.getAttribute("width"), h = +photo.getAttribute("height");
+        size = w >= h ? `640x${Math.round((640 * h) / w)}` : `${Math.round((640 * w) / h)}x640`;
+      }
       const img = document.createElement("img");
       img.src =
-        "https://maps.googleapis.com/maps/api/streetview?size=640x480&source=outdoor&location=" +
+        `https://maps.googleapis.com/maps/api/streetview?size=${size}&source=outdoor&location=` +
         encodeURIComponent(location) +
         "&key=" +
         encodeURIComponent(key);
       img.alt = "Street View of " + label;
       img.decoding = "async";
-      // A hub lists a dozen facades below the fold; an address page's one is
-      // at the top, where lazy loading fetches it at once anyway.
-      img.loading = "lazy";
+      if (slide) {
+        // A hidden slide is never on screen, so a lazy image there would
+        // never load; this one is fetched straight away and shown on load.
+        img.addEventListener("load", () => {
+          slide.hidden = false;
+          carousel(this.querySelector(".media-carousel"));
+        }, { once: true });
+      } else {
+        // A hub lists a dozen facades below the fold; an address page's one
+        // is at the top, where lazy loading fetches it at once anyway.
+        img.loading = "lazy";
+      }
       empty.replaceWith(img);
     }
   },
 );
+
+/* The hero's slides, once there is more than one: small dots for where the
+   reader is, and arrows for a pointer that can't swipe. Both are added here,
+   never written into the page — the track scrolls and snaps on its own, so
+   without them it still works. No autoplay. */
+function carousel(frame) {
+  const track = frame && frame.querySelector(".media-track");
+  if (!track || frame.querySelector(".media-dots")) return;
+  const slides = [...track.children].filter((s) => !s.hidden);
+  const count = slides.length;
+  if (count < 2) return;
+  frame.setAttribute("role", "group");
+  frame.setAttribute("aria-roledescription", "carousel");
+  track.tabIndex = 0;
+  const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const dots = document.createElement("div");
+  dots.className = "media-dots";
+  dots.setAttribute("aria-hidden", "true");
+  for (let i = 0; i < count; i++) dots.append(document.createElement("span"));
+  const current = () =>
+    Math.max(0, Math.min(count - 1, Math.round(track.scrollLeft / track.clientWidth)));
+  const go = (i) =>
+    track.scrollTo({ left: i * track.clientWidth, behavior: calm ? "auto" : "smooth" });
+  const step = (label, cls, by) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "media-step " + cls;
+    button.setAttribute("aria-label", label);
+    button.textContent = by < 0 ? "\u2039" : "\u203a";
+    button.addEventListener("click", () => go(current() + by));
+    frame.append(button);
+    return button;
+  };
+  const back = step("Show the photo", "media-step-back", -1);
+  const on = step("Show Street View", "media-step-on", 1);
+  frame.append(dots);
+  const mark = () => {
+    const at = current();
+    [...dots.children].forEach((d, i) => d.classList.toggle("is-current", i === at));
+    back.disabled = at === 0;
+    on.disabled = at === count - 1;
+  };
+  let waiting = false;
+  track.addEventListener("scroll", () => {
+    if (waiting) return;
+    waiting = true;
+    requestAnimationFrame(() => { waiting = false; mark(); });
+  }, { passive: true });
+  mark();
+}
 
 /* <ktp-map location="LAT,LNG" label="123 Example St">
      <figure class="media media-map"> …placeholder or fallback… </figure>
