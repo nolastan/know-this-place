@@ -1,0 +1,113 @@
+{
+  "address": "450 Raymond Avenue, San Francisco, CA 94134",
+  "path": "/san-francisco/visitacion-valley/raymond-avenue/450/",
+  "apn": "6221005",
+  "block": "6221",
+  "lot": "005",
+  "eas_baseid": "501576",
+  "coordinates": {
+    "lat": 37.714786,
+    "lng": -122.412432
+  },
+  "parcel": {
+    "lot_area_sqft": 468278,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Visitacion Valley",
+    "analysis_neighborhood": "McLaren Park",
+    "property_location_raw": "0000 1971 VISITACION          AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1970",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M790127",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2017-05-25",
+      "status_date": "2017-05-25",
+      "revised_cost": 244,
+      "description": "per sfusd, change address to visitaction valley middle school from 450 raymond ave to 1971 visitaction ave.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=RAYMOND&street_type=AVE&address_number=450",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6221005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6221&lot=005",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6221005",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-visitacionvalley27unse-n5",
+      "name": "Visitacion Valley Grapevine, July 1987, p. 6",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/visitacionvalley27unse/page/n5/mode/1up",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-visitacionvalley115unse-n1",
+      "name": "Visitacion Valley Grapevine, May 1996, p. I",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/visitacionvalley115unse/page/n1/mode/1up",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-visitacionvalley279unse-n3",
+      "name": "Visitacion Valley Grapevine, October 2009, p. 4",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/visitacionvalley279unse/page/n3/mode/1up",
+      "retrieved": "2026-11-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1987-07-06",
+      "kind": "opening",
+      "description": "Visitacion Valley Middle School opened a new gymnasium for neighborhood school-age children.",
+      "source": "sf-neighborhood-newspapers-visitacionvalley27unse-n5"
+    },
+    {
+      "date": "1996-06-10",
+      "kind": "opening",
+      "description": "The Visitacion Valley Beacon Center opened in the renovated first floor of the middle school here.",
+      "source": "sf-neighborhood-newspapers-visitacionvalley115unse-n1"
+    },
+    {
+      "date": "2009-10-07",
+      "kind": "opening",
+      "description": "The First Tee San Francisco golf learning center, billed as the first sited on an urban middle-school playground, opened at Visitacion Valley Middle School.",
+      "source": "sf-neighborhood-newspapers-visitacionvalley279unse-n3"
+    }
+  ]
+}

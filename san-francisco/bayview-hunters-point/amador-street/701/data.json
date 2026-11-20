@@ -1,0 +1,83 @@
+{
+  "address": "701 Amador Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/amador-street/701/",
+  "apn": "4502A002",
+  "block": "4502A",
+  "lot": "002",
+  "eas_baseid": "495766",
+  "coordinates": {
+    "lat": 37.745712,
+    "lng": -122.384967
+  },
+  "also_addressed": [
+    "3305 03RD ST"
+  ],
+  "parcel": {
+    "year_built": 1941,
+    "stories": 1,
+    "rooms": 1,
+    "lot_area_sqft": 7763263,
+    "use": "Government",
+    "property_class": "Vacant Lot Gov",
+    "construction_type_code": "S",
+    "zoning": "M2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Hunters Point",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 3305 03RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1941",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=AMADOR&street_type=ST&address_number=701",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4502A002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4502A&lot=002",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4502A002",
+      "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-visitacionvalley103unse-n1",
+      "name": "Visitacion Valley Grapevine, March 1995, p. I",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/visitacionvalley103unse/page/n1/mode/1up",
+      "retrieved": "2026-11-20"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1995-03",
+      "kind": "occupancy",
+      "description": "Building Resources, a supplier of reusable lumber, metal stock, architectural fixtures and other salvaged building materials, was based here, near Third and Army streets.",
+      "source": "sf-neighborhood-newspapers-visitacionvalley103unse-n1"
+    }
+  ]
+}
