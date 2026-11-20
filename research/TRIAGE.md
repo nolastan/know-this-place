@@ -61,18 +61,6 @@ and donors — the privacy limits bite harder here than anywhere else in the
 register. Marina Times and Westside Observer, both named in the original lead,
 are **not** in this collection.
 
-**HABS/HAER documentation.** 384 San Francisco items, 104 with a street number
-in the title. 126 are military installations (Presidio, Treasure Island,
-Alcatraz, Fort Mason), whose addresses will mostly not exist in EAS, and the
-numbered civilian ones cluster heavily in a handful of projects — real distinct
-coverage is perhaps 40–60 buildings. The payload is the "data pages": a written
-historian's report, reachable at
-`tile.loc.gov/storage-services/master/pnp/habshaer/ca/ca<NN00>/ca<NNNN>/data/ca<NNNN>data.pdf`
-and carrying a text layer that `pdftotext` reads directly — no OCR step needed.
-Public domain. **Sampled:** ca3559, North Beach Place Building 1 at 415 Bay
-Street — designed 1941–42, built 1950–52, demolished 2001–03, with the
-architect and the housing authority named.
-
 **Article 10 landmark designation reports.** DataSF's `97yj-54sx` carries 370
 rows, each with the landmark name, address, **APN** and a direct URL to the
 designation document — so this is the one lead where resolution is handed over
