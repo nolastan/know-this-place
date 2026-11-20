@@ -1707,8 +1707,9 @@ def photo_credit_html(photo: dict) -> str:
     author = photo.get("author")
     if author:
         bits += " by " + a(photo.get("author_url"), author)
-    # Cut to the 4:3 frame every picture of a building is shown in. CC BY 4.0
-    # asks that a change be said; the older versions are owed it too.
+    # Cut to the frame the photo is published in — 4:3 landscape, or 3:4
+    # portrait from the Know This Photo app. CC BY 4.0 asks that a change be
+    # said; the older versions are owed it too.
     if photo.get("cropped"):
         bits += ", cropped"
     lic = photo.get("license") or ""
@@ -1723,7 +1724,8 @@ def photo_credit_html(photo: dict) -> str:
 
 
 def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
-                 caption: bool = True, note: str | None = None) -> str:
+                 caption: bool = True, note: str | None = None,
+                 carousel: bool = False) -> str:
     """The picture of the building, wherever a page or a card shows one: the
     page's own photo when it has one (`page_photo`), and Street View when it
     does not. Every hero and every card routes through here, so a photo added
@@ -1738,7 +1740,20 @@ def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
     `caption=False` drops the credit line, for a small card that links to the
     page: the page carries the full attribution, which every license here
     allows. `note` is the placeholder's explanatory line when there is no
-    photo."""
+    photo.
+
+    A photo is framed in its own shape: the `<img>` carries its `width` and
+    `height`, and site.css sizes the frame from them, so an older 4:3 photo
+    and a 3:4 portrait from the app each show whole. A portrait figure gets
+    `media-portrait`, which caps its width so the frame stays about as tall as
+    a landscape one rather than doubling the hero.
+
+    `carousel=True` (the hero) makes a photo the first of two slides, with
+    Street View last: a `.media-track` holding the photo and its credit as one
+    slide, then a `hidden` slide around the usual `.media-empty`. With no
+    script, or no Maps key, that slide stays hidden and the photo shows alone,
+    exactly as before; site.js fills it, shows it once the image has loaded,
+    and only then adds the dots and arrows."""
     lat, lng = rec["coordinates"]["lat"], rec["coordinates"]["lng"]
     photo = page_photo(rec)
     if photo:
@@ -1748,11 +1763,27 @@ def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
         # The hero's photo is the first thing on the page, so only a card's
         # waits for the reader to scroll to it.
         lazy = '' if "media-lift" in cls else ' loading="lazy"'
-        inner = (f'  <img src="{esca(src)}"{size} alt="{esca("Photo of " + label)}"'
-                 f'{lazy} decoding="async">')
+        img = (f'<img src="{esca(src)}"{size} alt="{esca("Photo of " + label)}"'
+               f'{lazy} decoding="async">')
         # The site's own photos (`"own": true`, Stan's) carry no credit line.
-        if caption and not photo.get("own"):
-            inner += f'\n  <figcaption class="photo-credit">{photo_credit_html(photo)}</figcaption>'
+        credit = (f'<figcaption class="photo-credit">{photo_credit_html(photo)}</figcaption>'
+                  if caption and not photo.get("own") else "")
+        if photo.get("width") and photo.get("height") \
+                and int(photo["height"]) > int(photo["width"]):
+            cls += " media-portrait"
+        if carousel:
+            cls += " media-carousel"
+            inner = ('  <div class="media-track">\n'
+                     '    <figure class="media-slide">\n'
+                     f'      {img}'
+                     + (f'\n      {credit}' if credit else "")
+                     + '\n    </figure>\n'
+                     '    <div class="media-slide media-slide-sv" hidden>\n'
+                     '      <div class="media-empty"><span class="ic ic-pin"></span></div>\n'
+                     '    </div>\n'
+                     '  </div>')
+        else:
+            inner = f'  {img}' + (f'\n  {credit}' if credit else "")
     else:
         inner = ("  <div class=\"media-empty\">\n"
                  "    <span class=\"ic ic-pin\"></span>\n"
@@ -4483,7 +4514,7 @@ def render_html(rec: dict) -> str:
 {tags_html(rec)}
       </ul>
 {value_figure_html(rec, "      ")}    </div>
-{facade_media(rec, heading, "media media-lift", "    ", note=STREETVIEW_NOTE)}
+{facade_media(rec, heading, "media media-lift", "    ", note=STREETVIEW_NOTE, carousel=True)}
   </section>
 
 {news_now_html(rec)}{lead_html}
@@ -4927,7 +4958,7 @@ def render_place_html(rec: dict) -> str:
       <h1>{esc(name)}</h1>
       <p class="sub">{esc(sub_text)}</p>
 {tags}    </div>
-{facade_media(rec, name, "media media-lift", "    ", note=STREETVIEW_NOTE)}
+{facade_media(rec, name, "media media-lift", "    ", note=STREETVIEW_NOTE, carousel=True)}
   </section>
 
 {lead_html}{stats}
@@ -5308,7 +5339,7 @@ def render_unit_html(rec: dict) -> str:
 {tags_html(view)}
       </ul>
 {value_figure_html(view, "      ")}    </div>
-{facade_media(view, bheading, "media media-lift", "    ", note=STREETVIEW_NOTE)}
+{facade_media(view, bheading, "media media-lift", "    ", note=STREETVIEW_NOTE, carousel=True)}
   </section>
 
 {body}</main>

@@ -720,6 +720,18 @@ ktp-figure { position: relative; }
 /* ============================================================= media */
 .media { border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; background: var(--panel); }
 .media iframe, .media img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border: 0; object-fit: cover; }
+/* A committed photo (seed_pages.facade_media) carries its own width and
+   height, so its frame takes the photo's shape — an older 4:3 landscape or a
+   3:4 portrait from the Know This Photo app — and nothing is cropped. Street
+   View, which carries neither, keeps the 4:3 frame above. */
+.media img[width][height] { aspect-ratio: auto; }
+/* A portrait frame is capped in width so it doesn't double the height of
+   the hero or a card: the hero's tops out at 27rem wide (36rem tall, against
+   the landscape card's 30rem), and on a phone under half the screen's
+   height. A card in a grid narrows to three quarters of its column, so it
+   stands a third taller than its landscape neighbours, not three quarters. */
+.media.media-portrait { width: 100%; max-width: min(27rem, 42svh); }
+.showcase .media.media-portrait, .place-cards .media.media-portrait { max-width: 75%; margin-inline: auto; }
 .media figcaption { padding: 0.5rem 0.75rem; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
 /* A committed photo's license credit (seed_pages.photo_credit_html): owed, so
    always printed, but small and quiet — the picture is the point. Inside a
@@ -733,6 +745,40 @@ ktp-figure { position: relative; }
 .media-empty { aspect-ratio: 4 / 3; display: grid; place-content: center; justify-items: center; gap: 0.4rem; text-align: center; padding: 1rem; color: var(--muted); }
 .media-empty .ic, .media-empty i.hgi-stroke { font-size: 1.6rem; color: var(--accent); }
 .media-empty small { font-size: 0.78rem; font-family: var(--sans); max-width: 16rem; }
+/* The hero's carousel (seed_pages.facade_media, carousel=True): the photo
+   first, Street View last. The track is in the HTML and scrolls sideways one
+   whole slide at a time; the Street View slide is `hidden` until site.js has
+   an image for it, so with no script — or no Maps key — the photo stands
+   alone, credit under it, exactly as a page without the carousel. site.js
+   adds the dots and, for a pointer that can hover, the arrows. */
+.media-carousel { position: relative; }
+.media-track {
+  display: flex; overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; scrollbar-width: none;
+}
+.media-track::-webkit-scrollbar { display: none; }
+.media-track:focus-visible { outline: 2px solid var(--cool); outline-offset: -2px; }
+.media-slide { flex: 0 0 100%; display: flex; flex-direction: column; margin: 0; scroll-snap-align: start; scroll-snap-stop: always; }
+.media-slide[hidden] { display: none; }
+/* Street View fills the slide the photo and its credit set the height of,
+   so the frame doesn't jump between slides; site.js asks for an image of
+   the photo's shape, so the crop is small. */
+.media-slide-sv img { flex: 1 1 0; min-height: 0; aspect-ratio: auto; }
+/* On a small dark pill, so the dots read over a white sky as well as a dark facade. */
+.media-dots { position: absolute; top: 0.6rem; right: 0.6rem; display: flex; gap: 5px; padding: 4px 6px; border-radius: 999px; background: #0000004d; pointer-events: none; }
+.media-dots span { width: 6px; height: 6px; border-radius: 50%; background: #fff; opacity: 0.5; transition: opacity 0.2s ease; }
+.media-dots span.is-current { opacity: 1; }
+.media-step {
+  position: absolute; top: 50%; width: 2rem; height: 2rem; margin-top: -1rem; padding: 0;
+  border: 0; border-radius: 50%; background: #0000006b; color: #fff;
+  font: 1.25rem/1 var(--sans); cursor: pointer; opacity: 0; transition: opacity 0.2s ease;
+}
+.media-step-back { left: 0.5rem; }
+.media-step-on { right: 0.5rem; }
+.media-carousel:hover .media-step, .media-step:focus-visible { opacity: 1; }
+.media-step[disabled] { visibility: hidden; }
+@media (hover: none) { .media-step { display: none; } }
+@media (prefers-reduced-motion: reduce) { .media-dots span, .media-step { transition: none; } }
 /* The locator band — the map that opens an address page, bleeding to the
    viewport's top and side edges inside .map-shell. The figure fills the shell
    edge to edge: no border, no radius, no browser <figure> margin. */
@@ -749,6 +795,7 @@ ktp-figure { position: relative; }
      frame — site.js requests an image of that ratio on phones rather than
      cropping the wide one. */
   .media-lift { margin: 0; }
+  .media-lift.media-portrait { margin-inline: auto; }
   .map-shell ktp-map { height: auto; aspect-ratio: 4 / 3; border-bottom: 1px solid var(--rule); }
 }
 

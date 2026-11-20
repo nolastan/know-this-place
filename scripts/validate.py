@@ -351,11 +351,45 @@ def check_photo(src: Path, data: dict) -> None:
     for key in required:
         if not photo.get(key):
             err(src, f'photo missing "{key}" — a photo is shown only with its credit')
-    if photo.get("file") and not (src.parent / photo["file"]).is_file():
+    path = src.parent / photo["file"] if photo.get("file") else None
+    if path and not path.is_file():
         err(src, f'photo file {photo["file"]!r} is not beside the page')
+    elif path:
+        check_photo_size(src, photo, path)
     lic = (photo.get("license") or "").lower()
     if lic.startswith("cc by") and not photo.get("author"):
         err(src, f'photo is {photo["license"]}, which requires the author be credited')
+
+
+def jpeg_size(path: Path) -> tuple[int, int] | None:
+    """A JPEG's (width, height), read from its start-of-frame marker — no
+    image library, per the no-dependencies rule. None if it isn't a JPEG."""
+    b = path.read_bytes()
+    if b[:2] != b"\xff\xd8":
+        return None
+    i = 2
+    while i + 9 <= len(b) and b[i] == 0xFF:
+        marker, length = b[i + 1], int.from_bytes(b[i + 2:i + 4], "big")
+        if 0xC0 <= marker <= 0xCF and marker not in (0xC4, 0xC8, 0xCC):
+            return int.from_bytes(b[i + 7:i + 9], "big"), int.from_bytes(b[i + 5:i + 7], "big")
+        i += 2 + length
+    return None
+
+
+def check_photo_size(src: Path, photo: dict, path: Path) -> None:
+    """The frame takes the photo's shape from `width` and `height` (site.css,
+    `.media img[width][height]`), so they must be the file's own — a 3:4
+    portrait declared 1280×960 would be squashed into a landscape box — and
+    the shape one of the two the site publishes: 4:3, or the app's 3:4."""
+    w, h = photo.get("width"), photo.get("height")
+    if not (isinstance(w, int) and isinstance(h, int) and w > 0 and h > 0):
+        err(src, 'photo needs "width" and "height" in pixels — the frame is drawn from them')
+        return
+    real = jpeg_size(path)
+    if real and real != (w, h):
+        err(src, f"photo says {w}×{h} but {photo['file']} is {real[0]}×{real[1]}")
+    if not any(abs(w * b - h * a) <= max(a, b) * max(w, h) / 100 for a, b in ((4, 3), (3, 4))):
+        err(src, f"photo is {w}×{h}: crop it to 4:3 landscape or 3:4 portrait")
 
 
 def check_place_dir(page_dir: Path, on_disk: str) -> None:
