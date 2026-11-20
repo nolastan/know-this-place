@@ -578,6 +578,23 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   top numbered address in a trade journal is a firm's own office; in Planning
   Commission minutes it is the Commission's own address. The usable material is
   in the long tail.
+- **In a community paper the advertisement filter throws out the news.**
+  `ocr_mentions.py` drops a window with a phone number, ZIP or hours, and any
+  address in six or more issues. In the Visitacion Valley Grapevine that was
+  8,065 and 753 of 10,382 mentions, and it took the community center, the
+  library and the churches with it: every neighborhood item ends "call
+  467-…", and the institutions printed most often are the ones the paper
+  writes about. Read the dropped windows that carry a strong event word
+  (opened, dedicated, demolished, renovated, moved, built, fire, anniversary),
+  deduplicated on the words around that word — 240 more windows there, and
+  the source of most of its best facts. *Also count the squashed spellings of
+  the title's own main street before extracting* — "Leiand" was 1,455
+  mentions — and pass them as `--alias`.
+- **A community paper reprints its own history.** Anniversary issues and
+  year-in-review timelines restate events years later, so one event arrives
+  from three or four issues, sometimes with a different number; merge to the
+  earliest issue and say so, and read a retrospective's year from its list
+  order only when the list says which year it is in.
 - **A recorded range is the whole range.** `resolve_eas.py` used to look up only
   a finding's `street_number` whenever it had one, ignoring the
   `address_range_as_recorded` beside it. Every building whose low number has

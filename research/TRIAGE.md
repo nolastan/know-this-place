@@ -42,25 +42,6 @@ an agent until that answer exists: the next pass will otherwise re-derive the
 opt-out from scratch and, worse, may not notice it, because `robots.txt` says
 `Allow: /` to `User-agent: *` sixty lines above the block that names us.
 
-**SF neighborhood newspapers, 1956–2026.** The original lead named five papers
-and pointed at each one's own website; that is the wrong access path. The right
-one is a single Internet Archive collection, `sanfrancisconewspapers`, holding
-**2,358 issues** contributed by a collaborative of neighborhood history groups,
-each with a `_djvu.txt` OCR file. Titles include Noe Valley Voice (273 issues),
-The Potrero View (190), Richmond ReView (228 across two title spellings),
-Visitacion Valley Grapevine (116), New Mission News (111), OMI News (71), North
-Mission News (68), New Bernal Journal and Bernal Journal (118), Tenderloin
-Times (64), Park Bell (51), The Semaphore / Telegraph Hill Semaphore (75), Glen
-Park News (33), The New Fillmore (23). **Sampled:** *The Potrero View*, June
-1999 — the Victoria Theater at 2961 Sixteenth Street, the Potrero Hill Health
-Center at 1050 Wisconsin Street, the Neighborhood House at 953 DeHaro Street.
-OCR doubles its spaces, so match on `\d+\s+Street` rather than a single space.
-Two cautions: no explicit license on the items (facts are free, the OCR text is
-not ours to redistribute), and these papers are thick with residents, obituaries
-and donors — the privacy limits bite harder here than anywhere else in the
-register. Marina Times and Westside Observer, both named in the original lead,
-are **not** in this collection.
-
 **HABS/HAER documentation.** 384 San Francisco items, 104 with a street number
 in the title. 126 are military installations (Presidio, Treasure Island,
 Alcatraz, Fort Mason), whose addresses will mostly not exist in EAS, and the

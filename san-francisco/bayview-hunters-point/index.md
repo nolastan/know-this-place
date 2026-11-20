@@ -5,6 +5,7 @@ San Francisco's south-eastern quarter, settled from the 1860s as the industrial 
 ## Streets documented so far
 
 - [Alemany Boulevard](alemany-boulevard/) — 1 building, built 1950.
+- [Amador Street](amador-street/) — 1 building, built 1941.
 - [Arelious Walker Drive](arelious-walker-drive/) — 1 building, built 2017.
 - [Armstrong Avenue](armstrong-avenue/) — 1 building, built 1925.
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 1 building, built 1927.
