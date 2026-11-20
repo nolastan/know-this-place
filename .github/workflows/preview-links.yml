@@ -1,28 +1,42 @@
-# Point the page link in every Know This Photo PR at the deploy preview.
+# Finish the body of every Know This Photo PR: point its page link at the
+# deploy preview, and set the new photo beside Google Street View.
 #
-# The app opens its PR before GitHub has given it a number, so the body it
-# writes can only link the page on knowthis.place, which still shows the old
-# photo (or Street View) until the PR is merged. Netlify builds every PR at a
-# predictable address, `https://deploy-preview-<N>--knowthisplace.netlify.app`
-# (netlify.toml), so once the number exists this workflow swaps that link for
-# the same page on the preview. One link, nothing added: Stan asked for the
-# body to stay that simple.
+# 1. The preview link. The app opens its PR before GitHub has given it a
+#    number, so the body it writes can only link the page on knowthis.place,
+#    which still shows the old photo (or Street View) until the PR is merged.
+#    Netlify builds every PR at a predictable address,
+#    `https://deploy-preview-<N>--knowthisplace.netlify.app` (netlify.toml),
+#    so once the number exists this swaps that link for the same page on the
+#    preview. One link, nothing added: Stan asked for the body to stay that
+#    simple. It does not wait for Netlify: the link is right from the start
+#    and opens once the preview has built, a few minutes after the push.
 #
-# It does not wait for Netlify: the link is right from the start and opens
-# once the preview has built, a few minutes after the push. Running again
-# finds no production link left and changes nothing.
+# 2. The Street View comparison. The app's one photo becomes a two-column
+#    table, the new photo beside the Street View image the page would
+#    otherwise show (same request as site.js's <ktp-streetview>: 640×480,
+#    outdoor panoramas, the camera turned to the page's coordinates), so a
+#    reviewer can tell at a glance that the photo is of the right building.
+#    The site's Maps key is restricted to knowthis.place, and GitHub fetches
+#    a body's images from its own servers with no referrer, so the image is
+#    fetched here with a server key (the STREET_VIEW_KEY secret: a key
+#    restricted to the Street View Static API, with no referrer restriction)
+#    and committed to the `pr-street-view` branch as `<N>.jpg`. That branch
+#    holds nothing else and is never merged; the image is deleted from it
+#    when the PR closes. With no secret, or no outdoor panorama at the
+#    coordinates, the body keeps its one photo.
 #
-# Run it by hand (Actions → preview-links → Run workflow) to update every
-# open `photo/` PR, e.g. the ones opened before this workflow existed.
+# Running again finds both done and changes nothing. Run it by hand
+# (Actions → preview-links → Run workflow) to update every open `photo/` PR,
+# e.g. the ones opened before this workflow existed.
 name: preview-links
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, synchronize, closed]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write # the Street View images on `pr-street-view`
   pull-requests: write
 
 concurrency:
@@ -38,47 +52,214 @@ jobs:
       (startsWith(github.head_ref, 'photo/') &&
         github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
-      - name: Point the page link at the preview
+      - name: Preview link and Street View comparison
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           PR: ${{ github.event.pull_request.number }}
+          ACTION: ${{ github.event.action }}
+          STREET_VIEW_KEY: ${{ secrets.STREET_VIEW_KEY }}
         shell: python3 {0}
         run: |
-          import json, os, re, subprocess
+          import base64, json, os, re, subprocess, time
+          import urllib.parse, urllib.request
 
           REPO = os.environ["GH_REPO"]
+          KEY = os.environ.get("STREET_VIEW_KEY", "")
           PREVIEW = "https://deploy-preview-{n}--knowthisplace.netlify.app"
+          BRANCH = "pr-street-view"
           # The app's page link, and the section an earlier version of this
           # workflow added (removed so the body keeps the one link).
           PAGE_LINK = re.compile(r"\]\(https://knowthis\.place(/[^)\s]*)\)")
           OLD_SECTION = re.compile(
               r"\n*<!-- preview-links -->.*?<!-- /preview-links -->\n*", re.S)
+          # The app's photo, alone on its line.
+          PHOTO = re.compile(r"^!\[Photo of ([^\]\n]*)\]\((\S+)\)[ \t]*$", re.M)
+          MARK = "<!-- street-view -->"
 
-          def api(*args):
-              out = subprocess.run(["gh", "api", *args], check=True,
-                                   capture_output=True, text=True).stdout
-              return json.loads(out) if out.strip() else None
+          class NotFound(Exception):
+              pass
+
+          def api_text(path, method="GET", data=None, paginate=True):
+              return api(path, method, data, paginate, raw=True)
+
+          def api(path, method="GET", data=None, paginate=False, raw=False):
+              args = ["gh", "api", "-X", method, path]
+              if paginate:
+                  args.append("--paginate")
+              if data is not None:
+                  args += ["--input", "-"]
+              res = subprocess.run(args, input=json.dumps(data) if data is not None else None,
+                                   capture_output=True, text=True)
+              if res.returncode:
+                  if "HTTP 404" in res.stderr:
+                      raise NotFound(path)
+                  raise RuntimeError(f"{method} {path}: {res.stderr.strip()}")
+              if raw:
+                  return res.stdout
+              return json.loads(res.stdout) if res.stdout.strip() else None
+
+          def pages(path):
+              """Every item of a paginated list (--paginate prints one array per page)."""
+              out, items, dec, i = api_text(path), [], json.JSONDecoder(), 0
+              while i < len(out):
+                  if out[i].isspace():
+                      i += 1
+                      continue
+                  page, i = dec.raw_decode(out, i)
+                  items += page
+              return items
+
+          def set_body(n, body):
+              api(f"repos/{REPO}/pulls/{n}", "PATCH", {"body": body})
+
+          # --- 1. preview link -------------------------------------------
+
+          def preview_link(n, body):
+              base = PREVIEW.format(n=n)
+              updated = OLD_SECTION.sub("\n\n", body)
+              return PAGE_LINK.sub(lambda m: f"]({base}{m.group(1)})", updated, count=1)
+
+          # --- 2. Street View --------------------------------------------
+
+          def coordinates(pr):
+              """lat,lng from the page JSON beside the PR's new photo."""
+              files = api(f"repos/{REPO}/pulls/{pr['number']}/files?per_page=100")
+              for f in files:
+                  name = f["filename"]
+                  if not name.endswith("/assets/photo.jpg"):
+                      continue
+                  folder = name[: -len("assets/photo.jpg")]
+                  for page in ("data.json", "place.json"):
+                      try:
+                          meta = api(f"repos/{REPO}/contents/{urllib.parse.quote(folder + page)}"
+                                     f"?ref={urllib.parse.quote(pr['head']['sha'])}")
+                      except NotFound:
+                          continue
+                      c = json.loads(base64.b64decode(meta["content"])).get("coordinates") or {}
+                      if "lat" in c and "lng" in c:
+                          return f"{c['lat']},{c['lng']}"
+              return None
+
+          def street_view(location):
+              """The JPEG site.js would show, or None where there is no panorama."""
+              q = urllib.parse.urlencode({"location": location, "source": "outdoor", "key": KEY})
+              base = "https://maps.googleapis.com/maps/api/streetview"
+              with urllib.request.urlopen(f"{base}/metadata?{q}", timeout=30) as r:
+                  status = json.load(r).get("status")
+              if status != "OK":
+                  print(f"  Street View: {status}")
+                  return None
+              with urllib.request.urlopen(f"{base}?size=640x480&{q}", timeout=30) as r:
+                  return r.read()
+
+          def ensure_branch():
+              try:
+                  api(f"repos/{REPO}/git/ref/heads/{BRANCH}")
+                  return
+              except NotFound:
+                  pass
+              # An orphan branch: it shares no history with main and is never merged.
+              readme = ("Street View images for the Know This Photo PR bodies, written and "
+                        "deleted by .github/workflows/preview-links.yml. Never merge this branch.\n")
+              tree = api(f"repos/{REPO}/git/trees", "POST", {"tree": [
+                  {"path": "README.md", "mode": "100644", "type": "blob", "content": readme}]})
+              commit = api(f"repos/{REPO}/git/commits", "POST", {
+                  "message": "Start the Street View image branch", "tree": tree["sha"], "parents": []})
+              try:
+                  api(f"repos/{REPO}/git/refs", "POST",
+                      {"ref": f"refs/heads/{BRANCH}", "sha": commit["sha"]})
+              except RuntimeError:
+                  pass  # another run made it first
+
+          def existing_sha(path):
+              try:
+                  return api(f"repos/{REPO}/contents/{path}?ref={BRANCH}")["sha"]
+              except NotFound:
+                  return None
+
+          def write_image(n, jpeg):
+              path = f"{n}.jpg"
+              for attempt in range(6):  # runs for other PRs move the branch too
+                  data = {"message": f"Street View for #{n}", "branch": BRANCH,
+                          "content": base64.b64encode(jpeg).decode()}
+                  sha = existing_sha(path)
+                  if sha:
+                      data["sha"] = sha
+                  try:
+                      api(f"repos/{REPO}/contents/{path}", "PUT", data)
+                      return f"https://github.com/{REPO}/blob/{BRANCH}/{path}?raw=true"
+                  except RuntimeError as e:
+                      if attempt == 5:
+                          raise
+                      print(f"  retrying: {e}")
+                      time.sleep(2 + attempt * 3)
+
+          def delete_image(n):
+              path = f"{n}.jpg"
+              for attempt in range(6):
+                  sha = existing_sha(path)
+                  if not sha:
+                      return
+                  try:
+                      api(f"repos/{REPO}/contents/{path}", "DELETE",
+                          {"message": f"#{n} closed", "branch": BRANCH, "sha": sha})
+                      print(f"#{n}: Street View image deleted")
+                      return
+                  except RuntimeError as e:
+                      if attempt == 5:
+                          raise
+                      time.sleep(2 + attempt * 3)
+
+          def comparison(pr, body):
+              n = pr["number"]
+              if MARK in body:
+                  return body
+              m = PHOTO.search(body)
+              if not m:
+                  print(f"#{n}: no photo line to set Street View beside")
+                  return body
+              if not KEY:
+                  print(f"#{n}: no STREET_VIEW_KEY secret, so no Street View comparison")
+                  return body
+              location = coordinates(pr)
+              if not location:
+                  print(f"#{n}: no coordinates beside the photo")
+                  return body
+              jpeg = street_view(location)
+              if not jpeg:
+                  return body
+              ensure_branch()
+              url = write_image(n, jpeg)
+              label = m.group(1)
+              table = (f"{MARK}\n\n"
+                       f"| New photo | Google Street View |\n"
+                       f"|---|---|\n"
+                       f"| ![Photo of {label}]({m.group(2)}) | ![Street View of {label}]({url}) |\n\n"
+                       f"<!-- /street-view -->")
+              return body[: m.start()] + table + body[m.end():]
+
+          # --- run -------------------------------------------------------
 
           def update(pr):
               n, body = pr["number"], pr.get("body") or ""
-              base = PREVIEW.format(n=n)
-              updated = OLD_SECTION.sub("\n\n", body)
-              updated = PAGE_LINK.sub(lambda m: f"]({base}{m.group(1)})", updated, count=1)
+              updated = comparison(pr, preview_link(n, body))
               if updated == body:
-                  print(f"#{n}: already links the preview")
+                  print(f"#{n}: nothing to change")
                   return
-              subprocess.run(["gh", "api", "-X", "PATCH", f"repos/{REPO}/pulls/{n}",
-                              "-f", f"body={updated}"], check=True,
-                             capture_output=True)
-              print(f"#{n}: page link now points at the preview")
+              set_body(n, updated)
+              print(f"#{n}: body updated")
 
           if os.environ.get("PR"):
-              update(api(f"repos/{REPO}/pulls/{os.environ['PR']}"))
+              n = os.environ["PR"]
+              if os.environ.get("ACTION") == "closed":
+                  delete_image(n)
+              else:
+                  update(api(f"repos/{REPO}/pulls/{n}"))
           else:
-              for pr in api("--paginate", f"repos/{REPO}/pulls?state=open&per_page=100"):
+              for pr in pages(f"repos/{REPO}/pulls?state=open&per_page=100"):
                   if pr["head"]["ref"].startswith("photo/") and \
                      pr["head"]["repo"] and pr["head"]["repo"]["full_name"] == REPO:
                       update(pr)
