@@ -61,6 +61,7 @@ def main() -> None:
     skipped = []
     researched = researched_paths()
     place_paths = set()
+    place_parcels = {}
 
     pages = sorted(content.rglob("data.json")) if content.exists() else []
     places = sorted(content.rglob("place.json")) if content.exists() else []
@@ -108,6 +109,7 @@ def main() -> None:
             props["ph"] = path_for_photo + photo["file"]
         if is_place:
             place_paths.add(path)
+            place_parcels[path] = [m.replace("-", "") for m in data.get("parcels") or []]
         features.append((path, {
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [round(lng, 5), round(lat, 5)]},
@@ -115,7 +117,7 @@ def main() -> None:
         }))
 
     features.sort(key=lambda f: f[0])
-    write_page_lots(features)
+    write_page_lots(features, place_parcels)
 
     # One feature per line: a 1.4 MB single-line JSON blob is unreviewable in a
     # diff, and pages are added a handful at a time.
@@ -134,7 +136,7 @@ def main() -> None:
         print(f"  skipped — {note}")
 
 
-def write_page_lots(features: list) -> None:
+def write_page_lots(features: list, place_parcels: dict) -> None:
     """The homepage map's second index: which lot each page stands on, one file
     per neighborhood, so a reader who picks a neighborhood fetches only its own.
 
@@ -143,8 +145,14 @@ def write_page_lots(features: list) -> None:
 
     A page's lot is its APN's where that is a lot in shared/map/ (the lot cache
     `seed_pages.py lots` writes); otherwise — a condominium building, a place,
-    an APN since retired — the lot its point falls in. Both files are derived
-    and gitignored."""
+    an APN since retired — the lot its point falls in. A place stands on every
+    lot of the parcels it covers: its point is often in the street between two
+    of them (Mission Dolores Park's lies on the line between its two parcels),
+    and a park drawn as one lot of several reads as a park with no page. A
+    place drawn by its parcels follows every other record in each file, so
+    that on a lot it covers it is drawn on top and takes the click — over the
+    parcel's own address page, and over a smaller place that only stands in
+    it (Louis Sutter Playground, in McLaren Park). Both files are derived and gitignored."""
     areas, lots = read_lot_cache()
     if not areas:
         print("  no lot cache in shared/map/ — run `seed_pages.py lots`; page lots skipped")
@@ -180,20 +188,28 @@ def write_page_lots(features: list) -> None:
                 apns[rec.get("path") or "/" + data_path.parent.relative_to(ROOT).as_posix() + "/"] = apn
     by_area = {slug: [] for slug in areas}
     placed = unplaced = 0
-    for path, f in features:
-        m = apns.get(path)
-        if m not in lots:
-            lng, lat = f["geometry"]["coordinates"]
-            m = lot_at(lng, lat)
-        if not m:
+    def covered(f):
+        return [m for m in place_parcels.get(f[0], ()) if m in lots]
+    # Stable: address pages keep their order, then the places drawn by parcel.
+    ordered = sorted(features, key=lambda f: bool(covered(f)))
+    for path, f in ordered:
+        on = covered((path, f))
+        if not on:
+            m = apns.get(path)
+            if m not in lots:
+                lng, lat = f["geometry"]["coordinates"]
+                m = lot_at(lng, lat)
+            on = [m] if m else []
+        if not on:
             unplaced += 1
             continue
         placed += 1
         p = f["properties"]
-        rec = {"l": m, "t": p["t"], "s": p["s"], "p": p["p"]}
-        if p.get("r"):
-            rec["r"] = 1
-        by_area[lots[m]["area"]].append(rec)
+        for m in on:
+            rec = {"l": m, "t": p["t"], "s": p["s"], "p": p["p"]}
+            if p.get("r"):
+                rec["r"] = 1
+            by_area[lots[m]["area"]].append(rec)
     out = MAP_DIR / "pages"
     out.mkdir(parents=True, exist_ok=True)
     for slug, recs in by_area.items():
