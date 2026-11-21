@@ -55,7 +55,9 @@ new CSS.
   MapLibre GL JS (from unpkg, version-pinned). Its map draws no basemap service: the city's land,
   streets, neighborhoods and lots come from the committed lot cache in
   `shared/map/` (`seed_pages.py lots`), the page lots from
-  `build_map_index.py`, and the label font from `shared/map/fonts/`. `validate.py`
+  `build_map_index.py`, the public-restroom icons from the committed
+  `shared/map/restrooms.json` (`seed_pages.py restrooms`; cards only, never
+  pages), and the label font from `shared/map/fonts/`. `validate.py`
   skips the stray-script check for that one file. **This is not a precedent.**
   Nothing committed under `san-francisco/` may do the same — a page whose facts
   render only in JS is invisible to search, which is the whole point of the

@@ -88,6 +88,16 @@
   margin: 0.15rem 0 0;
   font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
 }
+/* A restroom's card has no picture and no page: a small kicker says what it
+   is, and the data's credit sits under the link. */
+.map-card-plain .map-card-body { padding-top: 0.7rem; padding-right: 2rem; }
+.map-card-kicker {
+  display: flex; align-items: center; gap: 0.3rem; margin: 0 0 0.2rem;
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--muted);
+}
+.map-card-source { margin: 0.45rem 0 0; font-size: 0.72rem; color: var(--muted); }
+.map-card-source a { color: inherit; }
 .map-card-story {
   margin: 0.55rem 0 0; padding-top: 0.5rem; border-top: 1px solid var(--rule);
   font-family: var(--sans); font-size: 0.85rem;
