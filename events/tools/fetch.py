@@ -11,7 +11,7 @@ reads it through the venue's `path`.
     python3 events/tools/fetch.py --source sfrecpark
     python3 events/tools/fetch.py venues     # print the venues seen and unmapped
 
-Five shapes of calendar, one parser each — see events/AGENTS.md:
+Six shapes of calendar, one parser each — see events/AGENTS.md:
 
     ical          one iCalendar feed per source (illuminate.org)
     ical-multi    the same feed once per CivicPlus calendar id (sfrecpark.org)
@@ -20,6 +20,9 @@ Five shapes of calendar, one parser each — see events/AGENTS.md:
     html          a hand-maintained page with no feed (alemanyfarm.org)
     tribe         The Events Calendar's list view, paged by path
                   (ybgfestival.org)
+    pdf-table     a page linking a spreadsheet exported to PDF (sfrecpark.org's
+                  tentative calendars of special events — one row per permit
+                  and day, dates but no times, so every event is all-day)
 
 Good citizenship: the user agent says who we are, requests are rate-limited,
 and robots.txt is honoured — a source that forbids automated access is
@@ -34,7 +37,9 @@ import json
 import re
 import sys
 import time
+import unicodedata
 import urllib.parse
+import zlib
 import urllib.request
 import zoneinfo
 from datetime import date, datetime, timedelta
@@ -455,6 +460,196 @@ def parse_tribe_list(page: str, source_id: str) -> list:
     return out
 
 
+# --------------------------------------------------------------------------
+# PDF table — Rec & Park's tentative calendars of special events
+# --------------------------------------------------------------------------
+#
+# The permits office publishes its special-event master spreadsheet as PDFs
+# linked from one page, and replaces the files (new DocumentCenter ids) as the
+# year fills in, so the page is read first for the current links. Excel's PDF
+# export is plain enough for the stdlib: Flate-compressed content streams of
+# literal strings in WinAnsi, one TJ array per row with a wide gap between
+# cells. Rows are grouped by their position on the page, because a cell that
+# overflows its column is clipped and the rest of the row continues in a
+# separate text object on the same line.
+
+PDF_TOKEN = re.compile(rb"\((?:\\.|[^\\)])*\)|\[|\]|[-+]?\d*\.?\d+|/[^\s/\[\]()<>]+"
+                       rb"|[A-Za-z*'\"]+", re.S)
+PDF_NUMBER = re.compile(rb"[-+]?\d*\.?\d+$")
+# A TJ adjustment this wide (thousandths of the font size) is a column gap,
+# not kerning.
+PDF_CELL_GAP = 400
+
+
+def pdf_literal(b: bytes) -> str:
+    out, i, b = bytearray(), 1, b[:-1]
+    while i < len(b):
+        if b[i] == 0x5C:   # backslash
+            m = re.match(rb"[0-7]{1,3}", b[i + 1:])
+            if m:
+                out.append(int(m.group(), 8) & 0xFF)
+                i += 1 + len(m.group())
+                continue
+            n = b[i + 1:i + 2]
+            out += {b"n": b"\n", b"r": b"\r", b"t": b"\t"}.get(n, n)
+            i += 2
+            continue
+        out.append(b[i])
+        i += 1
+    return out.decode("cp1252", "replace")
+
+
+def pdf_rows(pdf: bytes):
+    """Every text row of every page, as a list of cell strings left to right."""
+    for m in re.finditer(rb"stream\r?\n", pdf):
+        end = pdf.find(b"endstream", m.end())
+        try:
+            content = zlib.decompress(pdf[m.end():end])
+        except zlib.error:
+            continue
+        if b"BT" not in content:
+            continue
+        lm, lead, depth, stack, arr, page = [1, 0, 0, 1, 0, 0], 0.0, 0, [], None, {}
+
+        def put(cells):
+            # The page is landscape, so with a rotated text matrix the row is
+            # e and the column is f; either way the row is the coordinate the
+            # line moves (TD, T*) change.
+            page.setdefault(round(lm[4], 1), []).append((lm[5], cells))
+
+        for t in PDF_TOKEN.findall(content):
+            if t == b"[":
+                arr = []
+                continue
+            if t == b"]":
+                stack.append(arr)
+                arr = None
+                continue
+            num = bool(PDF_NUMBER.match(t))
+            if arr is not None:
+                arr.append(pdf_literal(t) if t[:1] == b"(" else float(t) if num else t)
+                continue
+            if t[:1] == b"(":
+                stack.append(pdf_literal(t))
+                continue
+            if num:
+                stack.append(float(t))
+                continue
+            a, b, c, d, e, f = lm
+            if t == b"q":
+                depth += 1
+            elif t == b"Q":
+                depth -= 1
+            elif t == b"BT":
+                lm = [1, 0, 0, 1, 0, 0]
+            elif t == b"Tm" and len(stack) >= 6:
+                lm = stack[-6:]
+            elif t in (b"TD", b"Td") and len(stack) >= 2:
+                tx, ty = stack[-2:]
+                if t == b"TD":
+                    lead = -ty
+                lm = [a, b, c, d, tx * a + ty * c + e, tx * b + ty * d + f]
+            elif t == b"TL" and stack:
+                lead = stack[-1]
+            elif t == b"T*":
+                lm = [a, b, c, d, -lead * c + e, -lead * d + f]
+            elif t == b"Tj" and stack and isinstance(stack[-1], str):
+                # A lone glyph inside a clip is the visible sliver of a cell
+                # that overflowed its column — its text is truncated anyway.
+                if not (depth > 0 and len(stack[-1]) == 1):
+                    put([stack[-1]])
+            elif t == b"TJ" and stack and isinstance(stack[-1], list):
+                cells = [""]
+                for part in stack[-1]:
+                    if isinstance(part, str):
+                        cells[-1] += part
+                    elif isinstance(part, float) and part < -PDF_CELL_GAP:
+                        cells.append("")
+                put(cells)
+            stack = []
+        for row in page.values():
+            cells = [c.strip() for _, cs in sorted(row, key=lambda r: r[0])
+                     for c in cs]
+            yield [c for c in cells if c]
+
+
+MONTH_ABBR = {m: i for i, m in enumerate(
+    "jan feb mar apr may jun jul aug sep oct nov dec".split(), 1)}
+WEEKDAYS = {"monday", "tuesday", "wednesday", "thursday", "friday",
+            "saturday", "sunday"}
+# Between the date and the site: set-up and take-down dates (sometimes an
+# Excel serial, sometimes a time), attendance, amplified sound.
+RPD_OPTIONAL = re.compile(
+    r"^(\d{1,2}-[a-z]{3}|\d{1,2}(:\d\d)?\s*[ap]m|\d{5}|[<>]?[\d,]+\+?(/day)?"
+    r"|na|n/a|tbd|yes|no)$", re.I)
+# Titles that name a private person, or a person's own occasion, never list
+# (events/AGENTS.md): a permit calendar carries weddings and memorials by
+# name. A campaign event names its candidate, so it is held back too.
+RPD_PRIVATE = re.compile(
+    r"wedding|memorial(?! day)|funeral|celebration of life|birthday|quincea"
+    r"|baby shower|bridal|family gathering|reunion|priv(i)?ate|campaign"
+    r"|for supervisor|for mayor", re.I)
+# Rows that are logistics, not a gathering: festival fencing going up and
+# coming down, a club run the sheet marks as off Rec & Park property.
+RPD_NOT_EVENT = re.compile(r"\bfencing (starts|clears)\b|no sfr&?p impact", re.I)
+
+
+def rpd_location(site: str) -> str:
+    """'GGP-Robin Williams Meadow' → 'Robin Williams Meadow, Golden Gate
+    Park'; accents folded so 'Parque Niños Unidos' matches its register
+    entry (norm() keeps ASCII only)."""
+    site = unicodedata.normalize("NFKD", site).encode("ascii", "ignore").decode()
+    site = re.sub(r"\s+", " ", site).strip(" -")
+    m = re.match(r"GGP\s*-\s*(.+)$", site)
+    return f"{m.group(1)}, Golden Gate Park" if m else site
+
+
+def rpd_events(rows, year: int, source: dict) -> list:
+    out = []
+    for r in rows:
+        # Status, then permit number: only a P or an I is approved ("Not
+        # Approved Until P or I Appears in First Column"); a HOLIDAY, HOLD
+        # or ADVISORY row has no permit number and is not an event.
+        if len(r) < 6 or r[0] not in ("P", "I") or not re.fullmatch(r"R\d+", r[1]):
+            continue
+        if r[2].lower() not in WEEKDAYS:
+            continue
+        m = re.fullmatch(r"(\d{1,2})-([A-Za-z]{3})", r[3])
+        if not m or m.group(2).lower() not in MONTH_ABBR:
+            continue
+        try:
+            day = date(year, MONTH_ABBR[m.group(2).lower()], int(m.group(1)))
+        except ValueError:
+            continue
+        rest = r[4:]
+        while rest and RPD_OPTIONAL.match(rest[0]):
+            rest = rest[1:]
+        if len(rest) < 2:
+            continue
+        site, title = rest[0], rest[-1]
+        title = re.sub(r"\s+tentative$", "", re.sub(r"\s+", " ", title),
+                       flags=re.I).strip()
+        if not title or RPD_PRIVATE.search(title) or RPD_NOT_EVENT.search(title):
+            continue
+        location = rpd_location(site)
+        start = datetime(day.year, day.month, day.day, tzinfo=PACIFIC)
+        out.append({
+            # One permit can cover several sites on one day — a run through
+            # three squares — and each is its own listing on its own page.
+            "id": f"{source['id']}:{r[1]}:{day.isoformat()}:{norm(location).replace(' ', '-')}",
+            "source": source["id"],
+            "title": title,
+            # The PDFs are replaced as the year fills in, so link the page
+            # that lists them, which stays put.
+            "url": source["url"],
+            "start": start.isoformat(timespec="seconds"),
+            "end": None,
+            "all_day": True,
+            "location": location,
+        })
+    return out
+
+
 def fetch_tribe(source: dict) -> list:
     url, out, seen = source["url"], [], set()
     host = urllib.parse.urlsplit(source["url"]).netloc
@@ -481,9 +676,34 @@ def fetch_tribe(source: dict) -> list:
     return out
 
 
+def fetch_rpd_master(source: dict) -> list:
+    page = fetch(source["url"]).decode("utf-8", "replace")
+    base = "https://" + source["url"].split("/")[2]
+    # The page links one spreadsheet per area and one with every area; read
+    # the one with every area, for each year the page lists.
+    links = re.findall(
+        r'href="([^"]*/DocumentCenter/View/\d+[^"]*)"[^>]*>\s*(?:<[^>]+>\s*)*'
+        r"(\d{4}) RPD Special Event Master ALL", page, re.I)
+    if not links:
+        raise RuntimeError("no 'Special Event Master ALL' link on the page — "
+                           "has its layout changed?")
+    out = []
+    by_year = {year: href for href, year in links}
+    for year, href in sorted(by_year.items()):
+        time.sleep(DELAY_S)
+        pdf = fetch(urllib.parse.urljoin(base, href))
+        if not pdf.startswith(b"%PDF"):
+            raise RuntimeError(f"{href} is not a PDF")
+        got = rpd_events(pdf_rows(pdf), int(year), source)
+        if not got and int(year) >= datetime.now(PACIFIC).year:
+            raise RuntimeError(f"{href}: no rows parsed — has the sheet changed?")
+        out += got
+    return out
+
+
 KIND = {"ical": fetch_illuminate, "ical-multi": fetch_sfrecpark,
         "squarespace": fetch_squarespace, "html": fetch_alemany,
-        "tribe": fetch_tribe}
+        "tribe": fetch_tribe, "pdf-table": fetch_rpd_master}
 
 
 # --------------------------------------------------------------------------
@@ -559,14 +779,51 @@ def resolve(events: list, today: date) -> tuple:
     return kept, unlocated
 
 
+SHADOW_STOP = {"the", "and", "park", "square", "plaza", "with", "from",
+               "golden", "gate", "francisco", "annual", "event", "events"}
+
+
+def drop_shadowed(events: list) -> list:
+    """An all-day row — Rec & Park's permit sheet, which has dates but no
+    times — gives way to a timed listing of the same event on the venue's own
+    calendar: same day, same venue, and a word of the title in common (or the
+    other calendar's own name in it — the permit for Illuminate's concerts is
+    'Illuminate Concert', whatever each night is called)."""
+    def words(ev):
+        return {w for w in norm(ev["title"]).split()
+                if len(w) >= 4 and w not in SHADOW_STOP}
+
+    timed = {}
+    for ev in events:
+        if not ev.get("all_day"):
+            timed.setdefault(ev["start"][:10], []).append(ev)
+    kept = []
+    for ev in events:
+        if ev.get("all_day"):
+            here = ev.get("path") or ev.get("venue")
+            mine = words(ev)
+            if any((o.get("path") or o.get("venue")) == here
+                   and o["source"] != ev["source"]
+                   and (mine & words(o) or o["source"] in norm(ev["title"]).split())
+                   for o in timed.get(ev["start"][:10], [])):
+                continue
+        kept.append(ev)
+    return kept
+
+
 def dedupe(events: list) -> list:
     # Two calendars can list one event — SF Rec & Park hosts the Sunset Dunes
     # series the Friends of Sunset Dunes also post. Same normalized title and
     # start time is the same event; a pin the source set on the event beats a
     # venue centroid from the register.
+    events = drop_shadowed(events)
     merged = {}
     for ev in events:
         key = (norm(ev["title"]), ev["start"])
+        if ev.get("all_day"):
+            # A permit row per site: the same run at three squares is three
+            # listings, each on its own square's page.
+            key += (ev.get("path") or ev.get("venue") or "",)
         prev = merged.get(key)
         if prev is None:
             merged[key] = ev

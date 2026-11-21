@@ -1,0 +1,78 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-11-21",
+  "read_on": "2026-11-21",
+  "notes": "Run of 2026-11-21. Four Mission Local stories queued; two name addresses, both in passing.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-21-ml-0001",
+      "date": "2026-11-20",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "4877 Mission St.",
+      "street_number": "4877",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "A neighborhood roundup mentions an item at Love & Light Yoga at 4877 Mission.",
+      "extra": {},
+      "citation": {
+        "label": "Mission Local, “Excelsior Buzz: lost kitten returned, furniture sale and more rain on the way,” 20 November 2026",
+        "url": "https://missionlocal.org/2026/11/excelsior-buzz-lost-kitten-returned/"
+      },
+      "raw": {
+        "text": "Love & Light Yoga at 4877 Mission St."
+      },
+      "confidence": "low",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a passing mention in a roundup whose headline does not name this building or its business."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "6272014A",
+        "path": "/san-francisco/mission/mission-street/4877/",
+        "eas_address": "4877 MISSION ST",
+        "method": "EAS exact match on 4877 MISSION ST → parcel 6272014A; sf-parcels has blklot 6272014A active, 4877–4879 MISSION; the 2025 roll records it as commercial retail, built 1926. EAS puts 4877, 4879 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 4877.",
+        "checked_on": "2026-11-21"
+      }
+    },
+    {
+      "id": "2026-11-21-ml-0002",
+      "date": "2026-11-20",
+      "date_precision": "day",
+      "kind": "event",
+      "address_as_written": "1 Avalon Ave.",
+      "street_number": "1",
+      "street_name": "AVALON",
+      "street_type": "AVE",
+      "description": "A story about residents' activism names their assisted-living facility.",
+      "extra": {},
+      "citation": {
+        "label": "Mission Local, ““Seniors for Sanctuary”: Assisted living center residents protest Trump,” 20 November 2026",
+        "url": "https://missionlocal.org/2026/11/seniors-civic-activism-excelsior/"
+      },
+      "raw": {
+        "text": "Frank Residences at 1 Avalon Ave."
+      },
+      "confidence": "low",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a story about people, not the building; the address is where they live."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "5952003",
+        "path": "/san-francisco/excelsior/silver-avenue/302/",
+        "eas_address": "1 AVALON AVE",
+        "method": "EAS exact match on 1 AVALON AVE → parcel 5952003; sf-parcels has blklot 5952003 active, 1–1 AVALON; the 2025 roll records it as commercial misc, built 1922. The assessor files the parcel as 302 SILVER AV. EAS files the address under parcel 5952002, which sf-parcels reports retired; the active parcel its coordinates fall in is 5952003.",
+        "checked_on": "2026-11-21"
+      }
+    }
+  ]
+}

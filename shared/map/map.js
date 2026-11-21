@@ -429,6 +429,79 @@ const places = async () => {
   return byPath;
 };
 
+/* ---- public restrooms --------------------------------------------------- */
+/* Every public restroom in DataSF's Public Bathrooms and Water Fountains,
+   from shared/map/restrooms.json (seed_pages.py restrooms). They are a
+   convenience, not the map's subject, so they stay quiet: a small muted
+   toilet badge, absent at the city's scale and arriving as a reader zooms
+   toward a street, drawn under the news and event dots. A restroom has no
+   page; its card is the file's own words — the name, where it is, the hours —
+   and a link for directions. */
+const RESTROOM_ICON = "restroom";
+const RESTROOM_MIN_ZOOM = 13;
+/* A toilet seen from the side, on a 24-unit grid: the tank, then the bowl on
+   its pedestal. */
+const TOILET = "M6 3h4.5v8H6z M5 12h14c0 3.2-2.1 5.6-5 6.3l.8 2.7H8.6l.9-3.1C6.9 17 5 14.8 5 12z";
+const restroomImage = () => {
+  const px = 2, size = 18 * px;   // pixelRatio 2, so 18 CSS px
+  const c = document.createElement("canvas");
+  c.width = c.height = size;
+  const g = c.getContext("2d");
+  g.fillStyle = cssVar("--muted");
+  g.beginPath(); g.arc(size / 2, size / 2, size / 2 - px / 2, 0, Math.PI * 2); g.fill();
+  g.strokeStyle = cssVar("--paper"); g.lineWidth = px; g.stroke();
+  const s = (size * 0.62) / 24;
+  g.translate(size / 2 - 12 * s, size / 2 - 12 * s);
+  g.scale(s, s);
+  g.fillStyle = cssVar("--paper");
+  g.fill(new Path2D(TOILET));
+  g.setTransform(1, 0, 0, 1, 0, 0);
+  return g.getImageData(0, 0, size, size);
+};
+const restroomLayer = {
+  id: "restrooms-icon", type: "symbol", source: "restrooms", minzoom: RESTROOM_MIN_ZOOM,
+  layout: {
+    "icon-image": RESTROOM_ICON, "icon-allow-overlap": true, "icon-ignore-placement": true,
+    "icon-size": ["interpolate", ["linear"], ["zoom"], RESTROOM_MIN_ZOOM, 0.7, 16, 1],
+  },
+  paint: {
+    "icon-opacity": ["interpolate", ["linear"], ["zoom"],
+      RESTROOM_MIN_ZOOM, 0, RESTROOM_MIN_ZOOM + 0.5, lit(1, 0.75)],
+  },
+};
+const restroomFeatures = (doc) => doc.r.map(({ x, y, ...props }) => ({
+  type: "Feature", geometry: { type: "Point", coordinates: [x, y] }, properties: props,
+}));
+let restrooms;
+const restroomCard = ({ t, s, h, a, n }, [lng, lat]) => {
+  const root = el("article", "map-card map-card-plain");
+  const body = el("div", "map-card-body");
+  const kicker = el("p", "map-card-kicker");
+  const ic = el("span", "ic ic-restroom");
+  ic.setAttribute("aria-hidden", "true");
+  kicker.append(ic, document.createTextNode("Public restroom"));
+  body.append(kicker, el("p", "map-card-title", t));
+  if (s) body.append(el("p", "map-card-sub", s));
+  const lines = [h, a, n].filter(Boolean);
+  if (lines.length) {
+    const p = el("p", "map-card-story");
+    p.append(...lines.map((line) => el("span", "", line)));
+    body.append(p);
+  }
+  const row = el("p", "map-card-links");
+  row.append(link(`https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`,
+                  "Directions", true));
+  body.append(row);
+  if (restrooms?.source) {
+    const src = el("p", "map-card-source");
+    src.append(link(restrooms.source.url, "DataSF"),
+               document.createTextNode(`, retrieved ${restrooms.retrieved}`));
+    body.append(src);
+  }
+  root.append(body);
+  return root;
+};
+
 /* News and events go on above everything, on every style load — a light/dark
    switch throws the layers away — which is also how the dots pick up the other
    scheme's hues. A dot the reader can act on today outranks a story already
@@ -437,6 +510,18 @@ let events;
 /* Read off the news overlay's list, which every page with the map carries. */
 let news = newsFeatures();
 async function addOverlays(map) {
+  /* Restrooms first, so the news and event dots draw over them. A missing
+     file only means no icons. */
+  try { restrooms ??= await getJSON(MAP + "restrooms.json"); } catch { /* none this load */ }
+  if (restrooms && !map.getSource("restrooms")) {
+    map.addSource("restrooms", { type: "geojson", generateId: true,
+      data: collection(restroomFeatures(restrooms)) });
+  }
+  if (restrooms) {
+    if (!map.hasImage(RESTROOM_ICON)) map.addImage(RESTROOM_ICON, restroomImage(), { pixelRatio: 2 });
+    const before = ["news-pulse", "events-pulse"].find((id) => map.getLayer(id));
+    if (!map.getLayer(restroomLayer.id)) map.addLayer(restroomLayer, before);
+  }
   if (!map.getSource("news")) {
     map.addSource("news", { type: "geojson", generateId: true,
       data: collection(news) });
@@ -695,7 +780,7 @@ async function init() {
      asked in that order and the top one answers. A few pixels of slack make a
      small dot something a finger can hit. Below the dots, a documented lot in
      the picked neighborhood; below that, a neighborhood. */
-  const DOTS = ["events-dot", "news-dot"];
+  const DOTS = ["events-dot", "news-dot", "restrooms-icon"];
   const SLACK = 4;
   const dotAt = (pt) => {
     const layers = DOTS.filter((id) => map.getLayer(id));
@@ -753,6 +838,13 @@ async function init() {
   });
   async function openCard(f, at) {
     const props = f.properties;
+    if (f.source === "restrooms") {
+      popup.remove();
+      active = f;
+      mark(active, "active", true);
+      popup.setLngLat(at).setDOMContent(restroomCard(props, f.geometry.coordinates)).addTo(map);
+      return;
+    }
     const ll = maplibregl.LngLat.convert(at);
     const place = (await places()).get(props.p) ?? {
       geometry: { coordinates: [ll.lng, ll.lat] }, properties: { t: props.t, s: props.s ?? "" },

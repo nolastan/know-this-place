@@ -79,6 +79,18 @@ rather than branching fresh — the workflow does the same.
   `<p>` tags; `clean_location` strips both, and the venue half is what to
   add as a matcher. The host resets connections from some cloud IPs — a
   failed read there is the host's, not the parser's.
+- **SF Rec & Park special event permits** (`sfrpdpermits`) — the
+  permits office's tentative calendars page links the year's special-event
+  master spreadsheet as PDFs; `fetch.py` reads the page for the current
+  "<year> RPD Special Event Master ALL" link on every run (the files are
+  replaced under new ids, and next year's appears there), and parses the PDF
+  with the stdlib (`pdf_rows`). Only status P or I rows are approved; dates,
+  no times, so `all_day`. Sites are written `GGP-<area>` for Golden Gate
+  Park — a GGP area with no place page of its own points at the park's
+  parcel page, 6101 Fulton, like the East Meadow. Titles carry weddings,
+  memorials and campaign kickoffs by name; `RPD_PRIVATE` drops them — add to
+  it when a new shape of private title appears. If the run fails with "no
+  rows parsed" or "no … link", the sheet or the page changed shape.
 - **Squarespace (Nature in the City, Sunset Dunes)** — an unset pin is the
   platform default in New York; `fetch.py` drops it.
 - **Alemany Farm** — hand-written HTML, `Crawl-Delay: 20`: one request a run.

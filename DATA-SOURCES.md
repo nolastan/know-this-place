@@ -553,6 +553,19 @@ here is [Adding a source](#adding-a-source).
 - **Citation label:** "SF Treasurer & Tax Collector, business registrations"
 - **Verified:** 2026-11-17 (eleven dry cleaners; `merchants/sf-registered-businesses/2026-11-17.json`)
 
+## sf-public-restrooms — Public Bathrooms and Water Fountains
+
+- **What:** every public restroom the city lists (Rec and Park, the Port,
+  Public Works' Pit Stops, the PUC): name, park, address, access, hours,
+  notes. Drawn as the homepage map's toilet icons, each with a card; a
+  restroom never gets a page. Accessibility (ADA) is not in the data.
+- **Endpoint:** `https://data.sf.gov/resource/wfq4-upmv.json?resource_type=restroom`
+  (the table behind the "Map of Public Bathrooms" view, `sxtt-wsyn`).
+- **Fetch:** `python3 scripts/seed_pages.py restrooms` writes the committed
+  `shared/map/restrooms.json` with each card's lines already worded. DataSF
+  republishes monthly.
+- **Verified:** 2026-11-21 (205 restrooms)
+
 ## Research sources — cataloged in `research/`
 
 Newspapers, books, journals, newsletters, context statements and survey reports

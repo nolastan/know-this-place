@@ -81,7 +81,7 @@ calendar whose parser has stopped matching.
 
 - **`sources.json`** is the calendar register — one entry per publisher, like
   `news/feeds.json`. `id` becomes every event's `source`; `kind` picks the
-  parser (`ical`, `ical-multi`, `squarespace`, `html`, `tribe`); `access` is `open`
+  parser (`ical`, `ical-multi`, `squarespace`, `html`, `tribe`, `pdf-table`); `access` is `open`
   only where robots.txt permits the fetch — a source that forbids automated
   access is `needs-human`, and changing that flag is a human's call, never an
   agent's.
@@ -112,6 +112,10 @@ calendar whose parser has stopped matching.
   artifact, committed like the findings files the other modules write. Every
   event carries its source, its listing URL (we link back, always), its start
   and end, its venue name, and coordinates and `path` when the venue resolves.
+  A calendar that gives dates without times — Rec & Park's permit sheet —
+  writes `all_day: true` with a midnight start and no end; the renderers say
+  "All day", and such a row gives way to a timed listing of the same event
+  (same day, same venue, a title word in common) on the venue's own calendar.
 
 Two invariants the pipeline rests on:
 
