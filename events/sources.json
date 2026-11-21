@@ -58,6 +58,15 @@
       "kind": "squarespace",
       "access": "open",
       "note": "Squarespace events collection like natureinthecity's. Same NYC-default coordinate sentinel to drop. Venues are usually entrances along the park ('Sunset Dunes @ Irving'); the addressTitle names the spot."
+    },
+    {
+      "id": "ybgfestival",
+      "name": "Yerba Buena Gardens Festival",
+      "url": "https://ybgfestival.org/events/",
+      "kind": "tribe",
+      "access": "open",
+      "crawl_delay": 3,
+      "note": "Free outdoor performing arts, mostly in Yerba Buena Gardens, roughly May to October; out of season the list is empty and shows only 'latest past' programs, which resolve() drops. WordPress with The Events Calendar. robots.txt disallows every URL with a query string (`Disallow: /*?`), which rules out the iCal export (?ical=1) and the REST API's paging (?page=N), and asks Crawl-delay: 3. So fetch.py reads the HTML list view and follows its path-based next link (/events/list/page/N/), 3 seconds apart. Each event names its venue as 'Great Lawn, Yerba Buena Gardens' plus a street line; venues.json does the matching. Checked 2026-11-21."
     }
   ]
 }

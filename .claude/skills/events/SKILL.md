@@ -82,6 +82,14 @@ rather than branching fresh — the workflow does the same.
 - **Squarespace (Nature in the City, Sunset Dunes)** — an unset pin is the
   platform default in New York; `fetch.py` drops it.
 - **Alemany Farm** — hand-written HTML, `Crawl-Delay: 20`: one request a run.
+- **Yerba Buena Gardens Festival** — The Events Calendar (WordPress). Its
+  robots.txt disallows any URL with a query string, so neither `?ical=1` nor
+  the REST API's `?page=N` is allowed; `fetch.py` reads the HTML list view
+  and follows its path-based next link, `crawl_delay` (3 s) apart. The season
+  runs about May to October: out of season the page lists nothing upcoming,
+  only three "latest past" programs, so "3 events listed, 0 kept" is normal.
+  Venues read `<spot>, Yerba Buena Gardens`; the spots are registered, and a
+  catch-all sends any other gardens spot to the 701 Mission page.
 
 ## What this module will not do
 

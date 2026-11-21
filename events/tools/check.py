@@ -30,7 +30,7 @@ REPO = ROOT.parent
 PACIFIC = zoneinfo.ZoneInfo("America/Los_Angeles")
 SF_BBOX = (37.70, 37.84, -122.55, -122.34)
 
-KINDS = {"ical", "ical-multi", "squarespace", "html"}
+KINDS = {"ical", "ical-multi", "squarespace", "html", "tribe"}
 ACCESS = {"open", "needs-human", "blocked"}
 
 errors = []
