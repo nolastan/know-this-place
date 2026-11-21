@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** one title of 18 read: the Visitacion Valley Grapevine, all 289 issues (1986–2011) — 87 findings, 71 resolved, 66 published on 45 pages (18 seeded).
+> - **Coverage:** three titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012) and OMI News (85 issues, 1969–1980) — 178 findings, 150 resolved, 144 published on 107 pages (56 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -73,6 +73,26 @@
     title should squash these before extracting.
   - **Bayshore Boulevard, Geneva Avenue and Mission Street run into Brisbane
     and Daly City.** A high number on any of them may not be in the city.
+  - **A neighborhood title prints its own main streets with no type word.**
+    "690 Chenery", "1350 Ocean", "201 Granada": `ocr_mentions.py` counted an
+    untyped name only for downtown streets, so the Glen Park and OMI papers'
+    commonest addresses were invisible to it. Count `<number> <Name>` with no
+    type in the raw text and pass each as `--untyped NAME` (Glen Park:
+    Chenery, Diamond, Monterey, Bosworth, Sanchez, Laidley, Arlington,
+    Whitney, Sussex, Lippard, Castro, Cortland, Elk; OMI: Ocean, Granada,
+    Broad, Randolph, Holloway, Plymouth, Capitol, Ramsell, Phelan, Faxon,
+    Orizaba, Alemany).
+  - **The Glen Park paper changed its name four times** — Glen Park
+    Association Newsletter, Glen Park Newspaper, Glen Park Perspective
+    (also catalogued "Persepctive" and "Perspetive"), Glen Park News — and
+    one 2003 issue is catalogued "Glen Park Association". Select on the
+    `Glen Park` title prefix and leave out the `glenparkpapers` collection
+    record; the OMI equivalent is `ominews`.
+  - **Most of what a community paper prints at a number is an institution's
+    address, not news about it.** Of 293 reader candidates over the two
+    titles, about half were a library, school or church named as a venue
+    or in a directory, with no event. They were set aside; a bare address is
+    not a dated fact.
 - **People:** these papers are dense with residents — obituaries, honor rolls,
   crime, block-club officers, the businesses' proprietors in their own ads.
   None of that is taken. Taken: institutions, churches, schools, agencies,
@@ -91,14 +111,22 @@
 - **Coverage:** **Read:** the *Visitacion Valley Grapevine*, every issue the
   collection holds — 289 items, August 1986 to January 2011, 2,864 OCR pages
   (`findings/sf-neighborhood-newspapers/grapevine-1986-2011.json`).
-  **Not read:** every other title in the collection. The next batches, in
-  the order this site needs them: **Glen Park News** (39 issues, 1982–2007)
-  and **OMI News** (85, 1969–1980), for neighborhoods with few pages and old
-  coverage; **The Potrero View** (221) and **Noe Valley Voice** (336), the two
-  longest runs; then New Mission News, North Mission News, the Bernal
-  Journals, Park Bell (Excelsior/Portola), The New Fillmore, the Semaphore
-  titles, Richmond ReView and Tenderloin Times. One title is one batch; take
-  two in a session if the first is short.
+  The Glen Park Association's paper, every issue the collection holds under
+  any of its names — 124 items, March 1977 to December 2012, 1,686 OCR pages
+  (`findings/sf-neighborhood-newspapers/glen-park-1977-2012.json`). *OMI
+  News*, every issue — 85 items, May 1969 to 1980, 825 OCR pages
+  (`findings/sf-neighborhood-newspapers/omi-news-1969-1980.json`).
+  **Not read:** the other fifteen titles. The next batches, in the order
+  this site needs them: **The Potrero View** (221) and **Noe Valley Voice**
+  (336), the two longest runs; then New Mission News, North Mission News,
+  the Bernal Journals, Park Bell (Excelsior/Portola), The New Fillmore, the
+  Semaphore titles, Richmond ReView and Tenderloin Times. One title is one
+  batch; take two in a session if the first is short.
+  **Placed nowhere yet:** the Glen Park library's two lost buildings, 700
+  Bosworth (opened January 1927, demolished for I-280 about 1964) and 2909
+  Diamond (1964, demolished 1969 for the BART station). EAS has neither
+  number. The second belongs on a Glen Park BART station page if one is
+  ever made.
   **Held, not taken up:** the seeding of 15–19 Blanken Avenue surfaced one
   held *Building and Engineering News* permit (1931, "N Blanken Ave 50 W
   Tunnel Ave", `v31-pt2-1931-jul-1932-jan-0769`). It was not read against
@@ -128,3 +156,24 @@
   to 1951; (5) the original community-center building is "101 Raymond" in
   three issues and "103 Raymond" in the 2003 demolition notice; 103 is a
   1907 house that still stands, so the demolition is not placed.)
+  2026-11-21 (second run, PR 722, two titles: the Glen Park paper and OMI News.
+  Read 209 issues, 2,511 OCR pages, 9,116 numbered-address mentions; 1,520
+  windows by hand by eight readers; 293 candidates, 91 findings, 79
+  resolved, 78 published on 62 pages, 38 of them seeded, 1 declined because
+  the page already had it. The best of it: the Glen Park branch library's
+  five homes (700 Bosworth 1927, 2909 Diamond 1964, 2838 Diamond until
+  1978, 653 Chenery 1978–2007, 2825 Diamond 2007), the Merrill Conservatory
+  at 236 Monterey part-demolished in December 1978 and then recommended for
+  city purchase, a 1979 architecture walk dating cottages on Chenery and
+  Bemis, the oldest house in Glen Park at 657 Chenery, the 1974 dedication
+  of New Providence Baptist Church at 218 Granada, Glendale Federal's 1979
+  Lakeside branch at 2499 Ocean, and the OMI's own offices and senior
+  centers on Granada and Randolph. **Learned:** (1) a neighborhood paper
+  prints its own streets untyped, and `ocr_mentions.py --untyped` now takes
+  them; (2) the Glen Park title has five catalogue names; (3) half of what
+  readers bring back is an institution's bare address, so the reader brief
+  should ask for events only; (4) the 1979 architecture walk's dates
+  disagree with the assessor on six of seven houses, all recorded as
+  conflicts rather than adjudicated; (5) a retrospective's 1876 number
+  (600 Divisadero, the Pacific Hebrew Orphan Asylum) was left unresolved:
+  a modern article copying a pre-1909 number gives no way to check it.)

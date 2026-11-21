@@ -1,0 +1,112 @@
+{
+  "address": "562–564 Monterey Boulevard, San Francisco, CA 94127",
+  "path": "/san-francisco/west-of-twin-peaks/monterey-boulevard/562/",
+  "apn": "3093033",
+  "block": "3093",
+  "lot": "033",
+  "eas_baseid": "353952",
+  "coordinates": {
+    "lat": 37.731823,
+    "lng": -122.448071
+  },
+  "address_range": "562–564",
+  "street_numbers_on_parcel": [
+    "562",
+    "564"
+  ],
+  "parcel": {
+    "year_built": 1950,
+    "units": 3,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 3,
+    "lot_area_sqft": 4974,
+    "building_area_sqft": 4945,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Sunnyside",
+    "analysis_neighborhood": "West of Twin Peaks",
+    "property_location_raw": "0566 0562 MONTEREY            BL0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 68356,
+    "assessed_improvement_value": 91002
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1950",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202306200357",
+      "type": "otc alterations permit",
+      "status": "cancelled",
+      "filed": "2023-06-20",
+      "status_date": "2026-01-23",
+      "estimated_cost": 50000,
+      "revised_cost": 0,
+      "description": "t.i. of (e) vacant commercial space to facial studio, install new plumbing/electrical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9702675",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-02-13",
+      "status_date": "1997-08-01",
+      "estimated_cost": 10500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MONTEREY&street_type=BLVD&address_number=562",
+      "retrieved": "2026-11-21"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3093033&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-21"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3093&lot=033",
+      "retrieved": "2026-11-21"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3093033",
+      "retrieved": "2026-11-21"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-glenparkassociatunse_1-n9",
+      "name": "Glen Park Association, June 2003, p. 10",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/glenparkassociatunse_1/page/n9/mode/1up",
+      "retrieved": "2026-11-21"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2003",
+      "kind": "opening",
+      "description": "Studio A, a dance studio and dance therapy clinic, opened here.",
+      "source": "sf-neighborhood-newspapers-glenparkassociatunse_1-n9"
+    }
+  ]
+}

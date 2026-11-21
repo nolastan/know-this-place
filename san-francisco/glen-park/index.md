@@ -20,6 +20,7 @@ Diamond and Chenery and evaluated eight of them in detail.
 - [Arlington Street](arlington-street/) — 1 building, built 1938.
 - [Baden Street](baden-street/) — 1 building, built 1939.
 - [Beacon Street](beacon-street/) — 1 building, built 1963.
+- [Bemis Street](bemis-street/) — 1 building, built 1911.
 - [Berkeley Way](berkeley-way/) — 1 building, built 1993.
 - [Bosworth Street](bosworth-street/) — 4 buildings, built 1910–1937.
 - [Brompton Avenue](brompton-avenue/) — 10 buildings, built 1908–1963.
