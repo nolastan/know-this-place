@@ -25,6 +25,12 @@ A street the OCR misspells the same way every issue ("Leiand" for Leland)
 matches nothing until it is given as `--alias LEIAND=LELAND`; count the
 squashed spellings of the title's own main streets before extracting.
 
+An untyped number-and-name ("at 690 Chenery") only counts for the downtown
+streets in UNTYPED_OK. A neighborhood title's own main streets go untyped just
+as often — Chenery and Diamond in Glen Park, Ocean and Granada in the OMI —
+so give each as `--untyped CHENERY`; count `<number> <Name>` with no type word
+in the raw text first.
+
 What survives is printed one window per JSON line, for reading by hand. The
 filter's counts go to stderr and belong in the findings file's coverage note.
 
@@ -156,6 +162,7 @@ def extract(args) -> None:
         printed, _, eas = a.upper().partition("=")
         aliases[printed.strip()] = eas.strip()
     table, rx = street_table(aliases)
+    untyped = UNTYPED_OK | {u.upper().strip() for u in args.untyped or []}
     found = []
     for ident, date, vol, no in items:
         p = corpus / "raw" / f"{ident}.txt"
@@ -174,7 +181,7 @@ def extract(args) -> None:
             stype = TYPE_WORDS.get((m.group(3) or "").upper().rstrip("."), "")
             if stype and types and stype not in types:
                 continue
-            if not stype and (name not in UNTYPED_OK or not m.group(2)[0].isupper()):
+            if not stype and (name not in untyped or not m.group(2)[0].isupper()):
                 continue
             if not stype and len(types) == 1:
                 stype = next(iter(types))
@@ -263,6 +270,9 @@ def main() -> int:
     e.add_argument("--after", type=int, default=300)
     e.add_argument("--advertiser", type=int, default=6)
     e.add_argument("--keep-ads", action="store_true")
+    e.add_argument("--untyped", action="append", metavar="NAME",
+                   help="a street this title prints without its type (CHENERY); "
+                        "repeatable, added to the built-in downtown list")
     e.add_argument("--alias", action="append", metavar="PRINTED=EAS",
                    help="an OCR misspelling of a street to read as the EAS name "
                         "(LEIAND=LELAND); repeatable")
