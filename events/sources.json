@@ -58,6 +58,14 @@
       "kind": "squarespace",
       "access": "open",
       "note": "Squarespace events collection like natureinthecity's. Same NYC-default coordinate sentinel to drop. Venues are usually entrances along the park ('Sunset Dunes @ Irving'); the addressTitle names the spot."
+    },
+    {
+      "id": "sfrpdpermits",
+      "name": "SF Rec & Park special event permits",
+      "url": "https://sfrecpark.org/1310/Tentative-Calendars-of-Special-Events",
+      "kind": "pdf-table",
+      "access": "open",
+      "note": "The Permits & Reservations office's tentative calendars of special events: the page links the year's special-event master spreadsheet as PDFs, one per area and one with every area ('<year> RPD Special Event Master ALL'). The files are replaced (new DocumentCenter ids) as the year fills in, so fetch.py reads the page for the current link on every run, and a new year's file is picked up the day it is linked — that is how this page is re-checked for updates. One row per permit, site and day; only rows whose status is P or I are approved, and rows carry dates but no times, so every event is all-day and gives way to a timed listing of the same event on the venue's own calendar. robots.txt disallows neither the page nor /DocumentCenter."
     }
   ]
 }

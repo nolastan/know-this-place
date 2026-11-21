@@ -30,7 +30,7 @@ REPO = ROOT.parent
 PACIFIC = zoneinfo.ZoneInfo("America/Los_Angeles")
 SF_BBOX = (37.70, 37.84, -122.55, -122.34)
 
-KINDS = {"ical", "ical-multi", "squarespace", "html"}
+KINDS = {"ical", "ical-multi", "squarespace", "html", "pdf-table"}
 ACCESS = {"open", "needs-human", "blocked"}
 
 errors = []
@@ -146,6 +146,8 @@ def check_events(sources):
             err(where, "events are not sorted by start")
         prev_start = ev["start"]
         key = (start, ev.get("title"))
+        if ev.get("all_day"):   # one permit row per site, each its own listing
+            key += (ev.get("path") or ev.get("venue"),)
         if key in seen_starts:
             err(where, "two events share a title and start — dedup miss?")
         seen_starts.add(key)

@@ -4103,7 +4103,10 @@ def event_day(iso: str, today: date) -> str:
 
 
 def event_time(ev: dict) -> str:
-    """'10am–1:30pm', collapsing a shared am/pm — the occupant-hours style."""
+    """'10am–1:30pm', collapsing a shared am/pm — the occupant-hours style.
+    A listing with a date and no time reads 'All day'."""
+    if ev.get("all_day"):
+        return "All day"
     a = clock(ev["start"][11:16])
     if not ev.get("end"):
         return a
