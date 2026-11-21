@@ -156,7 +156,7 @@
   to 1951; (5) the original community-center building is "101 Raymond" in
   three issues and "103 Raymond" in the 2003 demolition notice; 103 is a
   1907 house that still stands, so the demolition is not placed.)
-  2026-11-21 (second run, two titles: the Glen Park paper and OMI News.
+  2026-11-21 (second run, PR 722, two titles: the Glen Park paper and OMI News.
   Read 209 issues, 2,511 OCR pages, 9,116 numbered-address mentions; 1,520
   windows by hand by eight readers; 293 candidates, 91 findings, 79
   resolved, 78 published on 62 pages, 38 of them seeded, 1 declined because
