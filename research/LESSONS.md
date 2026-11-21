@@ -604,6 +604,19 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   the source of most of its best facts. *Also count the squashed spellings of
   the title's own main street before extracting* — "Leiand" was 1,455
   mentions — and pass them as `--alias`.
+- **A neighborhood paper prints its own streets with no type word.** "690
+  Chenery", "1350 Ocean": `ocr_mentions.py` only counted an untyped name for
+  the downtown streets in its built-in list, so the Glen Park and OMI papers'
+  main streets — the addresses they print most — never became mentions. Count
+  `<number> <Name>` with no type in the raw text before extracting and pass
+  each street as `--untyped NAME`, beside `--alias` for the misspellings.
+- **Ask readers for events, not addresses.** Fanning windows out to readers
+  works (eight readers, 1,520 windows, under two minutes each), but a brief
+  that admits "an institution based at the number" brings back every
+  calendar venue and directory line: half of 293 candidates over the Glen
+  Park and OMI papers were a library, school or church named with no event,
+  all of them cut at merge. Keep occupancy only where the window says the
+  institution *moved in, opened or was founded* there.
 - **A community paper reprints its own history.** Anniversary issues and
   year-in-review timelines restate events years later, so one event arrives
   from three or four issues, sometimes with a different number; merge to the
