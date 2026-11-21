@@ -7249,6 +7249,91 @@ def cmd_lots(args) -> int:
     return 0
 
 
+# --------------------------------------------------------------------------
+# Public restrooms on the homepage map
+# --------------------------------------------------------------------------
+# The map's toilet icons: every restroom in DataSF's Public Bathrooms and Water
+# Fountains (wfq4-upmv, the dataset behind the "Map of Public Bathrooms" view
+# sxtt-wsyn). They get no pages — a restroom is not a building — only a card on
+# the map, so this writes one small committed file, shared/map/restrooms.json,
+# with each card's lines already worded. Values that tell a reader nothing are
+# left out: an unnamed "Restrooms" takes its park's name, an address that is
+# the whole park's mailing address gives way to the park, and "publicly
+# accessible" (the default) is not said. Refresh with
+#   python3 scripts/seed_pages.py restrooms
+DS_RESTROOMS = "wfq4-upmv"
+RESTROOMS_VIEW = "sxtt-wsyn"
+_GENERIC_RESTROOM = re.compile(
+    r"^(?:(?:north|south|east|west|upper|lower|main)\s+)?(?:restrooms?|toilets?)$", re.I)
+
+
+def _clock(hhmmss: str) -> str:
+    h, m = (int(x) for x in hhmmss.split(":")[:2])
+    h %= 24
+    suffix = "AM" if h < 12 else "PM"
+    h12 = h % 12 or 12
+    return f"{h12}{':%02d' % m if m else ''} {suffix}"
+
+
+def _restroom_hours(r: dict) -> str:
+    days = (r.get("public_access_days") or "").strip()
+    start, end = r.get("public_access_hours_open"), r.get("public_access_hours_close")
+    m = re.match(r"close time:\s*(\d{1,2})(?::(\d\d))?\s*(am|pm)", days, re.I)
+    if m:
+        return f"Closes {int(m[1])}{':' + m[2] if m[2] else ''} {m[3].upper()}"
+    if days.lower() == "special events":
+        return "Open for special events"
+    if start and end:
+        if start.startswith("00:00") and end.startswith("24:00"):
+            return "Open 24 hours" if days in ("", "Daily") else f"{days}, 24 hours"
+        span = f"{_clock(start)}\u2013{_clock(end)}"
+        return f"{days}, {span}" if days else span
+    return ""
+
+
+def restroom_card(r: dict) -> dict:
+    """One restroom as its map card: x, y, then t(itle), s(ub), h(ours), a(ccess), n(ote)."""
+    name = re.sub(r"\s+", " ", (r.get("name") or "").strip())
+    # Rec and Park files Golden Gate Park by its maintenance sections.
+    park = re.sub(r"\s+-\s+Section\s+\d+$", "", (r.get("park") or "").strip())
+    addr = re.sub(r"\s*\(JCDecaux\)$", "", (r.get("address") or "").strip())
+    title, sub = name, ""
+    if park and (not name or _GENERIC_RESTROOM.match(name)):
+        title = park
+        if name and not re.match(r"^(restrooms?|toilets?)$", name, re.I):
+            sub = name[0] + name[1:].lower()
+    elif park and park.lower() not in name.lower():
+        sub = park
+    elif addr and addr.lower() not in name.lower():
+        sub = addr
+    note = (r.get("notes") or "").strip()
+    if note and re.sub(r"\W", "", note.lower()) in re.sub(r"\W", "", name.lower()):
+        note = ""
+    out = {"x": round(float(r["longitude"]), 6), "y": round(float(r["latitude"]), 6),
+           "t": title or "Public restroom", "s": sub, "h": _restroom_hours(r),
+           "a": "Limited public access" if r.get("access") == "limited_access" else "",
+           "n": note}
+    return {k: v for k, v in out.items() if v != ""}
+
+
+def cmd_restrooms(args) -> int:
+    """Refresh shared/map/restrooms.json — the homepage map's toilet icons."""
+    retrieved = args.retrieved or date.today().isoformat()
+    rows = api_get(DS_RESTROOMS, {"resource_type": "restroom", "$limit": 5000,
+                                  "$order": "name"})
+    cards = [restroom_card(r) for r in rows if r.get("latitude") and r.get("longitude")]
+    cards = [c for c in cards if -122.62 < c["x"] < -122.28 and 37.6 < c["y"] < 37.93]
+    n = _dump_compact(MAP_DIR / "restrooms.json", {
+        "retrieved": retrieved,
+        "source": {"dataset": "San Francisco Public Bathrooms and Water Fountains",
+                   "url": f"https://data.sf.gov/d/{RESTROOMS_VIEW}",
+                   "query": f"https://data.sf.gov/resource/{DS_RESTROOMS}.json"
+                            "?resource_type=restroom"},
+        "r": cards})
+    print(f"==> restrooms.json: {len(cards)} restrooms, {n / 1e3:.0f} KB, retrieved {retrieved}")
+    return 0
+
+
 def read_lot_cache() -> tuple[dict, dict]:
     """(areas by slug, lots by id) from shared/map/, unpacked.
 
@@ -9026,6 +9111,13 @@ def main() -> int:
     p.add_argument("--retrieved", default=None,
                    help="retrieval date to record (default: today)")
     p.set_defaults(fn=cmd_lots)
+
+    p = sub.add_parser("restrooms",
+                       help="refresh shared/map/restrooms.json — the homepage map's "
+                            "public restrooms, from DataSF")
+    p.add_argument("--retrieved", default=None,
+                   help="retrieval date to record (default: today)")
+    p.set_defaults(fn=cmd_restrooms)
 
     p = sub.add_parser("city-map",
                        help="write the map of every neighborhood's boundary into "
