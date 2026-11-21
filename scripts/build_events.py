@@ -63,7 +63,10 @@ def clock(iso: str) -> str:
 
 
 def time_range(ev: dict) -> str:
-    """'10 am–1:30 pm', collapsing a shared am/pm: '10–11:30 am'."""
+    """'10 am–1:30 pm', collapsing a shared am/pm: '10–11:30 am'. A calendar
+    that gives a date and no time (Rec & Park's permit sheet) is 'All day'."""
+    if ev.get("all_day"):
+        return "All day"
     a = clock(ev["start"])
     if not ev.get("end"):
         return a
