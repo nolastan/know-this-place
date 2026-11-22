@@ -151,8 +151,11 @@ def write_page_lots(features: list, place_parcels: dict) -> None:
     and a park drawn as one lot of several reads as a park with no page. A
     place drawn by its parcels follows every other record in each file, so
     that on a lot it covers it is drawn on top and takes the click — over the
-    parcel's own address page, and over a smaller place that only stands in
-    it (Louis Sutter Playground, in McLaren Park). Both files are derived and gitignored."""
+    parcel's own address page. A place with no parcel of its own stands on
+    the lot its point falls in only when no other page stands there by its
+    own record: Golden Gate Park's gardens and lakes are all inside its one
+    parcel, and the last of them drawn would otherwise answer for the whole
+    park (Strybing Arboretum did). Both files are derived and gitignored."""
     areas, lots = read_lot_cache()
     if not areas:
         print("  no lot cache in shared/map/ — run `seed_pages.py lots`; page lots skipped")
@@ -192,6 +195,11 @@ def write_page_lots(features: list, place_parcels: dict) -> None:
         return [m for m in place_parcels.get(f[0], ()) if m in lots]
     # Stable: address pages keep their order, then the places drawn by parcel.
     ordered = sorted(features, key=lambda f: bool(covered(f)))
+    # Lots a page stands on by its own record: an address page's APN, a
+    # place's parcels. A place with no parcel of its own never lands on one of
+    # these by its point — it stands inside a larger parcel that has its page.
+    claimed = {apns[p] for p, _ in features if apns.get(p) in lots}
+    claimed.update(m for f in features for m in covered(f))
     for path, f in ordered:
         on = covered((path, f))
         if not on:
@@ -199,6 +207,8 @@ def write_page_lots(features: list, place_parcels: dict) -> None:
             if m not in lots:
                 lng, lat = f["geometry"]["coordinates"]
                 m = lot_at(lng, lat)
+                if path in place_parcels and m in claimed:
+                    m = None
             on = [m] if m else []
         if not on:
             unplaced += 1
