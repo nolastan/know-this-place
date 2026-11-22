@@ -610,7 +610,9 @@ Its inputs:
 - `hub.json` beside the hub's `index.md`: `photo` (the file under `assets/`,
   its size, title, author, license and license URL, source page, retrieval
   date, and what was changed — the credit line is built from these, so a
-  photo is never added without them) and `boundary` (the official polygon,
+  photo is never added without them; then run `scripts/hub_thumbs.py` for
+  the city page's thumbnail, `assets/thumb.jpg`, and commit it too) and
+  `boundary` (the official polygon,
   simplified, with its dataset and retrieval date). `seed_pages.py
   boundaries` refetches the boundaries; which polygon each directory uses is
   `BOUNDARY_SOURCE` — Analysis Neighborhoods where the directory is one, else
@@ -627,8 +629,9 @@ Its inputs:
 
 The same command writes the city page's neighborhoods map — every hub's
 boundary, each a link to its hub — between the `<!-- city map … -->` comments
-above the list of neighborhoods. The rest of that page is
-hand-authored; never edit inside those comments.
+above the list of neighborhoods, puts each hub's thumbnail in front of its
+line in that list, and folds the photos' credits under it. The rest of that
+page is hand-authored; never edit inside those comments or the tiles.
 
 A street hub that has grown its own sections beyond the lead+list template (a
 "Sources" section, a "The street itself" write-up) is left untouched entirely

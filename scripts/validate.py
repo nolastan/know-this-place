@@ -1072,6 +1072,30 @@ def check_pages(html_pages: list, content: Path) -> None:
             district_pages[name] |= paths
 
 
+def check_hub_thumbs(content: Path) -> None:
+    """Every hub photo has the thumbnail the city page lists it with, cut to
+    size, and the city page shows the hubs' current photos. Both are built by
+    commands this checks the output of, so each error names its fix."""
+    tw, th = seed_pages.HUB_THUMB_SIZE
+    for hub_json in sorted(content.glob("*/hub.json")):
+        photo = json.loads(hub_json.read_text(encoding="utf-8")).get("photo")
+        if not photo or not (hub_json.parent / photo["file"]).exists():
+            continue
+        thumb = hub_json.parent / seed_pages.HUB_THUMB
+        if not thumb.exists():
+            err(thumb, "hub photo has no thumbnail — run scripts/hub_thumbs.py "
+                       "and scripts/seed_pages.py city-map")
+        elif jpeg_size(thumb) != (tw, th):
+            err(thumb, f"thumbnail is {jpeg_size(thumb)}, not {tw}x{th} — "
+                       f"run scripts/hub_thumbs.py --all")
+    city = content / "index.html"
+    if city.exists():
+        text = city.read_text(encoding="utf-8")
+        if seed_pages.city_list_thumbs(content, text) != text:
+            err(city, "the neighborhood thumbnails or photo credits are stale — "
+                      "run scripts/seed_pages.py city-map --city san-francisco")
+
+
 def main() -> int:
     content = ROOT / "san-francisco"
     check_build_is_complete(content)
@@ -1085,6 +1109,7 @@ def main() -> int:
 
     check_district_hubs()
     check_redirects(content)
+    check_hub_thumbs(content)
 
     # The icon links every page carries have to resolve to something.
     for icon in ("favicon.ico", "apple-touch-icon.png", "shared/icon.svg",

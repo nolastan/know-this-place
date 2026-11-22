@@ -920,6 +920,24 @@ nothing except one `<a>` per neighborhood wrapping its outline
 boundary inside a larger one stays clickable. A hub with no boundary is named
 in the caption instead.
 
+### City neighborhood list — `.place-list-thumbs`, `.place-thumb`
+The same command leads each neighborhood in the city page's hand-authored
+`.place-list` with a 3:2 tile of its hub photo, cut to 240×160 as
+`<hub>/assets/thumb.jpg` by `scripts/hub_thumbs.py` (Pillow, not part of the
+build; the thumbnails are committed). The tile repeats the name's link, so it
+is `aria-hidden` and out of the tab order; a hub with no photo gets
+`.place-thumb-empty` with a pin, so the names stay in one column. The photos'
+credits go in a folded `<details class="photo-credits">` after the list,
+between `<!-- neighborhood photo credits … -->` comments. Rerunning it is
+idempotent, and `validate.py` fails a hub photo with no thumbnail or a city
+page the command would change.
+```html
+<ul class="place-list place-list-thumbs">
+  <li><a class="place-thumb" href="castro/" tabindex="-1" aria-hidden="true"><img src="castro/assets/thumb.jpg" width="240" height="160" alt="" loading="lazy" decoding="async"></a><a href="castro/">Castro / Eureka Valley</a><br>
+    <span class="hook">…</span></li>
+</ul>
+```
+
 ### Icons — `.ic .ic-NAME`
 `<span class="ic ic-calendar"></span>`; sized in `em`, colored by surrounding
 text. Available: `ic-calendar` `ic-home` `ic-layers` `ic-plan` `ic-lot`
