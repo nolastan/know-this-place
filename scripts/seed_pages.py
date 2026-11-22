@@ -1694,6 +1694,14 @@ def page_photo(rec: dict) -> dict | None:
     return photo
 
 
+def tidy_credit(text: str) -> str:
+    """A credit's author or title as a reader should see it: Commons often
+    hands back "Fred Hsu ( Wikipedia:User:Fredhsu )", padded inside the
+    brackets and with doubled spaces. The data keeps what the source said."""
+    text = " ".join(str(text).split())
+    return re.sub(r"\s+([)\]])", r"\1", re.sub(r"([(\[])\s+", r"\1", text))
+
+
 def photo_credit_html(photo: dict) -> str:
     """The attribution a Commons license asks for — title, author, license,
     and where the file came from — in the form Commons itself suggests:
@@ -1703,10 +1711,10 @@ def photo_credit_html(photo: dict) -> str:
     def a(href, text):
         return f'<a href="{esca(href)}">{esc(text)}</a>' if href else esc(text)
 
-    bits = f"“{esc(photo['title'])}”" if photo.get("title") else "Photo"
+    bits = f"“{esc(tidy_credit(photo['title']))}”" if photo.get("title") else "Photo"
     author = photo.get("author")
     if author:
-        bits += " by " + a(photo.get("author_url"), author)
+        bits += " by " + a(photo.get("author_url"), tidy_credit(author))
     # Cut to the frame the photo is published in — 4:3 landscape, or 3:4
     # portrait from the Know This Photo app. CC BY 4.0 asks that a change be
     # said; the older versions are owed it too.
@@ -6643,10 +6651,10 @@ def hub_photo_credit_html(photo: dict) -> str:
     """The credit a photo's license asks for: title, author, license, source,
     and that this copy was cropped. Pexels and Unsplash ask for none, and get
     the same line anyway."""
-    title = re.sub(r"\.(jpe?g|png|tiff?)$", "", photo["title"], flags=re.I)
+    title = tidy_credit(re.sub(r"\.(jpe?g|png|tiff?)$", "", photo["title"], flags=re.I))
     parts = [f'<a href="{esca(photo["source_url"])}">{esc(title)}</a>']
     if photo.get("author"):
-        parts.append(f"by {esc(photo['author'])}")
+        parts.append(f"by {esc(tidy_credit(photo['author']))}")
     lic = (f'<a href="{esca(photo["license_url"])}">{esc(photo["license"])}</a>'
            if photo.get("license_url") else esc(photo["license"]))
     via = f", via {esc(photo['source'])}" if photo.get("source") else ""
