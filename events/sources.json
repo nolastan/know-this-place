@@ -66,6 +66,15 @@
       "kind": "pdf-table",
       "access": "open",
       "note": "The Permits & Reservations office's tentative calendars of special events: the page links the year's special-event master spreadsheet as PDFs, one per area and one with every area ('<year> RPD Special Event Master ALL'). The files are replaced (new DocumentCenter ids) as the year fills in, so fetch.py reads the page for the current link on every run, and a new year's file is picked up the day it is linked — that is how this page is re-checked for updates. One row per permit, site and day; only rows whose status is P or I are approved, and rows carry dates but no times, so every event is all-day and gives way to a timed listing of the same event on the venue's own calendar. robots.txt disallows neither the page nor /DocumentCenter."
+    },
+    {
+      "id": "ybgfestival",
+      "name": "Yerba Buena Gardens Festival",
+      "url": "https://ybgfestival.org/events/",
+      "kind": "tribe",
+      "access": "open",
+      "crawl_delay": 3,
+      "note": "Free outdoor performing arts, mostly in Yerba Buena Gardens, roughly May to October; out of season the list is empty and shows only 'latest past' programs, which resolve() drops. WordPress with The Events Calendar. robots.txt disallows every URL with a query string (`Disallow: /*?`), which rules out the iCal export (?ical=1) and the REST API's paging (?page=N), and asks Crawl-delay: 3. So fetch.py reads the HTML list view and follows its path-based next link (/events/list/page/N/), 3 seconds apart. Each event names its venue as 'Great Lawn, Yerba Buena Gardens' plus a street line; venues.json does the matching. Checked 2026-11-21."
     }
   ]
 }

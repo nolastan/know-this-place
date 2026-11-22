@@ -81,7 +81,7 @@ calendar whose parser has stopped matching.
 
 - **`sources.json`** is the calendar register — one entry per publisher, like
   `news/feeds.json`. `id` becomes every event's `source`; `kind` picks the
-  parser (`ical`, `ical-multi`, `squarespace`, `html`, `pdf-table`); `access` is `open`
+  parser (`ical`, `ical-multi`, `squarespace`, `html`, `tribe`, `pdf-table`); `access` is `open`
   only where robots.txt permits the fetch — a source that forbids automated
   access is `needs-human`, and changing that flag is a human's call, never an
   agent's.

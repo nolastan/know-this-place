@@ -11,13 +11,15 @@ reads it through the venue's `path`.
     python3 events/tools/fetch.py --source sfrecpark
     python3 events/tools/fetch.py venues     # print the venues seen and unmapped
 
-Three shapes of calendar, one parser each — see events/AGENTS.md:
+Six shapes of calendar, one parser each — see events/AGENTS.md:
 
     ical          one iCalendar feed per source (illuminate.org)
     ical-multi    the same feed once per CivicPlus calendar id (sfrecpark.org)
     squarespace   <collection>?format=json `upcoming` array (natureinthecity,
                   sunsetdunes)
     html          a hand-maintained page with no feed (alemanyfarm.org)
+    tribe         The Events Calendar's list view, paged by path
+                  (ybgfestival.org)
     pdf-table     a page linking a spreadsheet exported to PDF (sfrecpark.org's
                   tentative calendars of special events — one row per permit
                   and day, dates but no times, so every event is all-day)
@@ -381,6 +383,84 @@ def fetch_alemany(source: dict) -> list:
 
 
 # --------------------------------------------------------------------------
+# The Events Calendar (WordPress "tribe") — the public list view, paged by path
+# --------------------------------------------------------------------------
+# ybgfestival.org runs The Events Calendar. Its iCal export (?ical=1) and its
+# REST API's paging (?page=2) both need a query string, and the site's
+# robots.txt disallows every URL with one (`Disallow: /*?`). The list view
+# pages by path instead — /events/, then /events/list/page/2/ — so that is
+# what is read. Each event is an <article class="tribe-events-calendar-list__event …
+# post-<id> …"> with a <time datetime="YYYY-MM-DD"> holding the human date and
+# hours, a title link to the event's own page, and an <address> naming the
+# venue and street. The "latest past" block the page shows out of season has
+# the same shape under another prefix; resolve() drops what has passed.
+
+TRIBE_ARTICLE = re.compile(
+    r'<article\b[^>]*class="[^"]*tribe-events-calendar-(?:list|latest-past)__event\b'
+    r'([^"]*)"[^>]*>(.*?)</article>', re.S)
+TRIBE_TIME = re.compile(r'<time\b[^>]*datetime="(\d{4}-\d{2}-\d{2})"[^>]*>(.*?)</time>', re.S)
+TRIBE_TITLE = re.compile(
+    r'<a\b[^>]*href="([^"]+)"[^>]*class="[^"]*__event-title-link[^"]*"[^>]*>(.*?)</a>', re.S)
+TRIBE_VENUE = re.compile(r'class="[^"]*__event-venue-title[^"]*"[^>]*>(.*?)</span>', re.S)
+TRIBE_ADDRESS = re.compile(r'class="[^"]*__event-venue-address[^"]*"[^>]*>(.*?)</span>', re.S)
+TRIBE_NEXT = re.compile(r'<a\b[^>]*\brel="next"[^>]*>|<a\b[^>]*class="[^"]*tribe-events-c-nav__next[^"]*"[^>]*>', re.S)
+TRIBE_CLOCK = re.compile(r"(\d{1,2})(?::(\d{2}))?\s*([ap])\.?m\.?", re.I)
+TRIBE_MONTHDAY = re.compile(
+    r"\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.?\s+(\d{1,2})\b", re.I)
+MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+TRIBE_MAX_PAGES = 12
+
+
+def _text(fragment: str) -> str:
+    return re.sub(r"\s+", " ", strip_tags(fragment)).strip()
+
+
+def parse_tribe_list(page: str, source_id: str) -> list:
+    out = []
+    for classes, body in TRIBE_ARTICLE.findall(page):
+        t, a = TRIBE_TIME.search(body), TRIBE_TITLE.search(body)
+        if not t or not a:
+            continue
+        day = date.fromisoformat(t[1])
+        when = _text(t[2])
+        clocks = [(int(h) % 12 + (12 if ap.lower() == "p" else 0), int(m or 0))
+                  for h, m, ap in TRIBE_CLOCK.findall(when)]
+        # A second month-day in the range is the end date of a multi-day event.
+        days = TRIBE_MONTHDAY.findall(when)
+        end_day = day
+        if len(days) > 1:
+            mon, dd = MONTHS.index(days[-1][0][:3].lower()) + 1, int(days[-1][1])
+            end_day = date(day.year + (1 if mon < day.month else 0), mon, dd)
+        sh, sm = clocks[0] if clocks else (0, 0)
+        start = datetime(day.year, day.month, day.day, sh, sm, tzinfo=PACIFIC)
+        end = None
+        if len(clocks) > 1:
+            eh, em = clocks[-1]
+            end = datetime(end_day.year, end_day.month, end_day.day, eh, em, tzinfo=PACIFIC)
+        elif end_day != day:
+            end = datetime(end_day.year, end_day.month, end_day.day, 23, 59, tzinfo=PACIFIC)
+        title = _text(a[2])
+        if not title:
+            continue
+        venue = TRIBE_VENUE.search(body)
+        address = TRIBE_ADDRESS.search(body)
+        location = ", ".join(x for x in (_text(venue[1]) if venue else "",
+                                         _text(address[1]) if address else "") if x)
+        post = re.search(r"\bpost-(\d+)\b", classes)
+        out.append({
+            "id": (f"{source_id}:{post[1]}" if post
+                   else f"{source_id}:{norm(title)}:{start.isoformat()}"),
+            "source": source_id,
+            "title": title,
+            "url": html_lib.unescape(a[1]),
+            "start": start.isoformat(timespec="seconds"),
+            "end": end.isoformat(timespec="seconds") if end else None,
+            "location": clean_location(location),
+        })
+    return out
+
+
+# --------------------------------------------------------------------------
 # PDF table — Rec & Park's tentative calendars of special events
 # --------------------------------------------------------------------------
 #
@@ -570,6 +650,32 @@ def rpd_events(rows, year: int, source: dict) -> list:
     return out
 
 
+def fetch_tribe(source: dict) -> list:
+    url, out, seen = source["url"], [], set()
+    host = urllib.parse.urlsplit(source["url"]).netloc
+    horizon = datetime.now(PACIFIC).date() + timedelta(days=HORIZON_DAYS)
+    for _ in range(TRIBE_MAX_PAGES):
+        seen.add(url)
+        page = fetch(url).decode("utf-8", "replace")
+        got = parse_tribe_list(page, source["id"])
+        out += got
+        if got and max(date.fromisoformat(e["start"][:10]) for e in got) > horizon:
+            break
+        nxt = None
+        for tag in TRIBE_NEXT.findall(page):
+            href = re.search(r'href="([^"]+)"', tag)
+            if href:
+                nxt = html_lib.unescape(href[1])
+                break
+        # Never follow a query-string URL (robots.txt) or leave the site.
+        if (not nxt or "?" in nxt or nxt in seen
+                or urllib.parse.urlsplit(nxt).netloc != host):
+            break
+        url = nxt
+        time.sleep(max(DELAY_S, source.get("crawl_delay", 0)))
+    return out
+
+
 def fetch_rpd_master(source: dict) -> list:
     page = fetch(source["url"]).decode("utf-8", "replace")
     base = "https://" + source["url"].split("/")[2]
@@ -597,7 +703,7 @@ def fetch_rpd_master(source: dict) -> list:
 
 KIND = {"ical": fetch_illuminate, "ical-multi": fetch_sfrecpark,
         "squarespace": fetch_squarespace, "html": fetch_alemany,
-        "pdf-table": fetch_rpd_master}
+        "tribe": fetch_tribe, "pdf-table": fetch_rpd_master}
 
 
 # --------------------------------------------------------------------------
