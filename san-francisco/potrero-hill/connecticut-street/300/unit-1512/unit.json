@@ -1,0 +1,61 @@
+{
+  "address": "1512 19th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/connecticut-street/300/unit-1512/",
+  "apn": "4035037",
+  "block": "4035",
+  "lot": "037",
+  "parcel": {
+    "building_area_sqft": 871,
+    "rooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 329897,
+    "assessed_improvement_value": 329897,
+    "last_sale_date": "2011-06-03"
+  },
+  "permits": [
+    {
+      "number": "201306179765",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-06-17",
+      "status_date": "2014-06-06",
+      "estimated_cost": 15000,
+      "revised_cost": 18000,
+      "description": "kitchen remodeling: new cabinet installation, new sink installation, new light fixtures installation. lighting shall comply with t-24. no framing.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9502271",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-02-16",
+      "status_date": "1995-06-15",
+      "estimated_cost": 2500,
+      "description": "comply with 3r report #2230.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1995–2013",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4035037&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4035&street_number=1512",
+      "retrieved": "2026-11-22"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "address": "223–225 Mississippi Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/mississippi-street/223/",
+  "apn": "4000022",
+  "block": "4000",
+  "lot": "022",
+  "eas_baseid": "367048",
+  "coordinates": {
+    "lat": 37.763456,
+    "lng": -122.394356
+  },
+  "address_range": "223–225",
+  "street_numbers_on_parcel": [
+    "223",
+    "225"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1900,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0225 MISSISSIPPI         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 669655,
+    "assessed_improvement_value": 446433,
+    "assessed_fixtures_value": 104,
+    "last_sale_date": "2003-07-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9820596",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-10-09",
+      "status_date": "1999-10-04",
+      "estimated_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9220519",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-11-24",
+      "status_date": "1993-09-22",
+      "estimated_cost": 8000,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=MISSISSIPPI&street_type=ST&address_number=223",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4000022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4000&lot=022",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4000022",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-potreroviewmay1984unse-n4",
+      "name": "The Potrero View, May 1977, p. 5",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/potreroviewmay1984unse/page/n4/mode/1up",
+      "retrieved": "2026-11-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1977-04",
+      "kind": "opening",
+      "description": "The Oberlin Dance Collective opened The Performance Gallery here, offering daily dance classes and workshops.",
+      "source": "sf-neighborhood-newspapers-potreroviewmay1984unse-n4"
+    }
+  ]
+}

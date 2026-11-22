@@ -1,0 +1,119 @@
+{
+  "address": "269 Connecticut Street, San Francisco, CA 94107",
+  "path": "/san-francisco/potrero-hill/connecticut-street/269/",
+  "apn": "4003020",
+  "block": "4003",
+  "lot": "020",
+  "eas_baseid": "367123",
+  "coordinates": {
+    "lat": 37.762934,
+    "lng": -122.397222
+  },
+  "parcel": {
+    "year_built": 1907,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 1,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 1512,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Potrero Hill",
+    "analysis_neighborhood": "Potrero Hill",
+    "property_location_raw": "0000 0269 CONNECTICUT         ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 25840,
+    "assessed_improvement_value": 15676
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9317373",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-05",
+      "status_date": "1994-03-14",
+      "estimated_cost": 2000,
+      "description": "repair exist roof/deck. repl subflr & deck surface. drainage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317213",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1993-10-04",
+      "status_date": "1994-03-14",
+      "estimated_cost": 600,
+      "description": "repair of rotted treads * rises to rear deck stairs,cba brac",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9217652",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1992-10-15",
+      "status_date": "1994-03-03",
+      "estimated_cost": 5050,
+      "description": "repmove/replace porch-deck & stair at rear",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CONNECTICUT&street_type=ST&address_number=269",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4003020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4003&lot=020",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4003020",
+      "retrieved": "2026-11-22"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-potreroviewsepte78unse-n7",
+      "name": "The Potrero View, September 1976, p. 8",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/potreroviewsepte78unse/page/n7/mode/1up",
+      "retrieved": "2026-11-22"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1902",
+      "kind": "construction",
+      "description": "The Dutch Colonial house here was built.",
+      "source": "sf-neighborhood-newspapers-potreroviewsepte78unse-n7"
+    }
+  ],
+  "unknowns": [
+    "Dated both 1902 and 1907."
+  ]
+}

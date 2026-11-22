@@ -617,6 +617,15 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   Park and OMI papers were a library, school or church named with no event,
   all of them cut at merge. Keep occupancy only where the window says the
   institution *moved in, opened or was founded* there.
+- **Readers fill a number the window doesn't print, and bring real-estate
+  listings back as facts.** On the Potrero View (2,678 windows, eight
+  readers) a fifth of 289 candidates were one of two things: a number taken
+  from another issue or from the reader's own knowledge ("St. Gregory's at
+  Mariposa and De Haro" became 500 De Haro), or a realtor's "built in 1987"
+  for a private house. Both were cut at merge. *Put "the number must be in
+  this window" and "a listing ad is an advertisement" in the brief, and cut
+  any candidate whose note says the number came from elsewhere unless the
+  institution's page can be found by name.*
 - **A community paper reprints its own history.** Anniversary issues and
   year-in-review timelines restate events years later, so one event arrives
   from three or four issues, sometimes with a different number; merge to the

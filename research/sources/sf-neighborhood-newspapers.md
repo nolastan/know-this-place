@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** three titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012) and OMI News (85 issues, 1969–1980) — 178 findings, 150 resolved, 144 published on 107 pages (56 seeded).
+> - **Coverage:** four titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980) and The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009) — 304 findings, 260 resolved, 241 published on 189 pages (82 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -88,6 +88,24 @@
     one 2003 issue is catalogued "Glen Park Association". Select on the
     `Glen Park` title prefix and leave out the `glenparkpapers` collection
     record; the OMI equivalent is `ominews`.
+  - **The Potrero View prints De Haro as one word** ("953 DeHaro", 700+
+    times) and its own streets untyped: pass `--alias DEHARO="DE HARO"` and
+    `--untyped` for De Haro, Rhode Island, Kansas, Wisconsin, Connecticut,
+    Arkansas, Missouri, Mississippi, Vermont, Carolina, Texas, San Bruno,
+    Pennsylvania, Mariposa, Tennessee, Minnesota, Indiana and Illinois. Its
+    masthead was the Neighborhood House at 953 De Haro for years, so that
+    address is in most issues and the advertiser rule drops it.
+  - **The Potrero View holds nothing for 1978–1985**, and its November 2009
+    item (`potreroview2009unse_9`) has no hOCR search text (404).
+  - **From the late 1980s a community paper's numbered addresses are mostly
+    real-estate listings** — "built in 1987", "remodeled in 2006", a
+    custom home's year. A listing ad is an advertisement about a private
+    house, not news: set it aside even when it states a build year.
+  - **A walking-tour issue is the richest single item in a title.** The
+    Potrero View's September 1976 tour (`potreroviewsepte78unse`) dated about
+    forty houses and named their builders; about a third of them disagree
+    with the assessor by four years or more, and those go on the page as a
+    conflict, not adjudicated.
   - **Most of what a community paper prints at a number is an institution's
     address, not news about it.** Of 293 reader candidates over the two
     titles, about half were a library, school or church named as a venue
@@ -116,9 +134,13 @@
   (`findings/sf-neighborhood-newspapers/glen-park-1977-2012.json`). *OMI
   News*, every issue — 85 items, May 1969 to 1980, 825 OCR pages
   (`findings/sf-neighborhood-newspapers/omi-news-1969-1980.json`).
-  **Not read:** the other fifteen titles. The next batches, in the order
-  this site needs them: **The Potrero View** (221) and **Noe Valley Voice**
-  (336), the two longest runs; then New Mission News, North Mission News,
+  *The Potrero View*, every issue but one — 341 of 342 items, August 1970
+  to December 1977 and January 1986 to December 2009, 6,292 OCR pages
+  (`findings/sf-neighborhood-newspapers/potrero-view-1970-2009.json`).
+  **Not read:** the other fourteen titles, and the Potrero View's November
+  2009 issue (no OCR on the Internet Archive). The next batches, in the
+  order this site needs them: **Noe Valley Voice** (337 items, 1977–2011,
+  the longest run left); then New Mission News, North Mission News,
   the Bernal Journals, Park Bell (Excelsior/Portola), The New Fillmore, the
   Semaphore titles, Richmond ReView and Tenderloin Times. One title is one
   batch; take two in a session if the first is short.
@@ -177,3 +199,30 @@
   conflicts rather than adjudicated; (5) a retrospective's 1876 number
   (600 Divisadero, the Pacific Hebrew Orphan Asylum) was left unresolved:
   a modern article copying a pre-1909 number gives no way to check it.)
+  2026-11-22 (third run, The Potrero View. Read 341 issues, 6,292 OCR
+  pages, 22,673 numbered-address mentions; 2,678 windows by hand by eight
+  readers (925 the filter kept, 1,753 dropped windows with an event word);
+  289 candidates, 126 findings, 110 resolved, 97 published on 82 pages, 26
+  of them seeded, 13 declined (10 already on the page). The best of it:
+  the Olivet Presbyterian Church at 400 Missouri — built 1905, firebombed in
+  1971, remodeled by Seth Curlin in 1973 — and the Neighborhood House's 1977
+  landmark ceremony at 953 De Haro; the September 1976 walking tour's dated
+  houses (301 Pennsylvania, 1866; 1176 Rhode Island, Fernando Nelson; 854
+  Rhode Island, built by Peter Roudemetkin; 950 De Haro, the first house a
+  Molokan built on the Hill); the Potrero Hill Health Center's 1975
+  groundbreaking and 1976 opening at 1050 Wisconsin; Esprit at 900
+  Minnesota (1973), the Food Bank at 900 Pennsylvania (1997), the Bay
+  Guardian at 135 Mississippi (2002), Live Oak School in the Hills Bros.
+  plant (2003) and the Gladstone and Diller buildings in Mission Bay.
+  **Learned:** (1) after about 1987 the bulk of the paper's numbers are
+  real-estate listings, and readers bring their build years back as
+  facts — put "a listing ad is not news" in the brief; (2) readers fill a
+  missing number from another window or from their own knowledge
+  (St. Gregory Nyssen at "500 De Haro", Daniel Webster School at "465
+  Missouri") — every such candidate was cut unless the institution's page
+  could be found by name; (3) sixteen findings point at numbers EAS does
+  not hold, among them the sculptor Ruth Cravath's house at 843 Wisconsin
+  (moved in 1958, named in the February 1987 issue): no page can carry her
+  until the number resolves; (4) two Molokan prayer houses "by 1907" (949
+  Rhode Island, 2002 22nd) are held unresolved — a 1971 article's numbers
+  for 1907 cannot be checked against the renumbering.)
