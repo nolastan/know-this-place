@@ -29,7 +29,7 @@ purpose-built dashboard for one building — stat tiles, a visual timeline, smal
 charts, icons, horizontal layout — with prose reserved for genuine narrative.
 `shared/site.css` is a small library of reusable blocks, the way a component
 kit like Tremor works, except implemented as plain CSS classes so the site
-stays static, dependency-free and JS-free. Every page is bespoke by *composing
+stays static and readable with no JS. Every page is bespoke by *composing
 those blocks differently* to fit the data it actually has — never by writing
 new CSS.
 

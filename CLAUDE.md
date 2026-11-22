@@ -1,10 +1,10 @@
 # Know This Place
 
 A public, static encyclopedia of the built environment: one page per building,
-in San Francisco so far. No framework, no dependencies — files, one stylesheet,
-one enhancement script, nine stdlib-only Python scripts. The site is built
-from those files by `scripts/build_site.py` and published by Actions; the
-repository holds the sources, not the pages.
+in San Francisco so far. Files, one stylesheet, one enhancement script, and
+a stdlib Python build. The site is built from those files by
+`scripts/build_site.py` and published by Actions; the repository holds the
+sources, not the pages.
 
 ## Read the file for the job, not the whole tree
 
@@ -52,10 +52,10 @@ breach is expensive to undo:
    already covers them and they are plainly no longer there. A business trading
    from the building is not a person: it may be named as the current occupant,
    but never its owners, staff or customers.
-4. **No new tooling.** No frameworks, no package manifests, no dependencies.
-   The build is `scripts/build_site.py` calling eight stdlib-only siblings,
-   and every page must still render completely from its HTML alone — nothing
-   the build produces needs JavaScript to be readable.
+4. **Every page renders completely from its HTML alone** — nothing the build
+   produces needs JavaScript to be readable. Infrastructure itself is open:
+   a dependency, cache or CI change is welcome when one PR can show its gain
+   (AGENTS.md rule 6). The build stays one command, `scripts/build_site.py`.
 
 ## Before you commit
 
