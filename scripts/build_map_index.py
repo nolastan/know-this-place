@@ -62,6 +62,7 @@ def main() -> None:
     researched = researched_paths()
     place_paths = set()
     place_parcels = {}
+    place_part_of = {}
 
     pages = sorted(content.rglob("data.json")) if content.exists() else []
     places = sorted(content.rglob("place.json")) if content.exists() else []
@@ -110,6 +111,9 @@ def main() -> None:
         if is_place:
             place_paths.add(path)
             place_parcels[path] = [m.replace("-", "") for m in data.get("parcels") or []]
+            part_of = data.get("part_of") or {}
+            if part_of.get("path") and part_of.get("name"):
+                place_part_of[path] = (part_of["path"], part_of["name"])
         features.append((path, {
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [round(lng, 5), round(lat, 5)]},
@@ -117,7 +121,7 @@ def main() -> None:
         }))
 
     features.sort(key=lambda f: f[0])
-    write_page_lots(features, place_parcels)
+    write_page_lots(features, place_parcels, place_part_of)
 
     # One feature per line: a 1.4 MB single-line JSON blob is unreviewable in a
     # diff, and pages are added a handful at a time.
@@ -136,7 +140,7 @@ def main() -> None:
         print(f"  skipped — {note}")
 
 
-def write_page_lots(features: list, place_parcels: dict) -> None:
+def write_page_lots(features: list, place_parcels: dict, place_part_of: dict) -> None:
     """The homepage map's second index: which lot each page stands on, one file
     per neighborhood, so a reader who picks a neighborhood fetches only its own.
 
@@ -151,8 +155,14 @@ def write_page_lots(features: list, place_parcels: dict) -> None:
     and a park drawn as one lot of several reads as a park with no page. A
     place drawn by its parcels follows every other record in each file, so
     that on a lot it covers it is drawn on top and takes the click — over the
-    parcel's own address page, and over a smaller place that only stands in
-    it (Louis Sutter Playground, in McLaren Park). Both files are derived and gitignored."""
+    parcel's own address page. A place with no parcel of its own stands on
+    the lot its point falls in only when no other page stands there by its
+    own record: Golden Gate Park's gardens and lakes are all inside its one
+    parcel, and the last of them drawn would otherwise answer for the whole
+    park (Strybing Arboretum did). Such a place names the park it is part of,
+    and that park's own page — Golden Gate Park's is its neighborhood hub —
+    goes on the lot instead, on top, so a tap anywhere in the park opens the
+    park. Both files are derived and gitignored."""
     areas, lots = read_lot_cache()
     if not areas:
         print("  no lot cache in shared/map/ — run `seed_pages.py lots`; page lots skipped")
@@ -192,6 +202,12 @@ def write_page_lots(features: list, place_parcels: dict) -> None:
         return [m for m in place_parcels.get(f[0], ()) if m in lots]
     # Stable: address pages keep their order, then the places drawn by parcel.
     ordered = sorted(features, key=lambda f: bool(covered(f)))
+    # Lots a page stands on by its own record: an address page's APN, a
+    # place's parcels. A place with no parcel of its own never lands on one of
+    # these by its point — it stands inside a larger parcel that has its page.
+    claimed = {apns[p] for p, _ in features if apns.get(p) in lots}
+    claimed.update(m for f in features for m in covered(f))
+    parks = {}      # lot → (path, name) of the park its unplaced places are part of
     for path, f in ordered:
         on = covered((path, f))
         if not on:
@@ -199,6 +215,10 @@ def write_page_lots(features: list, place_parcels: dict) -> None:
             if m not in lots:
                 lng, lat = f["geometry"]["coordinates"]
                 m = lot_at(lng, lat)
+                if path in place_parcels and m in claimed:
+                    if path in place_part_of:
+                        parks.setdefault(m, place_part_of[path])
+                    m = None
             on = [m] if m else []
         if not on:
             unplaced += 1
@@ -210,6 +230,8 @@ def write_page_lots(features: list, place_parcels: dict) -> None:
             if p.get("r"):
                 rec["r"] = 1
             by_area[lots[m]["area"]].append(rec)
+    for m, (path, name) in sorted(parks.items()):
+        by_area[lots[m]["area"]].append({"l": m, "t": name, "s": "", "p": path})
     out = MAP_DIR / "pages"
     out.mkdir(parents=True, exist_ok=True)
     for slug, recs in by_area.items():
