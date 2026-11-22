@@ -155,6 +155,8 @@ def event_row(ev: dict, names: dict) -> str:
     else:
         where = ""
     src = names.get(ev.get("source"), ev.get("source") or "")
+    if src == venue:
+        src = ""   # a venue's own calendar: the venue already names it
     return (f'    <li class="event-row" id="{esca(anchor(ev))}">'
             f'<span class="event-when">{esc(time_range(ev))}</span>'
             f'{title}{where}'

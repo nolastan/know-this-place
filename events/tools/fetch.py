@@ -11,18 +11,30 @@ reads it through the venue's `path`.
     python3 events/tools/fetch.py --source sfrecpark
     python3 events/tools/fetch.py venues     # print the venues seen and unmapped
 
-Six shapes of calendar, one parser each — see events/AGENTS.md:
+Nine shapes of calendar, one parser each — see events/AGENTS.md:
 
-    ical          one iCalendar feed per source (illuminate.org)
+    ical          one iCalendar feed per source (illuminate.org,
+                  madroneartbar.com)
     ical-multi    the same feed once per CivicPlus calendar id (sfrecpark.org)
     squarespace   <collection>?format=json `upcoming` array (natureinthecity,
-                  sunsetdunes)
+                  sunsetdunes, localeditionsf, swigbar)
     html          a hand-maintained page with no feed (alemanyfarm.org)
     tribe         The Events Calendar's list view, paged by path
                   (ybgfestival.org)
     pdf-table     a page linking a spreadsheet exported to PDF (sfrecpark.org's
                   tentative calendars of special events — one row per permit
                   and day, dates but no times, so every event is all-day)
+    fullcalendar  a WordPress endpoint feeding a FullCalendar widget — an
+                  array of {title, url, start, end, allDay} (sfzoo.org)
+    rhp           Rockhouse Partners' events plugin list view, paged by path
+                  (boomboomroom.com)
+    eventbrite    an Eventbrite organizer page's embedded `upcomingEvents`
+                  (Garden for the Environment)
+
+A source for one venue says so with `location`: an event that names no place
+of its own takes that one, so the venue register can resolve it. A source's
+`drop` list holds title patterns that are not events — a venue calendar's
+"Closed for Thanksgiving" — and are never listed.
 
 Good citizenship: the user agent says who we are, requests are rate-limited,
 and robots.txt is honoured — a source that forbids automated access is
@@ -97,8 +109,15 @@ TITLE_DATE = re.compile(
     r"\s+\d{1,2}(?:st|nd|rd|th)?(?:,?\s+\d{4})?\s*$", re.I)
 
 
+# A leading weekday — Swig's "SATURDAY: Marc D" — repeats the listing's own
+# date, like the trailing ones above.
+TITLE_WEEKDAY = re.compile(
+    r"^\s*(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day\s*[:–—-]\s+", re.I)
+
+
 def clean_title(title: str) -> str:
-    return TITLE_DATE.sub("", title).strip() or title
+    title = re.sub(r"\s+", " ", title).strip()
+    return TITLE_WEEKDAY.sub("", TITLE_DATE.sub("", title)).strip() or title
 
 
 def drop_venue_prefix(title: str, venue: str) -> str:
@@ -701,9 +720,201 @@ def fetch_rpd_master(source: dict) -> list:
     return out
 
 
+# --------------------------------------------------------------------------
+# FullCalendar JSON — a WordPress endpoint feeding the site's calendar widget
+# --------------------------------------------------------------------------
+# sfzoo.org's calendar page is an empty shell that FullCalendar fills from
+# /wp-json/custom/v1/calendar-events: an array of {id, title, url, start,
+# end, allDay}. The times carry a "+00:00" offset but are the zoo's wall
+# clock ("Member Mornings" 08:30, Santa at ZooLights 18:00), so the offset is
+# dropped and the time read as Pacific. Every event is at the zoo; the source's
+# `location` names it.
+
+def fc_time(value) -> datetime | None:
+    if not value or str(value) == "None":
+        return None
+    m = re.match(r"(\d{4}-\d{2}-\d{2})(?:T(\d{2}):(\d{2}))?", str(value))
+    if not m:
+        return None
+    day = date.fromisoformat(m[1])
+    return datetime(day.year, day.month, day.day, int(m[2] or 0), int(m[3] or 0),
+                    tzinfo=PACIFIC)
+
+
+def fetch_fullcalendar(source: dict) -> list:
+    today = datetime.now(PACIFIC).date()
+    sep = "&" if "?" in source["url"] else "?"
+    url = (f"{source['url']}{sep}start={today.isoformat()}"
+           f"&end={(today + timedelta(days=HORIZON_DAYS)).isoformat()}")
+    out = []
+    for item in json.loads(fetch(url).decode("utf-8", "replace")):
+        title = html_lib.unescape(str(item.get("title") or "")).strip()
+        start = fc_time(item.get("start"))
+        if not title or not start:
+            continue
+        all_day = str(item.get("allDay")).lower() == "true"
+        end = None if all_day else fc_time(item.get("end"))
+        ev = {
+            # A repeating program is one post with several dates: the id
+            # needs the day as well.
+            "id": f"{source['id']}:{item.get('id') or norm(title)}:{start.date().isoformat()}",
+            "source": source["id"],
+            "title": title,
+            "url": item.get("url") if str(item.get("url", "")).startswith("http")
+                   else source.get("page") or source["url"],
+            "start": start.isoformat(timespec="seconds"),
+            "end": end.isoformat(timespec="seconds") if end and end > start else None,
+            # A spot inside the venue ("Great Hall") is named with the venue,
+            # so the register's entry for the venue matches it.
+            "location": ", ".join(x for x in (
+                clean_location(str(item.get("location") or "")),
+                source.get("location", "")) if x),
+        }
+        if all_day:
+            # A multi-day all-day run (an e-waste drive over a weekend) is
+            # listed on its first day; resolve() keeps it until that day ends.
+            ev["all_day"] = True
+        out.append(ev)
+    return out
+
+
+# --------------------------------------------------------------------------
+# Rockhouse Partners events (WordPress "rhp") — the list view, paged by path
+# --------------------------------------------------------------------------
+# boomboomroom.com lists its shows with RHP's plugin: no feed, no REST route
+# for the events themselves, so the /events/ list is read, then
+# /events/page/2/ and on. Each show is a `rhpSingleEvent` block with a title
+# link to its page, a "Sat, Nov 21" date with no year, and "Doors: 8 pm //
+# Show: 9:30 pm". The year comes from the month separators between blocks
+# ("November 2026"); the start is the show time, else the doors.
+
+RHP_MONTH = re.compile(r"rhp-events-list-separator-month[^>]*>\s*<span>\s*([A-Za-z]+)\s+(\d{4})")
+RHP_TITLE = re.compile(r'id\s*=\s*"eventTitle"[^>]*href="([^"]+)"[^>]*>(.*?)</a>', re.S)
+RHP_DATE = re.compile(r'singleEventDate[^>]*>\s*(?:[A-Za-z]+,?\s+)?([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2})')
+RHP_TIME = re.compile(r'rhp-event__time-text--list[^>]*>(.*?)</', re.S)
+RHP_MAX_PAGES = 6
+
+
+def parse_rhp_list(page: str, source_id: str) -> list:
+    out = []
+    # Walk separators and events in page order, so each event takes the year
+    # of the month heading above it.
+    marks = sorted([(m.start(), "month", m) for m in RHP_MONTH.finditer(page)]
+                   + [(m.start(), "event", None)
+                      for m in re.finditer(r"\brhpSingleEvent\b", page)])
+    year, ends = None, [pos for pos, _, _ in marks[1:]] + [len(page)]
+    for (pos, kind, m), end in zip(marks, ends):
+        if kind == "month":
+            year = int(m[2])
+            continue
+        block = page[pos:end]
+        t, d = RHP_TITLE.search(block), RHP_DATE.search(block)
+        if not t or not d or not year or d[1].lower()[:3] not in MONTHS:
+            continue
+        day = date(year, MONTHS.index(d[1].lower()[:3]) + 1, int(d[2]))
+        hours = _text((RHP_TIME.search(block) or [None, ""])[1])
+        show = re.search(r"show:?\s*([^/]+)", hours, re.I)
+        clock = TRIBE_CLOCK.search(show[1] if show else hours)
+        hh = mm = 0
+        if clock:
+            hh = int(clock[1]) % 12 + (12 if clock[3].lower() == "p" else 0)
+            mm = int(clock[2] or 0)
+        start = datetime(day.year, day.month, day.day, hh, mm, tzinfo=PACIFIC)
+        url = html_lib.unescape(t[1])
+        slug = urllib.parse.urlsplit(url).path.strip("/").split("/")
+        out.append({
+            "id": f"{source_id}:{slug[1] if len(slug) > 1 else norm(_text(t[2]))}:{day.isoformat()}",
+            "source": source_id,
+            "title": html_lib.unescape(_text(t[2])),
+            "url": url,
+            "start": start.isoformat(timespec="seconds"),
+            "end": None,
+            "location": "",
+        })
+    return out
+
+
+def fetch_rhp(source: dict) -> list:
+    out, url = [], source["url"]
+    horizon = datetime.now(PACIFIC).date() + timedelta(days=HORIZON_DAYS)
+    for n in range(1, RHP_MAX_PAGES + 1):
+        page = fetch(url).decode("utf-8", "replace")
+        got = parse_rhp_list(page, source["id"])
+        if n == 1 and not got and "rhpSingleEvent" in page:
+            raise RuntimeError("events on the page but none parsed — has the markup changed?")
+        out += got
+        nxt = f"{source['url'].rstrip('/')}/page/{n + 1}/"
+        if (not got or nxt not in page
+                or max(date.fromisoformat(e["start"][:10]) for e in got) > horizon):
+            break
+        url = nxt
+        time.sleep(max(DELAY_S, source.get("crawl_delay", 0)))
+    return out
+
+
+# --------------------------------------------------------------------------
+# Eventbrite — an organizer's public page
+# --------------------------------------------------------------------------
+# The organizer page embeds its upcoming events as JSON (`"upcomingEvents":
+# [...]`) with name, url, local start/end date and time, and the venue with
+# Eventbrite's own pin. That page is what robots.txt allows; the v3 API wants
+# a token. An event whose end is not after its start (the page writes 10:00
+# to 10:00 for a three-hour workshop) gets no end.
+
+def json_array_after(text: str, key: str):
+    i = text.find(f'"{key}":[')
+    if i < 0:
+        return None
+    try:
+        return json.JSONDecoder().raw_decode(text, text.index("[", i))[0]
+    except ValueError:
+        return None
+
+
+def fetch_eventbrite(source: dict) -> list:
+    page = fetch(source["url"]).decode("utf-8", "replace")
+    items = json_array_after(page, "upcomingEvents")
+    if items is None:
+        raise RuntimeError("no upcomingEvents on the organizer page — has it changed?")
+    out = []
+    for item in items:
+        if item.get("is_cancelled") or item.get("is_online_event"):
+            continue
+        title = (item.get("name") or "").strip()
+        if not title or not item.get("start_date"):
+            continue
+        tz = zoneinfo.ZoneInfo(item.get("timezone") or "America/Los_Angeles")
+
+        def at(d, t):
+            return datetime.fromisoformat(f"{d}T{t or '00:00:00'}").replace(tzinfo=tz).astimezone(PACIFIC)
+
+        start = at(item["start_date"], item.get("start_time"))
+        end = at(item["end_date"], item.get("end_time")) if item.get("end_date") else None
+        venue = item.get("primary_venue") or {}
+        addr = venue.get("address") or {}
+        ev = {
+            "id": f"{source['id']}:{item.get('id') or norm(title)}:{start.date().isoformat()}",
+            "source": source["id"],
+            "title": title,
+            "url": item.get("url") or source["url"],
+            "start": start.isoformat(timespec="seconds"),
+            "end": end.isoformat(timespec="seconds") if end and end > start else None,
+            "location": clean_location(venue.get("name") or addr.get("address_1") or ""),
+        }
+        try:
+            ev["coords"] = (float(addr["latitude"]), float(addr["longitude"]))
+            ev["src_coords"] = True
+        except (KeyError, TypeError, ValueError):
+            pass
+        out.append(ev)
+    return out
+
+
 KIND = {"ical": fetch_illuminate, "ical-multi": fetch_sfrecpark,
         "squarespace": fetch_squarespace, "html": fetch_alemany,
-        "tribe": fetch_tribe, "pdf-table": fetch_rpd_master}
+        "tribe": fetch_tribe, "pdf-table": fetch_rpd_master,
+        "fullcalendar": fetch_fullcalendar, "rhp": fetch_rhp,
+        "eventbrite": fetch_eventbrite}
 
 
 # --------------------------------------------------------------------------
@@ -866,6 +1077,11 @@ def main() -> int:
             continue
         try:
             got = KIND[source["kind"]](source)
+            drop = [re.compile(p, re.I) for p in source.get("drop") or []]
+            got = [e for e in got if not any(p.search(e["title"]) for p in drop)]
+            for e in got:
+                if not e.get("location") and source.get("location"):
+                    e["location"] = source["location"]
             raw += got
             fetched_ids.add(source["id"])
             print(f"  {source['id']}: {len(got)} events listed")
