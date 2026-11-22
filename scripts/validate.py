@@ -994,6 +994,84 @@ def check_news_card_photos() -> None:
                       f"page has a photo — replace its <ktp-streetview> with:\n{block}")
 
 
+def check_page(html_path: Path, content: Path) -> None:
+    """Every per-page check, for one `index.html`."""
+    text = html_path.read_text(encoding="utf-8")
+    is_address = bool(ADDRESS_DIR.match(html_path.parent.name))
+    # The address of a parcel that is wholly one park forwards to the
+    # park's page (`seed_pages.forward_html`): a stub, not a page, so it
+    # owes the page contract nothing — only render parity, below.
+    if is_address and forwarding(text):
+        check_address_dir(html_path.parent, text)
+        return
+    check_html(html_path, text, is_address)
+    check_internal_links(html_path, text)
+    if is_address:
+        check_address_dir(html_path.parent, text)
+    elif seed_pages.UNIT_DIR.match(html_path.parent.name):
+        check_unit_dir(html_path.parent, text)
+    elif seed_pages.is_place_dir(html_path.parent):
+        check_place_dir(html_path.parent, text)
+    elif html_path.parent != content:
+        # The city-level index (san-francisco/index.md) has no generator
+        # counterpart — write_neighborhood_hub/write_street_hub only cover
+        # neighborhood and street hubs — so there is no "regenerate
+        # index.html from index.md" fix to point someone at here. It's
+        # hand-authored prose in both files; keeping them in sync is a
+        # content edit, not a build-contract check.
+        check_hub_sync(html_path.parent)
+        check_hub_covers_children(html_path.parent)
+        check_hub_lists_places(html_path.parent)
+
+
+def _check_page_isolated(html_path: Path, content: Path) -> tuple:
+    """`check_page` in a worker process: start from empty findings, and hand
+    back what this page added, for `main` to merge in page order."""
+    for found in (errors, opted_out, backlogged, backlog_stale, district_pages):
+        found.clear()
+    check_page(html_path, content)
+    return (list(errors), list(opted_out), list(backlogged), list(backlog_stale),
+            {name: set(paths) for name, paths in district_pages.items()})
+
+
+def check_pages(html_pages: list, content: Path) -> None:
+    """Run `check_page` over every page, across one worker per CPU.
+
+    Most of the time is the render-parity check, which renders every page a
+    second time, so this is the build's render again and splits the same way.
+    The first page runs here, before the workers fork, so they inherit the
+    renderer's loaded indexes rather than each loading its own. Findings come
+    back in page order, so the report reads exactly as a serial run's does.
+    KTP_VALIDATE_JOBS=1 runs it all in this process."""
+    jobs = int(os.environ.get("KTP_VALIDATE_JOBS") or os.cpu_count() or 1)
+    if jobs <= 1 or len(html_pages) < 200:
+        for html_path in html_pages:
+            check_page(html_path, content)
+        return
+    import concurrent.futures
+    import multiprocessing
+    check_page(html_pages[0], content)
+    rest = html_pages[1:]
+    ctx = (multiprocessing.get_context("fork")
+           if "fork" in multiprocessing.get_all_start_methods() else None)
+    mine = (list(errors), list(opted_out), list(backlogged), list(backlog_stale),
+            {name: set(paths) for name, paths in district_pages.items()})
+    results = []
+    with concurrent.futures.ProcessPoolExecutor(jobs, mp_context=ctx) as pool:
+        results = list(pool.map(_check_page_isolated, rest,
+                                [content] * len(rest),
+                                chunksize=max(1, min(256, len(rest) // (jobs * 8)))))
+    for found in (errors, opted_out, backlogged, backlog_stale, district_pages):
+        found.clear()
+    for e, o, b, st, d in [mine] + results:
+        errors.extend(e)
+        opted_out.extend(o)
+        backlogged.extend(b)
+        backlog_stale.extend(st)
+        for name, paths in d.items():
+            district_pages[name] |= paths
+
+
 def main() -> int:
     content = ROOT / "san-francisco"
     check_build_is_complete(content)
@@ -1003,33 +1081,7 @@ def main() -> int:
     html_pages = [ROOT / "index.html"] if (ROOT / "index.html").exists() else []
     html_pages += sorted(content.rglob("index.html")) if content.exists() else []
 
-    for html_path in html_pages:
-        text = html_path.read_text(encoding="utf-8")
-        is_address = bool(ADDRESS_DIR.match(html_path.parent.name))
-        # The address of a parcel that is wholly one park forwards to the
-        # park's page (`seed_pages.forward_html`): a stub, not a page, so it
-        # owes the page contract nothing — only render parity, below.
-        if is_address and forwarding(text):
-            check_address_dir(html_path.parent, text)
-            continue
-        check_html(html_path, text, is_address)
-        check_internal_links(html_path, text)
-        if is_address:
-            check_address_dir(html_path.parent, text)
-        elif seed_pages.UNIT_DIR.match(html_path.parent.name):
-            check_unit_dir(html_path.parent, text)
-        elif seed_pages.is_place_dir(html_path.parent):
-            check_place_dir(html_path.parent, text)
-        elif html_path.parent != content:
-            # The city-level index (san-francisco/index.md) has no generator
-            # counterpart — write_neighborhood_hub/write_street_hub only cover
-            # neighborhood and street hubs — so there is no "regenerate
-            # index.html from index.md" fix to point someone at here. It's
-            # hand-authored prose in both files; keeping them in sync is a
-            # content edit, not a build-contract check.
-            check_hub_sync(html_path.parent)
-            check_hub_covers_children(html_path.parent)
-            check_hub_lists_places(html_path.parent)
+    check_pages(html_pages, content)
 
     check_district_hubs()
     check_redirects(content)
