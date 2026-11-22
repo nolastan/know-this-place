@@ -8133,6 +8133,61 @@ def page_dirs(paths) -> list:
     return sorted(out)
 
 
+def _render_one(page_dir: Path, dry_run: bool) -> tuple[str, str]:
+    """Render one page. Returns (outcome, message): outcome is "rewritten",
+    "current", "opted_out" or "failed", and message is what to print, if
+    anything. A function of its own so `cmd_render` can farm it out to worker
+    processes — it reads only its own page and the lazily-loaded indexes, and
+    writes only its own `index.html`."""
+    rel = page_dir.relative_to(ROOT).as_posix()
+    try:
+        place, unit = is_place_dir(page_dir), is_unit_dir(page_dir)
+        rec = json.loads((page_dir / (PLACE_FILE if place else UNIT_FILE if unit
+                                      else "data.json"))
+                         .read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        return "failed", f"  {rel}: invalid JSON: {e}"
+    if not renders(rec):
+        return "opted_out", ""
+    try:
+        out = (render_place_html(rec) if place else render_unit_html(rec) if unit
+               else render_html(rec))
+    except Exception as e:
+        # One page the renderer can't produce must not abandon the rest of
+        # the sweep. Report it, keep going, and fail the run at the end.
+        return "failed", f"  {rel}: {type(e).__name__}: {e}"
+    html_path = page_dir / "index.html"
+    if html_path.exists() and html_path.read_text(encoding="utf-8") == out:
+        return "current", ""
+    if dry_run:
+        return "rewritten", f"  {rel}"
+    html_path.write_text(out, encoding="utf-8")
+    return "rewritten", ""
+
+
+def _render_many(dirs: list, dry_run: bool, jobs: int):
+    """Yield `_render_one`'s result for each page, in order — across `jobs`
+    worker processes when the sweep is big enough to pay for them.
+
+    The first page renders here, before any worker starts: that loads the
+    indexes the renderer reads (nearby links, districts, the map lots), so on
+    Linux, where workers fork, each inherits them instead of loading its own.
+    The whole city renders in about a third of the time on four cores."""
+    if jobs <= 1 or len(dirs) < 200:
+        for d in dirs:
+            yield _render_one(d, dry_run)
+        return
+    import concurrent.futures
+    import multiprocessing
+    yield _render_one(dirs[0], dry_run)
+    rest = dirs[1:]
+    ctx = (multiprocessing.get_context("fork")
+           if "fork" in multiprocessing.get_all_start_methods() else None)
+    with concurrent.futures.ProcessPoolExecutor(jobs, mp_context=ctx) as pool:
+        yield from pool.map(_render_one, rest, [dry_run] * len(rest),
+                            chunksize=max(1, min(256, len(rest) // (jobs * 8))))
+
+
 def cmd_render(args) -> int:
     """Rewrite `index.html` from `data.json` for every page under a path."""
     dirs = page_dirs(args.path)
@@ -8141,43 +8196,21 @@ def cmd_render(args) -> int:
         return 1
 
     backlog = set() if args.include_backlogged else load_render_backlog()
-    rewritten, current, opted_out, failed = 0, 0, 0, 0
-    held_back = []
+    counts = collections.Counter()
+    held_back, todo = [], []
     for page_dir in dirs:
         rel = page_dir.relative_to(ROOT).as_posix()
         if rel in backlog:
             held_back.append(rel)
-            continue
-        try:
-            place, unit = is_place_dir(page_dir), is_unit_dir(page_dir)
-            rec = json.loads((page_dir / (PLACE_FILE if place else UNIT_FILE if unit
-                                          else "data.json"))
-                             .read_text(encoding="utf-8"))
-        except json.JSONDecodeError as e:
-            print(f"  {rel}: invalid JSON: {e}", file=sys.stderr)
-            failed += 1
-            continue
-        if not renders(rec):
-            opted_out += 1
-            continue
-        try:
-            out = (render_place_html(rec) if place else render_unit_html(rec) if unit
-                   else render_html(rec))
-        except Exception as e:
-            # One page the renderer can't produce must not abandon the rest of
-            # the sweep. Report it, keep going, and fail the run at the end.
-            print(f"  {rel}: {type(e).__name__}: {e}", file=sys.stderr)
-            failed += 1
-            continue
-        html_path = page_dir / "index.html"
-        if html_path.exists() and html_path.read_text(encoding="utf-8") == out:
-            current += 1
-            continue
-        if args.dry_run:
-            print(f"  {rel}")
         else:
-            html_path.write_text(out, encoding="utf-8")
-        rewritten += 1
+            todo.append(page_dir)
+    jobs = getattr(args, "jobs", 0) or os.cpu_count() or 1
+    for outcome, message in _render_many(todo, args.dry_run, jobs):
+        counts[outcome] += 1
+        if message:
+            print(message, file=sys.stderr if outcome == "failed" else sys.stdout)
+    rewritten, current = counts["rewritten"], counts["current"]
+    opted_out, failed = counts["opted_out"], counts["failed"]
 
     verb = "would rewrite" if args.dry_run else "rewrote"
     print(f"{len(dirs)} page(s): {verb} {rewritten}, left {current} already "
@@ -9071,6 +9104,9 @@ def main() -> int:
                    help="also render the pages scripts/render-backlog.txt "
                         "grandfathers, overwriting hand-written HTML the "
                         "renderer cannot reproduce (issue #147's sweep)")
+    p.add_argument("--jobs", type=int, default=0,
+                   help="worker processes (default: one per CPU; 1 renders "
+                        "in this process, as before)")
     p.set_defaults(fn=cmd_render)
 
     p = sub.add_parser("condo",

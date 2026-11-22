@@ -4,9 +4,17 @@ on:
   push:
     branches: [main]
 
+# A new push to a PR makes its previous run moot, so cancel it rather than
+# finish building a commit nobody will merge. Runs on main each finish.
+concurrency:
+  group: validate-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   validate:
     runs-on: ubuntu-latest
+    # The build and the checks take a few minutes; a run past this is hung.
+    timeout-minutes: 30
     steps:
       # Same checkout as deploy.yml: the commit graph for build_stats.py, none
       # of the history's blobs.
@@ -35,3 +43,5 @@ jobs:
         run: python3 research/tools/check.py
       - name: Check news module
         run: python3 news/tools/check.py
+      - name: Check events module
+        run: python3 events/tools/check.py

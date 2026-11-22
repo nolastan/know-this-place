@@ -30,16 +30,19 @@ Go there for a section; don't read it whole.
    are cataloged separately in [research/SOURCES.md](research/SOURCES.md),
    under the same `id` a page cites.
 5. **Scope discipline.** Touch only the pages your task concerns, plus the
-   hub `index.md` files when adding pages. Never restructure shared styling,
-   tooling, or workflows unless a human explicitly asks.
-6. **No new tooling.** No frameworks, no package manifests, no dependencies.
-   The stack is files, one stylesheet, one dependency-free enhancement script
-   (`shared/site.js`), and nine stdlib-only Python scripts: `build_site.py`,
+   hub `index.md` files when adding pages. A content task doesn't restructure
+   shared styling, tooling, or workflows on the side; that is its own PR.
+6. **Tooling earns its place.** The stack today is files, one stylesheet, one
+   enhancement script (`shared/site.js`), and stdlib Python: `build_site.py`,
    which is the build, calling `seed_pages.py`, `build_link_index.py`,
    `build_map_index.py`, `build_events.py`, `build_sitemap.py`,
    `build_corpus_index.py` and `build_stats.py` in order, plus `validate.py`,
-   which checks the result. Every page must render completely from its HTML
-   alone.
+   which checks the result. Infrastructure changes are welcome — a dependency,
+   a cache, a faster or more reliable CI, deploy or scheduled run — when the
+   gain is plain and one PR can explain it; pin any dependency's version, and
+   keep `python3 scripts/build_site.py` the one command that builds the site.
+   What does not change: **every page must render completely from its HTML
+   alone** — readable with no JavaScript, for readers and for crawlers.
 7. **Seed pages with the script, not by hand.** Hand-writing HTML for a page
    whose every fact comes from an API is a waste; spend the effort on the pages
    with a story worth researching.
