@@ -362,6 +362,15 @@ main > .panel + .panel { margin-top: 1.25rem; }
     grid-template-columns: minmax(0, 40rem) minmax(0, 1fr);
   }
 }
+/* A portrait photo's frame is capped narrower than the column (see
+   .media-portrait), so the column shrinks to the frame plus its lift offset:
+   the identity side starts the gap's width after the photo, not after an
+   empty strip. Without :has, the landscape columns above still hold. */
+@media (min-width: 721px) {
+  .hero:has(> ktp-streetview > .media-portrait) {
+    grid-template-columns: minmax(0, calc(min(27rem, 42svh) + 0.6rem)) minmax(0, 1fr);
+  }
+}
 
 /* tag chips */
 .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0 0; padding: 0; list-style: none; }
