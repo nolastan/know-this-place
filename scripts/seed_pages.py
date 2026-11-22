@@ -4143,7 +4143,8 @@ def events_panel_html(rec: dict, indent: str) -> str:
                  else esc(ev["title"]))
         meta = f"{event_day(ev['start'], today)} · {event_time(ev)}"
         src = names.get(ev.get("source"), ev.get("source") or "")
-        sub = " · ".join(x for x in (ev.get("venue") or "", src) if x)
+        # A venue's own calendar is named for the venue: say it once.
+        sub = " · ".join(dict.fromkeys(x for x in (ev.get("venue") or "", src) if x))
         items.append(
             f'{indent}    <li class="event">{title}\n'
             f'{indent}      <span class="event-meta">{esc(meta)}</span>'

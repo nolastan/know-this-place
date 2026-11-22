@@ -75,6 +75,91 @@
       "access": "open",
       "crawl_delay": 3,
       "note": "Free outdoor performing arts, mostly in Yerba Buena Gardens, roughly May to October; out of season the list is empty and shows only 'latest past' programs, which resolve() drops. WordPress with The Events Calendar. robots.txt disallows every URL with a query string (`Disallow: /*?`), which rules out the iCal export (?ical=1) and the REST API's paging (?page=N), and asks Crawl-delay: 3. So fetch.py reads the HTML list view and follows its path-based next link (/events/list/page/N/), 3 seconds apart. Each event names its venue as 'Great Lawn, Yerba Buena Gardens' plus a street line; venues.json does the matching. Checked 2026-11-21."
+    },
+    {
+      "id": "madroneartbar",
+      "name": "Madrone Art Bar",
+      "url": "https://madroneartbar.com/calendar/?ical=1",
+      "page": "https://madroneartbar.com/calendar/",
+      "kind": "ical",
+      "access": "open",
+      "note": "Music venue at 500 Divisadero. WordPress with The Events Calendar; the ?ical=1 export carries each event's own URL and a LOCATION naming the bar. robots.txt disallows only /wp-admin/. Checked live 2026-11-22: 21 upcoming events. 'Bar is Closed' is a notice, not an event; `drop` removes it.",
+      "drop": [
+        "^\\s*bar is closed\\b"
+      ]
+    },
+    {
+      "id": "localeditionsf",
+      "name": "Local Edition",
+      "url": "https://www.localeditionsf.com/music-calendar",
+      "kind": "squarespace",
+      "access": "open",
+      "location": "Local Edition",
+      "drop": [
+        "^\\s*closed\\b"
+      ],
+      "note": "Jazz bar in the basement of the Hearst Building, 691 Market. Squarespace events collection; items carry no venue (the NYC default pin), so `location` names it. 'Closed for …' entries are notices, not events, and `drop` removes them. robots.txt disallows only /config, /search and account pages. Checked live 2026-11-22: 15 upcoming."
+    },
+    {
+      "id": "swigbar",
+      "name": "Swig",
+      "url": "https://www.swigbar.com/entertainment",
+      "kind": "squarespace",
+      "access": "open",
+      "location": "Swig",
+      "drop": [
+        "^\\s*closed\\b"
+      ],
+      "note": "Cocktail bar with live music at 561 Geary. The calendar listed as /music is gone; the Squarespace events collection is now /entertainment. Titles lead with the weekday ('SATURDAY: …'), which clean_title strips. robots.txt disallows only /config, /search and account pages. Checked live 2026-11-22: 6 upcoming."
+    },
+    {
+      "id": "sfzoo",
+      "name": "San Francisco Zoo",
+      "url": "https://www.sfzoo.org/wp-json/custom/v1/calendar-events",
+      "page": "https://www.sfzoo.org/visit-the-zoo/calendar-of-events/",
+      "kind": "fullcalendar",
+      "access": "open",
+      "location": "San Francisco Zoo",
+      "crawl_delay": 10,
+      "drop": [
+        "\\bpromo\\b"
+      ],
+      "note": "The zoo dropped The Events Calendar (the old ?ical=1 URL now returns the home page). Its calendar page is filled by FullCalendar from this WordPress endpoint, an array of {title, url, start, end, allDay} whose times are wall-clock Pacific despite a +00:00 offset. Every event is at the zoo, except member promos at partner gardens elsewhere, which `drop` removes. robots.txt allows everything, Crawl-delay 10; one request per run. Checked live 2026-11-22: ZooLights nights, member mornings, resident free days."
+    },
+    {
+      "id": "boomboomroom",
+      "name": "Boom Boom Room",
+      "url": "https://boomboomroom.com/events/",
+      "kind": "rhp",
+      "access": "open",
+      "location": "Boom Boom Room",
+      "note": "Music club at 1601 Fillmore. The SeeTickets white-label page in the original list now redirects to eventim; the club's own WordPress site lists every show with the Rockhouse Partners events plugin, which has no feed, so fetch.py reads /events/ and its path-paged /events/page/N/ (see parse_rhp_list). robots.txt disallows only /wp-admin/. Checked live 2026-11-22: 9 shows on the first page."
+    },
+    {
+      "id": "gardenfortheenvironment",
+      "name": "Garden for the Environment",
+      "url": "https://www.eventbrite.com/o/garden-for-the-environment-924286027",
+      "kind": "eventbrite",
+      "access": "open",
+      "note": "Urban gardening demonstration garden at 7th Avenue and Lawton, which publishes its workshops and volunteer shifts on Eventbrite. The organizer page embeds `upcomingEvents` JSON with Eventbrite's venue pin; robots.txt allows /o/ pages (the v3 API needs a token). Checked live 2026-11-22: 3 upcoming."
+    },
+    {
+      "id": "elriosf",
+      "name": "El Rio",
+      "url": "https://tockify.com/api/feeds/ics/elriosf2",
+      "page": "https://www.elriosf.com/",
+      "kind": "ical",
+      "access": "needs-human",
+      "note": "Bar and music venue at 3158 Mission. A Tockify iCalendar subscription feed, live and full (hundreds of upcoming events, 2026-11-22), but tockify.com's robots.txt disallows /api/, where the feed lives. Not fetched until a human decides a calendar subscription feed may be read despite that."
+    },
+    {
+      "id": "popssf",
+      "name": "Pop's Bar",
+      "url": "https://calendar.google.com/calendar/ical/u28t1lt8j4h9ut3bt26fa02ie4%40group.calendar.google.com/public/basic.ics",
+      "page": "https://www.popssf.com/calendar",
+      "kind": "ical",
+      "access": "needs-human",
+      "note": "Bar at 2800 24th Street. Its /calendar page embeds a public Google Calendar, live on 2026-11-22, but calendar.google.com's robots.txt disallows everything but its root. Not fetched until a human decides otherwise. Most of its nights are RRULE repeats, which parse_ical does not expand yet, and one is a named person's birthday that would need a drop rule."
     }
   ]
 }

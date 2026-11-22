@@ -103,6 +103,21 @@ rather than branching fresh — the workflow does the same.
   Venues read `<spot>, Yerba Buena Gardens`; the spots are registered, and a
   catch-all sends any other gardens spot to the 701 Mission page.
 
+- **Venue calendars (Madrone Art Bar, Local Edition, Swig, Boom Boom Room,
+  SF Zoo, Garden for the Environment)** — one venue each, so `location` in
+  sources.json names it and `drop` removes "Closed for …" notices. Madrone is
+  an ordinary The Events Calendar `?ical=1` feed. Local Edition and Swig are
+  Squarespace (Swig's collection is `/entertainment`; its titles lead with a
+  weekday, which `clean_title` strips). The zoo (`fullcalendar`) reads the
+  JSON its calendar widget loads; times say `+00:00` but are Pacific wall
+  clock, and a repeating program is one post id over several dates. Boom
+  Boom Room (`rhp`) is Rockhouse Partners' plugin: dates have no year, so the
+  month headings supply it. Garden for the Environment (`eventbrite`) reads
+  the organizer page's embedded `upcomingEvents`.
+- **El Rio and Pop's Bar** are registered `needs-human`: their feeds are live
+  but sit on hosts whose robots.txt disallows them (Tockify's `/api/`,
+  Google Calendar). Pop's also needs RRULE expansion before it can run.
+
 ## What this module will not do
 
 - **It does not judge events on merit.** There is no ten-year test — a

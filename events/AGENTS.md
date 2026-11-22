@@ -81,10 +81,14 @@ calendar whose parser has stopped matching.
 
 - **`sources.json`** is the calendar register — one entry per publisher, like
   `news/feeds.json`. `id` becomes every event's `source`; `kind` picks the
-  parser (`ical`, `ical-multi`, `squarespace`, `html`, `tribe`, `pdf-table`); `access` is `open`
+  parser (`ical`, `ical-multi`, `squarespace`, `html`, `tribe`, `pdf-table`,
+  `fullcalendar`, `rhp`, `eventbrite`); `access` is `open`
   only where robots.txt permits the fetch — a source that forbids automated
   access is `needs-human`, and changing that flag is a human's call, never an
-  agent's.
+  agent's. A calendar for one venue sets `location`, which an event naming
+  no place of its own takes so the register can resolve it; `drop` lists
+  title patterns that are notices rather than events ("Closed for
+  Thanksgiving").
 - **`venues.json`** is the venue register — how a calendar's free-text
   location becomes a named place with coordinates and, where the place has a
   page, the `path` of that page. Matching is substring on the normalized
