@@ -282,7 +282,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-environmental-review/unread-docs.json` | 1,100 | 2.2 MB | 1849–2012 | 579 | 413 | `east-cut`, `financial-district`, `south-of-market` +22 |
 | `sf-neighborhood-newspapers/glen-park-1977-2012.json` | 55 | 91 KB | 1872–2007 | 49 | 48 | `glen-park`, `mission`, `financial-district` +1 |
 | `sf-neighborhood-newspapers/grapevine-1986-2011.json` | 87 | 147 KB | 1906–2010 | 71 | 66 | `visitacion-valley`, `bayview-hunters-point`, `south-of-market` +9 |
-| `sf-neighborhood-newspapers/noe-valley-voice-1977-2011.json` | 383 | 671 KB | 1852–2010 | 352 | 319 | `noe-valley`, `mission`, `castro` +15 |
+| `sf-neighborhood-newspapers/noe-valley-voice-1977-2011.json` | 383 | 669 KB | 1852–2010 | 352 | 319 | `noe-valley`, `mission`, `castro` +15 |
 | `sf-neighborhood-newspapers/omi-news-1969-1980.json` | 36 | 58 KB | 1872–1980 | 30 | 30 | `oceanview-merced-ingleside`, `ingleside-terraces`, `west-of-twin-peaks` +4 |
 | `sf-neighborhood-newspapers/potrero-view-1970-2009.json` | 126 | 207 KB | 1863–2009 | 110 | 97 | `potrero-hill`, `mission`, `mission-bay` +13 |
 | `sf-planning-commission-minutes/minutes-1968-1969.json` | 372 | 692 KB | 1968–1969 | 176 | 168 | `chinatown`, `bayview-hunters-point`, `pacific-heights` +26 |
