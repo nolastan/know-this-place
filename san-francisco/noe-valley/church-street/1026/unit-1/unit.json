@@ -1,0 +1,41 @@
+{
+  "address": "1026 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/church-street/1026/unit-1/",
+  "unit": "1",
+  "apn": "3628048",
+  "block": "3628",
+  "lot": "048",
+  "parcel": {
+    "building_area_sqft": 1517,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1250034,
+    "assessed_improvement_value": 833355,
+    "last_sale_date": "2020-04-14"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2011",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3628048&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3628&unit=1",
+      "retrieved": "2026-11-23"
+    }
+  ]
+}

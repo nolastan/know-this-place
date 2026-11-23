@@ -1,0 +1,32 @@
+{
+  "address": "1500 Castro Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/castro-street/1500/unit-lot-053/",
+  "apn": "6546053",
+  "block": "6546",
+  "lot": "053",
+  "parcel": {
+    "building_area_sqft": 1749,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 870274,
+    "assessed_improvement_value": 580183,
+    "last_sale_date": "2020-10-09"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6546053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6546&street_number=1500",
+      "retrieved": "2026-11-23"
+    }
+  ]
+}

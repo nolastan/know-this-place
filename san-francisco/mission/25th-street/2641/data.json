@@ -1,0 +1,97 @@
+{
+  "address": "2641 25th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/25th-street/2641/",
+  "apn": "4277002",
+  "block": "4277",
+  "lot": "002",
+  "eas_baseid": "487986",
+  "coordinates": {
+    "lat": 37.751701,
+    "lng": -122.40495
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 39996,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Inner Mission",
+    "analysis_neighborhood": "Mission",
+    "property_location_raw": "1405 1401 UTAH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1970",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2008",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=ST&address_number=2641",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=4277002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=4277&lot=002",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=4277002",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice157unse-n9",
+      "name": "Noe Valley Voice, September 1991, p. 10",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice157unse/page/n9/mode/1up",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice161unse-n6",
+      "name": "Noe Valley Voice, February 1992, p. 7",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice161unse/page/n6/mode/1up",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1983",
+      "kind": "site history",
+      "description": "Buena Vista Alternative School shared the site here with the Mission Education Center from 1983 to 1986.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice157unse-n9"
+    },
+    {
+      "date": "1991-09",
+      "kind": "move",
+      "description": "Buena Vista Alternative School relocated to 2641 25th Street in fall 1991, displacing the Mission Education Center, which had occupied the site for most of the previous decade.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice161unse-n6"
+    }
+  ]
+}

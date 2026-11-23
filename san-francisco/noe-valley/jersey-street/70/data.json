@@ -1,0 +1,127 @@
+{
+  "address": "70 Jersey Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/jersey-street/70/",
+  "apn": "6510012",
+  "block": "6510",
+  "lot": "012",
+  "eas_baseid": "400689",
+  "coordinates": {
+    "lat": 37.751177,
+    "lng": -122.426762
+  },
+  "parcel": {
+    "year_built": 1922,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1700,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0070 JERSEY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60037,
+    "assessed_improvement_value": 113179
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1922",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201904057272",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-05",
+      "status_date": "2019-04-15",
+      "estimated_cost": 8980,
+      "revised_cost": 8980,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711103704",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-11-10",
+      "status_date": "2018-08-30",
+      "estimated_cost": 13000,
+      "revised_cost": 13000,
+      "description": "replace 13 windows visible from street. no structural changes. max u-factor .32. visible - aluminum wood clad. not visible - vinyl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8710598",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-07-28",
+      "status_date": "1987-11-12",
+      "estimated_cost": 22400,
+      "description": "remove and replace wall, plumbing and electrical",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1987–2019",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JERSEY&street_type=ST&address_number=70",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6510012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6510&lot=012",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6510012",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice05unse_5-n2",
+      "name": "Noe Valley Voice, June 1983, p. 3",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice05unse_5/page/n2/mode/1up",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1871",
+      "kind": "construction",
+      "description": "The house here dates from 1871.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice05unse_5-n2"
+    }
+  ],
+  "unknowns": [
+    "The assessor's roll gives 1922 as the year this structure was built, not 1871."
+  ]
+}

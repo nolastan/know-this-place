@@ -1,0 +1,127 @@
+{
+  "address": "4068 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/24th-street/4068/",
+  "apn": "3656020",
+  "block": "3656",
+  "lot": "020",
+  "eas_baseid": "364625",
+  "coordinates": {
+    "lat": 37.751581,
+    "lng": -122.433389
+  },
+  "parcel": {
+    "year_built": 1940,
+    "stories": 1,
+    "rooms": 1,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 1000,
+    "use": "Commercial Retail",
+    "property_class": "Commercial Stores",
+    "construction_type_code": "D",
+    "zoning": "24NOE",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4068 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 353664,
+    "assessed_improvement_value": 309449,
+    "last_sale_date": "1991-10-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1940",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201711133810",
+      "type": "demolitions",
+      "status": "cancelled",
+      "filed": "2017-11-13",
+      "status_date": "2024-11-13",
+      "estimated_cost": 20000,
+      "revised_cost": 35000,
+      "description": "demolition of a 1-story retail building.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201711133815",
+      "type": "new construction wood frame",
+      "status": "cancelled",
+      "filed": "2017-11-13",
+      "status_date": "2024-07-02",
+      "estimated_cost": 1168650,
+      "description": "to erect 4 stories, no basement, type v-b, 4 units residential with retail (r-2,b)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9906855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-04-09",
+      "status_date": "1999-10-07",
+      "estimated_cost": 499,
+      "description": "lower existing window sill from 3'5\" to 1'6\" and enlarge",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9118956",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1991-10-10",
+      "status_date": "1993-12-22",
+      "estimated_cost": 1100,
+      "description": "install a new canvas awning over store front entrance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=4068",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3656020&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3656&lot=020",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3656020",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice1510unse-n39",
+      "name": "Noe Valley Voice, December 1991, p. 40",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice1510unse/page/n39/mode/1up",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1991-09",
+      "kind": "opening",
+      "description": "A second Classy Sweats clothing outlet opened here in fall 1991.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice1510unse-n39"
+    }
+  ]
+}

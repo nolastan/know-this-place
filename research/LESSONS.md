@@ -604,6 +604,10 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   the source of most of its best facts. *Also count the squashed spellings of
   the title's own main street before extracting* — "Leiand" was 1,455
   mentions — and pass them as `--alias`.
+  *This pass is now `ocr_mentions.py --rescue`* (2026-11-23): it keeps a
+  dropped window only when the event word is within 150 characters of the
+  address — at the full window width, half of what the Noe Valley Voice's
+  rescue returned was the next display ad's "grand opening".
 - **A neighborhood paper prints its own streets with no type word.** "690
   Chenery", "1350 Ocean": `ocr_mentions.py` only counted an untyped name for
   the downtown streets in its built-in list, so the Glen Park and OMI papers'
@@ -3577,3 +3581,25 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   Vallejo from the printed offset. *Before matching a pre-1915 "avenue" or
   "street" to a current name, check the renamings in RUNBOOK's renumbering
   traps.* (2026-11-19, loc-newspapers)
+- **An archive's per-item dates can be wrong in a block, and an archive can
+  hold the same issue twice.** Ten Noe Valley Voice items from 2004 are all
+  catalogued 2004-01-01, and two 1989 issues were scanned twice under
+  different identifiers. A citation built from the catalogue date would
+  have put a dozen facts in the wrong month. *Before reading a run of
+  issues, count the catalogue dates per month; for any month with two or
+  more items, read the date off the issue's own masthead or footer, and
+  compare the first 200 characters of same-month items to catch duplicate
+  scans.* (2026-11-23,
+  [sources/sf-neighborhood-newspapers.md](sources/sf-neighborhood-newspapers.md))
+- **A business column's "formerly" clause is where a proprietor's name rides
+  in.** Readers kept the new business's owner out of every Noe Valley Voice
+  description and still brought back "in the storefront formerly occupied
+  by Jim Proby Inc." and "the space Lisa Violetto Designs had used". *In the
+  audit, list every capitalised two-word name across the published
+  descriptions and read the former-occupant clauses, not only the subject.*
+  (2026-11-23)
+- **An Internet Archive `_page_numbers.json` is generated on request.** It
+  took 50 seconds or more per item where the hOCR files took one, so a
+  fetcher that asked for all three per issue ran at a sixth of the speed.
+  *Fetch the hOCR search text and page index in bulk; fetch page numbers
+  afterwards, in parallel, for the cited issues only.* (2026-11-23)

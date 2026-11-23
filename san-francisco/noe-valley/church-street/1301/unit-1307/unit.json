@@ -1,0 +1,56 @@
+{
+  "address": "1307 Church Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/church-street/1301/unit-1307/",
+  "apn": "6550062",
+  "block": "6550",
+  "lot": "062",
+  "parcel": {
+    "building_area_sqft": 3248,
+    "rooms": 9,
+    "bedrooms": 4,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 678537,
+    "assessed_improvement_value": 364497
+  },
+  "permits": [
+    {
+      "number": "202308073882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-08-07",
+      "status_date": "2023-11-22",
+      "estimated_cost": 24870,
+      "revised_cost": 42000,
+      "description": "remove existing stucco. install new wepp, wire blueskin, rainscreen, 3 coats of stucco.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201305106649",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-05-10",
+      "status_date": "2013-08-13",
+      "estimated_cost": 18000,
+      "revised_cost": 18000,
+      "description": "clean & prepaire for new roof, ib overlay, install brown ib cpa puc flat roof, slope less than 2:12 pitch.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6550062&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6550&street_number=1307",
+      "retrieved": "2026-11-23"
+    }
+  ]
+}
