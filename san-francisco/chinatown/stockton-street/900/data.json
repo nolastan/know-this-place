@@ -374,6 +374,14 @@
       "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
       "query": "https://archive.org/details/42minutesofsanfran1996san/page/n149/mode/1up",
       "retrieved": "2026-10-26"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%27930%20STOCKTON%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
     }
   ],
   "historic_survey": {
@@ -403,6 +411,15 @@
       "kind": "planning decision",
       "description": "The City Planning Commission approved, 7-0, a two-storey, 7,714-square-foot addition to the St. Mary's School building (Motion 14110).",
       "source": "sf-planning-commission-minutes-1996-04-25"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "Yummy Dim Sum Fast Food",
+      "kind": "Restaurant",
+      "opened": "2010-08-01",
+      "address": "930 Stockton Street",
+      "source": "sf-registered-businesses"
     }
   ]
 }

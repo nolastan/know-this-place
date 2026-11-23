@@ -193,6 +193,23 @@
       "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
       "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6568033",
       "retrieved": "2026-07-31"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%273601%2026TH%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "Chome",
+      "kind": "Restaurant",
+      "opened": "2023-12-01",
+      "address": "3601 26th Street",
+      "source": "sf-registered-businesses"
     }
   ]
 }

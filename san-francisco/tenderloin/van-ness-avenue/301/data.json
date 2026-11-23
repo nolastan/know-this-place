@@ -427,6 +427,14 @@
       "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
       "query": "https://archive.org/details/visitacionvalley102unse/page/n2/mode/1up",
       "retrieved": "2026-11-20"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%27401%20VAN%20NESS%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
     }
   ],
   "historical_record": [
@@ -529,5 +537,14 @@
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "source_url": "https://commons.wikimedia.org/wiki/File:San_Francisco_City_Hall,_War_Memorial_Opera_House,_War_Memorial_Veterans_Building.jpg",
     "retrieved": "2026-10-23"
-  }
+  },
+  "businesses": [
+    {
+      "name": "Cafe Valor",
+      "kind": "Café",
+      "opened": "2018-07-23",
+      "address": "401 Van Ness Avenue",
+      "source": "sf-registered-businesses"
+    }
+  ]
 }

@@ -374,6 +374,14 @@
    "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
    "query": "https://archive.org/details/minutesofmeeting1986sanf/page/n124/mode/1up",
    "retrieved": "2026-11-10"
+  },
+  {
+   "id": "sf-registered-businesses",
+   "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+   "label": "SF Treasurer & Tax Collector, business registrations",
+   "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%271008%20BUSH%25%27",
+   "supports": "Businesses",
+   "retrieved": "2026-11-23"
   }
  ],
  "historic_survey": {
@@ -395,6 +403,15 @@
    "kind": "permit appeal",
    "description": "The Board of Permit Appeals upheld the Department of Public Works and allowed the permit to alter the building at 1010 Bush Street to stand, with conditions.",
    "source": "sf-board-of-permit-appeals-minutes-1986-06-25"
+  }
+ ],
+ "businesses": [
+  {
+   "name": "The Morning Fix",
+   "kind": "Restaurant",
+   "opened": "2006-09-20",
+   "address": "1008 Bush Street",
+   "source": "sf-registered-businesses"
   }
  ]
 }

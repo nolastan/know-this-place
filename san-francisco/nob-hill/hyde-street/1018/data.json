@@ -197,6 +197,14 @@
       "query": "https://digitalsf.org/record/5771",
       "label": "San Francisco Police Department Records (SFH 61), San Francisco Public Library",
       "retrieved": "2026-09-04"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%271026%20HYDE%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
     }
   ],
   "historical_record": [
@@ -205,6 +213,15 @@
       "kind": "photograph",
       "description": "The Police Department photographed the property.",
       "source": "digitalsf-5771"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "Inga Donut",
+      "kind": "Bakery",
+      "opened": "1983",
+      "address": "1026 Hyde Street",
+      "source": "sf-registered-businesses"
     }
   ]
 }

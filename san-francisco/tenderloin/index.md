@@ -5,6 +5,7 @@ The flat blocks west of Union Square, in the city's Tenderloin analysis neighbor
 ## Streets documented so far
 
 - [Ada Court](ada-court/) — 1 building, built 1914; 1 in the Uptown Tenderloin Historic District.
+- [Cyril Magnin Street](cyril-magnin-street/) — 1 building, built 1983.
 - [Derby Street](derby-street/) — 1 building, built 1912.
 - [Dodge Street](dodge-street/) — 1 building, built 1925; 1 in the Uptown Tenderloin Historic District.
 - [Dr Carlton B Goodlett Place](dr-carlton-b-goodlett-place/) — 1 building, built 1900; 1 in the Civic Center Historic District.

@@ -49,6 +49,14 @@
       "label": "San Francisco City Planning Commission minutes, San Francisco Public Library (Internet Archive)",
       "query": "https://archive.org/details/51minutesofsanfran2001san/page/n302/mode/1up",
       "retrieved": "2026-11-02"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%276901%20GEARY%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
     }
   ],
   "historical_record": [
@@ -57,6 +65,15 @@
       "kind": "planning decision",
       "description": "The City Planning Commission approved conditional-use authorization for a lot size exceeding 5,000 square feet for a new four-story building with 15 residential units, 5-2.",
       "source": "sf-planning-commission-minutes-2001-10-04"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "Xpresso Tea",
+      "kind": "Restaurant",
+      "opened": "2013-07-19",
+      "address": "6901 Geary Boulevard",
+      "source": "sf-registered-businesses"
     }
   ]
 }
