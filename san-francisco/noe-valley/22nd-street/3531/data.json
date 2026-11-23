@@ -1,0 +1,82 @@
+{
+  "address": "3531 22nd Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/22nd-street/3531/",
+  "apn": "3630001",
+  "block": "3630",
+  "lot": "001",
+  "eas_baseid": "486285",
+  "coordinates": {
+    "lat": 37.754861,
+    "lng": -122.426088
+  },
+  "parcel": {
+    "lot_area_sqft": 80272,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 3531 22ND                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2016",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=ST&address_number=3531",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3630001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3630&lot=001",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3630001",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice161unse-n6",
+      "name": "Noe Valley Voice, February 1992, p. 7",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice161unse/page/n6/mode/1up",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1943",
+      "kind": "site history",
+      "description": "A public child-care center was founded in 1943 inside Edison Elementary School here and stayed until 1952, when it moved to Kate Kennedy; it returned to Edison in 1987.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice161unse-n6"
+    }
+  ]
+}

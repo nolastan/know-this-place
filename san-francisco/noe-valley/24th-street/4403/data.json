@@ -1,0 +1,120 @@
+{
+  "address": "4403 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/24th-street/4403/",
+  "apn": "6502030",
+  "block": "6502",
+  "lot": "030",
+  "eas_baseid": "400368",
+  "coordinates": {
+    "lat": 37.750684,
+    "lng": -122.440831
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "bedrooms": 4,
+    "lot_area_sqft": 2125,
+    "building_area_sqft": 2170,
+    "lot_depth_ft": 85,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4403 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1708544,
+    "assessed_improvement_value": 732233,
+    "last_sale_date": "2021-08-13"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202202027132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-02-02",
+      "status_date": "2022-02-28",
+      "estimated_cost": 8900,
+      "revised_cost": 8900,
+      "description": "repair front stairs, less than 50%, visible from street. replace with new wood in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9912017",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-06-17",
+      "status_date": "1999-12-17",
+      "estimated_cost": 6500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9716961",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1997-09-02",
+      "status_date": "1999-03-01",
+      "estimated_cost": 500,
+      "description": "replace 30ft of dry-rot siding.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=4403",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6502030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6502&lot=030",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6502030",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice176unse-n32",
+      "name": "Noe Valley Voice, July 1993, p. 33",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice176unse/page/n32/mode/1up",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "c. 1892",
+      "kind": "construction",
+      "description": "The Victorian here., with diamond patterns and fish-scale shingles on its slanted bay, dates from about 1892.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice176unse-n32"
+    }
+  ]
+}

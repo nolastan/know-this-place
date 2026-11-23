@@ -1,0 +1,43 @@
+{
+  "address": "4239 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/24th-street/4255/unit-4239/",
+  "apn": "6505056",
+  "block": "6505",
+  "lot": "056",
+  "parcel": {
+    "building_area_sqft": 1520
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 539495,
+    "assessed_improvement_value": 539495,
+    "last_sale_date": "2002-07-19"
+  },
+  "permits": [
+    {
+      "number": "201206253292",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-06-25",
+      "status_date": "2012-08-03",
+      "estimated_cost": 8673,
+      "revised_cost": 8673,
+      "description": "replace 6 windows, visable from street, no structural changes, max u factor 0.40. new windows to be wood frames.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6505056&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6505&street_number=4239",
+      "retrieved": "2026-11-23"
+    }
+  ]
+}

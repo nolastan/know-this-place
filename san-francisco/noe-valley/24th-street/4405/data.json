@@ -1,0 +1,97 @@
+{
+  "address": "4405 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/24th-street/4405/",
+  "apn": "6502029",
+  "block": "6502",
+  "lot": "029",
+  "eas_baseid": "400367",
+  "coordinates": {
+    "lat": 37.750678,
+    "lng": -122.440918
+  },
+  "parcel": {
+    "year_built": 1895,
+    "units": 1,
+    "stories": 1,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 2125,
+    "building_area_sqft": 1505,
+    "lot_depth_ft": 85,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 4405 24TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 102208,
+    "assessed_improvement_value": 206833
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1895",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9715368",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-08-13",
+      "status_date": "1997-09-09",
+      "estimated_cost": 3500,
+      "description": "retaining wall in rear yard",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=ST&address_number=4405",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6502029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6502&lot=029",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6502029",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice176unse-n32",
+      "name": "Noe Valley Voice, July 1993, p. 33",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice176unse/page/n32/mode/1up",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "c. 1892",
+      "kind": "construction",
+      "description": "The Victorians at 4403 and 4405 24th St., with diamond patterns and fish-scale shingles on their slanted bays, date from about 1892.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice176unse-n32"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** four titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980) and The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009) — 304 findings, 260 resolved, 241 published on 189 pages (82 seeded).
+> - **Coverage:** five titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009) and the Noe Valley Voice (335 issues in 337 items, 1977–2011) — 687 findings, 612 resolved, 560 published on 411 pages (194 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -47,6 +47,12 @@
   --from 1900 --to 2099` gives the mention windows and `ocr_mentions.py leaf`
   finds a phrase's leaf from the cached hOCR files (it fetches
   `_page_numbers.json` itself when missing). One title is one batch.
+  **Fetch only the two hOCR files in bulk.** `_page_numbers.json` is
+  generated on request and takes 50 seconds or more per item, so a fetcher
+  that asks for all three per issue runs at a sixth of the speed; fetch it
+  afterwards for the cited issues only (215 of 337 for the Noe Valley Voice,
+  ten in parallel). Plain `curl` with `xargs -P 6` fetched 144 issues in
+  under ten minutes where a Python `urllib` pool stalled.
 - **What is actually usable:** news items and features, for the three kinds
   of fact the East/West run defined (see
   [east-west-journal.md](east-west-journal.md)): dated events at a building
@@ -111,6 +117,36 @@
     titles, about half were a library, school or church named as a venue
     or in a directory, with no event. They were set aside; a bare address is
     not a dated fact.
+  - **`ocr_mentions.py --rescue` does the dropped-window pass.** Pass it
+    with the title's `--alias` and `--untyped` list; it keeps an ad- or
+    advertiser-dropped window only when a strong event word sits within 150
+    characters of the address, and marks it `rescued`. At the full window
+    width the Noe Valley Voice's rescue was mostly the next display ad's
+    "grand opening".
+  - **The Noe Valley Voice's catalogue dates are wrong for ten 2004 items**
+    (all `2004-01-01`; `noevalleyvoice01noev_6` to `08noev_6`, `09noev_5`,
+    `10noev_5`), and two 1989 issues were scanned twice. Read the month off
+    the page footers ("<Month> 2004" is printed 45–63 times per issue);
+    `items.tsv` in the corpus now carries the corrected dates.
+  - **The Voice prints Army Street until 1995**; pass
+    `--alias ARMY="CESAR CHAVEZ"` (a pure rename; the numbers carried over).
+    Its own streets go untyped: Sanchez, Noe, Castro, Diamond, Church,
+    Jersey, Dolores, Vicksburg, Chenery, Clipper, Duncan, Elizabeth,
+    Douglass, Eureka, Hoffman, 24th, 22nd, Fair Oaks, Alvarado, Grand View,
+    Liberty. An untyped ordinal ("3995 24th") now counts when the ordinal is
+    named in `--untyped`.
+  - **The OCR splits a number with a space** ("45 1 Jersey", "38 1 2 24th",
+    "4 1 75 24th"), and `ocr_mentions.py` keys the window on the tail. Readers
+    caught 20 of these by reading the window; the number to use is the one
+    printed, never the window header's.
+  - **A business column names the storefront's earlier occupants**, often a
+    firm named for a person ("formerly Jim Proby Inc.", "Lisa Violetto
+    Designs' old space"). Two such clauses reached pages and were taken out
+    in the audit: check the *former occupant* clause, not only the subject.
+  - **Noe Valley's Victorians come through the walking tours, quiz columns
+    and history features of 1979–1983 and 2005–2010**, and most disagree with
+    the roll's placeholder 1900. Each went on the page with the roll's year
+    in `unknowns`.
 - **People:** these papers are dense with residents — obituaries, honor rolls,
   crime, block-club officers, the businesses' proprietors in their own ads.
   None of that is taken. Taken: institutions, churches, schools, agencies,
@@ -137,18 +173,32 @@
   *The Potrero View*, every issue but one — 341 of 342 items, August 1970
   to December 1977 and January 1986 to December 2009, 6,292 OCR pages
   (`findings/sf-neighborhood-newspapers/potrero-view-1970-2009.json`).
-  **Not read:** the other fourteen titles, and the Potrero View's November
+  The *Noe Valley Voice*, every item — 337 items (335 issues), May 1977 to
+  February 2011, 14,190 OCR pages
+  (`findings/sf-neighborhood-newspapers/noe-valley-voice-1977-2011.json`).
+  **Not read:** the other thirteen titles, and the Potrero View's November
   2009 issue (no OCR on the Internet Archive). The next batches, in the
-  order this site needs them: **Noe Valley Voice** (337 items, 1977–2011,
-  the longest run left); then New Mission News, North Mission News,
-  the Bernal Journals, Park Bell (Excelsior/Portola), The New Fillmore, the
-  Semaphore titles, Richmond ReView and Tenderloin Times. One title is one
-  batch; take two in a session if the first is short.
+  order this site needs them: **New Mission News** (127 items, 1992–2004)
+  with **North Mission News** (70, 1983–1992) — one neighborhood, one run;
+  then the Bernal Journals, Park Bell (Excelsior/Portola), The New Fillmore,
+  the Semaphore titles, Richmond ReView and Tenderloin Times. One title is
+  one batch; take two in a session if the first is short.
   **Placed nowhere yet:** the Glen Park library's two lost buildings, 700
   Bosworth (opened January 1927, demolished for I-280 about 1964) and 2909
   Diamond (1964, demolished 1969 for the BART station). EAS has neither
   number. The second belongs on a Glen Park BART station page if one is
   ever made.
+  **Held, not taken up (Noe Valley Voice run):** seeding its 112 pages
+  surfaced four held *Building and Engineering News* permits — 4005 24th
+  (1916 bake oven), 125 E of Church on Jersey (1922 two-storey residence),
+  SW Church and Clipper (1922 dwelling) and 411 30th (1919 alteration). None
+  was read against its page image this run; `check.py --held pages` lists
+  them, and they are overdue for whoever works that source next.
+  **Unplaced, Noe Valley Voice:** Bethany church's 1908 dedication at 1268
+  Sanchez (EAS holds the address on no parcel), Fernando Nelson at 329 29th
+  in 1889 (no EAS record), the 15 Isaac Anderson cottages at 3816–3856 21st
+  (published on the two printed ends only) and 546–572 Liberty (Nelson,
+  1897; the range spans parcels).
   **Held, not taken up:** the seeding of 15–19 Blanken Avenue surfaced one
   held *Building and Engineering News* permit (1931, "N Blanken Ave 50 W
   Tunnel Ave", `v31-pt2-1931-jul-1932-jan-0769`). It was not read against
@@ -226,3 +276,34 @@
   until the number resolves; (4) two Molokan prayer houses "by 1907" (949
   Rhode Island, 2002 22nd) are held unresolved — a 1971 article's numbers
   for 1907 cannot be checked against the renumbering.)
+  2026-11-23 (fourth run, the Noe Valley Voice. Read 337 items (335
+  issues), 14,190 OCR pages, 62,888 numbered-address mentions; 4,283
+  windows by hand by twelve readers (1,516 the filter kept, 2,767 rescued
+  with `--rescue`); 548 candidates, 383 findings, 352 resolved, 319
+  published on 226 pages, 112 of them seeded, 33 declined (29 already on
+  the page). The best of it: the Noe Valley Ministry's building at 1021
+  Sanchez (dedicated 1888 as Lebanon Presbyterian; the Ministry from 1977;
+  the co-op nursery from January 1969; its 1978–80 and 1996 renovations);
+  the branch library at 451 Jersey (garden 1976, Al Lanier's deck 1980,
+  the Sally Brunn renaming 1992, the 2006–08 seismic closing and
+  reopening); 3780 23rd, built 1869 on Church Street and moved downhill
+  in 1900; the Pioneer, built 1896 behind 4175 24th; Fernando Nelson's
+  houses on Castro, Diamond and 30th and his own at 701 Castro;
+  Charles Rousseau's tower houses at 3896 and 3845 24th; Fire Station 24
+  at 100 Hoffman (1913, closed 1995, reopened 1997) and the 1909 Engine 44
+  firehouse at 3816 22nd; St. Paul's and St. Philip's buildings; the
+  Duncan Street fire of 30 June 1989; Good Vibrations' first store at 3416
+  22nd (1977); Coming Home Hospice at 115 Diamond (February 1987); and
+  some 150 dated openings and moves along 24th, Church and Castro, Bell
+  Market to Whole Foods among them. **Learned:** (1) the Internet Archive's
+  dates are not to be trusted per item — ten 2004 issues share one date
+  and two issues are duplicate scans; count dates before reading; (2) the
+  dropped-window pass needed its event word near the address, and it is
+  now `ocr_mentions.py --rescue`; (3) `_page_numbers.json` is the slow
+  file, fetch it last and only for cited issues; (4) readers correct the
+  OCR's split numbers well, and their candidates for an institution repeat
+  across a decade — 3780 23rd came back nine times from seven issues;
+  (5) the former-occupant clause is where a proprietor's name rides in;
+  (6) `--area-from-nhood` moved 30 new pages from `mission/` to
+  `noe-valley/` correctly and invented `castro-upper-market`, as LESSONS
+  says; carry over only the directories the site uses.)

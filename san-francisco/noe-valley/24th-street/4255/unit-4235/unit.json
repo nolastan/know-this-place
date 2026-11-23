@@ -1,0 +1,71 @@
+{
+  "address": "4235 24th Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/24th-street/4255/unit-4235/",
+  "apn": "6505055",
+  "block": "6505",
+  "lot": "055",
+  "parcel": {
+    "building_area_sqft": 984
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 367754,
+    "assessed_improvement_value": 208393,
+    "last_sale_date": "2013-11-08"
+  },
+  "permits": [
+    {
+      "number": "201312305290",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-12-30",
+      "status_date": "2014-01-09",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "revision to 201310250255. omit posts, footings, and beams in front room. remove special inspection requirement for pull torque test for bolt into existing concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311041070",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-11-04",
+      "status_date": "2013-11-04",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "replace (e) front door at ground leveloffice, (n) door to be 34\"x96\" all-wood, single-lite door by simpsom door co. or equal.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310250255",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-25",
+      "status_date": "2014-04-22",
+      "estimated_cost": 50000,
+      "revised_cost": 122500,
+      "description": "interior improvement to e gr fl commercial condiminium including remove 2 load bearing walls, add structural reinforcement, remodel 2 baths including 1 accessible. replace e kitchenette and replace all light fixtures",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2013–2014",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6505055&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6505&street_number=4235",
+      "retrieved": "2026-11-23"
+    }
+  ]
+}

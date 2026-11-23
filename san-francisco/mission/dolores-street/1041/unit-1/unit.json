@@ -1,0 +1,97 @@
+{
+  "address": "1041 Dolores Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/dolores-street/1041/unit-1/",
+  "unit": "1",
+  "apn": "3648038",
+  "block": "3648",
+  "lot": "038",
+  "parcel": {
+    "building_area_sqft": 859,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 425376,
+    "assessed_improvement_value": 425376,
+    "last_sale_date": "2006-07-07"
+  },
+  "permits": [
+    {
+      "number": "201807164655",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-16",
+      "status_date": "2018-12-17",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace 3 patio sliders, not visible from the street, size for size u-facter 0.30",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109124325",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-12",
+      "status_date": "2011-10-24",
+      "estimated_cost": 8000,
+      "revised_cost": 9100,
+      "description": "install kitchen cabinets and tile, new dishwasher and stove & new lights.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609192698",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2006-09-19",
+      "status_date": "2009-12-30",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "work to be done at one unit dolores only- repair and repalce (1) leading sliding door and 2 side panels (fixed) use double glazed low-e glass and tempered glass no structural use existing openings doors and windows by ocean sash and door company san francisco .67 a factor min.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8506781",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-06-27",
+      "status_date": "1985-12-16",
+      "estimated_cost": 5000,
+      "description": "revision of framing details",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8500867",
+      "type": "new construction wood frame",
+      "status": "complete",
+      "filed": "1985-01-25",
+      "status_date": "1986-02-21",
+      "estimated_cost": 410410,
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8404258",
+      "type": "demolitions",
+      "status": "expired",
+      "filed": "1984-04-24",
+      "status_date": "1986-03-04",
+      "description": "demolition",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3648038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3648&unit=1",
+      "retrieved": "2026-11-23"
+    }
+  ]
+}
