@@ -1,0 +1,107 @@
+{
+  "address": "1730–1732 Church Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/church-street/1730/",
+  "apn": "6632006",
+  "block": "6632",
+  "lot": "006",
+  "eas_baseid": "404267",
+  "coordinates": {
+    "lat": 37.743208,
+    "lng": -122.426905
+  },
+  "address_range": "1730–1732",
+  "street_numbers_on_parcel": [
+    "1730",
+    "1732"
+  ],
+  "parcel": {
+    "year_built": 1900,
+    "units": 2,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "1732 1730 CHURCH              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 34368,
+    "assessed_improvement_value": 23736
+  },
+  "historic_status": {
+    "ceqa_status_code": "C",
+    "ceqa_status_code_article_10_11": "C",
+    "ceqa_status_label": "Not a historical resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200206138944",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-06-13",
+      "status_date": "2002-09-17",
+      "estimated_cost": 25635,
+      "revised_cost": 25635,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2002–2011",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CHURCH&street_type=ST&address_number=1730",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6632006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6632&lot=006",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6632006",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice164unse-n19",
+      "name": "Noe Valley Voice, May 1992, p. 20",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice164unse/page/n19/mode/1up",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1992-04-30",
+      "kind": "closing",
+      "description": "The Flying Machine, an antique and secondhand store founded in 1964, closed here on April 30, 1992, after 28 years.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice164unse-n19"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "address": "4078 23rd Street, San Francisco, CA 94114",
+  "path": "/san-francisco/noe-valley/23rd-street/4078/",
+  "apn": "3624022",
+  "block": "3624",
+  "lot": "022",
+  "eas_baseid": "363386",
+  "coordinates": {
+    "lat": 37.753168,
+    "lng": -122.433716
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 2848,
+    "building_area_sqft": 2435,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "4080 4078 23RD                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 223415,
+    "assessed_improvement_value": 375773
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Noe & Alvarado Streets Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1885–1915",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202406104088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-10",
+      "status_date": "2024-06-21",
+      "estimated_cost": 15990,
+      "revised_cost": 15990,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8412205",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1984-11-14",
+      "status_date": "1985-08-06",
+      "estimated_cost": 5900,
+      "description": "repair termite damage",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=ST&address_number=4078",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3624022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3624&lot=022",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3624022",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43371607759443%2037.753167990732905)%27)",
+      "retrieved": "2026-11-23"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-noevalleyvoice04unse_2-n11",
+      "name": "Noe Valley Voice, May 1980, p. 12",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/noevalleyvoice04unse_2/page/n11/mode/1up",
+      "retrieved": "2026-11-23"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1891-09",
+      "kind": "building contract",
+      "description": "The Stick-style house, later covered in stucco, was put out to build in September 1891 at a cost of $3,650.",
+      "source": "sf-neighborhood-newspapers-noevalleyvoice04unse_2-n11"
+    }
+  ],
+  "unknowns": [
+    "The assessor's roll gives 1900 as the year this structure was built, not 1891."
+  ]
+}
