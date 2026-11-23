@@ -172,6 +172,14 @@
       "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
       "query": "https://archive.org/details/buildingengineer2929cont/page/n60/mode/1up",
       "retrieved": "2026-11-15"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%272668%20SAN%20BRUNO%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
     }
   ],
   "historical_record": [
@@ -184,5 +192,14 @@
   ],
   "building": {
     "builder": "S. B. Davis"
-  }
+  },
+  "businesses": [
+    {
+      "name": "Sunshine Wheatfield Dim Sum",
+      "kind": "Take-out",
+      "opened": "2017-10-01",
+      "address": "2668 San Bruno Avenue",
+      "source": "sf-registered-businesses"
+    }
+  ]
 }

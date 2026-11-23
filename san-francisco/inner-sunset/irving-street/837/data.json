@@ -211,6 +211,14 @@
       "name": "The San Francisco Call, 30 July 1912, p. 21",
       "query": "https://chroniclingamerica.loc.gov/lccn/sn85066387/1912-07-30/ed-1/seq-21/",
       "retrieved": "2026-10-02"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%27839%20IRVING%25%27%20or%20upper%28full_business_address%29%20like%20%27845%20IRVING%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
     }
   ],
   "historical_record": [
@@ -227,5 +235,21 @@
       "source": "loc-sf-call-1912-07-30"
     }
   ],
-  "hook": "A 1912 building, designed by Sylvain Schnaittacher."
+  "hook": "A 1912 building, designed by Sylvain Schnaittacher.",
+  "businesses": [
+    {
+      "name": "Manna",
+      "kind": "Restaurant",
+      "opened": "2011-06-09",
+      "address": "845 Irving Street",
+      "source": "sf-registered-businesses"
+    },
+    {
+      "name": "Pure Cane Juice",
+      "kind": "Juice bar",
+      "opened": "2025-11-01",
+      "address": "839 Irving Street",
+      "source": "sf-registered-businesses"
+    }
+  ]
 }

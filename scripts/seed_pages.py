@@ -2443,6 +2443,15 @@ KIND_ICON = {
     "Clothing": "hgi-shirt-01",
     "Mattresses": "hgi-bed",
     "Bedding": "hgi-bed",
+    # The kinds merchants/tools/register.py gives a food business.
+    "Restaurant": "hgi-restaurant-01",
+    "Take-out": "hgi-restaurant-01",
+    "Café": "hgi-coffee-01",
+    "Bakery": "hgi-croissant",
+    "Deli": "hgi-sandwich",
+    "Market": "hgi-shopping-basket-01",
+    "Juice bar": "hgi-drink",
+    "Bar": "hgi-drink",
 }
 # A food directory writes cuisines, not a kind, and every one of them is a
 # place to eat.

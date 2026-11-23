@@ -351,6 +351,14 @@
       "supports": "Current occupant",
       "query": "https://withbites.com/merchants",
       "retrieved": "2026-09-11"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%271581%20WEBSTER%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
     }
   ],
   "occupants": [
@@ -366,6 +374,15 @@
       ],
       "listed_address": "1581 Webster Street",
       "source": "bites"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "Suzu SF",
+      "kind": "Restaurant",
+      "opened": "2019-02-15",
+      "address": "1581 Webster Street",
+      "source": "sf-registered-businesses"
     }
   ]
 }

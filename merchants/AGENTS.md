@@ -35,7 +35,7 @@ lives.
 | `instacart` | Instacart, grocery delivery app | **Not fetched.** `https://www.instacart.com/robots.txt` ends in `User-Agent: *` / `Disallow: /`, a blanket disallow, so the listings are the ones typed into issue #281 off `https://www.instacart.com/grocery-delivery/ca/near-me-in-san-francisco-ca` — a name and an address each, and nothing more. No categories and no hours, so no entry publishes `kinds` or `opening_hours` and no panel carries a “Last updated” line; a refresh is a human handing over a fresh list, never a re-fetch | $10 credit, read off the referral link's own landing modal (“You got $10 referral credit!”), which agrees with the issue. The code only takes on the home page, so the row carries a `note` | `instacart/<date>.json` |
 | `momence` | Momence, class-booking hosts | Momence's host record (`https://momence.com/_api/primary/plugin/hosts/<id>`) confirms each host's name but lists no locations, so the addresses come from each studio's own location pages | Per host: one `REFERRALS` row per studio, keyed `momence-<studio>`, which is also the page's source id; the link opens that studio's sign-up | `momence/<date>.json` |
 | `ritual` | Ritual, ordering app | `https://ritual.co/order?lat=&lon=` server-renders its nearby-merchant list into the page's `__NEXT_DATA__` — 36 listings at most, within 5 km, ranked by distance from the point — so a grid of points and a de-duplication by merchant id is what covers the city. Each listing's own page, `https://ritual.co/order<menuPath>`, carries the postal code, the weekly hours and the categories the list leaves out | $10 across the first orders; the link opens Ritual's sign-up page, not the merchant | `ritual/<date>.json` |
-| `sf-registered-businesses` | The city's register of business locations — **not a directory with an offer, and not `occupants`** | `https://data.sf.gov/resource/g8m3-pdis.json`, one address at a time; see DATA-SOURCES.md for what to leave out. It feeds a page's `businesses` (REFERENCE.md → businesses), the storefront's history, not the occupant panel | None | `sf-registered-businesses/<date>.json` |
+| `sf-registered-businesses` | The city's register of business locations — **not a directory with an offer, and not `occupants`** | `https://data.sf.gov/resource/g8m3-pdis.json`, one address at a time; see DATA-SOURCES.md for what to leave out. It feeds a page's `businesses` (REFERENCE.md → businesses), the storefront's history, not the occupant panel. A list of merchants goes on their pages with `merchants/tools/register.py` (below) | None | `sf-registered-businesses/<date>.json`, from `lists/<date>-<slug>.tsv` |
 | `vuori` | Vuori, clothing (its own site) | `https://vuoriclothing.com/pages/stores` links 132 store pages, one of them in the city (the other San Francisco-named store is the Livermore outlet); the store page carries a schema.org `ClothingStore` block and prints the hours beside it | 20% off, on Vuori's own site | `vuori/<date>.json` |
 | `wework` | WeWork, coworking (its own site) | `https://www.wework.com/l/coworking-space/san-francisco--sf-bay-area--CA` names seven locations and links a building page for each, which carries the address in a schema.org `PostalAddress`. Cloudflare turns a plain fetch away, so the pages are read in a browser. **No opening hours**: what a page gives is staffed hours, which is not when a member can get in | A month free on a 12-month membership, on WeWork's own referral page | `wework/<date>.json` |
 
@@ -253,3 +253,47 @@ each entry went on, or why it didn't.
    never touched. `build_site.py` rebuilds the link index and then re-renders
    every page, so step 4 has already dealt with it. Read one displaced
    neighbour's page and confirm the only change is its Nearby list.
+
+## A list of merchants, from the register
+
+A hand-made list — the restaurants with no website of their own, say, whose
+map listing will point at their page — goes on the pages with one command:
+
+```bash
+python3 merchants/tools/register.py run merchants/lists/<date>-<slug>.tsv --area-from-nhood
+python3 scripts/build_site.py && python3 scripts/validate.py
+```
+
+The list is tab-separated with a header: `name` (the trading name, as the
+register spells it), `address` (the door, suite and all) and, optionally,
+`page` (where someone expects it; the resolver decides, and the list's page is
+only compared). `run` is `read`, `resolve_eas.py apply`, `manifest`,
+`seed_pages.py seed-list` for the parcels with no page, `apply` again, then
+`register.py apply`, which writes each merchant into its page's `businesses`
+with one `sf-registered-businesses` source row per page. `--area-from-nhood`
+files new pages under the parcel's own neighborhood rather than the nearest
+page's, which on a sparse street is a different one.
+
+What `read` decides, so the next list gets the same answers:
+
+- **The name is the register's**, with the registrant's legal form dropped
+  ("Jjamppong LLC" is Jjamppong) and `name_as_listed` keeping the list's.
+- **The kind** is what the name says plainly (Bakery, Café, Deli, Market,
+  Juice bar, Restaurant, in that order after Restaurant), else the health
+  licence the register carries (Restaurant, Take-out, Bakery, Bar). Each has a
+  glyph in `KIND_ICON`.
+- **`opened`** is the first registration of the same name at the door
+  (names compared loosely: "St Francis Fountain" is "Saint Francis Fountain"),
+  walking back from the open one and stopping at a gap of more than a year,
+  so a shop that closed and reopened under its old name dates from the
+  reopening. A registration opened and closed the same day is a correction
+  and is ignored.
+- **`ownership_changed`** is a later registration under a different
+  registrant. A registrant re-filing as a company named for the business, or
+  sharing a word of its name with the last ("Chan Fu", then "A.C.A. Fu
+  Group"), is the same owner; filings within 90 days of each other are one
+  handover. Registrants' names are compared and never written.
+- **A merchant with no open registration under its name stays off**, with
+  the reason in `publish`. So does one whose address the resolver cannot put
+  on a parcel; those take the by-hand route under Rules above.
+

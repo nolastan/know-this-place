@@ -120,6 +120,14 @@
       "listing": "https://sfplanning.org/project/sf-histories-historic-context-statements#completed",
       "label": "Modern Architecture and Landscape Design Context Statement, adopted 2011",
       "retrieved": "2026-09-01"
+    },
+    {
+      "id": "sf-registered-businesses",
+      "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+      "label": "SF Treasurer & Tax Collector, business registrations",
+      "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%272723%20MISSION%25%27",
+      "supports": "Businesses",
+      "retrieved": "2026-11-23"
     }
   ],
   "building": {
@@ -131,6 +139,15 @@
       "kind": "alteration",
       "description": "A Midcentury Modern storefront remodel of 1947 by Earl R. MacDonald.",
       "source": "modern-architecture-context-statement"
+    }
+  ],
+  "businesses": [
+    {
+      "name": "Las Palmeras Restaurant",
+      "kind": "Restaurant",
+      "opened": "1996-04-29",
+      "address": "2723 Mission Street",
+      "source": "sf-registered-businesses"
     }
   ]
 }

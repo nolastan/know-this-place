@@ -551,7 +551,7 @@ here is [Adding a source](#adding-a-source).
   - Registrations go stale: 1744 Clement Street still has 88 Laundromate &
     Cleaners open beside New Shining Cleaners, registered in 2026.
 - **Citation label:** "SF Treasurer & Tax Collector, business registrations"
-- **Verified:** 2026-11-17 (eleven dry cleaners; `merchants/sf-registered-businesses/2026-11-17.json`)
+- **Verified:** 2026-11-23 (52 restaurants and cafés, `merchants/sf-registered-businesses/2026-11-23.json`); 2026-11-17 (eleven dry cleaners)
 
 ## sf-public-restrooms — Public Bathrooms and Water Fountains
 

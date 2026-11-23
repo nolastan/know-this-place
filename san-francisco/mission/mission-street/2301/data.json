@@ -359,6 +359,14 @@
    "label": "San Francisco Board of Permit Appeals minutes, San Francisco Public Library (Internet Archive)",
    "query": "https://archive.org/details/minutesofmeeting1984sanf/page/n180/mode/1up",
    "retrieved": "2026-11-10"
+  },
+  {
+   "id": "sf-registered-businesses",
+   "name": "SF Office of the Treasurer & Tax Collector, Registered Business Locations via DataSF",
+   "label": "SF Treasurer & Tax Collector, business registrations",
+   "query": "https://data.sf.gov/resource/g8m3-pdis.json?%24where=upper%28full_business_address%29%20like%20%272301%20MISSION%25%27",
+   "supports": "Businesses",
+   "retrieved": "2026-11-23"
   }
  ],
  "building": {
@@ -385,6 +393,15 @@
    "kind": "occupancy",
    "description": "Ramm's Home Furnishings was on the second floor at 2301 Mission Street.",
    "source": "sf-board-of-permit-appeals-minutes-1984-08-15"
+  }
+ ],
+ "businesses": [
+  {
+   "name": "Inca Juices",
+   "kind": "Juice bar",
+   "opened": "2019-01-11",
+   "address": "2301 Mission Street",
+   "source": "sf-registered-businesses"
   }
  ]
 }
