@@ -21,6 +21,13 @@ around it, and the filter drops, in order:
   - any address printed in --advertiser (default 6) or more issues of the run
     — advertisers and mastheads.
 
+In a community monthly those last two rules throw out the news (every item
+ends in a phone number; the library and the churches are the most-printed
+addresses), so `--rescue` keeps any window they drop that carries a strong
+event word (opened, demolished, dedicated, built, fire, anniversary ...),
+once per address and surrounding words, marked `"rescued"`. Four runs did
+this by hand in a scratch directory before it was a flag.
+
 A street the OCR misspells the same way every issue ("Leiand" for Leland)
 matches nothing until it is given as `--alias LEIAND=LELAND`; count the
 squashed spellings of the title's own main streets before extracting.
@@ -90,6 +97,14 @@ EVENT = re.compile(
     r"located|site|founded|established|renovat\w*|remodel\w*|expan\w*|"
     r"inaugurat\w*|ceremon\w*|celebrat\w*|anniversary|landmark|eviction|evict\w*)\b",
     re.I)
+
+# --rescue's test: the words that make a dropped window worth reading in a
+# community paper, where every news item ends in a phone number and the
+# institutions with the best news are the addresses printed most often.
+STRONG_EVENT = re.compile(
+    r"\b(open(ed|ing)|closed (its|for good|permanently|down)|moved|relocat\w*|fire|burn(ed|t)|demoli\w*|built|"
+    r"dedicat\w*|renovat\w*|remodel\w*|anniversary|founded|established|"
+    r"groundbreaking|landmark|razed|torn down)\b", re.I)
 
 # Streets a paper prints without a type ("at 950 Stockton"). Any other street
 # needs its type word: untyped, a number before MILES, DAY, PAGE, STATES or
@@ -162,7 +177,9 @@ def extract(args) -> None:
         printed, _, eas = a.upper().partition("=")
         aliases[printed.strip()] = eas.strip()
     table, rx = street_table(aliases)
-    untyped = UNTYPED_OK | {u.upper().strip() for u in args.untyped or []}
+    extra_untyped = {table.get(u.upper().strip(), (u.upper().strip(),))[0]
+                     for u in args.untyped or []}
+    untyped = UNTYPED_OK | {u.upper().strip() for u in args.untyped or []} | extra_untyped
     found = []
     for ident, date, vol, no in items:
         p = corpus / "raw" / f"{ident}.txt"
@@ -181,7 +198,11 @@ def extract(args) -> None:
             stype = TYPE_WORDS.get((m.group(3) or "").upper().rstrip("."), "")
             if stype and types and stype not in types:
                 continue
-            if not stype and (name not in untyped or not m.group(2)[0].isupper()):
+            # An untyped name must be capitalised ("950 Stockton", not "950
+            # stockton"), except an ordinal the title was given as --untyped:
+            # "3995 24th" has no capital to look for.
+            explicit = name in extra_untyped and m.group(2)[0].isdigit()
+            if not stype and (name not in untyped or not (m.group(2)[0].isupper() or explicit)):
                 continue
             if not stype and len(types) == 1:
                 stype = next(iter(types))
@@ -198,9 +219,32 @@ def extract(args) -> None:
     issues_per = defaultdict(set)
     for f in found:
         issues_per[(f["number"], f["street_name"])].add(f["issue"])
-    kept, seen = [], set()
+    kept, seen, rescued_keys = [], set(), set()
     for f in found:
         w = f["window"]
+        # --rescue: a window the advertisement or advertiser rule would drop
+        # comes back when it carries a strong event word, once per (address,
+        # words around that event word) so a reprinted item counts once.
+        dropped_as = None
+        if not args.keep_ads and (PHONE.search(w) or ZIP.search(w) or HOURS.search(w)):
+            dropped_as = "advertisement"
+        elif len(issues_per[(f["number"], f["street_name"])]) >= args.advertiser:
+            dropped_as = "advertiser"
+        if (args.rescue and dropped_as and not OTHER_CITY.search(f["after"])
+                and not RESIDENCE.search(w)):
+            # Near the address, not anywhere in the window: at 300 characters a
+            # window spans the next ad's "grand opening" (Noe Valley Voice).
+            at = min(args.before, f["offset"])
+            near = w[max(0, at - 150):at + len(f["as_written"]) + 150]
+            ev = STRONG_EVENT.search(near)
+            if ev:
+                ctx = re.sub(r"\W+", " ", near[max(0, ev.start() - 40):ev.end() + 40]).lower()
+                key = (f["number"], f["street_name"], ctx)
+                if key not in rescued_keys:
+                    rescued_keys.add(key)
+                    counts[f"rescued from {dropped_as}"] += 1
+                    kept.append(dict(f, rescued=dropped_as))
+                    continue
         if OTHER_CITY.search(f["after"]):
             counts["other city"] += 1
             continue
@@ -270,6 +314,9 @@ def main() -> int:
     e.add_argument("--after", type=int, default=300)
     e.add_argument("--advertiser", type=int, default=6)
     e.add_argument("--keep-ads", action="store_true")
+    e.add_argument("--rescue", action="store_true",
+                   help="also keep advertisement- or advertiser-dropped windows that carry "
+                        "a strong event word, deduplicated; each is marked 'rescued'")
     e.add_argument("--untyped", action="append", metavar="NAME",
                    help="a street this title prints without its type (CHENERY); "
                         "repeatable, added to the built-in downtown list")
