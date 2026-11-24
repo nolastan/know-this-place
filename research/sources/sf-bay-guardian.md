@@ -6,13 +6,13 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high for 1966–2006 (print only, never on the paper's website); medium for 2008–2014, when the paper also published online.
-> - **Coverage:** 173 of 996 issues read, 1966–1976. See the `Verified:` line.
+> - **Coverage:** 300 of 996 issues read, 1966–1986. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/sf-bay-guardian/`
 
 - **What:** The *San Francisco Bay Guardian*, the city's alternative
   newspaper, founded 27 October 1966 and closed in October 2014; irregular at
   first, fortnightly in the early 1970s, weekly from 1975. The archive holds
-  **996 issues**, unevenly: 1966–1976 has 173, 1977–1986 has 153 (nothing for
+  **996 issues**, unevenly: 1966–1976 has 173, 1977–1986 has 127 (nothing for
   1980 or 1987), 1988–1994 has 179, 1995–1997 nothing, 1998–2006 has 122 and
   2008–2014 has 395. It is an investigative and listings paper. The
   address-level facts are in the news and feature pages: tenant strikes and
@@ -41,7 +41,8 @@
   by address), `prose.py` (keeps the clusters that read as article prose),
   `evf.py` and `evf2.py` (event-word clusters), `kw.py` (event-word passages
   with no number), `q.py` (context for a pattern in one issue or a year),
-  `decisions_g1.py` (one row per finding), `build.py`, `patch_g1.py`
+  `news.py` (prose with a numbered address and a building-news word, read
+  straight from the raw text), `decisions_g1.py` (one row per finding), `build.py`, `patch_g1.py`
   (by-hand placements, holds, gone numbers), `publish.py`, `audit.py` and
   `eas.py`.
 - **What is actually usable:** in 1966–1976, 25,304 numbered mentions gave 48
@@ -106,9 +107,19 @@
   Natoma Street, Tadich Grill's move, the old sourdough bakeries, the
   International Hotel's demolition request, the Gartland Apartments fire, the
   Merchandise Mart fire of 1958 and the Goodman Building's rear flats.
-  **Resume at 1977:** next 1977–1986 (153 issues), then 1988–1994 (179),
-  1998–2006 (122), and last 2008–2014 (395), which is the least valuable
-  because the paper was on the open web in those years.
+  1977–1986 (127 issues, none for 1980; 33,064 mentions, 1,088 address
+  clusters; 80 prose clusters, 16 event-word passages and the 55 passages of
+  the news-word pass read): 21 findings, 15 resolved and published on 15
+  pages, none seeded, 1 placed by hand, 2 held (1660 Bush, 3410 19th), 4 at
+  numbers EAS no longer holds (842 Kearny, 128 The Embarcadero, 58-64
+  Sutter, 22 Kearny). They include the Victory Building evictions beside the
+  International Hotel, the Temple Beautiful, the Cadillac and Clayton
+  hotels' purchase by nonprofits, the Swiss American Hotel's code hearing,
+  1300 Sacramento, the Planning Commission's approvals of October 1983,
+  100 First Street and the attack on the AIDS vigil at United Nations Plaza.
+  **Resume at 1988:** next 1988–1994 (179 issues), then 1998–2006 (122),
+  and last 2008–2014 (395), which is the least valuable because the paper
+  was on the open web in those years.
 - **Verified:** 2026-11-24 (source found by browsing the Internet Archive's
   San Francisco newspaper collections, promoted and 1966–1976 read in one
   run: 173 issues downloaded from `_djvu.xml`, about 100 candidates checked
@@ -118,4 +129,4 @@
   already on the page from a context statement or the planning minutes is
   common for the famous buildings, so run the overlap check before writing
   more than a line; and the collection's identifiers carry no date, so every
-  script keys on the identifier and reads the date from `items_d.tsv`.)
+  script keys on the identifier and reads the date from `items_d.tsv`. Same day, 1977–1986: 127 issues, 21 findings, each quote found again. Learned: `news.py`, a pass over the raw text for prose with a numbered address and a building-news word, finds the planning and housing stories the advertisement filter hides, and is now the first thing to read; by the 1980s the planning minutes and environmental reports already on the pages cover most of the paper's highrise stories, so a third of the candidates fell at the overlap check.)
