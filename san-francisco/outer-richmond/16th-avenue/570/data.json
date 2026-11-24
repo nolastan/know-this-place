@@ -1,0 +1,135 @@
+{
+  "address": "570 16th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/16th-avenue/570/",
+  "apn": "1558027",
+  "block": "1558",
+  "lot": "027",
+  "eas_baseid": "308186",
+  "coordinates": {
+    "lat": 37.777308,
+    "lng": -122.47452
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3187.5,
+    "building_area_sqft": 1790,
+    "lot_depth_ft": 27.5,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0570 16TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 586698,
+    "assessed_improvement_value": 622290,
+    "last_sale_date": "2011-09-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201201273024",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2012-01-27",
+      "status_date": "2012-04-12",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "the scope of work is limited to an exterior addition of a front entry stair and coverting a first floor window to an entry door.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201112150709",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2011-12-15",
+      "status_date": "2011-12-16",
+      "estimated_cost": 150000,
+      "revised_cost": 150000,
+      "description": "interior remodel-replacing (e) kitchen & 2 bathrooms, replace windows, adding a new deck at rear at a height of less than 30\" above (e) patio",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200208063284",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-08-06",
+      "status_date": "2012-01-04",
+      "estimated_cost": 3400,
+      "revised_cost": 3400,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9200139",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1992-01-06",
+      "status_date": "1992-05-06",
+      "estimated_cost": 2600,
+      "description": "reroof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=570",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1558027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1558&lot=027",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1558027",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-08-12-n266",
+      "name": "Building and Industrial News, 12 August 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri14214cont/page/n266/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-08-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame dwelling, estimated at $2,750. E. Oman was named as architect.",
+      "source": "building-industrial-news-1914-08-12-n266"
+    }
+  ],
+  "building": {
+    "architect": "E. Oman"
+  }
+}

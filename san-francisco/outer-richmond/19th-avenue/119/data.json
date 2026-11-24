@@ -1,0 +1,154 @@
+{
+  "address": "119–121 19th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/19th-avenue/119/",
+  "apn": "1379002",
+  "block": "1379",
+  "lot": "002",
+  "eas_baseid": "452530",
+  "coordinates": {
+    "lat": 37.785602,
+    "lng": -122.479012
+  },
+  "address_range": "119–121",
+  "street_numbers_on_parcel": [
+    "119",
+    "121"
+  ],
+  "parcel": {
+    "year_built": 1914,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 3297,
+    "building_area_sqft": 3577,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0121 0119 19TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 56334,
+    "assessed_improvement_value": 120109
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202507281736",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-07-28",
+      "status_date": "2025-12-10",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "repair broken stairway entry. (less than 50%)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202303244352",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-03-24",
+      "status_date": "2023-05-26",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove old/non functional fireplace at 119/121 19th av. no replacements. patch and coverup. maintain fire separation b/w units. reframe btwn units.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9617043",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-09-10",
+      "status_date": "1997-02-03",
+      "estimated_cost": 3000,
+      "description": "kitchen remodeling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9206814",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1992-05-01",
+      "status_date": "1993-12-10",
+      "estimated_cost": 250,
+      "revised_cost": 1200,
+      "description": "remove and replace windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921890",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-13",
+      "status_date": "1989-12-26",
+      "estimated_cost": 2500,
+      "description": "install 4x6\" header over garage, repair brick",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8912246",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1989-07-12",
+      "status_date": "1989-11-13",
+      "estimated_cost": 1200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=19TH&street_type=AVE&address_number=119",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1379002&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1379&lot=002",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1379002",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-10-07-n571",
+      "name": "Building and Industrial News, 7 October 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri14214cont/page/n571/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-10-07",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of flats, estimated at $4,000. The owner was the San Francisco Bldg. Co.",
+      "source": "building-industrial-news-1914-10-07-n571"
+    }
+  ]
+}

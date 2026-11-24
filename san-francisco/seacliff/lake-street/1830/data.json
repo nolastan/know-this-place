@@ -1,0 +1,180 @@
+{
+  "address": "1830 Lake Street, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/lake-street/1830/",
+  "apn": "1339009A",
+  "block": "1339",
+  "lot": "009A",
+  "eas_baseid": "300675",
+  "coordinates": {
+    "lat": 37.786254,
+    "lng": -122.479423
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3001,
+    "building_area_sqft": 2684,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 1830 LAKE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 520092,
+    "assessed_improvement_value": 966071,
+    "last_sale_date": "1992-07-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201906032317",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-06-03",
+      "status_date": "2020-03-05",
+      "estimated_cost": 75000,
+      "revised_cost": 120000,
+      "description": "kitchen & powder room remodel. deck addition.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204164101",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-16",
+      "status_date": "2002-12-26",
+      "estimated_cost": 10750,
+      "revised_cost": 10750,
+      "description": "re-frame 3rd fl roof (broken joists) as per holmes/cullery structural engineers 1 page dated 4/16/02",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204033071",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2002-04-03",
+      "status_date": "2002-12-26",
+      "estimated_cost": 12500,
+      "revised_cost": 12500,
+      "description": "remove damaged plaster ceiling,replace drywall 3rd fl,dryrotted wndw 2nd fl bath,replace in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9512509",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-08-08",
+      "status_date": "1995-09-11",
+      "estimated_cost": 2230,
+      "description": "additional work see 9511851",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511851",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-28",
+      "status_date": "1995-09-11",
+      "estimated_cost": 14643,
+      "description": "seismic improvements",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9214861",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-08-28",
+      "status_date": "1995-02-22",
+      "estimated_cost": 30000,
+      "description": "interior remodel/relocate master bath",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9204109",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-03-17",
+      "status_date": "1992-04-27",
+      "estimated_cost": 3650,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8717330",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1987-12-07",
+      "status_date": "1988-07-14",
+      "estimated_cost": 6000,
+      "description": "to change bath fixture, new toiler, new electric fixture.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 9,
+    "range": "1987–2019",
+    "shown_on_page": 8,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LAKE&street_type=ST&address_number=1830",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1339009A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1339&lot=009A",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1339009A",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-10-14-n609",
+      "name": "Building and Industrial News, 14 October 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri14214cont/page/n609/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-10-14",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame dwelling, estimated at $4,000. E. E. Young was named as architect.",
+      "source": "building-industrial-news-1914-10-14-n609"
+    }
+  ],
+  "building": {
+    "architect": "E. E. Young"
+  }
+}
