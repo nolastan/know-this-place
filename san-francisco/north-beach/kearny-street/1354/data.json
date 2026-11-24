@@ -1,0 +1,187 @@
+{
+  "address": "1354–1356 Kearny Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/kearny-street/1354/",
+  "apn": "0114030",
+  "block": "0114",
+  "lot": "030",
+  "eas_baseid": "277692",
+  "coordinates": {
+    "lat": 37.800594,
+    "lng": -122.405789
+  },
+  "address_range": "1354–1356",
+  "street_numbers_on_parcel": [
+    "1354",
+    "1356"
+  ],
+  "parcel": {
+    "year_built": 1905,
+    "units": 3,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 4,
+    "lot_area_sqft": 1091.4,
+    "building_area_sqft": 2088,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 1354 KEARNY              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 997500,
+    "assessed_improvement_value": 427500,
+    "last_sale_date": "2024-07-19"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1905",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200011064942",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-11-06",
+      "status_date": "2000-11-22",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "replace dry rot exterior siding at front of property, new siding will match the existing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M14869",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-31",
+      "status_date": "2001-04-30",
+      "revised_cost": 8000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9813855",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1998-07-21",
+      "status_date": "1998-10-15",
+      "estimated_cost": 5000,
+      "description": "remove shower,install bathtub,remove plaster/lath to sheetrk",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9807855S",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-05-04",
+      "status_date": "1998-10-15",
+      "estimated_cost": 6500,
+      "description": "horizontal addition",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9516548",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-10-05",
+      "status_date": "1995-12-01",
+      "estimated_cost": 8800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9106042",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-04-10",
+      "status_date": "1991-04-12",
+      "estimated_cost": 1,
+      "description": "renewal of permit inspection 9006132",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9006132",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1990-03-29",
+      "status_date": "1990-09-25",
+      "estimated_cost": 4500,
+      "description": "kitchen remodel",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8922355",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-17",
+      "status_date": "1990-05-16",
+      "estimated_cost": 2000,
+      "description": "replace 4 windows. no chane in size",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8907961",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1989-05-10",
+      "status_date": "1990-10-17",
+      "estimated_cost": 5000,
+      "description": "enlarge opening at rear of garage.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=KEARNY&street_type=ST&address_number=1354",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0114030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0114&lot=030",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0114030",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-semaphore116tele-n10",
+      "name": "The Semaphore (Telegraph Hill Dwellers), no. 116, June 1991",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/semaphore116tele/page/n10/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1906",
+      "kind": "construction",
+      "description": "The house was built by Giovanni and Giovanna Figoni to replace their home on the same site, destroyed in the fire that followed the earthquake.",
+      "source": "sf-neighborhood-newspapers-semaphore116tele-n10"
+    }
+  ],
+  "unknowns": [
+    "The Semaphore says the house at 1354-56 Kearny Street was built in 1906, after the fire; the assessor's roll gives 1905."
+  ]
+}

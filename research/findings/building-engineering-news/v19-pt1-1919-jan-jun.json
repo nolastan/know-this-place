@@ -2788,7 +2788,7 @@
    "address_as_written": "418 UNION",
    "street_number": "418",
    "street_name": "UNION",
-   "description": "A permit was sought for alterations, estimated at $500.",
+   "description": "A permit was sought for alterations by day's work, estimated at $500. The owners were Gonzalez & Fortes, on the premises.",
    "extra": {
     "item": "82",
     "section": "Building Permit Applications",
@@ -2804,15 +2804,22 @@
    },
    "raw": {
     "text": "(82) 418 UNION. Alterations.. Architect - None. Day's work. COST. $500",
-    "ocr_uncertain": true,
+    "ocr_uncertain": false,
     "note": "Rebuilt from the OCR heading and the architect, contractor and cost fields; the owner, sureties and payment schedule are cut."
    },
-   "confidence": "low",
+   "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-11-15",
-    "method": "Lot built from the block corner on the DPW centrelines and the sf-parcels shapes; street numbers matched exactly in sf-eas-addresses.",
-    "note": "Placed on parcel 0104011 (number; roll year 1906 fits) but not checked against the page image and not published: a single house with no architect named and no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+    "status": "resolved",
+    "apn": "0104011",
+    "path": "/san-francisco/north-beach/union-street/418/",
+    "eas_address": "418 UNION ST",
+    "method": "Lot built from the block corner on the DPW centrelines and the sf-parcels shapes; street numbers matched exactly in sf-eas-addresses. Number, wording, owner (Gonzalez & Fortes, premises) and cost ($500) read against the page image on 2026-11-24, when the Semaphore run gave the parcel a page (Peter Macchiarini's first shop).",
+    "checked_on": "2026-11-24",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
    }
   },
   {

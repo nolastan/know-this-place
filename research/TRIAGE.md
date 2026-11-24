@@ -54,15 +54,6 @@ documents sampled are large and text-bearing (LM271, 75pp; LM300, 235pp), but
 LM11 and LM200 are image-only and would need OCR. Same publisher as
 `sf-context-statements` but an entirely separate corpus.
 
-**Bay Area Reporter archive.** 1,529 issues on the Internet Archive under
-collection `bayareareporter`, contributed by the GLBT Historical Society,
-identifiers of the form `BAR_YYYYMMDD`, each with OCR text. This is a much
-cleaner path than CDNC, which also holds the paper but is walled. **Caution:**
-the items carry an explicit "Copyright BAR Media, Inc." — facts extract freely
-under the evidence bar, the text does not get committed or reproduced. Note the
-register already lists Bay Area Reporter under `local-news` as a browse-only
-reference; mining the archive is a different activity and wants its own id.
-
 **Crocker-Langley city directories.** 41 volumes on the Internet Archive with
 full OCR. **The privacy limit removes most of the book.** A sampled slice of the
 1900 volume is almost entirely residents, marked with `r.` for residence — all

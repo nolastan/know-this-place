@@ -1,0 +1,68 @@
+{
+  "address": "373 Lombard Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/lombard-street/373/unit-301/",
+  "unit": "301",
+  "apn": "0078068",
+  "block": "0078",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1060,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 450568,
+    "assessed_improvement_value": 450568,
+    "last_sale_date": "2001-09-04"
+  },
+  "permits": [
+    {
+      "number": "200901089784",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-08",
+      "status_date": "2009-09-11",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "work @ one unit only. remodel 2 bathroom. new sheet rock, fixtures, tile. no structural changes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200707267879",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-07-26",
+      "status_date": "2012-09-05",
+      "estimated_cost": 14153,
+      "revised_cost": 14153,
+      "description": "install 8 windows 3 visible to street aluminum (as-is) no change.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200510276729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-10-27",
+      "status_date": "2005-12-19",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "remove countertops & cabinets - replace with new",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0078068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0078&unit=301",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}

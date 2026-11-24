@@ -1,0 +1,101 @@
+{
+  "address": "383 Lombard Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/lombard-street/373/unit-305/",
+  "unit": "305",
+  "apn": "0078072",
+  "block": "0078",
+  "lot": "072",
+  "parcel": {
+    "building_area_sqft": 975,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 611500,
+    "assessed_improvement_value": 611500,
+    "last_sale_date": "2014-01-15"
+  },
+  "permits": [
+    {
+      "number": "202401093619",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-01-09",
+      "status_date": "2024-01-30",
+      "estimated_cost": 3000,
+      "revised_cost": 3000,
+      "description": "(1) window: install z-bar flashing over center window in dining room, and repair stucco after installation.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202309055884",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-09-05",
+      "status_date": "2023-11-07",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "dry rot repair around 6 windows, replace in kind window trim, mauldings and stucco.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610180619",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-18",
+      "status_date": "2016-12-16",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "#305 - cut tracks in sheetrock for recessed can install. patch & paint after install.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201610039376",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-10-03",
+      "status_date": "2016-11-30",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "repalce 6 street-facing windows and 5 rear windows with bronze aluminum dual glazed windows in-kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401166486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-16",
+      "status_date": "2014-05-12",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "add new washer & electric dryer into (e) closet at unit entry inside unit. no structural work. egress maintained.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310240153",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-24",
+      "status_date": "2014-01-31",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove and replace 7 single payne bronzed aluminum windows with 7 double payne bronzed aluminum windows. size is like for like, comply with egress windows.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0078072&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0078&unit=305",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}

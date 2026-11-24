@@ -1,0 +1,118 @@
+{
+  "address": "356 7th Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/7th-street/356/",
+  "apn": "3755010",
+  "block": "3755",
+  "lot": "010",
+  "eas_baseid": "365916",
+  "coordinates": {
+    "lat": 37.775927,
+    "lng": -122.407034
+  },
+  "parcel": {
+    "lot_area_sqft": 3998,
+    "use": "Commercial Office",
+    "property_class": "Medical- dental Office Building",
+    "construction_type_code": "NA",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0000 0356 07TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201603212650",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-03-21",
+      "status_date": "2016-06-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "revision for permit 201406279877: revise main entry ramp, landing and maintenace room as requested by client due to operational changes and site conditions. maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201406279877",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-06-27",
+      "status_date": "2016-06-15",
+      "estimated_cost": 300000,
+      "revised_cost": 300000,
+      "description": "ada barrier removal by mayor's office on disability upgrade ada accessibilities on: entry door/ramp, counters, 1st floor toilet rooms, exam, rooms, itnerior doors & hardward replacement, drinking fountains & signage (all work to be performed on ground floor). n/a maher ordinance",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2014–2016",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=07TH&street_type=ST&address_number=356",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3755010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3755&lot=010",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3755010",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "bay-area-reporter-BAR_19821118-n8",
+      "name": "Bay Area Reporter, 18 November 1982",
+      "label": "Bay Area Reporter archive (Internet Archive)",
+      "query": "https://archive.org/details/BAR_19821118/page/n8/mode/1up",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "bay-area-reporter-BAR_19810716-n0",
+      "name": "Bay Area Reporter, 16 July 1981",
+      "label": "Bay Area Reporter archive (Internet Archive)",
+      "query": "https://archive.org/details/BAR_19810716/page/n0/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1982-11-22",
+      "kind": "move",
+      "description": "City Clinic, the Department of Public Health's diagnostic and treatment center for venereal disease, moved on 22 November 1982 into 356 Seventh Street, a city-owned fire station that had been completely renovated for it, after 13 years on Fourth Street.",
+      "source": "bay-area-reporter-BAR_19821118-n8"
+    },
+    {
+      "date": "1981-07",
+      "kind": "occupancy",
+      "description": "After the Folsom Street fire of 10 July 1981 the old firehouse here was to be reopened as the Folsom Street Displaced Persons Center for people the fire had left homeless.",
+      "source": "bay-area-reporter-BAR_19810716-n0"
+    }
+  ]
+}

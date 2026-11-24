@@ -1,0 +1,54 @@
+{
+  "address": "3338 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3338/unit-201/",
+  "unit": "201",
+  "apn": "3569124",
+  "block": "3569",
+  "lot": "124",
+  "parcel": {
+    "building_area_sqft": 1012
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 169064,
+    "assessed_improvement_value": 259360
+  },
+  "permits": [
+    {
+      "number": "202205124132",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-05-12",
+      "status_date": "2022-07-26",
+      "estimated_cost": 16000,
+      "revised_cost": 16000,
+      "description": "retile bathroom bathtub wall tile + replace kitchen countertop. replace bathroom countertop.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202105210817",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-21",
+      "status_date": "2021-07-15",
+      "estimated_cost": 10000,
+      "revised_cost": 1000,
+      "description": "one unit: open wall to run wire for hvac & patch wall after . approx 80 sq ft in living room",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3569124&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3569&unit=201",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}

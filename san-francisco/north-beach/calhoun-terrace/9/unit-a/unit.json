@@ -1,0 +1,56 @@
+{
+  "address": "9 Calhoun Terrace, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/calhoun-terrace/9/unit-a/",
+  "unit": "A",
+  "apn": "0113064",
+  "block": "0113",
+  "lot": "064",
+  "parcel": {
+    "building_area_sqft": 1610,
+    "rooms": 6,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 330699,
+    "assessed_improvement_value": 220462
+  },
+  "permits": [
+    {
+      "number": "201303011299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-03-01",
+      "status_date": "2013-04-12",
+      "estimated_cost": 7750,
+      "revised_cost": 7750,
+      "description": "dry rot repair at (1) bottom north sill (2) south deck railing (3) front south east corner vertical posts + horizontal structural beam and lower assembly. work to take place in common area only permit termite report #13175",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201203206441",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2012-03-20",
+      "status_date": "2012-10-24",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "repair porch & railing less than 50%.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0113064&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0113&unit=A",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}

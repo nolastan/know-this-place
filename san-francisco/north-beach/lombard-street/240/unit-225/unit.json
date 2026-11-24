@@ -1,0 +1,55 @@
+{
+  "address": "240 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/240/unit-225/",
+  "unit": "225",
+  "apn": "0060088",
+  "block": "0060",
+  "lot": "088",
+  "parcel": {
+    "building_area_sqft": 580
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 385218,
+    "assessed_improvement_value": 256811,
+    "last_sale_date": "2022-02-17"
+  },
+  "permits": [
+    {
+      "number": "202109017564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-09-01",
+      "status_date": "2021-10-20",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "remove all fire sprinkler piping from 4 elevator machine rooms. relocate sprinkler service piping that crossed through 2 elevators machine rooms. remove all spinkler related materials from 7 elevator pits.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200005049096",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-05-04",
+      "status_date": "2002-05-04",
+      "estimated_cost": 360000,
+      "revised_cost": 360000,
+      "description": "waterproofing existing planters, remove and replace seal at interface of bldng/planters w sidewalk a",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0060088&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0060&unit=225",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "address": "216 Filbert Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/filbert-street/216/",
+  "block": "0085",
+  "eas_baseid": "276877",
+  "coordinates": {
+    "lat": 37.802387,
+    "lng": -122.403541
+  },
+  "parcel": {
+    "year_built": 1900,
+    "use": "Single Family Residential",
+    "property_class": "Condominium",
+    "construction_type_code": "NA",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "units": 4
+  },
+  "condominium": {
+    "lots": [
+      "066",
+      "067",
+      "068",
+      "069"
+    ],
+    "method": "Proposed from the 2025 roll for block 0085: every condominium parcel the roll files under 216 FILBERT ST, and the unbroken run of lots beside parcel 0085066 on the same street with the same year built (1900). 4 lots, 066–069."
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201210031264",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2012-10-03",
+      "status_date": "2012-11-13",
+      "estimated_cost": 1,
+      "revised_cost": 50,
+      "description": "to comply with physical inspection report cc7164; remove plywood painting scaffod, not visible from street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518302",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-31",
+      "status_date": "1996-05-21",
+      "estimated_cost": 685,
+      "description": "replace decking where damaged at rear,use 2x6 redwood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-30",
+      "status_date": "1992-03-13",
+      "estimated_cost": 3500,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120600",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-30",
+      "status_date": "1992-03-13",
+      "estimated_cost": 2500,
+      "description": "replace windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110251",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-06-11",
+      "status_date": "1992-05-06",
+      "estimated_cost": 52000,
+      "description": "kitchen remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILBERT&street_type=ST&address_number=216",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll, every parcel on block 0085)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?block=0085&closed_roll_year=2025",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0085",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0085066",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40354067202668%2037.802386755937285)%27)",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-thesemaphore2006spring175-n15",
+      "name": "The Semaphore (Telegraph Hill Dwellers), no. 175, April 2006",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/thesemaphore2006spring175/page/n15/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1865",
+      "kind": "construction",
+      "description": "A house of 1865, remodeled in 1959; its first owners were Andrew Benson and later James Gorman, both stevedores. One of the Telegraph Hill houses that came through the 1906 fire.",
+      "source": "sf-neighborhood-newspapers-thesemaphore2006spring175-n15"
+    }
+  ],
+  "unknowns": [
+    "The Semaphore, drawing on the Telegraph Hill Historic District's research, dates the building at 216 Filbert to 1865; the assessor's roll says 1900."
+  ]
+}

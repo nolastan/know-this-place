@@ -1,0 +1,113 @@
+{
+  "address": "238 Bonview Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/bonview-street/238/",
+  "apn": "5669008",
+  "block": "5669",
+  "lot": "008",
+  "eas_baseid": "382159",
+  "coordinates": {
+    "lat": 37.740144,
+    "lng": -122.418982
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 1843.1,
+    "building_area_sqft": 1200,
+    "lot_depth_ft": 70,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0238 BONVIEW             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 681616,
+    "assessed_improvement_value": 454408,
+    "last_sale_date": "2004-07-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202505055797",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-05",
+      "status_date": "2025-08-28",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "remodel kitchen in kind on first floor. remodel wet bar in kind on second floor. no moving walls. kitchen approx. 150 sq ft. wet bar approx. 80 sq ft.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200909146711",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-14",
+      "status_date": "2009-09-14",
+      "estimated_cost": 22000,
+      "revised_cost": 22000,
+      "description": "replace window aluminum clad windows, front and back approx 19. install hardyplank siding at rear of building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BONVIEW&street_type=ST&address_number=238",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5669008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5669&lot=008",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5669008",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-Bernal1980_05-n5",
+      "name": "Bernal Journal, May 1980",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/Bernal1980_05/page/n5/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1980-03-21",
+      "kind": "fire",
+      "description": "Fire destroyed the unoccupied house here at dawn on Friday, March 21, 1980; damage was put at $85,000.",
+      "source": "sf-neighborhood-newspapers-Bernal1980_05-n5"
+    }
+  ],
+  "unknowns": [
+    "The Bernal Journal of May 1980 says fire destroyed the house here; the assessor's roll dates the present house to 1900."
+  ]
+}

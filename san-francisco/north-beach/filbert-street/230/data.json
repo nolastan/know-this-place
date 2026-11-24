@@ -1,0 +1,185 @@
+{
+  "address": "230 Filbert Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/filbert-street/230/",
+  "apn": "0085038",
+  "block": "0085",
+  "lot": "038",
+  "eas_baseid": "276902",
+  "coordinates": {
+    "lat": 37.802195,
+    "lng": -122.404208
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 3,
+    "bathrooms": 1,
+    "lot_area_sqft": 2006.69,
+    "building_area_sqft": 500,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0230 FILBERT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 106709,
+    "assessed_improvement_value": 131782
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Resource Evaluation Response, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "WILLIAM ROSS COTTAGE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200708160043",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-08-16",
+      "status_date": "2012-11-28",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609081805",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2006-09-08",
+      "status_date": "2008-07-09",
+      "estimated_cost": 120000,
+      "revised_cost": 120000,
+      "description": "replace portion of exist roof, new habitable space in basement.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9518302",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1995-10-31",
+      "status_date": "1996-05-21",
+      "estimated_cost": 685,
+      "description": "replace decking where damaged at rear,use 2x6 redwood",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120593",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-30",
+      "status_date": "1992-03-13",
+      "estimated_cost": 3500,
+      "description": "repair dry rot",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9120600",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-30",
+      "status_date": "1992-03-13",
+      "estimated_cost": 2500,
+      "description": "replace windows",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9110251",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-06-11",
+      "status_date": "1992-05-06",
+      "estimated_cost": 52000,
+      "description": "kitchen remodel",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 8,
+    "range": "1991–2008",
+    "shown_on_page": 6,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILBERT&street_type=ST&address_number=230",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0085038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0085&lot=038",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0085038",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40420837262475%2037.802195179139495)%27)",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-thesemaphore2006spring175-n15",
+      "name": "The Semaphore (Telegraph Hill Dwellers), no. 175, April 2006",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/thesemaphore2006spring175/page/n15/mode/1up",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-thesemaphore2006summer176-n8",
+      "name": "The Semaphore (Telegraph Hill Dwellers), no. 176, June 2006",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/thesemaphore2006summer176/page/n8/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1858",
+      "kind": "construction",
+      "description": "A vernacular cottage of 1858; its first owner was William F. Ross, a laborer and later a longshoreman. One of the Telegraph Hill houses that came through the 1906 fire.",
+      "source": "sf-neighborhood-newspapers-thesemaphore2006spring175-n15"
+    },
+    {
+      "date": "2006",
+      "kind": "alteration",
+      "description": "The Landmarks Board recommended approval in 2006 of a room excavated beneath the 1858 William F. Ross Cottage on the Filbert Steps, on condition that the cottage not be lifted, even during construction, and that the addition not be visible from the public way.",
+      "source": "sf-neighborhood-newspapers-thesemaphore2006summer176-n8"
+    }
+  ],
+  "unknowns": [
+    "The Semaphore, drawing on the Telegraph Hill Historic District's research, dates the building at 230 Filbert to 1858; the assessor's roll says 1900."
+  ]
+}

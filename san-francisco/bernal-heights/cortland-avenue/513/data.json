@@ -1,0 +1,151 @@
+{
+  "address": "513 Cortland Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/cortland-avenue/513/",
+  "apn": "5664018",
+  "block": "5664",
+  "lot": "018",
+  "eas_baseid": "382013",
+  "coordinates": {
+    "lat": 37.73923,
+    "lng": -122.416233
+  },
+  "parcel": {
+    "year_built": 1955,
+    "units": 2,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 2,
+    "lot_area_sqft": 2001,
+    "building_area_sqft": 2114,
+    "use": "Multi-Family Residential",
+    "property_class": "Flat & Store 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0513 CORTLAND            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 65288,
+    "assessed_improvement_value": 206810
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1955",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202310108299",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2023-10-10",
+      "status_date": "2023-12-15",
+      "estimated_cost": 125000,
+      "revised_cost": 125000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9505379",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1995-04-13",
+      "status_date": "1995-10-26",
+      "estimated_cost": 3500,
+      "description": "add 2 partitionwalls with 2 door interior windows new duplex",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8815876",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-10-17",
+      "status_date": "1989-03-30",
+      "estimated_cost": 2375,
+      "revised_cost": 0,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8814941",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-10-05",
+      "status_date": "1989-03-28",
+      "estimated_cost": 450,
+      "description": "install 1-hr door as a communicating opening",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8507447",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-07-15",
+      "status_date": "1985-12-04",
+      "estimated_cost": 28000,
+      "description": "repair firedamage to flr. roof",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CORTLAND&street_type=AVE&address_number=513",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5664018&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5664&lot=018",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5664018",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-Bernal1978_10-n2",
+      "name": "Bernal Journal, October 1978",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/Bernal1978_10/page/n2/mode/1up",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-Bernal1985_09-n5",
+      "name": "Bernal Journal, September 1985",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/Bernal1985_09/page/n5/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1978-10",
+      "kind": "opening",
+      "description": "Mission Head Start opened a pre-school site here in the fall of 1978.",
+      "source": "sf-neighborhood-newspapers-Bernal1978_10-n2"
+    },
+    {
+      "date": "1985-06-28",
+      "kind": "fire",
+      "description": "A fire on Friday, June 28, 1985 damaged the Bernal Heights Community Foundation's offices here and the adjoining building; the Fire Department's arson squad found it was deliberately set, and damage to this building was put at about $35,000.",
+      "source": "sf-neighborhood-newspapers-Bernal1985_09-n5"
+    }
+  ]
+}

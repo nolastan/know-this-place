@@ -1,0 +1,882 @@
+{
+ "source_id": "sf-neighborhood-newspapers",
+ "batch": "telegraph-hill-bulletin-1956-1975",
+ "read_on": "2026-11-24",
+ "notes": "The Telegraph Hill Dwellers' Telegraph Hill Bulletin, May 1956 to August 1975 (from March 1967 its masthead reads Telegraph Hill Semaphore): the 56 issues in the Internet Archive collection sanfrancisconewspapers, the forerunner of The Semaphore read in semaphore-1976-1999 and semaphore-2000-2026. 52 of the 56 have no hOCR; text and leaves are rebuilt from each item's _djvu.xml (/mnt/project-files/mission-papers/dl_djvu.py), and citations give the issue month and the leaf. The typed issues of 1956 to 1959 are poorly recognised. Read by hand, with no reader pass: the numbered-address passages, the advertisement-filtered passages (extra_windows.py), and a pass over event words for the places the Bulletin names without a number (kw_scan.py). extra.candidate is the row key in /mnt/project-files/mission-papers/decisions_small2.py. Kept: construction with an architect, demolitions, openings and moves, decisions with an outcome, and documented past occupants (the Rudolph Schaeffer School of Design, Peter Macchiarini's store). Not kept: officers' and members' home addresses, which are most of the numbered addresses in the title; advertisements; meeting places; the Dwellers' positions on the freeway, the waterfront and the height limit; proposals with no outcome; anyone named as the owner of a private house. extra.placement_note says where a number came from when the passage prints none: for 1420 Montgomery, 307 Filbert and 373 Lombard it is the one building on the block that the assessor's roll matches by year and unit count. extra.number_as_printed keeps a printed number filed on a parcel's lowest number.",
+ "coverage": {
+  "unit": "issues",
+  "examined": 56,
+  "mentions": 657,
+  "remaining": "Nothing remains in the Telegraph Hill Bulletin.",
+  "note": "56 issues; 657 numbered-address mentions on EAS streets, about 500 of them officers' home addresses and repeating advertisers. 70 passages kept by the filter, 42 more looked at with the advertisement filter off, and 101 event-word passages, all read by hand. 24 findings written, each quote found again in the issue's text. 21 resolved and published on 17 pages (5 seeded: 1420 Montgomery, 307 Filbert, 350 Union, 241 Telegraph Hill Boulevard and 373 Lombard, the last two condominium buildings seeded with their 6 and 17 unit pages). 3 unresolved: the Palace Theater at 1741 Powell, whose building is gone, and two places the Bulletin names without a number (the Sea Wall Warehouse, a Gardner Dailey building at Calhoun and Union). Not carried, the pages having them already: the Peach Blossom Festival at 31 Alta, the Old Spaghetti Factory, the Northeast Mental Health Center's opening at 1548 Stockton, Tel-Hi at 660 Lombard."
+ },
+ "findings": [
+  {
+   "id": "thbulletin-0001",
+   "date": "1958-01",
+   "date_precision": "month",
+   "kind": "occupancy",
+   "address_as_written": "Rudolph Schaeffer School, 350 Union Street",
+   "street_number": "350",
+   "street_name": "UNION",
+   "street_type": "ST",
+   "description": "The Rudolph Schaeffer School of Design stood on this site before the present building; its East West Gallery was open here in January 1958.",
+   "extra": {
+    "candidate": "thbulletin#b08"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), January 1958",
+    "url": "https://archive.org/details/telegraphhillbulletin1958january/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1958january.txt",
+    "locator": "telegraphhillbulletin1958january-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "Rudolph Schaeffer School, 350 Union Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0105019",
+    "path": "/san-francisco/north-beach/union-street/350/",
+    "eas_address": "350 UNION ST",
+    "method": "EAS exact match on 350 UNION ST → parcel 0105019; sf-parcels has blklot 0105019 active, 350–350 UNION; the 2025 roll records it as multi-family residential, built 1965. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0002",
+   "date": "1958-04",
+   "date_precision": "month",
+   "kind": "occupancy",
+   "address_as_written": "his store at 1422 Grant Avenue",
+   "street_number": "1422",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "The jeweler Peter Macchiarini had his store at 1422 Grant Avenue by April 1958.",
+   "extra": {
+    "candidate": "thbulletin#b09",
+    "number_as_printed": "1422"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), April 1958",
+    "url": "https://archive.org/details/telegraphhillbulletin1958april/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1958april.txt",
+    "locator": "telegraphhillbulletin1958april-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "his store at 1422 Grant Avenue"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0115019",
+    "path": "/san-francisco/north-beach/grant-avenue/1400/",
+    "eas_address": "1400 GRANT AVE",
+    "method": "EAS exact match on 1422 GRANT AVE → parcel 0115019; sf-parcels has blklot 0115019 active, 1400–1424 GRANT; the 2025 roll records it as multi-family residential, built 1907. EAS puts 1400, 1402, 1412, 1416, 1418, 1422, 1424 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1400.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0003",
+   "date": "1959-03",
+   "date_precision": "month",
+   "kind": "demolition",
+   "address_as_written": "the east side of the 1400 block on Montgomery Street",
+   "street_number": "1420",
+   "street_name": "MONTGOMERY",
+   "street_type": "ST",
+   "description": "Five little houses were built in the 1870s on the east side of this block of Montgomery Street, below street level and at slightly odd angles to each other. One was torn down in 1939 and another moved to Greenwich Street to make way for a large apartment building; the last three were condemned and torn down in March 1959.",
+   "extra": {
+    "candidate": "thbulletin#b01",
+    "placement_note": "The Bulletin prints no number. 1420 Montgomery is the only four-unit building of 1960 on the east side of the 1400 block in the assessor's roll."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), July 1959",
+    "url": "https://archive.org/details/telegraphhillbulletin1959july/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1959july.txt",
+    "locator": "telegraphhillbulletin1959july-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "five little houses were Built"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0085037",
+    "path": "/san-francisco/north-beach/montgomery-street/1420/",
+    "eas_address": "1420 MONTGOMERY ST",
+    "method": "EAS exact match on 1420 MONTGOMERY ST → parcel 0085037; sf-parcels has blklot 0085037 active, 1420–1420 MONTGOMERY; the 2025 roll records it as multi-family residential, built 1960. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0004",
+   "date": "1959",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "the east side of the 1400 block on Montgomery Street",
+   "street_number": "1420",
+   "street_name": "MONTGOMERY",
+   "street_type": "ST",
+   "description": "After the old houses came down the lot was sold at auction for a four-unit apartment building designed by Gardner Dailey, set back from the street to allow planting, with a garage and a deck facing the East Bay.",
+   "extra": {
+    "candidate": "thbulletin#b02",
+    "placement_note": "The Bulletin prints no number. 1420 Montgomery is the only four-unit building of 1960 on the east side of the 1400 block in the assessor's roll."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), July 1959",
+    "url": "https://archive.org/details/telegraphhillbulletin1959july/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1959july.txt",
+    "locator": "telegraphhillbulletin1959july-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "Gardner Dailey, who has planned other buildings on the Hill"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0085037",
+    "path": "/san-francisco/north-beach/montgomery-street/1420/",
+    "eas_address": "1420 MONTGOMERY ST",
+    "method": "EAS exact match on 1420 MONTGOMERY ST → parcel 0085037; sf-parcels has blklot 0085037 active, 1420–1420 MONTGOMERY; the 2025 roll records it as multi-family residential, built 1960. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0005",
+   "date": "1959",
+   "date_precision": "year",
+   "kind": "sale",
+   "address_as_written": "the houses at 228 and 230 Filbert Street",
+   "street_number": "228",
+   "street_name": "FILBERT",
+   "street_type": "ST",
+   "description": "The houses at 228 and 230 Filbert Street were sold, after more than three-quarters of a century as the home of the Brown family.",
+   "extra": {
+    "candidate": "thbulletin#b03"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), July 1959",
+    "url": "https://archive.org/details/telegraphhillbulletin1959july/page/n2/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1959july.txt",
+    "locator": "telegraphhillbulletin1959july-n2 (leaf 2)"
+   },
+   "raw": {
+    "text": "the sale of the houses at 228 and 230 Filbert Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0085039",
+    "path": "/san-francisco/north-beach/filbert-street/228/",
+    "eas_address": "228 FILBERT ST",
+    "method": "EAS exact match on 228 FILBERT ST → parcel 0085039; sf-parcels has blklot 0085039 active, 228–228 FILBERT; the 2025 roll records it as multi-family residential, built 1895.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0006",
+   "date": "1962",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "at Green and Grant where the Co-Existence Bagel Shop used to be",
+   "street_number": "1398",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "Nasimo, a dress and specialty shop, opened in the spring on the corner of Green and Grant, where the Co-Existence Bagel Shop used to be.",
+   "extra": {
+    "candidate": "thbulletin#b04",
+    "placement_note": "The Bulletin prints no number; 1398 Grant is the number the city's survey gives the Co-Existence Bagel Shop."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), April 1962",
+    "url": "https://archive.org/details/telegraphhillbulletin1962april/page/n0/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1962april.txt",
+    "locator": "telegraphhillbulletin1962april-n0 (leaf 0)"
+   },
+   "raw": {
+    "text": "has opened a new dress and specialty shop at Green and Grant"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0132051",
+    "path": "/san-francisco/north-beach/grant-avenue/1350/",
+    "eas_address": "1350 GRANT AVE",
+    "method": "EAS exact match on 1398 GRANT AVE → parcel 0132051; sf-parcels has blklot 0132051 active, 1350–1398 GRANT; the 2025 roll records it as multi-family residential, built 1907. EAS puts 1350, 1352, 1354, 1356, 1358, 1360, 1362, 1398 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1350.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0007",
+   "date": "1962",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "the compound site at Calhoun & Union",
+   "street_name": "CALHOUN",
+   "street_type": "TER",
+   "description": "Work had started by April 1962 on a five-unit building designed by Gardner Dailey at the compound site at Calhoun Terrace and Union Street.",
+   "extra": {
+    "candidate": "thbulletin#b05"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), April 1962",
+    "url": "https://archive.org/details/telegraphhillbulletin1962april/page/n2/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1962april.txt",
+    "locator": "telegraphhillbulletin1962april-n2 (leaf 2)"
+   },
+   "raw": {
+    "text": "unit building designed by GARDNER DAILEY at the compound site"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
+    "note": "The paper names the place and prints no number; kept so the passage is not read again."
+   }
+  },
+  {
+   "id": "thbulletin-0008",
+   "date": "1965",
+   "date_precision": "year",
+   "kind": "site history",
+   "address_as_written": "the 1520 Stockton Street Building (formerly Lyons Van & Storage Company)",
+   "street_number": "1520",
+   "street_name": "STOCKTON",
+   "street_type": "ST",
+   "description": "The building, formerly the Lyon Van & Storage Company's, was described as originally built as a garage; the Telegraph Hill Dwellers urged the city to look at it for parking, saying it could hold 175 cars with high-speed elevators.",
+   "extra": {
+    "candidate": "thbulletin#b06"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), April 1965",
+    "url": "https://archive.org/details/telegraphhillbulletin1965april/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1965april.txt",
+    "locator": "telegraphhillbulletin1965april-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "which was originally built as a garage"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0116020B",
+    "path": "/san-francisco/north-beach/stockton-street/1520/",
+    "eas_address": "1520 STOCKTON ST",
+    "method": "EAS exact match on 1520 STOCKTON ST → parcel 0116020B; sf-parcels has blklot 0116020B active, 1520–1520 STOCKTON; the 2025 roll records it as commercial office, built 1926.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0009",
+   "date": "1965",
+   "date_precision": "year",
+   "kind": "planning decision",
+   "address_as_written": "the old Rudy Schaeffer property (Union St. between Kearny and Montgomery)",
+   "street_number": "350",
+   "street_name": "UNION",
+   "street_type": "ST",
+   "description": "The Zoning Administrator denied a variance from the 40-foot height limit for a new building on the old Rudolph Schaeffer property; the plans were redrawn to conform.",
+   "extra": {
+    "candidate": "thbulletin#b07",
+    "placement_note": "The passage prints no number; the Bulletin gives the Rudolph Schaeffer School's as 350 Union Street in January 1958 and January 1969."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), June 1965",
+    "url": "https://archive.org/details/telegraphhillbulletin1965june/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1965june.txt",
+    "locator": "telegraphhillbulletin1965june-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "on the old Rudy Schaeffer property"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0105019",
+    "path": "/san-francisco/north-beach/union-street/350/",
+    "eas_address": "350 UNION ST",
+    "method": "EAS exact match on 350 UNION ST → parcel 0105019; sf-parcels has blklot 0105019 active, 350–350 UNION; the 2025 roll records it as multi-family residential, built 1965. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0010",
+   "date": "1966",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "on Filbert Street just above the Shadows Restaurant",
+   "street_number": "307",
+   "street_name": "FILBERT",
+   "street_type": "ST",
+   "description": "A three-unit building, two studios and a two-bedroom unit, designed by Henry Hester of La Jolla and built by De Martini Bros., was completed here.",
+   "extra": {
+    "candidate": "thbulletin#b10",
+    "placement_note": "The Bulletin prints no number. 307 Filbert is the only three-unit building of 1966 on Filbert Street above Montgomery in the assessor's roll."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), June 1966",
+    "url": "https://archive.org/details/telegraphhillbulletin1966june/page/n2/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1966june.txt",
+    "locator": "telegraphhillbulletin1966june-n2 (leaf 2)"
+   },
+   "raw": {
+    "text": "have just completed a three unit building on Filbert Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0105050",
+    "path": "/san-francisco/north-beach/filbert-street/307/",
+    "eas_address": "307 FILBERT ST",
+    "method": "EAS exact match on 307 FILBERT ST → parcel 0105050; sf-parcels has blklot 0105050 active, 307–307 FILBERT; the 2025 roll records it as multi-family residential, built 1966. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0011",
+   "date": "1967",
+   "date_precision": "year",
+   "kind": "planning decision",
+   "address_as_written": "the proposed police station on Vallejo Street between Stockton and Powell Street",
+   "street_number": "766",
+   "street_name": "VALLEJO",
+   "street_type": "ST",
+   "description": "By February the Board of Supervisors had approved a five-level garage of 157 stalls to be built with the new police station on this city-owned site, the alternative the Telegraph Hill Dwellers had urged to a garage under Washington Square.",
+   "extra": {
+    "candidate": "thbulletin#b11",
+    "placement_note": "The passage prints no number; 766 Vallejo is the police station and garage built on the site."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), February 1967",
+    "url": "https://archive.org/details/telegraphhillbulletin1967february/page/n0/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1967february.txt",
+    "locator": "telegraphhillbulletin1967february-n0 (leaf 0)"
+   },
+   "raw": {
+    "text": "the board approved a five level garage"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0130043",
+    "path": "/san-francisco/chinatown/vallejo-street/766/",
+    "eas_address": "766 VALLEJO ST",
+    "method": "EAS exact match on 766 VALLEJO ST → parcel 0130043; sf-parcels has blklot 0130043 active, 766–766 VALLEJO; the 2025 roll records it as commercial misc, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0012",
+   "date": "1967-05-21",
+   "date_precision": "day",
+   "kind": "reopening",
+   "address_as_written": "the refurbished Palace Theater on Powell Street opposite the Marini Triangle",
+   "street_number": "1741",
+   "street_name": "POWELL",
+   "street_type": "ST",
+   "description": "The Palace Theater, which then stood here, reopened refurbished with a ribbon cutting and a dancing lion, to show films from Hong Kong and Taiwan; the first was Oyster Girl, in Mandarin with English subtitles.",
+   "extra": {
+    "candidate": "thbulletin#b13",
+    "placement_note": "The passage prints no number; the Bulletin's advertisements give the Palace Theatre's as 1741 Powell Street."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), August 1967",
+    "url": "https://archive.org/details/telegraphhillbulletin1967august/page/n3/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1967august.txt",
+    "locator": "telegraphhillbulletin1967august-n3 (leaf 3)"
+   },
+   "raw": {
+    "text": "opening the refurbished Palace Theater"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "by_hand": true,
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 1741 POWELL ST → parcel 0101051; sf-parcels has blklot 0101051 active, 601–601 COLUMBUS; the 2025 roll records it as commercial retail, built 2018. The assessor files the parcel as 601 COLUMBUS AV. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. Parcel 0101051 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1741 POWELL ST's coordinates fall in 20 active parcels, one condominium map's units on the 2025 roll; 0101051 stands for the building.",
+    "note": "The Palace Theater's building was demolished in 2013 and the parcel is one unit of the condominium built on the site in 2018, which the assessor files at 601 Columbus; a theater's reopening is not a fact to seed a page for its replacement with. Left unresolved, as the other Palace and Pagoda Palace findings are."
+   }
+  },
+  {
+   "id": "thbulletin-0013",
+   "date": "1967",
+   "date_precision": "year",
+   "kind": "alteration",
+   "address_as_written": "their renewed engine house on Stockton Street",
+   "street_number": "1814",
+   "street_name": "STOCKTON",
+   "street_type": "ST",
+   "description": "Engine Company 28 was back in its renewed engine house here by May, when its firemen were the guests at the Telegraph Hill Dwellers' Fire Ball.",
+   "extra": {
+    "candidate": "thbulletin#b14",
+    "placement_note": "The Bulletin prints no number; 1814 Stockton is Engine Company 28's house."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), August 1967",
+    "url": "https://archive.org/details/telegraphhillbulletin1967august/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1967august.txt",
+    "locator": "telegraphhillbulletin1967august-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "who are now back in their renewed engine house on Stockton Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0077024",
+    "path": "/san-francisco/north-beach/stockton-street/1814/",
+    "eas_address": "1814 STOCKTON ST",
+    "method": "EAS exact match on 1814 STOCKTON ST → parcel 0077024; sf-parcels has blklot 0077024 active, 1814–1814 STOCKTON; the 2025 roll records it as miscellaneous/mixed-use, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0014",
+   "date": "1968-09",
+   "date_precision": "month",
+   "kind": "construction",
+   "address_as_written": "770 Vallejo Street",
+   "street_number": "766",
+   "street_name": "VALLEJO",
+   "street_type": "ST",
+   "description": "The garage was under construction when the Director of Public Works again turned down a garage beneath Washington Square, writing that this one would meet the needs of the immediate vicinity.",
+   "extra": {
+    "candidate": "thbulletin#b12",
+    "number_as_printed": "770"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), September 1968",
+    "url": "https://archive.org/details/telegraphhillbulletin1968september/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1968september.txt",
+    "locator": "telegraphhillbulletin1968september-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "tion at 770 Vallejo Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0130043",
+    "path": "/san-francisco/chinatown/vallejo-street/766/",
+    "eas_address": "766 VALLEJO ST",
+    "method": "EAS exact match on 766 VALLEJO ST → parcel 0130043; sf-parcels has blklot 0130043 active, 766–766 VALLEJO; the 2025 roll records it as commercial misc, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0015",
+   "date": "1968-12-27",
+   "date_precision": "day",
+   "kind": "demolition",
+   "address_as_written": "the historic, 115 year old Sea Wall Warehouse",
+   "street_name": "SANSOME",
+   "street_type": "ST",
+   "description": "Wreckers began tearing down the Sea Wall Warehouse, by the Bulletin's count 115 years old, on December 27, 1968. Protesters occupied the building over the weekend and stopped the work, and the developers agreed to salvage bricks, shutters and other materials from the Sansome Street facade.",
+   "extra": {
+    "candidate": "thbulletin#b24"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), January 1969",
+    "url": "https://archive.org/details/telegraphhillbulletin1969january/page/n3/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1969january.txt",
+    "locator": "telegraphhillbulletin1969january-n3 (leaf 3)"
+   },
+   "raw": {
+    "text": "moved in to tear down the historic, 115 year old"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "The record states no street number, so there is nothing to look up in sf-eas-addresses.",
+    "note": "The paper names the place and prints no number; kept so the passage is not read again."
+   }
+  },
+  {
+   "id": "thbulletin-0016",
+   "date": "1969-02-09",
+   "date_precision": "day",
+   "kind": "occupancy",
+   "address_as_written": "his Irish Pub, 1525 Grant Avenue",
+   "street_number": "1525",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "Mooney's Irish Pub was here, and held an open house for about 200 Telegraph Hill Dwellers.",
+   "extra": {
+    "candidate": "thbulletin#b15"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), June 1969",
+    "url": "https://archive.org/details/telegraphhillbulletin1969june/page/n7/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1969june.txt",
+    "locator": "telegraphhillbulletin1969june-n7 (leaf 7)"
+   },
+   "raw": {
+    "text": "an Open House at his Irish Pub, 1525 Grant Avenue"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0103004",
+    "path": "/san-francisco/north-beach/grant-avenue/1525/",
+    "eas_address": "1525 GRANT AVE",
+    "method": "EAS exact match on 1525 GRANT AVE → parcel 0103004; sf-parcels has blklot 0103004 active, 1525–1529 GRANT; the 2025 roll records it as commercial hotel, built 1911. EAS puts 1525, 1527, 1529 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1525.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0017",
+   "date": "1969",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "Julius' Castle",
+   "street_number": "302",
+   "street_name": "GREENWICH",
+   "street_type": "ST",
+   "description": "Julius' Castle came under new management; the new owners remodeled the inside and left the outside architecture alone.",
+   "extra": {
+    "candidate": "thbulletin#b16",
+    "placement_note": "The Bulletin prints no number; 302 Greenwich is Julius' Castle."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), September 1969",
+    "url": "https://archive.org/details/telegraphhillbulletin1969september/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1969september.txt",
+    "locator": "telegraphhillbulletin1969september-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "is under new management"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0079005",
+    "path": "/san-francisco/north-beach/greenwich-street/300/",
+    "eas_address": "300 GREENWICH ST",
+    "method": "EAS exact match on 302 GREENWICH ST → parcel 0079005; sf-parcels has blklot 0079005 active, 300–302 GREENWICH; the 2025 roll records it as commercial retail, built 1923. EAS puts 300, 302 GREENWICH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 300.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0018",
+   "date": "1970-01",
+   "date_precision": "month",
+   "kind": "occupancy",
+   "address_as_written": "Julius Castle ... at Montgomery and Greenwich",
+   "street_number": "302",
+   "street_name": "GREENWICH",
+   "street_type": "ST",
+   "description": "The restaurant started a mini-bus to bring its patrons up from a garage at 1641 Powell Street, to ease parking on the hill.",
+   "extra": {
+    "candidate": "thbulletin#b17",
+    "placement_note": "The Bulletin prints no number; 302 Greenwich is Julius' Castle."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), January 1970",
+    "url": "https://archive.org/details/telegraphhillbulletin1970january/page/n2/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1970january.txt",
+    "locator": "telegraphhillbulletin1970january-n2 (leaf 2)"
+   },
+   "raw": {
+    "text": "has instigated a mini bus operation"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0079005",
+    "path": "/san-francisco/north-beach/greenwich-street/300/",
+    "eas_address": "300 GREENWICH ST",
+    "method": "EAS exact match on 302 GREENWICH ST → parcel 0079005; sf-parcels has blklot 0079005 active, 300–302 GREENWICH; the 2025 roll records it as commercial retail, built 1923. EAS puts 300, 302 GREENWICH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 300.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0019",
+   "date": "1972",
+   "date_precision": "year",
+   "kind": "closure",
+   "address_as_written": "511 Columbus Avenue",
+   "street_number": "511",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The Northeast Mental Health Center had lately moved from here to 1548 Stockton Street.",
+   "extra": {
+    "candidate": "thbulletin#b18"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), February 1972",
+    "url": "https://archive.org/details/telegraphhillbulletin1972february/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1972february.txt",
+    "locator": "telegraphhillbulletin1972february-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "which recently moved from 511 Columbus Avenue"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0117005",
+    "path": "/san-francisco/chinatown/columbus-avenue/501/",
+    "eas_address": "501 COLUMBUS AVE",
+    "method": "EAS exact match on 511 COLUMBUS AVE → parcel 0117005; sf-parcels has blklot 0117005 active, 501–543 COLUMBUS; the 2025 roll records it as multi-family residential, built 1907. EAS puts 501, 507, 511, 513, 515, 517, 519, 521, 523, 525, 527, 529, 531, 533, 535, 537, 541, 543 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 501.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0020",
+   "date": "1973",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "Designs for Living, located at 420 Union Street",
+   "street_number": "420",
+   "street_name": "UNION",
+   "street_type": "ST",
+   "description": "Designs for Living, an interior design studio, opened here.",
+   "extra": {
+    "candidate": "thbulletin#b20",
+    "number_as_printed": "420"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), October 1973",
+    "url": "https://archive.org/details/telegraphhillbulletin1973october/page/n3/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1973october.txt",
+    "locator": "telegraphhillbulletin1973october-n3 (leaf 3)"
+   },
+   "raw": {
+    "text": "Designs for Living, located at 420 Union Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0104011",
+    "path": "/san-francisco/north-beach/union-street/418/",
+    "eas_address": "418 UNION ST",
+    "method": "EAS exact match on 420 UNION ST → parcel 0104011; sf-parcels has blklot 0104011 active, 418–420 UNION; the 2025 roll records it as multi-family residential, built 1906. EAS puts 418, 420 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 418.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0021",
+   "date": "1973-12",
+   "date_precision": "month",
+   "kind": "planning decision",
+   "address_as_written": "the existing 1548 Stockton Street facility",
+   "street_number": "1548",
+   "street_name": "STOCKTON",
+   "street_type": "ST",
+   "description": "The city's Mental Health Advisory Board decided that the night counseling center of the Northeast Mental Health Services should stay at the existing facility here, and not open at 1400 Grant Avenue, where neighbors had objected.",
+   "extra": {
+    "candidate": "thbulletin#b19"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), March 1974",
+    "url": "https://archive.org/details/telegraphhillbulletin1974march/page/n2/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1974march.txt",
+    "locator": "telegraphhillbulletin1974march-n2 (leaf 2)"
+   },
+   "raw": {
+    "text": "erate at the existing 1548 Stockton Street facility"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0116023",
+    "path": "/san-francisco/north-beach/stockton-street/1546/",
+    "eas_address": "1546 STOCKTON ST",
+    "method": "EAS exact match on 1548 STOCKTON ST → parcel 0116023; sf-parcels has blklot 0116023 active, 1546–1548 STOCKTON; the 2025 roll records it as commercial office, built 1908. EAS puts 1546, 1548 STOCKTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1546.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0022",
+   "date": "1973",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "241 Telegraph Hill Boulevard",
+   "street_number": "241",
+   "street_name": "TELEGRAPH HILL",
+   "street_type": "BLVD",
+   "description": "The condominium building here was completed, the first project, by the Bulletin's account, of the architect Kenneth A. Kurtzman of Steinman and Kurtzman.",
+   "extra": {
+    "candidate": "thbulletin#b21"
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), September 1974",
+    "url": "https://archive.org/details/telegraphhillbulletin1974september/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1974september.txt",
+    "locator": "telegraphhillbulletin1974september-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "241 Telegraph Hill Boulevard, was complet"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0078059",
+    "path": "/san-francisco/north-beach/telegraph-hill-boulevard/241/",
+    "eas_address": "241 TELEGRAPH HILL BLVD",
+    "method": "EAS exact match on 241 TELEGRAPH HILL BLVD → parcel 0078059; sf-parcels has blklot 0078059 active, 241–241 TELEGRAPH HILL; the 2025 roll records it as single family residential, built 1973. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. Parcel 0078059 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228).",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0023",
+   "date": "1974-09",
+   "date_precision": "month",
+   "kind": "construction",
+   "address_as_written": "the vacant Southeast corner of Grant and Lombard Sts.",
+   "street_number": "373",
+   "street_name": "LOMBARD",
+   "street_type": "ST",
+   "description": "Steinman and Kurtzman designed a 17-unit condominium building for the vacant southeast corner of Grant Avenue and Lombard Street; construction was to start that fall.",
+   "extra": {
+    "candidate": "thbulletin#b22",
+    "placement_note": "The Bulletin prints no number. 373 and 383 Lombard are the 17 condominium units of 1977 on that corner in the assessor's roll."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), September 1974",
+    "url": "https://archive.org/details/telegraphhillbulletin1974september/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1974september.txt",
+    "locator": "telegraphhillbulletin1974september-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "have designed a 17 unit condomin"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0078063",
+    "path": "/san-francisco/north-beach/lombard-street/373/",
+    "eas_address": "373 LOMBARD ST",
+    "method": "EAS exact match on 373 LOMBARD ST → parcel 0078063; sf-parcels has blklot 0078063 active, 373–383 LOMBARD; the 2025 roll records it as single family residential, built 1977. EAS puts 373, 375, 377, 379, 381, 383 LOMBARD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 373. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. Parcel 0078063 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0201 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228).",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the publisher seeds it with seed-list, which writes a condominium building with a page per unit."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "thbulletin-0024",
+   "date": "1975-08",
+   "date_precision": "month",
+   "kind": "planning decision",
+   "address_as_written": "Garfield School",
+   "street_number": "420",
+   "street_name": "FILBERT",
+   "street_type": "ST",
+   "description": "Esherick, Homsey, Dodge and Davis had finished schematics for a new Garfield School, a three-level building stepping down the hill; the old school was due to be demolished later in the year.",
+   "extra": {
+    "candidate": "thbulletin#b23",
+    "placement_note": "The Bulletin prints no number; 420 Filbert is Garfield School."
+   },
+   "citation": {
+    "label": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), August 1975",
+    "url": "https://archive.org/details/telegraphhillbulletin1975august/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/thbulletin/raw/telegraphhillbulletin1975august.txt",
+    "locator": "telegraphhillbulletin1975august-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "three level building that steps gently down the hill"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0087071",
+    "path": "/san-francisco/north-beach/filbert-street/420/",
+    "eas_address": "420 FILBERT ST",
+    "method": "EAS exact match on 420 FILBERT ST → parcel 0087071; sf-parcels has blklot 0087071 active, 420–420 FILBERT; the 2025 roll records it as miscellaneous/mixed-use. EAS files the address under parcel 0087028, which sf-parcels reports retired; the active parcel its coordinates fall in is 0087071.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  }
+ ]
+}

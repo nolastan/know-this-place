@@ -1,0 +1,32 @@
+{
+  "address": "741 Clement Street, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/clement-street/745/unit-205/",
+  "unit": "205",
+  "apn": "1440045",
+  "block": "1440",
+  "lot": "045",
+  "parcel": {
+    "building_area_sqft": 1326
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 184129,
+    "assessed_improvement_value": 851413,
+    "last_sale_date": "2002-11-07"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1440045&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1440&unit=205",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}

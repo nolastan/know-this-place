@@ -1,0 +1,54 @@
+{
+  "address": "3338 17th Street, San Francisco, CA 94110",
+  "path": "/san-francisco/mission/17th-street/3338/unit-109/",
+  "unit": "109",
+  "apn": "3569122",
+  "block": "3569",
+  "lot": "122",
+  "parcel": {
+    "building_area_sqft": 1008
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 161075,
+    "assessed_improvement_value": 247349
+  },
+  "permits": [
+    {
+      "number": "202105210811",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-21",
+      "status_date": "2021-07-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "one unit: open wall to run wire for hvac & patch wall after. 6\"x6\" maximum opening.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202010156544",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-10-15",
+      "status_date": "2020-12-03",
+      "estimated_cost": 30000,
+      "revised_cost": 40000,
+      "description": "one unit. kitchen & bath remodel. one unit. no walls added or removed.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3569122&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3569&unit=109",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}
