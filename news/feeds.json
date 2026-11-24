@@ -145,6 +145,62 @@
         "route": "paged",
         "note": "?paged=N on the feed, ten items a page; paged=110 is 12 April 2024, its launch, so the archive is complete at about 1,100 items. It syndicates whole articles, so the screen reads a body rather than a summary and over-queues by design."
       }
+    },
+    {
+      "id": "richmond-sunset-news",
+      "outlet": "Richmond Review / Sunset Beacon",
+      "url": "https://richmondsunsetnews.com/feed/",
+      "kind": "rss",
+      "scope": "sf",
+      "access": "open",
+      "note": "The two west-side community papers on one WordPress site (added for issue #408, 2026-11-24). Monthly print issues land as a burst of a dozen items on one day — columns, commentary, police blotter — so most of a batch is declined at the read stage, but the business and real-estate items name Richmond and Sunset addresses the other feeds rarely reach. robots.txt allows '*' and publishes a news sitemap. ?paged=N pages the feed (measured 2026-11-24), fifteen items a page; no backfill route registered yet."
+    },
+    {
+      "id": "localjobpage-sf",
+      "outlet": "LocalJobPage San Francisco",
+      "url": "https://sanfrancisco.localjobpage.com/blog/category/New+Business+Openings",
+      "kind": "html",
+      "scope": "sf",
+      "access": "open",
+      "link_pattern": "^/blog/[a-z0-9-]+$",
+      "note": "A job board's 'New Business Openings' blog category (added for issue #408, 2026-11-24): openings and hiring posts whose slugs often carry the street and number ('sfmade-union-square-store-373-geary-retail-jobs', 'lids-union-square-50-powell'). No feed: /feed, /blog/feed and /blog/rss all 404, so it is polled as a section page. robots.txt allows '*' on /blog/ and blocks ClaudeBot and GPTBot only from account, billing and search paths. The posts are hiring copy — cite the opening, never a hiring contact."
+    },
+    {
+      "id": "corcoran-icon",
+      "outlet": "Corcoran Icon Properties",
+      "url": "https://corcoranicon.com/blog/",
+      "kind": "html",
+      "scope": "bay-area",
+      "access": "open",
+      "link_pattern": "^/blog/[a-z0-9-]+$",
+      "note": "A brokerage's blog (added for issue #408, 2026-11-24): listing and sale announcements, some with the address in the slug ('44-page-street-…-performing-arts-building'), but many are Oakland, Pacifica or Sierra estates, so the bay-area scope rule does the filtering. No feed: /blog/feed and /blog/rss 404, so it is polled as a section page; the page also carries a '/blog/{{slug}}' template link that the pattern excludes. robots.txt allows '*' on /blog/. A brokerage is selling the property: take the building fact, never the asking price framing or the seller."
+    },
+    {
+      "id": "the-real-deal",
+      "outlet": "The Real Deal",
+      "url": "https://therealdeal.com/san-francisco/feed/",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "needs-human",
+      "note": "NOT POLLED (registered for issue #408, 2026-11-24). Every request from our user agent answers 403 — robots.txt, the San Francisco section and the feed alike — so neither the robots rules nor the feed URL could be verified; the URL is the WordPress-style guess. Its stories still reach us second-hand through Hoodline rewrites. Needs a human to confirm access with the publisher or from a browser before it is set to 'open'."
+    },
+    {
+      "id": "commercialsearch",
+      "outlet": "CommercialSearch",
+      "url": "https://www.commercialsearch.com/news/san-francisco/feed/",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "needs-human",
+      "note": "NOT POLLED (registered for issue #408, 2026-11-24). Cloudflare answers every request — robots.txt included — with a JavaScript challenge (403 'Just a moment…'), which is a refusal of automated access; the feed URL is unverified. Same publisher (Yardi) and same wall as multihousing-news. Needs a human before it is set to 'open'."
+    },
+    {
+      "id": "multihousing-news",
+      "outlet": "Multi-Housing News",
+      "url": "https://www.multihousingnews.com/san-francisco/feed/",
+      "kind": "rss",
+      "scope": "bay-area",
+      "access": "needs-human",
+      "note": "NOT POLLED (registered for issue #408, 2026-11-24). Cloudflare answers every request — robots.txt included — with a JavaScript challenge (403 'Just a moment…'); the feed URL is unverified. Same publisher and same wall as commercialsearch. Needs a human before it is set to 'open'."
     }
   ]
 }
