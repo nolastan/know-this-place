@@ -6,7 +6,7 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1 of 8 half-year volumes read (vol. 14 pt. 2, July – December 1914): 149 facts on 134 pages (52 seeded). Unread: vol. 11 pt. 1 (1911) to vol. 14 pt. 1 (January – June 1914). See the `Verified:` line.
+> - **Coverage:** 2 of 8 half-year volumes read (vol. 14, January – December 1914): 246 facts on 221 pages (103 seeded). Unread: vol. 11 pt. 1 (1911) to vol. 13 pt. 2 (July – December 1913). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-industrial-news/`
 > - **Claimed:** every unread volume, by the project run that opened this source (2026-11-24). The placed-and-held rows are **not** claimed: they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)).
 >
@@ -62,8 +62,14 @@
   rows; 735 placed on a parcel; 204 picked and read against the image; 149
   published on 134 pages, 52 of them seeded. Unfinished: 212 placed single
   houses and small alterations held until the parcel gets a page, 347 rows
-  with a nearest parcel not accepted, 681 not placed. Unread: the seven
-  volumes before July 1914.
+  with a nearest parcel not accepted, 681 not placed.
+- **Coverage, vol. 14 pt. 1** (`buildingindustri1414cont`, 7 January – 24
+  June 1914, 25 issues; cover leaves 6, 60, 114 … 1330, 54 leaves an issue
+  with two longer ones): 2,065 numbered entries; 1,282 San Francisco rows;
+  609 placed on a parcel; 139 picked and read against the image; 97
+  published on 92 pages, 51 of them seeded. Unfinished: 158 placed single
+  houses and small alterations held until the parcel gets a page, 673 not
+  placed. Unread: the six volumes before January 1914.
 - **Verified:** 2026-11-24 (vol. 14 pt. 2: read 2,231 entries, found 1,416
   San Francisco rows, resolved 149, published 149 on 134 pages. Learned: the
   entries have the 1915 layout, with "COST, $…" closing each permit;
@@ -76,4 +82,13 @@
   one corner placement was held because the page credits other architects;
   a permit and its contract can be read together across issues (935
   Sanchez, 2280 Vallejo, the Clift Hotel's trade contracts); one held fact
-  of the later run was taken up on a page seeded here.)
+  of the later run was taken up on a page seeded here. Vol. 14 pt. 1, same
+  day: read 2,065 entries, found 1,282 San Francisco rows, resolved 97,
+  published 97 on 92 pages. Learned: an offset printed with a fraction
+  ("310-4 13-16 S Cabrillo") is parsed as two lots and has to be merged by
+  hand in `all.json` before `publish.py`; an interior fit-up contract must
+  not set the building's architect (449 Powell); where the instalments and
+  the printed total disagree, give no cost; `post<tag>.py` and
+  `cuts<tag>.py` are per-volume, copy them; three held facts of the later
+  run were taken up on pages seeded here, with the later run's
+  `takeup.py`.)

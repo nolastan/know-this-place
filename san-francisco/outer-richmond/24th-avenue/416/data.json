@@ -1,0 +1,126 @@
+{
+  "address": "416–418 24th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/24th-avenue/416/",
+  "apn": "1455031",
+  "block": "1455",
+  "lot": "031",
+  "eas_baseid": "304523",
+  "coordinates": {
+    "lat": 37.781664,
+    "lng": -122.483482
+  },
+  "address_range": "416–418",
+  "street_numbers_on_parcel": [
+    "416",
+    "418"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 2,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2250,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0418 0416 24TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 64888,
+    "assessed_improvement_value": 75750
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107023733",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-02",
+      "status_date": "2021-10-04",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "replace damaged stucco in kind at front of building",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200107022827",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-07-02",
+      "status_date": "2001-11-02",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "install vinyl siding south wall of home approx 20 by 50, two windows -replace in kind double pane",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8921898",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-11-13",
+      "status_date": "1990-01-26",
+      "estimated_cost": 5000,
+      "description": "e.w.o. (structural)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=24TH&street_type=AVE&address_number=416",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1455031&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1455&lot=031",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1455031",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-01-28-n201",
+      "name": "Building and Industrial News, 28 January 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1414cont/page/n201/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-01-28",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of flats, estimated at $3,100. Hantzsche & McKay were named as contractors.",
+      "source": "building-industrial-news-1914-01-28-n201"
+    }
+  ],
+  "building": {
+    "builder": "Hantzsche & McKay"
+  }
+}

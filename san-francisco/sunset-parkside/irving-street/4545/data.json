@@ -1,0 +1,125 @@
+{
+  "address": "4545–4549 Irving Street, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/irving-street/4545/",
+  "apn": "1801042",
+  "block": "1801",
+  "lot": "042",
+  "eas_baseid": "468905",
+  "coordinates": {
+    "lat": 37.762004,
+    "lng": -122.506837
+  },
+  "address_range": "4545–4549",
+  "street_numbers_on_parcel": [
+    "4545",
+    "4549"
+  ],
+  "parcel": {
+    "year_built": 1914,
+    "units": 3,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 3,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 2594,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Outer Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "4549 4545 IRVING              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 710868,
+    "assessed_improvement_value": 473898,
+    "last_sale_date": "2004-11-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "survey_name": "4545 IRVING ST",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200602215007",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2006-02-21",
+      "status_date": "2006-02-21",
+      "estimated_cost": 6000,
+      "revised_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200501143258",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-01-14",
+      "status_date": "2005-01-14",
+      "estimated_cost": 2200,
+      "revised_cost": 2200,
+      "description": "replace fiber siding in front of 2nd flr with redwood siding, 230 square approximately",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2005–2006",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=IRVING&street_type=ST&address_number=4545",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1801042&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1801&lot=042",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1801042",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-06-10-n1254",
+      "name": "Building and Industrial News, 10 June 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1414cont/page/n1254/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-06-10",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey and attic frame building of flats, all work, at $3,900. Liebert & Martinelli were named as contractors.",
+      "source": "building-industrial-news-1914-06-10-n1254"
+    }
+  ],
+  "building": {
+    "builder": "Liebert & Martinelli"
+  }
+}

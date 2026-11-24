@@ -1,0 +1,101 @@
+{
+  "address": "1222–1226 Pacific Avenue, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/pacific-avenue/1222/",
+  "apn": "0156010",
+  "block": "0156",
+  "lot": "010",
+  "eas_baseid": "448337",
+  "coordinates": {
+    "lat": 37.795969,
+    "lng": -122.415495
+  },
+  "address_range": "1222–1226",
+  "street_numbers_on_parcel": [
+    "1222",
+    "1226"
+  ],
+  "parcel": {
+    "year_built": 1914,
+    "units": 3,
+    "stories": 3,
+    "rooms": 13,
+    "bathrooms": 2,
+    "lot_area_sqft": 1380,
+    "building_area_sqft": 3853,
+    "lot_depth_ft": 60,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "NC-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "1226 1222 PACIFIC             AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 297415,
+    "assessed_improvement_value": 509875,
+    "last_sale_date": "1994-01-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2013",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PACIFIC&street_type=AVE&address_number=1222",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0156010&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0156&lot=010",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0156010",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-03-18-n571",
+      "name": "Building and Industrial News, 18 March 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1414cont/page/n571/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-03-18",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a three-storey and basement frame building of a store and flats, all work, at $5,176. L. A. Rose was named as contractor.",
+      "source": "building-industrial-news-1914-03-18-n571"
+    }
+  ],
+  "building": {
+    "builder": "L. A. Rose"
+  }
+}
