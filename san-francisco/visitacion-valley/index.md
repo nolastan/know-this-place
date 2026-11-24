@@ -8,6 +8,7 @@ The city's Visitacion Valley analysis neighborhood, in the south-eastern corner 
 - [Arleta Avenue](arleta-avenue/) — 1 building, built 1912.
 - [Bay Shore Boulevard](bay-shore-boulevard/) — 2 buildings, built 1930–1955.
 - [Blanken Avenue](blanken-avenue/) — 2 buildings, built 1932–1993; 1 in the Little Hollywood Historic District.
+- [Britton Street](britton-street/) — 1 building, built 1913.
 - [Campbell Avenue](campbell-avenue/) — 1 building, built 2008.
 - [Ervine Street](ervine-street/) — 1 building, built 1989.
 - [Girard Street](girard-street/) — 1 building, built 1928.

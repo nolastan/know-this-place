@@ -1,0 +1,104 @@
+{
+  "address": "200–202 Bosworth Street, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/bosworth-street/200/",
+  "apn": "6723011",
+  "block": "6723",
+  "lot": "011",
+  "eas_baseid": "423053",
+  "coordinates": {
+    "lat": 37.733556,
+    "lng": -122.428713
+  },
+  "address_range": "200–202",
+  "street_numbers_on_parcel": [
+    "200",
+    "202"
+  ],
+  "parcel": {
+    "year_built": 1914,
+    "units": 3,
+    "stories": 2,
+    "rooms": 13,
+    "bathrooms": 3,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2984,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0202 0200 BOSWORTH            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47791,
+    "assessed_improvement_value": 55879
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9808986",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-05-19",
+      "status_date": "1999-03-23",
+      "estimated_cost": 12750,
+      "description": "install vinyl siding atecond story front & rear of building.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=BOSWORTH&street_type=ST&address_number=200",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6723011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6723&lot=011",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6723011",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-07-15-n109",
+      "name": "Building and Industrial News, 15 July 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri14214cont/page/n109/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-07-15",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of stores and two flats, estimated at $4,000. Barrett & Hilp were named as contractors.",
+      "source": "building-industrial-news-1914-07-15-n109"
+    }
+  ],
+  "building": {
+    "builder": "Barrett & Hilp"
+  }
+}

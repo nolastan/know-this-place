@@ -1,0 +1,108 @@
+{
+  "address": "569–571 Natoma Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/natoma-street/569/",
+  "apn": "3726039",
+  "block": "3726",
+  "lot": "039",
+  "eas_baseid": "365051",
+  "coordinates": {
+    "lat": 37.778849,
+    "lng": -122.409116
+  },
+  "address_range": "569–571",
+  "street_numbers_on_parcel": [
+    "569",
+    "571"
+  ],
+  "parcel": {
+    "year_built": 1907,
+    "units": 6,
+    "stories": 3,
+    "rooms": 17,
+    "bathrooms": 3,
+    "lot_area_sqft": 1873,
+    "building_area_sqft": 4100,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RED",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "0571 0569 NATOMA              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 742845,
+    "assessed_improvement_value": 318362,
+    "last_sale_date": "2021-11-22"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1907",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "9119591",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-10-16",
+      "status_date": "1991-12-24",
+      "estimated_cost": 4500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "1991–2008",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NATOMA&street_type=ST&address_number=569",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3726039&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3726&lot=039",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3726039",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-05-06-n951",
+      "name": "Building and Industrial News, 6 May 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1414cont/page/n951/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-05-06",
+      "kind": "alteration",
+      "description": "A building contract was recorded for alterations: alterations and additions to a two-storey frame building of flats, the building raised, at $4,500. Gustave Anderson was named as contractor.",
+      "source": "building-industrial-news-1914-05-06-n951"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "address": "1017 Hyde Street, San Francisco, CA 94109",
+  "path": "/san-francisco/nob-hill/hyde-street/1017/",
+  "apn": "0250003B",
+  "block": "0250",
+  "lot": "003B",
+  "eas_baseid": "280611",
+  "coordinates": {
+    "lat": 37.790306,
+    "lng": -122.417536
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 6,
+    "stories": 3,
+    "rooms": 22,
+    "bathrooms": 6,
+    "lot_area_sqft": 2317,
+    "building_area_sqft": 5353,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RC-4",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Downtown",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1017 HYDE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 568743,
+    "assessed_improvement_value": 299085,
+    "assessed_fixtures_value": 529
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202201055428",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-01-05",
+      "status_date": "2022-05-31",
+      "estimated_cost": 90000,
+      "revised_cost": 90000,
+      "description": "comply with sf wood frame seismic retrofit program (soft story) sebc chapter 4d, per 2019 cebc appendix 4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9620450",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-23",
+      "status_date": "1997-12-11",
+      "estimated_cost": 4100,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1996–2022",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HYDE&street_type=ST&address_number=1017",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0250003B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0250&lot=003B",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0250003B",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-09-16-n465",
+      "name": "Building and Industrial News, 16 September 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri14214cont/page/n465/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-09-16",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey and basement frame building of six apartments, estimated at $8,000. E. E. Young was named as architect.",
+      "source": "building-industrial-news-1914-09-16-n465"
+    }
+  ],
+  "building": {
+    "architect": "E. E. Young"
+  }
+}

@@ -1787,13 +1787,13 @@ def facade_media(rec: dict, label: str, cls: str = "media", indent: str = "",
                      + (f'\n      {credit}' if credit else "")
                      + '\n    </figure>\n'
                      '    <div class="media-slide media-slide-sv" hidden>\n'
-                     '      <div class="media-empty"><span class="ic ic-pin"></span></div>\n'
+                     '      <div class="media-empty" data-nosnippet><span class="ic ic-pin"></span></div>\n'
                      '    </div>\n'
                      '  </div>')
         else:
             inner = f'  {img}' + (f'\n  {credit}' if credit else "")
     else:
-        inner = ("  <div class=\"media-empty\">\n"
+        inner = ("  <div class=\"media-empty\" data-nosnippet>\n"
                  "    <span class=\"ic ic-pin\"></span>\n"
                  f"    <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>"
                  + (f"\n    <small>{esc(note)}</small>" if note else "")
@@ -4414,6 +4414,12 @@ def render_html(rec: dict) -> str:
                if name_key(r["name"]) not in name_key(building_name(rec) or title)]
     tab_title = ", ".join((trading if len(trading) <= 2 else trading[:2])
                           + [building_name(rec) or title])
+    # The `<title>` is what a search result shows and what a search matches
+    # first, and people search a building by its street address and city
+    # ("1010 14th Street San Francisco"). So it always carries both: a named
+    # building keeps its name first and adds the address after it.
+    search_title = ", ".join([tab_title] + ([title] if building_name(rec) else [])
+                             + [city_name])
 
     # Panels belong beside the main column whenever there is a main column for
     # them to sit beside — the empty column a split risks is the left one, and a
@@ -4493,7 +4499,7 @@ def render_html(rec: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(tab_title)} — Know This Place</title>
+  <title>{esc(search_title)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
 {data_link(rec['path'], 'data.json')}
@@ -4508,7 +4514,7 @@ def render_html(rec: dict) -> str:
 <div class="map-shell">
   <ktp-map location="{lat},{lng}" label="{esca(heading)}">
     <figure class="media media-map">
-      <div class="media-empty">
+      <div class="media-empty" data-nosnippet>
         <span class="ic ic-pin"></span>
         <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
         <small>The map of the surrounding blocks draws here with JavaScript on.</small>
@@ -4942,7 +4948,7 @@ def render_place_html(rec: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(name)} — Know This Place</title>
+  <title>{esc(name)}, {esc(city_name)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
 {data_link(rec['path'], 'place.json')}
@@ -4957,7 +4963,7 @@ def render_place_html(rec: dict) -> str:
 <div class="map-shell">
   <ktp-map location="{lat},{lng}" label="{esca(name)}">
     <figure class="media media-map">
-      <div class="media-empty">
+      <div class="media-empty" data-nosnippet>
         <span class="ic ic-pin"></span>
         <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
         <small>The map of the surrounding blocks draws here with JavaScript on.</small>
@@ -5317,7 +5323,7 @@ def render_unit_html(rec: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{esc(title_full)} — Know This Place</title>
+  <title>{esc(title_full)}, {esc(city_name)} — Know This Place</title>
   <meta name="description" content="{esca(desc)}">
   <link rel="canonical" href="{SITE}{rec['path']}">
 {data_link(rec['path'], 'unit.json')}
@@ -5332,7 +5338,7 @@ def render_unit_html(rec: dict) -> str:
 <div class="map-shell">
   <ktp-map location="{lat},{lng}" label="{esca(bheading)}">
     <figure class="media media-map">
-      <div class="media-empty">
+      <div class="media-empty" data-nosnippet>
         <span class="ic ic-pin"></span>
         <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
         <small>The map of the surrounding blocks draws here with JavaScript on.</small>

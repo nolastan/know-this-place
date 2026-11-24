@@ -1,0 +1,135 @@
+{
+  "address": "231–233 7th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/7th-avenue/231/",
+  "apn": "1426006",
+  "block": "1426",
+  "lot": "006",
+  "eas_baseid": "303404",
+  "coordinates": {
+    "lat": 37.784111,
+    "lng": -122.46591
+  },
+  "address_range": "231–233",
+  "street_numbers_on_parcel": [
+    "231",
+    "233"
+  ],
+  "parcel": {
+    "year_built": 1914,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3242,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0233 0231 07TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 310768,
+    "assessed_improvement_value": 165728
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202006158787",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-06-15",
+      "status_date": "2020-08-12",
+      "estimated_cost": 15000,
+      "revised_cost": 18000,
+      "description": "replace stucco around garage door and replace wood as needed. approx 15 sq ft of stucco, installing new wood behind stucco and wood trim around garage overhead door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109194938",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-09-19",
+      "status_date": "2011-09-22",
+      "estimated_cost": 5500,
+      "revised_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201104204424",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-04-20",
+      "status_date": "2011-10-24",
+      "estimated_cost": 14500,
+      "revised_cost": 19000,
+      "description": "repair sunroom at back of existing 2 dwelling unit building, sunroom size to remain.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8502073",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1985-03-01",
+      "status_date": "1985-05-17",
+      "estimated_cost": 1500,
+      "description": "restuco.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=07TH&street_type=AVE&address_number=231",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1426006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1426&lot=006",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1426006",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-12-23-n965",
+      "name": "Building and Engineering News, 23 December 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri14214cont/page/n965/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-12-23",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of flats, estimated at $4,500.",
+      "source": "building-industrial-news-1914-12-23-n965"
+    }
+  ]
+}

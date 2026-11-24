@@ -1,0 +1,117 @@
+{
+  "address": "155–157 Coleridge Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/coleridge-street/155/",
+  "apn": "5616026",
+  "block": "5616",
+  "lot": "026",
+  "eas_baseid": "451569",
+  "coordinates": {
+    "lat": 37.743192,
+    "lng": -122.419803
+  },
+  "address_range": "155–157",
+  "street_numbers_on_parcel": [
+    "155",
+    "157"
+  ],
+  "parcel": {
+    "year_built": 1914,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 1746,
+    "building_area_sqft": 2100,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0157 0155 COLERIDGE           ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58858,
+    "assessed_improvement_value": 137408
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8814480",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-09-23",
+      "status_date": "1989-02-10",
+      "estimated_cost": 6100,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806329",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-05-13",
+      "status_date": "1988-12-20",
+      "estimated_cost": 6500,
+      "description": "repair dryrot & termite wood under stucco on front bldg.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1988–2007",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=COLERIDGE&street_type=ST&address_number=155",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5616026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5616&lot=026",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5616026",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-12-09-n894",
+      "name": "Building and Engineering News, 9 December 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri14214cont/page/n894/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-12-09",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of two flats, estimated at $1,000.",
+      "source": "building-industrial-news-1914-12-09-n894"
+    }
+  ]
+}
