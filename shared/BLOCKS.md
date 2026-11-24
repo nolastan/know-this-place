@@ -546,7 +546,7 @@ that opens the homepage's `.map-card` and then the page. Stan chose this on
 2026-11-24 over the earlier Mapbox locator that carried no outline and no
 label. It still carries no fact that isn't on the page, so nothing is lost
 when it doesn't draw. The building is marked by its own lot, filled solid
-in brick, outlined in ink and lifted on a paper halo (`.nm-here`), not by a
+in its own hue (grey, or brick for research), outlined in ink and lifted on a paper halo (`.nm-here`), not by a
 dot; only a page whose lot isn't in the cache falls back to `.map-dot`.
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
 facts shown elsewhere like the parcel number. Neither image needs an

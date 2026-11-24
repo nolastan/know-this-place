@@ -283,10 +283,12 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 .nm-page path { fill: var(--muted); fill-opacity: 0.3; stroke: var(--muted); stroke-opacity: 0.9; stroke-width: 1; }
 .nm-page.nm-r path { fill: var(--warm); fill-opacity: 0.6; stroke: var(--warm); }
 .nm-page:hover path, .nm-page.is-active path { fill-opacity: 0.9; stroke-width: 2.5; }
-/* The building itself: solid brick, outlined in ink, set on a paper halo with
+/* The building itself: solid in its own hue — grey, or brick where research
+   has published onto it — outlined in ink, set on a paper halo with
    a soft shadow so it lifts off the lots around it. */
 .nm-here-halo { fill: var(--paper); stroke: var(--paper); stroke-width: 6; stroke-linejoin: round; filter: drop-shadow(0 1px 4px rgb(0 0 0 / 0.35)); }
-.nm-here { fill: var(--warm); stroke: var(--ink); stroke-width: 1.5; stroke-linejoin: round; }
+.nm-here { fill: var(--muted); stroke: var(--ink); stroke-width: 1.5; stroke-linejoin: round; }
+.nm-here.nm-r { fill: var(--warm); }
 .nm-labels text {
   font: 12px var(--sans); fill: var(--muted);
   stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; paint-order: stroke;

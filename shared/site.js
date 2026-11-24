@@ -225,7 +225,8 @@ const PHONE = matchMedia("(max-width: 720px)");
    A lot with a page is a link to it. A click opens the homepage's card for
    it (the page's photo or Street View, its heading and line, and "See this
    place"); a modified click goes straight there. The building's own lot is
-   filled solid in brick and lifted on a paper halo (.nm-here).
+   filled solid in its own hue (brick or grey, as the homepage colours it)
+   and lifted on a paper halo (.nm-here).
 
    Same law as ever: the .media-empty placeholder is the whole content of the
    block with no JS, and stands if anything here fails. Nothing a reader needs
@@ -414,13 +415,14 @@ customElements.define(
       svg.append(svgEl("path", { class: "nm-lots", d: plain.join("") }),
                  svgEl("path", { class: "nm-lots nm-park", d: park.join("") }));
       const pages = svgEl("g", { class: "nm-pages" });
-      let hereLot = null;
+      let hereLot = null, hereR = false;
       for (const [id, rec] of this.pages) {
         const lot = this.lots.get(id);
         if (!lot || !seen(lot)) continue;
         if (rec.p === here) {
           // Drawn last, over its neighbours: a paper halo, then the lot.
           hereLot = lot;
+          hereR = !!rec.r;
           continue;
         }
         const a = svgEl("a", { href: rec.p, class: rec.r ? "nm-page nm-r" : "nm-page", tabindex: "-1" });
@@ -437,7 +439,7 @@ customElements.define(
       svg.append(pages);
       if (hereLot) {
         svg.append(svgEl("path", { class: "nm-here-halo", d: hereLot.d }),
-                   svgEl("path", { class: "nm-here", d: hereLot.d }));
+                   svgEl("path", { class: hereR ? "nm-here nm-r" : "nm-here", d: hereLot.d }));
       }
       svg.append(this.labels(w, h));
       svg.addEventListener("click", (e) => { if (!e.target.closest("a")) this.close(); });
@@ -463,7 +465,7 @@ customElements.define(
       const SIZE = 12, CHAR = SIZE * 0.56, EDGE = 12;
       const cands = [];
       for (const [id, s] of this.streets) {
-        if (!s.n || !(s.box[2] >= -w / 2 && s.box[0] <= w / 2 && s.box[3] >= -h / 2 && s.box[1] <= h / 2)) continue;
+        if (!s.n || /^unnamed\b/i.test(s.n) || !(s.box[2] >= -w / 2 && s.box[0] <= w / 2 && s.box[3] >= -h / 2 && s.box[1] <= h / 2)) continue;
         let p = s.pts;
         let len = 0;
         for (let k = 1; k < p.length; k++) len += Math.hypot(p[k][0] - p[k - 1][0], p[k][1] - p[k - 1][1]);
