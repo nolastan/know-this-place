@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** seven titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) and North Mission News with its successor New Mission News (197 issues, 1983–2004) — 847 findings, 758 resolved, 694 published on 523 pages (209 seeded).
+> - **Coverage:** eight titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004) and the Richmond ReView (228 issues, 1988–2008) — 1,002 findings, 881 resolved, 801 published on 595 pages (227 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -179,14 +179,27 @@
   *North Mission News* and *New Mission News*, every item — 197 items,
   June 1983 to August 2004, 5,555 OCR pages
   (`findings/sf-neighborhood-newspapers/mission-news-1983-2004.json`).
-  **Not read:** the other eleven titles, and the Potrero View's November
+  The *Richmond ReView*, every item — 228 items, November 1988 to 2008
+  (`findings/sf-neighborhood-newspapers/richmond-review-1988-2008.json`).
+  **Not read:** the other ten titles, and the Potrero View's November
   2009 issue (no OCR on the Internet Archive). The next batches, in the
   order this site needs them: the Bernal Journals (179 items under six
   catalogue names, 1964–2008; **their items have no hOCR files**, so the
   text has to come from `_djvu.txt` and the leaf from `_djvu.xml` or the
   page count), Park Bell (Excelsior/Portola), The New Fillmore, the
-  Semaphore titles, Richmond ReView and Tenderloin Times. One title is
-  one batch; take two in a session if the first is short.
+  Semaphore titles and Tenderloin Times (141 items and Park Bell's 64 are
+  already fetched into `corpora/`, both with hOCR). One title is one batch;
+  take two in a session if the first is short.
+  **Unplaced, Richmond ReView:** the 1894 building at 4004 Geary demolished
+  in 1988, the Crystal Palace Salt Water Baths at 775 Lombard (1924–1956),
+  the 1952 Safeway at 3132 Clement (closed November 1994), Gillon Lumber's
+  yard at 3931 Geary (1896–2002) and the bicycle shop at 4049 Balboa (an
+  EAS address on no parcel). **Held, Richmond ReView:** 27 single facts on
+  parcels with no page (`check.py --held`). **A lead left unread:** the
+  paper's 'New Businesses / Closed Businesses' chart, February 1993 to
+  December 1994, about 100 dated shop openings and closings on Clement,
+  Geary, Balboa and California; its two columns are interleaved by the OCR,
+  so it needs reading against the page image.
   **Unplaced, Mission papers:** the Valencia Hotel site at 718 Valencia
   (1906), 101 Valencia (the 1909 Knights of Pythias building, 40 lofts and
   109 homes of 1996–97; EAS holds 100, 105, 111 and 115 only), Arriba
@@ -360,3 +373,32 @@
   street number on the cited leaf, and every day-precision date within the
   surrounding article, and the eight the date check flagged were read by
   hand and stood.)
+  2026-11-24 (sixth run, the Richmond ReView. Read 228 issues, 19,699
+  numbered-address mentions; 1,171 passages by seven readers (2,038
+  windows merged); 338 candidates, 155 findings, 123 resolved, 107
+  published on 86 pages, 18 of them seeded, 16 declined, 27 held. The best
+  of it: the branch libraries (Richmond, Presidio, Anza) through closure,
+  renovation and landmarking; the Delancey Street building at 795 Eighth
+  Avenue from its 1922 completion to its 1996 conversion; the Coliseum
+  theater's 1918 date and 2000 conversion; Station M post office reborn as
+  Richmond Plaza (1993); the Lycee Francais's move to Ashbury Street
+  (1996); the Larkins Building's enlargement (3 August 1995); the Last Day
+  Saloon's opening (2 August 1973); the 4 Star as La Bonita (1921); and the
+  earthquake shacks at 4329 Kirkham moved to Treasure Island (August 2004).
+  **Learned:** (1) the catalogue date of an item can be wrong and two
+  items can be one issue: richmondreview98unse is May 1997, and January
+  1990 is scanned twice; check the masthead of every cited issue; (2) the
+  OCR splits street numbers (`35 1 Ninth`, `43 14 California`), so the
+  extractor's matched address is often a tail and the reader must take the
+  number from the text; (3) from 1996 a third or more of each issue's
+  matches are the monthly 'Homes Sold' table and from 1997 the paper
+  reprints Sunset Beacon and City Voice copy, so Sunset and citywide
+  addresses turn up; (4) the Presidio and Golden Gate Park are one parcel
+  each, so a numbered building in either resolves to whatever page the
+  parcel has: decline it; (5) `--area-from-nhood` invents
+  `lone-mountain-usf` and `financial-district-south-beach`; without it,
+  proximity sent 5 Masonic to `castro/` and 710 10th Avenue to
+  `inner-sunset/`, so use it and correct the two names; (6) a fact given a
+  number other than the printed one (795 for a misprinted 798 Eighth
+  Avenue) must not go in `address_range_as_recorded`, which the resolver
+  reads as a range; `extra.number_as_printed` holds it.)
