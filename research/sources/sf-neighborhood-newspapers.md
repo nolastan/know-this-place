@@ -5,9 +5,9 @@
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id
 > `sf-neighborhood-newspapers-<IA identifier>-n<leaf>`.
 >
-> - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
+> - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** done
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** sixteen titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999), The New Fillmore (27 issues, 1986–1990), Tenant Times (25 issues, 1979–1996), the Bernal Heights papers (178 issues, 1964–2008: the Pictorial, the Bernal Journal and the New Bernal Journal), the St. Mary's Park Improvement Club newsletter (15 issues, 1959–1985, nothing kept) and Street Art News (6 issues, 1975, nothing kept), and The Semaphore of the Telegraph Hill Dwellers (194 issues, 1976–2026) — 1,465 findings, 1,280 resolved, 1,194 published on 906 pages (290 seeded).
+> - **Coverage:** all 18 titles read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999), The New Fillmore (27 issues, 1986–1990), Tenant Times (25 issues, 1979–1996), the Bernal Heights papers (178 issues, 1964–2008: the Pictorial, the Bernal Journal and the New Bernal Journal), the St. Mary's Park Improvement Club newsletter (15 issues, 1959–1985, nothing kept) and Street Art News (6 issues, 1975, nothing kept), The Semaphore of the Telegraph Hill Dwellers (194 issues, 1976–2026) with its forerunner the Telegraph Hill Bulletin (56 issues, 1956–1975), and the Sunnyside Neighborhood Association's newsletter (29 issues, 1975–1994) — 1,509 findings, 1,316 resolved, 1,230 published on 920 pages (296 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -201,14 +201,23 @@
   The *St. Mary's Park Improvement Club newsletter* (15 issues with hOCR,
   1959–1985) and *Street Art News* (6, 1975) were read whole and yielded
   nothing; they have no findings file.
-  **Not read:** the other two titles, and the Potrero View's November
-  2009 issue (no OCR on the Internet Archive). The next batches are the
-  titles with little or no hOCR, whose text and leaves come from each
-  item's `_djvu.xml` (`/mnt/project-files/mission-papers/dl_djvu.py`
-  rebuilds the hOCR-shaped search text and page index from it, so the
-  cluster and build scripts run unchanged): the Telegraph Hill Bulletin
-  (4 of 56 with hOCR) and Sunnyside (0 of 30). One title is one batch;
-  take two in a session if the first is short.
+  The *Telegraph Hill Bulletin*, the Semaphore's forerunner — 56 issues,
+  May 1956 to August 1975
+  (`findings/sf-neighborhood-newspapers/telegraph-hill-bulletin-1956-1975.json`),
+  and the *Sunnyside Neighborhood Association's newsletter* — 29 issues,
+  Spring 1975 to Fall 1994
+  (`findings/sf-neighborhood-newspapers/sunnyside-news-1975-1994.json`),
+  both from djvu text.
+  **Not read:** only the Potrero View's November 2009 issue (no OCR on the
+  Internet Archive). Every title in the collection is read; the source is
+  done unless the Archive adds issues. For items with no hOCR,
+  `/mnt/project-files/mission-papers/dl_djvu.py` rebuilds the hOCR-shaped
+  search text and page index from each item's `_djvu.xml`, so the cluster
+  and build scripts run unchanged.
+  **Held, Sunnyside:** 4 thin facts on parcels with no page: 298 Monterey
+  (a Health Department counseling center, 1975), 663 Mangels (the
+  district's first recorded water hookup, 1909), 771 Monterey and 499
+  Monterey (shops).
   **Held, Bernal papers:** 16 thin facts on parcels with no page: 307, 410,
   419, 433, 525, 800, 813, 908, 1000 and 249 Cortland (shop openings, the
   Bank of America branch's threatened closing of 1993, the burned-out
@@ -417,6 +426,25 @@
   street number on the cited leaf, and every day-precision date within the
   surrounding article, and the eight the date check flagged were read by
   hand and stood.)
+  2026-11-24 (thirteenth run, the Telegraph Hill Bulletin, 1956-1975, and
+  the Sunnyside newsletter, 1975-1994. 85 issues from djvu text, 955
+  mentions, 44 findings, 36 published on 25 pages, 6 seeded, 4 held, 4
+  unresolved. Both are association newsletters: three quarters of the
+  numbered addresses are officers' homes and advertisers, and the news
+  names its places without a number. What they add: the Gardner Dailey
+  apartments at 1420 Montgomery and the five 1870s houses they replaced,
+  the Rudolph Schaeffer School's site at 350 Union, three buildings of
+  1966 to 1977 with their architects, the Central Station garage, and
+  Thomas Malim's serial history of the Sunnyside Conservatory (Merralls,
+  the 1916 foreclosure, the Van Becks, the 1975 landmark). **Learned:**
+  (1) for a newsletter, run the mention pass with the advertisement
+  filter off (`extra_windows.py`) and a pass over event words
+  (`kw_scan.py`), because the numbered pass alone finds a third of it;
+  (2) a building named without a number can be placed when the roll has
+  one building on the block with the stated year and unit count, and the
+  finding says so in `extra.placement_note`; (3) the typed issues of the
+  1950s are too poorly recognised to quote, so cite the later reprint
+  where the paper repeats itself.)
   2026-11-24 (twelfth run, The Semaphore, 2000-2026. 102 issues from djvu
   text, 3,969 mentions, 622 passages read by hand, 110 findings, 105
   published on 94 pages, 27 seeded, 2 held, 3 unplaced. Nearly every

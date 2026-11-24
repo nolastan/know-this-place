@@ -1,0 +1,119 @@
+{
+  "address": "307 Filbert Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/filbert-street/307/",
+  "apn": "0105050",
+  "block": "0105",
+  "lot": "050",
+  "eas_baseid": "277581",
+  "coordinates": {
+    "lat": 37.801708,
+    "lng": -122.40498
+  },
+  "parcel": {
+    "year_built": 1966,
+    "units": 3,
+    "stories": 3,
+    "rooms": 7,
+    "bathrooms": 3,
+    "lot_area_sqft": 1528,
+    "building_area_sqft": 2135,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0307 FILBERT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 69284,
+    "assessed_improvement_value": 166592
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1966",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201406300045",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-06-30",
+      "status_date": "2014-07-01",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa #2012.0926.0689. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201209260689",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-09-26",
+      "status_date": "2012-09-27",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "kitchen remodel-move (e) kitchen to current hall area requiring removal of approx 12ft of closet wall & relocation of minor plumbing & electrical",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200101059265",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2001-01-05",
+      "status_date": "2001-05-05",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FILBERT&street_type=ST&address_number=307",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0105050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0105&lot=050",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0105050",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-telegraphhillbulletin1966june-n2",
+      "name": "Telegraph Hill Bulletin (Telegraph Hill Dwellers), June 1966",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/telegraphhillbulletin1966june/page/n2/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1966",
+      "kind": "construction",
+      "description": "A three-unit building, two studios and a two-bedroom unit, designed by Henry Hester of La Jolla and built by De Martini Bros., was completed here.",
+      "source": "sf-neighborhood-newspapers-telegraphhillbulletin1966june-n2"
+    }
+  ]
+}

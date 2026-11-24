@@ -1,0 +1,46 @@
+{
+  "address": "373 Lombard Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/lombard-street/373/unit-302/",
+  "unit": "302",
+  "apn": "0078069",
+  "block": "0078",
+  "lot": "069",
+  "parcel": {
+    "building_area_sqft": 980,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 126772,
+    "assessed_improvement_value": 363219
+  },
+  "permits": [
+    {
+      "number": "202108126298",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-08-12",
+      "status_date": "2022-01-11",
+      "estimated_cost": 71300,
+      "revised_cost": 71300,
+      "description": "one unit: in kind kitchen remodel, 2 bathrooms remodel, upgrade sub panel remove and replace in kind. aluminum insert windows (street facing), install new flooring, paint interior unit.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0078069&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0078&unit=302",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}
