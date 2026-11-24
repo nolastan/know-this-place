@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1971–1993 read (910 of 1,514 issues). 1994–2005 remain. See the `Verified:` line.
+> - **Coverage:** 1971–2003 read (1,431 of 1,514 issues). 2004–2005 remain. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/bay-area-reporter/`
 
 - **What:** The *Bay Area Reporter*, San Francisco's gay community newspaper,
@@ -150,7 +150,45 @@
   Positive Care and of 1800 Square Feet, the Metropolitan Community Church's
   community center on 18th Street, and the burning of the Dolores Street
   Baptist Church.
-  **Resume at 1994.**
+  1994–1995 (104 issues, 16,534 mentions, 677 address clusters): 28 findings,
+  23 resolved and published on 22 pages, 1 of them seeded (4035 18th Street,
+  taking up the fact held for it since 1992–1993), 3 held, 2 unresolved. They
+  include the AIDS Health Project's center at 400 Castro, the Shanti Project's
+  move to 1546 Market, the Elephant Walk losing its lease, the fire at 425
+  Castro, and the openings of the Hole in the Wall Saloon, Daddy's and Books
+  Inc.
+  1996–1997 (104 issues, 17,283 mentions, 633 address clusters): 28 findings,
+  26 resolved and published on 25 pages, none seeded, 3 of them placed by hand
+  where EAS no longer holds the number, 1 held, 1 unresolved. They include
+  Maitri's groundbreaking at 401 Duboce, Brava's purchase of the York Theatre,
+  the Community Center board's vote to demolish the Fallon Building at 1800
+  Market, Sha'ar Zahav's last services on Danvers Street, the reopening of the
+  Powerhouse and of the Harvey Milk branch library, and the moves of the AIDS
+  Health Project, Project Open Hand and Continuum.
+  1998–1999 (105 issues, 14,532 mentions, 898 address clusters): 27 findings,
+  23 resolved and published on 22 pages, none seeded, 1 held, 3 unresolved at
+  numbers EAS no longer holds between two parcels. They include the Community
+  Center board's vote to keep the Fallon Building, Under One Roof's move to
+  549 Castro, Shanti's move into 730 Polk, the Castro Station becoming The Bar
+  on Castro, the Hot Cookie fire, the groundbreaking for Lark-Inn at 869
+  Ellis, the failed youth shelter at 2500 Market, and the closing of Josie's.
+  2000–2001 (104 issues, 12,209 mentions, 891 address clusters): 24 findings,
+  all resolved and published on 23 pages, none seeded, 1 placed by hand. They
+  include the Community Center's groundbreaking and its lost tax credits, the
+  opening of Lark-Inn and of the youth housing at 2500 Market, Pottery Barn at
+  2390 Market, the Gay Men's Chorus leaving 400 Castro, the Castro Foundation
+  for the Castro Theatre, the reopening of Badlands and of the Castro Country
+  Club, and the lot at 2299 Market twenty years after the church fire.
+  2002–2003 (104 issues, 12,127 mentions, 847 address clusters): 29 findings,
+  25 resolved and published on 22 pages, none seeded, 4 held (2187 and 2189
+  Market, two commercial units of the 2002 condominium building at 15th
+  Street that has no building page; 525 and 511 Harrison). They include the
+  Community Center's opening on 3 March 2002, the demolition of the I-Beam,
+  the Harvey's fire and reopening, Diesel at 400 Castro, the closing of the
+  Bearded Lady, of Club Townsend, of CHAMP and of the CD Record Rack, the
+  Names Project bench at 2362 Market, Mezzanine at 444 Jessie, and Cliff's
+  Variety's addition at 479 Castro.
+  **Resume at 2004.**
 - **Verified:** 2026-11-24 (lead promoted and 1971–1975 read in one run: 121
   issues downloaded from `_djvu.xml`, 555 windows after the advertisement
   filter in 466 clusters read in full, 149 event-word passages read, 75
@@ -164,4 +202,4 @@
   pass must drop "dedicated" and "landmark", which match a weekly
   advertisement and every tribute. Same day, 1980–1981: 58 issues, 35
   findings, each quote found again; two issues a month in these years, so two
-  years is a small batch and three or four would fit one run. Same day, 1982–1983: 104 issues, 32 findings, each quote found again; the classified pages now swamp the event-word pass, so it was narrowed to fire, closed and lost-lease words after the first 20 issues. Same day, 1984–1985: 104 issues, 33 findings, each quote found again; `evf.py` now filters the clusters, and from mid-1984 a second, tighter filter drops classified pages and calendar listings, which hold no building facts. Same day, 1986–1987: 106 issues, 26 findings, each quote found again; by now most findings are openings, closings and moves of institutions already on a page, so the overlap check matters more than seeding. Same day, 1988–1989: 104 issues, 27 findings, each quote found again; a pass over the weeks after the 1989 earthquake found no damage report tied to a street number, and `evf2.py` now does the tighter filtering in one step. Same day, 1990–1991: 104 issues, 28 findings, each quote found again; three parcels gained a second fact and were seeded with what had been held for them, one of those a Redevelopment Agency form read again against its page image. Same day, 1992–1993: 105 issues, 20 findings, each quote found again; `evf2.py` was tightened again (more classified vocabulary dropped, at most two clusters per address), and no parcel gained a second fact.)
+  years is a small batch and three or four would fit one run. Same day, 1982–1983: 104 issues, 32 findings, each quote found again; the classified pages now swamp the event-word pass, so it was narrowed to fire, closed and lost-lease words after the first 20 issues. Same day, 1984–1985: 104 issues, 33 findings, each quote found again; `evf.py` now filters the clusters, and from mid-1984 a second, tighter filter drops classified pages and calendar listings, which hold no building facts. Same day, 1986–1987: 106 issues, 26 findings, each quote found again; by now most findings are openings, closings and moves of institutions already on a page, so the overlap check matters more than seeding. Same day, 1988–1989: 104 issues, 27 findings, each quote found again; a pass over the weeks after the 1989 earthquake found no damage report tied to a street number, and `evf2.py` now does the tighter filtering in one step. Same day, 1990–1991: 104 issues, 28 findings, each quote found again; three parcels gained a second fact and were seeded with what had been held for them, one of those a Redevelopment Agency form read again against its page image. Same day, 1992–1993: 105 issues, 20 findings, each quote found again; `evf2.py` was tightened again (more classified vocabulary dropped, at most two clusters per address), and no parcel gained a second fact. Same day, 1994–1995: 104 issues, 28 findings, each quote found again; the paper now runs a business column whose items give an opening day and a number, which is where a third of the batch comes from. Same day, 1996–1997: 104 issues, 28 findings, each quote found again; a fact for a library that is a place page was published to its `place.json`, which the batch's publisher now accepts. Same day, 1998–1999: 105 issues, 27 findings, each quote found again; three findings name a business whose number the paper prints only in other issues, and say so in their placement notes. Same day, 2000–2001: 104 issues, 24 findings, each quote found again; by now the paper's news pages report Castro storefronts and nonprofit moves closely, and nearly every finding lands on a page that already has planning-commission entries for the same years. Same day, 2002–2003: 104 issues, 847 clusters, the 100 left by the tighter filter and 28 event-word passages read, 29 findings, every quote found again in its issue; the audit flags 2, both explained in the batch's coverage note.)
