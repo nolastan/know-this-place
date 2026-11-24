@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high for 1966–2006 (print only, never on the paper's website); medium for 2008–2014, when the paper also published online.
-> - **Coverage:** 479 of 996 issues read, 1966–1994. See the `Verified:` line.
+> - **Coverage:** 601 of 996 issues read, 1966–2006. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/sf-bay-guardian/`
 
 - **What:** The *San Francisco Bay Guardian*, the city's alternative
@@ -129,9 +129,21 @@
   Arts on Valencia Street, the Red Vic's reopening, Walden House's three
   houses, the Rent Board's move out of 170 Fell and the empty bank at 400
   Castro.
-  **Resume at 1998:** next 1998–2006 (122),
-  then 2008–2014 (395), which is the least valuable because the paper
-  was on the open web in those years.
+  1998–2006 (122 issues; 93,929 mentions, 2,122 address clusters; the 85
+  news-word passages, 91 prose clusters and 62 event passages read): 39
+  findings, 22 resolved and published on 22 existing pages, 8 held (444
+  Battery, 595 Castro, 360 10th, 575 Harrison, 1207 Indiana, 1600 Webster,
+  1335 Webster, 1547 Clay), 9 unplaced because the address is gone (699
+  Columbus, 960 Bush, 2520 Third, 965 Market, 81 Third, 6114 California,
+  2955 18th, 1300 Sutter, 701 Lombard). They include the paper's count of
+  live-work lofts used as offices in 2000, the protest at 1800 Bryant, the
+  nonprofits of the Grant Building and 995 Market, the approval of 1900
+  Bryant and of the housing at 3620 19th, the earthquake shacks on Kirkham
+  Street, code cases against a large landlord's buildings in 2002 to 2006,
+  and a June 2000 retrospective that dates the punk scene's rooms of the
+  1970s.
+  **Resume at 2008:** 2008–2014 (395 issues) remains, the least valuable
+  because the paper was on the open web in those years.
 - **Verified:** 2026-11-24 (source found by browsing the Internet Archive's
   San Francisco newspaper collections, promoted and 1966–1976 read in one
   run: 173 issues downloaded from `_djvu.xml`, about 100 candidates checked
@@ -142,4 +154,4 @@
   already on the page from a context statement or the planning minutes is
   common for the famous buildings, so run the overlap check before writing
   more than a line; and the collection's identifiers carry no date, so every
-  script keys on the identifier and reads the date from `items_d.tsv`. Same day, 1977–1986: 127 issues, 21 findings, each quote found again. Learned: `news.py`, a pass over the raw text for prose with a numbered address and a building-news word, finds the planning and housing stories the advertisement filter hides, and is now the first thing to read; by the 1980s the planning minutes and environmental reports already on the pages cover most of the paper's highrise stories, so a third of the candidates fell at the overlap check. Same day, 1988–1994: 179 issues, 35 findings, audit clean. Learned: the issues of 1989 and 1990 are four times the size of the 1970s ones and almost all of the growth is advertising and listings (88 percent of mentions marked as advertisements), so the three reading passes came to only 306 passages; a running story, here the law college's Tenderloin block, is best read as a whole across its issues before any row is written, because each issue adds a number or a date the others lack; and shops' own moving announcements, repeated for weeks, give exact dates the articles do not.)
+  script keys on the identifier and reads the date from `items_d.tsv`. Same day, 1977–1986: 127 issues, 21 findings, each quote found again. Learned: `news.py`, a pass over the raw text for prose with a numbered address and a building-news word, finds the planning and housing stories the advertisement filter hides, and is now the first thing to read; by the 1980s the planning minutes and environmental reports already on the pages cover most of the paper's highrise stories, so a third of the candidates fell at the overlap check. Same day, 1988–1994: 179 issues, 35 findings, audit clean. Learned: the issues of 1989 and 1990 are four times the size of the 1970s ones and almost all of the growth is advertising and listings (88 percent of mentions marked as advertisements), so the three reading passes came to only 306 passages; a running story, here the law college's Tenderloin block, is best read as a whole across its issues before any row is written, because each issue adds a number or a date the others lack; and shops' own moving announcements, repeated for weeks, give exact dates the articles do not. Same day, 1998–2006: 122 issues, 39 findings, the audit flags 1 (a year written as ’89). Learned: by 2000 the paper's building news is housing politics, so most rows are a hearing, a lawsuit or a code case and need the landlord and tenants left out; a retrospective feature can date a dozen vanished rooms at once, but a quarter of this batch's addresses no longer exist in EAS; and when a quote occurs twice in an issue the builder cites the first leaf, so make the quote include the number.)
