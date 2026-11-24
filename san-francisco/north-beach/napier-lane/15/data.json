@@ -1,0 +1,149 @@
+{
+  "address": "15 Napier Lane, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/napier-lane/15/",
+  "apn": "0085014",
+  "block": "0085",
+  "lot": "014",
+  "eas_baseid": "276886",
+  "coordinates": {
+    "lat": 37.802328,
+    "lng": -122.403983
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 2,
+    "bedrooms": 2,
+    "lot_area_sqft": 1560,
+    "building_area_sqft": 1477,
+    "lot_depth_ft": 60,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0015 NAPIER              LN0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1462336,
+    "assessed_improvement_value": 626713,
+    "last_sale_date": "2017-05-16"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "200209136481",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-09-13",
+      "status_date": "2002-09-13",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev. appl#200110100321, change # of stories recorded from 1 to 2",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200201308067",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-01-30",
+      "status_date": "2003-02-21",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "non-structural ground slab (partial) to be removed-modest demo of rear deck and loose fill removal",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110100321",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-10-10",
+      "status_date": "2003-02-21",
+      "estimated_cost": 150000,
+      "revised_cost": 235000,
+      "description": "comply w/nov#20017318:allow for soft demo in liew ofissuance of (n) permit convesion of basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9819571",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-09-28",
+      "status_date": "1999-04-23",
+      "estimated_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NAPIER&street_type=LN&address_number=15",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0085014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0085&lot=014",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0085014",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40398295480134%2037.80232784887684)%27)",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-thesemaphore2006spring175-n15",
+      "name": "The Semaphore (Telegraph Hill Dwellers), no. 175, April 2006",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/thesemaphore2006spring175/page/n15/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1872",
+      "kind": "construction",
+      "description": "An Italianate cottage of 1872; its first owner was Berthold Clark, a warehouseman. One of the Telegraph Hill houses that came through the 1906 fire.",
+      "source": "sf-neighborhood-newspapers-thesemaphore2006spring175-n15"
+    }
+  ],
+  "unknowns": [
+    "The Semaphore, drawing on the Telegraph Hill Historic District's research, dates the building at 15 Napier to 1872; the assessor's roll says 1900."
+  ]
+}

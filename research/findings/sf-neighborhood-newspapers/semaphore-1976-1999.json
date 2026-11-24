@@ -1,0 +1,2437 @@
+{
+ "source_id": "sf-neighborhood-newspapers",
+ "batch": "semaphore-1976-1999",
+ "read_on": "2026-11-24",
+ "notes": "The Semaphore, the Telegraph Hill Dwellers' paper (Telegraph Hill Semaphore, nos. 57 to 100, and The Semaphore, to no. 149; May 1976 to September 1999), the 92 issues the Internet Archive collection sanfrancisconewspapers holds with an OCR layer. Source text is each item's hOCR search text; leaves from its hOCR page index, and citations give the issue number and the leaf. Read by hand, with no reader pass; extra.candidate is the row key in /mnt/project-files/mission-papers/decisions_semaphore.py. Kept: decisions of the Planning Commission, the Landmarks Board and the Board of Supervisors, fires, openings and closings of shops and institutions, and what the paper says of a building's history. Not kept: the Dwellers' own positions, proposals that went nowhere, and variance disputes over private houses, which would put a private owner's name on a page. Three findings cite an article that names the place and not its number: Garfield School (420 Filbert), the Savoy-Tivoli (1434 Grant) and the Basque Hotel (15 Romolo Place). extra.number_as_printed keeps a number the paper printed differently from the parcel's page (the Colombo Building, 1 Columbus, paged at 7). extra.record_date is the issue year for facts older than the paper; dates the paper gives for old buildings are its own and are worded as such.",
+ "coverage": {
+  "unit": "issues",
+  "examined": 92,
+  "mentions": 5605,
+  "remaining": "The 105 Semaphore items from 2000 on have no hOCR; their text has to come from _djvu.txt. Nothing remains in the 92 issues read.",
+  "note": "92 issues; 5,605 numbered-address mentions on EAS streets (ocr_mentions.py --rescue), most of them advertisements and officers' lists. The filter kept 596 windows, merged into 425 passages, all read by hand. 68 findings written, each quote found again in the issue's text. 55 resolved and published on 49 pages (9 seeded). 11 held, each one thin fact on a parcel with no page (16 Napier Lane, 6 Gerke Alley, 1620 Montgomery, 414 Francisco, 450 Broadway, 839 Columbus, 2209 Powell, 886 Broadway, 701 Chestnut, 1741 Powell, 234 Columbus). 2 unplaced at numbers no parcel carries today (735 Filbert, 576 Green). Not carried at all, the pages having them already in more detail: the Italian Swiss Colony building, the two Gibb warehouses on Front Street, NEMS at 1520 Stockton, Intersection at 756 Union, On Lok at 1000 Montgomery, the Duck House frescoes, Farnsworth's laboratory, the 1999 vote on 1351 Grant, the North Beach Garage and the World Theatre. Seeding 418 Union took up a held Building and Engineering News fact (a 1919 alteration permit), read against the page image. Date conflicts with the roll or the city's survey are stated on the pages (31 Alta, 218 Filbert, 9 Calhoun Terrace, 1354 Kearny, 725 Greenwich, 240 Lombard, 660 Lombard, the Basque Hotel, the Jan Holloway Gallery)."
+ },
+ "findings": [
+  {
+   "id": "semaphore-0001",
+   "date": "1977-08",
+   "date_precision": "month",
+   "kind": "move",
+   "address_as_written": "550 Green Street",
+   "street_number": "550",
+   "street_name": "GREEN",
+   "street_type": "ST",
+   "description": "The New Pisa Restaurant announced its move to 550 Green Street, formerly the Montclair Restaurant.",
+   "extra": {
+    "candidate": "semaphore#s020"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 61, August 1977",
+    "url": "https://archive.org/details/telegraphhillsem61tele/page/n8/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem61tele.txt",
+    "locator": "telegraphhillsem61tele-n8 (leaf 8)"
+   },
+   "raw": {
+    "text": "550 GREEN STREET (Formerly Montclair Restaurant)"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0116018",
+    "path": "/san-francisco/north-beach/green-street/550/",
+    "eas_address": "550 GREEN ST",
+    "method": "EAS exact match on 550 GREEN ST → parcel 0116018; sf-parcels has blklot 0116018 active, 550–556 GREEN; the 2025 roll records it as commercial hotel, built 1906. EAS puts 550, 552, 556 GREEN ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 550.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0002",
+   "date": "1977-09",
+   "date_precision": "month",
+   "kind": "move",
+   "address_as_written": "450 Columbus",
+   "street_number": "450",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The jeweler R. Matteucci & Co., then 73 years old, moved here from 229 Columbus Avenue and replanted its four-faced 1908 Seth Thomas street clock in front of the new shop. The clock's 35-pound brass movement had been stolen before dawn on September 9, 1977, during the move.",
+   "extra": {
+    "candidate": "semaphore#s024"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 62, November 1977",
+    "url": "https://archive.org/details/telegraphhillsem62tele/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem62tele.txt",
+    "locator": "telegraphhillsem62tele-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "to its new location at 450 Columbus"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0131017",
+    "path": "/san-francisco/north-beach/columbus-avenue/444/",
+    "eas_address": "444 COLUMBUS AVE",
+    "method": "EAS exact match on 450 COLUMBUS AVE → parcel 0131017; sf-parcels has blklot 0131017 active, 444–454 COLUMBUS; the 2025 roll records it as commercial hotel, built 1906. EAS puts 444, 446, 450, 454 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 444.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0003",
+   "date": "1978-01",
+   "date_precision": "month",
+   "kind": "construction",
+   "address_as_written": "Garfield School",
+   "street_number": "420",
+   "street_name": "FILBERT",
+   "street_type": "ST",
+   "description": "Demolition of the old Garfield School and construction of a new 16-classroom building, designed by the firm of Esherick, Homsey, Dodge and Davis, were to begin in January 1978, paid for with $2.4 million in federal funds.",
+   "extra": {
+    "candidate": "semaphore#s029"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 63, January 1978",
+    "url": "https://archive.org/details/telegraphhillsem63tele/page/n8/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem63tele.txt",
+    "locator": "telegraphhillsem63tele-n8 (leaf 8)"
+   },
+   "raw": {
+    "text": "room building will begin in January"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0087071",
+    "path": "/san-francisco/north-beach/filbert-street/420/",
+    "eas_address": "420 FILBERT ST",
+    "method": "EAS exact match on 420 FILBERT ST → parcel 0087071; sf-parcels has blklot 0087071 active, 420–420 FILBERT; the 2025 roll records it as miscellaneous/mixed-use. EAS files the address under parcel 0087028, which sf-parcels reports retired; the active parcel its coordinates fall in is 0087071.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0004",
+   "date": "1978-08",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "512 Union Street",
+   "street_number": "512",
+   "street_name": "UNION",
+   "street_type": "ST",
+   "description": "The Museo Italo Americano opened on the second floor, in the room above the coffee house Malvina's.",
+   "extra": {
+    "candidate": "semaphore#s041"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 65, September 1978",
+    "url": "https://archive.org/details/telegraphhillsem65tele/page/n9/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem65tele.txt",
+    "locator": "telegraphhillsem65tele-n9 (leaf 9)"
+   },
+   "raw": {
+    "text": "The Museo Italo-Americano opened last month"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0103007",
+    "path": "/san-francisco/north-beach/grant-avenue/1501/",
+    "eas_address": "510 UNION ST",
+    "method": "EAS exact match on 512 UNION ST → parcel 0103007; sf-parcels has blklot 0103007 active, 1501–1503 GRANT; the 2025 roll records it as commercial retail, built 1917. The assessor files the parcel as 1501–1503 GRANT AV. EAS puts 510, 512 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 510. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0103007.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0005",
+   "date": "1978",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "1435 Stockton Street",
+   "street_number": "1435",
+   "street_name": "STOCKTON",
+   "street_type": "ST",
+   "description": "The North Beach Museum opened on the mezzanine of Eureka Federal Savings, with a first display of historical photographs by J. B. Monaco.",
+   "extra": {
+    "candidate": "semaphore#s042"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 65, September 1978",
+    "url": "https://archive.org/details/telegraphhillsem65tele/page/n19/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem65tele.txt",
+    "locator": "telegraphhillsem65tele-n19 (leaf 19)"
+   },
+   "raw": {
+    "text": "zanine of Eureka Federal Savings with a superbly displayed collection"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0130002",
+    "path": "/san-francisco/chinatown/stockton-street/1435/",
+    "eas_address": "1435 STOCKTON ST",
+    "method": "EAS exact match on 1435 STOCKTON ST → parcel 0130002; sf-parcels has blklot 0130002 active, 1435–1445 STOCKTON; the 2025 roll records it as commercial retail, built 1933. EAS puts 1435, 1437, 1441, 1445 STOCKTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1435.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0006",
+   "date": "1979",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "234 Columbus",
+   "street_number": "234",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The photographer J. B. Monaco (1856-1938) had his last studio here, in what the paper called a castle-like building at the corner of Pacific.",
+   "extra": {
+    "candidate": "semaphore#s045",
+    "record_date": "1979",
+    "placed_apn": "0162021"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 67, January 1979",
+    "url": "https://archive.org/details/telegraphhillsem67tele/page/n17/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem67tele.txt",
+    "locator": "telegraphhillsem67tele-n17 (leaf 17)"
+   },
+   "raw": {
+    "text": "His last studio location was at 234 Columbus"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 234 COLUMBUS AVE → parcel 0162021; sf-parcels has blklot 0162021 active, 228–234 COLUMBUS; the 2025 roll records it as commercial retail, built 1910. EAS puts 228, 234 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 228. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0162021 (228 COLUMBUS AVE) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0007",
+   "date": "1880",
+   "date_precision": "circa",
+   "kind": "notable resident",
+   "address_as_written": "411 Green Street",
+   "street_number": "411",
+   "street_name": "GREEN",
+   "street_type": "ST",
+   "description": "A. P. Giannini, who founded the Bank of Italy, spent most of his boyhood at this address, by the paper's account, in a house that stood here long before the present building.",
+   "extra": {
+    "candidate": "semaphore#s050",
+    "record_date": "1979"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 69, September 1979",
+    "url": "https://archive.org/details/telegraphhillsem69tele/page/n16/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem69tele.txt",
+    "locator": "telegraphhillsem69tele-n16 (leaf 16)"
+   },
+   "raw": {
+    "text": "spent most of his boyhood at 411 Green Street"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0132056",
+    "path": "/san-francisco/north-beach/green-street/411/",
+    "eas_address": "411 GREEN ST",
+    "method": "EAS exact match on 411 GREEN ST → parcel 0132056; sf-parcels has blklot 0132056 active, 411–411 GREEN; the 2025 roll records it as single family residential, built 1965. Parcel 0132056 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0002A of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 411 GREEN ST's coordinates fall in 6 active parcels, one condominium map's units on the 2025 roll; 0132056 stands for the building. The record was written in 1979, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1965.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0008",
+   "date": "1979-12-05",
+   "date_precision": "day",
+   "kind": "fire",
+   "address_as_written": "32-34 Napier Lane",
+   "street_number": "32",
+   "street_name": "NAPIER",
+   "street_type": "LN",
+   "description": "A three-alarm fire burned the two-story redwood cottage at the north end of Napier Lane, then about ninety years old. Ninety firefighters reached it from the top of the Filbert Steps and by ladder truck from Sansome Street. The house was left standing.",
+   "extra": {
+    "candidate": "semaphore#s059",
+    "number_as_printed": "32-34"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 71, February 1980",
+    "url": "https://archive.org/details/telegraphhillsem71tele/page/n22/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem71tele.txt",
+    "locator": "telegraphhillsem71tele-n22 (leaf 22)"
+   },
+   "raw": {
+    "text": "house at the north end of Napier Lane at dawn Dec. 5, 1979"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0085060",
+    "path": "/san-francisco/north-beach/napier-lane/32/",
+    "eas_address": "32 NAPIER LN",
+    "method": "EAS exact match on 32 NAPIER LN → parcel 0085060; sf-parcels has blklot 0085060 active, 32–32 NAPIER; the 2025 roll records it as single family residential, built 1979.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0009",
+   "date": "1981-07-16",
+   "date_precision": "day",
+   "kind": "planning decision",
+   "address_as_written": "16 Napier Lane",
+   "street_number": "16",
+   "street_name": "NAPIER",
+   "street_type": "LN",
+   "description": "After a discretionary review hearing the Planning Commission approved, as submitted, a 40-foot, two-unit condominium building at 16 Napier Lane.",
+   "extra": {
+    "candidate": "semaphore#s077",
+    "placed_apn": "0085049"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 77, August 1981",
+    "url": "https://archive.org/details/telegraphhillsem77tele/page/n3/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem77tele.txt",
+    "locator": "telegraphhillsem77tele-n3 (leaf 3)"
+   },
+   "raw": {
+    "text": "voted to approve the plan as submitted"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 16 NAPIER LN → parcel 0085049; sf-parcels has blklot 0085049 active, 16–16 NAPIER; the 2025 roll records it as single family residential, built 1991. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. Parcel 0085049 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228).",
+    "note": "Placed on parcel 0085049 (16 NAPIER LN) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0010",
+   "date": "1982-01-14",
+   "date_precision": "day",
+   "kind": "fire",
+   "address_as_written": "Savoy-Tivoli",
+   "street_number": "1434",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "A fire at the Savoy-Tivoli put out the Philippe Bonnafont Gallery, which moved for a time to 2200 Mason Street.",
+   "extra": {
+    "candidate": "semaphore#s086"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 79, February 1982",
+    "url": "https://archive.org/details/telegraphhillsem79tele/page/n14/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem79tele.txt",
+    "locator": "telegraphhillsem79tele-n14 (leaf 14)"
+   },
+   "raw": {
+    "text": "After the Savoy-Tivoli fire of January 14"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0115020",
+    "path": "/san-francisco/north-beach/grant-avenue/1434/",
+    "eas_address": "1434 GRANT AVE",
+    "method": "EAS exact match on 1434 GRANT AVE → parcel 0115020; sf-parcels has blklot 0115020 active, 1434–1438 GRANT; the 2025 roll records it as multi-family residential, built 1913. EAS puts 1434, 1436, 1438 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1434.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0011",
+   "date": "1982-06-10",
+   "date_precision": "day",
+   "kind": "planning decision",
+   "address_as_written": "1299 Sansome",
+   "street_number": "1299",
+   "street_name": "SANSOME",
+   "street_type": "ST",
+   "description": "The Planning Commission approved a seven-story office building at the foot of the Filbert Steps, on the King Antiques site.",
+   "extra": {
+    "candidate": "semaphore#s092"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 81, July 1982",
+    "url": "https://archive.org/details/semaphore81tele/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore81tele.txt",
+    "locator": "semaphore81tele-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "Discretionary Review was denied and seven stories were approved"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0106001",
+    "path": "/san-francisco/north-beach/sansome-street/1299/",
+    "eas_address": "1299 SANSOME ST",
+    "method": "EAS exact match on 1299 SANSOME ST → parcel 0106001; sf-parcels has blklot 0106001 active, 201–201 FILBERT; the 2025 roll records it as commercial office, built 1984. The assessor files the parcel as 201 FILBERT ST.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0012",
+   "date": "1982-05-10",
+   "date_precision": "day",
+   "kind": "planning decision",
+   "address_as_written": "725 Greenwich",
+   "street_number": "725",
+   "street_name": "GREENWICH",
+   "street_type": "ST",
+   "description": "The Board of Supervisors turned down a four-story office building proposed for the corner of Greenwich and Powell, rejecting the developer's appeal of the Planning Commission's refusal of March 4, 1982. A court later overturned the city's disapproval.",
+   "extra": {
+    "candidate": "semaphore#s095"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 81, July 1982",
+    "url": "https://archive.org/details/semaphore81tele/page/n3/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore81tele.txt",
+    "locator": "semaphore81tele-n3 (leaf 3)"
+   },
+   "raw": {
+    "text": "The Board of Supervisors disapproved a proposed commercial office building"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0090030",
+    "path": "/san-francisco/north-beach/greenwich-street/725/",
+    "eas_address": "725 GREENWICH ST",
+    "method": "EAS exact match on 725 GREENWICH ST → parcel 0090030; sf-parcels has blklot 0090030 active, 725–725 GREENWICH; the 2025 roll records it as commercial office, built 1985.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0013",
+   "date": "1982-10",
+   "date_precision": "month",
+   "kind": "construction",
+   "address_as_written": "1299 Sansome",
+   "street_number": "1299",
+   "street_name": "SANSOME",
+   "street_type": "ST",
+   "description": "Construction of the seven-story office building had begun by October 1982.",
+   "extra": {
+    "candidate": "semaphore#s104"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 82, October 1982",
+    "url": "https://archive.org/details/semaphore82tele/page/n14/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore82tele.txt",
+    "locator": "semaphore82tele-n14 (leaf 14)"
+   },
+   "raw": {
+    "text": "Construction has begun at the site of 1299 Sansome"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0106001",
+    "path": "/san-francisco/north-beach/sansome-street/1299/",
+    "eas_address": "1299 SANSOME ST",
+    "method": "EAS exact match on 1299 SANSOME ST → parcel 0106001; sf-parcels has blklot 0106001 active, 201–201 FILBERT; the 2025 roll records it as commercial office, built 1984. The assessor files the parcel as 201 FILBERT ST.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0014",
+   "date": "1983",
+   "date_precision": "year",
+   "kind": "site history",
+   "address_as_written": "6 Gerke Alley",
+   "street_number": "6",
+   "street_name": "GERKE",
+   "street_type": "ALY",
+   "description": "The deck of the house stands on foundations of the original Sts. Peter and Paul Church, by this account.",
+   "extra": {
+    "candidate": "semaphore#s115",
+    "record_date": "1983",
+    "placed_apn": "0087026"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 85, October 1983",
+    "url": "https://archive.org/details/semaphore85tele/page/n3/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore85tele.txt",
+    "locator": "semaphore85tele-n3 (leaf 3)"
+   },
+   "raw": {
+    "text": "original church at 6 Gerke Alley"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 6 GERKE ALY → parcel 0087026; sf-parcels has blklot 0087026 active, 6–6 GERKE; the 2025 roll records it as single family residential, built 1907. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0087026 (6 GERKE ALY) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0015",
+   "date": "1984-01",
+   "date_precision": "month",
+   "kind": "site history",
+   "address_as_written": "1620 Montgomery Street",
+   "street_number": "1620",
+   "street_name": "MONTGOMERY",
+   "street_type": "ST",
+   "description": "A 90-foot office project was planned in the 1907 Del Monte Milling Company buildings at Montgomery and Lombard; the Planning Department agreed to discretionary review.",
+   "extra": {
+    "candidate": "semaphore#s119"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 86, January 1984",
+    "url": "https://archive.org/details/semaphore86tele/page/n19/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore86tele.txt",
+    "locator": "semaphore86tele-n19 (leaf 19)"
+   },
+   "raw": {
+    "text": "to be located in the 1907 Del Monte Milling Company"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0059003",
+    "path": "/san-francisco/north-beach/montgomery-street/1620/",
+    "eas_address": "1620 MONTGOMERY ST",
+    "method": "EAS exact match on 1620 MONTGOMERY ST → parcel 0059003; sf-parcels has blklot 0059003 active, 190–190 LOMBARD; the 2025 roll records it as commercial office, built 1907. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. No page on the site is filed under that directory yet, so the analysis neighborhood's own name is used and the publisher should confirm it against the directory contract before seeding. Held on 2026-11-24 as a single thin fact; taken up the same day when the later Semaphore batch (semaphore-2000-2026) seeded the page. Area set by hand to north-beach, where the pages for 1531 and 1701 Montgomery are.",
+    "checked_on": "2026-11-24",
+    "note": ""
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0016",
+   "date": "1936",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "418A Union Street",
+   "street_number": "418",
+   "street_name": "UNION",
+   "street_type": "ST",
+   "description": "The jeweler Peter Macchiarini opened his first shop upstairs at 418A Union Street.",
+   "extra": {
+    "candidate": "semaphore#s124",
+    "record_date": "1984"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 88, August 1984",
+    "url": "https://archive.org/details/telegraphhillsem88tele/page/n15/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem88tele.txt",
+    "locator": "telegraphhillsem88tele-n15 (leaf 15)"
+   },
+   "raw": {
+    "text": "at 418A Union Street. That was 1936"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0104011",
+    "path": "/san-francisco/north-beach/union-street/418/",
+    "eas_address": "418 UNION ST",
+    "method": "EAS exact match on 418 UNION ST → parcel 0104011; sf-parcels has blklot 0104011 active, 418–420 UNION; the 2025 roll records it as multi-family residential, built 1906. EAS puts 418, 420 UNION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 418.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0017",
+   "date": "1982-12",
+   "date_precision": "month",
+   "kind": "event",
+   "address_as_written": "221 Filbert",
+   "street_number": "221",
+   "street_name": "FILBERT",
+   "street_type": "ST",
+   "description": "Plans surfaced to demolish the cottage in the Grace Marchant Garden and build a structure five times its size. Neighbors, unable to stop the permits, arranged a buyout through the Trust for Public Land at a price of $320,000, with an option that ran to March 10, 1986; the property was to be resold with a restricted deed.",
+   "extra": {
+    "candidate": "semaphore#s143"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 94, April 1986",
+    "url": "https://archive.org/details/semaphore94tele/page/n8/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore94tele.txt",
+    "locator": "semaphore94tele-n8 (leaf 8)"
+   },
+   "raw": {
+    "text": "faced to demolish the existing cottage and build a structure five times the size"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0106059",
+    "path": "/san-francisco/north-beach/filbert-street/221/",
+    "eas_address": "221 FILBERT ST",
+    "method": "EAS exact match on 221 FILBERT ST → parcel 0106059; sf-parcels has blklot 0106059 active, 221–221 FILBERT; the 2025 roll records it as single family residential, built 1905.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0018",
+   "date": "1986",
+   "date_precision": "year",
+   "kind": "closure",
+   "address_as_written": "1234 Grant Street",
+   "street_number": "1234",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "La Pantera, one of the oldest restaurants in North Beach, was closed by a new owner who had the adjoining Basta Pasta and wanted to expand it. Neighbors appealed the demolition permit. The paper says the building went up in 1906.",
+   "extra": {
+    "candidate": "semaphore#s147"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 95, June 1986",
+    "url": "https://archive.org/details/semaphore95tele/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore95tele.txt",
+    "locator": "semaphore95tele-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "La Pantera, at 1234 Grant Street, has been closed down"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0145044",
+    "path": "/san-francisco/north-beach/grant-avenue/1234/",
+    "eas_address": "1234 GRANT AVE",
+    "method": "EAS exact match on 1234 GRANT AVE → parcel 0145044; sf-parcels has blklot 0145044 active, 1234–1268 GRANT; the 2025 roll records it as commercial retail, built 1906. EAS puts 1234, 1268 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1234.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0019",
+   "date": "1987-04-10",
+   "date_precision": "day",
+   "kind": "opening",
+   "address_as_written": "414 Francisco Street",
+   "street_number": "414",
+   "street_name": "FRANCISCO",
+   "street_type": "ST",
+   "description": "The Jan Holloway Gallery, a fine art gallery, held its grand opening.",
+   "extra": {
+    "candidate": "semaphore#s163",
+    "unknown_sentence": "The Semaphore gives two dates for the opening of the Jan Holloway Gallery at 414 Francisco Street: a grand opening on April 10, 1987, and, in a later issue, April 1, 1986.",
+    "placed_apn": "0041008"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 99, June 1987",
+    "url": "https://archive.org/details/telegraphhillsem99tele/page/n12/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem99tele.txt",
+    "locator": "telegraphhillsem99tele-n12 (leaf 12)"
+   },
+   "raw": {
+    "text": "had its grand opening on April 10th"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 414 FRANCISCO ST → parcel 0041008; sf-parcels has blklot 0041008 active, 410–414 FRANCISCO; the 2025 roll records it as multi-family residential, built 1908. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0041008 (414 FRANCISCO ST) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0020",
+   "date": "1987-06-01",
+   "date_precision": "day",
+   "kind": "sale",
+   "address_as_written": "1501 Grant",
+   "street_number": "1501",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "The Cuneo Bakery was sold and renamed the Italian French Baking Co. of San Francisco.",
+   "extra": {
+    "candidate": "semaphore#s169"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 100, October 1987",
+    "url": "https://archive.org/details/telegraphhillsem100tele/page/n10/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem100tele.txt",
+    "locator": "telegraphhillsem100tele-n10 (leaf 10)"
+   },
+   "raw": {
+    "text": "the Cuneo Bakery at 1501 Grant was sold"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0103007",
+    "path": "/san-francisco/north-beach/grant-avenue/1501/",
+    "eas_address": "1501 GRANT AVE",
+    "method": "EAS exact match on 1501 GRANT AVE → parcel 0103007; sf-parcels has blklot 0103007 active, 1501–1503 GRANT; the 2025 roll records it as commercial retail, built 1917. EAS puts 1501, 1503 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1501.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0021",
+   "date": "1987-07-31",
+   "date_precision": "day",
+   "kind": "fire",
+   "address_as_written": "905 Columbus Avenue",
+   "street_number": "905",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The fire that destroyed much of the Entella Hotel building also wiped out Wolfgang's, the nightclub in its commercial space. About 100 residents were put out.",
+   "extra": {
+    "candidate": "semaphore#s175"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 100, October 1987",
+    "url": "https://archive.org/details/telegraphhillsem100tele/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/telegraphhillsem100tele.txt",
+    "locator": "telegraphhillsem100tele-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "destroyed much of The Entella Hotel building at 905 Columbus Avenue"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0065015",
+    "path": "/san-francisco/russian-hill/lombard-street/790/",
+    "eas_address": "901 COLUMBUS AVE",
+    "method": "EAS exact match on 905 COLUMBUS AVE → parcel 0065015; sf-parcels has blklot 0065015 active, 901–915 COLUMBUS; the 2025 roll records it as commercial hotel, built 1916. EAS puts 901, 905, 915 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 901.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0022",
+   "date": "1988",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "536 Broadway",
+   "street_number": "536",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "The restaurant Mamma Mia opened in the space that New Joe's had occupied in the 1950s and 1960s, which the paper says had stood empty for 20 to 25 years.",
+   "extra": {
+    "candidate": "semaphore#s193a"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 104, June 1988",
+    "url": "https://archive.org/details/semaphore104tele/page/n7/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore104tele.txt",
+    "locator": "semaphore104tele-n7 (leaf 7)"
+   },
+   "raw": {
+    "text": "Mamma Mia is located at 536 Broadway"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0145010",
+    "path": "/san-francisco/north-beach/broadway/534/",
+    "eas_address": "534 BROADWAY",
+    "method": "EAS exact match on 536 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0145010; sf-parcels has blklot 0145010 active, 534–540 BROADWAY; the 2025 roll records it as commercial hotel, built 1910. EAS puts 534, 536, 540 BROADWAY None on that parcel, so per the directory contract the fact belongs on one page at the lowest, 534.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0023",
+   "date": "1988",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "760 Broadway",
+   "street_number": "760",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "The Bangkok Palace, a Thai restaurant, opened in the space formerly occupied by Broadway Pizza.",
+   "extra": {
+    "candidate": "semaphore#s194"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 104, June 1988",
+    "url": "https://archive.org/details/semaphore104tele/page/n7/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore104tele.txt",
+    "locator": "semaphore104tele-n7 (leaf 7)"
+   },
+   "raw": {
+    "text": "At 760 Broadway, the Bangkok Palace has opened"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0147011",
+    "path": "/san-francisco/chinatown/broadway/754/",
+    "eas_address": "754 BROADWAY",
+    "method": "EAS exact match on 760 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0147011; sf-parcels has blklot 0147011 active, 754–762 BROADWAY; the 2025 roll records it as commercial hotel, built 1913. EAS puts 754, 756, 758, 760, 762 BROADWAY None on that parcel, so per the directory contract the fact belongs on one page at the lowest, 754.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0024",
+   "date": "1989",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "450 Broadway",
+   "street_number": "450",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "Brandy Ho's on Broadway, a two-story Hunan restaurant planned with an indoor waterfall over exposed rock of Telegraph Hill, had opened by June 1989. It was the second location of the restaurant at 217 Columbus Avenue.",
+   "extra": {
+    "candidate": "semaphore#s215",
+    "placed_apn": "0144012"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 108, June 1989",
+    "url": "https://archive.org/details/semaphore108tele/page/n16/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore108tele.txt",
+    "locator": "semaphore108tele-n16 (leaf 16)"
+   },
+   "raw": {
+    "text": "Brandy Ho's at 450 Broadway"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 450 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0144012; sf-parcels has blklot 0144012 active, 450–452 BROADWAY; the 2025 roll records it as commercial retail, built 1989. EAS puts 450, 452 BROADWAY None on that parcel, so per the directory contract the fact belongs on one page at the lowest, 450. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0144012 (450 BROADWAY) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0025",
+   "date": "1906",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2237 Mason",
+   "street_number": "2237",
+   "street_name": "MASON",
+   "street_type": "ST",
+   "description": "By this account the San Remo Hotel building was financed and constructed by A. P. Giannini immediately after the earthquake and fire, as lodgings for merchant seamen and dock workers. It came through the October 1989 earthquake with very little damage.",
+   "extra": {
+    "candidate": "semaphore#s220",
+    "record_date": "1989"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 110, December 1989",
+    "url": "https://archive.org/details/semaphore110tele/page/n20/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore110tele.txt",
+    "locator": "semaphore110tele-n20 (leaf 20)"
+   },
+   "raw": {
+    "text": "constructed by A. P. Giannini in 1906"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0051002",
+    "path": "/san-francisco/north-beach/mason-street/2237/",
+    "eas_address": "2237 MASON ST",
+    "method": "EAS exact match on 2237 MASON ST → parcel 0051002; sf-parcels has blklot 0051002 active, 2237–2239 MASON; the 2025 roll records it as commercial hotel, built 1907. EAS puts 2237, 2239 MASON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2237. The record was written in 1989, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1907.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0026",
+   "date": "1990-03",
+   "date_precision": "month",
+   "kind": "occupancy",
+   "address_as_written": "1358 Grant Avenue",
+   "street_number": "1358",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "The Panama Canal Ravioli Factory, begun about 1915 a couple of shops down the street, was making pasta here with its original equipment.",
+   "extra": {
+    "candidate": "semaphore#s226"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 111, March 1990",
+    "url": "https://archive.org/details/semaphore111tele/page/n19/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore111tele.txt",
+    "locator": "semaphore111tele-n19 (leaf 19)"
+   },
+   "raw": {
+    "text": "The address is 1358 Grant Avenue"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0132051",
+    "path": "/san-francisco/north-beach/grant-avenue/1350/",
+    "eas_address": "1350 GRANT AVE",
+    "method": "EAS exact match on 1358 GRANT AVE → parcel 0132051; sf-parcels has blklot 0132051 active, 1350–1398 GRANT; the 2025 roll records it as multi-family residential, built 1907. EAS puts 1350, 1352, 1354, 1356, 1358, 1360, 1362, 1398 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1350.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0027",
+   "date": "1954",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "660 Lombard Street",
+   "street_number": "660",
+   "street_name": "LOMBARD",
+   "street_type": "ST",
+   "description": "The Telegraph Hill Neighborhood Center's new house opened at 660 Lombard Street, a few months after the death of its founder Elizabeth Ashe.",
+   "extra": {
+    "candidate": "semaphore#s234",
+    "record_date": "1990",
+    "unknown_sentence": "The Semaphore says the Telegraph Hill Neighborhood Center's new house at 660 Lombard Street opened in 1954; another issue says the center has been there since 1952, and the city's survey dates the building 1953."
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 113, September 1990",
+    "url": "https://archive.org/details/semaphore113tele/page/n11/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore113tele.txt",
+    "locator": "semaphore113tele-n11 (leaf 11)"
+   },
+   "raw": {
+    "text": "The new Neighborhood House opened at 660 Lombard Street in 1954"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0064014",
+    "path": "/san-francisco/north-beach/lombard-street/660/",
+    "eas_address": "660 LOMBARD ST",
+    "method": "EAS exact match on 660 LOMBARD ST → parcel 0064014; sf-parcels has blklot 0064014 active, 555–555 CHESTNUT; the 2025 roll records it as commercial misc, built 1954. The assessor files the parcel as 555 CHESTNUT ST.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0028",
+   "date": "1990",
+   "date_precision": "year",
+   "kind": "renovation",
+   "address_as_written": "253 Columbus",
+   "street_number": "253",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The building above Vesuvio's, called Vesuvio Tower and dated 1913 by the paper, had been restored as an executive office suite.",
+   "extra": {
+    "candidate": "semaphore#s240"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 114, December 1990",
+    "url": "https://archive.org/details/semaphore114tele/page/n11/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore114tele.txt",
+    "locator": "semaphore114tele-n11 (leaf 11)"
+   },
+   "raw": {
+    "text": "stored 1913 VesuvioTower"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0162019",
+    "path": "/san-francisco/chinatown/columbus-avenue/253/",
+    "eas_address": "253 COLUMBUS AVE",
+    "method": "EAS exact match on 253 COLUMBUS AVE → parcel 0162019; sf-parcels has blklot 0162019 active, 253–253 COLUMBUS; the 2025 roll records it as commercial retail, built 1913.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0029",
+   "date": "1989",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "430 Broadway",
+   "street_number": "430",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "The Helmand, an Afghan restaurant, opened shortly after the October 1989 earthquake.",
+   "extra": {
+    "candidate": "semaphore#s245"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 114, December 1990",
+    "url": "https://archive.org/details/semaphore114tele/page/n20/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore114tele.txt",
+    "locator": "semaphore114tele-n20 (leaf 20)"
+   },
+   "raw": {
+    "text": "since it opened shortly after the 1989 earthquake"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0144009",
+    "path": "/san-francisco/north-beach/broadway/426/",
+    "eas_address": "426 BROADWAY",
+    "method": "EAS exact match on 430 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0144009; sf-parcels has blklot 0144009 active, 426–430 BROADWAY; the 2025 roll records it as multi-family residential, built 1909. EAS puts 426, 428, 430 BROADWAY None on that parcel, so per the directory contract the fact belongs on one page at the lowest, 426.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0030",
+   "date": "1991-03",
+   "date_precision": "month",
+   "kind": "occupancy",
+   "address_as_written": "649 Green",
+   "street_number": "649",
+   "street_name": "GREEN",
+   "street_type": "ST",
+   "description": "The Green Street Mortuary. The paper says the building had served as a mortuary for almost 80 years.",
+   "extra": {
+    "candidate": "semaphore#s247"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 115, March 1991",
+    "url": "https://archive.org/details/semaphore115tele/page/n12/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore115tele.txt",
+    "locator": "semaphore115tele-n12 (leaf 12)"
+   },
+   "raw": {
+    "text": "For almost 80 years this building has had the same function"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0130039",
+    "path": "/san-francisco/chinatown/green-street/649/",
+    "eas_address": "649 GREEN ST",
+    "method": "EAS exact match on 649 GREEN ST → parcel 0130039; sf-parcels has blklot 0130039 active, 649–649 GREEN; the 2025 roll records it as commercial retail, built 1907.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0031",
+   "date": "1906",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "1354-56 Kearny Street",
+   "street_number": "1354",
+   "street_name": "KEARNY",
+   "street_type": "ST",
+   "description": "The house was built by Giovanni and Giovanna Figoni to replace their home on the same site, destroyed in the fire that followed the earthquake.",
+   "extra": {
+    "candidate": "semaphore#s248",
+    "record_date": "1991",
+    "number_as_printed": "1354-56",
+    "unknown_sentence": "The Semaphore says the house at 1354-56 Kearny Street was built in 1906, after the fire; the assessor's roll gives 1905."
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 116, June 1991",
+    "url": "https://archive.org/details/semaphore116tele/page/n10/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore116tele.txt",
+    "locator": "semaphore116tele-n10 (leaf 10)"
+   },
+   "raw": {
+    "text": "was built in 1906 by Giovanni and Giovanna Figoni"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0114030",
+    "path": "/san-francisco/north-beach/kearny-street/1354/",
+    "eas_address": "1354 KEARNY ST",
+    "method": "EAS exact match on 1354 KEARNY ST → parcel 0114030; sf-parcels has blklot 0114030 active, 1354–1356 KEARNY; the 2025 roll records it as multi-family residential, built 1905. EAS puts 1354, 1356 KEARNY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1354. The record was written in 1991, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1905.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0032",
+   "date": "1991-04",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "839 Columbus Avenue",
+   "street_number": "839",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The tattoo artist Lyle Tuttle opened a tattoo museum here, with part of the collection from his South of Market museum, whose building was badly damaged in the 1989 earthquake.",
+   "extra": {
+    "candidate": "semaphore#s252",
+    "placed_apn": "0074028"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 116, June 1991",
+    "url": "https://archive.org/details/semaphore116tele/page/n23/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore116tele.txt",
+    "locator": "semaphore116tele-n23 (leaf 23)"
+   },
+   "raw": {
+    "text": "opened a tattoo museum at 839 Columbus Avenue"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 839 COLUMBUS AVE → parcel 0074028; sf-parcels has blklot 0074028 active, 809–809 COLUMBUS; the 2025 roll records it as multi-family residential, built 1908. EAS puts 809, 839 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 809. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0074028.",
+    "note": "Placed on parcel 0074028 (809 COLUMBUS AVE) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0033",
+   "date": "1991",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "325 Columbus Avenue",
+   "street_number": "325",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The Stinking Rose, a garlic restaurant, was about to open in the former Cafe Americain space.",
+   "extra": {
+    "candidate": "semaphore#s253"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 116, June 1991",
+    "url": "https://archive.org/details/semaphore116tele/page/n23/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore116tele.txt",
+    "locator": "semaphore116tele-n23 (leaf 23)"
+   },
+   "raw": {
+    "text": "The Stinking Rose: A Garlic"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0146004",
+    "path": "/san-francisco/chinatown/broadway/618/",
+    "eas_address": "325 COLUMBUS AVE",
+    "method": "EAS exact match on 325 COLUMBUS AVE → parcel 0146004; sf-parcels has blklot 0146004 active, 618–624 BROADWAY; the 2025 roll records it as commercial retail, built 1941. The assessor files the parcel as 618 BROADWAY. EAS puts 325, 329 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 325.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0034",
+   "date": "1991",
+   "date_precision": "year",
+   "kind": "closure",
+   "address_as_written": "735 Filbert",
+   "street_number": "735",
+   "street_name": "FILBERT",
+   "street_type": "ST",
+   "description": "Mario's Service, an auto repair shop, left after many years for Fisherman's Wharf. The old garage, formerly a stable, was to be developed as condominiums.",
+   "extra": {
+    "candidate": "semaphore#s255"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 116, June 1991",
+    "url": "https://archive.org/details/semaphore116tele/page/n23/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore116tele.txt",
+    "locator": "semaphore116tele-n23 (leaf 23)"
+   },
+   "raw": {
+    "text": "The old garage, formerly a stable"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "No record in sf-eas-addresses for 735 FILBERT ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 720, 721, 722, 724, 725, 726. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "semaphore-0035",
+   "date": "1992-04",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "240 Lombard",
+   "street_number": "240",
+   "street_name": "LOMBARD",
+   "street_type": "ST",
+   "description": "Lombard Plaza, 118 units of senior rental housing, opened. The developer had been required to provide it in exchange for concessions on the 164 market-rate condominiums of the adjacent Parc Telegraph, and tried to shut it down in July 1992.",
+   "extra": {
+    "candidate": "semaphore#s269",
+    "unknown_sentence": "The Semaphore reported Lombard Plaza, at 240 Lombard Street, open in April 1992; the assessor's roll dates the building 1993."
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 121, September 1992",
+    "url": "https://archive.org/details/semaphore121tele/page/n14/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore121tele.txt",
+    "locator": "semaphore121tele-n14 (leaf 14)"
+   },
+   "raw": {
+    "text": "senior rental project at 240 Lombard that opened in April"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0060205",
+    "path": "/san-francisco/north-beach/lombard-street/240/",
+    "eas_address": "240 LOMBARD ST",
+    "method": "EAS exact match on 240 LOMBARD ST → parcel 0060205; sf-parcels has blklot 0060205 active, 240–240 LOMBARD; the 2025 roll records it as single family residential, built 1993. EAS puts 240, 250 LOMBARD ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 240. Parcel 0060205 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0939 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228).",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0036",
+   "date": "1993-01-20",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "908 Broadway",
+   "street_number": "908",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "Advocates presented the case for landmark status for Our Lady of Guadalupe Church to the Landmarks Preservation Advisory Board. The paper credits the church's 1912 interior murals to the Italian painter Luigi Brusatori.",
+   "extra": {
+    "candidate": "semaphore#s274"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 123, March 1993",
+    "url": "https://archive.org/details/semaphore123tele/page/n19/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore123tele.txt",
+    "locator": "semaphore123tele-n19 (leaf 19)"
+   },
+   "raw": {
+    "text": "interior murals"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0149010",
+    "path": "/san-francisco/nob-hill/broadway/908/",
+    "eas_address": "908 BROADWAY",
+    "method": "EAS exact match on 908 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0149010; sf-parcels has blklot 0149010 active, 908–908 BROADWAY; the 2025 roll records it as single family residential, built 1907.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0037",
+   "date": "1973",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "755 Columbus Avenue",
+   "street_number": "755",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "Columbus Camera has traded here from this year, by the paper's account.",
+   "extra": {
+    "candidate": "semaphore#s277",
+    "record_date": "1993"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 124, June 1993",
+    "url": "https://archive.org/details/semaphore124tele/page/n14/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore124tele.txt",
+    "locator": "semaphore124tele-n14 (leaf 14)"
+   },
+   "raw": {
+    "text": "look in the windows at 755 Columbus Avenue"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0090025",
+    "path": "/san-francisco/north-beach/columbus-avenue/753/",
+    "eas_address": "753 COLUMBUS AVE",
+    "method": "EAS exact match on 755 COLUMBUS AVE → parcel 0090025; sf-parcels has blklot 0090025 active, 753–759 COLUMBUS; the 2025 roll records it as multi-family residential, built 1907. EAS puts 753, 755, 757, 759 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 753.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0038",
+   "date": "1853",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "31 Alta",
+   "street_number": "31",
+   "street_name": "ALTA",
+   "street_type": "ST",
+   "description": "The house went up in this year, by the paper's account, and its porch and general look match an 1870 photograph.",
+   "extra": {
+    "candidate": "semaphore#s283",
+    "record_date": "1993",
+    "unknown_sentence": "The Semaphore dates the house at 31 Alta Street to 1853; the assessor's roll gives 1900."
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 126, December 1993",
+    "url": "https://archive.org/details/semaphore126tele/page/n28/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore126tele.txt",
+    "locator": "semaphore126tele-n28 (leaf 28)"
+   },
+   "raw": {
+    "text": "it is largely now as it was in 1853 when it was built"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0106018",
+    "path": "/san-francisco/north-beach/alta-street/31/",
+    "eas_address": "31 ALTA ST",
+    "method": "EAS exact match on 31 ALTA ST → parcel 0106018; sf-parcels has blklot 0106018 active, 31–31 ALTA; the 2025 roll records it as multi-family residential, built 1900. The record was written in 1993, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0039",
+   "date": "1925",
+   "date_precision": "circa",
+   "kind": "occupancy",
+   "address_as_written": "31 Alta",
+   "street_number": "31",
+   "street_name": "ALTA",
+   "street_type": "ST",
+   "description": "In the 1920s the Telegraph Hill Tavern operated in the basement, advertising the atmosphere of Montmartre with a marine view, until it was raided for selling bootleg liquor.",
+   "extra": {
+    "candidate": "semaphore#s283b",
+    "record_date": "1993"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 126, December 1993",
+    "url": "https://archive.org/details/semaphore126tele/page/n28/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore126tele.txt",
+    "locator": "semaphore126tele-n28 (leaf 28)"
+   },
+   "raw": {
+    "text": "started the Telegraph Hill Tavern in its basement"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0106018",
+    "path": "/san-francisco/north-beach/alta-street/31/",
+    "eas_address": "31 ALTA ST",
+    "method": "EAS exact match on 31 ALTA ST → parcel 0106018; sf-parcels has blklot 0106018 active, 31–31 ALTA; the 2025 roll records it as multi-family residential, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0040",
+   "date": "1956",
+   "date_precision": "year",
+   "kind": "event",
+   "address_as_written": "31 Alta",
+   "street_number": "31",
+   "street_name": "ALTA",
+   "street_type": "ST",
+   "description": "Silvio Catelli, who lived here, began an annual Peach Blossom Festival for the budding of the peach tree in the back yard. It drew the mayor within three years and ran until his death in 1963.",
+   "extra": {
+    "candidate": "semaphore#s283c",
+    "record_date": "1993"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 126, December 1993",
+    "url": "https://archive.org/details/semaphore126tele/page/n28/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore126tele.txt",
+    "locator": "semaphore126tele-n28 (leaf 28)"
+   },
+   "raw": {
+    "text": "that he inaugurated his annual Peach Blossom Festival"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0106018",
+    "path": "/san-francisco/north-beach/alta-street/31/",
+    "eas_address": "31 ALTA ST",
+    "method": "EAS exact match on 31 ALTA ST → parcel 0106018; sf-parcels has blklot 0106018 active, 31–31 ALTA; the 2025 roll records it as multi-family residential, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0041",
+   "date": "1975",
+   "date_precision": "circa",
+   "kind": "notable resident",
+   "address_as_written": "60 Alta",
+   "street_number": "60",
+   "street_name": "ALTA",
+   "street_type": "ST",
+   "description": "The writer Armistead Maupin began writing Tales of the City here in the 1970s, by the paper's account.",
+   "extra": {
+    "candidate": "semaphore#s295m",
+    "record_date": "1994"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 129, September 1994",
+    "url": "https://archive.org/details/semaphore129tele/page/n12/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore129tele.txt",
+    "locator": "semaphore129tele-n12 (leaf 12)"
+   },
+   "raw": {
+    "text": "Maupin began writing"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0106026",
+    "path": "/san-francisco/north-beach/alta-street/60/",
+    "eas_address": "60 ALTA ST",
+    "method": "EAS exact match on 60 ALTA ST → parcel 0106026; sf-parcels has blklot 0106026 active, 60–62 ALTA; the 2025 roll records it as multi-family residential, built 1935. EAS puts 60, 62 ALTA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 60.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0042",
+   "date": "1993-12",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "2330 Taylor",
+   "street_number": "2330",
+   "street_name": "TAYLOR",
+   "street_type": "ST",
+   "description": "The restaurant Zax opened in the long, narrow space that had been Susie Kate's, Hal's and Chez Marguerite.",
+   "extra": {
+    "candidate": "semaphore#s296"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 129, September 1994",
+    "url": "https://archive.org/details/semaphore129tele/page/n21/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore129tele.txt",
+    "locator": "semaphore129tele-n21 (leaf 21)"
+   },
+   "raw": {
+    "text": "space at 2330 Taylor"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0051007",
+    "path": "/san-francisco/russian-hill/taylor-street/2326/",
+    "eas_address": "2326 TAYLOR ST",
+    "method": "EAS exact match on 2330 TAYLOR ST → parcel 0051007; sf-parcels has blklot 0051007 active, 2326–2330 TAYLOR; the 2025 roll records it as multi-family residential, built 1908. EAS puts 2326, 2330 TAYLOR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2326.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0043",
+   "date": "1994",
+   "date_precision": "year",
+   "kind": "closure",
+   "address_as_written": "2209 Powell Street",
+   "street_number": "2209",
+   "street_name": "POWELL",
+   "street_type": "ST",
+   "description": "The Beau Brummell Barber Shop, open here since 1932, closed.",
+   "extra": {
+    "candidate": "semaphore#s299",
+    "placed_apn": "0041006"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 130, December 1994",
+    "url": "https://archive.org/details/semaphore130tele/page/n28/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore130tele.txt",
+    "locator": "semaphore130tele-n28 (leaf 28)"
+   },
+   "raw": {
+    "text": "Beau Brummell Barber Shop on 2209 Powell Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 2209 POWELL ST → parcel 0041006; sf-parcels has blklot 0041006 active, 2201–2209 POWELL; the 2025 roll records it as multi-family residential, built 1927. EAS puts 2201, 2205, 2209 POWELL ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2201. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0041006 (2201 POWELL ST) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0044",
+   "date": "1984",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "725 Greenwich",
+   "street_number": "725",
+   "street_name": "GREENWICH",
+   "street_type": "ST",
+   "description": "An old barn on the site was razed and the present office building went up. A rooftop penthouse labelled for mechanical equipment rose about 10 feet above the 40-foot height limit.",
+   "extra": {
+    "candidate": "semaphore#s302",
+    "record_date": "1995",
+    "unknown_sentence": "The Semaphore says the office building at 725 Greenwich Street went up in 1984; the assessor's roll gives 1985."
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 131, March 1995",
+    "url": "https://archive.org/details/semaphore131tele/page/n14/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore131tele.txt",
+    "locator": "semaphore131tele-n14 (leaf 14)"
+   },
+   "raw": {
+    "text": "a new office building went up at 725 Greenwich in 1984"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0090030",
+    "path": "/san-francisco/north-beach/greenwich-street/725/",
+    "eas_address": "725 GREENWICH ST",
+    "method": "EAS exact match on 725 GREENWICH ST → parcel 0090030; sf-parcels has blklot 0090030 active, 725–725 GREENWICH; the 2025 roll records it as commercial office, built 1985.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0045",
+   "date": "1995-05-11",
+   "date_precision": "day",
+   "kind": "planning decision",
+   "address_as_written": "659 Columbus",
+   "street_number": "659",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The building the owner sought to demolish for 19 parking spaces was the former Record Hardware store, whose tenants had left after a rent increase.",
+   "extra": {
+    "candidate": "semaphore#s305"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 132, June 1995",
+    "url": "https://archive.org/details/semaphore132tele/page/n12/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore132tele.txt",
+    "locator": "semaphore132tele-n12 (leaf 12)"
+   },
+   "raw": {
+    "text": "Planning Commission Denies 659 Columbus Demolition"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0101045",
+    "path": "/san-francisco/chinatown/columbus-avenue/659/",
+    "eas_address": "659 COLUMBUS AVE",
+    "method": "EAS exact match on 659 COLUMBUS AVE → parcel 0101045; sf-parcels has blklot 0101045 active, 659–659 COLUMBUS; the 2025 roll records it as commercial misc, built 1908.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0046",
+   "date": "1934",
+   "date_precision": "year",
+   "kind": "move",
+   "address_as_written": "1441 Stockton",
+   "street_number": "1441",
+   "street_name": "STOCKTON",
+   "street_type": "ST",
+   "description": "A. Cavalli & Co., the Italian bookstore founded in 1880, moved to 1441 Stockton Street when the building was erected. The owner named it the Cavalli Building, in gold letters over the door at 1445 Stockton.",
+   "extra": {
+    "candidate": "semaphore#s306",
+    "record_date": "1995"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 132, June 1995",
+    "url": "https://archive.org/details/semaphore132tele/page/n21/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore132tele.txt",
+    "locator": "semaphore132tele-n21 (leaf 21)"
+   },
+   "raw": {
+    "text": "The final move was in 1934 to its present location at 1441 Stockton when the building was erected"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0130002",
+    "path": "/san-francisco/chinatown/stockton-street/1435/",
+    "eas_address": "1435 STOCKTON ST",
+    "method": "EAS exact match on 1441 STOCKTON ST → parcel 0130002; sf-parcels has blklot 0130002 active, 1435–1445 STOCKTON; the 2025 roll records it as commercial retail, built 1933. EAS puts 1435, 1437, 1441, 1445 STOCKTON ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1435.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0047",
+   "date": "1995-09",
+   "date_precision": "month",
+   "kind": "occupancy",
+   "address_as_written": "2200 Powell Street",
+   "street_number": "2200",
+   "street_name": "POWELL",
+   "street_type": "ST",
+   "description": "A postal annex for the North Beach carriers and their trucks was being made ready here, to open in January 1996; the paper says construction was under way.",
+   "extra": {
+    "candidate": "semaphore#s310"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 133, September 1995",
+    "url": "https://archive.org/details/semaphore133tele/page/n11/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore133tele.txt",
+    "locator": "semaphore133tele-n11 (leaf 11)"
+   },
+   "raw": {
+    "text": "new postal annex at 2200 Powell Street"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0040033",
+    "path": "/san-francisco/north-beach/powell-street/2200/",
+    "eas_address": "2200 POWELL ST",
+    "method": "EAS exact match on 2200 POWELL ST → parcel 0040033; sf-parcels has blklot 0040033 active, 2200–2200 POWELL; the 2025 roll records it as commercial office, built 1935.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0048",
+   "date": "1995",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "the Basque Hotel, Romolo Alley",
+   "street_number": "15",
+   "street_name": "ROMOLO",
+   "street_type": "PL",
+   "description": "The Basque Hotel, one of the Basque boarding houses near Broadway that served shepherds in from the sheep ranches, still offered inexpensive meals and rooms.",
+   "extra": {
+    "candidate": "semaphore#s313",
+    "unknown_sentence": "The Semaphore dates the Basque Hotel on Romolo Place to 1906; the city's survey gives 1912."
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 133, September 1995",
+    "url": "https://archive.org/details/semaphore133tele/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore133tele.txt",
+    "locator": "semaphore133tele-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "the Basque Hotel was built in 1906"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0145022",
+    "path": "/san-francisco/north-beach/romolo-place/15/",
+    "eas_address": "15 ROMOLO PL",
+    "method": "EAS exact match on 15 ROMOLO PL → parcel 0145022; sf-parcels has blklot 0145022 active, 15–15 ROMOLO; the 2025 roll records it as commercial hotel, built 1912.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0049",
+   "date": "1995",
+   "date_precision": "year",
+   "kind": "site history",
+   "address_as_written": "530 Broadway",
+   "street_number": "530",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "A thin brick wall at the rear of the parking lot is all that remains of the three-story Broadway Jail, destroyed in the fire of 1906.",
+   "extra": {
+    "candidate": "semaphore#s314",
+    "record_date": "1995"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 133, September 1995",
+    "url": "https://archive.org/details/semaphore133tele/page/n25/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore133tele.txt",
+    "locator": "semaphore133tele-n25 (leaf 25)"
+   },
+   "raw": {
+    "text": "still visible at the rear of the parking lot at 530 Broadway"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0145009",
+    "path": "/san-francisco/north-beach/broadway/530/",
+    "eas_address": "530 BROADWAY",
+    "method": "EAS exact match on 530 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0145009; sf-parcels has blklot 0145009 active, 530–530 BROADWAY; the 2025 roll records it as commercial misc.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0050",
+   "date": "1906",
+   "date_precision": "year",
+   "kind": "site history",
+   "address_as_written": "1232 Grant",
+   "street_number": "1232",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "The Saloon came through the earthquake and fire, by the paper's account.",
+   "extra": {
+    "candidate": "semaphore#s315",
+    "record_date": "1995"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 134, December 1995",
+    "url": "https://archive.org/details/semaphore134tele/page/n22/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore134tele.txt",
+    "locator": "semaphore134tele-n22 (leaf 22)"
+   },
+   "raw": {
+    "text": "The Saloon at 1232 Grant survived the 1906 conflagration"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0145030",
+    "path": "/san-francisco/north-beach/grant-avenue/1232/",
+    "eas_address": "1232 GRANT AVE",
+    "method": "EAS exact match on 1232 GRANT AVE → parcel 0145030; sf-parcels has blklot 0145030 active, 1232–1232 GRANT; the 2025 roll records it as commercial hotel, built 1900. The record was written in 1995, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0051",
+   "date": "1912",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "373 Broadway",
+   "street_number": "373",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "Lou's Rendezvous, a restaurant that served people in the shipping trade from the Embarcadero, was established here by the Capurro family.",
+   "extra": {
+    "candidate": "semaphore#s316",
+    "record_date": "1995"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 134, December 1995",
+    "url": "https://archive.org/details/semaphore134tele/page/n22/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore134tele.txt",
+    "locator": "semaphore134tele-n22 (leaf 22)"
+   },
+   "raw": {
+    "text": "vous at 373 Broadway"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0164018",
+    "path": "/san-francisco/north-beach/broadway/371/",
+    "eas_address": "371 BROADWAY",
+    "method": "EAS exact match on 373 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0164018; sf-parcels has blklot 0164018 active, 371–377 BROADWAY; the 2025 roll records it as commercial hotel, built 1912. EAS puts 371, 373, 377 BROADWAY None on that parcel, so per the directory contract the fact belongs on one page at the lowest, 371.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0052",
+   "date": "1928",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "886 Broadway",
+   "street_number": "886",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "Alfred's opened here in 1928 as Alfred & Secundo, in what had been a butcher shop below two flats, and stayed through the construction of the Broadway Tunnel.",
+   "extra": {
+    "candidate": "semaphore#s318",
+    "record_date": "1996",
+    "placed_apn": "0148011"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 135, March 1996",
+    "url": "https://archive.org/details/semaphore135tele/page/n25/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore135tele.txt",
+    "locator": "semaphore135tele-n25 (leaf 25)"
+   },
+   "raw": {
+    "text": "still serving great steaks at 886 Broadway, since 1928"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 886 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0148011; sf-parcels has blklot 0148011 active, 882–886 BROADWAY; the 2025 roll records it as multi-family residential, built 1908. EAS puts 882, 886 BROADWAY None on that parcel, so per the directory contract the fact belongs on one page at the lowest, 882. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0148011 (882 BROADWAY) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0053",
+   "date": "1996-01-17",
+   "date_precision": "day",
+   "kind": "opening",
+   "address_as_written": "701 Chestnut",
+   "street_number": "701",
+   "street_name": "CHESTNUT",
+   "street_type": "ST",
+   "description": "The San Francisco Art Institute inaugurated the former Gap store as an auxiliary campus and lit the building's tower for the first time.",
+   "extra": {
+    "candidate": "semaphore#s319",
+    "placed_apn": "0066001"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 135, March 1996",
+    "url": "https://archive.org/details/semaphore135tele/page/n28/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore135tele.txt",
+    "locator": "semaphore135tele-n28 (leaf 28)"
+   },
+   "raw": {
+    "text": "recently acquired 701 Chestnut (the former Gap store)"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 701 CHESTNUT ST → parcel 0066001; sf-parcels has blklot 0066001 active, 701–701 CHESTNUT; the 2025 roll records it as commercial retail, built 1919. The assessor files the parcel as 2295 TAYLOR ST. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0066001 (701 CHESTNUT ST) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0054",
+   "date": "1996",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "576 Green",
+   "street_number": "576",
+   "street_name": "GREEN",
+   "street_type": "ST",
+   "description": "576 Green was The Cellar, the club known for jazz and for poetry readings by Kenneth Rexroth and Lawrence Ferlinghetti.",
+   "extra": {
+    "candidate": "semaphore#s324a",
+    "record_date": "1996"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 137, September 1996",
+    "url": "https://archive.org/details/semaphore137tele/page/n18/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore137tele.txt",
+    "locator": "semaphore137tele-n18 (leaf 18)"
+   },
+   "raw": {
+    "text": "576 Green, formerly The Cellar"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "No record in sf-eas-addresses for 576 GREEN ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 556, 558, 560, 562, 565, 570. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "semaphore-0055",
+   "date": "1955",
+   "date_precision": "year",
+   "kind": "notable resident",
+   "address_as_written": "1010 Montgomery",
+   "street_number": "1010",
+   "street_name": "MONTGOMERY",
+   "street_type": "ST",
+   "description": "Allen Ginsberg lived at 1010 Montgomery when he wrote Howl.",
+   "extra": {
+    "candidate": "semaphore#s324b",
+    "record_date": "1996"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 137, September 1996",
+    "url": "https://archive.org/details/semaphore137tele/page/n18/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore137tele.txt",
+    "locator": "semaphore137tele-n18 (leaf 18)"
+   },
+   "raw": {
+    "text": "home when he wrote Howl"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0143009",
+    "path": "/san-francisco/north-beach/montgomery-street/1000/",
+    "eas_address": "1000 MONTGOMERY ST",
+    "method": "EAS exact match on 1010 MONTGOMERY ST → parcel 0143009; sf-parcels has blklot 0143009 active, 101–101 BARTOL; the 2025 roll records it as commercial hotel, built 1907. EAS puts 1000, 1010 MONTGOMERY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1000.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0056",
+   "date": "1907",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "1351 Grant Avenue",
+   "street_number": "1351",
+   "street_name": "GRANT",
+   "street_type": "AVE",
+   "description": "The building was put up as a hardware store, first Nick Capurro Hardware. About 1915 it was bought and renamed Fiorio and Figone Hardware, later Figone Hardware.",
+   "extra": {
+    "candidate": "semaphore#s333",
+    "record_date": "1997"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 139, March 1997",
+    "url": "https://archive.org/details/semaphore139tele/page/n12/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore139tele.txt",
+    "locator": "semaphore139tele-n12 (leaf 12)"
+   },
+   "raw": {
+    "text": "The building was built in 1907 (specifically to be a hardware store)"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0131002",
+    "path": "/san-francisco/north-beach/grant-avenue/1345/",
+    "eas_address": "1345 GRANT AVE",
+    "method": "EAS exact match on 1351 GRANT AVE → parcel 0131002; sf-parcels has blklot 0131002 active, 1345–1361 GRANT; the 2025 roll records it as multi-family residential, built 1907. EAS puts 1345, 1347, 1349, 1351, 1353, 1355, 1357, 1359, 1361 GRANT AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1345. The record was written in 1997, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1907.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0057",
+   "date": "1922",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "412 Columbus Avenue",
+   "street_number": "412",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "The building went up this year, by the paper's account. Biordi Art Imports, founded in 1946, sells Italian majolica here.",
+   "extra": {
+    "candidate": "semaphore#s343",
+    "record_date": "1997"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 141, September 1997",
+    "url": "https://archive.org/details/semaphore141tele/page/n13/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore141tele.txt",
+    "locator": "semaphore141tele-n13 (leaf 13)"
+   },
+   "raw": {
+    "text": "North Beach store built in 1922"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0131015",
+    "path": "/san-francisco/north-beach/columbus-avenue/408/",
+    "eas_address": "408 COLUMBUS AVE",
+    "method": "EAS exact match on 412 COLUMBUS AVE → parcel 0131015; sf-parcels has blklot 0131015 active, 408–414 COLUMBUS; the 2025 roll records it as commercial office, built 1924. EAS puts 408, 412, 414 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 408.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0058",
+   "date": "1998",
+   "date_precision": "year",
+   "kind": "planning decision",
+   "address_as_written": "1741 Powell",
+   "street_number": "1741",
+   "street_name": "POWELL",
+   "street_type": "ST",
+   "description": "Rite Aid withdrew its application for a conditional use permit to put a drugstore in the Pagoda Palace Theater, which then stood here.",
+   "extra": {
+    "candidate": "semaphore#s381",
+    "placed_apn": "0101051"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 146, December 1998",
+    "url": "https://archive.org/details/semaphore146tele/page/n10/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore146tele.txt",
+    "locator": "semaphore146tele-n10 (leaf 10)"
+   },
+   "raw": {
+    "text": "Rite Aid withdrew its application for a conditional use permit"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 1741 POWELL ST → parcel 0101051; sf-parcels has blklot 0101051 active, 601–601 COLUMBUS; the 2025 roll records it as commercial retail, built 2018. The assessor files the parcel as 601 COLUMBUS AV. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. Parcel 0101051 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1741 POWELL ST's coordinates fall in 20 active parcels, one condominium map's units on the 2025 roll; 0101051 stands for the building.",
+    "note": "Placed on parcel 0101051 (1741 POWELL ST) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "semaphore-0059",
+   "date": "1998",
+   "date_precision": "year",
+   "kind": "planning decision",
+   "address_as_written": "530 Chestnut",
+   "street_number": "530",
+   "street_name": "CHESTNUT",
+   "street_type": "ST",
+   "description": "A new proposal would convert the abandoned Bauer-Schweitzer Malting Plant to 82 units of housing with 90 parking places, keeping two of its 15 silos and demolishing the building on Chestnut Street.",
+   "extra": {
+    "candidate": "semaphore#s383"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 146, December 1998",
+    "url": "https://archive.org/details/semaphore146tele/page/n10/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore146tele.txt",
+    "locator": "semaphore146tele-n10 (leaf 10)"
+   },
+   "raw": {
+    "text": "An earlier, similar, proposal was approved by the Landmarks Board and Planning Commission in 1991"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0052041",
+    "path": "/san-francisco/north-beach/chestnut-street/530/",
+    "eas_address": "530 CHESTNUT ST",
+    "method": "EAS exact match on 530 CHESTNUT ST → parcel 0052041; sf-parcels has blklot 0052041 active, 530–530 CHESTNUT; the 2025 roll records it as single family residential, built 2001. Parcel 0052041 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0102C of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 530 CHESTNUT ST's coordinates fall in 76 active parcels, one condominium map's units on the 2025 roll; 0052041 stands for the building.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0060",
+   "date": "1999-01-20",
+   "date_precision": "day",
+   "kind": "renovation",
+   "address_as_written": "241 Greenwich Street",
+   "street_number": "241",
+   "street_name": "GREENWICH",
+   "street_type": "ST",
+   "description": "The Landmarks Board recommended a Certificate of Appropriateness for the renovation of this cottage on the Greenwich Steps, which the paper dates to 1898; the work had begun by the summer.",
+   "extra": {
+    "candidate": "semaphore#s389"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 147, April 1999",
+    "url": "https://archive.org/details/semaphore147tele/page/n8/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore147tele.txt",
+    "locator": "semaphore147tele-n8 (leaf 8)"
+   },
+   "raw": {
+    "text": "the renovation of this 1898 cottage on the Greenwich Steps"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0085026D",
+    "path": "/san-francisco/north-beach/greenwich-street/239/",
+    "eas_address": "239 GREENWICH ST",
+    "method": "EAS exact match on 241 GREENWICH ST → parcel 0085026D; sf-parcels has blklot 0085026D active, 239–241 GREENWICH; the 2025 roll records it as miscellaneous/mixed-use. EAS puts 239, 241 GREENWICH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 239.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0061",
+   "date": "1999",
+   "date_precision": "year",
+   "kind": "alteration",
+   "address_as_written": "218 Filbert Street",
+   "street_number": "218",
+   "street_name": "FILBERT",
+   "street_type": "ST",
+   "description": "Windows and doors were to be added at the basement level of this 1861 Italianate house, the Patrick McDermott House, and aluminum windows on the Filbert Steps front replaced with wood sash; the Landmarks Board approved a Certificate of Appropriateness.",
+   "extra": {
+    "candidate": "semaphore#s390",
+    "unknown_sentence": "The Semaphore dates the Patrick McDermott House at 218 Filbert Street to 1861; the assessor's roll gives 1900."
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 147, April 1999",
+    "url": "https://archive.org/details/semaphore147tele/page/n8/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore147tele.txt",
+    "locator": "semaphore147tele-n8 (leaf 8)"
+   },
+   "raw": {
+    "text": "this 1861 Italianate building on the Filbert Steps"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0085006",
+    "path": "/san-francisco/north-beach/filbert-street/218/",
+    "eas_address": "218 FILBERT ST",
+    "method": "EAS exact match on 218 FILBERT ST → parcel 0085006; sf-parcels has blklot 0085006 active, 218–220 FILBERT; the 2025 roll records it as multi-family residential, built 1900. EAS puts 218, 220 FILBERT ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 218.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0062",
+   "date": "1998-12-16",
+   "date_precision": "day",
+   "kind": "alteration",
+   "address_as_written": "9 Calhoun Terrace",
+   "street_number": "9",
+   "street_name": "CALHOUN",
+   "street_type": "TER",
+   "description": "The Landmarks Board heard a proposal for new windows and doors on this 1854 Gothic Revival house and recommended a Certificate of Appropriateness with fewer windows and wooden doors.",
+   "extra": {
+    "candidate": "semaphore#s391",
+    "unknown_sentence": "The Semaphore dates the house at 9 Calhoun Terrace to 1854; the assessor's roll gives 1900."
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 147, April 1999",
+    "url": "https://archive.org/details/semaphore147tele/page/n8/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore147tele.txt",
+    "locator": "semaphore147tele-n8 (leaf 8)"
+   },
+   "raw": {
+    "text": "this historic 1854 Gothic Revival building"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0113064",
+    "path": "/san-francisco/north-beach/calhoun-terrace/9/",
+    "eas_address": "9 CALHOUN TER",
+    "method": "EAS exact match on 9 CALHOUN TER → parcel 0113064; sf-parcels has blklot 0113064 active, 9–9 CALHOUN; the 2025 roll records it as single family residential, built 1900. Parcel 0113064 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0000A of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 9 CALHOUN TER's coordinates fall in 2 active parcels, one condominium map's units on the 2025 roll; 0113064 stands for the building.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0063",
+   "date": "1999",
+   "date_precision": "year",
+   "kind": "conversion",
+   "address_as_written": "945 Battery Street",
+   "street_number": "945",
+   "street_name": "BATTERY",
+   "street_type": "ST",
+   "description": "The rooftop addition approved for the conversion of the brick warehouse to offices had been built, reduced in size and reshaped by agreement with the neighborhood so that it shows little from the street.",
+   "extra": {
+    "candidate": "semaphore#s392"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 147, April 1999",
+    "url": "https://archive.org/details/semaphore147tele/page/n10/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore147tele.txt",
+    "locator": "semaphore147tele-n10 (leaf 10)"
+   },
+   "raw": {
+    "text": "The roof-top addition has since been built"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0135001",
+    "path": "/san-francisco/financial-district/battery-street/945/",
+    "eas_address": "945 BATTERY ST",
+    "method": "EAS exact match on 945 BATTERY ST → parcel 0135001; sf-parcels has blklot 0135001 active, 945–945 BATTERY; the 2025 roll records it as commercial office, built 1911.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0064",
+   "date": "1999",
+   "date_precision": "year",
+   "kind": "conversion",
+   "address_as_written": "1301 Sansome Street",
+   "street_number": "1301",
+   "street_name": "SANSOME",
+   "street_type": "ST",
+   "description": "The conversion of the building, known as Walters Warehouse, to offices was almost complete.",
+   "extra": {
+    "candidate": "semaphore#s395"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 147, April 1999",
+    "url": "https://archive.org/details/semaphore147tele/page/n11/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore147tele.txt",
+    "locator": "semaphore147tele-n11 (leaf 11)"
+   },
+   "raw": {
+    "text": "The conversion and renovation of this warehouse to offices is almost complete"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0085005",
+    "path": "/san-francisco/north-beach/sansome-street/1301/",
+    "eas_address": "1301 SANSOME ST",
+    "method": "EAS exact match on 1301 SANSOME ST → parcel 0085005; sf-parcels has blklot 0085005 active, 1301–1301 SANSOME; the 2025 roll records it as commercial office, built 1908.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0065",
+   "date": "1999-06-04",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "1 Columbus Ave.",
+   "street_number": "7",
+   "street_name": "COLUMBUS",
+   "street_type": "AVE",
+   "description": "City College and the Friends of the Colombo Building settled the lawsuit over the college's plan to demolish the building for a Chinatown and North Beach campus. The college agreed to preserve and restore the Colombo Building within the campus project and to support its designation as a city landmark.",
+   "extra": {
+    "candidate": "semaphore#s417",
+    "number_as_printed": "1"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 149, September 1999",
+    "url": "https://archive.org/details/semaphore149tele/page/n11/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore149tele.txt",
+    "locator": "semaphore149tele-n11 (leaf 11)"
+   },
+   "raw": {
+    "text": "City College will preserve, restore and rehabilitate the Colombo Building"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0195004",
+    "path": "/san-francisco/chinatown/columbus-avenue/7/",
+    "eas_address": "7 COLUMBUS AVE",
+    "method": "EAS exact match on 7 COLUMBUS AVE → parcel 0195004; sf-parcels has blklot 0195004 active, 9–33 COLUMBUS; the 2025 roll records it as commercial office, built 1913. EAS puts 7, 9, 15, 21, 33 COLUMBUS AVE on that parcel, so per the directory contract the fact belongs on one page at the lowest, 7. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0195004.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0066",
+   "date": "1999",
+   "date_precision": "year",
+   "kind": "sale",
+   "address_as_written": "295 Bay Street",
+   "street_number": "295",
+   "street_name": "BAY",
+   "street_type": "ST",
+   "description": "Rite Aid bought the closed North Point Theater building, intending a store on the ground floor.",
+   "extra": {
+    "candidate": "semaphore#s418"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 149, September 1999",
+    "url": "https://archive.org/details/semaphore149tele/page/n11/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore149tele.txt",
+    "locator": "semaphore149tele-n11 (leaf 11)"
+   },
+   "raw": {
+    "text": "Rite Aid Corporation has purchased the theater building"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0040017",
+    "path": "/san-francisco/north-beach/bay-street/295/",
+    "eas_address": "295 BAY ST",
+    "method": "EAS exact match on 295 BAY ST → parcel 0040017; sf-parcels has blklot 0040017 active, 295–299 BAY; the 2025 roll records it as commercial office, built 1968. EAS puts 295, 299 BAY ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 295.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0067",
+   "date": "1910",
+   "date_precision": "year",
+   "kind": "site history",
+   "address_as_written": "293 Union Street",
+   "street_number": "293",
+   "street_name": "UNION",
+   "street_type": "ST",
+   "description": "Sources disagree on the age of the one-story cottage called the Little Yellow House: an older guide dates it to the 1860s and the historic district survey to 1910, which the paper suggests may be the year it was moved forward on its lot.",
+   "extra": {
+    "candidate": "semaphore#s421",
+    "record_date": "1999"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 149, September 1999",
+    "url": "https://archive.org/details/semaphore149tele/page/n16/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore149tele.txt",
+    "locator": "semaphore149tele-n16 (leaf 16)"
+   },
+   "raw": {
+    "text": "dates the house from 1910"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0113021",
+    "path": "/san-francisco/north-beach/union-street/293/",
+    "eas_address": "293 UNION ST",
+    "method": "EAS exact match on 293 UNION ST → parcel 0113021; sf-parcels has blklot 0113021 active, 293–293 UNION; the 2025 roll records it as single family residential, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "semaphore-0068",
+   "date": "1999-06",
+   "date_precision": "month",
+   "kind": "event",
+   "address_as_written": "115 Telegraph Hill Boulevard",
+   "street_number": "115",
+   "street_name": "TELEGRAPH HILL",
+   "street_type": "BLVD",
+   "description": "The cottage of the labor organizer Bill Bailey, who lived in it for 37 years, was lifted from its foundations by crane and trucked to storage, while the adjacent buildings were demolished for a condominium development.",
+   "extra": {
+    "candidate": "semaphore#s422"
+   },
+   "citation": {
+    "label": "The Semaphore (Telegraph Hill Dwellers), no. 149, September 1999",
+    "url": "https://archive.org/details/semaphore149tele/page/n18/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/semaphore/raw/semaphore149tele.txt",
+    "locator": "semaphore149tele-n18 (leaf 18)"
+   },
+   "raw": {
+    "text": "was saved from demolition in June"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0105089",
+    "path": "/san-francisco/north-beach/telegraph-hill-boulevard/113/",
+    "eas_address": "113 TELEGRAPH HILL BLVD",
+    "method": "EAS exact match on 115 TELEGRAPH HILL BLVD → parcel 0105089; sf-parcels has blklot 0105089 active, 115–115 TELEGRAPH HILL; the 2025 roll records it as single family residential. EAS puts 113, 115 TELEGRAPH HILL BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 113. Parcel 0105089 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). EAS files the address under parcel 0105065, which sf-parcels reports retired; the active parcel its coordinates fall in is 0105089.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  }
+ ]
+}

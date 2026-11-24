@@ -1,0 +1,86 @@
+{
+  "address": "750 16th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/16th-avenue/750/",
+  "apn": "1658007",
+  "block": "1658",
+  "lot": "007",
+  "eas_baseid": "312499",
+  "coordinates": {
+    "lat": 37.773921,
+    "lng": -122.474444
+  },
+  "parcel": {
+    "year_built": 1944,
+    "stories": 1,
+    "bathrooms": 2,
+    "lot_area_sqft": 38245,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "D",
+    "zoning": "P",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0750 16TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1944",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "2000–2001",
+    "shown_on_page": 0,
+    "note": "5 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=750",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1658007&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1658&lot=007",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1658007",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-richmondreview128rich-n8",
+      "name": "The Richmond ReView, May 2000",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/richmondreview128rich/page/n8/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2000-04-27",
+      "kind": "groundbreaking",
+      "description": "Ground was broken here on April 27, 2000 for the Argonne Child Development Center, described as San Francisco's first solar-powered school.",
+      "source": "sf-neighborhood-newspapers-richmondreview128rich-n8"
+    }
+  ]
+}

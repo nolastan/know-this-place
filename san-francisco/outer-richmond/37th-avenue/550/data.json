@@ -1,0 +1,128 @@
+{
+  "address": "550 37th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/37th-avenue/550/",
+  "apn": "1508012B",
+  "block": "1508",
+  "lot": "012B",
+  "eas_baseid": "459704",
+  "coordinates": {
+    "lat": 37.778528,
+    "lng": -122.49722
+  },
+  "parcel": {
+    "year_built": 1932,
+    "stories": 1,
+    "lot_area_sqft": 17998,
+    "building_area_sqft": 8222,
+    "basement_area_sqft": 2040,
+    "use": "Commercial Office",
+    "property_class": "LIBRARY",
+    "construction_type_code": "A",
+    "zoning": "P",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Outer Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0550 37TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1932",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201005051794",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2010-05-05",
+      "status_date": "2010-07-09",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "install elevator recall.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811206989",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-11-20",
+      "status_date": "2011-08-12",
+      "estimated_cost": 3019736,
+      "revised_cost": 3019736,
+      "description": "add an elevator & a staircase at rear of bldg; provide new ada bldg entrance, new accessible restrooms, drinking fountains, furnishings, & new mech & elec equipment, replace (e) windows. provide one on-site accessible parking space & seismic upgrade while preserving the historic character.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200008188299",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-08-18",
+      "status_date": "2001-08-22",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=37TH&street_type=AVE&address_number=550",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1508012B&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1508&lot=012B",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1508012B",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-richmondreview139rich-n2",
+      "name": "The Richmond ReView, June 2001, p. 3",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/richmondreview139rich/page/n2/mode/1up",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-richmondreview2008rich_1-n9",
+      "name": "The Richmond ReView, March 2008, p. 10",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/richmondreview2008rich_1/page/n9/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "2001-03-14",
+      "kind": "renovation",
+      "description": "The Anza Branch Library, opened in 1932, closed on March 14, 2001 for the modernization of its wiring and was expected to reopen in July 2001.",
+      "source": "sf-neighborhood-newspapers-richmondreview139rich-n2"
+    },
+    {
+      "date": "2008-03",
+      "kind": "renovation",
+      "description": "In March 2008 the library set out plans to renovate, seismically strengthen and extend at the rear the Anza Branch Library, then 76 years old, with work expected from 2009 to 2011.",
+      "source": "sf-neighborhood-newspapers-richmondreview2008rich_1-n9"
+    }
+  ]
+}

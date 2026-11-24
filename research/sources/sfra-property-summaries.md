@@ -147,7 +147,7 @@
   acquisition appraisals (5001 to 5029) describe what was bought, so run them
   resolution-first, per LESSONS. Do not read 5077, the New Start Center: its
   prints are portraits of displaced residents, some named on the backs.
-  Held for a page: 77 facts (`check.py --held`). Left out as findings: two
+  Held for a page: 76 facts (`check.py --held`; 1340 Golden Gate was taken up with a Bay Area Reporter page on 2026-11-24). Left out as findings: two
   1957 appraisal sheets with no street number (block 702 lot 23, block 733
   lots 1 and 1A), an undated service-station appraisal at 1301 Golden Gate
   Avenue, and five 1957 acquisition dividers for the cleared 1700 block of

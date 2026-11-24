@@ -5,9 +5,9 @@
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id
 > `sf-neighborhood-newspapers-<IA identifier>-n<leaf>`.
 >
-> - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
+> - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** done
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** five titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009) and the Noe Valley Voice (335 issues in 337 items, 1977–2011) — 687 findings, 612 resolved, 560 published on 411 pages (194 seeded).
+> - **Coverage:** all 18 titles read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999), The New Fillmore (27 issues, 1986–1990), Tenant Times (25 issues, 1979–1996), the Bernal Heights papers (178 issues, 1964–2008: the Pictorial, the Bernal Journal and the New Bernal Journal), the St. Mary's Park Improvement Club newsletter (15 issues, 1959–1985, nothing kept) and Street Art News (6 issues, 1975, nothing kept), The Semaphore of the Telegraph Hill Dwellers (194 issues, 1976–2026) with its forerunner the Telegraph Hill Bulletin (56 issues, 1956–1975), and the Sunnyside Neighborhood Association's newsletter (29 issues, 1975–1994) — 1,509 findings, 1,316 resolved, 1,230 published on 920 pages (296 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -27,8 +27,8 @@
   Fillmore (27, 1986–1990), Sunnyside Neighborhood Association News (11), St.
   Mary's Park Improvement Club newsletter (8, 1959–1985), Telegraph Hill
   Bulletin (4, 1957–1964) and singletons. *Tenant Times* (25) is in the
-  collection too and is retired in SOURCES.md for carrying no numbered
-  addresses. Marina Times and Westside Observer are **not** in it.
+  collection too; SOURCES.md retired it as a source of its own, and its
+  25 issues were read here on 2026-11-24. Marina Times and Westside Observer are **not** in it.
 - **Where:** an issue is `https://archive.org/details/<identifier>`; a page
   cites `https://archive.org/details/<identifier>/page/n<leaf>/mode/1up`,
   where `<leaf>` is the 0-based index into the item's hOCR page index (what
@@ -176,13 +176,92 @@
   The *Noe Valley Voice*, every item — 337 items (335 issues), May 1977 to
   February 2011, 14,190 OCR pages
   (`findings/sf-neighborhood-newspapers/noe-valley-voice-1977-2011.json`).
-  **Not read:** the other thirteen titles, and the Potrero View's November
-  2009 issue (no OCR on the Internet Archive). The next batches, in the
-  order this site needs them: **New Mission News** (127 items, 1992–2004)
-  with **North Mission News** (70, 1983–1992) — one neighborhood, one run;
-  then the Bernal Journals, Park Bell (Excelsior/Portola), The New Fillmore,
-  the Semaphore titles, Richmond ReView and Tenderloin Times. One title is
-  one batch; take two in a session if the first is short.
+  *North Mission News* and *New Mission News*, every item — 197 items,
+  June 1983 to August 2004, 5,555 OCR pages
+  (`findings/sf-neighborhood-newspapers/mission-news-1983-2004.json`).
+  The *Richmond ReView*, every item — 228 items, November 1988 to 2008
+  (`findings/sf-neighborhood-newspapers/richmond-review-1988-2008.json`).
+  The *Tenderloin Times*, every item — 141 items, 1977 to 1994
+  (`findings/sf-neighborhood-newspapers/tenderloin-times-1977-1994.json`).
+  *Park Bell*, the St. Mary's Park Improvement Club newsletter, every item
+  — 64 items, 1987 to 1999
+  (`findings/sf-neighborhood-newspapers/park-bell-1987-1999.json`; club
+  minutes and repeating ads, two findings).
+  *The New Fillmore*, every issue with hOCR — 27 issues, May 1986 to
+  May 1990
+  (`findings/sf-neighborhood-newspapers/new-fillmore-1986-1990.json`).
+  *The Semaphore* (Telegraph Hill Dwellers), every issue with hOCR — 92
+  issues, May 1976 to September 1999
+  (`findings/sf-neighborhood-newspapers/semaphore-1976-1999.json`), and
+  the 102 later issues, Winter 1999 to Summer 2026, from their djvu text
+  (`findings/sf-neighborhood-newspapers/semaphore-2000-2026.json`).
+  *Tenant Times*, every issue with hOCR — 25 issues, February 1979 to
+  March 1996
+  (`findings/sf-neighborhood-newspapers/tenant-times-1979-1996.json`).
+  The *St. Mary's Park Improvement Club newsletter* (15 issues with hOCR,
+  1959–1985) and *Street Art News* (6, 1975) were read whole and yielded
+  nothing; they have no findings file.
+  The *Telegraph Hill Bulletin*, the Semaphore's forerunner — 56 issues,
+  May 1956 to August 1975
+  (`findings/sf-neighborhood-newspapers/telegraph-hill-bulletin-1956-1975.json`),
+  and the *Sunnyside Neighborhood Association's newsletter* — 29 issues,
+  Spring 1975 to Fall 1994
+  (`findings/sf-neighborhood-newspapers/sunnyside-news-1975-1994.json`),
+  both from djvu text.
+  **Not read:** only the Potrero View's November 2009 issue (no OCR on the
+  Internet Archive). Every title in the collection is read; the source is
+  done unless the Archive adds issues. For items with no hOCR,
+  `/mnt/project-files/mission-papers/dl_djvu.py` rebuilds the hOCR-shaped
+  search text and page index from each item's `_djvu.xml`, so the cluster
+  and build scripts run unchanged.
+  **Held, Sunnyside:** 4 thin facts on parcels with no page: 298 Monterey
+  (a Health Department counseling center, 1975), 663 Mangels (the
+  district's first recorded water hookup, 1909), 771 Monterey and 499
+  Monterey (shops).
+  **Held, Bernal papers:** 16 thin facts on parcels with no page: 307, 410,
+  419, 433, 525, 800, 813, 908, 1000 and 249 Cortland (shop openings, the
+  Bank of America branch's threatened closing of 1993, the burned-out
+  church of 1982), 3223 and 3471 Mission, 811 San Jose, 3214 Folsom (the
+  Park Bench Cafe), 400 Alemany (22 townhouses planned, 1999) and 227
+  Winfield.
+  **Held, Semaphore:** 12 thin facts on parcels with no page: 16 Napier
+  Lane, 6 Gerke Alley, 414 Francisco, 450 Broadway, 839 Columbus, 2209
+  Powell, 886 Broadway (Alfred's, 1928), 701 Chestnut, 1741 Powell (the
+  Pagoda Palace), 234 Columbus (J. B. Monaco's last studio), 2237 Powell
+  (Jackson's, a gay bar, 1961–1976) and 801 Pacific (the fire of February
+  2017). 1620 Montgomery, held by the first Semaphore batch, was taken up
+  when the second seeded its page.
+  **Held, New Fillmore:** 7 shop and gallery openings on parcels with no
+  page, and the Alta Plaza Apartments at 2500 Steiner (parcel 0587014,
+  with two Building and Engineering News facts, all three checked): the
+  parcel has no 2025 roll row, so `seed-list` skips it. Whoever works out
+  how that building is assessed can seed it and publish all three.
+  **Unplaced, Tenderloin Times:** twelve facts at numbers no parcel
+  carries today, among them the St. Francis theater at 965 Market (built
+  1910 as the Empress), the Hastings demolitions at 355 and 363 Golden
+  Gate (1989–90), Newman's Gym at 142 Leavenworth, the Chinatown Resources
+  Development Center's 655 Geary, Canon Kip at 174 Eighth Street and
+  Rainbow Grocery's 1899 Mission. **Held, Tenderloin Times:** 6 single
+  facts on parcels with no page.
+  **Unplaced, Richmond ReView:** the 1894 building at 4004 Geary demolished
+  in 1988, the Crystal Palace Salt Water Baths at 775 Lombard (1924–1956),
+  the 1952 Safeway at 3132 Clement (closed November 1994), Gillon Lumber's
+  yard at 3931 Geary (1896–2002) and the bicycle shop at 4049 Balboa (an
+  EAS address on no parcel). **Held, Richmond ReView:** 27 single facts on
+  parcels with no page (`check.py --held`). **A lead left unread:** the
+  paper's 'New Businesses / Closed Businesses' chart, February 1993 to
+  December 1994, about 100 dated shop openings and closings on Clement,
+  Geary, Balboa and California; its two columns are interleaved by the OCR,
+  so it needs reading against the page image.
+  **Unplaced, Mission papers:** the Valencia Hotel site at 718 Valencia
+  (1906), 101 Valencia (the 1909 Knights of Pythias building, 40 lofts and
+  109 homes of 1996–97; EAS holds 100, 105, 111 and 115 only), Arriba
+  Juntos's first office at 2177 Mission (1965), the old Mission police
+  station at 1250 Valencia, Emmanuel Baptist Church at 131 Bartlett (1895),
+  the 50 Hoff collapse of June 1998, the 2268–2272 Mission fire of 3
+  December 1990 and Good Samaritan's two buildings at 1290–1294 Potrero
+  (each range now two parcels), and Brava's first theatre at 2180 Bryant
+  (an EAS address on no parcel).
   **Placed nowhere yet:** the Glen Park library's two lost buildings, 700
   Bosworth (opened January 1927, demolished for I-280 about 1964) and 2909
   Diamond (1964, demolished 1969 for the BART station). EAS has neither
@@ -307,3 +386,198 @@
   (6) `--area-from-nhood` moved 30 new pages from `mission/` to
   `noe-valley/` correctly and invented `castro-upper-market`, as LESSONS
   says; carry over only the directories the site uses.)
+  2026-11-24 (fifth run, North Mission News and New Mission News. Read 197
+  issues, 5,555 OCR pages, 20,254 numbered-address mentions; 1,343 passages
+  by hand by eight readers (1,783 windows, 824 kept and 959 rescued, merged
+  where they overlapped); 327 candidates, 160 findings, 146 resolved, 134
+  published on 112 pages, 15 of them seeded, 12 declined (9 already on the
+  page). The best of it: Valencia Street's arts corridor dated venue by
+  venue — Intersection for the Arts at 766 Valencia (January 1986) and 446
+  Valencia (4 May 1990), Artists' Television Access at 992 Valencia (May
+  1987), The Marsh at 968, 1062 and 1070 Valencia, Modern Times at 888
+  Valencia, the Capp Street Project's move to 270 14th, Brava's first
+  theatre, Adobe Bookshop at 3166 16th (March 1989), the Slanted Door at 584
+  Valencia (November 1995), Kilowatt in the old firehouse at 3160 16th;
+  New College of California's closing, sale listing and reopening of 777
+  Valencia; the residential hotels' fires and enforcement (the El Capitan,
+  17 March 1993; the Grand Southern, 30 July 1996; the King's Hotel, 3
+  October 1999; the Thor, the Star, the Apollo); Pacific Bell's switching
+  station at 1045 Capp given to Mission Housing and reopened as the Abel
+  Gonzalez Apartments (1992); the Atlas Linen fire at 3338 17th (6 November
+  1998); Habitat for Humanity's four homes at 1270 South Van Ness; Rainbow
+  Grocery's move to 1745 Folsom (24 May 1996); the Communist Party's
+  headquarters at 522 Valencia until February 1992; and Bigstep.com's
+  arrival in the Bay View Bank Building (November 1999). **Learned:** (1)
+  the items of some titles in the collection have no hOCR files at all —
+  every Bernal item 404s on both — so check one item's file list before
+  bulk-fetching a title; (2) merging windows that overlap in one issue cut
+  1,783 windows to 1,350 passages and gave readers whole paragraphs
+  (`/mnt/project-files/mission-papers/cluster.py`); (3) the matched address
+  is often an ad that interrupts an article, with the fact's own number
+  just outside the window, so give readers a way to pull more context
+  (`ctx.py` there) — seven of one reader's 51 candidates came from it; (4)
+  the paper contradicts its own numbers (the Apollo Hotel at 422 and 522
+  Valencia, Encantada Gallery at 904 and 908, The Marsh's dates), and the
+  parcel settles some: 418–422 Valencia is one lot and 522 was the
+  Communist Party's; (5) the 1990–97 code-enforcement series names
+  numbered buildings but is built on owners and tenants — hotels were taken
+  as institutions, houses and flats were left; (6) a checker can verify a
+  reader mechanically: every quote was found again in the issue text, every
+  street number on the cited leaf, and every day-precision date within the
+  surrounding article, and the eight the date check flagged were read by
+  hand and stood.)
+  2026-11-24 (thirteenth run, the Telegraph Hill Bulletin, 1956-1975, and
+  the Sunnyside newsletter, 1975-1994. 85 issues from djvu text, 955
+  mentions, 44 findings, 36 published on 25 pages, 6 seeded, 4 held, 4
+  unresolved. Both are association newsletters: three quarters of the
+  numbered addresses are officers' homes and advertisers, and the news
+  names its places without a number. What they add: the Gardner Dailey
+  apartments at 1420 Montgomery and the five 1870s houses they replaced,
+  the Rudolph Schaeffer School's site at 350 Union, three buildings of
+  1966 to 1977 with their architects, the Central Station garage, and
+  Thomas Malim's serial history of the Sunnyside Conservatory (Merralls,
+  the 1916 foreclosure, the Van Becks, the 1975 landmark). **Learned:**
+  (1) for a newsletter, run the mention pass with the advertisement
+  filter off (`extra_windows.py`) and a pass over event words
+  (`kw_scan.py`), because the numbered pass alone finds a third of it;
+  (2) a building named without a number can be placed when the roll has
+  one building on the block with the stated year and unit count, and the
+  finding says so in `extra.placement_note`; (3) the typed issues of the
+  1950s are too poorly recognised to quote, so cite the later reprint
+  where the paper repeats itself.)
+  2026-11-24 (twelfth run, The Semaphore, 2000-2026. 102 issues from djvu
+  text, 3,969 mentions, 622 passages read by hand, 110 findings, 105
+  published on 94 pages, 27 seeded, 2 held, 3 unplaced. Nearly every
+  commission vote the Dwellers report from 2000 to 2005 was already on
+  the page from the Planning Commission minutes, and the Beat and gay
+  bars from the city's context statements. What the later paper adds is
+  the Telegraph Hill Historic District's own building record, printed in
+  no. 175 for the 1906 centennial out of Anne Bloomfield's district
+  report: the year and first owner, with his trade, of some forty houses
+  of 1852 to 1902, 23 of which had no page; and the openings and closings
+  of the last twenty years, which no other source on the site reaches.
+  **Learned:** (1) check the pages before reading closely where the city
+  has a context statement, because most of the history articles restate
+  it; (2) a paper's reprint of a district report is a citable route to a
+  report the site does not hold; (3) the roll's 1900 for a pre-1906 house
+  is a placeholder, so state the district's date beside it.)
+  2026-11-24 (eleventh run, the Bernal Heights papers, 1964-2008. 178
+  issues, 6,174 mentions, 446 passages read by hand, 62 findings, 43
+  published on 37 pages, 15 seeded, 16 held, 3 unplaced. What it adds: the
+  Bernal Heights Community Foundation's trail along Cortland Avenue (its
+  first house at 18 Bonview in 1979, the office at 399 Cortland, the
+  Neighborhood Center opened at 515 Cortland on 18 September 1982, the
+  arson fire at 513 on 28 June 1985) and its housing (Coleridge Park Homes,
+  begun 24 June 1988 and opened 19 July 1989; 5199 Mission; Bishop Swing
+  Community House at 275 10th); the two earthquake shacks joined at 43
+  Carver; the Brooks homestead at 34 Prospect; the house at 40 Prentiss
+  moved for Bernal Heights Boulevard; the Holly Park Meat Market building
+  at 231 Cortland; and the library's dedication day, 20 October 1940.
+  **Learned:** (1) an item with no hOCR still has `_djvu.xml`, which gives
+  the same words leaf by leaf, so "no hOCR" is not "no text"; (2) a paper
+  that an agency publishes reports that agency's projects wherever they
+  are, so three of the firmest facts are in the Western Addition, the
+  Excelsior and South of Market; (3) a "destroyed by fire" in the paper
+  and a 1900 year built on the roll can both stand on one page if the page
+  says so; (4) the paper misprints numbers (3240 Mission for a club at
+  another number, a December 1996 opening reported in February 1996), so
+  a number EAS does not know is worth a second look before it is called a
+  lost address.)
+  2026-11-24 (tenth run, three small titles. Tenant Times: 25 issues, 205
+  mentions, 55 passages read by hand, 17 findings, 15 published on 12
+  existing pages, 2 unplaced (261 Valencia, 66 Berry). It is the Tenants
+  Union's advocacy paper; what it adds is the building-level record of the
+  hotel-conversion fights of 1979-84 (Central Towers' rent strike, the
+  Empress emptied, the Dalt settlement, the Orr Hotel turned into an inn,
+  the Astoria's closing notice) and the Homes Not Jails occupations of
+  1992-95 (250 Taylor, 66 Berry, 3250 17th). No landlord is named. The St.
+  Mary's Park newsletter (15 issues) and Street Art News (6) are meeting
+  notices and advertisements: nothing kept. **Learned:** SOURCES.md
+  retired Tenant Times on one sampled issue with no numbered address; the
+  1979 and 1981 "building roundup" pages do print them, so a one-issue
+  sample is thin grounds for retiring a title.)
+  2026-11-24 (ninth run, The Semaphore, 1976-1999. 92 issues, 5,605
+  mentions, 425 passages read by hand, 68 findings, 55 resolved and
+  published on 49 pages, 9 seeded, 11 held, 2 unplaced. A neighborhood
+  association's paper: most of it is the Dwellers' planning and zoning
+  reports, which give the day a commission voted and what on (725
+  Greenwich, 1299 Sansome, 16 Napier Lane, the Colombo Building
+  settlement of 4 June 1999), and shop profiles that date a building or a
+  business (Figone Hardware, built 1907 as Nick Capurro Hardware; A.
+  Cavalli & Co. at 1441 Stockton from 1934; Alfred's, 1928). **Learned:**
+  (1) an association paper states positions far more often than outcomes,
+  so keep the vote and drop the argument, and look in the next issue for
+  the result; (2) a walking-tour article gives building dates without a
+  source and they often differ from the roll or the city survey, so word
+  them as the paper's and state the conflict; (3) officers' lists and
+  advertisements are most of the address mentions, 5,605 mentions for 68
+  facts.)
+  2026-11-24 (eighth run, The New Fillmore. 27 issues, 3,409 mentions,
+  152 passages read by hand, 41 findings, 33 resolved, 30 published on 26
+  pages, 8 seeded, 3 declined, 8 held. The best of it is Anne Bloomfield's
+  'Great Old Houses' column: the architect, client, year and contract
+  price of one house an issue (2561 Washington, Charles Havens, 1890,
+  $6,870; 1900 Webster, Bernhardt Henriksen, 1884; 2104 Broadway, Frank
+  Van Trees for Robert Oxnard, 1899; the Bourn mansion, Willis Polk, 1896;
+  St. Rose Academy, Albert Pissis, 1903-06; William Curlett's 1904
+  additions to the Leale House), plus The Lab's start as Co Lab at 1805
+  Divisadero about 1984.
+  **Learned:** (1) a column about one house names its address once, in a
+  headline or caption, so the address filter keeps almost none of it: pull
+  a recurring column by its title and read it whole; (2) the Archive's
+  `_page_numbers.json` is wrong for this title, so cite the leaf alone;
+  (3) these are landmark houses and the pages already carry the
+  designation's account: read the page first, publish only what is new,
+  and state a conflicting date as a conflict rather than choosing; (4) a
+  held permit fact can corroborate the new one: the 1916 and 1918 permits
+  on the seeded parcels name the same owners the column does.)
+  2026-11-24 (seventh run, the Tenderloin Times and Park Bell. Tenderloin
+  Times: 141 issues, 9,118 mentions, 841 passages by five readers, 349
+  candidates, 163 findings, 145 resolved, 142 published on 119 pages, 4
+  seeded, 3 declined, 6 held. The best of it: the residential-hotel fights
+  building by building (the P&W emptied and reopened as the Hotel St.
+  George, 1982; the Astoria's $450,000 settlement, 1986; the Abigail
+  ruling, July 1988); the nonprofits' first buildings (44 McAllister, 480
+  Eddy, the Aarti, the Dorothy Day Community, the Senator); the State
+  Garage site bought for the Tenderloin playground (13 September 1990);
+  the 1989 earthquake's closures and the Hastings demolitions that
+  followed; and the Southeast Asian shops and restaurants by opening date.
+  Park Bell: 64 issues, 59 passages read by hand, two findings on one page.
+  **Learned:** (1) the catalogue title of some items carries the issue
+  date in parentheses, so strip it before building a citation label; (2)
+  this paper prints one building's number two ways often enough (five
+  cases) that a number seen once is worth checking against the rest of the
+  run before it is placed; (3) the date a reader gives may come from
+  another issue than the one cited: the audit's day-near-quote check
+  caught two, and both were cut back to the month the cited article
+  supports; (4) a club newsletter is not worth readers: Park Bell's 1,122
+  mentions were 55 of 59 passages of ads and members' addresses.)
+  2026-11-24 (sixth run, the Richmond ReView. Read 228 issues, 19,699
+  numbered-address mentions; 1,171 passages by seven readers (2,038
+  windows merged); 338 candidates, 155 findings, 123 resolved, 107
+  published on 86 pages, 18 of them seeded, 16 declined, 27 held. The best
+  of it: the branch libraries (Richmond, Presidio, Anza) through closure,
+  renovation and landmarking; the Delancey Street building at 795 Eighth
+  Avenue from its 1922 completion to its 1996 conversion; the Coliseum
+  theater's 1918 date and 2000 conversion; Station M post office reborn as
+  Richmond Plaza (1993); the Lycee Francais's move to Ashbury Street
+  (1996); the Larkins Building's enlargement (3 August 1995); the Last Day
+  Saloon's opening (2 August 1973); the 4 Star as La Bonita (1921); and the
+  earthquake shacks at 4329 Kirkham moved to Treasure Island (August 2004).
+  **Learned:** (1) the catalogue date of an item can be wrong and two
+  items can be one issue: richmondreview98unse is May 1997, and January
+  1990 is scanned twice; check the masthead of every cited issue; (2) the
+  OCR splits street numbers (`35 1 Ninth`, `43 14 California`), so the
+  extractor's matched address is often a tail and the reader must take the
+  number from the text; (3) from 1996 a third or more of each issue's
+  matches are the monthly 'Homes Sold' table and from 1997 the paper
+  reprints Sunset Beacon and City Voice copy, so Sunset and citywide
+  addresses turn up; (4) the Presidio and Golden Gate Park are one parcel
+  each, so a numbered building in either resolves to whatever page the
+  parcel has: decline it; (5) `--area-from-nhood` invents
+  `lone-mountain-usf` and `financial-district-south-beach`; without it,
+  proximity sent 5 Masonic to `castro/` and 710 10th Avenue to
+  `inner-sunset/`, so use it and correct the two names; (6) a fact given a
+  number other than the printed one (795 for a misprinted 798 Eighth
+  Avenue) must not go in `address_range_as_recorded`, which the resolver
+  reads as a range; `extra.number_as_printed` holds it.)

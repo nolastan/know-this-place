@@ -1,0 +1,46 @@
+{
+  "address": "383 Lombard Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/lombard-street/373/unit-403/",
+  "unit": "403",
+  "apn": "0078075",
+  "block": "0078",
+  "lot": "075",
+  "parcel": {
+    "building_area_sqft": 992,
+    "rooms": 4,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 480436,
+    "assessed_improvement_value": 480436,
+    "last_sale_date": "2011-01-10"
+  },
+  "permits": [
+    {
+      "number": "201310240155",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2013-10-24",
+      "status_date": "2013-10-24",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove and replace 4 single payne bronzed aluminum windows with 4 double payne bronzed aluminum windows. size is like for like",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0078075&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0078&unit=403",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}

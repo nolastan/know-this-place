@@ -1,0 +1,86 @@
+{
+  "address": "373 Lombard Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/lombard-street/373/unit-501/",
+  "unit": "501",
+  "apn": "0078078",
+  "block": "0078",
+  "lot": "078",
+  "parcel": {
+    "building_area_sqft": 1565,
+    "rooms": 6,
+    "bedrooms": 3,
+    "bathrooms": 3
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1198578,
+    "assessed_improvement_value": 1198578,
+    "last_sale_date": "2007-10-22"
+  },
+  "permits": [
+    {
+      "number": "202208050041",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-08-05",
+      "status_date": "2022-12-12",
+      "estimated_cost": 33000,
+      "revised_cost": 33000,
+      "description": "one unit: bathroom remodel. replace shower tile and shower pan with new tile. replace vanity, sink, and counter. replace mirror, shower doors, and tile floors. replace toilet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401287246",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-28",
+      "status_date": "2014-09-18",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "replace 1 tub with shower, guest bathroom , replace kitchen cabinets & counters -in kind",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201109023827",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2011-09-02",
+      "status_date": "2012-10-30",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "one unit: remove and replace windows 4 front 10 total in kind.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200711299266",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-11-29",
+      "status_date": "2008-05-15",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "remove (e) tub in master bath. remove tile and vanity tub, (not vanity). remove and dispose of carpets and counter tops on kitchen cabinets. replace tub w/shower stall. tempered glazing at shower stall. bathroom remodel. no structural work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2007–2022",
+    "shown_on_page": 4,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0078078&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0078&unit=501",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}

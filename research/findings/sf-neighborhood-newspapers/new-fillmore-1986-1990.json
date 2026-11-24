@@ -1,0 +1,1494 @@
+{
+ "source_id": "sf-neighborhood-newspapers",
+ "batch": "new-fillmore-1986-1990",
+ "read_on": "2026-11-24",
+ "notes": "The New Fillmore (May 1986 to December 1987 and November 1989 to May 1990, 27 issues), the Fillmore and Pacific Heights monthly, every issue the Internet Archive collection sanfrancisconewspapers holds with an OCR layer. Source text is each item's hOCR search text; leaves from its hOCR page index. Citations give the leaf only: the Archive's page-number guesses are wrong for this title. Read by hand, with no reader pass; extra.candidate is the row key in /mnt/project-files/mission-papers/decisions_fillmore.py. extra.number_as_printed keeps a street number the paper printed differently from the parcel's page (the Grant Mansion, 2200 Broadway, on the Sacred Heart parcel at 2222). extra.record_date is the issue year for facts older than the paper. Most of the batch is Anne Bloomfield's monthly 'Great Old Houses' column, an architectural historian's account of one house an issue from contracts, water records and directories.",
+ "coverage": {
+  "unit": "issues",
+  "examined": 27,
+  "mentions": 3409,
+  "remaining": "Nothing in this title: every issue with an OCR layer was read. The collection record and one item without hOCR were not.",
+  "note": "27 issues; 3,409 numbered-address mentions on EAS streets (ocr_mentions.py --rescue). The filter kept 188 windows, merged into 152 passages, all read by hand; the 'Great Old Houses' columns, which the address filter mostly misses, were pulled by title and by street number and read whole. 41 findings written, each quote found again in the issue's text. 33 resolved and 8 held: 7 shop and gallery openings on parcels with no page, and the Alta Plaza Apartments at 2500 Steiner, whose parcel has no roll row for seed-list to build a page from. 30 published on 26 pages (8 seeded), 3 declined because the page already carried the fact in more detail (Temple Sherith Israel twice, the Grant Mansion's 1948 sale). Not carried at all, the pages having them already: 2115 Bush and 2503 Clay (The Real Estate Associates), 2100 Vallejo, 2222 Broadway and 2622 Jackson. Seeding took up two held Building and Engineering News facts, read against the page images: the 1918 roof permit at 2104 Broadway and the 1916 garage at 1900 Webster, whose cost the OCR had as $3,950 and the page prints as $400. Three conflicts with dates already on pages are stated on the pages (Stanyan House, Grant Mansion, 2421 Pierce)."
+ },
+ "findings": [
+  {
+   "id": "new-fillmore-0001",
+   "date": "1890",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2561 Washington",
+   "street_number": "2561",
+   "street_name": "WASHINGTON",
+   "street_type": "ST",
+   "description": "A Queen Anne house designed by the architect Charles Havens, later of Havens & Toepke, for William Craig, a lawyer and for a time City Attorney. The contract price was $6,870.",
+   "extra": {
+    "candidate": "fillmore#f02",
+    "record_date": "1986"
+   },
+   "citation": {
+    "label": "The New Fillmore, July 1986",
+    "url": "https://archive.org/details/newfillmore13newf/page/n20/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore13newf.txt",
+    "locator": "newfillmore13newf-n20 (leaf 20)"
+   },
+   "raw": {
+    "text": "designed this house in 1890 for"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0611025",
+    "path": "/san-francisco/pacific-heights/washington-street/2561/",
+    "eas_address": "2561 WASHINGTON ST",
+    "method": "EAS exact match on 2561 WASHINGTON ST → parcel 0611025; sf-parcels has blklot 0611025 active, 2561–2561 WASHINGTON; the 2025 roll records it as single family residential, built 1900. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1986, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0002",
+   "date": "1986-05",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "1907 Fillmore",
+   "street_number": "1907",
+   "street_name": "FILLMORE",
+   "street_type": "ST",
+   "description": "Invisions, an eyewear shop, opened at 1907 Fillmore in a storefront designed by the architect Roger East.",
+   "extra": {
+    "candidate": "fillmore#f35"
+   },
+   "citation": {
+    "label": "The New Fillmore, July 1986",
+    "url": "https://archive.org/details/newfillmore13newf/page/n14/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore13newf.txt",
+    "locator": "newfillmore13newf-n14 (leaf 14)"
+   },
+   "raw": {
+    "text": "this European eyewear salon opened in May"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0659005",
+    "path": "/san-francisco/pacific-heights/fillmore-street/1901/",
+    "eas_address": "1901 FILLMORE ST",
+    "method": "EAS exact match on 1907 FILLMORE ST → parcel 0659005; sf-parcels has blklot 0659005 active, 1901–1911 FILLMORE; the 2025 roll records it as commercial retail, built 1904. EAS puts 1901, 1903, 1905, 1907, 1909, 1911, 1913 FILLMORE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1901.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0003",
+   "date": "1986-07",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "1800 Fillmore",
+   "street_number": "1800",
+   "street_name": "FILLMORE",
+   "street_type": "ST",
+   "description": "Doris Boutique, a sweater shop, had just opened here in July 1986.",
+   "extra": {
+    "candidate": "fillmore#f36",
+    "placed_apn": "0677072"
+   },
+   "citation": {
+    "label": "The New Fillmore, July 1986",
+    "url": "https://archive.org/details/newfillmore13newf/page/n14/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore13newf.txt",
+    "locator": "newfillmore13newf-n14 (leaf 14)"
+   },
+   "raw": {
+    "text": "Doris Boutique, 1800 Fillmore. The latest opening"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 1800 FILLMORE ST → parcel 0677072; sf-parcels has blklot 0677072 active, 1830–1830 FILLMORE; the 2025 roll records it as commercial retail, built 1984. EAS puts 1800, 1830 FILLMORE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1800. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. Parcel 0677072 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0001 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228). 1800 FILLMORE ST's coordinates fall in 44 active parcels, one condominium map's units on the 2025 roll; 0677072 stands for the building.",
+    "note": "Placed on parcel 0677072 (1800 FILLMORE ST) but not published: one thin fact (a shop or gallery opening) from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "new-fillmore-0004",
+   "date": "1896",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2302 Steiner",
+   "street_number": "2302",
+   "street_name": "STEINER",
+   "street_type": "ST",
+   "description": "Built for Clara Kluge, a widow, with John J. Laferme and Otto Collischonn as architects. Its mix of Queen Anne and Classical details was early for the city.",
+   "extra": {
+    "candidate": "fillmore#f04",
+    "record_date": "1986"
+   },
+   "citation": {
+    "label": "The New Fillmore, September 1986",
+    "url": "https://archive.org/details/newfillmore15newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore15newf.txt",
+    "locator": "newfillmore15newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "The 1896 construction date is early for this style"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0611018",
+    "path": "/san-francisco/pacific-heights/steiner-street/2302/",
+    "eas_address": "2302 STEINER ST",
+    "method": "EAS exact match on 2302 STEINER ST → parcel 0611018; sf-parcels has blklot 0611018 active, 2302–2302 STEINER; the 2025 roll records it as single family residential, built 1900. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1986, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0005",
+   "date": "1899",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "2302 Steiner",
+   "street_number": "2302",
+   "street_name": "STEINER",
+   "street_type": "ST",
+   "description": "The diamond importer Joseph E. Bier lived here from 1899 to 1944.",
+   "extra": {
+    "candidate": "fillmore#f05",
+    "record_date": "1986"
+   },
+   "citation": {
+    "label": "The New Fillmore, September 1986",
+    "url": "https://archive.org/details/newfillmore15newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore15newf.txt",
+    "locator": "newfillmore15newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "diamond importer Joseph E. Bier, lived here 1899-1944"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0611018",
+    "path": "/san-francisco/pacific-heights/steiner-street/2302/",
+    "eas_address": "2302 STEINER ST",
+    "method": "EAS exact match on 2302 STEINER ST → parcel 0611018; sf-parcels has blklot 0611018 active, 2302–2302 STEINER; the 2025 roll records it as single family residential, built 1900. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1986, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0006",
+   "date": "1986-09",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "3151 Fillmore Street",
+   "street_number": "3151",
+   "street_name": "FILLMORE",
+   "street_type": "ST",
+   "description": "The Cabana Club, a tanning salon with a lounge and a small juice and wine bar, had opened here by September 1986.",
+   "extra": {
+    "candidate": "fillmore#f37",
+    "placed_apn": "0515003"
+   },
+   "citation": {
+    "label": "The New Fillmore, September 1986",
+    "url": "https://archive.org/details/newfillmore15newf/page/n18/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore15newf.txt",
+    "locator": "newfillmore15newf-n18 (leaf 18)"
+   },
+   "raw": {
+    "text": "has opened on the fringes of the neighborhood at 3151 Fillmore Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 3151 FILLMORE ST → parcel 0515003; sf-parcels has blklot 0515003 active, 3151–3155 FILLMORE; the 2025 roll records it as multi-family residential, built 1907. EAS puts 3151, 3155 FILLMORE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3151. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0515003 (3151 FILLMORE ST) but not published: one thin fact (a shop or gallery opening) from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "new-fillmore-0007",
+   "date": "1897",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2200 Broadway",
+   "street_number": "2222",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "By this account the Grant Mansion, at 2200 Broadway, was built as the town house of Joseph D. Grant by the contractors Mahony Brothers, to designs by the New York architects Philip Hiss and H. Hobart Weekes.",
+   "extra": {
+    "candidate": "fillmore#f06",
+    "record_date": "1986",
+    "number_as_printed": "2200",
+    "unknown_sentence": "Accounts differ on the date of the Grant Mansion at 2200 Broadway: one gives 1897, another 1910."
+   },
+   "citation": {
+    "label": "The New Fillmore, October 1986",
+    "url": "https://archive.org/details/newfillmore00newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore00newf.txt",
+    "locator": "newfillmore00newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "His townhouse here on Broadway was built in 1897 by the Mahony Brothers"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0564070",
+    "path": "/san-francisco/pacific-heights/broadway/2222/",
+    "eas_address": "2222 BROADWAY",
+    "method": "EAS exact match on 2222 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0564070; sf-parcels has blklot 0564070 active, 2222–2222 BROADWAY; the 2025 roll records it as commercial misc, built 1904. EAS files the address under parcel 0564024, which sf-parcels reports retired; the active parcel its coordinates fall in is 0564070. The record was written in 1986, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1904.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0008",
+   "date": "1942",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "2200 Broadway",
+   "street_number": "2222",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "Joseph D. Grant lived in the mansion at 2200 Broadway until his death, and Emily Macleay Grant until hers in 1948, after which the Sacred Heart school bought the property.",
+   "extra": {
+    "candidate": "fillmore#f07",
+    "record_date": "1986",
+    "number_as_printed": "2200"
+   },
+   "citation": {
+    "label": "The New Fillmore, October 1986",
+    "url": "https://archive.org/details/newfillmore00newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore00newf.txt",
+    "locator": "newfillmore00newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "the Grants stayed on until his death in 1942 and hers in 1948"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0564070",
+    "path": "/san-francisco/pacific-heights/broadway/2222/",
+    "eas_address": "2222 BROADWAY",
+    "method": "EAS exact match on 2222 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0564070; sf-parcels has blklot 0564070 active, 2222–2222 BROADWAY; the 2025 roll records it as commercial misc, built 1904. EAS files the address under parcel 0564024, which sf-parcels reports retired; the active parcel its coordinates fall in is 0564070.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The page already has the Grant family's 1948 sale of the mansion to the Convent of the Sacred Heart."
+   }
+  },
+  {
+   "id": "new-fillmore-0009",
+   "date": "1886",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "1900 Pierce",
+   "street_number": "1900",
+   "street_name": "PIERCE",
+   "street_type": "ST",
+   "description": "The house has changed little since it was built; the series calls it the first known house by the architect A. W. Smith. A photograph of it was published in 1887 in a newspaper series, \"Artistic Homes of California.\"",
+   "extra": {
+    "candidate": "fillmore#f08",
+    "record_date": "1986"
+   },
+   "citation": {
+    "label": "The New Fillmore, November 1986",
+    "url": "https://archive.org/details/newfillmore17newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore17newf.txt",
+    "locator": "newfillmore17newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "has changed very little since it was built in 1886"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0655018",
+    "path": "/san-francisco/pacific-heights/pierce-street/1900/",
+    "eas_address": "1900 PIERCE ST",
+    "method": "EAS exact match on 1900 PIERCE ST → parcel 0655018; sf-parcels has blklot 0655018 active, 1900–1900 PIERCE; the 2025 roll records it as single family residential, built 1900. The record was written in 1986, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0010",
+   "date": "1986-11",
+   "date_precision": "month",
+   "kind": "occupancy",
+   "address_as_written": "1805 Divisadero",
+   "street_number": "1805",
+   "street_name": "DIVISADERO",
+   "street_type": "ST",
+   "description": "In November 1986 The New Fillmore reported a twenty-year resident's account that the house had been a hippie flophouse for most of that time and that its past tenants included Ken Kesey and the Merry Pranksters.",
+   "extra": {
+    "candidate": "fillmore#f32"
+   },
+   "citation": {
+    "label": "The New Fillmore, November 1986",
+    "url": "https://archive.org/details/newfillmore17newf/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore17newf.txt",
+    "locator": "newfillmore17newf-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "had lived at 1805 Divisadero for twenty years"
+   },
+   "confidence": "low",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1049058",
+    "path": "/san-francisco/pacific-heights/divisadero-street/1805/",
+    "eas_address": "1805 DIVISADERO ST",
+    "method": "EAS exact match on 1805 DIVISADERO ST → parcel 1049058; sf-parcels has blklot 1049058 active, 1805–1807 DIVISADERO; the 2025 roll records it as multi-family residential, built 1903. EAS puts 1805, 1807 DIVISADERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1805.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0011",
+   "date": "1984",
+   "date_precision": "circa",
+   "kind": "opening",
+   "address_as_written": "1805 Divisadero",
+   "street_number": "1805",
+   "street_name": "DIVISADERO",
+   "street_type": "ST",
+   "description": "About 1984 the arts space The Lab began here as Co Lab, a cooperative theater and gallery started by a performance group that rented the building and took over an upstairs hall where a Masonic group had been meeting.",
+   "extra": {
+    "candidate": "fillmore#f33",
+    "record_date": "1986",
+    "date_basis": "The November 1986 article says the space was founded 'two and a half years ago'."
+   },
+   "citation": {
+    "label": "The New Fillmore, November 1986",
+    "url": "https://archive.org/details/newfillmore17newf/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore17newf.txt",
+    "locator": "newfillmore17newf-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "Co Lab, a theater/gallery space, was born"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1049058",
+    "path": "/san-francisco/pacific-heights/divisadero-street/1805/",
+    "eas_address": "1805 DIVISADERO ST",
+    "method": "EAS exact match on 1805 DIVISADERO ST → parcel 1049058; sf-parcels has blklot 1049058 active, 1805–1807 DIVISADERO; the 2025 roll records it as multi-family residential, built 1903. EAS puts 1805, 1807 DIVISADERO ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1805.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0012",
+   "date": "1858",
+   "date_precision": "circa",
+   "kind": "construction",
+   "address_as_written": "2006 Bush Street",
+   "street_number": "2006",
+   "street_name": "BUSH",
+   "street_type": "ST",
+   "description": "By this account the house was built between 1858, when the U.S. Coast Survey mapped the area with no structures here, and 1864, when its owner signed up for water service. Charles Stanyan is its first known owner and occupant.",
+   "extra": {
+    "candidate": "fillmore#f09",
+    "record_date": "1986",
+    "unknown_sentence": "Accounts differ on the age of the Stanyan House: one has it shipped from Boston and erected between 1852 and 1854, another has it built between 1858 and 1864, citing an 1857-58 Coast Survey map that shows nothing on the site."
+   },
+   "citation": {
+    "label": "The New Fillmore, December 1986",
+    "url": "https://archive.org/details/newfillmore18newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore18newf.txt",
+    "locator": "newfillmore18newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "It was built some time between 1858"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0661033",
+    "path": "/san-francisco/pacific-heights/bush-street/2006/",
+    "eas_address": "2006 BUSH ST",
+    "method": "EAS exact match on 2006 BUSH ST → parcel 0661033; sf-parcels has blklot 0661033 active, 2006–2006 BUSH; the 2025 roll records it as single family residential, built 1900. The record was written in 1986, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0013",
+   "date": "1976-07-01",
+   "date_precision": "day",
+   "kind": "opening",
+   "address_as_written": "2220 Sacramento Street",
+   "street_number": "2220",
+   "street_name": "SACRAMENTO",
+   "street_type": "ST",
+   "description": "The Mansion, one of the country's first bed-and-breakfast style hotels, opened here on July 1, 1976.",
+   "extra": {
+    "candidate": "fillmore#f31",
+    "record_date": "1986"
+   },
+   "citation": {
+    "label": "The New Fillmore, December 1986",
+    "url": "https://archive.org/details/newfillmore18newf/page/n10/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore18newf.txt",
+    "locator": "newfillmore18newf-n10 (leaf 10)"
+   },
+   "raw": {
+    "text": "opened The Mansion on July 1, 1976"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0627054",
+    "path": "/san-francisco/pacific-heights/sacramento-street/2220/",
+    "eas_address": "2220 SACRAMENTO ST",
+    "method": "EAS exact match on 2220 SACRAMENTO ST → parcel 0627054; sf-parcels has blklot 0627054 active, 2220–2220 SACRAMENTO; the 2025 roll records it as single family residential, built 1906. Parcel 0627054 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area, which is a unit and not a building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228).",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0014",
+   "date": "1896",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2550 Webster Street",
+   "street_number": "2550",
+   "street_name": "WEBSTER",
+   "street_type": "ST",
+   "description": "Willis Polk designed the house for William Bowers Bourn, head of the Empire Mine and later president of the Spring Valley Water Company; it was Polk's first building for Bourn. Bourn sold it about 1924.",
+   "extra": {
+    "candidate": "fillmore#f30",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, January 1987",
+    "url": "https://archive.org/details/newfillmore19newf/page/n19/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore19newf.txt",
+    "locator": "newfillmore19newf-n19 (leaf 19)"
+   },
+   "raw": {
+    "text": "Willis Polk designed it for tycoon William Bourn in 1896"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0580013",
+    "path": "/san-francisco/marina/webster-street/2550/",
+    "eas_address": "2550 WEBSTER ST",
+    "method": "EAS exact match on 2550 WEBSTER ST → parcel 0580013; sf-parcels has blklot 0580013 active, 2550–2550 WEBSTER; the 2025 roll records it as single family residential, built 1896. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1896.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0015",
+   "date": "1881",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2030 Scott Street",
+   "street_number": "2030",
+   "street_name": "SCOTT",
+   "street_type": "ST",
+   "description": "Built by a carpenter, F. Sweet, for the owner Thomas Holt, with no architect; the contract covered this house and its twin next door at 2032 Scott, at an estimated $5,500 for the two.",
+   "extra": {
+    "candidate": "fillmore#f10",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, February 1987",
+    "url": "https://archive.org/details/newfillmore110newf/page/n20/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore110newf.txt",
+    "locator": "newfillmore110newf-n20 (leaf 20)"
+   },
+   "raw": {
+    "text": "The house was built in 1881"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0633009",
+    "path": "/san-francisco/pacific-heights/scott-street/2030/",
+    "eas_address": "2030 SCOTT ST",
+    "method": "EAS exact match on 2030 SCOTT ST → parcel 0633009; sf-parcels has blklot 0633009 active, 2030–2030 SCOTT; the 2025 roll records it as single family residential, built 1900. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0016",
+   "date": "1881",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2032 Scott",
+   "street_number": "2032",
+   "street_name": "SCOTT",
+   "street_type": "ST",
+   "description": "Built by a carpenter, F. Sweet, for the owner Thomas Holt, as the twin of 2030 Scott next door, at an estimated $5,500 for the two; this one was later much altered and covered in asbestos siding.",
+   "extra": {
+    "candidate": "fillmore#f11",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, February 1987",
+    "url": "https://archive.org/details/newfillmore110newf/page/n20/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore110newf.txt",
+    "locator": "newfillmore110newf-n20 (leaf 20)"
+   },
+   "raw": {
+    "text": "The other house he built with Sweet on this contract was 2032 Scott"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0633010",
+    "path": "/san-francisco/pacific-heights/scott-street/2032/",
+    "eas_address": "2032 SCOTT ST",
+    "method": "EAS exact match on 2032 SCOTT ST → parcel 0633010; sf-parcels has blklot 0633010 active, 2032–2032 SCOTT; the 2025 roll records it as multi-family residential, built 1900. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0017",
+   "date": "1987-02-10",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "1635 Divisadero Street",
+   "street_number": "1635",
+   "street_name": "DIVISADERO",
+   "street_type": "ST",
+   "description": "Groundbreaking for the San Francisco Medical Center here, a 70,000-square-foot medical office building with a 538-stall garage and 5,600 square feet of ground-floor shops, was scheduled for February 10, 1987.",
+   "extra": {
+    "candidate": "fillmore#f34"
+   },
+   "citation": {
+    "label": "The New Fillmore, February 1987",
+    "url": "https://archive.org/details/newfillmore110newf/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore110newf.txt",
+    "locator": "newfillmore110newf-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "groundbreaking for the 70,000-square foot San Francisco Medical Center"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1076034",
+    "path": "/san-francisco/japantown/divisadero-street/1635/",
+    "eas_address": "1635 DIVISADERO ST",
+    "method": "EAS exact match on 1635 DIVISADERO ST → parcel 1076034; sf-parcels has blklot 1076034 active, 1635–1635 DIVISADERO; the 2025 roll records it as commercial office, built 1989.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0018",
+   "date": "1905-09-23",
+   "date_precision": "day",
+   "kind": "construction",
+   "address_as_written": "2266 California at Webster",
+   "street_number": "2266",
+   "street_name": "CALIFORNIA",
+   "street_type": "ST",
+   "description": "Temple Sherith Israel was designed by the architect Albert Pissis in a Romanesque manner unusual for him and was dedicated on September 23, 1905.",
+   "extra": {
+    "candidate": "fillmore#f12",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, March 1987",
+    "url": "https://archive.org/details/newfillmore111newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore111newf.txt",
+    "locator": "newfillmore111newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "The present building was dedicated September 23, 1905"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0637011",
+    "path": "/san-francisco/pacific-heights/california-street/2262/",
+    "eas_address": "2262 CALIFORNIA ST",
+    "method": "EAS exact match on 2266 CALIFORNIA ST → parcel 0637011; sf-parcels has blklot 0637011 active, 2262–2266 CALIFORNIA; the 2025 roll records it as commercial misc, built 1904. EAS puts 2262, 2266 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2262. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1904.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The page already has the synagogue's design by Albert Pissis and its dedication, from the National Register nomination, in more detail."
+   }
+  },
+  {
+   "id": "new-fillmore-0019",
+   "date": "1906",
+   "date_precision": "year",
+   "kind": "occupancy",
+   "address_as_written": "2266 California at Webster",
+   "street_number": "2266",
+   "street_name": "CALIFORNIA",
+   "street_type": "ST",
+   "description": "The temple came through the 1906 earthquake with about $1,000 of damage, and the City then rented it as a temporary courthouse; the graft trial of the political boss Abe Ruef was held here.",
+   "extra": {
+    "candidate": "fillmore#f13",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, March 1987",
+    "url": "https://archive.org/details/newfillmore111newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore111newf.txt",
+    "locator": "newfillmore111newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "The City soon borrowed it"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0637011",
+    "path": "/san-francisco/pacific-heights/california-street/2262/",
+    "eas_address": "2262 CALIFORNIA ST",
+    "method": "EAS exact match on 2266 CALIFORNIA ST → parcel 0637011; sf-parcels has blklot 0637011 active, 2262–2266 CALIFORNIA; the 2025 roll records it as commercial misc, built 1904. EAS puts 2262, 2266 CALIFORNIA ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2262. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1904.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "declined",
+    "note": "The page already has the Superior Court's move into the synagogue after the 1906 earthquake and the Graft Prosecution, in more detail."
+   }
+  },
+  {
+   "id": "new-fillmore-0020",
+   "date": "1903",
+   "date_precision": "circa",
+   "kind": "construction",
+   "address_as_written": "2421 Pierce Street",
+   "street_number": "2421",
+   "street_name": "PIERCE",
+   "street_type": "ST",
+   "description": "By this account the house was built about 1903 to designs by Edgar A. Mathews for James Irvine, owner of the Irvine Ranch in Orange County, who kept it as his San Francisco residence for the rest of his life.",
+   "extra": {
+    "candidate": "fillmore#f14",
+    "record_date": "1987",
+    "unknown_sentence": "Accounts differ on the date of the house: one gives 1897, another about 1903."
+   },
+   "citation": {
+    "label": "The New Fillmore, April 1987",
+    "url": "https://archive.org/details/newfillmore112newf/page/n23/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore112newf.txt",
+    "locator": "newfillmore112newf-n23 (leaf 23)"
+   },
+   "raw": {
+    "text": "All this was built about 1903, designed by Edgar A. Mathews"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0585001",
+    "path": "/san-francisco/pacific-heights/pierce-street/2421/",
+    "eas_address": "2421 PIERCE ST",
+    "method": "EAS exact match on 2421 PIERCE ST → parcel 0585001; sf-parcels has blklot 0585001 active, 2421–2421 PIERCE; the 2025 roll records it as single family residential, built 1908. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1908.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0021",
+   "date": "1986-04",
+   "date_precision": "circa",
+   "kind": "opening",
+   "address_as_written": "1913 Fillmore",
+   "street_number": "1913",
+   "street_name": "FILLMORE",
+   "street_type": "ST",
+   "description": "The Company Store, a clothing shop at 1913 Fillmore, marked its first anniversary in April 1987, which puts its opening at about April 1986.",
+   "extra": {
+    "candidate": "fillmore#f45",
+    "date_basis": "Computed from a first-anniversary advertisement of April 1987."
+   },
+   "citation": {
+    "label": "The New Fillmore, April 1987",
+    "url": "https://archive.org/details/newfillmore112newf/page/n13/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore112newf.txt",
+    "locator": "newfillmore112newf-n13 (leaf 13)"
+   },
+   "raw": {
+    "text": "1st Anniversary at 1913 FILLMORE"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0659005",
+    "path": "/san-francisco/pacific-heights/fillmore-street/1901/",
+    "eas_address": "1901 FILLMORE ST",
+    "method": "EAS exact match on 1913 FILLMORE ST → parcel 0659005; sf-parcels has blklot 0659005 active, 1901–1911 FILLMORE; the 2025 roll records it as commercial retail, built 1904. EAS puts 1901, 1903, 1905, 1907, 1909, 1911, 1913 FILLMORE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1901. The address carries no parcel number in EAS; the active parcel its coordinates fall in is 0659005.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0022",
+   "date": "1884",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "1900 Webster",
+   "street_number": "1900",
+   "street_name": "WEBSTER",
+   "street_type": "ST",
+   "description": "An Italianate house designed by the architect Bernhardt E. Henriksen for a fee of $280 and built under a contract for $8,300 for Peter B. Berges, a wholesale wine and liquor merchant. The original plans, in ink on linen, survive.",
+   "extra": {
+    "candidate": "fillmore#f15",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, May 1987",
+    "url": "https://archive.org/details/newfillmore21newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore21newf.txt",
+    "locator": "newfillmore21newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "1900 Webster is an Italianate in mint condition"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0652017",
+    "path": "/san-francisco/pacific-heights/webster-street/1900/",
+    "eas_address": "1900 WEBSTER ST",
+    "method": "EAS exact match on 1900 WEBSTER ST → parcel 0652017; sf-parcels has blklot 0652017 active, 1900–1900 WEBSTER; the 2025 roll records it as single family residential, built 1917. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1917.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0023",
+   "date": "1940",
+   "date_precision": "circa",
+   "kind": "occupancy",
+   "address_as_written": "2212 Sacramento",
+   "street_number": "2212",
+   "street_name": "SACRAMENTO",
+   "street_type": "ST",
+   "description": "Richard E. Queen died in 1924 and willed the house to the Catholic Church, keeping a life interest for his relatives. In the 1940s and 1950s it was a boarding house, Hawley Manor Guest House.",
+   "extra": {
+    "candidate": "fillmore#f16",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, June 1987",
+    "url": "https://archive.org/details/newfillmore22newf/page/n20/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore22newf.txt",
+    "locator": "newfillmore22newf-n20 (leaf 20)"
+   },
+   "raw": {
+    "text": "In the forties and fifties the building was Hawley"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0627004",
+    "path": "/san-francisco/pacific-heights/sacramento-street/2212/",
+    "eas_address": "2212 SACRAMENTO ST",
+    "method": "EAS exact match on 2212 SACRAMENTO ST → parcel 0627004; sf-parcels has blklot 0627004 active, 2212–2212 SACRAMENTO; the 2025 roll records it as single family residential, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0024",
+   "date": "1987-05-07",
+   "date_precision": "day",
+   "kind": "opening",
+   "address_as_written": "2178 Bush Street",
+   "street_number": "2178",
+   "street_name": "BUSH",
+   "street_type": "ST",
+   "description": "Mesa, a gallery of contemporary painting and sculpture from California and the Southwest, opened here on May 7, 1987.",
+   "extra": {
+    "candidate": "fillmore#f38",
+    "placed_apn": "0660017"
+   },
+   "citation": {
+    "label": "The New Fillmore, June 1987",
+    "url": "https://archive.org/details/newfillmore22newf/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore22newf.txt",
+    "locator": "newfillmore22newf-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "opened on May 7th"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 2178 BUSH ST → parcel 0660017; sf-parcels has blklot 0660017 active, 2178–2182 BUSH; the 2025 roll records it as multi-family residential, built 1900. EAS puts 2178, 2180, 2182 BUSH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2178. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0660017 (2178 BUSH ST) but not published: one thin fact (a shop or gallery opening) from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "new-fillmore-0025",
+   "date": "1986-12",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "3220 Sacramento Street",
+   "street_number": "3220",
+   "street_name": "SACRAMENTO",
+   "street_type": "ST",
+   "description": "A gallery known by its address, 3220 Sacramento Street, opened here in December 1986, showing art and holding events for the benefit of world peace.",
+   "extra": {
+    "candidate": "fillmore#f39"
+   },
+   "citation": {
+    "label": "The New Fillmore, June 1987",
+    "url": "https://archive.org/details/newfillmore22newf/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore22newf.txt",
+    "locator": "newfillmore22newf-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "3220 Sacramento Street, which opened in December of last year"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "1007008",
+    "path": "/san-francisco/pacific-heights/sacramento-street/3220/",
+    "eas_address": "3220 SACRAMENTO ST",
+    "method": "EAS exact match on 3220 SACRAMENTO ST → parcel 1007008; sf-parcels has blklot 1007008 active, 3220–3220 SACRAMENTO; the 2025 roll records it as commercial office, built 1924.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0026",
+   "date": "1901",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2008 Lyon Street",
+   "street_number": "2008",
+   "street_name": "LYON",
+   "street_type": "ST",
+   "description": "One of three houses in a row put up by the developer Daniel Einstein, who called them Colonial Revival.",
+   "extra": {
+    "candidate": "fillmore#f17",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, July 1987",
+    "url": "https://archive.org/details/newfillmore23newf/page/n26/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore23newf.txt",
+    "locator": "newfillmore23newf-n26 (leaf 26)"
+   },
+   "raw": {
+    "text": "The house at 2008 Lyon Street belongs to a group"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0999022",
+    "path": "/san-francisco/pacific-heights/lyon-street/2008/",
+    "eas_address": "2008 LYON ST",
+    "method": "EAS exact match on 2008 LYON ST → parcel 0999022; sf-parcels has blklot 0999022 active, 2008–2008 LYON; the 2025 roll records it as single family residential, built 1901. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1901.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0027",
+   "date": "1926",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2500 Steiner",
+   "street_number": "2500",
+   "street_name": "STEINER",
+   "street_type": "ST",
+   "description": "The Alta Plaza Apartments, a steel-and-concrete \"community apartment\" building owned by a corporation of its residents, was erected in 1926-27 by the architect C. A. Meussdorffer.",
+   "extra": {
+    "candidate": "fillmore#f18",
+    "record_date": "1987",
+    "placed_apn": "0587014"
+   },
+   "citation": {
+    "label": "The New Fillmore, August 1987",
+    "url": "https://archive.org/details/newfillmore24newf/page/n22/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore24newf.txt",
+    "locator": "newfillmore24newf-n22 (leaf 22)"
+   },
+   "raw": {
+    "text": "community apartment was erected in 1926"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 2500 STEINER ST → parcel 0587014; sf-parcels has blklot 0587014 active, 2500–2500 STEINER; no row on the secured roll. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0587014 (2500 STEINER ST) but not published: seed-list finds no 2025 roll row for the parcel (a community apartment building), so no page could be seeded on 2026-11-24. Held with the two Building and Engineering News facts on the same parcel until the parcel has a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "new-fillmore-0028",
+   "date": "1987-08",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "2000 Post",
+   "street_number": "2000",
+   "street_name": "POST",
+   "street_type": "ST",
+   "description": "The 2000 Post apartment complex held its grand opening over two weekends in August 1987.",
+   "extra": {
+    "candidate": "fillmore#f40",
+    "placed_apn": "0682012"
+   },
+   "citation": {
+    "label": "The New Fillmore, August 1987",
+    "url": "https://archive.org/details/newfillmore24newf/page/n23/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore24newf.txt",
+    "locator": "newfillmore24newf-n23 (leaf 23)"
+   },
+   "raw": {
+    "text": "2000 Post, San Francisco's premiere new address is celebrating its grand opening"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 2000 POST ST → parcel 0682012; sf-parcels has blklot 0682012 active, 2000–2000 POST; the 2025 roll records it as single family residential, built 1987. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. Parcel 0682012 is one unit of a condominium (the 2025 roll classes this parcel as a Condominium with zero lot area and gives its location as unit 0101 of the building, which is a flat and not the building); the fact is the building's, and goes on the building's page at this path, which lists its units (#228).",
+    "note": "Placed on parcel 0682012 (2000 POST ST) but not published: one thin fact (a shop or gallery opening) from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "new-fillmore-0029",
+   "date": "1875-06",
+   "date_precision": "month",
+   "kind": "sale",
+   "address_as_written": "1848 Pine",
+   "street_number": "1848",
+   "street_name": "PINE",
+   "street_type": "ST",
+   "description": "Simon Koshland bought the house at 1848 Pine and the garden lot next door early in June 1875 for $5,500. He died here in 1896, and his family kept the house until 1913.",
+   "extra": {
+    "candidate": "fillmore#f19",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, September 1987",
+    "url": "https://archive.org/details/newfillmore25newf/page/n22/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore25newf.txt",
+    "locator": "newfillmore25newf-n22 (leaf 22)"
+   },
+   "raw": {
+    "text": "Simon Koshland bought 1 848 Pine and its next-door garden for $5,500"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0649008",
+    "path": "/san-francisco/pacific-heights/pine-street/1844/",
+    "eas_address": "1844 PINE ST",
+    "method": "EAS exact match on 1848 PINE ST → parcel 0649008; sf-parcels has blklot 0649008 active, 1844–1848 PINE; the 2025 roll records it as multi-family residential, built 1900. EAS puts 1844, 1848 PINE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1844. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0030",
+   "date": "1902",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2020 Jackson",
+   "street_number": "2020",
+   "street_name": "JACKSON",
+   "street_type": "ST",
+   "description": "Built to designs by the architect Julius Krafft under contracts signed by Clara Hellman Heller for more than $45,000, about ten times the average cost of a San Francisco house at the time. She lived here until her death in the mid-1950s.",
+   "extra": {
+    "candidate": "fillmore#f20",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, November 1987",
+    "url": "https://archive.org/details/newfillmore27newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore27newf.txt",
+    "locator": "newfillmore27newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "she was the owner who in 1902 signed the contracts for this house"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0591019",
+    "path": "/san-francisco/pacific-heights/jackson-street/2020/",
+    "eas_address": "2020 JACKSON ST",
+    "method": "EAS exact match on 2020 JACKSON ST → parcel 0591019; sf-parcels has blklot 0591019 active, 2020–2020 JACKSON; the 2025 roll records it as single family residential, built 1902. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1902.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0031",
+   "date": "1899",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2104 Broadway",
+   "street_number": "2104",
+   "street_name": "BROADWAY",
+   "street_type": "",
+   "description": "Built at 2104 Broadway to designs by Frank S. Van Trees for Robert Oxnard, vice president of the American Beet Sugar Company, who died in the house in 1930.",
+   "extra": {
+    "candidate": "fillmore#f21",
+    "record_date": "1987"
+   },
+   "citation": {
+    "label": "The New Fillmore, December 1987",
+    "url": "https://archive.org/details/newfillmore28newf/page/n28/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore28newf.txt",
+    "locator": "newfillmore28newf-n28 (leaf 28)"
+   },
+   "raw": {
+    "text": "In 1899 Robert Oxnard built his residence here at 2104 Broadway"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0565007",
+    "path": "/san-francisco/pacific-heights/broadway/2102/",
+    "eas_address": "2102 BROADWAY",
+    "method": "EAS exact match on 2104 BROADWAY (neither the record nor EAS gives this street a type) → parcel 0565007; sf-parcels has blklot 0565007 active, 2102–2104 BROADWAY; the 2025 roll records it as multi-family residential, built 1904. EAS puts 2102, 2104 BROADWAY None on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2102. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1987, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1904.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0032",
+   "date": "1987-12-06",
+   "date_precision": "day",
+   "kind": "opening",
+   "address_as_written": "1874 Bush Street",
+   "street_number": "1874",
+   "street_name": "BUSH",
+   "street_type": "ST",
+   "description": "New Wave Gallery opened at 1874 Bush with a reception on December 6, 1987.",
+   "extra": {
+    "candidate": "fillmore#f44",
+    "placed_apn": "0663011"
+   },
+   "citation": {
+    "label": "The New Fillmore, December 1987",
+    "url": "https://archive.org/details/newfillmore28newf/page/n11/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore28newf.txt",
+    "locator": "newfillmore28newf-n11 (leaf 11)"
+   },
+   "raw": {
+    "text": "This is a new gallery, with its opening reception Sunday, December 6"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 1874 BUSH ST → parcel 0663011; sf-parcels has blklot 0663011 active, 1872–1874 BUSH; the 2025 roll records it as multi-family residential, built 1900. EAS puts 1872, 1874 BUSH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1872. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0663011 (1872 BUSH ST) but not published: one thin fact (a shop or gallery opening) from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "new-fillmore-0033",
+   "date": "1898",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2509 Scott",
+   "street_number": "2509",
+   "street_name": "SCOTT",
+   "street_type": "ST",
+   "description": "Built to designs by Edgar A. Mathews. The uphill third was added after 1928, when the owner bought 16 more feet of land.",
+   "extra": {
+    "candidate": "fillmore#f22",
+    "record_date": "1989"
+   },
+   "citation": {
+    "label": "The New Fillmore, November 1989",
+    "url": "https://archive.org/details/newfillmore47unse/page/n26/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore47unse.txt",
+    "locator": "newfillmore47unse-n26 (leaf 26)"
+   },
+   "raw": {
+    "text": "The photo on the left shows the two- thirds of a house built in 1898"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0961005",
+    "path": "/san-francisco/pacific-heights/scott-street/2509/",
+    "eas_address": "2509 SCOTT ST",
+    "method": "EAS exact match on 2509 SCOTT ST → parcel 0961005; sf-parcels has blklot 0961005 active, 2509–2509 SCOTT; the 2025 roll records it as single family residential, built 1908. The record was written in 1989, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1908.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0034",
+   "date": "1906-03",
+   "date_precision": "month",
+   "kind": "construction",
+   "address_as_written": "2475 Pine",
+   "street_number": "2475",
+   "street_name": "PINE",
+   "street_type": "ST",
+   "description": "The St. Rose Academy building at 2475 Pine, designed by Albert Pissis in the Beaux-Arts classical style, was built between March 1903, when the Dominican Order leased the land to the school, and its dedication in March 1906. The earthquake a month later did about $10,000 of damage.",
+   "extra": {
+    "candidate": "fillmore#f28",
+    "record_date": "1990"
+   },
+   "citation": {
+    "label": "The New Fillmore, January 1990",
+    "url": "https://archive.org/details/newfillmore49newf/page/n24/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore49newf.txt",
+    "locator": "newfillmore49newf-n24 (leaf 24)"
+   },
+   "raw": {
+    "text": "This building was constructed be¬ tween March 1903"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0658004",
+    "path": "/san-francisco/pacific-heights/pine-street/2445/",
+    "eas_address": "2445 PINE ST",
+    "method": "EAS exact match on 2475 PINE ST → parcel 0658004; sf-parcels has blklot 0658004 active, 2445–2475 PINE; the 2025 roll records it as commercial misc, built 1904. EAS puts 2445, 2475 PINE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2445. The record was written in 1990, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1904.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0035",
+   "date": "1990-01",
+   "date_precision": "month",
+   "kind": "closure",
+   "address_as_written": "2475 Pine",
+   "street_number": "2475",
+   "street_name": "PINE",
+   "street_type": "ST",
+   "description": "St. Rose Academy, the Dominican Sisters' school at 2475 Pine since 1906, had announced that it would close; its building had been cracked by the earthquake the previous October.",
+   "extra": {
+    "candidate": "fillmore#f29"
+   },
+   "citation": {
+    "label": "The New Fillmore, January 1990",
+    "url": "https://archive.org/details/newfillmore49newf/page/n23/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore49newf.txt",
+    "locator": "newfillmore49newf-n23 (leaf 23)"
+   },
+   "raw": {
+    "text": "Now that St. Rose Academy has an¬ nounced its intention to close"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0658004",
+    "path": "/san-francisco/pacific-heights/pine-street/2445/",
+    "eas_address": "2445 PINE ST",
+    "method": "EAS exact match on 2475 PINE ST → parcel 0658004; sf-parcels has blklot 0658004 active, 2445–2475 PINE; the 2025 roll records it as commercial misc, built 1904. EAS puts 2445, 2475 PINE ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 2445.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0036",
+   "date": "1987",
+   "date_precision": "year",
+   "kind": "opening",
+   "address_as_written": "1550 Sutter Street",
+   "street_number": "1550",
+   "street_name": "SUTTER",
+   "street_type": "ST",
+   "description": "Hospice by the Bay opened its headquarters in the Red Cross building then here.",
+   "extra": {
+    "candidate": "fillmore#f41"
+   },
+   "citation": {
+    "label": "The New Fillmore, January 1990",
+    "url": "https://archive.org/details/newfillmore49newf/page/n8/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore49newf.txt",
+    "locator": "newfillmore49newf-n8 (leaf 8)"
+   },
+   "raw": {
+    "text": "opened its headquarters in our neighborhood in the Red Cross building at 1550 Sutter Street in 1987"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0673012",
+    "path": "/san-francisco/pacific-heights/sutter-street/1550/",
+    "eas_address": "1550 SUTTER ST",
+    "method": "EAS exact match on 1550 SUTTER ST → parcel 0673012; sf-parcels has blklot 0673012 active, 1550–1550 SUTTER; the 2025 roll records it as commercial misc, built 1998. EAS files the address under parcel 0673006, which sf-parcels reports retired; the active parcel its coordinates fall in is 0673012.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0037",
+   "date": "1904",
+   "date_precision": "year",
+   "kind": "alteration",
+   "address_as_written": "2475 Pacific Avenue",
+   "street_number": "2475",
+   "street_name": "PACIFIC",
+   "street_type": "AVE",
+   "description": "The entry porch, the bay windows on the right side and the rear extension were additions designed by the architect William Curlett, who grafted Colonial Revival details onto the older house.",
+   "extra": {
+    "candidate": "fillmore#f24",
+    "record_date": "1990"
+   },
+   "citation": {
+    "label": "The New Fillmore, February 1990",
+    "url": "https://archive.org/details/newfillmore410newf/page/n23/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore410newf.txt",
+    "locator": "newfillmore410newf-n23 (leaf 23)"
+   },
+   "raw": {
+    "text": "these additions were de¬ signed in 1904 by William Curlett"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0587018",
+    "path": "/san-francisco/pacific-heights/pacific-avenue/2475/",
+    "eas_address": "2475 PACIFIC AVE",
+    "method": "EAS exact match on 2475 PACIFIC AVE → parcel 0587018; sf-parcels has blklot 0587018 active, 2475–2475 PACIFIC; the 2025 roll records it as single family residential, built 1900. The record was written in 1990, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0038",
+   "date": "1898",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "2500 Green",
+   "street_number": "2500",
+   "street_name": "GREEN",
+   "street_type": "ST",
+   "description": "The house was built for Frank Mortimer Ames, who managed the crockery and glassware department at Nathan-Dohrmann.",
+   "extra": {
+    "candidate": "fillmore#f25",
+    "record_date": "1990"
+   },
+   "citation": {
+    "label": "The New Fillmore, March 1990",
+    "url": "https://archive.org/details/newfillmore411newf/page/n23/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore411newf.txt",
+    "locator": "newfillmore411newf-n23 (leaf 23)"
+   },
+   "raw": {
+    "text": "The architect in 1898 is a surprise: William H. Lillie"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0952006",
+    "path": "/san-francisco/marina/green-street/2500/",
+    "eas_address": "2500 GREEN ST",
+    "method": "EAS exact match on 2500 GREEN ST → parcel 0952006; sf-parcels has blklot 0952006 active, 2500–2500 GREEN; the 2025 roll records it as single family residential, built 1900. The record was written in 1990, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0039",
+   "date": "1990-03",
+   "date_precision": "month",
+   "kind": "move",
+   "address_as_written": "1700 Fillmore Street",
+   "street_number": "1700",
+   "street_name": "FILLMORE",
+   "street_type": "ST",
+   "description": "Goodwill moved its Fillmore Street thrift store here in March 1990, into a former Bank of America branch, giving it 3,800 square feet.",
+   "extra": {
+    "candidate": "fillmore#f42",
+    "placed_apn": "0684018"
+   },
+   "citation": {
+    "label": "The New Fillmore, April 1990",
+    "url": "https://archive.org/details/newfillmore412newf/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore412newf.txt",
+    "locator": "newfillmore412newf-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "occupied the old Bank of America branch site at 1700 Fillmore Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 1700 FILLMORE ST → parcel 0684018; sf-parcels has blklot 0684018 active, 1700–1700 FILLMORE; the 2025 roll records it as commercial retail, built 1913. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 0684018 (1700 FILLMORE ST) but not published: one thin fact (a shop or gallery opening) from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  },
+  {
+   "id": "new-fillmore-0040",
+   "date": "1870",
+   "date_precision": "year",
+   "kind": "construction",
+   "address_as_written": "1717-1719 Webster",
+   "street_number": "1717",
+   "street_name": "WEBSTER",
+   "street_type": "ST",
+   "description": "An Italianate duplex, the survivor of three identical duplexes built as rental housing for the attorney John H. Smyth on a lot bought on December 31, 1869 for $3,000. The other two, downhill toward Sutter, were replaced between 1899 and 1913.",
+   "extra": {
+    "candidate": "fillmore#f27",
+    "record_date": "1990"
+   },
+   "citation": {
+    "label": "The New Fillmore, May 1990",
+    "url": "https://archive.org/details/newfillmore51newf/page/n27/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore51newf.txt",
+    "locator": "newfillmore51newf-n27 (leaf 27)"
+   },
+   "raw": {
+    "text": "The pristine Italianate duplex at 1717-1719 Webster"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0677044",
+    "path": "/san-francisco/pacific-heights/webster-street/1717/",
+    "eas_address": "1717 WEBSTER ST",
+    "method": "EAS exact match on 1717 WEBSTER ST → parcel 0677044; sf-parcels has blklot 0677044 active, 1717–1717 WEBSTER; the 2025 roll records it as multi-family residential, built 1900. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls. The record was written in 1990, after the 1909 renumbering, so the number it gives is a modern number and the renumbering guard does not apply; the assessor dates the building on this parcel to 1900.",
+    "checked_on": "2026-11-24",
+    "note": "No page at this path yet; the parcel is the publisher's to seed."
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "new-fillmore-0041",
+   "date": "1990-05",
+   "date_precision": "month",
+   "kind": "opening",
+   "address_as_written": "3075 Sacramento Street",
+   "street_number": "3075",
+   "street_name": "SACRAMENTO",
+   "street_type": "ST",
+   "description": "Floratek, a florist, had opened here by May 1990, moving from the Castro District.",
+   "extra": {
+    "candidate": "fillmore#f43",
+    "placed_apn": "1024023"
+   },
+   "citation": {
+    "label": "The New Fillmore, May 1990",
+    "url": "https://archive.org/details/newfillmore51newf/page/n26/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/fillmore/raw/newfillmore51newf.txt",
+    "locator": "newfillmore51newf-n26 (leaf 26)"
+   },
+   "raw": {
+    "text": "has opened Floratek out at 3075 Sacramento Street"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "EAS exact match on 3075 SACRAMENTO ST → parcel 1024023; sf-parcels has blklot 1024023 active, 3075–3075 SACRAMENTO; the 2025 roll records it as multi-family residential, built 1900. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
+    "note": "Placed on parcel 1024023 (3075 SACRAMENTO ST) but not published: one thin fact (a shop or gallery opening) from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+   }
+  }
+ ]
+}

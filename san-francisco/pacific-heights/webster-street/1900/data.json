@@ -1,0 +1,185 @@
+{
+  "address": "1900 Webster Street, San Francisco, CA 94115",
+  "path": "/san-francisco/pacific-heights/webster-street/1900/",
+  "apn": "0652017",
+  "block": "0652",
+  "lot": "017",
+  "eas_baseid": "287006",
+  "coordinates": {
+    "lat": 37.788322,
+    "lng": -122.431773
+  },
+  "parcel": {
+    "year_built": 1917,
+    "units": 1,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2230,
+    "building_area_sqft": 2840,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Lower Pacific Heights",
+    "analysis_neighborhood": "Pacific Heights",
+    "property_location_raw": "0000 1900 WEBSTER             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1599515,
+    "assessed_improvement_value": 1066339,
+    "last_sale_date": "2004-04-15"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1917",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Japantown Community & Cultural Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1960",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201807124366",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-07-12",
+      "status_date": "2018-07-20",
+      "estimated_cost": 1,
+      "revised_cost": 7000,
+      "description": "rev to pa# 201607283586; remove portion of dryrot studs at east garage wall and siter new studs. at field inspectors request, memorialize new wall assembly along east property line of garage.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201607283586",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-07-28",
+      "status_date": "2018-07-20",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "foundation replacement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200807287766",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-07-28",
+      "status_date": "2008-10-20",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remove and replace door and window trim on front exterior of dwelling",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200805202495",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-05-20",
+      "status_date": "2008-05-20",
+      "estimated_cost": 9800,
+      "revised_cost": 9800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9400008",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-01-03",
+      "status_date": "1994-09-21",
+      "estimated_cost": 5670,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8207988",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-09-29",
+      "status_date": "1983-03-04",
+      "estimated_cost": 6890,
+      "description": "bldg use: dwg",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 12,
+    "range": "1982–2018",
+    "shown_on_page": 6,
+    "note": "6 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WEBSTER&street_type=ST&address_number=1900",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0652017&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0652&lot=017",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0652017",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.43177343420078%2037.78832212355488)%27)",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-newfillmore21newf-n24",
+      "name": "The New Fillmore, May 1987",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/newfillmore21newf/page/n24/mode/1up",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-engineering-news-1916-10-11-n493",
+      "name": "Building and Engineering News, 11 October 1916",
+      "label": "Building and Engineering News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingengineer16916cont/page/n493/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1884",
+      "kind": "construction",
+      "description": "An Italianate house designed by the architect Bernhardt E. Henriksen for a fee of $280 and built under a contract for $8,300 for Peter B. Berges, a wholesale wine and liquor merchant. The original plans, in ink on linen, survive.",
+      "source": "sf-neighborhood-newspapers-newfillmore21newf-n24"
+    },
+    {
+      "date": "1916-10-11",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame garage, estimated at $400. Henry Riboni was named as contractor.",
+      "source": "building-engineering-news-1916-10-11-n493"
+    }
+  ]
+}
