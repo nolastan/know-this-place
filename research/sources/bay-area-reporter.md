@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1971–1979 read (225 of 1,514 issues). 1980–2005 remain. See the `Verified:` line.
+> - **Coverage:** 1971–1981 read (283 of 1,514 issues). 1982–2005 remain. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/bay-area-reporter/`
 
 - **What:** The *Bay Area Reporter*, San Francisco's gay community newspaper,
@@ -103,9 +103,15 @@
   49 resolved and published on 47 existing pages, none seeded, 12 unresolved.
   From 1976 the clusters are too many to read whole: the first 67 were read in
   full and then only the 401 holding an event word, plus the event-word
-  passages (`kw_bar.py`). **Resume at 1980.** The renaming of the Harvey Milk
+  passages (`kw_bar.py`). The renaming of the Harvey Milk
   Center, 50 Scott Street (26 May 1979), is unresolved because it belongs on
   the Duboce Park place page.
+  1980–1981 (58 issues, 4,841 mentions, 446 address clusters): 35 findings,
+  24 resolved and published on 21 existing pages, none seeded, 11 unresolved
+  (7 held, 4 at numbers EAS no longer has). Only the 148 clusters holding an
+  event word were read, then 145 event-word passages. **Resume at 1982.**
+  Spurs, the Valencia Street bar that opened, was firebombed and burned in
+  these two years, is not placed: the paper never prints its number.
 - **Verified:** 2026-11-24 (lead promoted and 1971–1975 read in one run: 121
   issues downloaded from `_djvu.xml`, 555 windows after the advertisement
   filter in 466 clusters read in full, 149 event-word passages read, 75
@@ -117,4 +123,6 @@
   104 issues, 61 findings, each quote found again; learned that filtering the
   clusters to those holding an event word loses little, and that the event-word
   pass must drop "dedicated" and "landmark", which match a weekly
-  advertisement and every tribute.)
+  advertisement and every tribute. Same day, 1980–1981: 58 issues, 35
+  findings, each quote found again; two issues a month in these years, so two
+  years is a small batch and three or four would fit one run.)
