@@ -8,7 +8,10 @@ homepage map needs: the heading its card shows ("t") and the line under it
 card links to ("p"), and "r": 1 when the research module has published a finding onto
 that page — the map draws those in the brick hue and the rest, pages that are
 permit history and little else, in grey — and "ph", the page's own photo where
-it has one, which the card shows in Street View's place. Coordinates and labels come from each
+it has one, which the card shows in Street View's place — and "m", the names of the businesses
+trading there today (the page's open `businesses` and its `occupants`, as
+the page's own panel lists them), which the Know This Photo app reads to send
+its photographers to storefronts with no photo yet. Coordinates and labels come from each
 page's data.json, or a place's place.json, which is the single source of truth,
 through the same seed_pages functions that write the page's hero. "r" comes
 from research/findings, whose published entries each name the page they went
@@ -31,7 +34,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from seed_pages import (forwarding_parcel, forwards, hero_lines, page_photo,  # noqa: E402
-                        place_sub, read_lot_cache, polygons_contain, BOUNDARY_SOURCE,
+                        place_sub, trading_rows, read_lot_cache, polygons_contain, BOUNDARY_SOURCE,
                         _pack, _polys_bbox, _unpack, unpack_polygons,
                         DS_ANALYSIS_NEIGHBORHOODS, MAP_DIR)
 
@@ -111,6 +114,12 @@ def main() -> None:
         photo = page_photo({**data, "path": path_for_photo})
         if photo:
             props["ph"] = path_for_photo + photo["file"]
+        # Likewise only where something trades: the photo app marks a page
+        # with "m" and no "ph" as a storefront still waiting for its photo.
+        if not is_place:
+            names = [r["name"] for r in trading_rows(data)]
+            if names:
+                props["m"] = names
         if is_place:
             place_paths.add(path)
             place_parcels[path] = [m.replace("-", "") for m in data.get("parcels") or []]

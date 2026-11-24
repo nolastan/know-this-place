@@ -224,8 +224,8 @@ const PHONE = matchMedia("(max-width: 720px)");
 
    A lot with a page is a link to it. A click opens the homepage's card for
    it (the page's photo or Street View, its heading and line, and "See this
-   place"); a modified click goes straight there. The building itself wears
-   the homepage map's resting dot, .map-dot, at the frame's centre.
+   place"); a modified click goes straight there. The building's own lot is
+   filled solid in brick and lifted on a paper halo (.nm-here).
 
    Same law as ever: the .media-empty placeholder is the whole content of the
    block with no JS, and stands if anything here fails. Nothing a reader needs
@@ -414,11 +414,13 @@ customElements.define(
       svg.append(svgEl("path", { class: "nm-lots", d: plain.join("") }),
                  svgEl("path", { class: "nm-lots nm-park", d: park.join("") }));
       const pages = svgEl("g", { class: "nm-pages" });
+      let hereLot = null;
       for (const [id, rec] of this.pages) {
         const lot = this.lots.get(id);
         if (!lot || !seen(lot)) continue;
         if (rec.p === here) {
-          pages.append(svgEl("path", { class: "nm-here", d: lot.d }));
+          // Drawn last, over its neighbours: a paper halo, then the lot.
+          hereLot = lot;
           continue;
         }
         const a = svgEl("a", { href: rec.p, class: rec.r ? "nm-page nm-r" : "nm-page", tabindex: "-1" });
@@ -432,12 +434,21 @@ customElements.define(
         });
         pages.append(a);
       }
-      svg.append(pages, this.labels(w, h));
+      svg.append(pages);
+      if (hereLot) {
+        svg.append(svgEl("path", { class: "nm-here-halo", d: hereLot.d }),
+                   svgEl("path", { class: "nm-here", d: hereLot.d }));
+      }
+      svg.append(this.labels(w, h));
       svg.addEventListener("click", (e) => { if (!e.target.closest("a")) this.close(); });
 
       const old = this.querySelector(".near-map, .media-empty");
       if (old) old.replaceWith(svg);
-      if (!this.querySelector(".map-dot")) {
+      // The building is its own lot, filled solid and lifted. Only a page
+      // with no lot in the cache (a building on a retired parcel, say) falls
+      // back to the homepage's resting dot at the centre.
+      this.querySelector(".map-dot")?.remove();
+      if (!hereLot) {
         const dot = document.createElement("span");
         dot.className = "map-dot";
         this.append(dot);
