@@ -149,9 +149,7 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 .breadcrumb [aria-current="page"] { color: var(--ink); }
 
 /* The address-page masthead: the locator map bleeds to the viewport's top,
-   right and left edges, and the page's chrome rides on it. The shell keeps the
-   same 16:5 ratio as the Mapbox static image so the picture is never
-   cropped. The overlays wear the chip treatment the homepage map
+   right and left edges, and the page's chrome rides on it, at a 16:5 ratio. The overlays wear the chip treatment the homepage map
    gives its popups, anchored to the viewport edges so they stay above the
    bleed, not the content column. */
 .map-shell {
@@ -201,10 +199,9 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 }
 .map-id .breadcrumb .crumb-sep { color: var(--rule); }
 .map-id .crumb-meta { margin: 0.375rem 0 0; }
-/* The map's own credit, drawn by <ktp-map> once the image loads: the image
-   is fetched without the marks Mapbox bakes into its bottom corners, which
-   .map-id and the facade card ride over. Top-right is the one corner no chip
-   uses. The wordmark and the translucent strip are mapbox-gl's own control
+/* The Mapbox credit, drawn by <ktp-areamap> over a hub map's image, which
+   is fetched without the marks Mapbox bakes into its bottom corners. The
+   wordmark and the translucent strip are mapbox-gl's own control
    (.mapboxgl-ctrl-logo / -attrib), literal colours included — they sit on the
    map, not the page, so like the homepage map's they don't follow the tokens. */
 .map-shell ktp-map { position: relative; }
@@ -221,9 +218,8 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 .map-credit-text { padding: 0 5px; background: #ffffff80; }
 .map-credit-text a { color: #000000bf; text-decoration: none; }
 .map-credit-text a:hover { text-decoration: underline; }
-/* The building's marker, drawn by <ktp-map> at the centre of the image (which
-   Mapbox centres on the coordinates; object-fit: cover crops evenly, so the
-   centre holds). It is the homepage map's resting dot for a researched
+/* The building's marker, drawn by <ktp-map> at the centre of the band, which
+   its SVG centres on the coordinates. It is the homepage map's resting dot for a researched
    address at street level — --warm, a --paper ring, 0.95 opacity — drawn at
    radius 8px, a step up from the homepage's zoom-16 stop (6px) so it holds its
    own across the full-bleed band. Mapbox strokes outside the radius, so the
@@ -239,13 +235,84 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
   opacity: 0.95;
   pointer-events: none;
 }
+/* The card a lot opens, on the homepage map and on an address page's band
+   alike — a chip grown into a small version of the page it leads to. */
+.map-card { width: min(17rem, 75vw); }
+.map-card .media { margin: 0; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; }
+.map-card .media img, .map-card .media-empty { aspect-ratio: 16 / 9; }
+.map-card .media-empty { padding: 0; }
+.map-card-body { padding: 0.6rem 0.75rem 0.7rem; }
+.map-card-title {
+  margin: 0; font-family: var(--serif); font-size: 1.1rem;
+  font-weight: 650; line-height: 1.25;
+}
+.map-card-sub {
+  margin: 0.15rem 0 0;
+  font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
+}
+/* The links are the card's point, so they are buttons: the page itself
+   filled in the accent, the story or listing beside it outlined, the way
+   the occupant panel's offer button is drawn on an address page. */
+.map-card-links {
+  display: flex; gap: 0.5rem; margin: 0.75rem 0 0;
+  font-family: var(--sans); font-size: 0.85rem; font-weight: 700;
+}
+.map-card-links a {
+  flex: 1 1 0; display: flex; align-items: center; justify-content: center;
+  padding: 0.5rem 0.6rem; white-space: nowrap; text-decoration: none;
+  border: 1px solid var(--accent); border-radius: var(--radius);
+  color: var(--accent);
+}
+.map-card-links a:hover, .map-card-links a:focus-visible { background: var(--note-bg); }
+.map-card-links a:first-child { background: var(--accent); color: var(--paper); }
+.map-card-links a:first-child:hover,
+.map-card-links a:first-child:focus-visible { background: var(--accent); opacity: 0.88; }
+.map-card-links .ic { font-size: 0.85em; }
+/* The band: the homepage map held still (site.js → <ktp-map>). Its colours
+   are the homepage map's, mixed from the tokens here so the scheme carries
+   them; its widths are the homepage's at street level. The SVG's user unit is
+   the CSS pixel, so every width is in px. */
+.near-map { display: block; width: 100%; height: 100%; background: color-mix(in srgb, var(--cool) 16%, var(--paper)); }
+.nm-land { fill: color-mix(in srgb, var(--rule) 55%, var(--paper)); stroke: color-mix(in srgb, var(--rule) 55%, var(--paper)); stroke-width: 0.5; }
+.nm-street { fill: none; stroke: color-mix(in srgb, var(--paper) 75%, var(--rule)); stroke-linecap: round; stroke-linejoin: round; }
+.nm-street-1 { stroke-width: 10; }
+.nm-street-2 { stroke-width: 8; }
+.nm-street-3 { stroke-width: 5; }
+.nm-lots { fill: var(--paper); stroke: color-mix(in srgb, var(--rule) 85%, var(--ink)); stroke-width: 0.6; }
+.nm-park { fill: color-mix(in srgb, var(--ok) 16%, var(--paper)); }
+.nm-page path { fill: var(--muted); fill-opacity: 0.3; stroke: var(--muted); stroke-opacity: 0.9; stroke-width: 1; }
+.nm-page.nm-r path { fill: var(--warm); fill-opacity: 0.6; stroke: var(--warm); }
+.nm-page:hover path, .nm-page.is-active path { fill-opacity: 0.9; stroke-width: 2.5; }
+/* The building itself: solid in its own hue — grey, or brick where research
+   has published onto it — outlined in ink, set on a paper halo with
+   a soft shadow so it lifts off the lots around it. */
+.nm-here-halo { fill: var(--paper); stroke: var(--paper); stroke-width: 6; stroke-linejoin: round; filter: drop-shadow(0 1px 4px rgb(0 0 0 / 0.35)); }
+.nm-here { fill: var(--muted); stroke: var(--ink); stroke-width: 1.5; stroke-linejoin: round; }
+.nm-here.nm-r { fill: var(--warm); }
+.nm-labels text {
+  font: 12px var(--sans); fill: var(--muted);
+  stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; paint-order: stroke;
+  pointer-events: none;
+}
+/* The card, beside the lot that opened it; over the chips and the facade. */
+.near-pop {
+  position: absolute; z-index: 3;
+  background: var(--panel); color: var(--ink);
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.12); overflow: hidden;
+}
+.near-pop-close {
+  position: absolute; top: 0.4rem; right: 0.4rem; width: 1.6rem; height: 1.6rem;
+  padding: 0; font-size: 1.1rem; line-height: 1; color: var(--ink); cursor: pointer;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 50%;
+}
+.near-pop-close:hover { color: var(--accent); }
 /* The phone's fold for the links (below); no use on a band wide enough to
    hold them on one line. */
 .map-credit-toggle { display: none; }
 
 /* On a phone the 16:5 band is too short to hold the chip, which covered the
-   whole map. The map takes a taller 4:3 frame of its own (site.js asks Mapbox
-   for a matching image rather than cropping the wide one) and the chip
+   whole map. The map takes a taller 4:3 frame of its own and the chip
    drops into the flow beneath it, full width inside the page gutter, lifted
    just over the map's bottom edge. */
 @media (max-width: 720px) {
@@ -802,8 +869,7 @@ ktp-figure { position: relative; }
 .media-lift { position: relative; z-index: 1; max-width: 640px; margin: -4rem 0 0 0.6rem; box-shadow: var(--lift); }
 @media (max-width: 720px) {
   /* Stacked: the card no longer overlaps, and the band takes a taller 4:3
-     frame — site.js requests an image of that ratio on phones rather than
-     cropping the wide one. */
+     frame, which site.js draws more of rather than cropping the wide one. */
   .media-lift { margin: 0; }
   .media-lift.media-portrait { margin-inline: auto; }
   .map-shell ktp-map { height: auto; aspect-ratio: 4 / 3; border-bottom: 1px solid var(--rule); }

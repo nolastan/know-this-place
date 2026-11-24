@@ -18,7 +18,7 @@ There is deliberately **no CMS, no database, no build framework**:
   ([shared/site.css](shared/site.css)) of stat tiles, a visual timeline, charts,
   and icons, plus a tiny progressive-enhancement layer
   ([shared/site.js](shared/site.js): web components for the Street View still,
-  the Mapbox locator map, and chart tooltips). The JS only *enhances* — every
+  the locator map, and chart tooltips). The JS only *enhances* — every
   page renders completely from its HTML alone, so pages stay static and
   crawlable.
   Consistency is enforced by a small contract checked in CI — see
@@ -178,11 +178,11 @@ key are URL-restricted to it, so the maps only render there.
 - [ ] Branch protection on `main`: require PR review (you)
 - [ ] Create a Google Maps **Embed API** key, referrer-locked to `knowthis.place`,
       and put it in `shared/site-config.json`
-- [ ] Create a Mapbox **public token** (`pk.…`) for the per-page locator
-      maps (the homepage map uses no Mapbox: it is drawn from `shared/map/`), URL-restricted to `knowthis.place` and
+- [ ] Create a Mapbox **public token** (`pk.…`) for the neighborhood hub
+      maps (the homepage and address-page maps use no Mapbox: they are drawn
+      from `shared/map/`), URL-restricted to `knowthis.place` and
       `http://localhost:8517`, and put it in `shared/site-config.json` as
-      `mapbox_token`. Address pages request one Static Images call per view, so
-      watch the account's monthly request count as coverage grows
+      `mapbox_token`
 - [ ] Verify each endpoint in [DATA-SOURCES.md](DATA-SOURCES.md) with a live
       query and fill in its `Verified:` date
 - [ ] Verify the property in **Google Search Console** and submit

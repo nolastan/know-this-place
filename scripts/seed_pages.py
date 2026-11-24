@@ -4511,7 +4511,7 @@ def render_html(rec: dict) -> str:
       <div class="media-empty">
         <span class="ic ic-pin"></span>
         <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
-        <small>A locator map appears here once a Mapbox token is configured.</small>
+        <small>The map of the surrounding blocks draws here with JavaScript on.</small>
       </div>
     </figure>
   </ktp-map>
@@ -4960,7 +4960,7 @@ def render_place_html(rec: dict) -> str:
       <div class="media-empty">
         <span class="ic ic-pin"></span>
         <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
-        <small>A locator map appears here once a Mapbox token is configured.</small>
+        <small>The map of the surrounding blocks draws here with JavaScript on.</small>
       </div>
     </figure>
   </ktp-map>
@@ -5335,7 +5335,7 @@ def render_unit_html(rec: dict) -> str:
       <div class="media-empty">
         <span class="ic ic-pin"></span>
         <span>{lat:.4f}, {'−' if lng < 0 else ''}{abs(lng):.4f}</span>
-        <small>A locator map appears here once a Mapbox token is configured.</small>
+        <small>The map of the surrounding blocks draws here with JavaScript on.</small>
       </div>
     </figure>
   </ktp-map>

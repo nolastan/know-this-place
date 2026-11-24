@@ -181,48 +181,7 @@ function carousel(frame) {
   mark();
 }
 
-/* <ktp-map location="LAT,LNG" label="123 Example St">
-     <figure class="media media-map"> …placeholder or fallback… </figure>
-   </ktp-map>
-
-   The locator band: where this building sits, as one flat image from the
-   Mapbox Static Images API, run across the top of the page above the address.
-   Same shape and same law as <ktp-streetview> —
-   the light-DOM .media-empty placeholder is the whole content of the block
-   with no JS, and the image only replaces it once `mapbox_token` is set in
-   site-config.json. Nothing a reader needs to know lives in the picture: the
-   coordinates are in the placeholder, the address is in the <h1>, and the
-   homepage map is where the site's geography is browsable.
-
-   A static image rather than Mapbox GL JS deliberately — an address page
-   loads no third-party script, and an <img> costs one request instead of a
-   map engine. The image is requested without the logo and attribution Mapbox
-   would bake into its bottom corners — the page's chips ride over those edges
-   and would hide them — and the element draws the same credit itself as
-   .map-credit, in the band's top-right corner: the Mapbox wordmark
-   (shared/mapbox-logo.svg, copied from mapbox-gl's own stylesheet) over the
-   © Mapbox, © OpenStreetMap and "Improve this map" links. It goes in with the
-   image, so a page with no picture carries no credit for one. On a phone the
-   links wrapped to three lines over the picture, so there they fold behind an
-   "i" button beside the wordmark until it is tapped.
-
-   The building is marked by the homepage map's resting dot, not a Mapbox pin:
-   the image is centred on the coordinates, so the element draws .map-dot at
-   the band's centre in CSS — the same brick circle with a paper ring the
-   homepage draws for a researched address at street level. It goes in with
-   the image too, and follows the color scheme on its own.
-
-   The basemap follows the reader's color scheme (the same two styles the
-   homepage map uses) and re-renders if they switch mid-visit. */
-/* The band bleeds to the viewport's edges, so it is asked for at the Static
-   Images API's maximum width — 1280x400 and @2x: `@2x` both doubles the
-   pixels and draws labels and roads at twice the size, so the picture is
-   sharp on a hidpi screen and correctly proportioned on an ordinary one.
-   Zoom 16 keeps the parcel and its immediate block legible while letting the
-   band show the surrounding streets. On phones the band is a taller 4:3
-   frame, and phones get an image of that ratio rather than a crop of the wide
-   one (same breakpoint as the CSS). */
-/* The credit both map elements draw over their image, in its top-right
+/* The credit the hub map draws over its Mapbox image, in its top-right
    corner. On a phone the links fold behind an "i", as mapbox-gl's compact
    attribution does on the homepage; the CSS hides the button elsewhere. */
 function mapCredit() {
@@ -245,53 +204,334 @@ function mapCredit() {
   return credit;
 }
 
-const MAP_ZOOM = 16;
-const MAP_SIZE = "1280x400@2x";
-const MAP_SIZE_PHONE = "640x480@2x";
 const PHONE = matchMedia("(max-width: 720px)");
+
+/* <ktp-map location="LAT,LNG" label="123 Example St">
+     <figure class="media media-map"> …placeholder… </figure>
+   </ktp-map>
+
+   The locator band: the blocks around this building, drawn from the city's
+   own lines the way the homepage map draws them — the land, the street
+   centrelines and their names, every lot, and the lots that have a page of
+   their own in the map's two data hues, brick where research has published
+   onto it, grey for permit history and little else. It is the homepage map
+   held still: one fixed frame centred on the building, no panning and no
+   zoom, so it needs only the few cells of build_map_index.py's grid that the
+   frame covers (shared/map/near/<i>_<j>.json, ~440 m a side), and no map
+   engine — the frame is a plain SVG, coloured in site.css from the tokens,
+   so it follows the colour scheme on its own. Nothing here reaches past this
+   site.
+
+   A lot with a page is a link to it. A click opens the homepage's card for
+   it (the page's photo or Street View, its heading and line, and "See this
+   place"); a modified click goes straight there. The building's own lot is
+   filled solid in its own hue (brick or grey, as the homepage colours it)
+   and lifted on a paper halo (.nm-here).
+
+   Same law as ever: the .media-empty placeholder is the whole content of the
+   block with no JS, and stands if anything here fails. Nothing a reader needs
+   is in the picture — the address is the <h1>, and the page's .nearby links
+   carry the neighbours as text. */
+const NEAR = "/shared/map/near/";
+const NEAR_CELL = [0.005, 0.004];       // build_map_index.NEAR_CELL
+const NEAR_ZOOM = 16.5;                  // MapLibre's 512px-tile zoom
+const NEAR_WORLD = 512 * 2 ** NEAR_ZOOM;
+const SVG_NS = "http://www.w3.org/2000/svg";
+const mercX = (lng) => ((lng + 180) / 360) * NEAR_WORLD;
+const mercY = (lat) => {
+  const s = Math.sin((lat * Math.PI) / 180);
+  return (0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI)) * NEAR_WORLD;
+};
+const unmercY = (y) =>
+  (Math.atan(Math.sinh(Math.PI * (1 - (2 * y) / NEAR_WORLD))) * 180) / Math.PI;
+const svgEl = (tag, attrs = {}) => {
+  const n = document.createElementNS(SVG_NS, tag);
+  for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, v);
+  return n;
+};
+/* The homepage map's card, for a lot here: built as nodes, never a string
+   of HTML, from the text the cell file already carries. */
+function nearCard(rec, lat, lng) {
+  const card = document.createElement("article");
+  card.className = "map-card";
+  const sv = document.createElement("ktp-streetview");
+  sv.setAttribute("location", `${lat.toFixed(5)},${lng.toFixed(5)}`);
+  sv.setAttribute("label", rec.t);
+  const fig = document.createElement("figure");
+  fig.className = "media";
+  if (rec.ph) {
+    const img = document.createElement("img");
+    img.src = rec.ph;
+    img.alt = "Photo of " + rec.t;
+    img.decoding = "async";
+    fig.append(img);
+  } else {
+    const empty = document.createElement("div");
+    empty.className = "media-empty";
+    const pin = document.createElement("span");
+    pin.className = "ic ic-pin";
+    empty.append(pin);
+    fig.append(empty);
+  }
+  sv.append(fig);
+  const body = document.createElement("div");
+  body.className = "map-card-body";
+  const title = document.createElement("p");
+  title.className = "map-card-title";
+  title.textContent = rec.t;
+  body.append(title);
+  if (rec.s) {
+    const sub = document.createElement("p");
+    sub.className = "map-card-sub";
+    sub.textContent = rec.s;
+    body.append(sub);
+  }
+  const row = document.createElement("p");
+  row.className = "map-card-links";
+  const go = document.createElement("a");
+  go.href = rec.p;
+  go.textContent = "See this place";
+  row.append(go);
+  body.append(row);
+  card.append(sv, body);
+  return card;
+}
 
 customElements.define(
   "ktp-map",
   class extends HTMLElement {
-    async connectedCallback() {
+    connectedCallback() {
       const empty = this.querySelector(".media-empty");
-      const location = this.getAttribute("location");
-      if (!empty || !location) return; // leave the fallback untouched
+      const [lat, lng] = (this.getAttribute("location") || "").split(",").map(Number);
+      if (!empty || !Number.isFinite(lat) || !Number.isFinite(lng)) return;
+      this.cx = mercX(lng);
+      this.cy = mercY(lat);
+      this.label = this.getAttribute("label") || "this address";
+      this.cells = new Map();     // "i_j" → Promise of the cell, or null
+      this.land = [];
+      this.lots = new Map();      // id → { z, d }
+      this.streets = new Map();   // id → { n, c, pts }
+      this.pages = new Map();     // lot id → the first page on it
+      let queued = false;
+      new ResizeObserver(() => {
+        if (queued) return;
+        queued = true;
+        requestAnimationFrame(() => { queued = false; this.update().catch(() => {}); });
+      }).observe(this);
+    }
 
-      const [lat, lng] = location.split(",").map((n) => Number(n.trim()));
-      if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+    /* Fetch whatever cells the frame now covers, then draw it. */
+    async update() {
+      const w = this.clientWidth, h = this.clientHeight;
+      if (!w || !h) return;
+      const pad = 40;   // a lot just off the edge still draws its sliver
+      const west = ((this.cx - w / 2 - pad) / NEAR_WORLD) * 360 - 180;
+      const east = ((this.cx + w / 2 + pad) / NEAR_WORLD) * 360 - 180;
+      const north = unmercY(this.cy - h / 2 - pad);
+      const south = unmercY(this.cy + h / 2 + pad);
+      const [cw, ch] = NEAR_CELL;
+      const wanted = [];
+      for (let i = Math.floor(west / cw); i <= Math.floor(east / cw); i++) {
+        for (let j = Math.floor(south / ch); j <= Math.floor(north / ch); j++) {
+          wanted.push(`${i}_${j}`);
+        }
+      }
+      await Promise.all(wanted.map((k) => this.cell(k)));
+      if (![...this.cells.values()].some(Boolean)) return;   // nothing to draw: keep the placeholder
+      this.draw(w, h);
+    }
 
-      const { mapbox_token: token } = await siteConfig();
-      if (!token) return; // no token yet → keep the placeholder as-is
+    cell(key) {
+      if (!this.cells.has(key)) {
+        this.cells.set(key, fetch(NEAR + key + ".json")
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null)
+          .then((c) => { if (c) this.take(c); return c; }));
+      }
+      return this.cells.get(key);
+    }
 
-      const label = this.getAttribute("label") || "this address";
-      const dark = matchMedia("(prefers-color-scheme: dark)");
-      const src = () =>
-        "https://api.mapbox.com/styles/v1/mapbox/" +
-        (dark.matches ? "dark-v11" : "light-v11") +
-        `/static/${lng},${lat},${MAP_ZOOM},0/` +
-        (PHONE.matches ? MAP_SIZE_PHONE : MAP_SIZE) +
-        "?attribution=false&logo=false&access_token=" +
-        encodeURIComponent(token);
+    /* A cell's packed lines (whole microdegrees off the cell's corner, then
+       the step to each next point) projected straight to pixels off the
+       frame's centre, deduped against the cells already read. */
+    take(c) {
+      const [ox, oy] = c.o;
+      const pts = (flat) => {
+        let x = flat[0] + ox, y = flat[1] + oy;
+        const out = [[mercX(x / 1e6) - this.cx, mercY(y / 1e6) - this.cy]];
+        for (let k = 2; k < flat.length; k += 2) {
+          x += flat[k]; y += flat[k + 1];
+          out.push([mercX(x / 1e6) - this.cx, mercY(y / 1e6) - this.cy]);
+        }
+        return out;
+      };
+      // Each shape keeps its box, so the frame draws only what it shows.
+      let box;
+      const grow = ([x, y]) => {
+        box[0] = Math.min(box[0], x); box[1] = Math.min(box[1], y);
+        box[2] = Math.max(box[2], x); box[3] = Math.max(box[3], y);
+      };
+      const ring = (flat) => {
+        const p = pts(flat);
+        p.forEach(grow);
+        return "M" + p.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L") + "Z";
+      };
+      const area = (packed) => {
+        box = [Infinity, Infinity, -Infinity, -Infinity];
+        return packed.map((poly) => poly.map(ring).join("")).join("");
+      };
+      this.land.push(area(c.land));
+      for (const [id, z, packed] of c.lots) {
+        if (!this.lots.has(id)) this.lots.set(id, { z, d: area(packed), box });
+      }
+      for (const [id, n, cls, flat] of c.streets) {
+        if (this.streets.has(id)) continue;
+        box = [Infinity, Infinity, -Infinity, -Infinity];
+        const p = pts(flat);
+        p.forEach(grow);
+        this.streets.set(id, { n, c: cls, pts: p, box });
+      }
+      for (const rec of c.pages) {
+        if (!this.pages.has(rec.l)) this.pages.set(rec.l, rec);
+      }
+    }
 
-      const img = document.createElement("img");
-      img.src = src();
-      // No width/height attributes: the .media-map frame sets the box in CSS,
-      // and a height attribute would win over that aspect ratio. Not lazy
-      // either — the band is the first thing on the page, so it is never the
-      // image a reader has to scroll to.
-      img.alt = "Map showing the location of " + label;
-      img.decoding = "async";
-      empty.replaceWith(img);
+    draw(w, h) {
+      const here = location.pathname;
+      const seen = ({ box: b }) => b[2] >= -w / 2 && b[0] <= w / 2 && b[3] >= -h / 2 && b[1] <= h / 2;
+      const svg = svgEl("svg", {
+        class: "near-map", viewBox: `${-w / 2} ${-h / 2} ${w} ${h}`,
+        role: "img", "aria-label": "Map of the blocks around " + this.label,
+      });
+      svg.append(svgEl("path", { class: "nm-land", d: this.land.join("") }));
+      const line = (p) => "M" + p.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L");
+      const byClass = { 1: [], 2: [], 3: [] };
+      for (const s of this.streets.values()) if (seen(s)) byClass[s.c <= 2 ? 1 : s.c === 3 ? 2 : 3].push(line(s.pts));
+      for (const k of [3, 2, 1]) {
+        svg.append(svgEl("path", { class: `nm-street nm-street-${k}`, d: byClass[k].join("") }));
+      }
+      const plain = [], park = [];
+      for (const lot of this.lots.values()) if (seen(lot)) (lot.z === 1 ? park : plain).push(lot.d);
+      svg.append(svgEl("path", { class: "nm-lots", d: plain.join("") }),
+                 svgEl("path", { class: "nm-lots nm-park", d: park.join("") }));
+      const pages = svgEl("g", { class: "nm-pages" });
+      let hereLot = null, hereR = false;
+      for (const [id, rec] of this.pages) {
+        const lot = this.lots.get(id);
+        if (!lot || !seen(lot)) continue;
+        if (rec.p === here) {
+          // Drawn last, over its neighbours: a paper halo, then the lot.
+          hereLot = lot;
+          hereR = !!rec.r;
+          continue;
+        }
+        const a = svgEl("a", { href: rec.p, class: rec.r ? "nm-page nm-r" : "nm-page", tabindex: "-1" });
+        const title = svgEl("title");
+        title.textContent = rec.t;
+        a.append(title, svgEl("path", { d: lot.d }));
+        a.addEventListener("click", (e) => {
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button) return;
+          e.preventDefault();
+          this.open(rec, a, e);
+        });
+        pages.append(a);
+      }
+      svg.append(pages);
+      if (hereLot) {
+        svg.append(svgEl("path", { class: "nm-here-halo", d: hereLot.d }),
+                   svgEl("path", { class: hereR ? "nm-here nm-r" : "nm-here", d: hereLot.d }));
+      }
+      svg.append(this.labels(w, h));
+      svg.addEventListener("click", (e) => { if (!e.target.closest("a")) this.close(); });
 
-      const dot = document.createElement("span");
-      dot.className = "map-dot";
-      this.append(dot);
+      const old = this.querySelector(".near-map, .media-empty");
+      if (old) old.replaceWith(svg);
+      // The building is its own lot, filled solid and lifted. Only a page
+      // with no lot in the cache (a building on a retired parcel, say) falls
+      // back to the homepage's resting dot at the centre.
+      this.querySelector(".map-dot")?.remove();
+      if (!hereLot) {
+        const dot = document.createElement("span");
+        dot.className = "map-dot";
+        this.append(dot);
+      }
+    }
 
-      this.append(mapCredit());
+    /* Street names along their lines, as the homepage map sets them at street
+       level: on the straighter blocks long enough to hold the name, read left
+       to right, a name repeated no closer than 400px, never two touching. */
+    labels(w, h) {
+      const g = svgEl("g", { class: "nm-labels", "aria-hidden": "true" });
+      const SIZE = 12, CHAR = SIZE * 0.56, EDGE = 12;
+      const cands = [];
+      for (const [id, s] of this.streets) {
+        if (!s.n || /^unnamed\b/i.test(s.n) || !(s.box[2] >= -w / 2 && s.box[0] <= w / 2 && s.box[3] >= -h / 2 && s.box[1] <= h / 2)) continue;
+        let p = s.pts;
+        let len = 0;
+        for (let k = 1; k < p.length; k++) len += Math.hypot(p[k][0] - p[k - 1][0], p[k][1] - p[k - 1][1]);
+        const [a, b] = [p[0], p[p.length - 1]];
+        const chord = Math.hypot(b[0] - a[0], b[1] - a[1]);
+        const text = s.n.length * CHAR;
+        if (len < text + 24 || chord < len * 0.9) continue;
+        const mx = (a[0] + b[0]) / 2, my = (a[1] + b[1]) / 2;
+        if (Math.abs(mx) > w / 2 - text / 2 - EDGE || Math.abs(my) > h / 2 - EDGE * 2) continue;
+        if (b[0] < a[0]) p = [...p].reverse();
+        // The label's box, the rotated text's extent, for the overlap test.
+        const ux = Math.abs(b[0] - a[0]) / chord, uy = Math.abs(b[1] - a[1]) / chord;
+        const hw = (text * ux + SIZE * uy) / 2 + 4, hh = (text * uy + SIZE * ux) / 2 + 4;
+        cands.push({ id, n: s.n, c: s.c, len, p, mx, my, hw, hh });
+      }
+      cands.sort((x, y) => x.c - y.c || y.len - x.len);
+      const placed = [];
+      for (const c of cands) {
+        if (placed.some((o) => (o.n === c.n && Math.hypot(o.mx - c.mx, o.my - c.my) < 400) ||
+            (Math.abs(o.mx - c.mx) < o.hw + c.hw && Math.abs(o.my - c.my) < o.hh + c.hh))) continue;
+        placed.push(c);
+        const pid = `nm-l-${this.idBase ??= Math.random().toString(36).slice(2, 8)}-${c.id}`;
+        g.append(svgEl("path", { id: pid, d: "M" + c.p.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join("L"), fill: "none" }));
+        const t = svgEl("text", { dy: "0.35em" });
+        const tp = svgEl("textPath", { href: "#" + pid, startOffset: "50%", "text-anchor": "middle" });
+        tp.textContent = c.n;
+        t.append(tp);
+        g.append(t);
+      }
+      return g;
+    }
 
-      dark.addEventListener("change", () => (img.src = src()));
-      PHONE.addEventListener("change", () => (img.src = src()));
+    /* The card, opened beside the tap and kept inside the band where it fits;
+       on a short phone band it may hang below, over the page. */
+    open(rec, a, e) {
+      this.close();
+      const box = this.getBoundingClientRect();
+      const x = e.clientX - box.left, y = e.clientY - box.top;
+      const lat = unmercY(this.cy + y - box.height / 2);
+      const lng = ((this.cx + x - box.width / 2) / NEAR_WORLD) * 360 - 180;
+      const pop = document.createElement("div");
+      pop.className = "near-pop";
+      const close = document.createElement("button");
+      close.type = "button";
+      close.className = "near-pop-close";
+      close.setAttribute("aria-label", "Close");
+      close.textContent = "×";
+      close.addEventListener("click", () => this.close());
+      pop.append(nearCard(rec, lat, lng), close);
+      this.append(pop);
+      const pw = pop.offsetWidth, ph = pop.offsetHeight, gap = 14;
+      pop.style.left = `${Math.max(8, Math.min(box.width - pw - 8, x - pw / 2))}px`;
+      const below = y + gap + ph <= box.height || y - gap - ph < 8;
+      pop.style.top = `${below ? y + gap : y - gap - ph}px`;
+      a.classList.add("is-active");
+      this.active = a;
+      this.onKey ??= (k) => { if (k.key === "Escape") this.close(); };
+      addEventListener("keydown", this.onKey);
+      pop.querySelector(".map-card-links a")?.focus({ preventScroll: true });
+    }
+
+    close() {
+      this.querySelector(".near-pop")?.remove();
+      this.active?.classList.remove("is-active");
+      this.active = null;
+      if (this.onKey) removeEventListener("keydown", this.onKey);
     }
   },
 );

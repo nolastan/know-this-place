@@ -75,19 +75,7 @@
 /* Above the wordmark and the news cue, which the card may open under. */
 .map-cardpop { z-index: 3; }
 .map-cardpop .maplibregl-popup-content { padding: 0; font-weight: 400; overflow: hidden; }
-.map-card { width: min(17rem, 75vw); }
-.map-card .media { margin: 0; border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; }
-.map-card .media img, .map-card .media-empty { aspect-ratio: 16 / 9; }
-.map-card .media-empty { padding: 0; }
-.map-card-body { padding: 0.6rem 0.75rem 0.7rem; }
-.map-card-title {
-  margin: 0; font-family: var(--serif); font-size: 1.1rem;
-  font-weight: 650; line-height: 1.25;
-}
-.map-card-sub {
-  margin: 0.15rem 0 0;
-  font-family: var(--sans); font-size: 0.8rem; color: var(--muted);
-}
+/* .map-card itself is in site.css: an address page's map opens the same card. */
 /* A restroom's card has no picture and no page: a small kicker says what it
    is, and the data's credit sits under the link. */
 .map-card-plain .map-card-body { padding-top: 0.7rem; padding-right: 2rem; }
@@ -107,24 +95,6 @@
 .map-card-story strong { font-weight: 600; }
 .map-card-story span { margin-top: 0.15rem; }
 .map-card-story small { margin-top: 0.2rem; color: var(--muted); font-size: 0.78rem; }
-/* The links are the card's point, so they are buttons: the page itself
-   filled in the accent, the story or listing beside it outlined, the way
-   the occupant panel's offer button is drawn on an address page. */
-.map-card-links {
-  display: flex; gap: 0.5rem; margin: 0.75rem 0 0;
-  font-family: var(--sans); font-size: 0.85rem; font-weight: 700;
-}
-.map-card-links a {
-  flex: 1 1 0; display: flex; align-items: center; justify-content: center;
-  padding: 0.5rem 0.6rem; white-space: nowrap; text-decoration: none;
-  border: 1px solid var(--accent); border-radius: var(--radius);
-  color: var(--accent);
-}
-.map-card-links a:hover, .map-card-links a:focus-visible { background: var(--note-bg); }
-.map-card-links a:first-child { background: var(--accent); color: var(--paper); }
-.map-card-links a:first-child:hover,
-.map-card-links a:first-child:focus-visible { background: var(--accent); opacity: 0.88; }
-.map-card-links .ic { font-size: 0.85em; }
 /* The close button rides on the photo, so it wears the chip too. */
 .map-cardpop .maplibregl-popup-close-button {
   top: 0.4rem; right: 0.4rem; width: 1.6rem; height: 1.6rem;

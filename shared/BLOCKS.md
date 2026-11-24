@@ -496,24 +496,23 @@ over parcel identifiers) bottom-right. The facade then sits in the hero's
 media slot and **rides over the band's lower-left edge** — `.media-lift`
 pulls it up and gives it a shadow, so the card reads as pinned to the map
 behind it. Under 720px none of this happens: the map takes a taller 4:3
-frame (with a 4:3 image, not a crop), the `.map-id` chip
+frame, the `.map-id` chip
 drops below it — full width inside the gutter, lifted 1.5rem over the map's
 bottom edge — and everything stacks.
 
 Both are `<ktp-*>` wrappers around a `.media` placeholder — always author the
-**placeholder**, never a raw `<img>` or iframe pointing at Google or Mapbox.
-Each enhancement swaps its own placeholder for an image once the matching key
-is in `site-config.json` (`maps_embed_key` for Street View, `mapbox_token` for
-the map), and leaves it standing when there's no key and when there's no JS.
-So imagery turns on across the whole site the day a key is set — with no page
-regeneration. Both wrappers take the same `location` and `label`, and
+**placeholder**, never a raw `<img>` or iframe pointing at Google or a map
+service. `<ktp-streetview>` swaps its placeholder for an image once
+`maps_embed_key` is in `site-config.json`; `<ktp-map>` swaps its own for the
+SVG map it draws from `shared/map/near/`. Both leave it standing when there's
+no JS. Both wrappers take the same `location` and `label`, and
 `location` must equal `coordinates` in `data.json`.
 ```html
 <div class="map-shell">
   <ktp-map location="LAT,LNG" label="ADDRESS">
     <figure class="media media-map">
       <div class="media-empty"><span class="ic ic-pin"></span><span>LAT, LNG</span>
-        <small>A locator map appears here once a Mapbox token is configured.</small></div>
+        <small>The map of the surrounding blocks draws here with JavaScript on.</small></div>
     </figure>
   </ktp-map>
   <a class="map-brand" href="/">Know This Place</a>
@@ -539,19 +538,21 @@ radius — a bleed is only a bleed if nothing frames it); `.media-lift` is the
 4:3 card that overlaps its lower-left corner. Both also zero the browser's
 `<figure>` margin, which is why they reach the edges of their slots — a plain
 `.media` figure (a committed photo) stays inset, and that is the existing
-behaviour, left alone. The map is a
-**locator**, not a data layer: it carries no parcel outline, no label, and no
-fact that isn't already on the page, so nothing is lost when it doesn't load.
-Its one mark is `.map-dot`, drawn by `<ktp-map>` in CSS at the band's centre
-rather than as a Mapbox pin, so the building wears the homepage map's resting
-circle.
+behaviour, left alone. The map is the homepage map **held still**: one
+frame centred on the building, no panning and no zoom, drawn by `<ktp-map>` as
+an SVG — land, streets and their names, every lot, and the lots with a page in
+the two data hues (brick for research, grey for permit history), each a link
+that opens the homepage's `.map-card` and then the page. Stan chose this on
+2026-11-24 over the earlier Mapbox locator that carried no outline and no
+label. It still carries no fact that isn't on the page, so nothing is lost
+when it doesn't draw. The building is marked by its own lot, filled solid
+in its own hue (grey, or brick for research), outlined in ink and lifted on a paper halo (`.nm-here`), not by a
+dot; only a page whose lot isn't in the cache falls back to `.map-dot`.
 (A `<figcaption>` is optional — use it for a real photo's credit, not to repeat
 facts shown elsewhere like the parcel number. Neither image needs an
-attribution caption: Google renders its own into the picture, and `<ktp-map>`
-draws Mapbox's as `.map-credit` in the band's top-right corner, since the
-chips cover the bottom corners where Mapbox would bake it in. On a phone its
-links fold behind an "i" beside the wordmark, as mapbox-gl's compact
-attribution does.)
+attribution caption: Google renders its own into the picture, and the map is
+drawn from the city's own public records (DataSF, cited in DATA-SOURCES.md),
+which carry no credit line, as on the homepage.)
 
 **A page with its own photo shows it instead.** `seed_pages.facade_media` writes
 this block for every hero and card; where `data.json` has a `photo`, the
@@ -591,12 +592,10 @@ check that can pass, so attempting one only burns effort. Write the
 placeholder, confirm `location="LAT,LNG"` equals `coordinates` in `data.json`,
 and stop there.
 
-**The map is the one exception**, and only from one place: `mapbox_token` is
-URL-restricted to `knowthis.place` *and* `http://localhost:8517` (README,
-setup checklist), so the locator map does render for a human previewing the
-site with `python3 scripts/build_site.py --serve`. That is a person's check,
-on that exact port — any other port, any other host, and `curl` (which sends
-no `Referer`) all fail the restriction and prove nothing.
+**The locator band is not affected**: it needs no key and draws anywhere the
+site is served. (A hub's `<ktp-areamap>` still lays a Mapbox image under its
+SVG, and `mapbox_token` is URL-restricted to `knowthis.place` *and*
+`http://localhost:8517`.)
 Committed `assets/` photos use the same `.media` frame with `<img>` (always
 `alt`, `width`, `height`, `loading="lazy"`, and credit + license in the
 caption) and need no wrapper. Never commit Street View captures to `assets/`.
