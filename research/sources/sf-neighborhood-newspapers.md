@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** fifteen titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999), The New Fillmore (27 issues, 1986–1990), Tenant Times (25 issues, 1979–1996), the Bernal Heights papers (178 issues, 1964–2008: the Pictorial, the Bernal Journal and the New Bernal Journal), the St. Mary's Park Improvement Club newsletter (15 issues, 1959–1985, nothing kept) and Street Art News (6 issues, 1975, nothing kept), and a sixteenth in part, The Semaphore of the Telegraph Hill Dwellers (the 92 issues with OCR, 1976–1999) — 1,355 findings, 1,174 resolved, 1,088 published on 828 pages (263 seeded).
+> - **Coverage:** sixteen titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999), The New Fillmore (27 issues, 1986–1990), Tenant Times (25 issues, 1979–1996), the Bernal Heights papers (178 issues, 1964–2008: the Pictorial, the Bernal Journal and the New Bernal Journal), the St. Mary's Park Improvement Club newsletter (15 issues, 1959–1985, nothing kept) and Street Art News (6 issues, 1975, nothing kept), and The Semaphore of the Telegraph Hill Dwellers (194 issues, 1976–2026) — 1,465 findings, 1,280 resolved, 1,194 published on 906 pages (290 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -192,33 +192,36 @@
   (`findings/sf-neighborhood-newspapers/new-fillmore-1986-1990.json`).
   *The Semaphore* (Telegraph Hill Dwellers), every issue with hOCR — 92
   issues, May 1976 to September 1999
-  (`findings/sf-neighborhood-newspapers/semaphore-1976-1999.json`); the
-  105 items from 2000 on have no hOCR and are not read.
+  (`findings/sf-neighborhood-newspapers/semaphore-1976-1999.json`), and
+  the 102 later issues, Winter 1999 to Summer 2026, from their djvu text
+  (`findings/sf-neighborhood-newspapers/semaphore-2000-2026.json`).
   *Tenant Times*, every issue with hOCR — 25 issues, February 1979 to
   March 1996
   (`findings/sf-neighborhood-newspapers/tenant-times-1979-1996.json`).
   The *St. Mary's Park Improvement Club newsletter* (15 issues with hOCR,
   1959–1985) and *Street Art News* (6, 1975) were read whole and yielded
   nothing; they have no findings file.
-  **Not read:** the other three titles, and the Potrero View's November
+  **Not read:** the other two titles, and the Potrero View's November
   2009 issue (no OCR on the Internet Archive). The next batches are the
   titles with little or no hOCR, whose text and leaves come from each
   item's `_djvu.xml` (`/mnt/project-files/mission-papers/dl_djvu.py`
   rebuilds the hOCR-shaped search text and page index from it, so the
-  cluster and build scripts run unchanged): The Semaphore from 2000 on
-  (105 items), the Telegraph Hill Bulletin (4 of 56 with hOCR) and
-  Sunnyside (0 of 30). One title is one batch; take two in a
-  session if the first is short.
+  cluster and build scripts run unchanged): the Telegraph Hill Bulletin
+  (4 of 56 with hOCR) and Sunnyside (0 of 30). One title is one batch;
+  take two in a session if the first is short.
   **Held, Bernal papers:** 16 thin facts on parcels with no page: 307, 410,
   419, 433, 525, 800, 813, 908, 1000 and 249 Cortland (shop openings, the
   Bank of America branch's threatened closing of 1993, the burned-out
   church of 1982), 3223 and 3471 Mission, 811 San Jose, 3214 Folsom (the
   Park Bench Cafe), 400 Alemany (22 townhouses planned, 1999) and 227
   Winfield.
-  **Held, Semaphore:** 11 thin facts on parcels with no page: 16 Napier
-  Lane, 6 Gerke Alley, 1620 Montgomery, 414 Francisco, 450 Broadway, 839
-  Columbus, 2209 Powell, 886 Broadway (Alfred's, 1928), 701 Chestnut, 1741
-  Powell (the Pagoda Palace) and 234 Columbus (J. B. Monaco's last studio).
+  **Held, Semaphore:** 12 thin facts on parcels with no page: 16 Napier
+  Lane, 6 Gerke Alley, 414 Francisco, 450 Broadway, 839 Columbus, 2209
+  Powell, 886 Broadway (Alfred's, 1928), 701 Chestnut, 1741 Powell (the
+  Pagoda Palace), 234 Columbus (J. B. Monaco's last studio), 2237 Powell
+  (Jackson's, a gay bar, 1961–1976) and 801 Pacific (the fire of February
+  2017). 1620 Montgomery, held by the first Semaphore batch, was taken up
+  when the second seeded its page.
   **Held, New Fillmore:** 7 shop and gallery openings on parcels with no
   page, and the Alta Plaza Apartments at 2500 Steiner (parcel 0587014,
   with two Building and Engineering News facts, all three checked): the
@@ -414,6 +417,22 @@
   street number on the cited leaf, and every day-precision date within the
   surrounding article, and the eight the date check flagged were read by
   hand and stood.)
+  2026-11-24 (twelfth run, The Semaphore, 2000-2026. 102 issues from djvu
+  text, 3,969 mentions, 622 passages read by hand, 110 findings, 105
+  published on 94 pages, 27 seeded, 2 held, 3 unplaced. Nearly every
+  commission vote the Dwellers report from 2000 to 2005 was already on
+  the page from the Planning Commission minutes, and the Beat and gay
+  bars from the city's context statements. What the later paper adds is
+  the Telegraph Hill Historic District's own building record, printed in
+  no. 175 for the 1906 centennial out of Anne Bloomfield's district
+  report: the year and first owner, with his trade, of some forty houses
+  of 1852 to 1902, 23 of which had no page; and the openings and closings
+  of the last twenty years, which no other source on the site reaches.
+  **Learned:** (1) check the pages before reading closely where the city
+  has a context statement, because most of the history articles restate
+  it; (2) a paper's reprint of a district report is a citable route to a
+  report the site does not hold; (3) the roll's 1900 for a pre-1906 house
+  is a placeholder, so state the district's date beside it.)
   2026-11-24 (eleventh run, the Bernal Heights papers, 1964-2008. 178
   issues, 6,174 mentions, 446 passages read by hand, 62 findings, 43
   published on 37 pages, 15 seeded, 16 held, 3 unplaced. What it adds: the

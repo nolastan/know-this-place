@@ -1,0 +1,178 @@
+{
+  "address": "110 Alta Street, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/alta-street/110/",
+  "apn": "0105006",
+  "block": "0105",
+  "lot": "006",
+  "eas_baseid": "277549",
+  "coordinates": {
+    "lat": 37.80158,
+    "lng": -122.405086
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 3,
+    "stories": 3,
+    "rooms": 8,
+    "bathrooms": 3,
+    "lot_area_sqft": 1629,
+    "building_area_sqft": 2016,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0110 ALTA                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1130132,
+    "assessed_improvement_value": 301360,
+    "last_sale_date": "2000-10-11"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200902273059",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2009-02-27",
+      "status_date": "2010-10-18",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "renew pa# 2004/07/30/0249 to obtain final inspection. all work has been completed.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407300249",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2004-07-30",
+      "status_date": "2009-01-15",
+      "estimated_cost": 9500,
+      "revised_cost": 10000,
+      "description": "in fill addition @ 2nd floor at rear of building (variance application 2004.0681v)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200212042798",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-12-04",
+      "status_date": "2003-05-14",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replace (e) plaster by 5/8\" gyp.bd. & remodel (e)2 kitchen & 2 bath on upper 2 floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200211212046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-11-21",
+      "status_date": "2003-01-24",
+      "estimated_cost": 5800,
+      "revised_cost": 5800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200210048338",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "2002-10-04",
+      "status_date": "2009-01-15",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "install new fire system in basement garage",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200202219707",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2002-02-21",
+      "status_date": "2003-05-14",
+      "estimated_cost": 3000,
+      "revised_cost": 6000,
+      "description": "install an access stairs at the end of the lot per plans",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200102021209",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-02-02",
+      "status_date": "2003-05-21",
+      "estimated_cost": 30000,
+      "revised_cost": 60000,
+      "description": "enclose rear under (e) bldg convert front portion on g/f to off st parking add a single level deck a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9212875",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1992-07-31",
+      "status_date": "1992-12-08",
+      "estimated_cost": 1000,
+      "revised_cost": 0,
+      "description": "install missing siding on west side, new redwood siding",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=ALTA&street_type=ST&address_number=110",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0105006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0105&lot=006",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0105006",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-thesemaphore2006spring175-n15",
+      "name": "The Semaphore (Telegraph Hill Dwellers), no. 175, April 2006",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/thesemaphore2006spring175/page/n15/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1866",
+      "kind": "construction",
+      "description": "A Greek Revival house of 1866, remodeled in 1937; its first owner was Patrick Moyles, a laborer at the Greenwich Dock. One of the Telegraph Hill houses that came through the 1906 fire.",
+      "source": "sf-neighborhood-newspapers-thesemaphore2006spring175-n15"
+    }
+  ],
+  "unknowns": [
+    "The Semaphore, drawing on the Telegraph Hill Historic District's research, dates the building at 110 Alta to 1866; the assessor's roll says 1900."
+  ]
+}

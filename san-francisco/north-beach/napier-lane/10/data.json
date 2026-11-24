@@ -1,0 +1,143 @@
+{
+  "address": "10 Napier Lane, San Francisco, CA 94133",
+  "path": "/san-francisco/north-beach/napier-lane/10/",
+  "apn": "0085007A",
+  "block": "0085",
+  "lot": "007A",
+  "eas_baseid": "276880",
+  "coordinates": {
+    "lat": 37.802283,
+    "lng": -122.403753
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 801,
+    "building_area_sqft": 908,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Telegraph Hill",
+    "analysis_neighborhood": "North Beach",
+    "property_location_raw": "0000 0010 NAPIER              LN0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 698215,
+    "assessed_improvement_value": 299230,
+    "last_sale_date": "2012-12-28"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A*",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Article 10 Historic District, California Register Historic District, Historic Survey Result",
+    "yearbuilt": "1900",
+    "survey_name": "CLARK HOUSE",
+    "in_article_10_11_historic_district": true,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Telegraph Hill Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "Article 10 historic district",
+    "local_landmark_protection": true,
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201406118162",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2014-06-11",
+      "status_date": "2019-04-03",
+      "estimated_cost": 1,
+      "description": "rear facade refurbishment including; replacement with minor alterations of miscellaneous existing wood windows & doors with new dual-glazed, painted wood; lowering & partial remodel of existing wood deck/wallway @ lower floor to match lowered floor level under pa #201401166430.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401166430",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-16",
+      "status_date": "2015-11-12",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "reinforced concrete, reinforce extg main floor wood framing, brace lower floor level for lateral load resistance, upgrade extg lower floor bathroom, and interior remodel of lower floor including creation of master bath.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200507218261",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-07-21",
+      "status_date": "2005-08-11",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "repair dry rot on rear deck(approx 30%).repair dry rot around rear 2 windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2005–2014",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=NAPIER&street_type=LN&address_number=10",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0085007A&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0085&lot=007A",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0085007A",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40375318406485%2037.802283448574656)%27)",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-thesemaphore2016autumn215-n9",
+      "name": "The Semaphore (Telegraph Hill Dwellers), no. 215, September 2016",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/thesemaphore2016autumn215/page/n9/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1857",
+      "kind": "construction",
+      "description": "The oldest house on Napier Lane, formerly Billings Place, a board-frame cottage of 1857 first the home of Mortimer and John Clark, a teamster and a laborer at the Greenwich Dock Warehouse. Its Italianate false front likely dates from about 1887, but the outline and roof of the 1857 cottage remain. One of the Telegraph Hill houses that came through the 1906 fire.",
+      "source": "sf-neighborhood-newspapers-thesemaphore2016autumn215-n9"
+    }
+  ],
+  "unknowns": [
+    "The Semaphore, drawing on the Telegraph Hill Historic District's research, dates the building at 10 Napier to 1857; the assessor's roll says 1900."
+  ]
+}
