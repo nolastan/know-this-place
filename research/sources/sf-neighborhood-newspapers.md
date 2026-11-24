@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** ten titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) and Park Bell (64 issues, 1987–1999) — 1,167 findings, 1,028 resolved, 945 published on 712 pages (231 seeded).
+> - **Coverage:** eleven titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999) and The New Fillmore (27 issues, 1986–1990) — 1,208 findings, 1,061 resolved, 975 published on 738 pages (239 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -187,9 +187,12 @@
   — 64 items, 1987 to 1999
   (`findings/sf-neighborhood-newspapers/park-bell-1987-1999.json`; club
   minutes and repeating ads, two findings).
-  **Not read:** the other eight titles, and the Potrero View's November
-  2009 issue (no OCR on the Internet Archive). The next batches: The New
-  Fillmore (27 of 28 items have hOCR), Tenant Times (25 of 26), the
+  *The New Fillmore*, every issue with hOCR — 27 issues, May 1986 to
+  May 1990
+  (`findings/sf-neighborhood-newspapers/new-fillmore-1986-1990.json`).
+  **Not read:** the other seven titles, and the Potrero View's November
+  2009 issue (no OCR on the Internet Archive). The next batches: Tenant
+  Times (25 of 26), the
   Semaphore titles (92 of 197 with hOCR), the St. Mary's Park newsletter
   (15 of 17) and Street Art News (6 of 7); then the titles with little or
   no hOCR, whose text has to come from `_djvu.txt` and the leaf from
@@ -197,6 +200,11 @@
   catalogue names, 1964–2008), the Telegraph Hill Bulletin (4 of 56 with
   hOCR) and Sunnyside (0 of 30). One title is one batch; take two in a
   session if the first is short.
+  **Held, New Fillmore:** 7 shop and gallery openings on parcels with no
+  page, and the Alta Plaza Apartments at 2500 Steiner (parcel 0587014,
+  with two Building and Engineering News facts, all three checked): the
+  parcel has no 2025 roll row, so `seed-list` skips it. Whoever works out
+  how that building is assessed can seed it and publish all three.
   **Unplaced, Tenderloin Times:** twelve facts at numbers no parcel
   carries today, among them the St. Francis theater at 965 Market (built
   1910 as the Empress), the Hastings demolitions at 355 and 363 Golden
@@ -387,6 +395,25 @@
   street number on the cited leaf, and every day-precision date within the
   surrounding article, and the eight the date check flagged were read by
   hand and stood.)
+  2026-11-24 (eighth run, The New Fillmore. 27 issues, 3,409 mentions,
+  152 passages read by hand, 41 findings, 33 resolved, 30 published on 26
+  pages, 8 seeded, 3 declined, 8 held. The best of it is Anne Bloomfield's
+  'Great Old Houses' column: the architect, client, year and contract
+  price of one house an issue (2561 Washington, Charles Havens, 1890,
+  $6,870; 1900 Webster, Bernhardt Henriksen, 1884; 2104 Broadway, Frank
+  Van Trees for Robert Oxnard, 1899; the Bourn mansion, Willis Polk, 1896;
+  St. Rose Academy, Albert Pissis, 1903-06; William Curlett's 1904
+  additions to the Leale House), plus The Lab's start as Co Lab at 1805
+  Divisadero about 1984.
+  **Learned:** (1) a column about one house names its address once, in a
+  headline or caption, so the address filter keeps almost none of it: pull
+  a recurring column by its title and read it whole; (2) the Archive's
+  `_page_numbers.json` is wrong for this title, so cite the leaf alone;
+  (3) these are landmark houses and the pages already carry the
+  designation's account: read the page first, publish only what is new,
+  and state a conflicting date as a conflict rather than choosing; (4) a
+  held permit fact can corroborate the new one: the 1916 and 1918 permits
+  on the seeded parcels name the same owners the column does.)
   2026-11-24 (seventh run, the Tenderloin Times and Park Bell. Tenderloin
   Times: 141 issues, 9,118 mentions, 841 passages by five readers, 349
   candidates, 163 findings, 145 resolved, 142 published on 119 pages, 4
