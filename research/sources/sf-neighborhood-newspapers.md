@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** eight titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004) and the Richmond ReView (228 issues, 1988–2008) — 1,002 findings, 881 resolved, 801 published on 595 pages (227 seeded).
+> - **Coverage:** ten titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) and Park Bell (64 issues, 1987–1999) — 1,167 findings, 1,028 resolved, 945 published on 712 pages (231 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -181,15 +181,29 @@
   (`findings/sf-neighborhood-newspapers/mission-news-1983-2004.json`).
   The *Richmond ReView*, every item — 228 items, November 1988 to 2008
   (`findings/sf-neighborhood-newspapers/richmond-review-1988-2008.json`).
-  **Not read:** the other ten titles, and the Potrero View's November
-  2009 issue (no OCR on the Internet Archive). The next batches, in the
-  order this site needs them: the Bernal Journals (179 items under six
-  catalogue names, 1964–2008; **their items have no hOCR files**, so the
-  text has to come from `_djvu.txt` and the leaf from `_djvu.xml` or the
-  page count), Park Bell (Excelsior/Portola), The New Fillmore, the
-  Semaphore titles and Tenderloin Times (141 items and Park Bell's 64 are
-  already fetched into `corpora/`, both with hOCR). One title is one batch;
-  take two in a session if the first is short.
+  The *Tenderloin Times*, every item — 141 items, 1977 to 1994
+  (`findings/sf-neighborhood-newspapers/tenderloin-times-1977-1994.json`).
+  *Park Bell*, the St. Mary's Park Improvement Club newsletter, every item
+  — 64 items, 1987 to 1999
+  (`findings/sf-neighborhood-newspapers/park-bell-1987-1999.json`; club
+  minutes and repeating ads, two findings).
+  **Not read:** the other eight titles, and the Potrero View's November
+  2009 issue (no OCR on the Internet Archive). The next batches: The New
+  Fillmore (27 of 28 items have hOCR), Tenant Times (25 of 26), the
+  Semaphore titles (92 of 197 with hOCR), the St. Mary's Park newsletter
+  (15 of 17) and Street Art News (6 of 7); then the titles with little or
+  no hOCR, whose text has to come from `_djvu.txt` and the leaf from
+  `_djvu.xml` or the page count: the Bernal Journals (179 items under six
+  catalogue names, 1964–2008), the Telegraph Hill Bulletin (4 of 56 with
+  hOCR) and Sunnyside (0 of 30). One title is one batch; take two in a
+  session if the first is short.
+  **Unplaced, Tenderloin Times:** twelve facts at numbers no parcel
+  carries today, among them the St. Francis theater at 965 Market (built
+  1910 as the Empress), the Hastings demolitions at 355 and 363 Golden
+  Gate (1989–90), Newman's Gym at 142 Leavenworth, the Chinatown Resources
+  Development Center's 655 Geary, Canon Kip at 174 Eighth Street and
+  Rainbow Grocery's 1899 Mission. **Held, Tenderloin Times:** 6 single
+  facts on parcels with no page.
   **Unplaced, Richmond ReView:** the 1894 building at 4004 Geary demolished
   in 1988, the Crystal Palace Salt Water Baths at 775 Lombard (1924–1956),
   the 1952 Safeway at 3132 Clement (closed November 1994), Gillon Lumber's
@@ -373,6 +387,27 @@
   street number on the cited leaf, and every day-precision date within the
   surrounding article, and the eight the date check flagged were read by
   hand and stood.)
+  2026-11-24 (seventh run, the Tenderloin Times and Park Bell. Tenderloin
+  Times: 141 issues, 9,118 mentions, 841 passages by five readers, 349
+  candidates, 163 findings, 145 resolved, 142 published on 119 pages, 4
+  seeded, 3 declined, 6 held. The best of it: the residential-hotel fights
+  building by building (the P&W emptied and reopened as the Hotel St.
+  George, 1982; the Astoria's $450,000 settlement, 1986; the Abigail
+  ruling, July 1988); the nonprofits' first buildings (44 McAllister, 480
+  Eddy, the Aarti, the Dorothy Day Community, the Senator); the State
+  Garage site bought for the Tenderloin playground (13 September 1990);
+  the 1989 earthquake's closures and the Hastings demolitions that
+  followed; and the Southeast Asian shops and restaurants by opening date.
+  Park Bell: 64 issues, 59 passages read by hand, two findings on one page.
+  **Learned:** (1) the catalogue title of some items carries the issue
+  date in parentheses, so strip it before building a citation label; (2)
+  this paper prints one building's number two ways often enough (five
+  cases) that a number seen once is worth checking against the rest of the
+  run before it is placed; (3) the date a reader gives may come from
+  another issue than the one cited: the audit's day-near-quote check
+  caught two, and both were cut back to the month the cited article
+  supports; (4) a club newsletter is not worth readers: Park Bell's 1,122
+  mentions were 55 of 59 passages of ads and members' addresses.)
   2026-11-24 (sixth run, the Richmond ReView. Read 228 issues, 19,699
   numbered-address mentions; 1,171 passages by seven readers (2,038
   windows merged); 338 candidates, 155 findings, 123 resolved, 107
