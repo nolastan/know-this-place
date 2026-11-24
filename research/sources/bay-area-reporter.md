@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1971–1989 read (701 of 1,514 issues). 1990–2005 remain. See the `Verified:` line.
+> - **Coverage:** 1971–1991 read (805 of 1,514 issues). 1992–2005 remain. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/bay-area-reporter/`
 
 - **What:** The *Bay Area Reporter*, San Francisco's gay community newspaper,
@@ -107,15 +107,17 @@
   Center, 50 Scott Street (26 May 1979), is unresolved because it belongs on
   the Duboce Park place page.
   1980–1981 (58 issues, 4,841 mentions, 446 address clusters): 35 findings,
-  24 resolved and published on 21 existing pages, none seeded, 11 unresolved
-  (7 held, 4 at numbers EAS no longer has). Only the 148 clusters holding an
+  24 resolved and published on 21 existing pages, none seeded; three more
+  were placed or taken up by later batches (the two at 150 Eureka in
+  1990–1991), leaving 5 held and 3 at numbers EAS no longer has. Only the 148 clusters holding an
   event word were read, then 145 event-word passages.
   Spurs, the Valencia Street bar that opened, was firebombed and burned in
   these two years, is not placed: the paper never prints its number.
   1982–1983 (104 issues, 9,246 mentions, 640 address clusters): 32 findings,
   28 resolved and published on 27 pages (2 seeded: 1488 Pine, which took up a
   held fact of 1972, and 356 Seventh, the fire station the 1981 paper printed
-  as 365), 4 unresolved (1 held, 3 at numbers EAS no longer has). The paper is
+  as 365); 77 Battery's held fact was taken up in 1990–1991, leaving 2
+  unresolved at numbers EAS no longer has. The paper is
   weekly from 1982, so two years is 104 issues and a full run.
   1984–1985 (104 issues, 12,154 mentions, 550 address clusters): 33 findings,
   28 resolved and published (one taken up when 1988–1989 seeded its page),
@@ -135,7 +137,14 @@
   Castro and 18th Street fire of 2 December 1988, the closing of Maud's and of
   Peg's Place, Dignity's last service at St. Boniface, and the paper's own
   move to Ninth Street.
-  **Resume at 1990.**
+  1990–1991 (104 issues, 12,603 mentions, 607 address clusters): 28 findings,
+  25 resolved and published on 25 pages, 3 of them seeded (77 Battery, 150
+  Eureka, 1340 Golden Gate, each taking up facts held for it), 1 held, 2
+  unresolved. They include the firebombing of the Metropolitan Community
+  Church, the fires at Club Screw and My Place, the Lone Star Saloon's return
+  after the earthquake, and the Center for Positive Care. Two pages dated a
+  club's opening differently and now state both.
+  **Resume at 1992.**
 - **Verified:** 2026-11-24 (lead promoted and 1971–1975 read in one run: 121
   issues downloaded from `_djvu.xml`, 555 windows after the advertisement
   filter in 466 clusters read in full, 149 event-word passages read, 75
@@ -149,4 +158,4 @@
   pass must drop "dedicated" and "landmark", which match a weekly
   advertisement and every tribute. Same day, 1980–1981: 58 issues, 35
   findings, each quote found again; two issues a month in these years, so two
-  years is a small batch and three or four would fit one run. Same day, 1982–1983: 104 issues, 32 findings, each quote found again; the classified pages now swamp the event-word pass, so it was narrowed to fire, closed and lost-lease words after the first 20 issues. Same day, 1984–1985: 104 issues, 33 findings, each quote found again; `evf.py` now filters the clusters, and from mid-1984 a second, tighter filter drops classified pages and calendar listings, which hold no building facts. Same day, 1986–1987: 106 issues, 26 findings, each quote found again; by now most findings are openings, closings and moves of institutions already on a page, so the overlap check matters more than seeding. Same day, 1988–1989: 104 issues, 27 findings, each quote found again; a pass over the weeks after the 1989 earthquake found no damage report tied to a street number, and `evf2.py` now does the tighter filtering in one step.)
+  years is a small batch and three or four would fit one run. Same day, 1982–1983: 104 issues, 32 findings, each quote found again; the classified pages now swamp the event-word pass, so it was narrowed to fire, closed and lost-lease words after the first 20 issues. Same day, 1984–1985: 104 issues, 33 findings, each quote found again; `evf.py` now filters the clusters, and from mid-1984 a second, tighter filter drops classified pages and calendar listings, which hold no building facts. Same day, 1986–1987: 106 issues, 26 findings, each quote found again; by now most findings are openings, closings and moves of institutions already on a page, so the overlap check matters more than seeding. Same day, 1988–1989: 104 issues, 27 findings, each quote found again; a pass over the weeks after the 1989 earthquake found no damage report tied to a street number, and `evf2.py` now does the tighter filtering in one step. Same day, 1990–1991: 104 issues, 28 findings, each quote found again; three parcels gained a second fact and were seeded with what had been held for them, one of those a Redevelopment Agency form read again against its page image.)

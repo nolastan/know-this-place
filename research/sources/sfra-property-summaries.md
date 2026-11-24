@@ -142,7 +142,7 @@
   Property Summaries read 2,132 pages for one published fact. The only
   untried lever is a date for the Yerba Buena block files, whose block-lot
   prints include many buildings that still stand.
-  Held for a page: 66 facts (`check.py --held`). Left out as findings: two
+  Held for a page: 66 facts (`check.py --held`), 65 since 1340 Golden Gate was taken up with a Bay Area Reporter page on 2026-11-24. Left out as findings: two
   1957 appraisal sheets with no street number (block 702 lot 23, block 733
   lots 1 and 1A), an undated service-station appraisal at 1301 Golden Gate
   Avenue, and five 1957 acquisition dividers for the cleared 1700 block of
