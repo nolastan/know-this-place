@@ -8,6 +8,7 @@ An affluent residential enclave on the bluffs above the Golden Gate, laid out fr
 - [17th Avenue](17th-avenue/) — 1 building, built 1913.
 - [18th Avenue](18th-avenue/) — 1 building, built 1926.
 - [19th Avenue](19th-avenue/) — 1 building, built 1910.
+- [21st Avenue](21st-avenue/) — 1 building, built 1914.
 - [22nd Avenue](22nd-avenue/) — 3 buildings, built 1910–1950.
 - [23rd Avenue](23rd-avenue/) — 1 building, built 1908.
 - [24th Avenue](24th-avenue/) — One 1903 house across two lots, tied to Ansel Adams.

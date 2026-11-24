@@ -24730,13 +24730,12 @@
    "address_as_written": "773 FORTY-FOURTH AVE",
    "street_number": "773",
    "street_name": "44TH",
-   "description": "A permit was sought for alterations: add room on roof, estimated at $1,000. Nick Hemminga was named as contractor.",
+   "description": "A permit was sought for alterations: a room added on the roof, estimated at $1,000. Nick Hemminga was named as contractor.",
    "extra": {
     "item": "2235",
     "section": "Building Permit Applications",
     "heading": "ADDITION",
-    "cost_usd": 1000,
-    "placed_apn": "1600012"
+    "cost_usd": 1000
    },
    "citation": {
     "label": "Building and Engineering News, 29 September 1928",
@@ -24745,16 +24744,23 @@
     "locator": "1928-09-29-n461 : item (2235), Building Permit Applications, San Francisco County"
    },
    "raw": {
-    "text": "(2235) 773 FORTY-FOURTH AVE. Add room on roof.. Contractor - Nick Hemminga, 627 3Sth Ave., San Francisco. $1000",
+    "text": "(2235) 773 FORTY-FOURTH AVE. Add room on roof. Contractor - Nick Hemminga, 627 3Sth Ave., San Francisco. $1000",
     "ocr_uncertain": true,
     "note": "Rebuilt from the OCR heading and the architect, contractor and cost fields; the owner, sureties and payment schedule are cut."
    },
-   "confidence": "low",
+   "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-11-15",
-    "method": "Lot built from the block corner on the DPW centrelines and the sf-parcels shapes; street numbers matched exactly in sf-eas-addresses.",
-    "note": "Placed on parcel 1600012 (number; roll year 1914 fits) but not checked against the page image and not published: a single house with no architect named and no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+    "status": "resolved",
+    "apn": "1600012",
+    "path": "/san-francisco/outer-richmond/44th-avenue/773/",
+    "eas_address": "773 44TH AVE",
+    "method": "The printed street number, 773 FORTY-FOURTH AVE, matches one sf-eas-addresses row, on parcel 1600012; the roll dates the building 1914, which is before the work. Held until the parcel had a page, then taken up: location, wording, names and cost read against the page image.",
+    "checked_on": "2026-11-24",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "761"
    }
   },
   {

@@ -1,0 +1,118 @@
+{
+  "address": "1371 25th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/25th-avenue/1371/",
+  "apn": "1780015",
+  "block": "1780",
+  "lot": "015",
+  "eas_baseid": "317224",
+  "coordinates": {
+    "lat": 37.761957,
+    "lng": -122.483791
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1700,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1371 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 772651,
+    "assessed_improvement_value": 135323
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200909257727",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-09-25",
+      "status_date": "2009-11-02",
+      "estimated_cost": 1000,
+      "revised_cost": 1000,
+      "description": "fire related, plaster remodel only to expose damage & allow visual inspection engineered plans to follow for exploratory reasons only, building is vacant",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200906231053",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-06-23",
+      "status_date": "2009-07-08",
+      "estimated_cost": 5085,
+      "revised_cost": 5085,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2009",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=1371",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1780015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1780&lot=015",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1780015",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-06-10-n1254",
+      "name": "Building and Industrial News, 10 June 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1414cont/page/n1254/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-06-10",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame dwelling, estimated at $3,000. A. Howard Peterson was named as architect.",
+      "source": "building-industrial-news-1914-06-10-n1254"
+    }
+  ],
+  "building": {
+    "architect": "A. Howard Peterson"
+  }
+}

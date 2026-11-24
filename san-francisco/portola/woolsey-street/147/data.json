@@ -1,0 +1,122 @@
+{
+  "address": "147 Woolsey Street, San Francisco, CA 94134",
+  "path": "/san-francisco/portola/woolsey-street/147/",
+  "apn": "6121024",
+  "block": "6121",
+  "lot": "024",
+  "eas_baseid": "391984",
+  "coordinates": {
+    "lat": 37.724828,
+    "lng": -122.40328
+  },
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1350,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Portola",
+    "analysis_neighborhood": "Portola",
+    "property_location_raw": "0000 0147 WOOLSEY             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 343551,
+    "assessed_improvement_value": 229027,
+    "last_sale_date": "2000-09-29"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200302288521",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2003-02-28",
+      "status_date": "2003-03-17",
+      "estimated_cost": 2500,
+      "revised_cost": 2500,
+      "description": "install 4 replacement windows. visible from the street",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9511417",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-07-24",
+      "status_date": "1995-10-18",
+      "estimated_cost": 1000,
+      "description": "remove exist wood/alum sliders/replace w/new dual glazed",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8514184",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1985-12-16",
+      "status_date": "1985-12-17",
+      "estimated_cost": 300,
+      "description": "repair damage in front wall install masonary at base of door",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=WOOLSEY&street_type=ST&address_number=147",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6121024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6121&lot=024",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6121024",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-04-29-n905",
+      "name": "Building and Industrial News, 29 April 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1414cont/page/n905/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-04-29",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a one-storey and attic frame cottage, all work, at $1,850. Stevenson & Gowan were named as architects and contractors.",
+      "source": "building-industrial-news-1914-04-29-n905"
+    }
+  ],
+  "building": {
+    "architect": "Stevenson & Gowan",
+    "builder": "Stevenson & Gowan"
+  }
+}

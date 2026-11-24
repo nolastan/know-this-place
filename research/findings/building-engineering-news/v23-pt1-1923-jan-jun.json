@@ -19886,13 +19886,12 @@
    "address_as_written": "530 SIXTH AVE",
    "street_number": "530",
    "street_name": "06TH",
-   "description": "A permit was sought for alterations: repair fire damage to dwelling, estimated at $4,000.",
+   "description": "A permit was sought for repairs: fire damage to a dwelling repaired, estimated at $4,000.",
    "extra": {
     "item": "629",
     "section": "Building Permit Applications",
     "heading": "REPAIRS",
-    "cost_usd": 4000,
-    "placed_apn": "1548042"
+    "cost_usd": 4000
    },
    "citation": {
     "label": "Building and Engineering News, 24 February 1923",
@@ -19901,16 +19900,23 @@
     "locator": "1923-02-24-n262 : item (629), Building Permit Applications, San Francisco County"
    },
    "raw": {
-    "text": "(629) 530 SIXTH AVE. Repair fire damage to dwelling.. $4000",
+    "text": "(629) 530 SIXTH AVE. Repair fire damage to dwelling. $4000",
     "ocr_uncertain": true,
     "note": "Rebuilt from the OCR heading and the architect, contractor and cost fields; the owner, sureties and payment schedule are cut."
    },
-   "confidence": "low",
+   "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-11-15",
-    "method": "Lot built from the block corner on the DPW centrelines and the sf-parcels shapes; street numbers matched exactly in sf-eas-addresses.",
-    "note": "Placed on parcel 1548042 (number; roll year 1913 fits) but not checked against the page image and not published: a single house with no architect named and no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+    "status": "resolved",
+    "apn": "1548042",
+    "path": "/san-francisco/inner-richmond/6th-avenue/530/",
+    "eas_address": "530 6TH AVE",
+    "method": "The printed street number, 530 SIXTH AVE, matches one sf-eas-addresses row, on parcel 1548042; the roll dates the building 1913, which is before the work. Held until the parcel had a page, then taken up: location, wording, names and cost read against the page image.",
+    "checked_on": "2026-11-24",
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "761"
    }
   },
   {

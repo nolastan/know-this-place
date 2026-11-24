@@ -1,0 +1,150 @@
+{
+  "address": "4233–4257 26th Street, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/26th-street/4233/",
+  "apn": "6562027",
+  "block": "6562",
+  "lot": "027",
+  "eas_baseid": "459880",
+  "coordinates": {
+    "lat": 37.747775,
+    "lng": -122.435032
+  },
+  "address_range": "4233–4257",
+  "street_numbers_on_parcel": [
+    "4233",
+    "4257"
+  ],
+  "parcel": {
+    "year_built": 1915,
+    "units": 1,
+    "stories": 1,
+    "rooms": 8,
+    "bathrooms": 2,
+    "lot_area_sqft": 5697,
+    "building_area_sqft": 1748,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Noe Valley",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "4257 4233 26TH                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55184,
+    "assessed_improvement_value": 31613
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1915",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200508241124",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-08-24",
+      "status_date": "2005-08-26",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200506064227",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2005-06-06",
+      "status_date": "2005-09-02",
+      "estimated_cost": 17000,
+      "revised_cost": 17000,
+      "description": "stairs repair, less than 50 percent replace less than 2/3 of the gypsum wall of the entire house wor",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200410146747",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-10-14",
+      "status_date": "2005-09-14",
+      "estimated_cost": 7800,
+      "revised_cost": 7800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200106060923",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-06-06",
+      "status_date": "2002-01-29",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "delete all work except for stairs & pork (renew 200010032241)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200010032241",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-10-03",
+      "status_date": "2002-01-29",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "repl (e)stairs same in kind, structural work @garage level & pork as required",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=26TH&street_type=ST&address_number=4233",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6562027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6562&lot=027",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6562027",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-11-18-n790",
+      "name": "Building and Industrial News, 18 November 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri14214cont/page/n790/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-11-18",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a one-storey and basement frame building, all work, at $1,852. O. R. Thayer was named as architect and the McMullin Von Voorhies Co. as contractor.",
+      "source": "building-industrial-news-1914-11-18-n790"
+    }
+  ],
+  "building": {
+    "architect": "O. R. Thayer",
+    "builder": "McMullin Von Voorhies Co."
+  }
+}

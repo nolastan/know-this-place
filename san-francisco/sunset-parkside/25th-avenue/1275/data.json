@@ -1,0 +1,134 @@
+{
+  "address": "1275 25th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/25th-avenue/1275/",
+  "apn": "1725016",
+  "block": "1725",
+  "lot": "016",
+  "eas_baseid": "315206",
+  "coordinates": {
+    "lat": 37.763751,
+    "lng": -122.483917
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1700,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1275 25TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 587661,
+    "assessed_improvement_value": 430201,
+    "last_sale_date": "2001-04-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201904258958",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-04-25",
+      "status_date": "2020-01-14",
+      "estimated_cost": 21000,
+      "revised_cost": 25000,
+      "description": "remodel (e) kitchen/ install new laundry room on second flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200902252856",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-25",
+      "status_date": "2010-08-16",
+      "estimated_cost": 18000,
+      "revised_cost": 31227,
+      "description": "full bathroom addition and full bathroom remodel on 2nd floor. replace & reinstall bath cabinets, new lighting, upgrade gfi, add exhaust fan. (bath remodel) 12'x6' (new bath 7'x8'6\". new 2'x2' skylight.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9007330",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1990-04-17",
+      "status_date": "1990-08-01",
+      "estimated_cost": 18500,
+      "description": "replace entrance stoop & stairs w/reinforced concrete",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8600564",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1986-01-15",
+      "status_date": "1986-01-29",
+      "estimated_cost": 3400,
+      "revised_cost": 0,
+      "description": "install aluminum windows",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=25TH&street_type=AVE&address_number=1275",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1725016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1725&lot=016",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1725016",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1914-04-15-n796",
+      "name": "Building and Industrial News, 15 April 1914",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1414cont/page/n796/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1914-04-15",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame dwelling, estimated at $3,000. E. E. Young was named as architect.",
+      "source": "building-industrial-news-1914-04-15-n796"
+    }
+  ],
+  "building": {
+    "architect": "E. E. Young"
+  }
+}
