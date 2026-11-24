@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1971–1985 read (491 of 1,514 issues). 1986–2005 remain. See the `Verified:` line.
+> - **Coverage:** 1971–1987 read (597 of 1,514 issues). 1988–2005 remain. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/bay-area-reporter/`
 
 - **What:** The *Bay Area Reporter*, San Francisco's gay community newspaper,
@@ -121,7 +121,14 @@
   27 resolved and published on 26 existing pages, none seeded, 6 unresolved
   (3 held, 3 at numbers EAS no longer has). Fourteen of the 33 are the health
   director's closure order of 9 October 1984, whose list of businesses and
-  addresses the paper printed. **Resume at 1986.**
+  addresses the paper printed.
+  1986–1987 (106 issues, 13,519 mentions, 596 address clusters): 26 findings,
+  21 resolved and published on 18 existing pages, none seeded or held, 5
+  unresolved at numbers EAS no longer joins to one parcel. They include the
+  Larkin Street Youth Center fire and reopening, the Coming Home Hospice
+  conversion, the Stud's move from Folsom Street to Ninth and Harrison, and
+  the office the Names Project shared with the March on Washington.
+  **Resume at 1988.**
 - **Verified:** 2026-11-24 (lead promoted and 1971–1975 read in one run: 121
   issues downloaded from `_djvu.xml`, 555 windows after the advertisement
   filter in 466 clusters read in full, 149 event-word passages read, 75
@@ -135,4 +142,4 @@
   pass must drop "dedicated" and "landmark", which match a weekly
   advertisement and every tribute. Same day, 1980–1981: 58 issues, 35
   findings, each quote found again; two issues a month in these years, so two
-  years is a small batch and three or four would fit one run. Same day, 1982–1983: 104 issues, 32 findings, each quote found again; the classified pages now swamp the event-word pass, so it was narrowed to fire, closed and lost-lease words after the first 20 issues. Same day, 1984–1985: 104 issues, 33 findings, each quote found again; `evf.py` now filters the clusters, and from mid-1984 a second, tighter filter drops classified pages and calendar listings, which hold no building facts.)
+  years is a small batch and three or four would fit one run. Same day, 1982–1983: 104 issues, 32 findings, each quote found again; the classified pages now swamp the event-word pass, so it was narrowed to fire, closed and lost-lease words after the first 20 issues. Same day, 1984–1985: 104 issues, 33 findings, each quote found again; `evf.py` now filters the clusters, and from mid-1984 a second, tighter filter drops classified pages and calendar listings, which hold no building facts. Same day, 1986–1987: 106 issues, 26 findings, each quote found again; by now most findings are openings, closings and moves of institutions already on a page, so the overlap check matters more than seeding.)
