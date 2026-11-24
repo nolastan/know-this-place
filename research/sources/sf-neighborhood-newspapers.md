@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** fourteen titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999), The New Fillmore (27 issues, 1986–1990), Tenant Times (25 issues, 1979–1996), the St. Mary's Park Improvement Club newsletter (15 issues, 1959–1985, nothing kept) and Street Art News (6 issues, 1975, nothing kept), and a fifteenth in part, The Semaphore of the Telegraph Hill Dwellers (the 92 issues with OCR, 1976–1999) — 1,293 findings, 1,131 resolved, 1,045 published on 791 pages (248 seeded).
+> - **Coverage:** fifteen titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999), The New Fillmore (27 issues, 1986–1990), Tenant Times (25 issues, 1979–1996), the Bernal Heights papers (178 issues, 1964–2008: the Pictorial, the Bernal Journal and the New Bernal Journal), the St. Mary's Park Improvement Club newsletter (15 issues, 1959–1985, nothing kept) and Street Art News (6 issues, 1975, nothing kept), and a sixteenth in part, The Semaphore of the Telegraph Hill Dwellers (the 92 issues with OCR, 1976–1999) — 1,355 findings, 1,174 resolved, 1,088 published on 828 pages (263 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -200,15 +200,21 @@
   The *St. Mary's Park Improvement Club newsletter* (15 issues with hOCR,
   1959–1985) and *Street Art News* (6, 1975) were read whole and yielded
   nothing; they have no findings file.
-  **Not read:** the other four titles, and the Potrero View's November
+  **Not read:** the other three titles, and the Potrero View's November
   2009 issue (no OCR on the Internet Archive). The next batches are the
-  titles with little or
-  no hOCR, whose text has to come from `_djvu.txt` and the leaf from
-  `_djvu.xml` or the page count: The Semaphore from 2000 on (105 items),
-  the Bernal Journals (179 items under six
-  catalogue names, 1964–2008), the Telegraph Hill Bulletin (4 of 56 with
-  hOCR) and Sunnyside (0 of 30). One title is one batch; take two in a
+  titles with little or no hOCR, whose text and leaves come from each
+  item's `_djvu.xml` (`/mnt/project-files/mission-papers/dl_djvu.py`
+  rebuilds the hOCR-shaped search text and page index from it, so the
+  cluster and build scripts run unchanged): The Semaphore from 2000 on
+  (105 items), the Telegraph Hill Bulletin (4 of 56 with hOCR) and
+  Sunnyside (0 of 30). One title is one batch; take two in a
   session if the first is short.
+  **Held, Bernal papers:** 16 thin facts on parcels with no page: 307, 410,
+  419, 433, 525, 800, 813, 908, 1000 and 249 Cortland (shop openings, the
+  Bank of America branch's threatened closing of 1993, the burned-out
+  church of 1982), 3223 and 3471 Mission, 811 San Jose, 3214 Folsom (the
+  Park Bench Cafe), 400 Alemany (22 townhouses planned, 1999) and 227
+  Winfield.
   **Held, Semaphore:** 11 thin facts on parcels with no page: 16 Napier
   Lane, 6 Gerke Alley, 1620 Montgomery, 414 Francisco, 450 Broadway, 839
   Columbus, 2209 Powell, 886 Broadway (Alfred's, 1928), 701 Chestnut, 1741
@@ -408,6 +414,28 @@
   street number on the cited leaf, and every day-precision date within the
   surrounding article, and the eight the date check flagged were read by
   hand and stood.)
+  2026-11-24 (eleventh run, the Bernal Heights papers, 1964-2008. 178
+  issues, 6,174 mentions, 446 passages read by hand, 62 findings, 43
+  published on 37 pages, 15 seeded, 16 held, 3 unplaced. What it adds: the
+  Bernal Heights Community Foundation's trail along Cortland Avenue (its
+  first house at 18 Bonview in 1979, the office at 399 Cortland, the
+  Neighborhood Center opened at 515 Cortland on 18 September 1982, the
+  arson fire at 513 on 28 June 1985) and its housing (Coleridge Park Homes,
+  begun 24 June 1988 and opened 19 July 1989; 5199 Mission; Bishop Swing
+  Community House at 275 10th); the two earthquake shacks joined at 43
+  Carver; the Brooks homestead at 34 Prospect; the house at 40 Prentiss
+  moved for Bernal Heights Boulevard; the Holly Park Meat Market building
+  at 231 Cortland; and the library's dedication day, 20 October 1940.
+  **Learned:** (1) an item with no hOCR still has `_djvu.xml`, which gives
+  the same words leaf by leaf, so "no hOCR" is not "no text"; (2) a paper
+  that an agency publishes reports that agency's projects wherever they
+  are, so three of the firmest facts are in the Western Addition, the
+  Excelsior and South of Market; (3) a "destroyed by fire" in the paper
+  and a 1900 year built on the roll can both stand on one page if the page
+  says so; (4) the paper misprints numbers (3240 Mission for a club at
+  another number, a December 1996 opening reported in February 1996), so
+  a number EAS does not know is worth a second look before it is called a
+  lost address.)
   2026-11-24 (tenth run, three small titles. Tenant Times: 25 issues, 205
   mentions, 55 passages read by hand, 17 findings, 15 published on 12
   existing pages, 2 unplaced (261 Valencia, 66 Berry). It is the Tenants

@@ -1,0 +1,119 @@
+{
+  "address": "34 Prospect Avenue, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/prospect-avenue/34/",
+  "apn": "5610A001",
+  "block": "5610A",
+  "lot": "001",
+  "eas_baseid": "380486",
+  "coordinates": {
+    "lat": 37.74468,
+    "lng": -122.418154
+  },
+  "parcel": {
+    "year_built": 1900,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 6510,
+    "building_area_sqft": 1500,
+    "lot_depth_ft": 93,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "0000 0034 PROSPECT            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 91407,
+    "assessed_improvement_value": 195921,
+    "assessed_fixtures_value": 489
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1900",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200909086292",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2009-09-08",
+      "status_date": "2009-09-08",
+      "estimated_cost": 32000,
+      "revised_cost": 32000,
+      "description": "install new base cabinets and countertops in the kitchen, new appliances, tile, vanity, toilet in existing bath, compliant lighting",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200901210539",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-01-21",
+      "status_date": "2009-05-08",
+      "estimated_cost": 15000,
+      "revised_cost": 20000,
+      "description": "foundation repair/replacement & addition of foundation & retaining wall to (e) building on 1st floor,(storage rooms & crawl space). sister some floor beams & joists per plan.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "2008–2009",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PROSPECT&street_type=AVE&address_number=34",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5610A001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5610A&lot=001",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5610A001",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-Bernal1964_10_18-n1",
+      "name": "Bernal Heights Pictorial, October 1964",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/Bernal1964_10_18/page/n1/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1860",
+      "kind": "notable resident",
+      "description": "The painter Samuel Marsden Brooks, a co-founder of the Bohemian Club, built his homestead here around 1860, by the Bernal Heights Pictorial's account a century later.",
+      "source": "sf-neighborhood-newspapers-Bernal1964_10_18-n1"
+    }
+  ],
+  "unknowns": [
+    "The Bernal Heights Pictorial of 1964 dates the Brooks homestead here to about 1860; the assessor's roll dates the present house to 1900."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "address": "45 Conkling Street, San Francisco, CA 94124",
+  "path": "/san-francisco/bayview-hunters-point/conkling-street/45/",
+  "apn": "5379053",
+  "block": "5379",
+  "lot": "053",
+  "eas_baseid": "487987",
+  "coordinates": {
+    "lat": 37.736092,
+    "lng": -122.402111
+  },
+  "parcel": {
+    "lot_area_sqft": 51248,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 10,
+    "assessor_neighborhood": "Silver Terrace",
+    "analysis_neighborhood": "Bayview Hunters Point",
+    "property_location_raw": "0000 0045 CONKLING            ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CONKLING&street_type=ST&address_number=45",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5379053&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5379&lot=053",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5379053",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-neighborhood-newspapers-New_Bernal1988_02-n6",
+      "name": "New Bernal Journal, February 1988",
+      "label": "San Francisco neighborhood newspapers collection (Internet Archive)",
+      "query": "https://archive.org/details/New_Bernal1988_02/page/n6/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1984",
+      "kind": "opening",
+      "description": "Phillip and Sala Burton Academic High School, a college preparatory school created under the school district's desegregation consent decree, opened here in the fall of 1984.",
+      "source": "sf-neighborhood-newspapers-New_Bernal1988_02-n6"
+    }
+  ]
+}
