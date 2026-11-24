@@ -167,7 +167,7 @@ are now cases in `tools/test_screen.py`.
 **An RSS feed is not an archive.** The open feeds carry between one and sixteen
 days — most of them two — so the daily poll sees about two days of news whatever
 `--backfill-days` is set to: the floor never binds, the feed does. Eight of the
-eleven polled sources publish their archive somewhere else, and `feeds.json`
+fourteen polled sources publish their archive somewhere else, and `feeds.json`
 records the route into each one.
 
 | feed | route | listed in July 2026 | queued to read |
@@ -181,7 +181,7 @@ records the route into each one.
 | the-voice-sf | `?paged=N`, complete to Apr 2024 | 51 | 24 |
 | sf-examiner-social | Bluesky API, paged by cursor | 48 | 23 |
 
-Three have none. Hoodline answers 403 to its sitemap as it does to its article
+Three of the original eleven have none. Hoodline answers 403 to its sitemap as it does to its article
 pages, What Now publishes no sitemap we can read and 404s on `?paged=N`, and
 SFist's is a single 17MB document of 50,000 URLs — a workable route, measured
 and not yet wired, because it costs the whole file per window. Those three are
@@ -194,19 +194,23 @@ third of everything listed, and most of it national wire, sport and weather.
 
 ## Why the feeds are what they are
 
-Twelve sources are registered; eleven are polled. They divide into three
+Eighteen sources are registered; fourteen are polled. They divide into three
 shapes, and [feeds.json](feeds.json) records what each one does wrong:
 
 - **Ordinary RSS** — Mission Local, Hoodline, SFist, The Registry, The
-  Standard, What Now, SF YIMBY, The Voice. Hoodline and SFist syndicate the
-  whole article in the feed, which is how we read Hoodline at all: its article
+  Standard, What Now, SF YIMBY, The Voice, the Richmond Review/Sunset Beacon.
+  Hoodline and SFist syndicate the whole article in the feed, which is how we read Hoodline at all: its article
   pages answer a fetcher with 403.
 - **Bluesky accounts** — the Chronicle and the Examiner. These are posts, not
   articles: no title element at all, and the article link is the last URL in
   the post text, often a bit.ly.
-- **A section page** — the Examiner's `/news/`. No dates, no summaries, so the
+- **A section page** — the Examiner's `/news/`, LocalJobPage's "New Business
+  Openings" category and Corcoran Icon's blog. No dates, no summaries, so the
   cursor is the set of article URLs seen.
 
 The San Francisco Business Times is registered but **not polled**: its feed
 host's robots.txt ends in a blanket disallow. That is a conversation with a
-publisher, not a flag to flip — see `access` in feeds.json.
+publisher, not a flag to flip — see `access` in feeds.json. The Real Deal,
+CommercialSearch and Multi-Housing News (added for issue #408) are registered
+the same way: all three answer our fetcher with 403 before robots.txt can even
+be read.
