@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1971–1983 read (387 of 1,514 issues). 1984–2005 remain. See the `Verified:` line.
+> - **Coverage:** 1971–1985 read (491 of 1,514 issues). 1986–2005 remain. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/bay-area-reporter/`
 
 - **What:** The *Bay Area Reporter*, San Francisco's gay community newspaper,
@@ -116,8 +116,12 @@
   28 resolved and published on 27 pages (2 seeded: 1488 Pine, which took up a
   held fact of 1972, and 356 Seventh, the fire station the 1981 paper printed
   as 365), 4 unresolved (1 held, 3 at numbers EAS no longer has). The paper is
-  weekly from 1982, so two years is 104 issues and a full run. **Resume at
-  1984.**
+  weekly from 1982, so two years is 104 issues and a full run.
+  1984–1985 (104 issues, 12,154 mentions, 550 address clusters): 33 findings,
+  27 resolved and published on 26 existing pages, none seeded, 6 unresolved
+  (3 held, 3 at numbers EAS no longer has). Fourteen of the 33 are the health
+  director's closure order of 9 October 1984, whose list of businesses and
+  addresses the paper printed. **Resume at 1986.**
 - **Verified:** 2026-11-24 (lead promoted and 1971–1975 read in one run: 121
   issues downloaded from `_djvu.xml`, 555 windows after the advertisement
   filter in 466 clusters read in full, 149 event-word passages read, 75
@@ -131,4 +135,4 @@
   pass must drop "dedicated" and "landmark", which match a weekly
   advertisement and every tribute. Same day, 1980–1981: 58 issues, 35
   findings, each quote found again; two issues a month in these years, so two
-  years is a small batch and three or four would fit one run. Same day, 1982–1983: 104 issues, 32 findings, each quote found again; the classified pages now swamp the event-word pass, so it was narrowed to fire, closed and lost-lease words after the first 20 issues.)
+  years is a small batch and three or four would fit one run. Same day, 1982–1983: 104 issues, 32 findings, each quote found again; the classified pages now swamp the event-word pass, so it was narrowed to fire, closed and lost-lease words after the first 20 issues. Same day, 1984–1985: 104 issues, 33 findings, each quote found again; `evf.py` now filters the clusters, and from mid-1984 a second, tighter filter drops classified pages and calendar listings, which hold no building facts.)
