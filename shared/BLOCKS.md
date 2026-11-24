@@ -34,7 +34,7 @@ UPPERCASE = from this page's `data.json` / `shared/site-config.json`.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ADDRESS — Know This Place</title>
+  <title>ADDRESS, San Francisco — Know This Place</title>
   <meta name="description" content="PAGE-SPECIFIC ONE- OR TWO-SENTENCE SUMMARY">
   <link rel="canonical" href="SITE_URL + PATH">
   <link rel="alternate" type="application/json" href="PATH + data.json">   <!-- place.json on a place page, unit.json on a unit page -->
@@ -140,8 +140,10 @@ It follows the locator band, and its media slot holds the `.media-lift` card
 that overlaps the band's lower-left edge — see "Media".
 
 The `<h1>` is the building's name where a page records one (`building.name`),
-its street address where it doesn't — and the `<title>` and JSON-LD `name`
-follow the same choice. The `.sub` under it carries the other identity: the
+its street address where it doesn't — and the JSON-LD `name` follows the same
+choice. The `<title>` leads with it too but always ends in the street address
+and the city ("Haslett Warehouse, 680 Beach Street, San Francisco"), because
+that is what people type into a search box. The `.sub` under it carries the other identity: the
 street address under a name, the building type under an address. The type is
 never a `.tags` chip: under an address it is the `.sub`, and on a name-headed
 page it is a HugeIcons glyph leading the `<h1>` (`h1.named .type-icon`, chosen
