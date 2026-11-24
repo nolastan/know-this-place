@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 1971–1975 read (121 of 1,514 issues). 1976–2005 remain. See the `Verified:` line.
+> - **Coverage:** 1971–1979 read (225 of 1,514 issues). 1980–2005 remain. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/bay-area-reporter/`
 
 - **What:** The *Bay Area Reporter*, San Francisco's gay community newspaper,
@@ -96,10 +96,16 @@
 - **Coverage:** 1971–1975 (121 issues, 4,702 mentions, 466 address clusters
   and 149 event-word passages read by hand): 75 findings, 54 resolved and
   published on 45 pages (3 seeded), 21 unresolved (5 held on parcels with no
-  page, 16 gone or between parcels). **Resume at 1976** (`BAR_19760108` is the
-  first issue). The paper grows from 24 pages an issue to over 60 by the
+  page, 16 gone or between parcels). Read on from 1976 in the next entry. The paper grows from 24 pages an issue to over 60 by the
   1980s; batches of about five years at first, two or three later, are the
   size one run reads.
+  1976–1979 (104 issues, 7,322 mentions, 616 address clusters): 61 findings,
+  49 resolved and published on 47 existing pages, none seeded, 12 unresolved.
+  From 1976 the clusters are too many to read whole: the first 67 were read in
+  full and then only the 401 holding an event word, plus the event-word
+  passages (`kw_bar.py`). **Resume at 1980.** The renaming of the Harvey Milk
+  Center, 50 Scott Street (26 May 1979), is unresolved because it belongs on
+  the Duboce Park place page.
 - **Verified:** 2026-11-24 (lead promoted and 1971–1975 read in one run: 121
   issues downloaded from `_djvu.xml`, 555 windows after the advertisement
   filter in 466 clusters read in full, 149 event-word passages read, 75
@@ -107,4 +113,8 @@
   another issue and say so. Learned: cluster by address before reading, since
   the paper is repeating advertisers; and that the advertisement filter drops
   the grand-opening advertisements that are the paper's best facts, so the
-  event-word pass over "grand opening" is not optional.)
+  event-word pass over "grand opening" is not optional. Same day, 1976–1979:
+  104 issues, 61 findings, each quote found again; learned that filtering the
+  clusters to those holding an event word loses little, and that the event-word
+  pass must drop "dedicated" and "landmark", which match a weekly
+  advertisement and every tribute.)
