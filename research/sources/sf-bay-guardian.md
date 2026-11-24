@@ -6,7 +6,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high for 1966–2006 (print only, never on the paper's website); medium for 2008–2014, when the paper also published online.
-> - **Coverage:** 300 of 996 issues read, 1966–1986. See the `Verified:` line.
+> - **Coverage:** 479 of 996 issues read, 1966–1994. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/sf-bay-guardian/`
 
 - **What:** The *San Francisco Bay Guardian*, the city's alternative
@@ -118,8 +118,19 @@
   hotels' purchase by nonprofits, the Swiss American Hotel's code hearing,
   1300 Sacramento, the Planning Commission's approvals of October 1983,
   100 First Street and the attack on the AIDS vigil at United Nations Plaza.
-  **Resume at 1988:** next 1988–1994 (179 issues), then 1998–2006 (122),
-  and last 2008–2014 (395), which is the least valuable because the paper
+  1988–1994 (179 issues, 115 of them 1989 and 1990; 91,622 mentions, 1,849
+  address clusters; the 119 news-word passages, 116 prose clusters and 71
+  event passages read): 35 findings, 28 resolved and published on 27 pages,
+  1 seeded (260 McAllister, taking up a held *Tenderloin Times* fact), 3 held
+  (425 14th, 1529 Haight, 105 Quint), 4 unplaced (500 Eighth; 343, 355 and
+  363 Golden Gate, told on the page for 333). They include the law college's
+  demolitions and code citations on Golden Gate and McAllister after the
+  1989 earthquake, KQED's purchase of 2601 Mariposa, Intersection for the
+  Arts on Valencia Street, the Red Vic's reopening, Walden House's three
+  houses, the Rent Board's move out of 170 Fell and the empty bank at 400
+  Castro.
+  **Resume at 1998:** next 1998–2006 (122),
+  then 2008–2014 (395), which is the least valuable because the paper
   was on the open web in those years.
 - **Verified:** 2026-11-24 (source found by browsing the Internet Archive's
   San Francisco newspaper collections, promoted and 1966–1976 read in one
@@ -131,4 +142,4 @@
   already on the page from a context statement or the planning minutes is
   common for the famous buildings, so run the overlap check before writing
   more than a line; and the collection's identifiers carry no date, so every
-  script keys on the identifier and reads the date from `items_d.tsv`. Same day, 1977–1986: 127 issues, 21 findings, each quote found again. Learned: `news.py`, a pass over the raw text for prose with a numbered address and a building-news word, finds the planning and housing stories the advertisement filter hides, and is now the first thing to read; by the 1980s the planning minutes and environmental reports already on the pages cover most of the paper's highrise stories, so a third of the candidates fell at the overlap check.)
+  script keys on the identifier and reads the date from `items_d.tsv`. Same day, 1977–1986: 127 issues, 21 findings, each quote found again. Learned: `news.py`, a pass over the raw text for prose with a numbered address and a building-news word, finds the planning and housing stories the advertisement filter hides, and is now the first thing to read; by the 1980s the planning minutes and environmental reports already on the pages cover most of the paper's highrise stories, so a third of the candidates fell at the overlap check. Same day, 1988–1994: 179 issues, 35 findings, audit clean. Learned: the issues of 1989 and 1990 are four times the size of the 1970s ones and almost all of the growth is advertising and listings (88 percent of mentions marked as advertisements), so the three reading passes came to only 306 passages; a running story, here the law college's Tenderloin block, is best read as a whole across its issues before any row is written, because each issue adds a number or a date the others lack; and shops' own moving announcements, repeated for weeks, give exact dates the articles do not.)
