@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** five titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009) and the Noe Valley Voice (335 issues in 337 items, 1977–2011) — 687 findings, 612 resolved, 560 published on 411 pages (194 seeded).
+> - **Coverage:** seven titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) and North Mission News with its successor New Mission News (197 issues, 1983–2004) — 847 findings, 758 resolved, 694 published on 523 pages (209 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -176,13 +176,26 @@
   The *Noe Valley Voice*, every item — 337 items (335 issues), May 1977 to
   February 2011, 14,190 OCR pages
   (`findings/sf-neighborhood-newspapers/noe-valley-voice-1977-2011.json`).
-  **Not read:** the other thirteen titles, and the Potrero View's November
+  *North Mission News* and *New Mission News*, every item — 197 items,
+  June 1983 to August 2004, 5,555 OCR pages
+  (`findings/sf-neighborhood-newspapers/mission-news-1983-2004.json`).
+  **Not read:** the other eleven titles, and the Potrero View's November
   2009 issue (no OCR on the Internet Archive). The next batches, in the
-  order this site needs them: **New Mission News** (127 items, 1992–2004)
-  with **North Mission News** (70, 1983–1992) — one neighborhood, one run;
-  then the Bernal Journals, Park Bell (Excelsior/Portola), The New Fillmore,
-  the Semaphore titles, Richmond ReView and Tenderloin Times. One title is
+  order this site needs them: the Bernal Journals (179 items under six
+  catalogue names, 1964–2008; **their items have no hOCR files**, so the
+  text has to come from `_djvu.txt` and the leaf from `_djvu.xml` or the
+  page count), Park Bell (Excelsior/Portola), The New Fillmore, the
+  Semaphore titles, Richmond ReView and Tenderloin Times. One title is
   one batch; take two in a session if the first is short.
+  **Unplaced, Mission papers:** the Valencia Hotel site at 718 Valencia
+  (1906), 101 Valencia (the 1909 Knights of Pythias building, 40 lofts and
+  109 homes of 1996–97; EAS holds 100, 105, 111 and 115 only), Arriba
+  Juntos's first office at 2177 Mission (1965), the old Mission police
+  station at 1250 Valencia, Emmanuel Baptist Church at 131 Bartlett (1895),
+  the 50 Hoff collapse of June 1998, the 2268–2272 Mission fire of 3
+  December 1990 and Good Samaritan's two buildings at 1290–1294 Potrero
+  (each range now two parcels), and Brava's first theatre at 2180 Bryant
+  (an EAS address on no parcel).
   **Placed nowhere yet:** the Glen Park library's two lost buildings, 700
   Bosworth (opened January 1927, demolished for I-280 about 1964) and 2909
   Diamond (1964, demolished 1969 for the BART station). EAS has neither
@@ -307,3 +320,43 @@
   (6) `--area-from-nhood` moved 30 new pages from `mission/` to
   `noe-valley/` correctly and invented `castro-upper-market`, as LESSONS
   says; carry over only the directories the site uses.)
+  2026-11-24 (fifth run, North Mission News and New Mission News. Read 197
+  issues, 5,555 OCR pages, 20,254 numbered-address mentions; 1,343 passages
+  by hand by eight readers (1,783 windows, 824 kept and 959 rescued, merged
+  where they overlapped); 327 candidates, 160 findings, 146 resolved, 134
+  published on 112 pages, 15 of them seeded, 12 declined (9 already on the
+  page). The best of it: Valencia Street's arts corridor dated venue by
+  venue — Intersection for the Arts at 766 Valencia (January 1986) and 446
+  Valencia (4 May 1990), Artists' Television Access at 992 Valencia (May
+  1987), The Marsh at 968, 1062 and 1070 Valencia, Modern Times at 888
+  Valencia, the Capp Street Project's move to 270 14th, Brava's first
+  theatre, Adobe Bookshop at 3166 16th (March 1989), the Slanted Door at 584
+  Valencia (November 1995), Kilowatt in the old firehouse at 3160 16th;
+  New College of California's closing, sale listing and reopening of 777
+  Valencia; the residential hotels' fires and enforcement (the El Capitan,
+  17 March 1993; the Grand Southern, 30 July 1996; the King's Hotel, 3
+  October 1999; the Thor, the Star, the Apollo); Pacific Bell's switching
+  station at 1045 Capp given to Mission Housing and reopened as the Abel
+  Gonzalez Apartments (1992); the Atlas Linen fire at 3338 17th (6 November
+  1998); Habitat for Humanity's four homes at 1270 South Van Ness; Rainbow
+  Grocery's move to 1745 Folsom (24 May 1996); the Communist Party's
+  headquarters at 522 Valencia until February 1992; and Bigstep.com's
+  arrival in the Bay View Bank Building (November 1999). **Learned:** (1)
+  the items of some titles in the collection have no hOCR files at all —
+  every Bernal item 404s on both — so check one item's file list before
+  bulk-fetching a title; (2) merging windows that overlap in one issue cut
+  1,783 windows to 1,350 passages and gave readers whole paragraphs
+  (`/mnt/project-files/mission-papers/cluster.py`); (3) the matched address
+  is often an ad that interrupts an article, with the fact's own number
+  just outside the window, so give readers a way to pull more context
+  (`ctx.py` there) — seven of one reader's 51 candidates came from it; (4)
+  the paper contradicts its own numbers (the Apollo Hotel at 422 and 522
+  Valencia, Encantada Gallery at 904 and 908, The Marsh's dates), and the
+  parcel settles some: 418–422 Valencia is one lot and 522 was the
+  Communist Party's; (5) the 1990–97 code-enforcement series names
+  numbered buildings but is built on owners and tenants — hotels were taken
+  as institutions, houses and flats were left; (6) a checker can verify a
+  reader mechanically: every quote was found again in the issue text, every
+  street number on the cited leaf, and every day-precision date within the
+  surrounding article, and the eight the date check flagged were read by
+  hand and stood.)
