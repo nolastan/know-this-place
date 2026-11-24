@@ -1,0 +1,136 @@
+# Build the preview of a Know This Photo PR here, once the photos stop coming,
+# and upload it to Netlify. Netlify itself skips these PRs (netlify.toml).
+#
+# Why: the app puts a whole day's photos in one PR, one commit per photo, so a
+# session is 40-odd pushes. Netlify built a full deploy preview of all 17,600
+# pages for every one of them, and every build but the last was thrown away
+# minutes later. That is what used up the Netlify plan. Built here, the build
+# is free (public repository), and the wait below turns a session's pushes
+# into one upload: a push restarts the wait, so only a push followed by
+# WAIT_MINUTES of quiet gets built.
+#
+# The preview is at `https://photo-<N>--knowthisplace.netlify.app`, the link
+# preview-links.yml puts in the PR body, and the commit gets a `photo-preview`
+# status that turns green when it is up. An upload is a draft deploy, never
+# production: main is served by GitHub Pages (deploy.yml).
+#
+# Needs two repository secrets: NETLIFY_AUTH_TOKEN (a personal access token,
+# Netlify → User settings → Applications) and NETLIFY_SITE_ID (Project
+# configuration → General → Project ID). Without them the job says so and
+# does nothing, and the PR has no preview.
+name: photo-preview
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: read
+  statuses: write
+
+# A new push cancels the run that is still waiting, which is the debounce.
+concurrency:
+  group: photo-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+env:
+  WAIT_MINUTES: 10
+
+jobs:
+  preview:
+    if: >-
+      startsWith(github.head_ref, 'photo/') &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number }}
+      SHA: ${{ github.event.pull_request.head.sha }}
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    steps:
+      - name: Check the Netlify secrets
+        id: secrets
+        run: |
+          if [ -z "$NETLIFY_AUTH_TOKEN" ] || [ -z "$NETLIFY_SITE_ID" ]; then
+            echo "::warning::NETLIFY_AUTH_TOKEN or NETLIFY_SITE_ID is not set, so this PR gets no preview."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Wait for the session to go quiet
+        if: steps.secrets.outputs.ok == 'true'
+        run: |
+          status() {
+            gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$SHA" \
+              -f state="$1" -f context=photo-preview -f description="$2" \
+              -f target_url="$3" > /dev/null || true
+          }
+          status pending "Waiting ${WAIT_MINUTES} min for more photos" \
+            "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          sleep $(( WAIT_MINUTES * 60 ))
+
+      # Still open, and still this commit: a merge or a push during the wait
+      # makes this build moot (a push also cancels this run, but not always
+      # before it gets here).
+      - name: Check the PR is still waiting on this commit
+        id: current
+        if: steps.secrets.outputs.ok == 'true'
+        run: |
+          pr=$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR")
+          state=$(jq -r .state <<< "$pr"); head=$(jq -r .head.sha <<< "$pr")
+          if [ "$state" = open ] && [ "$head" = "$SHA" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "PR is $state at $head; nothing to build for $SHA."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # The commit itself, as Netlify built it, with the commit graph and none
+      # of the history's blobs (as deploy.yml, for build_stats.py).
+      - uses: actions/checkout@v4
+        if: steps.current.outputs.ok == 'true'
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          filter: blob:none
+
+      - name: Build
+        if: steps.current.outputs.ok == 'true'
+        run: |
+          gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$SHA" -f state=pending \
+            -f context=photo-preview -f description="Building the preview" \
+            -f target_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" > /dev/null || true
+          python3 scripts/build_site.py
+          python3 scripts/validate.py
+          python3 scripts/build_site.py --no-build --stage _site
+
+      - uses: actions/setup-node@v4
+        if: steps.current.outputs.ok == 'true'
+        with:
+          node-version: 22
+
+      - name: Upload to Netlify
+        if: steps.current.outputs.ok == 'true'
+        run: |
+          npx --yes netlify-cli@27.16.3 deploy --no-build --dir _site \
+            --site "$NETLIFY_SITE_ID" --alias "photo-$PR" \
+            --message "Photo PR #$PR at ${SHA::7}" --json > deploy.json
+          jq '{deploy_id, deploy_url}' deploy.json
+
+      - name: Report the result
+        # Not on cancel: a newer push has taken over, and this commit is moot.
+        if: (success() || failure()) && steps.current.outputs.ok == 'true'
+        env:
+          OUTCOME: ${{ job.status }}
+        run: |
+          if [ "$OUTCOME" = success ]; then
+            state=success; desc="Preview ready"; url="https://photo-$PR--knowthisplace.netlify.app"
+          else
+            state=failure; desc="Preview build failed"
+            url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          fi
+          gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$SHA" -f state="$state" \
+            -f context=photo-preview -f description="$desc" -f target_url="$url" > /dev/null

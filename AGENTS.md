@@ -363,6 +363,8 @@ full schema, with the rules for `permits` / `permit_summary`, `hook`,
   with `<N>` the PR number and the page path from `data.json`'s `path`. Three
   to six pages representative of the change, not every page. Open the PR, then
   edit its body to add them. (Know This Photo PRs get their one link, and their photo set beside
-  Street View, from `.github/workflows/preview-links.yml`.) No table of pages created, edited or published at
+  Street View, from `.github/workflows/preview-links.yml`; their preview is
+  `https://photo-<N>--knowthisplace.netlify.app`, built by
+  `.github/workflows/photo-preview.yml` once the photos stop coming.) No table of pages created, edited or published at
   the top of the body; the counts fit in a sentence.
 - One concern per PR. Never push to `main` directly.

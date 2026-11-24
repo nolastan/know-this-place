@@ -17,7 +17,18 @@
   """
   publish = "_site"
 
-  # Skip production builds: main is served by GitHub Pages, and a second
-  # production copy on *.netlify.app would only cost build minutes.
-  # Exit 0 skips the build, exit 1 runs it.
-  ignore = '[ "$CONTEXT" = "production" ] && exit 0 || exit 1'
+  # Exit 0 skips the build, exit 1 runs it. Skipped:
+  #
+  # - Production. main is served by GitHub Pages, and a second production copy
+  #   on *.netlify.app would only cost credits. Checked by branch as well as
+  #   by context, so a build of main is skipped however it was started.
+  # - Know This Photo PRs (`photo/` branches). The app pushes one commit per
+  #   photo, 40-odd a session, and each was a full build of the site.
+  #   .github/workflows/photo-preview.yml builds them in Actions instead, once
+  #   the photos stop coming, and uploads that one preview here.
+  ignore = '''
+    [ "$CONTEXT" = "production" ] && exit 0
+    [ "$BRANCH" = "main" ] && exit 0
+    case "$HEAD" in photo/*) exit 0 ;; esac
+    exit 1
+  '''
