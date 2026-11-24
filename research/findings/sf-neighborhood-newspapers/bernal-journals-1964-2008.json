@@ -8,7 +8,7 @@
   "examined": 178,
   "mentions": 6174,
   "remaining": "Nothing in this title: all 178 issues in the collection were read.",
-  "note": "178 issues; 6,174 numbered-address mentions on EAS streets (ocr_mentions.py --rescue --untyped CORTLAND). The filter kept 613 windows, merged into 446 passages, all read by hand. 62 findings written, each quote found again in the issue's text. 59 placed on a parcel: 43 published on 37 pages (15 seeded), 16 held as single thin facts on parcels with no page (mostly shop openings on Cortland Avenue and Mission Street). 3 unplaced at numbers no parcel carries today: 336 Elsie (a Water Department house of 1871, gone in 1971), 517 Cortland (the Pangaea arts center, 1976) and 3386 Mission (Jim's Donuts, 1970 to 1983). One candidate was dropped because the paper prints an address that does not exist (the Roccapulco Supper Club at '3240 Mission'). The audit flagged three and all stood on reading: the OCR prints 'Jime 24' for June 24, 1988; the Mariani fact is filed at the Safeway's number by design; Hunan Chef's 1996 opening is its 'ninth anniversary' of 2005, and a December 1996 advertisement announces the grand opening."
+  "note": "178 issues; 6,174 numbered-address mentions on EAS streets (ocr_mentions.py --rescue --untyped CORTLAND). The filter kept 613 windows, merged into 446 passages, all read by hand. 62 findings written, each quote found again in the issue's text. 59 placed on a parcel: 43 published on 37 pages (15 seeded), 16 held as single thin facts on parcels with no page (mostly shop openings on Cortland Avenue and Mission Street). 3 unplaced at numbers no parcel carries today: 336 Elsie (a Water Department house of 1871, gone in 1971), 517 Cortland (the Pangaea arts center, 1976) and 3386 Mission (Jim's Donuts, 1970 to 1983). One candidate was dropped because the paper prints an address that does not exist (the Roccapulco Supper Club at '3240 Mission'). The audit flagged three and all stood on reading: the OCR prints 'Jime 24' for June 24, 1988; the Mariani fact is filed at the Safeway's number by design; Hunan Chef's 1996 opening is its 'ninth anniversary' of 2005, and a December 1996 advertisement announces the grand opening. Later the same day the held fact on 3223 Mission Street (bernal-journals-0042) was published, when the Bay Area Reporter's 1971-1975 batch gave the parcel a second fact and a page."
  },
  "findings": [
   {
@@ -1445,8 +1445,7 @@
    "street_type": "ST",
    "description": "The Odeon Bar occupied the former Brick House here by 2001, remodeled with soundproofing and a performance area.",
    "extra": {
-    "candidate": "bernal#b63",
-    "placed_apn": "5615049"
+    "candidate": "bernal#b63"
    },
    "citation": {
     "label": "New Bernal Journal, April 2001",
@@ -1459,10 +1458,16 @@
    },
    "confidence": "high",
    "resolution": {
-    "status": "unresolved",
-    "checked_on": "2026-11-24",
+    "status": "resolved",
+    "apn": "5615049",
+    "path": "/san-francisco/bernal-heights/mission-street/3221/",
+    "eas_address": "3221 MISSION ST",
     "method": "EAS exact match on 3223 MISSION ST → parcel 5615049; sf-parcels has blklot 5615049 active, 3221–3227 MISSION; the 2025 roll records it as multi-family residential, built 1922. EAS puts 3221, 3223, 3227 MISSION ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 3221. The neighborhood directory is the analysis neighborhood the assessor and EAS give the parcel, not the area of the nearest published page: the site has too few pages on these streets for proximity to say where the line falls.",
-    "note": "Placed on parcel 5615049 (3221 MISSION ST) but not published: one thin fact from a neighborhood paper on a parcel with no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
    }
   },
   {
