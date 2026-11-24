@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** eleven titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999) and The New Fillmore (27 issues, 1986–1990), and a twelfth in part, The Semaphore of the Telegraph Hill Dwellers (the 92 issues with OCR, 1976–1999) — 1,276 findings, 1,116 resolved, 1,030 published on 785 pages (248 seeded).
+> - **Coverage:** fourteen titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999), The New Fillmore (27 issues, 1986–1990), Tenant Times (25 issues, 1979–1996), the St. Mary's Park Improvement Club newsletter (15 issues, 1959–1985, nothing kept) and Street Art News (6 issues, 1975, nothing kept), and a fifteenth in part, The Semaphore of the Telegraph Hill Dwellers (the 92 issues with OCR, 1976–1999) — 1,293 findings, 1,131 resolved, 1,045 published on 791 pages (248 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -27,8 +27,8 @@
   Fillmore (27, 1986–1990), Sunnyside Neighborhood Association News (11), St.
   Mary's Park Improvement Club newsletter (8, 1959–1985), Telegraph Hill
   Bulletin (4, 1957–1964) and singletons. *Tenant Times* (25) is in the
-  collection too and is retired in SOURCES.md for carrying no numbered
-  addresses. Marina Times and Westside Observer are **not** in it.
+  collection too; SOURCES.md retired it as a source of its own, and its
+  25 issues were read here on 2026-11-24. Marina Times and Westside Observer are **not** in it.
 - **Where:** an issue is `https://archive.org/details/<identifier>`; a page
   cites `https://archive.org/details/<identifier>/page/n<leaf>/mode/1up`,
   where `<leaf>` is the 0-based index into the item's hOCR page index (what
@@ -194,10 +194,15 @@
   issues, May 1976 to September 1999
   (`findings/sf-neighborhood-newspapers/semaphore-1976-1999.json`); the
   105 items from 2000 on have no hOCR and are not read.
-  **Not read:** the other seven titles, and the Potrero View's November
-  2009 issue (no OCR on the Internet Archive). The next batches: Tenant
-  Times (25 of 26), the St. Mary's Park newsletter
-  (15 of 17) and Street Art News (6 of 7); then the titles with little or
+  *Tenant Times*, every issue with hOCR — 25 issues, February 1979 to
+  March 1996
+  (`findings/sf-neighborhood-newspapers/tenant-times-1979-1996.json`).
+  The *St. Mary's Park Improvement Club newsletter* (15 issues with hOCR,
+  1959–1985) and *Street Art News* (6, 1975) were read whole and yielded
+  nothing; they have no findings file.
+  **Not read:** the other four titles, and the Potrero View's November
+  2009 issue (no OCR on the Internet Archive). The next batches are the
+  titles with little or
   no hOCR, whose text has to come from `_djvu.txt` and the leaf from
   `_djvu.xml` or the page count: The Semaphore from 2000 on (105 items),
   the Bernal Journals (179 items under six
@@ -403,6 +408,19 @@
   street number on the cited leaf, and every day-precision date within the
   surrounding article, and the eight the date check flagged were read by
   hand and stood.)
+  2026-11-24 (tenth run, three small titles. Tenant Times: 25 issues, 205
+  mentions, 55 passages read by hand, 17 findings, 15 published on 12
+  existing pages, 2 unplaced (261 Valencia, 66 Berry). It is the Tenants
+  Union's advocacy paper; what it adds is the building-level record of the
+  hotel-conversion fights of 1979-84 (Central Towers' rent strike, the
+  Empress emptied, the Dalt settlement, the Orr Hotel turned into an inn,
+  the Astoria's closing notice) and the Homes Not Jails occupations of
+  1992-95 (250 Taylor, 66 Berry, 3250 17th). No landlord is named. The St.
+  Mary's Park newsletter (15 issues) and Street Art News (6) are meeting
+  notices and advertisements: nothing kept. **Learned:** SOURCES.md
+  retired Tenant Times on one sampled issue with no numbered address; the
+  1979 and 1981 "building roundup" pages do print them, so a one-issue
+  sample is thin grounds for retiring a title.)
   2026-11-24 (ninth run, The Semaphore, 1976-1999. 92 issues, 5,605
   mentions, 425 passages read by hand, 68 findings, 55 resolved and
   published on 49 pages, 9 seeded, 11 held, 2 unplaced. A neighborhood

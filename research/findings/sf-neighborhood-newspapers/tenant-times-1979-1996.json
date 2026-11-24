@@ -1,0 +1,617 @@
+{
+ "source_id": "sf-neighborhood-newspapers",
+ "batch": "tenant-times-1979-1996",
+ "read_on": "2026-11-24",
+ "notes": "Tenant Times, the San Francisco Tenants Union's paper (February 1979 to March 1996), the 25 issues the Internet Archive collection sanfrancisconewspapers holds with an OCR layer. Source text is each item's hOCR search text; leaves from its hOCR page index; citations give the issue month and the leaf. Read by hand, with no reader pass; extra.candidate is the row key in /mnt/project-files/mission-papers/decisions_tenant.py. It is an advocacy paper, so only what happened to a building is kept (a rent strike, a closure, a settlement, a conversion, an occupation), in neutral words, at medium confidence where the paper is the only witness, and with no landlord named. Rent-increase disputes at small buildings, Rent Board cases and meeting places were left out. extra.number_as_printed keeps the Goodman Building's printed range, 1109-1119 Geary. The same batch of reading covered two titles that yielded nothing: the St. Mary's Park Improvement Club newsletter (15 issues, 1959 to 1985: meeting notices at members' homes and advertisers) and Street Art News (6 issues, 1975: advertisements and a performance calendar).",
+ "coverage": {
+  "unit": "issues",
+  "examined": 25,
+  "mentions": 205,
+  "remaining": "Nothing in this title: every issue with an OCR layer was read. One catalogued item has no hOCR.",
+  "note": "25 issues; 205 numbered-address mentions on EAS streets (ocr_mentions.py --rescue). The filter kept 75 windows, merged into 55 passages, all read by hand. 17 findings written, each quote found again in the issue's text. 15 resolved and published on 12 existing pages; none seeded, none held. 2 unplaced at numbers no parcel carries today: the Colonial Apartments at 261 Valencia and 66 Berry Street, on the ballpark site. One candidate, the Evangeline's threatened closing, was not entered because the page has it from the Tenderloin Times. Also read in this pass and empty: the St. Mary's Park newsletter (15 issues, 159 mentions, 15 passages) and Street Art News (6 issues, 67 mentions, 4 passages)."
+ },
+ "findings": [
+  {
+   "id": "tenant-times-0001",
+   "date": "1979-03-01",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "350 Turk and 455 Eddy",
+   "street_number": "350",
+   "street_name": "TURK",
+   "street_type": "ST",
+   "description": "Tenants of Central Towers, two 14-floor buildings at 350 Turk and 455 Eddy with 388 units, began a rent strike over a third rent increase in ten months, by the tenants union's account.",
+   "extra": {
+    "candidate": "tenant#t01"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), February 1979",
+    "url": "https://archive.org/details/tenanttimes11sanf/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes11sanf.txt",
+    "locator": "tenanttimes11sanf-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "Central Towers is comprised of two buildings at 350 Turk and 455 Eddy"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0337020",
+    "path": "/san-francisco/tenderloin/turk-street/350/",
+    "eas_address": "350 TURK ST",
+    "method": "EAS exact match on 350 TURK ST → parcel 0337020; sf-parcels has blklot 0337020 active, 455–455 EDDY; the 2025 roll records it as multi-family residential, built 1964. EAS puts 350, 354 TURK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 350.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0002",
+   "date": "1978",
+   "date_precision": "year",
+   "kind": "event",
+   "address_as_written": "805 Leavenworth",
+   "street_number": "805",
+   "street_name": "LEAVENWORTH",
+   "street_type": "ST",
+   "description": "Tenants here went on a rent strike in the summer, after a third rent increase in a year and a half, by the tenants union's account.",
+   "extra": {
+    "candidate": "tenant#t02"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), February 1979",
+    "url": "https://archive.org/details/tenanttimes11sanf/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes11sanf.txt",
+    "locator": "tenanttimes11sanf-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "went on a successful rent strike last summer"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0280007",
+    "path": "/san-francisco/nob-hill/leavenworth-street/805/",
+    "eas_address": "805 LEAVENWORTH ST",
+    "method": "EAS exact match on 805 LEAVENWORTH ST → parcel 0280007; sf-parcels has blklot 0280007 active, 805–805 LEAVENWORTH; the 2025 roll records it as multi-family residential, built 1924.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0003",
+   "date": "1979-02",
+   "date_precision": "month",
+   "kind": "event",
+   "address_as_written": "1109-1119 Geary Street",
+   "street_number": "1117",
+   "street_name": "GEARY",
+   "street_type": "BLVD",
+   "description": "The Goodman Group, the tenants union of the building's 40 units and 5 storefronts, had been on rent strike against the Redevelopment Agency since 1973 and had lately received 90 eviction notices.",
+   "extra": {
+    "candidate": "tenant#t03",
+    "number_as_printed": "1109-1119"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), February 1979",
+    "url": "https://archive.org/details/tenanttimes11sanf/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes11sanf.txt",
+    "locator": "tenanttimes11sanf-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "Tenants Union on rent strike since 1973"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0714018",
+    "path": "/san-francisco/japantown/geary-boulevard/1109/",
+    "eas_address": "1109 GEARY BLVD",
+    "method": "EAS exact match on 1117 GEARY BLVD → parcel 0714018; sf-parcels has blklot 0714018 active, 1109–1121 GEARY; the 2025 roll records it as commercial office, built 1900. EAS puts 1109, 1111, 1113, 1115, 1117, 1119, 1121 GEARY BLVD on that parcel, so per the directory contract the fact belongs on one page at the lowest, 1109.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0004",
+   "date": "1981",
+   "date_precision": "year",
+   "kind": "conversion",
+   "address_as_written": "1015 Geary",
+   "street_number": "1015",
+   "street_name": "GEARY",
+   "street_type": "ST",
+   "description": "The 120-unit Hotel Lombard, formerly the Lombard Residence Club, changed hands in the fall of 1980 and was being turned over to tourist use; residents sought an injunction to restore linen, telephone and food service.",
+   "extra": {
+    "candidate": "tenant#t04"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), June 1981",
+    "url": "https://archive.org/details/tenanttimes32sanf/page/n8/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes32sanf.txt",
+    "locator": "tenanttimes32sanf-n8 (leaf 8)"
+   },
+   "raw": {
+    "text": "Formerly the Lombard Residence Club"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0715011",
+    "path": "/san-francisco/tenderloin/geary-street/1015/",
+    "eas_address": "1015 GEARY ST",
+    "method": "EAS exact match on 1015 GEARY ST → parcel 0715011; sf-parcels has blklot 0715011 active, 1015–1015 GEARY; the 2025 roll records it as commercial hotel, built 1925.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0005",
+   "date": "1981-03-03",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "144 Eddy St.",
+   "street_number": "144",
+   "street_name": "EDDY",
+   "street_type": "ST",
+   "description": "After a hearing on unsafe and unsanitary conditions at the Empress Hotel, the Department of Public Works ordered the owner to secure and repair the building within 10 days.",
+   "extra": {
+    "candidate": "tenant#t08a"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), June 1981",
+    "url": "https://archive.org/details/tenanttimes32sanf/page/n1/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes32sanf.txt",
+    "locator": "tenanttimes32sanf-n1 (leaf 1)"
+   },
+   "raw": {
+    "text": "hearing on March 3rd"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0331008",
+    "path": "/san-francisco/tenderloin/eddy-street/144/",
+    "eas_address": "144 EDDY ST",
+    "method": "EAS exact match on 144 EDDY ST → parcel 0331008; sf-parcels has blklot 0331008 active, 144–144 EDDY; the 2025 roll records it as commercial hotel, built 1907.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0006",
+   "date": "1981",
+   "date_precision": "year",
+   "kind": "conversion",
+   "address_as_written": "135 Gough",
+   "street_number": "135",
+   "street_name": "GOUGH",
+   "street_type": "ST",
+   "description": "The Orr Hotel, an 11-unit residential hotel, was being converted into a bed and breakfast inn after its last tenants agreed to move.",
+   "extra": {
+    "candidate": "tenant#t06"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), August 1981",
+    "url": "https://archive.org/details/tenanttimes33sanf/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes33sanf.txt",
+    "locator": "tenanttimes33sanf-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "into a bed and breakfast inn"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0838004",
+    "path": "/san-francisco/hayes-valley/gough-street/131/",
+    "eas_address": "131 GOUGH ST",
+    "method": "EAS exact match on 135 GOUGH ST → parcel 0838004; sf-parcels has blklot 0838004 active, 131–135 GOUGH; the 2025 roll records it as commercial hotel, built 1906. EAS puts 131, 133, 135 GOUGH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 131.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0007",
+   "date": "1981",
+   "date_precision": "year",
+   "kind": "event",
+   "address_as_written": "34 Turk",
+   "street_number": "34",
+   "street_name": "TURK",
+   "street_type": "ST",
+   "description": "Tenants of the 200-unit Dalt Hotel were to receive $450,000, about $8,000 each, in settlement of a lawsuit over acts in the winter of 1980 meant to empty the hotel for conversion.",
+   "extra": {
+    "candidate": "tenant#t07"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), August 1981",
+    "url": "https://archive.org/details/tenanttimes33sanf/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes33sanf.txt",
+    "locator": "tenanttimes33sanf-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "Tenants will receive $450,000"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0340007",
+    "path": "/san-francisco/tenderloin/turk-street/34/",
+    "eas_address": "34 TURK ST",
+    "method": "EAS exact match on 34 TURK ST → parcel 0340007; sf-parcels has blklot 0340007 active, 34–48 TURK; the 2025 roll records it as commercial hotel, built 1909. EAS puts 34, 36, 38, 40, 42, 44, 46, 48 TURK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 34.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0008",
+   "date": "1981-08",
+   "date_precision": "month",
+   "kind": "closure",
+   "address_as_written": "144 Eddy",
+   "street_number": "144",
+   "street_name": "EDDY",
+   "street_type": "ST",
+   "description": "The 90-unit Empress Hotel stood empty by August 1981, after evictions that began the winter before.",
+   "extra": {
+    "candidate": "tenant#t08b"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), August 1981",
+    "url": "https://archive.org/details/tenanttimes33sanf/page/n7/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes33sanf.txt",
+    "locator": "tenanttimes33sanf-n7 (leaf 7)"
+   },
+   "raw": {
+    "text": "144 Eddy — 90 units"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0331008",
+    "path": "/san-francisco/tenderloin/eddy-street/144/",
+    "eas_address": "144 EDDY ST",
+    "method": "EAS exact match on 144 EDDY ST → parcel 0331008; sf-parcels has blklot 0331008 active, 144–144 EDDY; the 2025 roll records it as commercial hotel, built 1907.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0009",
+   "date": "1981",
+   "date_precision": "year",
+   "kind": "event",
+   "address_as_written": "308 Turk",
+   "street_number": "308",
+   "street_name": "TURK",
+   "street_type": "ST",
+   "description": "The last half dozen tenants of the 20-unit building, who had fought eviction for almost half a year, settled and agreed to move for $950 apiece.",
+   "extra": {
+    "candidate": "tenant#t09"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), August 1981",
+    "url": "https://archive.org/details/tenanttimes33sanf/page/n6/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes33sanf.txt",
+    "locator": "tenanttimes33sanf-n6 (leaf 6)"
+   },
+   "raw": {
+    "text": "308 Turk — 20 units"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0337007",
+    "path": "/san-francisco/tenderloin/turk-street/308/",
+    "eas_address": "308 TURK ST",
+    "method": "EAS exact match on 308 TURK ST → parcel 0337007; sf-parcels has blklot 0337007 active, 308–310 TURK; the 2025 roll records it as multi-family residential, built 1923. EAS puts 308, 310 TURK ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 308.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0010",
+   "date": "1981",
+   "date_precision": "year",
+   "kind": "event",
+   "address_as_written": "261 Valencia",
+   "street_number": "261",
+   "street_name": "VALENCIA",
+   "street_type": "ST",
+   "description": "The 32-unit Colonial Apartments, owned by the Greek Orthodox Church, had been under threat of demolition since December 1980; the tenants who remained were on rent strike.",
+   "extra": {
+    "candidate": "tenant#t10"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), August 1981",
+    "url": "https://archive.org/details/tenanttimes33sanf/page/n7/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes33sanf.txt",
+    "locator": "tenanttimes33sanf-n7 (leaf 7)"
+   },
+   "raw": {
+    "text": "261 Valencia — 32 units"
+   },
+   "confidence": "medium",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "No record in sf-eas-addresses for 261 VALENCIA ST.",
+    "note": "The address does not exist today, so there is no page it can go on. The nearest surviving numbers on the street are 245, 250, 260, 270, 280. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "tenant-times-0011",
+   "date": "1984",
+   "date_precision": "year",
+   "kind": "event",
+   "address_as_written": "510 Bush at Grant",
+   "street_number": "510",
+   "street_name": "BUSH",
+   "street_type": "ST",
+   "description": "Residents of the 93-unit Astoria Hotel, long a home to merchant seamen, were told in May 1984 that the hotel would close on July 1 and were offered $1,200 each to leave; nine remained in October.",
+   "extra": {
+    "candidate": "tenant#t11"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), November 1984",
+    "url": "https://archive.org/details/tenanttimes02sanf/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes02sanf.txt",
+    "locator": "tenanttimes02sanf-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "This 93-unit hotel has been home to merchant seamen for decades"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0271005",
+    "path": "/san-francisco/financial-district/bush-street/500/",
+    "eas_address": "500 BUSH ST",
+    "method": "EAS exact match on 510 BUSH ST → parcel 0271005; sf-parcels has blklot 0271005 active, 500–510 BUSH; the 2025 roll records it as commercial hotel, built 1912. EAS puts 500, 502, 510 BUSH ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 500.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0012",
+   "date": "1980",
+   "date_precision": "year",
+   "kind": "move",
+   "address_as_written": "558 Capp St",
+   "street_number": "558",
+   "street_name": "CAPP",
+   "street_type": "ST",
+   "description": "The San Francisco Tenants Union, begun in the Haight in 1970 as the Tenants Action Group, moved its office here.",
+   "extra": {
+    "candidate": "tenant#t12",
+    "record_date": "1985"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), January 1985",
+    "url": "https://archive.org/details/tenanttimes01sanf/page/n3/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes01sanf.txt",
+    "locator": "tenanttimes01sanf-n3 (leaf 3)"
+   },
+   "raw": {
+    "text": "We moved to our present office at 558 Capp St in 1980"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3610038",
+    "path": "/san-francisco/mission/capp-street/558/",
+    "eas_address": "558 CAPP ST",
+    "method": "EAS exact match on 558 CAPP ST → parcel 3610038; sf-parcels has blklot 3610038 active, 558–558 CAPP; the 2025 roll records it as commercial office, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0013",
+   "date": "1985",
+   "date_precision": "year",
+   "kind": "renovation",
+   "address_as_written": "558 Capp Street",
+   "street_number": "558",
+   "street_name": "CAPP",
+   "street_type": "ST",
+   "description": "The building was rehabilitated with Community Development Block Grant funds; the Tenants Union worked meanwhile from 2519 Mission Street.",
+   "extra": {
+    "candidate": "tenant#t13"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), July 1985",
+    "url": "https://archive.org/details/tenanttimes63sanf/page/n2/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes63sanf.txt",
+    "locator": "tenanttimes63sanf-n2 (leaf 2)"
+   },
+   "raw": {
+    "text": "Our office is finally being brought up to code"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3610038",
+    "path": "/san-francisco/mission/capp-street/558/",
+    "eas_address": "558 CAPP ST",
+    "method": "EAS exact match on 558 CAPP ST → parcel 3610038; sf-parcels has blklot 3610038 active, 558–558 CAPP; the 2025 roll records it as commercial office, built 1900.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0014",
+   "date": "1992-11",
+   "date_precision": "month",
+   "kind": "event",
+   "address_as_written": "250 Taylor Street",
+   "street_number": "250",
+   "street_name": "TAYLOR",
+   "street_type": "ST",
+   "description": "Homes Not Jails, then a few weeks old, occupied the building, vacant for seven years, for about half an hour on Thanksgiving 1992, and returned on Christmas Eve.",
+   "extra": {
+    "candidate": "tenant#t14"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), February 1993",
+    "url": "https://archive.org/details/tenanttimes01sanf_2/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes01sanf_2.txt",
+    "locator": "tenanttimes01sanf_2-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "250 Taylor Street was chosen as the target"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0331013",
+    "path": "/san-francisco/tenderloin/taylor-street/250/",
+    "eas_address": "250 TAYLOR ST",
+    "method": "EAS exact match on 250 TAYLOR ST → parcel 0331013; sf-parcels has blklot 0331013 active, 287–299 ELLIS; the 2025 roll records it as multi-family residential, built 1923. EAS puts 250, 254, 258, 262 TAYLOR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 250.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0015",
+   "date": "1993-11",
+   "date_precision": "month",
+   "kind": "event",
+   "address_as_written": "250 Taylor Street",
+   "street_number": "250",
+   "street_name": "TAYLOR",
+   "street_type": "ST",
+   "description": "On Thanksgiving morning 1993 about two dozen police entered the vacant building and arrested four people who had gone in ahead of a planned Homes Not Jails march.",
+   "extra": {
+    "candidate": "tenant#t15"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), February 1994",
+    "url": "https://archive.org/details/tenanttimes01sanf_3/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes01sanf_3.txt",
+    "locator": "tenanttimes01sanf_3-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "police forced their way into 250 Taylor Street"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "0331013",
+    "path": "/san-francisco/tenderloin/taylor-street/250/",
+    "eas_address": "250 TAYLOR ST",
+    "method": "EAS exact match on 250 TAYLOR ST → parcel 0331013; sf-parcels has blklot 0331013 active, 287–299 ELLIS; the 2025 roll records it as multi-family residential, built 1923. EAS puts 250, 254, 258, 262 TAYLOR ST on that parcel, so per the directory contract the fact belongs on one page at the lowest, 250.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  },
+  {
+   "id": "tenant-times-0016",
+   "date": "1993-12-25",
+   "date_precision": "day",
+   "kind": "event",
+   "address_as_written": "66 Berry St.",
+   "street_number": "66",
+   "street_name": "BERRY",
+   "street_type": "ST",
+   "description": "Homes Not Jails occupied the vacant building, owned by Caltrans, on Christmas morning 1993 and held it for more than three days.",
+   "extra": {
+    "candidate": "tenant#t16"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), February 1994",
+    "url": "https://archive.org/details/tenanttimes01sanf_3/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes01sanf_3.txt",
+    "locator": "tenanttimes01sanf_3-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "building at 66 Berry St."
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "unresolved",
+    "checked_on": "2026-11-24",
+    "method": "No record in sf-eas-addresses for 66 BERRY ST.",
+    "note": "The address does not exist today, so there is no page it can go on. EAS has no address near it on this street either. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+   }
+  },
+  {
+   "id": "tenant-times-0017",
+   "date": "1995-11",
+   "date_precision": "month",
+   "kind": "event",
+   "address_as_written": "3250 17th Street",
+   "street_number": "3250",
+   "street_name": "17TH",
+   "street_type": "ST",
+   "description": "Homes Not Jails occupied the vacant three-unit building, then in federal hands after a savings and loan failure, for five days over Thanksgiving 1995. Mayor Willie Brown later pressed the federal government to hold off its sale so it could become housing.",
+   "extra": {
+    "candidate": "tenant#t17"
+   },
+   "citation": {
+    "label": "Tenant Times (San Francisco Tenants Union), March 1996",
+    "url": "https://archive.org/details/tenanttimes02sanf_4/page/n4/mode/1up",
+    "corpus_path": "research/corpora/sf-neighborhood-newspapers/tenant/raw/tenanttimes02sanf_4.txt",
+    "locator": "tenanttimes02sanf_4-n4 (leaf 4)"
+   },
+   "raw": {
+    "text": "refusing to turn a vacant building at 3250 17th Street into affordable housing"
+   },
+   "confidence": "high",
+   "resolution": {
+    "status": "resolved",
+    "apn": "3570016",
+    "path": "/san-francisco/mission/17th-street/3250/",
+    "eas_address": "3250 17TH ST",
+    "method": "EAS exact match on 3250 17TH ST → parcel 3570016; sf-parcels has blklot 3570016 active, 3250–3250 17TH; the 2025 roll records it as industrial, built 1906.",
+    "checked_on": "2026-11-24"
+   },
+   "publish": {
+    "status": "published",
+    "pr": "750"
+   }
+  }
+ ]
+}
