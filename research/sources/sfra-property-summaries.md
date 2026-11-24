@@ -7,7 +7,7 @@
 >
 > - **Kind:** scanned survey forms and file papers, read from page images · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — hand-filled forms whose OCR is noise; nothing in them is findable by address.
-> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388) and 15 Yerba Buena subject files (306) read whole; the rest of the collection unread.
+> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) and all 23 Yerba Buena items (568) read whole; only the A-2 appraisal and comparable-sales volumes (5001 to 5038) unread.
 > - **Local corpus:** `research/corpora/sfra-property-summaries/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -132,21 +132,44 @@
 - **Coverage:** Read: the seven Property Summary items, every page
   (`western-addition-a2-1962`); the nine House Moves items, 5087 to 5095
   (`house-moves-1974-1979`, 2026-11-18); the ten Parcel Appraisal Reports, 5039
-  to 5048 (`parcel-appraisals-1955`, zero findings); and the Yerba Buena Phase 1
+  to 5048 (`parcel-appraisals-1955`, zero findings); the Yerba Buena Phase 1
   Hotels, Breen's and block files, 5061, 5063 and 5064 to 5076
-  (`yerba-buena-subject-files`). Not read, same collection: the 50-building
-  conservation study (5000), whose sample numbers the forms cite; the appraisal
-  and comparable-sales volumes (5001 to 5038); and the Yerba Buena Blight,
-  Photos, Contact Sheets, New Start Center and Demolition items (5055 to 5060,
-  5077, 5078). Expect little from any of them: the three batches after the
-  Property Summaries read 2,132 pages for one published fact. The only
-  untried lever is a date for the Yerba Buena block files, whose block-lot
-  prints include many buildings that still stand.
-  Held for a page: 66 facts (`check.py --held`). Left out as findings: two
+  (`yerba-buena-subject-files`); the 50-building conservation study, 5000
+  (`conservation-study-1962`, 2026-11-24); and the last eight Yerba Buena
+  items, 5055 to 5060, 5077 and 5078 (`yerba-buena-photo-items`, 2026-11-24).
+  **Not read: the A-2 appraisal and comparable-sales volumes, 5001 to 5038**
+  (about 15,000 pages, 1960 to 1990). Take the **comparable-sales volumes
+  first** (5030 to 5038, 1969-70, about 1,100 pages): a comparable sale is a
+  property the Agency did *not* buy, often outside the project area, so these
+  sheets describe buildings that can still stand, and each one is typed with
+  the address, block and lot, lot size, deed date, price and often the year
+  built — the one sheet of this kind read so far (5059 p. 3) published. The
+  acquisition appraisals (5001 to 5029) describe what was bought, so run them
+  resolution-first, per LESSONS. Do not read 5077, the New Start Center: its
+  prints are portraits of displaced residents, some named on the backs.
+  Held for a page: 77 facts (`check.py --held`). Left out as findings: two
   1957 appraisal sheets with no street number (block 702 lot 23, block 733
   lots 1 and 1A), an undated service-station appraisal at 1301 Golden Gate
   Avenue, and five 1957 acquisition dividers for the cleared 1700 block of
   Geary.
+- **The 50-building conservation study (5000) is a captioned photo album.**
+  Fifty prints, each typed with a sample number, a dwelling-type class
+  (Single Family to 10+ Family, RH for rooming house, Hotel; a "-C" suffix the
+  album never explains, left as recorded), the address and the 1962 block and
+  lot, then the 15-building FHA Conservation Standards Sample repeated. No
+  ratings and no text: the fact is the selection and the photograph. Sample
+  14's caption is faint; the repeat gives 938-42 Buchanan. Sample 35 is lot 35
+  in one place and lot 18 in the other. Being picked for a *conservation*
+  study did not save a building: 9 of the 26 that resolve sit under a building
+  the roll dates 1971 to 1991.
+- **Verified:** 2026-11-24 (the conservation study and the last eight Yerba
+  Buena items read: 302 PDF pages, 56 findings, 6 resolved, 6 published — five
+  1962 sample photographs on 1 Cottage Row, 1868 Buchanan, 1843-49 Bush, 2109
+  Bush and 1310 Turk, and a 1961 sale of the 1913 hotel at 265 Third Street,
+  now a vacant lot — 10 held, 13 placed on a later or merged building and left
+  unresolved, 27 with no surviving address. Learned: a comparable-sales sheet
+  describes a property the Agency did not buy, so it is the part of an
+  appraisal file most likely to land on a standing building or a page.)
 - **Verified:** 2026-11-18 (House Moves, Parcel Appraisal Reports and Yerba
   Buena subject files read: 2,132 PDF pages, 12 findings, 4 resolved, 1
   published — 1737 Webster Street's `building.relocated_from` from the Turk
