@@ -45,7 +45,7 @@
   straight from the raw text), `decisions_g1.py` (one row per finding), `build.py`, `patch_g1.py`
   (by-hand placements, holds, gone numbers), `publish.py`, `audit.py` and
   `eas.py`.
-- **What is actually usable:** in 1966–1976, 25,304 numbered mentions gave 48
+- **What is actually usable:** in 1966–1976, 25,304 numbered mentions gave 54
   findings, a far lower rate than a bar paper's, because nearly every
   numbered address is a display advertisement or a calendar listing. The
   facts come from article prose: "The people of 829 Fell St. have been
@@ -98,9 +98,10 @@
   points at the leaf.
 - **Coverage:** 1966–1976 (173 issues, 25,304 mentions, 1,264 address
   clusters; 134 prose clusters, 193 of 671 lines of event-word clusters and
-  23 event-word passages read): 48 findings, 37 resolved and published on 35
-  pages, none seeded, 1 placed by hand, 4 held (3220 Fillmore, 2695
-  Sacramento, 2140 Clement, 2260 Van Ness), 7 at numbers EAS no longer holds
+  23 event-word passages read, then the 85 passages of the news-word pass):
+  54 findings, 41 resolved and published on 39
+  pages, none seeded, 1 placed by hand, 6 held (3220 Fillmore, 2695
+  Sacramento, 2140 Clement, 2260 Van Ness, 917 Cole, 1632 Page), 7 at numbers EAS no longer holds
   (1330 Clay, 17 Second, 432 Mason, 17 Adler Place, 75 Fifth, 1898 Folsom,
   393 Folsom). They include the Straight Theatre's conversion, the rent
   strikes at 829 Fell and 940 Hayes, the newspaper strike headquarters on
@@ -123,7 +124,8 @@
 - **Verified:** 2026-11-24 (source found by browsing the Internet Archive's
   San Francisco newspaper collections, promoted and 1966–1976 read in one
   run: 173 issues downloaded from `_djvu.xml`, about 100 candidates checked
-  against the issue text, 48 findings, every quote found again on its leaf;
+  against the issue text, 48 findings, every quote found again on its leaf
+  (six more, 54 in all, when the news-word pass was run over these years later the same day);
   the audit flags 2, both a building named without its number. Learned: this
   paper's addresses are advertisements, so filter for prose first; a fact
   already on the page from a context statement or the planning minutes is
