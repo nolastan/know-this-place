@@ -11,7 +11,9 @@ permit history and little else, in grey — and "ph", the page's own photo where
 it has one, which the card shows in Street View's place — and "m", the names of the businesses
 trading there today (the page's open `businesses` and its `occupants`, as
 the page's own panel lists them), which the Know This Photo app reads to send
-its photographers to storefronts with no photo yet. Coordinates and labels come from each
+its photographers to storefronts with no photo yet — and "nw", those of
+them whose map listing has no website (see no_website_names), whose
+markers the app draws in their own colour. Coordinates and labels come from each
 page's data.json, or a place's place.json, which is the single source of truth,
 through the same seed_pages functions that write the page's hero. "r" comes
 from research/findings, whose published entries each name the page they went
@@ -34,7 +36,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from seed_pages import (forwarding_parcel, forwards, hero_lines, page_photo,  # noqa: E402
-                        place_sub, trading_rows, read_lot_cache, polygons_contain, BOUNDARY_SOURCE,
+                        place_sub, trading_rows, name_key, read_lot_cache, polygons_contain, BOUNDARY_SOURCE,
                         _pack, _polys_bbox, _unpack, unpack_polygons,
                         DS_ANALYSIS_NEIGHBORHOODS, MAP_DIR)
 
@@ -61,11 +63,35 @@ def researched_paths() -> set[str]:
     return paths
 
 
+def no_website_names() -> dict[str, set[str]]:
+    """The businesses Stan has confirmed have no website on their map listing,
+    as {page path: {name_key, …}}. Such a list goes through
+    merchants/tools/register.py like any other, named
+    merchants/lists/<date>-no-website-<slug>.tsv; each batch it reads records
+    the list it came from, and its published findings name the page and the
+    business. Only the photo app reads this: a page never says it."""
+    out = {}
+    for path in sorted((ROOT / "merchants" / "sf-registered-businesses").glob("*.json")):
+        try:
+            batch = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        if "-no-website-" not in Path(batch.get("list") or "").name:
+            continue
+        for f in batch.get("findings") or []:
+            pub = f.get("publish") or {}
+            name = (f.get("extra") or {}).get("name")
+            if pub.get("status") == "published" and pub.get("path") and name:
+                out.setdefault(pub["path"], set()).add(name_key(name))
+    return out
+
+
 def main() -> None:
     content = ROOT / "san-francisco"
     features = []
     skipped = []
     researched = researched_paths()
+    no_website = no_website_names()
     place_paths = set()
     place_parcels = {}
     place_part_of = {}
@@ -120,6 +146,9 @@ def main() -> None:
             names = [r["name"] for r in trading_rows(data)]
             if names:
                 props["m"] = names
+                nw = [n for n in names if name_key(n) in no_website.get(path, ())]
+                if nw:
+                    props["nw"] = nw
         if is_place:
             place_paths.add(path)
             place_parcels[path] = [m.replace("-", "") for m in data.get("parcels") or []]

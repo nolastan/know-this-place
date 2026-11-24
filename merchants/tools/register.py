@@ -301,6 +301,7 @@ def cmd_read(args) -> Path:
     out = Path(args.out) if args.out else OUT_DIR / f"{today}.json"
     doc = {"source_id": SOURCE_ID, "batch": f"{SOURCE_ID}-{today}", "read_on": today,
            "notes": f"Read from {args.list} by merchants/tools/register.py.",
+           "list": Path(args.list).resolve().relative_to(REPO).as_posix(),
            "coverage": f"{len(rows)} listed merchants", "findings": findings}
     if out.exists() and not args.force:
         sys.exit(f"{out} exists; pass --force to replace it, or --out")

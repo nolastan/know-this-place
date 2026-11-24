@@ -293,6 +293,10 @@ What `read` decides, so the next list gets the same answers:
   sharing a word of its name with the last ("Chan Fu", then "A.C.A. Fu
   Group"), is the same owner; filings within 90 days of each other are one
   handover. Registrants' names are compared and never written.
+- **A list named `<date>-no-website-<slug>.tsv`** is of merchants confirmed
+  to have no website on their map listing. Nothing on the page says so; the
+  batch records its `list`, and `build_map_index.py` marks those businesses
+  `nw` in `shared/addresses.geojson` for the Know This Photo app.
 - **A merchant with no open registration under its name stays off**, with
   the reason in `publish`. So does one whose address the resolver cannot put
   on a parcel; those take the by-hand route under Rules above.
