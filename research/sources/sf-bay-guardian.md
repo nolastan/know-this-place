@@ -4,9 +4,9 @@
 > [../LESSONS.md](../LESSONS.md) · register:
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id `sf-bay-guardian`.
 >
-> - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
+> - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** done
 > - **Search-invisibility:** high for 1966–2006 (print only, never on the paper's website); medium for 2008–2014, when the paper also published online.
-> - **Coverage:** 601 of 996 issues read, 1966–2006. See the `Verified:` line.
+> - **Coverage:** every issue in the collection read, 1966–2014 (996 of 996). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/sf-bay-guardian/`
 
 - **What:** The *San Francisco Bay Guardian*, the city's alternative
@@ -142,8 +142,24 @@
   Street, code cases against a large landlord's buildings in 2002 to 2006,
   and a June 2000 retrospective that dates the punk scene's rooms of the
   1970s.
-  **Resume at 2008:** 2008–2014 (395 issues) remains, the least valuable
-  because the paper was on the open web in those years.
+  2008–2010 (210 items, many issues scanned twice; 78,583 mentions): 15
+  findings, 9 published on 9 pages, 4 held (55 Laguna, 3422 Mission, 736
+  Valencia, 1268 Lombard), 2 unplaced (113 Steuart, 1856 Mission). They
+  include the Academy of Art's conversions at the Flower Mart, 601 Brannan
+  and 620 Sutter, the demolition of the Little House on Lombard Street (16
+  March 2009) and the Power Exchange's closure at 34 Mason.
+  2011–2014 (185 items; 34,281 mentions): 21 findings, 13 published on 13
+  pages, 5 held (2441 Mission, 2200 Cesar Chavez, 555 Fulton, 75 Howard,
+  1700 Mission), 3 unplaced (38 Dolores, 1639 Market, 2050 Bryant). They
+  include the eviction letters at 1049 Market, the fire at 1448 Valencia,
+  the school district's land swap for 1950 Mission, the Board of
+  Supervisors' vote on 1050 Valencia, CounterPulse's move to 80 Turk and
+  Zendesk's renovation of 1019 Market.
+  **Exhausted.** Every issue in the collection is read. The collection
+  itself has no issues for 1987, 1995–1997 or 2007; if the Internet Archive
+  adds them, they are the only thing left. The event-word clusters under
+  the tighter filter were skipped in every batch after the first, where
+  they were nearly all advertisements.
 - **Verified:** 2026-11-24 (source found by browsing the Internet Archive's
   San Francisco newspaper collections, promoted and 1966–1976 read in one
   run: 173 issues downloaded from `_djvu.xml`, about 100 candidates checked
@@ -154,4 +170,4 @@
   already on the page from a context statement or the planning minutes is
   common for the famous buildings, so run the overlap check before writing
   more than a line; and the collection's identifiers carry no date, so every
-  script keys on the identifier and reads the date from `items_d.tsv`. Same day, 1977–1986: 127 issues, 21 findings, each quote found again. Learned: `news.py`, a pass over the raw text for prose with a numbered address and a building-news word, finds the planning and housing stories the advertisement filter hides, and is now the first thing to read; by the 1980s the planning minutes and environmental reports already on the pages cover most of the paper's highrise stories, so a third of the candidates fell at the overlap check. Same day, 1988–1994: 179 issues, 35 findings, audit clean. Learned: the issues of 1989 and 1990 are four times the size of the 1970s ones and almost all of the growth is advertising and listings (88 percent of mentions marked as advertisements), so the three reading passes came to only 306 passages; a running story, here the law college's Tenderloin block, is best read as a whole across its issues before any row is written, because each issue adds a number or a date the others lack; and shops' own moving announcements, repeated for weeks, give exact dates the articles do not. Same day, 1998–2006: 122 issues, 39 findings, the audit flags 1 (a year written as ’89). Learned: by 2000 the paper's building news is housing politics, so most rows are a hearing, a lawsuit or a code case and need the landlord and tenants left out; a retrospective feature can date a dozen vanished rooms at once, but a quarter of this batch's addresses no longer exist in EAS; and when a quote occurs twice in an issue the builder cites the first leaf, so make the quote include the number.)
+  script keys on the identifier and reads the date from `items_d.tsv`. Same day, 1977–1986: 127 issues, 21 findings, each quote found again. Learned: `news.py`, a pass over the raw text for prose with a numbered address and a building-news word, finds the planning and housing stories the advertisement filter hides, and is now the first thing to read; by the 1980s the planning minutes and environmental reports already on the pages cover most of the paper's highrise stories, so a third of the candidates fell at the overlap check. Same day, 1988–1994: 179 issues, 35 findings, audit clean. Learned: the issues of 1989 and 1990 are four times the size of the 1970s ones and almost all of the growth is advertising and listings (88 percent of mentions marked as advertisements), so the three reading passes came to only 306 passages; a running story, here the law college's Tenderloin block, is best read as a whole across its issues before any row is written, because each issue adds a number or a date the others lack; and shops' own moving announcements, repeated for weeks, give exact dates the articles do not. Same day, 1998–2006: 122 issues, 39 findings, the audit flags 1 (a year written as ’89). Learned: by 2000 the paper's building news is housing politics, so most rows are a hearing, a lawsuit or a code case and need the landlord and tenants left out; a retrospective feature can date a dozen vanished rooms at once, but a quarter of this batch's addresses no longer exist in EAS; and when a quote occurs twice in an issue the builder cites the first leaf, so make the quote include the number. Same day, 2008–2010 and 2011–2014: 395 items, 36 findings, the audit flags 1. Learned: the last seven years yield a tenth of what the 1970s did per issue, because the paper's building stories had become policy arguments about projects already in the planning minutes, and what is left is closings, moves and the occasional fire; the archive holds many of these issues twice under different identifiers, so read one scan and cite it.)
