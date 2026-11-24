@@ -1,0 +1,103 @@
+{
+  "address": "1744 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/hayes-street/1744/",
+  "apn": "1197008",
+  "block": "1197",
+  "lot": "008",
+  "eas_baseid": "296942",
+  "coordinates": {
+    "lat": 37.774313,
+    "lng": -122.445113
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 2757,
+    "building_area_sqft": 2890,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "1746 1744 HAYES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 234266,
+    "assessed_improvement_value": 240125,
+    "last_sale_date": "1987-04-17"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8919230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-11",
+      "status_date": "1990-07-06",
+      "estimated_cost": 4190,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1989–2015",
+    "shown_on_page": 1,
+    "note": "4 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAYES&street_type=ST&address_number=1744",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1197008&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1197&lot=008",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1197008",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1913-03-18-n422",
+      "name": "Building and Industrial News, 18 March 1913",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1313cont/page/n422/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-03-18",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of flats, estimated at $4,000.",
+      "source": "building-industrial-news-1913-03-18-n422"
+    }
+  ]
+}

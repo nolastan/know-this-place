@@ -6,7 +6,7 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 3 of 8 half-year volumes read (July 1913 – December 1914): 365 facts on 326 pages (139 seeded). Unread: vol. 11 pt. 1 (1911) to vol. 13 pt. 1 (January – June 1913). See the `Verified:` line.
+> - **Coverage:** 4 of 8 half-year volumes read (January 1913 – December 1914): 516 facts on 459 pages (185 seeded). Unread: vol. 11 pt. 1 (1911) to vol. 12 pt. 2 (July – December 1912). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-industrial-news/`
 > - **Claimed:** every unread volume, by the project run that opened this source (2026-11-24). The placed-and-held rows are **not** claimed: they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)).
 >
@@ -76,8 +76,15 @@
   read against the image; 118 published on 110 pages, 36 of them seeded
   (2 more declined as repeats of the page).
   Unfinished: 157 placed single houses and small alterations held until the
-  parcel gets a page, 694 not placed. Unread: the five volumes before July
-  1913.
+  parcel gets a page, 694 not placed.
+- **Coverage, vol. 13 pt. 1** (`buildingindustri1313cont`, 7 January – 25
+  June 1913, 25 issues, Tuesdays until 20 May and Wednesdays after; cover
+  leaves 6, 44, 82 … 952, 38 leaves an issue with a few longer ones): 2,547
+  numbered entries; 1,494 San Francisco rows; 785 placed on a parcel; 205
+  picked and read against the image; 151 published on 139 pages, 46 of them
+  seeded. Unfinished: 162 placed single houses and small alterations held
+  until the parcel gets a page, 709 not placed. Unread: the four volumes
+  before January 1913.
 - **Verified:** 2026-11-24 (vol. 14 pt. 2: read 2,231 entries, found 1,416
   San Francisco rows, resolved 149, published 149 on 134 pages. Learned: the
   entries have the 1915 layout, with "COST, $…" closing each permit;
@@ -111,4 +118,12 @@
   by a deed gets no cost; `heldcrop.py <item> <leaf> <words> <out.png>`
   crops a held fact's entry from any Internet Archive item for the image
   check; four held facts were taken up, three of the later run and one of
-  vol. 14 pt. 1.)
+  vol. 14 pt. 1. Vol. 13 pt. 1, same day: read 2,547 entries, found 1,494
+  San Francisco rows, resolved 151, published 151 on 139 pages. Learned:
+  the paper came out on Tuesdays until 20 May 1913, so `issues_wed.py`
+  finds nothing and the covers ("Year, No. N. JANUARY 7, 1913") date the
+  issues; list the Call entries beside the candidates before the image
+  check (40 of 205 here) so repeats are dropped or trimmed as the sentences
+  are written; a permit for a building that was not the one built (Geary
+  and Mason) is a record only and must not set a builder; a corner whose
+  page credits another architect is held (Geary and Jones).)

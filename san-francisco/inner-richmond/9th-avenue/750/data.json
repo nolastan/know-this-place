@@ -1,0 +1,109 @@
+{
+  "address": "750 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/750/",
+  "apn": "1651026",
+  "block": "1651",
+  "lot": "026",
+  "eas_baseid": "312228",
+  "coordinates": {
+    "lat": 37.774271,
+    "lng": -122.46669
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 2,
+    "stories": 2,
+    "rooms": 10,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2760,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0752 0750 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55184,
+    "assessed_improvement_value": 82216
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201803163830",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-03-16",
+      "status_date": "2019-01-10",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "interior remodel of (e) kitchen as is with no structural work reise 2 window sills 12\" above kitchen counter ,interior remodel of half bath and remove (e) carpet in house work done in middle flr, garage is below",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201802151429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-02-15",
+      "status_date": "2019-01-10",
+      "estimated_cost": 10000,
+      "revised_cost": 15000,
+      "description": "replace existing non compliant damaged rear stair as required second means of egress",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=750",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1651026&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1651&lot=026",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1651026",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1913-05-06-n685",
+      "name": "Building and Industrial News, 6 May 1913",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1313cont/page/n685/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-05-06",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of two flats, estimated at $4,000.",
+      "source": "building-industrial-news-1913-05-06-n685"
+    }
+  ]
+}
