@@ -22,7 +22,9 @@ in shared/map/, which `seed_pages.py lots` refreshes from DataSF.
 Run from anywhere: python3 scripts/build_map_index.py
 """
 import json
+import math
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -30,6 +32,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from seed_pages import (forwarding_parcel, forwards, hero_lines, page_photo,  # noqa: E402
                         place_sub, read_lot_cache, polygons_contain, BOUNDARY_SOURCE,
+                        _pack, _polys_bbox, _unpack, unpack_polygons,
                         DS_ANALYSIS_NEIGHBORHOODS, MAP_DIR)
 
 ADDRESS_DIR = re.compile(r"^\d+[a-z]?$")  # 123, 123a — same as validate.py
@@ -248,6 +251,130 @@ def write_page_lots(features: list, place_parcels: dict, place_part_of: dict) ->
     (MAP_DIR / "index.json").write_text(
         json.dumps(index, separators=(",", ":")) + "\n", encoding="utf-8")
     print(f"shared/map/pages/ written: {placed} page(s) on their lots, {unplaced} with no lot")
+    photos = {p: f["properties"]["ph"] for p, f in features if f["properties"].get("ph")}
+    write_near_tiles(areas, by_area, photos)
+
+
+# The address page's map is a fixed view of the blocks around the building,
+# so it fetches only the few cells of this grid that view covers. ~440 m on a
+# side at San Francisco's latitude: a wide desktop band takes three or four
+# across, a phone one or two.
+NEAR_CELL = (0.005, 0.004)      # degrees of longitude, latitude
+
+
+def _near_cells(bbox: tuple):
+    """Every grid cell a (minx, miny, maxx, maxy) box touches."""
+    w, h = NEAR_CELL
+    for i in range(math.floor(bbox[0] / w), math.floor(bbox[2] / w) + 1):
+        for j in range(math.floor(bbox[1] / h), math.floor(bbox[3] / h) + 1):
+            yield i, j
+
+
+def _clip_ring(ring: list, box: tuple) -> list:
+    """Sutherland–Hodgman: a closed ring cut to an axis-aligned box. Fill
+    only — the cut runs along the box's edge, where nothing is stroked."""
+    x0, y0, x1, y1 = box
+    pts = ring[:-1] if ring and ring[0] == ring[-1] else ring
+    for inside, cut in (
+            (lambda p: p[0] >= x0, lambda a, b: (x0, a[1] + (b[1] - a[1]) * (x0 - a[0]) / (b[0] - a[0]))),
+            (lambda p: p[0] <= x1, lambda a, b: (x1, a[1] + (b[1] - a[1]) * (x1 - a[0]) / (b[0] - a[0]))),
+            (lambda p: p[1] >= y0, lambda a, b: (a[0] + (b[0] - a[0]) * (y0 - a[1]) / (b[1] - a[1]), y0)),
+            (lambda p: p[1] <= y1, lambda a, b: (a[0] + (b[0] - a[0]) * (y1 - a[1]) / (b[1] - a[1]), y1))):
+        out = []
+        for k, cur in enumerate(pts):
+            prev = pts[k - 1]
+            if inside(cur):
+                if not inside(prev):
+                    out.append(cut(prev, cur))
+                out.append(cur)
+            elif inside(prev):
+                out.append(cut(prev, cur))
+        pts = out
+        if not pts:
+            break
+    return pts
+
+
+def write_near_tiles(areas: dict, by_area: dict, photos: dict) -> None:
+    """The address page map's data: shared/map/near/<i>_<j>.json, one file per
+    NEAR_CELL of the grid, holding everything that touches the cell —
+
+      "o"       the cell's south-west corner, whole microdegrees
+      "land"    the city's land cut to the cell, packed off "o"
+      "lots"    [[id, z, packed], …], each lot whose box touches the cell
+      "streets" [[id, name, class, packed], …], likewise
+      "pages"   [{"l", "t", "s", "p", "r"?, "ph"?}, …], the pages on those lots
+
+    A lot or a street that crosses a cell edge is in every cell it touches;
+    the page dedupes by id. Packing is the lot cache's (seed_pages.py → "The
+    homepage map's lot cache"), rebased to the cell. Derived and gitignored."""
+    out = MAP_DIR / "near"
+    if out.exists():
+        shutil.rmtree(out)
+    out.mkdir(parents=True)
+    w, h = NEAR_CELL
+    cells = {}
+
+    def cell(key):
+        if key not in cells:
+            i, j = key
+            cells[key] = {"o": [round(i * w * 1e6), round(j * h * 1e6)],
+                          "land": [], "lots": [], "streets": [], "pages": []}
+        return cells[key]
+
+    def rebase(flat, frm, to):
+        return [flat[0] + frm[0] - to[0], flat[1] + frm[1] - to[1], *flat[2:]]
+
+    pages_on = {}
+    for recs in by_area.values():
+        for rec in recs:
+            rec = dict(rec)
+            if rec["p"] in photos:
+                rec["ph"] = photos[rec["p"]]
+            pages_on.setdefault(rec["l"], []).append(rec)
+
+    for a in areas.values():
+        f = MAP_DIR / "lots" / f"{a['slug']}.json"
+        if not f.exists():
+            continue
+        lf = json.loads(f.read_text(encoding="utf-8"))
+        for m, z, packed in lf["lots"]:
+            bbox = _polys_bbox(unpack_polygons(packed, tuple(lf["o"])))
+            for key in _near_cells(bbox):
+                c = cell(key)
+                c["lots"].append([m, z, [[rebase(r, lf["o"], c["o"]) for r in poly] for poly in packed]])
+                c["pages"].extend(pages_on.get(m, ()))
+
+    streets = json.loads((MAP_DIR / "streets.json").read_text(encoding="utf-8"))
+    so = streets["o"]
+    for k, (n, c_, flat) in enumerate(streets["s"]):
+        pts = _unpack(flat, tuple(so))
+        xs, ys = [p[0] for p in pts], [p[1] for p in pts]
+        for key in _near_cells((min(xs), min(ys), max(xs), max(ys))):
+            if key in cells:      # a street through no lot's cell is in the bay
+                cells[key]["streets"].append([k, streets["names"][n], c_, rebase(flat, so, cells[key]["o"])])
+
+    # The land: every neighborhood, cut to the cell. A hair over the cell's
+    # own edges, so neighbouring cells overlap rather than leave a seam.
+    pad = 2e-6
+    for (i, j), c in cells.items():
+        box = (i * w - pad, j * h - pad, (i + 1) * w + pad, (j + 1) * h + pad)
+        origin = tuple(c["o"])
+        for a in areas.values():
+            b = a["bbox"]
+            if b[2] < box[0] or b[0] > box[2] or b[3] < box[1] or b[1] > box[3]:
+                continue
+            for poly in a["polys"]:
+                rings = [r for r in (_clip_ring(ring, box) for ring in poly) if len(r) >= 3]
+                if rings:
+                    c["land"].append([_pack(r, origin) for r in rings])
+
+    total = 0
+    for (i, j), c in cells.items():
+        text = json.dumps(c, separators=(",", ":"), ensure_ascii=False)
+        total += len(text)
+        (out / f"{i}_{j}.json").write_text(text + "\n", encoding="utf-8")
+    print(f"shared/map/near/ written: {len(cells)} cell(s), {total / 1e6:.1f} MB")
 
 
 if __name__ == "__main__":

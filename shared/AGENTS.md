@@ -46,8 +46,10 @@ new CSS.
   JS would be the only way something renders, it doesn't belong.
   (`validate.py` rejects stray scripts.)
 - **No external resources in a page's markup.** The only three the site loads
-  at all are the Street View image, the Mapbox static map, and the analytics
-  script — all three requested by `site.js`, never written into a page. Don't
+  at all are the Street View image, the Mapbox static image under a
+  neighborhood hub's map, and the analytics script — all three requested by
+  `site.js`, never written into a page. (An address page's locator band is
+  drawn from this site's own files and reaches nothing outside it.) Don't
   add a fourth without a human's say-so, and never as a tag in `index.html`.
 - **The site's homepage (`/index.html`) is the one exception to the three rules
   above**, by explicit human decision: it is a map, not a content page, so it
@@ -160,9 +162,11 @@ wraps it. A page with JS disabled — or a search crawler — must see everythin
   is left alone — in the hero, Street View goes into the carousel's hidden
   last slide instead, which is shown, with dots and arrows, once it loads.
 - **`<ktp-map location="LAT,LNG" label="ADDRESS">`** — the same contract for the
-  locator band, keyed off `mapbox_token`: one flat image from the Mapbox Static
-  Images API, in the basemap matching the reader's color scheme. A static
-  image, not Mapbox GL JS — an address page loads no third-party script.
+  locator band: the homepage map held still, as an SVG of the blocks around
+  the building drawn from the cells of `shared/map/near/` that the frame
+  covers (`build_map_index.py`). No panning, no zoom, no map engine and no
+  third-party request; a lot with a page links to it, opening the homepage's
+  card first. Stan asked for this on 2026-11-24, replacing the Mapbox image.
 - **`<ktp-figure>`** — wraps a chart. Any descendant carrying `data-tip="…"`
   becomes keyboard-focusable and shows that text on hover/focus. The values
   must still exist in the DOM (legend, `aria-label`); the tooltip only surfaces
@@ -175,18 +179,15 @@ wraps it. A page with JS disabled — or a search crawler — must see everythin
   off the role in CSS — is *added by the script*, never written into the page:
   an affordance that needs the script must not exist without it.
 
-Each swaps its own placeholder for an image once the matching key is in
+Street View swaps its own placeholder for an image once the matching key is in
 `site-config.json`, and leaves it standing when there is no key and when there
-is no JS — so imagery turns on across the whole site the day a key is set, with
+is no JS (the map leaves its placeholder when there is no JS) — so imagery turns on across the whole site the day a key is set, with
 no page regeneration. `location` must equal `coordinates` in `data.json`.
 
 **Never test or preview the Street View image.** `maps_embed_key` is restricted
 to the production domain, so it fails from localhost, from any preview host,
-and from `curl` — by design. There is no local check that can pass. The map is
-the one exception, and only from one place: `mapbox_token` is URL-restricted to
-`knowthis.place` *and* `http://localhost:8517`, so the locator map does render
-for a human previewing with `python3 scripts/build_site.py --serve`. Any other
-port, any other host, and `curl` all fail the restriction and prove nothing.
+and from `curl` — by design. There is no local check that can pass. The
+locator band needs no key and renders anywhere the site is served.
 
 `site.js` also loads **analytics** (Fathom) on every page, gated on
 `fathom_site_id` and on the page being served from the production host. It is
