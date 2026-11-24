@@ -7,7 +7,7 @@
 >
 > - **Kind:** newspaper OCR · **Tier:** secondary · **Status:** open
 > - **Search-invisibility:** high — monthly community papers whose only text is an Internet Archive OCR layer; no address query reaches them.
-> - **Coverage:** eleven titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999) and The New Fillmore (27 issues, 1986–1990) — 1,208 findings, 1,061 resolved, 975 published on 738 pages (239 seeded).
+> - **Coverage:** eleven titles of 18 read: the Visitacion Valley Grapevine (289 issues, 1986–2011), the Glen Park Association's paper under all its names (124 issues, 1977–2012), OMI News (85 issues, 1969–1980), The Potrero View (341 of 342 issues, 1970–1977 and 1986–2009), the Noe Valley Voice (335 issues in 337 items, 1977–2011) North Mission News with its successor New Mission News (197 issues, 1983–2004), the Richmond ReView (228 issues, 1988–2008), the Tenderloin Times (141 issues, 1977–1994) Park Bell (64 issues, 1987–1999) and The New Fillmore (27 issues, 1986–1990), and a twelfth in part, The Semaphore of the Telegraph Hill Dwellers (the 92 issues with OCR, 1976–1999) — 1,276 findings, 1,116 resolved, 1,030 published on 785 pages (248 seeded).
 > - **Local corpus:** `research/corpora/sf-neighborhood-newspapers/<title>/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -190,16 +190,24 @@
   *The New Fillmore*, every issue with hOCR — 27 issues, May 1986 to
   May 1990
   (`findings/sf-neighborhood-newspapers/new-fillmore-1986-1990.json`).
+  *The Semaphore* (Telegraph Hill Dwellers), every issue with hOCR — 92
+  issues, May 1976 to September 1999
+  (`findings/sf-neighborhood-newspapers/semaphore-1976-1999.json`); the
+  105 items from 2000 on have no hOCR and are not read.
   **Not read:** the other seven titles, and the Potrero View's November
   2009 issue (no OCR on the Internet Archive). The next batches: Tenant
-  Times (25 of 26), the
-  Semaphore titles (92 of 197 with hOCR), the St. Mary's Park newsletter
+  Times (25 of 26), the St. Mary's Park newsletter
   (15 of 17) and Street Art News (6 of 7); then the titles with little or
   no hOCR, whose text has to come from `_djvu.txt` and the leaf from
-  `_djvu.xml` or the page count: the Bernal Journals (179 items under six
+  `_djvu.xml` or the page count: The Semaphore from 2000 on (105 items),
+  the Bernal Journals (179 items under six
   catalogue names, 1964–2008), the Telegraph Hill Bulletin (4 of 56 with
   hOCR) and Sunnyside (0 of 30). One title is one batch; take two in a
   session if the first is short.
+  **Held, Semaphore:** 11 thin facts on parcels with no page: 16 Napier
+  Lane, 6 Gerke Alley, 1620 Montgomery, 414 Francisco, 450 Broadway, 839
+  Columbus, 2209 Powell, 886 Broadway (Alfred's, 1928), 701 Chestnut, 1741
+  Powell (the Pagoda Palace) and 234 Columbus (J. B. Monaco's last studio).
   **Held, New Fillmore:** 7 shop and gallery openings on parcels with no
   page, and the Alta Plaza Apartments at 2500 Steiner (parcel 0587014,
   with two Building and Engineering News facts, all three checked): the
@@ -395,6 +403,22 @@
   street number on the cited leaf, and every day-precision date within the
   surrounding article, and the eight the date check flagged were read by
   hand and stood.)
+  2026-11-24 (ninth run, The Semaphore, 1976-1999. 92 issues, 5,605
+  mentions, 425 passages read by hand, 68 findings, 55 resolved and
+  published on 49 pages, 9 seeded, 11 held, 2 unplaced. A neighborhood
+  association's paper: most of it is the Dwellers' planning and zoning
+  reports, which give the day a commission voted and what on (725
+  Greenwich, 1299 Sansome, 16 Napier Lane, the Colombo Building
+  settlement of 4 June 1999), and shop profiles that date a building or a
+  business (Figone Hardware, built 1907 as Nick Capurro Hardware; A.
+  Cavalli & Co. at 1441 Stockton from 1934; Alfred's, 1928). **Learned:**
+  (1) an association paper states positions far more often than outcomes,
+  so keep the vote and drop the argument, and look in the next issue for
+  the result; (2) a walking-tour article gives building dates without a
+  source and they often differ from the roll or the city survey, so word
+  them as the paper's and state the conflict; (3) officers' lists and
+  advertisements are most of the address mentions, 5,605 mentions for 68
+  facts.)
   2026-11-24 (eighth run, The New Fillmore. 27 issues, 3,409 mentions,
   152 passages read by hand, 41 findings, 33 resolved, 30 published on 26
   pages, 8 seeded, 3 declined, 8 held. The best of it is Anne Bloomfield's

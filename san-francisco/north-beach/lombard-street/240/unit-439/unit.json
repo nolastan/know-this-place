@@ -1,0 +1,44 @@
+{
+  "address": "240 Lombard Street, San Francisco, CA 94111",
+  "path": "/san-francisco/north-beach/lombard-street/240/unit-439/",
+  "unit": "439",
+  "apn": "0060130",
+  "block": "0060",
+  "lot": "130",
+  "parcel": {
+    "building_area_sqft": 840
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 446205,
+    "assessed_improvement_value": 256567,
+    "last_sale_date": "2018-12-21"
+  },
+  "permits": [
+    {
+      "number": "201804116110",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-11",
+      "status_date": "2018-08-09",
+      "estimated_cost": 12000,
+      "revised_cost": 11000,
+      "description": "kitchen remodel: replace cabinets and appliances (dishwasher, range, sink), replace 5 lights and upgrade all outlets, all replacements are in-kind. kitchen are 60' sq. ft. lighting per cec 150.0 (k)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0060130&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0060&unit=439",
+      "retrieved": "2026-11-24"
+    }
+  ]
+}
