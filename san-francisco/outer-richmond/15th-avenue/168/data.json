@@ -1,0 +1,99 @@
+{
+  "address": "168–170 15th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/15th-avenue/168/",
+  "apn": "1374023",
+  "block": "1374",
+  "lot": "023",
+  "eas_baseid": "473278",
+  "coordinates": {
+    "lat": 37.784941,
+    "lng": -122.473951
+  },
+  "address_range": "168–170",
+  "street_numbers_on_parcel": [
+    "168",
+    "170"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3184,
+    "building_area_sqft": 2800,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0170 0168 15TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 58187,
+    "assessed_improvement_value": 76667
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "permit_summary": {
+    "count_on_file": 1,
+    "range": "2007",
+    "shown_on_page": 0,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=15TH&street_type=AVE&address_number=168",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1374023&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1374&lot=023",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1374023",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1913-07-02-n31",
+      "name": "Building and Industrial News, 2 July 1913",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri13213cont/page/n31/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-07-02",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame building of two flats, estimated at $4,500. P. Tyler was named as contractor.",
+      "source": "building-industrial-news-1913-07-02-n31"
+    }
+  ],
+  "building": {
+    "builder": "P. Tyler"
+  }
+}

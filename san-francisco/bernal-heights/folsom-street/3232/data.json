@@ -1,0 +1,131 @@
+{
+  "address": "3232–3234 Folsom Street, San Francisco, CA 94110",
+  "path": "/san-francisco/bernal-heights/folsom-street/3232/",
+  "apn": "5523005",
+  "block": "5523",
+  "lot": "005",
+  "eas_baseid": "379437",
+  "coordinates": {
+    "lat": 37.746436,
+    "lng": -122.413782
+  },
+  "address_range": "3232–3234",
+  "street_numbers_on_parcel": [
+    "3232",
+    "3234"
+  ],
+  "parcel": {
+    "year_built": 1913,
+    "units": 4,
+    "stories": 2,
+    "rooms": 16,
+    "bathrooms": 4,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 2930,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 4 units or less",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 9,
+    "assessor_neighborhood": "Bernal Heights",
+    "analysis_neighborhood": "Bernal Heights",
+    "property_location_raw": "3234 3232 FOLSOM              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 489148,
+    "assessed_improvement_value": 451687,
+    "last_sale_date": "1990-06-01"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Bernal Heights North Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1917",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "9619667",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-10-16",
+      "status_date": "1997-06-25",
+      "estimated_cost": 3250,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8606347",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1986-05-30",
+      "status_date": "1986-06-27",
+      "estimated_cost": 2200,
+      "description": "to bring building into full compliance as required by dahi",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FOLSOM&street_type=ST&address_number=3232",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=5523005&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=5523&lot=005",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=5523005",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.41378212447181%2037.74643577160803)%27)",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1913-07-09-n85",
+      "name": "Building and Industrial News, 9 July 1913",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri13213cont/page/n85/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-07-09",
+      "kind": "building contract",
+      "description": "A building contract was recorded for a two-storey and basement frame building of flats, all work except grading and concrete, at $4,100. Chas. Fantoni was named as architect and Francesco Bonaccorso as contractor.",
+      "source": "building-industrial-news-1913-07-09-n85"
+    }
+  ],
+  "building": {
+    "architect": "Chas. Fantoni",
+    "builder": "Francesco Bonaccorso"
+  }
+}

@@ -7,8 +7,8 @@
   "unit": "numbered entries",
   "examined": 2065,
   "mentions": 1282,
-  "remaining": "Unread: the six earlier half-year volumes on the Internet Archive (vol. 11 pt. 1, 1911, to vol. 13 pt. 2, July to December 1913). In this volume: 149 rows placed on a parcel whose roll year fits, single houses with no architect named and no page, are logged and held until another fact gives the parcel a page (extra.placed_apn; they still need the image check), and 9 more were held for a page at the image. 673 rows were not placed: location lines not parsed (tract lots, garbled headings), street pairs that do not cross under the names read, and printed street numbers with no EAS row today. The rest have a nearest parcel that was not accepted.",
-  "note": "2,065 numbered entries read, 1,282 San Francisco rows, 609 placed on a parcel, 139 picked and read against the page image, 97 published on 92 pages (51 seeded), 42 held back at the image."
+  "remaining": "Unread: the five earlier half-year volumes on the Internet Archive (vol. 11 pt. 1, 1911, to vol. 13 pt. 1, January to June 1913). In this volume: 148 rows placed on a parcel whose roll year fits, single houses with no architect named and no page, are logged and held until another fact gives the parcel a page (extra.placed_apn; they still need the image check), and 9 more were held for a page at the image. 673 rows were not placed: location lines not parsed (tract lots, garbled headings), street pairs that do not cross under the names read, and printed street numbers with no EAS row today. The rest have a nearest parcel that was not accepted.",
+  "note": "2,065 numbered entries read, 1,282 San Francisco rows, 609 placed on a parcel, 139 picked and read against the page image, 98 published on 93 pages (51 seeded; one held fact taken up when the July to December 1913 volume seeded its page), 42 held back at the image."
  },
  "findings": [
   {
@@ -9745,13 +9745,12 @@
    "date_precision": "day",
    "kind": "construction",
    "address_as_written": "S MORSE 90 E Newton",
-   "description": "A permit was sought for a one-storey frame dwelling with a basement, estimated at $1,500. Lindberg Bros. was named as contractor.",
+   "description": "A permit was sought for a one-storey and basement frame dwelling, estimated at $1,500. Lindberg Bros. were named as contractors.",
    "extra": {
     "item": "1474",
     "section": "Building Permit Applications",
     "heading": "",
-    "cost_usd": 1500,
-    "placed_apn": "6482033"
+    "cost_usd": 1500
    },
    "citation": {
     "label": "Building and Industrial News, 25 February 1914",
@@ -9760,16 +9759,23 @@
     "locator": "1914-02-25-n415 : item (1474), Building Permit Applications, San Francisco County"
    },
    "raw": {
-    "text": "(1474) S MORSE 90 E Newton. Onestory and basement frame dwelling.. Contractor - Lindberg Bros.. 257 Surrey San Francisco. $1500",
+    "text": "(1474) S MORSE 90 E Newton. Onestory and basement frame dwelling. Contractor - Lindberg Bros.. 257 Surrey San Francisco. $1500",
     "ocr_uncertain": true,
     "note": "Rebuilt from the OCR heading and the architect, contractor and cost fields; the owner, sureties and payment schedule are cut."
    },
-   "confidence": "low",
+   "confidence": "high",
    "resolution": {
-    "status": "unresolved",
+    "status": "resolved",
+    "apn": "6482033",
+    "path": "/san-francisco/excelsior/morse-street/69/",
+    "eas_address": "69 MORSE ST",
+    "method": "The record puts the lot on the S line of Morse, 90 feet E of Newton. Built from the block corner on the DPW centrelines and today's parcel shapes, that line starts on a lot line of parcel 6482033; the roll dates the building 1914, which fits the permit. Held until the parcel had a page, then taken up: location, wording, names and cost read against the page image.",
     "checked_on": "2026-11-24",
-    "method": "Lot built from the block corner on the DPW centrelines and the sf-parcels shapes; street numbers matched exactly in sf-eas-addresses.",
-    "note": "Placed on parcel 6482033 (line:point:on; roll year 1914 fits) but not checked against the page image and not published: a single house with no architect named and no page yet, held until another fact gives this parcel a page (research/AGENTS.md, Facts held for a page)."
+    "by_hand": true
+   },
+   "publish": {
+    "status": "published",
+    "pr": "761"
    }
   },
   {

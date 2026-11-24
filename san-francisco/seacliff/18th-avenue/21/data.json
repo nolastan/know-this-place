@@ -1,0 +1,122 @@
+{
+  "address": "21 18th Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/seacliff/18th-avenue/21/",
+  "apn": "1340003",
+  "block": "1340",
+  "lot": "003",
+  "eas_baseid": "300685",
+  "coordinates": {
+    "lat": 37.786558,
+    "lng": -122.478007
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 3,
+    "lot_area_sqft": 3001,
+    "building_area_sqft": 3710,
+    "basement_area_sqft": 120,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Seacliff",
+    "property_location_raw": "0000 0021 18TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 60267,
+    "assessed_improvement_value": 140678
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202603117353",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-11",
+      "status_date": "2026-03-11",
+      "estimated_cost": 150000,
+      "revised_cost": 220000,
+      "description": "rev to pa# 2025-0728-1723: convert (e) storage rooms to (n) den, gym, bathroom, mudroom, laundry & mech room. on 1st fl. rebuild interior stair from fl. 1-2. remove full bath & expand (e) kitchen, add (n) powder rm & pantry on fl. 2. remodel & relocate (e) bathrooms, convert one bedroom to two (n)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202507281723",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-07-28",
+      "status_date": "2025-07-28",
+      "estimated_cost": 110000,
+      "revised_cost": 151871,
+      "description": "interior renovations only- non structural (no exterior changes). 2nd floor: remodel kitchen and powder room. 3rd floor: renovate 2 bathrooms and add w/d. divide bedroom. 4th floor: renovate primary bedroom, bath and powder.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9407372",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1994-05-26",
+      "status_date": "1995-08-15",
+      "estimated_cost": 4700,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=18TH&street_type=AVE&address_number=21",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1340003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1340&lot=003",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1340003",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1913-11-12-n1062",
+      "name": "Building and Industrial News, 12 November 1913",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri13213cont/page/n1062/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-11-12",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame residence, estimated at $7,000. E. E. Young was named as architect.",
+      "source": "building-industrial-news-1913-11-12-n1062"
+    }
+  ],
+  "building": {
+    "architect": "E. E. Young"
+  }
+}
