@@ -16,9 +16,10 @@
 #
 # 1. Preview links. The app writes its body before it knows the PR number, so
 #    it can only link the pages on knowthis.place, which still show the old
-#    photo (or Street View) until the PR is merged. Netlify builds every PR at
-#    `https://deploy-preview-<N>--knowthisplace.netlify.app` (netlify.toml), so
-#    this swaps every page link for the same page on the preview. Nothing is
+#    photo (or Street View) until the PR is merged. photo-preview.yml uploads
+#    the PR's preview to `https://photo-<N>--knowthisplace.netlify.app` once
+#    the photos stop coming (Netlify's own deploy previews skip photo PRs,
+#    netlify.toml), so this swaps every page link for the same page on the preview. Nothing is
 #    added: Stan asked for the body to stay that simple. The link is right
 #    from the start and opens once the preview has built.
 #
@@ -81,7 +82,7 @@ jobs:
 
           REPO = os.environ["GH_REPO"]
           KEY = os.environ.get("STREET_VIEW_KEY", "")
-          PREVIEW = "https://deploy-preview-{n}--knowthisplace.netlify.app"
+          PREVIEW = "https://photo-{n}--knowthisplace.netlify.app"
           BRANCH = "pr-street-view"
           IMAGES = f"https://github.com/{REPO}/blob/{BRANCH}/{{name}}?raw=true"
           # A page link, and the section an early version of this workflow
