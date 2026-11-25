@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–60 read (eleven volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1961–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–62 read (thirteen volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1963–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -129,3 +129,11 @@
   dedications; the Japanese stone monument in Lincoln Park; McLaren Park's
   land acquisition cleared. Learned: from 1959 the page footers are in slash
   form ("11/10/60") and match the meeting.)
+- 2026-11-25 · 1961-62 volumes (`minutesrecreati1961sanf_0`, `minutesrecreati1962sanf_0`)
+  read by passage: 10 findings (rec-park-1961, rec-park-1962). (Got: Vincent
+  G. Raney's McLaren Park playground and yard, the Hahn and Visitacion
+  playground plans by William Gladstone Merchant & Associates, the Swiss Flower
+  Clock dedication, the Queen Wilhelmina Garden name, Garrigan Field. Learned:
+  by 1961 building contracts are let by the Department of Public Works, so the
+  minutes carry approvals and names but few contracts; yield fell to about five
+  findings a volume.)
