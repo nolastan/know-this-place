@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–81 read (thirty-two volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1982–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–85 read (thirty-six volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1986–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -234,3 +234,14 @@
   1976-82 is Block 4277 lots 10 and 14, today's Potrero del Sol (1976 acquisition
   resolution 10554, 1978 resolution 11447); five held findings placed there and
   added to rec-park-1976, -1978, -1979 and -1980.
+- 2026-11-25 · 1982 volume (`minutesrecreatio1982sanf`) read by passage: 9
+  findings (rec-park-1982). (Got: Golden Gate Heights and Sgt. John Macaulay
+  parks named, Mountain Lake master plan, Primate Discovery Center, the Garden
+  of Fragrance, the Knudsen-Bloom (Potrero del Sol) Phase II special meeting.)
+- 2026-11-25 · 1983-85 volumes read by passage: 5, 9 and 11 findings
+  (rec-park-1983..1985; one South of Market Park finding added to
+  rec-park-1982 once 1983 placed it at 6th and Folsom, today's Eugene Friend
+  Recreation Center). (Got: Macaulay and Boeddeker parks dedicated and named,
+  Potrero del Sol and Mission Center named, the Eskey koala exhibit, Herbst
+  Road, Twin Peaks vista point, the Japan-restored Tea Garden gates and the
+  1985 Tea Garden plaques.)
