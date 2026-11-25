@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–76 read (twenty-seven volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1977–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–77 read (twenty-eight volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1978–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -204,3 +204,9 @@
   findings (rec-park-1976). (Got: Esherick, Hornsey, Dodge and Davis's zoo
   plan adopted, architects for the Jackson Playground field house, Noe Valley
   Courts and the Senior Center remodel, Osmundson for McLaren Park.)
+- 2026-11-25 · 1977 volume (`minutesrecreatio1977sanf`) read by passage: 13
+  findings (rec-park-1977). (Got: the July batch of architects' agreements for
+  Crocker-Amazon, James Rolph, Galvez, Duboce and Helen Wills; Youngblood-
+  Coleman Playground and James P. Lang Field named; the Key statue
+  rededicated; the MLK Pool enclosure finished. Learned: Galvez Playfield is
+  today's Youngblood-Coleman Playground.)
