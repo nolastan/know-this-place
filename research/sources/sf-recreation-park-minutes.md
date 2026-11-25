@@ -23,7 +23,8 @@
   1950 merger. Board of Park Commissioners volumes run 1870, 1896, 1913,
   1922, 1924-46 (each spans several years); the 1870 and 1896 volumes are
   handwritten and their OCR is unusable. 1913 (April 1913 - December 1916)
-  and 1925-33 read; the rest unread.
+  1925-33 and 1936-38 read (1934-35 are not on IA: those items repeat 1933 and 1936);
+  1922-24 and 1939-46 unread. Yield fell to 3-4 placeable items a volume by 1937-38, so the run stopped there.
 - **Why it matters here:** most of the 227 park and playground place pages had
   no history at all. The minutes give each playground its dated record: the
   1947 recreation bond program's field-house contracts (contractor and price),
@@ -339,3 +340,9 @@
   5 findings (park-board-1932). The Coit Memorial Tower's Supervisors' resolution, Art Commission approval, the Young & Horstmeyer award and the revised design; Park Police stables. Only ten meetings held, the rest lacking a quorum.
 - 2026-11-25 — Board of Park Commissioners 1933 (`minutesboardofpa1933sanf`):
   12 findings (park-board-1933). The Coit Memorial Tower's construction (inspection, Patigian plaque, Brown's fee), the Mount Davidson Cross (Kelham; Monson Bros., $11,850), the Conservatory's emergency repair, the Volunteer Fire Department monument dedication date, Foch and Joffre boulders, a Union Square bench. The IA items labelled 1934 and 1935 hold the 1933 and 1936 minutes again, so 1934-35 are missing.
+- 2026-11-25 — Board of Park Commissioners 1936 (`minutesboardofpa1936sanf`):
+  8 findings (park-board-1936). WPA work: Kezar Stadium and its press stand (Masten & Hurd), the Lincoln Park golf clubhouse (Gardner A. Dailey), Hobart's Zoo extension plans and Lion House; the police stables accepted; the Palace of Fine Arts and the arboretum.
+- 2026-11-25 — Board of Park Commissioners 1937 (`minutesboardofpa1937sanf`):
+  4 findings (park-board-1937). Parkside Square named, Bufano's Sun Yat-sen dedicated, the old Stow Lake boathouse ordered demolished, a Palace of Fine Arts floor.
+- 2026-11-25 — Board of Park Commissioners 1938 (`minutesboardofpa1938sanf`):
+  3 findings (park-board-1938). Palace of Fine Arts tennis courts, the Larsen memorial boulder, a McLaren Park purchase. Stopped: below four a volume.
