@@ -278,16 +278,20 @@ a.wordmark:hover, a.map-brand:hover { opacity: 0.75; }
 .nm-street-1 { stroke-width: 10; }
 .nm-street-2 { stroke-width: 8; }
 .nm-street-3 { stroke-width: 5; }
-.nm-lots { fill: var(--paper); stroke: color-mix(in srgb, var(--rule) 85%, var(--ink)); stroke-width: 0.6; }
+.nm-lots { fill: var(--paper); stroke: color-mix(in srgb, var(--rule) 75%, var(--muted)); stroke-width: 0.5; }
 .nm-park { fill: color-mix(in srgb, var(--ok) 16%, var(--paper)); }
-.nm-page path { fill: var(--muted); fill-opacity: 0.3; stroke: var(--muted); stroke-opacity: 0.9; stroke-width: 1; }
-.nm-page.nm-r path { fill: var(--warm); fill-opacity: 0.6; stroke: var(--warm); }
-.nm-page:hover path, .nm-page.is-active path { fill-opacity: 0.9; stroke-width: 2.5; }
+/* Lots with a page are a quiet tint, not a colour: mixed into the paper so
+   they read as texture under the one solid lot, with the plain lots' own
+   hairline rather than an outline of their own. */
+.nm-page path { fill: color-mix(in srgb, var(--muted) 14%, var(--paper)); stroke: color-mix(in srgb, var(--rule) 75%, var(--muted)); stroke-width: 0.5; }
+.nm-page.nm-r path { fill: color-mix(in srgb, var(--warm) 20%, var(--paper)); }
+.nm-page:hover path, .nm-page.is-active path { fill: color-mix(in srgb, var(--muted) 45%, var(--paper)); stroke: var(--muted); stroke-width: 1.5; }
+.nm-page.nm-r:hover path, .nm-page.nm-r.is-active path { fill: color-mix(in srgb, var(--warm) 55%, var(--paper)); stroke: var(--warm); }
 /* The building itself: solid in its own hue — grey, or brick where research
-   has published onto it — outlined in ink, set on a paper halo with
-   a soft shadow so it lifts off the lots around it. */
-.nm-here-halo { fill: var(--paper); stroke: var(--paper); stroke-width: 6; stroke-linejoin: round; filter: drop-shadow(0 1px 4px rgb(0 0 0 / 0.35)); }
-.nm-here { fill: var(--muted); stroke: var(--ink); stroke-width: 1.5; stroke-linejoin: round; }
+   has published onto it — outlined in a softened ink, on a thin paper halo with a soft
+   shadow so it lifts off the tinted lots around it. */
+.nm-here-halo { fill: var(--paper); stroke: var(--paper); stroke-width: 3; stroke-linejoin: round; filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.25)); }
+.nm-here { fill: var(--muted); stroke: color-mix(in srgb, var(--ink) 55%, var(--paper)); stroke-width: 1; stroke-linejoin: round; }
 .nm-here.nm-r { fill: var(--warm); }
 .nm-labels text {
   font: 12px var(--sans); fill: var(--muted);
