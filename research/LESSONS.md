@@ -62,6 +62,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   '<block>')`), then search the corpus for those parcels' EAS numbers only. If
   none is there, record a zero batch with that reason and move on.*
 
+- **In an agency's appraisal file, the comparable sales are the part that
+  survives.** An acquisition appraisal describes a building the agency bought
+  and cleared; a comparable-sales sheet describes one it did *not* buy, often
+  outside the project area, typed with address, block and lot, lot size, deed
+  date, price and year built. In the Yerba Buena items, the only fact of 262
+  pages that reached a page was a comparable sale (265 Third Street, 1961).
+  *In any redevelopment or condemnation file, read the comparable sales first
+  and the subject appraisals resolution-first.* A comparable sale names its
+  grantor and grantee: take the building, the date and the price, never the
+  private parties.
+
 - **In a redevelopment area a surviving street number is not a surviving
   building.** The Redevelopment Agency cleared lots in the Western Addition and
   then moved Victorians onto them in the 1970s, so an address with an EAS
