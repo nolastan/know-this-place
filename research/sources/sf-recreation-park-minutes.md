@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–93 read (forty-four volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1994–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–94 read (forty-five volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -283,3 +283,8 @@
   Conservatory Rosehouse demolition, O'Shaughnessy Hollow and Hawk Hill
   eminent domain, Glen Canyon trail and stream.) Held: the Cathay Mortuary
   demolition for the new Chinatown Park, which gives no address.
+- 2026-11-25 — 1994 volume (`minutesrecreatio1994sanf`) read by passage: 14
+  findings (rec-park-1994). (Got: Lake Merced path, West Portal, McLaren
+  Park overlook, Police Stables and India Basin contracts; Portsmouth Square
+  Phase III, Beach Chalet Phase II, Precita, Jose Coronado and Hang Ah Alley
+  designs; St. Mary's Square toilet.)
