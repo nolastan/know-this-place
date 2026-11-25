@@ -48,8 +48,14 @@
     Spec rows (`building.builder`, `building.architect`) were set only where the
     standing building is the one the report describes; replaced buildings get a
     `site history` entry.
-  - The 1913-14 to 1916-17 bond tables come out column-scrambled in the OCR;
-    reading them needs the page images.
+  - The 1913-14 bond tables (vol 63 pp. 322-340, Board of Public Works
+    bookkeeper's report) come out column-scrambled in the OCR: the school, the
+    contractor and the amounts land in separate runs, and rows slide between
+    schools (the OCR puts Albert Pissis under Girls' High; the image puts him
+    under Oriental). Read them from the page images,
+    `https://archive.org/download/munisanfrancisco63sanfrich/page/n<page+17>_w1400.jpg`;
+    the names are on the even page and the amounts on the odd page facing it.
+    Vols 64-66 print no comparable tables that the OCR finds.
   - Landmark pages (firehouses, City Hall) already carry National Register or
     Article 10 text: trim to what is new and note price conflicts (contract
     price against finished cost).
@@ -66,7 +72,10 @@
   Superintendent of Schools reports on the 1870s-1900s schools and
   firehouses), and the 1913-17 tables from the page images. One fact is held
   for a page (`check.py --held`): Engine No. 1 at 451 Pacific (block 175 lot 27).
-- **Verified:** 2026-11-25 (6 City Architect reports read, 72 findings, 38
+- **Verified:** 2026-11-25 (FY1913-14 bond tables read from the images: 6
+  school contracts, 5 on pages and 1 held (Marshall, 1575 15th); builder set
+  on Columbus, 1541 12th, and Washington Irving, 350 Broadway; Glen Park and
+  Cooper not placed.) 2026-11-25 (6 City Architect reports read, 72 findings, 38
   placed and published on 35 pages, 14 of them seeded school pages, 33
   unplaced with a reason, 1 held. Learned: a public-works report names
   buildings, not addresses; the same volume's school list and fire roster are
