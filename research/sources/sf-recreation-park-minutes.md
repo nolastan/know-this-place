@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–71 read (twenty-two volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1972–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–72 read (twenty-three volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1973–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -181,3 +181,7 @@
   recreation centers, the McLaren amphitheater and the first mini-parks; the
   Chinese Playground play area by Eckbo, Dean, Austin and Williams; the Music
   Concourse fountains restored.)
+- 2026-11-25 · 1972 volume (`minutesrecreatio1972sanf`) read by passage: 6
+  findings (rec-park-1972). (Got: John Pflueger's Academy master plan with
+  the fish roundabout, a preservation grant sought for the Conservatory,
+  Raney's Palace of Fine Arts lobby and marquee, the West Portal station plan.)
