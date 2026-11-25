@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) unread; the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission February 1941 – December 1943 read (12 findings; 1944–47 not on IA); Park Commission 1947–50 (maintenance-heavy) unread; the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -359,3 +359,5 @@
   39 findings (annual-report-<year>). The Chain of Lakes, Stow Lake's building, the Japanese Garden extension, the Children's Quarters and its merry-go-round cover (A. Page Brown), the 1892 beach building, the Museum's opening and annexes, the new Park Lodge, De Laveaga Dell, Lloyd Lake's portal, the Stadium, the Pioneer Log Cabin, the de Young and Kezar Stadium, and the city squares remodeled after 1900.
 - 2026-11-25 — Board of Park Commissioners 1922-23 and 1924 (`minutesboardofpa1922sanf`, `…1924sanf`):
   9 findings (park-board-1922, park-board-1924). Kezar Stadium from the bequest agreement and Polk's plans to Palmer & McBryde's contract and completion, the de Young extension offer, Mountain Lake Park's and the Steinhart Aquarium's dedications, the new Beach Chalet's contract, the Tennis Stadium's dedication.
+- 2026-11-25 — Recreation Commission February 1941 – December 1943 (`minutesrecreati1941sanf_1`):
+  12 findings (rec-commission-1941-43). William G. Merchant's commissions (Corona Heights club rooms, Stern Grove's playground, entrance and music shell, the Sunset Playground convenience station, Grattan, St. Mary's and Potrero Hill field houses), the Estes and Sweeney memorial sundials, the Stern Grove bowling greens, Gilman and Silver Terrace land. Wartime economy cut most building. 1944-47 Recreation Commission volumes are not on IA.
