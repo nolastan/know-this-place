@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per year, no index by building.
-> - **Coverage:** 1949-1966 design-approval resolutions read (1960-61 not found). 1932-1948 and 1967-1983 unread.
+> - **Coverage:** 1949-1969 design-approval resolutions read (1960-61 not found). 1932-1948 and 1970-1983 unread.
 > - **Local corpus:** `research/corpora/sf-art-commission-minutes/` (IA `_djvu.txt`, one per year)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -33,8 +33,13 @@
   Architects"); splitting the flattened text on `RESOLUTION NO.` gives 488
   resolutions (`res6.py`). The 1964-66 stages are Phase 1 (schematic), Phase 2
   and Phase 3 (final drawings), and the architect is often named only at one of
-  them. The 1960 and 1961 downloads return Internet Archive error pages, and
-  the 1967-1983 wording does not match the splitter.
+  them. The 1960 and 1961 downloads return Internet Archive error pages. From
+  1967 a resolution reads "RESOLVED, That this Commission hereby approves Phase
+  N of plans for ..." with no meeting date, so date it by the meeting heading
+  before it ("San Francisco, California <date>" or "was held on <date>"; some
+  headings are lost to OCR, then use the agenda or page-header dates nearby):
+  `res7.py` splits, `mdate2.py` lists headings around a phrase. Architects are
+  seldom named after 1967.
 - **Usable:** the project, the design stage approved, the date and the
   designer. The designer is a credit for the building where the approval is at
   the working-drawings stage or later and the roll or the facility confirms the
@@ -80,4 +85,10 @@
   drawings approved in 1965-66; Diamond Heights School, credited to Charles W.
   Griffith, was approved at Phase 1 as Corlett and Spackman's. Learned: Cowell
   Hall in the 1966 minutes is the Academy of Sciences, not City College, and
-  the Southeast Health Center is not the 1966 District Health Center No. 3.)
+  the Southeast Health Center is not the 1966 District Health Center No. 3,
+  which is the Bayview (Silver Avenue) health center at Barneveld and Silver.)
+  2026-11-25 (3 volumes, 1967-1969: 416 resolutions, 15 findings curated, 13
+  onto 13 pages and 2 held (Cabrillo School, the Sunset-Richmond health center
+  at 1351 24th Avenue). Learned: the meeting dates res7.py guesses from the
+  nearest date string are often a month off; check every one against the
+  heading.)
