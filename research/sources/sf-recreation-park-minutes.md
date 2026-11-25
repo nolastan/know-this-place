@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) unread; the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission February 1941 – December 1943 read (12 findings; 1944–47 not on IA); Playground Commission annual reports 1911-12, 1925-26, 1928-29 and 1929-30 read (29 findings); Park Commission 1947–50 (maintenance-heavy) unread; the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -20,7 +20,20 @@
   (`minutesrecreati1941sanf_1`, 1941-44). The Board of Park Commissioners'
   minutes (`minutesboardofpa<year>sanf`, 1870 and 1896-1942) and annual reports
   (`annualreportofbo<year>sanf`, 1889-1924) are the parks' record before the
-  1950 merger and are a separate, unread seam.
+  1950 merger. Board of Park Commissioners volumes run 1870, 1896, 1913,
+  1922, 1924-46 (each spans several years); the 1870 and 1896 volumes are
+  handwritten and their OCR is unusable. 1913 (April 1913 - December 1916),
+  1922 (September 1922 - December 1923), 1924, 1925-33 and 1936-38 read (1934-35
+  are not on IA: those items repeat 1933 and 1936); 1939-46 unread. Yield fell to
+  3-4 placeable items a volume by 1937-38, so the run stopped there. The annual
+  reports read: 1889, 1892, 1893, 1895, 1897, 1899, 1902, 1910, 1912, 1924 (IA has
+  no others; 1890, 1891 and 1896 are descriptive or accounts only, 1894 is a title
+  page). They are the best source for Golden Gate Park's early features: the
+  Chain of Lakes, Stow Lake, the Children's Quarters, the Museum, the squares the
+  1900 charter put under the commission. Each report covers work since the last
+  printed one, so undated work is dated to the report year. Findings cite
+  `sf-recreation-park-minutes-annual-report-<year>`; `F` files are `AR<year>.py`
+  with `REPORT = '<year>-06-30'` (convert.py/publish.py switch on it).
 - **Why it matters here:** most of the 227 park and playground place pages had
   no history at all. The minutes give each playground its dated record: the
   1947 recreation bond program's field-house contracts (contractor and price),
@@ -297,3 +310,56 @@
   Commission run; 1996 on is not on the Internet Archive as of this read.
   Held: the new Chinatown Park on the Cathay Mortuary site (demolition 1993,
   recreation building contract 1995), which no minutes place at an address.
+- 2026-11-25 — Board of Park Commissioners volume `minutesboardofpa1913sanf`
+  (April 1913 - December 1916, typed) read by passage: 8 findings
+  (park-board-1913), cited as Board of Park Commissioners minutes. (Got: the
+  Church Street railway through Mission Park, the Alamo Square convenience
+  station, the Union Square Pioneers' fountain, Hamilton Square and the
+  Playground Commission, the Exposition's Japanese buildings given to the
+  park.) Mostly supply bids; about two findings a year. Date by the meeting
+  opener; special meetings are bound out of order.
+- 2026-11-25 — Board of Park Commissioners 1925 (`minutesboardofpa1925sanf`):
+  6 findings (park-board-1925). (Got: the Kezar Stadium club house contract,
+  the Golden Gate Park baseball club house, Yacht Harbor, Pioneer Park plans
+  by G. Albert Lansburgh, the Beach Chalet furniture, the Harding tree plaque.)
+  Many meetings were postponed for want of a quorum; date by the heading over
+  each meeting and skip those followed by "postponed". The Fleishhacker pool
+  works of 1925 have no page to land on.
+- 2026-11-25 — Board of Park Commissioners 1926 (`minutesboardofpa1926sanf`):
+  6 findings (park-board-1926). (Got: the de Young Museum handed to its own
+  trustees, Kezar Pavilion contract, the Sunset Tunnel pit head in Duboce
+  Park, the Telegraph Hill and Lincoln Park balustrades, the Joan of Arc
+  pedestal.) One heading is misread as 1925 ("September 16, 1925").
+- 2026-11-25 — Board of Park Commissioners 1927 (`minutesboardofpa1927sanf`):
+  4 findings (park-board-1927). (Got: Helene Strybing's bequest for the
+  arboretum, the McLaren Park dedication, the Joan of Arc statue in Lincoln
+  Park.) Family beneficiaries in the will are left out.
+- 2026-11-25 — Board of Park Commissioners 1928 (`minutesboardofpa1928sanf`):
+  5 findings (park-board-1928). (Got: Kezar Stadium enlargement by Masten &
+  Hurd and J. A. Bryant, the Lafayette Square land exchange with The Lurie
+  Company, Mount Olympus set aside as parkland, the Telegraph Hill signal
+  station tablet.) The volume's date-only lines include letter dates.
+- 2026-11-25 — Board of Park Commissioners 1929 (`minutesboardofpa1929sanf`):
+  2 findings (park-board-1929). (Got: the Palace of Fine Arts colonnade and rotunda reconstruction, the Herzstein bequest for the Pershing statue.) A thin year.
+- 2026-11-25 — Board of Park Commissioners 1930 (`minutesboardofpa1930sanf`):
+  6 findings (park-board-1930). (Got: Mount Davidson land from Aug. J. Lang, Jr., Palace of Fine Arts repairs, the Academy of Sciences new wing, Alta Plaza playground plans, Telegraph Hill beautification held for architects' studies, Yacht Harbor wharves.) Trap found: some date-only headings are postponed meetings with 'post- poned' split over two lines, others are letter dates; four findings in 1925-28 were moved to their true meetings.
+- 2026-11-25 — Board of Park Commissioners 1931 (`minutesboardofpa1931sanf`):
+  5 findings (park-board-1931). (Got: the Coit bequest advisory committee's choices for Pioneer Park and the Coit memorial tower, its height debate and bids, the Larsen Park dedication.) The volume carries the advisory committee's meetings.
+- 2026-11-25 — Board of Park Commissioners 1932 (`minutesboardofpa1932sanf`):
+  5 findings (park-board-1932). The Coit Memorial Tower's Supervisors' resolution, Art Commission approval, the Young & Horstmeyer award and the revised design; Park Police stables. Only ten meetings held, the rest lacking a quorum.
+- 2026-11-25 — Board of Park Commissioners 1933 (`minutesboardofpa1933sanf`):
+  12 findings (park-board-1933). The Coit Memorial Tower's construction (inspection, Patigian plaque, Brown's fee), the Mount Davidson Cross (Kelham; Monson Bros., $11,850), the Conservatory's emergency repair, the Volunteer Fire Department monument dedication date, Foch and Joffre boulders, a Union Square bench. The IA items labelled 1934 and 1935 hold the 1933 and 1936 minutes again, so 1934-35 are missing.
+- 2026-11-25 — Board of Park Commissioners 1936 (`minutesboardofpa1936sanf`):
+  8 findings (park-board-1936). WPA work: Kezar Stadium and its press stand (Masten & Hurd), the Lincoln Park golf clubhouse (Gardner A. Dailey), Hobart's Zoo extension plans and Lion House; the police stables accepted; the Palace of Fine Arts and the arboretum.
+- 2026-11-25 — Board of Park Commissioners 1937 (`minutesboardofpa1937sanf`):
+  4 findings (park-board-1937). Parkside Square named, Bufano's Sun Yat-sen dedicated, the old Stow Lake boathouse ordered demolished, a Palace of Fine Arts floor.
+- 2026-11-25 — Board of Park Commissioners 1938 (`minutesboardofpa1938sanf`):
+  3 findings (park-board-1938). Palace of Fine Arts tennis courts, the Larsen memorial boulder, a McLaren Park purchase. Stopped: below four a volume.
+- 2026-11-25 — Board of Park Commissioners annual reports 1889-1924 (ten volumes):
+  39 findings (annual-report-<year>). The Chain of Lakes, Stow Lake's building, the Japanese Garden extension, the Children's Quarters and its merry-go-round cover (A. Page Brown), the 1892 beach building, the Museum's opening and annexes, the new Park Lodge, De Laveaga Dell, Lloyd Lake's portal, the Stadium, the Pioneer Log Cabin, the de Young and Kezar Stadium, and the city squares remodeled after 1900.
+- 2026-11-25 — Board of Park Commissioners 1922-23 and 1924 (`minutesboardofpa1922sanf`, `…1924sanf`):
+  9 findings (park-board-1922, park-board-1924). Kezar Stadium from the bequest agreement and Polk's plans to Palmer & McBryde's contract and completion, the de Young extension offer, Mountain Lake Park's and the Steinhart Aquarium's dedications, the new Beach Chalet's contract, the Tennis Stadium's dedication.
+- 2026-11-25 — Recreation Commission February 1941 – December 1943 (`minutesrecreati1941sanf_1`):
+  12 findings (rec-commission-1941-43). William G. Merchant's commissions (Corona Heights club rooms, Stern Grove's playground, entrance and music shell, the Sunset Playground convenience station, Grattan, St. Mary's and Potrero Hill field houses), the Estes and Sweeney memorial sundials, the Stern Grove bowling greens, Gilman and Silver Terrace land. Wartime economy cut most building. 1944-47 Recreation Commission volumes are not on IA.
+- 2026-11-25 — Playground Commission annual reports (`annualreporto19121926sanf`, `annualreporto19281930sanf`):
+  29 findings (playground-commission-1912, -1929, -1930). The 1928-29 report's dated history of each playground's land (who bought or transferred it, and when) gives first dates for fifteen playgrounds; also Jackson Playground's 1912 dedication, the North Beach swimming tank, the Douglass quarry, St. Mary's Park fill from the Bernal Cut, Michelangelo's school-building community center. The 1925-26 report is a directory with no usable dates. Not placed: Father Crowley (Southside), Julius Kahn, China Beach, the Bay View site at Third and Carroll.

@@ -195,3 +195,25 @@ downtown building and not an Article 10 landmark. It also lists the Shell
 Building twice, once as 28 storeys and once as 29. No fact in it is new to the
 pages, and its errors make it unsafe even as corroboration.
 
+
+**SFPL government documents sampled and passed over, 2026-11-25.** All on the
+Internet Archive (`collection:sanfranciscopubliclibrary`), found by searching
+the creator field. None is worth a run, for the reasons given:
+
+- **Port Commission minutes**, 1992-2008 (`minutes<year>sanf_<n>`). The piers
+  and seawall lots they name have almost no pages, and placing them would
+  mean seeding pages for Port property that EAS barely addresses.
+- **Department of Public Works annual reports**, 1944-77
+  (`annualreportofd<year>sanf_0`). The Bureau of Architecture section gives
+  bond totals and job counts. It does not list each building with its
+  architect, the way the City Architect reports of 1907-17 did.
+- **Survey of the fire houses of San Francisco**, H. C. Vensano, 1951
+  (`surveyoffirehous1951vens`). It is an engineering survey that dates each
+  of the 56 houses then standing, but it names no architects. Its table
+  OCRs with the year, company and location columns pulled apart.
+- **Board of Fire Commissioners reports**, 1869-1901. Most of each report is
+  rules, rosters and fire runs. The fires are listed with their occupants, and
+  the buildings are almost all in the area burned in 1906.
+- **Housing Authority commission minutes**, 1974-2005: see the
+  `sf-housing-authority` dossier. Samples from 1974-76, 1995 and 1998 turned up
+  modernization and accessibility contracts and almost nothing else.

@@ -1,0 +1,39 @@
+# sf-library-commission-minutes — Minutes of the San Francisco Public Library Commission (primary)
+
+> **Research dossier.** Rules: [../AGENTS.md](../AGENTS.md) · traps:
+> [../LESSONS.md](../LESSONS.md) · register:
+> [../SOURCES.md](../SOURCES.md) · cited on pages by the source id
+> `sf-library-commission-minutes-<meeting date>`, e.g. `sf-library-commission-minutes-2004-02-19`.
+>
+> - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
+> - **Search-invisibility:** high — scanned SFPL government documents, no index by branch.
+> - **Coverage:** 1998-2010 read (32 volumes) for branch library design reviews and namings. 1974-97 unread.
+> - **Local corpus:** `research/corpora/sf-library-commission-minutes/` (IA `_djvu.txt`, one per volume)
+>
+> Update this dossier at the end of every pass — the `Verified:` line, the
+> coverage note, and anything the pass learned about getting at the source.
+
+- **What:** Minutes of the Library Commission's regular meetings, SFPL scans on
+  the Internet Archive under the creator "San Francisco Public Library.
+  Commission": `minutesofregular<year>sanf` (1974-2010) and, for 2000-08,
+  further volumes `minutesofregula<year>sanf_<n>`. From 2002 the Branch Library
+  Improvement Program (the 2000 Proposition A bond) brought every branch's
+  design to the Commission: a design workshop, a peer review panel and, in
+  2002-03, a vote on the design. The architects' presentations name the design
+  firm, the project budget and what the renovation or new building would do.
+- **Getting at it:** `https://archive.org/download/<id>/<id>_djvu.txt`.
+  Items in the 2002-06 minutes open `AGENDA ITEM #N <BRANCH> … PEER REVIEW` or
+  `DESIGN RECOMMENDATION`; the agenda printed ahead of each meeting repeats the
+  heading with "Explanatory document", so skip those. Pages carry the footer
+  `Library Commission M/D/YY`, which dates the item. From 2007 the minutes are
+  printed web pages and items read `AGENDA ITEM NO. N. PEER REVIEW OF PROPOSED
+  DESIGN FOR THE <BRANCH>`.
+- **Cautions:** a peer review panel's members are named with their firms in the
+  same paragraph as the project's architect; take the architect only from the
+  sentence that introduces the design team. The 2007-10-25 peer review names
+  only panelists. Members of the public who speak are not page content.
+
+## Passes
+
+- 2026-11-25 — 1998-2010 (32 volumes): 14 findings (branch-libraries-2002-2010).
+- **Verified:** 2026-11-25 (1998-2010 read; 14 curated findings on existing branch pages).
