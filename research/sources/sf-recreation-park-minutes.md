@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–65 read (sixteen volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1966–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–66 read (seventeen volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1967–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -151,3 +151,8 @@
   Street; Herz Playground, the Golden Gate Park Senior Center and the Garden
   of Fragrance dedicated; zoo plans by J. Francis Ward and Corlett and
   Spackman. Held: the Civic Center Plaza competition, no page.)
+- 2026-11-25 · 1966 volume (`minutesrecreatio1966sanf`) read by passage: 8
+  findings (rec-park-1966). (Got: Alice Marble courts, Louis Sutter
+  Playground and the McLaren Park names, the Washington Square garage approved
+  in principle, the Hidalgo bell plaza in Dolores Park, the Japantown Peace
+  Pagoda accepted. Held: John F. Kennedy Drive named, no page.)
