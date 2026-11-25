@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–78 read (twenty-nine volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1979–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–79 read (thirty volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1980–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -216,3 +216,8 @@
   Playground, Heidelberg Hill, Ridgetop (Hilltop) Park and Rochambeau
   dedicated; Alamo Square and Excelsior Playground architects. Learned: the
   1970s "Ridgetop Park" is today's Hilltop Park, next to Ridgetop Plaza.)
+- 2026-11-25 · 1979 volume (`minutesrecreatio1979sanf`) read by passage: 8
+  findings (rec-park-1979). (Got: Dorothy Erskine Park and Youngblood-Coleman
+  dedicated, Shoreview Park named, West Portal and Herz rededicated, Del Campo
+  Associates' Mission Community Recreation Center program plans. Knudsen-Bloom
+  still unplaced.)
