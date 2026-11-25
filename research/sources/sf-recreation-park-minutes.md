@@ -23,7 +23,7 @@
   1950 merger. Board of Park Commissioners volumes run 1870, 1896, 1913,
   1922, 1924-46 (each spans several years); the 1870 and 1896 volumes are
   handwritten and their OCR is unusable. 1913 (April 1913 - December 1916)
-  and 1925-28 read; the rest unread.
+  and 1925-29 read; the rest unread.
 - **Why it matters here:** most of the 227 park and playground place pages had
   no history at all. The minutes give each playground its dated record: the
   1947 recreation bond program's field-house contracts (contractor and price),
@@ -329,3 +329,5 @@
   Hurd and J. A. Bryant, the Lafayette Square land exchange with The Lurie
   Company, Mount Olympus set aside as parkland, the Telegraph Hill signal
   station tablet.) The volume's date-only lines include letter dates.
+- 2026-11-25 — Board of Park Commissioners 1929 (`minutesboardofpa1929sanf`):
+  2 findings (park-board-1929). (Got: the Palace of Fine Arts colonnade and rotunda reconstruction, the Herzstein bequest for the Pershing statue.) A thin year.
