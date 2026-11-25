@@ -3614,3 +3614,20 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   fetcher that asked for all three per issue ran at a sixth of the speed.
   *Fetch the hOCR search text and page index in bulk; fetch page numbers
   afterwards, in parallel, for the cited issues only.* (2026-11-23)
+- **Parallel readers need one brief and one mechanical re-check.** Five
+  subagents read 37 volumes of park reports in under 15 minutes from a
+  single written brief (where the text is, what to take and not take, a
+  fixed JSONL record with `vol`, printed `page`, OCR `line` and a verbatim
+  `raw` of at most 40 words). Their line numbers drifted by up to 80 lines
+  on bound-in committee reports, and one reader added two attributions from
+  its own knowledge, flagged only in a note. *Re-check every `raw` against
+  the OCR within ±40 lines of the cited line before building the findings
+  file, re-anchor the misses by grep, and drop anything a reader marks as
+  not from the text.* (2026-11-25,
+  [sources/sf-municipal-reports.md](sources/sf-municipal-reports.md))
+- **A report that names features, not addresses, is placed by the place
+  pages.** A park commission writes "the Lodge", "Stow Lake", "the
+  Children's Quarters"; none has a street number, and each has a place page
+  under its present name. *Map old names to place pages once, in the
+  dossier, and file what has no page as unresolved, not as a reason to
+  seed one.* (2026-11-25)
