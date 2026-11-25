@@ -1,0 +1,80 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-308/",
+  "unit": "308",
+  "apn": "3787115",
+  "block": "3787",
+  "lot": "115",
+  "parcel": {
+    "building_area_sqft": 1485,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 492568,
+    "assessed_improvement_value": 492568,
+    "last_sale_date": "2012-10-23"
+  },
+  "permits": [
+    {
+      "number": "202209152510",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2022-09-15",
+      "status_date": "2023-10-13",
+      "estimated_cost": 18000,
+      "revised_cost": 20000,
+      "description": "one unit - 75 sqft bathroom remodel on 2nd floor. no structural-no changes to wall or openings replace existing with new tub/ shower- doube vanity and toilet- all ((n) fixturees and finishes. bathroom not located in work area. it is in the residential space.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202204293268",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2022-04-29",
+      "status_date": "2023-01-13",
+      "estimated_cost": 14500,
+      "revised_cost": 0,
+      "description": "one 75 sqft bathroom remodel on 2nd floor. no structural, no changes to walls or openings. replace existing with (n) tub/shower, double vanity + toilet. all (n) fixtures & finishes.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105229755",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2001-05-22",
+      "status_date": "2001-12-03",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "relocate one sprinkler head in bathrm on 3rd flr",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200105088636",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-05-08",
+      "status_date": "2001-12-03",
+      "estimated_cost": 20000,
+      "revised_cost": 20000,
+      "description": "remodel space, plumbing & electrical, new paint & cabinets",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787115&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=308",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

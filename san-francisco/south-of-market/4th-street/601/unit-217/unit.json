@@ -1,0 +1,53 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-217/",
+  "unit": "217",
+  "apn": "3787096",
+  "block": "3787",
+  "lot": "096",
+  "parcel": {
+    "building_area_sqft": 2176,
+    "rooms": 3,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1246754,
+    "assessed_improvement_value": 831168,
+    "last_sale_date": "2019-07-25"
+  },
+  "permits": [
+    {
+      "number": "200902132046",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2009-02-13",
+      "status_date": "2009-10-29",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit: remodel existing kitchen and bath, relocate 1 bearing wall, strengthen joists for existing sleeping loft",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2009",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787096&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=217",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

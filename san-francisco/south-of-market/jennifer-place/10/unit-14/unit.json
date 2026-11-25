@@ -1,0 +1,46 @@
+{
+  "address": "14 Jennifer Place, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/jennifer-place/10/unit-14/",
+  "apn": "3752175",
+  "block": "3752",
+  "lot": "175",
+  "parcel": {
+    "building_area_sqft": 1284,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 556909,
+    "assessed_improvement_value": 556909,
+    "last_sale_date": "2021-04-12"
+  },
+  "permits": [
+    {
+      "number": "202504013468",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2025-04-01",
+      "status_date": "2025-04-01",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "tub to tub remove (e) tub, remove and replace valve install new acrylic water proof tub and water proof solid surface walls. no other work.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752175&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&street_number=14",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

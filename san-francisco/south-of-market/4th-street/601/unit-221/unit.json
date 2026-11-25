@@ -1,0 +1,47 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-221/",
+  "unit": "221",
+  "apn": "3787099",
+  "block": "3787",
+  "lot": "099",
+  "parcel": {
+    "building_area_sqft": 1502,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 108206,
+    "assessed_improvement_value": 368883,
+    "last_sale_date": "1990-10-31"
+  },
+  "permits": [
+    {
+      "number": "202105261077",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-05-26",
+      "status_date": "2021-12-10",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "bathroom remodel: change shower pan, plumbing and electrical switches.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787099&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=221",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

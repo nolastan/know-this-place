@@ -1,0 +1,35 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-313/",
+  "unit": "313",
+  "apn": "3787120",
+  "block": "3787",
+  "lot": "120",
+  "parcel": {
+    "building_area_sqft": 2085,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 653209,
+    "assessed_improvement_value": 668578,
+    "last_sale_date": "1999-10-22"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787120&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=313",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

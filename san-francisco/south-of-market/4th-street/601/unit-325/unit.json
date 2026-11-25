@@ -1,0 +1,58 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-325/",
+  "unit": "325",
+  "apn": "3787131",
+  "block": "3787",
+  "lot": "131",
+  "parcel": {
+    "building_area_sqft": 1091,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 108206,
+    "assessed_improvement_value": 388030,
+    "last_sale_date": "1990-10-31"
+  },
+  "permits": [
+    {
+      "number": "201705317966",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2017-05-31",
+      "status_date": "2017-09-08",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "bathroom remodel: new plumbing fixtures, sinks, tub, faucet, toilet. new cabinets, tile. electrical and plumbing permits pulled by electrical and plumbing sub contractors.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201503262015",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-03-26",
+      "status_date": "2015-05-15",
+      "estimated_cost": 15900,
+      "revised_cost": 15900,
+      "description": "remodel of kitchen, new floor, cabinets, counters, sink range, update electrical and plumbling. no walls to be removed, no structural, recircaleting hood, no new lighting",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787131&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=325",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

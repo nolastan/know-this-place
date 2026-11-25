@@ -1,0 +1,58 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-207/",
+  "unit": "207",
+  "apn": "3787086",
+  "block": "3787",
+  "lot": "086",
+  "parcel": {
+    "building_area_sqft": 1057,
+    "rooms": 2,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 385182,
+    "assessed_improvement_value": 385182,
+    "last_sale_date": "2007-05-17"
+  },
+  "permits": [
+    {
+      "number": "200804230422",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2008-04-23",
+      "status_date": "2010-02-11",
+      "estimated_cost": 8000,
+      "revised_cost": 3000,
+      "description": "one unit - revision to permit # 1128602(app#200708079054) remove illegal extension on mezzanine, back to original mezzanine size. new kitchen layout, new 3' partition opening between restroom area.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708079054",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2007-08-07",
+      "status_date": "2013-10-28",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "no structural work: remove and install wall cabinets in entertainment area. remove and install floor carpet, interior paint, mini blinds",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787086&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=207",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}
