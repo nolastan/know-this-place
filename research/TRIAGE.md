@@ -66,11 +66,6 @@ said "pre-1930"; the successor Polk's Crocker-Langley volumes are on the
 Internet Archive too (`polkscrockerlang194849dire` and siblings), so the run
 extends at least to 1949 if the business slice proves worth mining.
 
-**SF Municipal Reports.** 68 volumes on the Internet Archive covering FY1859–60
-through FY1913–14, plus a separate index volume to the appendices 1859–1901.
-Not yet sampled for address density — that is the first thing an acquire pass
-should measure.
-
 ***Here Today* and *Splendid Survivors*.** The two standard building-by-building
 surveys of San Francisco's architecture, and the ones the city's own
 environmental documents cite as authority — the 101 California EIR sampled

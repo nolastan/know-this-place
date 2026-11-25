@@ -34,6 +34,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Genebern Way](genebern-way/) — 1 building, built 1925.
 - [Gladys Street](gladys-street/) — 1 building, built 1907.
 - [Highland Avenue](highland-avenue/) — 1 building, built 1915.
+- [Holly Park Circle](holly-park-circle/) — 1 building, built 1900.
 - [Joy Street](joy-street/) — 1 building, built 1987.
 - [Justin Drive](justin-drive/) — 1 building; 1 in the Midcentury Recreation Historic District (Discontiguous).
 - [Lundys Lane](lundys-lane/) — 1 building, built 1909.
