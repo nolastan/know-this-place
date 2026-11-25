@@ -20,6 +20,7 @@ on:
 
 permissions:
   contents: read
+  actions: read   # the wait step below lists this run's artifacts
   pages: write
   id-token: write
 
@@ -64,6 +65,23 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
+      # deploy-pages looks the artifact up once, the instant upload finishes,
+      # and fails if the run's artifact list doesn't show it yet. Since
+      # 2026-11-25 that list lags the upload by a few seconds: every deploy
+      # from #751 on uploaded fine and then found "0 artifact(s)", while the
+      # same run listed it a minute later. Wait until it is listed.
+      - name: Wait for the artifact to be listed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 60); do
+            n=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts" \
+                  --jq '[.artifacts[] | select(.name == "github-pages")] | length' || echo 0)
+            if [ "$n" -gt 0 ]; then echo "listed after $((i * 5 - 5))s"; exit 0; fi
+            sleep 5
+          done
+          echo "::warning::github-pages artifact still not listed after 5 minutes; trying the deploy anyway"
 
       - id: deploy
         uses: actions/deploy-pages@v4

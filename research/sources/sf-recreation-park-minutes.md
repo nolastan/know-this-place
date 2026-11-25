@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–88 read (thirty-nine volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1989–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) unread; the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -256,3 +256,44 @@
   diamond, Sunnyside Conservatory and Douglass field house dedications, the
   Sixth and Folsom contract, Academy of Sciences and Kezar master plans,
   Washington and Hyde mini park design.)
+- 2026-11-25 · 1989 volume (`minutesrecreatio1989sanf`) read by passage: 7
+  findings (rec-park-1989). (Got: Kezar rebuilding design, Marina, McLaren and
+  Randall Museum master plans, the Boeddeker tile mural, Laurel Hill plans.)
+  From 1988 the footers carry typist codes ("7/1/89"); date by the running
+  head "RECREATION AND PARK COMMISSION MINUTES - <date>".
+- 2026-11-25 — 1990 volume (`minutesrecreatio1990sanf`) read by passage: 7
+  findings (rec-park-1990). (Got: Kezar reconstruction contract, the AIDS
+  grove at de Laveaga Dell, dedications at 6th & Folsom, Buena Vista and
+  Michelangelo, the Children's Playground renovation.) The meeting date sits
+  on the line after the "Recreation and Park Commission Minutes" running head.
+- 2026-11-25 — 1991 volume (`minutesrecreatio1991sanf`) read by passage: 11
+  findings (rec-park-1991). (Got: playground contracts at Hayes Valley, Laurel
+  Hill and Cow Hollow, the South of Market Recreation Center naming, softball
+  field namings at Glen Park and Parkside, the Shakespeare Garden, Japantown
+  Peace Plaza and Portsmouth Square designs, the Kezar reopening.)
+- 2026-11-25 — 1992 volume (`minutesrecreatio1992sanf`) read by passage: 14
+  findings (rec-park-1992). (Got: Sharon Building, Pioneer Log Cabin, Randall
+  Museum and Crocker Amazon contracts; Jose Coronado Playground renaming and
+  mural; Larsen Park plane removal; Spreckels Temple of Music, Precita, West
+  Portal, India Basin and Marina seawall plans; Legion of Honor rehabilitation.)
+- 2026-11-25 — 1993 volume (`minutesrecreatio1993sanf`) read by passage: 19
+  findings (rec-park-1993). (Got: Portsmouth Square Phase II and the Goddess
+  of Democracy plaque, Tenderloin Children's Playground, Washington & Hyde,
+  Palace of Fine Arts seismic and access work, de Young shoring, the
+  Conservatory Rosehouse demolition, O'Shaughnessy Hollow and Hawk Hill
+  eminent domain, Glen Canyon trail and stream.) Held: the Cathay Mortuary
+  demolition for the new Chinatown Park, which gives no address.
+- 2026-11-25 — 1994 volume (`minutesrecreatio1994sanf`) read by passage: 14
+  findings (rec-park-1994). (Got: Lake Merced path, West Portal, McLaren
+  Park overlook, Police Stables and India Basin contracts; Portsmouth Square
+  Phase III, Beach Chalet Phase II, Precita, Jose Coronado and Hang Ah Alley
+  designs; St. Mary's Square toilet.)
+- 2026-11-25 — 1995 volume (`minutesrecreatio1995sanf`) read by passage: 16
+  findings (rec-park-1995). (Got: Zoo Monkey Island demolition, South American
+  Gateway and Avian Conservation Center; Bayview Hill acquisition; Golden Gate
+  Park Stables plan; Beach Chalet Phase II contract; play area renovations at
+  Chinese, Jackson, Bernal Heights and McKinley Square.) From 1995 resolution
+  numbers run year-month-serial (9504-73). This ends the Recreation and Park
+  Commission run; 1996 on is not on the Internet Archive as of this read.
+  Held: the new Chinatown Park on the Cathay Mortuary site (demolition 1993,
+  recreation building contract 1995), which no minutes place at an address.
