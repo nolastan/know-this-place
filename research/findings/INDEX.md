@@ -451,7 +451,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-recreation-park-minutes/rec-park-1993.json` | 19 | 26 KB | 1993 | 19 | 19 | `golden-gate-park`, `mission`, `marina` +6 |
 | `sf-recreation-park-minutes/rec-park-1994.json` | 14 | 19 KB | 1994 | 14 | 14 | `golden-gate-park`, `mission`, `financial-district` +6 |
 | `sf-recreation-park-minutes/rec-park-1995.json` | 16 | 22 KB | 1995 | 16 | 16 | `lakeshore`, `golden-gate-park`, `bayview-hunters-point` +8 |
-| `sffd-reports/fire-stations-1967-1969.json` | 50 | 67 KB | 1915–1969 | 35 | 35 | `south-of-market`, `russian-hill`, `noe-valley` +21 |
+| `sffd-reports/fire-stations-1967-1969.json` | 50 | 66 KB | 1915–1969 | 35 | 35 | `south-of-market`, `russian-hill`, `noe-valley` +21 |
 | `sfra-minutes/sfra-minutes-1974-81.json` | 15 | 23 KB | 1974–1981 | 15 | 15 | `pacific-heights`, `japantown`, `western-addition` +1 |
 | `sfra-minutes/sfra-minutes-1982-87.json` | 16 | 24 KB | 1982–1987 | 16 | 16 | `pacific-heights`, `western-addition`, `japantown` +2 |
 | `sfra-minutes/sfra-minutes-1988-94.json` | 33 | 46 KB | 1989–1994 | 33 | 33 | `tenderloin`, `south-of-market`, `mission` +9 |
