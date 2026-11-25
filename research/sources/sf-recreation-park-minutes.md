@@ -20,7 +20,10 @@
   (`minutesrecreati1941sanf_1`, 1941-44). The Board of Park Commissioners'
   minutes (`minutesboardofpa<year>sanf`, 1870 and 1896-1942) and annual reports
   (`annualreportofbo<year>sanf`, 1889-1924) are the parks' record before the
-  1950 merger and are a separate, unread seam.
+  1950 merger. Board of Park Commissioners volumes run 1870, 1896, 1913,
+  1922, 1924-46 (each spans several years); the 1870 and 1896 volumes are
+  handwritten and their OCR is unusable. 1913 (April 1913 - December 1916)
+  read; the rest unread.
 - **Why it matters here:** most of the 227 park and playground place pages had
   no history at all. The minutes give each playground its dated record: the
   1947 recreation bond program's field-house contracts (contractor and price),
@@ -297,3 +300,11 @@
   Commission run; 1996 on is not on the Internet Archive as of this read.
   Held: the new Chinatown Park on the Cathay Mortuary site (demolition 1993,
   recreation building contract 1995), which no minutes place at an address.
+- 2026-11-25 — Board of Park Commissioners volume `minutesboardofpa1913sanf`
+  (April 1913 - December 1916, typed) read by passage: 8 findings
+  (park-board-1913), cited as Board of Park Commissioners minutes. (Got: the
+  Church Street railway through Mission Park, the Alamo Square convenience
+  station, the Union Square Pioneers' fountain, Hamilton Square and the
+  Playground Commission, the Exposition's Japanese buildings given to the
+  park.) Mostly supply bids; about two findings a year. Date by the meeting
+  opener; special meetings are bound out of order.
