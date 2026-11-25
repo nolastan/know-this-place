@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 read (four volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1953–1995 unread.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–55 read (six volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1956–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -78,3 +78,13 @@
   Where the minutes record an earlier event, convert.py takes
   "event@meeting" dates so the entry sits on the event's day and cites the
   meeting.)
+  2026-11-25 (1954, `minutesrecreati1954sanf_0`, and 1955,
+  `minutesrecreatio1955sanf`: 17 findings on 14 pages. Construction
+  contracts for the last 1947 bond buildings (Laurel Hill, Hamilton, Hayward,
+  Eureka Valley, North Beach, Upper Noe, the Recreational Arts Building in
+  Duboce Park), the Balboa Park stables made a clubhouse, the two planned
+  indoor pools moved to Balboa Park and Garfield Square, the Chinese-American
+  War Memorial in St. Mary's Square, Kezar's press box, the Hall of Flowers
+  architects. Learned: the 1954 card index is too broken by OCR to parse, so
+  scan the minutes for "Award of Contract", dedications and namings, and date
+  by page footer. The two 1953 items (`minutesrecreatio1953sanf`, `minutesrecreati1953sanf_0`) carry no scan or text files, so 1953 cannot be read.)
