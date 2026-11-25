@@ -23,7 +23,7 @@
   1950 merger. Board of Park Commissioners volumes run 1870, 1896, 1913,
   1922, 1924-46 (each spans several years); the 1870 and 1896 volumes are
   handwritten and their OCR is unusable. 1913 (April 1913 - December 1916)
-  read; the rest unread.
+  and 1925 read; the rest unread.
 - **Why it matters here:** most of the 227 park and playground place pages had
   no history at all. The minutes give each playground its dated record: the
   1947 recreation bond program's field-house contracts (contractor and price),
@@ -308,3 +308,10 @@
   Playground Commission, the Exposition's Japanese buildings given to the
   park.) Mostly supply bids; about two findings a year. Date by the meeting
   opener; special meetings are bound out of order.
+- 2026-11-25 — Board of Park Commissioners 1925 (`minutesboardofpa1925sanf`):
+  6 findings (park-board-1925). (Got: the Kezar Stadium club house contract,
+  the Golden Gate Park baseball club house, Yacht Harbor, Pioneer Park plans
+  by G. Albert Lansburgh, the Beach Chalet furniture, the Harding tree plaque.)
+  Many meetings were postponed for want of a quorum; date by the heading over
+  each meeting and skip those followed by "postponed". The Fleishhacker pool
+  works of 1925 have no page to land on.
