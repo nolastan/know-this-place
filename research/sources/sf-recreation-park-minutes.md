@@ -5,9 +5,9 @@
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id
 > `sf-recreation-park-minutes-<meeting date>`, e.g. `sf-recreation-park-minutes-1950-07-27`.
 >
-> - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
+> - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission February 1941 – December 1943 read (12 findings; 1944–47 not on IA); Playground Commission annual reports 1911-12, 1925-26, 1928-29 and 1929-30 read (29 findings); Park Commission 1947–50 (maintenance-heavy) unread; the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission February 1941 – December 1943 read (12 findings; 1944–47 not on IA); Playground Commission annual reports 1911-12, 1925-26, 1928-29 and 1929-30 read (29 findings); Park Commission 1947–50 read (12 findings); the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -56,7 +56,7 @@
   dedications, said as scheduled unless the index or a later meeting records
   them held. Leave out payments, leases, concessions, staff matters and the
   names of private people who wrote in.
-- **Verified:** 2026-11-25 (Board of Park Commissioners 1939-46: 19 findings on 13 pages, the Aquatic Park and fly-casting lodge dedications of 1939, the Union Square garage lease and Timothy Pflueger's plans (1941), the Ralston memorial at the Marina (1941), the Japanese Tea Garden's 1942-43 demolitions and remodelling, Warren C. Perry appointed for the Stow Lake boathouse (1944) and the St. Mary's Square garage call for bids (1946).) 2026-11-25 (June 1950 – December 1951: 23 findings on 21
+- **Verified:** 2026-11-25 (Park Commission 1947-50, `minutesrecreatio1947sanf` and `…1949sanf`: 12 findings on 10 pages — the Parkside branch library's site in McCoppin Square granted (1948), Leonard Mosias's Centennial buildings in Portsmouth Square, Prentiss French's Strybing master plan commission, Andrew Gotzenberg's Rhododendron Dell master plan, Ward and Bolles for the Big Rec field house and the Zoo's primate and big-cat houses, William B. Fox's Coit Tower repairs, and the U.S.S. San Francisco memorial at Land's End (Henry V. Chescoe; Wellnitz and DeNarde, 1950). Every volume on IA is now read.) 2026-11-25 (Board of Park Commissioners 1939-46: 19 findings on 13 pages, the Aquatic Park and fly-casting lodge dedications of 1939, the Union Square garage lease and Timothy Pflueger's plans (1941), the Ralston memorial at the Marina (1941), the Japanese Tea Garden's 1942-43 demolitions and remodelling, Warren C. Perry appointed for the Stow Lake boathouse (1944) and the St. Mary's Square garage call for bids (1946).) 2026-11-25 (June 1950 – December 1951: 23 findings on 21
   place and address pages — field houses at Silver Terrace, West Portal, Aptos
   and Grattan, McLaren Lodge's conversion to the department's offices, the
   Golden Gate Park Golf Course and Cow Hollow Playground named, the Randall
