@@ -22,9 +22,18 @@
   (`annualreportofbo<year>sanf`, 1889-1924) are the parks' record before the
   1950 merger. Board of Park Commissioners volumes run 1870, 1896, 1913,
   1922, 1924-46 (each spans several years); the 1870 and 1896 volumes are
-  handwritten and their OCR is unusable. 1913 (April 1913 - December 1916)
-  1925-33 and 1936-38 read (1934-35 are not on IA: those items repeat 1933 and 1936);
-  1922-24 and 1939-46 unread. Yield fell to 3-4 placeable items a volume by 1937-38, so the run stopped there.
+  handwritten and their OCR is unusable. 1913 (April 1913 - December 1916),
+  1922 (September 1922 - December 1923), 1924, 1925-33 and 1936-38 read (1934-35
+  are not on IA: those items repeat 1933 and 1936); 1939-46 unread. Yield fell to
+  3-4 placeable items a volume by 1937-38, so the run stopped there. The annual
+  reports read: 1889, 1892, 1893, 1895, 1897, 1899, 1902, 1910, 1912, 1924 (IA has
+  no others; 1890, 1891 and 1896 are descriptive or accounts only, 1894 is a title
+  page). They are the best source for Golden Gate Park's early features: the
+  Chain of Lakes, Stow Lake, the Children's Quarters, the Museum, the squares the
+  1900 charter put under the commission. Each report covers work since the last
+  printed one, so undated work is dated to the report year. Findings cite
+  `sf-recreation-park-minutes-annual-report-<year>`; `F` files are `AR<year>.py`
+  with `REPORT = '<year>-06-30'` (convert.py/publish.py switch on it).
 - **Why it matters here:** most of the 227 park and playground place pages had
   no history at all. The minutes give each playground its dated record: the
   1947 recreation bond program's field-house contracts (contractor and price),
@@ -346,3 +355,7 @@
   4 findings (park-board-1937). Parkside Square named, Bufano's Sun Yat-sen dedicated, the old Stow Lake boathouse ordered demolished, a Palace of Fine Arts floor.
 - 2026-11-25 — Board of Park Commissioners 1938 (`minutesboardofpa1938sanf`):
   3 findings (park-board-1938). Palace of Fine Arts tennis courts, the Larsen memorial boulder, a McLaren Park purchase. Stopped: below four a volume.
+- 2026-11-25 — Board of Park Commissioners annual reports 1889-1924 (ten volumes):
+  39 findings (annual-report-<year>). The Chain of Lakes, Stow Lake's building, the Japanese Garden extension, the Children's Quarters and its merry-go-round cover (A. Page Brown), the 1892 beach building, the Museum's opening and annexes, the new Park Lodge, De Laveaga Dell, Lloyd Lake's portal, the Stadium, the Pioneer Log Cabin, the de Young and Kezar Stadium, and the city squares remodeled after 1900.
+- 2026-11-25 — Board of Park Commissioners 1922-23 and 1924 (`minutesboardofpa1922sanf`, `…1924sanf`):
+  9 findings (park-board-1922, park-board-1924). Kezar Stadium from the bequest agreement and Polk's plans to Palmer & McBryde's contract and completion, the de Young extension offer, Mountain Lake Park's and the Steinhart Aquarium's dedications, the new Beach Chalet's contract, the Tennis Stadium's dedication.
