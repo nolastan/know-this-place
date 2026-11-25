@@ -99,3 +99,15 @@
   "plans for <named building>" with an architect named nearby. The murals and
   other works of art approved for city buildings in 1934-41 are a separate,
   unread seam.)
+  2026-11-25 (8 narrative volumes, 1934-1941, works of art: 26 approvals
+  curated onto 13 existing pages: the 1934 Public Works of Art Project
+  sketches for Coit Tower, the Mother's House, the Board of Education room,
+  Roosevelt, Balboa and John Muir schools; the George Washington High
+  frescoes and the frieze's history from Bufano to Sargent Johnson; Mission
+  High and Beach Chalet murals; City Hall's Assessor's-room mural and
+  vestibule busts; City College's Olmsted sculpture and murals, Volz mosaics
+  and the 1940 Rivera fresco. Learned: the Internet Archive items for
+  1932-1959 are `minutesofartcomm<year>sanf`, not `artcommissionmin<year>sanf`
+  (1962 on); the 1932-48 batch had the wrong one and was corrected. Not
+  placed: the Lafayette School lunette, Maynard Dixon's Presidio High murals
+  (no page), the Morgue mural and the Exposition works.)
