@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–80 read (thirty-one volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1981–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–88 read (thirty-nine volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1989–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -226,3 +226,33 @@
   Pieretti Field, Duboce and Alamo Square rededications, Margaret Hayward and
   Moscone designs, Central City (Boeddeker) Park taken by eminent domain on
   Block 332. Knudsen-Bloom contract let at $869,320, still unplaced.)
+- 2026-11-25 · 1981 volume (`minutesrecreatio1981sanf`) read by passage: 9
+  findings (rec-park-1981). (Got: the North Dutch Windmill rededication, the
+  Charlie Sava Pool at Larsen Park, Crocker Amazon and Noe Courts dedications,
+  the Lion House, Huntington Falls and Central City Park plans, the Dubuffet
+  site at Justin Herman Plaza.) Learned: the "Knudsen-Bloom property" of
+  1976-82 is Block 4277 lots 10 and 14, today's Potrero del Sol (1976 acquisition
+  resolution 10554, 1978 resolution 11447); five held findings placed there and
+  added to rec-park-1976, -1978, -1979 and -1980.
+- 2026-11-25 · 1982 volume (`minutesrecreatio1982sanf`) read by passage: 9
+  findings (rec-park-1982). (Got: Golden Gate Heights and Sgt. John Macaulay
+  parks named, Mountain Lake master plan, Primate Discovery Center, the Garden
+  of Fragrance, the Knudsen-Bloom (Potrero del Sol) Phase II special meeting.)
+- 2026-11-25 · 1983-85 volumes read by passage: 5, 9 and 11 findings
+  (rec-park-1983..1985; one South of Market Park finding added to
+  rec-park-1982 once 1983 placed it at 6th and Folsom, today's Eugene Friend
+  Recreation Center). (Got: Macaulay and Boeddeker parks dedicated and named,
+  Potrero del Sol and Mission Center named, the Eskey koala exhibit, Herbst
+  Road, Twin Peaks vista point, the Japan-restored Tea Garden gates and the
+  1985 Tea Garden plaques.)
+- 2026-11-25 · 1986-87 volumes read by passage: 3 and 16 findings
+  (rec-park-1986, -1987). The 1986 scan holds only September-December
+  meetings; its index alone records the Hall of Flowers renamed the County
+  Fair Building and Tea Garden Drive renamed Hagiwara Tea Garden Drive. From
+  1987 the Open Space Program's construction contracts are ratified with firm
+  and price again (Saturn Steps, Alta Plaza, Seward, Grattan, Douglass).
+- 2026-11-25 · 1988 volume (`minutesrecreatio1988sanf`) read by passage: 11
+  findings (rec-park-1988). (Got: the Randall Museum renamed, Bud DeMeyer
+  diamond, Sunnyside Conservatory and Douglass field house dedications, the
+  Sixth and Folsom contract, Academy of Sciences and Kezar master plans,
+  Washington and Hyde mini park design.)
