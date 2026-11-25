@@ -22,8 +22,8 @@
   (`annualreportofbo<year>sanf`, 1889-1924) are the parks' record before the
   1950 merger. Board of Park Commissioners volumes run 1870, 1896, 1913,
   1922, 1924-46 (each spans several years); the 1870 and 1896 volumes are
-  handwritten and their OCR is unusable. 1913 (April 1913 - December 1916)
-  and 1925 read; the rest unread.
+  handwritten and their OCR is unusable. 1913 (April 1913 - December 1916),
+  1925 and 1926 read; the rest unread.
 - **Why it matters here:** most of the 227 park and playground place pages had
   no history at all. The minutes give each playground its dated record: the
   1947 recreation bond program's field-house contracts (contractor and price),
@@ -315,3 +315,8 @@
   Many meetings were postponed for want of a quorum; date by the heading over
   each meeting and skip those followed by "postponed". The Fleishhacker pool
   works of 1925 have no page to land on.
+- 2026-11-25 — Board of Park Commissioners 1926 (`minutesboardofpa1926sanf`):
+  6 findings (park-board-1926). (Got: the de Young Museum handed to its own
+  trustees, Kezar Pavilion contract, the Sunset Tunnel pit head in Duboce
+  Park, the Telegraph Hill and Lincoln Park balustrades, the Joan of Arc
+  pedestal.) One heading is misread as 1925 ("September 16, 1925").
