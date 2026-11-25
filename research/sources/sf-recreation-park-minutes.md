@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–73 read (twenty-four volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1974–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–74 read (twenty-five volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1975–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -190,3 +190,8 @@
   Johnson, the Buchanan Street Mall by Sasaki, Walker, Ridgetop Plaza, the
   zoo's animal hospital. Learned: from 1973 contract awards are recorded
   again, but mostly small maintenance jobs.)
+- 2026-11-25 · 1974 volume (`minutesrecreatio1974sanf`) read by passage: 6
+  findings (rec-park-1974). (Got: architects for the Chinese Playground
+  building (EDAW), the Golden Gate Park Senior Center (Germano Milono) and the
+  Children's Playground (Michael Painter); the zoo hospital and Alice Eastwood
+  Garden dedicated; Walter Johnson's theater lobby gift.)
