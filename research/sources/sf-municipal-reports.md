@@ -7,7 +7,7 @@
 >
 > - **Kind:** annual reports (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — thousand-page volumes whose OCR text is reachable only item by item; no index names a building.
-> - **Coverage:** the City Architect's reports for fiscal years 1907-08 through 1912-13 (vols 57-62) read. Earlier and later volumes unread.
+> - **Coverage:** the City Architect's reports for fiscal years 1907-08 through 1912-13 (vols 57-62) read; the Park Commissioners' reports in every volume from FY1869-70 to FY1906-07 read (47 volumes on disk, FY1859-60 onward). The pre-1906 schools, fire and public-works reports are unread.
 > - **Local corpus:** `research/corpora/sf-municipal-reports/` (IA `_djvu.txt`, one file per volume)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -68,11 +68,53 @@
 - **Scripts:** `/mnt/project-files/sf-municipal-reports/` (`F.py` the findings
   spec, `convert.py` builds the findings file and must not be re-run over a
   resolved file, `publish.py` with `MR_PR`).
-- **Remaining:** the pre-1906 volumes (Board of Public Works and
+- **The Park Commissioners' reports (FY1870-71 to 1906-07).** Bound into
+  every volume from the 1870 parks act onward; find them with
+  `grep -n "P.RK  COMMISSION"` (OCR doubles spaces). Narrative years
+  (1870-93, 1894-95, 1896-97, 1898-99, and the supplemental report for
+  calendar 1900 in vol 50 pp. 60-62) say what was built, given, named and
+  opened, with architects, contractors and donors. 1893-94, 1895-96, 1897-98
+  and 1899-1907 print only accounts: a ledger line per feature per year,
+  which dates a feature's building to the fiscal year and nothing finer.
+  Facts go on the Golden Gate Park place pages and the squares' place pages
+  (the Commission took the city's squares over on January 6, 1900); a fact
+  about the park as a whole goes on its parcel page, 6101 Fulton (1700001).
+  Old names: Stow Lake = Blue Heron Lake; Park Lodge = McLaren Lodge;
+  Children's Quarters / "Dairy" / Sharon Quarters = the Sharon Building;
+  Concert Valley / Music Court = Music Concourse; athletic field / Stadium =
+  Polo Field; Mission Park = Mission Dolores Park; Alvord Lakelet = Alvord
+  Lake. Volume-specific bound-ins worth knowing: the 1870 act (vol for
+  1869-70, Supplement LXXI p. 605), the Dewey and McKinley monument
+  committees' reports (1902-03 pp. 1105-1113), the Board of Health's report
+  on the Park Emergency Hospital (1901-02 pp. 430-431).
+- **Park-report cautions:**
+  - The IA item numbers are volume numbers, not years:
+    `sanfranciscomuni37sanfrich` is FY1886-87 and `…56` is FY1905-07. The
+    item titles (`archive.org/metadata/<id>/metadata/title`) give the year.
+  - The 1889-90, 1894-95 and 1896-97 reports carry a retrospective "objects
+    of interest" survey restating earlier facts, sometimes with the wrong year
+    (the Conservatory fire as 1882; the FY1882-83 report itself is the
+    contemporaneous record). Date a fact from the year it happened, not from
+    a survey's restatement.
+  - In the account-only years the OCR sets item names and amounts in separate
+    runs (vols 51, 52, 53, 55): match an amount to its item by the column
+    total, and publish no amount where the order is in doubt (the 1901-02
+    tunnel and windmill tower: $4,407.18 and $4,127.83, order unknown).
+  - Printed page to IA leaf: `<id>_page_numbers.json` maps them
+    (`archive.org/download/<id>/page/n<leaf>_w1400.jpg`); vol 42 p. 117 is
+    leaf n156. Read a name against the image when it matters: p. 117 prints
+    "H. Page Brown" for the architect A. Page Brown; the page says "Page
+    Brown".
+  - Most of what the reports describe is gone: the Casino, the aviary, the
+    first music stand, the Sweeny Observatory, the first Beach Chalet and
+    boathouse, the old Park Lodge. A predecessor fact goes on the place page
+    that replaced it as `site history`; the rest stays unresolved.
+- **Remaining:** the rest of the pre-1906 volumes (Board of Public Works and
   Superintendent of Schools reports on the 1870s-1900s schools and
-  firehouses), and the 1913-17 tables from the page images. One fact is held
+  firehouses, which locate buildings by block face in pre-1909 numbering),
+  and the 1913-17 tables from the page images. One fact is held
   for a page (`check.py --held`): Engine No. 1 at 451 Pacific (block 175 lot 27).
-- **Verified:** 2026-11-25 (FY1913-14 bond tables read from the images: 6
+- **Verified:** 2026-11-25 (Park Commissioners' reports FY1869-70 to 1906-07: 47 volumes on disk, 37 with park material, read in full by five parallel readers and every quote re-checked against the OCR. 393 facts; 232 placed on a place page or the park parcel, 91 published as 88 timeline entries on 39 pages, 141 declined as minor or already on the page, 161 unresolved for want of a page. Learned: a park report names features, not parcels, and the park's place pages are the address book for it; the account-only years still date a feature to its fiscal year.) 2026-11-25 (FY1913-14 bond tables read from the images: 6
   school contracts, 5 on pages and 1 held (Marshall, 1575 15th); builder set
   on Columbus, 1541 12th, and Washington Irving, 350 Broadway; Glen Park and
   Cooper not placed.) 2026-11-25 (6 City Architect reports read, 72 findings, 38
