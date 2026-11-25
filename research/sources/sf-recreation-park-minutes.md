@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–85 read (thirty-six volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1986–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–87 read (thirty-eight volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1988–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -245,3 +245,9 @@
   Potrero del Sol and Mission Center named, the Eskey koala exhibit, Herbst
   Road, Twin Peaks vista point, the Japan-restored Tea Garden gates and the
   1985 Tea Garden plaques.)
+- 2026-11-25 · 1986-87 volumes read by passage: 3 and 16 findings
+  (rec-park-1986, -1987). The 1986 scan holds only September-December
+  meetings; its index alone records the Hall of Flowers renamed the County
+  Fair Building and Tea Garden Drive renamed Hagiwara Tea Garden Drive. From
+  1987 the Open Space Program's construction contracts are ratified with firm
+  and price again (Saturn Steps, Alta Plaza, Seward, Grattan, Douglass).
