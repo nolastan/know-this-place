@@ -7,7 +7,7 @@
 >
 > - **Kind:** scanned survey forms and file papers, read from page images · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — hand-filled forms whose OCR is noise; nothing in them is findable by address.
-> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) and all 23 Yerba Buena items (568) read whole; only the A-2 appraisal and comparable-sales volumes (5001 to 5038) unread.
+> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) all 23 Yerba Buena items (568) read whole, and the nine comparable-sales volumes 5030 to 5038 (1,072) parsed, with every sheet that reaches a page or a held parcel read against its image; the A-2 acquisition appraisals (5001 to 5029) unread.
 > - **Local corpus:** `research/corpora/sfra-property-summaries/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -137,7 +137,11 @@
   (`yerba-buena-subject-files`); the 50-building conservation study, 5000
   (`conservation-study-1962`, 2026-11-24); and the last eight Yerba Buena
   items, 5055 to 5060, 5077 and 5078 (`yerba-buena-photo-items`, 2026-11-24).
-  **Not read: the A-2 appraisal and comparable-sales volumes, 5001 to 5038**
+  The comparable-sales volumes, 5030 to 5038 (`comparable-sales-1966-1970`,
+  2026-11-25): about 130 sheets on parcels with no page were parsed from the
+  OCR but not read against their images (list in
+  `/mnt/project-files/sfra-comparable-sales/nopage.txt`).
+  **Not read: the A-2 acquisition appraisals, 5001 to 5029**
   (about 15,000 pages, 1960 to 1990). Take the **comparable-sales volumes
   first** (5030 to 5038, 1969-70, about 1,100 pages): a comparable sale is a
   property the Agency did *not* buy, often outside the project area, so these
@@ -162,6 +166,21 @@
   in one place and lot 18 in the other. Being picked for a *conservation*
   study did not save a building: 9 of the 26 that resolve sit under a building
   the roll dates 1971 to 1991.
+- **Verified:** 2026-11-25 (the comparable-sales volumes 5030 to 5038:
+  1,072 PDF pages, about 330 typed sale sheets parsed from the OCR and
+  resolved by their block and lot; 59 read against the page image, 52
+  findings: 43 published on 40 pages, 5 of them seeded because a held fact
+  already waited on the parcel (1590 Sutter, 1980 Eddy, 867 Oak, 66 Haight,
+  1270 Fell), 6 held facts taken up with them, 7 sales held, 1 declined, 1
+  unplaced. Learned: **the OCR misreads the price on most sheets** ($20,000 as
+  "320,000", $25,000 as "925,000"), so nothing is published from the text
+  layer; **the pasted photograph covers the SOLD block on about one sheet in
+  eight**; a sheet's block and lot beats its address for placing it, since
+  the OCR address often lands on the other side of the street; and a property
+  can appear twice, sold and resold after a remodel (226-28 Haight, $50,000 in
+  1968 and $72,000 in 1969), which is worth stating as two entries. Scripts in
+  `/mnt/project-files/sfra-comparable-sales/` (`read.py` transcriptions,
+  `mkfind.py`, `publish.py`).)
 - **Verified:** 2026-11-24 (the conservation study and the last eight Yerba
   Buena items read: 302 PDF pages, 56 findings, 6 resolved, 6 published — five
   1962 sample photographs on 1 Cottage Row, 1868 Buchanan, 1843-49 Bush, 2109
