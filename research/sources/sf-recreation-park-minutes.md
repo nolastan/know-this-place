@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–68 read (nineteen volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1969–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–69 read (twenty volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1970–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -164,3 +164,9 @@
   findings (rec-park-1968). (Got: the McLaren Park amphitheater's architects,
   the Portsmouth Square bridge from the Chinese Cultural Center approved in
   principle, Bay View pool and bathhouse, zoo aviary, Strybing work center.)
+- 2026-11-25 · 1969 volume (`minutesrecreatio1969sanf`) read by passage: 7
+  findings (rec-park-1969). (Got: the Helen Crocker Russell Library, the
+  McLaren amphitheater's final plans, Raney's Palace of Fine Arts theater
+  agreement, the Landmarks Board's windmill certificate and Conservatory
+  proposal. Learned: the index fills the first ~26,000 lines and few meeting
+  openers survive OCR; date by footers.)
