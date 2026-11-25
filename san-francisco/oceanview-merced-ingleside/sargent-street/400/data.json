@@ -1,0 +1,76 @@
+{
+  "address": "400 Sargent Street, San Francisco, CA 94132",
+  "path": "/san-francisco/oceanview-merced-ingleside/sargent-street/400/",
+  "apn": "7074050",
+  "block": "7074",
+  "lot": "050",
+  "eas_baseid": "488087",
+  "coordinates": {
+    "lat": 37.716364,
+    "lng": -122.466519
+  },
+  "parcel": {
+    "lot_area_sqft": 131450,
+    "use": "Miscellaneous/Mixed-Use",
+    "property_class": "Vacant Lot Public Use",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Ingleside Heights",
+    "analysis_neighborhood": "Oceanview/Merced/Ingleside",
+    "property_location_raw": "0000 0400 SARGENT             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SARGENT&street_type=ST&address_number=400",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7074050&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7074&lot=050",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7074050",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-art-commission-minutes-1959-06-01",
+      "name": "Minutes of the Art Commission of the City and County of San Francisco, June 1, 1959",
+      "label": "Art Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/minutesofartcomm1959sanf",
+      "retrieved": "2026-11-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1959-06-01",
+      "kind": "design approval",
+      "description": "The Art Commission approved the preliminary sketches for the Jose Ortega School, designed by Cantin and Cantin.",
+      "source": "sf-art-commission-minutes-1959-06-01"
+    }
+  ]
+}
