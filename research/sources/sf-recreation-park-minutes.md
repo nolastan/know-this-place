@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–74 read (twenty-five volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1975–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–75 read (twenty-six volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1976–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -195,3 +195,8 @@
   building (EDAW), the Golden Gate Park Senior Center (Germano Milono) and the
   Children's Playground (Michael Painter); the zoo hospital and Alice Eastwood
   Garden dedicated; Walter Johnson's theater lobby gift.)
+- 2026-11-25 · 1975 volume (`minutesrecreatio1975sanf`) read by passage: 10
+  findings (rec-park-1975). (Got: Koshland Park's plans, the Palace colonnades
+  and Justin Herman Park's second phase dedicated, Taipei's offer of the
+  Chinese Pavilion, the de Young renovation, the MLK Pool enclosure, the
+  Sharon Building fire repairs.)
