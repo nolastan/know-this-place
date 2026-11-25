@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–62 read (thirteen volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1963–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–64 read (fifteen volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1965–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -137,3 +137,11 @@
   by 1961 building contracts are let by the Department of Public Works, so the
   minutes carry approvals and names but few contracts; yield fell to about five
   findings a volume.)
+- 2026-11-25 · 1963-64 volumes (`minutesrecreatio1963sanf`, `minutesrecreati1964sanf_0`)
+  read by passage: 12 findings (rec-park-1963, rec-park-1964). (Got: the
+  Allyne property fight of 1964, Raymond Kimbell Playground named, Ferry
+  Building Park consultants and preliminary design (Halprin, Bolles, Ciampi),
+  the Palace of Fine Arts restoration bid over budget, gifts of plans for the
+  Strybing kiosk (Gardner Dailey) and the zoo's Orangutan Grotto. Learned:
+  the meeting openers ("called to order ... on Thursday, <date>") are the
+  reliable dates; OCR turns 28 into 20.)
