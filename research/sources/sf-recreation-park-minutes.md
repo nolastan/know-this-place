@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–67 read (eighteen volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1968–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–68 read (nineteen volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1969–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -160,3 +160,7 @@
   findings (rec-park-1967). (Got: Vaillancourt's fountain for Embarcadero
   Plaza, Coffman Pool named, the Cowell Hall site set apart, the Marina harbor
   restaurant, Garfield Square's community plan, Alice Marble courts dedicated.)
+- 2026-11-25 · 1968 volume (`minutesrecreatio1968sanf`) read by passage: 7
+  findings (rec-park-1968). (Got: the McLaren Park amphitheater's architects,
+  the Portsmouth Square bridge from the Chinese Cultural Center approved in
+  principle, Bay View pool and bathhouse, zoo aviary, Strybing work center.)
