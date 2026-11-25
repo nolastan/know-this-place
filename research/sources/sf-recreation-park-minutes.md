@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission February 1941 – December 1943 read (12 findings; 1944–47 not on IA); Park Commission 1947–50 (maintenance-heavy) unread; the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–95 read (forty-six volumes; 1986 holds September-December only). Recreation Commission February 1941 – December 1943 read (12 findings; 1944–47 not on IA); Playground Commission annual reports 1911-12, 1925-26, 1928-29 and 1929-30 read (29 findings); Park Commission 1947–50 (maintenance-heavy) unread; the Recreation and Park run through 1995 is complete; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -361,3 +361,5 @@
   9 findings (park-board-1922, park-board-1924). Kezar Stadium from the bequest agreement and Polk's plans to Palmer & McBryde's contract and completion, the de Young extension offer, Mountain Lake Park's and the Steinhart Aquarium's dedications, the new Beach Chalet's contract, the Tennis Stadium's dedication.
 - 2026-11-25 — Recreation Commission February 1941 – December 1943 (`minutesrecreati1941sanf_1`):
   12 findings (rec-commission-1941-43). William G. Merchant's commissions (Corona Heights club rooms, Stern Grove's playground, entrance and music shell, the Sunset Playground convenience station, Grattan, St. Mary's and Potrero Hill field houses), the Estes and Sweeney memorial sundials, the Stern Grove bowling greens, Gilman and Silver Terrace land. Wartime economy cut most building. 1944-47 Recreation Commission volumes are not on IA.
+- 2026-11-25 — Playground Commission annual reports (`annualreporto19121926sanf`, `annualreporto19281930sanf`):
+  29 findings (playground-commission-1912, -1929, -1930). The 1928-29 report's dated history of each playground's land (who bought or transferred it, and when) gives first dates for fifteen playgrounds; also Jackson Playground's 1912 dedication, the North Beach swimming tank, the Douglass quarry, St. Mary's Park fill from the Bernal Cut, Michelangelo's school-building community center. The 1925-26 report is a directory with no usable dates. Not placed: Father Crowley (Southside), Julius Kahn, China Beach, the Bay View site at Third and Carroll.
