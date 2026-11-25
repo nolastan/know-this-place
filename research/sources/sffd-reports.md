@@ -25,13 +25,16 @@
   4's columns come out of the OCR in reading order (station, address,
   companies, year, lot area); transcribed by hand in
   `/mnt/project-files/sffd/T.py`.
-- **Next:** the Board of Fire Commissioners' reports (1869-1901, 16 on disk in
-  the corpus folder) carry a statement of every fire of the year: date, alarm
-  box, street address, how the building was occupied, frame or brick, and the
-  loss. Dense and dated, but the OCR splits the table's columns into separate
-  runs, so the address and its occupancy do not line up; it needs the page
-  images (`page/n<N>_w1400.jpg`) read row by row. Only buildings outside the
-  1906 burn will still stand.
+- **Fire statements (measured 2026-11-25):** ten of the Board of Fire
+  Commissioners' reports (1882-1895 fiscal years) carry a statement of every
+  fire: date, alarm box, street address, occupancy, frame or brick, cause and
+  loss (the facing page also names owners; leave them out). The page images
+  read cleanly (`page/n<leaf>_w1400.jpg`; leaves found from `_djvu.xml` by
+  searching for "OCCUPIED"). But across all ten years only about 16 rows give
+  a street number that has a page today outside the 1906 burn and the
+  renumbered districts, and most are trivial (a woodshed, a $10 loss) at
+  buildings the roll dates only to its 1900 placeholder. Not worth a pass
+  unless a page for one of those addresses wants its history.
 - **Cautions:** Station numbers in 1969 are not today's. The table's year
   built disagrees with some pages' dated contracts by a year or more (460 Bush,
   100 Hoffman, 1298 Girard); where a page already dates the building, the year
