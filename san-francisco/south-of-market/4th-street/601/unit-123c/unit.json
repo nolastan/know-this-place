@@ -1,0 +1,45 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-123c/",
+  "unit": "123C",
+  "apn": "3787073",
+  "block": "3787",
+  "lot": "073",
+  "parcel": {
+    "building_area_sqft": 2317,
+    "rooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 956457,
+    "assessed_improvement_value": 479020,
+    "last_sale_date": "1997-07-11"
+  },
+  "permits": [
+    {
+      "number": "200211010550",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-11-01",
+      "status_date": "2002-11-01",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "to replace old steel frame windows by insulated aluminum framed windows that are the same design as",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787073&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=123C",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

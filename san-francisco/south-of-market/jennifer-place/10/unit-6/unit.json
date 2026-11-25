@@ -1,0 +1,43 @@
+{
+  "address": "6 Jennifer Place, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/jennifer-place/10/unit-6/",
+  "apn": "3752167",
+  "block": "3752",
+  "lot": "167",
+  "parcel": {
+    "building_area_sqft": 1284
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 504000,
+    "assessed_improvement_value": 336000,
+    "last_sale_date": "2016-08-11"
+  },
+  "permits": [
+    {
+      "number": "202501108122",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-01-10",
+      "status_date": "2025-02-14",
+      "estimated_cost": 7560,
+      "revised_cost": 7560,
+      "description": "re-roofing with torch down. no work to (e) roof structural sheathing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752167&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&street_number=6",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}
