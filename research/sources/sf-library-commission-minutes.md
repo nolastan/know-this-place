@@ -5,9 +5,9 @@
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id
 > `sf-library-commission-minutes-<meeting date>`, e.g. `sf-library-commission-minutes-2004-02-19`.
 >
-> - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
+> - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — scanned SFPL government documents, no index by branch.
-> - **Coverage:** 1954-57, 1959-66 and 1973-2010 read for branch library buildings. Only the 1919-45 volume (`minutesofregular1119sanf`, poor OCR, few building items) is unread closely; no volumes for 1946-53, 1958 or 1967-72 are on IA.
+> - **Coverage:** every volume on IA read for branch library buildings: 1919-45 (one volume, poor OCR, gaps), 1954-57, 1959-66 and 1973-2010. No volumes for 1946-53, 1958 or 1967-72 are on IA. Exhausted.
 > - **Local corpus:** `research/corpora/sf-library-commission-minutes/` (IA `_djvu.txt`, one per volume)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -54,4 +54,4 @@
 - 2026-11-25 — 1974-97 (14 volumes): 22 findings (branch-libraries-1975-1997): community
   rooms, murals, Glen Park's move to 653 Chenery, the 1990-93 bond renovations, Chinatown's
   1996 reopening, the Portola branch fire of 1989, renamings.
-- **Verified:** 2026-11-25 (1954-2010 read except the 1919-45 volume; 59 curated findings).
+- **Verified:** 2026-11-25 (1919-45 volume re-read: 12 findings on 4 pages, the Anza branch's architect John Reid Jr. and builder Frank J. Reilly (1931), the WPA branches at West Portal and Bernal Heights (H. A. Thomsen Jr. appointed, then Frederick H. Meyer, 1936) and the January 1945 report on how each branch was paid for. Learned: the volume's meetings are headed 'San Francisco, <date>', with OCR'd months and years ('Ley 12, 193^', 'I9I4.5'); early2.py dates by a fuzzy match, and years must be read by hand. 71 findings in all.) 2026-11-25 (1954-2010 read except the 1919-45 volume; 59 curated findings).
