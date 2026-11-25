@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per year, no index by building.
-> - **Coverage:** 1949-1969 design-approval resolutions read (1960-61 not found). 1932-1948 and 1970-1983 unread.
+> - **Coverage:** 1932-1969 read for building design approvals (1960-61 not found); 1932-48 works of art and 1970-1983 unread.
 > - **Local corpus:** `research/corpora/sf-art-commission-minutes/` (IA `_djvu.txt`, one per year)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -92,3 +92,10 @@
   at 1351 24th Avenue). Learned: the meeting dates res7.py guesses from the
   nearest date string are often a month off; check every one against the
   heading.)
+  2026-11-25 (17 narrative volumes, 1932-1948: 11 approvals curated onto 11
+  pages, mostly the 1933-bond schools approved at the special meeting of
+  October 26, 1934; 1 architect credit (William Mooser, Francis Scott Key
+  School). These volumes have few numbered resolutions before 1935; search for
+  "plans for <named building>" with an architect named nearby. The murals and
+  other works of art approved for city buildings in 1934-41 are a separate,
+  unread seam.)
