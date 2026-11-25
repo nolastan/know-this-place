@@ -163,7 +163,7 @@
       "scope": "sf",
       "access": "open",
       "link_pattern": "^/blog/[a-z0-9-]+$",
-      "note": "A job board's 'New Business Openings' blog category (added for issue #408, 2026-11-24): openings and hiring posts whose slugs often carry the street and number ('sfmade-union-square-store-373-geary-retail-jobs', 'lids-union-square-50-powell'). No feed: /feed, /blog/feed and /blog/rss all 404, so it is polled as a section page. robots.txt allows '*' on /blog/ and blocks ClaudeBot and GPTBot only from account, billing and search paths. The posts are hiring copy — cite the opening, never a hiring contact."
+      "note": "A job board's 'New Business Openings' blog category (added for issue #408, 2026-11-24): openings and hiring posts whose slugs often carry the street and number ('sfmade-union-square-store-373-geary-retail-jobs', 'lids-union-square-50-powell'). No feed: /feed, /blog/feed and /blog/rss all 404, so it is polled as a section page. robots.txt allows '*' on /blog/ and blocks ClaudeBot and GPTBot only from account, billing and search paths. The posts are hiring copy — cite the opening, never a hiring contact. First poll (2026-11-25): the section page served, but seven of nine post pages answered 403 to the news user agent (two older posts served 200), and the two that read were a second account and a roundup. If the 403s persist, this source yields nothing read.py can use; that is a human's call on the feed, not a retry loop."
     },
     {
       "id": "corcoran-icon",
