@@ -205,7 +205,7 @@ shapes, and [feeds.json](feeds.json) records what each one does wrong:
   articles: no title element at all, and the article link is the last URL in
   the post text, often a bit.ly.
 - **A section page** — the Examiner's `/news/`, LocalJobPage's "New Business
-  Openings" category and Corcoran Icon's blog. No dates, no summaries, so the
+  Openings" category (and, until it moved to research, Corcoran Icon's blog). No dates, no summaries, so the
   cursor is the set of article URLs seen.
 
 The San Francisco Business Times is registered but **not polled**: its feed
