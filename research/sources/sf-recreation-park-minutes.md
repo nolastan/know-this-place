@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–79 read (thirty volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1980–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–80 read (thirty-one volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1981–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -221,3 +221,8 @@
   dedicated, Shoreview Park named, West Portal and Herz rededicated, Del Campo
   Associates' Mission Community Recreation Center program plans. Knudsen-Bloom
   still unplaced.)
+- 2026-11-25 · 1980 volume (`minutesrecreatio1980sanf`) read by passage: 13
+  findings (rec-park-1980). (Got: the Oliver C. Chang Recreation Building,
+  Pieretti Field, Duboce and Alamo Square rededications, Margaret Hayward and
+  Moscone designs, Central City (Boeddeker) Park taken by eminent domain on
+  Block 332. Knudsen-Bloom contract let at $869,320, still unplaced.)
