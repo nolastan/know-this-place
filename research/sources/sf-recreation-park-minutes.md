@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–58 read (nine volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1959–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–60 read (eleven volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1961–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -115,3 +115,17 @@
   <date> were approved"; together with the bid-opening dates they date every
   item even where the heading's date is lost. Portola Playground (Res. 3276)
   held back: unclear which present page it is.)
+  2026-11-25 (1959, `minutesrecreatio1959sanf`: 10 findings on 8 pages. The
+  Golden Gate Park tennis clubhouse (built by Clovis, named for William M.
+  Johnston) and bowling green clubhouse, the Hall of Flowers contract
+  (Midstate, $542,000), Jackson Playground's rehabilitation (Schubart &
+  Friedman; Biltwell), McCoppin Square, Storyland's designer Donald G.
+  Clever, the Clement Street courts renamed for Margaret Osborne duPont, and
+  part of the restored Palace of Fine Arts promised to Walter S. Johnson.)
+  2026-11-25 (1960, `minutesrecreatio1960sanf`: 9 findings on 9 pages. The
+  Diamond Heights recreation areas named for Mayor George Christopher and
+  for the commission's president Walter A. Haas; Helen Wills and McCoppin
+  Square field houses; the Hall of Flowers, Noble Collection and Rose Garden
+  dedications; the Japanese stone monument in Lincoln Park; McLaren Park's
+  land acquisition cleared. Learned: from 1959 the page footers are in slash
+  form ("11/10/60") and match the meeting.)
