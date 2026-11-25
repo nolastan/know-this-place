@@ -435,7 +435,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-recreation-park-minutes/rec-park-1995.json` | 16 | 22 KB | 1995 | 16 | 16 | `lakeshore`, `golden-gate-park`, `bayview-hunters-point` +8 |
 | `sfra-minutes/sfra-minutes-1974-81.json` | 15 | 23 KB | 1974–1981 | 15 | 15 | `pacific-heights`, `japantown`, `western-addition` +1 |
 | `sfra-minutes/sfra-minutes-1982-87.json` | 16 | 24 KB | 1982–1987 | 16 | 16 | `pacific-heights`, `western-addition`, `japantown` +2 |
-| `sfra-minutes/sfra-minutes-1988-94.json` | 33 | 47 KB | 1989–1994 | 33 | 33 | `tenderloin`, `south-of-market`, `mission` +9 |
+| `sfra-minutes/sfra-minutes-1988-94.json` | 33 | 46 KB | 1989–1994 | 33 | 33 | `tenderloin`, `south-of-market`, `mission` +9 |
 | `sfra-minutes/sfra-minutes-1995-2000.json` | 17 | 24 KB | 1995–2000 | 17 | 17 | `south-of-market`, `pacific-heights`, `mission` +5 |
 | `sfra-minutes/sfra-minutes-2001-11.json` | 19 | 27 KB | 2001–2011 | 19 | 19 | `south-of-market`, `western-addition`, `tenderloin` +6 |
 | `sfra-property-summaries/comparable-sales-1966-1970.json` | 52 | 105 KB | 1965–1970 | 44 | 43 | `hayes-valley`, `haight-ashbury`, `pacific-heights` +2 |
