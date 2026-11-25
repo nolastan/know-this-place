@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — scanned SFPL government documents, no index by branch.
-> - **Coverage:** 1998-2010 read (32 volumes) for branch library design reviews and namings. 1974-97 unread.
+> - **Coverage:** 1954-57, 1959-66 and 1973-2010 read for branch library buildings. Only the 1919-45 volume (`minutesofregular1119sanf`, poor OCR, few building items) is unread closely; no volumes for 1946-53, 1958 or 1967-72 are on IA.
 > - **Local corpus:** `research/corpora/sf-library-commission-minutes/` (IA `_djvu.txt`, one per volume)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -28,6 +28,16 @@
   `Library Commission M/D/YY`, which dates the item. From 2007 the minutes are
   printed web pages and items read `AGENDA ITEM NO. N. PEER REVIEW OF PROPOSED
   DESIGN FOR THE <BRANCH>`.
+- **Earlier volumes:** IA items with odd numbers are older volumes:
+  `minutesofregular1119sanf` (1919-45), `minutesofregular1619sanf` (Sept 1954-Jan 1957),
+  `minutesofregular1219sanf` (1959-60), `minutesofregula1119sanf_0` (1961-62),
+  `minutesofregula1119sanf_1` (1963-Jan 1965), `minutesofregular1196sanf` (1965-66),
+  `minutesofregula1619sanf_0` (1973-74). From `minutesofregular1974sanf` each volume
+  covers two years. 1954-66 meetings open "Proceedings of the … meeting … held <date>";
+  1974-97 "The regular meeting … was held <weekday>, <date>". The OCR often breaks the
+  heading's year (`195^`, `I960`), and some headings are missing, so check doubtful dates
+  against the typed date at the top of the page. `/mnt/project-files/sf-library-commission/passages.py`
+  pulls branch-library paragraphs with a date (`--lines` adds bare date lines for 1974-97).
 - **Cautions:** a peer review panel's members are named with their firms in the
   same paragraph as the project's architect; take the architect only from the
   sentence that introduces the design team. The 2007-10-25 peer review names
@@ -36,4 +46,12 @@
 ## Passes
 
 - 2026-11-25 — 1998-2010 (32 volumes): 14 findings (branch-libraries-2002-2010).
-- **Verified:** 2026-11-25 (1998-2010 read; 14 curated findings on existing branch pages).
+- 2026-11-25 — 1954-74 (7 volumes): 27 findings (branch-libraries-1954-1974), 23 on
+  pages: the Appleton & Wolfard branches from commission to opening (Marina, Ortega,
+  Merced, North Beach, Western Addition, Excelsior), builders (Leon Carlen, Wilner
+  Construction), the Waden bequest naming for Bayview. 4 Eureka Valley findings held: no
+  EAS address for 1 Jose Sarria Court.
+- 2026-11-25 — 1974-97 (14 volumes): 22 findings (branch-libraries-1975-1997): community
+  rooms, murals, Glen Park's move to 653 Chenery, the 1990-93 bond renovations, Chinatown's
+  1996 reopening, the Portola branch fire of 1989, renamings.
+- **Verified:** 2026-11-25 (1954-2010 read except the 1919-45 volume; 59 curated findings).
