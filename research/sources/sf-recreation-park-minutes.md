@@ -23,9 +23,11 @@
   1950 merger. Board of Park Commissioners volumes run 1870, 1896, 1913,
   1922, 1924-46 (each spans several years); the 1870 and 1896 volumes are
   handwritten and their OCR is unusable. 1913 (April 1913 - December 1916),
-  1922 (September 1922 - December 1923), 1924, 1925-33 and 1936-38 read (1934-35
-  are not on IA: those items repeat 1933 and 1936); 1939-46 unread. Yield fell to
-  3-4 placeable items a volume by 1937-38, so the run stopped there. The annual
+  1922 (September 1922 - December 1923), 1924, 1925-33 and 1936-46 read (1934-35
+  are not on IA: those items repeat 1933 and 1936). Yield is 3-5 placeable items a
+  volume from 1937 on; 1939-41 carry the WPA dedications, the war years mostly
+  repair contracts. The 1939-46 volumes open with a subject index and date each page
+  with an m/d/yy footer, which is the easiest way to date an item. The annual
   reports read: 1889, 1892, 1893, 1895, 1897, 1899, 1902, 1910, 1912, 1924 (IA has
   no others; 1890, 1891 and 1896 are descriptive or accounts only, 1894 is a title
   page). They are the best source for Golden Gate Park's early features: the
@@ -54,7 +56,7 @@
   dedications, said as scheduled unless the index or a later meeting records
   them held. Leave out payments, leases, concessions, staff matters and the
   names of private people who wrote in.
-- **Verified:** 2026-11-25 (June 1950 – December 1951: 23 findings on 21
+- **Verified:** 2026-11-25 (Board of Park Commissioners 1939-46: 19 findings on 13 pages, the Aquatic Park and fly-casting lodge dedications of 1939, the Union Square garage lease and Timothy Pflueger's plans (1941), the Ralston memorial at the Marina (1941), the Japanese Tea Garden's 1942-43 demolitions and remodelling, Warren C. Perry appointed for the Stow Lake boathouse (1944) and the St. Mary's Square garage call for bids (1946).) 2026-11-25 (June 1950 – December 1951: 23 findings on 21
   place and address pages — field houses at Silver Terrace, West Portal, Aptos
   and Grattan, McLaren Lodge's conversion to the department's offices, the
   Golden Gate Park Golf Course and Cow Hollow Playground named, the Randall
