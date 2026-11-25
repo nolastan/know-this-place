@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** June 1950 – December 1951 read (one volume). Recreation Commission 1941–1950 and Recreation and Park Commission 1952–1995 unread.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1951 read (three volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1952–1995 unread.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -47,3 +47,19 @@
   Golden Gate Park Golf Course and Cow Hollow Playground named, the Randall
   Museum named for Josephine D. Randall, the Japanese Tea Garden's name, and
   the 1951 dedications of the bond-program playgrounds.)
+  2026-11-25 (Recreation Commission, January 1948 – June 1950, items
+  `minutesrecreatio1948sanf` and `minutesrecreati1950sanf_3`: 33 findings on
+  22 pages. These cover the 1947 recreation bond program from the start:
+  William G. Merchant's architect contracts for nearly every new field house
+  and recreation center, the construction contracts (Burnett/Joseph Lee,
+  Peixotto, Cayuga, J. P. Murphy, South Sunset, Byxbee/Merced Heights,
+  Miley/Cow Hollow, Longfellow/Alice Chalmers, Presidio Heights, the Chinese
+  Recreation Center, and one $842,000 contract for the Potrero Hill, Ocean
+  View, St. Mary's and Sunset centers), and the playgrounds' namings.
+  Learned: the 1948 volume holds 1948 and 1949, and its meeting headings
+  give a weekday but often no year or a garbled one. The commission met on
+  Thursdays, so check the weekday, the resolution-number order and the
+  bid-opening dates ("proposals submitted November 1") against each
+  heading. A missed heading leaves its meeting under the previous date.
+  `minutesrecreatio1947sanf` and `…1949sanf` are the separate Park
+  Commission's minutes, mostly maintenance contracts.)
