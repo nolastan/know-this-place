@@ -1,0 +1,80 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-213/",
+  "unit": "213",
+  "apn": "3787092",
+  "block": "3787",
+  "lot": "092",
+  "parcel": {
+    "building_area_sqft": 2085,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 998781,
+    "assessed_improvement_value": 665852,
+    "last_sale_date": "2023-06-05"
+  },
+  "permits": [
+    {
+      "number": "201409297532",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-09-29",
+      "status_date": "2014-12-22",
+      "estimated_cost": 2000,
+      "revised_cost": 3096,
+      "description": "add 6 new fire sprinklers inside existing live work one unit due to new closets built; ref. 201309257739; maher n/a",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201310169465",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-10-16",
+      "status_date": "2014-04-24",
+      "estimated_cost": 2000,
+      "revised_cost": 2500,
+      "description": "revision to pa#2013-0925-7739. replace header above doorway to laundry, pantry. enclose corner of loft co create open niche, lower wall to 36\" to allow light and air. lower wall to access storage area. replace header at closet.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309257739",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2013-09-25",
+      "status_date": "2013-09-25",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remove extg tubs and suround, 2 valves, drains, and replace tub and shower. add 2 closets, remove and replace 2 doors to laundry and pantry. replace 2 bath vanities. add more electrical outlets. add and move light fixtures(8). work limited to residential area only.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201309177034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-09-17",
+      "status_date": "2014-10-06",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "work in one unit: replace 2 leaky shower valves, replace one damaged tub with shower pan, 2-2 way switches, to 3 way switches, convert a sink lavotary to a double. all bathroom lighting shall be high efficacy or controlled by manual-on sensor.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787092&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=213",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}
