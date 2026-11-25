@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per year, no index by building.
-> - **Coverage:** 1949-1959 design-approval resolutions read. 1932-1948 and 1960-1983 unread.
+> - **Coverage:** 1949-1966 design-approval resolutions read (1960-61 not found). 1932-1948 and 1967-1983 unread.
 > - **Local corpus:** `research/corpora/sf-art-commission-minutes/` (IA `_djvu.txt`, one per year)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -27,7 +27,14 @@
   Designer: <architect>.` — a regex over the dehyphenated, whitespace-flattened
   text pulls 771 resolutions, 314 with a Designer line
   (`/mnt/project-files/sf-art-commission/ext2.py`). Before 1949 and after 1959
-  the minutes are narrative, with no Designer line.
+  the minutes are narrative, with no Designer line. From 1962 to 1966 (items
+  `artcommissionmin<year>sanf`) each resolution again has a number, a title and
+  "held on <date>", and the architect is named in the body ("Appleton & Wolfard,
+  Architects"); splitting the flattened text on `RESOLUTION NO.` gives 488
+  resolutions (`res6.py`). The 1964-66 stages are Phase 1 (schematic), Phase 2
+  and Phase 3 (final drawings), and the architect is often named only at one of
+  them. The 1960 and 1961 downloads return Internet Archive error pages, and
+  the 1967-1983 wording does not match the splitter.
 - **Usable:** the project, the design stage approved, the date and the
   designer. The designer is a credit for the building where the approval is at
   the working-drawings stage or later and the roll or the facility confirms the
@@ -55,10 +62,22 @@
 - **Citation label:** "Minutes of the Art Commission of the City and County of
   San Francisco, <date>, Resolution No. <n>", URL the IA item page.
 - **Scripts:** `/mnt/project-files/sf-art-commission/` (`ext2.py`, `F.py` the
-  curated list, `convert.py`, `publish.py` with `AC_PR`).
+  curated list, `convert.py`, `publish.py` with `AC_PR` and `AC_FILE`; for
+  1962-66 `res6.py`, `F2.py`, `convert2.py`). A design approval that
+  contradicts a page's date or credit goes in `conflict` and so in the page's
+  `unknowns`.
 - **Verified:** 2026-11-25 (11 volumes, 1949-1959: 771 resolutions extracted,
   182 about a building with a named designer, 31 findings curated onto 29
   pages, 2 of them seeded school pages (Bret Harte, Jose Ortega); 6
   architect credits set where the working drawings and the roll agree.
   Learned: the commission's resolutions are the dated design history of the
   city's own buildings, and engine company numbers are not stable addresses.)
+  2026-11-25 (5 volumes, 1962-1966: 488 resolutions, 25 findings curated, 21
+  onto 18 pages and 4 held for a page (Lowell, the West Side Health Center at
+  1301 Pierce, El Dorado, the Paul Revere annex); 1 architect credit (Wurster,
+  Bernardi and Emmons, Golden Gateway garage, roll 1967). Two conflicts stated:
+  Station 26 at 80 Digby, dated 1963 by the Modern context statement, had its
+  drawings approved in 1965-66; Diamond Heights School, credited to Charles W.
+  Griffith, was approved at Phase 1 as Corlett and Spackman's. Learned: Cowell
+  Hall in the 1966 minutes is the Academy of Sciences, not City College, and
+  the Southeast Health Center is not the 1966 District Health Center No. 3.)
