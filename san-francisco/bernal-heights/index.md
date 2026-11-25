@@ -8,6 +8,7 @@ A hilly residential district south of the Mission, built up from the late 19th c
 - [Alabama Street](alabama-street/) — 1 building, built 1998.
 - [Anderson Street](anderson-street/) — 1 building, built 1925.
 - [Andover Street](andover-street/) — 1 building, built 1907.
+- [Appleton Avenue](appleton-avenue/) — 1 building, built 1940.
 - [Bache Street](bache-street/) — 1 building, built 1929.
 - [Banks Street](banks-street/) — 1 building, built 1926.
 - [Bennington Street](bennington-street/) — 1 building, built 1904.

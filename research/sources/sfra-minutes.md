@@ -5,7 +5,7 @@
 > [../SOURCES.md](../SOURCES.md) · cited on pages by the source id
 > `sfra-minutes-<meeting date>`, e.g. `sfra-minutes-1979-02-13`.
 >
-> - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
+> - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** done
 > - **Search-invisibility:** high — one OCR text per year or half-year, no index by address.
 > - **Coverage:** 1974-2011 read (45 volumes, every volume on IA, through the Agency's dissolution in 2012). Exhausted.
 > - **Local corpus:** `research/corpora/sfra-minutes/` (IA `_djvu.txt`, one per volume)
