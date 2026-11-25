@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per year, no index by building.
-> - **Coverage:** 1932-1969 read for building design approvals (1960-61 not found); 1932-48 works of art and 1970-1983 unread.
+> - **Coverage:** 1932-1983 read: building design approvals 1932-1969 (1960-61 not found), works of art 1934-41, and murals, works of art and civic buildings 1970-1983. Source exhausted for buildings to 1983; later volumes not on the Internet Archive.
 > - **Local corpus:** `research/corpora/sf-art-commission-minutes/` (IA `_djvu.txt`, one per year)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -68,10 +68,24 @@
   San Francisco, <date>, Resolution No. <n>", URL the IA item page.
 - **Scripts:** `/mnt/project-files/sf-art-commission/` (`ext2.py`, `F.py` the
   curated list, `convert.py`, `publish.py` with `AC_PR` and `AC_FILE`; for
-  1962-66 `res6.py`, `F2.py`, `convert2.py`). A design approval that
+  1962-66 `res6.py`, `F2.py`, `convert2.py`; for 1970-83 `res8.py`, `where.py` (meeting-date evidence around a match), `F6.py`, `convert6.py`, and `AC_ONLY` in `publish.py` to publish named findings of an older file). A design approval that
   contradicts a page's date or credit goes in `conflict` and so in the page's
   `unknowns`.
-- **Verified:** 2026-11-25 (11 volumes, 1949-1959: 771 resolutions extracted,
+- **Verified:** 2026-11-25 (14 volumes, 1970-1983: 1,940 resolutions split
+  (res8.py), architects almost never named; 36 findings curated onto 28 pages,
+  29 of them murals and works of art of the Neighborhood Arts Program and CETA
+  years (Crumpler at George Washington High, the Blue Whale on the Oak Street
+  firehouse, the SOMArts wall, the General Hospital mosaics, Cloud Hall East at
+  City College) and a few civic building approvals. 1501-1525 Silver Avenue
+  (Bayview Health Center) seeded: the 1967 stained-glass resolution for it
+  (David Arnold; Hertzka and Knowles, architects) is the second fact for the
+  parcel held in the 1962-66 batch, which is now published. Learned: from 1981
+  the page headers "Minutes (d Month yyyy)" carry the meeting date; earlier,
+  "A/C minutes m/d/yy"; res8's dates are a meeting off as often as not. The
+  1973 "Bayview Health Center (Marquis & Stoler)" is not the Silver Avenue
+  building. Many mural sites (housing projects, Valencia Gardens, Ping Yuen,
+  community centres) have no page; listed in the findings file's coverage.)
+- **Verified (earlier):** 2026-11-25 (11 volumes, 1949-1959: 771 resolutions extracted,
   182 about a building with a named designer, 31 findings curated onto 29
   pages, 2 of them seeded school pages (Bret Harte, Jose Ortega); 6
   architect credits set where the working drawings and the roll agree.
