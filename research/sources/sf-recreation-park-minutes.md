@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–89 read (forty volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1990–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–91 read (forty-two volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1992–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -261,3 +261,13 @@
   Randall Museum master plans, the Boeddeker tile mural, Laurel Hill plans.)
   From 1988 the footers carry typist codes ("7/1/89"); date by the running
   head "RECREATION AND PARK COMMISSION MINUTES - <date>".
+- 2026-11-25 — 1990 volume (`minutesrecreatio1990sanf`) read by passage: 7
+  findings (rec-park-1990). (Got: Kezar reconstruction contract, the AIDS
+  grove at de Laveaga Dell, dedications at 6th & Folsom, Buena Vista and
+  Michelangelo, the Children's Playground renovation.) The meeting date sits
+  on the line after the "Recreation and Park Commission Minutes" running head.
+- 2026-11-25 — 1991 volume (`minutesrecreatio1991sanf`) read by passage: 11
+  findings (rec-park-1991). (Got: playground contracts at Hayes Valley, Laurel
+  Hill and Cow Hollow, the South of Market Recreation Center naming, softball
+  field namings at Glen Park and Parkside, the Shakespeare Garden, Japantown
+  Peace Plaza and Portsmouth Square designs, the Kezar reopening.)
