@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–57 read (eight volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1958–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–58 read (nine volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1959–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -106,3 +106,12 @@
   dedication. Learned: in this volume the page footers are often invoice
   dates, so date by the "San Francisco, California <date>" line that opens
   each meeting. `minutesrecreatio1957sanf` has no text file.)
+  2026-11-25 (1958, `minutesrecreatio1958sanf`: 7 findings on 6 pages.
+  Washington Square's improvement contract, Hayes Valley's site clearance and
+  construction contract, the Lake Merced Sports Center, the Cayuga clubhouse
+  extension, Strothoff for the Conservatory, the Balboa Park pool's opening.
+  Learned: each meeting opens "The …th Regular Meeting … was called to order
+  … on Thursday, <date>", followed by "Minutes of the Regular Meeting of
+  <date> were approved"; together with the bid-opening dates they date every
+  item even where the heading's date is lost. Portola Playground (Res. 3276)
+  held back: unclear which present page it is.)
