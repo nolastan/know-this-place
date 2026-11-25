@@ -1,0 +1,50 @@
+{
+  "source_id": "corcoran-icon",
+  "batch": "2026-11-25",
+  "read_on": "2026-11-25",
+  "notes": "Run of 2026-11-25, this feed's first poll: one post queued, a brokerage's own listing announcement for 44 Page Street (22 September 2026). Declined.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 1,
+    "mentions": 1,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-25-ci-0001",
+      "date": "2026-09-22",
+      "date_precision": "day",
+      "kind": "sale",
+      "address_as_written": "44 Page Street",
+      "street_number": "44",
+      "street_name": "PAGE",
+      "street_type": "ST",
+      "description": "A brokerage listed 44 Page Street, built 1912 as the New Druid Temple and later the Kanbar Performing Arts Center, for sale; upper three floors added in a 1984 expansion; exterior restoration completed summer 2026.",
+      "extra": {
+        "later_name": "Kanbar Performing Arts Center",
+        "addition": "upper three floors, 1984",
+        "restoration": "exterior, summer 2026"
+      },
+      "citation": {
+        "label": "Corcoran Icon Properties, “44 Page Street: Corcoran Icon Commercial Lists Historic San Francisco Performing Arts Building for $13.75 Million,” 22 September 2026",
+        "url": "https://corcoranicon.com/blog/44-page-street-corcoran-icon-commercial-lists-historic-san-francisco-performing-arts-building-for-dollar1375-million"
+      },
+      "raw": {
+        "text": "Built in 1912, the building was known historically as the New Druid Temple and later as the Kanbar Performing Arts Center."
+      },
+      "confidence": "medium",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a listing is not a sale, the headline is the seller's broker's asking-price framing (feeds.json says never to carry that), and the page already records the building as the 1912 New Druid Temple. If it sells, the sale is the entry. The 1984 upper-floor addition and the 2026 facade restoration are noted here for a later source to confirm."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "0837006",
+        "path": "/san-francisco/hayes-valley/page-street/44/",
+        "eas_address": "44 PAGE ST",
+        "method": "EAS exact match on 44 PAGE ST → parcel 0837006; sf-parcels has blklot 0837006 active, 44–44 PAGE; the 2025 roll records it as commercial office, built 1912.",
+        "checked_on": "2026-11-25"
+      }
+    }
+  ]
+}
