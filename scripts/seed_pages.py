@@ -4052,6 +4052,19 @@ def _nearby_index() -> dict:
 
 HOMEPAGE = ROOT / "index.html"
 
+# The homepage's news grid. Other attributes on the list (the map's strip gives
+# it an id) must not hide it: when this stopped matching, every page's "in the
+# news" strip disappeared without an error. validate.py fails the build if the
+# list is there but no card comes out of it.
+HOME_NEWS_GRID = re.compile(
+    r'<ul\b[^>]*\bclass="[^"]*\bnews-cards\b[^"]*"[^>]*>(.*?)</ul>', re.S)
+
+
+def homepage_news_cards(page: str) -> list:
+    """The inner HTML of each card in the homepage's news grid, in order."""
+    grid = HOME_NEWS_GRID.search(page)
+    return re.findall(r"<li>(.*?)</li>", grid[1], re.S) if grid else []
+
 
 @functools.cache
 def _homepage_news() -> dict:
@@ -4067,9 +4080,8 @@ def _homepage_news() -> dict:
         page = HOMEPAGE.read_text(encoding="utf-8")
     except OSError:
         return {}
-    grid = re.search(r'<ul class="[^"]*\bnews-cards\b[^"]*">(.*?)</ul>', page, re.S)
     out = {}
-    for li in re.findall(r"<li>(.*?)</li>", grid[1] if grid else "", re.S):
+    for li in homepage_news_cards(page):
         page = re.search(r'<a href="(/[^"]*)">', li)
         story = re.search(r'<a class="card-outlet" href="([^"]+)"', li)
         if page and story:

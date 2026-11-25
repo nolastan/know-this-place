@@ -973,8 +973,12 @@ def check_news_card_photos() -> None:
     if not home.exists():
         return
     page = home.read_text(encoding="utf-8")
-    grid = re.search(r'<ul class="[^"]*\bnews-cards\b[^"]*">(.*?)</ul>', page, re.S)
-    for li in re.findall(r"<li>(.*?)</li>", grid[1] if grid else "", re.S):
+    cards = seed_pages.homepage_news_cards(page)
+    if "news-cards" in page and not cards:
+        err(home, "the homepage has a news grid but no card could be read from "
+                  "it — seed_pages.HOME_NEWS_GRID no longer matches the markup, "
+                  "so no address page shows its news strip")
+    for li in cards:
         link = re.search(r'<a href="(/[^"]*)">', li)
         if not link:
             continue
