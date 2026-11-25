@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1951 read (three volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1952–1995 unread.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 read (four volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1953–1995 unread.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -63,3 +63,18 @@
   heading. A missed heading leaves its meeting under the previous date.
   `minutesrecreatio1947sanf` and `…1949sanf` are the separate Park
   Commission's minutes, mostly maintenance contracts.)
+  2026-11-25 (Recreation and Park Commission, 1952, `minutesrecreatio1952sanf`:
+  28 findings on 25 pages. The official list of the 1951 dedications, which
+  places the June 5, 1951 Richmond dedication on Richmond Playground (18th
+  Avenue between Lake and California); the September 1952 architect contracts
+  for the next bond projects (Mooser & Gloe for Duboce Park's Central
+  Activities Building, Appleton & Wolfard for Eureka Valley, Mooser for
+  Junipero Serra, Ryan & Lee for Laurel Hill, Strothoff for Hayward); the
+  Argonne field house; Grattan's dedication; the Japanese Tea Garden name
+  restored; the Frank Marini Memorial; the Strybing master plan; the Palace
+  of Fine Arts demolition question. Learned: this volume's meeting headings
+  are mostly unreadable, but its card index gives each resolution's date and
+  page, and every page carries a footer date like "9-25-52". Date from those.
+  Where the minutes record an earlier event, convert.py takes
+  "event@meeting" dates so the entry sits on the event's day and cites the
+  meeting.)
