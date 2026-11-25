@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–92 read (forty-three volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1993–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–93 read (forty-four volumes; 1986 holds September-December only). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1994–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -276,3 +276,10 @@
   Museum and Crocker Amazon contracts; Jose Coronado Playground renaming and
   mural; Larsen Park plane removal; Spreckels Temple of Music, Precita, West
   Portal, India Basin and Marina seawall plans; Legion of Honor rehabilitation.)
+- 2026-11-25 — 1993 volume (`minutesrecreatio1993sanf`) read by passage: 19
+  findings (rec-park-1993). (Got: Portsmouth Square Phase II and the Goddess
+  of Democracy plaque, Tenderloin Children's Playground, Washington & Hyde,
+  Palace of Fine Arts seismic and access work, de Young shoring, the
+  Conservatory Rosehouse demolition, O'Shaughnessy Hollow and Hawk Hill
+  eminent domain, Glen Canyon trail and stream.) Held: the Cathay Mortuary
+  demolition for the new Chinatown Park, which gives no address.
