@@ -1,0 +1,46 @@
+{
+  "address": "12 Jennifer Place, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/jennifer-place/10/unit-12/",
+  "apn": "3752173",
+  "block": "3752",
+  "lot": "173",
+  "parcel": {
+    "building_area_sqft": 1284,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 420000,
+    "assessed_improvement_value": 420000,
+    "last_sale_date": "2021-02-03"
+  },
+  "permits": [
+    {
+      "number": "202510107230",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-10-10",
+      "status_date": "2025-11-07",
+      "estimated_cost": 10800,
+      "revised_cost": 10800,
+      "description": "reroofing torch down (5 squares)",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3752173&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3752&street_number=12",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

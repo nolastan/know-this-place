@@ -1,0 +1,164 @@
+{
+  "address": "76 Cameo Way, San Francisco, CA 94131",
+  "path": "/san-francisco/noe-valley/cameo-way/76/",
+  "apn": "7513047",
+  "block": "7513",
+  "lot": "047",
+  "eas_baseid": "420347",
+  "coordinates": {
+    "lat": 37.744581,
+    "lng": -122.443513
+  },
+  "parcel": {
+    "year_built": 1965,
+    "units": 1,
+    "stories": 1,
+    "rooms": 6,
+    "bathrooms": 2,
+    "lot_area_sqft": 5301,
+    "building_area_sqft": 2007,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Diamond Heights",
+    "analysis_neighborhood": "Noe Valley",
+    "property_location_raw": "0000 0076 CAMEO               WY0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 846669,
+    "assessed_improvement_value": 564440,
+    "last_sale_date": "2003-10-03"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1965",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Diamond Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1962–1965",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "S20261021774",
+      "status": "filed",
+      "filed": "2026-10-21",
+      "status_date": "2026-10-21",
+      "estimated_cost": 21000,
+      "revised_cost": 21000,
+      "description": "solar permit: ballasted: n, including 3 energy storage unit, of 600 vac, with 13.5 kwh each in capacity, ess units will be closer than 3 feet | 40.5kwh storage system ( 3 ess )",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202505146486",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2025-05-14",
+      "status_date": "2025-05-15",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "to obtain final inspection for work approved under pa# 200403249508. all work is complete.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200811206986",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2008-11-20",
+      "status_date": "2009-08-10",
+      "estimated_cost": 8815,
+      "revised_cost": 8815,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200403249508",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-03-24",
+      "status_date": "2025-05-15",
+      "estimated_cost": 1200,
+      "revised_cost": 1200,
+      "description": "remove wall to support beam and reinforce with new support beam to carry load",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401285088",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-28",
+      "status_date": "2005-04-21",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "remodel existing bthrm on 1st fl. remove partition walls. move kitchen on 2nd fl to adjacent room *",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8818057",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1988-11-15",
+      "status_date": "1989-05-10",
+      "estimated_cost": 5900,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=CAMEO&street_type=WAY&address_number=76",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7513047&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7513&lot=047",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7513047",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44351287204353%2037.74458134650398)%27)",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "corcoran-icon-mls-425030052",
+      "name": "Corcoran Icon Properties, listing for 76 Cameo Way (MLS 425030052)",
+      "query": "https://corcoranicon.com/property/76-cameo-way-san-francisco-ca-us-94131-425030052",
+      "label": "Corcoran Icon Properties listing, 76 Cameo Way",
+      "retrieved": "2026-11-25"
+    }
+  ],
+  "building": {
+    "developer": "Joseph Eichler",
+    "sources": [
+      "corcoran-icon-mls-425030052"
+    ]
+  }
+}

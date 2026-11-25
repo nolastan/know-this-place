@@ -1,0 +1,69 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-328/",
+  "unit": "328",
+  "apn": "3787134",
+  "block": "3787",
+  "lot": "134",
+  "parcel": {
+    "building_area_sqft": 1440,
+    "rooms": 4,
+    "bedrooms": 1,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 541008,
+    "assessed_improvement_value": 541008,
+    "last_sale_date": "2016-09-30"
+  },
+  "permits": [
+    {
+      "number": "202603117380",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2026-03-11",
+      "status_date": "2026-03-11",
+      "estimated_cost": 35000,
+      "revised_cost": 50000,
+      "description": "one unit. kitchen remodel like to like. partial bathroom remodel like to like. electrical sub panel upgrade (same location) floors",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200204103640",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-04-10",
+      "status_date": "2002-08-23",
+      "estimated_cost": 700,
+      "revised_cost": 700,
+      "description": "#328-rev.appl#200110050039 relocate 4 sprinkler heads for coverage of walls/add 2 heads/replace pipe",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200110050039",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2001-10-05",
+      "status_date": "2002-08-23",
+      "estimated_cost": 25000,
+      "revised_cost": 25000,
+      "description": "internal remodeling of a condominium unit fl & mezzenine. alteration on existing first bathrm add on",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787134&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=328",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

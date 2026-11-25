@@ -1,0 +1,80 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-319/",
+  "unit": "319",
+  "apn": "3787125",
+  "block": "3787",
+  "lot": "125",
+  "parcel": {
+    "building_area_sqft": 1863,
+    "rooms": 5,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 851938,
+    "assessed_improvement_value": 567956,
+    "last_sale_date": "2010-02-11"
+  },
+  "permits": [
+    {
+      "number": "201508043243",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-08-04",
+      "status_date": "2015-09-08",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "#319 - remove existing tile & shower valve in guest bathroom & replace with new.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200708301429",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2007-08-30",
+      "status_date": "2007-09-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "for records only. revision to 200609283688. mechanical, fire alarms, sprinklers and lighting not required.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200610054338",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-10-05",
+      "status_date": "2007-09-19",
+      "estimated_cost": 1800,
+      "revised_cost": 1800,
+      "description": "relocate (e) main to allow for new stairs by others.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200609283688",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-09-28",
+      "status_date": "2007-09-19",
+      "estimated_cost": 60000,
+      "revised_cost": 60000,
+      "description": "add bathroom, new stair, new kitchen cabinets. create platform, new sink/vanity at extg bathroom costmetic work in one unit",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787125&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=319",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}
