@@ -7,7 +7,7 @@
 >
 > - **Kind:** meeting minutes (scanned volumes, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — one OCR text per volume, indexed only by a typed card index at the front of some volumes.
-> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–55 read (six volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1956–1995 unread; the 1953 items have no scans.
+> - **Coverage:** Recreation Commission January 1948 – June 1950 and Recreation and Park Commission June 1950 – December 1952 and 1954–57 read (eight volumes). Recreation Commission 1941–44, Park Commission 1947–50 (maintenance-heavy) and Recreation and Park Commission 1958–1995 unread; the 1953 items have no scans.
 > - **Local corpus:** `research/corpora/sf-recreation-park-minutes/` (IA `_djvu.txt`, one per volume, gitignored)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -88,3 +88,21 @@
   architects. Learned: the 1954 card index is too broken by OCR to parse, so
   scan the minutes for "Award of Contract", dedications and namings, and date
   by page footer. The two 1953 items (`minutesrecreatio1953sanf`, `minutesrecreati1953sanf_0`) carry no scan or text files, so 1953 cannot be read.)
+  2026-11-25 (1956, `minutesrecreati1956sanf_0`: 11 findings on 9 pages. The
+  1947 bond fund ran out: the Garfield and Rossi pools were let without their
+  buildings; Balboa Park's pool and center (Reimers; Engstrum & Nourse); Pine
+  Lake's field house; the Eureka Valley naming dispute (playground kept its
+  name, ball field named for Monsignor Leo W. Powleson) and dedication; the
+  North Beach pool; the Columbus statue offer for Telegraph Hill.
+  `minutesrecreatio1956sanf` has no text file. The April 26, 1956 table of
+  architects for the 1955 bond projects (Res. 2262) is unreadable OCR.)
+  2026-11-25 (1957, `minutesrecreati1957sanf_0`: 17 findings on 14 pages. The
+  1955 bond program's first contracts (Larsen and McLaren pools, Balboa
+  soccer bleachers, Funston and Silver Terrace bleachers), Hayes Valley's
+  architect and site clearance, Storyland, the Hall of Flowers final plans,
+  the Mosias tennis and bowling clubhouses, the Balboa diamonds named for
+  August Sundberg and Maurice J. Sweeney, the Kezar press box named for
+  William M. Coffman, the Mountain Lake de Anza plaque, and the Upper Noe
+  dedication. Learned: in this volume the page footers are often invoice
+  dates, so date by the "San Francisco, California <date>" line that opens
+  each meeting. `minutesrecreatio1957sanf` has no text file.)
