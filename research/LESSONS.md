@@ -3631,3 +3631,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   under its present name. *Map old names to place pages once, in the
   dossier, and file what has no page as unresolved, not as a reason to
   seed one.* (2026-11-25)
+- **In printed minutes, date a measure by the running head, not by any date
+  in the text.** The Supervisors' Journal writes continuances and hearing
+  dates ("continued to Monday, November 7, 1966") in exactly the form of a
+  meeting date, so a case-blind date matcher moved 19 of 448 measures to the
+  wrong meeting. *Match only the upper-case page head ("MONDAY, OCTOBER 24,
+  1966"), and check it against the next head after the measure.*
+  (2026-11-26, [sources/sf-supervisors-journal.md](sources/sf-supervisors-journal.md))
+- **A council's own leases are an address index of public use.** Zoning was
+  the obvious target in the Supervisors' Journal and yields almost nothing
+  before 1960 (rezonings were written by frontage); the city's leases of
+  storefronts and floors — branch libraries, health centres, civil-defence
+  offices — are numbered, dated and purpose-stated, and gave 40 of 60
+  published facts. *In any body's minutes, scan every measure title for a
+  street number before deciding which kind of measure to read.* (2026-11-26)
