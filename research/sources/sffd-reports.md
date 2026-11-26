@@ -33,8 +33,13 @@
   searching for "OCCUPIED"). But across all ten years only about 16 rows give
   a street number that has a page today outside the 1906 burn and the
   renumbered districts, and most are trivial (a woodshed, a $10 loss) at
-  buildings the roll dates only to its 1900 placeholder. Not worth a pass
-  unless a page for one of those addresses wants its history.
+  buildings the roll dates only to its 1900 placeholder. On 2026-11-26 Stan
+  asked for them anyway: 14 rows in the Mission and Eureka Valley read from the
+  images (`fire-statements-1883-1895`, `/mnt/project-files/sffd/fires.py`),
+  cause and loss matched row by row from the facing page and left out where
+  the rows did not line up. Each is written as the building then at the
+  address. Pacific Heights and Hayes Valley rows were left alone for the 1909
+  renumbering.
 - **Cautions:** Station numbers in 1969 are not today's. The table's year
   built disagrees with some pages' dated contracts by a year or more (460 Bush,
   100 Hoffman, 1298 Girard); where a page already dates the building, the year
