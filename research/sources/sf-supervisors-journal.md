@@ -7,7 +7,7 @@
 >
 > - **Kind:** printed minutes of the Board's meetings (scanned, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — scanned volumes in the SFPL collection, no index on the web.
-> - **Coverage:** 157 volumes 1906–1999 on IA (`sanfranciscopubliclibrary`). 1967–1997 (71 items, volumes 62–92) read for zoning actions at an address on 2026-11-26. 1906–1966 not read.
+> - **Coverage:** 157 volumes 1906–1999 on IA (`sanfranciscopubliclibrary`). 1967–1997 (71 items, volumes 62–92) read for zoning actions at an address on 2026-11-26. 1946–1966 (22 items, volumes 41–61) read the same day for every measure at a numbered address (`board-actions-1946-1966`). 1906–1945 not read; leases and other non-zoning measures in 1967–1997 not read.
 > - **Local corpus:** `research/corpora/sf-supervisors-journal/` (IA `_djvu.txt`, one per item)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -46,5 +46,40 @@
   Scripts: `/mnt/project-files/sf-supervisors-journal/` (`extract.py` →
   `decide.py` → `cases.py` → `gen.py` → `OV.py` → `convert.py` → `publish.py`).
 
+- **1946–1966: what the volumes hold.** Before 1960 a rezoning is almost
+  always written by frontage or by lot and block ("south side of Jerrold
+  Avenue, 275 feet from Phelps"), so the zoning yield before 1960 is nearly
+  nil; numbered addresses appear in zoning titles only from the 1960 Planning
+  Code on. The address-dense measures are instead the city's own **leases**
+  ("Authorizing lease of ground floor space at 498 Sanchez Street, required
+  for the Noe Valley Health Center"), purchases, sales of surplus property,
+  and appropriations for work on city buildings. The lease titles name the
+  lessor, usually a private person: cut it from `raw.text` and the page;
+  firms and public bodies (Kohler & Chase, the Red Cross, the Housing
+  Authority, the Regents) may be named. Before 1949 the measure is printed in
+  full under its title ("Proposal No., Resolution No. … Resolved …"), and the
+  body carries the floor, term, rent and purpose; from 1949 a title, "File No.,
+  Resolution No.", a bracketed note and the vote. A blank "Resolution No." means
+  the measure was not adopted at that meeting.
+- **Dates:** take the meeting date from the upper-case running head ("MONDAY,
+  OCTOBER 24, 1966"), never from a date in the text — continuances and hearing
+  dates ("continued to Monday, November 7, 1966") are written in the same form
+  and moved 19 of 448 dates when matched case-blind.
+- **A list keyed by company is not a list of sites.** The 1953 firehouse bond
+  appropriation (Ordinance No. 7953) lists "land purchases for new sites for:
+  Engine 39 — 1091 Portola Drive; Engine 13 — 1458 Valencia Street …"; those are
+  the companies' existing firehouses, not the sites bought. Declined.
+- **Scripts** for 1946–1966 (scratch, not in the repository): a title scan for
+  street number + street over every measure-shaped paragraph, then a reader
+  that prints each measure from its title to its "Adopted by"/"Finally passed"
+  line.
+
 - **Verified:** 2026-11-26 (volumes 62–92 searched; 160 findings in
-`board-actions-1967-1997`.)
+`board-actions-1967-1997`.) 2026-11-26 (volumes 41–61, 1946–1966: read 22
+items, 448 address-bearing measure titles over 157 addresses, found 93
+findings, resolved 63, published 60 on 53 pages, 4 seeded; 3 declined, 9 held,
+21 not placed. Learned: the leases are the yield, not the zoning; where a
+building replaced the one leased (68 Post, 1255 California) the entry says "the
+building then on this lot"; 45 Hyde Street was the Main Library Annex on the
+Asian Art Museum's parcel, demolished 1997; one held fact of the 1967–1997
+batch, 2232 Webster's 1967 rezoning, was taken up on a page seeded here.)
