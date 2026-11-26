@@ -1,0 +1,46 @@
+{
+  "address": "2000 Post Street, San Francisco, CA 94115",
+  "path": "/san-francisco/japantown/post-street/2000/unit-103/",
+  "unit": "103",
+  "apn": "0682014",
+  "block": "0682",
+  "lot": "014",
+  "parcel": {
+    "building_area_sqft": 562,
+    "rooms": 3,
+    "bedrooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 27928,
+    "assessed_improvement_value": 104335
+  },
+  "permits": [
+    {
+      "number": "201312113882",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-12-11",
+      "status_date": "2014-03-13",
+      "estimated_cost": 25000,
+      "revised_cost": 131883,
+      "description": "g/f one unit -commercial interior t.i. for new nails/beauty shop, non-load bearing partitions, reception, treatment rooms, restroom ada compliance single user restroom, reuse-relcoate existing mech, lighting & sprinkler systems. no work to building exterior.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0682014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0682&unit=103",
+      "retrieved": "2026-11-26"
+    }
+  ]
+}
