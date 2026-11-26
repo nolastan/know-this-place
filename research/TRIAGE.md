@@ -94,7 +94,7 @@ reasons.** The appeal schedules interleave firms with individuals — "Anna
 Crljenko, 930 Fillmore St." on the next line — so an extractor needs the same
 person-name filter the city-directories note describes, and most of a volume is
 not about buildings at all. Street name changes and street acceptances are the
-other seam here and have not been sampled.
+other seam here and have not been sampled. **Taken up 2026-11-26 as [`sf-supervisors-journal`](sources/sf-supervisors-journal.md)** for 1967–1997: the zoning ordinances and Planning appeal decisions at addresses (160 findings). 1906–1966 and the street-name and assessment seams remain.
 
 **Western Neighborhoods Project *Outside Lands* magazine.** 36 issue PDFs listed
 at outsidelands.org/publications/. **Access caution:** a plain `curl` for the
