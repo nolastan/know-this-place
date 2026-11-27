@@ -1,0 +1,124 @@
+{
+  "address": "1736 Sanchez Street, San Francisco, CA 94131",
+  "path": "/san-francisco/glen-park/sanchez-street/1736/",
+  "apn": "6653004",
+  "block": "6653",
+  "lot": "004",
+  "eas_baseid": "404610",
+  "coordinates": {
+    "lat": 37.741321,
+    "lng": -122.429155
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 7,
+    "bathrooms": 2,
+    "lot_area_sqft": 3332,
+    "building_area_sqft": 1759,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 8,
+    "assessor_neighborhood": "Glen Park",
+    "analysis_neighborhood": "Glen Park",
+    "property_location_raw": "0000 1736 SANCHEZ             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 673466,
+    "assessed_improvement_value": 483128,
+    "last_sale_date": "2003-05-30"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200503036731",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2005-03-03",
+      "status_date": "2005-03-03",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "addbathroom to third level- rev. to pa#2004/07/07/8140",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200409234936",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2004-09-23",
+      "status_date": "2005-11-04",
+      "estimated_cost": 4000,
+      "revised_cost": 5000,
+      "description": "construct rear yard deck demolish non conforming rear yard laundry room.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200407078140",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-07-07",
+      "status_date": "2004-07-07",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "renovate 3rd level (top), add bathroom.no structural work",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=SANCHEZ&street_type=ST&address_number=1736",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6653004&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6653&lot=004",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6653004",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1912-10-29-n731",
+      "name": "Building and Industrial News, 29 October 1912",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri12212cont/page/n731/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-10-29",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame dwelling, estimated at $2,400. L. D. Luck was named as architect and J. Prout as contractor.",
+      "source": "building-industrial-news-1912-10-29-n731"
+    }
+  ],
+  "building": {
+    "architect": "L. D. Luck",
+    "builder": "J. Prout"
+  }
+}

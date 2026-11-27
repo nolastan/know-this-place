@@ -1,0 +1,134 @@
+{
+  "address": "1152 Jackson Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/jackson-street/1152/",
+  "apn": "0182011",
+  "block": "0182",
+  "lot": "011",
+  "eas_baseid": "279418",
+  "coordinates": {
+    "lat": 37.795346,
+    "lng": -122.414122
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 8,
+    "stories": 2,
+    "rooms": 30,
+    "bathrooms": 8,
+    "lot_area_sqft": 6873,
+    "building_area_sqft": 7620,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1152 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1533299,
+    "assessed_improvement_value": 975732,
+    "last_sale_date": "2005-05-31"
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "Historic Survey Result",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201910295840",
+      "type": "additions alterations or repairs",
+      "status": "issued",
+      "filed": "2019-10-29",
+      "status_date": "2022-06-22",
+      "estimated_cost": 80000,
+      "revised_cost": 80000,
+      "description": "mandatory soft story retrofit per plans.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722449",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-11-06",
+      "status_date": "1998-03-20",
+      "estimated_cost": 10000,
+      "description": "bolting to foundation & two shear walls",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9213903",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1992-08-18",
+      "status_date": "1993-04-08",
+      "estimated_cost": 8500,
+      "description": "dryrot repairs & structural reinforcemt to exist balcony.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9103737",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1991-03-07",
+      "status_date": "1991-04-26",
+      "estimated_cost": 22384,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1991–2019",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=1152",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0182011&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0182&lot=011",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0182011",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1912-12-10-n969",
+      "name": "Building and Industrial News, 10 December 1912",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri12212cont/page/n969/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-12-10",
+      "kind": "construction",
+      "description": "A permit was sought for two-storey and basement frame flats, estimated at $12,000.",
+      "source": "building-industrial-news-1912-12-10-n969"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "address": "1083–1099 Union Street, San Francisco, CA 94133",
+  "path": "/san-francisco/russian-hill/union-street/1083/",
+  "apn": "0121016",
+  "block": "0121",
+  "lot": "016",
+  "eas_baseid": "429684",
+  "coordinates": {
+    "lat": 37.799318,
+    "lng": -122.417114
+  },
+  "address_range": "1083–1099",
+  "street_numbers_on_parcel": [
+    "1083",
+    "1085",
+    "1087",
+    "1089",
+    "1091",
+    "1093",
+    "1095",
+    "1097",
+    "1099"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 6,
+    "stories": 3,
+    "rooms": 24,
+    "bathrooms": 6,
+    "lot_area_sqft": 2099,
+    "building_area_sqft": 5395,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-2",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Russian Hill",
+    "analysis_neighborhood": "Russian Hill",
+    "property_location_raw": "1099 1083 UNION               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 116648,
+    "assessed_improvement_value": 152923
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201804307705",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-30",
+      "status_date": "2018-12-20",
+      "estimated_cost": 38000,
+      "revised_cost": 38000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=UNION&street_type=ST&address_number=1083",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0121016&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0121&lot=016",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0121016",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1912-10-22-n702",
+      "name": "Building and Industrial News, 22 October 1912",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri12212cont/page/n702/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-10-22",
+      "kind": "building contract",
+      "description": "A building contract was recorded for three-storey and basement frame apartments, all work except painting, plumbing, finish hardware, shades and chandeliers. J. A. Porporato was named as architect and Giuseppe Cavaglieri as contractor.",
+      "source": "building-industrial-news-1912-10-22-n702"
+    }
+  ],
+  "building": {
+    "architect": "J. A. Porporato"
+  }
+}

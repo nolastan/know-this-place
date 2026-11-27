@@ -1,0 +1,108 @@
+{
+  "address": "726 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/726/",
+  "apn": "1651032",
+  "block": "1651",
+  "lot": "032",
+  "eas_baseid": "312234",
+  "coordinates": {
+    "lat": 37.774682,
+    "lng": -122.46672
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 3580,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0728 0726 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 55184,
+    "assessed_improvement_value": 72284
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202212097974",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2022-12-09",
+      "status_date": "2022-12-09",
+      "estimated_cost": 9000,
+      "revised_cost": 9000,
+      "description": "one unit: (4) window replacement in-kind, no size/location changes, retrofit install, (e) vinyl to new vinyl. u factor < 0.30. back of house",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9304990",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-03-29",
+      "status_date": "1993-07-29",
+      "estimated_cost": 4200,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=726",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1651032&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1651&lot=032",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1651032",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1912-10-29-n739",
+      "name": "Building and Industrial News, 29 October 1912",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri12212cont/page/n739/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-10-29",
+      "kind": "building contract",
+      "description": "A building contract was recorded for excavating, concrete, carpentry, roofing, mill work, chimneys, brick, glazing, stair work, plaster and hardware for two-storey and basement frame flats, at $5,550. H. Geilfuss & Son were named as architects and J. Harold Johnson as contractor.",
+      "source": "building-industrial-news-1912-10-29-n739"
+    }
+  ]
+}

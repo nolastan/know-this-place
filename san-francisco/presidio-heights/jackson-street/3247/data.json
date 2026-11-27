@@ -1,0 +1,141 @@
+{
+  "address": "3247 Jackson Street, San Francisco, CA 94118",
+  "path": "/san-francisco/presidio-heights/jackson-street/3247/",
+  "apn": "0984022",
+  "block": "0984",
+  "lot": "022",
+  "eas_baseid": "292000",
+  "coordinates": {
+    "lat": 37.790459,
+    "lng": -122.448207
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 3,
+    "rooms": 11,
+    "bathrooms": 4,
+    "bedrooms": 7,
+    "lot_area_sqft": 4022.24,
+    "building_area_sqft": 4250,
+    "lot_depth_ft": 27.69,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 2,
+    "assessor_neighborhood": "Presidio Heights",
+    "analysis_neighborhood": "Presidio Heights",
+    "property_location_raw": "0000 3247 JACKSON             ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 616310,
+    "assessed_improvement_value": 1144607
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Presidio Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1890–1930",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201201232740",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2012-01-23",
+      "status_date": "2012-01-23",
+      "estimated_cost": 25000,
+      "revised_cost": 63000,
+      "description": "bathroom & kitchen remodel (repl bath tub & sink,upgrade kitchen cabinet,wall erpair (installation of sheetrock) 200 sq.ft in various location of the building, painting of interior & recarpeting,kitchen area 21'x13',bathrm 8'x5' and 9'x7'",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201110257613",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2011-10-25",
+      "status_date": "2011-10-25",
+      "estimated_cost": 15000,
+      "revised_cost": 15000,
+      "description": "replace dryrot rear deck and stair.partial to comply with notice of violation #200669955",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9600007",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-01-02",
+      "status_date": "1996-10-08",
+      "estimated_cost": 16000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1996–2012",
+    "shown_on_page": 3,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=JACKSON&street_type=ST&address_number=3247",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0984022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0984&lot=022",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0984022",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.44820740911142%2037.790458740984995)%27)",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1912-08-06-n256",
+      "name": "Building and Industrial News, 6 August 1912",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri12212cont/page/n256/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-08-06",
+      "kind": "alteration",
+      "description": "A permit was sought for alterations and additions to a dwelling, estimated at $6,000. Theo. S. Boehm was named as architect.",
+      "source": "building-industrial-news-1912-08-06-n256"
+    }
+  ]
+}
