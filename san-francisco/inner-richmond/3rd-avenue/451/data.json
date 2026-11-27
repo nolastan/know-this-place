@@ -1,0 +1,151 @@
+{
+  "address": "451–453 3rd Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/3rd-avenue/451/",
+  "apn": "1541009",
+  "block": "1541",
+  "lot": "009",
+  "eas_baseid": "495103",
+  "coordinates": {
+    "lat": 37.780144,
+    "lng": -122.461132
+  },
+  "address_range": "451–453",
+  "street_numbers_on_parcel": [
+    "451",
+    "453"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 9,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2000,
+    "lot_depth_ft": 20,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0453 0451 03RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 339924,
+    "assessed_improvement_value": 254937
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202406114177",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-06-11",
+      "status_date": "2024-08-14",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "rev to pa202405071537: change address from 451 third avenue to 453 third avenue.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202405071537",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2024-05-07",
+      "status_date": "2024-08-14",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "replace partial kitchen cabinets + countertop, replace sink, appliances and lighting.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201412163883",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-12-16",
+      "status_date": "2015-04-08",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remodel 2 bathrooms & 2-1/2 baths. all fixtures to remain in same location. demolition, framing. install 2 pocket doors, sheetrock, tile, plumbing & electrical.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201401146182",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-01-14",
+      "status_date": "2014-10-29",
+      "estimated_cost": 14000,
+      "revised_cost": 14000,
+      "description": "no existing wood siding on back & side, not visable from street. install hardi plank, no structural changes replace rear entry door",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200009180758",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2000-09-18",
+      "status_date": "2001-03-19",
+      "estimated_cost": 23480,
+      "revised_cost": 23480,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=03RD&street_type=AVE&address_number=451",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1541009&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1541&lot=009",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1541009",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-01-21-n58",
+      "name": "Building and Industrial News, 21 January 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11111cont/page/n58/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-01-21",
+      "kind": "construction",
+      "description": "A permit was sought for two-storey frame flats, estimated at $5,000. Jos. A. Leonard was named as architect. The owner was the Urban Realty Improvement Co.",
+      "source": "building-industrial-news-1911-01-21-n58"
+    }
+  ],
+  "building": {
+    "architect": "Jos. A. Leonard"
+  }
+}

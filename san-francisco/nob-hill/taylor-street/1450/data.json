@@ -1,0 +1,113 @@
+{
+  "address": "1450 Taylor Street, San Francisco, CA 94133",
+  "path": "/san-francisco/nob-hill/taylor-street/1450/",
+  "apn": "0181027",
+  "block": "0181",
+  "lot": "027",
+  "eas_baseid": "279387",
+  "coordinates": {
+    "lat": 37.795866,
+    "lng": -122.413037
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 7,
+    "stories": 3,
+    "rooms": 28,
+    "bathrooms": 7,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 5636,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-3",
+    "supervisor_district": 3,
+    "assessor_neighborhood": "Nob Hill",
+    "analysis_neighborhood": "Nob Hill",
+    "property_location_raw": "0000 1450 TAYLOR              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 85608,
+    "assessed_improvement_value": 154460
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202107194628",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2021-07-19",
+      "status_date": "2021-09-22",
+      "estimated_cost": 10000,
+      "revised_cost": 12669,
+      "description": "like for like fire alarm upgrade mtn low frequancy rounders installing new aes radio and sprinkler monitoring",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9823278",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1998-11-12",
+      "status_date": "2000-05-10",
+      "estimated_cost": 5600,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1998–2021",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=TAYLOR&street_type=ST&address_number=1450",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0181027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0181&lot=027",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0181027",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-02-25-n184",
+      "name": "Building and Industrial News, 25 February 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11111cont/page/n184/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-02-25",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of six flats, estimated at $8,000.",
+      "source": "building-industrial-news-1911-02-25-n184"
+    }
+  ]
+}

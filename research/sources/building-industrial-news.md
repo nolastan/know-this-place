@@ -6,7 +6,7 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 7 of 8 half-year volumes read (July 1911 – December 1914): 912 facts on 803 pages (315 seeded). Unread: vol. 11 pt. 1 (January – June 1911). See the `Verified:` line.
+> - **Coverage:** all 8 half-year volumes read (January 1911 – December 1914, everything on the Internet Archive): 1,042 facts on 920 pages (367 seeded). Nothing is left to read; about 1,200 placed rows stay held for a page. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-industrial-news/`
 > - **Claimed:** every unread volume, by the project run that opened this source (2026-11-24). The placed-and-held rows are **not** claimed: they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)).
 >
@@ -103,8 +103,14 @@
   828): 3,105 numbered entries; 1,846 San Francisco rows; 731 placed on a
   parcel; 209 picked and read against the image; 151 published on 140
   pages, 51 of them seeded. Unfinished: 147 placed single houses and small
-  alterations held until the parcel gets a page, 1,115 not placed. Unread:
-  vol. 11 pt. 1.
+  alterations held until the parcel gets a page, 1,115 not placed.
+- **Coverage, vol. 11 pt. 1** (`buildingindustri11111cont`, 7 January – 27
+  June 1911, 25 issues, Saturdays through 8 April and Tuesdays from 18
+  April; cover leaves 8, 30, 52, 74, 104 … 692): 2,575 numbered entries;
+  1,507 San Francisco rows; 680 placed on a parcel; 179 picked and read
+  against the image; 131 published on 125 pages, 52 of them seeded.
+  Unfinished: 133 placed single houses and small alterations held until the
+  parcel gets a page, 827 not placed. Nothing is unread.
 - **Verified:** 2026-11-24 (vol. 14 pt. 2: read 2,231 entries, found 1,416
   San Francisco rows, resolved 149, published 149 on 134 pages. Learned: the
   entries have the 1915 layout, with "COST, $…" closing each permit;
@@ -169,4 +175,14 @@
   ("Valley S 255 E Castro", "Octavia and Union SW", "Andover No. 754"), so
   `place.py` needs `BEN_STREET_FIRST=1` or it places nothing; a contact
   sheet of the entry headings is the quick way to check the item numbers
-  that break the running order.)
+  that break the running order. Vol. 11 pt. 1, same day: read 2,575
+  entries, found 1,507 San Francisco rows, resolved 131, published 131 on
+  125 pages. Learned: the item numbers of spring 1911 carry a full stop
+  inside the bracket ("(773.)"), which `extract.py` now accepts (274 more
+  entries); the OCR of this volume reads N as X and W as AV, and `place.py`
+  turns them back under `BEN_STREET_FIRST=1` (179 picked rows instead of
+  113); the paper moved from Saturday to Tuesday with the issue of 18 April
+  1911; entries often run past the foot of a column, and `$S/after.py <row>`
+  style reading of the following `lines.jsonl` lines finishes them; a
+  second permit for the same corner two years later (Central and Grove,
+  1911 and 1913) is a sign the first was not built, so the note says so.)

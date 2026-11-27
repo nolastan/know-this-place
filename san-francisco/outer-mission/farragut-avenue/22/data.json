@@ -1,0 +1,122 @@
+{
+  "address": "22 Farragut Avenue, San Francisco, CA 94112",
+  "path": "/san-francisco/outer-mission/farragut-avenue/22/",
+  "apn": "7100014",
+  "block": "7100",
+  "lot": "014",
+  "eas_baseid": "415654",
+  "coordinates": {
+    "lat": 37.710484,
+    "lng": -122.449642
+  },
+  "parcel": {
+    "year_built": 1910,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 1999,
+    "building_area_sqft": 1000,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Outer Mission",
+    "analysis_neighborhood": "Outer Mission",
+    "property_location_raw": "0000 0022 FARRAGUT            AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 715096,
+    "assessed_improvement_value": 306466,
+    "last_sale_date": "2015-04-14"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1910",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201807245368",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-07-24",
+      "status_date": "2018-07-24",
+      "estimated_cost": 9950,
+      "revised_cost": 9950,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201501236516",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-01-23",
+      "status_date": "2015-02-23",
+      "estimated_cost": 5000,
+      "revised_cost": 5000,
+      "description": "remodeling 1/f half bath and wash area, moving dryer with washer, tiling 1/2 bath, new toilet & sink. no walls moved, removed or added. all layout to remain unchanged.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9506729",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1995-05-09",
+      "status_date": "1995-09-05",
+      "estimated_cost": 500,
+      "description": "rerpair front wooden stairs",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=FARRAGUT&street_type=AVE&address_number=22",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=7100014&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=7100&lot=014",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=7100014",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-04-25-n434",
+      "name": "Building and Industrial News, 25 April 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11111cont/page/n434/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-04-25",
+      "kind": "construction",
+      "description": "A permit was sought for a six-room frame dwelling, estimated at $1,000. P. Morch was named as architect.",
+      "source": "building-industrial-news-1911-04-25-n434"
+    }
+  ],
+  "building": {
+    "architect": "P. Morch"
+  }
+}
