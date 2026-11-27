@@ -1,0 +1,78 @@
+{
+  "source_id": "mission-local",
+  "batch": "2026-11-26",
+  "read_on": "2026-11-26",
+  "notes": "Run of 2026-11-26. Two Mission Local stories queued. The 1970s–80s photo essay names addresses only as photo captions. The Mission Buzz roundup's headline names two things: the maker space (declined, its address is inconsistent) and the Ling Nam bakery (declined, already on the page from the Chronicle). The roundup's other items (an Italian restaurant on Valencia, a grocery on Mission) are not in its headline, so they are declined under the roundup rule and not written.",
+  "coverage": {
+    "unit": "articles",
+    "examined": 2,
+    "mentions": 2,
+    "remaining": "none"
+  },
+  "findings": [
+    {
+      "id": "2026-11-26-ml-0001",
+      "date": "2026-11-25",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3591 29th St.",
+      "street_number": "3591",
+      "street_name": "29TH",
+      "street_type": "ST",
+      "description": "A craft studio, the Making Room, plans to open in early December.",
+      "extra": {
+        "address_conflict": "body: 3591 29th St.; headline and caption: 20th Street near Valencia"
+      },
+      "citation": {
+        "label": "Mission Local, “New maker space on 20th Street, and a Chinese-Filipino bakery coming to Mission-Bernal,” 25 November 2026",
+        "url": "https://missionlocal.org/2026/11/new-maker-space-on-20th-street-and-a-chinese-filipino-bakery-coming-to-mission-bernal/"
+      },
+      "raw": {
+        "text": "is opening early December at 3591 29th St., near Valencia St."
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: the article contradicts itself about the address. The body gives 3591 29th St., but the headline says 20th Street and the photo caption says near 20th and Valencia. Choosing either would be guessing, so the opening goes on no page. Revisit if the outlet corrects it or another account gives the number."
+      },
+      "resolution": {
+        "status": "unresolved",
+        "checked_on": "2026-11-26",
+        "method": "No record in sf-eas-addresses for 3591 29TH ST.",
+        "note": "The address does not exist today, so there is no page it can go on. EAS has no address near it on this street either. Per \"The evidence bar\" in research/AGENTS.md this is a street-hub fact: a dated record of a building at a number the city no longer has."
+      }
+    },
+    {
+      "id": "2026-11-26-ml-0002",
+      "date": "2026-11-25",
+      "date_precision": "day",
+      "kind": "occupancy",
+      "address_as_written": "3349 Mission St.",
+      "street_number": "3349",
+      "street_name": "MISSION",
+      "street_type": "ST",
+      "description": "Ling Nam, a Filipino-Chinese bakery and restaurant, will open at 3349 Mission by the end of the year.",
+      "extra": {},
+      "citation": {
+        "label": "Mission Local, “New maker space on 20th Street, and a Chinese-Filipino bakery coming to Mission-Bernal,” 25 November 2026",
+        "url": "https://missionlocal.org/2026/11/new-maker-space-on-20th-street-and-a-chinese-filipino-bakery-coming-to-mission-bernal/"
+      },
+      "raw": {
+        "text": "Ling Nam will open at 3349 Mission St., at Virginia Avenue"
+      },
+      "confidence": "high",
+      "publish": {
+        "status": "declined",
+        "note": "Declined: a second account. The Chronicle's “A beloved Bay Area Filipino bakery is coming to San Francisco” (17 November 2026; news/items/sf-chronicle/2026-11-18.json, 2026-11-18-sc-0001) already carries the event on /san-francisco/mission/mission-street/3349/."
+      },
+      "resolution": {
+        "status": "resolved",
+        "apn": "5615080",
+        "path": "/san-francisco/mission/mission-street/3349/",
+        "eas_address": "3349 MISSION ST",
+        "method": "EAS exact match on 3349 MISSION ST → parcel 5615080; sf-parcels has blklot 5615080 active, 3349–3349 MISSION; the 2025 roll records it as commercial retail, built 1980.",
+        "checked_on": "2026-11-26"
+      }
+    }
+  ]
+}

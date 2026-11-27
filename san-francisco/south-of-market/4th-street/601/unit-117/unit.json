@@ -1,0 +1,74 @@
+{
+  "address": "601 4th Street, San Francisco, CA 94107",
+  "path": "/san-francisco/south-of-market/4th-street/601/unit-117/",
+  "unit": "117",
+  "apn": "3787068",
+  "block": "3787",
+  "lot": "068",
+  "parcel": {
+    "building_area_sqft": 1713,
+    "rooms": 4,
+    "bedrooms": 2,
+    "bathrooms": 2
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 658824,
+    "assessed_improvement_value": 679614,
+    "last_sale_date": "2004-12-13"
+  },
+  "permits": [
+    {
+      "number": "201402138485",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2014-02-13",
+      "status_date": "2014-02-26",
+      "estimated_cost": 3900,
+      "revised_cost": 3900,
+      "description": "one unit : relocate extg 4 sprinklers for new bathroom remodel. n/a for the maher ordinance #155-13",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "M458767",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-01-22",
+      "status_date": "2014-01-22",
+      "revised_cost": 1,
+      "description": "mta only",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201307031124",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2013-07-03",
+      "status_date": "2014-06-23",
+      "estimated_cost": 22500,
+      "revised_cost": 22500,
+      "description": "one unit - new bathroom @ existing storage/closet room (upper level), replace bathtub w/new shower (lower level), new handrails @ (e) stairs, structural upgrades under new bathroom.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "2013–2014",
+    "shown_on_page": 3,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3787068&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3787&unit=117",
+      "retrieved": "2026-11-25"
+    }
+  ]
+}

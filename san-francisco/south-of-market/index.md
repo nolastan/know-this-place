@@ -35,6 +35,7 @@ The wide blocks west of Fourth Street, between Market and Harrison. Coverage her
 - [Harrison Street](harrison-street/) — 36 buildings, built 1909–2018; 2 in the SoMa LGBTQ Historic District.
 - [Heron Street](heron-street/) — 1 building, built 1900; 1 in the Western SOMA Light Industrial and Residential Historic District.
 - [Howard Street](howard-street/) — 30 buildings, built 1900–2008; 1 in the SoMa LGBTQ Historic District.
+- [Jennifer Place](jennifer-place/) — 1 building, built 2000.
 - [Jessie Street](jessie-street/) — 5 buildings, built 1907–1923; 3 in the Mint-Mission Conservation District.
 - [Langton Street](langton-street/) — 2 buildings, built 1928–1975.
 - [Lapu-lapu Street](lapu-lapu-street/) — 1 building.

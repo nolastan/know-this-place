@@ -48,6 +48,7 @@ render on that port and on no other (shared/AGENTS.md).
 import argparse
 import html
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -110,8 +111,77 @@ def build() -> None:
     run("stats dashboard", str(SCRIPTS / "build_stats.py"))
 
 
+SITE_NAME = "Know This Place"
+TITLE_SUFFIX = " \u2014 " + SITE_NAME
+# Shown on a link preview for a page with no photo of its own.
+FALLBACK_IMAGE = "/shared/icon-512.png"
+HEAD_TITLE = re.compile(r"<title>(.*?)</title>", re.S)
+HEAD_DESC = re.compile(r'<meta name="description" content="([^"]*)">')
+HEAD_CANONICAL = re.compile(r'([ \t]*)<link rel="canonical" href="([^"]*)">\n?')
+BODY_IMG = re.compile(r'<img\b[^>]*?\bsrc="([^"]+)"[^>]*>')
+IMG_ALT = re.compile(r'\balt="([^"]*)"')
+
+
+def social_tags(text: str) -> str:
+    """`text` with Open Graph and Twitter card tags, read off its own head.
+
+    A link pasted into Reddit, Slack or iMessage shows its preview from these.
+    They say nothing the page does not already say — its `<title>` less the
+    site name, its meta description, its canonical URL, and the first described photo in
+    its `<main>` (a building's hero, a hub's own photo) — so they are written where
+    the page leaves the tree, like the stylesheet hash, rather than kept as a
+    second copy in every template and committed hub. A page with no canonical
+    URL (a redirect stub, a fragment) or that already carries them is left as
+    it is.
+    """
+    if 'property="og:title"' in text or "</head>" not in text:
+        return text
+    head, body = text.split("</head>", 1)
+    canon = HEAD_CANONICAL.search(head)
+    title = HEAD_TITLE.search(head)
+    if not canon or not title:
+        return text
+    indent, url = canon.group(1), canon.group(2)
+    name = html.unescape(title.group(1).strip())
+    if name.endswith(TITLE_SUFFIX):
+        name = name[: -len(TITLE_SUFFIX)]
+    desc = HEAD_DESC.search(head)
+    from urllib.parse import urljoin
+    image = alt = None
+    # The page's own content only: the map laid over a hub or the homepage
+    # carries the news cards' photos, which are other buildings.
+    main = body[body.find("<main"):] if "<main" in body else body
+    for m in BODY_IMG.finditer(main):
+        src = html.unescape(m.group(1))
+        a = IMG_ALT.search(m.group(0))
+        # A photo of the page's subject: the site's own file, described. An
+        # image with an empty alt is decoration (a list's thumbnails), and a
+        # third-party one (a map tile, a badge) is not of the subject.
+        if (not a or not a.group(1).strip()
+                or re.match(r"[a-z][a-z0-9+.-]*:|//", src) or src.endswith(".svg")):
+            continue
+        image, alt = urljoin(url, src), html.unescape(a.group(1))
+        break
+    tags = [("og:type", "website"), ("og:site_name", SITE_NAME), ("og:title", name),
+            ("og:url", url)]
+    if desc:
+        tags.append(("og:description", html.unescape(desc.group(1))))
+    tags.append(("og:image", image or urljoin(url, FALLBACK_IMAGE)))
+    if image and alt:
+        tags.append(("og:image:alt", alt))
+    tags.append(("twitter:card", "summary_large_image" if image else "summary"))
+    lines = "".join(
+        f'{indent}<meta {"name" if k.startswith("twitter:") else "property"}="{k}" '
+        f'content="{html.escape(v, quote=True)}">\n' for k, v in tags)
+    end = canon.end()
+    if not canon.group(0).endswith("\n"):
+        lines = "\n" + lines.rstrip("\n")
+    return head[:end] + lines + head[end:] + "</head>" + body
+
+
 def stage(dest: Path) -> None:
-    """Copy the built site to `dest`, the committed pages stamped with the CSS hash."""
+    """Copy the built site to `dest`, the committed pages stamped with the CSS
+    hash and every page given its link-preview tags (`social_tags`)."""
     sys.path.insert(0, str(SCRIPTS))
     from seed_pages import (CSS_LINK, CSS_SOURCE_LINK, home_into, is_neighborhood_hub,
                             map_into, overview_into)
@@ -132,6 +202,7 @@ def stage(dest: Path) -> None:
                 overviews += 1
             elif Path(src).resolve() == ROOT / "index.html":
                 text = home_into(text)
+            text = social_tags(text)
             if CSS_SOURCE_LINK in text:
                 text = text.replace(CSS_SOURCE_LINK, CSS_LINK)
                 stamped += 1

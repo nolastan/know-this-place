@@ -1,0 +1,51 @@
+{
+  "address": "2000 Post Street, San Francisco, CA 94115",
+  "path": "/san-francisco/japantown/post-street/2000/unit-101/",
+  "unit": "101",
+  "apn": "0682012",
+  "block": "0682",
+  "lot": "012",
+  "parcel": {
+    "building_area_sqft": 431,
+    "rooms": 1,
+    "bathrooms": 1
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 21510,
+    "assessed_improvement_value": 92644
+  },
+  "permits": [
+    {
+      "number": "202204111953",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2022-04-11",
+      "status_date": "2023-06-27",
+      "estimated_cost": 69001,
+      "revised_cost": 69001,
+      "description": "fire only: adjust (e) sprinkler system to accomodate (n) residential units. ref pa #201906032355",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 2,
+    "range": "2015–2022",
+    "shown_on_page": 1,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0682012&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-26"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0682&unit=101",
+      "retrieved": "2026-11-26"
+    }
+  ]
+}

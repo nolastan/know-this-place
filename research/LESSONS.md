@@ -62,6 +62,17 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   '<block>')`), then search the corpus for those parcels' EAS numbers only. If
   none is there, record a zero batch with that reason and move on.*
 
+- **In an agency's appraisal file, the comparable sales are the part that
+  survives.** An acquisition appraisal describes a building the agency bought
+  and cleared; a comparable-sales sheet describes one it did *not* buy, often
+  outside the project area, typed with address, block and lot, lot size, deed
+  date, price and year built. In the Yerba Buena items, the only fact of 262
+  pages that reached a page was a comparable sale (265 Third Street, 1961).
+  *In any redevelopment or condemnation file, read the comparable sales first
+  and the subject appraisals resolution-first.* A comparable sale names its
+  grantor and grantee: take the building, the date and the price, never the
+  private parties.
+
 - **In a redevelopment area a surviving street number is not a surviving
   building.** The Redevelopment Agency cleared lots in the Western Addition and
   then moved Victorians onto them in the 1970s, so an address with an EAS
@@ -3603,3 +3614,34 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   fetcher that asked for all three per issue ran at a sixth of the speed.
   *Fetch the hOCR search text and page index in bulk; fetch page numbers
   afterwards, in parallel, for the cited issues only.* (2026-11-23)
+- **Parallel readers need one brief and one mechanical re-check.** Five
+  subagents read 37 volumes of park reports in under 15 minutes from a
+  single written brief (where the text is, what to take and not take, a
+  fixed JSONL record with `vol`, printed `page`, OCR `line` and a verbatim
+  `raw` of at most 40 words). Their line numbers drifted by up to 80 lines
+  on bound-in committee reports, and one reader added two attributions from
+  its own knowledge, flagged only in a note. *Re-check every `raw` against
+  the OCR within ±40 lines of the cited line before building the findings
+  file, re-anchor the misses by grep, and drop anything a reader marks as
+  not from the text.* (2026-11-25,
+  [sources/sf-municipal-reports.md](sources/sf-municipal-reports.md))
+- **A report that names features, not addresses, is placed by the place
+  pages.** A park commission writes "the Lodge", "Stow Lake", "the
+  Children's Quarters"; none has a street number, and each has a place page
+  under its present name. *Map old names to place pages once, in the
+  dossier, and file what has no page as unresolved, not as a reason to
+  seed one.* (2026-11-25)
+- **In printed minutes, date a measure by the running head, not by any date
+  in the text.** The Supervisors' Journal writes continuances and hearing
+  dates ("continued to Monday, November 7, 1966") in exactly the form of a
+  meeting date, so a case-blind date matcher moved 19 of 448 measures to the
+  wrong meeting. *Match only the upper-case page head ("MONDAY, OCTOBER 24,
+  1966"), and check it against the next head after the measure.*
+  (2026-11-26, [sources/sf-supervisors-journal.md](sources/sf-supervisors-journal.md))
+- **A council's own leases are an address index of public use.** Zoning was
+  the obvious target in the Supervisors' Journal and yields almost nothing
+  before 1960 (rezonings were written by frontage); the city's leases of
+  storefronts and floors — branch libraries, health centres, civil-defence
+  offices — are numbered, dated and purpose-stated, and gave 40 of 60
+  published facts. *In any body's minutes, scan every measure title for a
+  street number before deciding which kind of measure to read.* (2026-11-26)

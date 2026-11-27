@@ -163,7 +163,7 @@
       "scope": "sf",
       "access": "open",
       "link_pattern": "^/blog/[a-z0-9-]+$",
-      "note": "A job board's 'New Business Openings' blog category (added for issue #408, 2026-11-24): openings and hiring posts whose slugs often carry the street and number ('sfmade-union-square-store-373-geary-retail-jobs', 'lids-union-square-50-powell'). No feed: /feed, /blog/feed and /blog/rss all 404, so it is polled as a section page. robots.txt allows '*' on /blog/ and blocks ClaudeBot and GPTBot only from account, billing and search paths. The posts are hiring copy — cite the opening, never a hiring contact."
+      "note": "A job board's 'New Business Openings' blog category (added for issue #408, 2026-11-24): openings and hiring posts whose slugs often carry the street and number ('sfmade-union-square-store-373-geary-retail-jobs', 'lids-union-square-50-powell'). No feed: /feed, /blog/feed and /blog/rss all 404, so it is polled as a section page. robots.txt allows '*' on /blog/ and blocks ClaudeBot and GPTBot only from account, billing and search paths. The posts are hiring copy — cite the opening, never a hiring contact. First poll (2026-11-25): the section page served, but seven of nine post pages answered 403 to the news user agent (two older posts served 200), and the two that read were a second account and a roundup. If the 403s persist, this source yields nothing read.py can use; that is a human's call on the feed, not a retry loop."
     },
     {
       "id": "corcoran-icon",
@@ -171,9 +171,9 @@
       "url": "https://corcoranicon.com/blog/",
       "kind": "html",
       "scope": "bay-area",
-      "access": "open",
+      "access": "blocked",
       "link_pattern": "^/blog/[a-z0-9-]+$",
-      "note": "A brokerage's blog (added for issue #408, 2026-11-24): listing and sale announcements, some with the address in the slug ('44-page-street-…-performing-arts-building'), but many are Oakland, Pacifica or Sierra estates, so the bay-area scope rule does the filtering. No feed: /blog/feed and /blog/rss 404, so it is polled as a section page; the page also carries a '/blog/{{slug}}' template link that the pattern excludes. robots.txt allows '*' on /blog/. A brokerage is selling the property: take the building fact, never the asking price framing or the seller."
+      "note": "NOT POLLED since 2026-11-25: moved to the research module as the source `corcoran-icon` (research/sources/corcoran-icon.md), at Stan's request. A brokerage's listing and sale posts are not news: the event they announce is an asking price or a sale price, which this site never carries, but they do carry building facts (an architect, an addition, a restoration) that the research module reads and cites. Registered for issue #408, 2026-11-24; the one item it queued (44 Page Street) is in items/corcoran-icon/2026-11-25.json, declined."
     },
     {
       "id": "the-real-deal",

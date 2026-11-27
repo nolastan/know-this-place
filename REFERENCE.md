@@ -164,6 +164,11 @@ page has no `hook`, the hub derives a plain one from the building's data. Write
 one whenever you can say something better than "a 1901 two-flat" — it then
 survives every rebuild.
 
+It is also the page's `<meta name="description">`, after its name and address
+(`meta_description`): the `hook`, else the first sentence of `narrative.lead`,
+else the generated one. So a hook is what a search result and a shared link's
+preview say about the building.
+
 ### `historical_record`
 
 The one key for **dated facts that come from a historical source rather than a

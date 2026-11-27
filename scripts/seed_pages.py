@@ -1848,21 +1848,50 @@ def hero_lines(rec: dict) -> tuple[str, str]:
     return title, page_type(rec)
 
 
+# A search result shows about 160 characters of a description; a lead's first
+# sentence much longer than this would be cut mid-thought, so the page says
+# what the building is instead.
+META_SENTENCE_MAX = 200
+# A shorter one is a fragment that needs the building's type beside it.
+META_LEAD_ALONE = 60
+
+
+def lead_sentence(rec: dict) -> str:
+    """The first sentence of the page's own prose lead, or "" where there is
+    none or it runs too long to stand as a description."""
+    lead = ((rec.get("narrative") or {}).get("lead") or "").strip()
+    if not lead:
+        return ""
+    lead = " ".join(lead.split())
+    # A full stop that ends a sentence: after a lowercase word or a digit, not
+    # after an initial ("J. Francis Ward") or "St.", and before a capital.
+    m = re.search(r"(?<=[a-z0-9\)\u201d\"'])[.!?](?=\s+[\u201c\"A-Z]|$)", lead)
+    first = lead[:m.end()] if m else lead
+    if len(first) > META_SENTENCE_MAX or re.search(r"\bSt\.$", first):
+        return ""
+    return first
+
+
 def meta_description(rec: dict) -> str:
-    p = rec.get("parcel", {})
+    """The page's `<meta name="description">`: its name and address, then the
+    page's own hook. A hand-written `hook` wins, as it does on the street hub;
+    then the first sentence of the prose lead; then the hook a hub derives
+    from the building's data (`hook_for`), which names its type, its year, its
+    district and the work its permits record — so no two neighbors share one
+    template line, and Google has no reason to write its own.
+    """
     name = building_name(rec)
     where = f"{name} ({page_title(rec)})" if name else page_title(rec)
-    bits = [f"{where}, San Francisco:"]
-    year = p.get("year_built")
-    btype = page_type(rec).lower()
-    article = article_for(year, btype)
-    bits.append(f"{article} {year} {btype}" if year else f"{article} {btype}")
-    dist = district_of(rec).get("name")
-    if dist:
-        bits.append(f"in the {dist}")
-    tail = "permits, " if rec.get("permits") else ""
-    bits.append(f"— {tail}assessment and historic status from city records, fully cited.")
-    return " ".join(bits)
+    hook = (rec.get("hook") or "").strip()
+    if not hook:
+        lead = lead_sentence(rec)
+        # A lead that opens on a fragment ("Sullivanesque in style.") leans on
+        # the hero above it, so here it follows what the building is.
+        hook = (lead if len(lead) >= META_LEAD_ALONE
+                else " ".join(x for x in (hook_for(rec), lead) if x))
+    if hook and not hook.endswith((".", "!", "?")):
+        hook += "."
+    return f"{where}, San Francisco. {hook}"
 
 
 def heading_html(rec: dict, heading: str) -> str:
@@ -4023,6 +4052,19 @@ def _nearby_index() -> dict:
 
 HOMEPAGE = ROOT / "index.html"
 
+# The homepage's news grid. Other attributes on the list (the map's strip gives
+# it an id) must not hide it: when this stopped matching, every page's "in the
+# news" strip disappeared without an error. validate.py fails the build if the
+# list is there but no card comes out of it.
+HOME_NEWS_GRID = re.compile(
+    r'<ul\b[^>]*\bclass="[^"]*\bnews-cards\b[^"]*"[^>]*>(.*?)</ul>', re.S)
+
+
+def homepage_news_cards(page: str) -> list:
+    """The inner HTML of each card in the homepage's news grid, in order."""
+    grid = HOME_NEWS_GRID.search(page)
+    return re.findall(r"<li>(.*?)</li>", grid[1], re.S) if grid else []
+
 
 @functools.cache
 def _homepage_news() -> dict:
@@ -4038,9 +4080,8 @@ def _homepage_news() -> dict:
         page = HOMEPAGE.read_text(encoding="utf-8")
     except OSError:
         return {}
-    grid = re.search(r'<ul class="[^"]*\bnews-cards\b[^"]*">(.*?)</ul>', page, re.S)
     out = {}
-    for li in re.findall(r"<li>(.*?)</li>", grid[1] if grid else "", re.S):
+    for li in homepage_news_cards(page):
         page = re.search(r'<a href="(/[^"]*)">', li)
         story = re.search(r'<a class="card-outlet" href="([^"]+)"', li)
         if page and story:

@@ -1,0 +1,120 @@
+{
+  "address": "1860 Hayes Street, San Francisco, CA 94117",
+  "path": "/san-francisco/lone-mountain/hayes-street/1860/",
+  "apn": "1196001",
+  "block": "1196",
+  "lot": "001",
+  "eas_baseid": "457937",
+  "coordinates": {
+    "lat": 37.774019,
+    "lng": -122.447179
+  },
+  "parcel": {
+    "year_built": 1900,
+    "lot_area_sqft": 104840,
+    "use": "Commercial Retail",
+    "property_class": "Schools",
+    "construction_type_code": "NA",
+    "zoning": "P",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "North Panhandle",
+    "analysis_neighborhood": "Lone Mountain/USF",
+    "property_location_raw": "0000 1860 HAYES               ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "survey_name": "LOWELL HIGH SCHOOL",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M20593",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2002-06-07",
+      "status_date": "2002-06-07",
+      "revised_cost": 260000,
+      "description": "street space",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9925887",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1999-12-09",
+      "status_date": "2000-09-05",
+      "estimated_cost": 2400,
+      "description": "relocate 07 sprinkler heads",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 13,
+    "range": "1999–2009",
+    "shown_on_page": 2,
+    "note": "11 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HAYES&street_type=ST&address_number=1860",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1196001&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1196&lot=001",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1196001",
+      "retrieved": "2026-11-25"
+    },
+    {
+      "id": "sf-municipal-reports-1910-11",
+      "name": "San Francisco Municipal Reports for the fiscal year 1910-11, Report of City Architect (San Francisco Public Library scan, Internet Archive sanfranciscomuni60sanfrich)",
+      "label": "San Francisco Municipal Reports, 1910-11",
+      "query": "https://archive.org/details/sanfranciscomuni60sanfrich",
+      "retrieved": "2026-11-25",
+      "cites": "p. 926"
+    },
+    {
+      "id": "sf-art-commission-minutes-1975-10-06",
+      "name": "Minutes of the Art Commission of the City and County of San Francisco, October 6, 1975",
+      "label": "Art Commission minutes, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/artcommissionmin1975sanf",
+      "retrieved": "2026-11-25"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-11",
+      "kind": "building contract",
+      "description": "Lowell High School's new three-storey, sixty-room building, steel-framed with brick walls and designed by O'Brien & Werner, was going up on the block bounded by Hayes, Fell, Ashbury and Masonic; Elmer Carlson held the $148,500 general contract, let on March 17, 1911, and the building was expected to be finished about November 1912.",
+      "source": "sf-municipal-reports-1910-11"
+    },
+    {
+      "date": "1975-10-06",
+      "kind": "art",
+      "description": "The Art Commission approved Jane Norling and Miranda Bergman's mural design for John Adams Community College.",
+      "source": "sf-art-commission-minutes-1975-10-06"
+    }
+  ]
+}

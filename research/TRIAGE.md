@@ -66,11 +66,6 @@ said "pre-1930"; the successor Polk's Crocker-Langley volumes are on the
 Internet Archive too (`polkscrockerlang194849dire` and siblings), so the run
 extends at least to 1949 if the business slice proves worth mining.
 
-**SF Municipal Reports.** 68 volumes on the Internet Archive covering FY1859–60
-through FY1913–14, plus a separate index volume to the appendices 1859–1901.
-Not yet sampled for address density — that is the first thing an acquire pass
-should measure.
-
 ***Here Today* and *Splendid Survivors*.** The two standard building-by-building
 surveys of San Francisco's architecture, and the ones the city's own
 environmental documents cite as authority — the 101 California EIR sampled
@@ -99,7 +94,7 @@ reasons.** The appeal schedules interleave firms with individuals — "Anna
 Crljenko, 930 Fillmore St." on the next line — so an extractor needs the same
 person-name filter the city-directories note describes, and most of a volume is
 not about buildings at all. Street name changes and street acceptances are the
-other seam here and have not been sampled.
+other seam here and have not been sampled. **Taken up 2026-11-26 as [`sf-supervisors-journal`](sources/sf-supervisors-journal.md)** for 1967–1997: the zoning ordinances and Planning appeal decisions at addresses (160 findings). 1906–1966 and the street-name and assessment seams remain.
 
 **Western Neighborhoods Project *Outside Lands* magazine.** 36 issue PDFs listed
 at outsidelands.org/publications/. **Access caution:** a plain `curl` for the
@@ -200,3 +195,25 @@ downtown building and not an Article 10 landmark. It also lists the Shell
 Building twice, once as 28 storeys and once as 29. No fact in it is new to the
 pages, and its errors make it unsafe even as corroboration.
 
+
+**SFPL government documents sampled and passed over, 2026-11-25.** All on the
+Internet Archive (`collection:sanfranciscopubliclibrary`), found by searching
+the creator field. None is worth a run, for the reasons given:
+
+- **Port Commission minutes**, 1992-2008 (`minutes<year>sanf_<n>`). The piers
+  and seawall lots they name have almost no pages, and placing them would
+  mean seeding pages for Port property that EAS barely addresses.
+- **Department of Public Works annual reports**, 1944-77
+  (`annualreportofd<year>sanf_0`). The Bureau of Architecture section gives
+  bond totals and job counts. It does not list each building with its
+  architect, the way the City Architect reports of 1907-17 did.
+- **Survey of the fire houses of San Francisco**, H. C. Vensano, 1951
+  (`surveyoffirehous1951vens`). It is an engineering survey that dates each
+  of the 56 houses then standing, but it names no architects. Its table
+  OCRs with the year, company and location columns pulled apart.
+- **Board of Fire Commissioners reports**, 1869-1901. Most of each report is
+  rules, rosters and fire runs. The fires are listed with their occupants, and
+  the buildings are almost all in the area burned in 1906.
+- **Housing Authority commission minutes**, 1974-2005: see the
+  `sf-housing-authority` dossier. Samples from 1974-76, 1995 and 1998 turned up
+  modernization and accessibility contracts and almost nothing else.
