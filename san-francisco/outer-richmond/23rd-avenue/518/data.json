@@ -1,0 +1,100 @@
+{
+  "address": "518 23rd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/23rd-avenue/518/",
+  "apn": "1565025",
+  "block": "1565",
+  "lot": "025",
+  "eas_baseid": "308564",
+  "coordinates": {
+    "lat": 37.777857,
+    "lng": -122.482095
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 1,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1346,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Central Richmond",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0518 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45245,
+    "assessed_improvement_value": 35551
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200009130455",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-09-13",
+      "status_date": "2001-03-13",
+      "estimated_cost": 10000,
+      "revised_cost": 10000,
+      "description": "underpinning existing building & temporary shoring of sideyard. all work as shown on plans.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=518",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1565025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1565&lot=025",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1565025",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-11-28-n715",
+      "name": "Building and Industrial News, 28 November 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11211cont/page/n715/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-11-28",
+      "kind": "construction",
+      "description": "A permit was sought for a one-storey frame dwelling, estimated at $2,000. W. G. Hind was named as architect.",
+      "source": "building-industrial-news-1911-11-28-n715"
+    }
+  ],
+  "building": {
+    "architect": "W. G. Hind"
+  }
+}

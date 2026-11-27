@@ -1,0 +1,157 @@
+{
+  "address": "590 11th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/11th-avenue/590/",
+  "apn": "1553022",
+  "block": "1553",
+  "lot": "022",
+  "eas_baseid": "307982",
+  "coordinates": {
+    "lat": 37.777218,
+    "lng": -122.469091
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 5,
+    "bathrooms": 1,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 2250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0000 0590 11TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 45245,
+    "assessed_improvement_value": 80126
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "California Register Historic District",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Richmond Heights Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Not listed",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1910–1911",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "201107200634",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2011-07-20",
+      "status_date": "2011-12-12",
+      "estimated_cost": 8000,
+      "revised_cost": 8000,
+      "description": "remove existing rear deck build a new deck",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200607217324",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2006-07-21",
+      "status_date": "2006-12-13",
+      "estimated_cost": 12000,
+      "revised_cost": 12000,
+      "description": "proposed new toilet/shower room within existing kitchen area. reconfigure kitchen equipment and appliances to conform with proposal.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200209126308",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2002-09-12",
+      "status_date": "2002-11-04",
+      "estimated_cost": 8445,
+      "revised_cost": 8445,
+      "description": "18 windows to be replaced size to size front of house.wood and aluminum to vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9902715",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1999-02-11",
+      "status_date": "1999-03-22",
+      "estimated_cost": 8000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8714417",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-10-07",
+      "status_date": "1988-02-10",
+      "estimated_cost": 8900,
+      "description": "vinyl siding to front & back of building",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=11TH&street_type=AVE&address_number=590",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1553022&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1553&lot=022",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1553022",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.46909105211991%2037.77721762691053)%27)",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-11-28-n708",
+      "name": "Building and Industrial News, 28 November 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11211cont/page/n708/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-11-28",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling, estimated at $3,000. Jos. A. Leonard was named as architect. The owner was the Urban Realty Improvement Co.",
+      "source": "building-industrial-news-1911-11-28-n708"
+    }
+  ],
+  "building": {
+    "architect": "Jos. A. Leonard"
+  }
+}

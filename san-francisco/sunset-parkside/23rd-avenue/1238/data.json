@@ -1,0 +1,138 @@
+{
+  "address": "1238 23rd Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/sunset-parkside/23rd-avenue/1238/",
+  "apn": "1728038",
+  "block": "1728",
+  "lot": "038",
+  "eas_baseid": "315363",
+  "coordinates": {
+    "lat": 37.764494,
+    "lng": -122.481158
+  },
+  "parcel": {
+    "year_built": 1912,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 1,
+    "lot_area_sqft": 3000,
+    "building_area_sqft": 2000,
+    "lot_depth_ft": 20,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 4,
+    "assessor_neighborhood": "Central Sunset",
+    "analysis_neighborhood": "Sunset/Parkside",
+    "property_location_raw": "0000 1238 23RD                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1212323,
+    "assessed_improvement_value": 519566,
+    "last_sale_date": "2021-01-08"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "202103055956",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2021-03-05",
+      "status_date": "2021-03-05",
+      "estimated_cost": 50000,
+      "revised_cost": 50000,
+      "description": "remodel 1 kitchen & 1 bathroom, no change to floor plan or opnenings. no new wall and no (e) wall relocation. replace flooring and cabinets, coutnertops, appliances. rpelce w/ in-kind toklet, vanity, tile, floor, shower and tub. new lighting shall comply with cec 150.0(k)3 & (k)5.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202101263283",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2021-01-26",
+      "status_date": "2021-01-26",
+      "description": "remodel kitchen & bathroom, no change to floor plan & openings. replace flooring, cabinets, countertop, appliances. replace in kind bathtub toilet, vanity, tile floor & shower tub.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200406297644",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2004-06-29",
+      "status_date": "2004-06-29",
+      "estimated_cost": 7500,
+      "revised_cost": 7500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8311381",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1983-11-08",
+      "status_date": "1984-01-24",
+      "estimated_cost": 2800,
+      "description": "remove damaged material & replace with new materail.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 5,
+    "range": "1983–2021",
+    "shown_on_page": 4,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=23RD&street_type=AVE&address_number=1238",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1728038&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1728&lot=038",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1728038",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-12-19-n815",
+      "name": "Building and Industrial News, 19 December 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11211cont/page/n815/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-12-19",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame dwelling, estimated at $2,000. Jos. Cahen was named as architect. The owner was Oscar Heyman & Bro.",
+      "source": "building-industrial-news-1911-12-19-n815"
+    }
+  ],
+  "building": {
+    "architect": "Jos. Cahen"
+  }
+}

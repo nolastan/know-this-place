@@ -6,7 +6,7 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 6 of 8 half-year volumes read (January 1912 – December 1914): 759 facts on 667 pages (264 seeded). Unread: vol. 11 pt. 1 and pt. 2 (1911). See the `Verified:` line.
+> - **Coverage:** 7 of 8 half-year volumes read (July 1911 – December 1914): 912 facts on 803 pages (315 seeded). Unread: vol. 11 pt. 1 (January – June 1911). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-industrial-news/`
 > - **Claimed:** every unread volume, by the project run that opened this source (2026-11-24). The placed-and-held rows are **not** claimed: they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)).
 >
@@ -97,8 +97,14 @@
   822): 2,274 numbered entries; 1,383 San Francisco rows; 434 placed on a
   parcel; 122 picked and read against the image; 90 published on 83 pages,
   28 of them seeded. Unfinished: 91 placed single houses and small
-  alterations held until the parcel gets a page, 949 not placed. Unread:
-  the two 1911 volumes.
+  alterations held until the parcel gets a page, 949 not placed.
+- **Coverage, vol. 11 pt. 2** (`buildingindustri11211cont`, 4 July – 26
+  December 1911, 26 issues, all Tuesdays; cover leaves 8, 40, 74, 108, 140 …
+  828): 3,105 numbered entries; 1,846 San Francisco rows; 731 placed on a
+  parcel; 209 picked and read against the image; 151 published on 140
+  pages, 51 of them seeded. Unfinished: 147 placed single houses and small
+  alterations held until the parcel gets a page, 1,115 not placed. Unread:
+  vol. 11 pt. 1.
 - **Verified:** 2026-11-24 (vol. 14 pt. 2: read 2,231 entries, found 1,416
   San Francisco rows, resolved 149, published 149 on 134 pages. Learned: the
   entries have the 1915 layout, with "COST, $…" closing each permit;
@@ -157,4 +163,10 @@
   calling a price different; the tall crops show the printed total where
   the sheet crop stops at the first instalment, so read them before going
   to the OCR; a name printed under the wrong label (J. F. Dunn as
-  "Contractor") is left out, not corrected.)
+  "Contractor") is left out, not corrected. Vol. 11 pt. 2, same day: read 3,105
+  entries, found 1,846 San Francisco rows, resolved 151, published 151 on
+  140 pages. Learned: the 1911 volumes print the street before the side
+  ("Valley S 255 E Castro", "Octavia and Union SW", "Andover No. 754"), so
+  `place.py` needs `BEN_STREET_FIRST=1` or it places nothing; a contact
+  sheet of the entry headings is the quick way to check the item numbers
+  that break the running order.)
