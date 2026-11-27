@@ -6,7 +6,7 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 5 of 8 half-year volumes read (July 1912 – December 1914): 669 facts on 590 pages (236 seeded). Unread: vol. 11 pt. 1 (1911) to vol. 12 pt. 1 (January – June 1912). See the `Verified:` line.
+> - **Coverage:** 6 of 8 half-year volumes read (January 1912 – December 1914): 759 facts on 667 pages (264 seeded). Unread: vol. 11 pt. 1 and pt. 2 (1911). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-industrial-news/`
 > - **Claimed:** every unread volume, by the project run that opened this source (2026-11-24). The placed-and-held rows are **not** claimed: they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)).
 >
@@ -92,6 +92,13 @@
   pages, 51 of them seeded. Unfinished: 142 placed single houses and small
   alterations held until the parcel gets a page, 827 not placed. Unread:
   the three volumes before July 1912.
+- **Coverage, vol. 12 pt. 1** (`buildingindustri1212cont`, 2 January – 25
+  June 1912, 26 issues, all Tuesdays; cover leaves 4, 32, 60, 90, 122 …
+  822): 2,274 numbered entries; 1,383 San Francisco rows; 434 placed on a
+  parcel; 122 picked and read against the image; 90 published on 83 pages,
+  28 of them seeded. Unfinished: 91 placed single houses and small
+  alterations held until the parcel gets a page, 949 not placed. Unread:
+  the two 1911 volumes.
 - **Verified:** 2026-11-24 (vol. 14 pt. 2: read 2,231 entries, found 1,416
   San Francisco rows, resolved 149, published 149 on 134 pages. Learned: the
   entries have the 1915 layout, with "COST, $…" closing each permit;
@@ -143,4 +150,11 @@
   image before it is believed ($15,500 in the OCR was $450); #761 merged
   while vol. 13 pt. 1 was being pushed, so check the PR is still open
   before pushing and stamp `publish.pr` with the PR that carries the
-  commit.)
+  commit. Vol. 12 pt. 1, same day: read 2,274 entries, found 1,383 San
+  Francisco rows, resolved 90, published 90 on 83 pages. Learned: the
+  Call's one-line entry can add up two contracts of this paper (2152 Union:
+  $11,280 there is $5,600 and $5,680 here), so compare the scope before
+  calling a price different; the tall crops show the printed total where
+  the sheet crop stops at the first instalment, so read them before going
+  to the OCR; a name printed under the wrong label (J. F. Dunn as
+  "Contractor") is left out, not corrected.)

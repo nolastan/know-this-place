@@ -1,0 +1,122 @@
+{
+  "address": "722–726 Page Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/page-street/722/",
+  "apn": "0844006",
+  "block": "0844",
+  "lot": "006",
+  "eas_baseid": "439293",
+  "coordinates": {
+    "lat": 37.772978,
+    "lng": -122.432756
+  },
+  "address_range": "722–726",
+  "street_numbers_on_parcel": [
+    "722",
+    "724",
+    "726"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 6,
+    "stories": 3,
+    "rooms": 21,
+    "bathrooms": 3,
+    "bedrooms": 6,
+    "lot_area_sqft": 2048,
+    "building_area_sqft": 4950,
+    "lot_depth_ft": 81.92,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0722 PAGE                ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 239503,
+    "assessed_improvement_value": 706560,
+    "last_sale_date": "1997-09-25"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201605278629",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2016-05-27",
+      "status_date": "2016-06-10",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "pest control repairs per diverse inspection services, report #161805 item 1. repairs to stairs are in same kind & not to exceed 49%",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9705201",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-03-21",
+      "status_date": "1997-12-02",
+      "estimated_cost": 6000,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 4,
+    "range": "1997–2016",
+    "shown_on_page": 2,
+    "note": "2 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=PAGE&street_type=ST&address_number=722",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0844006&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0844&lot=006",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0844006",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1912-04-30-n570",
+      "name": "Building and Industrial News, 30 April 1912",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1212cont/page/n570/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-04-30",
+      "kind": "building contract",
+      "description": "A permit was sought for three-storey and basement frame flats, estimated at $8,000.",
+      "source": "building-industrial-news-1912-04-30-n570"
+    }
+  ]
+}

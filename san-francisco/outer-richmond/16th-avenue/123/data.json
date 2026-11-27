@@ -1,0 +1,118 @@
+{
+  "address": "123–125 16th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/outer-richmond/16th-avenue/123/",
+  "apn": "1376003",
+  "block": "1376",
+  "lot": "003",
+  "eas_baseid": "456406",
+  "coordinates": {
+    "lat": 37.785682,
+    "lng": -122.475799
+  },
+  "address_range": "123–125",
+  "street_numbers_on_parcel": [
+    "123",
+    "125"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "units": 2,
+    "stories": 2,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2874,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0125 0123 16TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1034393,
+    "assessed_improvement_value": 689594
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201504032779",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2015-04-03",
+      "status_date": "2015-06-19",
+      "estimated_cost": 4000,
+      "revised_cost": 4000,
+      "description": "replace 5 windows like for like size for size not visible no structural max u for .32 vinyl",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9616682",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1996-09-05",
+      "status_date": "1998-12-30",
+      "estimated_cost": 5500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 3,
+    "range": "1996–2015",
+    "shown_on_page": 2,
+    "note": "1 nominal $1 street-space or sidewalk permit is omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=16TH&street_type=AVE&address_number=123",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1376003&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1376&lot=003",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1376003",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1912-05-21-n665",
+      "name": "Building and Industrial News, 21 May 1912",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1212cont/page/n665/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-05-21",
+      "kind": "building contract",
+      "description": "A permit was sought for two-storey and basement frame flats, estimated at $4,000.",
+      "source": "building-industrial-news-1912-05-21-n665"
+    }
+  ]
+}
