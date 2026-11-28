@@ -7,7 +7,7 @@
 >
 > - **Kind:** scanned survey forms and file papers, read from page images · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — hand-filled forms whose OCR is noise; nothing in them is findable by address.
-> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) all 23 Yerba Buena items (568) read whole, and the nine comparable-sales volumes 5030 to 5038 (1,072) parsed, with every sheet that reaches a page or a held parcel read against its image; the four-volume Market Data Study, 5020 to 5023 (868 pages, 278 sales), front pages read by eye and every used price read against its image; the 1962-64 A-2 acquisition appraisals 5001 to 5013 (1,188 sheets) parsed, with every sheet that reaches a page read against its image; the later appraisals 5014 to 5019 and 5024 to 5029 unread.
+> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) all 23 Yerba Buena items (568) read whole, and the nine comparable-sales volumes 5030 to 5038 (1,072) parsed, with every sheet that reaches a page or a held parcel read against its image; the four-volume Market Data Study, 5020 to 5023 (868 pages, 278 sales), front pages read by eye and every used price read against its image; the 1962-64 A-2 acquisition appraisals 5001 to 5013 (1,188 sheets) parsed, with every sheet that reaches a page read against its image; the later appraisals 5014 to 5016, 5018, 5019 and 5024 to 5029 scanned, their 1976-78 comparable sales on pages published.
 > - **Local corpus:** `research/corpora/sfra-property-summaries/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -147,8 +147,9 @@
   The 1962-64 acquisition appraisals, 5001 to 5013
   (`acquisition-appraisals-1962-1964`, 2026-11-28): about 146 sheets on
   standing parcels with no page were parsed but not read against their images
-  (three held). **Not read: the later A-2 appraisals, 5014 to 5019 and 5024
-  to 5029** (1963 and 1970 to 1990, specific parcels; 5017 is not online). Take the **comparable-sales volumes
+  (three held). The later A-2 appraisals, 5014 to 5029 (`later-appraisals-1975-1978`,
+  2026-11-28): only their comparable sales on pages were taken; 5014's 85
+  parcels of 1963 and the single-parcel reports were not read further. Take the **comparable-sales volumes
   first** (5030 to 5038, 1969-70, about 1,100 pages): a comparable sale is a
   property the Agency did *not* buy, often outside the project area, so these
   sheets describe buildings that can still stand, and each one is typed with
@@ -196,6 +197,19 @@
   645 Larkin, Harcourt, Brace and World buying 1000 Geary). Scripts in
   `/mnt/project-files/sfra-market-data/` (`strips.py`, `addr.py`, `res.py`,
   `match.py`, `pubset.py`, `mkfind.py`, `publish.py`).)
+- **Verified:** 2026-11-28 (the later A-2 appraisals 5014 to 5016, 5018,
+  5019, 5024 to 5029; 5017 is not online. 3,170 PDF pages OCR'd and scanned
+  for addresses. 5014 is Herbert H. Eling's November 1963 appraisal of project
+  blocks 49 to 53 (85 parcels, each with type, stories, building area,
+  condition and market value), but it reaches only five pages, all already
+  carrying the 1962-64 appraisal, so it is left unpublished. The 1969-90
+  reports appraise single parcels the Agency held, mostly land. Their yield
+  is Haley-Leslie Appraisal Company's comparable sales (5024, 5025): 21 sales
+  of 1975-78 on pages published, each price checked against the report's own
+  price per square foot or the same sale repeated in the other volume.
+  Learned: **the later appraisal files are worth reading for their
+  comparables, not their subjects**; the comparables reach well outside the
+  project area (Russian Hill, Tenderloin, Hayes Valley).)
 - **Verified:** 2026-11-28 (the A-2 acquisition appraisals 5001 to 5013:
   Maury Holmes's 1962 sheets by block and his first acquisition report of
   20 January 1964. 1,188 sheets parsed from the OCR, 494 resolved to a parcel,
