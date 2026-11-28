@@ -27,6 +27,7 @@ read front to back. Start with the row that matches the task.
 | changing the CSS or the renderer | [shared/AGENTS.md](shared/AGENTS.md) | [shared/BLOCKS.md](shared/BLOCKS.md) |
 | adding a number to the `/stats/` dashboard | [AGENTS.md](AGENTS.md) | `scripts/build_stats.py` |
 | designing a module | [design/AGENTS.md](design/AGENTS.md) | `design/*` |
+| the MCP server for AI chat clients | [mcp/AGENTS.md](mcp/AGENTS.md) | `mcp/server.py` |
 
 There are skills for the five modules: `/research`, `/news`, `/events`,
 `/design`, `/ui`.
