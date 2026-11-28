@@ -251,3 +251,8 @@
   against their page images and taken up. Learned: in a redevelopment area a
   surviving street number is not a surviving building, and the agency's own
   move captions are what tell them apart.)
+
+- **2026-11-28, held facts taken up:** the 1968 sale of 840-842 Fell Street
+  (market data, SFH 371-5023) published once the parcel had a page; the
+  undated Yerba Buena print of 651-59 Folsom looked at again and kept back,
+  still undated.

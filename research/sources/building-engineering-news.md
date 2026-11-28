@@ -8,7 +8,7 @@
 > - **Search-invisibility:** high — see the register for what that rates.
 > - **Coverage:** all 34 half-year volumes read (vol. 15 to vol. 31, January 1915 – January 1932, the whole run): 6,240 facts on 5,836 page writes (3,389 pages seeded). Nothing is left to read (the July to December 1919 item is `buildingengine1921919cont`, whose id breaks the pattern; find item ids with the Internet Archive search `buildingengineer*cont`). See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-engineering-news/`
-> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 8,484 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 113 found on 2026-11-15 were each read against the page image or judged from the listing: 79 were published and 34 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record, an address outside San Francisco); any others it lists are overdue.
+> - **Claimed:** every unread volume, by the project run that opened this source (Stan, since 2026-11-14). The 8,484 placed-and-held rows are **not** claimed: Stan decided on 2026-11-14 that they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)). `check.py --held pages` lists those whose parcel already has a page. The 113 found on 2026-11-15 were each read against the page image or judged from the listing: 79 were published and 34 stay held, each with the reason in its note (the roll disagrees with the listing, several houses on one listing, a repeat of a published record, an address outside San Francisco); any others it lists are overdue. On 2026-11-28 the 48 then overdue were read against the page image: 26 published and 22 kept back, each with its reason in the note (a second permit for the lot by another builder, a repeat already on the page, a storey or unit count the roll contradicts, minor work, an occupant's sign), and one held since 2026-11-15 for want of a page (763 25th Avenue) was published; `--held pages` now lists only facts nobody has judged.
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
 > coverage note, and anything the pass learned about getting at the source.
@@ -513,3 +513,14 @@
   analysis neighborhood with the directory the city's pages for that
   neighborhood mostly use. The pipeline scripts are not in the repository;
   they are in the project's shared files under `building-engineering-news/`.)
+- **2026-11-28, held facts taken up:** `check.py --held pages` listed 83
+  rows from this source; 35 had already been read and kept back, so the tool
+  now skips those. The other 48 were cropped from the page images (IA
+  full-text search for the item number, then the jp2 leaf; see LESSONS.md)
+  and read one by one: 26 published on 25 pages, 22 kept back, plus one held
+  row read on 2026-11-15 whose parcel now has a page. Corrections the image
+  forced: 2820 Broadway's 1912 contract is J. E. Krafft & Sons and Pringle,
+  Dunn & Co. at $9,250, not the next entry's builder at $16,178; 70 Jersey's
+  1922 permit is $2,500, not $2,300; 1267 43rd Avenue's item is (850), not
+  (830). Two contractors sharing the owner's surname (735 11th Avenue, 936
+  Capp) were cut, per the 2026-11-15 rule.
