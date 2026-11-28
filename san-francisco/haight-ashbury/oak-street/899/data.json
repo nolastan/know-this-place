@@ -1,0 +1,125 @@
+{
+  "address": "899 Oak Street, San Francisco, CA 94117",
+  "path": "/san-francisco/haight-ashbury/oak-street/899/",
+  "apn": "0844024",
+  "block": "0844",
+  "lot": "024",
+  "eas_baseid": "289371",
+  "coordinates": {
+    "lat": 37.773478,
+    "lng": -122.43378
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 13,
+    "stories": 3,
+    "rooms": 43,
+    "bathrooms": 13,
+    "lot_area_sqft": 3023,
+    "building_area_sqft": 8625,
+    "use": "Multi-Family Residential",
+    "property_class": "Apartment 5 to 14 Units",
+    "construction_type_code": "D",
+    "zoning": "RM-1",
+    "supervisor_district": 5,
+    "assessor_neighborhood": "Hayes Valley",
+    "analysis_neighborhood": "Haight Ashbury",
+    "property_location_raw": "0000 0899 OAK                 ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 67921,
+    "assessed_improvement_value": 226482
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201903054408",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2019-03-05",
+      "status_date": "2019-04-23",
+      "estimated_cost": 3500,
+      "revised_cost": 4000,
+      "description": "repair rear stairs, remove non-historic grilles/bars in front of ground level windows, repair broken windows and doors in kind. to comply with nov 201923433, 201920232, 201920811, 201919271.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201811095500",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2018-11-09",
+      "status_date": "2018-11-09",
+      "estimated_cost": 40000,
+      "revised_cost": 40000,
+      "description": "one unit: remodel (e) unit. sheet rock, floors, kitchen and bath. bolt and shear wall as necessary",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201311121611",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2013-11-12",
+      "status_date": "2015-08-14",
+      "estimated_cost": 500,
+      "revised_cost": 500,
+      "description": "removal of towerstream wifi antenna site: 4 antennas & keep one otard antenna. to comply with pnoe# 12242 & bnov# 201386576.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "permit_summary": {
+    "count_on_file": 6,
+    "range": "2012–2019",
+    "shown_on_page": 3,
+    "note": "3 nominal $1 street-space or sidewalk permits are omitted from the timeline."
+  },
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=OAK&street_type=ST&address_number=899",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=0844024&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=0844&lot=024",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=0844024",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-03-11-n234",
+      "name": "Building and Industrial News, 11 March 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11111cont/page/n234/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-03-11",
+      "kind": "construction",
+      "description": "A permit was sought for a three-storey frame building of twelve flats.",
+      "source": "building-industrial-news-1911-03-11-n234"
+    }
+  ]
+}

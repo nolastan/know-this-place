@@ -1,0 +1,177 @@
+{
+  "address": "158 22nd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/22nd-avenue/158/",
+  "apn": "1381025",
+  "block": "1381",
+  "lot": "025",
+  "eas_baseid": "301927",
+  "coordinates": {
+    "lat": 37.784804,
+    "lng": -122.481521
+  },
+  "parcel": {
+    "year_built": 1914,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 2250,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0158 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 1723996,
+    "assessed_improvement_value": 738852,
+    "last_sale_date": "2013-04-09"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1914",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201806192341",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-19",
+      "status_date": "2018-10-31",
+      "estimated_cost": 4500,
+      "revised_cost": 5500,
+      "description": "replace in-kind 9 36x31in windows in sun room in rear of house. max u-factor 0.32. replace in-kind, 5x8ft frech door @ rear of house. u-factor 0.32 & tempered.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806131781",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-06-13",
+      "status_date": "2018-10-31",
+      "estimated_cost": 30000,
+      "revised_cost": 30000,
+      "description": "remove wall between kitchen & dining room. kitchen remodel (in-kind). seismic strengthening of garage level (voluntary)",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201008209257",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "2010-08-20",
+      "status_date": "2011-09-02",
+      "estimated_cost": 217000,
+      "revised_cost": 217000,
+      "description": "remove (e) rear deck. new 592 sq. ft. 1st floor addition with roof deck @ back of house. new steps up to rear yard finish grade from back of 1st floor level.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401295200",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2004-01-29",
+      "status_date": "2004-03-03",
+      "estimated_cost": 7000,
+      "revised_cost": 7000,
+      "description": "repair (e) deck and construction of new deck & stairs 300sf",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401264846",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-01-26",
+      "status_date": "2007-04-19",
+      "estimated_cost": 1,
+      "revised_cost": 1,
+      "description": "as built floor plan of interior, 1st/2nd stories, changes to interior, non-load bearing partitions",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200401053332",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2004-01-05",
+      "status_date": "2007-04-19",
+      "estimated_cost": 65000,
+      "revised_cost": 65000,
+      "description": "remodel kitchen & bathroom and dry rot, install new appliances & fixtures",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9722547",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1997-11-07",
+      "status_date": "1997-11-17",
+      "estimated_cost": 9500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9602033",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1996-02-07",
+      "status_date": "1996-04-09",
+      "estimated_cost": 5000,
+      "description": "new tile @ bathrm 2nd fl/new vanity/plug fixtures/no struc",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=158",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1381025&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1381&lot=025",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1381025",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1913-04-08-n536",
+      "name": "Building and Industrial News, 8 April 1913",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1313cont/page/n536/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-04-08",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey and basement frame residence, estimated at $3,000. O. E. Evans was named as architect.",
+      "source": "building-industrial-news-1913-04-08-n536"
+    }
+  ],
+  "building": {
+    "architect": "O. E. Evans"
+  }
+}

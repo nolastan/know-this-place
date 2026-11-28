@@ -1,0 +1,162 @@
+{
+  "address": "1494 7th Avenue, San Francisco, CA 94122",
+  "path": "/san-francisco/inner-sunset/7th-avenue/1494/",
+  "apn": "1847027",
+  "block": "1847",
+  "lot": "027",
+  "eas_baseid": "320447",
+  "coordinates": {
+    "lat": 37.760563,
+    "lng": -122.463637
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 2,
+    "stories": 3,
+    "rooms": 12,
+    "bathrooms": 2,
+    "lot_area_sqft": 2375,
+    "building_area_sqft": 3780,
+    "lot_depth_ft": 95,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 7,
+    "assessor_neighborhood": "Inner Sunset",
+    "analysis_neighborhood": "Inner Sunset",
+    "property_location_raw": "0000 1494 07TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 186447,
+    "assessed_improvement_value": 372115
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201901099930",
+      "type": "otc alterations permit",
+      "status": "filed",
+      "filed": "2019-01-09",
+      "status_date": "2019-01-09",
+      "description": "install 30\" lattice around perimeter of parapet wall and legal handrail at roof deck.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201806152044",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "2018-06-15",
+      "status_date": "2019-01-04",
+      "estimated_cost": 8500,
+      "revised_cost": 9500,
+      "description": "legalize extg roof deck that was build 32 years ago. to comply with complaint #201859771",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201804176556",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2018-04-17",
+      "status_date": "2019-01-04",
+      "estimated_cost": 2000,
+      "revised_cost": 2000,
+      "description": "re-roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "200011135478",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "2000-11-13",
+      "status_date": "2001-03-13",
+      "estimated_cost": 2850,
+      "revised_cost": 2850,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9923765",
+      "type": "additions alterations or repairs",
+      "status": "expired",
+      "filed": "1999-11-08",
+      "status_date": "2000-03-12",
+      "estimated_cost": 3000,
+      "description": "fire repair, framing, roofing, siding sheetrock",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9308824",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-05-26",
+      "status_date": "1995-02-08",
+      "estimated_cost": 975,
+      "description": "termite #53824-repr right wall & restucco",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8713665",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1987-09-23",
+      "status_date": "1988-03-07",
+      "estimated_cost": 15000,
+      "description": "convert storage rms to recreation rm, bath @ bsmnt",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=07TH&street_type=AVE&address_number=1494",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1847027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1847&lot=027",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1847027",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1913-02-25-n310",
+      "name": "Building and Industrial News, 25 February 1913",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1313cont/page/n310/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-02-25",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame building of flats, estimated at $4,500. W. L. Schmolle was named as architect.",
+      "source": "building-industrial-news-1913-02-25-n310"
+    }
+  ],
+  "building": {
+    "architect": "W. L. Schmolle"
+  }
+}

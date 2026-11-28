@@ -6,7 +6,7 @@
 >
 > - **Kind:** journal OCR · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — see the register for what that rates.
-> - **Coverage:** 3 of 8 half-year volumes read (July 1913 – December 1914): 365 facts on 326 pages (139 seeded). Unread: vol. 11 pt. 1 (1911) to vol. 13 pt. 1 (January – June 1913). See the `Verified:` line.
+> - **Coverage:** all 8 half-year volumes read (January 1911 – December 1914, everything on the Internet Archive): 1,042 facts on 920 pages (367 seeded). Nothing is left to read; about 1,200 placed rows stay held for a page. See the `Verified:` line.
 > - **Local corpus:** `research/corpora/building-industrial-news/`
 > - **Claimed:** every unread volume, by the project run that opened this source (2026-11-24). The placed-and-held rows are **not** claimed: they stay logged and unpublished until another fact gives the parcel a page, and whoever seeds that page takes them up after reading each against the page image (`check.py --held <manifest>`; [AGENTS.md](../AGENTS.md#facts-held-for-a-page)).
 >
@@ -76,8 +76,41 @@
   read against the image; 118 published on 110 pages, 36 of them seeded
   (2 more declined as repeats of the page).
   Unfinished: 157 placed single houses and small alterations held until the
-  parcel gets a page, 694 not placed. Unread: the five volumes before July
-  1913.
+  parcel gets a page, 694 not placed.
+- **Coverage, vol. 13 pt. 1** (`buildingindustri1313cont`, 7 January – 25
+  June 1913, 25 issues, Tuesdays until 20 May and Wednesdays after; cover
+  leaves 6, 44, 82 … 952, 38 leaves an issue with a few longer ones): 2,547
+  numbered entries; 1,494 San Francisco rows; 785 placed on a parcel; 205
+  picked and read against the image; 151 published on 139 pages, 46 of them
+  seeded. Unfinished: 162 placed single houses and small alterations held
+  until the parcel gets a page, 709 not placed.
+- **Coverage, vol. 12 pt. 2** (`buildingindustri12212cont`, 2 July – 31
+  December 1912, 27 issues, all Tuesdays; cover leaves 8, 42, 76, 152,
+  194 … 1058, the 16 July issue 76 leaves with the City Hall competition
+  plates): 2,458 numbered entries; 1,549 San Francisco rows; 722 placed on
+  a parcel; 228 picked and read against the image; 153 published on 139
+  pages, 51 of them seeded. Unfinished: 142 placed single houses and small
+  alterations held until the parcel gets a page, 827 not placed. Unread:
+  the three volumes before July 1912.
+- **Coverage, vol. 12 pt. 1** (`buildingindustri1212cont`, 2 January – 25
+  June 1912, 26 issues, all Tuesdays; cover leaves 4, 32, 60, 90, 122 …
+  822): 2,274 numbered entries; 1,383 San Francisco rows; 434 placed on a
+  parcel; 122 picked and read against the image; 90 published on 83 pages,
+  28 of them seeded. Unfinished: 91 placed single houses and small
+  alterations held until the parcel gets a page, 949 not placed.
+- **Coverage, vol. 11 pt. 2** (`buildingindustri11211cont`, 4 July – 26
+  December 1911, 26 issues, all Tuesdays; cover leaves 8, 40, 74, 108, 140 …
+  828): 3,105 numbered entries; 1,846 San Francisco rows; 731 placed on a
+  parcel; 209 picked and read against the image; 151 published on 140
+  pages, 51 of them seeded. Unfinished: 147 placed single houses and small
+  alterations held until the parcel gets a page, 1,115 not placed.
+- **Coverage, vol. 11 pt. 1** (`buildingindustri11111cont`, 7 January – 27
+  June 1911, 25 issues, Saturdays through 8 April and Tuesdays from 18
+  April; cover leaves 8, 30, 52, 74, 104 … 692): 2,575 numbered entries;
+  1,507 San Francisco rows; 680 placed on a parcel; 179 picked and read
+  against the image; 131 published on 125 pages, 52 of them seeded.
+  Unfinished: 133 placed single houses and small alterations held until the
+  parcel gets a page, 827 not placed. Nothing is unread.
 - **Verified:** 2026-11-24 (vol. 14 pt. 2: read 2,231 entries, found 1,416
   San Francisco rows, resolved 149, published 149 on 134 pages. Learned: the
   entries have the 1915 layout, with "COST, $…" closing each permit;
@@ -111,4 +144,45 @@
   by a deed gets no cost; `heldcrop.py <item> <leaf> <words> <out.png>`
   crops a held fact's entry from any Internet Archive item for the image
   check; four held facts were taken up, three of the later run and one of
-  vol. 14 pt. 1.)
+  vol. 14 pt. 1. Vol. 13 pt. 1, same day: read 2,547 entries, found 1,494
+  San Francisco rows, resolved 151, published 151 on 139 pages. Learned:
+  the paper came out on Tuesdays until 20 May 1913, so `issues_wed.py`
+  finds nothing and the covers ("Year, No. N. JANUARY 7, 1913") date the
+  issues; list the Call entries beside the candidates before the image
+  check (40 of 205 here) so repeats are dropped or trimmed as the sentences
+  are written; a permit for a building that was not the one built (Geary
+  and Mason) is a record only and must not set a builder; a corner whose
+  page credits another architect is held (Geary and Jones). Vol. 12 pt. 2,
+  2026-11-27: read 2,458 entries, found 1,549 San Francisco rows, resolved
+  153, published 153 on 139 pages. Learned: `prep.sh <year>` and
+  `finish1.sh <manifest>` now hold the steps between `select.py` and the
+  seeding; a crop cut by a column break can be finished from
+  `lines.jsonl` (the entry runs on in the next column), taking a cost only
+  where the instalments add up; a held fact's cost should be read on the
+  image before it is believed ($15,500 in the OCR was $450); #761 merged
+  while vol. 13 pt. 1 was being pushed, so check the PR is still open
+  before pushing and stamp `publish.pr` with the PR that carries the
+  commit. Vol. 12 pt. 1, same day: read 2,274 entries, found 1,383 San
+  Francisco rows, resolved 90, published 90 on 83 pages. Learned: the
+  Call's one-line entry can add up two contracts of this paper (2152 Union:
+  $11,280 there is $5,600 and $5,680 here), so compare the scope before
+  calling a price different; the tall crops show the printed total where
+  the sheet crop stops at the first instalment, so read them before going
+  to the OCR; a name printed under the wrong label (J. F. Dunn as
+  "Contractor") is left out, not corrected. Vol. 11 pt. 2, same day: read 3,105
+  entries, found 1,846 San Francisco rows, resolved 151, published 151 on
+  140 pages. Learned: the 1911 volumes print the street before the side
+  ("Valley S 255 E Castro", "Octavia and Union SW", "Andover No. 754"), so
+  `place.py` needs `BEN_STREET_FIRST=1` or it places nothing; a contact
+  sheet of the entry headings is the quick way to check the item numbers
+  that break the running order. Vol. 11 pt. 1, same day: read 2,575
+  entries, found 1,507 San Francisco rows, resolved 131, published 131 on
+  125 pages. Learned: the item numbers of spring 1911 carry a full stop
+  inside the bracket ("(773.)"), which `extract.py` now accepts (274 more
+  entries); the OCR of this volume reads N as X and W as AV, and `place.py`
+  turns them back under `BEN_STREET_FIRST=1` (179 picked rows instead of
+  113); the paper moved from Saturday to Tuesday with the issue of 18 April
+  1911; entries often run past the foot of a column, and `$S/after.py <row>`
+  style reading of the following `lines.jsonl` lines finishes them; a
+  second permit for the same corner two years later (Central and Grove,
+  1911 and 1913) is a sign the first was not built, so the note says so.)

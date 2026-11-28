@@ -21,6 +21,7 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [4th Avenue](4th-avenue/) — 5 buildings, built 1904–1910.
 - [5th Avenue](5th-avenue/) — 17 buildings, built 1900–1954.
 - [7th Avenue](7th-avenue/) — 13 buildings, built 1900–1925.
+- [8th Avenue](8th-avenue/) — 22 buildings, built 1900–1937.
 - [Aloha Avenue](aloha-avenue/) — 1 building, built 1971.
 - [Arguello Boulevard](arguello-boulevard/) — 1 building, built 1913.
 - [Belgrave Avenue](belgrave-avenue/) — 1 building, built 1972.
@@ -33,7 +34,6 @@ The blocks between Golden Gate Park and Mount Sutro, laid out along the Muni N-J
 - [Cragmont Avenue](cragmont-avenue/) — 1 building, built 1934.
 - [Dellbrook Avenue](dellbrook-avenue/) — 1 building, built 1958.
 - [Edgewood Avenue](edgewood-avenue/) — 1 building, built 1986.
-- [Eighth Avenue](8th-avenue/) — 22 buildings, built 1900–1937.
 - [Frederick Street](frederick-street/) — 1 building.
 - [Funston Avenue](funston-avenue/) — 2 buildings, built 1900–1958.
 - [Hill Point Avenue](hill-point-avenue/) — 1 building, built 1917.

@@ -41,6 +41,7 @@ that study area, as an example of the Second Bay Tradition.
 - [Kronquist Court](kronquist-court/) — 2 buildings, built 1949.
 - [Newburg Street](newburg-street/) — 1 building, built 1944.
 - [Noe Street](noe-street/) — 1 building, built 1900.
+- [San Jose Avenue](san-jose-avenue/) — 1 building, built 1912.
 - [Sanchez Street](sanchez-street/) — 1 building, built 2001.
 - [Turquoise Way](turquoise-way/) — 1 building, built 1962; 1 in the Diamond Heights Historic District.
 - [Valley Street](valley-street/) — 1 building, built 1900.

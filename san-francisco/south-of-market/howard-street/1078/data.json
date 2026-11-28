@@ -1,0 +1,170 @@
+{
+  "address": "1078–1080 Howard Street, San Francisco, CA 94103",
+  "path": "/san-francisco/south-of-market/howard-street/1078/",
+  "apn": "3726027",
+  "block": "3726",
+  "lot": "027",
+  "eas_baseid": "444153",
+  "coordinates": {
+    "lat": 37.778479,
+    "lng": -122.408992
+  },
+  "address_range": "1078–1080",
+  "street_numbers_on_parcel": [
+    "1078",
+    "1080"
+  ],
+  "parcel": {
+    "year_built": 1912,
+    "stories": 3,
+    "rooms": 31,
+    "bathrooms": 5,
+    "lot_area_sqft": 2247,
+    "building_area_sqft": 7950,
+    "use": "Commercial Hotel",
+    "property_class": "Hotels - Other",
+    "construction_type_code": "D",
+    "zoning": "SLR",
+    "supervisor_district": 6,
+    "assessor_neighborhood": "South of Market",
+    "analysis_neighborhood": "South of Market",
+    "property_location_raw": "1080 1078 HOWARD              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 223997,
+    "assessed_improvement_value": 606361
+  },
+  "historic_status": {
+    "ceqa_status_code": "A",
+    "ceqa_status_code_article_10_11": "A",
+    "ceqa_status_label": "Historic resource",
+    "reason": "National Register Historic District, California Register Historic District",
+    "yearbuilt": "1912",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "historic_district": {
+    "name": "Western SOMA Light Industrial and Residential Historic District",
+    "california_register_status": "Eligible (not listed)",
+    "national_register_status": "Eligible (not listed)",
+    "article_10_11_status": "No local landmark protection",
+    "local_landmark_protection": false,
+    "period_of_significance": "1906–1936",
+    "source": "sf-historic-districts"
+  },
+  "permits": [
+    {
+      "number": "202009265034",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-26",
+      "status_date": "2021-08-05",
+      "estimated_cost": 87400,
+      "revised_cost": 87400,
+      "description": "residential: soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "202009265035",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "2020-09-26",
+      "status_date": "2021-08-05",
+      "estimated_cost": 27600,
+      "revised_cost": 27600,
+      "description": "commercial: soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "201709077147",
+      "type": "otc alterations permit",
+      "status": "withdrawn",
+      "filed": "2017-09-07",
+      "status_date": "2019-07-18",
+      "estimated_cost": 40000,
+      "revised_cost": 60000,
+      "description": "soft story retrofit per sfebc chapter 4d engineering criteria 2016 cebc appendix a-4; install new shearwalls to comply.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919075",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-10",
+      "status_date": "1989-12-13",
+      "estimated_cost": 2800,
+      "description": "re - roofing",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8806785",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1988-05-23",
+      "status_date": "1989-04-03",
+      "estimated_cost": 9000,
+      "description": "install exaust system to remove fish smell & steam",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8201858",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1982-03-11",
+      "status_date": "1983-03-04",
+      "estimated_cost": 800,
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=HOWARD&street_type=ST&address_number=1078",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=3726027&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=3726&lot=027",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=3726027",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-historic-districts",
+      "name": "SF Planning Department — Historic Districts via DataSF",
+      "query": "https://data.sfgov.org/resource/63x5-g3m4.json?$where=intersects(the_geom,%20%27POINT(-122.40899235786082%2037.778478850760656)%27)",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1912-07-23-n173",
+      "name": "Building and Industrial News, 23 July 1912",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri12212cont/page/n173/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1912-07-23",
+      "kind": "construction",
+      "description": "A building contract was recorded for a three-storey lodging house and store, all work except shades, painting, finish hardware and electric fixtures. Falch & Knoll were named as architects and the Higginson Co. as contractor.",
+      "source": "building-industrial-news-1912-07-23-n173"
+    }
+  ],
+  "building": {
+    "architect": "Falch & Knoll"
+  }
+}

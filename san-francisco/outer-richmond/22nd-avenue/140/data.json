@@ -1,0 +1,99 @@
+{
+  "address": "140 22nd Avenue, San Francisco, CA 94121",
+  "path": "/san-francisco/outer-richmond/22nd-avenue/140/",
+  "apn": "1381030",
+  "block": "1381",
+  "lot": "030",
+  "eas_baseid": "301932",
+  "coordinates": {
+    "lat": 37.785146,
+    "lng": -122.481546
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 1,
+    "stories": 2,
+    "rooms": 6,
+    "bathrooms": 1,
+    "lot_area_sqft": 2996,
+    "building_area_sqft": 1880,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Lake Street",
+    "analysis_neighborhood": "Outer Richmond",
+    "property_location_raw": "0000 0140 22ND                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 47791,
+    "assessed_improvement_value": 62584
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "8900562",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-01-12",
+      "status_date": "1989-02-10",
+      "estimated_cost": 2800,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=22ND&street_type=AVE&address_number=140",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1381030&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1381&lot=030",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1381030",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-08-22-n254",
+      "name": "Building and Industrial News, 22 August 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11211cont/page/n254/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-08-22",
+      "kind": "construction",
+      "description": "A permit was sought for a two-storey frame residence. O. E. Evans was named as architect.",
+      "source": "building-industrial-news-1911-08-22-n254"
+    }
+  ],
+  "building": {
+    "architect": "O. E. Evans"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "address": "686–688 5th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/5th-avenue/686/",
+  "apn": "1640029",
+  "block": "1640",
+  "lot": "029",
+  "eas_baseid": "452440",
+  "coordinates": {
+    "lat": 37.775712,
+    "lng": -122.462539
+  },
+  "address_range": "686–688",
+  "street_numbers_on_parcel": [
+    "686",
+    "688"
+  ],
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2374,
+    "building_area_sqft": 3200,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0688 0686 05TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 53321,
+    "assessed_improvement_value": 64171
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "M1143227",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2019-09-25",
+      "status_date": "2019-09-25",
+      "revised_cost": 0,
+      "description": "streetspace",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8919108",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1989-10-10",
+      "status_date": "1990-01-19",
+      "estimated_cost": 2500,
+      "description": "reroofing",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=05TH&street_type=AVE&address_number=686",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1640029&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1640&lot=029",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1640029",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-03-11-n245",
+      "name": "Building and Industrial News, 11 March 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11111cont/page/n245/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-03-11",
+      "kind": "construction",
+      "description": "A permit was sought for two-storey frame flats.",
+      "source": "building-industrial-news-1911-03-11-n245"
+    }
+  ]
+}

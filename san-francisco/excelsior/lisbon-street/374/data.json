@@ -1,0 +1,143 @@
+{
+  "address": "374 Lisbon Street, San Francisco, CA 94112",
+  "path": "/san-francisco/excelsior/lisbon-street/374/",
+  "apn": "6081015",
+  "block": "6081",
+  "lot": "015",
+  "eas_baseid": "390964",
+  "coordinates": {
+    "lat": 37.722515,
+    "lng": -122.433559
+  },
+  "parcel": {
+    "year_built": 1913,
+    "units": 1,
+    "stories": 2,
+    "rooms": 8,
+    "bathrooms": 2,
+    "bedrooms": 3,
+    "lot_area_sqft": 2500,
+    "building_area_sqft": 1480,
+    "basement_area_sqft": 455,
+    "use": "Single Family Residential",
+    "property_class": "Dwelling",
+    "construction_type_code": "D",
+    "zoning": "RH-1",
+    "supervisor_district": 11,
+    "assessor_neighborhood": "Excelsior",
+    "analysis_neighborhood": "Excelsior",
+    "property_location_raw": "0000 0374 LISBON              ST0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 361630,
+    "assessed_improvement_value": 256702,
+    "last_sale_date": "2001-04-27"
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "No evaluation and 45 years or older",
+    "yearbuilt": "1913",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "201401277101",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2014-01-27",
+      "status_date": "2014-01-27",
+      "estimated_cost": 28000,
+      "revised_cost": 35000,
+      "description": "comply w/ complaint#201447812. legalize two storage room. half bathrm & laundry rm. all work at ground fl.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9808489",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1998-05-12",
+      "status_date": "1998-06-30",
+      "estimated_cost": 12500,
+      "description": "dry rot repair/replace 30' sill damaged studs & siding",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9703466",
+      "type": "additions alterations or repairs",
+      "status": "complete",
+      "filed": "1997-02-26",
+      "status_date": "1997-06-13",
+      "estimated_cost": 1500,
+      "description": "remove illegal kitchen in basement",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9317965",
+      "type": "additions alterations or repairs",
+      "status": "cancelled",
+      "filed": "1993-10-18",
+      "status_date": "1997-01-13",
+      "estimated_cost": 1000,
+      "description": "revert basement back to storage area",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9313575",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1993-08-10",
+      "status_date": "1994-07-13",
+      "estimated_cost": 5950,
+      "description": "reroofing.",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=LISBON&street_type=ST&address_number=374",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=6081015&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=6081&lot=015",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=6081015",
+      "retrieved": "2026-11-24"
+    },
+    {
+      "id": "building-industrial-news-1913-04-29-n645",
+      "name": "Building and Industrial News, 29 April 1913",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri1313cont/page/n645/mode/1up",
+      "retrieved": "2026-11-24"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1913-04-29",
+      "kind": "construction",
+      "description": "A permit was sought for a one and one-half storey and basement frame residence, estimated at $2,000. The National Architectural & Eng. Co. were named as architects.",
+      "source": "building-industrial-news-1913-04-29-n645"
+    }
+  ],
+  "building": {
+    "architect": "National Architectural & Eng. Co."
+  }
+}

@@ -11,6 +11,7 @@ A residential district south of the Mission proper, built up in the first decade
 - [Danton Street](danton-street/) — 2 buildings, built 1928.
 - [Delano Avenue](delano-avenue/) — 1 building, built 1913.
 - [Ellington Avenue](ellington-avenue/) — 1 building, built 1924.
+- [Farragut Avenue](farragut-avenue/) — 1 building, built 1910.
 - [Francis Street](francis-street/) — 1 building, built 1908.
 - [Geneva Avenue](geneva-avenue/) — 1 building, built 1929.
 - [Gloria Court](gloria-court/) — 2 buildings, built 1927.

@@ -1,0 +1,120 @@
+{
+  "address": "710 9th Avenue, San Francisco, CA 94118",
+  "path": "/san-francisco/inner-richmond/9th-avenue/710/",
+  "apn": "1651036",
+  "block": "1651",
+  "lot": "036",
+  "eas_baseid": "312238",
+  "coordinates": {
+    "lat": 37.774955,
+    "lng": -122.466774
+  },
+  "parcel": {
+    "year_built": 1911,
+    "units": 2,
+    "stories": 2,
+    "rooms": 11,
+    "bathrooms": 2,
+    "lot_area_sqft": 2495,
+    "building_area_sqft": 2912,
+    "use": "Multi-Family Residential",
+    "property_class": "Flats & Duplex",
+    "construction_type_code": "D",
+    "zoning": "RH-2",
+    "supervisor_district": 1,
+    "assessor_neighborhood": "Inner Richmond",
+    "analysis_neighborhood": "Inner Richmond",
+    "property_location_raw": "0712 0710 09TH                AV0000"
+  },
+  "assessment": {
+    "roll_year": 2025,
+    "assessed_land_value": 286762,
+    "assessed_improvement_value": 169346
+  },
+  "historic_status": {
+    "ceqa_status_code": "B",
+    "ceqa_status_code_article_10_11": "B",
+    "ceqa_status_label": "Unevaluated",
+    "reason": "Historic Survey Result and 45 years or older",
+    "yearbuilt": "1911",
+    "in_article_10_11_historic_district": false,
+    "source": "sf-planning"
+  },
+  "permits": [
+    {
+      "number": "200802114445",
+      "type": "otc alterations permit",
+      "status": "issued",
+      "filed": "2008-02-11",
+      "status_date": "2008-02-11",
+      "estimated_cost": 1500,
+      "revised_cost": 1500,
+      "description": "remove and replace 6 steps and risers from backyard steps",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "9013993",
+      "type": "otc alterations permit",
+      "status": "complete",
+      "filed": "1990-07-16",
+      "status_date": "1990-08-07",
+      "estimated_cost": 2300,
+      "description": "repair red brick wall in the house, front.",
+      "source": "sf-building-permits"
+    },
+    {
+      "number": "8712990",
+      "type": "otc alterations permit",
+      "status": "expired",
+      "filed": "1987-09-09",
+      "status_date": "1988-02-08",
+      "estimated_cost": 2950,
+      "description": "repair fire damage floor at porch",
+      "source": "sf-building-permits"
+    }
+  ],
+  "sources": [
+    {
+      "id": "sf-eas-addresses",
+      "name": "SF Enterprise Addressing System via DataSF",
+      "query": "https://data.sfgov.org/resource/3mea-di5p.json?street_name=09TH&street_type=AVE&address_number=710",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-assessor-roll",
+      "name": "SF Office of the Assessor-Recorder via DataSF (2025 secured roll)",
+      "query": "https://data.sfgov.org/resource/wv5m-vpq2.json?parcel_number=1651036&$order=closed_roll_year%20DESC&$limit=1",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-building-permits",
+      "name": "SF Dept. of Building Inspection via DataSF",
+      "query": "https://data.sfgov.org/resource/i98e-djp9.json?block=1651&lot=036",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "sf-planning",
+      "name": "SF Planning Department — Historic Resource Status by Parcel via DataSF",
+      "query": "https://data.sfgov.org/resource/3tsw-4idn.json?apn=1651036",
+      "retrieved": "2026-11-27"
+    },
+    {
+      "id": "building-industrial-news-1911-06-20-n674",
+      "name": "Building and Industrial News, 20 June 1911",
+      "label": "Building and Industrial News, San Francisco Public Library (Internet Archive)",
+      "query": "https://archive.org/details/buildingindustri11111cont/page/n674/mode/1up",
+      "retrieved": "2026-11-27"
+    }
+  ],
+  "historical_record": [
+    {
+      "date": "1911-06-20",
+      "kind": "construction",
+      "description": "A permit was sought for two-storey frame flats, estimated at $4,900. Charles A. Rushton was named as contractor.",
+      "source": "building-industrial-news-1911-06-20-n674"
+    }
+  ],
+  "building": {
+    "builder": "Charles A. Rushton"
+  }
+}
