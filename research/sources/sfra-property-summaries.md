@@ -7,7 +7,7 @@
 >
 > - **Kind:** scanned survey forms and file papers, read from page images · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — hand-filled forms whose OCR is noise; nothing in them is findable by address.
-> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) all 23 Yerba Buena items (568) read whole, and the nine comparable-sales volumes 5030 to 5038 (1,072) parsed, with every sheet that reaches a page or a held parcel read against its image; the four-volume Market Data Study, 5020 to 5023 (868 pages, 278 sales), front pages read by eye and every used price read against its image; the rest of the A-2 acquisition appraisals (5001 to 5019, 5024 to 5029) unread.
+> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) all 23 Yerba Buena items (568) read whole, and the nine comparable-sales volumes 5030 to 5038 (1,072) parsed, with every sheet that reaches a page or a held parcel read against its image; the four-volume Market Data Study, 5020 to 5023 (868 pages, 278 sales), front pages read by eye and every used price read against its image; the 1962-64 A-2 acquisition appraisals 5001 to 5013 (1,188 sheets) parsed, with every sheet that reaches a page read against its image; the later appraisals 5014 to 5019 and 5024 to 5029 unread.
 > - **Local corpus:** `research/corpora/sfra-property-summaries/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -144,8 +144,11 @@
   The Market Data Study, 5020 to 5023 (`market-data-1965-1969`, 2026-11-28):
   about 77 sheets whose address reached neither a page nor a standing building
   were not hand-read.
-  **Not read: the A-2 acquisition appraisals, 5001 to 5019 and 5024 to 5029**
-  (about 15,000 pages, 1960 to 1990). Take the **comparable-sales volumes
+  The 1962-64 acquisition appraisals, 5001 to 5013
+  (`acquisition-appraisals-1962-1964`, 2026-11-28): about 146 sheets on
+  standing parcels with no page were parsed but not read against their images
+  (three held). **Not read: the later A-2 appraisals, 5014 to 5019 and 5024
+  to 5029** (1963 and 1970 to 1990, specific parcels; 5017 is not online). Take the **comparable-sales volumes
   first** (5030 to 5038, 1969-70, about 1,100 pages): a comparable sale is a
   property the Agency did *not* buy, often outside the project area, so these
   sheets describe buildings that can still stand, and each one is typed with
@@ -193,6 +196,22 @@
   645 Larkin, Harcourt, Brace and World buying 1000 Geary). Scripts in
   `/mnt/project-files/sfra-market-data/` (`strips.py`, `addr.py`, `res.py`,
   `match.py`, `pubset.py`, `mkfind.py`, `publish.py`).)
+- **Verified:** 2026-11-28 (the A-2 acquisition appraisals 5001 to 5013:
+  Maury Holmes's 1962 sheets by block and his first acquisition report of
+  20 January 1964. 1,188 sheets parsed from the OCR, 494 resolved to a parcel,
+  263 to a building the roll dates before 1962, 117 to an existing page; those
+  117 read from cropped bands of the page images. 91 findings: 88 published on
+  88 pages, 3 held; 15 sheets left out because their address only reached a
+  page across the street or a renumbered lot whose building does not fit.
+  Learned: **the A-2 rehabilitation area kept most of what Holmes appraised**
+  (about half the resolved sheets still stand), so these volumes, unlike the
+  1955 A-1 reports, land on pages; **many lots were renumbered after 1962**
+  (684-21 is now 684-46), so place by parcel number first and by address
+  within the block second, and check the roll's stories; the 1962 sheets
+  carry a typed description and condition, the 1964 sheets only present use
+  and building area. Scripts and the hand transcriptions in
+  `/mnt/project-files/sfra-acquisition-appraisals/` (`extract.py`, `bands.py`,
+  `T.py`, `table.py`, `mkfind.py`, `publish.py`).)
 - **Verified:** 2026-11-25 (the comparable-sales volumes 5030 to 5038:
   1,072 PDF pages, about 330 typed sale sheets parsed from the OCR and
   resolved by their block and lot; 59 read against the page image, 52
