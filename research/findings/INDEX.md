@@ -467,7 +467,7 @@ sit in — the three it touched most, and how many in all.
 | `sfra-minutes/sfra-minutes-1988-94.json` | 33 | 46 KB | 1989–1994 | 33 | 33 | `tenderloin`, `south-of-market`, `mission` +9 |
 | `sfra-minutes/sfra-minutes-1995-2000.json` | 17 | 24 KB | 1995–2000 | 17 | 17 | `south-of-market`, `pacific-heights`, `mission` +5 |
 | `sfra-minutes/sfra-minutes-2001-11.json` | 19 | 27 KB | 2001–2011 | 19 | 19 | `south-of-market`, `western-addition`, `tenderloin` +6 |
-| `sfra-property-summaries/acquisition-appraisals-1962-1964.json` | 91 | 183 KB | 1962–1964 | 88 | 88 | `western-addition`, `pacific-heights`, `japantown` +2 |
+| `sfra-property-summaries/acquisition-appraisals-1962-1964.json` | 91 | 182 KB | 1962–1964 | 88 | 88 | `western-addition`, `pacific-heights`, `japantown` +2 |
 | `sfra-property-summaries/comparable-sales-1966-1970.json` | 52 | 105 KB | 1965–1970 | 44 | 43 | `hayes-valley`, `haight-ashbury`, `pacific-heights` +2 |
 | `sfra-property-summaries/conservation-study-1962.json` | 50 | 94 KB | 1962 | 6 | 6 | `pacific-heights`, `western-addition` |
 | `sfra-property-summaries/house-moves-1974-1979.json` | 6 | 11 KB | 1974–1979 | 2 | 1 | `pacific-heights`, `western-addition` |
