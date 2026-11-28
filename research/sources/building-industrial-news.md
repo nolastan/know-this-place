@@ -186,3 +186,13 @@
   style reading of the following `lines.jsonl` lines finishes them; a
   second permit for the same corner two years later (Central and Grove,
   1911 and 1913) is a sign the first was not built, so the note says so.)
+- **2026-11-28, held facts taken up:** 7 held rows whose parcel now has a
+  page, read against the page image: 5 published on 5 pages — C. F.
+  Whittlesey's three Vallejo Street residences of 1912 (2543 Vallejo, at
+  $19,000 where the *Call* gave $18,000; the conflict is in the page's
+  unknowns), the 1912 Northern Construction Co. plastering contract at 1529
+  Van Ness, J. Prout's 1912 contract at 1736 Sanchez, the 1913 three-flat
+  permit at 381 Union and the 1912 foundation contract at 2820 Broadway — and
+  2 kept back (a $400 rear garage; five houses on one contract across two
+  lots).
+

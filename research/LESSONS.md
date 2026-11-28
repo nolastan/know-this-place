@@ -3645,3 +3645,26 @@ procedure is in [RUNBOOK.md](RUNBOOK.md).
   offices — are numbered, dated and purpose-stated, and gave 40 of 60
   published facts. *In any body's minutes, scan every measure title for a
   street number before deciding which kind of measure to read.* (2026-11-26)
+- **A held trade-journal row can be read against its page without the
+  volume's 90 MB djvu.xml.** The Internet Archive's full-text search,
+  `https://<server>/fulltext/inside.php?item_id=<id>&doc=<id>&path=<dir>&q=<item number>`
+  (server and dir from `/metadata/<id>`), returns each hit's page and word
+  box; crop that from
+  `https://<server>/BookReader/BookReaderImages.php?zip=<dir>/<id>_jp2.zip&file=<id>_jp2/<id>_<leaf>.jp2&id=<id>&scale=1&rotate=0`.
+  Its `page` is the jp2 leaf, not the citation's `n` index (about n+1). The
+  index misses some entries; for those, a djvu.xml `OBJECT`'s position *is*
+  the `n` index, and its image is `https://archive.org/download/<id>/page/n<N>.jpg`
+  at the djvu's own pixel size — the jp2 leaf can be five off (n816 is leaf
+  0821), so never mix the two. *Search by item number, accept a hit only
+  where the text starts with `(<item>)`, and look at every crop: two of 55
+  landed on the wrong entry.* (2026-11-28,
+  [sources/building-engineering-news.md](sources/building-engineering-news.md))
+- **The image check changes the fact, not just the wording.** Of 55 held
+  permit rows read against the page, one carried the next entry's
+  contractor and cost across a column break ($16,178 and the wrong builder
+  for $9,250), one had its item number misread, and one cost was off by
+  $200; and nearly half were kept back on what the image and the page said
+  together — a second permit for the same lot by another builder, a repeat
+  of an entry already on the page, a storey or unit count the roll
+  contradicts. *A held row's description is a parse, not a reading; never
+  publish one on its parse.* (2026-11-28)

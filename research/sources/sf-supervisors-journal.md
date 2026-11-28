@@ -134,3 +134,8 @@ batch, 2232 Webster's 1967 rezoning, was taken up on a page seeded here.)
   resolved, 23 published on 23 pages, 2 held, 1 declined as already on the
   page, 1 left unplaced by hand (60 Harold, a house moved off land taken for
   Mount Vernon Avenue); 19 at numbers the city no longer has.)
+
+- **2026-11-28, held facts taken up:** parcel 3722126 (199 New Montgomery)
+  got a page, so its two held permits were published as site history: an
+  automobile parking station on the corner (30 April 1928) and a gasoline
+  filling station (22 April 1929).

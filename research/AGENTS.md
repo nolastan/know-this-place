@@ -108,7 +108,9 @@ dossier says (for `building-engineering-news`, read it against the page
 image), then resolve and publish it in its own findings file alongside your
 own facts, or leave it held and say why. Never seed a page only to publish a
 held fact. `--held pages` lists held facts whose parcel has since got a page;
-those are overdue and anyone working that source should take them up.
+those are overdue and anyone working that source should take them up. One read
+and kept back says so in its note with the words "once the parcel had a page",
+and `--held pages` stops listing it.
 
 ## Never read a findings file whole
 

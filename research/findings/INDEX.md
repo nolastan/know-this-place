@@ -115,17 +115,17 @@ sit in — the three it touched most, and how many in all.
 | `building-engineering-news/v17-pt2-1917-jul-dec.json` | 1,054 | 1.6 MB | 1917 | 125 | 125 | `outer-richmond`, `pacific-heights`, `castro` +25 |
 | `building-engineering-news/v18-pt1-1918-jan-jun.json` | 986 | 1.5 MB | 1918 | 71 | 71 | `mission`, `nob-hill`, `outer-richmond` +24 |
 | `building-engineering-news/v18-pt2-1918-jul-dec.json` | 561 | 883 KB | 1918 | 37 | 37 | `mission`, `nob-hill`, `pacific-heights` +17 |
-| `building-engineering-news/v19-pt1-1919-jan-jun.json` | 1,115 | 1.7 MB | 1919 | 99 | 99 | `nob-hill`, `mission`, `outer-richmond` +22 |
+| `building-engineering-news/v19-pt1-1919-jan-jun.json` | 1,115 | 1.7 MB | 1919 | 100 | 100 | `nob-hill`, `mission`, `outer-richmond` +23 |
 | `building-engineering-news/v19-pt2-1919-jul-dec.json` | 1,475 | 2.3 MB | 1919 | 121 | 121 | `nob-hill`, `outer-richmond`, `pacific-heights` +22 |
 | `building-engineering-news/v20-pt1-1920-jan-jun.json` | 1,282 | 2.0 MB | 1920 | 118 | 118 | `pacific-heights`, `tenderloin`, `inner-richmond` +22 |
 | `building-engineering-news/v20-pt2-1920-jul-dec.json` | 1,064 | 1.7 MB | 1920 | 88 | 88 | `mission`, `tenderloin`, `pacific-heights` +22 |
 | `building-engineering-news/v21-pt1-1921-jan-jun.json` | 1,322 | 2.0 MB | 1921 | 136 | 136 | `outer-richmond`, `mission`, `tenderloin` +21 |
 | `building-engineering-news/v21-pt2-1921-jul-dec.json` | 1,553 | 2.4 MB | 1921 | 166 | 166 | `outer-richmond`, `inner-richmond`, `mission` +23 |
-| `building-engineering-news/v22-pt1-1922-jan-jun.json` | 1,596 | 2.5 MB | 1922 | 158 | 158 | `outer-richmond`, `inner-richmond`, `mission` +19 |
+| `building-engineering-news/v22-pt1-1922-jan-jun.json` | 1,596 | 2.5 MB | 1922 | 159 | 159 | `outer-richmond`, `inner-richmond`, `mission` +19 |
 | `building-engineering-news/v22-pt2-1922-jul-dec.json` | 1,519 | 2.4 MB | 1922 | 174 | 174 | `outer-richmond`, `inner-richmond`, `nob-hill` +22 |
-| `building-engineering-news/v23-pt1-1923-jan-jun.json` | 2,260 | 3.6 MB | 1923 | 274 | 274 | `outer-richmond`, `inner-richmond`, `marina` +27 |
-| `building-engineering-news/v23-pt2-1923-jul-dec.json` | 1,982 | 3.2 MB | 1923 | 272 | 272 | `outer-richmond`, `inner-richmond`, `marina` +28 |
-| `building-engineering-news/v24-pt1-1924-jan-jun.json` | 2,513 | 4.0 MB | 1924 | 306 | 306 | `outer-richmond`, `marina`, `inner-sunset` +29 |
+| `building-engineering-news/v23-pt1-1923-jan-jun.json` | 2,260 | 3.6 MB | 1923 | 283 | 283 | `outer-richmond`, `inner-richmond`, `mission` +27 |
+| `building-engineering-news/v23-pt2-1923-jul-dec.json` | 1,982 | 3.2 MB | 1923 | 276 | 276 | `outer-richmond`, `inner-richmond`, `marina` +28 |
+| `building-engineering-news/v24-pt1-1924-jan-jun.json` | 2,513 | 4.0 MB | 1924 | 317 | 317 | `outer-richmond`, `marina`, `mission` +29 |
 | `building-engineering-news/v24-pt2-1924-jul-dec.json` | 1,969 | 3.1 MB | 1924 | 237 | 237 | `marina`, `outer-richmond`, `mission` +28 |
 | `building-engineering-news/v25-pt1-1925-jan-jun.json` | 2,891 | 4.6 MB | 1925 | 481 | 481 | `outer-richmond`, `marina`, `mission` +30 |
 | `building-engineering-news/v25-pt2-1925-jul-dec.json` | 2,382 | 3.8 MB | 1925 | 341 | 341 | `outer-richmond`, `inner-sunset`, `mission` +32 |
@@ -140,13 +140,13 @@ sit in — the three it touched most, and how many in all.
 | `building-engineering-news/v30-pt1-1930-jan-jun.json` | 980 | 1.5 MB | 1930 | 115 | 115 | `marina`, `mission`, `pacific-heights` +26 |
 | `building-engineering-news/v30-pt2-1930-jul-dec.json` | 991 | 1.5 MB | 1930 | 102 | 102 | `mission`, `pacific-heights`, `south-of-market` +23 |
 | `building-engineering-news/v31-pt1-1931-jan-jun.json` | 1,033 | 1.6 MB | 1931 | 85 | 85 | `castro`, `marina`, `mission` +21 |
-| `building-engineering-news/v31-pt2-1931-jul-1932-jan.json` | 1,054 | 1.6 MB | 1931–1932 | 96 | 96 | `marina`, `castro`, `sunset-parkside` +23 |
+| `building-engineering-news/v31-pt2-1931-jul-1932-jan.json` | 1,054 | 1.6 MB | 1931–1932 | 97 | 97 | `marina`, `castro`, `sunset-parkside` +24 |
 | `building-industrial-news/v11-pt1-1911-jan-jun.json` | 1,507 | 2.3 MB | 1911 | 131 | 131 | `nob-hill`, `inner-richmond`, `mission` +23 |
 | `building-industrial-news/v11-pt2-1911-jul-dec.json` | 1,846 | 2.8 MB | 1911 | 151 | 151 | `mission`, `inner-sunset`, `inner-richmond` +22 |
-| `building-industrial-news/v12-pt1-1912-jan-jun.json` | 1,383 | 2.1 MB | 1912 | 90 | 90 | `nob-hill`, `mission`, `haight-ashbury` +19 |
-| `building-industrial-news/v12-pt2-1912-jul-dec.json` | 1,549 | 2.4 MB | 1912 | 153 | 153 | `mission`, `tenderloin`, `nob-hill` +23 |
+| `building-industrial-news/v12-pt1-1912-jan-jun.json` | 1,383 | 2.1 MB | 1912 | 91 | 91 | `nob-hill`, `mission`, `haight-ashbury` +19 |
+| `building-industrial-news/v12-pt2-1912-jul-dec.json` | 1,549 | 2.4 MB | 1912 | 156 | 156 | `mission`, `tenderloin`, `nob-hill` +23 |
 | `building-industrial-news/v13-pt1-1913-jan-jun.json` | 1,494 | 2.3 MB | 1913 | 151 | 151 | `tenderloin`, `nob-hill`, `mission` +22 |
-| `building-industrial-news/v13-pt2-1913-jul-dec.json` | 1,339 | 2.1 MB | 1913 | 121 | 119 | `nob-hill`, `outer-richmond`, `inner-richmond` +19 |
+| `building-industrial-news/v13-pt2-1913-jul-dec.json` | 1,339 | 2.1 MB | 1913 | 122 | 120 | `nob-hill`, `outer-richmond`, `inner-richmond` +19 |
 | `building-industrial-news/v14-pt1-1914-jan-jun.json` | 1,282 | 2.0 MB | 1914 | 98 | 98 | `nob-hill`, `outer-richmond`, `inner-sunset` +21 |
 | `building-industrial-news/v14-pt2-1914-jul-dec.json` | 1,416 | 2.2 MB | 1914 | 149 | 149 | `nob-hill`, `mission`, `tenderloin` +25 |
 | `celebrity-residence-guides/sftourismtips.json` | 31 | 48 KB | 1876–1996 | 29 | 25 | `haight-ashbury`, `pacific-heights`, `seacliff` +11 |
@@ -459,7 +459,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-supervisors-journal/board-actions-1946-1966.json` | 93 | 169 KB | 1946–1966 | 63 | 60 | `mission`, `south-of-market`, `tenderloin` +23 |
 | `sf-supervisors-journal/board-actions-1967-1997.json` | 160 | 302 KB | 1967–1997 | 73 | 68 | `mission`, `pacific-heights`, `bayview-hunters-point` +24 |
 | `sf-supervisors-journal/board-measures-1926-1945.json` | 46 | 76 KB | 1926–1945 | 24 | 23 | `tenderloin`, `financial-district`, `south-of-market` +9 |
-| `sf-supervisors-journal/board-permits-1926-1931.json` | 315 | 455 KB | 1926–1931 | 67 | 67 | `tenderloin`, `mission`, `south-of-market` +16 |
+| `sf-supervisors-journal/board-permits-1926-1931.json` | 315 | 456 KB | 1926–1931 | 69 | 69 | `tenderloin`, `mission`, `south-of-market` +16 |
 | `sffd-reports/fire-statements-1883-1895.json` | 14 | 20 KB | 1883–1895 | 14 | 14 | `mission`, `castro` |
 | `sffd-reports/fire-stations-1967-1969.json` | 50 | 66 KB | 1915–1969 | 35 | 35 | `south-of-market`, `russian-hill`, `noe-valley` +21 |
 | `sfra-minutes/sfra-minutes-1974-81.json` | 15 | 23 KB | 1974–1981 | 15 | 15 | `pacific-heights`, `japantown`, `western-addition` +1 |
@@ -471,7 +471,7 @@ sit in — the three it touched most, and how many in all.
 | `sfra-property-summaries/comparable-sales-1966-1970.json` | 52 | 105 KB | 1965–1970 | 44 | 43 | `hayes-valley`, `haight-ashbury`, `pacific-heights` +2 |
 | `sfra-property-summaries/conservation-study-1962.json` | 50 | 94 KB | 1962 | 6 | 6 | `pacific-heights`, `western-addition` |
 | `sfra-property-summaries/house-moves-1974-1979.json` | 6 | 11 KB | 1974–1979 | 2 | 1 | `pacific-heights`, `western-addition` |
-| `sfra-property-summaries/market-data-1965-1969.json` | 101 | 200 KB | 1965–1969 | 52 | 45 | `hayes-valley`, `pacific-heights`, `tenderloin` +4 |
+| `sfra-property-summaries/market-data-1965-1969.json` | 101 | 200 KB | 1965–1969 | 53 | 46 | `hayes-valley`, `pacific-heights`, `tenderloin` +4 |
 | `sfra-property-summaries/parcel-appraisals-1955.json` | 0 | 2 KB | — | 0 | 0 | — |
 | `sfra-property-summaries/western-addition-a2-1962.json` | 205 | 482 KB | 1900–1988 | 83 | 53 | `western-addition`, `pacific-heights`, `japantown` +2 |
 | `sfra-property-summaries/yerba-buena-photo-items.json` | 6 | 10 KB | 1961–1964 | 1 | 1 | `east-cut` |

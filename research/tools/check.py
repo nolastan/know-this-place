@@ -50,7 +50,9 @@ because the parcel has no page and the fact alone does not earn one (a plain
 1920s house permit, say). They are `unresolved` findings carrying
 `extra.placed_apn`. Whoever seeds a page for any other reason runs --held on
 the parcels (or the seed manifest) first and takes those facts up with their
-own; `--held pages` lists the ones whose parcel has since got a page: research/AGENTS.md, "Facts held for a page". With no argument it prints
+own; `--held pages` lists the ones whose parcel has since got a page, less those
+already read and kept back (their note says "once the parcel had a page"):
+research/AGENTS.md, "Facts held for a page". With no argument it prints
 the count per source.
 
 --overlap answers the question step 4 has to ask before it writes anything:
@@ -1539,6 +1541,11 @@ def peek(path: Path, sample: int) -> None:
         print("Everything else: --find, or jq. See research/findings/INDEX.md.")
 
 
+# The phrase a take-up writes into resolution.note when it reads a held fact
+# against its page and keeps it back; `--held pages` skips those.
+JUDGED = "once the parcel had a page"
+
+
 def held(wanted: list[str]) -> None:
     """Unresolved findings carrying extra.placed_apn, for the given parcels.
 
@@ -1587,8 +1594,16 @@ def held(wanted: list[str]) -> None:
         for src, n in sorted(counts.items(), key=lambda kv: -kv[1]):
             print(f"  {_thousands(n):>7}  {src}")
         return
+    judged = []
+    if "pages" in wanted:
+        # A fact already read against its page and kept back says so in its
+        # note; it is not overdue, so list only the ones nobody has judged.
+        judged = [h for h in hits if JUDGED in ((h[2].get("resolution") or {}).get("note") or "")]
+        hits = [h for h in hits if h not in judged]
     print(f"{len(hits)} held fact(s) on {len({a for a, _, _ in hits})} of "
-          f"{len(apns)} parcel(s).")
+          f"{len(apns)} parcel(s)."
+          + (f" {len(judged)} more were read once the parcel had a page and kept back;"
+             f" each note says why." if judged else ""))
     for apn, path, f in sorted(hits, key=lambda h: (h[0], str(h[2].get("date")))):
         print(f"{apn}  {path.parent.name}/{path.stem}  {f.get('id')}  "
               f"{f.get('date') or '—'}  {f.get('address_as_written')}")
