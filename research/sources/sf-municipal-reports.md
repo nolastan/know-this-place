@@ -122,3 +122,8 @@
   unplaced with a reason, 1 held. Learned: a public-works report names
   buildings, not addresses; the same volume's school list and fire roster are
   the address book for it.)
+
+- **2026-11-28, not pursued:** the pre-1906 volumes sampled (FY1890–91, vol.
+  41; FY1900–01, vol. 51) hold accounts, gas-lamp tables, fire rules and
+  complaint lists, with almost nothing at an address; vols 64–66 (FY1914–17)
+  have no City Architect report and no bond-contract tables in the OCR.
