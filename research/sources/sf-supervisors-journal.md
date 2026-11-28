@@ -7,7 +7,7 @@
 >
 > - **Kind:** printed minutes of the Board's meetings (scanned, Internet Archive OCR) · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — scanned volumes in the SFPL collection, no index on the web.
-> - **Coverage:** 157 volumes 1906–1999 on IA (`sanfranciscopubliclibrary`). 1967–1997 (71 items, volumes 62–92) read for zoning actions at an address on 2026-11-26. 1946–1966 (22 items, volumes 41–61) read the same day for every measure at a numbered address (`board-actions-1946-1966`). 1906–1945 not read; leases and other non-zoning measures in 1967–1997 not read.
+> - **Coverage:** 157 volumes 1906–1999 on IA (`sanfranciscopubliclibrary`). 1967–1997 (71 items, volumes 62–92) read for zoning actions at an address on 2026-11-26. 1946–1966 (22 items, volumes 41–61) read the same day for every measure at a numbered address (`board-actions-1946-1966`). 1926–1931 (vols 21–26) read on 2026-11-28 for the Board's garage, filling-station and parking-station permits (`board-permits-1926-1931`). 1926–1945 (vols 21–40) read the same day for every other measure at a numbered address (`board-measures-1926-1945`). 1906–1907 (vols 1–2) not read; vols 3–20 (1908–1925) are not on IA; leases and other non-zoning measures in 1967–1997 not read.
 > - **Local corpus:** `research/corpora/sf-supervisors-journal/` (IA `_djvu.txt`, one per item)
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -83,3 +83,54 @@ building replaced the one leased (68 Post, 1255 California) the entry says "the
 building then on this lot"; 45 Hyde Street was the Main Library Annex on the
 Asian Art Museum's parcel, demolished 1997; one held fact of the 1967–1997
 batch, 2232 Webster's 1967 rezoning, was taken up on a page seeded here.)
+
+- **1926–1931: the Board's own use permits.** Until the City Planning
+  Commission took them over (the last in vol. 26, 1931), the Board granted
+  "revocable at will" permits by resolution to operate a public garage, an
+  automobile supply station (a filling station) or an automobile parking
+  station, and to transfer one to a new operator. Each resolution appears
+  twice: passed for printing under the day's new business, adopted the next
+  week under **Unfinished Business**; the section a resolution falls in is
+  its status (`permits.py` marks N/U), and a grant seen only once under N is
+  dropped. About a third give a street number; most filling stations are
+  "the northeast corner of X and Y", placed with `corner.py --json` only where
+  one parcel on the quadrant lies within 80 ft of the crossing and 25 ft
+  nearer than the next (23 of 193); offsets along a block face were not
+  extracted. One fact per site and use, the earliest adopted grant or
+  transfer. Permittees are individuals and are left out; a garage's own name
+  ("Granada Garage") is kept. Where the roll's building is more than four
+  years younger the entry reads "This site previously held …". Laundry,
+  dyeing-and-cleaning, oil-tank and boiler permits run through the same
+  volumes (laundries also 1906–07) and were not extracted: hundreds a year,
+  each naming a private permittee, one thin fact apiece. Scripts:
+  `/mnt/project-files/sf-supervisors-journal/early/` (`permits.py` → `mk.py` →
+  `resolve_eas.py` → `corners.py` → `publish.py`).
+- **1932–1966 rezonings by frontage:** a scan of vols 27–61 for rezonings and
+  Planning appeals near a street number found 83 numbered addresses in 35
+  volumes; the rest are corners and frontages ("the northwesterly corner of
+  37th Avenue and Taraval Street for a distance of 100 feet"). Not pursued.
+
+- **Verified:** 2026-11-28 (volumes 21–26, 1926–1931: 1,256 permit
+  resolutions → 315 sites with an adopted grant → 67 published on 67 pages
+  (19 framed as an earlier use of the site), 20 held, 228 not placed.)
+- **1926–1945: the other measures.** A scan of every title that follows a
+  blank line, ends in a period, is mostly capitalised and carries a street
+  number (`early/titles.py`) gives about 1,650 lines over vols 21–40, nearly
+  all noise: the Recorder's imprint, letterheads, election-officer lists, the
+  1937 business-licence roll, and the permits already taken. About sixty are
+  measures, read one by one: the city's leases for public use (two 1935
+  storefront library reading rooms, WPA and NYA projects, 1943–45 air-raid
+  warden, war-housing and teen-age centres), city-owned houses sold for
+  removal ahead of street openings, The Emporium's 1932 bridge and subway
+  across Jessie Street, the municipal kitchen for the unemployed at 52 Ritch
+  (1931–33), the German consulate at 2090 Jackson (1941), and the Mayor's
+  annual report for 1942, printed in the Journal of 25 January 1943, which
+  lists the buildings the federal government leased or bought for the war.
+  **Nuisance abatements** (about fifteen, 1932–43) are bare declarations
+  with nothing about the premises; left out. A lease to the city names an
+  individual lessor; left out, a company lessor (Daily News Company,
+  Arrillaga Musical College) kept where it tells what the building was.
+- **Verified:** 2026-11-28 (volumes 21–40 measures: 46 findings, 27
+  resolved, 23 published on 23 pages, 2 held, 1 declined as already on the
+  page, 1 left unplaced by hand (60 Harold, a house moved off land taken for
+  Mount Vernon Avenue); 19 at numbers the city no longer has.)

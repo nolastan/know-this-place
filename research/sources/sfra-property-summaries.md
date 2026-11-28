@@ -7,7 +7,7 @@
 >
 > - **Kind:** scanned survey forms and file papers, read from page images · **Tier:** primary · **Status:** open
 > - **Search-invisibility:** high — hand-filled forms whose OCR is noise; nothing in them is findable by address.
-> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) all 23 Yerba Buena items (568) read whole, and the nine comparable-sales volumes 5030 to 5038 (1,072) parsed, with every sheet that reaches a page or a held parcel read against its image; the A-2 acquisition appraisals (5001 to 5029) unread.
+> - **Coverage:** the 7 Property Summary items (724 PDF pages), the 9 House Moves items (438), the 10 Parcel Appraisal Reports (1,388), the 50-building conservation study (40) all 23 Yerba Buena items (568) read whole, and the nine comparable-sales volumes 5030 to 5038 (1,072) parsed, with every sheet that reaches a page or a held parcel read against its image; the four-volume Market Data Study, 5020 to 5023 (868 pages, 278 sales), front pages read by eye and every used price read against its image; the rest of the A-2 acquisition appraisals (5001 to 5019, 5024 to 5029) unread.
 > - **Local corpus:** `research/corpora/sfra-property-summaries/`
 >
 > Update this dossier at the end of every pass — the `Verified:` line, the
@@ -141,7 +141,10 @@
   2026-11-25): about 130 sheets on parcels with no page were parsed from the
   OCR but not read against their images (list in
   `/mnt/project-files/sfra-comparable-sales/nopage.txt`).
-  **Not read: the A-2 acquisition appraisals, 5001 to 5029**
+  The Market Data Study, 5020 to 5023 (`market-data-1965-1969`, 2026-11-28):
+  about 77 sheets whose address reached neither a page nor a standing building
+  were not hand-read.
+  **Not read: the A-2 acquisition appraisals, 5001 to 5019 and 5024 to 5029**
   (about 15,000 pages, 1960 to 1990). Take the **comparable-sales volumes
   first** (5030 to 5038, 1969-70, about 1,100 pages): a comparable sale is a
   property the Agency did *not* buy, often outside the project area, so these
@@ -166,6 +169,30 @@
   in one place and lot 18 in the other. Being picked for a *conservation*
   study did not save a building: 9 of the 26 that resolve sit under a building
   the roll dates 1971 to 1991.
+- **Verified:** 2026-11-28 (the Western Addition A-2 Market Data Study,
+  5020 to 5023, compiled about 1970: four volumes, by kind of property —
+  vacant land and single-family, residential-commercial and commercial, two
+  and three units, four plus units — 868 PDF pages, 278 sales recorded 1964 to
+  1969, each a front page and a sales page. 192 front pages read by eye from
+  cropped strips (`addr.py`), matched by address to a parcel and checked
+  against the roll's year built and building area, which agree to the square
+  foot on most sheets; 101 findings: 45 published on 45 pages, 7 declined (two
+  sales already on the page from the comparable-sales volumes, two
+  foreclosure figures, three sheets whose comments describe a different
+  building from the front page), 49 held on a parcel with no page. Learned:
+  **the front page's typed fields (address, type, year built, area) are too
+  faint to OCR** but read by eye at w1800; the sales page OCRs well, yet even
+  a three-pass OCR vote got 5 of about 95 prices wrong ($55,000 as 58,000,
+  $28,000 as 23,000), so every price was read against the image; the
+  roll's building area is the best check that a sheet's building still
+  stands; and a sheet's comments sometimes belong to a different property
+  than its front page (2121 Sacramento, 640 Octavia, 2100 Post), so a
+  contradiction between the two is a reason to leave the sale off. Corporate
+  parties are named where the comments give them (the Scottish Rite's sale of
+  1859 Geary to the Order of the Eastern Star, Twentieth Century-Fox buying
+  645 Larkin, Harcourt, Brace and World buying 1000 Geary). Scripts in
+  `/mnt/project-files/sfra-market-data/` (`strips.py`, `addr.py`, `res.py`,
+  `match.py`, `pubset.py`, `mkfind.py`, `publish.py`).)
 - **Verified:** 2026-11-25 (the comparable-sales volumes 5030 to 5038:
   1,072 PDF pages, about 330 typed sale sheets parsed from the OCR and
   resolved by their block and lot; 59 read against the page image, 52
