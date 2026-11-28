@@ -459,7 +459,7 @@ sit in — the three it touched most, and how many in all.
 | `sf-supervisors-journal/board-actions-1946-1966.json` | 93 | 169 KB | 1946–1966 | 63 | 60 | `mission`, `south-of-market`, `tenderloin` +23 |
 | `sf-supervisors-journal/board-actions-1967-1997.json` | 160 | 302 KB | 1967–1997 | 73 | 68 | `mission`, `pacific-heights`, `bayview-hunters-point` +24 |
 | `sf-supervisors-journal/board-measures-1926-1945.json` | 46 | 76 KB | 1926–1945 | 24 | 23 | `tenderloin`, `financial-district`, `south-of-market` +9 |
-| `sf-supervisors-journal/board-permits-1926-1931.json` | 315 | 456 KB | 1926–1931 | 67 | 67 | `tenderloin`, `mission`, `south-of-market` +16 |
+| `sf-supervisors-journal/board-permits-1926-1931.json` | 315 | 455 KB | 1926–1931 | 67 | 67 | `tenderloin`, `mission`, `south-of-market` +16 |
 | `sffd-reports/fire-statements-1883-1895.json` | 14 | 20 KB | 1883–1895 | 14 | 14 | `mission`, `castro` |
 | `sffd-reports/fire-stations-1967-1969.json` | 50 | 66 KB | 1915–1969 | 35 | 35 | `south-of-market`, `russian-hill`, `noe-valley` +21 |
 | `sfra-minutes/sfra-minutes-1974-81.json` | 15 | 23 KB | 1974–1981 | 15 | 15 | `pacific-heights`, `japantown`, `western-addition` +1 |
